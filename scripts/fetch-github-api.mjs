@@ -169,7 +169,12 @@ async function main() {
       if (!res.ok) {
         failed.push({ id: tool.id, url: tool.github_url, reason: res.reason });
       } else {
-        Object.assign(tool, res.data);
+        // API が null を返した項目（例: ライセンスが NOASSERTION）は、既に入っている値を消さない。
+        // 「未取得を補完する」スクリプトなので、取得できなかったことを理由に既知の値を捨てない。
+        for (const [k, v] of Object.entries(res.data)) {
+          if (v === null && tool[k] != null) continue;
+          tool[k] = v;
+        }
         updated += 1;
       }
       if (done % 25 === 0 || done === targets.length) {
