@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { getMeta } from "@/lib/data";
 import { SITE, t } from "@/lib/site";
@@ -64,7 +65,7 @@ export default function AboutPage() {
           <h2>訂正・追加のリクエスト</h2>
           <p>
             掲載内容に誤りがある場合や、掲載してほしいツールがある場合は
-            <a href="/contact/">お問い合わせ</a>からご連絡ください。
+            <Link href="/contact/">お問い合わせ</Link>からご連絡ください。
           </p>
         </div>
       </main>

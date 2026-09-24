@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { getMeta } from "@/lib/data";
 import { SITE, t } from "@/lib/site";
@@ -74,7 +75,7 @@ export default function PrivacyPage() {
           <h2>7. お問い合わせ</h2>
           <p>
             個人情報の開示・訂正・削除のご請求は、
-            <a href="/contact/">お問い合わせページ</a>よりご連絡ください。
+            <Link href="/contact/">お問い合わせページ</Link>よりご連絡ください。
           </p>
 
           <h2>8. 改定</h2>

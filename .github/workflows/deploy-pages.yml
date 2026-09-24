@@ -1,0 +1,65 @@
+name: GitHub Pages 公開
+
+# 既定ブランチへの push、手動実行、データ更新ワークフローの完了後に公開する。
+# （データ更新は GITHUB_TOKEN で push するため、push トリガーでは起動しない）
+on:
+  push:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["データ更新"]
+    types: [completed]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    # push は既定ブランチのときだけ。データ更新は成功したときだけ。
+    if: >-
+      (github.event_name == 'push' && github.ref_name == github.event.repository.default_branch) ||
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # workflow_run のときはデータ更新後の最新コミットを取る
+          ref: ${{ github.event.repository.default_branch }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - id: pages
+        uses: actions/configure-pages@v5
+
+      - run: npm ci
+
+      # https://<owner>.github.io/<repo>/ ならサブパス /<repo> を、独自ドメインなら空を使う。
+      # リポジトリ名の変更や独自ドメインの設定に自動で追従する。
+      - name: ビルド
+        env:
+          NEXT_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          NEXT_PUBLIC_SITE_URL: ${{ steps.pages.outputs.base_url }}
+        run: npm run build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
