@@ -1,0 +1,60 @@
+# 形式: name|id|competitor|owner/repo|official_url|category|description_ja
+# データベース・表計算・BI
+Grist|grist|Airtable|gristlabs/grist-core|https://www.getgrist.com|database|表形式のデータを扱いながら、計算式で自動化できる。セルフホストに対応。
+Teable|teable|Airtable|teableio/teable|https://teable.io|database|表形式のデータベースをブラウザで作る。PostgreSQL上に保存される。
+Undb|undb|Airtable|undb-io/undb|https://undb.io|database|軽量なAirtable代替。ローカル優先で動作する。
+Superset|superset|Tableau|apache/superset|https://superset.apache.org|nocode|BIダッシュボードをブラウザで作る。多数のデータソースに接続できる。
+Redash|redash|Tableau|getredash/redash|https://redash.io|nocode|SQLを書いてグラフ化し、共有する。分析結果の共有に強い。
+Lightdash|lightdash|Looker|lightdash/lightdash|https://www.lightdash.com|nocode|dbtの定義をそのまま指標として使うBI。定義の二重管理を防げる。
+Apache Superset|superset|Power BI|apache/superset|https://superset.apache.org|nocode|BIダッシュボードを構築する。権限管理と定期配信を備える。
+Ethercalc|ethercalc|Google スプレッドシート|audreyt/ethercalc|https://ethercalc.net|database|ブラウザで共同編集できる表計算。動作が軽く、同時編集に強い。
+Luckysheet|luckysheet|Google スプレッドシート|dream-num/Luckysheet|https://dream-num.github.io/LuckysheetDocs/|database|Excelに近い操作感のWeb表計算。Webアプリに組み込める。
+Univer|univer|Google スプレッドシート|dream-num/univer|https://univer.ai|database|表計算・文書・スライドを扱うオフィス基盤。Webアプリに埋め込める。
+# アクセス解析・プロダクト分析
+GoatCounter|goatcounter|Google Analytics|arp242/goatcounter|https://www.goatcounter.com|analytics|Cookieを使わない軽量なアクセス解析。個人情報を集めずに計測できる。
+Ackee|ackee|Google Analytics|electerious/Ackee|https://ackee.electerious.com|analytics|Node.js製のアクセス解析。自前のサーバに置いて使う。
+Fathom|fathom|Google Analytics|usefathom/fathom|https://usefathom.com|analytics|プライバシーに配慮した解析ツール。シンプルな指標に絞っている。
+Countly|countly|Mixpanel|Countly/countly-server|https://countly.com|analytics|モバイルとWebの利用状況を分析する。セルフホスト版がある。
+OpenReplay|openreplay|Hotjar|openreplay/openreplay|https://openreplay.com|analytics|操作を録画して再生できるセッションリプレイ。障害調査に使える。
+Jitsu|jitsu|Segment|jitsucom/jitsu|https://jitsu.com|analytics|計測データを各ツールへ振り分ける基盤。データを自社に残せる。
+RudderStack|rudderstack|Segment|rudderlabs/rudder-server|https://www.rudderstack.com|analytics|顧客データの収集と配信をまとめる。倉庫に直接書き込める。
+# 監視・エラー追跡・ログ
+Uptime Kuma|uptime-kuma|Pingdom|louislam/uptime-kuma|https://uptime.kuma.pet|observability|URLとポートの死活監視。日本語表示に対応し、通知先も多い。
+Gatus|gatus|Pingdom|TwiN/gatus|https://gatus.io|observability|設定ファイルで書く死活監視。ヘルスチェックとアラートを担う。
+Netdata|netdata|Datadog|netdata/netdata|https://www.netdata.cloud|observability|サーバのメトリクスを秒単位で可視化する。導入が軽い。
+Zabbix|zabbix|Datadog|zabbix/zabbix|https://www.zabbix.com|observability|老舗の統合監視。ネットワーク機器を含めて監視できる。
+Prometheus|prometheus|Datadog|prometheus/prometheus|https://prometheus.io|observability|メトリクス収集の事実上の標準。多数のソフトが対応している。
+VictoriaMetrics|victoria-metrics|Datadog|VictoriaMetrics/VictoriaMetrics|https://victoriametrics.com|observability|Prometheus互換で資源効率の良い時系列データベース。
+SigNoz|signoz|New Relic|SigNoz/signoz|https://signoz.io|observability|ログ・メトリクス・トレースを1つで扱う。OpenTelemetry準拠。
+Sentry|sentry|Sentry|getsentry/sentry|https://sentry.io|observability|エラー追跡の本家を自前で運用する。機能は同じで費用は固定。
+Bugsink|bugsink|Sentry|bugsink/bugsink|https://www.bugsink.com|observability|Sentry互換で軽量なエラー追跡。小さな構成に向く。
+Graylog|graylog|Splunk|Graylog2/graylog2-server|https://graylog.org|observability|ログを集約して検索する。運用向けの機能が揃う。
+OpenObserve|openobserve|Datadog|openobserve/openobserve|https://openobserve.ai|observability|Rust製で軽いログ・メトリクス基盤。保存コストを抑えやすい。
+Jaeger|jaeger|Datadog|jaegertracing/jaeger|https://www.jaegertracing.io|observability|分散トレーシングの標準実装。処理の遅い箇所を特定できる。
+Grafana OnCall|grafana-oncall|PagerDuty|grafana/oncall|https://grafana.com/oss/oncall/|observability|当番表とエスカレーションを管理する。Grafanaと統合できる。
+Alerta|alerta|PagerDuty|alerta/alerta|https://alerta.io|observability|複数の監視からのアラートを1つに集約する。
+Cachet|cachet|Statuspage|cachethq/cachet|https://cachethq.io|observability|サービスの稼働状況を公開するページを作る。
+# セキュリティ・認証
+Authentik|authentik|Okta|goauthentik/authentik|https://goauthentik.io|security|SSOとIDプロバイダをまとめる。SAMLやOIDCに対応する。
+Zitadel|zitadel|Auth0|zitadel/zitadel|https://zitadel.com|security|クラウド前提で設計されたID基盤。マルチテナントに向く。
+Ory Kratos|kratos|Auth0|ory/kratos|https://www.ory.sh/kratos/|security|認証だけを担う軽量なID基盤。画面は自前で作る。
+Authelia|authelia|Okta|authelia/authelia|https://www.authelia.com|security|リバースプロキシの前に置く認証。2要素認証をまとめて掛けられる。
+SuperTokens|supertokens|Auth0|supertokens/supertokens-core|https://supertokens.com|security|アプリに組み込む認証基盤。セッション管理を自前で持てる。
+Logto|logto|Auth0|logto-io/logto|https://logto.io|security|OIDC準拠のID基盤。ログイン画面のカスタマイズがしやすい。
+Hanko|hanko|Auth0|teamhanko/hanko|https://www.hanko.io|security|パスキーを中心とした認証。パスワードレスを導入しやすい。
+Passbolt|passbolt|1Password|passbolt/passbolt_api|https://www.passbolt.com|security|チームで使うパスワード管理。権限を絞って共有できる。
+Headscale|headscale|Tailscale|juanfont/headscale|https://headscale.net|security|Tailscaleのコントロールサーバを自前で運用する。
+NetBird|netbird|Tailscale|netbirdio/netbird|https://netbird.io|security|WireGuardを使った社内ネットワーク。端末を踏み台にせず接続できる。
+Vault|vault|HashiCorp Vault|hashicorp/vault|https://www.vaultproject.io|security|機密情報を一元管理する。動的な認証情報の発行もできる。
+Infisical|infisical|HashiCorp Vault|Infisical/infisical|https://infisical.com|security|環境変数と秘密情報を管理する。開発者向けの画面が使いやすい。
+SOPS|sops|HashiCorp Vault|getsops/sops|https://getsops.io|security|設定ファイルの一部だけを暗号化する。Gitに置ける形で秘密を保つ。
+Trivy|trivy|Snyk|aquasecurity/trivy|https://trivy.dev|security|コンテナと依存関係の脆弱性を検査する。CIに組み込みやすい。
+Grype|grype|Snyk|anchore/grype|https://github.com/anchore/grype|security|コンテナイメージの脆弱性を検査する。SBOMと組み合わせて使う。
+OWASP ZAP|zap|Burp Suite|zaproxy/zaproxy|https://www.zaproxy.org|security|Webアプリの脆弱性を自動で検査する。CIに組み込める。
+Semgrep|semgrep|SonarQube|semgrep/semgrep|https://semgrep.dev|security|ソースコードの危険な書き方を検出する。ルールを自作できる。
+Nuclei|nuclei|Burp Suite|projectdiscovery/nuclei|https://projectdiscovery.io|security|テンプレートで脆弱性を検査する。YAMLで検査項目を書く。
+Dependency-Track|dependency-track|Snyk|DependencyTrack/dependency-track|https://dependencytrack.org|security|SBOMを継続的に監視し、新たな脆弱性を検知する。
+DefectDojo|defectdojo|Snyk|DefectDojo/django-DefectDojo|https://www.defectdojo.org|security|診断結果をまとめて管理する。修復の進捗を追える。
+Wazuh|wazuh|Splunk|wazuh/wazuh|https://wazuh.com|security|端末の侵入検知とログ監視を行う。SIEMとして使える。
+CrowdSec|crowdsec|Cloudflare|crowdsecurity/crowdsec|https://crowdsec.net|security|攻撃元を共有情報で判定して遮断する。コミュニティの知見を使える。
+Suricata|suricata|Cloudflare|OISF/suricata|https://suricata.io|security|ネットワークの侵入検知。通信内容から攻撃を検出する。

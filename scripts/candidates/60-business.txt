@@ -1,0 +1,63 @@
+# 形式: name|id|competitor|owner/repo|official_url|category|description_ja
+# CRM・営業・サポート
+EspoCRM|espocrm|Salesforce|espocrm/espocrm|https://www.espocrm.com|crm|顧客管理と営業支援。項目を自分で追加でき、日本語表示に対応する。
+SuiteCRM|suitecrm|Salesforce|salesagility/SuiteCRM|https://suitecrm.com|crm|SugarCRMから分岐した顧客管理。商談と履歴をまとめて扱う。
+Vtiger|vtiger|Salesforce|vtiger/vtigercrm|https://www.vtiger.com|crm|顧客管理と見積・請求までを1つにする。
+Krayin|krayin|Hubspot|krayin/laravel-crm|https://krayincrm.com|crm|Laravel製の顧客管理。導入手順が少ない。
+Monica|monica|Sansan|monicahq/monica|https://www.monicahq.com|crm|人との関係を記録する個人向け顧客管理。名刺の代わりに使える。
+FreeScout|freescout|Zendesk|freescout-help-desk/freescout|https://freescout.net|support|メールを共有受信箱にまとめる。Help Scoutの代替として設計された。
+osTicket|osticket|Zendesk|osTicket/osTicket|https://osticket.com|support|問い合わせをチケットで管理する。導入実績が多い。
+UVdesk|uvdesk|Zendesk|uvdesk/community-skeleton|https://www.uvdesk.com|support|チケット管理とナレッジベースを1つにする。
+Faveo|faveo|Zendesk|ladybirdweb/faveo-helpdesk|https://www.faveohelpdesk.com|support|問い合わせ対応の管理。SLAの管理ができる。
+Helpy|helpy|Intercom|helpyio/helpy|https://helpy.io|support|顧客対応とナレッジベースを組み合わせる。
+Libredesk|libredesk|Intercom|abhinavxd/libredesk|https://libredesk.io|support|軽量な顧客対応の受信箱。Go製で動作が軽い。
+Papercups|papercups|Intercom|papercups-io/papercups|https://papercups.io|support|チャットでの顧客対応。Elixir製。
+# 会計・請求書・経費
+Invoice Ninja|invoice-ninja|freee|invoiceninja/invoiceninja|https://www.invoiceninja.com|accounting|請求書の作成と送付、入金管理までを行う。日本語の請求書にも対応。
+Akaunting|akaunting|freee|akaunting/akaunting|https://akaunting.com|accounting|小規模事業者向けの会計。請求と経費を1つで管理する。
+SolidInvoice|solidinvoice|freee|SolidInvoice/SolidInvoice|https://solidinvoice.co|accounting|見積から請求までを作る。Symfony製。
+Crater|crater|freee|bytefury/crater|https://craterapp.com|accounting|請求書と経費の管理。見た目の整った帳票を作れる。
+Firefly III|firefly-iii|マネーフォワード|firefly-iii/firefly-iii|https://www.firefly-iii.org|accounting|家計と事業の入出金を管理する。仕訳を自動化できる。
+Actual Budget|actual|マネーフォワード|actualbudget/actual|https://actualbudget.org|accounting|ローカル優先の家計管理。同期サーバを自前で置ける。
+hledger|hledger|マネーフォワード|simonmichael/hledger|https://hledger.org|accounting|テキストファイルで帳簿を付ける。差分管理と相性が良い。
+GnuCash|gnucash|マネーフォワード|Gnucash/gnucash|https://www.gnucash.org|accounting|複式簿記の定番。確定申告にも使える。
+Beancount|beancount|マネーフォワード|beancount/beancount|https://beancount.github.io|accounting|テキストで書く複式簿記。集計と検証を自動化できる。
+Kill Bill|kill-bill|Stripe Billing|killbill/killbill|https://killbill.io|accounting|サブスクリプションの課金を管理する。
+Hyperswitch|hyperswitch|Stripe|juspay/hyperswitch|https://hyperswitch.io|accounting|複数の決済手段を1つのAPIで扱う。手数料の比較ができる。
+Kimai|kimai|King of Time|kimai/kimai|https://www.kimai.org|hr|作業時間を記録して請求に繋げる。案件ごとの集計ができる。
+Traggo|traggo|King of Time|traggo/server|https://traggo.net|hr|タグで時間を記録する。集計の自由度が高い。
+# 人事・採用・勤怠
+OrangeHRM|orangehrm|SmartHR|orangehrm/orangehrm|https://www.orangehrm.com|hr|従業員情報・勤怠・採用をまとめる。多言語対応。
+Horilla|horilla|SmartHR|horilla-opensource/horilla|https://www.horilla.com|hr|従業員情報と勤怠を管理する。Django製。
+OpenCATS|opencats|Herp|opcats/opencats|http://www.opencats.org|hr|採用の応募者を管理する。履歴書の取り込みができる。
+# 電子契約・法務・文書
+DocuSeal|docuseal|CloudSign|docusealco/docuseal|https://www.docuseal.com|legal|電子署名を自前で運用する。署名の経路を記録に残せる。
+OpenSign|opensign|CloudSign|OpenSignLabs/OpenSign|https://www.opensignlabs.com|legal|電子署名と文書の管理。署名者の順序を指定できる。
+LibreSign|libresign|CloudSign|LibreSign/libresign|https://libresign.github.io|legal|Nextcloud上で電子署名する。既存のファイル管理と統合できる。
+Documenso|documenso|DocuSign|documenso/documenso|https://documenso.com|legal|署名の依頼と追跡を行う。見た目を整えやすい。
+Docassemble|docassemble|CloudSign|jhpyle/docassemble|https://docassemble.org|legal|質問に答えると契約書が出来上がる仕組みを作る。
+Paperless-ngx|paperless-ngx|Adobe Acrobat|paperless-ngx/paperless-ngx|https://docs.paperless-ngx.com|documents|紙の書類を読み取って全文検索できる形で保管する。OCRを内蔵する。
+Papermerge|papermerge|Adobe Acrobat|ciur/papermerge|https://papermerge.com|documents|スキャンした書類を階層で整理する。OCRで本文を検索できる。
+PDFsam|pdfsam|Adobe Acrobat|torakiki/pdfsam|https://pdfsam.org|documents|PDFの結合・分割・並べ替えを行う。Java製のデスクトップ版。
+OCRmyPDF|ocrmypdf|Adobe Acrobat|ocrmypdf/OCRmyPDF|https://ocrmypdf.readthedocs.io|documents|PDFに文字情報を後から載せる。スキャン資料を検索可能にする。
+Docspell|docspell|Adobe Acrobat|eikek/docspell|https://docspell.org|documents|書類を自動で分類して保管する。タグ付けを支援する。
+# アンケート・フォーム・配信
+LimeSurvey|limesurvey|Typeform|LimeSurvey/LimeSurvey|https://www.limesurvey.org|marketing|本格的なアンケートを作る。分岐と集計が充実している。
+HeyForm|heyform|Typeform|heyform/heyform|https://heyform.net|marketing|会話形式のフォームを作る。回答率を上げやすい。
+SurveyJS|surveyjs|Typeform|surveyjs/survey-library|https://surveyjs.io|marketing|フォームをアプリに組み込む部品。自由に設計できる。
+OhMyForm|ohmyform|Google フォーム|ohmyform/ohmyform|https://ohmyform.com|marketing|フォームとアンケートを作る。回答を自前のDBに貯める。
+Mautic|mautic|HubSpot|mautic/mautic|https://www.mautic.org|marketing|見込み客の育成を自動化する。メール配信と計測を1つにする。
+Keila|keila|Mailchimp|pentacent/keila|https://www.keila.io|marketing|ニュースレターの配信と購読者管理。Elixir製で軽い。
+# EC・決済
+Medusa|medusa|Shopify|medusajs/medusa|https://medusajs.com|ecommerce|ヘッドレスECの基盤。フロントを自由に作れる。
+Saleor|saleor|Shopify|saleor/saleor|https://saleor.io|ecommerce|GraphQL APIを持つEC基盤。大規模な商品数に対応する。
+Bagisto|bagisto|Shopify|bagisto/bagisto|https://bagisto.com|ecommerce|Laravel製のEC。管理画面が日本語化されている。
+Sylius|sylius|Shopify|Sylius/Sylius|https://sylius.com|ecommerce|Symfony製のEC基盤。拡張の余地が大きい。
+Vendure|vendure|Shopify|vendure-ecommerce/vendure|https://vendure.io|ecommerce|TypeScript製のヘッドレスEC。プラグインで拡張する。
+WooCommerce|woocommerce|Shopify|woocommerce/woocommerce|https://woocommerce.com|ecommerce|WordPress上にECを構築する。導入実績が非常に多い。
+PrestaShop|prestashop|Shopify|PrestaShop/PrestaShop|https://www.prestashop.com|ecommerce|欧州で広く使われるEC。日本語の翻訳も用意されている。
+OpenCart|opencart|Shopify|opencart/opencart|https://www.opencart.com|ecommerce|多数の拡張機能を持つEC。PHP製で扱いやすい。
+EC-CUBE|ec-cube|Shopify|EC-CUBE/ec-cube|https://www.ec-cube.net|ecommerce|国内向けのEC基盤。日本の商習慣に合わせた機能を持つ。
+Shopware|shopware|Shopify|shopware/shopware|https://www.shopware.com|ecommerce|欧州発のEC基盤。B2Bの機能が充実している。
+Spree|spree|Shopify|spree/spree|https://spreecommerce.org|ecommerce|長く開発が続くEC基盤。Rails製。
+Magento|magento|Shopify|magento/magento2|https://business.adobe.com/products/magento/magento-commerce.html|ecommerce|大規模EC向け。商品数と店舗数が多い場合に選ばれる。

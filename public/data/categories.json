@@ -1,0 +1,170 @@
+[
+ {
+  "slug": "note-docs",
+  "nameJa": "ノート・ドキュメント",
+  "ledeJa": "社内Wikiやドキュメント共有を自前で運用するためのツール。",
+  "count": 22
+ },
+ {
+  "slug": "communication",
+  "nameJa": "チャット・コミュニケーション",
+  "ledeJa": "SlackやTeamsの代わりに、社内チャットを自社サーバで動かす。",
+  "count": 8
+ },
+ {
+  "slug": "project",
+  "nameJa": "プロジェクト管理",
+  "ledeJa": "タスク管理・課題管理を自前で。日本のチームの運用にも合わせやすい。",
+  "count": 10
+ },
+ {
+  "slug": "database",
+  "nameJa": "データベース・表作成",
+  "ledeJa": "Airtableのような表形式のデータ管理を、社内に置く。",
+  "count": 9
+ },
+ {
+  "slug": "cms",
+  "nameJa": "CMS・コンテンツ管理",
+  "ledeJa": "コーポレートサイトやブログの裏側を自前で持つ。",
+  "count": 2
+ },
+ {
+  "slug": "analytics",
+  "nameJa": "アクセス解析・プロダクト分析",
+  "ledeJa": "Cookieに依存せず、計測データを自社に留める。",
+  "count": 11
+ },
+ {
+  "slug": "observability",
+  "nameJa": "監視・エラー追跡",
+  "ledeJa": "障害の検知と原因追跡を、外部サービスに依存せず行う。",
+  "count": 16
+ },
+ {
+  "slug": "security",
+  "nameJa": "認証・パスワード管理",
+  "ledeJa": "ID基盤とパスワード保管庫。ここは自前運用の効果が大きい領域。",
+  "count": 25
+ },
+ {
+  "slug": "devtools",
+  "nameJa": "開発・デプロイ基盤",
+  "ledeJa": "Gitホスティング、デプロイ、バックエンド。開発の土台を自前で。",
+  "count": 44
+ },
+ {
+  "slug": "automation",
+  "nameJa": "業務自動化",
+  "ledeJa": "Zapier的な連携を、実行回数を気にせず使う。",
+  "count": 12
+ },
+ {
+  "slug": "files",
+  "nameJa": "ファイル管理・写真",
+  "ledeJa": "クラウドストレージと写真のバックアップを、自分のディスクに。",
+  "count": 18
+ },
+ {
+  "slug": "design",
+  "nameJa": "デザイン・図解",
+  "ledeJa": "ホワイトボードとデザインツール。共同編集を自前で。",
+  "count": 13
+ },
+ {
+  "slug": "nocode",
+  "nameJa": "ローコード・BI",
+  "ledeJa": "社内ツールとダッシュボードを、少ない工数で内製する。",
+  "count": 5
+ },
+ {
+  "slug": "marketing",
+  "nameJa": "マーケティング・フォーム",
+  "ledeJa": "アンケート、メール配信、流入計測まわり。",
+  "count": 8
+ },
+ {
+  "slug": "support",
+  "nameJa": "カスタマーサポート",
+  "ledeJa": "問い合わせ対応を、外部SaaSに預けず運用する。",
+  "count": 13
+ },
+ {
+  "slug": "scheduling",
+  "nameJa": "予約・スケジュール",
+  "ledeJa": "面談予約の受付を自前で。ドメインも自分のものにできる。",
+  "count": 1
+ },
+ {
+  "slug": "crm",
+  "nameJa": "CRM・営業",
+  "ledeJa": "顧客情報は最も外に出したくないデータ。自前運用の価値が大きい。",
+  "count": 5
+ },
+ {
+  "slug": "documents",
+  "nameJa": "PDF・文書処理",
+  "ledeJa": "PDFの結合・変換・編集を、外部サービスに送らずに処理する。",
+  "count": 8
+ },
+ {
+  "slug": "office",
+  "nameJa": "オフィス・グループウェア",
+  "ledeJa": "文書作成や統合業務の基盤を自前で持つ。既存のSaaSと併用もしやすい。",
+  "count": 6
+ },
+ {
+  "slug": "email",
+  "nameJa": "メール",
+  "ledeJa": "メールサーバと配信を自前で運用する。ドメインと送信履歴を自分で管理できる。",
+  "count": 10
+ },
+ {
+  "slug": "hr",
+  "nameJa": "人事・勤怠・採用",
+  "ledeJa": "従業員情報、勤怠、採用の管理を社内に置く。",
+  "count": 4
+ },
+ {
+  "slug": "accounting",
+  "nameJa": "会計・請求書・経費",
+  "ledeJa": "請求書の発行や入出金の管理を、外部サービスに預けずに行う。",
+  "count": 11
+ },
+ {
+  "slug": "legal",
+  "nameJa": "電子契約・法務",
+  "ledeJa": "契約の締結と書類の保管を自前で運用する。",
+  "count": 5
+ },
+ {
+  "slug": "backup",
+  "nameJa": "バックアップ",
+  "ledeJa": "世代管理と復元を自分でコントロールする。",
+  "count": 5
+ },
+ {
+  "slug": "ai",
+  "nameJa": "AI・LLM基盤",
+  "ledeJa": "生成AIを自前のサーバで動かす。入力内容を外部に送らずに使える。",
+  "count": 34
+ },
+ {
+  "slug": "video",
+  "nameJa": "ビデオ会議・配信",
+  "ledeJa": "会議と配信の基盤を自前で持つ。参加者数の課金から離れられる。",
+  "count": 17
+ },
+ {
+  "slug": "ecommerce",
+  "nameJa": "EC・決済",
+  "ledeJa": "自社サイトでの販売と決済を、手数料に縛られずに構築する。",
+  "count": 12
+ },
+ {
+  "slug": "translation",
+  "nameJa": "翻訳",
+  "ledeJa": "機密文書を外部APIへ送らずに翻訳する。",
+  "count": 2
+ }
+]

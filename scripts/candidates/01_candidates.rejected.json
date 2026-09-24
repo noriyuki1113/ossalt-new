@@ -1,0 +1,67 @@
+[
+ {
+  "name": "UrBackup",
+  "id": "urbackup",
+  "competitor": "Acronis",
+  "gh": "uroni/urbackup-server",
+  "ghOriginal": "uroni/urbackup-server",
+  "url": "https://www.urbackup.org",
+  "urlVerified": true,
+  "urlNote": "200",
+  "category": "backup",
+  "descJa": "Windowsクライアントのイメージとファイルをまとめて保存する。",
+  "reason": "リポジトリ HTTP 404"
+ },
+ {
+  "name": "Forgejo",
+  "id": "forgejo",
+  "competitor": "GitHub",
+  "gh": "forgejo/forgejo",
+  "ghOriginal": "forgejo/forgejo",
+  "url": "https://forgejo.org",
+  "urlVerified": true,
+  "urlNote": "200",
+  "category": "devtools",
+  "descJa": "Giteaから分岐したGitホスティング。コミュニティ主導で開発される。",
+  "reason": "リポジトリ HTTP 404"
+ },
+ {
+  "name": "GitLab",
+  "id": "gitlab",
+  "competitor": "GitHub",
+  "gh": "gitlab-org/gitlab",
+  "ghOriginal": "gitlab-org/gitlab",
+  "url": "https://about.gitlab.com",
+  "urlVerified": true,
+  "urlNote": "200",
+  "category": "devtools",
+  "descJa": "課題管理からCI/CDまでを1つにまとめる。オンプレ版がある。",
+  "reason": "リポジトリ HTTP 404"
+ },
+ {
+  "name": "Vtiger",
+  "id": "vtiger",
+  "competitor": "Salesforce",
+  "gh": "vtiger/vtigercrm",
+  "ghOriginal": "vtiger/vtigercrm",
+  "url": "https://www.vtiger.com",
+  "urlVerified": true,
+  "urlNote": "200",
+  "category": "crm",
+  "descJa": "顧客管理と見積・請求までを1つにする。",
+  "reason": "リポジトリ HTTP 404"
+ },
+ {
+  "name": "OpenCATS",
+  "id": "opencats",
+  "competitor": "Herp",
+  "gh": "opcats/opencats",
+  "ghOriginal": "opcats/opencats",
+  "url": "http://www.opencats.org",
+  "urlVerified": true,
+  "urlNote": "301",
+  "category": "hr",
+  "descJa": "採用の応募者を管理する。履歴書の取り込みができる。",
+  "reason": "リポジトリ HTTP 404"
+ }
+]

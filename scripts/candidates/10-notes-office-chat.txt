@@ -1,0 +1,51 @@
+# 形式: name|id|competitor|owner/repo|official_url|category|description_ja
+# ノート・ドキュメント / メモ（Evernote・Obsidian・Notion系）
+Joplin|joplin|Evernote|laurent22/joplin|https://joplinapp.org|note-docs|端末間で同期できるメモアプリ。同期サーバを自前で置けるため、内容を外部サービスに預けずに使える。
+Logseq|logseq|Obsidian|logseq/logseq|https://logseq.com|note-docs|アウトライナー形式のノート。データはローカルのMarkdownファイルとして残る。
+Trilium|trilium|Obsidian|TriliumNext/Trilium|https://trilium.rocks|note-docs|階層構造で知識を積み上げる個人向けノート。自前の同期サーバを置ける。
+SiYuan|siyuan|Notion|siyuan-note/siyuan|https://b3log.org/siyuan|note-docs|ブロック単位で編集するノート。ローカル動作とDockerでのセルフホストに対応。
+Memos|memos|Flomo|usememos/memos|https://www.usememos.com|note-docs|思いつきを素早く残す軽量メモ。Dockerで数分で立ち上がる。
+BookStack|bookstack|Confluence|BookStackApp/BookStack|https://www.bookstackapp.com|note-docs|書籍のような階層でマニュアルを作るWiki。社内手順書の置き場に向く。
+Wiki.js|wikijs|Confluence|requarks/wiki|https://js.wiki|note-docs|Markdownで書けるWiki。細かい権限設定と多言語対応を備える。
+MediaWiki|mediawiki|Confluence|wikimedia/mediawiki|https://www.mediawiki.org|note-docs|Wikipediaと同じエンジン。大規模な文書基盤を自前で運用できる。
+Anytype|anytype|Notion|anyproto/anytype-ts|https://anytype.io|note-docs|ローカル優先のノート。データは端末に保存され、端末間で同期される。
+HedgeDoc|hedgedoc|Google Docs|hedgedoc/hedgedoc|https://hedgedoc.org|note-docs|Markdownで共同編集できるメモ。URLを共有するだけで同時編集できる。
+Etherpad|etherpad|Google Docs|ether/etherpad-lite|https://etherpad.org|note-docs|動作の軽い共同編集エディタ。会議中の議事録に使いやすい。
+CryptPad|cryptpad|Google Docs|cryptpad/cryptpad|https://cryptpad.fr|note-docs|文書・表計算・スライドを暗号化したまま共同編集する。サーバ側でも中身を読めない。
+Notesnook|notesnook|Evernote|streetwriters/notesnook|https://notesnook.com|note-docs|暗号化を前提としたノート。同期サーバを自前で立てられる。
+Standard Notes|standard-notes|Evernote|standardnotes/app|https://standardnotes.com|note-docs|長期保存を重視したメモ。内容を平文のテキストとして取り出せる。
+SilverBullet|silverbullet|Obsidian|silverbulletmd/silverbullet|https://silverbullet.md|note-docs|Markdownをそのままデータベースとして扱うノート。ブラウザから使う。
+# オフィス・グループウェア・統合業務
+ONLYOFFICE|onlyoffice|Microsoft 365|ONLYOFFICE/DocumentServer|https://www.onlyoffice.com|office|Word・Excel・PowerPoint互換の編集をブラウザで提供。Nextcloudと連携できる。
+Collabora Online|collabora-online|Microsoft 365|CollaboraOnline/online|https://www.collaboraonline.com|office|LibreOfficeをサーバ側で動かし、ブラウザ上で共同編集する。
+Odoo|odoo|Salesforce|odoo/odoo|https://www.odoo.com|office|CRM・会計・在庫・製造・人事を1つにまとめた業務基盤。使う機能だけ導入できる。
+ERPNext|erpnext|Salesforce|frappe/erpnext|https://frappe.io/erpnext|office|会計・在庫・製造・人事を統合したERP。日本語の翻訳も用意されている。
+Radicale|radicale|Google Calendar|Kozea/Radicale|https://radicale.org|office|CalDAV/CardDAVの軽量サーバ。スマホ標準のカレンダー・連絡先から接続できる。
+Baikal|baikal|Google Calendar|sabre-io/Baikal|https://sabre.io/baikal|office|カレンダーと連絡先の同期サーバ。既存のメールサーバに足せる。
+# チャット・コミュニケーション
+Zulip|zulip|Slack|zulip/zulip|https://zulip.com|communication|話題ごとにスレッドが分かれるチャット。会話が流れず、非同期の議論に向く。
+Element|element|Slack|element-hq/element-web|https://element.io|communication|Matrixプロトコルのチャットクライアント。自前サーバ同士を連携できる。
+Synapse|synapse|Slack|element-hq/synapse|https://element.io|communication|Matrixのサーバ実装。社内チャット基盤の中核になる。
+Revolt|revolt|Discord|revoltchat/revite|https://revolt.chat|communication|Discordに近い操作感のチャット。サーバを自前で立てられる。
+Spacebar|spacebar|Discord|spacebarchat/server|https://spacebar.chat|communication|Discord互換APIを実装したチャットサーバ。既存クライアントが使える。
+Nextcloud Talk|nextcloud-talk|Microsoft Teams|nextcloud/spreed|https://nextcloud.com/talk|communication|Nextcloud上のビデオ会議とチャット。既存のNextcloudに追加できる。
+Zammad|zammad|Zendesk|zammad/zammad|https://zammad.com|support|問い合わせをメール・チャット・電話から一元管理する。権限設定が細かい。
+# メール
+mailcow|mailcow|Gmail|mailcow/mailcow-dockerized|https://mailcow.email|email|メールサーバ一式をDockerで構築する。管理画面とスパム対策が付属する。
+Mailu|mailu|Gmail|Mailu/Mailu|https://mailu.io|email|メールサーバ一式をコンテナで提供。比較的少ない手順で運用に入れる。
+Docker Mailserver|docker-mailserver|Gmail|docker-mailserver/docker-mailserver|https://docker-mailserver.github.io/docker-mailserver/|email|PostfixとDovecotをまとめたメールサーバ。設定ファイルとコマンドで管理する。
+Stalwart|stalwart|Gmail|stalwartlabs/stalwart|https://stalw.art|email|Rust製のメールサーバ。IMAP・JMAP・SMTPを1つのバイナリで提供する。
+Roundcube|roundcube|Gmail|roundcube/roundcubemail|https://roundcube.net|email|ブラウザで使うメールクライアント。既存のメールサーバに後付けできる。
+Mailspring|mailspring|Gmail|Foundry376/Mailspring|https://getmailspring.com|email|デスクトップのメールクライアント。複数アカウントを1つにまとめられる。
+Mailpit|mailpit|Mailtrap|axllent/mailpit|https://mailpit.axllent.org|email|開発中のメールを捕まえて確認するツール。送信内容をブラウザで見られる。
+MailHog|mailhog|Mailtrap|mailhog/MailHog|https://github.com/mailhog/MailHog|email|テスト用のSMTPサーバ。送信したメールをブラウザで確認できる。
+Postal|postal|SendGrid|postalserver/postal|https://docs.postalserver.io|email|自前で運用するメール配信基盤。送信数の課金を気にせず配信できる。
+Mailtrain|mailtrain|Mailchimp|Mailtrain-org/mailtrain|https://mailtrain.org|email|セルフホストの一斉配信ツール。購読者リストとテンプレートを管理する。
+# プロジェクト管理・タスク
+OpenProject|openproject|Jira|opf/openproject|https://www.openproject.org|project|ガントチャートと課題管理を備えたプロジェクト管理。進捗の可視化が強い。
+Wekan|wekan|Trello|wekan/wekan|https://wekan.github.io|project|カンバン方式のタスク管理。日本語表示に対応し、Meteor製。
+Planka|planka|Trello|plankanban/planka|https://planka.app|project|Trelloに近い操作感のカンバン。複数人の操作がリアルタイムで反映される。
+Kanboard|kanboard|Trello|kanboard/kanboard|https://kanboard.org|project|軽量なカンバン。PHPだけで動くため、小さなサーバでも扱える。
+Leantime|leantime|Basecamp|Leantime/leantime|https://leantime.io|project|戦略から実行までを1つにするプロジェクト管理。時間記録も含む。
+Focalboard|focalboard|Trello|mattermost/focalboard|https://www.focalboard.com|project|カンバンと表形式でタスクを管理する。Mattermostと統合できる。
+Trac|trac|Jira|edgewall/trac|https://trac.edgewall.org|project|課題管理とWikiを組み合わせた老舗。シンプルで長期運用に向く。

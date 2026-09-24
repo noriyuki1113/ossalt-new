@@ -1,0 +1,53 @@
+# 形式: name|id|competitor|owner/repo|official_url|category|description_ja
+# AI・LLM基盤
+Open WebUI|open-webui|ChatGPT|open-webui/open-webui|https://openwebui.com|ai|自前のLLMに接続するチャット画面。権限管理と文書の取り込みを備える。
+LibreChat|librechat|ChatGPT|danny-avila/LibreChat|https://www.librechat.ai|ai|複数のモデルを1つの画面で使う。会話の保存先を自分で選べる。
+LobeChat|lobechat|ChatGPT|lobehub/lobe-chat|https://lobehub.com|ai|モデルを切り替えて使えるチャット。プラグインで機能を足せる。
+AnythingLLM|anythingllm|ChatGPT with files|Mintplex-Labs/anything-llm|https://anythingllm.com|ai|手元の文書を読み込ませて質問する。データを外に出さずに使える。
+Jan|jan|ChatGPT|menloresearch/jan|https://jan.ai|ai|端末内でモデルを動かすデスクトップアプリ。通信なしで使える。
+Ollama|ollama|ChatGPT|ollama/ollama|https://ollama.com|ai|ローカルでモデルを動かす最も簡単な方法。コマンド1つで開始できる。
+llama.cpp|llama-cpp|ChatGPT API|ggml-org/llama.cpp|https://github.com/ggml-org/llama.cpp|ai|量子化してCPUでもモデルを動かす。多くのツールの土台になる。
+LocalAI|localai|OpenAI API|mudler/LocalAI|https://localai.io|ai|OpenAI互換のAPIをローカルで提供する。
+vLLM|vllm|OpenAI API|vllm-project/vllm|https://docs.vllm.ai|ai|GPUで大量のリクエストをさばく推論サーバ。応答が速い。
+GPT4All|gpt4all|ChatGPT|nomic-ai/gpt4all|https://gpt4all.io|ai|端末内で動くチャット。CPUだけでも実用的な速度が出る。
+Dify|dify|ChatGPT Plus|langgenius/dify|https://dify.ai|ai|エージェントとRAGを画面で組む。運用に必要な管理機能が揃う。
+Flowise|flowise|ChatGPT Plus|FlowiseAI/Flowise|https://flowiseai.com|ai|線で繋いでLLMの処理を組む。試作に強い。
+Langflow|langflow|ChatGPT Plus|langflow-ai/langflow|https://www.langflow.org|ai|視覚的にLLMアプリを組む。Pythonで拡張できる。
+RAGFlow|ragflow|ChatGPT Plus|infiniflow/ragflow|https://ragflow.io|ai|文書を読み込ませるRAGに特化。PDFの解析精度が高い。
+Khoj|khoj|ChatGPT Plus|khoj-ai/khoj|https://khoj.dev|ai|自分の文書とWebを横断して調べる。自前で運用できる。
+Quivr|quivr|ChatGPT Plus|QuivrHQ/quivr|https://quivr.com|ai|社内文書に答えるアシスタントを作る。
+PrivateGPT|private-gpt|ChatGPT Plus|zylon-ai/private-gpt|https://docs.privategpt.dev|ai|完全にローカルで動く文書Q&A。外部へ一切送信しない。
+Whisper|whisper|Notta|openai/whisper|https://github.com/openai/whisper|ai|音声を文字にする。日本語も高い精度で認識する。
+faster-whisper|faster-whisper|Notta|SYSTRAN/faster-whisper|https://github.com/SYSTRAN/faster-whisper|ai|Whisperを高速化した実装。実用的な速度で文字起こしする。
+WhisperX|whisperx|Notta|m-bain/whisperX|https://github.com/m-bain/whisperX|ai|話者ごとの時刻を付けて文字起こしする。議事録の作成に向く。
+whisper.cpp|whisper-cpp|Notta|ggml-org/whisper.cpp|https://github.com/ggml-org/whisper.cpp|ai|C++で動く文字起こし。GPUが無くても動く。
+Tesseract|tesseract|Adobe Acrobat OCR|tesseract-ocr/tesseract|https://tesseract-ocr.github.io|documents|画像から文字を取り出す。日本語の学習データも配布されている。
+PaddleOCR|paddleocr|Adobe Acrobat OCR|PaddlePaddle/PaddleOCR|https://www.paddleocr.ai|documents|多言語の文字認識。レイアウト解析もできる。
+Stable Diffusion WebUI|stable-diffusion-webui|Adobe Firefly|AUTOMATIC1111/stable-diffusion-webui|https://github.com/AUTOMATIC1111/stable-diffusion-webui|ai|画像生成をローカルで動かす定番の画面。
+ComfyUI|comfyui|Adobe Firefly|comfyanonymous/ComfyUI|https://www.comfy.org|ai|処理を線で繋いで画像を生成する。細かい制御ができる。
+InvokeAI|invokeai|Adobe Firefly|invoke-ai/InvokeAI|https://invoke-community-edition.invokeai.org|ai|画像生成の作業環境。商用利用を意識した構成。
+Qdrant|qdrant|Pinecone|qdrant/qdrant|https://qdrant.tech|ai|ベクトル検索の専用DB。Rust製で高速。
+Weaviate|weaviate|Pinecone|weaviate/weaviate|https://weaviate.io|ai|ベクトル検索と全文検索を組み合わせる。
+Chroma|chroma|Pinecone|chroma-core/chroma|https://www.trychroma.com|ai|手軽に使えるベクトルDB。試作段階に向く。
+Milvus|milvus|Pinecone|milvus-io/milvus|https://milvus.io|ai|大規模なベクトル検索。分散構成を取れる。
+pgvector|pgvector|Pinecone|pgvector/pgvector|https://github.com/pgvector/pgvector|ai|PostgreSQLでベクトル検索を行う拡張。既存のDBに足せる。
+Langfuse|langfuse|LangSmith|langfuse/langfuse|https://langfuse.com|ai|LLMの呼び出しを記録して改善する。費用の把握もできる。
+Phoenix|arize-phoenix|LangSmith|Arize-ai/phoenix|https://phoenix.arize.com|ai|LLMの応答を評価・分析する。RAGの精度検証に向く。
+Helicone|helicone|LangSmith|Helicone/helicone|https://www.helicone.ai|ai|LLMの利用状況を記録する。プロキシとして挟むだけで使える。
+LibreTranslate|libretranslate|DeepL|LibreTranslate/LibreTranslate|https://libretranslate.com|translation|自前で動かす機械翻訳。外部APIに文章を送らずに翻訳できる。
+Argos Translate|argos-translate|DeepL|argosopentech/argos-translate|https://www.argosopentech.com|translation|オフラインで動く翻訳。モデルを追加して言語を増やす。
+Piper|piper|Voicepeak|rhasspy/piper|https://github.com/rhasspy/piper|ai|ローカルで動く音声合成。日本語の音声も生成できる。
+Kokoro|kokoro|Voicepeak|hexgrad/kokoro|https://huggingface.co/hexgrad/Kokoro-82M|ai|軽量な音声合成モデル。少ない資源で自然な読み上げをする。
+# ビデオ会議・配信
+Jitsi Meet|jitsi|Zoom|jitsi/jitsi-meet|https://jitsi.org|video|ブラウザだけで使えるビデオ会議。サーバを自前で立てられる。
+BigBlueButton|bigbluebutton|Zoom|bigbluebutton/bigbluebutton|https://bigbluebutton.org|video|授業向けの機能を持つ会議システム。板書と録画を備える。
+LiveKit|livekit|Zoom|livekit/livekit|https://livekit.io|video|音声と映像の配信基盤。アプリに組み込んで使う。
+OpenVidu|openvidu|Zoom|OpenVidu/openvidu|https://openvidu.io|video|WebRTCの会議機能をアプリに組み込む。
+Galène|galene|Zoom|jech/galene|https://galene.org|video|資源消費の少ない会議サーバ。少人数の打ち合わせに向く。
+Owncast|owncast|Twitch|owncast/owncast|https://owncast.online|video|自前でライブ配信する。視聴数の制限を気にせず配信できる。
+PeerTube|peertube|YouTube|Chocobozzz/PeerTube|https://joinpeertube.org|video|自前の動画共有サイトを立てる。負荷を分散できる。
+MediaCMS|mediacms|Vimeo|mediacms-io/mediacms|https://mediacms.io|video|社内の動画ポータルを作る。Django製。
+RustDesk|rustdesk|TeamViewer|rustdesk/rustdesk|https://rustdesk.com|support|自前の中継サーバで遠隔操作する。外部サービスに依存しない。
+MeshCentral|meshcentral|TeamViewer|Ylianst/MeshCentral|https://meshcentral.com|support|端末をまとめて遠隔管理する。資産管理と画面操作を兼ねる。
+Apache Guacamole|guacamole|TeamViewer|apache/guacamole-server|https://guacamole.apache.org|support|ブラウザからRDPやSSHへ接続する。踏み台の代替になる。
+TigerVNC|tigervnc|TeamViewer|TigerVNC/tigervnc|https://tigervnc.org|support|画面を共有するVNCサーバ。多数の環境で動く。

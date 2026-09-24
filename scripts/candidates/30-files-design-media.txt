@@ -1,0 +1,46 @@
+# 形式: name|id|competitor|owner/repo|official_url|category|description_ja
+# ファイル管理・写真・バックアップ
+Seafile|seafile|Dropbox|haiwen/seafile|https://www.seafile.com|files|同期の速さに定評のあるファイル共有。履歴とライブラリ単位の権限を持つ。
+Syncthing|syncthing|Dropbox|syncthing/syncthing|https://syncthing.net|files|端末間で直接ファイルを同期する。中央のサーバを必要としない。
+ownCloud|owncloud|Google Drive|owncloud/core|https://owncloud.com|files|オンプレ前提のファイル共有。既存の認証基盤と統合しやすい。
+Filebrowser|filebrowser|Google Drive|filebrowser/filebrowser|https://filebrowser.org|files|サーバ上のフォルダをブラウザで扱えるようにする。導入が軽い。
+Filestash|filestash|Google Drive|mickael-kerjean/filestash|https://www.filestash.app|files|各種ストレージを1つの画面から扱う。S3やFTPにも接続できる。
+Pydio Cells|pydio|Dropbox|pydio/cells|https://pydio.com|files|大規模向けのファイル共有基盤。共有リンクと権限を細かく設定できる。
+rclone|rclone|GoodSync|rclone/rclone|https://rclone.org|files|多数のクラウド間でファイルを同期する。移行作業の標準的な道具。
+PhotoPrism|photoprism|Google Photos|photoprism/photoprism|https://photoprism.app|files|AIで写真を分類するセルフホストの写真管理。地図と人物で探せる。
+LibrePhotos|librephotos|Google Photos|LibrePhotos/librephotos|https://docs.librephotos.com|files|顔認識と自動タグ付けを行う写真管理。Django製。
+Ente|ente|Google Photos|ente-io/ente|https://ente.io|files|暗号化を前提とした写真の保存。端末側で暗号化して預ける。
+Piwigo|piwigo|Flickr|Piwigo/piwigo|https://piwigo.org|files|アルバム単位で写真を公開する。ギャラリーサイトの作成にも使える。
+Jellyfin|jellyfin|Netflix|jellyfin/jellyfin|https://jellyfin.org|files|自前のメディアサーバ。動画と音楽を端末に配信する。
+Navidrome|navidrome|Spotify|navidrome/navidrome|https://www.navidrome.org|files|自前の音楽ストリーミング。スマホのアプリから聴ける。
+Audiobookshelf|audiobookshelf|Audible|advplyr/audiobookshelf|https://www.audiobookshelf.org|files|オーディオブックとポッドキャストの管理。再生位置を端末間で同期する。
+Send|send|Firefox Send|timvisee/send|https://github.com/timvisee/send|files|有効期限つきでファイルを渡す。終了したFirefox Sendの後継。
+PsiTransfer|psitransfer|WeTransfer|psi-4ward/psitransfer|https://psi.4ward.tech|files|パスワード付きで大容量ファイルを渡す。アップロード先も自前で持てる。
+Restic|restic|Backblaze|restic/restic|https://restic.net|backup|重複排除と暗号化に対応したバックアップ。各種クラウドへ直接書ける。
+BorgBackup|borg|Backblaze|borgbackup/borg|https://www.borgbackup.org|backup|増分バックアップの定番。帯域と容量を抑えて世代を保つ。
+Kopia|kopia|Backblaze|kopia/kopia|https://kopia.io|backup|暗号化されたスナップショットを取る。GUIとCLIの両方がある。
+Duplicati|duplicati|Backblaze|duplicati/duplicati|https://www.duplicati.com|backup|暗号化したバックアップをクラウドへ送る。ブラウザから設定する。
+UrBackup|urbackup|Acronis|uroni/urbackup-server|https://www.urbackup.org|backup|Windowsクライアントのイメージとファイルをまとめて保存する。
+Velero|velero|Acronis|vmware-tanzu/velero|https://velero.io|backup|Kubernetesの資源をバックアップ・復元する。
+# デザイン・図解・メディア編集
+tldraw|tldraw|Miro|tldraw/tldraw|https://tldraw.dev|design|軽快に動くホワイトボード。Webアプリに組み込める部品としても使える。
+draw.io|drawio|Visio|jgraph/drawio|https://www.drawio.com|design|作図の定番。ファイルは端末に保存され、ブラウザだけで完結する。
+WBO|wbo|Miro|lovasoa/whitebophir|https://wbo.ophir.dev|design|共同編集できる白板。サーバを立てるだけで使える。
+Plasmic|plasmic|Figma|plasmicapp/plasmic|https://www.plasmic.app|design|画面を視覚的に作り、そのままコードとして出力する。
+Penpot have.
+GIMP|gimp|Photoshop|GNOME/gimp|https://www.gimp.org|design|画像編集の定番。レイヤーとフィルタを備え、業務利用できる。
+Krita|krita|Photoshop|KDE/krita|https://krita.org|design|絵を描くことに特化した画像編集。筆圧とブラシを細かく設定できる。
+Inkscape|inkscape|Illustrator|inkscape/inkscape|https://inkscape.org|design|ベクター画像の編集。SVGをそのまま扱える。
+Blender|blender|Maya|blender/blender|https://www.blender.org|design|3D制作の統合環境。モデリングから映像まで一貫して作れる。
+OBS Studio|obs|Camtasia|obsproject/obs-studio|https://obsproject.com|video|画面と音声を録画・配信する。配信の事実上の標準。
+Shotcut|shotcut|Adobe Premiere|mltframework/shotcut|https://shotcut.org|video|動画編集の入門に向く。形式の制約が少ない。
+Kdenlive|kdenlive|Adobe Premiere|KDE/kdenlive|https://kdenlive.org|video|多機能な動画編集。マルチトラックの編集ができる。
+OpenShot|openshot|Adobe Premiere|OpenShot/openshot-qt|https://www.openshot.org|video|操作が分かりやすい動画編集。日本語表示に対応する。
+LosslessCut|lossless-cut|Adobe Premiere|mifi/lossless-cut|https://github.com/mifi/lossless-cut|video|再エンコードせずに動画を切り出す。画質を落とさず高速。
+HandBrake|handbrake|Adobe Media Encoder|HandBrake/HandBrake|https://handbrake.fr|video|動画を各種形式へ変換する。プリセットが豊富。
+FFmpeg|ffmpeg|Adobe Media Encoder|FFmpeg/FFmpeg|https://ffmpeg.org|video|動画と音声の変換を担う基盤。ほぼ全てのツールが内部で使う。
+Audacity|audacity|Adobe Audition|audacity/audacity|https://www.audacityteam.org|video|音声の録音と編集。ノイズ除去を備える。
+ShareX|sharex|Snagit|ShareX/ShareX|https://getsharex.com|design|Windowsの画面撮影と共有。作業を自動化できる。
+Flameshot|flameshot|Snagit|flameshot-org/flameshot|https://flameshot.org|design|範囲を選んで注釈を付けるスクリーンショット。Linuxで使いやすい。
+Greenshot|greenshot|Snagit|greenshot/greenshot|https://getgreenshot.org|design|軽量なスクリーンショット。撮影後の編集が速い。
+Cap|cap|Loom|CapSoftware/Cap|https://cap.so|video|画面録画と共有。録画をそのまま預けず自前で持てる。

@@ -1,0 +1,59 @@
+# 形式: name|id|competitor|owner/repo|official_url|category|description_ja
+# 開発・デプロイ・インフラ
+Gogs|gogs|GitHub|gogs/gogs|https://gogs.io|devtools|軽量なGitホスティング。1つのバイナリで動作し、資源の少ないサーバでも動く。
+Forgejo|forgejo|GitHub|forgejo/forgejo|https://forgejo.org|devtools|Giteaから分岐したGitホスティング。コミュニティ主導で開発される。
+OneDev|onedev|GitHub|theonedev/onedev|https://onedev.io|devtools|GitホスティングとCIを1つにした基盤。コード検索が強力。
+GitLab|gitlab|GitHub|gitlab-org/gitlab|https://about.gitlab.com|devtools|課題管理からCI/CDまでを1つにまとめる。オンプレ版がある。
+Dokploy|dokploy|Vercel|Dokploy/dokploy|https://dokploy.com|devtools|Paas風のデプロイ基盤を自前で持つ。DockerとGitから配備できる。
+CapRover|caprover|Heroku|caprover/caprover|https://caprover.com|devtools|数クリックでアプリを配備する。管理画面つきのPaaS。
+Dokku|dokku|Heroku|dokku/dokku|https://dokku.com|devtools|Git pushでアプリを配備する。小さなVPSでも動く。
+Kamal|kamal|Heroku|basecamp/kamal|https://kamal-deploy.org|devtools|コンテナをそのままサーバへ配備する。構成が単純で見通しがよい。
+Woodpecker CI|woodpecker|CircleCI|woodpecker-ci/woodpecker|https://woodpecker-ci.org|devtools|軽量なCI。パイプラインをYAMLで定義する。
+Drone|drone|CircleCI|harness/drone|https://www.drone.io|devtools|コンテナ前提のCI/CD。リポジトリ単位で設定する。
+Jenkins|jenkins|CircleCI|jenkinsci/jenkins|https://www.jenkins.io|devtools|老舗のCI。プラグインでほぼ何でもできる。
+Argo CD|argo-cd|CircleCI|argoproj/argo-cd|https://argo-cd.readthedocs.io|devtools|Gitの状態をKubernetesへ反映し続ける。宣言的な配備に向く。
+Tekton|tekton|CircleCI|tektoncd/pipeline|https://tekton.dev|devtools|Kubernetes上でCI/CDを組む。部品を組み合わせて作る。
+Appwrite|appwrite|Firebase|appwrite/appwrite|https://appwrite.io|devtools|認証・DB・ストレージ・関数をまとめたバックエンド基盤。
+PocketBase|pocketbase|Firebase|pocketbase/pocketbase|https://pocketbase.io|devtools|1つのバイナリで完結するバックエンド。管理画面が付属する。
+Nhost|nhost|Firebase|nhost/nhost|https://nhost.io|devtools|PostgreSQLとGraphQLを軸にしたバックエンド基盤。
+Parse Platform|parse|Firebase|parse-community/parse-server|https://parseplatform.org|devtools|モバイルアプリ向けのバックエンド。SDKが各言語に揃う。
+Bruno|bruno|Postman|usebruno/bruno|https://www.usebruno.com|devtools|APIのリクエストをファイルで管理する。クラウドに依存しない。
+Insomnia|insomnia|Postman|Kong/insomnia|https://insomnia.rest|devtools|APIの設計と検証を行う。GraphQLにも対応する。
+Kong|kong|AWS API Gateway|Kong/kong|https://konghq.com|devtools|APIゲートウェイの定番。プラグインで機能を足せる。
+Traefik|traefik|AWS API Gateway|traefik/traefik|https://traefik.io|devtools|コンテナを検知して自動で経路を設定するリバースプロキシ。
+Apache APISIX|apisix|AWS API Gateway|apache/apisix|https://apisix.apache.org|devtools|高性能なAPIゲートウェイ。動的な設定変更ができる。
+Meilisearch|meilisearch|Algolia|meilisearch/meilisearch|https://www.meilisearch.com|devtools|日本語も扱える全文検索。導入が軽く、誤入力に強い。
+Typesense|typesense|Algolia|typesense/typesense|https://typesense.org|devtools|高速な全文検索。ベクトル検索も組み合わせられる。
+OpenSearch|opensearch|Elasticsearch|opensearch-project/OpenSearch|https://opensearch.org|devtools|Apacheライセンスの検索基盤。Elasticsearchから分岐した。
+Elasticsearch|elasticsearch|OpenSearch|elastic/elasticsearch|https://www.elastic.co|devtools|全文検索の定番。ログ検索にも使われる。
+Portainer|portainer|Docker Desktop|portainer/portainer|https://www.portainer.io|devtools|DockerとKubernetesを画面で操作する。現場での運用が楽になる。
+Rancher Desktop|rancher-desktop|Docker Desktop|rancher-sandbox/rancher-desktop|https://rancherdesktop.io|devtools|ローカルでKubernetesとコンテナを動かす。商用条件の制約が少ない。
+Podman|podman|Docker Desktop|containers/podman|https://podman.io|devtools|デーモン不要のコンテナ実行。rootlessで動かせる。
+k3s|k3s|Kubernetes|k3s-io/k3s|https://k3s.io|devtools|軽量なKubernetes。小さなサーバでもクラスタを組める。
+Headlamp|headlamp|Lens|kubernetes-sigs/headlamp|https://headlamp.dev|devtools|Kubernetesの管理画面。プラグインで拡張できる。
+OpenTofu|opentofu|Terraform|opentofu/opentofu|https://opentofu.org|devtools|Terraformから分岐したIaC。ライセンス変更を受けずに使える。
+Terraform|terraform|OpenTofu|hashicorp/terraform|https://www.terraform.io|devtools|インフラをコードで管理する標準的な道具。
+Pulumi|pulumi|Terraform|pulumi/pulumi|https://www.pulumi.com|devtools|一般的なプログラミング言語でインフラを書く。
+Ansible|ansible|Chef|ansible/ansible|https://www.ansible.com|devtools|エージェント不要の構成管理。順序を書いて実行する。
+pgAdmin|pgadmin|DBeaver|pgadmin-org/pgadmin4|https://www.pgadmin.org|devtools|PostgreSQLの管理画面。クエリと監視を1つで行う。
+DBeaver|dbeaver|DataGrip|dbeaver/dbeaver|https://dbeaver.io|devtools|各種データベースに接続するGUIクライアント。無償版がある。
+Adminer|adminer|phpMyAdmin|vrana/adminer|https://www.adminer.org|devtools|1ファイルで動くDB管理画面。MySQLとPostgreSQLに対応。
+phpMyAdmin|phpmyadmin|Adminer|phpmyadmin/phpmyadmin|https://www.phpmyadmin.net|devtools|MySQLの管理画面として最も広く使われている。
+Strapi|strapi|Contentful|strapi/strapi|https://strapi.io|devtools|ヘッドレスCMS。管理画面を自動生成できる。
+code-server|coder|GitHub Codespaces|coder/code-server|https://coder.com|devtools|VS Codeをブラウザで使う。サーバ上の資源で開発できる。
+OpenVSCode Server|openvscode|GitHub Codespaces|gitpod-io/openvscode-server|https://www.gitpod.io|devtools|VS Code互換のブラウザ開発環境。軽量に動く。
+DevPod|devpod|GitHub Codespaces|loft-sh/devpod|https://devpod.sh|devtools|開発環境の定義を持ち運ぶ。どのクラウドでも同じ環境を再現する。
+Docusaurus|docusaurus|GitBook|facebook/docusaurus|https://docusaurus.io|note-docs|Markdownからドキュメントサイトを作る。バージョン管理ができる。
+MkDocs|mkdocs|GitBook|mkdocs/mkdocs|https://www.mkdocs.org|note-docs|設定ファイルとMarkdownから文書サイトを作る。動作が軽い。
+VitePress|vitepress|GitBook|vuejs/vitepress|https://vitepress.dev|note-docs|Markdownから高速な文書サイトを作る。検索を内蔵する。
+# 業務自動化・ワークフロー
+Windmill|windmill|Zapier|windmill-labs/windmill|https://www.windmill.dev|automation|スクリプトをそのままワークフローにする。開発者向けの自動化基盤。
+Node-RED|node-red|Zapier|node-red/node-red|https://nodered.org|automation|線で繋いで処理を組む。IoTや機器連携に強い。
+Huginn|huginn|IFTTT|huginn/huginn|https://github.com/huginn/huginn|automation|Web上の出来事を監視して動作するエージェントを組む。
+Kestra|kestra|Zapier|kestra-io/kestra|https://kestra.io|automation|宣言的にワークフローを書く。実行履歴が追いやすい。
+Temporal|temporal|Zapier|temporalio/temporal|https://temporal.io|automation|長時間動く処理を確実に実行する基盤。失敗時の再開ができる。
+Apache Airflow|airflow|Zapier|apache/airflow|https://airflow.apache.org|automation|定期実行するデータ処理を組む。依存関係を可視化できる。
+Dagster|dagster|Zapier|dagster-io/dagster|https://dagster.io|automation|データの流れを資産として管理する。テストしやすい。
+Prefect|prefect|Zapier|PrefectHQ/prefect|https://www.prefect.io|automation|Pythonの処理をそのままワークフローにする。
+Robot Framework|robotframework|UiPath|robotframework/robotframework|https://robotframework.org|automation|キーワードで自動テストを書く。日本語のキーワードも使える。
+Playwright|playwright|UiPath|microsoft/playwright|https://playwright.dev|automation|ブラウザ操作を自動化する。テストと定型作業の両方に使える。
