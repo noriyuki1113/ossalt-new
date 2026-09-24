@@ -1,0 +1,52 @@
+name: データ更新
+
+# 毎日 18:00 UTC（＝翌 03:00 JST）に実行。手動実行も可能。
+on:
+  schedule:
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+
+# データ更新をリポジトリへ push するため書き込み権限が要る
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # 1) GitHub API からスター数・フォーク数・コントリビュータ数・
+      #    ウォッチャー数・最終コミット・言語・ライセンスを取得する。
+      #    Secrets の GITHUB_DATA_TOKEN があればそちらを使い、なければ
+      #    ワークフロー既定の GITHUB_TOKEN を使う。
+      - name: GitHub データ取得
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_DATA_TOKEN || secrets.GITHUB_TOKEN }}
+          FETCH_CONCURRENCY: "4"
+        run: node scripts/fetch-github-api.mjs
+
+      # 2) tools.json からサイトが読む public/data/*.json を再生成する
+      - name: サイト用データ生成
+        run: node scripts/build-data.mjs
+
+      # 3) 差分があればコミットして push（変更がなければ何もしない）
+      - name: コミットと push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data-source/tools.json public/data/tools.json public/data/meta.json public/data/categories.json
+          if git diff --cached --quiet; then
+            echo "更新なし"
+          else
+            git commit -m "data: 日次更新 $(date -u +%Y-%m-%d)"
+            git push
+          fi
