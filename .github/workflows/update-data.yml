@@ -8,8 +8,8 @@ on:
   workflow_dispatch:
   # [一時] workflow_dispatchがこのセッションのGitHub App統合からは403で
   # トリガーできないため、実データ取得を1回だけ走らせる目的でpushを追加する。
-  # 実行が終わったらこのpushトリガーは削除する。（再実行: releases_12mo/
-  # advisories_countの100件頭打ちを直したので、修正込みで再度走らせる）
+  # 実行が終わったらこのpushトリガーは削除する。
+  # （再々実行: advisories_countの取り違えを直し、並列数も落とした）
   push:
     paths:
       - ".github/workflows/update-data.yml"
@@ -36,10 +36,16 @@ jobs:
       #    ウォッチャー数・最終コミット・言語・ライセンスを取得する。
       #    Secrets の GITHUB_DATA_TOKEN があればそちらを使い、なければ
       #    ワークフロー既定の GITHUB_TOKEN を使う。
+      # セキュリティ関連シグナル追加後、1ツールあたりの取得件数が増えた
+      # （repo/contributors に加えてScorecard/SECURITY.md/dependabot/
+      # releases/advisoriesの5件が並行して走る）。並列数4だと同時に
+      # 最大20リクエストがapi.github.comへ飛び、GitHubの二次レート制限に
+      # 引っかかって長時間の待機が発生することを実測で確認したため、
+      # 並列数を落として同時リクエスト数を抑える。
       - name: GitHub データ取得
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_DATA_TOKEN || secrets.GITHUB_TOKEN }}
-          FETCH_CONCURRENCY: "4"
+          FETCH_CONCURRENCY: "2"
         run: node scripts/fetch-github-api.mjs
 
       # 2) tools.json からサイトが読む public/data/*.json を再生成する
