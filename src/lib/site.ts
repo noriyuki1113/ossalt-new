@@ -21,6 +21,9 @@ export const SITE = {
   // 「準備中」の案内に切り替える（値は運営者が後日、環境変数で設定する）。
   contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || null,
   contactUrl: process.env.NEXT_PUBLIC_CONTACT_URL || null,
+  // 運営者名・プライバシーポリシーの制定日。同様に未設定でもプレースホルダは出さない。
+  operatorName: process.env.NEXT_PUBLIC_OPERATOR_NAME || null,
+  privacyEffectiveDate: process.env.NEXT_PUBLIC_PRIVACY_EFFECTIVE_DATE || null,
 } as const;
 
 /** サイト内ナビゲーション */
