@@ -134,6 +134,14 @@ const LICENSE_OVERRIDES = {
   tldraw: "tldraw License", // https://raw.githubusercontent.com/tldraw/tldraw/HEAD/LICENSE.md
   prestashop: "OSL-3.0（コアのみ）", // https://raw.githubusercontent.com/PrestaShop/PrestaShop/HEAD/LICENSE.md
 
+  // --- 2026-09追加分（48件のうち、GitHub APIがNOASSERTIONを返したもの） ---
+  // リポジトリ直下ではなく doc/COPYING にライセンス本文があった
+  redmine: "GPL-2.0", // https://raw.githubusercontent.com/redmine/redmine/HEAD/doc/COPYING
+  // モノレポでリポジトリ直下にLICENSEが無いが、主要パッケージ trytond に
+  // GPL-3.0の本文があり、他のパッケージ（例: modules/sale）にも同じ
+  // LICENSEファイルが個別に置かれている（実在確認済み）
+  tryton: "GPL-3.0", // https://raw.githubusercontent.com/tryton/tryton/HEAD/trytond/LICENSE
+
   // directus / inkscape / dokploy は、リポジトリ直下に LICENSE ファイルが
   // 見つからず（inkscapeは開発本体がGitLab側で、GitHubは同期用ミラー）、
   // package.json の license フィールドにも記載が無かったため、確認できないまま
