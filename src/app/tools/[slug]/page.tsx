@@ -158,31 +158,6 @@ export default async function ToolDetailPage({
               </section>
             )}
 
-            {compareSet.length > 1 && (
-              <section>
-                <h2 className="h3">{competitor} の代替候補を比較</h2>
-                <ComparisonTable tools={compareSet} />
-                <p className="muted mt1" style={{ fontSize: "0.75rem" }}>
-                  {t("alt.compareNote")}
-                </p>
-              </section>
-            )}
-
-            {sameCategory.length > 0 && (
-              <section>
-                <h2 className="h3">同じカテゴリのツール</h2>
-                <ul>
-                  {sameCategory.map((tl) => (
-                    <li key={tl.id}>
-                      <Link href={`/tools/${tl.id}/`}>{tl.name}</Link>{" "}
-                      <span className="muted" style={{ fontSize: "0.8125rem" }}>
-                        （{tl.primary_competitor_ja || tl.primary_competitor} の代替）
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            )}
           </div>
 
           <aside className="detail-aside stack">
@@ -215,6 +190,35 @@ export default async function ToolDetailPage({
             </div>
           </aside>
         </div>
+
+        {/* 比較表・同じカテゴリの一覧は横長になりやすいため、2カラムグリッドの外に出して
+            ページ全幅で表示する（detail-layout の中に置くと、aside が grid-row: 1/-1 で
+            全行にまたがっているため、追加の行を横幅いっぱいに置けなくなる）。 */}
+        {compareSet.length > 1 && (
+          <section className="mt2">
+            <h2 className="h3">{competitor} の代替候補を比較</h2>
+            <ComparisonTable tools={compareSet} />
+            <p className="muted mt1" style={{ fontSize: "0.75rem" }}>
+              {t("alt.compareNote")}
+            </p>
+          </section>
+        )}
+
+        {sameCategory.length > 0 && (
+          <section className="mt2">
+            <h2 className="h3">同じカテゴリのツール</h2>
+            <ul>
+              {sameCategory.map((tl) => (
+                <li key={tl.id}>
+                  <Link href={`/tools/${tl.id}/`}>{tl.name}</Link>{" "}
+                  <span className="muted" style={{ fontSize: "0.8125rem" }}>
+                    （{tl.primary_competitor_ja || tl.primary_competitor} の代替）
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
       </main>
       <SiteFooter meta={meta} />
       <JsonLd
