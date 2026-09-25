@@ -6,6 +6,12 @@ on:
   schedule:
     - cron: "0 18 * * *"
   workflow_dispatch:
+  # [一時] workflow_dispatchがこのセッションのGitHub App統合からは403で
+  # トリガーできないため、実データ取得を1回だけ走らせる目的でpushを追加する。
+  # 実行が終わったらこのpushトリガーは削除する。
+  push:
+    paths:
+      - ".github/workflows/update-data.yml"
 
 # データ更新をリポジトリへ push するため書き込み権限が要る
 permissions:
