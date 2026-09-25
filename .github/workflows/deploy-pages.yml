@@ -48,6 +48,12 @@ jobs:
         env:
           NEXT_BASE_PATH: ${{ steps.pages.outputs.base_path }}
           NEXT_PUBLIC_SITE_URL: ${{ steps.pages.outputs.base_url }}
+          # 運営者情報。未設定なら各ページで自然に非表示になる(「準備中」を出さない)。
+          # NEXT_PUBLIC_ はビルド時に埋め込まれる公開値。Secrets ではなく Variables で渡す。
+          NEXT_PUBLIC_OPERATOR_NAME: ${{ vars.NEXT_PUBLIC_OPERATOR_NAME }}
+          NEXT_PUBLIC_CONTACT_EMAIL: ${{ vars.NEXT_PUBLIC_CONTACT_EMAIL }}
+          NEXT_PUBLIC_CONTACT_URL: ${{ vars.NEXT_PUBLIC_CONTACT_URL }}
+          NEXT_PUBLIC_PRIVACY_EFFECTIVE_DATE: ${{ vars.NEXT_PUBLIC_PRIVACY_EFFECTIVE_DATE }}
         run: npm run build
 
       - uses: actions/upload-pages-artifact@v3

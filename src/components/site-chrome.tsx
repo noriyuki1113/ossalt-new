@@ -94,6 +94,11 @@ export function SiteFooter({ meta }: { meta?: { built_at: string; tool_count: nu
           </p>
           <p>{t("footer.disclaimer")}</p>
           <p>{t("footer.logoNotice")}</p>
+          {SITE.operatorName && (
+            <p className="site-foot__operator">
+              {t("footer.operator")}：{SITE.operatorName}
+            </p>
+          )}
           <p>© {new Date().getFullYear()} {SITE.name}</p>
         </div>
       </div>

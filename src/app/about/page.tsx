@@ -55,6 +55,28 @@ export default function AboutPage() {
             掲載内容に誤りがある場合や、掲載してほしいツールがある場合は
             <Link href="/contact/">お問い合わせ</Link>からご連絡ください。
           </p>
+
+          {SITE.operatorName && (
+            <section>
+              <h2>運営者</h2>
+              <p>
+                {SITE.operatorName}
+                {SITE.contactUrl && (
+                  <>
+                    {"（"}
+                    <a href={SITE.contactUrl} target="_blank" rel="noreferrer noopener">
+                      お問い合わせ
+                    </a>
+                    {"）"}
+                  </>
+                )}
+              </p>
+              <p>
+                当サイトは個人が運営しています。掲載内容の誤りのご指摘、ツールの追加提案、
+                広告・スポンサーに関するご相談は上記の窓口までお願いします。
+              </p>
+            </section>
+          )}
         </div>
       </main>
       <SiteFooter meta={meta} />

@@ -59,12 +59,12 @@ export default function PrivacyPage() {
           <h2>8. 改定</h2>
           <p>{"本ポリシーの内容は、必要に応じて予告なく改定することがあります。改定後の内容は、本ページに掲載した時点から効力を生じます。"}</p>
 
-          <p className="muted">
-            制定日：{SITE.privacyEffectiveDate || "準備中"}
-          </p>
-          <p className="muted">
-            運営者：{SITE.operatorName || "準備中"}
-          </p>
+          {SITE.privacyEffectiveDate && (
+            <p className="muted">制定日：{SITE.privacyEffectiveDate}</p>
+          )}
+          {SITE.operatorName && (
+            <p className="muted">運営者：{SITE.operatorName}</p>
+          )}
         </div>
       </main>
       <SiteFooter meta={meta} />

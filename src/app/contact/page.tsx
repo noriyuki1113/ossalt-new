@@ -34,20 +34,16 @@ export default function ContactPage() {
               <li>ライセンス表記の訂正</li>
               <li>広告・スポンサーに関するお問い合わせ</li>
             </ul>
-            {hasContact ? (
+            {hasContact && (
               <p className="muted" style={{ fontSize: "0.875rem" }}>
                 連絡先：
                 {contactEmail && <a href={`mailto:${contactEmail}`}>{contactEmail}</a>}
                 {contactEmail && contactUrl && " / "}
                 {contactUrl && (
                   <a href={contactUrl} target="_blank" rel="noreferrer noopener">
-                    お問い合わせフォーム
+                    GitHub で連絡する
                   </a>
                 )}
-              </p>
-            ) : (
-              <p className="muted" style={{ fontSize: "0.875rem" }}>
-                {"お問い合わせ先を準備中です。しばらくお待ちください。"}
               </p>
             )}
           </div>

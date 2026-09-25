@@ -18,7 +18,7 @@ export const SITE = {
   // データの更新元（GitHub Actions が書き換える）
   dataUpdatedAt: null as string | null,
   // お問い合わせ先。未設定でもビルドは通り、画面にはプレースホルダを出さず
-  // 「準備中」の案内に切り替える（値は運営者が後日、環境変数で設定する）。
+  // 未設定なら該当行を表示しない（値は運営者が環境変数で設定する）。
   contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || null,
   contactUrl: process.env.NEXT_PUBLIC_CONTACT_URL || null,
   // 運営者名・プライバシーポリシーの制定日。同様に未設定でもプレースホルダは出さない。
