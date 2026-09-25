@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
-import { SITE } from "@/lib/site";
+import { SITE, UMAMI_SCRIPT_URL, UMAMI_SITE_ID } from "@/lib/site";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -55,6 +55,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           本文へスキップ
         </a>
         <div id="main">{children}</div>
+        {UMAMI_SITE_ID && (
+          <script defer src={UMAMI_SCRIPT_URL} data-website-id={UMAMI_SITE_ID} />
+        )}
       </body>
     </html>
   );

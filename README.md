@@ -81,7 +81,7 @@ GitHubメタデータ（スター・フォーク・最終コミット）は、�
 | --- | --- |
 | `src/lib/site.ts` | `SITE.url`（独自ドメイン）、`SITE.twitter` |
 | `src/app/contact/page.tsx` | お問い合わせ用メールアドレス、またはフォームURL |
-| `src/app/privacy/page.tsx` | 運営者名、制定日、広告・解析ツールの記載 |
+| `src/app/privacy/page.tsx` | 運営者名、制定日（`NEXT_PUBLIC_OPERATOR_NAME` / `NEXT_PUBLIC_PRIVACY_EFFECTIVE_DATE`。未設定なら「準備中」と表示） |
 | `src/components/site-chrome.tsx` | ニュースレターの送信先（`action` 属性） |
 
 ## 環境変数
@@ -89,3 +89,4 @@ GitHubメタデータ（スター・フォーク・最終コミット）は、�
 | 変数 | 用途 |
 | --- | --- |
 | `NEXT_PUBLIC_SITE_URL` | 本番URL（sitemap/OGPに使用）。未設定時は `https://ossalt.jp` |
+| `NEXT_PUBLIC_UMAMI_SITE_ID` | アクセス解析（[Umami Cloud](https://umami.is/)）の Website ID。既定値が `src/lib/site.ts` にハードコードされているため、**未設定でもこの既定値で計測が始まる**。fork して自分のサイトとして公開する場合は、自分の Website ID に差し替えるか、この環境変数で上書きすること。`off` を指定すると計測を無効化する（script タグ自体を出力しない） |

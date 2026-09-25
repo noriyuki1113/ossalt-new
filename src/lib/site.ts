@@ -26,6 +26,23 @@ export const SITE = {
   privacyEffectiveDate: process.env.NEXT_PUBLIC_PRIVACY_EFFECTIVE_DATE || null,
 } as const;
 
+// アクセス解析（Umami Cloud）。このIDは公開値（全ページのHTMLに出力される）で、
+// 秘匿情報ではない。既定値として持たせているのは、環境変数の設定漏れによって
+// 計測が無言で止まる事故を避けるため（「計測できていないことに気づかない」を防ぐ）。
+const UMAMI_DEFAULT_SITE_ID = "e1003fc4-1a2c-404c-abb9-ac669e5e8e94";
+
+/**
+ * 環境変数 NEXT_PUBLIC_UMAMI_SITE_ID で上書き・無効化できる。
+ * "off" を渡すと計測そのものを無効化する（script タグを出力しない）。
+ */
+export const UMAMI_SITE_ID: string | null = (() => {
+  const raw = process.env.NEXT_PUBLIC_UMAMI_SITE_ID;
+  if (raw === "off") return null;
+  return raw && raw.length > 0 ? raw : UMAMI_DEFAULT_SITE_ID;
+})();
+
+export const UMAMI_SCRIPT_URL = "https://cloud.umami.is/script.js";
+
 /** サイト内ナビゲーション */
 export const NAV = [
   { href: "/tools/", label: "ツール一覧" },
