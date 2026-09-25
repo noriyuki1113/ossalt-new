@@ -1317,6 +1317,8 @@ hr {
   }
 
   .detail-aside {
+    grid-column: 2;
+    grid-row: 1 / -1;
     position: sticky;
     top: 84px;
   }
