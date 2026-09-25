@@ -559,6 +559,16 @@ hr {
   min-width: 0;
 }
 
+.row__head {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+
+.row__headtext {
+  min-width: 0;
+}
+
 .row__name {
   font-family: var(--font-display);
   font-weight: 700;
@@ -932,6 +942,41 @@ hr {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: var(--step-0);
+}
+
+.ctable__name {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ---------- ロゴ ---------- */
+
+.tool-logo {
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: var(--paper-deep);
+  border: 1px solid var(--rule);
+}
+
+.tool-logo--fallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--indigo);
+  background: var(--paper-deep);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+}
+
+.detail-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 1.25rem;
 }
 
 /* ---------- 注記・タグ ---------- */

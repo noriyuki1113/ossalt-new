@@ -138,6 +138,8 @@ export const MESSAGES = {
       "掲載データはGitHubの公開情報とOpenSSF Scorecardから自動取得しています。",
     "footer.disclaimer":
       "各ツールのライセンス・提供条件は変更されることがあります。導入前に必ず公式サイトで最新の条件をご確認ください。",
+    "footer.logoNotice":
+      "掲載しているロゴマークはGitHub公開のプロフィール画像を表示しており、各ロゴの商標権はそれぞれの権利者に帰属します。",
     "footer.operator": "運営",
 
     "newsletter.title": "週刊・自前で動かすソフト便り",

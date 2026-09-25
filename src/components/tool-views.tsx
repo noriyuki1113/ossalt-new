@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { CSSProperties, ReactNode } from "react";
+import { ToolLogo } from "@/components/tool-logo";
 import {
   SCORECARD_CHECKS,
   SCORECARD_TIERS,
@@ -182,16 +183,21 @@ export function ToolRow({ tool }: { tool: Tool }) {
   return (
     <article className="row row--linked">
       <div className="row__main">
-        <h3 className="row__name">
-          <Link href={`/tools/${tool.id}/`} className="row__link">
-            {tool.name}
-          </Link>
-        </h3>
-        <p className="row__alt">
-          {t("card.alternativeTo")}: <b>{tool.primary_competitor_ja || tool.primary_competitor}</b>
-          {tool.language ? ` ／ ${tool.language}` : ""}
-          {tool.license ? ` ／ ${tool.license}` : ""}
-        </p>
+        <div className="row__head">
+          <ToolLogo githubUrl={tool.github_url} name={tool.name} size={40} />
+          <div className="row__headtext">
+            <h3 className="row__name">
+              <Link href={`/tools/${tool.id}/`} className="row__link">
+                {tool.name}
+              </Link>
+            </h3>
+            <p className="row__alt">
+              {t("card.alternativeTo")}: <b>{tool.primary_competitor_ja || tool.primary_competitor}</b>
+              {tool.language ? ` ／ ${tool.language}` : ""}
+              {tool.license ? ` ／ ${tool.license}` : ""}
+            </p>
+          </div>
+        </div>
         {tool.description_ja && <p className="row__desc">{tool.description_ja}</p>}
       </div>
       <div className="row__data">
@@ -274,9 +280,12 @@ export function ComparisonTable({ tools }: { tools: Tool[] }) {
           {tools.map((tool) => (
             <tr key={tool.id} className="ctable__row">
               <td className="name">
-                <Link href={`/tools/${tool.id}/`} className="ctable__link">
-                  {tool.name}
-                </Link>
+                <span className="ctable__name">
+                  <ToolLogo githubUrl={tool.github_url} name={tool.name} size={24} />
+                  <Link href={`/tools/${tool.id}/`} className="ctable__link">
+                    {tool.name}
+                  </Link>
+                </span>
               </td>
               <td>{tool.primary_competitor_ja || tool.primary_competitor}</td>
               <td className="num">{formatCompactJa(tool.stars_num)}</td>

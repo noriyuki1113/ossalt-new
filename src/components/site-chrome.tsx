@@ -93,6 +93,7 @@ export function SiteFooter({ meta }: { meta?: { built_at: string; tool_count: nu
             {updated ? `（データ更新: ${updated}${meta ? ` / ${meta.tool_count}件` : ""}）` : ""}
           </p>
           <p>{t("footer.disclaimer")}</p>
+          <p>{t("footer.logoNotice")}</p>
           <p>© {new Date().getFullYear()} {SITE.name}</p>
         </div>
       </div>

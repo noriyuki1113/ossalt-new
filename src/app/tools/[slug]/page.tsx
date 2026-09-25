@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs, JsonLd, SiteFooter, SiteHeader } from "@/components/site-chrome";
+import { ToolLogo } from "@/components/tool-logo";
 import {
   ComparisonTable,
   HealthLegend,
@@ -81,9 +82,12 @@ export default async function ToolDetailPage({
             <p className="hero__eyebrow" style={{ marginBottom: "0.5rem" }}>
               {category?.nameJa ?? "ツール"} / Open Source
             </p>
-            <h1 className="h2" style={{ fontSize: "clamp(2rem, 5vw, 2.75rem)" }}>
-              {tool.name}
-            </h1>
+            <div className="detail-head">
+              <ToolLogo githubUrl={tool.github_url} name={tool.name} size={64} />
+              <h1 className="h2" style={{ fontSize: "clamp(2rem, 5vw, 2.75rem)", margin: 0 }}>
+                {tool.name}
+              </h1>
+            </div>
             <p className="lede" style={{ marginBottom: "1.25rem" }}>
               {competitor} のオープンソース代替。
               {tool.description_ja ? ` ${tool.description_ja}` : ""}
