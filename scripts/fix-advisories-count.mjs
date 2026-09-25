@@ -39,9 +39,27 @@ function parseRepo(url) {
   return { owner: m[1], repo: m[2].replace(/\.git$/i, "") };
 }
 
+/** fetch()自体にタイムアウトが無いと、応答が返らない接続でawaitが永遠に
+ * 止まりうる（今回の長時間ハングの原因と判断している）。15秒で打ち切る。 */
 async function ghFetch(url) {
   for (let attempt = 0; attempt < 3; attempt += 1) {
-    const res = await fetch(url, { headers: HEADERS });
+    const ctl = new AbortController();
+    const timer = setTimeout(() => ctl.abort(), 15000);
+    let res;
+    try {
+      res = await fetch(url, { headers: HEADERS, signal: ctl.signal });
+    } catch {
+      res = null;
+    } finally {
+      clearTimeout(timer);
+    }
+    if (!res) {
+      if (attempt < 2) {
+        await new Promise((r) => setTimeout(r, 1000 * (attempt + 1)));
+        continue;
+      }
+      return null;
+    }
     if (res.status === 200) return res;
     if (res.status === 404) return res;
     if (res.status === 403 || res.status === 429) {

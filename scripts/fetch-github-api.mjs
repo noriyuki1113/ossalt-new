@@ -210,9 +210,34 @@ function parseRepo(url) {
 }
 
 /** レート制限に当たったらリセット時刻まで待って1回だけ再試行する。 */
+/**
+ * fetch() 自体にタイムアウトが無いと、接続が応答を返さないケースで
+ * await が永遠に返らず、リトライにすら入れずプロセス全体が止まる
+ * （実際に、並列数を落とした再実行や、呼び出し数を大幅に減らした
+ * 軽量版スクリプトでも、6時間以上応答が返らない事態が発生して判明した。
+ * レート制限のリトライ待ち（最大2分）を何度重ねても説明がつかない
+ * 長さだったため、レート制限ではなくこれが原因だったと判断している）。
+ * 各試行に15秒のタイムアウトを設ける。
+ */
 async function ghFetch(url) {
   for (let attempt = 0; attempt < 3; attempt += 1) {
-    const res = await fetch(url, { headers: HEADERS });
+    const ctl = new AbortController();
+    const timer = setTimeout(() => ctl.abort(), 15000);
+    let res;
+    try {
+      res = await fetch(url, { headers: HEADERS, signal: ctl.signal });
+    } catch {
+      res = null;
+    } finally {
+      clearTimeout(timer);
+    }
+    if (!res) {
+      if (attempt < 2) {
+        await new Promise((r) => setTimeout(r, 1500 * (attempt + 1)));
+        continue;
+      }
+      return null;
+    }
     if (res.status === 200) return res;
     if (res.status === 404) return res;
     if (res.status === 403 || res.status === 429) {
