@@ -354,18 +354,32 @@ async function fetchReleaseInfo(base) {
  * このエンドポイントは対象リポジトリへの書き込み権限が無くても、公開済み
  * アドバイザリは200で返ってくることを実際に確認済み（2026-09-25）。
  *
- * 実測で判明した問題: per_page=100の1ページだけだと、100件を超える
- * プロジェクト（gitea・n8n等）でちょうど100件に頭打ちしていた。
- * contributorsと同じ方法（per_page=1でLinkヘッダのrel="last"から
- * 総件数を得る）に切り替えて正確な件数を取得する。
+ * 実測で判明した問題（2回）:
+ *   1) per_page=100の1ページだけだと、100件を超えるプロジェクト
+ *      （gitea・n8n等）でちょうど100件に頭打ちしていた。
+ *   2) その修正として contributors と同じ「per_page=1でLinkヘッダの
+ *      rel="last"から総件数を得る」方式に切り替えたところ、この
+ *      エンドポイントはLinkヘッダのページ番号形式が異なるらしく
+ *      totalFromLink が一致せず、全件が0/1に化けた（実測で確認、
+ *      224件あった advisories_count>0 が全件 1 になっていた）。
+ * そのため releases と同じ「per_page=100で実際にページングして
+ * 配列の件数を数える」方式に統一する。最大10ページ（1,000件）で打ち切る。
  */
 async function fetchAdvisoriesCount(base) {
-  const res = await ghFetch(`${base}/security-advisories?per_page=1`);
-  if (!res || !res.ok) return null;
-  const fromLink = totalFromLink(res.headers.get("link"));
-  if (fromLink != null) return fromLink;
-  const list = await res.json().catch(() => null);
-  return Array.isArray(list) ? list.length : null;
+  let total = 0;
+  let sawAny = false;
+
+  for (let page = 1; page <= 10; page += 1) {
+    const res = await ghFetch(`${base}/security-advisories?per_page=100&page=${page}`);
+    if (!res || !res.ok) return sawAny ? total : null;
+    const list = await res.json().catch(() => null);
+    if (!Array.isArray(list) || list.length === 0) break;
+    sawAny = true;
+    total += list.length;
+    if (list.length < 100) break; // 最終ページ
+  }
+
+  return sawAny ? total : 0;
 }
 
 async function fetchOne(slug, id) {
