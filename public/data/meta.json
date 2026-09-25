@@ -1,8 +1,8 @@
 {
- "built_at": "2026-09-25T05:52:46.609Z",
+ "built_at": "2026-09-25T05:56:59.646Z",
  "tool_count": 384,
- "scored_count": 25,
- "unrated_count": 359,
+ "scored_count": 234,
+ "unrated_count": 150,
  "with_contributors": 384,
  "with_watchers": 384,
  "categories": 28,
@@ -13,10 +13,10 @@
   "p10": 1124,
   "p25": 2442,
   "p50": 5530,
-  "p75": 12256,
+  "p75": 12257,
   "p90": 22397,
   "p95": 28745,
-  "max": 82610,
+  "max": 82612,
   "within_90d_count": 356
  }
 }
