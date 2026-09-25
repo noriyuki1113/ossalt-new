@@ -195,6 +195,49 @@ const categories = Object.entries(CATEGORY_META).map(([slug, [nameJa, ledeJa]]) 
 
 const scored = tools.filter((t) => t.scorecard_score != null).length;
 
+/**
+ * 健全度スコアの分布（パーセンタイル）。
+ * /guide/ の「健全度スコアの読み方」節が、この値を使って目安を表示する。
+ * ツールが増減すれば自動で動くよう、固定値をどこにも書かない。
+ *
+ * パーセンタイルは「最近隣（nearest-rank）法」で求める。
+ * 昇順ソート済み配列の index = ceil(p/100 * n) - 1（0始まりに補正）。
+ */
+function percentile(sortedAsc, p) {
+  const n = sortedAsc.length;
+  if (n === 0) return null;
+  const idx = Math.min(n - 1, Math.max(0, Math.ceil((p / 100) * n) - 1));
+  return sortedAsc[idx];
+}
+
+const healthScores = tools
+  .map((t) => t.health_score)
+  .filter((v) => v != null)
+  .sort((a, b) => a - b);
+
+// 「更新の新しさ」の減点は最終コミットから90日で頭打ち（最大-45点）になる。
+// 90日以内にコミットがある件数を出し、/guide/ でこの限界（91日でも2年放置でも
+// 減点が同じ）を説明するときに使う。
+const within90dCount = tools.filter(
+  (t) => t.freshness_days != null && t.freshness_days <= 90
+).length;
+
+const health =
+  healthScores.length > 0
+    ? {
+        count: healthScores.length,
+        min: healthScores[0],
+        p10: percentile(healthScores, 10),
+        p25: percentile(healthScores, 25),
+        p50: percentile(healthScores, 50),
+        p75: percentile(healthScores, 75),
+        p90: percentile(healthScores, 90),
+        p95: percentile(healthScores, 95),
+        max: healthScores[healthScores.length - 1],
+        within_90d_count: within90dCount,
+      }
+    : null;
+
 const meta = {
   built_at: new Date().toISOString(),
   tool_count: tools.length,
@@ -204,6 +247,7 @@ const meta = {
   with_watchers: tools.filter((t) => t.watchers_num != null).length,
   categories: categories.length,
   competitors: new Set(tools.map((t) => t.primary_competitor).filter(Boolean)).size,
+  health,
 };
 
 fs.mkdirSync(OUT, { recursive: true });

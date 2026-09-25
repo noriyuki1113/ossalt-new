@@ -129,8 +129,13 @@ export default async function ToolDetailPage({
                     <HealthMeter tool={tool} />
                   </div>
                   <HealthLegend tool={tool} />
-                  <p className="muted" style={{ fontSize: "0.75rem", marginBottom: 0 }}>
+                  <p className="muted" style={{ fontSize: "0.75rem" }}>
                     {t("health.explain")} {t("health.formulaNote")}
+                  </p>
+                  <p className="muted" style={{ fontSize: "0.75rem", marginBottom: 0 }}>
+                    {"スコアの読み方と目安は"}
+                    <Link href="/guide/">選び方のページ</Link>
+                    {"にまとめています。"}
                   </p>
                 </div>
               </div>

@@ -11,8 +11,60 @@ export const metadata: Metadata = {
   alternates: { canonical: "/guide/" },
 };
 
+/**
+ * 健全度スコアの目安をキリのよい数字で示すための丸め。
+ * 実際の値（meta.health）はビルドごとに動くため、「以上」と言う数字は
+ * 切り捨て、「未満」と言う数字は切り上げて、丸めた後も文言が
+ * 常に成立するようにする。
+ */
+function roundDownTo500(n: number): number {
+  return Math.floor(n / 500) * 500;
+}
+function roundUpTo500(n: number): number {
+  return Math.ceil(n / 500) * 500;
+}
+
 export default function GuidePage() {
   const meta = getMeta();
+  const health = meta.health;
+  const asOf = new Date(meta.built_at);
+  const asOfLabel = `${asOf.getFullYear()}年${asOf.getMonth() + 1}月`;
+
+  const healthTable = health && (
+    <div className="ctable-scroll">
+      <table className="guide-table">
+        <caption className="skip">健全度スコアの分布による目安</caption>
+        <thead>
+          <tr>
+            <th scope="col">位置</th>
+            <th scope="col">スコアの目安</th>
+            <th scope="col">読み方</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>収録全体の上位25%</td>
+            <td className="num">{roundDownTo500(health.p75).toLocaleString("ja-JP")} 以上</td>
+            <td>非常に活発。大規模プロジェクトが中心です</td>
+          </tr>
+          <tr>
+            <td>上位50%（中央より上）</td>
+            <td className="num">{roundDownTo500(health.p50).toLocaleString("ja-JP")} 以上</td>
+            <td>活発。多くの著名プロジェクトがこの帯にあります</td>
+          </tr>
+          <tr>
+            <td>下位25%</td>
+            <td className="num">{roundUpTo500(health.p25).toLocaleString("ja-JP")} 未満</td>
+            <td>小規模、または新しめ。勢いの指標としては低めです</td>
+          </tr>
+        </tbody>
+      </table>
+      <p className="muted" style={{ fontSize: "0.75rem", padding: "0 0.85rem 0.85rem" }}>
+        {asOfLabel}時点・収録{health.count}件の分布にもとづく目安です。
+      </p>
+    </div>
+  );
+
   return (
     <>
       <SiteHeader current="/guide" />
@@ -46,7 +98,15 @@ export default function GuidePage() {
           <p>{"最終コミット日が1年以上前のプロジェクトは、注意が必要です。ただし「更新が止まっている＝使えない」ではありません。"}
             {"完成して安定しているソフトは、更新が少なくなります。判断の材料は"}<strong>最終コミット日</strong>と<strong>アーカイブされているか</strong>{"の2つです。リポジトリがアーカイブされている場合は、開発終了が明示されています。"}</p>
 
-          <h2>4. セキュリティは「未評価」を恐れず、確認する</h2>
+          <h2>4. 健全度スコアは「相対比較」に使う</h2>
+          <p>{"健全度スコアは、スター・フォーク・コントリビュータ・ウォッチャー・更新の新しさの5項目から算出した、プロジェクトの「勢い」の目安です。内訳と算出式はツール詳細ページの「健全度」パネルで確認できます。"}</p>
+          <p>{"式は合計値なので上限がありません。したがって「何点以上なら良い」という絶対的な基準は存在しません。"}{"正しい使い方は、"}<strong>同じカテゴリ内で比べる、または一覧の並び順として使う</strong>{"ことです。"}</p>
+          {healthTable}
+          <p>{"スコアが低いことの主な理由は「規模が小さい」ことです。小規模でも目的の機能を満たし、メンテナンスが続いていれば十分に使えます。"}<strong>乗り換えの判断はスコアではなく、最終コミット日・ライセンス・Docker対応で行ってください。</strong></p>
+          <p>{"スコアが「—」と表示されている場合は、追加されたばかりでデータ取得前の「未取得」であり、危険という意味ではありません。"}</p>
+          <p>{"更新の新しさによる減点は、最終コミットから90日で頭打ち（最大−45点）になります。つまり、91日放置でも2年放置でも減点は変わりません。"}<strong>スコアだけでは「メンテナンスが止まっている」ことを見抜けない</strong>{"ため、最終コミット日は必ず別途確認してください（収録"}{meta.tool_count}{"件中"}{meta.health?.within_90d_count ?? "—"}{"件は90日以内にコミットがあります）。"}</p>
+
+          <h2>5. セキュリティは「未評価」を恐れず、確認する</h2>
           <p>{"OpenSSF Scorecard は、プロジェクトのセキュリティ対策を第三者が機械的に採点する仕組みです。"}
             {"ただし"}<strong>スコアが無い＝危険、ではありません</strong>{"。大規模で活発なプロジェクトでも未スキャンのものは多くあります。"}</p>
           <p>スコアが無い場合は、次の3点を自分の目で確認してください。</p>
@@ -57,7 +117,7 @@ export default function GuidePage() {
           </ul>
           <p>{"逆に、スコアが高くても導入すれば安全という意味ではありません。スコアは「開発プロセスの健全さ」を見ているのであって、あなたの運用（公開設定、認証、バックアップ）は別問題です。"}</p>
 
-          <h2>5. 運用コストを先に見積もる</h2>
+          <h2>6. 運用コストを先に見積もる</h2>
           <p>
             セルフホストの最大のコストは、ソフト本体ではなく<strong>運用</strong>{"です。具体的には次のような作業が発生します。"}</p>
           <ul>
@@ -68,11 +128,11 @@ export default function GuidePage() {
           </ul>
           <p>{"これらを内製できない場合、外注費（月1〜3万円程度が目安）が加わります。それでもSaaSの月額を下回ることは多いですが、必ず数字を出してから決めてください。"}</p>
 
-          <h2>6. Docker対応かどうかで難易度が変わる</h2>
+          <h2>7. Docker対応かどうかで難易度が変わる</h2>
           <p>{"Docker（またはDocker Compose）でのインストール手順が用意されているソフトは、導入と更新の難易度が大きく下がります。"}
             {"逆に、「ソースからビルド」「特定のOSのみ対応」のソフトは、運用を引き継げる人が限られます。"}</p>
 
-          <h2>7. 小さく始める</h2>
+          <h2>8. 小さく始める</h2>
           <p>
             いきなり全社の基幹を移すのではなく、
             <strong>影響の小さいものから1つだけ</strong>{"試してください。たとえばアクセス解析やドキュメント共有は、止まっても業務が即座に止まりません。"}

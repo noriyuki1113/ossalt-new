@@ -55,6 +55,19 @@ export type DataMeta = {
   with_contributors?: number;
   /** ウォッチャー数を取得できた件数 */
   with_watchers?: number;
+  /** 健全度スコアの分布（build-data.mjs が実データから算出） */
+  health?: {
+    count: number;
+    min: number;
+    p10: number;
+    p25: number;
+    p50: number;
+    p75: number;
+    p90: number;
+    p95: number;
+    max: number;
+    within_90d_count: number;
+  } | null;
 };
 
 /** 代替対象SaaS（重複をまとめたもの） */

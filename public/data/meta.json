@@ -1,10 +1,22 @@
 {
- "built_at": "2026-09-25T01:59:40.267Z",
+ "built_at": "2026-09-25T02:07:23.468Z",
  "tool_count": 384,
  "scored_count": 25,
  "unrated_count": 359,
  "with_contributors": 384,
  "with_watchers": 384,
  "categories": 28,
- "competitors": 145
+ "competitors": 145,
+ "health": {
+  "count": 384,
+  "min": 18,
+  "p10": 1124,
+  "p25": 2442,
+  "p50": 5529,
+  "p75": 12256,
+  "p90": 22397,
+  "p95": 28744,
+  "max": 82608,
+  "within_90d_count": 356
+ }
 }
