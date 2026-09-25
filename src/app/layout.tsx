@@ -26,10 +26,20 @@ export const metadata: Metadata = {
     title: `${SITE.name} — ${SITE.tagline}`,
     description: SITE.description,
     url: SITE.url,
+    images: [
+      {
+        // 静的エクスポートのためSNS側が相対パスを解決できない。絶対URLで持つ。
+        url: `${SITE.url}/og/default.png`,
+        width: 1200,
+        height: 630,
+        alt: `${SITE.name} — ${SITE.tagline}`,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     site: SITE.twitter,
+    images: [`${SITE.url}/og/default.png`],
   },
   alternates: {
     canonical: "/",
