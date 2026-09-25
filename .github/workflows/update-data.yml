@@ -6,12 +6,6 @@ on:
   schedule:
     - cron: "0 18 * * *"
   workflow_dispatch:
-  # [一時] このpushで、6時間以上ハングしたままの古い実行を
-  # cancel-in-progress:true によって片付ける。片付いたら次のコミットで
-  # このpushトリガー自体を削除する。
-  push:
-    paths:
-      - ".github/workflows/update-data.yml"
 
 # データ更新をリポジトリへ push するため書き込み権限が要る
 permissions:
