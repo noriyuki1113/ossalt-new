@@ -6,10 +6,9 @@ on:
   schedule:
     - cron: "0 18 * * *"
   workflow_dispatch:
-  # [一時] workflow_dispatchがこのセッションのGitHub App統合からは403で
-  # トリガーできないため、実データ取得を1回だけ走らせる目的でpushを追加する。
-  # 実行が終わったらこのpushトリガーは削除する。
-  # （再々実行: advisories_countの取り違えを直し、並列数も落とした）
+  # [一時] このpushで、6時間以上ハングしたままの古い実行を
+  # cancel-in-progress:true によって片付ける。片付いたら次のコミットで
+  # このpushトリガー自体を削除する。
   push:
     paths:
       - ".github/workflows/update-data.yml"
@@ -20,7 +19,10 @@ permissions:
 
 concurrency:
   group: update-data
-  cancel-in-progress: false
+  # 応答が返らない接続でハングした実行が6時間以上残ってしまったことが
+  # あったため、新しい実行が来たら古い（おそらく詰まっている）実行を
+  # 自動キャンセルする。このpushでも、まだ残っている古い実行を片付ける。
+  cancel-in-progress: true
 
 jobs:
   update:
