@@ -53,7 +53,7 @@
     },
     "watchers": 1175,
     "contributors": 805,
-    "github_checked_at": "2026-09-25T01:37:02.144Z"
+    "github_checked_at": "2026-09-25T01:59:01.556Z"
   },
   {
     "id": "excalidraw",
@@ -65,7 +65,7 @@
     "parent_category_ja": null,
     "primary_competitor": "Miro",
     "primary_competitor_ja": "Miro",
-    "stars_num": 132829,
+    "stars_num": 132833,
     "language": "TypeScript",
     "license": "MIT",
     "forks_num": 15447,
@@ -74,7 +74,7 @@
     "docker_available": true,
     "created_at": "2020-01-02T01:04:43Z",
     "github_archived": false,
-    "health_score": 41244,
+    "health_score": 41245,
     "topics": [
       "canvas",
       "collaboration",
@@ -96,7 +96,7 @@
     },
     "watchers": 510,
     "contributors": 372,
-    "github_checked_at": "2026-09-25T01:37:02.238Z"
+    "github_checked_at": "2026-09-25T01:59:01.712Z"
   },
   {
     "id": "immich",
@@ -108,11 +108,11 @@
     "parent_category_ja": "写真管理",
     "primary_competitor": "Google Photos",
     "primary_competitor_ja": "Google Photos",
-    "stars_num": 114984,
+    "stars_num": 114985,
     "language": "TypeScript",
     "license": "AGPL-3.0",
     "forks_num": 7055,
-    "last_commit": "2026-09-25T01:04:53Z",
+    "last_commit": "2026-09-25T01:53:32Z",
     "scorecard_score": null,
     "docker_available": true,
     "created_at": "2022-02-03T15:56:27Z",
@@ -139,7 +139,7 @@
     "languages": [],
     "watchers": 361,
     "contributors": 1004,
-    "github_checked_at": "2026-09-25T01:37:02.489Z"
+    "github_checked_at": "2026-09-25T01:59:01.670Z"
   },
   {
     "id": "supabase",
@@ -154,13 +154,13 @@
     "stars_num": 110748,
     "language": "TypeScript",
     "license": "Apache-2.0",
-    "forks_num": 14758,
-    "last_commit": "2026-09-25T01:29:26Z",
+    "forks_num": 14762,
+    "last_commit": "2026-09-25T01:45:59Z",
     "scorecard_score": 7.3,
     "docker_available": true,
     "created_at": "2019-10-12T05:56:49Z",
     "github_archived": false,
-    "health_score": 36278,
+    "health_score": 36280,
     "topics": [
       "ai",
       "alternative",
@@ -194,7 +194,7 @@
     },
     "watchers": 753,
     "contributors": 2048,
-    "github_checked_at": "2026-09-25T01:37:02.282Z"
+    "github_checked_at": "2026-09-25T01:59:02.193Z"
   },
   {
     "id": "stirling-pdf",
@@ -209,7 +209,7 @@
     "stars_num": 92959,
     "language": "Java",
     "license": "MIT",
-    "forks_num": 9351,
+    "forks_num": 9352,
     "last_commit": "2026-09-24T20:45:22Z",
     "scorecard_score": 7,
     "docker_available": true,
@@ -245,7 +245,7 @@
     },
     "watchers": 313,
     "contributors": 312,
-    "github_checked_at": "2026-09-25T01:37:02.842Z"
+    "github_checked_at": "2026-09-25T01:59:02.045Z"
   },
   {
     "id": "hoppscotch",
@@ -299,7 +299,7 @@
     },
     "watchers": 508,
     "contributors": 353,
-    "github_checked_at": "2026-09-25T01:37:02.761Z"
+    "github_checked_at": "2026-09-25T01:59:02.228Z"
   },
   {
     "id": "appflowy",
@@ -311,7 +311,7 @@
     "parent_category_ja": null,
     "primary_competitor": "Notion",
     "primary_competitor_ja": "Notion",
-    "stars_num": 76914,
+    "stars_num": 76915,
     "language": "Dart",
     "license": "AGPL-3.0",
     "forks_num": 6041,
@@ -320,7 +320,7 @@
     "docker_available": true,
     "created_at": "2021-06-16T12:56:48Z",
     "github_archived": false,
-    "health_score": 22540,
+    "health_score": 22541,
     "topics": [
       "blog",
       "confluence-alternative",
@@ -338,7 +338,7 @@
     "languages": [],
     "watchers": 407,
     "contributors": 381,
-    "github_checked_at": "2026-09-25T01:37:02.934Z"
+    "github_checked_at": "2026-09-25T01:59:02.215Z"
   },
   {
     "id": "grafana",
@@ -389,7 +389,7 @@
     },
     "watchers": 1309,
     "contributors": 3134,
-    "github_checked_at": "2026-09-25T01:37:03.004Z"
+    "github_checked_at": "2026-09-25T01:59:02.471Z"
   },
   {
     "id": "affine",
@@ -401,7 +401,7 @@
     "parent_category_ja": "ノート・ドキュメント",
     "primary_competitor": "Notion",
     "primary_competitor_ja": "Notion",
-    "stars_num": 72947,
+    "stars_num": 72946,
     "language": "TypeScript",
     "license": "MIT",
     "forks_num": 5311,
@@ -434,7 +434,7 @@
     "languages": [],
     "watchers": 298,
     "contributors": 269,
-    "github_checked_at": "2026-09-25T01:37:03.264Z"
+    "github_checked_at": "2026-09-25T01:59:02.631Z"
   },
   {
     "id": "vaultwarden",
@@ -467,7 +467,7 @@
     "languages": [],
     "watchers": 318,
     "contributors": 205,
-    "github_checked_at": "2026-09-25T01:37:03.332Z"
+    "github_checked_at": "2026-09-25T01:59:02.586Z"
   },
   {
     "id": "nocodb",
@@ -479,7 +479,7 @@
     "parent_category_ja": null,
     "primary_competitor": "Airtable",
     "primary_competitor_ja": "Airtable",
-    "stars_num": 65061,
+    "stars_num": 65062,
     "language": "TypeScript",
     "license": "Sustainable Use License",
     "forks_num": 5061,
@@ -488,7 +488,7 @@
     "docker_available": true,
     "created_at": "2017-10-29T18:51:48Z",
     "github_archived": false,
-    "health_score": 19069,
+    "health_score": 19070,
     "topics": [
       "airtable",
       "airtable-alternative",
@@ -517,7 +517,7 @@
     },
     "watchers": 390,
     "contributors": 352,
-    "github_checked_at": "2026-09-25T01:37:03.486Z"
+    "github_checked_at": "2026-09-25T01:59:02.614Z"
   },
   {
     "id": "coolify",
@@ -564,7 +564,7 @@
     "languages": [],
     "watchers": 191,
     "contributors": 730,
-    "github_checked_at": "2026-09-25T01:37:03.493Z"
+    "github_checked_at": "2026-09-25T01:59:03.058Z"
   },
   {
     "id": "penpot",
@@ -607,7 +607,7 @@
     },
     "watchers": 287,
     "contributors": 351,
-    "github_checked_at": "2026-09-25T01:37:03.785Z"
+    "github_checked_at": "2026-09-25T01:59:03.016Z"
   },
   {
     "id": "plane",
@@ -619,7 +619,7 @@
     "parent_category_ja": null,
     "primary_competitor": "Linear",
     "primary_competitor_ja": "Linear",
-    "stars_num": 59845,
+    "stars_num": 59847,
     "language": "TypeScript",
     "license": "AGPL-3.0",
     "forks_num": 5856,
@@ -654,7 +654,7 @@
     "languages": [],
     "watchers": 185,
     "contributors": 174,
-    "github_checked_at": "2026-09-25T01:37:03.843Z"
+    "github_checked_at": "2026-09-25T01:59:03.002Z"
   },
   {
     "id": "gitea",
@@ -670,7 +670,7 @@
     "language": "Go",
     "license": "MIT",
     "forks_num": 7173,
-    "last_commit": "2026-09-25T01:23:50Z",
+    "last_commit": "2026-09-25T01:56:08Z",
     "scorecard_score": 7,
     "docker_available": true,
     "created_at": "2016-11-01T02:13:26Z",
@@ -710,7 +710,7 @@
     },
     "watchers": 491,
     "contributors": 1851,
-    "github_checked_at": "2026-09-25T01:37:04.029Z"
+    "github_checked_at": "2026-09-25T01:59:03.142Z"
   },
   {
     "id": "twenty",
@@ -754,7 +754,7 @@
     "languages": [],
     "watchers": 229,
     "contributors": 756,
-    "github_checked_at": "2026-09-25T01:37:04.144Z"
+    "github_checked_at": "2026-09-25T01:59:03.436Z"
   },
   {
     "id": "ghost",
@@ -798,7 +798,7 @@
     },
     "watchers": 1016,
     "contributors": 926,
-    "github_checked_at": "2026-09-25T01:37:04.270Z"
+    "github_checked_at": "2026-09-25T01:59:03.456Z"
   },
   {
     "id": "metabase",
@@ -810,7 +810,7 @@
     "parent_category_ja": null,
     "primary_competitor": "Tableau",
     "primary_competitor_ja": "Tableau",
-    "stars_num": 49411,
+    "stars_num": 49412,
     "language": "Clojure",
     "license": "AGPL-3.0 / Metabase Commercial",
     "forks_num": 6849,
@@ -852,7 +852,7 @@
     },
     "watchers": 667,
     "contributors": 522,
-    "github_checked_at": "2026-09-25T01:37:04.827Z"
+    "github_checked_at": "2026-09-25T01:59:03.546Z"
   },
   {
     "id": "cal-com",
@@ -867,13 +867,13 @@
     "stars_num": 48641,
     "language": "TypeScript",
     "license": "MIT",
-    "forks_num": 15206,
+    "forks_num": 15207,
     "last_commit": "2026-09-20T08:42:15Z",
     "scorecard_score": null,
     "docker_available": true,
     "created_at": "2021-03-22T13:47:42Z",
     "github_archived": false,
-    "health_score": 20305,
+    "health_score": 20306,
     "topics": [
       "next-auth",
       "nextjs",
@@ -890,7 +890,7 @@
     "languages": [],
     "watchers": 214,
     "contributors": 981,
-    "github_checked_at": "2026-09-25T01:37:04.683Z"
+    "github_checked_at": "2026-09-25T01:59:03.589Z"
   },
   {
     "id": "rocket-chat",
@@ -937,7 +937,7 @@
     },
     "watchers": 852,
     "contributors": 1104,
-    "github_checked_at": "2026-09-25T01:37:04.577Z"
+    "github_checked_at": "2026-09-25T01:59:03.873Z"
   },
   {
     "id": "outline",
@@ -953,7 +953,7 @@
     "language": "TypeScript",
     "license": "BUSL 1.1",
     "forks_num": 3588,
-    "last_commit": "2026-09-25T01:33:16Z",
+    "last_commit": "2026-09-25T01:38:08Z",
     "scorecard_score": 5.7,
     "docker_available": true,
     "created_at": "2016-05-22T21:31:47Z",
@@ -980,7 +980,7 @@
     },
     "watchers": 185,
     "contributors": 263,
-    "github_checked_at": "2026-09-25T01:37:04.678Z"
+    "github_checked_at": "2026-09-25T01:59:03.901Z"
   },
   {
     "id": "posthog",
@@ -996,7 +996,7 @@
     "language": "Python",
     "license": "MIT",
     "forks_num": 3414,
-    "last_commit": "2026-09-25T01:36:38Z",
+    "last_commit": "2026-09-25T01:59:01Z",
     "scorecard_score": 4.6,
     "docker_available": true,
     "created_at": "2020-01-23T22:46:58Z",
@@ -1031,7 +1031,7 @@
     },
     "watchers": 142,
     "contributors": 589,
-    "github_checked_at": "2026-09-25T01:37:04.982Z"
+    "github_checked_at": "2026-09-25T01:59:03.963Z"
   },
   {
     "id": "mattermost",
@@ -1076,7 +1076,7 @@
     },
     "watchers": 538,
     "contributors": 1216,
-    "github_checked_at": "2026-09-25T01:37:05.103Z"
+    "github_checked_at": "2026-09-25T01:59:04.039Z"
   },
   {
     "id": "umami",
@@ -1112,7 +1112,7 @@
     "languages": [],
     "watchers": 142,
     "contributors": 437,
-    "github_checked_at": "2026-09-25T01:37:05.094Z"
+    "github_checked_at": "2026-09-25T01:59:04.262Z"
   },
   {
     "id": "directus",
@@ -1168,7 +1168,7 @@
     },
     "watchers": 337,
     "contributors": 584,
-    "github_checked_at": "2026-09-25T01:37:05.274Z"
+    "github_checked_at": "2026-09-25T01:59:04.409Z"
   },
   {
     "id": "chatwoot",
@@ -1184,7 +1184,7 @@
     "language": "Ruby",
     "license": "MIT",
     "forks_num": 9033,
-    "last_commit": "2026-09-25T01:29:29Z",
+    "last_commit": "2026-09-25T01:56:14Z",
     "scorecard_score": 6.6,
     "docker_available": true,
     "created_at": "2019-08-14T06:50:51Z",
@@ -1223,7 +1223,7 @@
     },
     "watchers": 297,
     "contributors": 402,
-    "github_checked_at": "2026-09-25T01:37:05.397Z"
+    "github_checked_at": "2026-09-25T01:59:04.423Z"
   },
   {
     "id": "keycloak",
@@ -1262,7 +1262,7 @@
     },
     "watchers": 404,
     "contributors": 1924,
-    "github_checked_at": "2026-09-25T01:37:05.506Z"
+    "github_checked_at": "2026-09-25T01:59:04.413Z"
   },
   {
     "id": "nextcloud",
@@ -1274,7 +1274,7 @@
     "parent_category_ja": null,
     "primary_competitor": "Google Drive",
     "primary_competitor_ja": "Google Drive",
-    "stars_num": 36906,
+    "stars_num": 36907,
     "language": "PHP",
     "license": "AGPL-3.0",
     "forks_num": 5247,
@@ -1283,7 +1283,7 @@
     "docker_available": true,
     "created_at": "2016-06-02T07:44:14Z",
     "github_archived": false,
-    "health_score": 12713,
+    "health_score": 12714,
     "topics": [
       "cloud",
       "collaboration",
@@ -1318,7 +1318,7 @@
     },
     "watchers": 551,
     "contributors": 1451,
-    "github_checked_at": "2026-09-25T01:37:05.565Z"
+    "github_checked_at": "2026-09-25T01:59:04.696Z"
   },
   {
     "id": "plausible",
@@ -1374,7 +1374,7 @@
     },
     "watchers": 157,
     "contributors": 119,
-    "github_checked_at": "2026-09-25T01:37:05.632Z"
+    "github_checked_at": "2026-09-25T01:59:04.837Z"
   },
   {
     "id": "budibase",
@@ -1431,7 +1431,7 @@
     },
     "watchers": 223,
     "contributors": 146,
-    "github_checked_at": "2026-09-25T01:37:05.739Z"
+    "github_checked_at": "2026-09-25T01:59:04.802Z"
   },
   {
     "id": "activepieces",
@@ -1471,7 +1471,7 @@
     "languages": [],
     "watchers": 130,
     "contributors": 493,
-    "github_checked_at": "2026-09-25T01:37:05.931Z"
+    "github_checked_at": "2026-09-25T01:59:04.839Z"
   },
   {
     "id": "nocobase",
@@ -1526,7 +1526,7 @@
     },
     "watchers": 173,
     "contributors": 110,
-    "github_checked_at": "2026-09-25T01:37:05.955Z"
+    "github_checked_at": "2026-09-25T01:59:05.161Z"
   },
   {
     "id": "listmonk",
@@ -1575,7 +1575,7 @@
     },
     "watchers": 144,
     "contributors": 272,
-    "github_checked_at": "2026-09-25T01:37:05.972Z"
+    "github_checked_at": "2026-09-25T01:59:05.167Z"
   },
   {
     "id": "matomo",
@@ -1591,7 +1591,7 @@
     "language": "PHP",
     "license": "GPL-3.0",
     "forks_num": 2895,
-    "last_commit": "2026-09-24T23:57:14Z",
+    "last_commit": "2026-09-25T01:56:28Z",
     "scorecard_score": 8,
     "docker_available": true,
     "created_at": "2011-03-30T21:18:17Z",
@@ -1626,7 +1626,7 @@
     },
     "watchers": 395,
     "contributors": 447,
-    "github_checked_at": "2026-09-25T01:37:06.192Z"
+    "github_checked_at": "2026-09-25T01:59:05.241Z"
   },
   {
     "id": "docmost",
@@ -1666,7 +1666,7 @@
     "languages": [],
     "watchers": 70,
     "contributors": 52,
-    "github_checked_at": "2026-09-25T01:37:06.327Z"
+    "github_checked_at": "2026-09-25T01:59:05.253Z"
   },
   {
     "id": "formbricks",
@@ -1721,7 +1721,7 @@
     },
     "watchers": 47,
     "contributors": 322,
-    "github_checked_at": "2026-09-25T01:37:06.355Z"
+    "github_checked_at": "2026-09-25T01:59:05.610Z"
   },
   {
     "id": "baserow",
@@ -1764,7 +1764,7 @@
     "languages": [],
     "watchers": 44,
     "contributors": 80,
-    "github_checked_at": "2026-09-25T01:37:06.316Z"
+    "github_checked_at": "2026-09-25T01:59:05.543Z"
   },
   {
     "id": "vikunja",
@@ -1799,7 +1799,7 @@
     "languages": [],
     "watchers": 17,
     "contributors": 198,
-    "github_checked_at": "2026-09-25T01:37:06.773Z"
+    "github_checked_at": "2026-09-25T01:59:05.634Z"
   },
   {
     "id": "taiga",
@@ -1825,7 +1825,7 @@
     "languages": [],
     "watchers": 22,
     "contributors": 15,
-    "github_checked_at": "2026-09-25T01:37:06.748Z"
+    "github_checked_at": "2026-09-25T01:59:05.611Z"
   },
   {
     "id": "glitchtip",
@@ -1851,7 +1851,7 @@
     "languages": [],
     "watchers": 5,
     "contributors": 1,
-    "github_checked_at": "2026-09-25T01:37:06.667Z"
+    "github_checked_at": "2026-09-25T01:59:05.907Z"
   },
   {
     "id": "joplin",
@@ -1898,7 +1898,7 @@
     "_source": "candidates-2026-09",
     "watchers": 490,
     "contributors": 819,
-    "github_checked_at": "2026-09-25T01:37:06.799Z",
+    "github_checked_at": "2026-09-25T01:59:06.173Z",
     "health_score": 17804
   },
   {
@@ -1939,7 +1939,7 @@
     "_source": "candidates-2026-09",
     "watchers": 254,
     "contributors": 358,
-    "github_checked_at": "2026-09-25T01:37:07.040Z",
+    "github_checked_at": "2026-09-25T01:59:05.995Z",
     "health_score": 12919
   },
   {
@@ -1953,7 +1953,7 @@
     "category": "note-docs",
     "primary_competitor": "Obsidian",
     "primary_competitor_ja": null,
-    "stars_num": 37974,
+    "stars_num": 37975,
     "language": "TypeScript",
     "license": "AGPL-3.0",
     "forks_num": 2555,
@@ -1988,7 +1988,7 @@
     "_source": "candidates-2026-09",
     "watchers": 282,
     "contributors": 454,
-    "github_checked_at": "2026-09-25T01:37:07.169Z",
+    "github_checked_at": "2026-09-25T01:59:06.347Z",
     "health_score": 11069
   },
   {
@@ -2006,7 +2006,7 @@
     "language": "TypeScript",
     "license": "AGPL-3.0",
     "forks_num": 3025,
-    "last_commit": "2026-09-24T09:51:48Z",
+    "last_commit": "2026-09-25T01:56:19Z",
     "created_at": "2020-08-30T09:21:35Z",
     "scorecard_score": null,
     "docker_available": null,
@@ -2027,7 +2027,7 @@
     "_source": "candidates-2026-09",
     "watchers": 187,
     "contributors": 125,
-    "github_checked_at": "2026-09-25T01:37:07.151Z",
+    "github_checked_at": "2026-09-25T01:59:06.275Z",
     "health_score": 13245
   },
   {
@@ -2041,7 +2041,7 @@
     "category": "note-docs",
     "primary_competitor": "Flomo",
     "primary_competitor_ja": null,
-    "stars_num": 63313,
+    "stars_num": 63315,
     "language": "Go",
     "license": "MIT",
     "forks_num": 4783,
@@ -2070,8 +2070,8 @@
     "_source": "candidates-2026-09",
     "watchers": 190,
     "contributors": 398,
-    "github_checked_at": "2026-09-25T01:37:07.142Z",
-    "health_score": 18465
+    "github_checked_at": "2026-09-25T01:59:06.420Z",
+    "health_score": 18466
   },
   {
     "id": "bookstack",
@@ -2106,7 +2106,7 @@
     "_source": "candidates-2026-09",
     "watchers": 201,
     "contributors": 240,
-    "github_checked_at": "2026-09-25T01:37:07.540Z",
+    "github_checked_at": "2026-09-25T01:59:06.550Z",
     "health_score": 6146
   },
   {
@@ -2143,7 +2143,7 @@
     "_source": "candidates-2026-09",
     "watchers": 321,
     "contributors": 235,
-    "github_checked_at": "2026-09-25T01:37:07.541Z",
+    "github_checked_at": "2026-09-25T01:59:06.668Z",
     "health_score": 9098
   },
   {
@@ -2177,7 +2177,7 @@
     "_source": "candidates-2026-09",
     "watchers": 190,
     "contributors": 1100,
-    "github_checked_at": "2026-09-25T01:37:09.098Z",
+    "github_checked_at": "2026-09-25T01:59:06.702Z",
     "health_score": 2674
   },
   {
@@ -2213,7 +2213,7 @@
     "_source": "candidates-2026-09",
     "watchers": 40,
     "contributors": 91,
-    "github_checked_at": "2026-09-25T01:37:08.061Z",
+    "github_checked_at": "2026-09-25T01:59:06.786Z",
     "health_score": 2558
   },
   {
@@ -2253,7 +2253,7 @@
     "_source": "candidates-2026-09",
     "watchers": 37,
     "contributors": 44,
-    "github_checked_at": "2026-09-25T01:37:08.011Z",
+    "github_checked_at": "2026-09-25T01:59:06.906Z",
     "health_score": 2192
   },
   {
@@ -2298,7 +2298,7 @@
     "_source": "candidates-2026-09",
     "watchers": 340,
     "contributors": 373,
-    "github_checked_at": "2026-09-25T01:37:08.289Z",
+    "github_checked_at": "2026-09-25T01:59:07.030Z",
     "health_score": 6435
   },
   {
@@ -2336,7 +2336,7 @@
     "_source": "candidates-2026-09",
     "watchers": 83,
     "contributors": 140,
-    "github_checked_at": "2026-09-25T01:37:08.629Z",
+    "github_checked_at": "2026-09-25T01:59:07.039Z",
     "health_score": 2506
   },
   {
@@ -2385,7 +2385,7 @@
     "_source": "candidates-2026-09",
     "watchers": 76,
     "contributors": 55,
-    "github_checked_at": "2026-09-25T01:37:08.615Z",
+    "github_checked_at": "2026-09-25T01:59:07.205Z",
     "health_score": 4209
   },
   {
@@ -2423,7 +2423,7 @@
     "_source": "candidates-2026-09",
     "watchers": 66,
     "contributors": 56,
-    "github_checked_at": "2026-09-25T01:37:08.814Z",
+    "github_checked_at": "2026-09-25T01:59:07.236Z",
     "health_score": 1979
   },
   {
@@ -2437,7 +2437,7 @@
     "category": "note-docs",
     "primary_competitor": "Obsidian",
     "primary_competitor_ja": null,
-    "stars_num": 6151,
+    "stars_num": 6152,
     "language": "TypeScript",
     "license": "MIT",
     "forks_num": 487,
@@ -2459,8 +2459,8 @@
     "_source": "candidates-2026-09",
     "watchers": 24,
     "contributors": 174,
-    "github_checked_at": "2026-09-25T01:37:08.990Z",
-    "health_score": 1874
+    "github_checked_at": "2026-09-25T01:59:07.403Z",
+    "health_score": 1875
   },
   {
     "id": "onlyoffice",
@@ -2509,7 +2509,7 @@
     "_source": "candidates-2026-09",
     "watchers": 164,
     "contributors": 21,
-    "github_checked_at": "2026-09-25T01:37:09.002Z",
+    "github_checked_at": "2026-09-25T01:59:07.374Z",
     "health_score": 2410
   },
   {
@@ -2552,7 +2552,7 @@
     "_source": "candidates-2026-09",
     "watchers": 44,
     "contributors": 520,
-    "github_checked_at": "2026-09-25T01:37:09.559Z",
+    "github_checked_at": "2026-09-25T01:59:07.562Z",
     "health_score": 1616
   },
   {
@@ -2569,8 +2569,8 @@
     "stars_num": 54574,
     "language": "Python",
     "license": "LGPL-3.0",
-    "forks_num": 33822,
-    "last_commit": "2026-09-25T01:33:59Z",
+    "forks_num": 33824,
+    "last_commit": "2026-09-25T01:44:29Z",
     "created_at": "2014-05-13T15:38:58Z",
     "scorecard_score": null,
     "docker_available": null,
@@ -2589,8 +2589,8 @@
     "_source": "candidates-2026-09",
     "watchers": 1540,
     "contributors": 4296,
-    "github_checked_at": "2026-09-25T01:37:09.396Z",
-    "health_score": 33088
+    "github_checked_at": "2026-09-25T01:59:07.658Z",
+    "health_score": 33089
   },
   {
     "id": "erpnext",
@@ -2606,8 +2606,8 @@
     "stars_num": 39531,
     "language": "Python",
     "license": "GPL-3.0",
-    "forks_num": 12933,
-    "last_commit": "2026-09-25T01:35:13Z",
+    "forks_num": 12934,
+    "last_commit": "2026-09-25T01:58:17Z",
     "created_at": "2011-06-08T08:20:56Z",
     "scorecard_score": null,
     "docker_available": null,
@@ -2635,7 +2635,7 @@
     "_source": "candidates-2026-09",
     "watchers": 677,
     "contributors": 942,
-    "github_checked_at": "2026-09-25T01:37:09.399Z",
+    "github_checked_at": "2026-09-25T01:59:07.792Z",
     "health_score": 16990
   },
   {
@@ -2669,7 +2669,7 @@
     "_source": "candidates-2026-09",
     "watchers": 91,
     "contributors": 176,
-    "github_checked_at": "2026-09-25T01:37:09.485Z",
+    "github_checked_at": "2026-09-25T01:59:07.757Z",
     "health_score": 1635
   },
   {
@@ -2698,7 +2698,7 @@
     "_source": "candidates-2026-09",
     "watchers": 121,
     "contributors": 74,
-    "github_checked_at": "2026-09-25T01:37:09.819Z",
+    "github_checked_at": "2026-09-25T01:59:07.895Z",
     "health_score": 1036
   },
   {
@@ -2716,7 +2716,7 @@
     "language": "Python",
     "license": "Apache-2.0",
     "forks_num": 10290,
-    "last_commit": "2026-09-24T15:17:50Z",
+    "last_commit": "2026-09-25T01:43:52Z",
     "created_at": "2015-09-25T16:37:25Z",
     "scorecard_score": null,
     "docker_available": null,
@@ -2740,7 +2740,7 @@
     "_source": "candidates-2026-09",
     "watchers": 362,
     "contributors": 1337,
-    "github_checked_at": "2026-09-25T01:37:09.809Z",
+    "github_checked_at": "2026-09-25T01:59:08.855Z",
     "health_score": 12392
   },
   {
@@ -2772,7 +2772,7 @@
     "_source": "candidates-2026-09",
     "watchers": 222,
     "contributors": 1309,
-    "github_checked_at": "2026-09-25T01:37:09.923Z",
+    "github_checked_at": "2026-09-25T01:59:08.732Z",
     "health_score": 5471
   },
   {
@@ -2801,7 +2801,7 @@
     "_source": "candidates-2026-09",
     "watchers": 31,
     "contributors": 675,
-    "github_checked_at": "2026-09-25T01:37:09.924Z",
+    "github_checked_at": "2026-09-25T01:59:08.471Z",
     "health_score": 1813
   },
   {
@@ -2819,7 +2819,7 @@
     "language": "Rust",
     "license": "AGPL-3.0",
     "forks_num": 388,
-    "last_commit": "2026-09-24T23:22:14Z",
+    "last_commit": "2026-09-25T01:44:51Z",
     "created_at": "2021-06-15T13:11:41Z",
     "scorecard_score": null,
     "docker_available": null,
@@ -2841,7 +2841,7 @@
     "_source": "candidates-2026-09",
     "watchers": 15,
     "contributors": 63,
-    "github_checked_at": "2026-09-25T01:37:10.176Z",
+    "github_checked_at": "2026-09-25T01:59:08.265Z",
     "health_score": 1066
   },
   {
@@ -2875,7 +2875,7 @@
     "_source": "candidates-2026-09",
     "watchers": 31,
     "contributors": 105,
-    "github_checked_at": "2026-09-25T01:37:10.251Z",
+    "github_checked_at": "2026-09-25T01:59:08.703Z",
     "health_score": 772
   },
   {
@@ -2913,7 +2913,7 @@
     "_source": "candidates-2026-09",
     "watchers": 69,
     "contributors": 149,
-    "github_checked_at": "2026-09-25T01:37:10.291Z",
+    "github_checked_at": "2026-09-25T01:59:08.836Z",
     "health_score": 936
   },
   {
@@ -2957,7 +2957,7 @@
     "_source": "candidates-2026-09",
     "watchers": 133,
     "contributors": 180,
-    "github_checked_at": "2026-09-25T01:37:10.507Z",
+    "github_checked_at": "2026-09-25T01:59:09.065Z",
     "health_score": 2142
   },
   {
@@ -3004,7 +3004,7 @@
     "_source": "candidates-2026-09",
     "watchers": 197,
     "contributors": 383,
-    "github_checked_at": "2026-09-25T01:37:10.724Z",
+    "github_checked_at": "2026-09-25T01:59:09.164Z",
     "health_score": 4521
   },
   {
@@ -3047,7 +3047,7 @@
     "_source": "candidates-2026-09",
     "watchers": 92,
     "contributors": 259,
-    "github_checked_at": "2026-09-25T01:37:10.685Z",
+    "github_checked_at": "2026-09-25T01:59:09.252Z",
     "health_score": 2533
   },
   {
@@ -3088,7 +3088,7 @@
     "_source": "candidates-2026-09",
     "watchers": 213,
     "contributors": 370,
-    "github_checked_at": "2026-09-25T01:37:10.760Z",
+    "github_checked_at": "2026-09-25T01:59:09.311Z",
     "health_score": 5979
   },
   {
@@ -3128,7 +3128,7 @@
     "_source": "candidates-2026-09",
     "watchers": 82,
     "contributors": 54,
-    "github_checked_at": "2026-09-25T01:37:10.923Z",
+    "github_checked_at": "2026-09-25T01:59:09.433Z",
     "health_score": 4229
   },
   {
@@ -3157,7 +3157,7 @@
     "_source": "candidates-2026-09",
     "watchers": 218,
     "contributors": 341,
-    "github_checked_at": "2026-09-25T01:37:11.072Z",
+    "github_checked_at": "2026-09-25T01:59:09.526Z",
     "health_score": 2905
   },
   {
@@ -3195,7 +3195,7 @@
     "_source": "candidates-2026-09",
     "watchers": 181,
     "contributors": 294,
-    "github_checked_at": "2026-09-25T01:37:11.259Z",
+    "github_checked_at": "2026-09-25T01:59:09.592Z",
     "health_score": 5176
   },
   {
@@ -3233,7 +3233,7 @@
     "_source": "candidates-2026-09",
     "watchers": 26,
     "contributors": 49,
-    "github_checked_at": "2026-09-25T01:37:11.109Z",
+    "github_checked_at": "2026-09-25T01:59:09.597Z",
     "health_score": 2808
   },
   {
@@ -3262,7 +3262,7 @@
     "_source": "candidates-2026-09",
     "watchers": 156,
     "contributors": 39,
-    "github_checked_at": "2026-09-25T01:37:11.325Z",
+    "github_checked_at": "2026-09-25T01:59:09.874Z",
     "health_score": 4647
   },
   {
@@ -3297,8 +3297,8 @@
     "_source": "candidates-2026-09",
     "watchers": 216,
     "contributors": 52,
-    "github_checked_at": "2026-09-25T01:37:11.481Z",
-    "health_score": 4931
+    "github_checked_at": "2026-09-25T01:59:09.879Z",
+    "health_score": 4930
   },
   {
     "id": "mailtrain",
@@ -3330,7 +3330,7 @@
     "_source": "candidates-2026-09",
     "watchers": 113,
     "contributors": 107,
-    "github_checked_at": "2026-09-25T01:37:11.463Z",
+    "github_checked_at": "2026-09-25T01:59:09.997Z",
     "health_score": 1829
   },
   {
@@ -3380,7 +3380,7 @@
     "_source": "candidates-2026-09",
     "watchers": 256,
     "contributors": 410,
-    "github_checked_at": "2026-09-25T01:37:11.657Z",
+    "github_checked_at": "2026-09-25T01:59:10.004Z",
     "health_score": 6073
   },
   {
@@ -3419,7 +3419,7 @@
     "_source": "candidates-2026-09",
     "watchers": 526,
     "contributors": 349,
-    "github_checked_at": "2026-09-25T01:37:11.983Z",
+    "github_checked_at": "2026-09-25T01:59:10.228Z",
     "health_score": 7079
   },
   {
@@ -3456,7 +3456,7 @@
     "_source": "candidates-2026-09",
     "watchers": 84,
     "contributors": 161,
-    "github_checked_at": "2026-09-25T01:37:11.856Z",
+    "github_checked_at": "2026-09-25T01:59:10.236Z",
     "health_score": 3932
   },
   {
@@ -3491,7 +3491,7 @@
     "_source": "candidates-2026-09",
     "watchers": 308,
     "contributors": 454,
-    "github_checked_at": "2026-09-25T01:37:11.929Z",
+    "github_checked_at": "2026-09-25T01:59:10.411Z",
     "health_score": 3771
   },
   {
@@ -3541,7 +3541,7 @@
     "_source": "candidates-2026-09",
     "watchers": 81,
     "contributors": 198,
-    "github_checked_at": "2026-09-25T01:37:12.169Z",
+    "github_checked_at": "2026-09-25T01:59:10.416Z",
     "health_score": 3599
   },
   {
@@ -3555,7 +3555,7 @@
     "category": "project",
     "primary_competitor": "Trello",
     "primary_competitor_ja": null,
-    "stars_num": 26487,
+    "stars_num": 26486,
     "language": "TypeScript",
     "license": "Apache-2.0",
     "forks_num": 2583,
@@ -3581,7 +3581,7 @@
     "_source": "candidates-2026-09",
     "watchers": 160,
     "contributors": 265,
-    "github_checked_at": "2026-09-25T01:37:12.379Z",
+    "github_checked_at": "2026-09-25T01:59:10.626Z",
     "health_score": 8041
   },
   {
@@ -3617,7 +3617,7 @@
     "_source": "candidates-2026-09",
     "watchers": 45,
     "contributors": 36,
-    "github_checked_at": "2026-09-25T01:37:12.494Z",
+    "github_checked_at": "2026-09-25T01:59:10.567Z",
     "health_score": 246
   },
   {
@@ -3650,7 +3650,7 @@
     "_source": "candidates-2026-09",
     "watchers": 72,
     "contributors": 199,
-    "github_checked_at": "2026-09-25T01:37:12.336Z",
+    "github_checked_at": "2026-09-25T01:59:10.771Z",
     "health_score": 3406
   },
   {
@@ -3692,7 +3692,7 @@
     "_source": "candidates-2026-09",
     "watchers": 92,
     "contributors": 43,
-    "github_checked_at": "2026-09-25T01:37:12.558Z",
+    "github_checked_at": "2026-09-25T01:59:10.785Z",
     "health_score": 6175
   },
   {
@@ -3739,7 +3739,7 @@
     "_source": "candidates-2026-09",
     "watchers": 14,
     "contributors": 12,
-    "github_checked_at": "2026-09-25T01:37:12.707Z",
+    "github_checked_at": "2026-09-25T01:59:11.152Z",
     "health_score": 832
   },
   {
@@ -3757,7 +3757,7 @@
     "language": "Python",
     "license": "Apache-2.0",
     "forks_num": 18387,
-    "last_commit": "2026-09-25T01:33:10Z",
+    "last_commit": "2026-09-25T01:39:31Z",
     "created_at": "2015-07-21T18:55:34Z",
     "scorecard_score": null,
     "docker_available": null,
@@ -3787,7 +3787,7 @@
     "_source": "candidates-2026-09",
     "watchers": 1539,
     "contributors": 1763,
-    "github_checked_at": "2026-09-25T01:37:12.780Z",
+    "github_checked_at": "2026-09-25T01:59:11.049Z",
     "health_score": 29189
   },
   {
@@ -3836,7 +3836,7 @@
     "_source": "candidates-2026-09",
     "watchers": 568,
     "contributors": 550,
-    "github_checked_at": "2026-09-25T01:37:12.892Z",
+    "github_checked_at": "2026-09-25T01:59:11.178Z",
     "health_score": 9930
   },
   {
@@ -3870,7 +3870,7 @@
     "_source": "candidates-2026-09",
     "watchers": 35,
     "contributors": 178,
-    "github_checked_at": "2026-09-25T01:37:13.317Z",
+    "github_checked_at": "2026-09-25T01:59:11.198Z",
     "health_score": 2027
   },
   {
@@ -3899,7 +3899,7 @@
     "_source": "candidates-2026-09",
     "watchers": 128,
     "contributors": 61,
-    "github_checked_at": "2026-09-25T01:37:13.215Z",
+    "github_checked_at": "2026-09-25T01:59:11.547Z",
     "health_score": 1097
   },
   {
@@ -3944,7 +3944,7 @@
     "_source": "candidates-2026-09",
     "watchers": 8,
     "contributors": 100,
-    "github_checked_at": "2026-09-25T01:37:13.203Z",
+    "github_checked_at": "2026-09-25T01:59:11.541Z",
     "health_score": 5464
   },
   {
@@ -3958,10 +3958,10 @@
     "category": "database",
     "primary_competitor": "Google スプレッドシート",
     "primary_competitor_ja": null,
-    "stars_num": 17725,
+    "stars_num": 17780,
     "language": "TypeScript",
     "license": "Apache-2.0",
-    "forks_num": 1533,
+    "forks_num": 1538,
     "last_commit": "2026-09-24T14:02:42Z",
     "created_at": "2022-09-29T12:09:14Z",
     "scorecard_score": null,
@@ -3991,10 +3991,10 @@
     "languages": [],
     "_url_verified": true,
     "_source": "candidates-2026-09",
-    "watchers": 213,
+    "watchers": 216,
     "contributors": 78,
-    "github_checked_at": "2026-09-25T01:37:13.247Z",
-    "health_score": 5290
+    "github_checked_at": "2026-09-25T01:59:11.534Z",
+    "health_score": 5307
   },
   {
     "id": "goatcounter",
@@ -4026,7 +4026,7 @@
     "_source": "candidates-2026-09",
     "watchers": 30,
     "contributors": 65,
-    "github_checked_at": "2026-09-25T01:37:13.608Z",
+    "github_checked_at": "2026-09-25T01:59:11.558Z",
     "health_score": 1678
   },
   {
@@ -4060,7 +4060,7 @@
     "_source": "candidates-2026-09",
     "watchers": 45,
     "contributors": 48,
-    "github_checked_at": "2026-09-25T01:37:13.533Z",
+    "github_checked_at": "2026-09-25T01:59:11.846Z",
     "health_score": 1403
   },
   {
@@ -4098,7 +4098,7 @@
     "_source": "candidates-2026-09",
     "watchers": 96,
     "contributors": 38,
-    "github_checked_at": "2026-09-25T01:37:13.640Z",
+    "github_checked_at": "2026-09-25T01:59:11.918Z",
     "health_score": 2195
   },
   {
@@ -4148,7 +4148,7 @@
     "_source": "candidates-2026-09",
     "watchers": 210,
     "contributors": 131,
-    "github_checked_at": "2026-09-25T01:37:14.027Z",
+    "github_checked_at": "2026-09-25T01:59:11.948Z",
     "health_score": 2085
   },
   {
@@ -4194,7 +4194,7 @@
     "_source": "candidates-2026-09",
     "watchers": 87,
     "contributors": 81,
-    "github_checked_at": "2026-09-25T01:37:13.905Z",
+    "github_checked_at": "2026-09-25T01:59:12.049Z",
     "health_score": 3713
   },
   {
@@ -4233,7 +4233,7 @@
     "_source": "candidates-2026-09",
     "watchers": 43,
     "contributors": 30,
-    "github_checked_at": "2026-09-25T01:37:14.069Z",
+    "github_checked_at": "2026-09-25T01:59:12.237Z",
     "health_score": 1498
   },
   {
@@ -4251,7 +4251,7 @@
     "language": "Go",
     "license": "Elastic License 2.0",
     "forks_num": 71,
-    "last_commit": "2026-09-24T12:28:39Z",
+    "last_commit": "2026-09-25T01:53:49Z",
     "created_at": "2019-07-19T09:24:38Z",
     "scorecard_score": null,
     "docker_available": null,
@@ -4283,7 +4283,7 @@
     "_source": "candidates-2026-09",
     "watchers": 62,
     "contributors": 135,
-    "github_checked_at": "2026-09-25T01:37:14.010Z",
+    "github_checked_at": "2026-09-25T01:59:12.327Z",
     "health_score": 1241
   },
   {
@@ -4297,7 +4297,7 @@
     "category": "observability",
     "primary_competitor": "Pingdom",
     "primary_competitor_ja": null,
-    "stars_num": 91793,
+    "stars_num": 91794,
     "language": "JavaScript",
     "license": "MIT",
     "forks_num": 8458,
@@ -4325,7 +4325,7 @@
     "_source": "candidates-2026-09",
     "watchers": 321,
     "contributors": 1138,
-    "github_checked_at": "2026-09-25T01:37:14.247Z",
+    "github_checked_at": "2026-09-25T01:59:12.335Z",
     "health_score": 27827
   },
   {
@@ -4375,7 +4375,7 @@
     "_source": "candidates-2026-09",
     "watchers": 44,
     "contributors": 174,
-    "github_checked_at": "2026-09-25T01:37:14.353Z",
+    "github_checked_at": "2026-09-25T01:59:12.443Z",
     "health_score": 3553
   },
   {
@@ -4425,7 +4425,7 @@
     "_source": "candidates-2026-09",
     "watchers": 1340,
     "contributors": 692,
-    "github_checked_at": "2026-09-25T01:37:14.417Z",
+    "github_checked_at": "2026-09-25T01:59:12.622Z",
     "health_score": 24160
   },
   {
@@ -4461,7 +4461,7 @@
     "_source": "candidates-2026-09",
     "watchers": 145,
     "contributors": 197,
-    "github_checked_at": "2026-09-25T01:37:14.395Z",
+    "github_checked_at": "2026-09-25T01:59:12.685Z",
     "health_score": 2368
   },
   {
@@ -4498,7 +4498,7 @@
     "_source": "candidates-2026-09",
     "watchers": 1158,
     "contributors": 1487,
-    "github_checked_at": "2026-09-25T01:37:14.971Z",
+    "github_checked_at": "2026-09-25T01:59:12.722Z",
     "health_score": 23014
   },
   {
@@ -4543,7 +4543,7 @@
     "_source": "candidates-2026-09",
     "watchers": 156,
     "contributors": 425,
-    "github_checked_at": "2026-09-25T01:37:15.107Z",
+    "github_checked_at": "2026-09-25T01:59:12.802Z",
     "health_score": 5568
   },
   {
@@ -4593,7 +4593,7 @@
     "_source": "candidates-2026-09",
     "watchers": 139,
     "contributors": 218,
-    "github_checked_at": "2026-09-25T01:37:14.747Z",
+    "github_checked_at": "2026-09-25T01:59:13.060Z",
     "health_score": 9442
   },
   {
@@ -4611,7 +4611,7 @@
     "language": "Python",
     "license": "FSL 1.1",
     "forks_num": 4868,
-    "last_commit": "2026-09-25T01:29:46Z",
+    "last_commit": "2026-09-25T01:53:08Z",
     "created_at": "2010-08-30T22:06:41Z",
     "scorecard_score": null,
     "docker_available": null,
@@ -4638,7 +4638,7 @@
     "_source": "candidates-2026-09",
     "watchers": 669,
     "contributors": 1090,
-    "github_checked_at": "2026-09-25T01:37:14.824Z",
+    "github_checked_at": "2026-09-25T01:59:13.103Z",
     "health_score": 14356
   },
   {
@@ -4667,7 +4667,7 @@
     "_source": "candidates-2026-09",
     "watchers": 4,
     "contributors": 40,
-    "github_checked_at": "2026-09-25T01:37:15.172Z",
+    "github_checked_at": "2026-09-25T01:59:13.076Z",
     "health_score": 610
   },
   {
@@ -4712,7 +4712,7 @@
     "_source": "candidates-2026-09",
     "watchers": 229,
     "contributors": 194,
-    "github_checked_at": "2026-09-25T01:37:15.590Z",
+    "github_checked_at": "2026-09-25T01:59:13.156Z",
     "health_score": 2756
   },
   {
@@ -4762,7 +4762,7 @@
     "_source": "candidates-2026-09",
     "watchers": 104,
     "contributors": 157,
-    "github_checked_at": "2026-09-25T01:37:15.385Z",
+    "github_checked_at": "2026-09-25T01:59:13.391Z",
     "health_score": 6189
   },
   {
@@ -4799,7 +4799,7 @@
     "_source": "candidates-2026-09",
     "watchers": 314,
     "contributors": 516,
-    "github_checked_at": "2026-09-25T01:37:15.507Z",
+    "github_checked_at": "2026-09-25T01:59:13.729Z",
     "health_score": 7712
   },
   {
@@ -4834,7 +4834,7 @@
     "_source": "candidates-2026-09",
     "watchers": 74,
     "contributors": 96,
-    "github_checked_at": "2026-09-25T01:37:15.579Z",
+    "github_checked_at": "2026-09-25T01:59:13.512Z",
     "health_score": 841
   },
   {
@@ -4871,7 +4871,7 @@
     "_source": "candidates-2026-09",
     "watchers": 279,
     "contributors": 216,
-    "github_checked_at": "2026-09-25T01:37:15.886Z",
+    "github_checked_at": "2026-09-25T01:59:13.611Z",
     "health_score": 4804
   },
   {
@@ -4918,7 +4918,7 @@
     "_source": "candidates-2026-09",
     "watchers": 84,
     "contributors": 622,
-    "github_checked_at": "2026-09-25T01:37:15.947Z",
+    "github_checked_at": "2026-09-25T01:59:13.802Z",
     "health_score": 7782
   },
   {
@@ -4965,7 +4965,7 @@
     "_source": "candidates-2026-09",
     "watchers": 65,
     "contributors": 261,
-    "github_checked_at": "2026-09-25T01:37:15.936Z",
+    "github_checked_at": "2026-09-25T01:59:13.862Z",
     "health_score": 4582
   },
   {
@@ -5006,7 +5006,7 @@
     "_source": "candidates-2026-09",
     "watchers": 114,
     "contributors": 247,
-    "github_checked_at": "2026-09-25T01:37:16.065Z",
+    "github_checked_at": "2026-09-25T01:59:14.051Z",
     "health_score": 4191
   },
   {
@@ -5056,7 +5056,7 @@
     "_source": "candidates-2026-09",
     "watchers": 168,
     "contributors": 305,
-    "github_checked_at": "2026-09-25T01:37:16.278Z",
+    "github_checked_at": "2026-09-25T01:59:15.741Z",
     "health_score": 8211
   },
   {
@@ -5105,7 +5105,7 @@
     "_source": "candidates-2026-09",
     "watchers": 103,
     "contributors": 42,
-    "github_checked_at": "2026-09-25T01:37:16.359Z",
+    "github_checked_at": "2026-09-25T01:59:14.113Z",
     "health_score": 4299
   },
   {
@@ -5155,7 +5155,7 @@
     "_source": "candidates-2026-09",
     "watchers": 105,
     "contributors": 119,
-    "github_checked_at": "2026-09-25T01:37:16.433Z",
+    "github_checked_at": "2026-09-25T01:59:14.221Z",
     "health_score": 4350
   },
   {
@@ -5199,7 +5199,7 @@
     "_source": "candidates-2026-09",
     "watchers": 42,
     "contributors": 59,
-    "github_checked_at": "2026-09-25T01:37:16.477Z",
+    "github_checked_at": "2026-09-25T01:59:14.507Z",
     "health_score": 2807
   },
   {
@@ -5238,7 +5238,7 @@
     "_source": "candidates-2026-09",
     "watchers": 88,
     "contributors": 566,
-    "github_checked_at": "2026-09-25T01:37:16.666Z",
+    "github_checked_at": "2026-09-25T01:59:14.488Z",
     "health_score": 2036
   },
   {
@@ -5272,7 +5272,7 @@
     "_source": "candidates-2026-09",
     "watchers": 236,
     "contributors": 263,
-    "github_checked_at": "2026-09-25T01:37:16.774Z",
+    "github_checked_at": "2026-09-25T01:59:14.554Z",
     "health_score": 12509
   },
   {
@@ -5312,7 +5312,7 @@
     "_source": "candidates-2026-09",
     "watchers": 138,
     "contributors": 165,
-    "github_checked_at": "2026-09-25T01:37:16.875Z",
+    "github_checked_at": "2026-09-25T01:59:14.888Z",
     "health_score": 8343
   },
   {
@@ -5345,7 +5345,7 @@
     "_source": "candidates-2026-09",
     "watchers": 783,
     "contributors": 1625,
-    "github_checked_at": "2026-09-25T01:37:17.151Z",
+    "github_checked_at": "2026-09-25T01:59:14.859Z",
     "health_score": 12462
   },
   {
@@ -5359,7 +5359,7 @@
     "category": "security",
     "primary_competitor": "HashiCorp Vault",
     "primary_competitor_ja": null,
-    "stars_num": 29416,
+    "stars_num": 29415,
     "language": "TypeScript",
     "license": "MIT",
     "forks_num": 2283,
@@ -5395,7 +5395,7 @@
     "_source": "candidates-2026-09",
     "watchers": 76,
     "contributors": 279,
-    "github_checked_at": "2026-09-25T01:37:17.062Z",
+    "github_checked_at": "2026-09-25T01:59:14.954Z",
     "health_score": 8654
   },
   {
@@ -5434,7 +5434,7 @@
     "_source": "candidates-2026-09",
     "watchers": 121,
     "contributors": 210,
-    "github_checked_at": "2026-09-25T01:37:17.101Z",
+    "github_checked_at": "2026-09-25T01:59:15.199Z",
     "health_score": 6477
   },
   {
@@ -5479,7 +5479,7 @@
     "_source": "candidates-2026-09",
     "watchers": 225,
     "contributors": 551,
-    "github_checked_at": "2026-09-25T01:37:17.337Z",
+    "github_checked_at": "2026-09-25T01:59:15.310Z",
     "health_score": 10204
   },
   {
@@ -5524,7 +5524,7 @@
     "_source": "candidates-2026-09",
     "watchers": 83,
     "contributors": 156,
-    "github_checked_at": "2026-09-25T01:37:17.489Z",
+    "github_checked_at": "2026-09-25T01:59:15.293Z",
     "health_score": 3773
   },
   {
@@ -5563,7 +5563,7 @@
     "_source": "candidates-2026-09",
     "watchers": 394,
     "contributors": 278,
-    "github_checked_at": "2026-09-25T01:37:17.524Z",
+    "github_checked_at": "2026-09-25T01:59:15.580Z",
     "health_score": 5516
   },
   {
@@ -5605,7 +5605,7 @@
     "_source": "candidates-2026-09",
     "watchers": 117,
     "contributors": 241,
-    "github_checked_at": "2026-09-25T01:37:17.754Z",
+    "github_checked_at": "2026-09-25T01:59:15.663Z",
     "health_score": 4873
   },
   {
@@ -5646,7 +5646,7 @@
     "_source": "candidates-2026-09",
     "watchers": 289,
     "contributors": 279,
-    "github_checked_at": "2026-09-25T01:37:17.771Z",
+    "github_checked_at": "2026-09-25T01:59:15.776Z",
     "health_score": 10032
   },
   {
@@ -5696,7 +5696,7 @@
     "_source": "candidates-2026-09",
     "watchers": 76,
     "contributors": 134,
-    "github_checked_at": "2026-09-25T01:37:18.103Z",
+    "github_checked_at": "2026-09-25T01:59:16.029Z",
     "health_score": 1553
   },
   {
@@ -5741,7 +5741,7 @@
     "_source": "candidates-2026-09",
     "watchers": 204,
     "contributors": 600,
-    "github_checked_at": "2026-09-25T01:37:17.971Z",
+    "github_checked_at": "2026-09-25T01:59:16.067Z",
     "health_score": 2566
   },
   {
@@ -5791,7 +5791,7 @@
     "_source": "candidates-2026-09",
     "watchers": 231,
     "contributors": 499,
-    "github_checked_at": "2026-09-25T01:37:18.159Z",
+    "github_checked_at": "2026-09-25T01:59:16.124Z",
     "health_score": 5807
   },
   {
@@ -5839,7 +5839,7 @@
     "_source": "candidates-2026-09",
     "watchers": 124,
     "contributors": 86,
-    "github_checked_at": "2026-09-25T01:37:18.155Z",
+    "github_checked_at": "2026-09-25T01:59:16.180Z",
     "health_score": 4173
   },
   {
@@ -5880,7 +5880,7 @@
     "_source": "candidates-2026-09",
     "watchers": 180,
     "contributors": 321,
-    "github_checked_at": "2026-09-25T01:37:18.328Z",
+    "github_checked_at": "2026-09-25T01:59:16.470Z",
     "health_score": 2756
   },
   {
@@ -5917,7 +5917,7 @@
     "_source": "candidates-2026-09",
     "watchers": 440,
     "contributors": 98,
-    "github_checked_at": "2026-09-25T01:37:18.464Z",
+    "github_checked_at": "2026-09-25T01:59:16.453Z",
     "health_score": 4814
   },
   {
@@ -5931,7 +5931,7 @@
     "category": "files",
     "primary_competitor": "Dropbox",
     "primary_competitor_ja": null,
-    "stars_num": 88909,
+    "stars_num": 88910,
     "language": "Go",
     "license": "MPL-2.0",
     "forks_num": 5490,
@@ -5951,7 +5951,7 @@
     "_source": "candidates-2026-09",
     "watchers": 1053,
     "contributors": 397,
-    "github_checked_at": "2026-09-25T01:37:18.675Z",
+    "github_checked_at": "2026-09-25T01:59:16.522Z",
     "health_score": 25433
   },
   {
@@ -5995,7 +5995,7 @@
     "_source": "candidates-2026-09",
     "watchers": 434,
     "contributors": 694,
-    "github_checked_at": "2026-09-25T01:37:18.495Z",
+    "github_checked_at": "2026-09-25T01:59:16.519Z",
     "health_score": 3692
   },
   {
@@ -6032,7 +6032,7 @@
     "_source": "candidates-2026-09",
     "watchers": 339,
     "contributors": 261,
-    "github_checked_at": "2026-09-25T01:37:18.731Z",
+    "github_checked_at": "2026-09-25T01:59:16.859Z",
     "health_score": 11226
   },
   {
@@ -6081,7 +6081,7 @@
     "_source": "candidates-2026-09",
     "watchers": 119,
     "contributors": 82,
-    "github_checked_at": "2026-09-25T01:37:18.876Z",
+    "github_checked_at": "2026-09-25T01:59:16.815Z",
     "health_score": 4254
   },
   {
@@ -6114,7 +6114,7 @@
     "_source": "candidates-2026-09",
     "watchers": 34,
     "contributors": 30,
-    "github_checked_at": "2026-09-25T01:37:18.871Z",
+    "github_checked_at": "2026-09-25T01:59:16.920Z",
     "health_score": 702
   },
   {
@@ -6131,7 +6131,7 @@
     "stars_num": 59939,
     "language": "Go",
     "license": "MIT",
-    "forks_num": 5428,
+    "forks_num": 5429,
     "last_commit": "2026-09-24T10:18:54Z",
     "created_at": "2014-03-16T16:19:57Z",
     "scorecard_score": null,
@@ -6164,7 +6164,7 @@
     "_source": "candidates-2026-09",
     "watchers": 567,
     "contributors": 1216,
-    "github_checked_at": "2026-09-25T01:37:19.088Z",
+    "github_checked_at": "2026-09-25T01:59:16.962Z",
     "health_score": 18449
   },
   {
@@ -6202,7 +6202,7 @@
     "_source": "candidates-2026-09",
     "watchers": 319,
     "contributors": 196,
-    "github_checked_at": "2026-09-25T01:37:19.124Z",
+    "github_checked_at": "2026-09-25T01:59:17.202Z",
     "health_score": 11400
   },
   {
@@ -6239,7 +6239,7 @@
     "_source": "candidates-2026-09",
     "watchers": 54,
     "contributors": 262,
-    "github_checked_at": "2026-09-25T01:37:19.275Z",
+    "github_checked_at": "2026-09-25T01:59:17.269Z",
     "health_score": 2364
   },
   {
@@ -6257,7 +6257,7 @@
     "language": "Dart",
     "license": "AGPL-3.0",
     "forks_num": 1824,
-    "last_commit": "2026-09-25T01:33:06Z",
+    "last_commit": "2026-09-25T01:55:19Z",
     "created_at": "2022-11-01T06:10:25Z",
     "scorecard_score": null,
     "docker_available": null,
@@ -6286,7 +6286,7 @@
     "_source": "candidates-2026-09",
     "watchers": 84,
     "contributors": 384,
-    "github_checked_at": "2026-09-25T01:37:19.277Z",
+    "github_checked_at": "2026-09-25T01:59:17.299Z",
     "health_score": 8390
   },
   {
@@ -6326,7 +6326,7 @@
     "_source": "candidates-2026-09",
     "watchers": 78,
     "contributors": 120,
-    "github_checked_at": "2026-09-25T01:37:19.446Z",
+    "github_checked_at": "2026-09-25T01:59:17.456Z",
     "health_score": 1288
   },
   {
@@ -6360,7 +6360,7 @@
     "_source": "candidates-2026-09",
     "watchers": 373,
     "contributors": 1852,
-    "github_checked_at": "2026-09-25T01:37:19.965Z",
+    "github_checked_at": "2026-09-25T01:59:17.598Z",
     "health_score": 18163
   },
   {
@@ -6378,7 +6378,7 @@
     "language": "Go",
     "license": "GPL-3.0",
     "forks_num": 1724,
-    "last_commit": "2026-09-25T01:27:52Z",
+    "last_commit": "2026-09-25T01:57:48Z",
     "created_at": "2016-02-24T23:25:12Z",
     "scorecard_score": null,
     "docker_available": null,
@@ -6404,7 +6404,7 @@
     "_source": "candidates-2026-09",
     "watchers": 96,
     "contributors": 263,
-    "github_checked_at": "2026-09-25T01:37:19.748Z",
+    "github_checked_at": "2026-09-25T01:59:17.664Z",
     "health_score": 6961
   },
   {
@@ -6439,7 +6439,7 @@
     "_source": "candidates-2026-09",
     "watchers": 78,
     "contributors": 455,
-    "github_checked_at": "2026-09-25T01:37:19.744Z",
+    "github_checked_at": "2026-09-25T01:59:17.711Z",
     "health_score": 4446
   },
   {
@@ -6475,7 +6475,7 @@
     "_source": "candidates-2026-09",
     "watchers": 31,
     "contributors": 352,
-    "github_checked_at": "2026-09-25T01:37:19.906Z",
+    "github_checked_at": "2026-09-25T01:59:17.822Z",
     "health_score": 1796
   },
   {
@@ -6509,7 +6509,7 @@
     "_source": "candidates-2026-09",
     "watchers": 34,
     "contributors": 35,
-    "github_checked_at": "2026-09-25T01:37:20.151Z",
+    "github_checked_at": "2026-09-25T01:59:17.956Z",
     "health_score": 592
   },
   {
@@ -6523,7 +6523,7 @@
     "category": "backup",
     "primary_competitor": "Backblaze",
     "primary_competitor_ja": null,
-    "stars_num": 36236,
+    "stars_num": 36238,
     "language": "Go",
     "license": "BSD-2-Clause",
     "forks_num": 1886,
@@ -6545,7 +6545,7 @@
     "_source": "candidates-2026-09",
     "watchers": 240,
     "contributors": 491,
-    "github_checked_at": "2026-09-25T01:37:20.156Z",
+    "github_checked_at": "2026-09-25T01:59:18.073Z",
     "health_score": 10306
   },
   {
@@ -6582,7 +6582,7 @@
     "_source": "candidates-2026-09",
     "watchers": 138,
     "contributors": 365,
-    "github_checked_at": "2026-09-25T01:37:20.373Z",
+    "github_checked_at": "2026-09-25T01:59:18.083Z",
     "health_score": 4094
   },
   {
@@ -6617,7 +6617,7 @@
     "_source": "candidates-2026-09",
     "watchers": 61,
     "contributors": 168,
-    "github_checked_at": "2026-09-25T01:37:20.350Z",
+    "github_checked_at": "2026-09-25T01:59:18.340Z",
     "health_score": 4015
   },
   {
@@ -6658,7 +6658,7 @@
     "_source": "candidates-2026-09",
     "watchers": 181,
     "contributors": 235,
-    "github_checked_at": "2026-09-25T01:37:20.610Z",
+    "github_checked_at": "2026-09-25T01:59:18.309Z",
     "health_score": 4456
   },
   {
@@ -6693,7 +6693,7 @@
     "_source": "candidates-2026-09",
     "watchers": 131,
     "contributors": 435,
-    "github_checked_at": "2026-09-25T01:37:20.640Z",
+    "github_checked_at": "2026-09-25T01:59:18.466Z",
     "health_score": 3641
   },
   {
@@ -6707,7 +6707,7 @@
     "category": "design",
     "primary_competitor": "Miro",
     "primary_competitor_ja": null,
-    "stars_num": 50557,
+    "stars_num": 50558,
     "language": "TypeScript",
     "license": "tldraw License",
     "forks_num": 3524,
@@ -6735,7 +6735,7 @@
     "_source": "candidates-2026-09",
     "watchers": 173,
     "contributors": 223,
-    "github_checked_at": "2026-09-25T01:37:20.776Z",
+    "github_checked_at": "2026-09-25T01:59:18.434Z",
     "health_score": 14556
   },
   {
@@ -6768,7 +6768,7 @@
     "_source": "candidates-2026-09",
     "watchers": 47,
     "contributors": 3,
-    "github_checked_at": "2026-09-25T01:37:20.725Z",
+    "github_checked_at": "2026-09-25T01:59:18.659Z",
     "health_score": 2725
   },
   {
@@ -6805,7 +6805,7 @@
     "_source": "candidates-2026-09",
     "watchers": 38,
     "contributors": 41,
-    "github_checked_at": "2026-09-25T01:37:20.950Z",
+    "github_checked_at": "2026-09-25T01:59:18.741Z",
     "health_score": 930
   },
   {
@@ -6853,7 +6853,7 @@
     "_source": "candidates-2026-09",
     "watchers": 67,
     "contributors": 88,
-    "github_checked_at": "2026-09-25T01:37:21.020Z",
+    "github_checked_at": "2026-09-25T01:59:18.768Z",
     "health_score": 2183
   },
   {
@@ -6882,7 +6882,7 @@
     "_source": "candidates-2026-09",
     "watchers": 214,
     "contributors": 1202,
-    "github_checked_at": "2026-09-25T01:37:21.656Z",
+    "github_checked_at": "2026-09-25T01:59:18.847Z",
     "health_score": 2713
   },
   {
@@ -6911,7 +6911,7 @@
     "_source": "candidates-2026-09",
     "watchers": 202,
     "contributors": 670,
-    "github_checked_at": "2026-09-25T01:37:21.685Z",
+    "github_checked_at": "2026-09-25T01:59:19.064Z",
     "health_score": 3423
   },
   {
@@ -6940,7 +6940,7 @@
     "_source": "candidates-2026-09",
     "watchers": 80,
     "contributors": 12,
-    "github_checked_at": "2026-09-25T01:37:21.344Z",
+    "github_checked_at": "2026-09-25T01:59:19.068Z",
     "health_score": 1114
   },
   {
@@ -6954,7 +6954,7 @@
     "category": "design",
     "primary_competitor": "Maya",
     "primary_competitor_ja": null,
-    "stars_num": 20517,
+    "stars_num": 20518,
     "language": "C++",
     "license": "GPL-2.0",
     "forks_num": 3284,
@@ -6976,8 +6976,8 @@
     "_source": "candidates-2026-09",
     "watchers": 366,
     "contributors": 1565,
-    "github_checked_at": "2026-09-25T01:37:22.890Z",
-    "health_score": 7645
+    "github_checked_at": "2026-09-25T01:59:19.100Z",
+    "health_score": 7646
   },
   {
     "id": "obs",
@@ -6990,11 +6990,11 @@
     "category": "video",
     "primary_competitor": "Camtasia",
     "primary_competitor_ja": null,
-    "stars_num": 76588,
+    "stars_num": 76589,
     "language": "C",
     "license": "GPL-2.0",
     "forks_num": 10298,
-    "last_commit": "2026-09-25T01:05:24Z",
+    "last_commit": "2026-09-25T01:46:47Z",
     "created_at": "2013-10-01T02:40:31Z",
     "scorecard_score": null,
     "docker_available": null,
@@ -7017,8 +7017,8 @@
     "_source": "candidates-2026-09",
     "watchers": 1531,
     "contributors": 751,
-    "github_checked_at": "2026-09-25T01:37:22.060Z",
-    "health_score": 25054
+    "github_checked_at": "2026-09-25T01:59:19.210Z",
+    "health_score": 25055
   },
   {
     "id": "shotcut",
@@ -7052,7 +7052,7 @@
     "_source": "candidates-2026-09",
     "watchers": 227,
     "contributors": 79,
-    "github_checked_at": "2026-09-25T01:37:22.125Z",
+    "github_checked_at": "2026-09-25T01:59:19.397Z",
     "health_score": 4672
   },
   {
@@ -7070,7 +7070,7 @@
     "language": "C++",
     "license": "GPL-3.0",
     "forks_num": 519,
-    "last_commit": "2026-09-24T20:20:14Z",
+    "last_commit": "2026-09-25T01:48:27Z",
     "created_at": "2015-09-18T13:16:08Z",
     "scorecard_score": null,
     "docker_available": null,
@@ -7081,7 +7081,7 @@
     "_source": "candidates-2026-09",
     "watchers": 80,
     "contributors": 224,
-    "github_checked_at": "2026-09-25T01:37:22.292Z",
+    "github_checked_at": "2026-09-25T01:59:19.433Z",
     "health_score": 1826
   },
   {
@@ -7120,7 +7120,7 @@
     "_source": "candidates-2026-09",
     "watchers": 103,
     "contributors": 65,
-    "github_checked_at": "2026-09-25T01:37:22.479Z",
+    "github_checked_at": "2026-09-25T01:59:19.462Z",
     "health_score": 2101
   },
   {
@@ -7134,7 +7134,7 @@
     "category": "video",
     "primary_competitor": "Adobe Premiere",
     "primary_competitor_ja": null,
-    "stars_num": 44029,
+    "stars_num": 44030,
     "language": "TypeScript",
     "license": "GPL-2.0",
     "forks_num": 2188,
@@ -7160,7 +7160,7 @@
     "_source": "candidates-2026-09",
     "watchers": 271,
     "contributors": 174,
-    "github_checked_at": "2026-09-25T01:37:22.526Z",
+    "github_checked_at": "2026-09-25T01:59:19.523Z",
     "health_score": 12256
   },
   {
@@ -7174,7 +7174,7 @@
     "category": "video",
     "primary_competitor": "Adobe Media Encoder",
     "primary_competitor_ja": null,
-    "stars_num": 24491,
+    "stars_num": 24492,
     "language": "C",
     "license": "GPL-2.0",
     "forks_num": 1708,
@@ -7193,7 +7193,7 @@
     "_source": "candidates-2026-09",
     "watchers": 299,
     "contributors": 166,
-    "github_checked_at": "2026-09-25T01:37:22.874Z",
+    "github_checked_at": "2026-09-25T01:59:19.763Z",
     "health_score": 7135
   },
   {
@@ -7238,7 +7238,7 @@
     "_source": "candidates-2026-09",
     "watchers": 1539,
     "contributors": 2742,
-    "github_checked_at": "2026-09-25T01:37:22.824Z",
+    "github_checked_at": "2026-09-25T01:59:19.779Z",
     "health_score": 25019
   },
   {
@@ -7273,7 +7273,7 @@
     "_source": "candidates-2026-09",
     "watchers": 272,
     "contributors": 319,
-    "github_checked_at": "2026-09-25T01:37:22.917Z",
+    "github_checked_at": "2026-09-25T01:59:19.824Z",
     "health_score": 6202
   },
   {
@@ -7287,7 +7287,7 @@
     "category": "design",
     "primary_competitor": "Snagit",
     "primary_competitor_ja": null,
-    "stars_num": 39734,
+    "stars_num": 39735,
     "language": "C#",
     "license": "GPL-3.0",
     "forks_num": 3924,
@@ -7323,7 +7323,7 @@
     "_source": "candidates-2026-09",
     "watchers": 554,
     "contributors": 300,
-    "github_checked_at": "2026-09-25T01:37:23.162Z",
+    "github_checked_at": "2026-09-25T01:59:19.865Z",
     "health_score": 12184
   },
   {
@@ -7362,7 +7362,7 @@
     "_source": "candidates-2026-09",
     "watchers": 221,
     "contributors": 354,
-    "github_checked_at": "2026-09-25T01:37:23.273Z",
+    "github_checked_at": "2026-09-25T01:59:20.191Z",
     "health_score": 8974
   },
   {
@@ -7394,7 +7394,7 @@
     "_source": "candidates-2026-09",
     "watchers": 121,
     "contributors": 60,
-    "github_checked_at": "2026-09-25T01:37:23.225Z",
+    "github_checked_at": "2026-09-25T01:59:20.206Z",
     "health_score": 1696
   },
   {
@@ -7444,7 +7444,7 @@
     "_source": "candidates-2026-09",
     "watchers": 53,
     "contributors": 80,
-    "github_checked_at": "2026-09-25T01:37:23.261Z",
+    "github_checked_at": "2026-09-25T01:59:20.270Z",
     "health_score": 6729
   },
   {
@@ -7485,7 +7485,7 @@
     "_source": "candidates-2026-09",
     "watchers": 1017,
     "contributors": 578,
-    "github_checked_at": "2026-09-25T01:37:23.615Z",
+    "github_checked_at": "2026-09-25T01:59:20.253Z",
     "health_score": 15031
   },
   {
@@ -7524,7 +7524,7 @@
     "_source": "candidates-2026-09",
     "watchers": 141,
     "contributors": 61,
-    "github_checked_at": "2026-09-25T01:37:23.702Z",
+    "github_checked_at": "2026-09-25T01:59:20.510Z",
     "health_score": 4371
   },
   {
@@ -7571,7 +7571,7 @@
     "_source": "candidates-2026-09",
     "watchers": 116,
     "contributors": 401,
-    "github_checked_at": "2026-09-25T01:37:23.636Z",
+    "github_checked_at": "2026-09-25T01:59:20.627Z",
     "health_score": 11107
   },
   {
@@ -7620,7 +7620,7 @@
     "_source": "candidates-2026-09",
     "watchers": 144,
     "contributors": 77,
-    "github_checked_at": "2026-09-25T01:37:23.596Z",
+    "github_checked_at": "2026-09-25T01:59:20.634Z",
     "health_score": 4367
   },
   {
@@ -7661,7 +7661,7 @@
     "_source": "candidates-2026-09",
     "watchers": 341,
     "contributors": 597,
-    "github_checked_at": "2026-09-25T01:37:23.991Z",
+    "github_checked_at": "2026-09-25T01:59:20.633Z",
     "health_score": 9461
   },
   {
@@ -7690,7 +7690,7 @@
     "_source": "candidates-2026-09",
     "watchers": 101,
     "contributors": 182,
-    "github_checked_at": "2026-09-25T01:37:24.011Z",
+    "github_checked_at": "2026-09-25T01:59:20.886Z",
     "health_score": 4140
   },
   {
@@ -7727,7 +7727,7 @@
     "_source": "candidates-2026-09",
     "watchers": 30,
     "contributors": 661,
-    "github_checked_at": "2026-09-25T01:37:24.120Z",
+    "github_checked_at": "2026-09-25T01:59:21.053Z",
     "health_score": 2658
   },
   {
@@ -7767,7 +7767,7 @@
     "_source": "candidates-2026-09",
     "watchers": 888,
     "contributors": 1212,
-    "github_checked_at": "2026-09-25T01:37:24.465Z",
+    "github_checked_at": "2026-09-25T01:59:20.992Z",
     "health_score": 12391
   },
   {
@@ -7813,7 +7813,7 @@
     "_source": "candidates-2026-09",
     "watchers": 223,
     "contributors": 2126,
-    "github_checked_at": "2026-09-25T01:37:24.415Z",
+    "github_checked_at": "2026-09-25T01:59:21.011Z",
     "health_score": 11118
   },
   {
@@ -7848,7 +7848,7 @@
     "_source": "candidates-2026-09",
     "watchers": 130,
     "contributors": 447,
-    "github_checked_at": "2026-09-25T01:37:24.443Z",
+    "github_checked_at": "2026-09-25T01:59:21.312Z",
     "health_score": 3505
   },
   {
@@ -7862,11 +7862,11 @@
     "category": "devtools",
     "primary_competitor": "Firebase",
     "primary_competitor_ja": null,
-    "stars_num": 57462,
+    "stars_num": 57461,
     "language": "PHP",
     "license": "BSD-3-Clause",
     "forks_num": 5743,
-    "last_commit": "2026-09-24T17:21:57Z",
+    "last_commit": "2026-09-25T01:45:15Z",
     "created_at": "2019-04-08T16:36:25Z",
     "scorecard_score": null,
     "docker_available": null,
@@ -7898,7 +7898,7 @@
     "_source": "candidates-2026-09",
     "watchers": 422,
     "contributors": 481,
-    "github_checked_at": "2026-09-25T01:37:24.495Z",
+    "github_checked_at": "2026-09-25T01:59:21.440Z",
     "health_score": 17583
   },
   {
@@ -7932,7 +7932,7 @@
     "_source": "candidates-2026-09",
     "watchers": 323,
     "contributors": 45,
-    "github_checked_at": "2026-09-25T01:37:24.829Z",
+    "github_checked_at": "2026-09-25T01:59:21.340Z",
     "health_score": 17240
   },
   {
@@ -7981,7 +7981,7 @@
     "_source": "candidates-2026-09",
     "watchers": 49,
     "contributors": 163,
-    "github_checked_at": "2026-09-25T01:37:24.805Z",
+    "github_checked_at": "2026-09-25T01:59:21.395Z",
     "health_score": 2733
   },
   {
@@ -8029,7 +8029,7 @@
     "_source": "candidates-2026-09",
     "watchers": 557,
     "contributors": 351,
-    "github_checked_at": "2026-09-25T01:37:24.866Z",
+    "github_checked_at": "2026-09-25T01:59:21.708Z",
     "health_score": 8071
   },
   {
@@ -8073,7 +8073,7 @@
     "_source": "candidates-2026-09",
     "watchers": 115,
     "contributors": 487,
-    "github_checked_at": "2026-09-25T01:37:24.935Z",
+    "github_checked_at": "2026-09-25T01:59:21.723Z",
     "health_score": 13524
   },
   {
@@ -8113,7 +8113,7 @@
     "_source": "candidates-2026-09",
     "watchers": 249,
     "contributors": 366,
-    "github_checked_at": "2026-09-25T01:37:25.184Z",
+    "github_checked_at": "2026-09-25T01:59:21.775Z",
     "health_score": 11439
   },
   {
@@ -8163,7 +8163,7 @@
     "_source": "candidates-2026-09",
     "watchers": 997,
     "contributors": 453,
-    "github_checked_at": "2026-09-25T01:37:25.230Z",
+    "github_checked_at": "2026-09-25T01:59:21.809Z",
     "health_score": 14133
   },
   {
@@ -8180,7 +8180,7 @@
     "stars_num": 64955,
     "language": "Go",
     "license": "MIT",
-    "forks_num": 6206,
+    "forks_num": 6205,
     "last_commit": "2026-09-24T15:22:06Z",
     "created_at": "2015-09-13T19:04:02Z",
     "scorecard_score": null,
@@ -8207,8 +8207,8 @@
     "_source": "candidates-2026-09",
     "watchers": 684,
     "contributors": 1126,
-    "github_checked_at": "2026-09-25T01:37:25.242Z",
-    "health_score": 20076
+    "github_checked_at": "2026-09-25T01:59:22.101Z",
+    "health_score": 20075
   },
   {
     "id": "apisix",
@@ -8256,7 +8256,7 @@
     "_source": "candidates-2026-09",
     "watchers": 313,
     "contributors": 519,
-    "github_checked_at": "2026-09-25T01:37:25.484Z",
+    "github_checked_at": "2026-09-25T01:59:22.093Z",
     "health_score": 6105
   },
   {
@@ -8306,7 +8306,7 @@
     "_source": "candidates-2026-09",
     "watchers": 299,
     "contributors": 259,
-    "github_checked_at": "2026-09-25T01:37:25.544Z",
+    "github_checked_at": "2026-09-25T01:59:22.130Z",
     "health_score": 16412
   },
   {
@@ -8356,7 +8356,7 @@
     "_source": "candidates-2026-09",
     "watchers": 139,
     "contributors": 58,
-    "github_checked_at": "2026-09-25T01:37:25.564Z",
+    "github_checked_at": "2026-09-25T01:59:22.139Z",
     "health_score": 7200
   },
   {
@@ -8392,7 +8392,7 @@
     "_source": "candidates-2026-09",
     "watchers": 185,
     "contributors": 2212,
-    "github_checked_at": "2026-09-25T01:37:25.641Z",
+    "github_checked_at": "2026-09-25T01:59:22.484Z",
     "health_score": 6081
   },
   {
@@ -8409,8 +8409,8 @@
     "stars_num": 77980,
     "language": "Java",
     "license": "AGPL-3.0 / SSPL / Elastic-2.0",
-    "forks_num": 26087,
-    "last_commit": "2026-09-25T01:35:06Z",
+    "forks_num": 26088,
+    "last_commit": "2026-09-25T01:56:04Z",
     "created_at": "2010-02-08T13:20:56Z",
     "scorecard_score": null,
     "docker_available": null,
@@ -8425,7 +8425,7 @@
     "_source": "candidates-2026-09",
     "watchers": 2620,
     "contributors": 2550,
-    "github_checked_at": "2026-09-25T01:37:25.870Z",
+    "github_checked_at": "2026-09-25T01:59:22.469Z",
     "health_score": 34469
   },
   {
@@ -8439,7 +8439,7 @@
     "category": "devtools",
     "primary_competitor": "Docker Desktop",
     "primary_competitor_ja": null,
-    "stars_num": 38561,
+    "stars_num": 38562,
     "language": "TypeScript",
     "license": "Zlib",
     "forks_num": 2909,
@@ -8468,7 +8468,7 @@
     "_source": "candidates-2026-09",
     "watchers": 472,
     "contributors": 264,
-    "github_checked_at": "2026-09-25T01:37:26.146Z",
+    "github_checked_at": "2026-09-25T01:59:22.513Z",
     "health_score": 11344
   },
   {
@@ -8503,7 +8503,7 @@
     "_source": "candidates-2026-09",
     "watchers": 53,
     "contributors": 87,
-    "github_checked_at": "2026-09-25T01:37:25.909Z",
+    "github_checked_at": "2026-09-25T01:59:22.530Z",
     "health_score": 2088
   },
   {
@@ -8538,7 +8538,7 @@
     "_source": "candidates-2026-09",
     "watchers": 221,
     "contributors": 1066,
-    "github_checked_at": "2026-09-25T01:37:26.034Z",
+    "github_checked_at": "2026-09-25T01:59:22.881Z",
     "health_score": 10513
   },
   {
@@ -8570,7 +8570,7 @@
     "_source": "candidates-2026-09",
     "watchers": 292,
     "contributors": 339,
-    "github_checked_at": "2026-09-25T01:37:26.265Z",
+    "github_checked_at": "2026-09-25T01:59:22.830Z",
     "health_score": 10115
   },
   {
@@ -8614,7 +8614,7 @@
     "_source": "candidates-2026-09",
     "watchers": 27,
     "contributors": 334,
-    "github_checked_at": "2026-09-25T01:37:26.259Z",
+    "github_checked_at": "2026-09-25T01:59:22.929Z",
     "health_score": 2567
   },
   {
@@ -8643,7 +8643,7 @@
     "_source": "candidates-2026-09",
     "watchers": 146,
     "contributors": 2360,
-    "github_checked_at": "2026-09-25T01:37:26.813Z",
+    "github_checked_at": "2026-09-25T01:59:22.903Z",
     "health_score": 9476
   },
   {
@@ -8678,7 +8678,7 @@
     "_source": "candidates-2026-09",
     "watchers": 1175,
     "contributors": 2337,
-    "github_checked_at": "2026-09-25T01:37:26.538Z",
+    "github_checked_at": "2026-09-25T01:59:23.252Z",
     "health_score": 19207
   },
   {
@@ -8726,7 +8726,7 @@
     "_source": "candidates-2026-09",
     "watchers": 191,
     "contributors": 403,
-    "github_checked_at": "2026-09-25T01:37:26.899Z",
+    "github_checked_at": "2026-09-25T01:59:23.268Z",
     "health_score": 7397
   },
   {
@@ -8758,7 +8758,7 @@
     "_source": "candidates-2026-09",
     "watchers": 1915,
     "contributors": 6956,
-    "github_checked_at": "2026-09-25T01:37:26.701Z",
+    "github_checked_at": "2026-09-25T01:59:23.353Z",
     "health_score": 33820
   },
   {
@@ -8795,7 +8795,7 @@
     "_source": "candidates-2026-09",
     "watchers": 56,
     "contributors": 239,
-    "github_checked_at": "2026-09-25T01:37:27.010Z",
+    "github_checked_at": "2026-09-25T01:59:23.281Z",
     "health_score": 1537
   },
   {
@@ -8843,7 +8843,7 @@
     "_source": "candidates-2026-09",
     "watchers": 551,
     "contributors": 512,
-    "github_checked_at": "2026-09-25T01:37:27.088Z",
+    "github_checked_at": "2026-09-25T01:59:23.645Z",
     "health_score": 15550
   },
   {
@@ -8880,7 +8880,7 @@
     "_source": "candidates-2026-09",
     "watchers": 221,
     "contributors": 205,
-    "github_checked_at": "2026-09-25T01:37:27.275Z",
+    "github_checked_at": "2026-09-25T01:59:23.593Z",
     "health_score": 2724
   },
   {
@@ -8897,7 +8897,7 @@
     "stars_num": 7938,
     "language": "PHP",
     "license": "GPL-2.0",
-    "forks_num": 3600,
+    "forks_num": 3599,
     "last_commit": "2026-09-23T13:24:02Z",
     "created_at": "2012-01-19T13:21:52Z",
     "scorecard_score": null,
@@ -8916,8 +8916,8 @@
     "_source": "candidates-2026-09",
     "watchers": 276,
     "contributors": 2267,
-    "github_checked_at": "2026-09-25T01:37:27.253Z",
-    "health_score": 4987
+    "github_checked_at": "2026-09-25T01:59:23.768Z",
+    "health_score": 4986
   },
   {
     "id": "strapi",
@@ -8965,7 +8965,7 @@
     "_source": "candidates-2026-09",
     "watchers": 653,
     "contributors": 1392,
-    "github_checked_at": "2026-09-25T01:37:27.400Z",
+    "github_checked_at": "2026-09-25T01:59:23.726Z",
     "health_score": 24108
   },
   {
@@ -9002,7 +9002,7 @@
     "_source": "candidates-2026-09",
     "watchers": 740,
     "contributors": 301,
-    "github_checked_at": "2026-09-25T01:37:27.483Z",
+    "github_checked_at": "2026-09-25T01:59:23.948Z",
     "health_score": 23620
   },
   {
@@ -9035,7 +9035,7 @@
     "_source": "candidates-2026-09",
     "watchers": 53,
     "contributors": 2939,
-    "github_checked_at": "2026-09-25T01:37:29.427Z",
+    "github_checked_at": "2026-09-25T01:59:24.050Z",
     "health_score": 3330
   },
   {
@@ -9076,7 +9076,7 @@
     "_source": "candidates-2026-09",
     "watchers": 44,
     "contributors": 98,
-    "github_checked_at": "2026-09-25T01:37:27.643Z",
+    "github_checked_at": "2026-09-25T01:59:24.074Z",
     "health_score": 4118
   },
   {
@@ -9112,7 +9112,7 @@
     "_source": "candidates-2026-09",
     "watchers": 437,
     "contributors": 1362,
-    "github_checked_at": "2026-09-25T01:37:27.857Z",
+    "github_checked_at": "2026-09-25T01:59:24.136Z",
     "health_score": 22397
   },
   {
@@ -9147,7 +9147,7 @@
     "_source": "candidates-2026-09",
     "watchers": 225,
     "contributors": 262,
-    "github_checked_at": "2026-09-25T01:37:28.149Z",
+    "github_checked_at": "2026-09-25T01:59:24.357Z",
     "health_score": 7083
   },
   {
@@ -9164,7 +9164,7 @@
     "stars_num": 18345,
     "language": "TypeScript",
     "license": "MIT",
-    "forks_num": 2735,
+    "forks_num": 2737,
     "last_commit": "2026-09-24T22:05:45Z",
     "created_at": "2020-04-30T23:16:17Z",
     "scorecard_score": null,
@@ -9183,8 +9183,8 @@
     "_source": "candidates-2026-09",
     "watchers": 85,
     "contributors": 433,
-    "github_checked_at": "2026-09-25T01:37:28.076Z",
-    "health_score": 6192
+    "github_checked_at": "2026-09-25T01:59:24.423Z",
+    "health_score": 6193
   },
   {
     "id": "windmill",
@@ -9220,7 +9220,7 @@
     "_source": "candidates-2026-09",
     "watchers": 56,
     "contributors": 172,
-    "github_checked_at": "2026-09-25T01:37:28.234Z",
+    "github_checked_at": "2026-09-25T01:59:24.516Z",
     "health_score": 5157
   },
   {
@@ -9256,7 +9256,7 @@
     "_source": "candidates-2026-09",
     "watchers": 532,
     "contributors": 285,
-    "github_checked_at": "2026-09-25T01:37:28.551Z",
+    "github_checked_at": "2026-09-25T01:59:24.533Z",
     "health_score": 8140
   },
   {
@@ -9298,7 +9298,7 @@
     "_source": "candidates-2026-09",
     "watchers": 741,
     "contributors": 265,
-    "github_checked_at": "2026-09-25T01:37:28.571Z",
+    "github_checked_at": "2026-09-25T01:59:24.680Z",
     "health_score": 14966
   },
   {
@@ -9348,7 +9348,7 @@
     "_source": "candidates-2026-09",
     "watchers": 181,
     "contributors": 565,
-    "github_checked_at": "2026-09-25T01:37:28.691Z",
+    "github_checked_at": "2026-09-25T01:59:24.806Z",
     "health_score": 8933
   },
   {
@@ -9394,7 +9394,7 @@
     "_source": "candidates-2026-09",
     "watchers": 123,
     "contributors": 304,
-    "github_checked_at": "2026-09-25T01:37:28.934Z",
+    "github_checked_at": "2026-09-25T01:59:24.868Z",
     "health_score": 6966
   },
   {
@@ -9408,7 +9408,7 @@
     "category": "automation",
     "primary_competitor": "Zapier",
     "primary_competitor_ja": null,
-    "stars_num": 46964,
+    "stars_num": 46965,
     "language": "Python",
     "license": "Apache-2.0",
     "forks_num": 17913,
@@ -9444,7 +9444,7 @@
     "_source": "candidates-2026-09",
     "watchers": 794,
     "contributors": 4661,
-    "github_checked_at": "2026-09-25T01:37:29.037Z",
+    "github_checked_at": "2026-09-25T01:59:24.987Z",
     "health_score": 23227
   },
   {
@@ -9489,7 +9489,7 @@
     "_source": "candidates-2026-09",
     "watchers": 160,
     "contributors": 701,
-    "github_checked_at": "2026-09-25T01:37:29.511Z",
+    "github_checked_at": "2026-09-25T01:59:25.076Z",
     "health_score": 5592
   },
   {
@@ -9533,7 +9533,7 @@
     "_source": "candidates-2026-09",
     "watchers": 200,
     "contributors": 475,
-    "github_checked_at": "2026-09-25T01:37:29.424Z",
+    "github_checked_at": "2026-09-25T01:59:25.244Z",
     "health_score": 7538
   },
   {
@@ -9571,7 +9571,7 @@
     "_source": "candidates-2026-09",
     "watchers": 467,
     "contributors": 237,
-    "github_checked_at": "2026-09-25T01:37:29.583Z",
+    "github_checked_at": "2026-09-25T01:59:25.223Z",
     "health_score": 4496
   },
   {
@@ -9585,11 +9585,11 @@
     "category": "automation",
     "primary_competitor": "UiPath",
     "primary_competitor_ja": null,
-    "stars_num": 96640,
+    "stars_num": 96639,
     "language": "TypeScript",
     "license": "Apache-2.0",
     "forks_num": 6501,
-    "last_commit": "2026-09-25T00:50:19Z",
+    "last_commit": "2026-09-25T01:41:29Z",
     "created_at": "2019-11-15T18:32:42Z",
     "scorecard_score": null,
     "docker_available": null,
@@ -9616,7 +9616,7 @@
     "_source": "candidates-2026-09",
     "watchers": 607,
     "contributors": 814,
-    "github_checked_at": "2026-09-25T01:37:29.818Z",
+    "github_checked_at": "2026-09-25T01:59:25.400Z",
     "health_score": 27969
   },
   {
@@ -9630,7 +9630,7 @@
     "category": "ai",
     "primary_competitor": "ChatGPT",
     "primary_competitor_ja": null,
-    "stars_num": 153087,
+    "stars_num": 153090,
     "language": "Python",
     "license": "Open WebUI License",
     "forks_num": 22392,
@@ -9661,8 +9661,8 @@
     "_source": "candidates-2026-09",
     "watchers": 667,
     "contributors": 881,
-    "github_checked_at": "2026-09-25T01:37:29.779Z",
-    "health_score": 50075
+    "github_checked_at": "2026-09-25T01:59:25.420Z",
+    "health_score": 50076
   },
   {
     "id": "librechat",
@@ -9675,11 +9675,11 @@
     "category": "ai",
     "primary_competitor": "ChatGPT",
     "primary_competitor_ja": null,
-    "stars_num": 44899,
+    "stars_num": 44901,
     "language": "TypeScript",
     "license": "MIT",
     "forks_num": 9201,
-    "last_commit": "2026-09-25T01:36:12Z",
+    "last_commit": "2026-09-25T01:50:52Z",
     "created_at": "2023-02-12T01:06:52Z",
     "scorecard_score": null,
     "docker_available": null,
@@ -9711,8 +9711,8 @@
     "_source": "candidates-2026-09",
     "watchers": 213,
     "contributors": 415,
-    "github_checked_at": "2026-09-25T01:37:29.901Z",
-    "health_score": 16086
+    "github_checked_at": "2026-09-25T01:59:25.605Z",
+    "health_score": 16087
   },
   {
     "id": "lobechat",
@@ -9725,7 +9725,7 @@
     "category": "ai",
     "primary_competitor": "ChatGPT",
     "primary_competitor_ja": null,
-    "stars_num": 82807,
+    "stars_num": 82808,
     "language": "TypeScript",
     "license": "LobeHub Community License",
     "forks_num": 15920,
@@ -9759,7 +9759,7 @@
     "_source": "candidates-2026-09",
     "watchers": 306,
     "contributors": 357,
-    "github_checked_at": "2026-09-25T01:37:30.044Z",
+    "github_checked_at": "2026-09-25T01:59:25.613Z",
     "health_score": 28917
   },
   {
@@ -9773,7 +9773,7 @@
     "category": "ai",
     "primary_competitor": "ChatGPT with files",
     "primary_competitor_ja": null,
-    "stars_num": 66434,
+    "stars_num": 66435,
     "language": "JavaScript",
     "license": "MIT",
     "forks_num": 7396,
@@ -9804,7 +9804,7 @@
     "_source": "candidates-2026-09",
     "watchers": 414,
     "contributors": 249,
-    "github_checked_at": "2026-09-25T01:37:30.219Z",
+    "github_checked_at": "2026-09-25T01:59:25.741Z",
     "health_score": 20535
   },
   {
@@ -9818,7 +9818,7 @@
     "category": "ai",
     "primary_competitor": "ChatGPT",
     "primary_competitor_ja": null,
-    "stars_num": 44639,
+    "stars_num": 44640,
     "language": "Rust",
     "license": "Apache-2.0",
     "forks_num": 3056,
@@ -9842,7 +9842,7 @@
     "_source": "candidates-2026-09",
     "watchers": 229,
     "contributors": 184,
-    "github_checked_at": "2026-09-25T01:37:30.182Z",
+    "github_checked_at": "2026-09-25T01:59:25.776Z",
     "health_score": 12837
   },
   {
@@ -9856,7 +9856,7 @@
     "category": "ai",
     "primary_competitor": "ChatGPT",
     "primary_competitor_ja": null,
-    "stars_num": 181649,
+    "stars_num": 181651,
     "language": "Go",
     "license": "MIT",
     "forks_num": 17999,
@@ -9887,7 +9887,7 @@
     "_source": "candidates-2026-09",
     "watchers": 1017,
     "contributors": 615,
-    "github_checked_at": "2026-09-25T01:37:30.285Z",
+    "github_checked_at": "2026-09-25T01:59:25.969Z",
     "health_score": 54974
   },
   {
@@ -9901,7 +9901,7 @@
     "category": "ai",
     "primary_competitor": "ChatGPT API",
     "primary_competitor_ja": null,
-    "stars_num": 129449,
+    "stars_num": 129451,
     "language": "C++",
     "license": "MIT",
     "forks_num": 23696,
@@ -9918,8 +9918,8 @@
     "_source": "candidates-2026-09",
     "watchers": 840,
     "contributors": 2042,
-    "github_checked_at": "2026-09-25T01:37:30.471Z",
-    "health_score": 45441
+    "github_checked_at": "2026-09-25T01:59:26.094Z",
+    "health_score": 45442
   },
   {
     "id": "localai",
@@ -9966,7 +9966,7 @@
     "_source": "candidates-2026-09",
     "watchers": 299,
     "contributors": 254,
-    "github_checked_at": "2026-09-25T01:37:30.534Z",
+    "github_checked_at": "2026-09-25T01:59:26.203Z",
     "health_score": 14752
   },
   {
@@ -9980,11 +9980,11 @@
     "category": "ai",
     "primary_competitor": "OpenAI API",
     "primary_competitor_ja": null,
-    "stars_num": 92643,
+    "stars_num": 92644,
     "language": "Python",
     "license": "Apache-2.0",
-    "forks_num": 22637,
-    "last_commit": "2026-09-25T01:36:08Z",
+    "forks_num": 22638,
+    "last_commit": "2026-09-25T01:49:20Z",
     "created_at": "2023-02-09T11:23:20Z",
     "scorecard_score": null,
     "docker_available": null,
@@ -10016,8 +10016,8 @@
     "_source": "candidates-2026-09",
     "watchers": 597,
     "contributors": 3535,
-    "github_checked_at": "2026-09-25T01:37:30.633Z",
-    "health_score": 36396
+    "github_checked_at": "2026-09-25T01:59:26.264Z",
+    "health_score": 36397
   },
   {
     "id": "gpt4all",
@@ -10048,7 +10048,7 @@
     "_source": "candidates-2026-09",
     "watchers": 701,
     "contributors": 122,
-    "github_checked_at": "2026-09-25T01:37:30.642Z",
+    "github_checked_at": "2026-09-25T01:59:26.393Z",
     "health_score": 23681
   },
   {
@@ -10062,7 +10062,7 @@
     "category": "ai",
     "primary_competitor": "ChatGPT Plus",
     "primary_competitor_ja": null,
-    "stars_num": 157125,
+    "stars_num": 157126,
     "language": "TypeScript",
     "license": "Apache-2.0（改変条項あり）",
     "forks_num": 24771,
@@ -10097,8 +10097,8 @@
     "_source": "candidates-2026-09",
     "watchers": 844,
     "contributors": 1505,
-    "github_checked_at": "2026-09-25T01:37:30.864Z",
-    "health_score": 52630
+    "github_checked_at": "2026-09-25T01:59:26.464Z",
+    "health_score": 52631
   },
   {
     "id": "flowise",
@@ -10144,7 +10144,7 @@
     "_source": "candidates-2026-09",
     "watchers": 381,
     "contributors": 333,
-    "github_checked_at": "2026-09-25T01:37:30.954Z",
+    "github_checked_at": "2026-09-25T01:59:26.556Z",
     "health_score": 26636
   },
   {
@@ -10180,7 +10180,7 @@
     "_source": "candidates-2026-09",
     "watchers": 543,
     "contributors": 385,
-    "github_checked_at": "2026-09-25T01:37:31.039Z",
+    "github_checked_at": "2026-09-25T01:59:26.646Z",
     "health_score": 44205
   },
   {
@@ -10225,7 +10225,7 @@
     "_source": "candidates-2026-09",
     "watchers": 362,
     "contributors": 846,
-    "github_checked_at": "2026-09-25T01:37:31.049Z",
+    "github_checked_at": "2026-09-25T01:59:26.795Z",
     "health_score": 28744
   },
   {
@@ -10275,7 +10275,7 @@
     "_source": "candidates-2026-09",
     "watchers": 181,
     "contributors": 76,
-    "github_checked_at": "2026-09-25T01:37:31.288Z",
+    "github_checked_at": "2026-09-25T01:59:26.860Z",
     "health_score": 10676
   },
   {
@@ -10325,7 +10325,7 @@
     "_source": "candidates-2026-09",
     "watchers": 290,
     "contributors": 119,
-    "github_checked_at": "2026-09-25T01:37:31.265Z",
+    "github_checked_at": "2026-09-25T01:59:26.931Z",
     "health_score": 11874
   },
   {
@@ -10358,7 +10358,7 @@
     "_source": "candidates-2026-09",
     "watchers": 459,
     "contributors": 108,
-    "github_checked_at": "2026-09-25T01:37:31.373Z",
+    "github_checked_at": "2026-09-25T01:59:26.966Z",
     "health_score": 18358
   },
   {
@@ -10387,7 +10387,7 @@
     "_source": "candidates-2026-09",
     "watchers": 784,
     "contributors": 83,
-    "github_checked_at": "2026-09-25T01:37:31.435Z",
+    "github_checked_at": "2026-09-25T01:59:27.131Z",
     "health_score": 34259
   },
   {
@@ -10425,7 +10425,7 @@
     "_source": "candidates-2026-09",
     "watchers": 173,
     "contributors": 47,
-    "github_checked_at": "2026-09-25T01:37:31.606Z",
+    "github_checked_at": "2026-09-25T01:59:27.203Z",
     "health_score": 7454
   },
   {
@@ -10460,7 +10460,7 @@
     "_source": "candidates-2026-09",
     "watchers": 161,
     "contributors": 118,
-    "github_checked_at": "2026-09-25T01:37:31.608Z",
+    "github_checked_at": "2026-09-25T01:59:27.268Z",
     "health_score": 7366
   },
   {
@@ -10477,7 +10477,7 @@
     "stars_num": 53916,
     "language": "C++",
     "license": "MIT",
-    "forks_num": 6192,
+    "forks_num": 6193,
     "last_commit": "2026-09-24T08:29:15Z",
     "created_at": "2022-09-25T18:26:37Z",
     "scorecard_score": null,
@@ -10496,7 +10496,7 @@
     "_source": "candidates-2026-09",
     "watchers": 414,
     "contributors": 1042,
-    "github_checked_at": "2026-09-25T01:37:31.897Z",
+    "github_checked_at": "2026-09-25T01:59:27.361Z",
     "health_score": 17200
   },
   {
@@ -10533,7 +10533,7 @@
     "_source": "candidates-2026-09",
     "watchers": 1718,
     "contributors": 243,
-    "github_checked_at": "2026-09-25T01:37:31.908Z",
+    "github_checked_at": "2026-09-25T01:59:27.507Z",
     "health_score": 25119
   },
   {
@@ -10547,7 +10547,7 @@
     "category": "documents",
     "primary_competitor": "Adobe Acrobat OCR",
     "primary_competitor_ja": null,
-    "stars_num": 90170,
+    "stars_num": 90171,
     "language": "Python",
     "license": "Apache-2.0",
     "forks_num": 11406,
@@ -10576,7 +10576,7 @@
     "_source": "candidates-2026-09",
     "watchers": 570,
     "contributors": 295,
-    "github_checked_at": "2026-09-25T01:37:31.984Z",
+    "github_checked_at": "2026-09-25T01:59:27.573Z",
     "health_score": 28532
   },
   {
@@ -10590,10 +10590,10 @@
     "category": "ai",
     "primary_competitor": "Adobe Firefly",
     "primary_competitor_ja": null,
-    "stars_num": 165106,
+    "stars_num": 165105,
     "language": "Python",
     "license": "AGPL-3.0",
-    "forks_num": 31445,
+    "forks_num": 31446,
     "last_commit": "2026-03-02T07:00:53Z",
     "created_at": "2022-08-22T14:05:26Z",
     "scorecard_score": null,
@@ -10622,7 +10622,7 @@
     "_source": "candidates-2026-09",
     "watchers": 1260,
     "contributors": 638,
-    "github_checked_at": "2026-09-25T01:37:31.958Z",
+    "github_checked_at": "2026-09-25T01:59:27.600Z",
     "health_score": 57588
   },
   {
@@ -10636,7 +10636,7 @@
     "category": "ai",
     "primary_competitor": "Adobe Firefly",
     "primary_competitor_ja": null,
-    "stars_num": 134872,
+    "stars_num": 134874,
     "language": "Python",
     "license": "GPL-3.0",
     "forks_num": 15973,
@@ -10658,7 +10658,7 @@
     "_source": "candidates-2026-09",
     "watchers": 821,
     "contributors": 352,
-    "github_checked_at": "2026-09-25T01:37:32.261Z",
+    "github_checked_at": "2026-09-25T01:59:27.791Z",
     "health_score": 42086
   },
   {
@@ -10701,7 +10701,7 @@
     "_source": "candidates-2026-09",
     "watchers": 212,
     "contributors": 399,
-    "github_checked_at": "2026-09-25T01:37:32.305Z",
+    "github_checked_at": "2026-09-25T01:59:27.916Z",
     "health_score": 8815
   },
   {
@@ -10715,7 +10715,7 @@
     "category": "ai",
     "primary_competitor": "Pinecone",
     "primary_competitor_ja": null,
-    "stars_num": 34802,
+    "stars_num": 34803,
     "language": "Rust",
     "license": "Apache-2.0",
     "forks_num": 2695,
@@ -10751,7 +10751,7 @@
     "_source": "candidates-2026-09",
     "watchers": 167,
     "contributors": 202,
-    "github_checked_at": "2026-09-25T01:37:32.349Z",
+    "github_checked_at": "2026-09-25T01:59:27.930Z",
     "health_score": 10191
   },
   {
@@ -10801,7 +10801,7 @@
     "_source": "candidates-2026-09",
     "watchers": 141,
     "contributors": 190,
-    "github_checked_at": "2026-09-25T01:37:32.325Z",
+    "github_checked_at": "2026-09-25T01:59:27.933Z",
     "health_score": 5045
   },
   {
@@ -10837,7 +10837,7 @@
     "_source": "candidates-2026-09",
     "watchers": 138,
     "contributors": 196,
-    "github_checked_at": "2026-09-25T01:37:32.668Z",
+    "github_checked_at": "2026-09-25T01:59:28.140Z",
     "health_score": 8741
   },
   {
@@ -10885,7 +10885,7 @@
     "_source": "candidates-2026-09",
     "watchers": 344,
     "contributors": 381,
-    "github_checked_at": "2026-09-25T01:37:32.689Z",
+    "github_checked_at": "2026-09-25T01:59:28.355Z",
     "health_score": 13974
   },
   {
@@ -10917,7 +10917,7 @@
     "_source": "candidates-2026-09",
     "watchers": 142,
     "contributors": 27,
-    "github_checked_at": "2026-09-25T01:37:32.670Z",
+    "github_checked_at": "2026-09-25T01:59:28.316Z",
     "health_score": 6501
   },
   {
@@ -10966,7 +10966,7 @@
     "_source": "candidates-2026-09",
     "watchers": 114,
     "contributors": 213,
-    "github_checked_at": "2026-09-25T01:37:32.724Z",
+    "github_checked_at": "2026-09-25T01:59:28.279Z",
     "health_score": 10813
   },
   {
@@ -11012,7 +11012,7 @@
     "_source": "candidates-2026-09",
     "watchers": 63,
     "contributors": 241,
-    "github_checked_at": "2026-09-25T01:37:33.017Z",
+    "github_checked_at": "2026-09-25T01:59:28.497Z",
     "health_score": 3614
   },
   {
@@ -11061,7 +11061,7 @@
     "_source": "candidates-2026-09",
     "watchers": 58,
     "contributors": 102,
-    "github_checked_at": "2026-09-25T01:37:32.991Z",
+    "github_checked_at": "2026-09-25T01:59:28.698Z",
     "health_score": 1943
   },
   {
@@ -11096,7 +11096,7 @@
     "_source": "candidates-2026-09",
     "watchers": 111,
     "contributors": 305,
-    "github_checked_at": "2026-09-25T01:37:33.055Z",
+    "github_checked_at": "2026-09-25T01:59:28.699Z",
     "health_score": 5236
   },
   {
@@ -11134,7 +11134,7 @@
     "_source": "candidates-2026-09",
     "watchers": 59,
     "contributors": 35,
-    "github_checked_at": "2026-09-25T01:37:33.044Z",
+    "github_checked_at": "2026-09-25T01:59:28.674Z",
     "health_score": 1880
   },
   {
@@ -11167,7 +11167,7 @@
     "_source": "candidates-2026-09",
     "watchers": 10,
     "contributors": 24,
-    "github_checked_at": "2026-09-25T01:37:33.350Z",
+    "github_checked_at": "2026-09-25T01:59:28.832Z",
     "health_score": 3333
   },
   {
@@ -11196,7 +11196,7 @@
     "_source": "candidates-2026-09",
     "watchers": 72,
     "contributors": 23,
-    "github_checked_at": "2026-09-25T01:37:33.347Z",
+    "github_checked_at": "2026-09-25T01:59:29.001Z",
     "health_score": 2722
   },
   {
@@ -11236,7 +11236,7 @@
     "_source": "candidates-2026-09",
     "watchers": 521,
     "contributors": 774,
-    "github_checked_at": "2026-09-25T01:37:33.522Z",
+    "github_checked_at": "2026-09-25T01:59:29.091Z",
     "health_score": 12036
   },
   {
@@ -11272,7 +11272,7 @@
     "_source": "candidates-2026-09",
     "watchers": 384,
     "contributors": 344,
-    "github_checked_at": "2026-09-25T01:37:33.822Z",
+    "github_checked_at": "2026-09-25T01:59:29.085Z",
     "health_score": 5565
   },
   {
@@ -11286,7 +11286,7 @@
     "category": "video",
     "primary_competitor": "Zoom",
     "primary_competitor_ja": null,
-    "stars_num": 21098,
+    "stars_num": 21099,
     "language": "Go",
     "license": "Apache-2.0",
     "forks_num": 2377,
@@ -11309,7 +11309,7 @@
     "_source": "candidates-2026-09",
     "watchers": 182,
     "contributors": 124,
-    "github_checked_at": "2026-09-25T01:37:33.756Z",
+    "github_checked_at": "2026-09-25T01:59:29.191Z",
     "health_score": 6571
   },
   {
@@ -11356,7 +11356,7 @@
     "_source": "candidates-2026-09",
     "watchers": 60,
     "contributors": 37,
-    "github_checked_at": "2026-09-25T01:37:33.976Z",
+    "github_checked_at": "2026-09-25T01:59:29.343Z",
     "health_score": 805
   },
   {
@@ -11394,7 +11394,7 @@
     "_source": "candidates-2026-09",
     "watchers": 32,
     "contributors": 30,
-    "github_checked_at": "2026-09-25T01:37:33.954Z",
+    "github_checked_at": "2026-09-25T01:59:29.417Z",
     "health_score": 465
   },
   {
@@ -11440,7 +11440,7 @@
     "_source": "candidates-2026-09",
     "watchers": 105,
     "contributors": 198,
-    "github_checked_at": "2026-09-25T01:37:34.122Z",
+    "github_checked_at": "2026-09-25T01:59:29.547Z",
     "health_score": 3605
   },
   {
@@ -11475,7 +11475,7 @@
     "_source": "candidates-2026-09",
     "watchers": 334,
     "contributors": 843,
-    "github_checked_at": "2026-09-25T01:37:34.469Z",
+    "github_checked_at": "2026-09-25T01:59:29.538Z",
     "health_score": 5262
   },
   {
@@ -11517,7 +11517,7 @@
     "_source": "candidates-2026-09",
     "watchers": 47,
     "contributors": 47,
-    "github_checked_at": "2026-09-25T01:37:34.308Z",
+    "github_checked_at": "2026-09-25T01:59:29.666Z",
     "health_score": 1795
   },
   {
@@ -11531,7 +11531,7 @@
     "category": "support",
     "primary_competitor": "TeamViewer",
     "primary_competitor_ja": null,
-    "stars_num": 124470,
+    "stars_num": 124471,
     "language": "Rust",
     "license": "AGPL-3.0",
     "forks_num": 19245,
@@ -11564,10 +11564,10 @@
     "languages": [],
     "_url_verified": true,
     "_source": "candidates-2026-09",
-    "watchers": 639,
+    "watchers": 640,
     "contributors": 497,
-    "github_checked_at": "2026-09-25T01:37:34.473Z",
-    "health_score": 41148
+    "github_checked_at": "2026-09-25T01:59:29.794Z",
+    "health_score": 41149
   },
   {
     "id": "meshcentral",
@@ -11602,7 +11602,7 @@
     "_source": "candidates-2026-09",
     "watchers": 116,
     "contributors": 188,
-    "github_checked_at": "2026-09-25T01:37:34.481Z",
+    "github_checked_at": "2026-09-25T01:59:29.869Z",
     "health_score": 2442
   },
   {
@@ -11638,7 +11638,7 @@
     "_source": "candidates-2026-09",
     "watchers": 123,
     "contributors": 91,
-    "github_checked_at": "2026-09-25T01:37:34.709Z",
+    "github_checked_at": "2026-09-25T01:59:29.912Z",
     "health_score": 1472
   },
   {
@@ -11667,7 +11667,7 @@
     "_source": "candidates-2026-09",
     "watchers": 159,
     "contributors": 175,
-    "github_checked_at": "2026-09-25T01:37:34.869Z",
+    "github_checked_at": "2026-09-25T01:59:30.036Z",
     "health_score": 2603
   },
   {
@@ -11681,7 +11681,7 @@
     "category": "crm",
     "primary_competitor": "Salesforce",
     "primary_competitor_ja": null,
-    "stars_num": 3389,
+    "stars_num": 3388,
     "language": "PHP",
     "license": "AGPL-3.0",
     "forks_num": 979,
@@ -11715,8 +11715,8 @@
     "_source": "candidates-2026-09",
     "watchers": 109,
     "contributors": 69,
-    "github_checked_at": "2026-09-25T01:37:34.856Z",
-    "health_score": 1399
+    "github_checked_at": "2026-09-25T01:59:30.139Z",
+    "health_score": 1398
   },
   {
     "id": "suitecrm",
@@ -11762,7 +11762,7 @@
     "_source": "candidates-2026-09",
     "watchers": 257,
     "contributors": 285,
-    "github_checked_at": "2026-09-25T01:37:34.866Z",
+    "github_checked_at": "2026-09-25T01:59:30.234Z",
     "health_score": 2858
   },
   {
@@ -11809,7 +11809,7 @@
     "_source": "candidates-2026-09",
     "watchers": 61,
     "contributors": 64,
-    "github_checked_at": "2026-09-25T01:37:35.054Z",
+    "github_checked_at": "2026-09-25T01:59:30.246Z",
     "health_score": 6850
   },
   {
@@ -11847,7 +11847,7 @@
     "_source": "candidates-2026-09",
     "watchers": 294,
     "contributors": 40,
-    "github_checked_at": "2026-09-25T01:37:35.193Z",
+    "github_checked_at": "2026-09-25T01:59:30.414Z",
     "health_score": 7738
   },
   {
@@ -11891,7 +11891,7 @@
     "_source": "candidates-2026-09",
     "watchers": 43,
     "contributors": 99,
-    "github_checked_at": "2026-09-25T01:37:35.272Z",
+    "github_checked_at": "2026-09-25T01:59:30.444Z",
     "health_score": 1559
   },
   {
@@ -11920,7 +11920,7 @@
     "_source": "candidates-2026-09",
     "watchers": 224,
     "contributors": 138,
-    "github_checked_at": "2026-09-25T01:37:35.314Z",
+    "github_checked_at": "2026-09-25T01:59:30.575Z",
     "health_score": 1982
   },
   {
@@ -11968,7 +11968,7 @@
     "_source": "candidates-2026-09",
     "watchers": 52,
     "contributors": 46,
-    "github_checked_at": "2026-09-25T01:37:35.434Z",
+    "github_checked_at": "2026-09-25T01:59:30.571Z",
     "health_score": 5176
   },
   {
@@ -12002,7 +12002,7 @@
     "_source": "candidates-2026-09",
     "watchers": 73,
     "contributors": 41,
-    "github_checked_at": "2026-09-25T01:37:35.649Z",
+    "github_checked_at": "2026-09-25T01:59:30.717Z",
     "health_score": 649
   },
   {
@@ -12038,7 +12038,7 @@
     "_source": "candidates-2026-09",
     "watchers": 64,
     "contributors": 109,
-    "github_checked_at": "2026-09-25T01:37:35.666Z",
+    "github_checked_at": "2026-09-25T01:59:30.816Z",
     "health_score": 888
   },
   {
@@ -12086,7 +12086,7 @@
     "_source": "candidates-2026-09",
     "watchers": 18,
     "contributors": 35,
-    "github_checked_at": "2026-09-25T01:37:35.654Z",
+    "github_checked_at": "2026-09-25T01:59:30.896Z",
     "health_score": 905
   },
   {
@@ -12136,7 +12136,7 @@
     "_source": "candidates-2026-09",
     "watchers": 70,
     "contributors": 52,
-    "github_checked_at": "2026-09-25T01:37:35.773Z",
+    "github_checked_at": "2026-09-25T01:59:30.951Z",
     "health_score": 1818
   },
   {
@@ -12182,7 +12182,7 @@
     "_source": "candidates-2026-09",
     "watchers": 208,
     "contributors": 116,
-    "github_checked_at": "2026-09-25T01:37:36.002Z",
+    "github_checked_at": "2026-09-25T01:59:31.077Z",
     "health_score": 3993
   },
   {
@@ -12231,7 +12231,7 @@
     "_source": "candidates-2026-09",
     "watchers": 221,
     "contributors": 135,
-    "github_checked_at": "2026-09-25T01:37:36.021Z",
+    "github_checked_at": "2026-09-25T01:59:31.280Z",
     "health_score": 4153
   },
   {
@@ -12272,7 +12272,7 @@
     "_source": "candidates-2026-09",
     "watchers": 30,
     "contributors": 28,
-    "github_checked_at": "2026-09-25T01:37:36.122Z",
+    "github_checked_at": "2026-09-25T01:59:31.225Z",
     "health_score": 382
   },
   {
@@ -12309,7 +12309,7 @@
     "_source": "candidates-2026-09",
     "watchers": 148,
     "contributors": 104,
-    "github_checked_at": "2026-09-25T01:37:36.132Z",
+    "github_checked_at": "2026-09-25T01:59:31.306Z",
     "health_score": 2987
   },
   {
@@ -12357,7 +12357,7 @@
     "_source": "candidates-2026-09",
     "watchers": 175,
     "contributors": 204,
-    "github_checked_at": "2026-09-25T01:37:36.358Z",
+    "github_checked_at": "2026-09-25T01:59:31.421Z",
     "health_score": 7475
   },
   {
@@ -12371,7 +12371,7 @@
     "category": "accounting",
     "primary_competitor": "マネーフォワード",
     "primary_competitor_ja": null,
-    "stars_num": 29135,
+    "stars_num": 29136,
     "language": "TypeScript",
     "license": "MIT",
     "forks_num": 3018,
@@ -12391,7 +12391,7 @@
     "_source": "candidates-2026-09",
     "watchers": 87,
     "contributors": 728,
-    "github_checked_at": "2026-09-25T01:37:36.543Z",
+    "github_checked_at": "2026-09-25T01:59:31.628Z",
     "health_score": 9179
   },
   {
@@ -12433,7 +12433,7 @@
     "_source": "candidates-2026-09",
     "watchers": 49,
     "contributors": 197,
-    "github_checked_at": "2026-09-25T01:37:36.652Z",
+    "github_checked_at": "2026-09-25T01:59:31.602Z",
     "health_score": 1502
   },
   {
@@ -12462,7 +12462,7 @@
     "_source": "candidates-2026-09",
     "watchers": 102,
     "contributors": 612,
-    "github_checked_at": "2026-09-25T01:37:36.509Z",
+    "github_checked_at": "2026-09-25T01:59:32.079Z",
     "health_score": 1916
   },
   {
@@ -12493,7 +12493,7 @@
     "_source": "candidates-2026-09",
     "watchers": 54,
     "contributors": 108,
-    "github_checked_at": "2026-09-25T01:37:36.750Z",
+    "github_checked_at": "2026-09-25T01:59:31.807Z",
     "health_score": 1793
   },
   {
@@ -12527,7 +12527,7 @@
     "_source": "candidates-2026-09",
     "watchers": 136,
     "contributors": 64,
-    "github_checked_at": "2026-09-25T01:37:36.847Z",
+    "github_checked_at": "2026-09-25T01:59:32.013Z",
     "health_score": 1987
   },
   {
@@ -12544,8 +12544,8 @@
     "stars_num": 43911,
     "language": "Rust",
     "license": "Apache-2.0",
-    "forks_num": 5358,
-    "last_commit": "2026-09-25T00:46:13Z",
+    "forks_num": 5359,
+    "last_commit": "2026-09-25T01:48:00Z",
     "created_at": "2022-10-17T11:18:28Z",
     "scorecard_score": null,
     "docker_available": null,
@@ -12577,8 +12577,8 @@
     "_source": "candidates-2026-09",
     "watchers": 131,
     "contributors": 263,
-    "github_checked_at": "2026-09-25T01:37:36.922Z",
-    "health_score": 13821
+    "github_checked_at": "2026-09-25T01:59:31.990Z",
+    "health_score": 13822
   },
   {
     "id": "kimai",
@@ -12622,7 +12622,7 @@
     "_source": "candidates-2026-09",
     "watchers": 62,
     "contributors": 86,
-    "github_checked_at": "2026-09-25T01:37:37.026Z",
+    "github_checked_at": "2026-09-25T01:59:32.165Z",
     "health_score": 1744
   },
   {
@@ -12660,7 +12660,7 @@
     "_source": "candidates-2026-09",
     "watchers": 14,
     "contributors": 17,
-    "github_checked_at": "2026-09-25T01:37:37.075Z",
+    "github_checked_at": "2026-09-25T01:59:32.341Z",
     "health_score": 440
   },
   {
@@ -12700,7 +12700,7 @@
     "_source": "candidates-2026-09",
     "watchers": 48,
     "contributors": 80,
-    "github_checked_at": "2026-09-25T01:37:37.308Z",
+    "github_checked_at": "2026-09-25T01:59:32.344Z",
     "health_score": 669
   },
   {
@@ -12746,7 +12746,7 @@
     "_source": "candidates-2026-09",
     "watchers": 23,
     "contributors": 44,
-    "github_checked_at": "2026-09-25T01:37:37.354Z",
+    "github_checked_at": "2026-09-25T01:59:32.468Z",
     "health_score": 849
   },
   {
@@ -12789,7 +12789,7 @@
     "_source": "candidates-2026-09",
     "watchers": 72,
     "contributors": 6,
-    "github_checked_at": "2026-09-25T01:37:37.413Z",
+    "github_checked_at": "2026-09-25T01:59:32.508Z",
     "health_score": 5611
   },
   {
@@ -12839,7 +12839,7 @@
     "_source": "candidates-2026-09",
     "watchers": 37,
     "contributors": 37,
-    "github_checked_at": "2026-09-25T01:37:37.439Z",
+    "github_checked_at": "2026-09-25T01:59:32.667Z",
     "health_score": 2183
   },
   {
@@ -12889,7 +12889,7 @@
     "_source": "candidates-2026-09",
     "watchers": 14,
     "contributors": 83,
-    "github_checked_at": "2026-09-25T01:37:37.633Z",
+    "github_checked_at": "2026-09-25T01:59:32.691Z",
     "health_score": 326
   },
   {
@@ -12906,7 +12906,7 @@
     "stars_num": 15183,
     "language": "TypeScript",
     "license": "AGPL-3.0",
-    "forks_num": 3271,
+    "forks_num": 3272,
     "last_commit": "2026-09-25T00:21:14Z",
     "created_at": "2023-03-12T16:28:56Z",
     "scorecard_score": null,
@@ -12937,8 +12937,8 @@
     "_source": "candidates-2026-09",
     "watchers": 56,
     "contributors": 188,
-    "github_checked_at": "2026-09-25T01:37:37.755Z",
-    "health_score": 5539
+    "github_checked_at": "2026-09-25T01:59:32.846Z",
+    "health_score": 5540
   },
   {
     "id": "docassemble",
@@ -12968,7 +12968,7 @@
     "_source": "candidates-2026-09",
     "watchers": 51,
     "contributors": 47,
-    "github_checked_at": "2026-09-25T01:37:37.843Z",
+    "github_checked_at": "2026-09-25T01:59:32.811Z",
     "health_score": 440
   },
   {
@@ -13010,7 +13010,7 @@
     "_source": "candidates-2026-09",
     "watchers": 165,
     "contributors": 459,
-    "github_checked_at": "2026-09-25T01:37:37.798Z",
+    "github_checked_at": "2026-09-25T01:59:33.049Z",
     "health_score": 13361
   },
   {
@@ -13049,7 +13049,7 @@
     "_source": "candidates-2026-09",
     "watchers": 51,
     "contributors": 23,
-    "github_checked_at": "2026-09-25T01:37:37.978Z",
+    "github_checked_at": "2026-09-25T01:59:33.030Z",
     "health_score": 903
   },
   {
@@ -13098,7 +13098,7 @@
     "_source": "candidates-2026-09",
     "watchers": 63,
     "contributors": 19,
-    "github_checked_at": "2026-09-25T01:37:38.084Z",
+    "github_checked_at": "2026-09-25T01:59:33.166Z",
     "health_score": 1348
   },
   {
@@ -13133,7 +13133,7 @@
     "_source": "candidates-2026-09",
     "watchers": 191,
     "contributors": 129,
-    "github_checked_at": "2026-09-25T01:37:38.215Z",
+    "github_checked_at": "2026-09-25T01:59:33.201Z",
     "health_score": 10036
   },
   {
@@ -13179,7 +13179,7 @@
     "_source": "candidates-2026-09",
     "watchers": 15,
     "contributors": 51,
-    "github_checked_at": "2026-09-25T01:37:38.226Z",
+    "github_checked_at": "2026-09-25T01:59:33.325Z",
     "health_score": 704
   },
   {
@@ -13219,7 +13219,7 @@
     "_source": "candidates-2026-09",
     "watchers": 128,
     "contributors": 383,
-    "github_checked_at": "2026-09-25T01:37:38.382Z",
+    "github_checked_at": "2026-09-25T01:59:33.829Z",
     "health_score": 1719
   },
   {
@@ -13252,7 +13252,7 @@
     "_source": "candidates-2026-09",
     "watchers": 34,
     "contributors": 35,
-    "github_checked_at": "2026-09-25T01:37:38.465Z",
+    "github_checked_at": "2026-09-25T01:59:33.483Z",
     "health_score": 2622
   },
   {
@@ -13302,7 +13302,7 @@
     "_source": "candidates-2026-09",
     "watchers": 71,
     "contributors": 178,
-    "github_checked_at": "2026-09-25T01:37:38.791Z",
+    "github_checked_at": "2026-09-25T01:59:33.561Z",
     "health_score": 1790
   },
   {
@@ -13349,7 +13349,7 @@
     "_source": "candidates-2026-09",
     "watchers": 2,
     "contributors": 56,
-    "github_checked_at": "2026-09-25T01:37:38.584Z",
+    "github_checked_at": "2026-09-25T01:59:33.652Z",
     "health_score": 930
   },
   {
@@ -13391,7 +13391,7 @@
     "_source": "candidates-2026-09",
     "watchers": 295,
     "contributors": 526,
-    "github_checked_at": "2026-09-25T01:37:38.745Z",
+    "github_checked_at": "2026-09-25T01:59:33.931Z",
     "health_score": 4707
   },
   {
@@ -13420,7 +13420,7 @@
     "_source": "candidates-2026-09",
     "watchers": 16,
     "contributors": 37,
-    "github_checked_at": "2026-09-25T01:37:38.910Z",
+    "github_checked_at": "2026-09-25T01:59:33.963Z",
     "health_score": 661
   },
   {
@@ -13461,7 +13461,7 @@
     "_source": "candidates-2026-09",
     "watchers": 201,
     "contributors": 579,
-    "github_checked_at": "2026-09-25T01:37:38.973Z",
+    "github_checked_at": "2026-09-25T01:59:34.039Z",
     "health_score": 12099
   },
   {
@@ -13509,7 +13509,7 @@
     "_source": "candidates-2026-09",
     "watchers": 362,
     "contributors": 328,
-    "github_checked_at": "2026-09-25T01:37:39.117Z",
+    "github_checked_at": "2026-09-25T01:59:34.436Z",
     "health_score": 9163
   },
   {
@@ -13559,7 +13559,7 @@
     "_source": "candidates-2026-09",
     "watchers": 185,
     "contributors": 320,
-    "github_checked_at": "2026-09-25T01:37:39.190Z",
+    "github_checked_at": "2026-09-25T01:59:34.465Z",
     "health_score": 8897
   },
   {
@@ -13605,7 +13605,7 @@
     "_source": "candidates-2026-09",
     "watchers": 257,
     "contributors": 944,
-    "github_checked_at": "2026-09-25T01:37:39.348Z",
+    "github_checked_at": "2026-09-25T01:59:34.312Z",
     "health_score": 3752
   },
   {
@@ -13648,7 +13648,7 @@
     "_source": "candidates-2026-09",
     "watchers": 88,
     "contributors": 311,
-    "github_checked_at": "2026-09-25T01:37:39.445Z",
+    "github_checked_at": "2026-09-25T01:59:34.414Z",
     "health_score": 3043
   },
   {
@@ -13666,7 +13666,7 @@
     "language": "PHP",
     "license": "GPL-2.0",
     "forks_num": 10672,
-    "last_commit": "2026-09-25T00:25:31Z",
+    "last_commit": "2026-09-25T01:46:24Z",
     "created_at": "2011-08-09T15:12:11Z",
     "scorecard_score": null,
     "docker_available": null,
@@ -13686,7 +13686,7 @@
     "_source": "candidates-2026-09",
     "watchers": 523,
     "contributors": 2108,
-    "github_checked_at": "2026-09-25T01:37:39.511Z",
+    "github_checked_at": "2026-09-25T01:59:35.468Z",
     "health_score": 9154
   },
   {
@@ -13724,7 +13724,7 @@
     "_source": "candidates-2026-09",
     "watchers": 444,
     "contributors": 1344,
-    "github_checked_at": "2026-09-25T01:37:40.459Z",
+    "github_checked_at": "2026-09-25T01:59:34.840Z",
     "health_score": 5611
   },
   {
@@ -13764,7 +13764,7 @@
     "_source": "candidates-2026-09",
     "watchers": 583,
     "contributors": 500,
-    "github_checked_at": "2026-09-25T01:37:39.955Z",
+    "github_checked_at": "2026-09-25T01:59:34.957Z",
     "health_score": 4973
   },
   {
@@ -13802,7 +13802,7 @@
     "_source": "candidates-2026-09",
     "watchers": 83,
     "contributors": 300,
-    "github_checked_at": "2026-09-25T01:37:39.830Z",
+    "github_checked_at": "2026-09-25T01:59:35.260Z",
     "health_score": 728
   },
   {
@@ -13820,7 +13820,7 @@
     "language": "PHP",
     "license": "MIT",
     "forks_num": 1212,
-    "last_commit": "2026-09-24T23:42:07Z",
+    "last_commit": "2026-09-25T01:50:30Z",
     "created_at": "2018-05-03T13:00:31Z",
     "scorecard_score": null,
     "docker_available": null,
@@ -13852,7 +13852,7 @@
     "_source": "candidates-2026-09",
     "watchers": 91,
     "contributors": 855,
-    "github_checked_at": "2026-09-25T01:37:40.259Z",
+    "github_checked_at": "2026-09-25T01:59:35.480Z",
     "health_score": 1914
   },
   {
@@ -13866,7 +13866,7 @@
     "category": "ecommerce",
     "primary_competitor": "Shopify",
     "primary_competitor_ja": null,
-    "stars_num": 15720,
+    "stars_num": 15719,
     "language": "Ruby",
     "license": "BSD-3-Clause",
     "forks_num": 5301,
@@ -13897,7 +13897,7 @@
     "_source": "candidates-2026-09",
     "watchers": 85,
     "contributors": 1247,
-    "github_checked_at": "2026-09-25T01:37:40.261Z",
+    "github_checked_at": "2026-09-25T01:59:35.402Z",
     "health_score": 7225
   },
   {
@@ -13933,7 +13933,7 @@
     "_source": "candidates-2026-09",
     "watchers": 1209,
     "contributors": 3192,
-    "github_checked_at": "2026-09-25T01:37:42.004Z",
+    "github_checked_at": "2026-09-25T01:59:35.696Z",
     "health_score": 9624
   },
   {
@@ -13947,7 +13947,7 @@
     "category": "nocode",
     "primary_competitor": "kintone",
     "primary_competitor_ja": null,
-    "stars_num": 40934,
+    "stars_num": 40935,
     "language": "TypeScript",
     "license": "Apache-2.0",
     "forks_num": 4768,
@@ -13983,8 +13983,8 @@
     "_source": "candidates-2026-09b",
     "watchers": 307,
     "contributors": 382,
-    "github_checked_at": "2026-09-25T01:37:40.911Z",
-    "health_score": 12885
+    "github_checked_at": "2026-09-25T01:59:35.927Z",
+    "health_score": 12886
   },
   {
     "id": "tooljet",
@@ -14031,7 +14031,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 209,
     "contributors": 683,
-    "github_checked_at": "2026-09-25T01:37:40.661Z",
+    "github_checked_at": "2026-09-25T01:59:35.859Z",
     "health_score": 13367
   },
   {
@@ -14081,7 +14081,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 62,
     "contributors": 273,
-    "github_checked_at": "2026-09-25T01:37:40.804Z",
+    "github_checked_at": "2026-09-25T01:59:35.858Z",
     "health_score": 3724
   },
   {
@@ -14123,7 +14123,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 151,
     "contributors": 112,
-    "github_checked_at": "2026-09-25T01:37:41.040Z",
+    "github_checked_at": "2026-09-25T01:59:36.113Z",
     "health_score": 1973
   },
   {
@@ -14165,7 +14165,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 30,
     "contributors": 35,
-    "github_checked_at": "2026-09-25T01:37:41.199Z",
+    "github_checked_at": "2026-09-25T01:59:36.145Z",
     "health_score": 1620
   },
   {
@@ -14207,7 +14207,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 92,
     "contributors": 2235,
-    "github_checked_at": "2026-09-25T01:37:42.055Z",
+    "github_checked_at": "2026-09-25T01:59:36.203Z",
     "health_score": 3344
   },
   {
@@ -14256,7 +14256,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 161,
     "contributors": 577,
-    "github_checked_at": "2026-09-25T01:37:41.421Z",
+    "github_checked_at": "2026-09-25T01:59:36.316Z",
     "health_score": 13666
   },
   {
@@ -14301,7 +14301,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 325,
     "contributors": 255,
-    "github_checked_at": "2026-09-25T01:37:41.644Z",
+    "github_checked_at": "2026-09-25T01:59:36.455Z",
     "health_score": 4839
   },
   {
@@ -14337,7 +14337,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 67,
     "contributors": 88,
-    "github_checked_at": "2026-09-25T01:37:41.815Z",
+    "github_checked_at": "2026-09-25T01:59:36.474Z",
     "health_score": 4256
   },
   {
@@ -14379,7 +14379,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 278,
     "contributors": 511,
-    "github_checked_at": "2026-09-25T01:37:42.026Z",
+    "github_checked_at": "2026-09-25T01:59:36.598Z",
     "health_score": 8519
   },
   {
@@ -14393,7 +14393,7 @@
     "category": "devtools",
     "primary_competitor": "GitHub",
     "primary_competitor_ja": null,
-    "stars_num": 38433,
+    "stars_num": 38434,
     "language": "Go",
     "license": "Apache-2.0",
     "forks_num": 3405,
@@ -14421,8 +14421,8 @@
     "_source": "candidates-2026-09b",
     "watchers": 544,
     "contributors": 91,
-    "github_checked_at": "2026-09-25T01:37:42.419Z",
-    "health_score": 11492
+    "github_checked_at": "2026-09-25T01:59:36.902Z",
+    "health_score": 11493
   },
   {
     "id": "continue",
@@ -14456,7 +14456,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 174,
     "contributors": 507,
-    "github_checked_at": "2026-09-25T01:37:42.405Z",
+    "github_checked_at": "2026-09-25T01:59:36.856Z",
     "health_score": 12015
   },
   {
@@ -14506,7 +14506,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 81,
     "contributors": 313,
-    "github_checked_at": "2026-09-25T01:37:42.401Z",
+    "github_checked_at": "2026-09-25T01:59:36.939Z",
     "health_score": 4707
   },
   {
@@ -14547,7 +14547,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 55,
     "contributors": 76,
-    "github_checked_at": "2026-09-25T01:37:42.508Z",
+    "github_checked_at": "2026-09-25T01:59:36.924Z",
     "health_score": 1564
   },
   {
@@ -14561,7 +14561,7 @@
     "category": "devtools",
     "primary_competitor": "Docker Hub",
     "primary_competitor_ja": null,
-    "stars_num": 29455,
+    "stars_num": 29454,
     "language": "Go",
     "license": "Apache-2.0",
     "forks_num": 5360,
@@ -14589,7 +14589,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 520,
     "contributors": 494,
-    "github_checked_at": "2026-09-25T01:37:42.958Z",
+    "github_checked_at": "2026-09-25T01:59:37.217Z",
     "health_score": 10421
   },
   {
@@ -14629,7 +14629,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 216,
     "contributors": 265,
-    "github_checked_at": "2026-09-25T01:37:42.779Z",
+    "github_checked_at": "2026-09-25T01:59:37.245Z",
     "health_score": 2467
   },
   {
@@ -14661,7 +14661,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 101,
     "contributors": 2918,
-    "github_checked_at": "2026-09-25T01:37:47.254Z",
+    "github_checked_at": "2026-09-25T01:59:37.329Z",
     "health_score": 3060
   },
   {
@@ -14690,7 +14690,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 361,
     "contributors": 394,
-    "github_checked_at": "2026-09-25T01:37:43.177Z",
+    "github_checked_at": "2026-09-25T01:59:37.521Z",
     "health_score": 15193
   },
   {
@@ -14727,7 +14727,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 35,
     "contributors": 20,
-    "github_checked_at": "2026-09-25T01:37:43.100Z",
+    "github_checked_at": "2026-09-25T01:59:37.517Z",
     "health_score": 1124
   },
   {
@@ -14744,7 +14744,7 @@
     "stars_num": 33067,
     "language": "Rust",
     "license": null,
-    "forks_num": 1363,
+    "forks_num": 1364,
     "last_commit": "2026-09-14T23:11:22Z",
     "created_at": "2021-12-09T15:03:29Z",
     "scorecard_score": null,
@@ -14775,8 +14775,8 @@
     "_source": "candidates-2026-09b",
     "watchers": 168,
     "contributors": 184,
-    "github_checked_at": "2026-09-25T01:37:43.360Z",
-    "health_score": 9077
+    "github_checked_at": "2026-09-25T01:59:37.628Z",
+    "health_score": 9078
   },
   {
     "id": "netmaker",
@@ -14825,7 +14825,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 73,
     "contributors": 105,
-    "github_checked_at": "2026-09-25T01:37:43.537Z",
+    "github_checked_at": "2026-09-25T01:59:37.726Z",
     "health_score": 3349
   },
   {
@@ -14842,7 +14842,7 @@
     "stars_num": 20252,
     "language": "Go",
     "license": "MIT",
-    "forks_num": 2384,
+    "forks_num": 2385,
     "last_commit": "2026-09-24T18:29:12Z",
     "created_at": "2019-12-28T20:08:43Z",
     "scorecard_score": null,
@@ -14875,7 +14875,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 192,
     "contributors": 131,
-    "github_checked_at": "2026-09-25T01:37:43.601Z",
+    "github_checked_at": "2026-09-25T01:59:37.870Z",
     "health_score": 6369
   },
   {
@@ -14923,7 +14923,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 52,
     "contributors": 24,
-    "github_checked_at": "2026-09-25T01:37:43.750Z",
+    "github_checked_at": "2026-09-25T01:59:37.867Z",
     "health_score": 1131
   },
   {
@@ -14937,11 +14937,11 @@
     "category": "marketing",
     "primary_competitor": "Buffer",
     "primary_competitor_ja": null,
-    "stars_num": 36296,
+    "stars_num": 36297,
     "language": "TypeScript",
     "license": "AGPL-3.0",
     "forks_num": 6978,
-    "last_commit": "2026-09-25T01:37:07Z",
+    "last_commit": "2026-09-25T01:56:37Z",
     "created_at": "2023-07-08T17:24:22Z",
     "scorecard_score": null,
     "docker_available": null,
@@ -14963,7 +14963,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 134,
     "contributors": 75,
-    "github_checked_at": "2026-09-25T01:37:43.938Z",
+    "github_checked_at": "2026-09-25T01:59:37.943Z",
     "health_score": 12634
   },
   {
@@ -14981,7 +14981,7 @@
     "language": "Ruby",
     "license": "GPL-2.0",
     "forks_num": 9018,
-    "last_commit": "2026-09-25T01:31:24Z",
+    "last_commit": "2026-09-25T01:43:39Z",
     "created_at": "2013-01-12T00:25:55Z",
     "scorecard_score": null,
     "docker_available": null,
@@ -15000,7 +15000,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 879,
     "contributors": 1198,
-    "github_checked_at": "2026-09-25T01:37:43.954Z",
+    "github_checked_at": "2026-09-25T01:59:38.126Z",
     "health_score": 17302
   },
   {
@@ -15037,7 +15037,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 214,
     "contributors": 212,
-    "github_checked_at": "2026-09-25T01:37:44.137Z",
+    "github_checked_at": "2026-09-25T01:59:38.225Z",
     "health_score": 2289
   },
   {
@@ -15078,7 +15078,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 357,
     "contributors": 270,
-    "github_checked_at": "2026-09-25T01:37:44.632Z",
+    "github_checked_at": "2026-09-25T01:59:38.206Z",
     "health_score": 5529
   },
   {
@@ -15092,7 +15092,7 @@
     "category": "communication",
     "primary_competitor": "Pushover",
     "primary_competitor_ja": null,
-    "stars_num": 34424,
+    "stars_num": 34425,
     "language": "Go",
     "license": "Apache-2.0",
     "forks_num": 1617,
@@ -15115,8 +15115,8 @@
     "_source": "candidates-2026-09b",
     "watchers": 101,
     "contributors": 408,
-    "github_checked_at": "2026-09-25T01:37:44.305Z",
-    "health_score": 9643
+    "github_checked_at": "2026-09-25T01:59:38.287Z",
+    "health_score": 9644
   },
   {
     "id": "gotify",
@@ -15158,7 +15158,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 121,
     "contributors": 59,
-    "github_checked_at": "2026-09-25T01:37:44.472Z",
+    "github_checked_at": "2026-09-25T01:59:38.465Z",
     "health_score": 4493
   },
   {
@@ -15174,7 +15174,7 @@
     "primary_competitor_ja": null,
     "stars_num": 6040,
     "language": "Ruby",
-    "license": null,
+    "license": "GPL-2.0",
     "forks_num": 2470,
     "last_commit": "2026-09-25T01:00:09Z",
     "created_at": "2012-11-19T22:47:09Z",
@@ -15187,7 +15187,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 385,
     "contributors": 12,
-    "github_checked_at": "2026-09-25T01:37:44.674Z",
+    "github_checked_at": "2026-09-25T01:59:38.540Z",
     "health_score": 2847
   },
   {
@@ -15227,7 +15227,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 10,
     "contributors": 18,
-    "github_checked_at": "2026-09-25T01:37:44.920Z",
+    "github_checked_at": "2026-09-25T01:59:38.544Z",
     "health_score": 226
   },
   {
@@ -15269,7 +15269,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 16,
     "contributors": 131,
-    "github_checked_at": "2026-09-25T01:37:44.999Z",
+    "github_checked_at": "2026-09-25T01:59:38.607Z",
     "health_score": 303
   },
   {
@@ -15310,7 +15310,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 34,
     "contributors": 85,
-    "github_checked_at": "2026-09-25T01:37:45.026Z",
+    "github_checked_at": "2026-09-25T01:59:39.002Z",
     "health_score": 2717
   },
   {
@@ -15359,7 +15359,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 34,
     "contributors": 35,
-    "github_checked_at": "2026-09-25T01:37:45.354Z",
+    "github_checked_at": "2026-09-25T01:59:38.887Z",
     "health_score": 1281
   },
   {
@@ -15377,7 +15377,7 @@
     "language": "Go",
     "license": "AGPL-3.0",
     "forks_num": 1588,
-    "last_commit": "2026-09-25T00:53:48Z",
+    "last_commit": "2026-09-25T01:56:00Z",
     "created_at": "2021-12-22T06:08:52Z",
     "scorecard_score": null,
     "docker_available": null,
@@ -15399,7 +15399,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 86,
     "contributors": 277,
-    "github_checked_at": "2026-09-25T01:37:45.362Z",
+    "github_checked_at": "2026-09-25T01:59:38.978Z",
     "health_score": 5124
   },
   {
@@ -15436,7 +15436,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 73,
     "contributors": 36,
-    "github_checked_at": "2026-09-25T01:37:45.402Z",
+    "github_checked_at": "2026-09-25T01:59:38.935Z",
     "health_score": 4020
   },
   {
@@ -15486,7 +15486,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 40,
     "contributors": 50,
-    "github_checked_at": "2026-09-25T01:37:45.738Z",
+    "github_checked_at": "2026-09-25T01:59:39.219Z",
     "health_score": 973
   },
   {
@@ -15527,7 +15527,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 54,
     "contributors": 28,
-    "github_checked_at": "2026-09-25T01:37:45.741Z",
+    "github_checked_at": "2026-09-25T01:59:39.217Z",
     "health_score": 600
   },
   {
@@ -15566,7 +15566,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 117,
     "contributors": 432,
-    "github_checked_at": "2026-09-25T01:37:45.915Z",
+    "github_checked_at": "2026-09-25T01:59:39.423Z",
     "health_score": 4919
   },
   {
@@ -15606,7 +15606,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 66,
     "contributors": 333,
-    "github_checked_at": "2026-09-25T01:37:46.191Z",
+    "github_checked_at": "2026-09-25T01:59:39.391Z",
     "health_score": 3081
   },
   {
@@ -15642,7 +15642,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 105,
     "contributors": 73,
-    "github_checked_at": "2026-09-25T01:37:46.119Z",
+    "github_checked_at": "2026-09-25T01:59:39.545Z",
     "health_score": 3253
   },
   {
@@ -15671,7 +15671,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 12,
     "contributors": 84,
-    "github_checked_at": "2026-09-25T01:37:46.382Z",
+    "github_checked_at": "2026-09-25T01:59:39.560Z",
     "health_score": 134
   },
   {
@@ -15700,7 +15700,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 59,
     "contributors": 326,
-    "github_checked_at": "2026-09-25T01:37:46.954Z",
+    "github_checked_at": "2026-09-25T01:59:39.734Z",
     "health_score": 839
   },
   {
@@ -15738,7 +15738,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 11,
     "contributors": 125,
-    "github_checked_at": "2026-09-25T01:37:46.555Z",
+    "github_checked_at": "2026-09-25T01:59:39.826Z",
     "health_score": 16431
   },
   {
@@ -15787,7 +15787,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 39,
     "contributors": 312,
-    "github_checked_at": "2026-09-25T01:37:46.797Z",
+    "github_checked_at": "2026-09-25T01:59:39.985Z",
     "health_score": 3167
   },
   {
@@ -15823,7 +15823,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 20,
     "contributors": 87,
-    "github_checked_at": "2026-09-25T01:37:46.930Z",
+    "github_checked_at": "2026-09-25T01:59:39.890Z",
     "health_score": 2406
   },
   {
@@ -15861,7 +15861,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 134,
     "contributors": 122,
-    "github_checked_at": "2026-09-25T01:37:47.179Z",
+    "github_checked_at": "2026-09-25T01:59:40.067Z",
     "health_score": 1311
   },
   {
@@ -15877,7 +15877,7 @@
     "primary_competitor_ja": null,
     "stars_num": 223,
     "language": "Python",
-    "license": null,
+    "license": "GPL-3.0",
     "forks_num": 82,
     "last_commit": "2026-09-24T23:03:47Z",
     "created_at": "2022-12-18T18:01:50Z",
@@ -15895,7 +15895,7 @@
     "_source": "candidates-2026-09b",
     "watchers": 10,
     "contributors": 201,
-    "github_checked_at": "2026-09-25T01:37:50.257Z",
+    "github_checked_at": "2026-09-25T01:59:40.200Z",
     "health_score": 200
   }
 ]
