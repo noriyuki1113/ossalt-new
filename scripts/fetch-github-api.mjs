@@ -390,18 +390,35 @@ async function fetchReleaseInfo(base) {
  * そのため releases と同じ「per_page=100で実際にページングして
  * 配列の件数を数える」方式に統一する。最大10ページ（1,000件）で打ち切る。
  */
+/** Link ヘッダの rel="next" のURLをそのまま返す（無ければnull）。 */
+function nextUrlFromLink(linkHeader) {
+  if (!linkHeader) return null;
+  const m = linkHeader.match(/<([^>]+)>;\s*rel="next"/);
+  return m ? m[1] : null;
+}
+
+/**
+ * security-advisories は ?page=N を渡しても同じ1ページ目が返り続けた
+ * （実測: 7件で「ちょうど1000」＝1ページ目を10回数えた形跡になった）。
+ * page=N を自分で組み立てるのではなく、Linkヘッダのrel="next"が
+ * 示すURLをそのまま辿る（ページネーション方式をこちらで仮定しない）。
+ * 同じURLが繰り返し返る異常も検知して打ち切る。
+ */
 async function fetchAdvisoriesCount(base) {
   let total = 0;
   let sawAny = false;
+  let url = `${base}/security-advisories?per_page=100`;
+  const seen = new Set();
 
-  for (let page = 1; page <= 10; page += 1) {
-    const res = await ghFetch(`${base}/security-advisories?per_page=100&page=${page}`);
+  for (let i = 0; i < 20 && url && !seen.has(url); i += 1) {
+    seen.add(url);
+    const res = await ghFetch(url);
     if (!res || !res.ok) return sawAny ? total : null;
     const list = await res.json().catch(() => null);
     if (!Array.isArray(list) || list.length === 0) break;
     sawAny = true;
     total += list.length;
-    if (list.length < 100) break; // 最終ページ
+    url = nextUrlFromLink(res.headers.get("link"));
   }
 
   return sawAny ? total : 0;
