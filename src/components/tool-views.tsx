@@ -4,15 +4,21 @@ import { ToolLogo } from "@/components/tool-logo";
 import {
   SCORECARD_CHECKS,
   SCORECARD_TIERS,
+  advisoriesLabel,
+  dependabotLabel,
   dockerLabel,
   formatCompactJa,
   formatDate,
   formatFull,
   formatRelativeDays,
   getHealth,
+  getMaintenanceWarning,
   getScorecardTier,
+  getSecurityFallback,
   jaDocsLabel,
   licenseLabel,
+  releaseInfoLabel,
+  securityMdLabel,
   type Tool,
 } from "@/lib/tools";
 import { t } from "@/lib/site";
@@ -117,12 +123,31 @@ export function ScorecardBadge({ tool }: { tool: Tool }) {
   );
 }
 
+/**
+ * 一覧・比較表用。Scorecard未評価のときに空欄にしない代替表示。
+ * 「未評価 ≠ 安全/危険」の考え方を壊さないよう、確認できた事実（アーカイブ・
+ * アドバイザリ・SECURITY.mdの有無）だけを文字で示す。色だけに頼らない。
+ */
+export function SecurityListBadge({ tool }: { tool: Tool }) {
+  const tier = getScorecardTier(tool.scorecard_score);
+  if (tier !== "unrated") return <ScorecardBadge tool={tool} />;
+  const fallback = getSecurityFallback(tool);
+  return (
+    <span className={`sc sc--${fallback.tier}`} title={t("security.unratedReason")}>
+      <span className="sc__dot" aria-hidden="true" />
+      <span>Security</span>
+      <span className="sc__score">{fallback.text}</span>
+    </span>
+  );
+}
+
 export function ScorecardPanel({ tool }: { tool: Tool }) {
   const tier = getScorecardTier(tool.scorecard_score);
   const checks = tool.scorecard_checks ?? {};
   const rows = Object.entries(SCORECARD_CHECKS)
     .filter(([key]) => key in checks)
     .map(([key, label]) => ({ key, label, score: checks[key] }));
+  const maintenance = getMaintenanceWarning(tool);
 
   return (
     <div className="panel">
@@ -133,6 +158,16 @@ export function ScorecardPanel({ tool }: { tool: Tool }) {
         </span>
       </div>
       <div className="panel__body">
+        {maintenance?.level === "archived" && (
+          <p className="notice notice--warn" style={{ marginTop: 0, marginBottom: "1rem" }}>
+            <strong>{t("security.archivedWarning")}</strong>
+          </p>
+        )}
+        {maintenance?.level === "stale" && (
+          <p className="notice" style={{ marginTop: 0, marginBottom: "1rem" }}>
+            {t("security.staleWarning", { days: maintenance.days ?? "—" })}
+          </p>
+        )}
         {tier === "unrated" ? (
           <>
             <ScorecardBadge tool={tool} />
@@ -168,6 +203,27 @@ export function ScorecardPanel({ tool }: { tool: Tool }) {
             )}
           </>
         )}
+        <h3 className="field__label mt1">{t("security.signals")}</h3>
+        <dl className="spec">
+          <div className="spec__row">
+            <dt className="spec__key">{t("security.securityMd")}</dt>
+            <dd className="spec__val">
+              {tool.security_md === false ? t("security.securityMdMissing") : securityMdLabel(tool.security_md)}
+            </dd>
+          </div>
+          <div className="spec__row">
+            <dt className="spec__key">{t("security.dependabot")}</dt>
+            <dd className="spec__val">{dependabotLabel(tool.dependabot_configured)}</dd>
+          </div>
+          <div className="spec__row">
+            <dt className="spec__key">{t("security.releases")}</dt>
+            <dd className="spec__val">{releaseInfoLabel(tool.latest_release_at, tool.releases_12mo)}</dd>
+          </div>
+          <div className="spec__row">
+            <dt className="spec__key">{t("security.advisories")}</dt>
+            <dd className="spec__val">{advisoriesLabel(tool.advisories_count)}</dd>
+          </div>
+        </dl>
         <p className="muted" style={{ fontSize: "0.75rem", marginBottom: 0 }}>
           {t("security.what")}
         </p>
@@ -217,7 +273,7 @@ export function ToolRow({ tool }: { tool: Tool }) {
         </div>
         <div className="cell" style={{ minWidth: "auto" }}>
           <span className="cell__label">{t("metric.security")}</span>
-          <ScorecardBadge tool={tool} />
+          <SecurityListBadge tool={tool} />
         </div>
       </div>
     </article>
@@ -302,7 +358,7 @@ export function ComparisonTable({ tools }: { tools: Tool[] }) {
                 {tool.health_score != null ? Math.round(tool.health_score).toLocaleString("ja-JP") : "—"}
               </td>
               <td>
-                <ScorecardBadge tool={tool} />
+                <SecurityListBadge tool={tool} />
               </td>
             </tr>
           ))}

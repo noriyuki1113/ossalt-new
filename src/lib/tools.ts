@@ -35,6 +35,20 @@ export type Tool = {
   scorecard_date: string | null;
   scorecard_checks: Record<string, number> | null;
 
+  /**
+   * 脆弱性の報告窓口（SECURITY.md）の有無。GitHub contents API で確認。
+   * null は「確認できなかった」であり「無い」ではない（取得失敗と無いことを混同しない）。
+   */
+  security_md: boolean | null;
+  /** .github/dependabot.yml の有無。null は「確認できなかった」。 */
+  dependabot_configured: boolean | null;
+  /** 最新リリースの公開日（releases API）。リリースが無い場合も null。 */
+  latest_release_at: string | null;
+  /** 直近12か月のリリース数。取得できた場合のみ数値（0も含む）、取得できなければ null。 */
+  releases_12mo: number | null;
+  /** 公開されているセキュリティアドバイザリの件数。取得できなければ null。 */
+  advisories_count: number | null;
+
   docker_available: boolean | null;
   github_archived: boolean;
   health_score: number | null;
@@ -259,6 +273,22 @@ export function getScorecardTier(score: number | null | undefined): ScorecardTie
   return "poor";
 }
 
+/**
+ * 「更新が止まっている＝脆弱性が直らないかもしれない」という、セキュリティ観点での
+ * 保守状況の警告。第3節の「更新が続いているか」とは別に、セキュリティ節にも出す。
+ * 1年（365日）を閾値とする。完成して安定しているソフトは更新が少なくなる、という
+ * 第3節の但し書きと矛盾しないよう、断定はせず「可能性があります」の書き方に留める。
+ */
+export type MaintenanceWarning = { level: "archived" | "stale"; days: number | null } | null;
+
+export function getMaintenanceWarning(tool: Tool): MaintenanceWarning {
+  if (tool.github_archived) return { level: "archived", days: tool.freshness_days };
+  if (tool.freshness_days != null && tool.freshness_days >= 365) {
+    return { level: "stale", days: tool.freshness_days };
+  }
+  return null;
+}
+
 export const SCORECARD_CHECKS: Record<string, string> = {
   Maintained: "継続的なメンテナンス",
   "Code-Review": "コードレビュー必須",
@@ -318,6 +348,50 @@ export function dockerLabel(v: boolean | null | undefined): string {
   if (v === true) return "対応";
   if (v === false) return "非対応";
   return "未確認";
+}
+
+export function securityMdLabel(v: boolean | null | undefined): string {
+  if (v === true) return "あり";
+  if (v === false) return "なし";
+  return "未確認";
+}
+
+export function dependabotLabel(v: boolean | null | undefined): string {
+  if (v === true) return "設定あり";
+  if (v === false) return "未設定";
+  return "未確認";
+}
+
+/** 「2026/08/12（直近12か月に5回）」のような表示。リリースが無い場合はその旨を返す。 */
+export function releaseInfoLabel(latestReleaseAt: string | null, releases12mo: number | null): string {
+  if (!latestReleaseAt) return "リリースはありません";
+  const dateStr = formatDate(latestReleaseAt);
+  if (releases12mo == null) return dateStr;
+  return `${dateStr}（直近12か月に${releases12mo}回）`;
+}
+
+export function advisoriesLabel(v: number | null | undefined): string {
+  if (v == null) return "未確認";
+  if (v === 0) return "公開されているアドバイザリはありません";
+  return `${v}件`;
+}
+
+/**
+ * 一覧・比較表のセキュリティ列。Scorecardが未評価（6.5%の大半）だと
+ * 空欄になってしまうため、確認できている他の信号で代替表示する。
+ * 優先順: アーカイブ済み > アドバイザリあり > SECURITY.mdの有無 > 未確認。
+ * 色だけに頼らず、必ず文字でも示す。
+ */
+export type SecurityFallback = { text: string; tier: "poor" | "fair" | "good" | "unrated" };
+
+export function getSecurityFallback(tool: Tool): SecurityFallback {
+  if (tool.github_archived) return { text: "開発終了", tier: "poor" };
+  if (tool.advisories_count != null && tool.advisories_count > 0) {
+    return { text: "要確認", tier: "fair" };
+  }
+  if (tool.security_md === true) return { text: "窓口あり", tier: "good" };
+  if (tool.security_md === false) return { text: "窓口なし", tier: "unrated" };
+  return { text: "未確認", tier: "unrated" };
 }
 
 export function jaDocsLabel(v: Tool["ja_docs"]): string {

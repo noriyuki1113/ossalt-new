@@ -4,7 +4,24 @@
  *
  * 補完する項目:
  *   contributors / watchers / last_commit / created_at / language /
- *   license / stars_num / forks_num / github_archived / topics
+ *   license / stars_num / forks_num / github_archived / topics /
+ *   scorecard_score / scorecard_date / scorecard_checks /
+ *   security_md / dependabot_configured / latest_release_at /
+ *   releases_12mo / advisories_count
+ *
+ * セキュリティ関連の項目（2026-09-25追加）:
+ *   - scorecard_*: OpenSSF Scorecard（api.securityscorecards.dev）。
+ *     未収録リポジトリは404を返し続けることを実測で確認済み（タスク0）。
+ *     404は「未収録」であり取得失敗ではないため、他の項目と同様に
+ *     null（取得できず）として扱い、既存の値を消さない。
+ *   - security_md / dependabot_configured: GitHub contents APIで
+ *     SECURITY.md / .github/dependabot.yml の有無を確認。
+ *     200→true、404→false、それ以外（403・5xx・タイムアウト等）→null。
+ *     「無い」と「確認できなかった」を混同しない（false と null を分ける）。
+ *   - latest_release_at / releases_12mo: releases API。取得できなければ両方null。
+ *     リリースが無いプロジェクトは latest_release_at:null / releases_12mo:0。
+ *   - advisories_count: security-advisories API。書き込み権限が無くても
+ *     公開済みアドバイザリは閲覧できることを実測で確認済み。
  *
  * 使い方:
  *   GITHUB_TOKEN=ghp_xxx node scripts/fetch-github-api.mjs
@@ -225,6 +242,103 @@ function totalFromLink(linkHeader) {
   return m ? Number(m[1]) : null;
 }
 
+/**
+ * OpenSSF Scorecard REST API（api.securityscorecards.dev）。
+ * 404は「そのリポジトリがScorecardの公開データセットに無い」ことを示す正常応答であり、
+ * 一時的な失敗（5xx・レート制限・タイムアウト）とは区別する
+ * （2026-09-25、実際にAPIを叩いて確認済み。既知のリポジトリでは200＋正しいスコアが
+ * 返り、未収録のリポジトリでは一貫して404が返る）。
+ * 404とネットワーク/5xxエラーのどちらも、呼び出し側では null 3項目として扱う
+ * （「未取得」と「データセットに無い」を画面上で区別する情報が無いため。
+ * 取得日 scorecard_date が付くので、古いデータかどうかは読者が判断できる）。
+ */
+async function fetchScorecard(owner, repo) {
+  const url = `https://api.securityscorecards.dev/projects/github.com/${owner}/${repo}`;
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    let res;
+    try {
+      const ctl = new AbortController();
+      const timer = setTimeout(() => ctl.abort(), 10000);
+      res = await fetch(url, { headers: { Accept: "application/json" }, signal: ctl.signal });
+      clearTimeout(timer);
+    } catch {
+      res = null;
+    }
+    if (!res) {
+      if (attempt < 2) {
+        await new Promise((r) => setTimeout(r, 1500 * (attempt + 1)));
+        continue;
+      }
+      return { score: null, date: null, checks: null };
+    }
+    if (res.status === 404) return { score: null, date: null, checks: null };
+    if (res.status === 429 || res.status >= 500) {
+      if (attempt < 2) {
+        await new Promise((r) => setTimeout(r, 2000 * (attempt + 1)));
+        continue;
+      }
+      return { score: null, date: null, checks: null };
+    }
+    if (!res.ok) return { score: null, date: null, checks: null };
+    const body = await res.json().catch(() => null);
+    if (!body || typeof body.score !== "number") return { score: null, date: null, checks: null };
+    const checks =
+      Array.isArray(body.checks) && body.checks.length
+        ? Object.fromEntries(body.checks.map((c) => [c.name, c.score]))
+        : null;
+    return { score: body.score, date: body.date ?? null, checks };
+  }
+  return { score: null, date: null, checks: null };
+}
+
+/**
+ * GitHub contents API でファイルの有無を確認する。
+ * 200なら存在（true）、404なら不在（false）、それ以外（403・5xx・タイムアウト等）は
+ * 「確認できなかった」ため null にする。false にしない
+ * （「無い」と「取得できなかった」を混同すると、実際にはあるかもしれないファイルを
+ * 誤って「無い」と断定することになるため）。
+ */
+async function checkFileExists(base, filePath) {
+  const res = await ghFetch(`${base}/contents/${filePath}`);
+  if (!res) return null;
+  if (res.status === 200) return true;
+  if (res.status === 404) return false;
+  return null;
+}
+
+/** 最新リリース日と直近12か月のリリース数。releases APIが失敗した場合は両方null。 */
+async function fetchReleaseInfo(base) {
+  const res = await ghFetch(`${base}/releases?per_page=100`);
+  if (!res || !res.ok) return { latest_release_at: null, releases_12mo: null };
+  const list = await res.json().catch(() => null);
+  if (!Array.isArray(list)) return { latest_release_at: null, releases_12mo: null };
+  if (list.length === 0) return { latest_release_at: null, releases_12mo: 0 };
+  const latest = list.reduce((max, r) => {
+    const d = r.published_at || r.created_at;
+    return !max || (d && d > max) ? d : max;
+  }, null);
+  const cutoff = Date.now() - 365 * 86400000;
+  const releases12mo = list.filter((r) => {
+    const d = r.published_at || r.created_at;
+    return d && new Date(d).getTime() >= cutoff;
+  }).length;
+  return { latest_release_at: latest, releases_12mo: releases12mo };
+}
+
+/**
+ * 公開されているセキュリティアドバイザリの件数。
+ * このエンドポイントは対象リポジトリへの書き込み権限が無くても、公開済み
+ * アドバイザリは200で返ってくることを実際に確認済み（2026-09-25）。
+ * per_page=100を超える件数がある場合は取りこぼすが、収録ツールの規模では
+ * 現実的に起こらないと判断し、追加のページングは行わない。
+ */
+async function fetchAdvisoriesCount(base) {
+  const res = await ghFetch(`${base}/security-advisories?per_page=100`);
+  if (!res || !res.ok) return null;
+  const list = await res.json().catch(() => null);
+  return Array.isArray(list) ? list.length : null;
+}
+
 async function fetchOne(slug, id) {
   const base = `https://api.github.com/repos/${slug}`;
   const repoRes = await ghFetch(base);
@@ -247,6 +361,16 @@ async function fetchOne(slug, id) {
     }
   }
 
+  // セキュリティ関連シグナル（タスク1）。既存の repo/contributors 取得とは
+  // 独立しており、どれか1つが失敗しても他の項目・他のツールには影響しない。
+  const [scorecard, securityMd, dependabotConfigured, releaseInfo, advisoriesCount] = await Promise.all([
+    fetchScorecard(...slug.split("/")),
+    checkFileExists(base, "SECURITY.md"),
+    checkFileExists(base, ".github/dependabot.yml"),
+    fetchReleaseInfo(base),
+    fetchAdvisoriesCount(base),
+  ]);
+
   return {
     ok: true,
     data: {
@@ -264,6 +388,14 @@ async function fetchOne(slug, id) {
           : LICENSE_OVERRIDES[id] ?? null,
       github_archived: repo.archived === true,
       ...(Array.isArray(repo.topics) && repo.topics.length ? { topics: repo.topics } : {}),
+      scorecard_score: scorecard.score,
+      scorecard_date: scorecard.date,
+      scorecard_checks: scorecard.checks,
+      security_md: securityMd,
+      dependabot_configured: dependabotConfigured,
+      latest_release_at: releaseInfo.latest_release_at,
+      releases_12mo: releaseInfo.releases_12mo,
+      advisories_count: advisoriesCount,
       github_checked_at: new Date().toISOString(),
     },
   };

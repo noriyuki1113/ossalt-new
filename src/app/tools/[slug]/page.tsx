@@ -7,8 +7,8 @@ import {
   ComparisonTable,
   HealthLegend,
   HealthMeter,
-  ScorecardBadge,
   ScorecardPanel,
+  SecurityListBadge,
   SpecTable,
 } from "@/components/tool-views";
 import { getActiveTools, getMeta, getTool, getTools } from "@/lib/data";
@@ -194,7 +194,7 @@ export default async function ToolDetailPage({
                   <div className="spec__row">
                     <dt className="spec__key">セキュリティ</dt>
                     <dd className="spec__val">
-                      <ScorecardBadge tool={tool} />
+                      <SecurityListBadge tool={tool} />
                     </dd>
                   </div>
                 </dl>
