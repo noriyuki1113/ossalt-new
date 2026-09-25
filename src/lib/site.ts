@@ -167,16 +167,6 @@ export const MESSAGES = {
       "掲載しているロゴマークはGitHub公開のプロフィール画像を表示しており、各ロゴの商標権はそれぞれの権利者に帰属します。",
     "footer.operator": "運営",
 
-    "newsletter.title": "週刊・自前で動かすソフト便り",
-    "newsletter.lede":
-      "今週の新着ツール、セルフホストの実践例、ライセンス変更の注意情報を毎週1通。",
-    "newsletter.placeholder": "メールアドレス",
-    "newsletter.button": "登録する",
-    "newsletter.note":
-      "配信停止はいつでもできます。登録にはメールアドレスの確認が必要です。",
-    "newsletter.setupPending":
-      "このフォームは送信先が未設定です。配信サービス（Buttondown / Substack など）のエンドポイントを設定すると有効になります。",
-
     "contact.title": "お問い合わせ",
     "contact.lede":
       "掲載情報の訂正、ツールの追加リクエスト、広告・スポンサーに関するお問い合わせなどはこちらから。",

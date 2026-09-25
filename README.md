@@ -33,7 +33,7 @@ ossalt-jp/
    │  ├─ sitemap.ts / robots.ts / feed.xml/route.ts
    │  └─ globals.css                   # デザイントークン＋全スタイル
    ├─ components/
-   │  ├─ site-chrome.tsx   # ヘッダー・フッター・ニュースレター・JSON-LD
+   │  ├─ site-chrome.tsx   # ヘッダー・フッター・JSON-LD
    │  ├─ tool-views.tsx    # 健全度メーター・スコアバッジ・行・スペック表・比較表
    │  └─ tool-browser.tsx  # 検索・絞り込み（クライアント）
    └─ lib/
@@ -82,7 +82,13 @@ GitHubメタデータ（スター・フォーク・最終コミット）は、�
 | `src/lib/site.ts` | `SITE.url`（独自ドメイン）、`SITE.twitter` |
 | `src/app/contact/page.tsx` | お問い合わせ用メールアドレス、またはフォームURL |
 | `src/app/privacy/page.tsx` | 運営者名、制定日（`NEXT_PUBLIC_OPERATOR_NAME` / `NEXT_PUBLIC_PRIVACY_EFFECTIVE_DATE`。未設定なら「準備中」と表示） |
-| `src/components/site-chrome.tsx` | ニュースレターの送信先（`action` 属性） |
+
+## ニュースレターについて
+
+ニュースレターの登録フォームは、配信サービスの選定と送信内容が決まるまで設置しない。
+以前は `action="#"` のダミーフォームが置かれていたが、送信しても何も起きない状態で
+公開されていたため削除した。追加する場合は、実際に送信が機能するフォームアクション
+URLを設定したうえで設置すること。
 
 ## 環境変数
 

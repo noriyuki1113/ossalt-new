@@ -101,36 +101,6 @@ export function SiteFooter({ meta }: { meta?: { built_at: string; tool_count: nu
   );
 }
 
-export function Newsletter() {
-  return (
-    <section className="news" aria-labelledby="news-title">
-      <h2 className="news__title" id="news-title">
-        {t("newsletter.title")}
-      </h2>
-      <p className="news__lede">{t("newsletter.lede")}</p>
-      <form className="news__form" action="#" method="post">
-        <label className="field" style={{ flex: "1 1 14rem" }}>
-          <span className="field__label" style={{ color: "#8f9a91" }}>
-            メールアドレス
-          </span>
-          <input
-            className="input"
-            type="email"
-            name="email"
-            placeholder={t("newsletter.placeholder")}
-            autoComplete="email"
-            required
-          />
-        </label>
-        <button className="btn btn--primary" type="submit" style={{ alignSelf: "end" }}>
-          {t("newsletter.button")}
-        </button>
-      </form>
-      <p className="news__note">{t("newsletter.note")}</p>
-    </section>
-  );
-}
-
 /** 構造化データ。未評価のスコアは出力しない（推測値を出さない方針） */
 export function JsonLd({ data }: { data: Record<string, unknown> }) {
   return (

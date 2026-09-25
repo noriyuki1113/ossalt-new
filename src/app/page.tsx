@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Newsletter, SiteFooter, SiteHeader, JsonLd } from "@/components/site-chrome";
+import { SiteFooter, SiteHeader, JsonLd } from "@/components/site-chrome";
 import { ToolRow } from "@/components/tool-views";
 import { getActiveTools, getMeta } from "@/lib/data";
 import { CATEGORIES } from "@/lib/categories";
@@ -130,8 +130,6 @@ export default function HomePage() {
               <br />{"スターやフォークの数は規模の大きいプロジェクトほど有利になります。更新が止まっていないか（最終コミット日）を必ずあわせて確認してください。"}</div>
           </div>
         </section>
-
-        <Newsletter />
       </main>
       <SiteFooter meta={meta} />
       <JsonLd

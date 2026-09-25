@@ -1250,57 +1250,6 @@ hr {
   border-radius: 2px;
 }
 
-/* ---------- ニュースレター ---------- */
-
-.news {
-  border: 1px solid var(--ink);
-  background: var(--ink);
-  color: var(--paper);
-  padding: 2rem 1.5rem;
-  border-radius: var(--radius);
-  margin: 4rem 0 0;
-}
-
-.news__title {
-  font-family: var(--font-display);
-  font-weight: 900;
-  font-size: var(--step-2);
-  color: #fff;
-  margin: 0 0 0.5rem;
-  letter-spacing: -0.02em;
-}
-
-.news__lede {
-  color: #c9cfc6;
-  font-size: var(--step--1);
-  margin: 0 0 1.25rem;
-  max-width: 56ch;
-}
-
-.news__form {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  max-width: 34rem;
-}
-
-.news__form .input {
-  flex: 1 1 14rem;
-  background: #1c2228;
-  border-color: #39424a;
-  color: #fff;
-}
-
-.news__form .input::placeholder {
-  color: #7d878f;
-}
-
-.news__note {
-  font-size: 0.75rem;
-  color: #8f9a91;
-  margin: 0.85rem 0 0;
-}
-
 /* ---------- フッター ---------- */
 
 .site-foot {
@@ -1459,7 +1408,6 @@ hr {
 
 @media print {
   .site-head,
-  .news,
   .toolbar,
   .site-foot {
     display: none;
