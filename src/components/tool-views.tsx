@@ -180,10 +180,12 @@ export function ScorecardPanel({ tool }: { tool: Tool }) {
 
 export function ToolRow({ tool }: { tool: Tool }) {
   return (
-    <article className="row">
+    <article className="row row--linked">
       <div className="row__main">
         <h3 className="row__name">
-          <Link href={`/tools/${tool.id}/`}>{tool.name}</Link>
+          <Link href={`/tools/${tool.id}/`} className="row__link">
+            {tool.name}
+          </Link>
         </h3>
         <p className="row__alt">
           {t("card.alternativeTo")}: <b>{tool.primary_competitor_ja || tool.primary_competitor}</b>
@@ -270,9 +272,11 @@ export function ComparisonTable({ tools }: { tools: Tool[] }) {
         </thead>
         <tbody>
           {tools.map((tool) => (
-            <tr key={tool.id}>
+            <tr key={tool.id} className="ctable__row">
               <td className="name">
-                <Link href={`/tools/${tool.id}/`}>{tool.name}</Link>
+                <Link href={`/tools/${tool.id}/`} className="ctable__link">
+                  {tool.name}
+                </Link>
               </td>
               <td>{tool.primary_competitor_ja || tool.primary_competitor}</td>
               <td className="num">{formatCompactJa(tool.stars_num)}</td>

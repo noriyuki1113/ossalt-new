@@ -532,7 +532,27 @@ hr {
 }
 
 .row:hover {
-  background: color-mix(in srgb, var(--card) 70%, transparent);
+  /* 一覧はカード背景（--card）の上に乗っているため、--card を重ねても
+     ほぼ見えなかった。紙色の --paper-deep でコントラストを付ける。 */
+  background: var(--paper-deep);
+}
+
+/* 行全体をタップ可能にする（stretched link）。
+   ツール名のリンクだけを行いっぱいに広げる。カード内に他のリンクを足す場合は、
+   そのリンクに position:relative; z-index:1 を付けること。 */
+.row--linked {
+  position: relative;
+}
+
+.row__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.row__link:focus-visible {
+  outline: 2px solid var(--indigo);
+  outline-offset: -2px;
 }
 
 .row__main {
@@ -881,6 +901,24 @@ hr {
 
 .ctable tbody tr:hover {
   background: color-mix(in srgb, var(--indigo-soft) 40%, transparent);
+}
+
+/* 行全体をタップ可能にする（stretched link）。
+   ツール名のリンクだけを行いっぱいに広げ、他のセルにリンクは持たせない。
+   セル内に別のリンクを足す場合は、そのリンクに position:relative; z-index:1 を付けること。 */
+.ctable__row {
+  position: relative;
+}
+
+.ctable__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.ctable__link:focus-visible {
+  outline: 2px solid var(--indigo);
+  outline-offset: -2px;
 }
 
 .ctable td.num {
