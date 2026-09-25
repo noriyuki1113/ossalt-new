@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ToolRow } from "@/components/tool-views";
-import { getMeta, getTools } from "@/lib/data";
+import { getActiveTools, getMeta } from "@/lib/data";
 import { CATEGORIES, getCategory } from "@/lib/categories";
 import { t } from "@/lib/site";
 
@@ -33,7 +33,7 @@ export default async function CategoryPage({ params }: { params: Promise<Params>
   if (!category) notFound();
 
   const meta = getMeta();
-  const items = getTools()
+  const items = getActiveTools()
     .filter((tl) => tl.category === category.slug)
     .sort((a, b) => (b.health_score ?? -1) - (a.health_score ?? -1));
 

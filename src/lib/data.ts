@@ -27,6 +27,18 @@ export function getTools(): Tool[] {
   return readJson<Tool[]>("tools.json", []);
 }
 
+/**
+ * 一覧・カテゴリ・比較・代替候補など「掲載中のツールとして並べる」場面で使う。
+ * アーカイブ済み（開発停止）のツールはここから除外する。
+ *
+ * 除外しても詳細ページ（/tools/<id>/）自体は getTools() 経由で生成され続けるため、
+ * 検索流入や既存リンクは維持しつつ、一覧・比較には出てこないようにする
+ * （「もう使えない」ことをリンク先のページで案内するのが目的）。
+ */
+export function getActiveTools(): Tool[] {
+  return getTools().filter((t) => !t.github_archived);
+}
+
 export function getMeta(): DataMeta {
   return readJson<DataMeta>("meta.json", {
     built_at: new Date().toISOString(),
@@ -42,7 +54,7 @@ export function getTool(id: string): Tool | undefined {
 
 export function getCompetitors(): CompetitorGroup[] {
   const map = new Map<string, CompetitorGroup>();
-  for (const t of getTools()) {
+  for (const t of getActiveTools()) {
     const slug = slugifyCompetitor(t.primary_competitor);
     if (!slug) continue;
     let g = map.get(slug);

@@ -11,7 +11,7 @@ import {
   ScorecardPanel,
   SpecTable,
 } from "@/components/tool-views";
-import { getMeta, getTool, getTools } from "@/lib/data";
+import { getActiveTools, getMeta, getTool, getTools } from "@/lib/data";
 import { getCategory } from "@/lib/categories";
 import { SITE, t } from "@/lib/site";
 import { formatDate, licenseLabel, slugifyCompetitor } from "@/lib/tools";
@@ -53,10 +53,13 @@ export default async function ToolDetailPage({
   const category = getCategory(tool.category);
   const competitorSlug = slugifyCompetitor(tool.primary_competitor);
   const competitor = tool.primary_competitor_ja || tool.primary_competitor;
-  const sameCategory = getTools()
+  // 「同じカテゴリのツール」「代替候補を比較」に挙げる候補は、アーカイブ済み
+  // （開発停止）のツールを除く。閲覧中の tool 自身がアーカイブ済みでも、
+  // その情報は本文中の警告表示で伝えるので、ここでは他のツールの推薦から外すだけでよい。
+  const sameCategory = getActiveTools()
     .filter((tl) => tl.category === tool.category && tl.id !== tool.id)
     .slice(0, 5);
-  const alternatives = getTools()
+  const alternatives = getActiveTools()
     .filter(
       (tl) => tl.primary_competitor === tool.primary_competitor && tl.id !== tool.id
     )
@@ -92,6 +95,14 @@ export default async function ToolDetailPage({
               {competitor} のオープンソース代替。
               {tool.description_ja ? ` ${tool.description_ja}` : ""}
             </p>
+
+            {tool.github_archived && (
+              <p className="notice notice--warn" style={{ marginBottom: "1.25rem" }}>
+                <strong>{t("health.archived")}</strong>{" "}
+                このツールは一覧・カテゴリ・比較のページには表示していません（このページのみ残しています）。
+                新規に導入する場合は、下記の「{competitor} の代替を全部見る」から他の候補もあわせてご確認ください。
+              </p>
+            )}
 
             <div className="hero__actions" style={{ marginBottom: "2rem" }}>
               <a className="btn btn--primary" href={tool.url} rel="noopener">

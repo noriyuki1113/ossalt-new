@@ -38,6 +38,108 @@ const LIMIT = Number(flag("--limit", 0)) || 0;
 const ONLY = flag("--only", null);
 const DRY_RUN = argv.includes("--dry-run");
 
+/**
+ * GitHub API が license を取得できない（spdx_id が無い、または "NOASSERTION"）
+ * ツールの手動上書き表。
+ *
+ * 「NOASSERTION」は主に2パターンで起きる:
+ *   (a) GitHubのライセンス検出器が単純に読み取れなかった（実体は標準ライセンス）
+ *   (b) 標準SPDXに無い独自ライセンス（fair-code / BUSL / SSPL / Elastic License 等）
+ *
+ * ここに入れる値は、各リポジトリの実際の LICENSE ファイルを直接読んで確認したものだけ。
+ * 推測は入れない（確認できなかったものは対象外のまま null にする）。
+ * 各行のコメントが確認に使った実ファイルのURL。
+ *
+ * (a) 標準ライセンスだが検出器が拾えなかったもの → 通常のSPDX表記で上書き
+ * (b) 独自ライセンス → そのライセンスの名称をそのまま表示する
+ *     （フィルタのライセンス欄にSPDXと違う名前で並ぶため、それ自体が
+ *     「標準OSSライセンスではない」ことの目印になる）
+ */
+const LICENSE_OVERRIDES = {
+  // --- (a) 標準ライセンスなのに NOASSERTION だったもの ---
+  "stirling-pdf": "MIT", // https://raw.githubusercontent.com/Stirling-Tools/Stirling-PDF/HEAD/LICENSE
+  affine: "MIT", // https://raw.githubusercontent.com/toeverything/AFFiNE/HEAD/LICENSE
+  twenty: "AGPL-3.0", // https://raw.githubusercontent.com/twentyhq/twenty/HEAD/LICENSE
+  "rocket-chat": "MIT", // https://raw.githubusercontent.com/RocketChat/Rocket.Chat/HEAD/LICENSE
+  posthog: "MIT", // https://raw.githubusercontent.com/PostHog/posthog/HEAD/LICENSE
+  mattermost: "Apache-2.0", // https://raw.githubusercontent.com/mattermost/mattermost/HEAD/LICENSE.txt
+  chatwoot: "MIT", // https://raw.githubusercontent.com/chatwoot/chatwoot/HEAD/LICENSE
+  activepieces: "MIT", // https://raw.githubusercontent.com/activepieces/activepieces/HEAD/LICENSE
+  formbricks: "AGPL-3.0", // https://raw.githubusercontent.com/formbricks/formbricks/HEAD/LICENSE
+  baserow: "MIT", // https://raw.githubusercontent.com/baserow/baserow/HEAD/LICENSE
+  // joplinのLICENSEは「ディレクトリ単位の例外を除きAGPL-3.0-or-later」という文面
+  joplin: "AGPL-3.0", // https://raw.githubusercontent.com/laurent22/joplin/HEAD/LICENSE
+  mediawiki: "GPL-2.0", // https://raw.githubusercontent.com/wikimedia/mediawiki/HEAD/COPYING（v2 or later）
+  // COPYINGはMPLの1条項通知のみだが、内容よりMPL-2.0であることは明記されている
+  "collabora-online": "MPL-2.0", // https://raw.githubusercontent.com/CollaboraOnline/online/HEAD/COPYING
+  odoo: "LGPL-3.0", // https://raw.githubusercontent.com/odoo/odoo/HEAD/LICENSE
+  revolt: "AGPL-3.0", // https://raw.githubusercontent.com/stoatchat/stoatchat/HEAD/LICENSE
+  focalboard: "Apache-2.0", // https://raw.githubusercontent.com/mattermost-community/focalboard/HEAD/LICENSE.txt
+  // COPYINGは3条項のBSDスタイル（再配布・無保証・無endorsement）
+  trac: "BSD-3-Clause", // https://raw.githubusercontent.com/edgewall/trac/HEAD/COPYING
+  lightdash: "MIT", // https://raw.githubusercontent.com/lightdash/lightdash/HEAD/LICENSE
+  openreplay: "AGPL-3.0", // https://raw.githubusercontent.com/openreplay/openreplay/HEAD/LICENSE
+  signoz: "MIT", // https://raw.githubusercontent.com/SigNoz/signoz/HEAD/LICENSE
+  bugsink: "BSD-3-Clause", // https://raw.githubusercontent.com/bugsink/bugsink/HEAD/LICENSE
+  supertokens: "Apache-2.0", // https://raw.githubusercontent.com/supertokens/supertokens-core/HEAD/LICENSE.md
+  seafile: "GPL-2.0", // https://raw.githubusercontent.com/haiwen/seafile/HEAD/LICENSE.txt
+  photoprism: "AGPL-3.0", // https://raw.githubusercontent.com/photoprism/photoprism/HEAD/LICENSE
+  borg: "BSD-3-Clause", // https://raw.githubusercontent.com/borgbackup/borg/HEAD/LICENSE（3条項確認済み）
+  openshot: "GPL-3.0", // https://raw.githubusercontent.com/OpenShot/openshot-qt/HEAD/COPYING
+  audacity: "GPL-3.0", // https://raw.githubusercontent.com/audacity/audacity/HEAD/LICENSE.txt
+  caprover: "Apache-2.0", // https://raw.githubusercontent.com/caprover/caprover/HEAD/LICENSE
+  gnucash: "GPL-2.0", // https://raw.githubusercontent.com/Gnucash/gnucash/HEAD/LICENSE
+  opensign: "AGPL-3.0", // https://raw.githubusercontent.com/OpenSignLabs/OpenSign/HEAD/LICENSE
+  limesurvey: "GPL-2.0", // https://raw.githubusercontent.com/LimeSurvey/LimeSurvey/HEAD/LICENSE
+  mautic: "GPL-3.0", // https://raw.githubusercontent.com/mautic/mautic/HEAD/LICENSE.txt
+  vendure: "GPL-3.0", // https://raw.githubusercontent.com/vendurehq/vendure/HEAD/LICENSE.md
+  opencart: "GPL-3.0", // https://raw.githubusercontent.com/opencart/opencart/HEAD/LICENSE.md
+  flowise: "Apache-2.0", // https://raw.githubusercontent.com/FlowiseAI/Flowise/HEAD/LICENSE.md
+  quivr: "Apache-2.0", // https://raw.githubusercontent.com/The-Vibe-Company/quivr/HEAD/LICENSE
+  // doc/license/GPL-license.txt の実体はGPL v2（"or later"の明記は無い）
+  blender: "GPL-2.0", // https://raw.githubusercontent.com/blender/blender/HEAD/COPYING
+  jan: "Apache-2.0", // https://raw.githubusercontent.com/janhq/jan/HEAD/LICENSE
+  pgadmin: "PostgreSQL", // https://raw.githubusercontent.com/pgadmin-org/pgadmin4/HEAD/LICENSE
+  pgvector: "PostgreSQL", // https://raw.githubusercontent.com/pgvector/pgvector/HEAD/LICENSE
+  strapi: "MIT", // https://raw.githubusercontent.com/strapi/strapi/HEAD/LICENSE
+  // license.txt（小文字）に本文。v2 or later
+  woocommerce: "GPL-2.0", // https://raw.githubusercontent.com/woocommerce/woocommerce/HEAD/license.txt
+
+  // --- (b) 標準SPDXに無い独自ライセンス（名称をそのまま表示） ---
+  n8n: "Sustainable Use License", // https://raw.githubusercontent.com/n8n-io/n8n/HEAD/LICENSE.md
+  nocodb: "Sustainable Use License", // https://raw.githubusercontent.com/nocodb/nocodb/HEAD/LICENSE.md
+  metabase: "AGPL-3.0 / Metabase Commercial", // https://raw.githubusercontent.com/metabase/metabase/HEAD/LICENSE.txt（デュアル）
+  outline: "BUSL 1.1", // https://raw.githubusercontent.com/outline/outline/HEAD/LICENSE
+  budibase: "BUSL 1.1", // https://raw.githubusercontent.com/Budibase/budibase/HEAD/LICENSE
+  nocobase: "NocoBase License", // https://raw.githubusercontent.com/nocobase/nocobase/HEAD/LICENSE.txt
+  anytype: "Any Source Available License", // https://raw.githubusercontent.com/anyproto/anytype-ts/HEAD/LICENSE.md
+  planka: "PLANKA Community License", // https://raw.githubusercontent.com/plankanban/planka/HEAD/LICENSE.md
+  goatcounter: "EUPL派生（独自条項）", // https://raw.githubusercontent.com/arp242/goatcounter/HEAD/LICENSE
+  countly: "Countly Lite License", // https://raw.githubusercontent.com/Countly/countly-server/HEAD/LICENSE.md
+  rudderstack: "Elastic License 2.0", // https://raw.githubusercontent.com/rudderlabs/rudder-server/HEAD/LICENSE
+  sentry: "FSL 1.1", // https://raw.githubusercontent.com/getsentry/sentry/HEAD/LICENSE.md
+  graylog: "SSPL 1.0", // https://raw.githubusercontent.com/Graylog2/graylog2-server/HEAD/LICENSE
+  cachet: "Cachet License", // https://raw.githubusercontent.com/cachethq/cachet/HEAD/LICENSE.md
+  vault: "BUSL 1.1", // https://raw.githubusercontent.com/hashicorp/vault/HEAD/LICENSE
+  terraform: "BUSL 1.1", // https://raw.githubusercontent.com/hashicorp/terraform/HEAD/LICENSE
+  // トリプルライセンス（既定はAGPL/SSPL/Elasticのいずれか選択制、x-pack配下のみElastic固定）
+  elasticsearch: "AGPL-3.0 / SSPL / Elastic-2.0", // https://raw.githubusercontent.com/elastic/elasticsearch/HEAD/LICENSE.txt
+  adminer: "Apache-2.0 / GPL-2.0", // https://raw.githubusercontent.com/vrana/adminer/HEAD/LICENSE（デュアル）
+  "open-webui": "Open WebUI License", // https://raw.githubusercontent.com/open-webui/open-webui/HEAD/LICENSE
+  lobechat: "LobeHub Community License", // https://raw.githubusercontent.com/lobehub/lobehub/HEAD/LICENSE
+  dify: "Apache-2.0（改変条項あり）", // https://raw.githubusercontent.com/langgenius/dify/HEAD/LICENSE
+  "arize-phoenix": "Elastic License 2.0", // https://raw.githubusercontent.com/Arize-ai/phoenix/HEAD/LICENSE
+  "invoice-ninja": "Elastic License 2.0", // https://raw.githubusercontent.com/invoiceninja/invoiceninja/HEAD/LICENSE
+  akaunting: "BUSL 1.1", // https://raw.githubusercontent.com/akaunting/akaunting/HEAD/LICENSE.txt
+  tldraw: "tldraw License", // https://raw.githubusercontent.com/tldraw/tldraw/HEAD/LICENSE.md
+  prestashop: "OSL-3.0（コアのみ）", // https://raw.githubusercontent.com/PrestaShop/PrestaShop/HEAD/LICENSE.md
+
+  // directus / inkscape / dokploy は、リポジトリ直下に LICENSE ファイルが
+  // 見つからず（inkscapeは開発本体がGitLab側で、GitHubは同期用ミラー）、
+  // package.json の license フィールドにも記載が無かったため、確認できないまま
+  // null（未取得）にしている。ここには入れない。
+};
+
 const HEADERS = {
   Accept: "application/vnd.github+json",
   "X-GitHub-Api-Version": "2022-11-28",
@@ -91,7 +193,7 @@ function totalFromLink(linkHeader) {
   return m ? Number(m[1]) : null;
 }
 
-async function fetchOne(slug) {
+async function fetchOne(slug, id) {
   const base = `https://api.github.com/repos/${slug}`;
   const repoRes = await ghFetch(base);
 
@@ -124,9 +226,10 @@ async function fetchOne(slug) {
       last_commit: repo.pushed_at || null,
       created_at: repo.created_at || null,
       language: repo.language || null,
-      license: repo.license?.spdx_id && repo.license.spdx_id !== "NOASSERTION"
-        ? repo.license.spdx_id
-        : null,
+      license:
+        repo.license?.spdx_id && repo.license.spdx_id !== "NOASSERTION"
+          ? repo.license.spdx_id
+          : LICENSE_OVERRIDES[id] ?? null,
       github_archived: repo.archived === true,
       ...(Array.isArray(repo.topics) && repo.topics.length ? { topics: repo.topics } : {}),
       github_checked_at: new Date().toISOString(),
@@ -163,7 +266,7 @@ async function main() {
     while (queue.length) {
       const tool = queue.shift();
       const parsed = parseRepo(tool.github_url);
-      const res = await fetchOne(parsed.slug);
+      const res = await fetchOne(parsed.slug, tool.id);
       done += 1;
 
       if (!res.ok) {

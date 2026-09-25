@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { Newsletter, SiteFooter, SiteHeader, JsonLd } from "@/components/site-chrome";
 import { ToolRow } from "@/components/tool-views";
-import { getMeta, getTools } from "@/lib/data";
+import { getActiveTools, getMeta } from "@/lib/data";
 import { CATEGORIES } from "@/lib/categories";
 import { SITE, t } from "@/lib/site";
 import { formatCompactJa } from "@/lib/tools";
 
 export default function HomePage() {
-  const tools = getTools();
+  const tools = getActiveTools();
   const meta = getMeta();
   const top = tools.slice(0, 8);
   const categoriesWithCount = CATEGORIES.map((c) => ({

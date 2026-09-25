@@ -1,4 +1,4 @@
-import { getMeta, getTools } from "@/lib/data";
+import { getActiveTools, getMeta } from "@/lib/data";
 import { SITE, t } from "@/lib/site";
 
 export const dynamic = "force-static";
@@ -18,7 +18,7 @@ function esc(s: string): string {
 export function GET() {
   const base = SITE.url.replace(/\/$/, "");
   const meta = getMeta();
-  const tools = [...getTools()]
+  const tools = [...getActiveTools()]
     .sort((a, b) => {
       const da = a.last_commit ? new Date(a.last_commit).getTime() : 0;
       const db = b.last_commit ? new Date(b.last_commit).getTime() : 0;

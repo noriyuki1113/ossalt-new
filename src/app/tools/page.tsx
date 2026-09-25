@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { SiteFooter, SiteHeader, Breadcrumbs } from "@/components/site-chrome";
 import { ToolBrowser } from "@/components/tool-browser";
-import { getMeta, getTools } from "@/lib/data";
+import { getActiveTools, getMeta } from "@/lib/data";
 import { CATEGORIES } from "@/lib/categories";
 import { t } from "@/lib/site";
 import { formatCompactJa } from "@/lib/tools";
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 export default function ToolsPage() {
-  const tools = getTools();
+  const tools = getActiveTools();
   const meta = getMeta();
   const categories = CATEGORIES.map((c) => ({
     slug: c.slug,

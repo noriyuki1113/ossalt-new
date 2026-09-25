@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
-import { getMeta, getTools } from "@/lib/data";
+import { getActiveTools, getMeta } from "@/lib/data";
 import { CATEGORIES } from "@/lib/categories";
 import { t } from "@/lib/site";
 
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 export default function CategoriesPage() {
-  const tools = getTools();
+  const tools = getActiveTools();
   const meta = getMeta();
   const withCount = CATEGORIES.map((c) => ({
     ...c,
