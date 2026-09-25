@@ -49,6 +49,7 @@ export const NAV = [
   { href: "/categories/", label: "カテゴリ" },
   { href: "/alternatives/", label: "SaaSから探す" },
   { href: "/guide/", label: "選び方" },
+  { href: "/blog/", label: "ブログ" },
 ] as const;
 
 export const MESSAGES = {
@@ -166,6 +167,13 @@ export const MESSAGES = {
     "guide.title": "自前で動かすソフトの選び方",
     "guide.lede":
       "オープンソースなら何でも安全、ということはありません。乗り換えで後悔しないための確認項目をまとめました。",
+
+    "blog.title": "ブログ",
+    "blog.lede": "セルフホストへの乗り換えを検討するときに役立つ、比較・実践情報をまとめています。",
+    "blog.empty": "まだ記事がありません。",
+    "blog.relatedTools": "関連ツール",
+    "blog.published": "公開日",
+    "blog.updatedNote": "更新日",
 
     "footer.dataNote":
       "掲載データはGitHubの公開情報とOpenSSF Scorecardから自動取得しています。",

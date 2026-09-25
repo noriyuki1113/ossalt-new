@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getCompetitors, getTools } from "@/lib/data";
+import { getBlogPosts } from "@/lib/blog";
 import { CATEGORIES } from "@/lib/categories";
 import { SITE } from "@/lib/site";
 
@@ -9,14 +10,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = SITE.url.replace(/\/$/, "");
   const now = new Date();
 
-  const staticPages = ["/", "/tools/", "/categories/", "/alternatives/", "/guide/", "/about/", "/contact/", "/privacy/"];
+  const staticPages = ["/", "/tools/", "/categories/", "/alternatives/", "/guide/", "/blog/", "/about/", "/contact/", "/privacy/"];
 
   return [
     ...staticPages.map((p) => ({
       url: `${base}${p}`,
       lastModified: now,
       changeFrequency: "weekly" as const,
-      priority: p === "/" ? 1 : 0.7,
+      priority: p === "/" ? 1 : p === "/blog/" ? 0.6 : 0.7,
+    })),
+    ...getBlogPosts().map((post) => ({
+      url: `${base}/blog/${post.slug}/`,
+      lastModified: post.updated ? new Date(post.updated) : now,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
     })),
     ...CATEGORIES.map((c) => ({
       url: `${base}/categories/${c.slug}/`,

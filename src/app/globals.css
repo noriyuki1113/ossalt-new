@@ -1250,6 +1250,41 @@ hr {
   border-radius: 2px;
 }
 
+/* ブログ記事のMarkdown内の表（比較表など）。既存の .guide-table と
+   同じ配色・トークンに揃える。狭い画面でも横スクロールせず収まるように、
+   列の折り返しに任せる（列数が少ない表を想定しているため）。 */
+.prose table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: var(--step--1);
+  margin: 1.25rem 0;
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.prose th,
+.prose td {
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+
+.prose thead th {
+  background: var(--paper-deep);
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 500;
+}
+
+.prose tbody tr:last-child td {
+  border-bottom: none;
+}
+
 /* ---------- フッター ---------- */
 
 .site-foot {
