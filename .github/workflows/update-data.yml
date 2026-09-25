@@ -8,7 +8,8 @@ on:
   workflow_dispatch:
   # [一時] workflow_dispatchがこのセッションのGitHub App統合からは403で
   # トリガーできないため、実データ取得を1回だけ走らせる目的でpushを追加する。
-  # 実行が終わったらこのpushトリガーは削除する。
+  # 実行が終わったらこのpushトリガーは削除する。（再実行: releases_12mo/
+  # advisories_countの100件頭打ちを直したので、修正込みで再度走らせる）
   push:
     paths:
       - ".github/workflows/update-data.yml"
