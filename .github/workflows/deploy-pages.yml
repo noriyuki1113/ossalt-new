@@ -47,7 +47,9 @@ jobs:
       - name: ビルド
         env:
           NEXT_BASE_PATH: ${{ steps.pages.outputs.base_path }}
-          NEXT_PUBLIC_SITE_URL: ${{ steps.pages.outputs.base_url }}
+          # 独自ドメイン設定直後は configure-pages が http:// を返すことがある。
+          # 明示値(Variables)があればそちらを優先し、canonical/sitemapをhttpsに固定する。
+          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL || steps.pages.outputs.base_url }}
           # 運営者情報。未設定なら各ページで自然に非表示になる(「準備中」を出さない)。
           # NEXT_PUBLIC_ はビルド時に埋め込まれる公開値。Secrets ではなく Variables で渡す。
           NEXT_PUBLIC_OPERATOR_NAME: ${{ vars.NEXT_PUBLIC_OPERATOR_NAME }}
