@@ -28,9 +28,7 @@ export default function HomePage() {
             <span className="hl">動かせる。</span>
           </h1>
           <p className="hero__lede">
-            {t("home.lede", { n: meta.tool_count })}料金だけでは判断できない、
-            ライセンス・セキュリティ・更新の勢いまで並べて出します。
-          </p>
+            {t("home.lede", { n: meta.tool_count })}{"料金だけでは判断できない、ライセンス・セキュリティ・更新の勢いまで並べて出します。"}</p>
           <div className="hero__actions">
             <Link className="btn btn--primary" href="/tools/">
               {t("home.cta.browse")}
@@ -125,16 +123,11 @@ export default function HomePage() {
           <div className="grid-2">
             <div className="notice notice--info">
               <strong>「オープンソースなら安全」ではありません。</strong>
-              <br />
-              第三者が機械的に採点した OpenSSF Scorecard を掲載し、未スキャンのものは
-              「未評価」と明記しています。スコアが無いことを安全の証拠として扱わないでください。
-            </div>
+              <br />{"第三者が機械的に採点した OpenSSF Scorecard を掲載し、未スキャンのものは「未評価」と明記しています。"}
+              {"スコアが無いことを安全の証拠として扱わないでください。"}</div>
             <div className="notice">
               <strong>健全度スコアは「勢い」の目安です。</strong>
-              <br />
-              スターやフォークの数は規模の大きいプロジェクトほど有利になります。
-              更新が止まっていないか（最終コミット日）を必ずあわせて確認してください。
-            </div>
+              <br />{"スターやフォークの数は規模の大きいプロジェクトほど有利になります。更新が止まっていないか（最終コミット日）を必ずあわせて確認してください。"}</div>
           </div>
         </section>
 

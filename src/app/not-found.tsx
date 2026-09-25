@@ -10,10 +10,7 @@ export default function NotFound() {
       <main className="wrap page">
         <p className="hero__eyebrow">404 / Not Found</p>
         <h1 className="h2">ページが見つかりません</h1>
-        <p className="lede">
-          掲載を終了したツールか、URLが変わった可能性があります。
-          ツール一覧から探し直してください。
-        </p>
+        <p className="lede">{"掲載を終了したツールか、URLが変わった可能性があります。ツール一覧から探し直してください。"}</p>
         <div className="hero__actions">
           <Link className="btn btn--primary" href="/tools/">
             ツール一覧へ

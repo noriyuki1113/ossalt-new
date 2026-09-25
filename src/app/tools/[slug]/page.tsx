@@ -98,9 +98,8 @@ export default async function ToolDetailPage({
 
             {tool.github_archived && (
               <p className="notice notice--warn" style={{ marginBottom: "1.25rem" }}>
-                <strong>{t("health.archived")}</strong>{" "}
-                このツールは一覧・カテゴリ・比較のページには表示していません（このページのみ残しています）。
-                新規に導入する場合は、下記の「{competitor} の代替を全部見る」から他の候補もあわせてご確認ください。
+                <strong>{t("health.archived")}</strong>{" "}{"このツールは一覧・カテゴリ・比較のページには表示していません（このページのみ残しています）。"}
+                {"新規に導入する場合は、下記の「"}{competitor} の代替を全部見る」から他の候補もあわせてご確認ください。
               </p>
             )}
 

@@ -49,10 +49,7 @@ export default function ContactPage() {
                 <li>自社サーバへの導入作業</li>
                 <li>運用手順の文書化・引き継ぎ</li>
               </ul>
-              <p className="muted" style={{ fontSize: "0.875rem" }}>
-                ※ 料金は内容と規模によりお見積もりします。
-                初回のご相談（30分）は無料です。
-              </p>
+              <p className="muted" style={{ fontSize: "0.875rem" }}>{"※ 料金は内容と規模によりお見積もりします。初回のご相談（30分）は無料です。"}</p>
             </div>
           </div>
         </div>

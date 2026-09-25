@@ -31,15 +31,11 @@ export default function ToolsPage() {
         <Breadcrumbs items={[{ href: "/", label: "トップ" }, { label: "ツール一覧" }]} />
         <h1 className="h2">オープンソースツール一覧</h1>
         <p className="lede">
-          {meta.tool_count}件を収録。スター合計は約{formatCompactJa(totalStars)}。
-          セキュリティ評価（OpenSSF Scorecard）は{meta.scored_count}件で取得済み、
-          残り{meta.unrated_count}件は「未評価」として表示しています。
+          {meta.tool_count}件を収録。スター合計は約{formatCompactJa(totalStars)}{"。セキュリティ評価（OpenSSF Scorecard）は"}{meta.scored_count}{"件で取得済み、残り"}{meta.unrated_count}件は「未評価」として表示しています。
         </p>
         <ToolBrowser tools={tools} categories={categories} />
-        <p className="muted mt1" style={{ fontSize: "0.8125rem" }}>
-          ※ 並び順の初期値は健全度スコア（スター・フォーク・コントリビュータ・ウォッチャー・更新の新しさから算出）です。
-          数値はGitHubの公開情報にもとづき、データ更新は日次で自動実行されます。
-        </p>
+        <p className="muted mt1" style={{ fontSize: "0.8125rem" }}>{"※ 並び順の初期値は健全度スコア（スター・フォーク・コントリビュータ・ウォッチャー・更新の新しさから算出）です。"}
+          {"数値はGitHubの公開情報にもとづき、データ更新は日次で自動実行されます。"}</p>
       </main>
       <SiteFooter meta={meta} />
     </>
