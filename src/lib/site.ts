@@ -182,6 +182,8 @@ export const MESSAGES = {
     "footer.logoNotice":
       "掲載しているロゴマークはGitHub公開のプロフィール画像を表示しており、各ロゴの商標権はそれぞれの権利者に帰属します。",
     "footer.operator": "運営",
+    "footer.terms": "利用規約",
+    "footer.disclaimerPage": "免責事項",
 
     "contact.title": "お問い合わせ",
     "contact.lede":

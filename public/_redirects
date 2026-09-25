@@ -6,7 +6,7 @@
 # カテゴリのうち business/productivity/infrastructure/other の4件は
 # 旧1カテゴリが新サイトで複数カテゴリに分裂しており1対1にできないため、
 # 判断保留のまま /categories/ 一覧へ退避している(差し替え候補は redirect-map.md 3節)。
-# /terms・/disclaimer は新サイトに対応ページが無いため暫定で /privacy/ へ。
+# /terms・/disclaimer はフェーズ1で新設したため、/privacy/ への暫定リダイレクトは廃止済み。
 
 /category/ai-ml /categories/ai/ 301
 /category/developer-tools /categories/devtools/ 301
@@ -71,8 +71,6 @@
 /ranking /tools/ 301
 /news /blog/ 301
 /advertise /about/ 301
-/terms /privacy/ 301
-/disclaimer /privacy/ 301
 
 # 末尾スラッシュ付きでアクセスされた場合（旧sitemapはスラッシュ無しだが念のため）
 /category/ai-ml/ /categories/ai/ 301
@@ -138,8 +136,6 @@
 /ranking/ /tools/ 301
 /news/ /blog/ 301
 /advertise/ /about/ 301
-/terms/ /privacy/ 301
-/disclaimer/ /privacy/ 301
 
 # --- 新サイトに同一URLが存在する47件（大半はPagesの自動正規化で足りるが明示） ---
 /about /about/ 301
