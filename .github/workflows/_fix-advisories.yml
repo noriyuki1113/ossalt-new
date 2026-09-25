@@ -14,7 +14,11 @@ permissions:
 
 concurrency:
   group: fix-advisories
-  cancel-in-progress: false
+  # このセッションのGitHub App統合からは実行中のワークフローをAPI経由で
+  # キャンセルできない（403）。true にしておけば、新しいpush（この
+  # ワークフローファイル自体を変更した場合）が来たときにGitHub Actions
+  # 自身が古い（応答待ちで止まった）実行を自動キャンセルしてくれる。
+  cancel-in-progress: true
 
 jobs:
   fix:
