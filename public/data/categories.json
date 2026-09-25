@@ -3,31 +3,31 @@
   "slug": "note-docs",
   "nameJa": "ノート・ドキュメント",
   "ledeJa": "社内Wikiやドキュメント共有を自前で運用するためのツール。",
-  "count": 22
+  "count": 27
  },
  {
   "slug": "communication",
   "nameJa": "チャット・コミュニケーション",
   "ledeJa": "SlackやTeamsの代わりに、社内チャットを自社サーバで動かす。",
-  "count": 8
+  "count": 13
  },
  {
   "slug": "project",
   "nameJa": "プロジェクト管理",
   "ledeJa": "タスク管理・課題管理を自前で。日本のチームの運用にも合わせやすい。",
-  "count": 10
+  "count": 11
  },
  {
   "slug": "database",
   "nameJa": "データベース・表作成",
   "ledeJa": "Airtableのような表形式のデータ管理を、社内に置く。",
-  "count": 9
+  "count": 11
  },
  {
   "slug": "cms",
   "nameJa": "CMS・コンテンツ管理",
   "ledeJa": "コーポレートサイトやブログの裏側を自前で持つ。",
-  "count": 2
+  "count": 7
  },
  {
   "slug": "analytics",
@@ -39,25 +39,25 @@
   "slug": "observability",
   "nameJa": "監視・エラー追跡",
   "ledeJa": "障害の検知と原因追跡を、外部サービスに依存せず行う。",
-  "count": 16
+  "count": 17
  },
  {
   "slug": "security",
   "nameJa": "認証・パスワード管理",
   "ledeJa": "ID基盤とパスワード保管庫。ここは自前運用の効果が大きい領域。",
-  "count": 25
+  "count": 28
  },
  {
   "slug": "devtools",
   "nameJa": "開発・デプロイ基盤",
   "ledeJa": "Gitホスティング、デプロイ、バックエンド。開発の土台を自前で。",
-  "count": 44
+  "count": 48
  },
  {
   "slug": "automation",
   "nameJa": "業務自動化",
   "ledeJa": "Zapier的な連携を、実行回数を気にせず使う。",
-  "count": 12
+  "count": 13
  },
  {
   "slug": "files",
@@ -75,25 +75,25 @@
   "slug": "nocode",
   "nameJa": "ローコード・BI",
   "ledeJa": "社内ツールとダッシュボードを、少ない工数で内製する。",
-  "count": 5
+  "count": 7
  },
  {
   "slug": "marketing",
   "nameJa": "マーケティング・フォーム",
   "ledeJa": "アンケート、メール配信、流入計測まわり。",
-  "count": 8
+  "count": 10
  },
  {
   "slug": "support",
   "nameJa": "カスタマーサポート",
   "ledeJa": "問い合わせ対応を、外部SaaSに預けず運用する。",
-  "count": 13
+  "count": 16
  },
  {
   "slug": "scheduling",
   "nameJa": "予約・スケジュール",
   "ledeJa": "面談予約の受付を自前で。ドメインも自分のものにできる。",
-  "count": 1
+  "count": 3
  },
  {
   "slug": "crm",
@@ -111,7 +111,7 @@
   "slug": "office",
   "nameJa": "オフィス・グループウェア",
   "ledeJa": "文書作成や統合業務の基盤を自前で持つ。既存のSaaSと併用もしやすい。",
-  "count": 6
+  "count": 7
  },
  {
   "slug": "email",
@@ -123,13 +123,13 @@
   "slug": "hr",
   "nameJa": "人事・勤怠・採用",
   "ledeJa": "従業員情報、勤怠、採用の管理を社内に置く。",
-  "count": 4
+  "count": 5
  },
  {
   "slug": "accounting",
   "nameJa": "会計・請求書・経費",
   "ledeJa": "請求書の発行や入出金の管理を、外部サービスに預けずに行う。",
-  "count": 11
+  "count": 16
  },
  {
   "slug": "legal",
@@ -147,13 +147,13 @@
   "slug": "ai",
   "nameJa": "AI・LLM基盤",
   "ledeJa": "生成AIを自前のサーバで動かす。入力内容を外部に送らずに使える。",
-  "count": 34
+  "count": 37
  },
  {
   "slug": "video",
   "nameJa": "ビデオ会議・配信",
   "ledeJa": "会議と配信の基盤を自前で持つ。参加者数の課金から離れられる。",
-  "count": 17
+  "count": 18
  },
  {
   "slug": "ecommerce",
@@ -165,6 +165,6 @@
   "slug": "translation",
   "nameJa": "翻訳",
   "ledeJa": "機密文書を外部APIへ送らずに翻訳する。",
-  "count": 2
+  "count": 3
  }
 ]

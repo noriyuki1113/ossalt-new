@@ -1,0 +1,38 @@
+# 形式: name|id|competitor|owner/repo|official_url|category|description_ja
+# 2026-09 追加分 その5（著名・確実性の高いリポジトリを中心に補強）
+
+# --- devtools ---
+Netmaker|netmaker|Tailscale|gravitl/netmaker|https://netmaker.io|devtools|WireGuardベースの仮想ネットワークを自前で構築するツール。
+
+# --- security ---
+
+# --- ai ---
+
+# --- database ---
+
+# --- observability ---
+
+# --- files ---
+
+# --- video ---
+MediaMTX|mediamtx|Twitch|bluenviron/mediamtx|https://github.com/bluenviron/mediamtx|video|RTSP/RTMP/HLSなど各種プロトコルに対応する配信サーバ。
+
+# --- backup ---
+
+# --- crm ---
+
+# --- automation ---
+
+# --- documents ---
+
+# --- ecommerce ---
+
+# --- office ---
+
+# --- support ---
+Chaskiq|chaskiq|Intercom|chaskiq/chaskiq|https://chaskiq.io|support|チャット・ヘルプデスク・マーケティング自動化を兼ねるサポートツール。
+
+# --- marketing ---
+Postiz|postiz|Buffer|gitroomhq/postiz-app|https://postiz.com|marketing|複数のSNSアカウントへの投稿予約・管理を行うツール。
+
+# --- project ---

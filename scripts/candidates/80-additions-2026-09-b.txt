@@ -1,0 +1,65 @@
+# 形式: name|id|competitor|owner/repo|official_url|category|description_ja
+# 2026-09 追加分 その2
+
+# --- office / groupware（Google Workspace 系）---
+
+# --- database（Airtable / Google Sheets 系）---
+
+# --- devtools（GitHub / Vercel 系）---
+Gitness|gitness|GitHub|harness/gitness|https://gitness.com|devtools|Gitホスティングとパイプラインを備えた軽量な開発基盤。
+
+# --- ai（GitHub Copilot / ChatGPT 系）---
+Continue|continue|GitHub Copilot|continuedev/continue|https://continue.dev|ai|エディタに組み込めるAIコーディングアシスタント。モデルを自分で選べる。
+
+# --- security（Okta 系）---
+Casdoor|casdoor|Okta|casdoor/casdoor|https://casdoor.org|security|シングルサインオンとID管理をまとめて扱う認証基盤。
+
+# --- video（Zoom / YouTube 系）---
+
+# --- analytics（Hotjar 系）---
+
+# --- marketing（HubSpot 系）---
+
+# --- ecommerce（BASE / Shopify 系）---
+
+# --- crm（Pipedrive 系）---
+
+# --- hr（Workday 系）---
+
+# --- documents（Notion / Dropbox Paper 系）---
+
+# --- files（Google Drive 系）---
+
+# --- observability（New Relic 系）---
+
+# --- backup（Time Machine / iCloud 系）---
+
+# --- database（Firebase 系）---
+
+# --- support（Freshdesk 系）---
+
+# --- project（Notion / Monday.com 系）---
+
+# --- communication（Discord 系）---
+
+# --- legal（Adobe Sign 系）---
+
+# --- scheduling（TimeTree 系）---
+
+# --- ai（Midjourney / Stable Diffusion 系。既存分は除外）---
+
+# --- accounting（弥生会計 系）---
+
+# --- translation（Google翻訳 系）---
+
+# --- cms（note / はてなブログ 系）---
+WriteFreely|writefreely|note|writefreely/writefreely|https://writefreely.org|cms|シンプルなMarkdownブログ・公開プラットフォーム。
+
+# --- nocode（Retool 系）---
+
+# --- devtools（Docker Hub 系）---
+Harbor|harbor|Docker Hub|goharbor/harbor|https://goharbor.io|devtools|コンテナイメージを自前で管理・スキャンできるレジストリ。
+
+# --- automation（IFTTT 系）---
+
+# --- office（Microsoft 365 系）---

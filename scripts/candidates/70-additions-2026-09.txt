@@ -1,0 +1,62 @@
+# 形式: name|id|competitor|owner/repo|official_url|category|description_ja
+# 2026-09 追加分（日本で使われるSaaSの代替を優先 / 薄いカテゴリの補強）
+
+# --- note-docs（Notion / Confluence / Evernote 系）---
+
+# --- communication（Slack / Chatwork 系）---
+
+# --- project（Asana / Backlog / Jira 系）---
+
+# --- crm（Salesforce / HubSpot 系）---
+
+# --- nocode（kintone / Airtable 系）---
+Appsmith|appsmith|kintone|appsmithorg/appsmith|https://www.appsmith.com|nocode|社内向け管理画面やダッシュボードをドラッグ&ドロップで作る。
+ToolJet|tooljet|kintone|ToolJet/ToolJet|https://www.tooljet.com|nocode|社内業務ツールをノーコードで組み立てるプラットフォーム。
+
+# --- hr（SmartHR 系）---
+Frappe HR|frappe-hr|SmartHR|frappe/hrms|https://frappe.io/hr|hr|採用から給与計算までを一体で扱う人事管理システム。
+
+# --- accounting（freee / マネーフォワード 系）---
+
+# --- legal（DocuSign 系）---
+
+# --- scheduling（Calendly 系）---
+Easy!Appointments|easy-appointments|Calendly|alextselegidis/easyappointments|https://easyappointments.org|scheduling|予約枠の公開から通知までを管理する予約受付システム。
+Rallly|rallly|Calendly|lukevella/rallly|https://rallly.co|scheduling|候補日時を出し合って会議日程を決める日程調整ツール。
+
+# --- translation（DeepL 系）---
+Weblate|weblate|DeepL|WeblateOrg/weblate|https://weblate.org|translation|ソフトウェアの多言語対応を進めるための翻訳管理プラットフォーム。
+
+# --- backup（Backblaze 系）---
+
+# --- cms（WordPress / GitBook 系）---
+Payload|payload|WordPress|payloadcms/payload|https://payloadcms.com|cms|TypeScript製のヘッドレスCMS。管理画面もコードから生成できる。
+Grav|grav|WordPress|getgrav/grav|https://getgrav.org|cms|データベース不要のフラットファイル型CMS。軽量で高速。
+
+# --- documents（Adobe Acrobat / Evernote Scannable 系）---
+
+# --- marketing（Typeform / Mailchimp 系）---
+Typebot|typebot|Typeform|baptisteArno/typebot.io|https://typebot.io|marketing|チャット形式のフォーム・アンケートを作れるビルダー。
+
+# --- support（Zendesk / Intercom 系）---
+
+# --- observability（Datadog / PagerDuty 系）---
+
+# --- security（1Password / LastPass 系）---
+KeePassXC|keepassxc|1Password|keepassxreboot/keepassxc|https://keepassxc.org|security|ローカルで完結するパスワードマネージャ。クラウド同期に依存しない。
+
+# --- ai（ChatGPT / Notion AI 系）---
+
+# --- ecommerce（Shopify 系）---
+
+# --- design（Miro / Lucidchart 系）---
+
+# --- email（Mailchimp / Gmail 系）---
+
+# --- files（Filestash 系 / Dropbox）---
+
+# --- video（YouTube Live / Twitch 系）---
+
+# --- analytics（Google Analytics / Mixpanel 系）---
+
+# --- devtools（Postman 系）---

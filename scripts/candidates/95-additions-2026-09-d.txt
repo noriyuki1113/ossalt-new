@@ -1,0 +1,22 @@
+# 形式: name|id|competitor|owner/repo|official_url|category|description_ja
+# 2026-09 追加分 その4
+
+
+# --- ai ---
+Text Generation WebUI|text-generation-webui|ChatGPT Plus|oobabooga/text-generation-webui|https://github.com/oobabooga/text-generation-webui|ai|各種ローカルLLMをブラウザUIから動かせる汎用インターフェース。
+Whisper ASR Webservice|whisper-asr-webservice|Otter.ai|ahmetoner/whisper-asr-webservice|https://github.com/ahmetoner/whisper-asr-webservice|ai|音声認識WhisperをHTTP APIとして提供するサーバ。
+
+# --- database ---
+SurrealDB|surrealdb|Firebase|surrealdb/surrealdb|https://surrealdb.com|database|グラフ・ドキュメント・リレーショナルを横断して扱えるデータベース。
+
+# --- devtools ---
+
+# --- office ---
+
+# --- files ---
+
+# --- video ---
+
+# --- security ---
+
+# --- support ---

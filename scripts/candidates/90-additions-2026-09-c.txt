@@ -1,0 +1,34 @@
+# 形式: name|id|competitor|owner/repo|official_url|category|description_ja
+# 2026-09 追加分 その3
+
+# --- devtools ---
+
+# --- database ---
+CouchDB|couchdb|Firebase|apache/couchdb|https://couchdb.apache.org|database|HTTP APIでアクセスできるドキュメント指向データベース。
+
+# --- observability ---
+
+# --- security ---
+
+# --- ai ---
+
+# --- files ---
+
+# --- backup ---
+
+# --- communication ---
+
+# --- crm ---
+
+# --- analytics ---
+
+# --- documents ---
+
+# --- ecommerce ---
+
+# --- marketing ---
+
+# --- project ---
+
+# --- office ---
+LibreOffice|libreoffice|Microsoft 365|LibreOffice/core|https://www.libreoffice.org|office|文書・表計算・プレゼンをまとめて扱う定番のオフィススイート。

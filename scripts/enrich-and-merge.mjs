@@ -3,13 +3,19 @@
  * 候補データの補完と統合
  *
  *   scripts/candidates/01_candidates.verified.json
- *   ↓ GitHubの公開ページからスター数・フォーク数・ライセンス・言語・アーカイブ状態を取得
- *   ↓ data-source/tools.json（既存40件）へ追記
+ *   ↓ data-source/tools.json へ追記（スター数・フォーク数・ライセンス・言語・
+ *     アーカイブ状態・最終コミットなどは null のまま追加する）
  *
- * GitHub API はトークン無しでは毎時60回のため使わない。
- * 公開ページのHTMLから読む（アーカイブ状態の検出も兼ねる）。
+ * 本来はGitHubの公開ページ（github.com/<owner>/<repo>）のHTMLを読んで
+ * スター数などをその場で埋めていたが、github.com へのアクセスが制限された
+ * 環境（このリポジトリ用のセッションなど）ではその手段が使えない。
+ * その場合は数値系フィールドを null のまま追加し、次回の
+ * `node scripts/fetch-github-api.mjs`（GitHub Actions の「データ更新」
+ * ワークフローが GITHUB_TOKEN 付きで自動実行する）に任せて後から埋める。
+ * これは既存ツールの「未取得」表示と同じ扱いであり、推測値を入れるよりも
+ * ここでは確実な選択。
  *
- *   node scripts/enrich-and-merge.mjs --test 3     … 3件だけ解析して結果を表示
+ *   node scripts/enrich-and-merge.mjs --test 3     … 3件だけ確認して結果を表示
  *   node scripts/enrich-and-merge.mjs              … 全件
  */
 
@@ -35,75 +41,50 @@ const FIX_REPO = {
   revolt: "stoatchat/stoatchat",
 };
 
-function num(s) {
-  if (!s) return null;
-  const n = Number(String(s).replace(/,/g, ""));
-  return Number.isFinite(n) ? n : null;
-}
-
-/** GitHubの公開ページからメタ情報を取り出す */
-function parseRepoPage(html) {
-  const archived =
-    /This repository has been archived/i.test(html) ||
-    /"isArchived":true/i.test(html);
-
-  const stars =
-    num(html.match(/id="repo-stars-counter-star"[^>]*title="([\d,]+)"/)?.[1]) ??
-    num(html.match(/"stargazerCount":(\d+)/)?.[1]);
-
-  const forks =
-    num(html.match(/id="repo-network-counter"[^>]*title="([\d,]+)"/)?.[1]) ??
-    num(html.match(/"forkCount":(\d+)/)?.[1]);
-
-  // サイドバーの「MIT license」表記を拾う
-  const license =
-    html.match(
-      /href="[^"]*\/blob\/[^"]*(?:LICENSE|COPYING)[^"]*"[^>]*>\s*(?:<[^>]+>\s*)*([A-Za-z0-9.\-+ ]{2,24}?)\s*(?:license)?\s*</i
-    )?.[1]?.trim() ||
-    html.match(/(MIT|Apache-2\.0|AGPL-3\.0|LGPL-3\.0|GPL-3\.0|GPL-2\.0|MPL-2\.0|BSD-3-Clause|BSD-2-Clause|Unlicense|Elastic-2\.0|SSPL-1\.0|BUSL-1\.1|ISC|CC0-1\.0)\s*(?:license)?/i)?.[1] ||
-    null;
-
-  const language =
-    html.match(
-      /class="color-fg-default text-bold mr-1">([^<]+)<\/span>/i
-    )?.[1]?.trim() ??
-    html.match(/"primaryLanguage":\{"name":"([^"]+)"/)?.[1] ??
-    null;
-
-  // リポジトリの説明（GitHub上の公式説明）
-  const description =
-    html.match(/<meta name="description" content="([^"]*)"/i)?.[1]?.trim() ?? null;
-
-  return { archived, stars, forks, license, language, description };
-}
-
-async function fetchPage(url, attempt = 1) {
+/**
+ * リポジトリの実在を raw.githubusercontent.com であらためて確認する
+ * （verify-candidates.mjs と同じ判定方法。github.com の公開ページが
+ * 読めない環境でも動く）。スター数・フォーク数・ライセンス・言語・
+ * アーカイブ状態はここでは取得しない＝null のまま追加し、
+ * fetch-github-api.mjs（GitHub Actions側、GITHUB_TOKEN あり）に委ねる。
+ */
+async function checkExists(url, attempt = 1) {
   const ctl = new AbortController();
-  const timer = setTimeout(() => ctl.abort(), 25000);
+  const timer = setTimeout(() => ctl.abort(), 8000);
   try {
-    const res = await fetch(url, {
-      signal: ctl.signal,
-      headers: {
-        "User-Agent":
-          "Mozilla/5.0 (compatible; ossalt-data/1.0; +https://ossalt.jp)",
-        "Accept-Language": "ja,en;q=0.8",
-      },
-    });
+    const res = await fetch(url, { method: "HEAD", signal: ctl.signal });
     if ((res.status === 429 || res.status === 403) && attempt <= 2) {
-      await new Promise((r) => setTimeout(r, 3000 * attempt));
-      return fetchPage(url, attempt + 1);
-    }
-    if (!res.ok) return { error: `HTTP ${res.status}` };
-    return { html: await res.text() };
-  } catch (e) {
-    if (attempt <= 2) {
       await new Promise((r) => setTimeout(r, 2000 * attempt));
-      return fetchPage(url, attempt + 1);
+      return checkExists(url, attempt + 1);
     }
-    return { error: String(e?.name || e) };
+    return res.status === 200;
+  } catch {
+    return false;
   } finally {
     clearTimeout(timer);
   }
+}
+
+// README.md / package.json が無いリポジトリ（Erlang/Pythonプロジェクト等で
+// README.rst しか無い、ルートにpackage.jsonを置かないモノレポ等）も
+// 拾えるよう、候補ファイルを増やしておく。
+const EXISTENCE_FILES = [
+  "README.md",
+  "package.json",
+  "README.rst",
+  "README",
+  "LICENSE",
+  "go.mod",
+  "setup.py",
+];
+
+async function fetchPage(url) {
+  for (const file of EXISTENCE_FILES) {
+    if (await checkExists(`${url}/HEAD/${file}`)) {
+      return { archived: false, stars: null, forks: null, license: null, language: null, description: null };
+    }
+  }
+  return { error: "raw.githubusercontent.com で実在を確認できない" };
 }
 
 async function mapLimit(items, limit, fn) {
@@ -137,12 +118,12 @@ for (const v of verified) {
 
 const targets = TEST_N ? work.slice(0, TEST_N) : work;
 console.log(`対象: ${targets.length}件（全${work.length}件 / 除外${DROP.size}件）`);
-console.log(`GitHubページを取得中（並列${CONCURRENCY}）…\n`);
+console.log(`実在確認中（並列${CONCURRENCY}）…\n`);
 
 const results = await mapLimit(targets, CONCURRENCY, async (w) => {
-  const r = await fetchPage(`https://github.com/${w.gh}`);
+  const r = await fetchPage(`https://raw.githubusercontent.com/${w.gh}`);
   if (r.error) return { ...w, error: r.error };
-  return { ...w, ...parseRepoPage(r.html) };
+  return { ...w, ...r };
 });
 
 if (TEST_N) {
@@ -198,7 +179,7 @@ for (const r of results) {
     topics: [],
     languages: [],
     _url_verified: r.urlVerified,
-    _source: "candidates-2026-09",
+    _source: "candidates-2026-09b",
   });
   added++;
   if (r.description) updatedDesc++;

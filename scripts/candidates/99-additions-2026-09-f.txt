@@ -1,0 +1,46 @@
+# 形式: name|id|competitor|owner/repo|official_url|category|description_ja
+# 2026-09 追加分 その6
+
+# --- communication（フォーラム・通知系）---
+Discourse|discourse|Circle|discourse/discourse|https://www.discourse.org|communication|話題ごとにスレッドが整理されるフォーラム・コミュニティ基盤。
+Flarum|flarum|Circle|flarum/framework|https://flarum.org|communication|軽量でモダンなフォーラムソフトウェア。拡張機能で機能を追加できる。
+NodeBB|nodebb|Circle|NodeBB/NodeBB|https://nodebb.org|communication|Node.js製のモダンなフォーラム・コミュニティプラットフォーム。
+Ntfy|ntfy|Pushover|binwiederhier/ntfy|https://ntfy.sh|communication|HTTP経由でスマホやPCへ通知を送れるシンプルな通知サービス。
+Gotify|gotify|Pushover|gotify/server|https://gotify.net|communication|自前サーバで動くシンプルなプッシュ通知サーバ。
+
+# --- project ---
+Redmine|redmine|Backlog|redmine/redmine|https://www.redmine.org|project|課題管理とガントチャートを備えた老舗のプロジェクト管理ツール。
+
+# --- cms ---
+Cockpit|cockpit-cms|WordPress|Cockpit-HQ/Cockpit|https://getcockpit.com|cms|APIファーストのヘッドレスCMS。コンテンツをJSON APIとして配信する。
+Bolt|bolt-cms|WordPress|bolt/core|https://boltcms.io|cms|Symfony製の軽量CMS。直感的な管理画面を持つ。
+
+# --- observability ---
+Highlight|highlight|Datadog|highlight/highlight|https://www.highlight.io|observability|セッションリプレイとエラー監視を兼ねるフルスタック可観測性ツール。
+
+# --- security ---
+Cerbos|cerbos|Okta|cerbos/cerbos|https://www.cerbos.dev|security|アプリの権限管理ロジックを切り出して扱う認可（authorization）エンジン。
+
+# --- devtools ---
+Coder|coder-oss|GitHub Copilot|coder/coder|https://coder.com|devtools|クラウド上に開発環境をセルフホストで立てるためのプラットフォーム。
+
+# --- automation ---
+Automatisch|automatisch|Zapier|automatisch/automatisch|https://automatisch.io|automation|複数サービスを連携させるワークフロー自動化ツール。
+
+# --- support ---
+Peppermint|peppermint|Zendesk|Peppermint-Lab/Peppermint|https://peppermint.sh|support|チケット管理とナレッジベースを兼ねるヘルプデスクツール。
+Trudesk|trudesk|Zendesk|polonel/Trudesk|https://trudesk.io|support|チケット管理に特化したシンプルなヘルプデスクシステム。
+
+# --- note-docs ---
+FreshRSS|freshrss|Feedly|FreshRSS/FreshRSS|https://freshrss.org|note-docs|自前で運用できるRSSリーダー。複数端末で既読状態を同期できる。
+Miniflux|miniflux|Feedly|miniflux/v2|https://miniflux.app|note-docs|シンプルさに振り切った軽量RSSリーダー。
+Shiori|shiori|Pocket|go-shiori/shiori|https://github.com/go-shiori/shiori|note-docs|Webページを保存してオフラインでも読めるシンプルなブックマークツール。
+Tracim|tracim|Confluence|tracim/tracim|https://www.tracim.fr|note-docs|文書・かんばん・共同編集をまとめたコラボレーションプラットフォーム。
+XWiki|xwiki|Confluence|xwiki/xwiki-platform|https://www.xwiki.org|note-docs|アプリケーション開発もできる高機能な企業向けWikiプラットフォーム。
+
+# --- accounting ---
+Maybe|maybe-finance|マネーフォワード|maybe-finance/maybe|https://maybefinance.com|accounting|個人の資産・支出を可視化する家計管理アプリ。
+Ghostfolio|ghostfolio|マネーフォワード|ghostfolio/ghostfolio|https://ghostfol.io|accounting|株式・投資信託などの資産ポートフォリオを一元管理するツール。
+Wallos|wallos|マネーフォワード|ellite/Wallos|https://wallosapp.com|accounting|サブスクリプションの支払いを一覧管理するツール。
+InvoicePlane|invoiceplane|freee|InvoicePlane/InvoicePlane|https://invoiceplane.com|accounting|見積書・請求書の作成と顧客管理を行うシンプルな請求管理ツール。
+Tryton|tryton|freee|tryton/tryton|https://www.tryton.org|accounting|会計・在庫・販売を統合的に扱うERPフレームワーク。

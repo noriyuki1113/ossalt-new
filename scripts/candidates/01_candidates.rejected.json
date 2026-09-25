@@ -1,16 +1,29 @@
 [
  {
+  "name": "Seafile",
+  "id": "seafile",
+  "competitor": "Dropbox",
+  "gh": "haiwen/seafile",
+  "ghOriginal": "haiwen/seafile",
+  "url": "https://github.com/haiwen/seafile",
+  "urlVerified": false,
+  "urlNote": "未確認（この環境では公式サイトの確認をスキップ）",
+  "category": "files",
+  "descJa": "同期の速さに定評のあるファイル共有。履歴とライブラリ単位の権限を持つ。",
+  "reason": "リポジトリ raw.githubusercontent.com で実在を確認できるファイルが見つからない"
+ },
+ {
   "name": "UrBackup",
   "id": "urbackup",
   "competitor": "Acronis",
   "gh": "uroni/urbackup-server",
   "ghOriginal": "uroni/urbackup-server",
-  "url": "https://www.urbackup.org",
-  "urlVerified": true,
-  "urlNote": "200",
+  "url": "https://github.com/uroni/urbackup-server",
+  "urlVerified": false,
+  "urlNote": "未確認（この環境では公式サイトの確認をスキップ）",
   "category": "backup",
   "descJa": "Windowsクライアントのイメージとファイルをまとめて保存する。",
-  "reason": "リポジトリ HTTP 404"
+  "reason": "リポジトリ raw.githubusercontent.com で実在を確認できるファイルが見つからない"
  },
  {
   "name": "Forgejo",
@@ -18,12 +31,25 @@
   "competitor": "GitHub",
   "gh": "forgejo/forgejo",
   "ghOriginal": "forgejo/forgejo",
-  "url": "https://forgejo.org",
-  "urlVerified": true,
-  "urlNote": "200",
+  "url": "https://github.com/forgejo/forgejo",
+  "urlVerified": false,
+  "urlNote": "未確認（この環境では公式サイトの確認をスキップ）",
   "category": "devtools",
   "descJa": "Giteaから分岐したGitホスティング。コミュニティ主導で開発される。",
-  "reason": "リポジトリ HTTP 404"
+  "reason": "リポジトリ raw.githubusercontent.com で実在を確認できるファイルが見つからない"
+ },
+ {
+  "name": "OneDev",
+  "id": "onedev",
+  "competitor": "GitHub",
+  "gh": "theonedev/onedev",
+  "ghOriginal": "theonedev/onedev",
+  "url": "https://github.com/theonedev/onedev",
+  "urlVerified": false,
+  "urlNote": "未確認（この環境では公式サイトの確認をスキップ）",
+  "category": "devtools",
+  "descJa": "GitホスティングとCIを1つにした基盤。コード検索が強力。",
+  "reason": "リポジトリ raw.githubusercontent.com で実在を確認できるファイルが見つからない"
  },
  {
   "name": "GitLab",
@@ -31,12 +57,25 @@
   "competitor": "GitHub",
   "gh": "gitlab-org/gitlab",
   "ghOriginal": "gitlab-org/gitlab",
-  "url": "https://about.gitlab.com",
-  "urlVerified": true,
-  "urlNote": "200",
+  "url": "https://github.com/gitlab-org/gitlab",
+  "urlVerified": false,
+  "urlNote": "未確認（この環境では公式サイトの確認をスキップ）",
   "category": "devtools",
   "descJa": "課題管理からCI/CDまでを1つにまとめる。オンプレ版がある。",
-  "reason": "リポジトリ HTTP 404"
+  "reason": "リポジトリ raw.githubusercontent.com で実在を確認できるファイルが見つからない"
+ },
+ {
+  "name": "Elasticsearch",
+  "id": "elasticsearch",
+  "competitor": "OpenSearch",
+  "gh": "elastic/elasticsearch",
+  "ghOriginal": "elastic/elasticsearch",
+  "url": "https://github.com/elastic/elasticsearch",
+  "urlVerified": false,
+  "urlNote": "未確認（この環境では公式サイトの確認をスキップ）",
+  "category": "devtools",
+  "descJa": "全文検索の定番。ログ検索にも使われる。",
+  "reason": "リポジトリ raw.githubusercontent.com で実在を確認できるファイルが見つからない"
  },
  {
   "name": "Vtiger",
@@ -44,12 +83,12 @@
   "competitor": "Salesforce",
   "gh": "vtiger/vtigercrm",
   "ghOriginal": "vtiger/vtigercrm",
-  "url": "https://www.vtiger.com",
-  "urlVerified": true,
-  "urlNote": "200",
+  "url": "https://github.com/vtiger/vtigercrm",
+  "urlVerified": false,
+  "urlNote": "未確認（この環境では公式サイトの確認をスキップ）",
   "category": "crm",
   "descJa": "顧客管理と見積・請求までを1つにする。",
-  "reason": "リポジトリ HTTP 404"
+  "reason": "リポジトリ raw.githubusercontent.com で実在を確認できるファイルが見つからない"
  },
  {
   "name": "OpenCATS",
@@ -57,11 +96,11 @@
   "competitor": "Herp",
   "gh": "opcats/opencats",
   "ghOriginal": "opcats/opencats",
-  "url": "http://www.opencats.org",
-  "urlVerified": true,
-  "urlNote": "301",
+  "url": "https://github.com/opcats/opencats",
+  "urlVerified": false,
+  "urlNote": "未確認（この環境では公式サイトの確認をスキップ）",
   "category": "hr",
   "descJa": "採用の応募者を管理する。履歴書の取り込みができる。",
-  "reason": "リポジトリ HTTP 404"
+  "reason": "リポジトリ raw.githubusercontent.com で実在を確認できるファイルが見つからない"
  }
 ]
