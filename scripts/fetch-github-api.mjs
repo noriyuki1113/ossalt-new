@@ -142,6 +142,30 @@ const LICENSE_OVERRIDES = {
   // LICENSEファイルが個別に置かれている（実在確認済み）
   tryton: "GPL-3.0", // https://raw.githubusercontent.com/tryton/tryton/HEAD/trytond/LICENSE
 
+  // --- 2026-09追加分（48件のうち、上記以外でNOASSERTIONだった13件） ---
+  gotify: "MIT", // https://raw.githubusercontent.com/gotify/server/HEAD/LICENSE
+  "cockpit-cms": "MIT", // https://raw.githubusercontent.com/Cockpit-HQ/Cockpit/HEAD/LICENSE
+  automatisch: "AGPL-3.0", // https://raw.githubusercontent.com/automatisch/automatisch/HEAD/LICENSE（.eeファイルのみ別ライセンス）
+  trudesk: "Apache-2.0", // https://raw.githubusercontent.com/polonel/Trudesk/HEAD/LICENSE
+  // 実際のコードライセンスはMIT。別セクションにある「InvoicePlane」という
+  // 名称・ロゴの商標に関する制限は、コード自体のライセンスとは別
+  invoiceplane: "MIT", // https://raw.githubusercontent.com/InvoicePlane/InvoicePlane/HEAD/LICENSE.txt
+  // 「content outside pro/ ... のみ商用ライセンス」で、pro/配下は別ライセンス
+  peppermint: "AGPL-3.0", // https://raw.githubusercontent.com/Peppermint-Lab/Peppermint/HEAD/license
+  // GPLの "version 2 or (at your option) version 3" という文言のため、
+  // 単一のSPDX標準識別子ではなくデュアルとして表示する
+  keepassxc: "GPL-2.0 / GPL-3.0", // https://raw.githubusercontent.com/keepassxreboot/keepassxc/HEAD/COPYING
+  typebot: "FSL 1.1", // https://raw.githubusercontent.com/baptisteArno/typebot.io/HEAD/LICENSE
+  surrealdb: "BUSL 1.1", // https://raw.githubusercontent.com/surrealdb/surrealdb/HEAD/LICENSE
+  // "pro/" 配下（商用機能）のみ別ライセンス。それ以外はApache-2.0
+  netmaker: "Apache-2.0（pro/配下は別ライセンス）", // https://raw.githubusercontent.com/gravitl/netmaker/HEAD/LICENSE.md
+  // "highlight.io/"・"enterprise/" 配下のみ別ライセンス。それ以外はApache-2.0
+  highlight: "Apache-2.0（一部は別ライセンス）", // https://raw.githubusercontent.com/highlight/highlight/HEAD/LICENSE
+  // ベースはAGPL-3.0だが、Commons Clause（商用販売の禁止条項）が付いている
+  chaskiq: "AGPL-3.0 + Commons Clause", // https://raw.githubusercontent.com/chaskiq/chaskiq/HEAD/LICENSE.txt
+  // コンポーネントごとに異なる4つのライセンスが混在（単一のライセンスではない）
+  tracim: "AGPL-3.0 / LGPL-3.0 / MIT（構成要素により異なる）", // https://raw.githubusercontent.com/tracim/tracim/HEAD/LICENSE.md
+
   // directus / inkscape / dokploy は、リポジトリ直下に LICENSE ファイルが
   // 見つからず（inkscapeは開発本体がGitLab側で、GitHubは同期用ミラー）、
   // package.json の license フィールドにも記載が無かったため、確認できないまま
