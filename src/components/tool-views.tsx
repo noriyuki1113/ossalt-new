@@ -11,6 +11,7 @@ import {
   formatRelativeDays,
   getHealth,
   getScorecardTier,
+  jaDocsLabel,
   licenseLabel,
   type Tool,
 } from "@/lib/tools";
@@ -197,6 +198,11 @@ export function ToolRow({ tool }: { tool: Tool }) {
               {tool.license ? ` ／ ${tool.license}` : ""}
             </p>
           </div>
+          {(tool.ja_docs === "official" || tool.ja_docs === "community") && (
+            <span className="tag" style={{ alignSelf: "flex-start", flexShrink: 0 }}>
+              日本語ドキュメント{tool.ja_docs === "official" ? "あり" : "（有志訳）"}
+            </span>
+          )}
         </div>
         {tool.description_ja && <p className="row__desc">{tool.description_ja}</p>}
       </div>
@@ -239,6 +245,7 @@ export function SpecTable({ tool }: { tool: Tool }) {
     ],
     [t("metric.created"), formatDate(tool.created_at)],
     [t("metric.docker"), dockerLabel(tool.docker_available)],
+    [t("metric.jaDocs"), jaDocsLabel(tool.ja_docs)],
     [t("metric.health"), tool.health_score != null ? Math.round(tool.health_score).toLocaleString("ja-JP") : "—"],
   ];
 

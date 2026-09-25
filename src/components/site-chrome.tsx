@@ -76,7 +76,7 @@ export function SiteFooter({ meta }: { meta?: { built_at: string; tool_count: nu
             <h3>運営</h3>
             <ul>
               <li>
-                <Link href="/contact/">お問い合わせ・導入相談</Link>
+                <Link href="/contact/">お問い合わせ</Link>
               </li>
               <li>
                 <Link href="/privacy/">プライバシーポリシー</Link>

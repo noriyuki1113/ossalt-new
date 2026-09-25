@@ -159,6 +159,8 @@ const tools = raw.map((t) => {
     health_score: pick(t, ["health_score"]) ?? null,
     topics: Array.isArray(t.topics) ? t.topics : [],
     languages: Array.isArray(t.languages) ? t.languages : [],
+    ja_docs: t.ja_docs ?? null,
+    aliases: Array.isArray(t.aliases) ? t.aliases : [],
   };
 });
 
@@ -254,6 +256,10 @@ fs.mkdirSync(OUT, { recursive: true });
 fs.writeFileSync(path.join(OUT, "tools.json"), JSON.stringify(tools, null, 1));
 fs.writeFileSync(path.join(OUT, "categories.json"), JSON.stringify(categories, null, 1));
 fs.writeFileSync(path.join(OUT, "meta.json"), JSON.stringify(meta, null, 1));
+
+// 為替レート（円換算表示用）。基準日つきでそのまま公開データに含める。
+const fx = readJson(path.join(SRC, "fx.json"), null);
+if (fx) fs.writeFileSync(path.join(OUT, "fx.json"), JSON.stringify(fx, null, 1));
 
 console.log("書き出し完了:", OUT);
 console.log(JSON.stringify(meta, null, 1));

@@ -17,6 +17,10 @@ export const SITE = {
   twitter: "@ossaltjp",
   // データの更新元（GitHub Actions が書き換える）
   dataUpdatedAt: null as string | null,
+  // お問い合わせ先。未設定でもビルドは通り、画面にはプレースホルダを出さず
+  // 「準備中」の案内に切り替える（値は運営者が後日、環境変数で設定する）。
+  contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || null,
+  contactUrl: process.env.NEXT_PUBLIC_CONTACT_URL || null,
 } as const;
 
 /** サイト内ナビゲーション */
@@ -81,6 +85,7 @@ export const MESSAGES = {
     "metric.health": "健全度",
     "metric.security": "セキュリティ",
     "metric.docker": "Docker対応",
+    "metric.jaDocs": "日本語ドキュメント",
 
     "health.title": "健全度スコア",
     "health.explain":
@@ -154,10 +159,7 @@ export const MESSAGES = {
 
     "contact.title": "お問い合わせ",
     "contact.lede":
-      "掲載情報の訂正、ツールの追加リクエスト、導入相談などはこちらから。",
-    "contact.business": "導入相談・導入代行",
-    "contact.businessBody":
-      "候補の選定から自社サーバへの導入、運用の引き継ぎまでを有償で承っています。まずは30分の無料相談から。",
+      "掲載情報の訂正、ツールの追加リクエスト、広告・スポンサーに関するお問い合わせなどはこちらから。",
 
     "about.title": "このサイトについて",
     "privacy.title": "プライバシーポリシー",

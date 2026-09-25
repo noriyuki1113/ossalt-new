@@ -985,6 +985,65 @@ hr {
   white-space: nowrap;
 }
 
+/* ---------- /guide/ の目次 ---------- */
+
+.guide-toc {
+  background: var(--paper-deep);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem 0.4rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.guide-toc__title {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 500;
+  margin: 0 0 0.4rem;
+}
+
+.guide-toc ol {
+  margin: 0;
+  padding-left: 1.3rem;
+  columns: 1;
+}
+
+.guide-toc li {
+  margin: 0;
+}
+
+.guide-toc a {
+  display: block;
+  padding: 0.5rem 0;
+  color: var(--ink-2);
+  text-decoration: none;
+  font-size: var(--step--1);
+}
+
+.guide-toc a:hover {
+  color: var(--indigo);
+  text-decoration: underline;
+}
+
+/* 980px以上のみ、余裕があるので目次を2列にする（本文が長いため）。
+   スマホでは日本語見出しが折り返して読みにくくなるので1列のまま。 */
+@media (min-width: 980px) {
+  .guide-toc ol {
+    columns: 2;
+    column-gap: 1.5rem;
+  }
+}
+
+/* アンカーで見出しへ飛んだとき、固定ヘッダーに隠れないための余白。
+   ヘッダー実測高さ: デスクトップ約63px、モバイル（2段組み）約69px。
+   両方をカバーして余裕を持たせた値。 */
+.prose h2[id] {
+  scroll-margin-top: 96px;
+}
+
 .ctable__name {
   display: inline-flex;
   align-items: center;
@@ -1440,5 +1499,116 @@ hr {
 
   .row__data .cell:last-child {
     grid-column: 1 / -1;
+  }
+}
+
+/* /guide/ 本文の可読性。15px・line-height 2 はスマホでは間延びして見づらい。
+   PC（720px超）はそのまま変えない。
+   文字を16px相当に上げると1行の文字数が減り行数が増えるため、
+   行間はやや強めに詰めて全体の高さが増えすぎないようにする。 */
+@media (max-width: 720px) {
+  .prose p,
+  .prose li {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .prose p {
+    margin: 0.85em 0;
+  }
+
+  .prose h2 {
+    margin: 1.75rem 0 0.5rem;
+  }
+
+  .prose ul,
+  .prose ol {
+    margin: 0.5rem 0;
+  }
+}
+
+/* 第4節の表。390px幅で3列の日本語は成立しないため、640px以下では
+   表をやめて1件1カードの縦積みにする。640px超は通常の表のまま。 */
+@media (max-width: 640px) {
+  .guide-table-wrap {
+    overflow: visible;
+    background: none;
+    border: none;
+    background-image: none !important;
+  }
+
+  .guide-table {
+    border: none;
+  }
+
+  .guide-table thead {
+    display: none;
+  }
+
+  .guide-table,
+  .guide-table tbody,
+  .guide-table tr,
+  .guide-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .guide-table tr {
+    border: 1px solid var(--rule-strong);
+    border-radius: var(--radius);
+    padding: 0.6rem 0.75rem;
+    margin: 0 0 0.6rem;
+  }
+
+  .guide-table tr:last-child {
+    margin-bottom: 0;
+  }
+
+  .guide-table td {
+    border-bottom: none;
+    padding: 0.25rem 0;
+    font-size: var(--step-0);
+    line-height: 1.5;
+    white-space: normal;
+  }
+
+  /* ラベルを値と同じ行に置く（縦積みより行数を減らせるため）。
+     長文の「読み方」は自然に折り返す。 */
+  .guide-table td::before {
+    content: attr(data-label) "：";
+    font-family: var(--font-mono);
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    color: var(--ink-3);
+    margin-right: 0.3em;
+  }
+}
+
+/* タップ領域の確保（44px以上）。padding依存だと余白が大きくなりすぎるため、
+   min-heightで当たり判定の高さそのものを指定し、余白は最小限にする。 */
+@media (max-width: 720px) {
+  .foot-col li {
+    margin: 0.1rem 0;
+  }
+
+  .foot-col a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  /* タップ領域の確保で縦に伸びる分、余白側を詰めて全体の高さ増加を抑える。
+     色・フォントは変えず、余白のみの調整。 */
+  .site-foot {
+    padding: 1.75rem 0 2rem;
+  }
+
+  .foot-grid {
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .foot-note {
+    line-height: 1.6;
   }
 }

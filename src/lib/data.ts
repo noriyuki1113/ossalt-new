@@ -39,6 +39,14 @@ export function getActiveTools(): Tool[] {
   return getTools().filter((t) => !t.github_archived);
 }
 
+/**
+ * 為替レート（円換算表示用）。data-source/fx.json が無ければ null。
+ * レート値は絶対にここでハードコードしない。
+ */
+export function getFx(): { usd_jpy: number; as_of: string } | null {
+  return readJson<{ usd_jpy: number; as_of: string } | null>("fx.json", null);
+}
+
 export function getMeta(): DataMeta {
   return readJson<DataMeta>("meta.json", {
     built_at: new Date().toISOString(),

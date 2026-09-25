@@ -40,6 +40,21 @@ export type Tool = {
   health_score: number | null;
   topics: string[];
   languages: LanguageShare[];
+
+  /**
+   * 日本語ドキュメントの有無。
+   * "official"（公式に日本語ページがある）/ "community"（有志の日本語訳がある）/
+   * "none"（英語のみ確認）/ null（未調査）。
+   * 収録全件は調べきれないため、health_score が高い順にバッチで確認している
+   * （scripts/check-ja-docs.mjs）。null は「無い」ではなく「まだ調べていない」。
+   */
+  ja_docs: "official" | "community" | "none" | null;
+
+  /**
+   * 検索用の別名（カタカナ表記・通称など）。例: excalidraw なら
+   * ["エクスカリドロー", "えくすかりどろー"]。検索対象にのみ使い、画面には出さない。
+   */
+  aliases: string[];
 };
 
 export type DataMeta = {
@@ -77,7 +92,21 @@ export type CompetitorGroup = {
   tools: Tool[];
 };
 
+/**
+ * 競合名（primary_competitor）が日本語のみで構成される場合、
+ * 通常のslugify（英数字以外を "-" に置換）では全体が空文字になってしまう
+ * （例:「マネーフォワード」→ ""）。/alternatives/<slug>/ のURLが壊れるため、
+ * ローマ字のslugを明示的に持たせる。
+ *
+ * ここに追加するのは「日本語の競合名で、slugifyすると空になるもの」だけでよい。
+ * 英数字が含まれる名前（freee, kintone等）はそのままslugifyできるため対象外。
+ */
+const COMPETITOR_SLUG_OVERRIDES: Record<string, string> = {
+  マネーフォワード: "moneyforward",
+};
+
 export function slugifyCompetitor(name: string): string {
+  if (COMPETITOR_SLUG_OVERRIDES[name]) return COMPETITOR_SLUG_OVERRIDES[name];
   return name
     .toLowerCase()
     .replace(/\./g, "-")
@@ -291,11 +320,33 @@ export function dockerLabel(v: boolean | null | undefined): string {
   return "未確認";
 }
 
+export function jaDocsLabel(v: Tool["ja_docs"]): string {
+  if (v === "official") return "あり（公式）";
+  if (v === "community") return "有志訳あり";
+  if (v === "none") return "英語のみ";
+  return "未調査";
+}
+
 /* ------------------------------------------------------------------ *
  * 検索・並び替え（クライアントと共用）
  * ------------------------------------------------------------------ */
 
 export type SortKey = "health" | "stars" | "recent" | "name";
+
+/**
+ * 検索文字列の正規化。日本語話者はひらがな・カタカナ・全角・半角・
+ * 大文字小文字を自由に混ぜて検索するため、比較前にそろえる。
+ *   - 大文字 → 小文字
+ *   - カタカナ → ひらがな
+ *   - 全角英数記号 → 半角
+ */
+export function normalizeSearchText(s: string): string {
+  return s
+    .toLowerCase()
+    .replace(/[ァ-ヶ]/g, (ch) => String.fromCharCode(ch.charCodeAt(0) - 0x60)) // カタカナ→ひらがな
+    .replace(/[Ａ-Ｚａ-ｚ０-９]/g, (ch) => String.fromCharCode(ch.charCodeAt(0) - 0xfee0)) // 全角英数→半角
+    .replace(/　/g, " "); // 全角スペース→半角
+}
 
 export function filterAndSort(
   tools: Tool[],
@@ -307,7 +358,7 @@ export function filterAndSort(
     sort?: SortKey;
   }
 ): Tool[] {
-  const q = (opts.query ?? "").trim().toLowerCase();
+  const q = normalizeSearchText((opts.query ?? "").trim());
   let out = tools;
 
   if (opts.category) out = out.filter((t) => t.category === opts.category);
@@ -316,20 +367,20 @@ export function filterAndSort(
 
   if (q) {
     out = out.filter((t) =>
-      [
-        t.name,
-        t.id,
-        t.primary_competitor,
-        t.primary_competitor_ja ?? "",
-        t.description_ja ?? "",
-        t.description_en ?? "",
-        t.language ?? "",
-        t.license ?? "",
-        ...(t.topics ?? []),
-      ]
-        .join(" ")
-        .toLowerCase()
-        .includes(q)
+      normalizeSearchText(
+        [
+          t.name,
+          t.id,
+          t.primary_competitor,
+          t.primary_competitor_ja ?? "",
+          t.description_ja ?? "",
+          t.description_en ?? "",
+          t.language ?? "",
+          t.license ?? "",
+          ...(t.topics ?? []),
+          ...(t.aliases ?? []),
+        ].join(" ")
+      ).includes(q)
     );
   }
 

@@ -18,6 +18,12 @@ type Props = {
   defaultSort?: SortKey;
 };
 
+// 初期表示の件数。384件を一度に描画するとスマホで縦に長大なページになる
+// ため、まずこの件数だけ出し「もっと見る」で追加表示する。
+// 検索・絞り込み・並び替えを操作した場合は、この上限を無視して全件出す
+// （絞り込んだのに途中で切れると使いにくいため）。
+const PAGE_SIZE = 50;
+
 export function ToolBrowser({
   tools,
   categories = [],
@@ -30,6 +36,7 @@ export function ToolBrowser({
   const [license, setLicense] = useState("");
   const [dockerOnly, setDockerOnly] = useState(false);
   const [sort, setSort] = useState<SortKey>(defaultSort);
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
   const licenses = useMemo(() => licenseFacets(tools), [tools]);
 
@@ -39,6 +46,10 @@ export function ToolBrowser({
   );
 
   const dirty = Boolean(query || category || license || dockerOnly);
+  // 並び替えだけを変えた場合も「操作した」とみなし、全件表示に切り替える。
+  const isCustomized = dirty || sort !== defaultSort;
+  const shown = isCustomized ? results : results.slice(0, visibleCount);
+  const remaining = isCustomized ? 0 : results.length - shown.length;
 
   function reset() {
     setQuery("");
@@ -46,6 +57,7 @@ export function ToolBrowser({
     setLicense("");
     setDockerOnly(false);
     setSort(defaultSort);
+    setVisibleCount(PAGE_SIZE);
   }
 
   return (
@@ -172,11 +184,24 @@ export function ToolBrowser({
           <p style={{ margin: 0 }}>{t("search.emptyHint")}</p>
         </div>
       ) : (
-        <div className="ledger" style={{ padding: "0 1.15rem 0.5rem" }}>
-          {results.map((tool) => (
-            <ToolRow key={tool.id} tool={tool} />
-          ))}
-        </div>
+        <>
+          <div className="ledger" style={{ padding: "0 1.15rem 0.5rem" }}>
+            {shown.map((tool) => (
+              <ToolRow key={tool.id} tool={tool} />
+            ))}
+          </div>
+          {remaining > 0 && (
+            <div style={{ padding: "0 1.15rem 1.15rem", textAlign: "center" }}>
+              <button
+                type="button"
+                className="btn"
+                onClick={() => setVisibleCount((n) => n + PAGE_SIZE)}
+              >
+                もっと見る（残り{remaining}件）
+              </button>
+            </div>
+          )}
+        </>
       )}
     </div>
   );
