@@ -29,10 +29,23 @@
  *     --limit 20        先頭20件だけ取得（動作確認用）
  *     --only n8n,penpot 指定IDだけ取得
  *     --dry-run         結果を表示するだけで tools.json を書かない
+ *     --shards 3 / FETCH_SHARDS=3  日付ベースで対象を1/3に絞る（後述）
  *
  * トークンなしでも動くが、GitHubは未認証だと毎時60リクエストのため
  * 336件（×2リクエスト）を処理しきれない。GitHub Actions では
- * Secrets の GITHUB_TOKEN が自動で入るため、そのまま実行できる。
+ * Secrets の GITHUB_TOKEN（1リポジトリあたり1時間1,000リクエスト）が
+ * 自動で入るため、そのまま実行できる。
+ *
+ * セキュリティ関連項目の追加後は1ツールあたり約6リクエストかかり、
+ * 384件では約2,304リクエストとなって既定のGITHUB_TOKENの上限
+ * （1,000/時間）を超える。上限緩和には2通りある:
+ *   - Personal Access Token（上限5,000/時間、スコープ無しでよい）を
+ *     Secrets に DATA_FETCH_TOKEN として登録する（GitHubはGITHUB_で
+ *     始まるシークレット名を作れないため、この名前にしてはいけない）
+ *   - PATが無い場合は --shards / FETCH_SHARDS で日付ベースに対象を
+ *     分割し、1回の実行あたりのリクエスト数を上限内に収める
+ *     （「1時間あたり」の上限は日をまたがないと回避できないため、
+ *     同じ実行内で分割しても意味が無い）
  */
 
 import { readFile, writeFile } from "node:fs/promises";
@@ -43,7 +56,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const TOOLS_PATH = path.join(ROOT, "data-source", "tools.json");
 
 const TOKEN =
-  process.env.GITHUB_TOKEN || process.env.GITHUB_DATA_TOKEN || process.env.GH_TOKEN || "";
+  process.env.GITHUB_TOKEN || process.env.DATA_FETCH_TOKEN || process.env.GH_TOKEN || "";
 const CONCURRENCY = Number(process.env.FETCH_CONCURRENCY || 4);
 
 const argv = process.argv.slice(2);
@@ -54,6 +67,7 @@ const flag = (name, fallback = null) => {
 const LIMIT = Number(flag("--limit", 0)) || 0;
 const ONLY = flag("--only", null);
 const DRY_RUN = argv.includes("--dry-run");
+const SHARDS = Math.max(1, Number(process.env.FETCH_SHARDS || flag("--shards", 0)) || 1);
 
 /**
  * GitHub API が license を取得できない（spdx_id が無い、または "NOASSERTION"）
@@ -241,15 +255,17 @@ async function ghFetch(url) {
     if (res.status === 200) return res;
     if (res.status === 404) return res;
     if (res.status === 403 || res.status === 429) {
-      const reset = Number(res.headers.get("x-ratelimit-reset") || 0);
-      const waitMs = reset ? Math.max(0, reset * 1000 - Date.now()) + 2000 : 8000;
-      if (attempt < 2) {
-        console.warn(
-          `  [rate-limit] ${res.status} — ${Math.round(waitMs / 1000)}秒待機して再試行`
-        );
-        await new Promise((r) => setTimeout(r, Math.min(waitMs, 120000)));
+      // レート制限中にリクエストを続けると統合がBANされる可能性があるため、
+      // 1回だけ短く待ち（x-ratelimit-resetは最大1時間先のこともあり
+      // それだけ待つのは非現実的）、解決しなければそのツールを諦めて
+      // 次へ進む。値は前回のまま保持する（呼び出し側でnullを既存値に
+      // 上書きしない扱いになっている）。
+      if (attempt === 0) {
+        console.warn(`  [rate-limit] ${res.status} — 60秒待機して再試行`);
+        await new Promise((r) => setTimeout(r, 60000));
         continue;
       }
+      return null;
     }
     if (attempt < 2) {
       await new Promise((r) => setTimeout(r, 1500 * (attempt + 1)));
@@ -496,6 +512,21 @@ async function main() {
     const ids = String(ONLY).split(",").map((s) => s.trim()).filter(Boolean);
     targets = targets.filter((t) => ids.includes(t.id));
   }
+
+  if (SHARDS > 1) {
+    // 「1時間あたり」のAPI上限を日をまたいで回避するため、担当分を日付で決める。
+    // 同じ実行内で分割しても合計リクエスト数は変わらないため意味が無い。
+    const now = new Date();
+    const dayOfYear = Math.floor(
+      (Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) -
+        Date.UTC(now.getUTCFullYear(), 0, 0)) /
+        86400000
+    );
+    const shardIndex = dayOfYear % SHARDS;
+    targets = targets.filter((_, i) => i % SHARDS === shardIndex);
+    console.log(`シャード ${shardIndex + 1}/${SHARDS}（${targets.length}件を取得）`);
+  }
+
   if (LIMIT) targets = targets.slice(0, LIMIT);
 
   if (!TOKEN) {

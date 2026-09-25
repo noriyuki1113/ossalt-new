@@ -28,27 +28,30 @@ jobs:
         with:
           node-version: "22"
 
-      # 1) GitHub API からスター数・フォーク数・コントリビュータ数・
-      #    ウォッチャー数・最終コミット・言語・ライセンスを取得する。
-      #    Secrets の GITHUB_DATA_TOKEN があればそちらを使い、なければ
-      #    ワークフロー既定の GITHUB_TOKEN を使う。
-      # セキュリティ関連シグナル追加後、1ツールあたりの取得件数が増えた
-      # （repo/contributors に加えてScorecard/SECURITY.md/dependabot/
-      # releases/advisoriesの5件が並行して走る）。並列数4だと同時に
-      # 最大20リクエストがapi.github.comへ飛び、GitHubの二次レート制限に
-      # 引っかかって長時間の待機が発生することを実測で確認したため、
-      # 並列数を落として同時リクエスト数を抑える。
+      # 1) GitHub API からリポジトリ情報・セキュリティ関連シグナルを取得する。
+      #    既定の GITHUB_TOKEN は「1リポジトリあたり 1時間 1,000リクエスト」
+      #    の上限があり、現在の取得項目（約6リクエスト/ツール × 384件 =
+      #    約2,304）では足りないため 403 が発生する。
+      #    Personal Access Token（上限 5,000/時間）を DATA_FETCH_TOKEN として
+      #    登録してあればそちらを使う。無ければ GITHUB_TOKEN にフォールバックする。
+      #    ※ GitHub は「GITHUB_」で始まるシークレット名を作成できないため
+      #      （実際に拒否された）、Secretの名前にその接頭辞を使わないこと。
+      #    DATA_FETCH_TOKEN が無い場合は FETCH_SHARDS で日ごとに1/3ずつ
+      #    取得し、1回の実行が上限に収まるようにする。
       - name: GitHub データ取得
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_DATA_TOKEN || secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.DATA_FETCH_TOKEN || secrets.GITHUB_TOKEN }}
           FETCH_CONCURRENCY: "2"
+          FETCH_SHARDS: "3"
         run: node scripts/fetch-github-api.mjs
 
       # 2) tools.json からサイトが読む public/data/*.json を再生成する
       - name: サイト用データ生成
         run: node scripts/build-data.mjs
 
-      # 3) 差分があればコミットして push（変更がなければ何もしない）
+      # 3) 差分があればコミットして push（変更がなければ何もしない）。
+      #    実行中に別のpushが入ると非fast-forwardでpushが失敗するため、
+      #    push直前にrebaseする。
       - name: コミットと push
         run: |
           git config user.name  "github-actions[bot]"
@@ -58,5 +61,6 @@ jobs:
             echo "更新なし"
           else
             git commit -m "data: 日次更新 $(date -u +%Y-%m-%d)"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
             git push
           fi
