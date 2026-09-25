@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs, JsonLd, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ToolLogo } from "@/components/tool-logo";
+import { VpsRecommendation } from "@/components/vps-recommendation";
 import {
   ComparisonTable,
   HealthLegend,
@@ -205,6 +206,8 @@ export default async function ToolDetailPage({
             </div>
           </aside>
         </div>
+
+        <VpsRecommendation path={`/tools/${tool.id}/`} />
 
         {/* 比較表・同じカテゴリの一覧は横長になりやすいため、2カラムグリッドの外に出して
             ページ全幅で表示する（detail-layout の中に置くと、aside が grid-row: 1/-1 で
