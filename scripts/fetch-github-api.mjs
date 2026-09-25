@@ -306,22 +306,46 @@ async function checkFileExists(base, filePath) {
   return null;
 }
 
-/** 最新リリース日と直近12か月のリリース数。releases APIが失敗した場合は両方null。 */
+/**
+ * 最新リリース日と直近12か月のリリース数。releases APIが失敗した場合は両方null。
+ *
+ * 実測で判明した問題（2026-09-25）: per_page=100の1ページだけでは、
+ * リリース頻度が高いプロジェクト（n8n・ollama等）で直近12か月分が
+ * 100件を超え、実際の件数より少なく出ていた（ちょうど100件で頭打ち）。
+ * releasesは新しい順に返るため、ページの最後の項目が365日より古くなる
+ * まで、または最終ページに達するまでページングして正確な件数を数える。
+ * 万一の暴走防止に最大10ページ（1,000件）で打ち切る。
+ */
 async function fetchReleaseInfo(base) {
-  const res = await ghFetch(`${base}/releases?per_page=100`);
-  if (!res || !res.ok) return { latest_release_at: null, releases_12mo: null };
-  const list = await res.json().catch(() => null);
-  if (!Array.isArray(list)) return { latest_release_at: null, releases_12mo: null };
-  if (list.length === 0) return { latest_release_at: null, releases_12mo: 0 };
-  const latest = list.reduce((max, r) => {
-    const d = r.published_at || r.created_at;
-    return !max || (d && d > max) ? d : max;
-  }, null);
   const cutoff = Date.now() - 365 * 86400000;
-  const releases12mo = list.filter((r) => {
-    const d = r.published_at || r.created_at;
-    return d && new Date(d).getTime() >= cutoff;
-  }).length;
+  let latest = null;
+  let releases12mo = 0;
+  let sawAny = false;
+
+  for (let page = 1; page <= 10; page += 1) {
+    const res = await ghFetch(`${base}/releases?per_page=100&page=${page}`);
+    if (!res || !res.ok) {
+      if (page === 1) return { latest_release_at: null, releases_12mo: null };
+      break; // 2ページ目以降の失敗は、そこまでに集計した件数を採用する
+    }
+    const list = await res.json().catch(() => null);
+    if (!Array.isArray(list) || list.length === 0) break;
+    sawAny = true;
+
+    for (const r of list) {
+      const d = r.published_at || r.created_at;
+      if (!d) continue;
+      if (!latest || d > latest) latest = d;
+      if (new Date(d).getTime() >= cutoff) releases12mo += 1;
+    }
+
+    const oldestOnPage = list[list.length - 1];
+    const oldestDate = oldestOnPage?.published_at || oldestOnPage?.created_at;
+    if (oldestDate && new Date(oldestDate).getTime() < cutoff) break; // 12か月分は数え終えた
+    if (list.length < 100) break; // 最終ページ
+  }
+
+  if (!sawAny) return { latest_release_at: null, releases_12mo: 0 };
   return { latest_release_at: latest, releases_12mo: releases12mo };
 }
 
@@ -329,12 +353,17 @@ async function fetchReleaseInfo(base) {
  * 公開されているセキュリティアドバイザリの件数。
  * このエンドポイントは対象リポジトリへの書き込み権限が無くても、公開済み
  * アドバイザリは200で返ってくることを実際に確認済み（2026-09-25）。
- * per_page=100を超える件数がある場合は取りこぼすが、収録ツールの規模では
- * 現実的に起こらないと判断し、追加のページングは行わない。
+ *
+ * 実測で判明した問題: per_page=100の1ページだけだと、100件を超える
+ * プロジェクト（gitea・n8n等）でちょうど100件に頭打ちしていた。
+ * contributorsと同じ方法（per_page=1でLinkヘッダのrel="last"から
+ * 総件数を得る）に切り替えて正確な件数を取得する。
  */
 async function fetchAdvisoriesCount(base) {
-  const res = await ghFetch(`${base}/security-advisories?per_page=100`);
+  const res = await ghFetch(`${base}/security-advisories?per_page=1`);
   if (!res || !res.ok) return null;
+  const fromLink = totalFromLink(res.headers.get("link"));
+  if (fromLink != null) return fromLink;
   const list = await res.json().catch(() => null);
   return Array.isArray(list) ? list.length : null;
 }
