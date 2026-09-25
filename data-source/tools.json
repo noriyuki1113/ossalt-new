@@ -11255,7 +11255,7 @@
     "dependabot_configured": true,
     "latest_release_at": "2026-09-24T03:12:27Z",
     "releases_12mo": 365,
-    "advisories_count": 1000
+    "advisories_count": null
   },
   {
     "id": "bruno",
@@ -13647,7 +13647,7 @@
     "dependabot_configured": true,
     "latest_release_at": "2026-09-21T19:25:21Z",
     "releases_12mo": 44,
-    "advisories_count": 1000
+    "advisories_count": null
   },
   {
     "id": "librechat",
@@ -14220,7 +14220,7 @@
     "dependabot_configured": false,
     "latest_release_at": "2026-07-29T15:51:25Z",
     "releases_12mo": 10,
-    "advisories_count": 1000
+    "advisories_count": null
   },
   {
     "id": "langflow",
@@ -16567,7 +16567,7 @@
     "dependabot_configured": false,
     "latest_release_at": "2026-09-19T04:23:57Z",
     "releases_12mo": 49,
-    "advisories_count": 1000
+    "advisories_count": null
   },
   {
     "id": "osticket",
@@ -19924,7 +19924,7 @@
     "dependabot_configured": false,
     "latest_release_at": "2026-09-24T19:06:57Z",
     "releases_12mo": 85,
-    "advisories_count": 1000
+    "advisories_count": null
   },
   {
     "id": "typebot",
@@ -20881,7 +20881,7 @@
     "dependabot_configured": true,
     "latest_release_at": "2026-07-15T17:26:32Z",
     "releases_12mo": 1,
-    "advisories_count": 1000
+    "advisories_count": null
   },
   {
     "id": "flarum",
@@ -21876,7 +21876,7 @@
     "dependabot_configured": false,
     "latest_release_at": "2026-09-17T11:51:25Z",
     "releases_12mo": 55,
-    "advisories_count": 1000
+    "advisories_count": null
   },
   {
     "id": "maybe-finance",
