@@ -1,0 +1,78 @@
+name: ツール追加
+
+# 掲載ツールを追加する。Actions タブ → ツール追加 → Run workflow から
+# 候補リストを貼って実行する（iPhone のブラウザからでも操作できる）。
+# 成功すると「GitHub Pages 公開」ワークフローが続けて動き、サイトに反映される。
+#
+# 入力形式（1行1件・パイプ区切り7フィールド）:
+#   名前|id|代替するSaaS|owner/repo|公式URL|カテゴリ|日本語説明
+on:
+  workflow_dispatch:
+    inputs:
+      candidates:
+        description: "追加候補（1行1件）: 名前|id|代替するSaaS|owner/repo|公式URL|カテゴリ|日本語説明"
+        required: true
+        type: string
+
+# data-source/tools.json への push が要る
+permissions:
+  contents: write
+
+concurrency:
+  group: add-tools
+  # 追加同士が衝突すると困るので、同時実行はさせない（後から来たものは待つ）
+  cancel-in-progress: false
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # 入力をファイルに書き出す。
+      # 入力文字列を run: に直接埋め込むとインジェクション事故の元なので、
+      # 必ず env: 経由で受け取ること。
+      - name: 候補リストの書き出し
+        env:
+          CANDIDATES: ${{ inputs.candidates }}
+        run: printf '%s\n' "$CANDIDATES" > scripts/candidates/pending.txt
+
+      - name: 検証と tools.json への統合
+        id: add
+        run: node scripts/add-tools.mjs
+
+      # 追加直後にスター数などを埋める。
+      # 追加分だけを --only で取得するため件数は少なく、
+      # 既定トークンのレート制限（1時間1,000）に触れない。
+      - name: 追加分の GitHub データ取得
+        if: steps.add.outputs.added_ids != ''
+        env:
+          GITHUB_TOKEN: ${{ secrets.DATA_FETCH_TOKEN || secrets.GITHUB_TOKEN }}
+          FETCH_CONCURRENCY: "2"
+        run: node scripts/fetch-github-api.mjs --only "${{ steps.add.outputs.added_ids }}"
+
+      - name: サイト用データ生成
+        run: node scripts/build-data.mjs
+
+      - name: 結果をサマリに表示
+        run: cat scripts/candidates/pending.summary.md >> "$GITHUB_STEP_SUMMARY"
+
+      # 実行記録（pending.txt / 結果JSON）も一緒に残す。
+      # 全件却下だった場合は tools.json 系に差分が出ず、
+      # pending ファイルだけのコミットになる。
+      - name: コミットと push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data-source/tools.json public/data/tools.json public/data/meta.json public/data/categories.json scripts/candidates/pending.txt scripts/candidates/pending.result.json
+          if git diff --cached --quiet; then
+            echo "変更なし"
+          else
+            git commit -m "data: ツール追加 $(date -u +%Y-%m-%d)"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push
+          fi

@@ -38,11 +38,30 @@ jobs:
       #      （実際に拒否された）、Secretの名前にその接頭辞を使わないこと。
       #    DATA_FETCH_TOKEN が無い場合は FETCH_SHARDS で日ごとに1/3ずつ
       #    取得し、1回の実行が上限に収まるようにする。
+      # シャード数をツール数から自動計算する。
+      # ・DATA_FETCH_TOKEN（PAT・上限5,000リクエスト/時）があれば 1（全件一括）
+      # ・無ければ ceil(ツール数×約6リクエスト÷900) で日またぎ分割
+      #   例: 384件→3、700件→5、1000件→7 と自動で増える
+      - name: シャード数の自動計算
+        id: shard
+        env:
+          HAS_PAT: ${{ secrets.DATA_FETCH_TOKEN != '' }}
+        run: |
+          N=$(node -e "console.log(JSON.parse(require('fs').readFileSync('data-source/tools.json','utf8')).length)")
+          if [ "$HAS_PAT" = "true" ]; then
+            S=1
+          else
+            S=$(( (N * 6 + 899) / 900 ))
+            if [ "$S" -lt 1 ]; then S=1; fi
+          fi
+          echo "ツール数: ${N}件 → シャード数: ${S}"
+          echo "value=$S" >> "$GITHUB_OUTPUT"
+
       - name: GitHub データ取得
         env:
           GITHUB_TOKEN: ${{ secrets.DATA_FETCH_TOKEN || secrets.GITHUB_TOKEN }}
           FETCH_CONCURRENCY: "2"
-          FETCH_SHARDS: "3"
+          FETCH_SHARDS: ${{ steps.shard.outputs.value }}
         run: node scripts/fetch-github-api.mjs
 
       # 2) tools.json からサイトが読む public/data/*.json を再生成する

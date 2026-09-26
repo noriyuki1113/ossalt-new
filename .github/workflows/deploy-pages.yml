@@ -6,7 +6,7 @@ on:
   push:
   workflow_dispatch:
   workflow_run:
-    workflows: ["データ更新"]
+    workflows: ["データ更新", "ツール追加"]
     types: [completed]
 
 permissions:
