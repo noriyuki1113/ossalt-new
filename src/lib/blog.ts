@@ -58,7 +58,17 @@ function readAll(): BlogPost[] {
       };
     });
 
-  return posts.sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
+  // date が未来の記事は、その日になるまで公開しない（予約投稿）。
+  // サイトは毎日のデータ更新のあとに再ビルドされるため、当日の朝に公開される。
+  const today = todayJst();
+  return posts
+    .filter((p) => !p.date || p.date <= today)
+    .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
+}
+
+/** ビルド時点の日本時間の日付（YYYY-MM-DD） */
+function todayJst(): string {
+  return new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10);
 }
 
 let cache: BlogPost[] | null = null;

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
+import { getBlogPost } from "@/lib/blog";
 import { getMeta } from "@/lib/data";
 import { t } from "@/lib/site";
 
@@ -38,6 +39,8 @@ const SECTIONS = [
 
 export default function GuidePage() {
   const meta = getMeta();
+  // 予約投稿の記事は公開日まで getBlogPost が返さないので、公開後にだけリンクを出す
+  const dockerPost = getBlogPost("docker-checklist");
   const health = meta.health;
   const asOf = new Date(meta.built_at);
   const asOfLabel = `${asOf.getFullYear()}年${asOf.getMonth() + 1}月`;
@@ -155,7 +158,12 @@ export default function GuidePage() {
 
           <h2 id="sec-7">7. Docker対応かどうかで難易度が変わる</h2>
           <p>{"Docker（またはDocker Compose）でのインストール手順が用意されているソフトは、導入と更新の難易度が大きく下がります。"}
-            {"逆に、「ソースからビルド」「特定のOSのみ対応」のソフトは、運用を引き継げる人が限られます。"}</p>
+            {"逆に、「ソースからビルド」「特定のOSのみ対応」のソフトは、運用を引き継げる人が限られます。"}
+            {dockerPost && (
+              <>
+                {"Dockerで試す前の確認項目は、"}<Link href="/blog/docker-checklist/">Dockerで試す前に確認すること</Link>{"にまとめています。"}
+              </>
+            )}</p>
 
           <h2 id="sec-8">8. 小さく始める</h2>
           <p>
