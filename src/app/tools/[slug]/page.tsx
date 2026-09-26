@@ -136,6 +136,8 @@ export default async function ToolDetailPage({
                   <p className="muted" style={{ fontSize: "0.75rem", marginBottom: 0 }}>
                     {"スコアの読み方と目安は"}
                     <Link href="/guide/">選び方のページ</Link>
+                    {"に、スターやフォークなど各数字の意味は"}
+                    <Link href="/blog/how-to-read-github/">GitHubの見方</Link>
                     {"にまとめています。"}
                   </p>
                 </div>
