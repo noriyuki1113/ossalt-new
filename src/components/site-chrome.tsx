@@ -99,9 +99,6 @@ export function SiteFooter({ meta }: { meta?: { built_at: string; tool_count: nu
                 <Link href="/contact/">お問い合わせ</Link>
               </li>
               <li>
-                <Link href="/sponsor/">スポンサー・広告掲載</Link>
-              </li>
-              <li>
                 <Link href="/terms/">{t("footer.terms")}</Link>
               </li>
               <li>
