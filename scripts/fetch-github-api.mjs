@@ -7,7 +7,7 @@
  *   license / stars_num / forks_num / github_archived / topics /
  *   scorecard_score / scorecard_date / scorecard_checks /
  *   security_md / dependabot_configured / latest_release_at /
- *   releases_12mo / advisories_count
+ *   releases_12mo / advisories_count / docker_available
  *
  * セキュリティ関連の項目（2026-09-25追加）:
  *   - scorecard_*: OpenSSF Scorecard（api.securityscorecards.dev）。
@@ -348,6 +348,90 @@ async function checkFileExists(base, filePath) {
 }
 
 /**
+ * Docker対応の自動判定（2026-09-26追加）。
+ *
+ * 次のどれかが見つかれば true（対応）:
+ *   1) リポジトリ直下の Dockerfile / Compose ファイル、または
+ *      docker/・deploy/・.devops/ など配布用と分かるフォルダの中のもの（深さ4階層まで）。
+ *      テスト・例示・開発環境用のフォルダや、名前が *.dev.yml などのファイルは数えない。
+ *      ビルド補助用のDockerfile（例: libs/zstd/native/zstd.Dockerfile）を
+ *      「対応」と誤判定しないよう、直下以外はフォルダ名で絞る
+ *   2) README 中の `docker run` / `docker compose` / `docker-compose` / `docker pull`
+ *      や、ghcr.io・Docker Hub のイメージへの言及
+ * どれも見つからなければ null（未確認）にする。false（非対応）にはしない。
+ * 公式イメージを別リポジトリで配布しているプロジェクト（例: Odoo）があり、
+ * 「このリポジトリに痕跡が無い」ことは「Dockerで動かせない」ことの
+ * 証明にならないため。旧データの docker_available は手入力で、公式に
+ * Docker配布しているツールまで false になっていた（Dify・Jellyfin 等）。
+ *
+ * ファイル一覧は git trees API（recursive）で1リクエストで取る。
+ * 巨大なリポジトリでは一覧が途中で切れる（truncated）が、見つかった範囲で判定し、
+ * 見つからなければ README に進むだけなので問題ない。
+ *
+ * 判定は頻繁に変わらないため、前回の判定から DOCKER_RECHECK_DAYS 日以内なら
+ * 取り直さない（APIの上限を節約する）。
+ *
+ * 戻り値: { value: true|null, checked: boolean }。
+ * API呼び出しが失敗した場合は checked:false とし、既存の判定を変えない。
+ */
+const DOCKER_RECHECK_DAYS = 30;
+const DOCKER_FILE_RE = /^(dockerfile(\..+)?|.+\.dockerfile|(docker-)?compose(\.[\w-]+)?\.ya?ml)$/i;
+// テスト・例示・CI・開発環境用のDockerfileは「利用者向けの配布」ではないので除外する
+const DOCKER_EXCLUDE_DIR_RE =
+  /^(tests?|testing|e2e|examples?|samples?|fixtures?|\.github|\.devcontainer|\.codesandbox|\.gitpod|\.circleci|\.gitlab|dev|dev-tools|qa|vendor|third[_-]?party|node_modules)$/i;
+// 開発・テスト・CI用と名前で分かるファイル（例: docker-compose.dev.yml、Dockerfile.test）も除外する
+const DOCKER_EXCLUDE_FILE_RE = /[._-](dev|develop|development|test|tests|testing|ci|e2e|local)([._-]|$)/i;
+const DOCKER_MAX_DEPTH = 4;
+const DOCKER_DIST_DIR_RE = /docker|container|deploy|devops|release|self-?host|hosting|install/i;
+const DOCKER_README_RE =
+  /\bdocker(?:-compose\b|\s+compose\b|\s+run\b|\s+pull\b)|\bghcr\.io\/|hub\.docker\.com\/r\//i;
+
+/**
+ * 判定本体（ネットワークに依存しない。テストしやすいよう分けている）。
+ * paths: リポジトリ内のファイルパスの一覧 / readme: README の本文
+ */
+export function detectDocker({ paths = [], readme = "" }) {
+  const hits = paths.filter((p) => {
+    const parts = p.split("/");
+    const name = parts[parts.length - 1];
+    if (parts.length > DOCKER_MAX_DEPTH) return false;
+    if (!DOCKER_FILE_RE.test(name) || DOCKER_EXCLUDE_FILE_RE.test(name)) return false;
+    const dirs = parts.slice(0, -1);
+    if (dirs.some((d) => DOCKER_EXCLUDE_DIR_RE.test(d))) return false;
+    return dirs.length === 0 || dirs.some((d) => DOCKER_DIST_DIR_RE.test(d));
+  });
+  if (hits.length) {
+    // 浅い階層のもの（直下の Dockerfile など）を代表として返す（ログ用）
+    hits.sort((a, b) => a.split("/").length - b.split("/").length);
+    return { kind: "file", path: hits[0] };
+  }
+  if (readme && DOCKER_README_RE.test(readme)) return { kind: "readme" };
+  return null;
+}
+
+async function fetchDockerSignal(base, branch, tool) {
+  const last = tool.docker_checked_at ? Date.parse(tool.docker_checked_at) : 0;
+  if (Date.now() - last < DOCKER_RECHECK_DAYS * 86400000) return { value: null, checked: false };
+
+  const treeRes = await ghFetch(`${base}/git/trees/${encodeURIComponent(branch)}?recursive=1`);
+  if (!treeRes || !treeRes.ok) return { value: null, checked: false };
+  const tree = await treeRes.json().catch(() => null);
+  if (!Array.isArray(tree?.tree)) return { value: null, checked: false };
+  const paths = tree.tree.filter((e) => e.type === "blob").map((e) => e.path);
+  if (detectDocker({ paths })) return { value: true, checked: true };
+
+  // README は種類（.md / .rst / 拡張子なし）を問わず readme API で本文を取る
+  const readmeRes = await ghFetch(`${base}/readme`);
+  if (!readmeRes) return { value: null, checked: false };
+  if (readmeRes.status === 404) return { value: null, checked: true };
+  if (!readmeRes.ok) return { value: null, checked: false };
+  const body = await readmeRes.json().catch(() => null);
+  const readme =
+    body?.content && body.encoding === "base64" ? Buffer.from(body.content, "base64").toString("utf8") : "";
+  return { value: detectDocker({ readme }) ? true : null, checked: true };
+}
+
+/**
  * 最新リリース日と直近12か月のリリース数。releases APIが失敗した場合は両方null。
  *
  * 実測で判明した問題（2026-09-25）: per_page=100の1ページだけでは、
@@ -440,7 +524,7 @@ async function fetchAdvisoriesCount(base) {
   return sawAny ? total : 0;
 }
 
-async function fetchOne(slug, id) {
+async function fetchOne(slug, id, tool) {
   const base = `https://api.github.com/repos/${slug}`;
   const repoRes = await ghFetch(base);
 
@@ -464,12 +548,13 @@ async function fetchOne(slug, id) {
 
   // セキュリティ関連シグナル（タスク1）。既存の repo/contributors 取得とは
   // 独立しており、どれか1つが失敗しても他の項目・他のツールには影響しない。
-  const [scorecard, securityMd, dependabotConfigured, releaseInfo, advisoriesCount] = await Promise.all([
+  const [scorecard, securityMd, dependabotConfigured, releaseInfo, advisoriesCount, docker] = await Promise.all([
     fetchScorecard(...slug.split("/")),
     checkFileExists(base, "SECURITY.md"),
     checkFileExists(base, ".github/dependabot.yml"),
     fetchReleaseInfo(base),
     fetchAdvisoriesCount(base),
+    repo.default_branch ? fetchDockerSignal(base, repo.default_branch, tool) : { value: null, checked: false },
   ]);
 
   return {
@@ -497,6 +582,10 @@ async function fetchOne(slug, id) {
       latest_release_at: releaseInfo.latest_release_at,
       releases_12mo: releaseInfo.releases_12mo,
       advisories_count: advisoriesCount,
+      // 判定できたときだけ入れる（null＝未確認も上書きする。下の書き込み処理を参照）
+      ...(docker.checked
+        ? { docker_available: docker.value, docker_checked_at: new Date().toISOString() }
+        : {}),
       github_checked_at: new Date().toISOString(),
     },
   };
@@ -546,7 +635,7 @@ async function main() {
     while (queue.length) {
       const tool = queue.shift();
       const parsed = parseRepo(tool.github_url);
-      const res = await fetchOne(parsed.slug, tool.id);
+      const res = await fetchOne(parsed.slug, tool.id, tool);
       done += 1;
 
       if (!res.ok) {
@@ -555,7 +644,9 @@ async function main() {
         // API が null を返した項目（例: ライセンスが NOASSERTION）は、既に入っている値を消さない。
         // 「未取得を補完する」スクリプトなので、取得できなかったことを理由に既知の値を捨てない。
         for (const [k, v] of Object.entries(res.data)) {
-          if (v === null && tool[k] != null) continue;
+          // docker_available の null は「判定した結果、痕跡が無かった（未確認）」なので、
+          // 旧データの手入力値（誤った false を含む）を残さず上書きする。
+          if (v === null && tool[k] != null && k !== "docker_available") continue;
           tool[k] = v;
         }
         updated += 1;
@@ -610,7 +701,8 @@ async function main() {
   console.log(`書き込み: ${path.relative(ROOT, TOOLS_PATH)}`);
 }
 
-main().catch((err) => {
+// テストから detectDocker だけを読み込むときは実行しない
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main().catch((err) => {
   console.error("失敗:", err);
   process.exit(1);
 });

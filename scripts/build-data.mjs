@@ -159,7 +159,9 @@ const tools = raw.map((t) => {
     latest_release_at: t.latest_release_at ?? null,
     releases_12mo: t.releases_12mo ?? null,
     advisories_count: t.advisories_count ?? null,
-    docker_available: t.docker_available ?? null,
+    // 自動判定（fetch-github-api.mjs）済みならその値。未判定のものは旧データの手入力値のうち
+    // true だけを残す（旧データの false には、公式にDocker配布しているツールが含まれていたため出さない）
+    docker_available: t.docker_checked_at ? t.docker_available ?? null : t.docker_available === true ? true : null,
     github_archived: Boolean(t.github_archived),
     health_score: pick(t, ["health_score"]) ?? null,
     topics: Array.isArray(t.topics) ? t.topics : [],
