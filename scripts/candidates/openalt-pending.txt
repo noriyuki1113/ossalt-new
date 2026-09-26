@@ -1,0 +1,4 @@
+Dub Links|dub-links|TinyURL|dubinc/dub|TODO_公式URL|TODO_カテゴリ|TODO_日本語説明（英語: Branded short links with analytics and conversion tracking）
+Pretix|pretix|Eventbrite|pretix/pretix|TODO_公式URL|TODO_カテゴリ|TODO_日本語説明（英語: Sell tickets for events, conferences, and exhibitions）
+Frappe CRM|frappe-crm|Attio|frappe/crm|TODO_公式URL|TODO_カテゴリ|TODO_日本語説明（英語: Open-source CRM that puts simplicity and control first）
+Tolgee|tolgee|Crowdin|tolgee/tolgee-platform|TODO_公式URL|TODO_カテゴリ|TODO_日本語説明（英語: Open-source localization platform for multilingual apps）
