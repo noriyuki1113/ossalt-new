@@ -93,13 +93,13 @@
   "slug": "scheduling",
   "nameJa": "予約・スケジュール",
   "ledeJa": "面談予約の受付を自前で。ドメインも自分のものにできる。",
-  "count": 3
+  "count": 4
  },
  {
   "slug": "crm",
   "nameJa": "CRM・営業",
   "ledeJa": "顧客情報は最も外に出したくないデータ。自前運用の価値が大きい。",
-  "count": 5
+  "count": 6
  },
  {
   "slug": "documents",
@@ -165,6 +165,6 @@
   "slug": "translation",
   "nameJa": "翻訳",
   "ledeJa": "機密文書を外部APIへ送らずに翻訳する。",
-  "count": 3
+  "count": 4
  }
 ]

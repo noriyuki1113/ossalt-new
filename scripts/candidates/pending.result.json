@@ -1,13 +1,35 @@
 {
  "added": [
   {
-   "name": "Dub",
-   "id": "dub",
-   "competitor": "Bitly",
-   "gh": "dubinc/dub",
-   "url": "https://dub.co",
-   "category": "marketing",
-   "descJa": "独自ドメインで短縮URLを発行し、クリック数や流入元を計測できるリンク管理ツール。 Pretix",
+   "name": "Pretix",
+   "id": "pretix",
+   "competitor": "Peatix",
+   "gh": "pretix/pretix",
+   "url": "https://pretix.eu",
+   "category": "scheduling",
+   "descJa": "イベントや講演会のチケット販売・参加受付を自前で運用できるシステム。",
+   "exists": true,
+   "urlVerified": true
+  },
+  {
+   "name": "Frappe CRM",
+   "id": "frappe-crm",
+   "competitor": "Salesforce",
+   "gh": "frappe/crm",
+   "url": "https://frappe.io/crm",
+   "category": "crm",
+   "descJa": "商談・顧客・問い合わせを一元管理できる、シンプルな営業管理ツール。",
+   "exists": true,
+   "urlVerified": true
+  },
+  {
+   "name": "Tolgee",
+   "id": "tolgee",
+   "competitor": "Crowdin",
+   "gh": "tolgee/tolgee-platform",
+   "url": "https://tolgee.io",
+   "category": "translation",
+   "descJa": "アプリやWebサイトの翻訳文言を、画面上で編集しながら管理できる多言語化基盤。",
    "exists": true,
    "urlVerified": true
   }
