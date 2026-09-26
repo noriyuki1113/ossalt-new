@@ -1,11 +1,28 @@
 import Link from "next/link";
 import { NAV, SITE, t } from "@/lib/site";
 
+/**
+ * サイトのロゴマーク。SaaSの選択肢の中からオープンソースの代替を1つ選ぶ、という
+ * 意味を4つの点で表している（右下の朱色が「選んだ答え」）。favicon等と共通の意匠。
+ */
+function LogoMark() {
+  return (
+    <svg className="brand__logo" viewBox="0 0 512 512" aria-hidden="true">
+      <rect width="512" height="512" rx="112.64" fill="#1d3b72" />
+      <circle cx="190.72" cy="190.72" r="39.68" fill="#edefe9" />
+      <circle cx="321.28" cy="190.72" r="39.68" fill="#edefe9" />
+      <circle cx="190.72" cy="321.28" r="39.68" fill="#edefe9" />
+      <circle cx="321.28" cy="321.28" r="39.68" fill="#d2452c" />
+    </svg>
+  );
+}
+
 export function SiteHeader({ current }: { current?: string }) {
   return (
     <header className="site-head">
       <div className="wrap site-head__inner">
         <Link className="brand" href="/">
+          <LogoMark />
           <span className="brand__mark">ossalt</span>
           <span className="brand__sub">.jp</span>
         </Link>

@@ -148,10 +148,16 @@ hr {
 
 .brand {
   display: inline-flex;
-  align-items: baseline;
+  align-items: center;
   gap: 0.5rem;
   text-decoration: none;
   color: var(--ink);
+  flex: none;
+}
+
+.brand__logo {
+  width: 1.55rem;
+  height: 1.55rem;
   flex: none;
 }
 
