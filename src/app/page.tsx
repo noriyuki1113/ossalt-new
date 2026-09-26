@@ -39,6 +39,27 @@ export default function HomePage() {
           </div>
         </section>
 
+        <div className="panel" style={{ marginTop: "1.5rem" }}>
+          <div className="panel__body" style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "1rem" }}>
+            <div style={{ flex: "1 1 20rem" }}>
+              <p style={{ margin: "0 0 0.25rem", fontWeight: 700, fontSize: "var(--step-1)" }}>
+                どのOSSを選べばいいか迷っていますか？
+              </p>
+              <p className="muted" style={{ margin: 0, fontSize: "0.875rem" }}>
+                6つの質問に答えるだけで、あなたの条件に合うOSSを探します。
+              </p>
+            </div>
+            <div>
+              <Link className="btn btn--primary" href="/diagnosis/">
+                OSS診断をはじめる →
+              </Link>
+              <p className="muted" style={{ margin: "0.4rem 0 0", fontSize: "0.75rem" }}>
+                約2分・登録不要
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className="stats" style={{ marginTop: "2.5rem" }}>
           <div className="stat">
             <span className="stat__num">
