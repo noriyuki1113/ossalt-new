@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ToolRow } from "@/components/tool-views";
+import { HouseAd } from "@/components/house-ad";
 import { getBlogPost, getBlogPosts } from "@/lib/blog";
 import { getMeta, getTool } from "@/lib/data";
 import { formatDate } from "@/lib/tools";
@@ -70,6 +71,8 @@ export default async function BlogPostPage({ params }: { params: Promise<Params>
             </div>
           </section>
         )}
+
+        <HouseAd placement={`blog_${post.slug}`} />
 
         <p className="muted mt2" style={{ fontSize: "0.8125rem" }}>
           {t("footer.disclaimer")}
