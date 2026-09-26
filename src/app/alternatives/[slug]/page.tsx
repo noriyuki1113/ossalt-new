@@ -3,8 +3,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs, JsonLd, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ComparisonTable } from "@/components/tool-views";
-import { getCompetitor, getCompetitors, getMeta } from "@/lib/data";
+import { getAlternativeGuide } from "@/lib/alternative-guides";
+import { getCompetitor, getCompetitors, getMeta, getTool } from "@/lib/data";
 import { SITE, t } from "@/lib/site";
+import { formatDate } from "@/lib/tools";
 
 type Params = { slug: string };
 
@@ -20,9 +22,12 @@ export async function generateMetadata({
   const { slug } = await params;
   const c = getCompetitor(slug);
   if (!c) return { title: t("detail.notFound") };
+  const guide = getAlternativeGuide(slug);
   return {
     title: `${c.name} のオープンソース代替 ${c.tools.length}選`,
-    description: `${c.name} の代わりに自前で動かせるオープンソースソフトを、ライセンス・スター数・セキュリティ評価つきで比較できます。`,
+    description:
+      guide?.description ||
+      `${c.name} の代わりに自前で動かせるオープンソースソフトを、ライセンス・スター数・セキュリティ評価つきで比較できます。`,
     alternates: { canonical: `/alternatives/${c.slug}/` },
   };
 }
@@ -36,6 +41,7 @@ export default async function AlternativeDetailPage({
   const c = getCompetitor(slug);
   if (!c) notFound();
   const meta = getMeta();
+  const guide = getAlternativeGuide(slug);
 
   return (
     <>
@@ -52,6 +58,7 @@ export default async function AlternativeDetailPage({
         <p className="lede">
           {t("alt.ledeOne", { competitor: c.name, n: c.tools.length })}
         </p>
+        {guide?.intro && <p>{guide.intro}</p>}
 
         <ComparisonTable tools={c.tools} />
 
@@ -60,6 +67,35 @@ export default async function AlternativeDetailPage({
           <br />
           {t("alt.compareNote")}
         </div>
+
+        {guide && guide.picks.length > 0 && (
+          <section className="section">
+            <h2 className="h3">用途別の候補</h2>
+            <p className="muted" style={{ fontSize: "0.8125rem" }}>
+              {"編集部が機能と性格から整理した目安です。上の比較表の並び（健全度順）とは別の観点です。"}
+            </p>
+            <ul>
+              {guide.picks.map((p) => (
+                <li key={p.tool} style={{ marginBottom: "0.5rem" }}>
+                  <Link href={`/tools/${p.tool}/`}>{getTool(p.tool)?.name ?? p.tool}</Link>
+                  {"："}
+                  {p.fit}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {guide && (
+          <section className="section">
+            <div className="prose" dangerouslySetInnerHTML={{ __html: guide.contentHtml }} />
+            {guide.updated && (
+              <p className="muted" style={{ fontSize: "0.75rem" }}>
+                {`最終更新：${formatDate(guide.updated)}。機能・ライセンス・提供条件は変わることがあるため、導入前に各ツールの公式情報をご確認ください。`}
+              </p>
+            )}
+          </section>
+        )}
 
         <section className="section">
           <h2 className="h3">この候補の詳細</h2>

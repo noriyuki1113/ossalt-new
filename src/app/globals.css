@@ -114,8 +114,10 @@ hr {
   padding: 0 var(--gut);
 }
 
+/* 上下だけ指定する。padding の一括指定だと、同じ要素の .wrap の左右余白を 0 で上書きしてしまう */
 .page {
-  padding: 2.5rem 0 5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 5rem;
 }
 
 .page--tight {
