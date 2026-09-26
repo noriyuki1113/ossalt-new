@@ -1,0 +1,16 @@
+{
+ "added": [
+  {
+   "name": "Dub",
+   "id": "dub",
+   "competitor": "Bitly",
+   "gh": "dubinc/dub",
+   "url": "https://dub.co",
+   "category": "marketing",
+   "descJa": "独自ドメインで短縮URLを発行し、クリック数や流入元を計測できるリンク管理ツール。 Pretix",
+   "exists": true,
+   "urlVerified": true
+  }
+ ],
+ "rejected": []
+}
