@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useEffect } from "react";
-import { getSponsorAd } from "@/lib/sponsors";
 
 declare global {
   interface Window {
@@ -12,14 +11,45 @@ declare global {
   }
 }
 
-function track(
-  eventName:
-    | "house_ad_impression"
-    | "house_ad_click"
-    | "sponsor_ad_impression"
-    | "sponsor_ad_click",
-  data: Record<string, unknown>
-) {
+type HouseAdConfig = {
+  id: string;
+  title: string;
+  description: string;
+  href: string;
+  ctaLabel: string;
+};
+
+function getHouseAd(placement: string): HouseAdConfig {
+  if (placement.startsWith("alternative_")) {
+    return {
+      id: "oss_diagnosis",
+      title: "どのOSSが自分に合うか迷っていますか？",
+      description: "6つの質問に答えるだけで、条件に合うOSSを探せます。登録不要・約2分。",
+      href: "/diagnosis/",
+      ctaLabel: "OSS診断をはじめる",
+    };
+  }
+
+  if (placement.startsWith("blog_")) {
+    return {
+      id: "browse_tools",
+      title: "実際に使えるOSSを一覧で比較",
+      description: "ライセンス・セキュリティ・更新状況まで横並びで確認できます。",
+      href: "/tools/",
+      ctaLabel: "ツール一覧を見る",
+    };
+  }
+
+  return {
+    id: "browse_alternatives",
+    title: "SaaSの月額、見直しませんか？",
+    description: "Notion・Slack・Airtableなど、よく使うSaaSのオープンソース代替を比較できます。",
+    href: "/alternatives/",
+    ctaLabel: "OSS代替を探す",
+  };
+}
+
+function track(eventName: "house_ad_impression" | "house_ad_click", data: Record<string, unknown>) {
   try {
     if (typeof window.umami?.track === "function") {
       window.umami.track(eventName, data);
@@ -30,84 +60,19 @@ function track(
 }
 
 export function HouseAd({ placement }: { placement: string }) {
-  const sponsor = getSponsorAd(placement);
+  const ad = getHouseAd(placement);
 
   useEffect(() => {
-    if (sponsor) {
-      track("sponsor_ad_impression", {
-        sponsor_id: sponsor.id,
-        placement,
-      });
-      return;
-    }
-
     track("house_ad_impression", {
-      ad_id: "sponsor_recruitment_v1",
+      ad_id: ad.id,
       placement,
     });
-  }, [placement, sponsor]);
-
-  if (sponsor) {
-    return (
-      <aside
-        className="panel"
-        aria-label="スポンサー広告"
-        style={{
-          marginTop: "2rem",
-          borderColor: "var(--indigo)",
-          background: "var(--card)",
-        }}
-      >
-        <div className="panel__head">
-          <span className="panel__meta">SPONSORED</span>
-          <span className="tag">広告</span>
-        </div>
-        <div
-          className="panel__body"
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            alignItems: "center",
-            gap: "1rem",
-          }}
-        >
-          <div style={{ flex: "1 1 24rem" }}>
-            <p
-              style={{
-                margin: "0 0 0.35rem",
-                fontWeight: 700,
-                fontSize: "var(--step-1)",
-              }}
-            >
-              {sponsor.name}
-            </p>
-            <p className="muted" style={{ margin: 0, fontSize: "0.875rem" }}>
-              {sponsor.description}
-            </p>
-          </div>
-          <a
-            className="btn"
-            href={sponsor.href}
-            target="_blank"
-            rel="sponsored noopener noreferrer"
-            onClick={() =>
-              track("sponsor_ad_click", {
-                sponsor_id: sponsor.id,
-                placement,
-              })
-            }
-          >
-            {sponsor.ctaLabel} →
-          </a>
-        </div>
-      </aside>
-    );
-  }
+  }, [ad.id, placement]);
 
   return (
     <aside
       className="panel"
-      aria-label="ossalt.jp からのお知らせ"
+      aria-label="ossalt.jp からのおすすめ"
       style={{
         marginTop: "2rem",
         borderColor: "var(--indigo)",
@@ -115,8 +80,8 @@ export function HouseAd({ placement }: { placement: string }) {
       }}
     >
       <div className="panel__head">
-        <span className="panel__meta">OSSALT HOUSE AD</span>
-        <span className="tag">スポンサー募集中</span>
+        <span className="panel__meta">OSSALT PICK</span>
+        <span className="tag">サイト内おすすめ</span>
       </div>
       <div
         className="panel__body"
@@ -135,23 +100,23 @@ export function HouseAd({ placement }: { placement: string }) {
               fontSize: "var(--step-1)",
             }}
           >
-            OSS・クラウド・開発者向けサービスのスポンサーを募集しています
+            {ad.title}
           </p>
           <p className="muted" style={{ margin: 0, fontSize: "0.875rem" }}>
-            広告枠は編集評価・ランキングから完全に分離し、スポンサーであることを明示します。
+            {ad.description}
           </p>
         </div>
         <Link
           className="btn"
-          href="/sponsor/"
+          href={ad.href}
           onClick={() =>
             track("house_ad_click", {
-              ad_id: "sponsor_recruitment_v1",
+              ad_id: ad.id,
               placement,
             })
           }
         >
-          掲載メニューを見る →
+          {ad.ctaLabel} →
         </Link>
       </div>
     </aside>
