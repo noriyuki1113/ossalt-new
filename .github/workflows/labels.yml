@@ -1,0 +1,26 @@
+name: ラベル作成
+
+# Issue フォーム（.github/ISSUE_TEMPLATE/）が使うラベルを作る。
+# スマホの GitHub 画面では「New label」ボタンが出ないことがあるため、ワークフローで作る。
+# このファイルを変更して push すると自動で動く。手動実行も可能。
+# すでにあるラベルは --force で色・説明を上書きするだけなので、何度動かしても問題ない。
+on:
+  push:
+    paths:
+      - .github/workflows/labels.yml
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  labels:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ラベルの作成
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh label create "掲載リクエスト" --color "1f6feb" --description "フォームから届いた掲載リクエスト" --force
+          gh label list --limit 100
