@@ -4,13 +4,14 @@ name: ツール追加
 # 候補リストを貼って実行する（iPhone のブラウザからでも操作できる）。
 # 成功すると「GitHub Pages 公開」ワークフローが続けて動き、サイトに反映される。
 #
-# 入力形式（1行1件・パイプ区切り7フィールド）:
-#   名前|id|代替するSaaS|owner/repo|公式URL|カテゴリ|日本語説明
+# 入力形式（パイプ区切り7フィールド。複数件は「;」で区切る）:
+#   名前|id|代替するSaaS|owner/repo|公式URL|カテゴリ|日本語説明 ; 次の候補…
+# ※ 入力欄は1行のみで、貼った改行は空白になるため「;」区切りが必須。
 on:
   workflow_dispatch:
     inputs:
       candidates:
-        description: "追加候補（1行1件）: 名前|id|代替するSaaS|owner/repo|公式URL|カテゴリ|日本語説明"
+        description: "追加候補（複数件は ; で区切る）: 名前|id|代替するSaaS|owner/repo|公式URL|カテゴリ|日本語説明"
         required: true
         type: string
 

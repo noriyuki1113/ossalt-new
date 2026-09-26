@@ -2,7 +2,7 @@
 /**
  * 手動追加リストの検証と統合
  *
- *   scripts/candidates/pending.txt  … 1行1件の追加候補
+ *   scripts/candidates/pending.txt  … 追加候補（改行または「;」区切り）
  *     形式: name|id|competitor|owner/repo|official_url|category|desc_ja
  *   ↓
  *   1. 形式チェック（7フィールド・id・リポジトリ形式・カテゴリ）
@@ -103,9 +103,11 @@ const existingRepos = new Set(
 );
 
 /* ---------------- 入力の解析と検証 ---------------- */
+// workflow_dispatch の入力欄は1行のみで、貼った改行は空白に置き換わる。
+// そのため改行に加えて「;」でも候補を区切れるようにする。
 const lines = fs
   .readFileSync(PENDING, "utf8")
-  .split("\n")
+  .split(/[\n;]/)
   .map((s) => s.trim())
   .filter((s) => s && !s.startsWith("#"));
 
@@ -121,6 +123,10 @@ for (const raw of lines) {
 
   if (parts.length < 7) {
     fail(`フィールド不足（${parts.length}/7）`);
+    continue;
+  }
+  if (parts.length > 7) {
+    fail(`フィールド過多（${parts.length}/7）。候補の区切りに「;」が抜けていないか確認`);
     continue;
   }
   const [name, id, competitor, gh, url, category, descJa] = parts;
@@ -209,7 +215,9 @@ for (const c of toAdd) {
 }
 
 const out = [...byId.values()];
-fs.writeFileSync(SRC_TOOLS, JSON.stringify(out, null, 1));
+// fetch-github-api.mjs と同じ書式（2スペース・末尾改行）で書く。
+// 書式がずれると、全件却下でもファイル全体の差分がコミットされてしまう。
+fs.writeFileSync(SRC_TOOLS, JSON.stringify(out, null, 2) + "\n");
 fs.writeFileSync(
   path.join(CAND, "pending.result.json"),
   JSON.stringify({ added: toAdd, rejected }, null, 1)

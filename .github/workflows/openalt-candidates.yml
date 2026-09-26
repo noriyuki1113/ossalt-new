@@ -53,7 +53,14 @@ jobs:
             echo "## ツール追加に貼る行"
             echo ""
             echo "TODO_ の箇所（代替SaaS・カテゴリ・日本語説明、見つからなければ公式URLも）を埋めてから貼ってください。"
+            echo "「ツール追加」の入力欄は1行のみなので、複数件は「 ; 」で区切った下の1行版を使ってください。"
             echo ""
+            echo "### 1行版（ツール追加にそのまま貼る）"
+            echo '```'
+            grep -v '^$' scripts/candidates/openalt-pending.txt | paste -sd ';' - | sed 's/;/ ; /g'
+            echo '```'
+            echo ""
+            echo "### 1件ずつ（確認用）"
             echo '```'
             cat scripts/candidates/openalt-pending.txt
             echo '```'

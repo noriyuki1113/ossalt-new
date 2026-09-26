@@ -3120,7 +3120,7 @@
   "license": "GPL-2.0",
   "last_commit": "2026-09-25T00:27:52Z",
   "created_at": "2018-12-09T06:36:45Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 7.2,
   "scorecard_date": "2026-09-21",
   "scorecard_checks": {
@@ -8697,7 +8697,7 @@
   "name": "Dub",
   "url": "https://dub.co",
   "github_url": "https://github.com/dubinc/dub",
-  "description_ja": "独自ドメインで短縮URLを発行し、クリック数や流入元を計測できるリンク管理ツール。 Pretix",
+  "description_ja": "独自ドメインで短縮URLを発行し、クリック数や流入元を計測できるリンク管理ツール。",
   "description_en": null,
   "category": "marketing",
   "primary_competitor": "Bitly",
