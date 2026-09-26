@@ -1,0 +1,643 @@
+# OpenAlternative 追加候補（未掲載のみ）
+
+- 元: https://raw.githubusercontent.com/piotrkulpinski/open-source-alternatives/main/README.md
+- 全ユニーク: 806件 / **未掲載: 604件**
+- 生成: 2026-09-26
+
+採用したいものは slug を控え、次を実行:
+`node scripts/enrich-openalt-candidates.mjs --only slug1,slug2`
+
+## Productivity & Utilities（122件）
+
+- `2fas` — **2FAS** `GPL-3.0` ⭐1.5K: Local-first 2FA authenticator and password manager
+- `activitywatch` — **ActivityWatch** `MPL-2.0` ⭐19K: Track time automatically with privacy-first design
+- `aegis-authenticator` — **Aegis Authenticator** `GPL-3.0` ⭐13K: 2FA token manager for Android with encrypted vault
+- `agentmail` — **AgentMail** `MIT` ⭐38: Email inbox API built for AI agents and workflows
+- `amical` — **Amical** `MIT` ⭐1.5K: Type 10x faster with AI-powered voice dictation
+- `anarlog` — **Anarlog** `MIT` ⭐9.4K: Private meeting notes, no bots, files you own
+- `automa` — **Automa** ⭐22K: Build AI agents and RPA workflows without writing code
+- `beaver-notes` — **Beaver Notes** `MIT` ⭐1.3K: Local-first notes app with no cloud, no AI, no tracking
+- `bitwarden` — **Bitwarden** `AGPL-3.0` ⭐20K: Secure password management for individuals and businesses
+- `bleachbit` — **BleachBit** `GPL-3.0` ⭐7K: Clean your system and free disk space
+- `blinko` — **Blinko** `GPL-3.0` ⭐11K: AI-Powered Note Taking App
+- `bookmark-it` — **Bookmark It** `AGPL-3.0` ⭐325: Organize, discover, and personalize your bookmarks
+- `botpress` — **Botpress** `MIT` ⭐15K: Build powerful AI agents with cutting-edge LLM technology
+- `brace-to` — **Brace.to** `MIT` ⭐107: Securely save and access your favorite links across devices
+- `brave` — **Brave** `MPL-2.0` ⭐24K: Fast, private browser that puts you first
+- `browser-operator` — **Browser Operator** `BSD-3-Clause` ⭐507: Open-source AI browser for intelligent web automation
+- `bytechef` — **ByteChef** `Apache-2.0` ⭐1K: Build AI agents and automate complex workflows seamlessly
+- `capd` — **Capd** `MIT` ⭐53: Capture web pages, text, and images. Find them fast.
+- `chalkist` — **Chalk.ist** `MIT` ⭐1.8K: Transform your source code into stunning visuals
+- `chatbotx` — **ChatbotX** `MIT` ⭐832: Self-hostable omnichannel chatbot platform for agencies
+- `cloudmark` — **Cloudmark** `AGPL-3.0` ⭐76: Organize and access your bookmarks seamlessly in the cloud
+- `codezero` — **CodeZero** `MIT` ⭐55: Build complex automations without code, deploy anywhere with full control
+- `comaps` — **CoMaps** `Apache-2.0` ⭐2.1K: Navigate anywhere offline with complete privacy
+- `cozy` — **Cozy** `AGPL-3.0` ⭐1.3K: Your secure French personal cloud for complete data control
+- `darkwrite` — **Darkwrite** `AGPL-3.0` ⭐316: Distraction-free note-taking with powerful features
+- `deta-surf` — **Deta Surf** `Apache-2.0` ⭐3.6K: Browser and notebook combined with local-first AI
+- `dograh` — **Dograh** `BSD-2-Clause` ⭐5.7K: Self-hostable voice agent platform with full model control
+- `doublezero` — **DoubleZero** `AGPL-3.0` ⭐1.2K: Self-hosted email infrastructure for developers
+- `ego-lite` — **ego lite** `MIT` ⭐16K: Chromium browser built for sharing with AI agents
+- `ethora` — **Ethora** `Apache-2.0` ⭐547: Messaging SDK with AI agents for web, iOS, and Android
+- `ever-teams` — **Ever Teams** `AGPL-3.0` ⭐586: Real-time work and project management platform
+- `ezbookkeeping` — **ezBookkeeping** `MIT` ⭐5.6K: Lightweight self-hosted bookkeeping with AI receipt scanning
+- `faved` — **Faved** `MIT` ⭐1.3K: Handcrafted minimal bookmark manager with advanced tagging system
+- `financial-freedom` — **Financial Freedom** `GPL-3.0` ⭐2.9K: Open-source personal finance management tool
+- `fincept-terminal` — **Fincept Terminal** `AGPL-3.0` ⭐32K: Open-source financial terminal for data-driven insights
+- `firefiles` — **Firefiles** `AGPL-3.0` ⭐371: Bring your own cloud storage, managed in one place
+- `flow` — **Flow** `GPL-3.0` ⭐1.1K: Fast, secure browsing with powerful organization features
+- `fluidvoice` — **FluidVoice** `GPL-3.0` ⭐12K: On-device voice dictation for macOS with adaptive AI
+- `freeter` — **Freeter** `GPL-3.0` ⭐1K: Your personal workspace organizer for maximum productivity
+- `graphite` — **Graphite** `Apache-2.0` ⭐27K: Procedural vector editor that runs in your browser, no signup needed
+- `hackatime` — **Hackatime** `MIT` ⭐208: Track coding time across 70+ editors, completely free
+- `handy` — **Handy** `MIT` ⭐32K: Press a key, speak, release. Text appears instantly.
+- `harper` — **Harper** `Apache-2.0` ⭐16K: Fast grammar checking that respects your privacy
+- `helium` — **Helium** `GPL-3.0` ⭐21K: Privacy-first browser with ad-blocking and no bloat
+- `hoodik` — **Hoodik** ⭐1.5K: Secure self-hosted cloud storage with end-to-end encryption
+- `hyvor-relay` — **Hyvor Relay** `AGPL-3.0` ⭐908: Open-source email API with enterprise deliverability
+- `inboxzero` — **Inbox Zero** `AGPL-3.0` ⭐12K: AI email assistant that automates, organizes, and declutters
+- `ironcalc` — **IronCalc** `Apache-2.0` ⭐4.2K: A spreadsheet engine you can embed, self-host, or run in the browser
+- `itsnotes` — **itsnotes** `MIT` ⭐31: Self-hosted sticky notes with better organization
+- `jarvis` — **Jarvis** `MIT` ⭐639: Dictate faster and control your Mac with voice
+- `justnote` — **Justnote** `GPL-2.0` ⭐68: Privacy-focused note-taking made simple and fast
+- `kap` — **Kap** `MIT` ⭐19K: Effortless screen recording for macOS
+- `karakeep` — **Karakeep** `AGPL-3.0` ⭐29K: Save links, notes, and images. AI tags them for you.
+- `ladybird` — **Ladybird** `BSD-2-Clause` ⭐66K: An independent browser engine built from scratch, not a fork
+- `languagetool` — **LanguageTool** `LGPL-2.1` ⭐15K: AI-powered grammar checker for 30+ languages
+- `librewolf` — **LibreWolf** ⭐1.3K: Firefox fork hardened for privacy, security, and freedom
+- `lightpanda` — **Lightpanda** `AGPL-3.0` ⭐36K: Fast, AI-native web browser built for automation and scraping
+- `linguist` — **Linguist** `BSD-3-Clause` ⭐1.1K: Privacy-focused translation with offline capabilities
+- `linkding` — **Linkding** `MIT` ⭐11K: Self-hosted bookmark manager built for speed and simplicity
+- `linkwarden` — **Linkwarden** `AGPL-3.0` ⭐20K: Collaborative bookmark manager for teams and individuals
+- `localsend` — **LocalSend** `Apache-2.0` ⭐93K: Share files securely across all devices without servers
+- `macro-docs` — **Macro Docs** `AGPL-3.0` ⭐4.4K: Markdown docs wired into tasks, email, and agents
+- `macro-mail` — **Macro Mail** `AGPL-3.0` ⭐4.4K: Keyboard-first email client with AI, chat, and tasks
+- `mdma` — **MDMA** `MIT` ⭐67: Markdown that mounts real applications
+- `midori-browser` — **Midori Browser** `MPL-2.0` ⭐403: Fast, secure, and privacy-focused web browsing
+- `mole` — **Mole** `GPL-3.0` ⭐68K: Mac cleaner, app manager, and system monitor in one
+- `monetr` — **Monetr** `FSL-1.1-MIT` ⭐677: Take control of your finances, paycheck by paycheck
+- `novu` — **Novu** ⭐40K: Multi-channel notification infrastructure for apps
+- `onlyoffice-docs` — **ONLYOFFICE Docs** `AGPL-3.0` ⭐6.9K: Complete office suite for documents, spreadsheets & more
+- `open-notebook` — **Open-Notebook** `MIT` ⭐39K: AI-powered research notebook with full privacy control
+- `opencloud` — **OpenCloud** `Apache-2.0` ⭐6.1K: Self-hosted file sharing built for digital sovereignty
+- `opennotas` — **OpenNotas** ⭐179: Fast, secure, and free personal note-taking app
+- `openwispr` — **OpenWispr** `MIT` ⭐8.5K: Voice-to-text that works offline, privately, on any app
+- `organic-maps` — **Organic Maps** `Apache-2.0` ⭐15K: Privacy-first offline maps for hiking, cycling & navigation
+- `osmand` — **OSMAnd** ⭐6K: Navigate anywhere with detailed offline maps and GPS
+- `padloc` — **Padloc** `AGPL-3.0` ⭐2.9K: Secure password manager with end-to-end encryption
+- `pairdrop` — **PairDrop** `GPL-3.0` ⭐11K: Instant file sharing across devices without setup
+- `paralino` — **Paralino** `AGPL-3.0` ⭐63: End-to-end encrypted location sharing for groups
+- `parlant` — **Parlant** `Apache-2.0` ⭐18K: Structured control layer for customer-facing AI agents
+- `pearcleaner` — **Pearcleaner** ⭐15K: Remove Mac apps and all their leftover files
+- `pearpass` — **PearPass** `Apache-2.0` ⭐534: Complete password control, zero cloud dependency
+- `plunk` — **Plunk** `AGPL-3.0` ⭐5.5K: The open-source, affordable email platform
+- `ray-so` — **Ray.so** `MIT` ⭐2.4K: Create beautiful images of your code
+- `readeck` — **Readeck** ⭐1.1K: Save, organize and revisit web content effortlessly
+- `requestly` — **Requestly** `AGPL-3.0` ⭐6.8K: Intercept, modify, and debug HTTP(S) requests effortlessly
+- `ryot` — **Ryot** `GPL-3.0` ⭐3.6K: Track your life, your way
+- `screenity` — **Screenity** `GPL-3.0` ⭐19K: Free, private screen recording for Chrome
+- `sendportal` — **Sendportal** `MIT` ⭐2.2K: Self-hosted email marketing with unlimited everything
+- `seriesguide` — **SeriesGuide** ⭐2.2K: Track your TV shows and movies on Android
+- `sessy` — **Sessy** ⭐935: Own your SES email analytics, from send to inbox
+- `showly` — **Showly** `GPL-3.0` ⭐1.5K: Track TV shows and movies, synced with Trakt.tv
+- `snapify` — **Snapify** `AGPL-3.0` ⭐1K: Self-hosted screen recording for seamless collaboration
+- `sol` — **Sol** `MIT` ⭐3.1K: Fast and beautiful launcher for quick access to apps and tools
+- `solidtime` — **SolidTime** `AGPL-3.0` ⭐8.9K: Effortless time tracking for open source projects
+- `spacedrive` — **Spacedrive** `AGPL-3.0` ⭐39K: Your personal distributed filesystem
+- `splitpro` — **Splitpro** `MIT` ⭐1.5K: Effortlessly split expenses with friends and groups
+- `super-productivity` — **Super Productivity** `MIT` ⭐22K: Task manager built for deep work, privacy, and focus
+- `sure-am` — **Sure.am** `AGPL-3.0` ⭐10K: The personal finance app for everyone
+- `surfsense` — **SurfSense** `Apache-2.0` ⭐16K: Privacy-first knowledge base with any AI model you choose
+- `sync-in` — **Sync-in** `AGPL-3.0` ⭐1.8K: Open-source file storage with complete data sovereignty
+- `tiledesk` — **Tiledesk** `MIT` ⭐16: No-code platform to build AI agents and automate support
+- `timescribe` — **TimeScribe** `GPL-3.0` ⭐908: Transform your time tracking into actionable insights
+- `tolaria` — **Tolaria** `AGPL-3.0` ⭐20K: Local-first, Git-native personal knowledge base with AI
+- `tonkatsu-box` — **Tonkatsu Box** `MIT` ⭐552: Track games, movies, anime, manga, and books in one place
+- `twake-drive` — **Twake Drive** `AGPL-3.0` ⭐986: Secure open source file storage with end-to-end encryption
+- `twake-mail` — **Twake Mail** `AGPL-3.0` ⭐654: Secure open source email with advanced encryption & AI
+- `ueli` — **Ueli** `MIT` ⭐4.6K: Quick access to apps and files with keyboard shortcuts
+- `uninbox` — **UnInbox** `AGPL-3.0` ⭐1.8K: Transform team email into efficient collaborative workflows
+- `usesend` — **useSend** `AGPL-3.0` ⭐4.7K: Pay per email sent, not for contact storage
+- `voiceink` — **VoiceInk** `GPL-3.0` ⭐6.5K: Local voice dictation with AI enhancement for macOS
+- `voicetypr` — **VoiceTypr** `AGPL-3.0` ⭐720: Offline voice dictation that types into any app
+- `vrite` — **Vrite** `AGPL-3.0` ⭐2K: Collaborative content creation for technical teams
+- `wakapi` — **Wakapi** `MIT` ⭐4.4K: Track coding time effortlessly, gain insights instantly
+- `wallabag` — **Wallabag** `MIT` ⭐13K: Save articles for later reading with complete privacy
+- `waterfox` — **Waterfox** ⭐6.3K: Privacy-first browser built for power users
+- `wealthfolio` — **Wealthfolio** `AGPL-3.0` ⭐9K: Secure desktop investment tracker for private wealth management
+- `yaffa` — **YAFFA** `MIT` ⭐109: Free, self-hosted personal finance app for long-term planning
+- `zen` — **Zen** `AGPL-3.0` ⭐1.2K: Clean, distraction-free note-taking with local storage
+- `zen-privacy` — **Zen** `MIT` ⭐4.2K: System-wide ad-blocking and privacy protection, no extensions needed
+- `zen-browser` — **Zen Browser** `MPL-2.0` ⭐45K: Privacy-focused browser with powerful customization
+- `ziit` — **Ziit** `AGPL-3.0` ⭐254: Track coding time and boost developer productivity
+- `zotero` — **Zotero** ⭐15K: Collect, organize, cite, and share research in one place
+
+## Developer Tools（94件）
+
+- `dev-push` — **/dev/push** `MIT` ⭐4.8K: Deploy apps instantly with git push - open source alternative
+- `aci-dev` — **ACI.dev** `Apache-2.0` ⭐4.9K: Build reliable AI agents with unified tool integration
+- `aider` — **Aider** `Apache-2.0` ⭐49K: AI pair programmer that works inside your terminal
+- `alacritty` — **Alacritty** `Apache-2.0` ⭐66K: High-performance terminal with GPU acceleration
+- `alokai` — **Alokai** `MIT` ⭐11K: Build and deploy scalable storefronts with ease
+- `argos` — **Argos** `MIT` ⭐631: Visual regression testing for seamless UI development
+- `bknd` — **Bknd** `Apache-2.0` ⭐3.8K: Feature-rich backend that runs anywhere you need it
+- `builder` — **Builder** `MIT` ⭐8.8K: Visual development platform for modern web experiences
+- `capgo` — **Capgo** `AGPL-3.0` ⭐208: OTA updates for Capacitor apps without app store delays
+- `chartbrew` — **Chartbrew** `MIT` ⭐4.1K: Create stunning data visualizations with ease
+- `cline` — **Cline** `Apache-2.0` ⭐69K: Open-source AI coding agent for your editor and terminal
+- `codeedit` — **CodeEdit** `MIT` ⭐23K: A native code editor for macOS
+- `convertigo` — **Convertigo** `AGPL-3.0` ⭐386: Low-code and no-code platform for business apps
+- `convex` — **Convex** ⭐13K: Build full-stack apps with TypeScript and real-time sync
+- `dyad` — **Dyad** `Apache-2.0` ⭐22K: Build unlimited AI apps locally with zero vendor lock-in
+- `emdash` — **Emdash** `Apache-2.0` ⭐5.8K: Dashboard for running multiple coding agents in parallel
+- `encore` — **Encore** `MPL-2.0` ⭐12K: Accelerate backend development with effortless scalability
+- `firecamp` — **Firecamp** `AGPL-3.0` ⭐2.6K: Unified API development ecosystem for modern teams
+- `forgecode` — **Forgecode** `Apache-2.0` ⭐7.6K: Terminal-native AI coding agent built on ZSH
+- `forgejo` — **Forgejo** ⭐5.5K: Self-hosted Git forge that's lightweight and secure
+- `frappe-builder` — **Frappe Builder** `MIT` ⭐2.4K: Visual website builder for effortless web design
+- `frontman` — **Frontman** `Apache-2.0` ⭐707: AI coding agent that sees your live app and edits code
+- `fusio` — **Fusio** `Apache-2.0` ⭐2.1K: API management platform for developers and AI agents
+- `ghostty` — **Ghostty** `MIT` ⭐62K: Fast GPU-accelerated terminal with native UI design
+- `giselle` — **Giselle** `Apache-2.0` ⭐554: Build and deploy AI agents through visual workflows
+- `gitbutler` — **GitButler** `FSL-1.1-MIT` ⭐22K: Revolutionize your Git workflow with simultaneous branches
+- `gitcomet` — **GitComet** `AGPL-3.0` ⭐873: Fast, local-first Git GUI built in Rust
+- `gitlab` — **GitLab** `MIT` ⭐25K: AI-powered DevSecOps for faster, secure software delivery
+- `gorules` — **GoRules** `MIT` ⭐2K: Business rules engine with AI, visual flows, and audit trails
+- `gravitee` — **Gravitee** `Apache-2.0` ⭐455: Unified API, event, and AI agent management platform
+- `grok-build` — **Grok Build** `Apache-2.0` ⭐27K: AI coding agent and CLI for complex terminal workflows
+- `harness` — **Harness** `Apache-2.0` ⭐38K: End-to-end open source software delivery platform
+- `hercules` — **Hercules** `AGPL-3.0` ⭐1.2K: Open-source testing agent for UI, API, security, accessibility & visual QA
+- `hexabot` — **Hexabot** `AGPL-3.0` ⭐1.2K: Self-hosted AI agents and workflows across any channel
+- `hive` — **Hive** `MIT` ⭐484: Open-source GraphQL federation platform
+- `httpie` — **HTTPie** `BSD-3-Clause` ⭐4K: Modern command-line HTTP client for the API era
+- `iterm-2` — **iTerm 2** `GPL-2.0` ⭐18K: Advanced terminal with modern features for Mac developers
+- `jean` — **Jean** `Apache-2.0` ⭐1.3K: Parallel AI agent workspaces with Git and project context
+- `keploy` — **Keploy** `Apache-2.0` ⭐18K: Turn production traffic into regression tests, no code changes
+- `keystonejs` — **KeystoneJS** `MIT` ⭐10K: Flexible, scalable Node.js CMS and app framework
+- `kilocode` — **Kilo** `MIT` ⭐27K: AI coding agent for VS Code, JetBrains, CLI, and Cloud
+- `kitty` — **Kitty** `GPL-3.0` ⭐35K: GPU-accelerated terminal built for power users
+- `kodus` — **Kodus** `AGPL-3.0` ⭐1.4K: AI code review that learns your team's standards
+- `krakend` — **Krakend** `Apache-2.0` ⭐2.7K: Blazing-fast API gateway with linear scalability
+- `linky` — **Linky** `MIT` ⭐801: A delightfully rich and dynamic link-in-bio.
+- `lytenyte-grid` — **LyteNyte Grid** ⭐1K: Lightning-fast React data grid for enterprise scale
+- `mockoon` — **Mockoon** `MIT` ⭐8.4K: Effortless API mocking for seamless development
+- `nango` — **Nango** `Elastic-2.0` ⭐12K: Build product integrations with 500+ APIs in hours
+- `neovim` — **Neovim** ⭐103K: Hyperextensible, Lua-powered Vim-based text editor
+- `nordcraft` — **Nordcraft** `Apache-2.0` ⭐489: Craft AAA web apps that delight your users
+- `omnigent` — **Omnigent** `Apache-2.0` ⭐10K: Common layer for composing and governing AI agents
+- `onlook` — **Onlook** `Apache-2.0` ⭐27K: Visual React editor with real-time code updates
+- `opencode` — **OpenCode** `MIT` ⭐210K: AI coding agent for terminal, IDE, and desktop
+- `openhands` — **OpenHands** `MIT` ⭐89K: Autonomous coding agents that complete real engineering tasks
+- `opnform` — **OpnForm** `AGPL-3.0` ⭐3.7K: Create powerful forms with ease and flexibility
+- `orbital` — **Orbital** ⭐360: Connect APIs, databases, and streams without glue code
+- `orca` — **Orca** `MIT` ⭐77K: Run multiple AI coding agents in parallel, side by side
+- `palform` — **Palform** `AGPL-3.0` ⭐45: Secure, encrypted forms with advanced features
+- `paperclip` — **Paperclip** `MIT` ⭐82K: Org chart, budgets, and governance for AI agent teams
+- `paseo` — **Paseo** `Apache-2.0` ⭐18K: Run coding agents from your phone, desktop, or terminal
+- `pi` — **pi** `MIT` ⭐109K: Minimal terminal coding agent you can fully customize
+- `processwire` — **ProcessWire** ⭐1.2K: Flexible CMS for developers, powerful for clients
+- `proxed-ai` — **Proxed AI** `AGPL-3.0` ⭐8: Secure AI API management for iOS apps with DeviceCheck
+- `pullfrog` — **Pullfrog** `MIT` ⭐1.2K: AI agent workflows built natively into GitHub
+- `reflex` — **Reflex** `Apache-2.0` ⭐29K: Full-stack Python platform for web apps and internal tools
+- `rivet` — **Rivet** `Apache-2.0` ⭐6.2K: Build stateful backends with in-memory actors
+- `roomote` — **Roomote** `FCL-1.0` ⭐260: Self-hosted AI coding agent that opens real PRs
+- `rowy` — **Rowy** `Apache-2.0` ⭐6.8K: Build powerful backends without leaving your browser
+- `semaphore` — **Semaphore** ⭐1.6K: Open source CI/CD platform that's faster and costs less
+- `shelve` — **Shelve** `Apache-2.0` ⭐457: Simplify project management for developers
+- `silex` — **Silex** `AGPL-3.0` ⭐3K: Free, open-source visual website builder for designers
+- `stormkit` — **Stormkit** `GPL-3.0` ⭐261: Deploy web apps with automated CI/CD and full infrastructure control
+- `structr` — **Structr** ⭐830: Build complete web apps with integrated graph database
+- `swe-agent` — **SWE-agent** `MIT` ⭐20K: AI agents that autonomously fix code and resolve GitHub issues
+- `synara` — **Synara** `MIT` ⭐1.9K: Code with Claude, Codex, Gemini, and more in one workspace
+- `t3-code` — **T3 Code** `MIT` ⭐23K: AI-powered coding made simple and efficient
+- `tabby` — **Tabby** `Apache-2.0` ⭐34K: AI-powered code completion for seamless development
+- `tailcall` — **Tailcall** `Apache-2.0` ⭐1.4K: The modern GraphQL runtime
+- `tiptap` — **TipTap** `MIT` ⭐39K: Craft rich text experiences with ease
+- `tyk` — **Tyk** ⭐11K: Universal API management for REST, GraphQL, gRPC & async
+- `voiden` — **Voiden** `Apache-2.0` ⭐1.8K: Build APIs like code with Git-native workspace
+- `vvveb-cms` — **Vvveb CMS** `AGPL-3.0` ⭐1.2K: Open source CMS with powerful drag-and-drop builder
+- `warp` — **Warp** `AGPL-3.0` ⭐65K: A modern terminal built around AI coding agents
+- `waveterm` — **WaveTerm** `Apache-2.0` ⭐22K: Cross-platform terminal with AI built in
+- `webiny` — **Webiny** `MIT` ⭐8K: Open-source serverless CMS for modern web projects
+- `webstudio` — **WebStudio** `AGPL-3.0` ⭐9K: Visual web development with code-level control
+- `wezterm` — **WezTerm** `MIT` ⭐29K: GPU-accelerated terminal emulator with multiplexing across all platforms
+- `wordpress` — **WordPress** ⭐21K: Create, customize, and manage your website with ease
+- `wundergraph` — **WunderGraph** `Apache-2.0` ⭐1.3K: Unify APIs, databases, and services effortlessly
+- `yaak` — **Yaak** `MIT` ⭐19K: Fast, secure, offline API client with Git integration
+- `ycode` — **Ycode** `MIT` ⭐312: Visual website builder and CMS you can self-host
+- `zed` — **Zed** `GPL-3.0` ⭐91K: High-performance code editor built for speed and AI
+- `zellij` — **Zellij** `MIT` ⭐36K: Organize terminal sessions with built-in layouts, tabs, and panes
+- `zero` — **Zero** `MIT` ⭐1.7K: Terminal coding agent with full model and data control
+
+## AI & Machine Learning（55件）
+
+- `5ire` — **5ire** ⭐5.4K: Smart desktop AI assistant with powerful local knowledge features
+- `agenta` — **Agenta** `MIT` ⭐4.8K: Build, automate, and improve AI agents with your team
+- `agentos` — **AgentOS** `Apache-2.0` ⭐672: TypeScript framework for building autonomous AI agents
+- `agno` — **Agno** `Apache-2.0` ⭐42K: Model-agnostic platform for building intelligent AI agents
+- `beam` — **Beam** `AGPL-3.0` ⭐1.8K: Serverless GPU compute with sub-second cold starts
+- `bifrost` — **Bifrost** `Apache-2.0` ⭐8.3K: Ultra-fast AI gateway with enterprise-grade reliability
+- `browser-use` — **Browser Use** `MIT` ⭐116K: Let AI agents control any browser, at scale
+- `cherry-studio` — **Cherry Studio** `AGPL-3.0` ⭐52K: Multi-model AI desktop client with local-first privacy
+- `copilotkit` — **CopilotKit** `MIT` ⭐38K: Build AI copilots for your product in hours, not months
+- `corpus` — **Corpus** `AGPL-3.0` ⭐13: Ask once, get answers across every document
+- `dstack` — **dstack** `MPL-2.0` ⭐2.3K: GPU orchestration across clouds, Kubernetes, and on-prem
+- `e2b` — **E2B** `Apache-2.0` ⭐14K: Secure cloud environments for enterprise AI agents
+- `eigent` — **Eigent** `Apache-2.0` ⭐15K: Desktop multi-agent workforce for automating real tasks
+- `envoy-ai-gateway` — **Envoy AI Gateway** `Apache-2.0` ⭐2.1K: Route GenAI traffic with confidence using open source
+- `fastgpt` — **FastGPT** ⭐30K: Build powerful AI knowledge bases with ease
+- `fullmoon` — **Fullmoon** `MIT` ⭐2.3K: Chat with private and local large language models
+- `grepture` — **Grepture** `AGPL-3.0` ⭐8: Trace, evaluate, and protect every LLM call in one SDK
+- `hermes-agent` — **Hermes Agent** `MIT` ⭐249K: Desktop AI agent with persistent memory across platforms
+- `kortix` — **Kortix** `Elastic-2.0` ⭐20K: AI workforce platform where agents, skills, and memory live in your repo
+- `laminar` — **Laminar** `Apache-2.0` ⭐3.3K: AI-powered platform for engineering LLM products
+- `langwatch` — **LangWatch** `Apache-2.0` ⭐4.9K: Simulation-based testing and evaluation for AI agents
+- `latitude` — **Latitude** `MIT` ⭐4.7K: Full observability for AI agents in production
+- `leon` — **Leon** `MIT` ⭐18K: Your open-source personal assistant for server automation
+- `letta` — **Letta** `Apache-2.0` ⭐3.4K: Stateful AI agents that remember, learn, and improve over time
+- `litellm` — **LiteLLM** ⭐60K: LLM gateway for auth, load balancing, and spend tracking
+- `llm-gateway` — **LLM Gateway** `MIT` ⭐1.7K: Unified API for all LLM providers with analytics
+- `maxkb` — **MaxKB** `GPL-3.0` ⭐23K: AI assistant that enhances enterprise knowledge management
+- `meetily` — **Meetily** `MIT` ⭐31K: Local AI meeting transcription with zero data leaving your device
+- `mem0` — **Mem0** `Apache-2.0` ⭐66K: Persistent memory layer for AI agents and apps
+- `minutes` — **Minutes** `MIT` ⭐1.5K: Local meeting recorder that keeps your audio off the cloud
+- `mlop` — **mlop** `Apache-2.0` ⭐391: Experiment tracking platform for ML teams
+- `morphic` — **Morphic** `Apache-2.0` ⭐9.1K: AI-powered answer engine with dynamic interface generation
+- `multica` — **Multica** ⭐51K: Project management for teams mixing humans and AI agents
+- `nanoclaw` — **NanoClaw** `MIT` ⭐31K: Personal AI agent for messaging apps, containerized
+- `onyx` — **Onyx** `MIT` ⭐32K: Unified AI-powered enterprise search across company data
+- `openbot` — **OpenBot** `MIT` ⭐5.5K: Self-hosted enterprise agent platform with real permissions
+- `openclaw` — **OpenClaw** `MIT` ⭐390K: An AI assistant that acts, not just answers
+- `opencomputer` — **OpenComputer** `Apache-2.0` ⭐546: Persistent cloud VMs that hibernate and wake in seconds
+- `openlit` — **OpenLIT** `Apache-2.0` ⭐2.8K: Monitor, debug, and scale LLM applications with ease
+- `openllmetry` — **OpenLLMetry** `Apache-2.0` ⭐7.4K: Monitor LLM performance with open-source observability
+- `openwork` — **OpenWork** `MIT` ⭐24K: Multi-model AI workspace with org-wide skill sharing
+- `pearl` — **Pearl** `Apache-2.0` ⭐1.1K: AI-powered automation that lives in your Slack workspace
+- `pipeshub` — **Pipeshub** `Apache-2.0` ⭐3.8K: Enterprise workplace AI with data you own and control
+- `portkey-ai-gateway` — **Portkey AI Gateway** `MIT` ⭐13K: Complete production stack for AI teams
+- `prismical` — **Prismical** `MIT` ⭐92: Transcribe meetings and voice notes with local AI, no bots required
+- `proton-lumo` — **Proton Lumo** `GPL-3.0` ⭐5.6K: Private AI chat with zero-access encryption
+- `rakazo` — **Rakazo** `Apache-2.0` ⭐2.9K: Self-hosted AI agents that do real work on your machine
+- `scira` — **Scira** `AGPL-3.0` ⭐12K: Minimalistic AI-powered search engine for instant answers
+- `screenpipe` — **screenpipe** `Other` ⭐22K: 24/7 screen and audio recorder with AI memory search
+- `skyvern` — **Skyvern** `AGPL-3.0` ⭐23K: Automate any website workflow with AI and computer vision
+- `spanlens` — **Spanlens** `MIT` ⭐13: LLM observability: cost, latency, and traces in one place
+- `steel` — **Steel** `Apache-2.0` ⭐7.7K: Cloud browser sessions for AI agents and web automation
+- `swirl` — **Swirl Search** `Apache-2.0` ⭐3K: Get instant answers from your company knowledge
+- `verifywise` — **VerifyWise** `AGPL-3.0` ⭐358: AI governance made simple, secure, and compliant
+- `zola` — **Zola** `Apache-2.0` ⭐1.5K: AI chat companion with versatile model support
+
+## Data & Analytics（32件）
+
+- `airbyte` — **Airbyte** `Elastic-2.0` ⭐22K: Open-source data integration for modern teams
+- `apache-pinot` — **Apache Pinot** `Apache-2.0` ⭐6.1K: Distributed OLAP database for real-time analytics at scale
+- `apache-superset` — **Apache Superset** `Apache-2.0` ⭐75K: Self-serve data exploration and dashboard builder
+- `aptabase` — **Aptabase** `AGPL-3.0` ⭐1.8K: Privacy-first analytics for mobile and desktop apps
+- `betterlytics` — **Betterlytics** `AGPL-3.0` ⭐176: Privacy-first, cookieless analytics without consent banners
+- `clickhouse` — **ClickHouse** `Apache-2.0` ⭐50K: Lightning-fast analytics for massive datasets
+- `cloudquery` — **CloudQuery** `MPL-2.0` ⭐6.5K: Sync and transform data from any source to any destination
+- `cocoindex` — **CocoIndex** `Apache-2.0` ⭐12K: Ultra-fast data transformation for AI with lineage
+- `crawl4ai` — **Crawl4AI** `Apache-2.0` ⭐84K: LLM-ready web crawler built for AI data pipelines
+- `cube` — **Cube** ⭐21K: Unify data models and metrics across your entire stack
+- `databuddy` — **Databuddy** `AGPL-3.0` ⭐1.2K: Privacy-first analytics without cookies or tracking
+- `deepnote` — **Deepnote** `Apache-2.0` ⭐3K: Python, SQL, and AI in a collaborative data notebook
+- `elementary-data` — **Elementary Data** `Apache-2.0` ⭐2.4K: Data observability for modern data teams
+- `evidence` — **Evidence** `MIT` ⭐7K: Transform SQL into beautiful data stories
+- `firecrawl` — **Firecrawl** `AGPL-3.0` ⭐184K: Turn any website into clean, AI-ready data via API
+- `frappe-insights` — **Frappe Insights** `AGPL-3.0` ⭐1K: Powerful open-source business intelligence for data-driven decisions
+- `hitkeep` — **HitKeep** `MIT` ⭐89: Privacy-first analytics you own completely
+- `impler` — **Impler** `MIT` ⭐291: Seamless data import for your applications
+- `litlyx` — **Litlyx** `Apache-2.0` ⭐1.7K: Cookie-less analytics for privacy-focused insights
+- `lua-sh` — **Lua.sh** `AGPL-3.0` ⭐341: Professional link management for modern teams
+- `maxun` — **Maxun** `AGPL-3.0` ⭐18K: No-code web scraping, crawling, and extraction platform
+- `mermaid` — **Mermaid** `MIT` ⭐90K: Text-based diagramming that renders in code and docs
+- `open-wearables` — **Open Wearables** `MIT` ⭐2.6K: Convert wearable data into actionable health insights with open algorithms
+- `openpanel` — **OpenPanel** `AGPL-3.0` ⭐7K: Cookie-free web and product analytics, self-hostable
+- `openserp` — **OpenSERP** `MIT` ⭐1.4K: Self-hosted SERP API for Google, Bing, Yandex, and more
+- `openwebanalytics` — **OpenWebAnalytics** `GPL-2.0` ⭐2.7K: Powerful, customizable web analytics for your site
+- `prisme-analytics` — **Prisme Analytics** `AGPL-3.0` ⭐135: Privacy-friendly web analytics for data-driven decisions
+- `rybbit` — **Rybbit** `AGPL-3.0` ⭐13K: Understand your audience with privacy-first analytics.
+- `swetrix` — **Swetrix** `AGPL-3.0` ⭐1.2K: Cookieless, privacy-first web analytics without the complexity
+- `timeplus` — **Timeplus** `Apache-2.0` ⭐2.3K: Real-time stream processing made simple and affordable
+- `trench` — **Trench** `MIT` ⭐1.7K: Fast, scalable analytics infrastructure
+- `vemetric` — **Vemetric** `AGPL-3.0` ⭐393: Simple, powerful web & product analytics for user insights
+
+## Infrastructure & Operations（103件）
+
+- `1panel` — **1Panel** `GPL-3.0` ⭐37K: Manage Linux servers with ease through a modern web interface
+- `aapanel` — **aaPanel** ⭐3.1K: Powerful and user-friendly web hosting control panel
+- `activeloop` — **Activeloop** `Apache-2.0` ⭐9.2K: The tensor database for AI data
+- `apitable` — **AITable** `AGPL-3.0` ⭐16K: Visual database for workflow automation across apps
+- `alarik` — **Alarik** `Apache-2.0` ⭐545: S3-compatible object storage built with Swift
+- `cloudberry` — **Apache Cloudberry** `Apache-2.0` ⭐1.4K: Unlock Data's Potential with Open Source Power
+- `apache-druid` — **Apache Druid** `Apache-2.0` ⭐14K: Real-time analytics database for sub-second OLAP queries
+- `apache-iotdb` — **Apache IoTDB** `Apache-2.0` ⭐6.4K: Time-series database built for industrial IoT workloads
+- `apache-skywalking` — **Apache SkyWalking** `Apache-2.0` ⭐25K: Distributed tracing, metrics, logs, and GenAI monitoring in one
+- `automq` — **AutoMQ** `Apache-2.0` ⭐11K: S3-based serverless Kafka reinvented for cost efficiency
+- `azimutt` — **Azimutt** `MIT` ⭐2.2K: Next-Gen ERD: Design, Explore, Document and Analyze your database.
+- `bacalhau` — **Bacalhau** `Apache-2.0` ⭐871: Revolutionizing data processing with Compute Over Data
+- `beekeeper-studio` — **Beekeeper Studio** ⭐24K: Modern and intuitive SQL client for multiple databases
+- `bugpin` — **BugPin** `AGPL-3.0` ⭐41: Self-hosted visual bug reporting with screenshot annotation
+- `bytebase` — **Bytebase** `MIT` ⭐15K: Secure and streamline database changes with CI/CD automation
+- `casaos` — **CasaOS** `Apache-2.0` ⭐37K: Your personal cloud OS for simple, elegant home servers
+- `ceph` — **Ceph** ⭐17K: Scalable open-source distributed storage system
+- `chat2db` — **Chat2DB** `Apache-2.0` ⭐28K: Transform natural language into SQL queries with AI
+- `checkmate` — **Checkmate** `AGPL-3.0` ⭐11K: Beautiful open-source monitoring for modern infrastructure
+- `checkmk` — **Checkmk** `GPL-2.0` ⭐2.4K: Complete IT infrastructure monitoring made simple
+- `conar` — **Conar** `AGPL-3.0` ⭐1.4K: AI-powered PostgreSQL management made simple
+- `coroot` — **Coroot** `Apache-2.0` ⭐7.9K: Full-stack observability without code changes
+- `cosmos-server` — **Cosmos Server** ⭐6.2K: Self-hosted cloud platform with automated security
+- `cozystack` — **Cozystack** `Apache-2.0` ⭐2.2K: Turn bare metal into intelligent cloud infrastructure
+- `dagu` — **Dagu** `GPL-3.0` ⭐4.1K: YAML-defined workflow orchestration, no database required
+- `databend` — **Databend** ⭐9.5K: Cloud-native data warehouse for lightning-fast analytics
+- `digger` — **Digger** `MIT` ⭐5K: Terraform automation with pull request workflows
+- `dragonfly` — **Dragonfly** ⭐32K: Blazing-fast in-memory data store for modern applications
+- `drawdb` — **drawDB** `AGPL-3.0` ⭐40K: Design database diagrams and generate SQL scripts instantly
+- `dyrector` — **Dyrector** `Apache-2.0` ⭐1.8K: Simplify container deployment across environments
+- `easymonitor` — **EasyMonitor** `MIT` ⭐75: Self-hosted uptime monitoring that runs on your hardware, not their servers
+- `falkordb` — **FalkorDB** `SSPL-1.0` ⭐6.3K: Graph database built for GraphRAG and multi-tenant AI apps
+- `firezone` — **FireZone** `Apache-2.0` ⭐9.1K: Fast, flexible VPN replacement with zero-trust security
+- `flexprice` — **Flexprice** `AGPL-3.0` ⭐6.9K: Open source metering and billing infrastructure for any pricing model
+- `garage` — **Garage** `AGPL-3.0` ⭐4.6K: Lightweight distributed storage for self-hosting
+- `gigapipe` — **Gigapipe** `AGPL-3.0` ⭐1.7K: All-in-one observability with unlimited data ingestion
+- `grafana-loki` — **Grafana Loki** `AGPL-3.0` ⭐29K: Cost-effective log aggregation that indexes labels, not full text
+- `greptimedb` — **GreptimeDB** `Apache-2.0` ⭐6.7K: Unified observability database for metrics, logs, and traces
+- `hatchet` — **Hatchet** `MIT` ⭐8K: Distributed task queue for background jobs and workflows
+- `healthchecks` — **Healthchecks** `BSD-3-Clause` ⭐10K: Get alerted when cron jobs and scheduled tasks miss their run
+- `helixdb` — **HelixDB** `Apache-2.0` ⭐6.1K: Unify vector search and graph traversals in one database
+- `hook0` — **Hook0** `SSPL-1.0` ⭐1.5K: Open-source webhooks for seamless integrations
+- `hyperdx` — **HyperDX** `MIT` ⭐9.9K: Full-stack observability without the enterprise price tag
+- `icinga` — **Icinga** `GPL-3.0` ⭐2.2K: Open source monitoring for complex IT infrastructure
+- `influxdb` — **InfluxDB** `Apache-2.0` ⭐32K: Purpose-built time series database for real-time systems
+- `inngest` — **Inngest** `SSPL-1.0` ⭐5.9K: Effortless event-driven workflows for modern applications
+- `instant` — **Instant** `Apache-2.0` ⭐11K: Realtime client-side database for collaborative apps
+- `keep` — **Keep** `MIT` ⭐12K: Unify, automate, and elevate your monitoring workflow
+- `kener` — **Kener** `MIT` ⭐5.2K: Deploy a professional status page in minutes, no coding required
+- `logfire` — **Logfire** `MIT` ⭐4.5K: Powerful observability made simple for developers
+- `logstash` — **Logstash** ⭐15K: Centralize, transform, and stash your data
+- `mage` — **Mage** `Apache-2.0` ⭐8.8K: Magical data pipeline tool for seamless transformations
+- `manticore` — **Manticore Search** `GPL-3.0` ⭐12K: Lightning-fast open source search engine for big data
+- `maple` — **Maple** ⭐1.8K: OpenTelemetry observability with traces, logs, and metrics
+- `mathesar` — **Mathesar** `GPL-3.0` ⭐5.1K: Spreadsheet-like interface for PostgreSQL databases
+- `memgraph` — **Memgraph** ⭐4.6K: High-performance graph computing for scalable data analysis
+- `nagios` — **Nagios** `GPL-2.0` ⭐2K: Complete infrastructure monitoring with 25+ years of expertise
+- `neon-postgres` — **Neon Postgres** `Apache-2.0` ⭐23K: Serverless Postgres for modern applications
+- `nitric` — **Nitric** `Apache-2.0` ⭐2K: Cloud-native framework for infrastructure from code
+- `oceanbase` — **OceanBase** `Apache-2.0` ⭐10K: High-performance distributed database for all workloads
+- `oneuptime` — **OneUptime** `Apache-2.0` ⭐7.7K: Comprehensive monitoring and incident management platform
+- `openmeter` — **OpenMeter** `Apache-2.0` ⭐2.3K: Real-time usage metering and billing for AI companies
+- `openpanel-co` — **OpenPanel** `MIT` ⭐750: Simplify server management with an intuitive interface
+- `openstack` — **OpenStack** `Apache-2.0` ⭐6K: Open source cloud infrastructure trusted at massive scale
+- `openstatus` — **OpenStatus** `AGPL-3.0` ⭐9.1K: Status page and uptime monitoring for growing teams
+- `openvpn` — **OpenVPN** ⭐15K: Zero Trust VPN solutions for secure business networking
+- `operational` — **Operational** `AGPL-3.0` ⭐476: Real-time event tracking and response for tech products
+- `orama` — **Orama** ⭐11K: Full-text & vector search at the edge.
+- `pangolin` — **Pangolin** `AGPL-3.0` ⭐23K: Zero trust network access that's better than VPN
+- `peekaping` — **Peekaping** `MIT` ⭐1.2K: Self-hosted uptime monitoring you own and control
+- `plakar` — **Plakar** `ISC` ⭐2.1K: Encrypted, queryable backups for engineers who value time
+- `pluton` — **Pluton** `Apache-2.0` ⭐828: Self-hosted encrypted backups with 70+ cloud storage options
+- `questdb` — **QuestDB** `Apache-2.0` ⭐17K: High-performance time-series database for massive data scale
+- `quickwit` — **Quickwit** `Apache-2.0` ⭐12K: Lightning-fast search for massive datasets
+- `refine` — **Refine** `MIT` ⭐36K: Build data-rich React apps with ease and flexibility
+- `scanopy` — **Scanopy** `AGPL-3.0` ⭐5.8K: Auto-generated network diagrams that stay current
+- `searxng` — **SearXNG** `AGPL-3.0` ⭐38K: Privacy-first metasearch across 270+ sources
+- `seekstorm` — **SeekStorm** `Apache-2.0` ⭐1.9K: Full-text search API with real-time indexing and crawling
+- `sequin` — **Sequin** `MIT` ⭐2.2K: Open-source message stream built on Postgres
+- `slatedb` — **SlateDB** `Apache-2.0` ⭐3.4K: Embedded storage engine built on object storage
+- `soketi` — **Soketi** `AGPL-3.0` ⭐5.6K: Next-gen WebSockets server for real-time apps
+- `spinifex` — **Spinifex** `AGPL-3.0` ⭐247: AWS-compatible cloud APIs on infrastructure you control
+- `statusnook` — **Statusnook** `MIT` ⭐985: Monitor, manage, and communicate service status effortlessly
+- `statusscout` — **StatusScout** ⭐15: Complete website health monitoring and security scanning
+- `storj` — **Storj** `AGPL-3.0` ⭐3.3K: Secure, decentralized cloud storage for your data
+- `svix` — **Svix** `MIT` ⭐3.4K: Webhook delivery platform with retries, security, and a portal
+- `tabularis` — **Tabularis** `Apache-2.0` ⭐5.1K: Desktop SQL client with built-in MCP for AI agent access
+- `tailscale` — **Tailscale** `BSD-3-Clause` ⭐37K: Zero-config VPN with WireGuard for secure networking
+- `tdengine` — **TDengine** `AGPL-3.0` ⭐25K: Time-series database and historian for industrial data
+- `temps` — **Temps** `Apache-2.0` ⭐786: One self-hosted binary replaces Vercel, Sentry, and analytics tools
+- `terrateam` — **Terrateam** `MPL-2.0` ⭐1.3K: GitOps orchestration for infrastructure as code
+- `tianji` — **Tianji** `Apache-2.0` ⭐3.1K: Website analytics, uptime monitoring, and server status in one
+- `tidb` — **TiDB** `Apache-2.0` ⭐41K: Scale-out SQL database for real-time analytics
+- `timescale` — **TimescaleDb** ⭐24K: Time-series database built on top of PostgreSQL
+- `trigger` — **Trigger** `Apache-2.0` ⭐16K: Run long-running AI tasks without timeouts or servers
+- `turso` — **Turso** `MIT` ⭐17K: SQLite-compatible database for scalable multi-tenant applications
+- `uptimepage` — **Uptimepage** `AGPL-3.0` ⭐34: Uptime monitoring and public status pages, combined
+- `uptrace` — **Uptrace** `AGPL-3.0` ⭐4.3K: Open source observability platform for modern applications
+- `vector` — **Vector** `MPL-2.0` ⭐23K: Collect, transform, and route logs and metrics in one tool
+- `wachd` — **Wachd** `Apache-2.0` ⭐39: AI-powered root cause analysis for on-call alerts, self-hosted and air-gapped
+- `wireguard` — **WireGuard** `GPL-2.0` ⭐720: Fast, minimal VPN built on modern cryptography
+- `workbench` — **Workbench** `MIT` ⭐445: Inspect, debug, and replay BullMQ queues visually
+- `yunohost` — **YunoHost** `AGPL-3.0` ⭐3K: Self-host your digital life with ease
+
+## Business Software（96件）
+
+- `anki` — **Anki** ⭐32K: Spaced repetition flashcards that remember for you
+- `atomic-crm` — **Atomic CRM** `MIT` ⭐1.3K: Open-source CRM toolkit for personalized solutions
+- `autumn` — **Autumn** `Apache-2.0` ⭐2.7K: Stripe payments, usage tracking, and paywalls in 3 functions
+- `bigcapital` — **Bigcapital** `AGPL-3.0` ⭐3.9K: Automate financial processes for smarter business decisions
+- `billion-mail` — **Billion Mail** `AGPL-3.0` ⭐16K: Open-source mail server with unlimited sending & AI tools
+- `busabase` — **Busabase** `MIT` ⭐232: A verified workspace where AI agents store and build knowledge
+- `buzz` — **Buzz** `Apache-2.0` ⭐34K: Team chat, project management, and AI agents in one place
+- `c15t` — **c15t** `Apache-2.0` ⭐1.9K: Build privacy-compliant cookie banners with full control
+- `campfire` — **Campfire** `MIT` ⭐4.6K: Self-hosted group chat without recurring subscription fees
+- `chobble-tickets` — **Chobble Tickets** `AGPL-3.0` ⭐32: Event ticketing with no per-ticket platform fees
+- `clearflask` — **ClearFlask** `Apache-2.0` ⭐451: Open-source ideation tool for product feedback management
+- `colanode` — **Colanode** `Apache-2.0` ⭐5.2K: Self-hosted team workspace with chat, docs, and databases
+- `comp` — **Comp AI** `AGPL-3.0` ⭐2K: Get audit-ready for SOC 2, ISO 27001, HIPAA, and GDPR
+- `contentport` — **Contentport** `AGPL-3.0` ⭐765: Your content engine for growing on Twitter at scale
+- `cossistant` — **Cossistant** `AGPL-3.0` ⭐724: AI-native support infrastructure for modern SaaS
+- `crm` — **CRM** `MIT` ⭐11K: An agentic CRM that keeps records current automatically
+- `ddocs` — **dDocs** `AGPL-3.0` ⭐416: End-to-end encrypted collaborative document editor
+- `dittofeed` — **Dittofeed** `MIT` ⭐3K: Open-source customer engagement platform for automation
+- `docs` — **Docs** `MIT` ⭐17K: Create, edit and share documents with real-time collaboration
+- `donetick` — **Donetick** `AGPL-3.0` ⭐2.6K: Smart task management for individuals and families
+- `dub-links` — **Dub Links** `AGPL-3.0` ⭐25K: Branded short links with analytics and conversion tracking
+- `dub-partners` — **Dub Partners** `AGPL-3.0` ⭐25K: Affiliate marketing platform built for SaaS companies
+- `erxes` — **Erxes** `AGPL-3.0` ⭐4.1K: Open-source growth platform for customer-centric teams
+- `ever-gauzy` — **Ever Gauzy** `AGPL-3.0` ⭐7.9K: Comprehensive open-source business management platform
+- `expensify` — **Expensify** `MIT` ⭐5K: Simplify expense management for businesses of all sizes
+- `fider` — **Fider** `AGPL-3.0` ⭐4.5K: Open-source platform for collecting and prioritizing feedback
+- `fizzy` — **Fizzy** ⭐8.2K: Modern kanban that's fast, fun, and refreshingly simple
+- `flowglad` — **Flowglad** ⭐1.7K: Cross-system automation and knowledge base for accounting firms
+- `fonoster` — **Fonoster** `MIT` ⭐8.1K: Open-source cloud communications platform for developers
+- `formizee` — **Formizee** `Apache-2.0` ⭐185: Create and manage forms with ease
+- `frappe-books` — **Frappe Books** `AGPL-3.0` ⭐5K: Modern desktop accounting made simple and free
+- `frappe-crm` — **Frappe CRM** `AGPL-3.0` ⭐3.6K: Open-source CRM that puts simplicity and control first
+- `frappe-helpdesk` — **Frappe Helpdesk** `AGPL-3.0` ⭐3.4K: Open-source ticketing system for streamlined support
+- `hi-events` — **Hi.Events** ⭐4K: Effortlessly manage events and sell tickets online
+- `huly` — **Huly** `EPL-2.0` ⭐28K: All-in-one workspace for project, chat, and docs
+- `hyvor-post` — **Hyvor Post** `AGPL-3.0` ⭐32: Privacy-first newsletter platform without tracking
+- `ikiform` — **Ikiform** `MIT` ⭐355: Create stunning forms with AI-powered builder and analytics
+- `kan` — **Kan** `AGPL-3.0` ⭐5.7K: Open source kanban boards with unlimited everything
+- `kanba` — **Kanba** `MIT` ⭐657: Beautiful Kanban boards with seamless payment integration
+- `kaneo` — **Kaneo** `MIT` ⭐9.2K: Simple, secure project management for development teams
+- `kanri` — **Kanri** `GPL-3.0` ⭐2K: Simplify your workflow with offline Kanban boards
+- `kutt` — **Kutt** `MIT` ⭐11K: Simplify your links with this free, modern URL shortener
+- `lago` — **Lago** `AGPL-3.0` ⭐11K: Transform complex usage data into accurate, real-time billing
+- `linkstack` — **LinkStack** `AGPL-3.0` ⭐3.9K: Your digital identity, beautifully organized
+- `littlelink` — **LittleLink** `MIT` ⭐3.1K: Create your own link-in-bio page with 100+ branded buttons
+- `logchimp` — **LogChimp** `Apache-2.0` ⭐1.1K: Open-source feedback management for product teams
+- `macro-chat` — **Macro Chat** `AGPL-3.0` ⭐4.4K: Team chat with email, tasks, and docs in one workspace
+- `macro-crm` — **Macro CRM** `AGPL-3.0` ⭐4.4K: A self-building CRM powered by your email
+- `macro-tasks` — **Macro Tasks** `AGPL-3.0` ⭐4.4K: Task management with GitHub sync and AI agents for devs
+- `malak` — **Malak** `AGPL-3.0` ⭐61: Streamline investor relations and fundraising management
+- `manage` — **Manage** `AGPL-3.0` ⭐71: Open-source project management inspired by Basecamp
+- `meteroid` — **Meteroid** `AGPL-3.0` ⭐1.2K: Flexible billing infrastructure for modern SaaS
+- `mezon` — **Mezon** `MIT` ⭐1.9K: Create custom spaces to chat, game, and connect globally
+- `midday` — **Midday** `AGPL-3.0` ⭐15K: Streamline your business finances and operations
+- `mike` — **Mike** `AGPL-3.0` ⭐4.3K: Open-source legal AI that law firms control and extend
+- `mixpost` — **Mixpost** `MIT` ⭐3.7K: Self-hosted social media management without limits
+- `notifuse` — **Notifuse** `AGPL-3.0` ⭐2.2K: Self-hosted email platform with visual editor & analytics
+- `open-mercato` — **Open Mercato** `MIT` ⭐1.8K: AI-native CRM/ERP foundation with 80% already built
+- `openlane` — **Openlane** `Apache-2.0` ⭐310: Continuous compliance automation for SOC 2, ISO 27001 & more
+- `openpolicy` — **OpenPolicy** `Apache-2.0` ⭐165: Generate legal policies directly from TypeScript code
+- `openseo` — **OpenSEO** `MIT` ⭐21K: Self-hosted SEO platform for keyword, backlink, and rank tracking
+- `operately` — **Operately** `Apache-2.0` ⭐561: Open source company management for high-performance startups
+- `orgnise` — **Orgnise** `AGPL-3.0` ⭐247: Effortlessly manage tasks, projects, and teams
+- `papermark` — **Papermark** `AGPL-3.0` ⭐9.2K: Open-source document sharing with powerful analytics
+- `papra` — **Papra** `AGPL-3.0` ⭐5.5K: Organize and secure your documents in one central hub
+- `paymenter` — **Paymenter** `MIT` ⭐2.3K: Modern open-source billing platform for hosting businesses
+- `polar` — **Polar** `Apache-2.0` ⭐10K: Modern payment infrastructure for digital products and SaaS
+- `pretix` — **Pretix** ⭐2.5K: Sell tickets for events, conferences, and exhibitions
+- `probo` — **Probo** `MIT` ⭐1.4K: Managed compliance for SOC 2, ISO 27001, HIPAA, and more
+- `reflet` — **Reflet** `SSPL-1.0` ⭐37: Turn user feedback into features that matter
+- `relaticle` — **Relaticle** `AGPL-3.0` ⭐1.7K: Self-hosted CRM with built-in AI chat and agent tools
+- `reqcore` — **Reqcore** `AGPL-3.0`: Own your hiring data with unlimited seats forever
+- `sayr` — **Sayr** ⭐27: Bridge internal workflows with public collaboration
+- `sendune` — **Sendune** `MIT` ⭐2.3K: Simplify AWS SES email management with ease
+- `shelf` — **Shelf** `AGPL-3.0` ⭐3K: Track gear, bookings, and inventory without spreadsheets
+- `shlink` — **Shlink** `MIT` ⭐5.3K: The definitive self-hosted URL shortener
+- `sink` — **Sink** `AGPL-3.0` ⭐7.2K: Simple, speedy, and secure link shortener with analytics
+- `slugy` — **Slugy** `MIT` ⭐92: Transform long URLs into beautiful, trackable short links
+- `solidus` — **Solidus** `BSD-3-Clause` ⭐5.3K: Flexible eCommerce platform for brands that stand out
+- `spliit` — **Spliit** `MIT` ⭐3K: Effortlessly split expenses with friends and roommates
+- `spree-commerce` — **Spree Commerce** `BSD-3-Clause` ⭐16K: Open source headless commerce with REST API, no platform fees, built for B2B and marketplaces
+- `suprascribe` — **Suprascribe** `AGPL-3.0` ⭐11: Automatically discover hidden subscriptions from your inbox
+- `trypost` — **TryPost** `AGPL-3.0` ⭐648: Schedule posts to every major social network, self-hosted
+- `twake-chat` — **Twake Chat** `AGPL-3.0` ⭐166: Secure open source messaging for professional teams
+- `unibee` — **UniBee** `AGPL-3.0` ⭐230: Cut billing costs with open-source subscription management
+- `unopim` — **UnoPim** `MIT` ⭐11K: AI-powered PIM for managing product catalogs at scale
+- `usertour` — **Usertour** `AGPL-3.0` ⭐2.3K: Create engaging product tours and user onboarding experiences
+- `usertourkit` — **UserTourKit** `MIT` ⭐67: Lightweight, accessible product tours built for React developers
+- `warpdrive` — **Warpdrive** `MIT` ⭐72: Self-hosted CRM for business development teams
+- `windshift` — **Windshift** `AGPL-3.0` ⭐210: Self-hosted project management with boards and test tracking
+- `workadventure` — **Workadventure** ⭐5.8K: Virtual office platform for engaging remote collaboration
+- `worklenz` — **Worklenz** `AGPL-3.0` ⭐3.2K: Open source agency management tool for streamlined success
+- `wr-do` — **WR.DO** `MIT` ⭐2.3K: Free DNS management and URL shortening platform
+- `wraft` — **Wraft** `AGPL-3.0` ⭐167: Scale document creation with automated workflows
+- `wraps` — **Wraps** `AGPL-3.0` ⭐61: Code-first email platform that deploys to your AWS
+- `yournextstore` — **Your Next Store (YNS)** `MIT` ⭐5.5K: Launch Your Store in Minutes, No Code Needed
+
+## Miscellaneous（29件）
+
+- `0-finance` — **0 Finance** `MIT` ⭐250: Transform idle cash into competitive yield for startups
+- `alphai-tui` — **alphai-tui** `MIT` ⭐50: Live stock quotes, charts, and AI-scored news in your terminal
+- `anthias` — **Anthias** ⭐3.7K: Transform any TV into professional digital signage
+- `ballerine` — **Ballerine** ⭐2.4K: AI agents that transform merchant risk decisions at scale
+- `bookwyrm` — **BookWyrm** ⭐2.8K: Decentralized social network for book lovers and readers
+- `cratedb` — **CrateDB** `Apache-2.0` ⭐4.4K: Scalable SQL database for real-time analytics
+- `darktable` — **Darktable** `GPL-3.0` ⭐13K: Professional RAW photo editing and workflow management
+- `fleetbase` — **FleetBase** `AGPL-3.0` ⭐3.9K: Open source modular logistics platform for faster app development
+- `formance` — **Formance** `MIT` ⭐527: Open source financial infrastructure for modern businesses
+- `gdevelop` — **GDevelop** ⭐27K: Create 2D and 3D games without coding, powered by AI assistance
+- `gladys-assistant` — **Gladys Assistant** `Apache-2.0` ⭐3.2K: Self-hosted home automation without the cloud
+- `godot` — **Godot** `MIT` ⭐118K: Free 2D and 3D game engine for cross-platform projects
+- `grida` — **Grida** `Apache-2.0` ⭐2.7K: Open canvas for designing and building web apps
+- `hey` — **Hey** `GPL-3.0` ⭐29K: Decentralized social networking for the Web3 era
+- `home-assistant` — **Home Assistant** `Apache-2.0` ⭐91K: Local control smart home automation with privacy first
+- `hummingbot` — **Hummingbot** `Apache-2.0` ⭐20K: Open-source crypto trading bot for market making
+- `invidious` — **Invidious** `AGPL-3.0` ⭐25K: Watch YouTube without Google tracking you or showing ads
+- `kodi` — **Kodi** ⭐21K: Full-featured media center for your TV and beyond
+- `monogame` — **MonoGame** ⭐14K: Free, open-source framework for cross-platform game development
+- `nightingale` — **Nightingale** `GPL-3.0` ⭐1.5K: Transform any song into karaoke with AI-powered vocals
+- `nuclear` — **Nuclear** `AGPL-3.0` ⭐19K: Ad-free music player that streams from multiple sources
+- `octobot` — **OctoBot** `GPL-3.0` ⭐6.6K: Automate crypto trading with open-source strategies
+- `openbb` — **OpenBB** `AGPL-3.0` ⭐73K: AI-powered analytics workspace built for investment teams
+- `opencut` — **OpenCut** `MIT` ⭐91K: Open source video editor that runs in your browser
+- `openpencil` — **OpenPencil** `MIT` ⭐8.6K: Design editor that opens Figma files, runs AI, and stays local
+- `quant-ux` — **Quant-UX** `GPL-3.0` ⭐2.7K: Design, prototype, and test user experiences with ease
+- `rawtherapee` — **RawTherapee** `GPL-3.0` ⭐4.2K: Professional raw photo processing made free and powerful
+- `sbox` — **s&box** `MIT` ⭐6.5K: Build and play games inside a game engine that runs live
+- `sigle` — **Sigle** `MIT` ⭐489: Web3 writing platform for content creators and crypto enthusiasts
+
+## Content & Publishing（29件）
+
+- `apache-answer` — **Apache Answer** `Apache-2.0` ⭐16K: Open-source Q&A platform for knowledge sharing
+- `changes-page` — **Changes.Page** `AGPL-3.0` ⭐284: Effortless changelog creation for open-source projects
+- `classroomio` — **ClassroomIO** `AGPL-3.0` ⭐1.7K: Build your custom learning academy in minutes
+- `courselit` — **CourseLit** `AGPL-3.0` ⭐1.3K: Create, sell, and manage online courses with ease
+- `craft-cms` — **Craft CMS** ⭐3.6K: Flexible CMS for custom digital experiences
+- `drupal` — **Drupal** `GPL-2.0` ⭐4.3K: Build powerful websites with the open-source CMS
+- `fumadocs` — **Fumadocs** `MIT` ⭐13K: Build beautiful documentation sites with Next.js
+- `gumroad` — **Gumroad** `MIT` ⭐9.7K: Your all-in-one marketplace for digital creators and products
+- `hyvor-blogs` — **Hyvor Blogs** `AGPL-3.0` ⭐17: Blogging platform with built-in SEO, themes, and APIs
+- `imgproxy` — **imgproxy** `Apache-2.0` ⭐11K: On-the-fly image resizing and conversion for your own server
+- `languine` — **Languine** `MIT` ⭐2K: Automated localization for modern development teams
+- `learnhouse` — **LearnHouse** `AGPL-3.0` ⭐2.3K: Create, sell, and manage online courses with full control
+- `lingo` — **Lingo.dev** `Apache-2.0` ⭐5.4K: Automated translations that scale with your code and commits
+- `lychee` — **Lychee** `MIT` ⭐4.3K: Self-hosted photo management with full control
+- `marble-cms` — **Marble CMS** `AGPL-3.0` ⭐384: Simple content management for modern sites
+- `nonograph` — **Nonograph** `Unlicense` ⭐314: Anonymous publishing with no accounts, tracking, or logins
+- `openinary` — **Openinary** `AGPL-3.0` ⭐405: Self-hostable image and video delivery with URL transforms
+- `pagecord` — **Pagecord** `MIT` ⭐190: Personal blogging platform that meets you where you write
+- `scalar` — **Scalar** `MIT` ⭐16K: Open-source API documentation and testing platform
+- `shipshipship` — **ShipShipShip** `Apache-2.0` ⭐299: Open-source changelog & roadmap platform for teams
+- `statamic` — **Statamic** ⭐4.9K: Craft flexible, powerful websites with ease
+- `storyden` — **Storyden** `MPL-2.0` ⭐338: Build lasting communities with modern forum technology
+- `tinacms` — **TinaCMS** `Apache-2.0` ⭐14K: Visual editing for your Git-based content
+- `tolgee` — **Tolgee** `Apache-2.0` ⭐4.1K: Open-source localization platform for multilingual apps
+- `twill-cms` — **Twill CMS** `Apache-2.0` ⭐4K: Craft flexible, beautiful digital experiences with ease
+- `typemill` — **Typemill** `MIT` ⭐619: Open-source CMS for text-driven websites
+- `valour` — **Valour** `AGPL-3.0` ⭐400: Community-driven platform built for transparency
+- `xyd` — **xyd** `MIT` ⭐114: Transform documentation with developer-focused simplicity
+- `zenblog` — **Zenblog** `AGPL-3.0` ⭐253: Effortless blogging for developers and tech enthusiasts
+
+## Security & Privacy（39件）
+
+- `abby` — **Abby** `AGPL-3.0` ⭐166: Type-safe feature flags and remote config for developers
+- `altcha` — **ALTCHA** `MIT` ⭐2.8K: Next-Gen CAPTCHA and Spam Protection, GDPR compliant
+- `authgear` — **Authgear** `Apache-2.0` ⭐2.1K: Managed identity and access management for any app
+- `better-auth` — **Better Auth** `MIT` ⭐30K: Framework-agnostic authentication for TypeScript applications
+- `cinny` — **Cinny** `AGPL-3.0` ⭐3.9K: Secure and elegant Matrix client for seamless conversations
+- `defguard` — **Defguard** ⭐2.9K: Zero-Trust VPN with built-in 2FA/MFA and SSO capabilities
+- `featbit` — **FeatBit** `MIT` ⭐1.9K: Open-source feature flag management for seamless deployments
+- `featurevisor` — **Featurevisor** `MIT` ⭐810: Feature management with GitOps for developers
+- `flagsmith` — **Flagsmith** `BSD-3-Clause` ⭐6.6K: Feature flags and remote config for rapid deployment
+- `flipt` — **Flipt** `GPL-3.0` ⭐4.9K: Git-native feature management for developers
+- `fluxer` — **Fluxer** `AGPL-3.0` ⭐10K: Open source messaging with privacy and community focus
+- `friendly-captcha` — **Friendly Captcha** `MPL-2.0` ⭐35: Invisible bot protection that respects user privacy
+- `growthbook` — **GrowthBook** `MIT` ⭐8.4K: Open-source A/B testing and feature flagging platform
+- `hexclave` — **Hexclave** ⭐6.9K: Modular auth, payments, emails, and analytics for your product
+- `jumpserver` — **JumpServer** `GPL-3.0` ⭐32K: Secure access management for modern IT infrastructure
+- `keyshade` — **Keyshade** `MPL-2.0` ⭐769: Secure secret management with public key encryption
+- `marble` — **Marble** `Elastic-2.0` ⭐602: Real-time fraud detection and AML compliance engine
+- `mcaptcha` — **mCaptcha** `AGPL-3.0` ⭐2.5K: Privacy-first proof-of-work CAPTCHA without user friction
+- `opengrep` — **Opengrep** `LGPL-2.1` ⭐3.1K: Open-source code security engine for developers
+- `ory` — **Ory** `Apache-2.0` ⭐14K: A certified and battle-tested identity solution
+- `peergos` — **Peergos** `AGPL-3.0` ⭐2.5K: Secure, private, and decentralized file storage
+- `permify` — **Permify** `AGPL-3.0` ⭐6K: Build scalable authorization in minutes, not months
+- `phase` — **Phase** `MIT` ⭐924: Secure, deploy, and manage application secrets effortlessly
+- `pocket-id` — **Pocket ID** `BSD-2-Clause` ⭐9.3K: Passwordless OIDC provider built for self-hosters
+- `private-captcha` — **Private Captcha** ⭐194: GDPR-compliant bot protection without user friction
+- `procaptcha` — **Procaptcha** `Apache-2.0` ⭐300: Decentralized CAPTCHA for enhanced web security
+- `projectdiscovery` — **ProjectDiscovery** `MIT` ⭐31K: Advanced vulnerability detection and management platform
+- `puter` — **Puter** `AGPL-3.0` ⭐44K: A full desktop environment that runs in your browser
+- `quiet` — **Quiet** `GPL-3.0` ⭐2.7K: Serverless team chat over Tor, no phone number needed
+- `sama` — **SAMA** `GPL-3.0` ⭐158: Secure, scalable chat server for modern applications
+- `signal` — **Signal** `AGPL-3.0` ⭐29K: Private messaging with end-to-end encryption
+- `stoat` — **Stoat** ⭐3.3K: Group chat for friends and communities, without the baggage
+- `tirreno` — **Tirreno** `AGPL-3.0` ⭐1.5K: Security framework that protects from within your product
+- `tracecat` — **Tracecat** `AGPL-3.0` ⭐3.8K: Open source security automation platform for builders
+- `tuta` — **Tuta** `GPL-3.0` ⭐7.9K: Secure email, calendar and contacts with end-to-end encryption
+- `unkey` — **UnKey** `AGPL-3.0` ⭐5.4K: Secure, scalable API key management for developers
+- `unleash` — **Unleash** `AGPL-3.0` ⭐14K: Feature flags for rapid, risk-free software deployment
+- `werbot` — **Werbot** `BUSL-1.1` ⭐170: Secure, scalable server access management for DevOps
+- `wire` — **Wire** `GPL-3.0` ⭐2.5K: Secure collaboration platform with end-to-end encryption
+
+## Community & Social（5件）
+
+- `bluesky` — **Bluesky** `MIT` ⭐18K: Social media reimagined for community and connection
+- `lemmy` — **Lemmy** `AGPL-3.0` ⭐15K: Build your own federated discussion community
+- `loops` — **Loops** `AGPL-3.0` ⭐455: Federated short videos without corporate control
+- `mastodon` — **Mastodon** `AGPL-3.0` ⭐50K: Decentralized social networking in your control
+- `pixelfed` — **Pixelfed** `AGPL-3.0` ⭐7.1K: Ad-free photo sharing with privacy and federation
+

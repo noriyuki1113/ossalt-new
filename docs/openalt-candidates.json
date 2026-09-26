@@ -1,0 +1,6042 @@
+[
+ {
+  "name": "Parlant",
+  "slug": "parlant",
+  "sourceUrl": "https://openalternative.co/parlant",
+  "description": "Structured control layer for customer-facing AI agents",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "18K",
+  "major": "Productivity & Utilities",
+  "sub": "Automation"
+ },
+ {
+  "name": "ACI.dev",
+  "slug": "aci-dev",
+  "sourceUrl": "https://openalternative.co/aci-dev",
+  "description": "Build reliable AI agents with unified tool integration",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "4.9K",
+  "major": "Developer Tools",
+  "sub": "Integration Platforms"
+ },
+ {
+  "name": "AgentOS",
+  "slug": "agentos",
+  "sourceUrl": "https://openalternative.co/agentos",
+  "description": "TypeScript framework for building autonomous AI agents",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "672",
+  "major": "AI & Machine Learning",
+  "sub": "AI Development Platforms"
+ },
+ {
+  "name": "Agno",
+  "slug": "agno",
+  "sourceUrl": "https://openalternative.co/agno",
+  "description": "Model-agnostic platform for building intelligent AI agents",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "42K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Development Platforms"
+ },
+ {
+  "name": "Beam",
+  "slug": "beam",
+  "sourceUrl": "https://openalternative.co/beam",
+  "description": "Serverless GPU compute with sub-second cold starts",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "1.8K",
+  "major": "AI & Machine Learning",
+  "sub": "Machine Learning Infrastructure"
+ },
+ {
+  "name": "Bifrost",
+  "slug": "bifrost",
+  "sourceUrl": "https://openalternative.co/bifrost",
+  "description": "Ultra-fast AI gateway with enterprise-grade reliability",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "8.3K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Development Platforms"
+ },
+ {
+  "name": "Botpress",
+  "slug": "botpress",
+  "sourceUrl": "https://openalternative.co/botpress",
+  "description": "Build powerful AI agents with cutting-edge LLM technology",
+  "license_hint": "MIT",
+  "stars_hint": "15K",
+  "major": "Productivity & Utilities",
+  "sub": "Automation"
+ },
+ {
+  "name": "ByteChef",
+  "slug": "bytechef",
+  "sourceUrl": "https://openalternative.co/bytechef",
+  "description": "Build AI agents and automate complex workflows seamlessly",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "1K",
+  "major": "Productivity & Utilities",
+  "sub": "Automation"
+ },
+ {
+  "name": "CodeZero",
+  "slug": "codezero",
+  "sourceUrl": "https://openalternative.co/codezero",
+  "description": "Build complex automations without code, deploy anywhere with full control",
+  "license_hint": "MIT",
+  "stars_hint": "55",
+  "major": "Productivity & Utilities",
+  "sub": "Automation"
+ },
+ {
+  "name": "CopilotKit",
+  "slug": "copilotkit",
+  "sourceUrl": "https://openalternative.co/copilotkit",
+  "description": "Build AI copilots for your product in hours, not months",
+  "license_hint": "MIT",
+  "stars_hint": "38K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "Dograh",
+  "slug": "dograh",
+  "sourceUrl": "https://openalternative.co/dograh",
+  "description": "Self-hostable voice agent platform with full model control",
+  "license_hint": "BSD-2-Clause",
+  "stars_hint": "5.7K",
+  "major": "Productivity & Utilities",
+  "sub": "Automation"
+ },
+ {
+  "name": "E2B",
+  "slug": "e2b",
+  "sourceUrl": "https://openalternative.co/e2b",
+  "description": "Secure cloud environments for enterprise AI agents",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "14K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Development Platforms"
+ },
+ {
+  "name": "Envoy AI Gateway",
+  "slug": "envoy-ai-gateway",
+  "sourceUrl": "https://openalternative.co/envoy-ai-gateway",
+  "description": "Route GenAI traffic with confidence using open source",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "2.1K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Development Platforms"
+ },
+ {
+  "name": "Giselle",
+  "slug": "giselle",
+  "sourceUrl": "https://openalternative.co/giselle",
+  "description": "Build and deploy AI agents through visual workflows",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "554",
+  "major": "Developer Tools",
+  "sub": "Frameworks & Platforms"
+ },
+ {
+  "name": "Hermes Agent",
+  "slug": "hermes-agent",
+  "sourceUrl": "https://openalternative.co/hermes-agent",
+  "description": "Desktop AI agent with persistent memory across platforms",
+  "license_hint": "MIT",
+  "stars_hint": "249K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "Hexabot",
+  "slug": "hexabot",
+  "sourceUrl": "https://openalternative.co/hexabot",
+  "description": "Self-hosted AI agents and workflows across any channel",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "1.2K",
+  "major": "Developer Tools",
+  "sub": "Frameworks & Platforms"
+ },
+ {
+  "name": "Kortix",
+  "slug": "kortix",
+  "sourceUrl": "https://openalternative.co/kortix",
+  "description": "AI workforce platform where agents, skills, and memory live in your repo",
+  "license_hint": "Elastic-2.0",
+  "stars_hint": "20K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Development Platforms"
+ },
+ {
+  "name": "Letta",
+  "slug": "letta",
+  "sourceUrl": "https://openalternative.co/letta",
+  "description": "Stateful AI agents that remember, learn, and improve over time",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "3.4K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Development Platforms"
+ },
+ {
+  "name": "LiteLLM",
+  "slug": "litellm",
+  "sourceUrl": "https://openalternative.co/litellm",
+  "description": "LLM gateway for auth, load balancing, and spend tracking",
+  "license_hint": null,
+  "stars_hint": "60K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Development Platforms"
+ },
+ {
+  "name": "LLM Gateway",
+  "slug": "llm-gateway",
+  "sourceUrl": "https://openalternative.co/llm-gateway",
+  "description": "Unified API for all LLM providers with analytics",
+  "license_hint": "MIT",
+  "stars_hint": "1.7K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Development Platforms"
+ },
+ {
+  "name": "Mem0",
+  "slug": "mem0",
+  "sourceUrl": "https://openalternative.co/mem0",
+  "description": "Persistent memory layer for AI agents and apps",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "66K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Development Platforms"
+ },
+ {
+  "name": "Multica",
+  "slug": "multica",
+  "sourceUrl": "https://openalternative.co/multica",
+  "description": "Project management for teams mixing humans and AI agents",
+  "license_hint": null,
+  "stars_hint": "51K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Development Platforms"
+ },
+ {
+  "name": "Nango",
+  "slug": "nango",
+  "sourceUrl": "https://openalternative.co/nango",
+  "description": "Build product integrations with 500+ APIs in hours",
+  "license_hint": "Elastic-2.0",
+  "stars_hint": "12K",
+  "major": "Developer Tools",
+  "sub": "Integration Platforms"
+ },
+ {
+  "name": "OpenComputer",
+  "slug": "opencomputer",
+  "sourceUrl": "https://openalternative.co/opencomputer",
+  "description": "Persistent cloud VMs that hibernate and wake in seconds",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "546",
+  "major": "AI & Machine Learning",
+  "sub": "AI Development Platforms"
+ },
+ {
+  "name": "OpenWork",
+  "slug": "openwork",
+  "sourceUrl": "https://openalternative.co/openwork",
+  "description": "Multi-model AI workspace with org-wide skill sharing",
+  "license_hint": "MIT",
+  "stars_hint": "24K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Development Platforms"
+ },
+ {
+  "name": "Paperclip",
+  "slug": "paperclip",
+  "sourceUrl": "https://openalternative.co/paperclip",
+  "description": "Org chart, budgets, and governance for AI agent teams",
+  "license_hint": "MIT",
+  "stars_hint": "82K",
+  "major": "Developer Tools",
+  "sub": "AI Assisted Coding"
+ },
+ {
+  "name": "Portkey AI Gateway",
+  "slug": "portkey-ai-gateway",
+  "sourceUrl": "https://openalternative.co/portkey-ai-gateway",
+  "description": "Complete production stack for AI teams",
+  "license_hint": "MIT",
+  "stars_hint": "13K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Development Platforms"
+ },
+ {
+  "name": "Rivet",
+  "slug": "rivet",
+  "sourceUrl": "https://openalternative.co/rivet",
+  "description": "Build stateful backends with in-memory actors",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "6.2K",
+  "major": "Developer Tools",
+  "sub": "Build & Deployment"
+ },
+ {
+  "name": "Tiledesk",
+  "slug": "tiledesk",
+  "sourceUrl": "https://openalternative.co/tiledesk",
+  "description": "No-code platform to build AI agents and automate support",
+  "license_hint": "MIT",
+  "stars_hint": "16",
+  "major": "Productivity & Utilities",
+  "sub": "Automation"
+ },
+ {
+  "name": "Agenta",
+  "slug": "agenta",
+  "sourceUrl": "https://openalternative.co/agenta",
+  "description": "Build, automate, and improve AI agents with your team",
+  "license_hint": "MIT",
+  "stars_hint": "4.8K",
+  "major": "AI & Machine Learning",
+  "sub": "Machine Learning Infrastructure"
+ },
+ {
+  "name": "Deepnote",
+  "slug": "deepnote",
+  "sourceUrl": "https://openalternative.co/deepnote",
+  "description": "Python, SQL, and AI in a collaborative data notebook",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "3K",
+  "major": "Data & Analytics",
+  "sub": "Business Intelligence & Reporting"
+ },
+ {
+  "name": "dstack",
+  "slug": "dstack",
+  "sourceUrl": "https://openalternative.co/dstack",
+  "description": "GPU orchestration across clouds, Kubernetes, and on-prem",
+  "license_hint": "MPL-2.0",
+  "stars_hint": "2.3K",
+  "major": "AI & Machine Learning",
+  "sub": "Machine Learning Infrastructure"
+ },
+ {
+  "name": "Grepture",
+  "slug": "grepture",
+  "sourceUrl": "https://openalternative.co/grepture",
+  "description": "Trace, evaluate, and protect every LLM call in one SDK",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "8",
+  "major": "AI & Machine Learning",
+  "sub": "Machine Learning Infrastructure"
+ },
+ {
+  "name": "Laminar",
+  "slug": "laminar",
+  "sourceUrl": "https://openalternative.co/laminar",
+  "description": "AI-powered platform for engineering LLM products",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "3.3K",
+  "major": "AI & Machine Learning",
+  "sub": "Machine Learning Infrastructure"
+ },
+ {
+  "name": "LangWatch",
+  "slug": "langwatch",
+  "sourceUrl": "https://openalternative.co/langwatch",
+  "description": "Simulation-based testing and evaluation for AI agents",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "4.9K",
+  "major": "AI & Machine Learning",
+  "sub": "Machine Learning Infrastructure"
+ },
+ {
+  "name": "Latitude",
+  "slug": "latitude",
+  "sourceUrl": "https://openalternative.co/latitude",
+  "description": "Full observability for AI agents in production",
+  "license_hint": "MIT",
+  "stars_hint": "4.7K",
+  "major": "AI & Machine Learning",
+  "sub": "Machine Learning Infrastructure"
+ },
+ {
+  "name": "mlop",
+  "slug": "mlop",
+  "sourceUrl": "https://openalternative.co/mlop",
+  "description": "Experiment tracking platform for ML teams",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "391",
+  "major": "AI & Machine Learning",
+  "sub": "Machine Learning Infrastructure"
+ },
+ {
+  "name": "Open-Notebook",
+  "slug": "open-notebook",
+  "sourceUrl": "https://openalternative.co/open-notebook",
+  "description": "AI-powered research notebook with full privacy control",
+  "license_hint": "MIT",
+  "stars_hint": "39K",
+  "major": "Productivity & Utilities",
+  "sub": "Note Taking & Knowledge Management"
+ },
+ {
+  "name": "OpenLIT",
+  "slug": "openlit",
+  "sourceUrl": "https://openalternative.co/openlit",
+  "description": "Monitor, debug, and scale LLM applications with ease",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "2.8K",
+  "major": "AI & Machine Learning",
+  "sub": "Machine Learning Infrastructure"
+ },
+ {
+  "name": "OpenLLMetry",
+  "slug": "openllmetry",
+  "sourceUrl": "https://openalternative.co/openllmetry",
+  "description": "Monitor LLM performance with open-source observability",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "7.4K",
+  "major": "AI & Machine Learning",
+  "sub": "Machine Learning Infrastructure"
+ },
+ {
+  "name": "Spanlens",
+  "slug": "spanlens",
+  "sourceUrl": "https://openalternative.co/spanlens",
+  "description": "LLM observability: cost, latency, and traces in one place",
+  "license_hint": "MIT",
+  "stars_hint": "13",
+  "major": "AI & Machine Learning",
+  "sub": "Machine Learning Infrastructure"
+ },
+ {
+  "name": "Macro Mail",
+  "slug": "macro-mail",
+  "sourceUrl": "https://openalternative.co/macro-mail",
+  "description": "Keyboard-first email client with AI, chat, and tasks",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "4.4K",
+  "major": "Productivity & Utilities",
+  "sub": "Email & Communication"
+ },
+ {
+  "name": "Proton Lumo",
+  "slug": "proton-lumo",
+  "sourceUrl": "https://openalternative.co/proton-lumo",
+  "description": "Private AI chat with zero-access encryption",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "5.6K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "5ire",
+  "slug": "5ire",
+  "sourceUrl": "https://openalternative.co/5ire",
+  "description": "Smart desktop AI assistant with powerful local knowledge features",
+  "license_hint": null,
+  "stars_hint": "5.4K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "Browser Operator",
+  "slug": "browser-operator",
+  "sourceUrl": "https://openalternative.co/browser-operator",
+  "description": "Open-source AI browser for intelligent web automation",
+  "license_hint": "BSD-3-Clause",
+  "stars_hint": "507",
+  "major": "Productivity & Utilities",
+  "sub": "Browsers & Extensions"
+ },
+ {
+  "name": "Browser Use",
+  "slug": "browser-use",
+  "sourceUrl": "https://openalternative.co/browser-use",
+  "description": "Let AI agents control any browser, at scale",
+  "license_hint": "MIT",
+  "stars_hint": "116K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "Cherry Studio",
+  "slug": "cherry-studio",
+  "sourceUrl": "https://openalternative.co/cherry-studio",
+  "description": "Multi-model AI desktop client with local-first privacy",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "52K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "Corpus",
+  "slug": "corpus",
+  "sourceUrl": "https://openalternative.co/corpus",
+  "description": "Ask once, get answers across every document",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "13",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "ego lite",
+  "slug": "ego-lite",
+  "sourceUrl": "https://openalternative.co/ego-lite",
+  "description": "Chromium browser built for sharing with AI agents",
+  "license_hint": "MIT",
+  "stars_hint": "16K",
+  "major": "Productivity & Utilities",
+  "sub": "Browsers & Extensions"
+ },
+ {
+  "name": "Eigent",
+  "slug": "eigent",
+  "sourceUrl": "https://openalternative.co/eigent",
+  "description": "Desktop multi-agent workforce for automating real tasks",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "15K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "FastGPT",
+  "slug": "fastgpt",
+  "sourceUrl": "https://openalternative.co/fastgpt",
+  "description": "Build powerful AI knowledge bases with ease",
+  "license_hint": null,
+  "stars_hint": "30K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "Fullmoon",
+  "slug": "fullmoon",
+  "sourceUrl": "https://openalternative.co/fullmoon",
+  "description": "Chat with private and local large language models",
+  "license_hint": "MIT",
+  "stars_hint": "2.3K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "Inbox Zero",
+  "slug": "inboxzero",
+  "sourceUrl": "https://openalternative.co/inboxzero",
+  "description": "AI email assistant that automates, organizes, and declutters",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "12K",
+  "major": "Productivity & Utilities",
+  "sub": "Email & Communication"
+ },
+ {
+  "name": "Jarvis",
+  "slug": "jarvis",
+  "sourceUrl": "https://openalternative.co/jarvis",
+  "description": "Dictate faster and control your Mac with voice",
+  "license_hint": "MIT",
+  "stars_hint": "639",
+  "major": "Productivity & Utilities",
+  "sub": "Input & Dictation"
+ },
+ {
+  "name": "Leon",
+  "slug": "leon",
+  "sourceUrl": "https://openalternative.co/leon",
+  "description": "Your open-source personal assistant for server automation",
+  "license_hint": "MIT",
+  "stars_hint": "18K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "Lightpanda",
+  "slug": "lightpanda",
+  "sourceUrl": "https://openalternative.co/lightpanda",
+  "description": "Fast, AI-native web browser built for automation and scraping",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "36K",
+  "major": "Productivity & Utilities",
+  "sub": "Automation"
+ },
+ {
+  "name": "MaxKB",
+  "slug": "maxkb",
+  "sourceUrl": "https://openalternative.co/maxkb",
+  "description": "AI assistant that enhances enterprise knowledge management",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "23K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "Meetily",
+  "slug": "meetily",
+  "sourceUrl": "https://openalternative.co/meetily",
+  "description": "Local AI meeting transcription with zero data leaving your device",
+  "license_hint": "MIT",
+  "stars_hint": "31K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "Minutes",
+  "slug": "minutes",
+  "sourceUrl": "https://openalternative.co/minutes",
+  "description": "Local meeting recorder that keeps your audio off the cloud",
+  "license_hint": "MIT",
+  "stars_hint": "1.5K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "Morphic",
+  "slug": "morphic",
+  "sourceUrl": "https://openalternative.co/morphic",
+  "description": "AI-powered answer engine with dynamic interface generation",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "9.1K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "NanoClaw",
+  "slug": "nanoclaw",
+  "sourceUrl": "https://openalternative.co/nanoclaw",
+  "description": "Personal AI agent for messaging apps, containerized",
+  "license_hint": "MIT",
+  "stars_hint": "31K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "Onyx",
+  "slug": "onyx",
+  "sourceUrl": "https://openalternative.co/onyx",
+  "description": "Unified AI-powered enterprise search across company data",
+  "license_hint": "MIT",
+  "stars_hint": "32K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "OpenBot",
+  "slug": "openbot",
+  "sourceUrl": "https://openalternative.co/openbot",
+  "description": "Self-hosted enterprise agent platform with real permissions",
+  "license_hint": "MIT",
+  "stars_hint": "5.5K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "OpenClaw",
+  "slug": "openclaw",
+  "sourceUrl": "https://openalternative.co/openclaw",
+  "description": "An AI assistant that acts, not just answers",
+  "license_hint": "MIT",
+  "stars_hint": "390K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "Orama",
+  "slug": "orama",
+  "sourceUrl": "https://openalternative.co/orama",
+  "description": "Full-text & vector search at the edge.",
+  "license_hint": null,
+  "stars_hint": "11K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "Pearl",
+  "slug": "pearl",
+  "sourceUrl": "https://openalternative.co/pearl",
+  "description": "AI-powered automation that lives in your Slack workspace",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "1.1K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "Pipeshub",
+  "slug": "pipeshub",
+  "sourceUrl": "https://openalternative.co/pipeshub",
+  "description": "Enterprise workplace AI with data you own and control",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "3.8K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "Prismical",
+  "slug": "prismical",
+  "sourceUrl": "https://openalternative.co/prismical",
+  "description": "Transcribe meetings and voice notes with local AI, no bots required",
+  "license_hint": "MIT",
+  "stars_hint": "92",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "Rakazo",
+  "slug": "rakazo",
+  "sourceUrl": "https://openalternative.co/rakazo",
+  "description": "Self-hosted AI agents that do real work on your machine",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "2.9K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "Scira",
+  "slug": "scira",
+  "sourceUrl": "https://openalternative.co/scira",
+  "description": "Minimalistic AI-powered search engine for instant answers",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "12K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "screenpipe",
+  "slug": "screenpipe",
+  "sourceUrl": "https://openalternative.co/screenpipe",
+  "description": "24/7 screen and audio recorder with AI memory search",
+  "license_hint": "Other",
+  "stars_hint": "22K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "Skyvern",
+  "slug": "skyvern",
+  "sourceUrl": "https://openalternative.co/skyvern",
+  "description": "Automate any website workflow with AI and computer vision",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "23K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "Steel",
+  "slug": "steel",
+  "sourceUrl": "https://openalternative.co/steel",
+  "description": "Cloud browser sessions for AI agents and web automation",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "7.7K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "SurfSense",
+  "slug": "surfsense",
+  "sourceUrl": "https://openalternative.co/surfsense",
+  "description": "Privacy-first knowledge base with any AI model you choose",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "16K",
+  "major": "Productivity & Utilities",
+  "sub": "Note Taking & Knowledge Management"
+ },
+ {
+  "name": "Swirl Search",
+  "slug": "swirl",
+  "sourceUrl": "https://openalternative.co/swirl",
+  "description": "Get instant answers from your company knowledge",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "3K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "Zola",
+  "slug": "zola",
+  "sourceUrl": "https://openalternative.co/zola",
+  "description": "AI chat companion with versatile model support",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "1.5K",
+  "major": "AI & Machine Learning",
+  "sub": "AI Interaction & Interfaces"
+ },
+ {
+  "name": "Proxed AI",
+  "slug": "proxed-ai",
+  "sourceUrl": "https://openalternative.co/proxed-ai",
+  "description": "Secure AI API management for iOS apps with DeviceCheck",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "8",
+  "major": "Developer Tools",
+  "sub": "Frameworks & Platforms"
+ },
+ {
+  "name": "VerifyWise",
+  "slug": "verifywise",
+  "sourceUrl": "https://openalternative.co/verifywise",
+  "description": "AI governance made simple, secure, and compliant",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "358",
+  "major": "AI & Machine Learning",
+  "sub": "AI Security & Privacy"
+ },
+ {
+  "name": "Autumn",
+  "slug": "autumn",
+  "sourceUrl": "https://openalternative.co/autumn",
+  "description": "Stripe payments, usage tracking, and paywalls in 3 functions",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "2.7K",
+  "major": "Business Software",
+  "sub": "Finance & Accounting"
+ },
+ {
+  "name": "Bigcapital",
+  "slug": "bigcapital",
+  "sourceUrl": "https://openalternative.co/bigcapital",
+  "description": "Automate financial processes for smarter business decisions",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "3.9K",
+  "major": "Business Software",
+  "sub": "Finance & Accounting"
+ },
+ {
+  "name": "Expensify",
+  "slug": "expensify",
+  "sourceUrl": "https://openalternative.co/expensify",
+  "description": "Simplify expense management for businesses of all sizes",
+  "license_hint": "MIT",
+  "stars_hint": "5K",
+  "major": "Business Software",
+  "sub": "Finance & Accounting"
+ },
+ {
+  "name": "ezBookkeeping",
+  "slug": "ezbookkeeping",
+  "sourceUrl": "https://openalternative.co/ezbookkeeping",
+  "description": "Lightweight self-hosted bookkeeping with AI receipt scanning",
+  "license_hint": "MIT",
+  "stars_hint": "5.6K",
+  "major": "Productivity & Utilities",
+  "sub": "Personal Finance Management"
+ },
+ {
+  "name": "Flexprice",
+  "slug": "flexprice",
+  "sourceUrl": "https://openalternative.co/flexprice",
+  "description": "Open source metering and billing infrastructure for any pricing model",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "6.9K",
+  "major": "Infrastructure & Operations",
+  "sub": "Cloud Infrastructure Management"
+ },
+ {
+  "name": "Flowglad",
+  "slug": "flowglad",
+  "sourceUrl": "https://openalternative.co/flowglad",
+  "description": "Cross-system automation and knowledge base for accounting firms",
+  "license_hint": null,
+  "stars_hint": "1.7K",
+  "major": "Business Software",
+  "sub": "Finance & Accounting"
+ },
+ {
+  "name": "Formance",
+  "slug": "formance",
+  "sourceUrl": "https://openalternative.co/formance",
+  "description": "Open source financial infrastructure for modern businesses",
+  "license_hint": "MIT",
+  "stars_hint": "527",
+  "major": "Miscellaneous",
+  "sub": "Finance & Fintech"
+ },
+ {
+  "name": "Frappe Books",
+  "slug": "frappe-books",
+  "sourceUrl": "https://openalternative.co/frappe-books",
+  "description": "Modern desktop accounting made simple and free",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "5K",
+  "major": "Business Software",
+  "sub": "Finance & Accounting"
+ },
+ {
+  "name": "Gumroad",
+  "slug": "gumroad",
+  "sourceUrl": "https://openalternative.co/gumroad",
+  "description": "Your all-in-one marketplace for digital creators and products",
+  "license_hint": "MIT",
+  "stars_hint": "9.7K",
+  "major": "Content & Publishing",
+  "sub": "Learning Management Systems (LMS)"
+ },
+ {
+  "name": "Lago",
+  "slug": "lago",
+  "sourceUrl": "https://openalternative.co/lago",
+  "description": "Transform complex usage data into accurate, real-time billing",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "11K",
+  "major": "Business Software",
+  "sub": "Finance & Accounting"
+ },
+ {
+  "name": "Meteroid",
+  "slug": "meteroid",
+  "sourceUrl": "https://openalternative.co/meteroid",
+  "description": "Flexible billing infrastructure for modern SaaS",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "1.2K",
+  "major": "Business Software",
+  "sub": "Finance & Accounting"
+ },
+ {
+  "name": "Midday",
+  "slug": "midday",
+  "sourceUrl": "https://openalternative.co/midday",
+  "description": "Streamline your business finances and operations",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "15K",
+  "major": "Business Software",
+  "sub": "Finance & Accounting"
+ },
+ {
+  "name": "OpenBB",
+  "slug": "openbb",
+  "sourceUrl": "https://openalternative.co/openbb",
+  "description": "AI-powered analytics workspace built for investment teams",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "73K",
+  "major": "Miscellaneous",
+  "sub": "Finance & Fintech"
+ },
+ {
+  "name": "OpenMeter",
+  "slug": "openmeter",
+  "sourceUrl": "https://openalternative.co/openmeter",
+  "description": "Real-time usage metering and billing for AI companies",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "2.3K",
+  "major": "Infrastructure & Operations",
+  "sub": "Cloud Infrastructure Management"
+ },
+ {
+  "name": "Paymenter",
+  "slug": "paymenter",
+  "sourceUrl": "https://openalternative.co/paymenter",
+  "description": "Modern open-source billing platform for hosting businesses",
+  "license_hint": "MIT",
+  "stars_hint": "2.3K",
+  "major": "Business Software",
+  "sub": "Finance & Accounting"
+ },
+ {
+  "name": "Polar",
+  "slug": "polar",
+  "sourceUrl": "https://openalternative.co/polar",
+  "description": "Modern payment infrastructure for digital products and SaaS",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "10K",
+  "major": "Business Software",
+  "sub": "Finance & Accounting"
+ },
+ {
+  "name": "Spliit",
+  "slug": "spliit",
+  "sourceUrl": "https://openalternative.co/spliit",
+  "description": "Effortlessly split expenses with friends and roommates",
+  "license_hint": "MIT",
+  "stars_hint": "3K",
+  "major": "Business Software",
+  "sub": "Finance & Accounting"
+ },
+ {
+  "name": "Suprascribe",
+  "slug": "suprascribe",
+  "sourceUrl": "https://openalternative.co/suprascribe",
+  "description": "Automatically discover hidden subscriptions from your inbox",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "11",
+  "major": "Business Software",
+  "sub": "Finance & Accounting"
+ },
+ {
+  "name": "UniBee",
+  "slug": "unibee",
+  "sourceUrl": "https://openalternative.co/unibee",
+  "description": "Cut billing costs with open-source subscription management",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "230",
+  "major": "Business Software",
+  "sub": "Finance & Accounting"
+ },
+ {
+  "name": "Ever Gauzy",
+  "slug": "ever-gauzy",
+  "sourceUrl": "https://openalternative.co/ever-gauzy",
+  "description": "Comprehensive open-source business management platform",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "7.9K",
+  "major": "Business Software",
+  "sub": "ERP & Operations"
+ },
+ {
+  "name": "Reqcore",
+  "slug": "reqcore",
+  "sourceUrl": "https://openalternative.co/reqcore",
+  "description": "Own your hiring data with unlimited seats forever",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": null,
+  "major": "Business Software",
+  "sub": "Human Resources (HR)"
+ },
+ {
+  "name": "Novu",
+  "slug": "novu",
+  "sourceUrl": "https://openalternative.co/novu",
+  "description": "Multi-channel notification infrastructure for apps",
+  "license_hint": null,
+  "stars_hint": "40K",
+  "major": "Productivity & Utilities",
+  "sub": "Email & Communication"
+ },
+ {
+  "name": "OpenSEO",
+  "slug": "openseo",
+  "sourceUrl": "https://openalternative.co/openseo",
+  "description": "Self-hosted SEO platform for keyword, backlink, and rank tracking",
+  "license_hint": "MIT",
+  "stars_hint": "21K",
+  "major": "Business Software",
+  "sub": "Marketing & Customer Engagement"
+ },
+ {
+  "name": "Billion Mail",
+  "slug": "billion-mail",
+  "sourceUrl": "https://openalternative.co/billion-mail",
+  "description": "Open-source mail server with unlimited sending & AI tools",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "16K",
+  "major": "Business Software",
+  "sub": "Marketing & Customer Engagement"
+ },
+ {
+  "name": "Brace.to",
+  "slug": "brace-to",
+  "sourceUrl": "https://openalternative.co/brace-to",
+  "description": "Securely save and access your favorite links across devices",
+  "license_hint": "MIT",
+  "stars_hint": "107",
+  "major": "Productivity & Utilities",
+  "sub": "Bookmark & Content Management"
+ },
+ {
+  "name": "Contentport",
+  "slug": "contentport",
+  "sourceUrl": "https://openalternative.co/contentport",
+  "description": "Your content engine for growing on Twitter at scale",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "765",
+  "major": "Business Software",
+  "sub": "Marketing & Customer Engagement"
+ },
+ {
+  "name": "Cossistant",
+  "slug": "cossistant",
+  "sourceUrl": "https://openalternative.co/cossistant",
+  "description": "AI-native support infrastructure for modern SaaS",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "724",
+  "major": "Business Software",
+  "sub": "Customer Support & Success"
+ },
+ {
+  "name": "Dittofeed",
+  "slug": "dittofeed",
+  "sourceUrl": "https://openalternative.co/dittofeed",
+  "description": "Open-source customer engagement platform for automation",
+  "license_hint": "MIT",
+  "stars_hint": "3K",
+  "major": "Business Software",
+  "sub": "Marketing & Customer Engagement"
+ },
+ {
+  "name": "Dub Links",
+  "slug": "dub-links",
+  "sourceUrl": "https://openalternative.co/dub-links",
+  "description": "Branded short links with analytics and conversion tracking",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "25K",
+  "major": "Business Software",
+  "sub": "Marketing & Customer Engagement"
+ },
+ {
+  "name": "Dub Partners",
+  "slug": "dub-partners",
+  "sourceUrl": "https://openalternative.co/dub-partners",
+  "description": "Affiliate marketing platform built for SaaS companies",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "25K",
+  "major": "Business Software",
+  "sub": "Marketing & Customer Engagement"
+ },
+ {
+  "name": "Erxes",
+  "slug": "erxes",
+  "sourceUrl": "https://openalternative.co/erxes",
+  "description": "Open-source growth platform for customer-centric teams",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "4.1K",
+  "major": "Business Software",
+  "sub": "CRM & Sales"
+ },
+ {
+  "name": "Fonoster",
+  "slug": "fonoster",
+  "sourceUrl": "https://openalternative.co/fonoster",
+  "description": "Open-source cloud communications platform for developers",
+  "license_hint": "MIT",
+  "stars_hint": "8.1K",
+  "major": "Business Software",
+  "sub": "Marketing & Customer Engagement"
+ },
+ {
+  "name": "Frappe Helpdesk",
+  "slug": "frappe-helpdesk",
+  "sourceUrl": "https://openalternative.co/frappe-helpdesk",
+  "description": "Open-source ticketing system for streamlined support",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "3.4K",
+  "major": "Business Software",
+  "sub": "Customer Support & Success"
+ },
+ {
+  "name": "Hyvor Post",
+  "slug": "hyvor-post",
+  "sourceUrl": "https://openalternative.co/hyvor-post",
+  "description": "Privacy-first newsletter platform without tracking",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "32",
+  "major": "Business Software",
+  "sub": "Marketing & Customer Engagement"
+ },
+ {
+  "name": "Kutt",
+  "slug": "kutt",
+  "sourceUrl": "https://openalternative.co/kutt",
+  "description": "Simplify your links with this free, modern URL shortener",
+  "license_hint": "MIT",
+  "stars_hint": "11K",
+  "major": "Business Software",
+  "sub": "Marketing & Customer Engagement"
+ },
+ {
+  "name": "LinkStack",
+  "slug": "linkstack",
+  "sourceUrl": "https://openalternative.co/linkstack",
+  "description": "Your digital identity, beautifully organized",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "3.9K",
+  "major": "Business Software",
+  "sub": "Marketing & Customer Engagement"
+ },
+ {
+  "name": "Linky",
+  "slug": "linky",
+  "sourceUrl": "https://openalternative.co/linky",
+  "description": "A delightfully rich and dynamic link-in-bio.",
+  "license_hint": "MIT",
+  "stars_hint": "801",
+  "major": "Developer Tools",
+  "sub": "Website Builders"
+ },
+ {
+  "name": "LittleLink",
+  "slug": "littlelink",
+  "sourceUrl": "https://openalternative.co/littlelink",
+  "description": "Create your own link-in-bio page with 100+ branded buttons",
+  "license_hint": "MIT",
+  "stars_hint": "3.1K",
+  "major": "Business Software",
+  "sub": "Marketing & Customer Engagement"
+ },
+ {
+  "name": "Lua.sh",
+  "slug": "lua-sh",
+  "sourceUrl": "https://openalternative.co/lua-sh",
+  "description": "Professional link management for modern teams",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "341",
+  "major": "Data & Analytics",
+  "sub": "Web & Product Analytics"
+ },
+ {
+  "name": "Mixpost",
+  "slug": "mixpost",
+  "sourceUrl": "https://openalternative.co/mixpost",
+  "description": "Self-hosted social media management without limits",
+  "license_hint": "MIT",
+  "stars_hint": "3.7K",
+  "major": "Business Software",
+  "sub": "Marketing & Customer Engagement"
+ },
+ {
+  "name": "Notifuse",
+  "slug": "notifuse",
+  "sourceUrl": "https://openalternative.co/notifuse",
+  "description": "Self-hosted email platform with visual editor & analytics",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "2.2K",
+  "major": "Business Software",
+  "sub": "Marketing & Customer Engagement"
+ },
+ {
+  "name": "Plunk",
+  "slug": "plunk",
+  "sourceUrl": "https://openalternative.co/plunk",
+  "description": "The open-source, affordable email platform",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "5.5K",
+  "major": "Productivity & Utilities",
+  "sub": "Email & Communication"
+ },
+ {
+  "name": "Sendportal",
+  "slug": "sendportal",
+  "sourceUrl": "https://openalternative.co/sendportal",
+  "description": "Self-hosted email marketing with unlimited everything",
+  "license_hint": "MIT",
+  "stars_hint": "2.2K",
+  "major": "Productivity & Utilities",
+  "sub": "Email & Communication"
+ },
+ {
+  "name": "Sendune",
+  "slug": "sendune",
+  "sourceUrl": "https://openalternative.co/sendune",
+  "description": "Simplify AWS SES email management with ease",
+  "license_hint": "MIT",
+  "stars_hint": "2.3K",
+  "major": "Business Software",
+  "sub": "Marketing & Customer Engagement"
+ },
+ {
+  "name": "Shlink",
+  "slug": "shlink",
+  "sourceUrl": "https://openalternative.co/shlink",
+  "description": "The definitive self-hosted URL shortener",
+  "license_hint": "MIT",
+  "stars_hint": "5.3K",
+  "major": "Business Software",
+  "sub": "Marketing & Customer Engagement"
+ },
+ {
+  "name": "Sink",
+  "slug": "sink",
+  "sourceUrl": "https://openalternative.co/sink",
+  "description": "Simple, speedy, and secure link shortener with analytics",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "7.2K",
+  "major": "Business Software",
+  "sub": "Marketing & Customer Engagement"
+ },
+ {
+  "name": "Slugy",
+  "slug": "slugy",
+  "sourceUrl": "https://openalternative.co/slugy",
+  "description": "Transform long URLs into beautiful, trackable short links",
+  "license_hint": "MIT",
+  "stars_hint": "92",
+  "major": "Business Software",
+  "sub": "Marketing & Customer Engagement"
+ },
+ {
+  "name": "TryPost",
+  "slug": "trypost",
+  "sourceUrl": "https://openalternative.co/trypost",
+  "description": "Schedule posts to every major social network, self-hosted",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "648",
+  "major": "Business Software",
+  "sub": "Marketing & Customer Engagement"
+ },
+ {
+  "name": "useSend",
+  "slug": "usesend",
+  "sourceUrl": "https://openalternative.co/usesend",
+  "description": "Pay per email sent, not for contact storage",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "4.7K",
+  "major": "Productivity & Utilities",
+  "sub": "Email & Communication"
+ },
+ {
+  "name": "WR.DO",
+  "slug": "wr-do",
+  "sourceUrl": "https://openalternative.co/wr-do",
+  "description": "Free DNS management and URL shortening platform",
+  "license_hint": "MIT",
+  "stars_hint": "2.3K",
+  "major": "Business Software",
+  "sub": "Marketing & Customer Engagement"
+ },
+ {
+  "name": "Wraps",
+  "slug": "wraps",
+  "sourceUrl": "https://openalternative.co/wraps",
+  "description": "Code-first email platform that deploys to your AWS",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "61",
+  "major": "Business Software",
+  "sub": "Marketing & Customer Engagement"
+ },
+ {
+  "name": "BugPin",
+  "slug": "bugpin",
+  "sourceUrl": "https://openalternative.co/bugpin",
+  "description": "Self-hosted visual bug reporting with screenshot annotation",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "41",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "ClearFlask",
+  "slug": "clearflask",
+  "sourceUrl": "https://openalternative.co/clearflask",
+  "description": "Open-source ideation tool for product feedback management",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "451",
+  "major": "Business Software",
+  "sub": "Customer Support & Success"
+ },
+ {
+  "name": "Fider",
+  "slug": "fider",
+  "sourceUrl": "https://openalternative.co/fider",
+  "description": "Open-source platform for collecting and prioritizing feedback",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "4.5K",
+  "major": "Business Software",
+  "sub": "Customer Support & Success"
+ },
+ {
+  "name": "LogChimp",
+  "slug": "logchimp",
+  "sourceUrl": "https://openalternative.co/logchimp",
+  "description": "Open-source feedback management for product teams",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "1.1K",
+  "major": "Business Software",
+  "sub": "Customer Support & Success"
+ },
+ {
+  "name": "Reflet",
+  "slug": "reflet",
+  "sourceUrl": "https://openalternative.co/reflet",
+  "description": "Turn user feedback into features that matter",
+  "license_hint": "SSPL-1.0",
+  "stars_hint": "37",
+  "major": "Business Software",
+  "sub": "Customer Support & Success"
+ },
+ {
+  "name": "SAMA",
+  "slug": "sama",
+  "sourceUrl": "https://openalternative.co/sama",
+  "description": "Secure, scalable chat server for modern applications",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "158",
+  "major": "Security & Privacy",
+  "sub": "Data Security & Privacy"
+ },
+ {
+  "name": "Sayr",
+  "slug": "sayr",
+  "sourceUrl": "https://openalternative.co/sayr",
+  "description": "Bridge internal workflows with public collaboration",
+  "license_hint": null,
+  "stars_hint": "27",
+  "major": "Business Software",
+  "sub": "Project & Work Management"
+ },
+ {
+  "name": "Usertour",
+  "slug": "usertour",
+  "sourceUrl": "https://openalternative.co/usertour",
+  "description": "Create engaging product tours and user onboarding experiences",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "2.3K",
+  "major": "Business Software",
+  "sub": "Customer Support & Success"
+ },
+ {
+  "name": "UserTourKit",
+  "slug": "usertourkit",
+  "sourceUrl": "https://openalternative.co/usertourkit",
+  "description": "Lightweight, accessible product tours built for React developers",
+  "license_hint": "MIT",
+  "stars_hint": "67",
+  "major": "Business Software",
+  "sub": "Customer Support & Success"
+ },
+ {
+  "name": "Alokai",
+  "slug": "alokai",
+  "sourceUrl": "https://openalternative.co/alokai",
+  "description": "Build and deploy scalable storefronts with ease",
+  "license_hint": "MIT",
+  "stars_hint": "11K",
+  "major": "Developer Tools",
+  "sub": "Frameworks & Platforms"
+ },
+ {
+  "name": "Solidus",
+  "slug": "solidus",
+  "sourceUrl": "https://openalternative.co/solidus",
+  "description": "Flexible eCommerce platform for brands that stand out",
+  "license_hint": "BSD-3-Clause",
+  "stars_hint": "5.3K",
+  "major": "Business Software",
+  "sub": "E-commerce Platforms"
+ },
+ {
+  "name": "Spree Commerce",
+  "slug": "spree-commerce",
+  "sourceUrl": "https://openalternative.co/spree-commerce",
+  "description": "Open source headless commerce with REST API, no platform fees, built for B2B and marketplaces",
+  "license_hint": "BSD-3-Clause",
+  "stars_hint": "16K",
+  "major": "Business Software",
+  "sub": "E-commerce Platforms"
+ },
+ {
+  "name": "UnoPim",
+  "slug": "unopim",
+  "sourceUrl": "https://openalternative.co/unopim",
+  "description": "AI-powered PIM for managing product catalogs at scale",
+  "license_hint": "MIT",
+  "stars_hint": "11K",
+  "major": "Business Software",
+  "sub": "E-commerce Platforms"
+ },
+ {
+  "name": "Your Next Store (YNS)",
+  "slug": "yournextstore",
+  "sourceUrl": "https://openalternative.co/yournextstore",
+  "description": "Launch Your Store in Minutes, No Code Needed",
+  "license_hint": "MIT",
+  "stars_hint": "5.5K",
+  "major": "Business Software",
+  "sub": "E-commerce Platforms"
+ },
+ {
+  "name": "Macro Tasks",
+  "slug": "macro-tasks",
+  "sourceUrl": "https://openalternative.co/macro-tasks",
+  "description": "Task management with GitHub sync and AI agents for devs",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "4.4K",
+  "major": "Business Software",
+  "sub": "Project & Work Management"
+ },
+ {
+  "name": "Colanode",
+  "slug": "colanode",
+  "sourceUrl": "https://openalternative.co/colanode",
+  "description": "Self-hosted team workspace with chat, docs, and databases",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "5.2K",
+  "major": "Business Software",
+  "sub": "Collaboration & Communication"
+ },
+ {
+  "name": "Donetick",
+  "slug": "donetick",
+  "sourceUrl": "https://openalternative.co/donetick",
+  "description": "Smart task management for individuals and families",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "2.6K",
+  "major": "Business Software",
+  "sub": "Project & Work Management"
+ },
+ {
+  "name": "Ever Teams",
+  "slug": "ever-teams",
+  "sourceUrl": "https://openalternative.co/ever-teams",
+  "description": "Real-time work and project management platform",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "586",
+  "major": "Productivity & Utilities",
+  "sub": "Time & Task Management"
+ },
+ {
+  "name": "Fizzy",
+  "slug": "fizzy",
+  "sourceUrl": "https://openalternative.co/fizzy",
+  "description": "Modern kanban that's fast, fun, and refreshingly simple",
+  "license_hint": null,
+  "stars_hint": "8.2K",
+  "major": "Business Software",
+  "sub": "Project & Work Management"
+ },
+ {
+  "name": "GitLab",
+  "slug": "gitlab",
+  "sourceUrl": "https://openalternative.co/gitlab",
+  "description": "AI-powered DevSecOps for faster, secure software delivery",
+  "license_hint": "MIT",
+  "stars_hint": "25K",
+  "major": "Developer Tools",
+  "sub": "Version Control & Collaboration"
+ },
+ {
+  "name": "Huly",
+  "slug": "huly",
+  "sourceUrl": "https://openalternative.co/huly",
+  "description": "All-in-one workspace for project, chat, and docs",
+  "license_hint": "EPL-2.0",
+  "stars_hint": "28K",
+  "major": "Business Software",
+  "sub": "Collaboration & Communication"
+ },
+ {
+  "name": "Kan",
+  "slug": "kan",
+  "sourceUrl": "https://openalternative.co/kan",
+  "description": "Open source kanban boards with unlimited everything",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "5.7K",
+  "major": "Business Software",
+  "sub": "Project & Work Management"
+ },
+ {
+  "name": "Kanba",
+  "slug": "kanba",
+  "sourceUrl": "https://openalternative.co/kanba",
+  "description": "Beautiful Kanban boards with seamless payment integration",
+  "license_hint": "MIT",
+  "stars_hint": "657",
+  "major": "Business Software",
+  "sub": "Project & Work Management"
+ },
+ {
+  "name": "Kaneo",
+  "slug": "kaneo",
+  "sourceUrl": "https://openalternative.co/kaneo",
+  "description": "Simple, secure project management for development teams",
+  "license_hint": "MIT",
+  "stars_hint": "9.2K",
+  "major": "Business Software",
+  "sub": "Project & Work Management"
+ },
+ {
+  "name": "Kanri",
+  "slug": "kanri",
+  "sourceUrl": "https://openalternative.co/kanri",
+  "description": "Simplify your workflow with offline Kanban boards",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "2K",
+  "major": "Business Software",
+  "sub": "Project & Work Management"
+ },
+ {
+  "name": "Manage",
+  "slug": "manage",
+  "sourceUrl": "https://openalternative.co/manage",
+  "description": "Open-source project management inspired by Basecamp",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "71",
+  "major": "Business Software",
+  "sub": "Project & Work Management"
+ },
+ {
+  "name": "Operately",
+  "slug": "operately",
+  "sourceUrl": "https://openalternative.co/operately",
+  "description": "Open source company management for high-performance startups",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "561",
+  "major": "Business Software",
+  "sub": "Project & Work Management"
+ },
+ {
+  "name": "Orgnise",
+  "slug": "orgnise",
+  "sourceUrl": "https://openalternative.co/orgnise",
+  "description": "Effortlessly manage tasks, projects, and teams",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "247",
+  "major": "Business Software",
+  "sub": "Project & Work Management"
+ },
+ {
+  "name": "Shelve",
+  "slug": "shelve",
+  "sourceUrl": "https://openalternative.co/shelve",
+  "description": "Simplify project management for developers",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "457",
+  "major": "Developer Tools",
+  "sub": "Version Control & Collaboration"
+ },
+ {
+  "name": "ShipShipShip",
+  "slug": "shipshipship",
+  "sourceUrl": "https://openalternative.co/shipshipship",
+  "description": "Open-source changelog & roadmap platform for teams",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "299",
+  "major": "Content & Publishing",
+  "sub": "Publishing"
+ },
+ {
+  "name": "Super Productivity",
+  "slug": "super-productivity",
+  "sourceUrl": "https://openalternative.co/super-productivity",
+  "description": "Task manager built for deep work, privacy, and focus",
+  "license_hint": "MIT",
+  "stars_hint": "22K",
+  "major": "Productivity & Utilities",
+  "sub": "Time & Task Management"
+ },
+ {
+  "name": "Windshift",
+  "slug": "windshift",
+  "sourceUrl": "https://openalternative.co/windshift",
+  "description": "Self-hosted project management with boards and test tracking",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "210",
+  "major": "Business Software",
+  "sub": "Project & Work Management"
+ },
+ {
+  "name": "Worklenz",
+  "slug": "worklenz",
+  "sourceUrl": "https://openalternative.co/worklenz",
+  "description": "Open source agency management tool for streamlined success",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "3.2K",
+  "major": "Business Software",
+  "sub": "Project & Work Management"
+ },
+ {
+  "name": "Macro Chat",
+  "slug": "macro-chat",
+  "sourceUrl": "https://openalternative.co/macro-chat",
+  "description": "Team chat with email, tasks, and docs in one workspace",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "4.4K",
+  "major": "Business Software",
+  "sub": "Collaboration & Communication"
+ },
+ {
+  "name": "Busabase",
+  "slug": "busabase",
+  "sourceUrl": "https://openalternative.co/busabase",
+  "description": "A verified workspace where AI agents store and build knowledge",
+  "license_hint": "MIT",
+  "stars_hint": "232",
+  "major": "Business Software",
+  "sub": "Collaboration & Communication"
+ },
+ {
+  "name": "Buzz",
+  "slug": "buzz",
+  "sourceUrl": "https://openalternative.co/buzz",
+  "description": "Team chat, project management, and AI agents in one place",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "34K",
+  "major": "Business Software",
+  "sub": "Collaboration & Communication"
+ },
+ {
+  "name": "Campfire",
+  "slug": "campfire",
+  "sourceUrl": "https://openalternative.co/campfire",
+  "description": "Self-hosted group chat without recurring subscription fees",
+  "license_hint": "MIT",
+  "stars_hint": "4.6K",
+  "major": "Business Software",
+  "sub": "Collaboration & Communication"
+ },
+ {
+  "name": "Cinny",
+  "slug": "cinny",
+  "sourceUrl": "https://openalternative.co/cinny",
+  "description": "Secure and elegant Matrix client for seamless conversations",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "3.9K",
+  "major": "Security & Privacy",
+  "sub": "Data Security & Privacy"
+ },
+ {
+  "name": "dDocs",
+  "slug": "ddocs",
+  "sourceUrl": "https://openalternative.co/ddocs",
+  "description": "End-to-end encrypted collaborative document editor",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "416",
+  "major": "Business Software",
+  "sub": "Collaboration & Communication"
+ },
+ {
+  "name": "Docs",
+  "slug": "docs",
+  "sourceUrl": "https://openalternative.co/docs",
+  "description": "Create, edit and share documents with real-time collaboration",
+  "license_hint": "MIT",
+  "stars_hint": "17K",
+  "major": "Business Software",
+  "sub": "Collaboration & Communication"
+ },
+ {
+  "name": "Ethora",
+  "slug": "ethora",
+  "sourceUrl": "https://openalternative.co/ethora",
+  "description": "Messaging SDK with AI agents for web, iOS, and Android",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "547",
+  "major": "Productivity & Utilities",
+  "sub": "Automation"
+ },
+ {
+  "name": "Fluxer",
+  "slug": "fluxer",
+  "sourceUrl": "https://openalternative.co/fluxer",
+  "description": "Open source messaging with privacy and community focus",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "10K",
+  "major": "Security & Privacy",
+  "sub": "Data Security & Privacy"
+ },
+ {
+  "name": "Mezon",
+  "slug": "mezon",
+  "sourceUrl": "https://openalternative.co/mezon",
+  "description": "Create custom spaces to chat, game, and connect globally",
+  "license_hint": "MIT",
+  "stars_hint": "1.9K",
+  "major": "Business Software",
+  "sub": "Collaboration & Communication"
+ },
+ {
+  "name": "Quiet",
+  "slug": "quiet",
+  "sourceUrl": "https://openalternative.co/quiet",
+  "description": "Serverless team chat over Tor, no phone number needed",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "2.7K",
+  "major": "Security & Privacy",
+  "sub": "Data Security & Privacy"
+ },
+ {
+  "name": "Stoat",
+  "slug": "stoat",
+  "sourceUrl": "https://openalternative.co/stoat",
+  "description": "Group chat for friends and communities, without the baggage",
+  "license_hint": null,
+  "stars_hint": "3.3K",
+  "major": "Security & Privacy",
+  "sub": "Data Security & Privacy"
+ },
+ {
+  "name": "Sync-in",
+  "slug": "sync-in",
+  "sourceUrl": "https://openalternative.co/sync-in",
+  "description": "Open-source file storage with complete data sovereignty",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "1.8K",
+  "major": "Productivity & Utilities",
+  "sub": "File Management & Sync"
+ },
+ {
+  "name": "Twake Chat",
+  "slug": "twake-chat",
+  "sourceUrl": "https://openalternative.co/twake-chat",
+  "description": "Secure open source messaging for professional teams",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "166",
+  "major": "Business Software",
+  "sub": "Collaboration & Communication"
+ },
+ {
+  "name": "UnInbox",
+  "slug": "uninbox",
+  "sourceUrl": "https://openalternative.co/uninbox",
+  "description": "Transform team email into efficient collaborative workflows",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "1.8K",
+  "major": "Productivity & Utilities",
+  "sub": "Email & Communication"
+ },
+ {
+  "name": "Wire",
+  "slug": "wire",
+  "sourceUrl": "https://openalternative.co/wire",
+  "description": "Secure collaboration platform with end-to-end encryption",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "2.5K",
+  "major": "Security & Privacy",
+  "sub": "Data Security & Privacy"
+ },
+ {
+  "name": "Workadventure",
+  "slug": "workadventure",
+  "sourceUrl": "https://openalternative.co/workadventure",
+  "description": "Virtual office platform for engaging remote collaboration",
+  "license_hint": null,
+  "stars_hint": "5.8K",
+  "major": "Business Software",
+  "sub": "Collaboration & Communication"
+ },
+ {
+  "name": "Chobble Tickets",
+  "slug": "chobble-tickets",
+  "sourceUrl": "https://openalternative.co/chobble-tickets",
+  "description": "Event ticketing with no per-ticket platform fees",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "32",
+  "major": "Business Software",
+  "sub": "Scheduling & Event Management"
+ },
+ {
+  "name": "Hi.Events",
+  "slug": "hi-events",
+  "sourceUrl": "https://openalternative.co/hi-events",
+  "description": "Effortlessly manage events and sell tickets online",
+  "license_hint": null,
+  "stars_hint": "4K",
+  "major": "Business Software",
+  "sub": "Scheduling & Event Management"
+ },
+ {
+  "name": "Pretix",
+  "slug": "pretix",
+  "sourceUrl": "https://openalternative.co/pretix",
+  "description": "Sell tickets for events, conferences, and exhibitions",
+  "license_hint": null,
+  "stars_hint": "2.5K",
+  "major": "Business Software",
+  "sub": "Scheduling & Event Management"
+ },
+ {
+  "name": "Papermark",
+  "slug": "papermark",
+  "sourceUrl": "https://openalternative.co/papermark",
+  "description": "Open-source document sharing with powerful analytics",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "9.2K",
+  "major": "Business Software",
+  "sub": "Document Management & E-Signatures"
+ },
+ {
+  "name": "Papra",
+  "slug": "papra",
+  "sourceUrl": "https://openalternative.co/papra",
+  "description": "Organize and secure your documents in one central hub",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "5.5K",
+  "major": "Business Software",
+  "sub": "Document Management & E-Signatures"
+ },
+ {
+  "name": "Wraft",
+  "slug": "wraft",
+  "sourceUrl": "https://openalternative.co/wraft",
+  "description": "Scale document creation with automated workflows",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "167",
+  "major": "Business Software",
+  "sub": "Document Management & E-Signatures"
+ },
+ {
+  "name": "Formizee",
+  "slug": "formizee",
+  "sourceUrl": "https://openalternative.co/formizee",
+  "description": "Create and manage forms with ease",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "185",
+  "major": "Business Software",
+  "sub": "Forms & Surveys"
+ },
+ {
+  "name": "Ikiform",
+  "slug": "ikiform",
+  "sourceUrl": "https://openalternative.co/ikiform",
+  "description": "Create stunning forms with AI-powered builder and analytics",
+  "license_hint": "MIT",
+  "stars_hint": "355",
+  "major": "Business Software",
+  "sub": "Forms & Surveys"
+ },
+ {
+  "name": "OpnForm",
+  "slug": "opnform",
+  "sourceUrl": "https://openalternative.co/opnform",
+  "description": "Create powerful forms with ease and flexibility",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "3.7K",
+  "major": "Developer Tools",
+  "sub": "Frameworks & Platforms"
+ },
+ {
+  "name": "Palform",
+  "slug": "palform",
+  "sourceUrl": "https://openalternative.co/palform",
+  "description": "Secure, encrypted forms with advanced features",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "45",
+  "major": "Developer Tools",
+  "sub": "Frameworks & Platforms"
+ },
+ {
+  "name": "Openlane",
+  "slug": "openlane",
+  "sourceUrl": "https://openalternative.co/openlane",
+  "description": "Continuous compliance automation for SOC 2, ISO 27001 & more",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "310",
+  "major": "Business Software",
+  "sub": "Compliance & Risk Management"
+ },
+ {
+  "name": "Probo",
+  "slug": "probo",
+  "sourceUrl": "https://openalternative.co/probo",
+  "description": "Managed compliance for SOC 2, ISO 27001, HIPAA, and more",
+  "license_hint": "MIT",
+  "stars_hint": "1.4K",
+  "major": "Business Software",
+  "sub": "Compliance & Risk Management"
+ },
+ {
+  "name": "Ballerine",
+  "slug": "ballerine",
+  "sourceUrl": "https://openalternative.co/ballerine",
+  "description": "AI agents that transform merchant risk decisions at scale",
+  "license_hint": null,
+  "stars_hint": "2.4K",
+  "major": "Miscellaneous",
+  "sub": "Finance & Fintech"
+ },
+ {
+  "name": "c15t",
+  "slug": "c15t",
+  "sourceUrl": "https://openalternative.co/c15t",
+  "description": "Build privacy-compliant cookie banners with full control",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "1.9K",
+  "major": "Business Software",
+  "sub": "Compliance & Risk Management"
+ },
+ {
+  "name": "Comp AI",
+  "slug": "comp",
+  "sourceUrl": "https://openalternative.co/comp",
+  "description": "Get audit-ready for SOC 2, ISO 27001, HIPAA, and GDPR",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "2K",
+  "major": "Business Software",
+  "sub": "Compliance & Risk Management"
+ },
+ {
+  "name": "OpenPolicy",
+  "slug": "openpolicy",
+  "sourceUrl": "https://openalternative.co/openpolicy",
+  "description": "Generate legal policies directly from TypeScript code",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "165",
+  "major": "Business Software",
+  "sub": "Compliance & Risk Management"
+ },
+ {
+  "name": "CRM",
+  "slug": "crm",
+  "sourceUrl": "https://openalternative.co/crm",
+  "description": "An agentic CRM that keeps records current automatically",
+  "license_hint": "MIT",
+  "stars_hint": "11K",
+  "major": "Business Software",
+  "sub": "CRM & Sales"
+ },
+ {
+  "name": "Macro CRM",
+  "slug": "macro-crm",
+  "sourceUrl": "https://openalternative.co/macro-crm",
+  "description": "A self-building CRM powered by your email",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "4.4K",
+  "major": "Business Software",
+  "sub": "CRM & Sales"
+ },
+ {
+  "name": "Atomic CRM",
+  "slug": "atomic-crm",
+  "sourceUrl": "https://openalternative.co/atomic-crm",
+  "description": "Open-source CRM toolkit for personalized solutions",
+  "license_hint": "MIT",
+  "stars_hint": "1.3K",
+  "major": "Business Software",
+  "sub": "CRM & Sales"
+ },
+ {
+  "name": "Frappe CRM",
+  "slug": "frappe-crm",
+  "sourceUrl": "https://openalternative.co/frappe-crm",
+  "description": "Open-source CRM that puts simplicity and control first",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "3.6K",
+  "major": "Business Software",
+  "sub": "CRM & Sales"
+ },
+ {
+  "name": "Malak",
+  "slug": "malak",
+  "sourceUrl": "https://openalternative.co/malak",
+  "description": "Streamline investor relations and fundraising management",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "61",
+  "major": "Business Software",
+  "sub": "CRM & Sales"
+ },
+ {
+  "name": "Open Mercato",
+  "slug": "open-mercato",
+  "sourceUrl": "https://openalternative.co/open-mercato",
+  "description": "AI-native CRM/ERP foundation with 80% already built",
+  "license_hint": "MIT",
+  "stars_hint": "1.8K",
+  "major": "Business Software",
+  "sub": "ERP & Operations"
+ },
+ {
+  "name": "Relaticle",
+  "slug": "relaticle",
+  "sourceUrl": "https://openalternative.co/relaticle",
+  "description": "Self-hosted CRM with built-in AI chat and agent tools",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "1.7K",
+  "major": "Business Software",
+  "sub": "CRM & Sales"
+ },
+ {
+  "name": "Warpdrive",
+  "slug": "warpdrive",
+  "sourceUrl": "https://openalternative.co/warpdrive",
+  "description": "Self-hosted CRM for business development teams",
+  "license_hint": "MIT",
+  "stars_hint": "72",
+  "major": "Business Software",
+  "sub": "CRM & Sales"
+ },
+ {
+  "name": "Shelf",
+  "slug": "shelf",
+  "sourceUrl": "https://openalternative.co/shelf",
+  "description": "Track gear, bookings, and inventory without spreadsheets",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "3K",
+  "major": "Business Software",
+  "sub": "ERP & Operations"
+ },
+ {
+  "name": "Mike",
+  "slug": "mike",
+  "sourceUrl": "https://openalternative.co/mike",
+  "description": "Open-source legal AI that law firms control and extend",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "4.3K",
+  "major": "Business Software",
+  "sub": "Legal"
+ },
+ {
+  "name": "Anki",
+  "slug": "anki",
+  "sourceUrl": "https://openalternative.co/anki",
+  "description": "Spaced repetition flashcards that remember for you",
+  "license_hint": null,
+  "stars_hint": "32K",
+  "major": "Business Software",
+  "sub": "Education"
+ },
+ {
+  "name": "Bluesky",
+  "slug": "bluesky",
+  "sourceUrl": "https://openalternative.co/bluesky",
+  "description": "Social media reimagined for community and connection",
+  "license_hint": "MIT",
+  "stars_hint": "18K",
+  "major": "Community & Social",
+  "sub": "Social Networking"
+ },
+ {
+  "name": "Hey",
+  "slug": "hey",
+  "sourceUrl": "https://openalternative.co/hey",
+  "description": "Decentralized social networking for the Web3 era",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "29K",
+  "major": "Miscellaneous",
+  "sub": "Cryptocurrency & Blockchain"
+ },
+ {
+  "name": "Lemmy",
+  "slug": "lemmy",
+  "sourceUrl": "https://openalternative.co/lemmy",
+  "description": "Build your own federated discussion community",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "15K",
+  "major": "Community & Social",
+  "sub": "Social Networking"
+ },
+ {
+  "name": "Loops",
+  "slug": "loops",
+  "sourceUrl": "https://openalternative.co/loops",
+  "description": "Federated short videos without corporate control",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "455",
+  "major": "Community & Social",
+  "sub": "Social Networking"
+ },
+ {
+  "name": "Mastodon",
+  "slug": "mastodon",
+  "sourceUrl": "https://openalternative.co/mastodon",
+  "description": "Decentralized social networking in your control",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "50K",
+  "major": "Community & Social",
+  "sub": "Social Networking"
+ },
+ {
+  "name": "Pixelfed",
+  "slug": "pixelfed",
+  "sourceUrl": "https://openalternative.co/pixelfed",
+  "description": "Ad-free photo sharing with privacy and federation",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "7.1K",
+  "major": "Community & Social",
+  "sub": "Social Networking"
+ },
+ {
+  "name": "Apache Answer",
+  "slug": "apache-answer",
+  "sourceUrl": "https://openalternative.co/apache-answer",
+  "description": "Open-source Q&A platform for knowledge sharing",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "16K",
+  "major": "Content & Publishing",
+  "sub": "Community Platforms"
+ },
+ {
+  "name": "LearnHouse",
+  "slug": "learnhouse",
+  "sourceUrl": "https://openalternative.co/learnhouse",
+  "description": "Create, sell, and manage online courses with full control",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "2.3K",
+  "major": "Content & Publishing",
+  "sub": "Learning Management Systems (LMS)"
+ },
+ {
+  "name": "Storyden",
+  "slug": "storyden",
+  "sourceUrl": "https://openalternative.co/storyden",
+  "description": "Build lasting communities with modern forum technology",
+  "license_hint": "MPL-2.0",
+  "stars_hint": "338",
+  "major": "Content & Publishing",
+  "sub": "Community Platforms"
+ },
+ {
+  "name": "Hyvor Blogs",
+  "slug": "hyvor-blogs",
+  "sourceUrl": "https://openalternative.co/hyvor-blogs",
+  "description": "Blogging platform with built-in SEO, themes, and APIs",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "17",
+  "major": "Content & Publishing",
+  "sub": "Blogging & Personal Sites"
+ },
+ {
+  "name": "Nonograph",
+  "slug": "nonograph",
+  "sourceUrl": "https://openalternative.co/nonograph",
+  "description": "Anonymous publishing with no accounts, tracking, or logins",
+  "license_hint": "Unlicense",
+  "stars_hint": "314",
+  "major": "Content & Publishing",
+  "sub": "Blogging & Personal Sites"
+ },
+ {
+  "name": "Pagecord",
+  "slug": "pagecord",
+  "sourceUrl": "https://openalternative.co/pagecord",
+  "description": "Personal blogging platform that meets you where you write",
+  "license_hint": "MIT",
+  "stars_hint": "190",
+  "major": "Content & Publishing",
+  "sub": "Blogging & Personal Sites"
+ },
+ {
+  "name": "Sigle",
+  "slug": "sigle",
+  "sourceUrl": "https://openalternative.co/sigle",
+  "description": "Web3 writing platform for content creators and crypto enthusiasts",
+  "license_hint": "MIT",
+  "stars_hint": "489",
+  "major": "Miscellaneous",
+  "sub": "Cryptocurrency & Blockchain"
+ },
+ {
+  "name": "WordPress",
+  "slug": "wordpress",
+  "sourceUrl": "https://openalternative.co/wordpress",
+  "description": "Create, customize, and manage your website with ease",
+  "license_hint": null,
+  "stars_hint": "21K",
+  "major": "Developer Tools",
+  "sub": "Website Builders"
+ },
+ {
+  "name": "Zenblog",
+  "slug": "zenblog",
+  "sourceUrl": "https://openalternative.co/zenblog",
+  "description": "Effortless blogging for developers and tech enthusiasts",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "253",
+  "major": "Content & Publishing",
+  "sub": "Documentation & Knowledge Base"
+ },
+ {
+  "name": "Changes.Page",
+  "slug": "changes-page",
+  "sourceUrl": "https://openalternative.co/changes-page",
+  "description": "Effortless changelog creation for open-source projects",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "284",
+  "major": "Content & Publishing",
+  "sub": "Publishing"
+ },
+ {
+  "name": "Firecamp",
+  "slug": "firecamp",
+  "sourceUrl": "https://openalternative.co/firecamp",
+  "description": "Unified API development ecosystem for modern teams",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "2.6K",
+  "major": "Developer Tools",
+  "sub": "API Development & Testing"
+ },
+ {
+  "name": "Fumadocs",
+  "slug": "fumadocs",
+  "sourceUrl": "https://openalternative.co/fumadocs",
+  "description": "Build beautiful documentation sites with Next.js",
+  "license_hint": "MIT",
+  "stars_hint": "13K",
+  "major": "Content & Publishing",
+  "sub": "Documentation & Knowledge Base"
+ },
+ {
+  "name": "Scalar",
+  "slug": "scalar",
+  "sourceUrl": "https://openalternative.co/scalar",
+  "description": "Open-source API documentation and testing platform",
+  "license_hint": "MIT",
+  "stars_hint": "16K",
+  "major": "Content & Publishing",
+  "sub": "Documentation & Knowledge Base"
+ },
+ {
+  "name": "Typemill",
+  "slug": "typemill",
+  "sourceUrl": "https://openalternative.co/typemill",
+  "description": "Open-source CMS for text-driven websites",
+  "license_hint": "MIT",
+  "stars_hint": "619",
+  "major": "Content & Publishing",
+  "sub": "Content Management Systems (CMS)"
+ },
+ {
+  "name": "Vrite",
+  "slug": "vrite",
+  "sourceUrl": "https://openalternative.co/vrite",
+  "description": "Collaborative content creation for technical teams",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "2K",
+  "major": "Productivity & Utilities",
+  "sub": "Note Taking & Knowledge Management"
+ },
+ {
+  "name": "xyd",
+  "slug": "xyd",
+  "sourceUrl": "https://openalternative.co/xyd",
+  "description": "Transform documentation with developer-focused simplicity",
+  "license_hint": "MIT",
+  "stars_hint": "114",
+  "major": "Content & Publishing",
+  "sub": "Documentation & Knowledge Base"
+ },
+ {
+  "name": "Builder",
+  "slug": "builder",
+  "sourceUrl": "https://openalternative.co/builder",
+  "description": "Visual development platform for modern web experiences",
+  "license_hint": "MIT",
+  "stars_hint": "8.8K",
+  "major": "Developer Tools",
+  "sub": "Website Builders"
+ },
+ {
+  "name": "Craft CMS",
+  "slug": "craft-cms",
+  "sourceUrl": "https://openalternative.co/craft-cms",
+  "description": "Flexible CMS for custom digital experiences",
+  "license_hint": null,
+  "stars_hint": "3.6K",
+  "major": "Content & Publishing",
+  "sub": "Content Management Systems (CMS)"
+ },
+ {
+  "name": "Drupal",
+  "slug": "drupal",
+  "sourceUrl": "https://openalternative.co/drupal",
+  "description": "Build powerful websites with the open-source CMS",
+  "license_hint": "GPL-2.0",
+  "stars_hint": "4.3K",
+  "major": "Content & Publishing",
+  "sub": "Content Management Systems (CMS)"
+ },
+ {
+  "name": "KeystoneJS",
+  "slug": "keystonejs",
+  "sourceUrl": "https://openalternative.co/keystonejs",
+  "description": "Flexible, scalable Node.js CMS and app framework",
+  "license_hint": "MIT",
+  "stars_hint": "10K",
+  "major": "Developer Tools",
+  "sub": "Frameworks & Platforms"
+ },
+ {
+  "name": "Marble CMS",
+  "slug": "marble-cms",
+  "sourceUrl": "https://openalternative.co/marble-cms",
+  "description": "Simple content management for modern sites",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "384",
+  "major": "Content & Publishing",
+  "sub": "Content Management Systems (CMS)"
+ },
+ {
+  "name": "ProcessWire",
+  "slug": "processwire",
+  "sourceUrl": "https://openalternative.co/processwire",
+  "description": "Flexible CMS for developers, powerful for clients",
+  "license_hint": null,
+  "stars_hint": "1.2K",
+  "major": "Developer Tools",
+  "sub": "Frameworks & Platforms"
+ },
+ {
+  "name": "Statamic",
+  "slug": "statamic",
+  "sourceUrl": "https://openalternative.co/statamic",
+  "description": "Craft flexible, powerful websites with ease",
+  "license_hint": null,
+  "stars_hint": "4.9K",
+  "major": "Content & Publishing",
+  "sub": "Content Management Systems (CMS)"
+ },
+ {
+  "name": "TinaCMS",
+  "slug": "tinacms",
+  "sourceUrl": "https://openalternative.co/tinacms",
+  "description": "Visual editing for your Git-based content",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "14K",
+  "major": "Content & Publishing",
+  "sub": "Content Management Systems (CMS)"
+ },
+ {
+  "name": "Twill CMS",
+  "slug": "twill-cms",
+  "sourceUrl": "https://openalternative.co/twill-cms",
+  "description": "Craft flexible, beautiful digital experiences with ease",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "4K",
+  "major": "Content & Publishing",
+  "sub": "Content Management Systems (CMS)"
+ },
+ {
+  "name": "Vvveb CMS",
+  "slug": "vvveb-cms",
+  "sourceUrl": "https://openalternative.co/vvveb-cms",
+  "description": "Open source CMS with powerful drag-and-drop builder",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "1.2K",
+  "major": "Developer Tools",
+  "sub": "Website Builders"
+ },
+ {
+  "name": "Webiny",
+  "slug": "webiny",
+  "sourceUrl": "https://openalternative.co/webiny",
+  "description": "Open-source serverless CMS for modern web projects",
+  "license_hint": "MIT",
+  "stars_hint": "8K",
+  "major": "Developer Tools",
+  "sub": "Frameworks & Platforms"
+ },
+ {
+  "name": "Valour",
+  "slug": "valour",
+  "sourceUrl": "https://openalternative.co/valour",
+  "description": "Community-driven platform built for transparency",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "400",
+  "major": "Content & Publishing",
+  "sub": "Community Platforms"
+ },
+ {
+  "name": "ClassroomIO",
+  "slug": "classroomio",
+  "sourceUrl": "https://openalternative.co/classroomio",
+  "description": "Build your custom learning academy in minutes",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "1.7K",
+  "major": "Content & Publishing",
+  "sub": "Learning Management Systems (LMS)"
+ },
+ {
+  "name": "CourseLit",
+  "slug": "courselit",
+  "sourceUrl": "https://openalternative.co/courselit",
+  "description": "Create, sell, and manage online courses with ease",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "1.3K",
+  "major": "Content & Publishing",
+  "sub": "Learning Management Systems (LMS)"
+ },
+ {
+  "name": "Tolgee",
+  "slug": "tolgee",
+  "sourceUrl": "https://openalternative.co/tolgee",
+  "description": "Open-source localization platform for multilingual apps",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "4.1K",
+  "major": "Content & Publishing",
+  "sub": "Publishing"
+ },
+ {
+  "name": "Languine",
+  "slug": "languine",
+  "sourceUrl": "https://openalternative.co/languine",
+  "description": "Automated localization for modern development teams",
+  "license_hint": "MIT",
+  "stars_hint": "2K",
+  "major": "Content & Publishing",
+  "sub": "Publishing"
+ },
+ {
+  "name": "Lingo.dev",
+  "slug": "lingo",
+  "sourceUrl": "https://openalternative.co/lingo",
+  "description": "Automated translations that scale with your code and commits",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "5.4K",
+  "major": "Content & Publishing",
+  "sub": "Publishing"
+ },
+ {
+  "name": "imgproxy",
+  "slug": "imgproxy",
+  "sourceUrl": "https://openalternative.co/imgproxy",
+  "description": "On-the-fly image resizing and conversion for your own server",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "11K",
+  "major": "Content & Publishing",
+  "sub": "Digital Asset Management (DAM)"
+ },
+ {
+  "name": "Lychee",
+  "slug": "lychee",
+  "sourceUrl": "https://openalternative.co/lychee",
+  "description": "Self-hosted photo management with full control",
+  "license_hint": "MIT",
+  "stars_hint": "4.3K",
+  "major": "Content & Publishing",
+  "sub": "Digital Asset Management (DAM)"
+ },
+ {
+  "name": "Openinary",
+  "slug": "openinary",
+  "sourceUrl": "https://openalternative.co/openinary",
+  "description": "Self-hostable image and video delivery with URL transforms",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "405",
+  "major": "Content & Publishing",
+  "sub": "Digital Asset Management (DAM)"
+ },
+ {
+  "name": "OpenPanel",
+  "slug": "openpanel",
+  "sourceUrl": "https://openalternative.co/openpanel",
+  "description": "Cookie-free web and product analytics, self-hostable",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "7K",
+  "major": "Data & Analytics",
+  "sub": "Web & Product Analytics"
+ },
+ {
+  "name": "Aptabase",
+  "slug": "aptabase",
+  "sourceUrl": "https://openalternative.co/aptabase",
+  "description": "Privacy-first analytics for mobile and desktop apps",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "1.8K",
+  "major": "Data & Analytics",
+  "sub": "Web & Product Analytics"
+ },
+ {
+  "name": "Betterlytics",
+  "slug": "betterlytics",
+  "sourceUrl": "https://openalternative.co/betterlytics",
+  "description": "Privacy-first, cookieless analytics without consent banners",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "176",
+  "major": "Data & Analytics",
+  "sub": "Web & Product Analytics"
+ },
+ {
+  "name": "Databuddy",
+  "slug": "databuddy",
+  "sourceUrl": "https://openalternative.co/databuddy",
+  "description": "Privacy-first analytics without cookies or tracking",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "1.2K",
+  "major": "Data & Analytics",
+  "sub": "Web & Product Analytics"
+ },
+ {
+  "name": "GrowthBook",
+  "slug": "growthbook",
+  "sourceUrl": "https://openalternative.co/growthbook",
+  "description": "Open-source A/B testing and feature flagging platform",
+  "license_hint": "MIT",
+  "stars_hint": "8.4K",
+  "major": "Security & Privacy",
+  "sub": "Application Security"
+ },
+ {
+  "name": "HitKeep",
+  "slug": "hitkeep",
+  "sourceUrl": "https://openalternative.co/hitkeep",
+  "description": "Privacy-first analytics you own completely",
+  "license_hint": "MIT",
+  "stars_hint": "89",
+  "major": "Data & Analytics",
+  "sub": "Web & Product Analytics"
+ },
+ {
+  "name": "Litlyx",
+  "slug": "litlyx",
+  "sourceUrl": "https://openalternative.co/litlyx",
+  "description": "Cookie-less analytics for privacy-focused insights",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "1.7K",
+  "major": "Data & Analytics",
+  "sub": "Web & Product Analytics"
+ },
+ {
+  "name": "OpenWebAnalytics",
+  "slug": "openwebanalytics",
+  "sourceUrl": "https://openalternative.co/openwebanalytics",
+  "description": "Powerful, customizable web analytics for your site",
+  "license_hint": "GPL-2.0",
+  "stars_hint": "2.7K",
+  "major": "Data & Analytics",
+  "sub": "Web & Product Analytics"
+ },
+ {
+  "name": "Prisme Analytics",
+  "slug": "prisme-analytics",
+  "sourceUrl": "https://openalternative.co/prisme-analytics",
+  "description": "Privacy-friendly web analytics for data-driven decisions",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "135",
+  "major": "Data & Analytics",
+  "sub": "Web & Product Analytics"
+ },
+ {
+  "name": "Rybbit",
+  "slug": "rybbit",
+  "sourceUrl": "https://openalternative.co/rybbit",
+  "description": "Understand your audience with privacy-first analytics.",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "13K",
+  "major": "Data & Analytics",
+  "sub": "Web & Product Analytics"
+ },
+ {
+  "name": "Swetrix",
+  "slug": "swetrix",
+  "sourceUrl": "https://openalternative.co/swetrix",
+  "description": "Cookieless, privacy-first web analytics without the complexity",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "1.2K",
+  "major": "Data & Analytics",
+  "sub": "Web & Product Analytics"
+ },
+ {
+  "name": "Tianji",
+  "slug": "tianji",
+  "sourceUrl": "https://openalternative.co/tianji",
+  "description": "Website analytics, uptime monitoring, and server status in one",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "3.1K",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "Trench",
+  "slug": "trench",
+  "sourceUrl": "https://openalternative.co/trench",
+  "description": "Fast, scalable analytics infrastructure",
+  "license_hint": "MIT",
+  "stars_hint": "1.7K",
+  "major": "Data & Analytics",
+  "sub": "Data Warehousing & Processing"
+ },
+ {
+  "name": "Vemetric",
+  "slug": "vemetric",
+  "sourceUrl": "https://openalternative.co/vemetric",
+  "description": "Simple, powerful web & product analytics for user insights",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "393",
+  "major": "Data & Analytics",
+  "sub": "Web & Product Analytics"
+ },
+ {
+  "name": "Airbyte",
+  "slug": "airbyte",
+  "sourceUrl": "https://openalternative.co/airbyte",
+  "description": "Open-source data integration for modern teams",
+  "license_hint": "Elastic-2.0",
+  "stars_hint": "22K",
+  "major": "Data & Analytics",
+  "sub": "Data Engineering & Integration"
+ },
+ {
+  "name": "CloudQuery",
+  "slug": "cloudquery",
+  "sourceUrl": "https://openalternative.co/cloudquery",
+  "description": "Sync and transform data from any source to any destination",
+  "license_hint": "MPL-2.0",
+  "stars_hint": "6.5K",
+  "major": "Data & Analytics",
+  "sub": "Data Engineering & Integration"
+ },
+ {
+  "name": "CocoIndex",
+  "slug": "cocoindex",
+  "sourceUrl": "https://openalternative.co/cocoindex",
+  "description": "Ultra-fast data transformation for AI with lineage",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "12K",
+  "major": "Data & Analytics",
+  "sub": "Data Engineering & Integration"
+ },
+ {
+  "name": "Cube",
+  "slug": "cube",
+  "sourceUrl": "https://openalternative.co/cube",
+  "description": "Unify data models and metrics across your entire stack",
+  "license_hint": null,
+  "stars_hint": "21K",
+  "major": "Data & Analytics",
+  "sub": "Data Engineering & Integration"
+ },
+ {
+  "name": "Elementary Data",
+  "slug": "elementary-data",
+  "sourceUrl": "https://openalternative.co/elementary-data",
+  "description": "Data observability for modern data teams",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "2.4K",
+  "major": "Data & Analytics",
+  "sub": "Data Engineering & Integration"
+ },
+ {
+  "name": "Impler",
+  "slug": "impler",
+  "sourceUrl": "https://openalternative.co/impler",
+  "description": "Seamless data import for your applications",
+  "license_hint": "MIT",
+  "stars_hint": "291",
+  "major": "Data & Analytics",
+  "sub": "Data Engineering & Integration"
+ },
+ {
+  "name": "Logstash",
+  "slug": "logstash",
+  "sourceUrl": "https://openalternative.co/logstash",
+  "description": "Centralize, transform, and stash your data",
+  "license_hint": null,
+  "stars_hint": "15K",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "Mage",
+  "slug": "mage",
+  "sourceUrl": "https://openalternative.co/mage",
+  "description": "Magical data pipeline tool for seamless transformations",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "8.8K",
+  "major": "Infrastructure & Operations",
+  "sub": "Orchestration & Scheduling"
+ },
+ {
+  "name": "Open Wearables",
+  "slug": "open-wearables",
+  "sourceUrl": "https://openalternative.co/open-wearables",
+  "description": "Convert wearable data into actionable health insights with open algorithms",
+  "license_hint": "MIT",
+  "stars_hint": "2.6K",
+  "major": "Data & Analytics",
+  "sub": "Data Engineering & Integration"
+ },
+ {
+  "name": "Orbital",
+  "slug": "orbital",
+  "sourceUrl": "https://openalternative.co/orbital",
+  "description": "Connect APIs, databases, and streams without glue code",
+  "license_hint": null,
+  "stars_hint": "360",
+  "major": "Developer Tools",
+  "sub": "Integration Platforms"
+ },
+ {
+  "name": "Apache Superset",
+  "slug": "apache-superset",
+  "sourceUrl": "https://openalternative.co/apache-superset",
+  "description": "Self-serve data exploration and dashboard builder",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "75K",
+  "major": "Data & Analytics",
+  "sub": "Business Intelligence & Reporting"
+ },
+ {
+  "name": "Azimutt",
+  "slug": "azimutt",
+  "sourceUrl": "https://openalternative.co/azimutt",
+  "description": "Next-Gen ERD: Design, Explore, Document and Analyze your database.",
+  "license_hint": "MIT",
+  "stars_hint": "2.2K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "Chartbrew",
+  "slug": "chartbrew",
+  "sourceUrl": "https://openalternative.co/chartbrew",
+  "description": "Create stunning data visualizations with ease",
+  "license_hint": "MIT",
+  "stars_hint": "4.1K",
+  "major": "Developer Tools",
+  "sub": "Frameworks & Platforms"
+ },
+ {
+  "name": "drawDB",
+  "slug": "drawdb",
+  "sourceUrl": "https://openalternative.co/drawdb",
+  "description": "Design database diagrams and generate SQL scripts instantly",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "40K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "Evidence",
+  "slug": "evidence",
+  "sourceUrl": "https://openalternative.co/evidence",
+  "description": "Transform SQL into beautiful data stories",
+  "license_hint": "MIT",
+  "stars_hint": "7K",
+  "major": "Data & Analytics",
+  "sub": "Business Intelligence & Reporting"
+ },
+ {
+  "name": "Frappe Insights",
+  "slug": "frappe-insights",
+  "sourceUrl": "https://openalternative.co/frappe-insights",
+  "description": "Powerful open-source business intelligence for data-driven decisions",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "1K",
+  "major": "Data & Analytics",
+  "sub": "Business Intelligence & Reporting"
+ },
+ {
+  "name": "Mermaid",
+  "slug": "mermaid",
+  "sourceUrl": "https://openalternative.co/mermaid",
+  "description": "Text-based diagramming that renders in code and docs",
+  "license_hint": "MIT",
+  "stars_hint": "90K",
+  "major": "Data & Analytics",
+  "sub": "Business Intelligence & Reporting"
+ },
+ {
+  "name": "Apache Cloudberry",
+  "slug": "cloudberry",
+  "sourceUrl": "https://openalternative.co/cloudberry",
+  "description": "Unlock Data's Potential with Open Source Power",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "1.4K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "Apache Pinot",
+  "slug": "apache-pinot",
+  "sourceUrl": "https://openalternative.co/apache-pinot",
+  "description": "Distributed OLAP database for real-time analytics at scale",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "6.1K",
+  "major": "Data & Analytics",
+  "sub": "Data Warehousing & Processing"
+ },
+ {
+  "name": "ClickHouse",
+  "slug": "clickhouse",
+  "sourceUrl": "https://openalternative.co/clickhouse",
+  "description": "Lightning-fast analytics for massive datasets",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "50K",
+  "major": "Data & Analytics",
+  "sub": "Data Warehousing & Processing"
+ },
+ {
+  "name": "Databend",
+  "slug": "databend",
+  "sourceUrl": "https://openalternative.co/databend",
+  "description": "Cloud-native data warehouse for lightning-fast analytics",
+  "license_hint": null,
+  "stars_hint": "9.5K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "Timeplus",
+  "slug": "timeplus",
+  "sourceUrl": "https://openalternative.co/timeplus",
+  "description": "Real-time stream processing made simple and affordable",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "2.3K",
+  "major": "Data & Analytics",
+  "sub": "Data Warehousing & Processing"
+ },
+ {
+  "name": "Firecrawl",
+  "slug": "firecrawl",
+  "sourceUrl": "https://openalternative.co/firecrawl",
+  "description": "Turn any website into clean, AI-ready data via API",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "184K",
+  "major": "Data & Analytics",
+  "sub": "Data Extraction & Web Scraping"
+ },
+ {
+  "name": "Crawl4AI",
+  "slug": "crawl4ai",
+  "sourceUrl": "https://openalternative.co/crawl4ai",
+  "description": "LLM-ready web crawler built for AI data pipelines",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "84K",
+  "major": "Data & Analytics",
+  "sub": "Data Extraction & Web Scraping"
+ },
+ {
+  "name": "Maxun",
+  "slug": "maxun",
+  "sourceUrl": "https://openalternative.co/maxun",
+  "description": "No-code web scraping, crawling, and extraction platform",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "18K",
+  "major": "Data & Analytics",
+  "sub": "Data Extraction & Web Scraping"
+ },
+ {
+  "name": "OpenSERP",
+  "slug": "openserp",
+  "sourceUrl": "https://openalternative.co/openserp",
+  "description": "Self-hosted SERP API for Google, Bing, Yandex, and more",
+  "license_hint": "MIT",
+  "stars_hint": "1.4K",
+  "major": "Data & Analytics",
+  "sub": "Data Extraction & Web Scraping"
+ },
+ {
+  "name": "Alacritty",
+  "slug": "alacritty",
+  "sourceUrl": "https://openalternative.co/alacritty",
+  "description": "High-performance terminal with GPU acceleration",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "66K",
+  "major": "Developer Tools",
+  "sub": "Terminals"
+ },
+ {
+  "name": "Ghostty",
+  "slug": "ghostty",
+  "sourceUrl": "https://openalternative.co/ghostty",
+  "description": "Fast GPU-accelerated terminal with native UI design",
+  "license_hint": "MIT",
+  "stars_hint": "62K",
+  "major": "Developer Tools",
+  "sub": "Terminals"
+ },
+ {
+  "name": "iTerm 2",
+  "slug": "iterm-2",
+  "sourceUrl": "https://openalternative.co/iterm-2",
+  "description": "Advanced terminal with modern features for Mac developers",
+  "license_hint": "GPL-2.0",
+  "stars_hint": "18K",
+  "major": "Developer Tools",
+  "sub": "Terminals"
+ },
+ {
+  "name": "Kitty",
+  "slug": "kitty",
+  "sourceUrl": "https://openalternative.co/kitty",
+  "description": "GPU-accelerated terminal built for power users",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "35K",
+  "major": "Developer Tools",
+  "sub": "Terminals"
+ },
+ {
+  "name": "Warp",
+  "slug": "warp",
+  "sourceUrl": "https://openalternative.co/warp",
+  "description": "A modern terminal built around AI coding agents",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "65K",
+  "major": "Developer Tools",
+  "sub": "Terminals"
+ },
+ {
+  "name": "WaveTerm",
+  "slug": "waveterm",
+  "sourceUrl": "https://openalternative.co/waveterm",
+  "description": "Cross-platform terminal with AI built in",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "22K",
+  "major": "Developer Tools",
+  "sub": "Terminals"
+ },
+ {
+  "name": "WezTerm",
+  "slug": "wezterm",
+  "sourceUrl": "https://openalternative.co/wezterm",
+  "description": "GPU-accelerated terminal emulator with multiplexing across all platforms",
+  "license_hint": "MIT",
+  "stars_hint": "29K",
+  "major": "Developer Tools",
+  "sub": "Terminals"
+ },
+ {
+  "name": "Zellij",
+  "slug": "zellij",
+  "sourceUrl": "https://openalternative.co/zellij",
+  "description": "Organize terminal sessions with built-in layouts, tabs, and panes",
+  "license_hint": "MIT",
+  "stars_hint": "36K",
+  "major": "Developer Tools",
+  "sub": "Terminals"
+ },
+ {
+  "name": "Opengrep",
+  "slug": "opengrep",
+  "sourceUrl": "https://openalternative.co/opengrep",
+  "description": "Open-source code security engine for developers",
+  "license_hint": "LGPL-2.1",
+  "stars_hint": "3.1K",
+  "major": "Security & Privacy",
+  "sub": "Threat Detection & Response"
+ },
+ {
+  "name": "AITable",
+  "slug": "apitable",
+  "sourceUrl": "https://openalternative.co/apitable",
+  "description": "Visual database for workflow automation across apps",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "16K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "Automa",
+  "slug": "automa",
+  "sourceUrl": "https://openalternative.co/automa",
+  "description": "Build AI agents and RPA workflows without writing code",
+  "license_hint": null,
+  "stars_hint": "22K",
+  "major": "Productivity & Utilities",
+  "sub": "Automation"
+ },
+ {
+  "name": "Bknd",
+  "slug": "bknd",
+  "sourceUrl": "https://openalternative.co/bknd",
+  "description": "Feature-rich backend that runs anywhere you need it",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "3.8K",
+  "major": "Developer Tools",
+  "sub": "Frameworks & Platforms"
+ },
+ {
+  "name": "Capgo",
+  "slug": "capgo",
+  "sourceUrl": "https://openalternative.co/capgo",
+  "description": "OTA updates for Capacitor apps without app store delays",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "208",
+  "major": "Developer Tools",
+  "sub": "Build & Deployment"
+ },
+ {
+  "name": "Convertigo",
+  "slug": "convertigo",
+  "sourceUrl": "https://openalternative.co/convertigo",
+  "description": "Low-code and no-code platform for business apps",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "386",
+  "major": "Developer Tools",
+  "sub": "Frameworks & Platforms"
+ },
+ {
+  "name": "Convex",
+  "slug": "convex",
+  "sourceUrl": "https://openalternative.co/convex",
+  "description": "Build full-stack apps with TypeScript and real-time sync",
+  "license_hint": null,
+  "stars_hint": "13K",
+  "major": "Developer Tools",
+  "sub": "Frameworks & Platforms"
+ },
+ {
+  "name": "Encore",
+  "slug": "encore",
+  "sourceUrl": "https://openalternative.co/encore",
+  "description": "Accelerate backend development with effortless scalability",
+  "license_hint": "MPL-2.0",
+  "stars_hint": "12K",
+  "major": "Developer Tools",
+  "sub": "Version Control & Collaboration"
+ },
+ {
+  "name": "Frappe Builder",
+  "slug": "frappe-builder",
+  "sourceUrl": "https://openalternative.co/frappe-builder",
+  "description": "Visual website builder for effortless web design",
+  "license_hint": "MIT",
+  "stars_hint": "2.4K",
+  "major": "Developer Tools",
+  "sub": "Website Builders"
+ },
+ {
+  "name": "GoRules",
+  "slug": "gorules",
+  "sourceUrl": "https://openalternative.co/gorules",
+  "description": "Business rules engine with AI, visual flows, and audit trails",
+  "license_hint": "MIT",
+  "stars_hint": "2K",
+  "major": "Developer Tools",
+  "sub": "Frameworks & Platforms"
+ },
+ {
+  "name": "Grida",
+  "slug": "grida",
+  "sourceUrl": "https://openalternative.co/grida",
+  "description": "Open canvas for designing and building web apps",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "2.7K",
+  "major": "Miscellaneous",
+  "sub": "Design & Prototyping"
+ },
+ {
+  "name": "Hercules",
+  "slug": "hercules",
+  "sourceUrl": "https://openalternative.co/hercules",
+  "description": "Open-source testing agent for UI, API, security, accessibility & visual QA",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "1.2K",
+  "major": "Developer Tools",
+  "sub": "Testing & Quality Assurance"
+ },
+ {
+  "name": "Instant",
+  "slug": "instant",
+  "sourceUrl": "https://openalternative.co/instant",
+  "description": "Realtime client-side database for collaborative apps",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "11K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "LyteNyte Grid",
+  "slug": "lytenyte-grid",
+  "sourceUrl": "https://openalternative.co/lytenyte-grid",
+  "description": "Lightning-fast React data grid for enterprise scale",
+  "license_hint": null,
+  "stars_hint": "1K",
+  "major": "Developer Tools",
+  "sub": "Frameworks & Platforms"
+ },
+ {
+  "name": "Mathesar",
+  "slug": "mathesar",
+  "sourceUrl": "https://openalternative.co/mathesar",
+  "description": "Spreadsheet-like interface for PostgreSQL databases",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "5.1K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "Mockoon",
+  "slug": "mockoon",
+  "sourceUrl": "https://openalternative.co/mockoon",
+  "description": "Effortless API mocking for seamless development",
+  "license_hint": "MIT",
+  "stars_hint": "8.4K",
+  "major": "Developer Tools",
+  "sub": "API Development & Testing"
+ },
+ {
+  "name": "Nordcraft",
+  "slug": "nordcraft",
+  "sourceUrl": "https://openalternative.co/nordcraft",
+  "description": "Craft AAA web apps that delight your users",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "489",
+  "major": "Developer Tools",
+  "sub": "Website Builders"
+ },
+ {
+  "name": "Onlook",
+  "slug": "onlook",
+  "sourceUrl": "https://openalternative.co/onlook",
+  "description": "Visual React editor with real-time code updates",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "27K",
+  "major": "Developer Tools",
+  "sub": "Frameworks & Platforms"
+ },
+ {
+  "name": "Refine",
+  "slug": "refine",
+  "sourceUrl": "https://openalternative.co/refine",
+  "description": "Build data-rich React apps with ease and flexibility",
+  "license_hint": "MIT",
+  "stars_hint": "36K",
+  "major": "Infrastructure & Operations",
+  "sub": "Server & VM Management"
+ },
+ {
+  "name": "Reflex",
+  "slug": "reflex",
+  "sourceUrl": "https://openalternative.co/reflex",
+  "description": "Full-stack Python platform for web apps and internal tools",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "29K",
+  "major": "Developer Tools",
+  "sub": "Version Control & Collaboration"
+ },
+ {
+  "name": "Rowy",
+  "slug": "rowy",
+  "sourceUrl": "https://openalternative.co/rowy",
+  "description": "Build powerful backends without leaving your browser",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "6.8K",
+  "major": "Developer Tools",
+  "sub": "Frameworks & Platforms"
+ },
+ {
+  "name": "Silex",
+  "slug": "silex",
+  "sourceUrl": "https://openalternative.co/silex",
+  "description": "Free, open-source visual website builder for designers",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "3K",
+  "major": "Developer Tools",
+  "sub": "Website Builders"
+ },
+ {
+  "name": "Structr",
+  "slug": "structr",
+  "sourceUrl": "https://openalternative.co/structr",
+  "description": "Build complete web apps with integrated graph database",
+  "license_hint": null,
+  "stars_hint": "830",
+  "major": "Developer Tools",
+  "sub": "Frameworks & Platforms"
+ },
+ {
+  "name": "TipTap",
+  "slug": "tiptap",
+  "sourceUrl": "https://openalternative.co/tiptap",
+  "description": "Craft rich text experiences with ease",
+  "license_hint": "MIT",
+  "stars_hint": "39K",
+  "major": "Developer Tools",
+  "sub": "Frameworks & Platforms"
+ },
+ {
+  "name": "WebStudio",
+  "slug": "webstudio",
+  "sourceUrl": "https://openalternative.co/webstudio",
+  "description": "Visual web development with code-level control",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "9K",
+  "major": "Developer Tools",
+  "sub": "Website Builders"
+ },
+ {
+  "name": "WunderGraph",
+  "slug": "wundergraph",
+  "sourceUrl": "https://openalternative.co/wundergraph",
+  "description": "Unify APIs, databases, and services effortlessly",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "1.3K",
+  "major": "Developer Tools",
+  "sub": "API Development & Testing"
+ },
+ {
+  "name": "/dev/push",
+  "slug": "dev-push",
+  "sourceUrl": "https://openalternative.co/dev-push",
+  "description": "Deploy apps instantly with git push - open source alternative",
+  "license_hint": "MIT",
+  "stars_hint": "4.8K",
+  "major": "Developer Tools",
+  "sub": "Build & Deployment"
+ },
+ {
+  "name": "Bytebase",
+  "slug": "bytebase",
+  "sourceUrl": "https://openalternative.co/bytebase",
+  "description": "Secure and streamline database changes with CI/CD automation",
+  "license_hint": "MIT",
+  "stars_hint": "15K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "Dyrector",
+  "slug": "dyrector",
+  "sourceUrl": "https://openalternative.co/dyrector",
+  "description": "Simplify container deployment across environments",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "1.8K",
+  "major": "Infrastructure & Operations",
+  "sub": "Orchestration & Scheduling"
+ },
+ {
+  "name": "Flagsmith",
+  "slug": "flagsmith",
+  "sourceUrl": "https://openalternative.co/flagsmith",
+  "description": "Feature flags and remote config for rapid deployment",
+  "license_hint": "BSD-3-Clause",
+  "stars_hint": "6.6K",
+  "major": "Security & Privacy",
+  "sub": "Application Security"
+ },
+ {
+  "name": "Harness",
+  "slug": "harness",
+  "sourceUrl": "https://openalternative.co/harness",
+  "description": "End-to-end open source software delivery platform",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "38K",
+  "major": "Developer Tools",
+  "sub": "Build & Deployment"
+ },
+ {
+  "name": "Nitric",
+  "slug": "nitric",
+  "sourceUrl": "https://openalternative.co/nitric",
+  "description": "Cloud-native framework for infrastructure from code",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "2K",
+  "major": "Infrastructure & Operations",
+  "sub": "Cloud Infrastructure Management"
+ },
+ {
+  "name": "Semaphore",
+  "slug": "semaphore",
+  "sourceUrl": "https://openalternative.co/semaphore",
+  "description": "Open source CI/CD platform that's faster and costs less",
+  "license_hint": null,
+  "stars_hint": "1.6K",
+  "major": "Developer Tools",
+  "sub": "Build & Deployment"
+ },
+ {
+  "name": "Stormkit",
+  "slug": "stormkit",
+  "sourceUrl": "https://openalternative.co/stormkit",
+  "description": "Deploy web apps with automated CI/CD and full infrastructure control",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "261",
+  "major": "Developer Tools",
+  "sub": "Build & Deployment"
+ },
+ {
+  "name": "Temps",
+  "slug": "temps",
+  "sourceUrl": "https://openalternative.co/temps",
+  "description": "One self-hosted binary replaces Vercel, Sentry, and analytics tools",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "786",
+  "major": "Infrastructure & Operations",
+  "sub": "Server & VM Management"
+ },
+ {
+  "name": "Hook0",
+  "slug": "hook0",
+  "sourceUrl": "https://openalternative.co/hook0",
+  "description": "Open-source webhooks for seamless integrations",
+  "license_hint": "SSPL-1.0",
+  "stars_hint": "1.5K",
+  "major": "Infrastructure & Operations",
+  "sub": "Messaging & Event Streaming"
+ },
+ {
+  "name": "Krakend",
+  "slug": "krakend",
+  "sourceUrl": "https://openalternative.co/krakend",
+  "description": "Blazing-fast API gateway with linear scalability",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "2.7K",
+  "major": "Developer Tools",
+  "sub": "API Development & Testing"
+ },
+ {
+  "name": "Fusio",
+  "slug": "fusio",
+  "sourceUrl": "https://openalternative.co/fusio",
+  "description": "API management platform for developers and AI agents",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "2.1K",
+  "major": "Developer Tools",
+  "sub": "API Development & Testing"
+ },
+ {
+  "name": "Gravitee",
+  "slug": "gravitee",
+  "sourceUrl": "https://openalternative.co/gravitee",
+  "description": "Unified API, event, and AI agent management platform",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "455",
+  "major": "Developer Tools",
+  "sub": "API Development & Testing"
+ },
+ {
+  "name": "Hive",
+  "slug": "hive",
+  "sourceUrl": "https://openalternative.co/hive",
+  "description": "Open-source GraphQL federation platform",
+  "license_hint": "MIT",
+  "stars_hint": "484",
+  "major": "Developer Tools",
+  "sub": "API Development & Testing"
+ },
+ {
+  "name": "HTTPie",
+  "slug": "httpie",
+  "sourceUrl": "https://openalternative.co/httpie",
+  "description": "Modern command-line HTTP client for the API era",
+  "license_hint": "BSD-3-Clause",
+  "stars_hint": "4K",
+  "major": "Developer Tools",
+  "sub": "API Development & Testing"
+ },
+ {
+  "name": "Requestly",
+  "slug": "requestly",
+  "sourceUrl": "https://openalternative.co/requestly",
+  "description": "Intercept, modify, and debug HTTP(S) requests effortlessly",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "6.8K",
+  "major": "Productivity & Utilities",
+  "sub": "Browsers & Extensions"
+ },
+ {
+  "name": "Tailcall",
+  "slug": "tailcall",
+  "sourceUrl": "https://openalternative.co/tailcall",
+  "description": "The modern GraphQL runtime",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "1.4K",
+  "major": "Developer Tools",
+  "sub": "API Development & Testing"
+ },
+ {
+  "name": "Tyk",
+  "slug": "tyk",
+  "sourceUrl": "https://openalternative.co/tyk",
+  "description": "Universal API management for REST, GraphQL, gRPC & async",
+  "license_hint": null,
+  "stars_hint": "11K",
+  "major": "Developer Tools",
+  "sub": "API Development & Testing"
+ },
+ {
+  "name": "UnKey",
+  "slug": "unkey",
+  "sourceUrl": "https://openalternative.co/unkey",
+  "description": "Secure, scalable API key management for developers",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "5.4K",
+  "major": "Security & Privacy",
+  "sub": "Secrets Management"
+ },
+ {
+  "name": "Voiden",
+  "slug": "voiden",
+  "sourceUrl": "https://openalternative.co/voiden",
+  "description": "Build APIs like code with Git-native workspace",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "1.8K",
+  "major": "Developer Tools",
+  "sub": "API Development & Testing"
+ },
+ {
+  "name": "Yaak",
+  "slug": "yaak",
+  "sourceUrl": "https://openalternative.co/yaak",
+  "description": "Fast, secure, offline API client with Git integration",
+  "license_hint": "MIT",
+  "stars_hint": "19K",
+  "major": "Developer Tools",
+  "sub": "API Development & Testing"
+ },
+ {
+  "name": "Argos",
+  "slug": "argos",
+  "sourceUrl": "https://openalternative.co/argos",
+  "description": "Visual regression testing for seamless UI development",
+  "license_hint": "MIT",
+  "stars_hint": "631",
+  "major": "Developer Tools",
+  "sub": "Testing & Quality Assurance"
+ },
+ {
+  "name": "Keploy",
+  "slug": "keploy",
+  "sourceUrl": "https://openalternative.co/keploy",
+  "description": "Turn production traffic into regression tests, no code changes",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "18K",
+  "major": "Developer Tools",
+  "sub": "Testing & Quality Assurance"
+ },
+ {
+  "name": "Forgejo",
+  "slug": "forgejo",
+  "sourceUrl": "https://openalternative.co/forgejo",
+  "description": "Self-hosted Git forge that's lightweight and secure",
+  "license_hint": null,
+  "stars_hint": "5.5K",
+  "major": "Developer Tools",
+  "sub": "Version Control & Collaboration"
+ },
+ {
+  "name": "GitButler",
+  "slug": "gitbutler",
+  "sourceUrl": "https://openalternative.co/gitbutler",
+  "description": "Revolutionize your Git workflow with simultaneous branches",
+  "license_hint": "FSL-1.1-MIT",
+  "stars_hint": "22K",
+  "major": "Developer Tools",
+  "sub": "Version Control & Collaboration"
+ },
+ {
+  "name": "GitComet",
+  "slug": "gitcomet",
+  "sourceUrl": "https://openalternative.co/gitcomet",
+  "description": "Fast, local-first Git GUI built in Rust",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "873",
+  "major": "Developer Tools",
+  "sub": "Version Control & Collaboration"
+ },
+ {
+  "name": "CodeEdit",
+  "slug": "codeedit",
+  "sourceUrl": "https://openalternative.co/codeedit",
+  "description": "A native code editor for macOS",
+  "license_hint": "MIT",
+  "stars_hint": "23K",
+  "major": "Developer Tools",
+  "sub": "IDEs & Code Editors"
+ },
+ {
+  "name": "Neovim",
+  "slug": "neovim",
+  "sourceUrl": "https://openalternative.co/neovim",
+  "description": "Hyperextensible, Lua-powered Vim-based text editor",
+  "license_hint": null,
+  "stars_hint": "103K",
+  "major": "Developer Tools",
+  "sub": "IDEs & Code Editors"
+ },
+ {
+  "name": "Zed",
+  "slug": "zed",
+  "sourceUrl": "https://openalternative.co/zed",
+  "description": "High-performance code editor built for speed and AI",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "91K",
+  "major": "Developer Tools",
+  "sub": "IDEs & Code Editors"
+ },
+ {
+  "name": "Ycode",
+  "slug": "ycode",
+  "sourceUrl": "https://openalternative.co/ycode",
+  "description": "Visual website builder and CMS you can self-host",
+  "license_hint": "MIT",
+  "stars_hint": "312",
+  "major": "Developer Tools",
+  "sub": "Website Builders"
+ },
+ {
+  "name": "Aider",
+  "slug": "aider",
+  "sourceUrl": "https://openalternative.co/aider",
+  "description": "AI pair programmer that works inside your terminal",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "49K",
+  "major": "Developer Tools",
+  "sub": "AI Assisted Coding"
+ },
+ {
+  "name": "Cline",
+  "slug": "cline",
+  "sourceUrl": "https://openalternative.co/cline",
+  "description": "Open-source AI coding agent for your editor and terminal",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "69K",
+  "major": "Developer Tools",
+  "sub": "AI Assisted Coding"
+ },
+ {
+  "name": "Dyad",
+  "slug": "dyad",
+  "sourceUrl": "https://openalternative.co/dyad",
+  "description": "Build unlimited AI apps locally with zero vendor lock-in",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "22K",
+  "major": "Developer Tools",
+  "sub": "AI Assisted Coding"
+ },
+ {
+  "name": "Emdash",
+  "slug": "emdash",
+  "sourceUrl": "https://openalternative.co/emdash",
+  "description": "Dashboard for running multiple coding agents in parallel",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "5.8K",
+  "major": "Developer Tools",
+  "sub": "AI Assisted Coding"
+ },
+ {
+  "name": "Forgecode",
+  "slug": "forgecode",
+  "sourceUrl": "https://openalternative.co/forgecode",
+  "description": "Terminal-native AI coding agent built on ZSH",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "7.6K",
+  "major": "Developer Tools",
+  "sub": "AI Assisted Coding"
+ },
+ {
+  "name": "Frontman",
+  "slug": "frontman",
+  "sourceUrl": "https://openalternative.co/frontman",
+  "description": "AI coding agent that sees your live app and edits code",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "707",
+  "major": "Developer Tools",
+  "sub": "AI Assisted Coding"
+ },
+ {
+  "name": "Grok Build",
+  "slug": "grok-build",
+  "sourceUrl": "https://openalternative.co/grok-build",
+  "description": "AI coding agent and CLI for complex terminal workflows",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "27K",
+  "major": "Developer Tools",
+  "sub": "AI Assisted Coding"
+ },
+ {
+  "name": "Jean",
+  "slug": "jean",
+  "sourceUrl": "https://openalternative.co/jean",
+  "description": "Parallel AI agent workspaces with Git and project context",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "1.3K",
+  "major": "Developer Tools",
+  "sub": "AI Assisted Coding"
+ },
+ {
+  "name": "Kilo",
+  "slug": "kilocode",
+  "sourceUrl": "https://openalternative.co/kilocode",
+  "description": "AI coding agent for VS Code, JetBrains, CLI, and Cloud",
+  "license_hint": "MIT",
+  "stars_hint": "27K",
+  "major": "Developer Tools",
+  "sub": "AI Assisted Coding"
+ },
+ {
+  "name": "Kodus",
+  "slug": "kodus",
+  "sourceUrl": "https://openalternative.co/kodus",
+  "description": "AI code review that learns your team's standards",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "1.4K",
+  "major": "Developer Tools",
+  "sub": "AI Assisted Coding"
+ },
+ {
+  "name": "Omnigent",
+  "slug": "omnigent",
+  "sourceUrl": "https://openalternative.co/omnigent",
+  "description": "Common layer for composing and governing AI agents",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "10K",
+  "major": "Developer Tools",
+  "sub": "AI Assisted Coding"
+ },
+ {
+  "name": "OpenCode",
+  "slug": "opencode",
+  "sourceUrl": "https://openalternative.co/opencode",
+  "description": "AI coding agent for terminal, IDE, and desktop",
+  "license_hint": "MIT",
+  "stars_hint": "210K",
+  "major": "Developer Tools",
+  "sub": "AI Assisted Coding"
+ },
+ {
+  "name": "OpenHands",
+  "slug": "openhands",
+  "sourceUrl": "https://openalternative.co/openhands",
+  "description": "Autonomous coding agents that complete real engineering tasks",
+  "license_hint": "MIT",
+  "stars_hint": "89K",
+  "major": "Developer Tools",
+  "sub": "AI Assisted Coding"
+ },
+ {
+  "name": "Orca",
+  "slug": "orca",
+  "sourceUrl": "https://openalternative.co/orca",
+  "description": "Run multiple AI coding agents in parallel, side by side",
+  "license_hint": "MIT",
+  "stars_hint": "77K",
+  "major": "Developer Tools",
+  "sub": "AI Assisted Coding"
+ },
+ {
+  "name": "Paseo",
+  "slug": "paseo",
+  "sourceUrl": "https://openalternative.co/paseo",
+  "description": "Run coding agents from your phone, desktop, or terminal",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "18K",
+  "major": "Developer Tools",
+  "sub": "AI Assisted Coding"
+ },
+ {
+  "name": "pi",
+  "slug": "pi",
+  "sourceUrl": "https://openalternative.co/pi",
+  "description": "Minimal terminal coding agent you can fully customize",
+  "license_hint": "MIT",
+  "stars_hint": "109K",
+  "major": "Developer Tools",
+  "sub": "AI Assisted Coding"
+ },
+ {
+  "name": "Pullfrog",
+  "slug": "pullfrog",
+  "sourceUrl": "https://openalternative.co/pullfrog",
+  "description": "AI agent workflows built natively into GitHub",
+  "license_hint": "MIT",
+  "stars_hint": "1.2K",
+  "major": "Developer Tools",
+  "sub": "AI Assisted Coding"
+ },
+ {
+  "name": "Roomote",
+  "slug": "roomote",
+  "sourceUrl": "https://openalternative.co/roomote",
+  "description": "Self-hosted AI coding agent that opens real PRs",
+  "license_hint": "FCL-1.0",
+  "stars_hint": "260",
+  "major": "Developer Tools",
+  "sub": "AI Assisted Coding"
+ },
+ {
+  "name": "SWE-agent",
+  "slug": "swe-agent",
+  "sourceUrl": "https://openalternative.co/swe-agent",
+  "description": "AI agents that autonomously fix code and resolve GitHub issues",
+  "license_hint": "MIT",
+  "stars_hint": "20K",
+  "major": "Developer Tools",
+  "sub": "AI Assisted Coding"
+ },
+ {
+  "name": "Synara",
+  "slug": "synara",
+  "sourceUrl": "https://openalternative.co/synara",
+  "description": "Code with Claude, Codex, Gemini, and more in one workspace",
+  "license_hint": "MIT",
+  "stars_hint": "1.9K",
+  "major": "Developer Tools",
+  "sub": "AI Assisted Coding"
+ },
+ {
+  "name": "T3 Code",
+  "slug": "t3-code",
+  "sourceUrl": "https://openalternative.co/t3-code",
+  "description": "AI-powered coding made simple and efficient",
+  "license_hint": "MIT",
+  "stars_hint": "23K",
+  "major": "Developer Tools",
+  "sub": "AI Assisted Coding"
+ },
+ {
+  "name": "Tabby",
+  "slug": "tabby",
+  "sourceUrl": "https://openalternative.co/tabby",
+  "description": "AI-powered code completion for seamless development",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "34K",
+  "major": "Developer Tools",
+  "sub": "AI Assisted Coding"
+ },
+ {
+  "name": "Zero",
+  "slug": "zero",
+  "sourceUrl": "https://openalternative.co/zero",
+  "description": "Terminal coding agent with full model and data control",
+  "license_hint": "MIT",
+  "stars_hint": "1.7K",
+  "major": "Developer Tools",
+  "sub": "AI Assisted Coding"
+ },
+ {
+  "name": "Plakar",
+  "slug": "plakar",
+  "sourceUrl": "https://openalternative.co/plakar",
+  "description": "Encrypted, queryable backups for engineers who value time",
+  "license_hint": "ISC",
+  "stars_hint": "2.1K",
+  "major": "Infrastructure & Operations",
+  "sub": "Backup & Recovery"
+ },
+ {
+  "name": "Pluton",
+  "slug": "pluton",
+  "sourceUrl": "https://openalternative.co/pluton",
+  "description": "Self-hosted encrypted backups with 70+ cloud storage options",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "828",
+  "major": "Infrastructure & Operations",
+  "sub": "Backup & Recovery"
+ },
+ {
+  "name": "1Panel",
+  "slug": "1panel",
+  "sourceUrl": "https://openalternative.co/1panel",
+  "description": "Manage Linux servers with ease through a modern web interface",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "37K",
+  "major": "Infrastructure & Operations",
+  "sub": "Server & VM Management"
+ },
+ {
+  "name": "Bacalhau",
+  "slug": "bacalhau",
+  "sourceUrl": "https://openalternative.co/bacalhau",
+  "description": "Revolutionizing data processing with Compute Over Data",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "871",
+  "major": "Infrastructure & Operations",
+  "sub": "Orchestration & Scheduling"
+ },
+ {
+  "name": "Dagu",
+  "slug": "dagu",
+  "sourceUrl": "https://openalternative.co/dagu",
+  "description": "YAML-defined workflow orchestration, no database required",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "4.1K",
+  "major": "Infrastructure & Operations",
+  "sub": "Orchestration & Scheduling"
+ },
+ {
+  "name": "Hatchet",
+  "slug": "hatchet",
+  "sourceUrl": "https://openalternative.co/hatchet",
+  "description": "Distributed task queue for background jobs and workflows",
+  "license_hint": "MIT",
+  "stars_hint": "8K",
+  "major": "Infrastructure & Operations",
+  "sub": "Orchestration & Scheduling"
+ },
+ {
+  "name": "Healthchecks",
+  "slug": "healthchecks",
+  "sourceUrl": "https://openalternative.co/healthchecks",
+  "description": "Get alerted when cron jobs and scheduled tasks miss their run",
+  "license_hint": "BSD-3-Clause",
+  "stars_hint": "10K",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "Inngest",
+  "slug": "inngest",
+  "sourceUrl": "https://openalternative.co/inngest",
+  "description": "Effortless event-driven workflows for modern applications",
+  "license_hint": "SSPL-1.0",
+  "stars_hint": "5.9K",
+  "major": "Infrastructure & Operations",
+  "sub": "Orchestration & Scheduling"
+ },
+ {
+  "name": "Trigger",
+  "slug": "trigger",
+  "sourceUrl": "https://openalternative.co/trigger",
+  "description": "Run long-running AI tasks without timeouts or servers",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "16K",
+  "major": "Infrastructure & Operations",
+  "sub": "Orchestration & Scheduling"
+ },
+ {
+  "name": "Alarik",
+  "slug": "alarik",
+  "sourceUrl": "https://openalternative.co/alarik",
+  "description": "S3-compatible object storage built with Swift",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "545",
+  "major": "Infrastructure & Operations",
+  "sub": "Storage Solutions"
+ },
+ {
+  "name": "Ceph",
+  "slug": "ceph",
+  "sourceUrl": "https://openalternative.co/ceph",
+  "description": "Scalable open-source distributed storage system",
+  "license_hint": null,
+  "stars_hint": "17K",
+  "major": "Infrastructure & Operations",
+  "sub": "Storage Solutions"
+ },
+ {
+  "name": "Firefiles",
+  "slug": "firefiles",
+  "sourceUrl": "https://openalternative.co/firefiles",
+  "description": "Bring your own cloud storage, managed in one place",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "371",
+  "major": "Productivity & Utilities",
+  "sub": "File Management & Sync"
+ },
+ {
+  "name": "Garage",
+  "slug": "garage",
+  "sourceUrl": "https://openalternative.co/garage",
+  "description": "Lightweight distributed storage for self-hosting",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "4.6K",
+  "major": "Infrastructure & Operations",
+  "sub": "Storage Solutions"
+ },
+ {
+  "name": "Spacedrive",
+  "slug": "spacedrive",
+  "sourceUrl": "https://openalternative.co/spacedrive",
+  "description": "Your personal distributed filesystem",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "39K",
+  "major": "Productivity & Utilities",
+  "sub": "File Management & Sync"
+ },
+ {
+  "name": "Storj",
+  "slug": "storj",
+  "sourceUrl": "https://openalternative.co/storj",
+  "description": "Secure, decentralized cloud storage for your data",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "3.3K",
+  "major": "Infrastructure & Operations",
+  "sub": "Storage Solutions"
+ },
+ {
+  "name": "Defguard",
+  "slug": "defguard",
+  "sourceUrl": "https://openalternative.co/defguard",
+  "description": "Zero-Trust VPN with built-in 2FA/MFA and SSO capabilities",
+  "license_hint": null,
+  "stars_hint": "2.9K",
+  "major": "Security & Privacy",
+  "sub": "Identity & Access Management (IAM)"
+ },
+ {
+  "name": "FireZone",
+  "slug": "firezone",
+  "sourceUrl": "https://openalternative.co/firezone",
+  "description": "Fast, flexible VPN replacement with zero-trust security",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "9.1K",
+  "major": "Infrastructure & Operations",
+  "sub": "Networking & Connectivity"
+ },
+ {
+  "name": "OpenVPN",
+  "slug": "openvpn",
+  "sourceUrl": "https://openalternative.co/openvpn",
+  "description": "Zero Trust VPN solutions for secure business networking",
+  "license_hint": null,
+  "stars_hint": "15K",
+  "major": "Infrastructure & Operations",
+  "sub": "Networking & Connectivity"
+ },
+ {
+  "name": "Pangolin",
+  "slug": "pangolin",
+  "sourceUrl": "https://openalternative.co/pangolin",
+  "description": "Zero trust network access that's better than VPN",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "23K",
+  "major": "Infrastructure & Operations",
+  "sub": "Networking & Connectivity"
+ },
+ {
+  "name": "Soketi",
+  "slug": "soketi",
+  "sourceUrl": "https://openalternative.co/soketi",
+  "description": "Next-gen WebSockets server for real-time apps",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "5.6K",
+  "major": "Infrastructure & Operations",
+  "sub": "Networking & Connectivity"
+ },
+ {
+  "name": "Tailscale",
+  "slug": "tailscale",
+  "sourceUrl": "https://openalternative.co/tailscale",
+  "description": "Zero-config VPN with WireGuard for secure networking",
+  "license_hint": "BSD-3-Clause",
+  "stars_hint": "37K",
+  "major": "Infrastructure & Operations",
+  "sub": "Networking & Connectivity"
+ },
+ {
+  "name": "WireGuard",
+  "slug": "wireguard",
+  "sourceUrl": "https://openalternative.co/wireguard",
+  "description": "Fast, minimal VPN built on modern cryptography",
+  "license_hint": "GPL-2.0",
+  "stars_hint": "720",
+  "major": "Infrastructure & Operations",
+  "sub": "Networking & Connectivity"
+ },
+ {
+  "name": "Activeloop",
+  "slug": "activeloop",
+  "sourceUrl": "https://openalternative.co/activeloop",
+  "description": "The tensor database for AI data",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "9.2K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "Apache Druid",
+  "slug": "apache-druid",
+  "sourceUrl": "https://openalternative.co/apache-druid",
+  "description": "Real-time analytics database for sub-second OLAP queries",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "14K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "Apache IoTDB",
+  "slug": "apache-iotdb",
+  "sourceUrl": "https://openalternative.co/apache-iotdb",
+  "description": "Time-series database built for industrial IoT workloads",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "6.4K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "Beekeeper Studio",
+  "slug": "beekeeper-studio",
+  "sourceUrl": "https://openalternative.co/beekeeper-studio",
+  "description": "Modern and intuitive SQL client for multiple databases",
+  "license_hint": null,
+  "stars_hint": "24K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "Chat2DB",
+  "slug": "chat2db",
+  "sourceUrl": "https://openalternative.co/chat2db",
+  "description": "Transform natural language into SQL queries with AI",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "28K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "Conar",
+  "slug": "conar",
+  "sourceUrl": "https://openalternative.co/conar",
+  "description": "AI-powered PostgreSQL management made simple",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "1.4K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "CrateDB",
+  "slug": "cratedb",
+  "sourceUrl": "https://openalternative.co/cratedb",
+  "description": "Scalable SQL database for real-time analytics",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "4.4K",
+  "major": "Miscellaneous",
+  "sub": "Internet of Things (IoT)"
+ },
+ {
+  "name": "Dragonfly",
+  "slug": "dragonfly",
+  "sourceUrl": "https://openalternative.co/dragonfly",
+  "description": "Blazing-fast in-memory data store for modern applications",
+  "license_hint": null,
+  "stars_hint": "32K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "FalkorDB",
+  "slug": "falkordb",
+  "sourceUrl": "https://openalternative.co/falkordb",
+  "description": "Graph database built for GraphRAG and multi-tenant AI apps",
+  "license_hint": "SSPL-1.0",
+  "stars_hint": "6.3K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "GreptimeDB",
+  "slug": "greptimedb",
+  "sourceUrl": "https://openalternative.co/greptimedb",
+  "description": "Unified observability database for metrics, logs, and traces",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "6.7K",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "HelixDB",
+  "slug": "helixdb",
+  "sourceUrl": "https://openalternative.co/helixdb",
+  "description": "Unify vector search and graph traversals in one database",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "6.1K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "InfluxDB",
+  "slug": "influxdb",
+  "sourceUrl": "https://openalternative.co/influxdb",
+  "description": "Purpose-built time series database for real-time systems",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "32K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "Memgraph",
+  "slug": "memgraph",
+  "sourceUrl": "https://openalternative.co/memgraph",
+  "description": "High-performance graph computing for scalable data analysis",
+  "license_hint": null,
+  "stars_hint": "4.6K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "Neon Postgres",
+  "slug": "neon-postgres",
+  "sourceUrl": "https://openalternative.co/neon-postgres",
+  "description": "Serverless Postgres for modern applications",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "23K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "OceanBase",
+  "slug": "oceanbase",
+  "sourceUrl": "https://openalternative.co/oceanbase",
+  "description": "High-performance distributed database for all workloads",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "10K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "QuestDB",
+  "slug": "questdb",
+  "sourceUrl": "https://openalternative.co/questdb",
+  "description": "High-performance time-series database for massive data scale",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "17K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "SlateDB",
+  "slug": "slatedb",
+  "sourceUrl": "https://openalternative.co/slatedb",
+  "description": "Embedded storage engine built on object storage",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "3.4K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "Tabularis",
+  "slug": "tabularis",
+  "sourceUrl": "https://openalternative.co/tabularis",
+  "description": "Desktop SQL client with built-in MCP for AI agent access",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "5.1K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "TDengine",
+  "slug": "tdengine",
+  "sourceUrl": "https://openalternative.co/tdengine",
+  "description": "Time-series database and historian for industrial data",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "25K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "TiDB",
+  "slug": "tidb",
+  "sourceUrl": "https://openalternative.co/tidb",
+  "description": "Scale-out SQL database for real-time analytics",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "41K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "TimescaleDb",
+  "slug": "timescale",
+  "sourceUrl": "https://openalternative.co/timescale",
+  "description": "Time-series database built on top of PostgreSQL",
+  "license_hint": null,
+  "stars_hint": "24K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "Turso",
+  "slug": "turso",
+  "sourceUrl": "https://openalternative.co/turso",
+  "description": "SQLite-compatible database for scalable multi-tenant applications",
+  "license_hint": "MIT",
+  "stars_hint": "17K",
+  "major": "Infrastructure & Operations",
+  "sub": "Databases"
+ },
+ {
+  "name": "AutoMQ",
+  "slug": "automq",
+  "sourceUrl": "https://openalternative.co/automq",
+  "description": "S3-based serverless Kafka reinvented for cost efficiency",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "11K",
+  "major": "Infrastructure & Operations",
+  "sub": "Cloud Infrastructure Management"
+ },
+ {
+  "name": "Operational",
+  "slug": "operational",
+  "sourceUrl": "https://openalternative.co/operational",
+  "description": "Real-time event tracking and response for tech products",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "476",
+  "major": "Infrastructure & Operations",
+  "sub": "Messaging & Event Streaming"
+ },
+ {
+  "name": "Sequin",
+  "slug": "sequin",
+  "sourceUrl": "https://openalternative.co/sequin",
+  "description": "Open-source message stream built on Postgres",
+  "license_hint": "MIT",
+  "stars_hint": "2.2K",
+  "major": "Infrastructure & Operations",
+  "sub": "Messaging & Event Streaming"
+ },
+ {
+  "name": "Svix",
+  "slug": "svix",
+  "sourceUrl": "https://openalternative.co/svix",
+  "description": "Webhook delivery platform with retries, security, and a portal",
+  "license_hint": "MIT",
+  "stars_hint": "3.4K",
+  "major": "Infrastructure & Operations",
+  "sub": "Messaging & Event Streaming"
+ },
+ {
+  "name": "Workbench",
+  "slug": "workbench",
+  "sourceUrl": "https://openalternative.co/workbench",
+  "description": "Inspect, debug, and replay BullMQ queues visually",
+  "license_hint": "MIT",
+  "stars_hint": "445",
+  "major": "Infrastructure & Operations",
+  "sub": "Messaging & Event Streaming"
+ },
+ {
+  "name": "Apache SkyWalking",
+  "slug": "apache-skywalking",
+  "sourceUrl": "https://openalternative.co/apache-skywalking",
+  "description": "Distributed tracing, metrics, logs, and GenAI monitoring in one",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "25K",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "Checkmate",
+  "slug": "checkmate",
+  "sourceUrl": "https://openalternative.co/checkmate",
+  "description": "Beautiful open-source monitoring for modern infrastructure",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "11K",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "Checkmk",
+  "slug": "checkmk",
+  "sourceUrl": "https://openalternative.co/checkmk",
+  "description": "Complete IT infrastructure monitoring made simple",
+  "license_hint": "GPL-2.0",
+  "stars_hint": "2.4K",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "Coroot",
+  "slug": "coroot",
+  "sourceUrl": "https://openalternative.co/coroot",
+  "description": "Full-stack observability without code changes",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "7.9K",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "EasyMonitor",
+  "slug": "easymonitor",
+  "sourceUrl": "https://openalternative.co/easymonitor",
+  "description": "Self-hosted uptime monitoring that runs on your hardware, not their servers",
+  "license_hint": "MIT",
+  "stars_hint": "75",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "Gigapipe",
+  "slug": "gigapipe",
+  "sourceUrl": "https://openalternative.co/gigapipe",
+  "description": "All-in-one observability with unlimited data ingestion",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "1.7K",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "Grafana Loki",
+  "slug": "grafana-loki",
+  "sourceUrl": "https://openalternative.co/grafana-loki",
+  "description": "Cost-effective log aggregation that indexes labels, not full text",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "29K",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "HyperDX",
+  "slug": "hyperdx",
+  "sourceUrl": "https://openalternative.co/hyperdx",
+  "description": "Full-stack observability without the enterprise price tag",
+  "license_hint": "MIT",
+  "stars_hint": "9.9K",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "Icinga",
+  "slug": "icinga",
+  "sourceUrl": "https://openalternative.co/icinga",
+  "description": "Open source monitoring for complex IT infrastructure",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "2.2K",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "Keep",
+  "slug": "keep",
+  "sourceUrl": "https://openalternative.co/keep",
+  "description": "Unify, automate, and elevate your monitoring workflow",
+  "license_hint": "MIT",
+  "stars_hint": "12K",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "Kener",
+  "slug": "kener",
+  "sourceUrl": "https://openalternative.co/kener",
+  "description": "Deploy a professional status page in minutes, no coding required",
+  "license_hint": "MIT",
+  "stars_hint": "5.2K",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "Logfire",
+  "slug": "logfire",
+  "sourceUrl": "https://openalternative.co/logfire",
+  "description": "Powerful observability made simple for developers",
+  "license_hint": "MIT",
+  "stars_hint": "4.5K",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "Maple",
+  "slug": "maple",
+  "sourceUrl": "https://openalternative.co/maple",
+  "description": "OpenTelemetry observability with traces, logs, and metrics",
+  "license_hint": null,
+  "stars_hint": "1.8K",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "Nagios",
+  "slug": "nagios",
+  "sourceUrl": "https://openalternative.co/nagios",
+  "description": "Complete infrastructure monitoring with 25+ years of expertise",
+  "license_hint": "GPL-2.0",
+  "stars_hint": "2K",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "OneUptime",
+  "slug": "oneuptime",
+  "sourceUrl": "https://openalternative.co/oneuptime",
+  "description": "Comprehensive monitoring and incident management platform",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "7.7K",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "OpenStatus",
+  "slug": "openstatus",
+  "sourceUrl": "https://openalternative.co/openstatus",
+  "description": "Status page and uptime monitoring for growing teams",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "9.1K",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "Peekaping",
+  "slug": "peekaping",
+  "sourceUrl": "https://openalternative.co/peekaping",
+  "description": "Self-hosted uptime monitoring you own and control",
+  "license_hint": "MIT",
+  "stars_hint": "1.2K",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "ProjectDiscovery",
+  "slug": "projectdiscovery",
+  "sourceUrl": "https://openalternative.co/projectdiscovery",
+  "description": "Advanced vulnerability detection and management platform",
+  "license_hint": "MIT",
+  "stars_hint": "31K",
+  "major": "Security & Privacy",
+  "sub": "Threat Detection & Response"
+ },
+ {
+  "name": "Scanopy",
+  "slug": "scanopy",
+  "sourceUrl": "https://openalternative.co/scanopy",
+  "description": "Auto-generated network diagrams that stay current",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "5.8K",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "Statusnook",
+  "slug": "statusnook",
+  "sourceUrl": "https://openalternative.co/statusnook",
+  "description": "Monitor, manage, and communicate service status effortlessly",
+  "license_hint": "MIT",
+  "stars_hint": "985",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "StatusScout",
+  "slug": "statusscout",
+  "sourceUrl": "https://openalternative.co/statusscout",
+  "description": "Complete website health monitoring and security scanning",
+  "license_hint": null,
+  "stars_hint": "15",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "Uptimepage",
+  "slug": "uptimepage",
+  "sourceUrl": "https://openalternative.co/uptimepage",
+  "description": "Uptime monitoring and public status pages, combined",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "34",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "Uptrace",
+  "slug": "uptrace",
+  "sourceUrl": "https://openalternative.co/uptrace",
+  "description": "Open source observability platform for modern applications",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "4.3K",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "Vector",
+  "slug": "vector",
+  "sourceUrl": "https://openalternative.co/vector",
+  "description": "Collect, transform, and route logs and metrics in one tool",
+  "license_hint": "MPL-2.0",
+  "stars_hint": "23K",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "Wachd",
+  "slug": "wachd",
+  "sourceUrl": "https://openalternative.co/wachd",
+  "description": "AI-powered root cause analysis for on-call alerts, self-hosted and air-gapped",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "39",
+  "major": "Infrastructure & Operations",
+  "sub": "Monitoring & Observability"
+ },
+ {
+  "name": "Manticore Search",
+  "slug": "manticore",
+  "sourceUrl": "https://openalternative.co/manticore",
+  "description": "Lightning-fast open source search engine for big data",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "12K",
+  "major": "Infrastructure & Operations",
+  "sub": "Search Engines"
+ },
+ {
+  "name": "Quickwit",
+  "slug": "quickwit",
+  "sourceUrl": "https://openalternative.co/quickwit",
+  "description": "Lightning-fast search for massive datasets",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "12K",
+  "major": "Infrastructure & Operations",
+  "sub": "Search Engines"
+ },
+ {
+  "name": "SearXNG",
+  "slug": "searxng",
+  "sourceUrl": "https://openalternative.co/searxng",
+  "description": "Privacy-first metasearch across 270+ sources",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "38K",
+  "major": "Infrastructure & Operations",
+  "sub": "Search Engines"
+ },
+ {
+  "name": "SeekStorm",
+  "slug": "seekstorm",
+  "sourceUrl": "https://openalternative.co/seekstorm",
+  "description": "Full-text search API with real-time indexing and crawling",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "1.9K",
+  "major": "Infrastructure & Operations",
+  "sub": "Search Engines"
+ },
+ {
+  "name": "Cozystack",
+  "slug": "cozystack",
+  "sourceUrl": "https://openalternative.co/cozystack",
+  "description": "Turn bare metal into intelligent cloud infrastructure",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "2.2K",
+  "major": "Infrastructure & Operations",
+  "sub": "Cloud Infrastructure Management"
+ },
+ {
+  "name": "Digger",
+  "slug": "digger",
+  "sourceUrl": "https://openalternative.co/digger",
+  "description": "Terraform automation with pull request workflows",
+  "license_hint": "MIT",
+  "stars_hint": "5K",
+  "major": "Infrastructure & Operations",
+  "sub": "Cloud Infrastructure Management"
+ },
+ {
+  "name": "OpenStack",
+  "slug": "openstack",
+  "sourceUrl": "https://openalternative.co/openstack",
+  "description": "Open source cloud infrastructure trusted at massive scale",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "6K",
+  "major": "Infrastructure & Operations",
+  "sub": "Cloud Infrastructure Management"
+ },
+ {
+  "name": "Spinifex",
+  "slug": "spinifex",
+  "sourceUrl": "https://openalternative.co/spinifex",
+  "description": "AWS-compatible cloud APIs on infrastructure you control",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "247",
+  "major": "Infrastructure & Operations",
+  "sub": "Cloud Infrastructure Management"
+ },
+ {
+  "name": "Terrateam",
+  "slug": "terrateam",
+  "sourceUrl": "https://openalternative.co/terrateam",
+  "description": "GitOps orchestration for infrastructure as code",
+  "license_hint": "MPL-2.0",
+  "stars_hint": "1.3K",
+  "major": "Infrastructure & Operations",
+  "sub": "Cloud Infrastructure Management"
+ },
+ {
+  "name": "aaPanel",
+  "slug": "aapanel",
+  "sourceUrl": "https://openalternative.co/aapanel",
+  "description": "Powerful and user-friendly web hosting control panel",
+  "license_hint": null,
+  "stars_hint": "3.1K",
+  "major": "Infrastructure & Operations",
+  "sub": "Server & VM Management"
+ },
+ {
+  "name": "CasaOS",
+  "slug": "casaos",
+  "sourceUrl": "https://openalternative.co/casaos",
+  "description": "Your personal cloud OS for simple, elegant home servers",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "37K",
+  "major": "Infrastructure & Operations",
+  "sub": "Server & VM Management"
+ },
+ {
+  "name": "Cosmos Server",
+  "slug": "cosmos-server",
+  "sourceUrl": "https://openalternative.co/cosmos-server",
+  "description": "Self-hosted cloud platform with automated security",
+  "license_hint": null,
+  "stars_hint": "6.2K",
+  "major": "Infrastructure & Operations",
+  "sub": "Server & VM Management"
+ },
+ {
+  "name": "OpenPanel",
+  "slug": "openpanel-co",
+  "sourceUrl": "https://openalternative.co/openpanel-co",
+  "description": "Simplify server management with an intuitive interface",
+  "license_hint": "MIT",
+  "stars_hint": "750",
+  "major": "Infrastructure & Operations",
+  "sub": "Server & VM Management"
+ },
+ {
+  "name": "YunoHost",
+  "slug": "yunohost",
+  "sourceUrl": "https://openalternative.co/yunohost",
+  "description": "Self-host your digital life with ease",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "3K",
+  "major": "Infrastructure & Operations",
+  "sub": "Server & VM Management"
+ },
+ {
+  "name": "0 Finance",
+  "slug": "0-finance",
+  "sourceUrl": "https://openalternative.co/0-finance",
+  "description": "Transform idle cash into competitive yield for startups",
+  "license_hint": "MIT",
+  "stars_hint": "250",
+  "major": "Miscellaneous",
+  "sub": "Finance & Fintech"
+ },
+ {
+  "name": "Hummingbot",
+  "slug": "hummingbot",
+  "sourceUrl": "https://openalternative.co/hummingbot",
+  "description": "Open-source crypto trading bot for market making",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "20K",
+  "major": "Miscellaneous",
+  "sub": "Finance & Fintech"
+ },
+ {
+  "name": "OctoBot",
+  "slug": "octobot",
+  "sourceUrl": "https://openalternative.co/octobot",
+  "description": "Automate crypto trading with open-source strategies",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "6.6K",
+  "major": "Miscellaneous",
+  "sub": "Cryptocurrency & Blockchain"
+ },
+ {
+  "name": "GDevelop",
+  "slug": "gdevelop",
+  "sourceUrl": "https://openalternative.co/gdevelop",
+  "description": "Create 2D and 3D games without coding, powered by AI assistance",
+  "license_hint": null,
+  "stars_hint": "27K",
+  "major": "Miscellaneous",
+  "sub": "Gaming"
+ },
+ {
+  "name": "Godot",
+  "slug": "godot",
+  "sourceUrl": "https://openalternative.co/godot",
+  "description": "Free 2D and 3D game engine for cross-platform projects",
+  "license_hint": "MIT",
+  "stars_hint": "118K",
+  "major": "Miscellaneous",
+  "sub": "Gaming"
+ },
+ {
+  "name": "MonoGame",
+  "slug": "monogame",
+  "sourceUrl": "https://openalternative.co/monogame",
+  "description": "Free, open-source framework for cross-platform game development",
+  "license_hint": null,
+  "stars_hint": "14K",
+  "major": "Miscellaneous",
+  "sub": "Gaming"
+ },
+ {
+  "name": "s&box",
+  "slug": "sbox",
+  "sourceUrl": "https://openalternative.co/sbox",
+  "description": "Build and play games inside a game engine that runs live",
+  "license_hint": "MIT",
+  "stars_hint": "6.5K",
+  "major": "Miscellaneous",
+  "sub": "Gaming"
+ },
+ {
+  "name": "Gladys Assistant",
+  "slug": "gladys-assistant",
+  "sourceUrl": "https://openalternative.co/gladys-assistant",
+  "description": "Self-hosted home automation without the cloud",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "3.2K",
+  "major": "Miscellaneous",
+  "sub": "Internet of Things (IoT)"
+ },
+ {
+  "name": "Home Assistant",
+  "slug": "home-assistant",
+  "sourceUrl": "https://openalternative.co/home-assistant",
+  "description": "Local control smart home automation with privacy first",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "91K",
+  "major": "Miscellaneous",
+  "sub": "Internet of Things (IoT)"
+ },
+ {
+  "name": "alphai-tui",
+  "slug": "alphai-tui",
+  "sourceUrl": "https://openalternative.co/alphai-tui",
+  "description": "Live stock quotes, charts, and AI-scored news in your terminal",
+  "license_hint": "MIT",
+  "stars_hint": "50",
+  "major": "Miscellaneous",
+  "sub": "Finance & Fintech"
+ },
+ {
+  "name": "Fincept Terminal",
+  "slug": "fincept-terminal",
+  "sourceUrl": "https://openalternative.co/fincept-terminal",
+  "description": "Open-source financial terminal for data-driven insights",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "32K",
+  "major": "Productivity & Utilities",
+  "sub": "Personal Finance Management"
+ },
+ {
+  "name": "FleetBase",
+  "slug": "fleetbase",
+  "sourceUrl": "https://openalternative.co/fleetbase",
+  "description": "Open source modular logistics platform for faster app development",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "3.9K",
+  "major": "Miscellaneous",
+  "sub": "Logistics & Supply Chain"
+ },
+ {
+  "name": "Graphite",
+  "slug": "graphite",
+  "sourceUrl": "https://openalternative.co/graphite",
+  "description": "Procedural vector editor that runs in your browser, no signup needed",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "27K",
+  "major": "Productivity & Utilities",
+  "sub": "Design & Visualization"
+ },
+ {
+  "name": "OpenPencil",
+  "slug": "openpencil",
+  "sourceUrl": "https://openalternative.co/openpencil",
+  "description": "Design editor that opens Figma files, runs AI, and stays local",
+  "license_hint": "MIT",
+  "stars_hint": "8.6K",
+  "major": "Miscellaneous",
+  "sub": "Design & Prototyping"
+ },
+ {
+  "name": "Quant-UX",
+  "slug": "quant-ux",
+  "sourceUrl": "https://openalternative.co/quant-ux",
+  "description": "Design, prototype, and test user experiences with ease",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "2.7K",
+  "major": "Miscellaneous",
+  "sub": "Design & Prototyping"
+ },
+ {
+  "name": "Anthias",
+  "slug": "anthias",
+  "sourceUrl": "https://openalternative.co/anthias",
+  "description": "Transform any TV into professional digital signage",
+  "license_hint": null,
+  "stars_hint": "3.7K",
+  "major": "Miscellaneous",
+  "sub": "Media & Streaming"
+ },
+ {
+  "name": "BookWyrm",
+  "slug": "bookwyrm",
+  "sourceUrl": "https://openalternative.co/bookwyrm",
+  "description": "Decentralized social network for book lovers and readers",
+  "license_hint": null,
+  "stars_hint": "2.8K",
+  "major": "Miscellaneous",
+  "sub": "Media & Streaming"
+ },
+ {
+  "name": "Invidious",
+  "slug": "invidious",
+  "sourceUrl": "https://openalternative.co/invidious",
+  "description": "Watch YouTube without Google tracking you or showing ads",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "25K",
+  "major": "Miscellaneous",
+  "sub": "Media & Streaming"
+ },
+ {
+  "name": "Kodi",
+  "slug": "kodi",
+  "sourceUrl": "https://openalternative.co/kodi",
+  "description": "Full-featured media center for your TV and beyond",
+  "license_hint": null,
+  "stars_hint": "21K",
+  "major": "Miscellaneous",
+  "sub": "Media & Streaming"
+ },
+ {
+  "name": "Nightingale",
+  "slug": "nightingale",
+  "sourceUrl": "https://openalternative.co/nightingale",
+  "description": "Transform any song into karaoke with AI-powered vocals",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "1.5K",
+  "major": "Miscellaneous",
+  "sub": "Media & Streaming"
+ },
+ {
+  "name": "Nuclear",
+  "slug": "nuclear",
+  "sourceUrl": "https://openalternative.co/nuclear",
+  "description": "Ad-free music player that streams from multiple sources",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "19K",
+  "major": "Miscellaneous",
+  "sub": "Media & Streaming"
+ },
+ {
+  "name": "Darktable",
+  "slug": "darktable",
+  "sourceUrl": "https://openalternative.co/darktable",
+  "description": "Professional RAW photo editing and workflow management",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "13K",
+  "major": "Miscellaneous",
+  "sub": "Photo & Video Editors"
+ },
+ {
+  "name": "OpenCut",
+  "slug": "opencut",
+  "sourceUrl": "https://openalternative.co/opencut",
+  "description": "Open source video editor that runs in your browser",
+  "license_hint": "MIT",
+  "stars_hint": "91K",
+  "major": "Miscellaneous",
+  "sub": "Photo & Video Editors"
+ },
+ {
+  "name": "RawTherapee",
+  "slug": "rawtherapee",
+  "sourceUrl": "https://openalternative.co/rawtherapee",
+  "description": "Professional raw photo processing made free and powerful",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "4.2K",
+  "major": "Miscellaneous",
+  "sub": "Photo & Video Editors"
+ },
+ {
+  "name": "VoiceInk",
+  "slug": "voiceink",
+  "sourceUrl": "https://openalternative.co/voiceink",
+  "description": "Local voice dictation with AI enhancement for macOS",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "6.5K",
+  "major": "Productivity & Utilities",
+  "sub": "Input & Dictation"
+ },
+ {
+  "name": "Amical",
+  "slug": "amical",
+  "sourceUrl": "https://openalternative.co/amical",
+  "description": "Type 10x faster with AI-powered voice dictation",
+  "license_hint": "MIT",
+  "stars_hint": "1.5K",
+  "major": "Productivity & Utilities",
+  "sub": "Input & Dictation"
+ },
+ {
+  "name": "FluidVoice",
+  "slug": "fluidvoice",
+  "sourceUrl": "https://openalternative.co/fluidvoice",
+  "description": "On-device voice dictation for macOS with adaptive AI",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "12K",
+  "major": "Productivity & Utilities",
+  "sub": "Input & Dictation"
+ },
+ {
+  "name": "Handy",
+  "slug": "handy",
+  "sourceUrl": "https://openalternative.co/handy",
+  "description": "Press a key, speak, release. Text appears instantly.",
+  "license_hint": "MIT",
+  "stars_hint": "32K",
+  "major": "Productivity & Utilities",
+  "sub": "Input & Dictation"
+ },
+ {
+  "name": "OpenWispr",
+  "slug": "openwispr",
+  "sourceUrl": "https://openalternative.co/openwispr",
+  "description": "Voice-to-text that works offline, privately, on any app",
+  "license_hint": "MIT",
+  "stars_hint": "8.5K",
+  "major": "Productivity & Utilities",
+  "sub": "Input & Dictation"
+ },
+ {
+  "name": "VoiceTypr",
+  "slug": "voicetypr",
+  "sourceUrl": "https://openalternative.co/voicetypr",
+  "description": "Offline voice dictation that types into any app",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "720",
+  "major": "Productivity & Utilities",
+  "sub": "Input & Dictation"
+ },
+ {
+  "name": "ActivityWatch",
+  "slug": "activitywatch",
+  "sourceUrl": "https://openalternative.co/activitywatch",
+  "description": "Track time automatically with privacy-first design",
+  "license_hint": "MPL-2.0",
+  "stars_hint": "19K",
+  "major": "Productivity & Utilities",
+  "sub": "Time & Task Management"
+ },
+ {
+  "name": "Freeter",
+  "slug": "freeter",
+  "sourceUrl": "https://openalternative.co/freeter",
+  "description": "Your personal workspace organizer for maximum productivity",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "1K",
+  "major": "Productivity & Utilities",
+  "sub": "Time & Task Management"
+ },
+ {
+  "name": "Hackatime",
+  "slug": "hackatime",
+  "sourceUrl": "https://openalternative.co/hackatime",
+  "description": "Track coding time across 70+ editors, completely free",
+  "license_hint": "MIT",
+  "stars_hint": "208",
+  "major": "Productivity & Utilities",
+  "sub": "Time & Task Management"
+ },
+ {
+  "name": "Sol",
+  "slug": "sol",
+  "sourceUrl": "https://openalternative.co/sol",
+  "description": "Fast and beautiful launcher for quick access to apps and tools",
+  "license_hint": "MIT",
+  "stars_hint": "3.1K",
+  "major": "Productivity & Utilities",
+  "sub": "Time & Task Management"
+ },
+ {
+  "name": "SolidTime",
+  "slug": "solidtime",
+  "sourceUrl": "https://openalternative.co/solidtime",
+  "description": "Effortless time tracking for open source projects",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "8.9K",
+  "major": "Productivity & Utilities",
+  "sub": "Time & Task Management"
+ },
+ {
+  "name": "TimeScribe",
+  "slug": "timescribe",
+  "sourceUrl": "https://openalternative.co/timescribe",
+  "description": "Transform your time tracking into actionable insights",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "908",
+  "major": "Productivity & Utilities",
+  "sub": "Time & Task Management"
+ },
+ {
+  "name": "Ueli",
+  "slug": "ueli",
+  "sourceUrl": "https://openalternative.co/ueli",
+  "description": "Quick access to apps and files with keyboard shortcuts",
+  "license_hint": "MIT",
+  "stars_hint": "4.6K",
+  "major": "Productivity & Utilities",
+  "sub": "Time & Task Management"
+ },
+ {
+  "name": "Wakapi",
+  "slug": "wakapi",
+  "sourceUrl": "https://openalternative.co/wakapi",
+  "description": "Track coding time effortlessly, gain insights instantly",
+  "license_hint": "MIT",
+  "stars_hint": "4.4K",
+  "major": "Productivity & Utilities",
+  "sub": "Time & Task Management"
+ },
+ {
+  "name": "Ziit",
+  "slug": "ziit",
+  "sourceUrl": "https://openalternative.co/ziit",
+  "description": "Track coding time and boost developer productivity",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "254",
+  "major": "Productivity & Utilities",
+  "sub": "Time & Task Management"
+ },
+ {
+  "name": "Macro Docs",
+  "slug": "macro-docs",
+  "sourceUrl": "https://openalternative.co/macro-docs",
+  "description": "Markdown docs wired into tasks, email, and agents",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "4.4K",
+  "major": "Productivity & Utilities",
+  "sub": "Note Taking & Knowledge Management"
+ },
+ {
+  "name": "Anarlog",
+  "slug": "anarlog",
+  "sourceUrl": "https://openalternative.co/anarlog",
+  "description": "Private meeting notes, no bots, files you own",
+  "license_hint": "MIT",
+  "stars_hint": "9.4K",
+  "major": "Productivity & Utilities",
+  "sub": "Note Taking & Knowledge Management"
+ },
+ {
+  "name": "Beaver Notes",
+  "slug": "beaver-notes",
+  "sourceUrl": "https://openalternative.co/beaver-notes",
+  "description": "Local-first notes app with no cloud, no AI, no tracking",
+  "license_hint": "MIT",
+  "stars_hint": "1.3K",
+  "major": "Productivity & Utilities",
+  "sub": "Note Taking & Knowledge Management"
+ },
+ {
+  "name": "Blinko",
+  "slug": "blinko",
+  "sourceUrl": "https://openalternative.co/blinko",
+  "description": "AI-Powered Note Taking App",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "11K",
+  "major": "Productivity & Utilities",
+  "sub": "Note Taking & Knowledge Management"
+ },
+ {
+  "name": "Darkwrite",
+  "slug": "darkwrite",
+  "sourceUrl": "https://openalternative.co/darkwrite",
+  "description": "Distraction-free note-taking with powerful features",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "316",
+  "major": "Productivity & Utilities",
+  "sub": "Note Taking & Knowledge Management"
+ },
+ {
+  "name": "Deta Surf",
+  "slug": "deta-surf",
+  "sourceUrl": "https://openalternative.co/deta-surf",
+  "description": "Browser and notebook combined with local-first AI",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "3.6K",
+  "major": "Productivity & Utilities",
+  "sub": "Browsers & Extensions"
+ },
+ {
+  "name": "itsnotes",
+  "slug": "itsnotes",
+  "sourceUrl": "https://openalternative.co/itsnotes",
+  "description": "Self-hosted sticky notes with better organization",
+  "license_hint": "MIT",
+  "stars_hint": "31",
+  "major": "Productivity & Utilities",
+  "sub": "Note Taking & Knowledge Management"
+ },
+ {
+  "name": "Justnote",
+  "slug": "justnote",
+  "sourceUrl": "https://openalternative.co/justnote",
+  "description": "Privacy-focused note-taking made simple and fast",
+  "license_hint": "GPL-2.0",
+  "stars_hint": "68",
+  "major": "Productivity & Utilities",
+  "sub": "Note Taking & Knowledge Management"
+ },
+ {
+  "name": "OpenNotas",
+  "slug": "opennotas",
+  "sourceUrl": "https://openalternative.co/opennotas",
+  "description": "Fast, secure, and free personal note-taking app",
+  "license_hint": null,
+  "stars_hint": "179",
+  "major": "Productivity & Utilities",
+  "sub": "Note Taking & Knowledge Management"
+ },
+ {
+  "name": "Tolaria",
+  "slug": "tolaria",
+  "sourceUrl": "https://openalternative.co/tolaria",
+  "description": "Local-first, Git-native personal knowledge base with AI",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "20K",
+  "major": "Productivity & Utilities",
+  "sub": "Note Taking & Knowledge Management"
+ },
+ {
+  "name": "Zen",
+  "slug": "zen",
+  "sourceUrl": "https://openalternative.co/zen",
+  "description": "Clean, distraction-free note-taking with local storage",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "1.2K",
+  "major": "Productivity & Utilities",
+  "sub": "Note Taking & Knowledge Management"
+ },
+ {
+  "name": "Zotero",
+  "slug": "zotero",
+  "sourceUrl": "https://openalternative.co/zotero",
+  "description": "Collect, organize, cite, and share research in one place",
+  "license_hint": null,
+  "stars_hint": "15K",
+  "major": "Productivity & Utilities",
+  "sub": "Note Taking & Knowledge Management"
+ },
+ {
+  "name": "2FAS",
+  "slug": "2fas",
+  "sourceUrl": "https://openalternative.co/2fas",
+  "description": "Local-first 2FA authenticator and password manager",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "1.5K",
+  "major": "Productivity & Utilities",
+  "sub": "Password & Secret Management"
+ },
+ {
+  "name": "Aegis Authenticator",
+  "slug": "aegis-authenticator",
+  "sourceUrl": "https://openalternative.co/aegis-authenticator",
+  "description": "2FA token manager for Android with encrypted vault",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "13K",
+  "major": "Productivity & Utilities",
+  "sub": "Password & Secret Management"
+ },
+ {
+  "name": "Bitwarden",
+  "slug": "bitwarden",
+  "sourceUrl": "https://openalternative.co/bitwarden",
+  "description": "Secure password management for individuals and businesses",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "20K",
+  "major": "Productivity & Utilities",
+  "sub": "Password & Secret Management"
+ },
+ {
+  "name": "Padloc",
+  "slug": "padloc",
+  "sourceUrl": "https://openalternative.co/padloc",
+  "description": "Secure password manager with end-to-end encryption",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "2.9K",
+  "major": "Productivity & Utilities",
+  "sub": "Password & Secret Management"
+ },
+ {
+  "name": "PearPass",
+  "slug": "pearpass",
+  "sourceUrl": "https://openalternative.co/pearpass",
+  "description": "Complete password control, zero cloud dependency",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "534",
+  "major": "Productivity & Utilities",
+  "sub": "Password & Secret Management"
+ },
+ {
+  "name": "Kap",
+  "slug": "kap",
+  "sourceUrl": "https://openalternative.co/kap",
+  "description": "Effortless screen recording for macOS",
+  "license_hint": "MIT",
+  "stars_hint": "19K",
+  "major": "Productivity & Utilities",
+  "sub": "Screen Capture & Recording"
+ },
+ {
+  "name": "Screenity",
+  "slug": "screenity",
+  "sourceUrl": "https://openalternative.co/screenity",
+  "description": "Free, private screen recording for Chrome",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "19K",
+  "major": "Productivity & Utilities",
+  "sub": "Browsers & Extensions"
+ },
+ {
+  "name": "Snapify",
+  "slug": "snapify",
+  "sourceUrl": "https://openalternative.co/snapify",
+  "description": "Self-hosted screen recording for seamless collaboration",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "1K",
+  "major": "Productivity & Utilities",
+  "sub": "Screen Capture & Recording"
+ },
+ {
+  "name": "Cozy",
+  "slug": "cozy",
+  "sourceUrl": "https://openalternative.co/cozy",
+  "description": "Your secure French personal cloud for complete data control",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "1.3K",
+  "major": "Productivity & Utilities",
+  "sub": "File Management & Sync"
+ },
+ {
+  "name": "Hoodik",
+  "slug": "hoodik",
+  "sourceUrl": "https://openalternative.co/hoodik",
+  "description": "Secure self-hosted cloud storage with end-to-end encryption",
+  "license_hint": null,
+  "stars_hint": "1.5K",
+  "major": "Productivity & Utilities",
+  "sub": "File Management & Sync"
+ },
+ {
+  "name": "LocalSend",
+  "slug": "localsend",
+  "sourceUrl": "https://openalternative.co/localsend",
+  "description": "Share files securely across all devices without servers",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "93K",
+  "major": "Productivity & Utilities",
+  "sub": "File Management & Sync"
+ },
+ {
+  "name": "OpenCloud",
+  "slug": "opencloud",
+  "sourceUrl": "https://openalternative.co/opencloud",
+  "description": "Self-hosted file sharing built for digital sovereignty",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "6.1K",
+  "major": "Productivity & Utilities",
+  "sub": "File Management & Sync"
+ },
+ {
+  "name": "PairDrop",
+  "slug": "pairdrop",
+  "sourceUrl": "https://openalternative.co/pairdrop",
+  "description": "Instant file sharing across devices without setup",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "11K",
+  "major": "Productivity & Utilities",
+  "sub": "File Management & Sync"
+ },
+ {
+  "name": "Peergos",
+  "slug": "peergos",
+  "sourceUrl": "https://openalternative.co/peergos",
+  "description": "Secure, private, and decentralized file storage",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "2.5K",
+  "major": "Security & Privacy",
+  "sub": "Data Security & Privacy"
+ },
+ {
+  "name": "Puter",
+  "slug": "puter",
+  "sourceUrl": "https://openalternative.co/puter",
+  "description": "A full desktop environment that runs in your browser",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "44K",
+  "major": "Security & Privacy",
+  "sub": "Data Security & Privacy"
+ },
+ {
+  "name": "Twake Drive",
+  "slug": "twake-drive",
+  "sourceUrl": "https://openalternative.co/twake-drive",
+  "description": "Secure open source file storage with end-to-end encryption",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "986",
+  "major": "Productivity & Utilities",
+  "sub": "File Management & Sync"
+ },
+ {
+  "name": "AgentMail",
+  "slug": "agentmail",
+  "sourceUrl": "https://openalternative.co/agentmail",
+  "description": "Email inbox API built for AI agents and workflows",
+  "license_hint": "MIT",
+  "stars_hint": "38",
+  "major": "Productivity & Utilities",
+  "sub": "Email & Communication"
+ },
+ {
+  "name": "DoubleZero",
+  "slug": "doublezero",
+  "sourceUrl": "https://openalternative.co/doublezero",
+  "description": "Self-hosted email infrastructure for developers",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "1.2K",
+  "major": "Productivity & Utilities",
+  "sub": "Email & Communication"
+ },
+ {
+  "name": "Hyvor Relay",
+  "slug": "hyvor-relay",
+  "sourceUrl": "https://openalternative.co/hyvor-relay",
+  "description": "Open-source email API with enterprise deliverability",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "908",
+  "major": "Productivity & Utilities",
+  "sub": "Email & Communication"
+ },
+ {
+  "name": "Sessy",
+  "slug": "sessy",
+  "sourceUrl": "https://openalternative.co/sessy",
+  "description": "Own your SES email analytics, from send to inbox",
+  "license_hint": null,
+  "stars_hint": "935",
+  "major": "Productivity & Utilities",
+  "sub": "Email & Communication"
+ },
+ {
+  "name": "Tuta",
+  "slug": "tuta",
+  "sourceUrl": "https://openalternative.co/tuta",
+  "description": "Secure email, calendar and contacts with end-to-end encryption",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "7.9K",
+  "major": "Security & Privacy",
+  "sub": "Data Security & Privacy"
+ },
+ {
+  "name": "Twake Mail",
+  "slug": "twake-mail",
+  "sourceUrl": "https://openalternative.co/twake-mail",
+  "description": "Secure open source email with advanced encryption & AI",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "654",
+  "major": "Productivity & Utilities",
+  "sub": "Email & Communication"
+ },
+ {
+  "name": "Financial Freedom",
+  "slug": "financial-freedom",
+  "sourceUrl": "https://openalternative.co/financial-freedom",
+  "description": "Open-source personal finance management tool",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "2.9K",
+  "major": "Productivity & Utilities",
+  "sub": "Personal Finance Management"
+ },
+ {
+  "name": "Monetr",
+  "slug": "monetr",
+  "sourceUrl": "https://openalternative.co/monetr",
+  "description": "Take control of your finances, paycheck by paycheck",
+  "license_hint": "FSL-1.1-MIT",
+  "stars_hint": "677",
+  "major": "Productivity & Utilities",
+  "sub": "Personal Finance Management"
+ },
+ {
+  "name": "Splitpro",
+  "slug": "splitpro",
+  "sourceUrl": "https://openalternative.co/splitpro",
+  "description": "Effortlessly split expenses with friends and groups",
+  "license_hint": "MIT",
+  "stars_hint": "1.5K",
+  "major": "Productivity & Utilities",
+  "sub": "Personal Finance Management"
+ },
+ {
+  "name": "Sure.am",
+  "slug": "sure-am",
+  "sourceUrl": "https://openalternative.co/sure-am",
+  "description": "The personal finance app for everyone",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "10K",
+  "major": "Productivity & Utilities",
+  "sub": "Personal Finance Management"
+ },
+ {
+  "name": "Wealthfolio",
+  "slug": "wealthfolio",
+  "sourceUrl": "https://openalternative.co/wealthfolio",
+  "description": "Secure desktop investment tracker for private wealth management",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "9K",
+  "major": "Productivity & Utilities",
+  "sub": "Personal Finance Management"
+ },
+ {
+  "name": "YAFFA",
+  "slug": "yaffa",
+  "sourceUrl": "https://openalternative.co/yaffa",
+  "description": "Free, self-hosted personal finance app for long-term planning",
+  "license_hint": "MIT",
+  "stars_hint": "109",
+  "major": "Productivity & Utilities",
+  "sub": "Personal Finance Management"
+ },
+ {
+  "name": "Chalk.ist",
+  "slug": "chalkist",
+  "sourceUrl": "https://openalternative.co/chalkist",
+  "description": "Transform your source code into stunning visuals",
+  "license_hint": "MIT",
+  "stars_hint": "1.8K",
+  "major": "Productivity & Utilities",
+  "sub": "Design & Visualization"
+ },
+ {
+  "name": "Ray.so",
+  "slug": "ray-so",
+  "sourceUrl": "https://openalternative.co/ray-so",
+  "description": "Create beautiful images of your code",
+  "license_hint": "MIT",
+  "stars_hint": "2.4K",
+  "major": "Productivity & Utilities",
+  "sub": "Design & Visualization"
+ },
+ {
+  "name": "Bookmark It",
+  "slug": "bookmark-it",
+  "sourceUrl": "https://openalternative.co/bookmark-it",
+  "description": "Organize, discover, and personalize your bookmarks",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "325",
+  "major": "Productivity & Utilities",
+  "sub": "Bookmark & Content Management"
+ },
+ {
+  "name": "Capd",
+  "slug": "capd",
+  "sourceUrl": "https://openalternative.co/capd",
+  "description": "Capture web pages, text, and images. Find them fast.",
+  "license_hint": "MIT",
+  "stars_hint": "53",
+  "major": "Productivity & Utilities",
+  "sub": "Bookmark & Content Management"
+ },
+ {
+  "name": "Cloudmark",
+  "slug": "cloudmark",
+  "sourceUrl": "https://openalternative.co/cloudmark",
+  "description": "Organize and access your bookmarks seamlessly in the cloud",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "76",
+  "major": "Productivity & Utilities",
+  "sub": "Browsers & Extensions"
+ },
+ {
+  "name": "Faved",
+  "slug": "faved",
+  "sourceUrl": "https://openalternative.co/faved",
+  "description": "Handcrafted minimal bookmark manager with advanced tagging system",
+  "license_hint": "MIT",
+  "stars_hint": "1.3K",
+  "major": "Productivity & Utilities",
+  "sub": "Bookmark & Content Management"
+ },
+ {
+  "name": "Karakeep",
+  "slug": "karakeep",
+  "sourceUrl": "https://openalternative.co/karakeep",
+  "description": "Save links, notes, and images. AI tags them for you.",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "29K",
+  "major": "Productivity & Utilities",
+  "sub": "Bookmark & Content Management"
+ },
+ {
+  "name": "Linkding",
+  "slug": "linkding",
+  "sourceUrl": "https://openalternative.co/linkding",
+  "description": "Self-hosted bookmark manager built for speed and simplicity",
+  "license_hint": "MIT",
+  "stars_hint": "11K",
+  "major": "Productivity & Utilities",
+  "sub": "Bookmark & Content Management"
+ },
+ {
+  "name": "Linkwarden",
+  "slug": "linkwarden",
+  "sourceUrl": "https://openalternative.co/linkwarden",
+  "description": "Collaborative bookmark manager for teams and individuals",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "20K",
+  "major": "Productivity & Utilities",
+  "sub": "Bookmark & Content Management"
+ },
+ {
+  "name": "Readeck",
+  "slug": "readeck",
+  "sourceUrl": "https://openalternative.co/readeck",
+  "description": "Save, organize and revisit web content effortlessly",
+  "license_hint": null,
+  "stars_hint": "1.1K",
+  "major": "Productivity & Utilities",
+  "sub": "Bookmark & Content Management"
+ },
+ {
+  "name": "Ryot",
+  "slug": "ryot",
+  "sourceUrl": "https://openalternative.co/ryot",
+  "description": "Track your life, your way",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "3.6K",
+  "major": "Productivity & Utilities",
+  "sub": "Bookmark & Content Management"
+ },
+ {
+  "name": "SeriesGuide",
+  "slug": "seriesguide",
+  "sourceUrl": "https://openalternative.co/seriesguide",
+  "description": "Track your TV shows and movies on Android",
+  "license_hint": null,
+  "stars_hint": "2.2K",
+  "major": "Productivity & Utilities",
+  "sub": "Bookmark & Content Management"
+ },
+ {
+  "name": "Showly",
+  "slug": "showly",
+  "sourceUrl": "https://openalternative.co/showly",
+  "description": "Track TV shows and movies, synced with Trakt.tv",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "1.5K",
+  "major": "Productivity & Utilities",
+  "sub": "Bookmark & Content Management"
+ },
+ {
+  "name": "Tonkatsu Box",
+  "slug": "tonkatsu-box",
+  "sourceUrl": "https://openalternative.co/tonkatsu-box",
+  "description": "Track games, movies, anime, manga, and books in one place",
+  "license_hint": "MIT",
+  "stars_hint": "552",
+  "major": "Productivity & Utilities",
+  "sub": "Bookmark & Content Management"
+ },
+ {
+  "name": "Wallabag",
+  "slug": "wallabag",
+  "sourceUrl": "https://openalternative.co/wallabag",
+  "description": "Save articles for later reading with complete privacy",
+  "license_hint": "MIT",
+  "stars_hint": "13K",
+  "major": "Productivity & Utilities",
+  "sub": "Bookmark & Content Management"
+ },
+ {
+  "name": "IronCalc",
+  "slug": "ironcalc",
+  "sourceUrl": "https://openalternative.co/ironcalc",
+  "description": "A spreadsheet engine you can embed, self-host, or run in the browser",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "4.2K",
+  "major": "Productivity & Utilities",
+  "sub": "Office Suites"
+ },
+ {
+  "name": "ONLYOFFICE Docs",
+  "slug": "onlyoffice-docs",
+  "sourceUrl": "https://openalternative.co/onlyoffice-docs",
+  "description": "Complete office suite for documents, spreadsheets & more",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "6.9K",
+  "major": "Productivity & Utilities",
+  "sub": "Office Suites"
+ },
+ {
+  "name": "Brave",
+  "slug": "brave",
+  "sourceUrl": "https://openalternative.co/brave",
+  "description": "Fast, private browser that puts you first",
+  "license_hint": "MPL-2.0",
+  "stars_hint": "24K",
+  "major": "Productivity & Utilities",
+  "sub": "Browsers & Extensions"
+ },
+ {
+  "name": "Flow",
+  "slug": "flow",
+  "sourceUrl": "https://openalternative.co/flow",
+  "description": "Fast, secure browsing with powerful organization features",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "1.1K",
+  "major": "Productivity & Utilities",
+  "sub": "Browsers & Extensions"
+ },
+ {
+  "name": "Harper",
+  "slug": "harper",
+  "sourceUrl": "https://openalternative.co/harper",
+  "description": "Fast grammar checking that respects your privacy",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "16K",
+  "major": "Productivity & Utilities",
+  "sub": "Browsers & Extensions"
+ },
+ {
+  "name": "Helium",
+  "slug": "helium",
+  "sourceUrl": "https://openalternative.co/helium",
+  "description": "Privacy-first browser with ad-blocking and no bloat",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "21K",
+  "major": "Productivity & Utilities",
+  "sub": "Browsers & Extensions"
+ },
+ {
+  "name": "Ladybird",
+  "slug": "ladybird",
+  "sourceUrl": "https://openalternative.co/ladybird",
+  "description": "An independent browser engine built from scratch, not a fork",
+  "license_hint": "BSD-2-Clause",
+  "stars_hint": "66K",
+  "major": "Productivity & Utilities",
+  "sub": "Browsers & Extensions"
+ },
+ {
+  "name": "LanguageTool",
+  "slug": "languagetool",
+  "sourceUrl": "https://openalternative.co/languagetool",
+  "description": "AI-powered grammar checker for 30+ languages",
+  "license_hint": "LGPL-2.1",
+  "stars_hint": "15K",
+  "major": "Productivity & Utilities",
+  "sub": "Browsers & Extensions"
+ },
+ {
+  "name": "LibreWolf",
+  "slug": "librewolf",
+  "sourceUrl": "https://openalternative.co/librewolf",
+  "description": "Firefox fork hardened for privacy, security, and freedom",
+  "license_hint": null,
+  "stars_hint": "1.3K",
+  "major": "Productivity & Utilities",
+  "sub": "Browsers & Extensions"
+ },
+ {
+  "name": "Linguist",
+  "slug": "linguist",
+  "sourceUrl": "https://openalternative.co/linguist",
+  "description": "Privacy-focused translation with offline capabilities",
+  "license_hint": "BSD-3-Clause",
+  "stars_hint": "1.1K",
+  "major": "Productivity & Utilities",
+  "sub": "Browsers & Extensions"
+ },
+ {
+  "name": "Midori Browser",
+  "slug": "midori-browser",
+  "sourceUrl": "https://openalternative.co/midori-browser",
+  "description": "Fast, secure, and privacy-focused web browsing",
+  "license_hint": "MPL-2.0",
+  "stars_hint": "403",
+  "major": "Productivity & Utilities",
+  "sub": "Browsers & Extensions"
+ },
+ {
+  "name": "Waterfox",
+  "slug": "waterfox",
+  "sourceUrl": "https://openalternative.co/waterfox",
+  "description": "Privacy-first browser built for power users",
+  "license_hint": null,
+  "stars_hint": "6.3K",
+  "major": "Productivity & Utilities",
+  "sub": "Browsers & Extensions"
+ },
+ {
+  "name": "Zen",
+  "slug": "zen-privacy",
+  "sourceUrl": "https://openalternative.co/zen-privacy",
+  "description": "System-wide ad-blocking and privacy protection, no extensions needed",
+  "license_hint": "MIT",
+  "stars_hint": "4.2K",
+  "major": "Productivity & Utilities",
+  "sub": "Browsers & Extensions"
+ },
+ {
+  "name": "Zen Browser",
+  "slug": "zen-browser",
+  "sourceUrl": "https://openalternative.co/zen-browser",
+  "description": "Privacy-focused browser with powerful customization",
+  "license_hint": "MPL-2.0",
+  "stars_hint": "45K",
+  "major": "Productivity & Utilities",
+  "sub": "Browsers & Extensions"
+ },
+ {
+  "name": "ChatbotX",
+  "slug": "chatbotx",
+  "sourceUrl": "https://openalternative.co/chatbotx",
+  "description": "Self-hostable omnichannel chatbot platform for agencies",
+  "license_hint": "MIT",
+  "stars_hint": "832",
+  "major": "Productivity & Utilities",
+  "sub": "Automation"
+ },
+ {
+  "name": "MDMA",
+  "slug": "mdma",
+  "sourceUrl": "https://openalternative.co/mdma",
+  "description": "Markdown that mounts real applications",
+  "license_hint": "MIT",
+  "stars_hint": "67",
+  "major": "Productivity & Utilities",
+  "sub": "Automation"
+ },
+ {
+  "name": "BleachBit",
+  "slug": "bleachbit",
+  "sourceUrl": "https://openalternative.co/bleachbit",
+  "description": "Clean your system and free disk space",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "7K",
+  "major": "Productivity & Utilities",
+  "sub": "System Cleanup & Optimization"
+ },
+ {
+  "name": "Mole",
+  "slug": "mole",
+  "sourceUrl": "https://openalternative.co/mole",
+  "description": "Mac cleaner, app manager, and system monitor in one",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "68K",
+  "major": "Productivity & Utilities",
+  "sub": "System Cleanup & Optimization"
+ },
+ {
+  "name": "Pearcleaner",
+  "slug": "pearcleaner",
+  "sourceUrl": "https://openalternative.co/pearcleaner",
+  "description": "Remove Mac apps and all their leftover files",
+  "license_hint": null,
+  "stars_hint": "15K",
+  "major": "Productivity & Utilities",
+  "sub": "System Cleanup & Optimization"
+ },
+ {
+  "name": "CoMaps",
+  "slug": "comaps",
+  "sourceUrl": "https://openalternative.co/comaps",
+  "description": "Navigate anywhere offline with complete privacy",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "2.1K",
+  "major": "Productivity & Utilities",
+  "sub": "Maps & Navigation"
+ },
+ {
+  "name": "Organic Maps",
+  "slug": "organic-maps",
+  "sourceUrl": "https://openalternative.co/organic-maps",
+  "description": "Privacy-first offline maps for hiking, cycling & navigation",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "15K",
+  "major": "Productivity & Utilities",
+  "sub": "Maps & Navigation"
+ },
+ {
+  "name": "OSMAnd",
+  "slug": "osmand",
+  "sourceUrl": "https://openalternative.co/osmand",
+  "description": "Navigate anywhere with detailed offline maps and GPS",
+  "license_hint": null,
+  "stars_hint": "6K",
+  "major": "Productivity & Utilities",
+  "sub": "Maps & Navigation"
+ },
+ {
+  "name": "Paralino",
+  "slug": "paralino",
+  "sourceUrl": "https://openalternative.co/paralino",
+  "description": "End-to-end encrypted location sharing for groups",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "63",
+  "major": "Productivity & Utilities",
+  "sub": "Maps & Navigation"
+ },
+ {
+  "name": "Authgear",
+  "slug": "authgear",
+  "sourceUrl": "https://openalternative.co/authgear",
+  "description": "Managed identity and access management for any app",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "2.1K",
+  "major": "Security & Privacy",
+  "sub": "Identity & Access Management (IAM)"
+ },
+ {
+  "name": "Better Auth",
+  "slug": "better-auth",
+  "sourceUrl": "https://openalternative.co/better-auth",
+  "description": "Framework-agnostic authentication for TypeScript applications",
+  "license_hint": "MIT",
+  "stars_hint": "30K",
+  "major": "Security & Privacy",
+  "sub": "Identity & Access Management (IAM)"
+ },
+ {
+  "name": "Hexclave",
+  "slug": "hexclave",
+  "sourceUrl": "https://openalternative.co/hexclave",
+  "description": "Modular auth, payments, emails, and analytics for your product",
+  "license_hint": null,
+  "stars_hint": "6.9K",
+  "major": "Security & Privacy",
+  "sub": "Identity & Access Management (IAM)"
+ },
+ {
+  "name": "JumpServer",
+  "slug": "jumpserver",
+  "sourceUrl": "https://openalternative.co/jumpserver",
+  "description": "Secure access management for modern IT infrastructure",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "32K",
+  "major": "Security & Privacy",
+  "sub": "Identity & Access Management (IAM)"
+ },
+ {
+  "name": "Ory",
+  "slug": "ory",
+  "sourceUrl": "https://openalternative.co/ory",
+  "description": "A certified and battle-tested identity solution",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "14K",
+  "major": "Security & Privacy",
+  "sub": "Identity & Access Management (IAM)"
+ },
+ {
+  "name": "Permify",
+  "slug": "permify",
+  "sourceUrl": "https://openalternative.co/permify",
+  "description": "Build scalable authorization in minutes, not months",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "6K",
+  "major": "Security & Privacy",
+  "sub": "Identity & Access Management (IAM)"
+ },
+ {
+  "name": "Pocket ID",
+  "slug": "pocket-id",
+  "sourceUrl": "https://openalternative.co/pocket-id",
+  "description": "Passwordless OIDC provider built for self-hosters",
+  "license_hint": "BSD-2-Clause",
+  "stars_hint": "9.3K",
+  "major": "Security & Privacy",
+  "sub": "Identity & Access Management (IAM)"
+ },
+ {
+  "name": "Keyshade",
+  "slug": "keyshade",
+  "sourceUrl": "https://openalternative.co/keyshade",
+  "description": "Secure secret management with public key encryption",
+  "license_hint": "MPL-2.0",
+  "stars_hint": "769",
+  "major": "Security & Privacy",
+  "sub": "Secrets Management"
+ },
+ {
+  "name": "Phase",
+  "slug": "phase",
+  "sourceUrl": "https://openalternative.co/phase",
+  "description": "Secure, deploy, and manage application secrets effortlessly",
+  "license_hint": "MIT",
+  "stars_hint": "924",
+  "major": "Security & Privacy",
+  "sub": "Secrets Management"
+ },
+ {
+  "name": "Tirreno",
+  "slug": "tirreno",
+  "sourceUrl": "https://openalternative.co/tirreno",
+  "description": "Security framework that protects from within your product",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "1.5K",
+  "major": "Security & Privacy",
+  "sub": "Fraud Prevention"
+ },
+ {
+  "name": "Tracecat",
+  "slug": "tracecat",
+  "sourceUrl": "https://openalternative.co/tracecat",
+  "description": "Open source security automation platform for builders",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "3.8K",
+  "major": "Security & Privacy",
+  "sub": "Threat Detection & Response"
+ },
+ {
+  "name": "Signal",
+  "slug": "signal",
+  "sourceUrl": "https://openalternative.co/signal",
+  "description": "Private messaging with end-to-end encryption",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "29K",
+  "major": "Security & Privacy",
+  "sub": "Data Security & Privacy"
+ },
+ {
+  "name": "Abby",
+  "slug": "abby",
+  "sourceUrl": "https://openalternative.co/abby",
+  "description": "Type-safe feature flags and remote config for developers",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "166",
+  "major": "Security & Privacy",
+  "sub": "Application Security"
+ },
+ {
+  "name": "ALTCHA",
+  "slug": "altcha",
+  "sourceUrl": "https://openalternative.co/altcha",
+  "description": "Next-Gen CAPTCHA and Spam Protection, GDPR compliant",
+  "license_hint": "MIT",
+  "stars_hint": "2.8K",
+  "major": "Security & Privacy",
+  "sub": "Application Security"
+ },
+ {
+  "name": "FeatBit",
+  "slug": "featbit",
+  "sourceUrl": "https://openalternative.co/featbit",
+  "description": "Open-source feature flag management for seamless deployments",
+  "license_hint": "MIT",
+  "stars_hint": "1.9K",
+  "major": "Security & Privacy",
+  "sub": "Application Security"
+ },
+ {
+  "name": "Featurevisor",
+  "slug": "featurevisor",
+  "sourceUrl": "https://openalternative.co/featurevisor",
+  "description": "Feature management with GitOps for developers",
+  "license_hint": "MIT",
+  "stars_hint": "810",
+  "major": "Security & Privacy",
+  "sub": "Application Security"
+ },
+ {
+  "name": "Flipt",
+  "slug": "flipt",
+  "sourceUrl": "https://openalternative.co/flipt",
+  "description": "Git-native feature management for developers",
+  "license_hint": "GPL-3.0",
+  "stars_hint": "4.9K",
+  "major": "Security & Privacy",
+  "sub": "Application Security"
+ },
+ {
+  "name": "Friendly Captcha",
+  "slug": "friendly-captcha",
+  "sourceUrl": "https://openalternative.co/friendly-captcha",
+  "description": "Invisible bot protection that respects user privacy",
+  "license_hint": "MPL-2.0",
+  "stars_hint": "35",
+  "major": "Security & Privacy",
+  "sub": "Application Security"
+ },
+ {
+  "name": "mCaptcha",
+  "slug": "mcaptcha",
+  "sourceUrl": "https://openalternative.co/mcaptcha",
+  "description": "Privacy-first proof-of-work CAPTCHA without user friction",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "2.5K",
+  "major": "Security & Privacy",
+  "sub": "Application Security"
+ },
+ {
+  "name": "Private Captcha",
+  "slug": "private-captcha",
+  "sourceUrl": "https://openalternative.co/private-captcha",
+  "description": "GDPR-compliant bot protection without user friction",
+  "license_hint": null,
+  "stars_hint": "194",
+  "major": "Security & Privacy",
+  "sub": "Application Security"
+ },
+ {
+  "name": "Procaptcha",
+  "slug": "procaptcha",
+  "sourceUrl": "https://openalternative.co/procaptcha",
+  "description": "Decentralized CAPTCHA for enhanced web security",
+  "license_hint": "Apache-2.0",
+  "stars_hint": "300",
+  "major": "Security & Privacy",
+  "sub": "Application Security"
+ },
+ {
+  "name": "Unleash",
+  "slug": "unleash",
+  "sourceUrl": "https://openalternative.co/unleash",
+  "description": "Feature flags for rapid, risk-free software deployment",
+  "license_hint": "AGPL-3.0",
+  "stars_hint": "14K",
+  "major": "Security & Privacy",
+  "sub": "Application Security"
+ },
+ {
+  "name": "Werbot",
+  "slug": "werbot",
+  "sourceUrl": "https://openalternative.co/werbot",
+  "description": "Secure, scalable server access management for DevOps",
+  "license_hint": "BUSL-1.1",
+  "stars_hint": "170",
+  "major": "Security & Privacy",
+  "sub": "Network Security"
+ },
+ {
+  "name": "Marble",
+  "slug": "marble",
+  "sourceUrl": "https://openalternative.co/marble",
+  "description": "Real-time fraud detection and AML compliance engine",
+  "license_hint": "Elastic-2.0",
+  "stars_hint": "602",
+  "major": "Security & Privacy",
+  "sub": "Fraud Prevention"
+ }
+]

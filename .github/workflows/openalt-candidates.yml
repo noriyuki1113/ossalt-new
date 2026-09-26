@@ -1,0 +1,76 @@
+name: OpenAlternative候補
+
+# 手動実行専用。iPhone のブラウザから Actions → OpenAlternative候補 → Run workflow。
+# ・slugs に docs/openalt-candidates.md で選んだ slug を入れると、ページを取得して
+#   GitHub リポジトリ等を補完し、「ツール追加」に貼れる行をサマリに表示する。
+# ・regenerate にチェックすると、先に候補一覧（docs/openalt-candidates.*）を作り直す。
+# tools.json には一切触れない（採否は人が「ツール追加」で決める）。
+on:
+  workflow_dispatch:
+    inputs:
+      slugs:
+        description: "補完する slug（カンマ区切り。例: parlant,litellm）。空なら補完しない"
+        required: false
+        type: string
+      regenerate:
+        description: "候補一覧を作り直す（月1回程度で十分）"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: openalt-candidates
+  cancel-in-progress: false
+
+jobs:
+  candidates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: 候補一覧の再生成
+        if: inputs.regenerate
+        run: node scripts/generate-openalt-candidates.mjs
+
+      # 入力は env: 経由で受け取る（run: に直接埋め込まない）
+      - name: 選んだ候補の補完
+        if: inputs.slugs != ''
+        env:
+          SLUGS: ${{ inputs.slugs }}
+        run: node scripts/enrich-openalt-candidates.mjs --only "$SLUGS"
+
+      - name: 結果をサマリに表示
+        if: inputs.slugs != ''
+        run: |
+          {
+            echo "## ツール追加に貼る行"
+            echo ""
+            echo "TODO_ の箇所（代替SaaS・カテゴリ・日本語説明、見つからなければ公式URLも）を埋めてから貼ってください。"
+            echo ""
+            echo '```'
+            cat scripts/candidates/openalt-pending.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: コミットと push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/openalt-candidates.json docs/openalt-candidates.md
+          if [ -f scripts/candidates/openalt-pending.txt ]; then
+            git add scripts/candidates/openalt-pending.txt
+          fi
+          if git diff --cached --quiet; then
+            echo "変更なし"
+          else
+            git commit -m "data: OpenAlternative候補 $(date -u +%Y-%m-%d)"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push
+          fi
