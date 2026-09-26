@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SiteFooter, SiteHeader, JsonLd } from "@/components/site-chrome";
+import { HouseAd } from "@/components/house-ad";
 import { ToolRow } from "@/components/tool-views";
 import { getActiveTools, getMeta } from "@/lib/data";
 import { CATEGORIES } from "@/lib/categories";
@@ -136,6 +137,8 @@ export default function HomePage() {
             ))}
           </div>
         </section>
+
+        <HouseAd placement="home_bottom" />
 
         <section className="section">
           <div className="section__head">

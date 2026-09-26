@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs, JsonLd, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ComparisonTable } from "@/components/tool-views";
+import { HouseAd } from "@/components/house-ad";
 import { getAlternativeGuide } from "@/lib/alternative-guides";
 import { getCompetitor, getCompetitors, getMeta, getTool } from "@/lib/data";
 import { SITE, t } from "@/lib/site";
@@ -67,6 +68,8 @@ export default async function AlternativeDetailPage({
           <br />
           {t("alt.compareNote")}
         </div>
+
+        <HouseAd placement={`alternative_${c.slug}`} />
 
         {guide && guide.picks.length > 0 && (
           <section className="section">
