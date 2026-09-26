@@ -1,0 +1,46 @@
+name: 月次レポート
+
+# 毎月1日 19:23 UTC（＝2日 04:23 JST）に実行。日次の「データ更新」（18:00 UTC）の
+# 後に動かし、その日の最新データで前月分を集計する。手動実行も可能。
+# 記事ができると「GitHub Pages 公開」ワークフローが続けて動き、サイトに反映される。
+#
+# scripts/monthly-report.mjs が前回のスナップショット（data-source/snapshots/）と
+# 現在のデータを比べ、content/blog/monthly-YYYY-MM.md を作る。前回から20日未満の
+# 場合は何もしない（集計期間が短すぎる記事を出さないため）。
+on:
+  schedule:
+    - cron: "23 19 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: monthly-report
+  cancel-in-progress: false
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: 月次レポートの作成
+        run: node scripts/monthly-report.mjs
+
+      - name: コミットと push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/blog data-source/snapshots
+          if git diff --cached --quiet; then
+            echo "作成なし"
+          else
+            git commit -m "blog: 月次レポート $(date -u +%Y-%m-%d)"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push
+          fi

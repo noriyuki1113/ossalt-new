@@ -1,0 +1,3497 @@
+{
+ "date": "2026-09-26",
+ "tools": {
+  "n8n": {
+   "name": "n8n",
+   "license": "Sustainable Use License",
+   "stars": 205907,
+   "archived": false,
+   "last_commit": "2026-09-25T07:46:04Z",
+   "category": "automation",
+   "competitor": "Zapier"
+  },
+  "excalidraw": {
+   "name": "Excalidraw",
+   "license": "MIT",
+   "stars": 132915,
+   "archived": false,
+   "last_commit": "2026-09-25T18:38:21Z",
+   "category": "design",
+   "competitor": "Miro"
+  },
+  "immich": {
+   "name": "Immich",
+   "license": "AGPL-3.0",
+   "stars": 115000,
+   "archived": false,
+   "last_commit": "2026-09-25T05:51:37Z",
+   "category": "files",
+   "competitor": "Google Photos"
+  },
+  "supabase": {
+   "name": "Supabase",
+   "license": "Apache-2.0",
+   "stars": 110752,
+   "archived": false,
+   "last_commit": "2026-09-25T07:41:50Z",
+   "category": "devtools",
+   "competitor": "Firebase"
+  },
+  "stirling-pdf": {
+   "name": "Stirling PDF",
+   "license": "MIT",
+   "stars": 93009,
+   "archived": false,
+   "last_commit": "2026-09-25T20:47:15Z",
+   "category": "documents",
+   "competitor": "Adobe Acrobat"
+  },
+  "hoppscotch": {
+   "name": "Hoppscotch",
+   "license": "MIT",
+   "stars": 80506,
+   "archived": false,
+   "last_commit": "2026-09-25T06:20:58Z",
+   "category": "devtools",
+   "competitor": "Postman"
+  },
+  "appflowy": {
+   "name": "AppFlowy",
+   "license": "AGPL-3.0",
+   "stars": 76917,
+   "archived": false,
+   "last_commit": "2026-09-22T07:09:34Z",
+   "category": "note-docs",
+   "competitor": "Notion"
+  },
+  "grafana": {
+   "name": "Grafana",
+   "license": "AGPL-3.0",
+   "stars": 76907,
+   "archived": false,
+   "last_commit": "2026-09-25T20:49:41Z",
+   "category": "observability",
+   "competitor": "Datadog"
+  },
+  "affine": {
+   "name": "AFFiNE",
+   "license": "MIT",
+   "stars": 72954,
+   "archived": false,
+   "last_commit": "2026-09-23T09:37:02Z",
+   "category": "note-docs",
+   "competitor": "Notion"
+  },
+  "vaultwarden": {
+   "name": "Vaultwarden",
+   "license": "AGPL-3.0",
+   "stars": 68136,
+   "archived": false,
+   "last_commit": "2026-09-23T23:47:29Z",
+   "category": "security",
+   "competitor": "Bitwarden"
+  },
+  "nocodb": {
+   "name": "NocoDB",
+   "license": "Sustainable Use License",
+   "stars": 65071,
+   "archived": false,
+   "last_commit": "2026-09-25T18:24:07Z",
+   "category": "database",
+   "competitor": "Airtable"
+  },
+  "coolify": {
+   "name": "Coolify",
+   "license": "Apache-2.0",
+   "stars": 62247,
+   "archived": false,
+   "last_commit": "2026-09-24T21:30:05Z",
+   "category": "devtools",
+   "competitor": "Vercel"
+  },
+  "penpot": {
+   "name": "Penpot",
+   "license": "MPL-2.0",
+   "stars": 60350,
+   "archived": false,
+   "last_commit": "2026-09-25T07:42:30Z",
+   "category": "design",
+   "competitor": "Figma"
+  },
+  "plane": {
+   "name": "Plane",
+   "license": "AGPL-3.0",
+   "stars": 59885,
+   "archived": false,
+   "last_commit": "2026-09-25T11:51:51Z",
+   "category": "project",
+   "competitor": "Linear"
+  },
+  "gitea": {
+   "name": "Gitea",
+   "license": "MIT",
+   "stars": 58156,
+   "archived": false,
+   "last_commit": "2026-09-25T05:56:07Z",
+   "category": "devtools",
+   "competitor": "GitHub"
+  },
+  "twenty": {
+   "name": "Twenty",
+   "license": "AGPL-3.0",
+   "stars": 57470,
+   "archived": false,
+   "last_commit": "2026-09-25T07:41:27Z",
+   "category": "crm",
+   "competitor": "Hubspot"
+  },
+  "ghost": {
+   "name": "Ghost",
+   "license": "MIT",
+   "stars": 55431,
+   "archived": false,
+   "last_commit": "2026-09-25T19:57:21Z",
+   "category": "cms",
+   "competitor": "WordPress"
+  },
+  "metabase": {
+   "name": "Metabase",
+   "license": "AGPL-3.0 / Metabase Commercial",
+   "stars": 49413,
+   "archived": false,
+   "last_commit": "2026-09-25T07:46:15Z",
+   "category": "nocode",
+   "competitor": "Tableau"
+  },
+  "cal-com": {
+   "name": "Cal.com",
+   "license": "MIT",
+   "stars": 48644,
+   "archived": false,
+   "last_commit": "2026-09-20T08:42:15Z",
+   "category": "scheduling",
+   "competitor": "Calendly"
+  },
+  "rocket-chat": {
+   "name": "Rocket.Chat",
+   "license": "MIT",
+   "stars": 46176,
+   "archived": false,
+   "last_commit": "2026-09-25T20:29:26Z",
+   "category": "communication",
+   "competitor": "Slack"
+  },
+  "outline": {
+   "name": "Outline",
+   "license": "BUSL 1.1",
+   "stars": 40698,
+   "archived": false,
+   "last_commit": "2026-09-25T02:59:26Z",
+   "category": "note-docs",
+   "competitor": "Confluence"
+  },
+  "posthog": {
+   "name": "PostHog",
+   "license": "MIT",
+   "stars": 39922,
+   "archived": false,
+   "last_commit": "2026-09-25T07:47:07Z",
+   "category": "analytics",
+   "competitor": "Mixpanel"
+  },
+  "mattermost": {
+   "name": "Mattermost",
+   "license": "Apache-2.0",
+   "stars": 39189,
+   "archived": false,
+   "last_commit": "2026-09-25T19:53:40Z",
+   "category": "communication",
+   "competitor": "Slack"
+  },
+  "umami": {
+   "name": "Umami",
+   "license": "MIT",
+   "stars": 38997,
+   "archived": false,
+   "last_commit": "2026-09-25T01:13:16Z",
+   "category": "analytics",
+   "competitor": "Google Analytics"
+  },
+  "directus": {
+   "name": "Directus",
+   "license": null,
+   "stars": 37963,
+   "archived": false,
+   "last_commit": "2026-09-25T07:28:09Z",
+   "category": "cms",
+   "competitor": "Contentful"
+  },
+  "chatwoot": {
+   "name": "Chatwoot",
+   "license": "MIT",
+   "stars": 37196,
+   "archived": false,
+   "last_commit": "2026-09-25T20:38:05Z",
+   "category": "support",
+   "competitor": "Intercom"
+  },
+  "keycloak": {
+   "name": "Keycloak",
+   "license": "Apache-2.0",
+   "stars": 36986,
+   "archived": false,
+   "last_commit": "2026-09-25T06:52:21Z",
+   "category": "security",
+   "competitor": "Auth0"
+  },
+  "nextcloud": {
+   "name": "Nextcloud",
+   "license": "AGPL-3.0",
+   "stars": 36911,
+   "archived": false,
+   "last_commit": "2026-09-25T06:58:25Z",
+   "category": "files",
+   "competitor": "Google Drive"
+  },
+  "plausible": {
+   "name": "Plausible",
+   "license": "AGPL-3.0",
+   "stars": 29218,
+   "archived": false,
+   "last_commit": "2026-09-25T14:09:38Z",
+   "category": "analytics",
+   "competitor": "Google Analytics"
+  },
+  "budibase": {
+   "name": "Budibase",
+   "license": "BUSL 1.1",
+   "stars": 28303,
+   "archived": false,
+   "last_commit": "2026-09-24T16:13:47Z",
+   "category": "nocode",
+   "competitor": "Retool"
+  },
+  "activepieces": {
+   "name": "Activepieces",
+   "license": "MIT",
+   "stars": 24724,
+   "archived": false,
+   "last_commit": "2026-09-25T06:46:11Z",
+   "category": "automation",
+   "competitor": "Zapier"
+  },
+  "nocobase": {
+   "name": "NocoBase",
+   "license": "NocoBase License",
+   "stars": 24352,
+   "archived": false,
+   "last_commit": "2026-09-25T14:52:16Z",
+   "category": "database",
+   "competitor": "Airtable"
+  },
+  "listmonk": {
+   "name": "Listmonk",
+   "license": "AGPL-3.0",
+   "stars": 23566,
+   "archived": false,
+   "last_commit": "2026-09-25T02:20:41Z",
+   "category": "marketing",
+   "competitor": "Sendgrid"
+  },
+  "matomo": {
+   "name": "Matomo",
+   "license": "GPL-3.0",
+   "stars": 21894,
+   "archived": false,
+   "last_commit": "2026-09-25T07:09:10Z",
+   "category": "analytics",
+   "competitor": "Google Analytics"
+  },
+  "docmost": {
+   "name": "Docmost",
+   "license": "AGPL-3.0",
+   "stars": 21791,
+   "archived": false,
+   "last_commit": "2026-09-22T02:23:21Z",
+   "category": "note-docs",
+   "competitor": "Notion"
+  },
+  "formbricks": {
+   "name": "Formbricks",
+   "license": "AGPL-3.0",
+   "stars": 13019,
+   "archived": false,
+   "last_commit": "2026-09-25T07:44:15Z",
+   "category": "marketing",
+   "competitor": "Typeform"
+  },
+  "baserow": {
+   "name": "Baserow",
+   "license": "MIT",
+   "stars": 5996,
+   "archived": false,
+   "last_commit": "2026-09-25T07:37:39Z",
+   "category": "database",
+   "competitor": "Airtable"
+  },
+  "vikunja": {
+   "name": "Vikunja",
+   "license": "AGPL-3.0",
+   "stars": 5511,
+   "archived": false,
+   "last_commit": "2026-09-24T16:54:06Z",
+   "category": "project",
+   "competitor": "Asana"
+  },
+  "taiga": {
+   "name": "Taiga",
+   "license": "MPL-2.0",
+   "stars": 2149,
+   "archived": false,
+   "last_commit": "2025-10-13T18:08:48Z",
+   "category": "project",
+   "competitor": "Jira"
+  },
+  "glitchtip": {
+   "name": "GlitchTip",
+   "license": "MIT",
+   "stars": 187,
+   "archived": false,
+   "last_commit": "2026-02-10T14:09:19Z",
+   "category": "observability",
+   "competitor": "Sentry"
+  },
+  "joplin": {
+   "name": "Joplin",
+   "license": "AGPL-3.0",
+   "stars": 56479,
+   "archived": false,
+   "last_commit": "2026-09-25T18:41:04Z",
+   "category": "note-docs",
+   "competitor": "Evernote"
+  },
+  "logseq": {
+   "name": "Logseq",
+   "license": "AGPL-3.0",
+   "stars": 45053,
+   "archived": false,
+   "last_commit": "2026-09-25T07:24:51Z",
+   "category": "note-docs",
+   "competitor": "Obsidian"
+  },
+  "trilium": {
+   "name": "Trilium",
+   "license": "AGPL-3.0",
+   "stars": 37977,
+   "archived": false,
+   "last_commit": "2026-09-25T05:23:47Z",
+   "category": "note-docs",
+   "competitor": "Obsidian"
+  },
+  "siyuan": {
+   "name": "SiYuan",
+   "license": "AGPL-3.0",
+   "stars": 46506,
+   "archived": false,
+   "last_commit": "2026-09-25T17:32:50Z",
+   "category": "note-docs",
+   "competitor": "Notion"
+  },
+  "memos": {
+   "name": "Memos",
+   "license": "MIT",
+   "stars": 63321,
+   "archived": false,
+   "last_commit": "2026-09-23T00:19:12Z",
+   "category": "note-docs",
+   "competitor": "Flomo"
+  },
+  "bookstack": {
+   "name": "BookStack",
+   "license": "MIT",
+   "stars": 19054,
+   "archived": false,
+   "last_commit": "2026-09-24T17:31:28Z",
+   "category": "note-docs",
+   "competitor": "Confluence"
+  },
+  "wikijs": {
+   "name": "Wiki.js",
+   "license": "AGPL-3.0",
+   "stars": 28964,
+   "archived": false,
+   "last_commit": "2026-09-25T20:35:16Z",
+   "category": "note-docs",
+   "competitor": "Confluence"
+  },
+  "mediawiki": {
+   "name": "MediaWiki",
+   "license": "GPL-2.0",
+   "stars": 5177,
+   "archived": false,
+   "last_commit": "2026-09-25T07:33:30Z",
+   "category": "note-docs",
+   "competitor": "Confluence"
+  },
+  "anytype": {
+   "name": "Anytype",
+   "license": "Any Source Available License",
+   "stars": 8848,
+   "archived": false,
+   "last_commit": "2026-09-25T07:24:03Z",
+   "category": "note-docs",
+   "competitor": "Notion"
+  },
+  "hedgedoc": {
+   "name": "HedgeDoc",
+   "license": "AGPL-3.0",
+   "stars": 7444,
+   "archived": false,
+   "last_commit": "2026-09-25T14:11:53Z",
+   "category": "note-docs",
+   "competitor": "Google Docs"
+  },
+  "etherpad": {
+   "name": "Etherpad",
+   "license": "Apache-2.0",
+   "stars": 18556,
+   "archived": false,
+   "last_commit": "2026-09-24T15:27:37Z",
+   "category": "note-docs",
+   "competitor": "Google Docs"
+  },
+  "cryptpad": {
+   "name": "CryptPad",
+   "license": "AGPL-3.0",
+   "stars": 7955,
+   "archived": false,
+   "last_commit": "2026-09-25T07:27:44Z",
+   "category": "note-docs",
+   "competitor": "Google Docs"
+  },
+  "notesnook": {
+   "name": "Notesnook",
+   "license": "GPL-3.0",
+   "stars": 14639,
+   "archived": false,
+   "last_commit": "2026-09-25T20:26:37Z",
+   "category": "note-docs",
+   "competitor": "Evernote"
+  },
+  "standard-notes": {
+   "name": "Standard Notes",
+   "license": "AGPL-3.0",
+   "stars": 6633,
+   "archived": false,
+   "last_commit": "2026-09-24T13:32:20Z",
+   "category": "note-docs",
+   "competitor": "Evernote"
+  },
+  "silverbullet": {
+   "name": "SilverBullet",
+   "license": "MIT",
+   "stars": 6156,
+   "archived": false,
+   "last_commit": "2026-09-25T06:48:46Z",
+   "category": "note-docs",
+   "competitor": "Obsidian"
+  },
+  "onlyoffice": {
+   "name": "ONLYOFFICE",
+   "license": "AGPL-3.0",
+   "stars": 6943,
+   "archived": false,
+   "last_commit": "2026-07-22T09:43:52Z",
+   "category": "office",
+   "competitor": "Microsoft 365"
+  },
+  "collabora-online": {
+   "name": "Collabora Online",
+   "license": "MPL-2.0",
+   "stars": 3348,
+   "archived": false,
+   "last_commit": "2026-09-24T12:48:26Z",
+   "category": "office",
+   "competitor": "Microsoft 365"
+  },
+  "odoo": {
+   "name": "Odoo",
+   "license": "LGPL-3.0",
+   "stars": 54580,
+   "archived": false,
+   "last_commit": "2026-09-25T07:46:26Z",
+   "category": "office",
+   "competitor": "Salesforce"
+  },
+  "erpnext": {
+   "name": "ERPNext",
+   "license": "GPL-3.0",
+   "stars": 39549,
+   "archived": false,
+   "last_commit": "2026-09-25T18:01:25Z",
+   "category": "office",
+   "competitor": "Salesforce"
+  },
+  "radicale": {
+   "name": "Radicale",
+   "license": "GPL-3.0",
+   "stars": 5044,
+   "archived": false,
+   "last_commit": "2026-09-24T06:56:27Z",
+   "category": "office",
+   "competitor": "Google Calendar"
+  },
+  "baikal": {
+   "name": "Baikal",
+   "license": "GPL-3.0",
+   "stars": 3320,
+   "archived": false,
+   "last_commit": "2026-08-13T20:02:23Z",
+   "category": "office",
+   "competitor": "Google Calendar"
+  },
+  "zulip": {
+   "name": "Zulip",
+   "license": "Apache-2.0",
+   "stars": 25952,
+   "archived": false,
+   "last_commit": "2026-09-25T20:06:53Z",
+   "category": "communication",
+   "competitor": "Slack"
+  },
+  "element": {
+   "name": "Element",
+   "license": "AGPL-3.0",
+   "stars": 13505,
+   "archived": false,
+   "last_commit": "2026-09-25T07:25:42Z",
+   "category": "communication",
+   "competitor": "Slack"
+  },
+  "synapse": {
+   "name": "Synapse",
+   "license": "AGPL-3.0",
+   "stars": 4648,
+   "archived": false,
+   "last_commit": "2026-09-24T21:22:10Z",
+   "category": "communication",
+   "competitor": "Slack"
+  },
+  "revolt": {
+   "name": "Revolt",
+   "license": "AGPL-3.0",
+   "stars": 3353,
+   "archived": false,
+   "last_commit": "2026-09-25T20:33:11Z",
+   "category": "communication",
+   "competitor": "Discord"
+  },
+  "spacebar": {
+   "name": "Spacebar",
+   "license": "AGPL-3.0",
+   "stars": 2199,
+   "archived": false,
+   "last_commit": "2026-09-24T19:45:20Z",
+   "category": "communication",
+   "competitor": "Discord"
+  },
+  "nextcloud-talk": {
+   "name": "Nextcloud Talk",
+   "license": "AGPL-3.0",
+   "stars": 2201,
+   "archived": false,
+   "last_commit": "2026-09-25T00:34:52Z",
+   "category": "communication",
+   "competitor": "Microsoft Teams"
+  },
+  "zammad": {
+   "name": "Zammad",
+   "license": "AGPL-3.0",
+   "stars": 5953,
+   "archived": false,
+   "last_commit": "2026-09-25T13:40:49Z",
+   "category": "support",
+   "competitor": "Zendesk"
+  },
+  "mailcow": {
+   "name": "mailcow",
+   "license": "GPL-3.0",
+   "stars": 13511,
+   "archived": false,
+   "last_commit": "2026-09-24T20:32:37Z",
+   "category": "email",
+   "competitor": "Gmail"
+  },
+  "mailu": {
+   "name": "Mailu",
+   "license": "MIT",
+   "stars": 7522,
+   "archived": false,
+   "last_commit": "2026-09-24T18:02:59Z",
+   "category": "email",
+   "competitor": "Gmail"
+  },
+  "docker-mailserver": {
+   "name": "Docker Mailserver",
+   "license": "MIT",
+   "stars": 18874,
+   "archived": false,
+   "last_commit": "2026-09-25T19:57:10Z",
+   "category": "email",
+   "competitor": "Gmail"
+  },
+  "stalwart": {
+   "name": "Stalwart",
+   "license": "AGPL-3.0",
+   "stars": 14805,
+   "archived": false,
+   "last_commit": "2026-09-25T07:29:48Z",
+   "category": "email",
+   "competitor": "Gmail"
+  },
+  "roundcube": {
+   "name": "Roundcube",
+   "license": "GPL-3.0",
+   "stars": 7189,
+   "archived": false,
+   "last_commit": "2026-09-07T14:04:05Z",
+   "category": "email",
+   "competitor": "Gmail"
+  },
+  "mailspring": {
+   "name": "Mailspring",
+   "license": "GPL-3.0",
+   "stars": 17860,
+   "archived": false,
+   "last_commit": "2026-09-25T16:19:20Z",
+   "category": "email",
+   "competitor": "Gmail"
+  },
+  "mailpit": {
+   "name": "Mailpit",
+   "license": "MIT",
+   "stars": 10437,
+   "archived": false,
+   "last_commit": "2026-09-20T05:27:22Z",
+   "category": "email",
+   "competitor": "Mailtrap"
+  },
+  "mailhog": {
+   "name": "MailHog",
+   "license": "MIT",
+   "stars": 16168,
+   "archived": false,
+   "last_commit": "2024-02-13T18:38:41Z",
+   "category": "email",
+   "competitor": "Mailtrap"
+  },
+  "postal": {
+   "name": "Postal",
+   "license": "MIT",
+   "stars": 16829,
+   "archived": false,
+   "last_commit": "2026-09-19T01:44:00Z",
+   "category": "email",
+   "competitor": "SendGrid"
+  },
+  "mailtrain": {
+   "name": "Mailtrain",
+   "license": "GPL-3.0",
+   "stars": 5753,
+   "archived": false,
+   "last_commit": "2025-10-05T17:53:53Z",
+   "category": "email",
+   "competitor": "Mailchimp"
+  },
+  "openproject": {
+   "name": "OpenProject",
+   "license": "GPL-3.0",
+   "stars": 16202,
+   "archived": false,
+   "last_commit": "2026-09-25T07:35:20Z",
+   "category": "project",
+   "competitor": "Jira"
+  },
+  "wekan": {
+   "name": "Wekan",
+   "license": "MIT",
+   "stars": 21093,
+   "archived": false,
+   "last_commit": "2026-09-25T19:49:30Z",
+   "category": "project",
+   "competitor": "Trello"
+  },
+  "planka": {
+   "name": "Planka",
+   "license": "PLANKA Community License",
+   "stars": 12580,
+   "archived": false,
+   "last_commit": "2026-09-17T01:52:32Z",
+   "category": "project",
+   "competitor": "Trello"
+  },
+  "kanboard": {
+   "name": "Kanboard",
+   "license": "MIT",
+   "stars": 9883,
+   "archived": false,
+   "last_commit": "2026-09-23T21:33:19Z",
+   "category": "project",
+   "competitor": "Trello"
+  },
+  "leantime": {
+   "name": "Leantime",
+   "license": "AGPL-3.0",
+   "stars": 11659,
+   "archived": false,
+   "last_commit": "2026-09-24T19:15:32Z",
+   "category": "project",
+   "competitor": "Basecamp"
+  },
+  "focalboard": {
+   "name": "Focalboard",
+   "license": "Apache-2.0",
+   "stars": 26486,
+   "archived": false,
+   "last_commit": "2026-05-18T16:05:00Z",
+   "category": "project",
+   "competitor": "Trello"
+  },
+  "trac": {
+   "name": "Trac",
+   "license": "BSD-3-Clause",
+   "stars": 545,
+   "archived": false,
+   "last_commit": "2026-09-08T08:30:57Z",
+   "category": "project",
+   "competitor": "Jira"
+  },
+  "grist": {
+   "name": "Grist",
+   "license": "Apache-2.0",
+   "stars": 11866,
+   "archived": false,
+   "last_commit": "2026-09-25T16:25:12Z",
+   "category": "database",
+   "competitor": "Airtable"
+  },
+  "teable": {
+   "name": "Teable",
+   "license": "AGPL-3.0",
+   "stars": 21822,
+   "archived": false,
+   "last_commit": "2026-09-25T07:15:53Z",
+   "category": "database",
+   "competitor": "Airtable"
+  },
+  "undb": {
+   "name": "Undb",
+   "license": "AGPL-3.0",
+   "stars": 2980,
+   "archived": true,
+   "last_commit": "2026-09-22T03:31:33Z",
+   "category": "database",
+   "competitor": "Airtable"
+  },
+  "superset": {
+   "name": "Superset",
+   "license": "Apache-2.0",
+   "stars": 74922,
+   "archived": false,
+   "last_commit": "2026-09-25T20:38:24Z",
+   "category": "nocode",
+   "competitor": "Tableau"
+  },
+  "redash": {
+   "name": "Redash",
+   "license": "BSD-2-Clause",
+   "stars": 28808,
+   "archived": false,
+   "last_commit": "2026-09-24T10:46:49Z",
+   "category": "nocode",
+   "competitor": "Tableau"
+  },
+  "lightdash": {
+   "name": "Lightdash",
+   "license": "MIT",
+   "stars": 6159,
+   "archived": false,
+   "last_commit": "2026-09-25T07:41:45Z",
+   "category": "nocode",
+   "competitor": "Looker"
+  },
+  "ethercalc": {
+   "name": "Ethercalc",
+   "license": "MIT",
+   "stars": 3050,
+   "archived": false,
+   "last_commit": "2026-09-15T11:00:50Z",
+   "category": "database",
+   "competitor": "Google スプレッドシート"
+  },
+  "luckysheet": {
+   "name": "Luckysheet",
+   "license": "MIT",
+   "stars": 16641,
+   "archived": true,
+   "last_commit": "2025-08-19T12:36:59Z",
+   "category": "database",
+   "competitor": "Google スプレッドシート"
+  },
+  "univer": {
+   "name": "Univer",
+   "license": "Apache-2.0",
+   "stars": 18001,
+   "archived": false,
+   "last_commit": "2026-09-24T14:02:42Z",
+   "category": "database",
+   "competitor": "Google スプレッドシート"
+  },
+  "goatcounter": {
+   "name": "GoatCounter",
+   "license": "EUPL派生（独自条項）",
+   "stars": 6004,
+   "archived": false,
+   "last_commit": "2026-09-20T18:43:46Z",
+   "category": "analytics",
+   "competitor": "Google Analytics"
+  },
+  "ackee": {
+   "name": "Ackee",
+   "license": "MIT",
+   "stars": 4710,
+   "archived": false,
+   "last_commit": "2026-09-19T11:11:56Z",
+   "category": "analytics",
+   "competitor": "Google Analytics"
+  },
+  "fathom": {
+   "name": "Fathom",
+   "license": "MIT",
+   "stars": 8020,
+   "archived": false,
+   "last_commit": "2026-03-18T09:11:04Z",
+   "category": "analytics",
+   "competitor": "Google Analytics"
+  },
+  "countly": {
+   "name": "Countly",
+   "license": "Countly Lite License",
+   "stars": 5908,
+   "archived": false,
+   "last_commit": "2026-09-24T13:37:03Z",
+   "category": "analytics",
+   "competitor": "Mixpanel"
+  },
+  "openreplay": {
+   "name": "OpenReplay",
+   "license": "AGPL-3.0",
+   "stars": 12899,
+   "archived": false,
+   "last_commit": "2026-09-24T14:12:42Z",
+   "category": "analytics",
+   "competitor": "Hotjar"
+  },
+  "jitsu": {
+   "name": "Jitsu",
+   "license": "MIT",
+   "stars": 5090,
+   "archived": false,
+   "last_commit": "2026-09-24T14:08:58Z",
+   "category": "analytics",
+   "competitor": "Segment"
+  },
+  "rudderstack": {
+   "name": "RudderStack",
+   "license": "Elastic License 2.0",
+   "stars": 4488,
+   "archived": false,
+   "last_commit": "2026-09-25T09:47:30Z",
+   "category": "analytics",
+   "competitor": "Segment"
+  },
+  "uptime-kuma": {
+   "name": "Uptime Kuma",
+   "license": "MIT",
+   "stars": 91797,
+   "archived": false,
+   "last_commit": "2026-09-25T00:06:42Z",
+   "category": "observability",
+   "competitor": "Pingdom"
+  },
+  "gatus": {
+   "name": "Gatus",
+   "license": "Apache-2.0",
+   "stars": 12156,
+   "archived": false,
+   "last_commit": "2026-09-24T00:00:21Z",
+   "category": "observability",
+   "competitor": "Pingdom"
+  },
+  "netdata": {
+   "name": "Netdata",
+   "license": "GPL-3.0",
+   "stars": 80652,
+   "archived": false,
+   "last_commit": "2026-09-25T20:19:50Z",
+   "category": "observability",
+   "competitor": "Datadog"
+  },
+  "zabbix": {
+   "name": "Zabbix",
+   "license": "AGPL-3.0",
+   "stars": 6412,
+   "archived": false,
+   "last_commit": "2026-09-25T06:30:41Z",
+   "category": "observability",
+   "competitor": "Datadog"
+  },
+  "prometheus": {
+   "name": "Prometheus",
+   "license": "Apache-2.0",
+   "stars": 66220,
+   "archived": false,
+   "last_commit": "2026-09-25T07:26:50Z",
+   "category": "observability",
+   "competitor": "Datadog"
+  },
+  "victoria-metrics": {
+   "name": "VictoriaMetrics",
+   "license": "Apache-2.0",
+   "stars": 17768,
+   "archived": false,
+   "last_commit": "2026-09-25T19:56:06Z",
+   "category": "observability",
+   "competitor": "Datadog"
+  },
+  "signoz": {
+   "name": "SigNoz",
+   "license": "MIT",
+   "stars": 32189,
+   "archived": false,
+   "last_commit": "2026-09-25T07:43:23Z",
+   "category": "observability",
+   "competitor": "New Relic"
+  },
+  "sentry": {
+   "name": "Sentry",
+   "license": "FSL 1.1",
+   "stars": 44839,
+   "archived": false,
+   "last_commit": "2026-09-25T07:44:56Z",
+   "category": "observability",
+   "competitor": "Sentry"
+  },
+  "bugsink": {
+   "name": "Bugsink",
+   "license": "BSD-3-Clause",
+   "stars": 2092,
+   "archived": false,
+   "last_commit": "2026-09-25T08:38:05Z",
+   "category": "observability",
+   "competitor": "Sentry"
+  },
+  "graylog": {
+   "name": "Graylog",
+   "license": "SSPL 1.0",
+   "stars": 8145,
+   "archived": false,
+   "last_commit": "2026-09-25T07:36:54Z",
+   "category": "observability",
+   "competitor": "Splunk"
+  },
+  "openobserve": {
+   "name": "OpenObserve",
+   "license": "AGPL-3.0",
+   "stars": 22122,
+   "archived": false,
+   "last_commit": "2026-09-25T07:44:17Z",
+   "category": "observability",
+   "competitor": "Datadog"
+  },
+  "jaeger": {
+   "name": "Jaeger",
+   "license": "Apache-2.0",
+   "stars": 23240,
+   "archived": false,
+   "last_commit": "2026-09-24T17:49:18Z",
+   "category": "observability",
+   "competitor": "Datadog"
+  },
+  "alerta": {
+   "name": "Alerta",
+   "license": "Apache-2.0",
+   "stars": 2528,
+   "archived": false,
+   "last_commit": "2026-06-19T19:34:29Z",
+   "category": "observability",
+   "competitor": "PagerDuty"
+  },
+  "cachet": {
+   "name": "Cachet",
+   "license": "Cachet License",
+   "stars": 15249,
+   "archived": false,
+   "last_commit": "2026-09-21T08:49:57Z",
+   "category": "observability",
+   "competitor": "Statuspage"
+  },
+  "authentik": {
+   "name": "Authentik",
+   "license": "MIT",
+   "stars": 25723,
+   "archived": false,
+   "last_commit": "2026-09-25T20:35:13Z",
+   "category": "security",
+   "competitor": "Okta"
+  },
+  "zitadel": {
+   "name": "Zitadel",
+   "license": "AGPL-3.0",
+   "stars": 15093,
+   "archived": false,
+   "last_commit": "2026-09-25T04:03:07Z",
+   "category": "security",
+   "competitor": "Auth0"
+  },
+  "kratos": {
+   "name": "Ory Kratos",
+   "license": "Apache-2.0",
+   "stars": 13893,
+   "archived": false,
+   "last_commit": "2026-07-29T09:30:37Z",
+   "category": "security",
+   "competitor": "Auth0"
+  },
+  "authelia": {
+   "name": "Authelia",
+   "license": "Apache-2.0",
+   "stars": 29086,
+   "archived": false,
+   "last_commit": "2026-09-25T14:36:39Z",
+   "category": "security",
+   "competitor": "Okta"
+  },
+  "supertokens": {
+   "name": "SuperTokens",
+   "license": "Apache-2.0",
+   "stars": 15321,
+   "archived": false,
+   "last_commit": "2026-09-24T17:02:11Z",
+   "category": "security",
+   "competitor": "Auth0"
+  },
+  "logto": {
+   "name": "Logto",
+   "license": "MPL-2.0",
+   "stars": 14629,
+   "archived": false,
+   "last_commit": "2026-09-24T15:18:38Z",
+   "category": "security",
+   "competitor": "Auth0"
+  },
+  "hanko": {
+   "name": "Hanko",
+   "license": "MIT",
+   "stars": 9035,
+   "archived": false,
+   "last_commit": "2026-09-25T19:53:53Z",
+   "category": "security",
+   "competitor": "Auth0"
+  },
+  "passbolt": {
+   "name": "Passbolt",
+   "license": "AGPL-3.0",
+   "stars": 6137,
+   "archived": false,
+   "last_commit": "2026-09-17T09:44:28Z",
+   "category": "security",
+   "competitor": "1Password"
+  },
+  "headscale": {
+   "name": "Headscale",
+   "license": "BSD-3-Clause",
+   "stars": 44112,
+   "archived": false,
+   "last_commit": "2026-09-23T19:22:53Z",
+   "category": "security",
+   "competitor": "Tailscale"
+  },
+  "netbird": {
+   "name": "NetBird",
+   "license": "BSD-3-Clause",
+   "stars": 29521,
+   "archived": false,
+   "last_commit": "2026-09-25T17:15:38Z",
+   "category": "security",
+   "competitor": "Tailscale"
+  },
+  "vault": {
+   "name": "Vault",
+   "license": "BUSL 1.1",
+   "stars": 36293,
+   "archived": false,
+   "last_commit": "2026-09-24T22:02:08Z",
+   "category": "security",
+   "competitor": "HashiCorp Vault"
+  },
+  "infisical": {
+   "name": "Infisical",
+   "license": "MIT",
+   "stars": 29420,
+   "archived": false,
+   "last_commit": "2026-09-25T07:36:35Z",
+   "category": "security",
+   "competitor": "HashiCorp Vault"
+  },
+  "sops": {
+   "name": "SOPS",
+   "license": "MPL-2.0",
+   "stars": 23221,
+   "archived": false,
+   "last_commit": "2026-09-21T20:03:18Z",
+   "category": "security",
+   "competitor": "HashiCorp Vault"
+  },
+  "trivy": {
+   "name": "Trivy",
+   "license": "Apache-2.0",
+   "stars": 38069,
+   "archived": false,
+   "last_commit": "2026-09-25T07:47:13Z",
+   "category": "security",
+   "competitor": "Snyk"
+  },
+  "grype": {
+   "name": "Grype",
+   "license": "Apache-2.0",
+   "stars": 12924,
+   "archived": false,
+   "last_commit": "2026-09-24T15:08:30Z",
+   "category": "security",
+   "competitor": "Snyk"
+  },
+  "zap": {
+   "name": "OWASP ZAP",
+   "license": "Apache-2.0",
+   "stars": 15827,
+   "archived": false,
+   "last_commit": "2026-09-24T15:16:36Z",
+   "category": "security",
+   "competitor": "Burp Suite"
+  },
+  "semgrep": {
+   "name": "Semgrep",
+   "license": "LGPL-2.1",
+   "stars": 16756,
+   "archived": false,
+   "last_commit": "2026-09-25T00:03:12Z",
+   "category": "security",
+   "competitor": "SonarQube"
+  },
+  "nuclei": {
+   "name": "Nuclei",
+   "license": "MIT",
+   "stars": 31501,
+   "archived": false,
+   "last_commit": "2026-09-24T19:46:20Z",
+   "category": "security",
+   "competitor": "Burp Suite"
+  },
+  "dependency-track": {
+   "name": "Dependency-Track",
+   "license": "Apache-2.0",
+   "stars": 4238,
+   "archived": false,
+   "last_commit": "2026-09-25T08:49:02Z",
+   "category": "security",
+   "competitor": "Snyk"
+  },
+  "defectdojo": {
+   "name": "DefectDojo",
+   "license": "BSD-3-Clause",
+   "stars": 4958,
+   "archived": false,
+   "last_commit": "2026-09-25T06:28:20Z",
+   "category": "security",
+   "competitor": "Snyk"
+  },
+  "wazuh": {
+   "name": "Wazuh",
+   "license": "MIT",
+   "stars": 16991,
+   "archived": false,
+   "last_commit": "2026-09-25T07:26:13Z",
+   "category": "security",
+   "competitor": "Splunk"
+  },
+  "crowdsec": {
+   "name": "CrowdSec",
+   "license": "MIT",
+   "stars": 14965,
+   "archived": false,
+   "last_commit": "2026-09-25T14:51:08Z",
+   "category": "security",
+   "competitor": "Cloudflare"
+  },
+  "suricata": {
+   "name": "Suricata",
+   "license": "GPL-2.0",
+   "stars": 6665,
+   "archived": false,
+   "last_commit": "2026-09-22T10:17:52Z",
+   "category": "security",
+   "competitor": "Cloudflare"
+  },
+  "seafile": {
+   "name": "Seafile",
+   "license": "GPL-2.0",
+   "stars": 15274,
+   "archived": false,
+   "last_commit": "2026-09-18T09:48:51Z",
+   "category": "files",
+   "competitor": "Dropbox"
+  },
+  "syncthing": {
+   "name": "Syncthing",
+   "license": "MPL-2.0",
+   "stars": 88925,
+   "archived": false,
+   "last_commit": "2026-09-23T01:17:37Z",
+   "category": "files",
+   "competitor": "Dropbox"
+  },
+  "owncloud": {
+   "name": "ownCloud",
+   "license": "AGPL-3.0",
+   "stars": 8830,
+   "archived": false,
+   "last_commit": "2026-09-25T07:46:27Z",
+   "category": "files",
+   "competitor": "Google Drive"
+  },
+  "filebrowser": {
+   "name": "Filebrowser",
+   "license": "Apache-2.0",
+   "stars": 35939,
+   "archived": true,
+   "last_commit": "2026-07-31T10:06:58Z",
+   "category": "files",
+   "competitor": "Google Drive"
+  },
+  "filestash": {
+   "name": "Filestash",
+   "license": "AGPL-3.0",
+   "stars": 14725,
+   "archived": false,
+   "last_commit": "2026-09-25T07:29:04Z",
+   "category": "files",
+   "competitor": "Google Drive"
+  },
+  "pydio": {
+   "name": "Pydio Cells",
+   "license": "AGPL-3.0",
+   "stars": 2253,
+   "archived": false,
+   "last_commit": "2026-09-24T14:10:28Z",
+   "category": "files",
+   "competitor": "Dropbox"
+  },
+  "rclone": {
+   "name": "rclone",
+   "license": "MIT",
+   "stars": 59943,
+   "archived": false,
+   "last_commit": "2026-09-24T10:18:54Z",
+   "category": "files",
+   "competitor": "GoodSync"
+  },
+  "photoprism": {
+   "name": "PhotoPrism",
+   "license": "AGPL-3.0",
+   "stars": 40240,
+   "archived": false,
+   "last_commit": "2026-09-25T20:52:22Z",
+   "category": "files",
+   "competitor": "Google Photos"
+  },
+  "librephotos": {
+   "name": "LibrePhotos",
+   "license": "MIT",
+   "stars": 8083,
+   "archived": false,
+   "last_commit": "2026-09-21T14:35:17Z",
+   "category": "files",
+   "competitor": "Google Photos"
+  },
+  "ente": {
+   "name": "Ente",
+   "license": "AGPL-3.0",
+   "stars": 29066,
+   "archived": false,
+   "last_commit": "2026-09-25T07:06:10Z",
+   "category": "files",
+   "competitor": "Google Photos"
+  },
+  "piwigo": {
+   "name": "Piwigo",
+   "license": "GPL-2.0",
+   "stars": 3864,
+   "archived": false,
+   "last_commit": "2026-09-24T10:24:21Z",
+   "category": "files",
+   "competitor": "Flickr"
+  },
+  "jellyfin": {
+   "name": "Jellyfin",
+   "license": "GPL-2.0",
+   "stars": 57482,
+   "archived": false,
+   "last_commit": "2026-09-25T00:27:52Z",
+   "category": "files",
+   "competitor": "Netflix"
+  },
+  "navidrome": {
+   "name": "Navidrome",
+   "license": "GPL-3.0",
+   "stars": 23781,
+   "archived": false,
+   "last_commit": "2026-09-25T02:21:00Z",
+   "category": "files",
+   "competitor": "Spotify"
+  },
+  "audiobookshelf": {
+   "name": "Audiobookshelf",
+   "license": "GPL-3.0",
+   "stars": 14449,
+   "archived": false,
+   "last_commit": "2026-09-23T22:41:50Z",
+   "category": "files",
+   "competitor": "Audible"
+  },
+  "send": {
+   "name": "Send",
+   "license": "MPL-2.0",
+   "stars": 5913,
+   "archived": false,
+   "last_commit": "2025-07-01T07:02:03Z",
+   "category": "files",
+   "competitor": "Firefox Send"
+  },
+  "psitransfer": {
+   "name": "PsiTransfer",
+   "license": "BSD-2-Clause",
+   "stars": 1951,
+   "archived": false,
+   "last_commit": "2026-06-02T09:26:53Z",
+   "category": "files",
+   "competitor": "WeTransfer"
+  },
+  "restic": {
+   "name": "Restic",
+   "license": "BSD-2-Clause",
+   "stars": 36253,
+   "archived": false,
+   "last_commit": "2026-09-25T20:08:19Z",
+   "category": "backup",
+   "competitor": "Backblaze"
+  },
+  "borg": {
+   "name": "BorgBackup",
+   "license": "BSD-3-Clause",
+   "stars": 13763,
+   "archived": false,
+   "last_commit": "2026-09-24T21:03:57Z",
+   "category": "backup",
+   "competitor": "Backblaze"
+  },
+  "kopia": {
+   "name": "Kopia",
+   "license": "Apache-2.0",
+   "stars": 14199,
+   "archived": false,
+   "last_commit": "2026-09-25T05:35:54Z",
+   "category": "backup",
+   "competitor": "Backblaze"
+  },
+  "duplicati": {
+   "name": "Duplicati",
+   "license": "MIT",
+   "stars": 15027,
+   "archived": false,
+   "last_commit": "2026-09-25T17:10:15Z",
+   "category": "backup",
+   "competitor": "Backblaze"
+  },
+  "velero": {
+   "name": "Velero",
+   "license": "Apache-2.0",
+   "stars": 10312,
+   "archived": false,
+   "last_commit": "2026-09-25T02:06:30Z",
+   "category": "backup",
+   "competitor": "Acronis"
+  },
+  "tldraw": {
+   "name": "tldraw",
+   "license": "tldraw License",
+   "stars": 50560,
+   "archived": false,
+   "last_commit": "2026-09-25T07:40:26Z",
+   "category": "design",
+   "competitor": "Miro"
+  },
+  "drawio": {
+   "name": "draw.io",
+   "license": "Apache-2.0",
+   "stars": 8350,
+   "archived": false,
+   "last_commit": "2026-09-24T19:39:40Z",
+   "category": "design",
+   "competitor": "Visio"
+  },
+  "wbo": {
+   "name": "WBO",
+   "license": "AGPL-3.0",
+   "stars": 2657,
+   "archived": false,
+   "last_commit": "2026-09-12T06:27:31Z",
+   "category": "design",
+   "competitor": "Miro"
+  },
+  "plasmic": {
+   "name": "Plasmic",
+   "license": "MIT",
+   "stars": 7041,
+   "archived": false,
+   "last_commit": "2026-09-24T20:20:48Z",
+   "category": "design",
+   "competitor": "Figma"
+  },
+  "gimp": {
+   "name": "GIMP",
+   "license": "GPL-3.0",
+   "stars": 6448,
+   "archived": false,
+   "last_commit": "2026-09-25T12:21:22Z",
+   "category": "design",
+   "competitor": "Photoshop"
+  },
+  "krita": {
+   "name": "Krita",
+   "license": "GPL-3.0",
+   "stars": 10425,
+   "archived": false,
+   "last_commit": "2026-09-25T02:41:44Z",
+   "category": "design",
+   "competitor": "Photoshop"
+  },
+  "inkscape": {
+   "name": "Inkscape",
+   "license": null,
+   "stars": 3951,
+   "archived": false,
+   "last_commit": "2022-03-03T20:52:00Z",
+   "category": "design",
+   "competitor": "Illustrator"
+  },
+  "blender": {
+   "name": "Blender",
+   "license": "GPL-2.0",
+   "stars": 20531,
+   "archived": false,
+   "last_commit": "2026-09-25T19:50:50Z",
+   "category": "design",
+   "competitor": "Maya"
+  },
+  "obs": {
+   "name": "OBS Studio",
+   "license": "GPL-2.0",
+   "stars": 76606,
+   "archived": false,
+   "last_commit": "2026-09-25T03:16:06Z",
+   "category": "video",
+   "competitor": "Camtasia"
+  },
+  "shotcut": {
+   "name": "Shotcut",
+   "license": "GPL-3.0",
+   "stars": 15273,
+   "archived": false,
+   "last_commit": "2026-09-24T17:00:56Z",
+   "category": "video",
+   "competitor": "Adobe Premiere"
+  },
+  "kdenlive": {
+   "name": "Kdenlive",
+   "license": "GPL-3.0",
+   "stars": 5739,
+   "archived": false,
+   "last_commit": "2026-09-25T03:27:03Z",
+   "category": "video",
+   "competitor": "Adobe Premiere"
+  },
+  "openshot": {
+   "name": "OpenShot",
+   "license": "GPL-3.0",
+   "stars": 6547,
+   "archived": false,
+   "last_commit": "2026-09-24T01:38:50Z",
+   "category": "video",
+   "competitor": "Adobe Premiere"
+  },
+  "lossless-cut": {
+   "name": "LosslessCut",
+   "license": "GPL-2.0",
+   "stars": 44034,
+   "archived": false,
+   "last_commit": "2026-09-23T14:29:53Z",
+   "category": "video",
+   "competitor": "Adobe Premiere"
+  },
+  "handbrake": {
+   "name": "HandBrake",
+   "license": "GPL-2.0",
+   "stars": 24499,
+   "archived": false,
+   "last_commit": "2026-09-25T07:52:02Z",
+   "category": "video",
+   "competitor": "Adobe Media Encoder"
+  },
+  "ffmpeg": {
+   "name": "FFmpeg",
+   "license": "GPL-2.0",
+   "stars": 64495,
+   "archived": false,
+   "last_commit": "2026-09-25T03:21:25Z",
+   "category": "video",
+   "competitor": "Adobe Media Encoder"
+  },
+  "audacity": {
+   "name": "Audacity",
+   "license": "GPL-3.0",
+   "stars": 18557,
+   "archived": false,
+   "last_commit": "2026-09-24T09:59:52Z",
+   "category": "video",
+   "competitor": "Adobe Audition"
+  },
+  "sharex": {
+   "name": "ShareX",
+   "license": "GPL-3.0",
+   "stars": 39745,
+   "archived": false,
+   "last_commit": "2026-09-24T03:13:00Z",
+   "category": "design",
+   "competitor": "Snagit"
+  },
+  "flameshot": {
+   "name": "Flameshot",
+   "license": "GPL-3.0",
+   "stars": 30922,
+   "archived": false,
+   "last_commit": "2026-09-17T21:37:22Z",
+   "category": "design",
+   "competitor": "Snagit"
+  },
+  "greenshot": {
+   "name": "Greenshot",
+   "license": "GPL-3.0",
+   "stars": 5135,
+   "archived": false,
+   "last_commit": "2026-09-25T07:33:25Z",
+   "category": "design",
+   "competitor": "Snagit"
+  },
+  "cap": {
+   "name": "Cap",
+   "license": "MIT",
+   "stars": 22809,
+   "archived": false,
+   "last_commit": "2026-09-25T20:43:01Z",
+   "category": "video",
+   "competitor": "Loom"
+  },
+  "gogs": {
+   "name": "Gogs",
+   "license": "MIT",
+   "stars": 47832,
+   "archived": false,
+   "last_commit": "2026-09-12T20:28:48Z",
+   "category": "devtools",
+   "competitor": "GitHub"
+  },
+  "onedev": {
+   "name": "OneDev",
+   "license": "MIT",
+   "stars": 15259,
+   "archived": false,
+   "last_commit": "2026-09-24T01:04:02Z",
+   "category": "devtools",
+   "competitor": "GitHub"
+  },
+  "dokploy": {
+   "name": "Dokploy",
+   "license": null,
+   "stars": 37512,
+   "archived": false,
+   "last_commit": "2026-09-24T07:25:26Z",
+   "category": "devtools",
+   "competitor": "Vercel"
+  },
+  "caprover": {
+   "name": "CapRover",
+   "license": "Apache-2.0",
+   "stars": 15170,
+   "archived": false,
+   "last_commit": "2026-09-23T04:12:41Z",
+   "category": "devtools",
+   "competitor": "Heroku"
+  },
+  "dokku": {
+   "name": "Dokku",
+   "license": "MIT",
+   "stars": 32156,
+   "archived": false,
+   "last_commit": "2026-09-24T22:45:12Z",
+   "category": "devtools",
+   "competitor": "Heroku"
+  },
+  "kamal": {
+   "name": "Kamal",
+   "license": "MIT",
+   "stars": 14605,
+   "archived": false,
+   "last_commit": "2026-09-16T08:34:01Z",
+   "category": "devtools",
+   "competitor": "Heroku"
+  },
+  "woodpecker": {
+   "name": "Woodpecker CI",
+   "license": "Apache-2.0",
+   "stars": 7907,
+   "archived": false,
+   "last_commit": "2026-09-24T02:13:26Z",
+   "category": "devtools",
+   "competitor": "CircleCI"
+  },
+  "jenkins": {
+   "name": "Jenkins",
+   "license": "MIT",
+   "stars": 26588,
+   "archived": false,
+   "last_commit": "2026-09-24T16:50:41Z",
+   "category": "devtools",
+   "competitor": "CircleCI"
+  },
+  "argo-cd": {
+   "name": "Argo CD",
+   "license": "Apache-2.0",
+   "stars": 24241,
+   "archived": false,
+   "last_commit": "2026-09-25T17:35:51Z",
+   "category": "devtools",
+   "competitor": "CircleCI"
+  },
+  "tekton": {
+   "name": "Tekton",
+   "license": "Apache-2.0",
+   "stars": 9069,
+   "archived": false,
+   "last_commit": "2026-09-24T18:26:45Z",
+   "category": "devtools",
+   "competitor": "CircleCI"
+  },
+  "appwrite": {
+   "name": "Appwrite",
+   "license": "BSD-3-Clause",
+   "stars": 57465,
+   "archived": false,
+   "last_commit": "2026-09-25T07:33:50Z",
+   "category": "devtools",
+   "competitor": "Firebase"
+  },
+  "pocketbase": {
+   "name": "PocketBase",
+   "license": "MIT",
+   "stars": 61153,
+   "archived": false,
+   "last_commit": "2026-09-21T09:46:23Z",
+   "category": "devtools",
+   "competitor": "Firebase"
+  },
+  "nhost": {
+   "name": "Nhost",
+   "license": "MIT",
+   "stars": 9307,
+   "archived": false,
+   "last_commit": "2026-09-25T06:44:21Z",
+   "category": "devtools",
+   "competitor": "Firebase"
+  },
+  "parse": {
+   "name": "Parse Platform",
+   "license": "Apache-2.0",
+   "stars": 21407,
+   "archived": false,
+   "last_commit": "2026-09-24T11:32:55Z",
+   "category": "devtools",
+   "competitor": "Firebase"
+  },
+  "bruno": {
+   "name": "Bruno",
+   "license": "MIT",
+   "stars": 47196,
+   "archived": false,
+   "last_commit": "2026-09-25T07:42:00Z",
+   "category": "devtools",
+   "competitor": "Postman"
+  },
+  "insomnia": {
+   "name": "Insomnia",
+   "license": "Apache-2.0",
+   "stars": 40029,
+   "archived": false,
+   "last_commit": "2026-09-24T14:17:21Z",
+   "category": "devtools",
+   "competitor": "Postman"
+  },
+  "kong": {
+   "name": "Kong",
+   "license": "Apache-2.0",
+   "stars": 44192,
+   "archived": false,
+   "last_commit": "2026-09-24T06:01:18Z",
+   "category": "devtools",
+   "competitor": "AWS API Gateway"
+  },
+  "traefik": {
+   "name": "Traefik",
+   "license": "MIT",
+   "stars": 64968,
+   "archived": false,
+   "last_commit": "2026-09-25T12:34:06Z",
+   "category": "devtools",
+   "competitor": "AWS API Gateway"
+  },
+  "apisix": {
+   "name": "Apache APISIX",
+   "license": "Apache-2.0",
+   "stars": 17165,
+   "archived": false,
+   "last_commit": "2026-09-24T12:23:52Z",
+   "category": "devtools",
+   "competitor": "AWS API Gateway"
+  },
+  "meilisearch": {
+   "name": "Meilisearch",
+   "license": "MIT",
+   "stars": 59405,
+   "archived": false,
+   "last_commit": "2026-09-24T16:27:41Z",
+   "category": "devtools",
+   "competitor": "Algolia"
+  },
+  "typesense": {
+   "name": "Typesense",
+   "license": "GPL-3.0",
+   "stars": 26594,
+   "archived": false,
+   "last_commit": "2026-09-24T11:19:33Z",
+   "category": "devtools",
+   "competitor": "Algolia"
+  },
+  "opensearch": {
+   "name": "OpenSearch",
+   "license": "Apache-2.0",
+   "stars": 13774,
+   "archived": false,
+   "last_commit": "2026-09-25T05:35:05Z",
+   "category": "devtools",
+   "competitor": "Elasticsearch"
+  },
+  "elasticsearch": {
+   "name": "Elasticsearch",
+   "license": "AGPL-3.0 / SSPL / Elastic-2.0",
+   "stars": 77985,
+   "archived": false,
+   "last_commit": "2026-09-25T07:08:10Z",
+   "category": "devtools",
+   "competitor": "OpenSearch"
+  },
+  "portainer": {
+   "name": "Portainer",
+   "license": "Zlib",
+   "stars": 38566,
+   "archived": false,
+   "last_commit": "2026-09-25T13:02:02Z",
+   "category": "devtools",
+   "competitor": "Docker Desktop"
+  },
+  "rancher-desktop": {
+   "name": "Rancher Desktop",
+   "license": "Apache-2.0",
+   "stars": 7359,
+   "archived": false,
+   "last_commit": "2026-09-24T18:34:41Z",
+   "category": "devtools",
+   "competitor": "Docker Desktop"
+  },
+  "podman": {
+   "name": "Podman",
+   "license": "Apache-2.0",
+   "stars": 32929,
+   "archived": false,
+   "last_commit": "2026-09-25T05:41:13Z",
+   "category": "devtools",
+   "competitor": "Docker Desktop"
+  },
+  "k3s": {
+   "name": "k3s",
+   "license": "Apache-2.0",
+   "stars": 34036,
+   "archived": false,
+   "last_commit": "2026-09-25T18:25:57Z",
+   "category": "devtools",
+   "competitor": "Kubernetes"
+  },
+  "headlamp": {
+   "name": "Headlamp",
+   "license": "Apache-2.0",
+   "stars": 7335,
+   "archived": false,
+   "last_commit": "2026-09-24T13:42:34Z",
+   "category": "devtools",
+   "competitor": "Lens"
+  },
+  "opentofu": {
+   "name": "OpenTofu",
+   "license": "MPL-2.0",
+   "stars": 30280,
+   "archived": false,
+   "last_commit": "2026-09-24T20:38:30Z",
+   "category": "devtools",
+   "competitor": "Terraform"
+  },
+  "terraform": {
+   "name": "Terraform",
+   "license": "BUSL 1.1",
+   "stars": 49739,
+   "archived": false,
+   "last_commit": "2026-09-25T18:00:25Z",
+   "category": "devtools",
+   "competitor": "OpenTofu"
+  },
+  "pulumi": {
+   "name": "Pulumi",
+   "license": "Apache-2.0",
+   "stars": 25727,
+   "archived": false,
+   "last_commit": "2026-09-25T00:50:53Z",
+   "category": "devtools",
+   "competitor": "Terraform"
+  },
+  "ansible": {
+   "name": "Ansible",
+   "license": "GPL-3.0",
+   "stars": 70785,
+   "archived": false,
+   "last_commit": "2026-09-24T19:56:21Z",
+   "category": "devtools",
+   "competitor": "Chef"
+  },
+  "pgadmin": {
+   "name": "pgAdmin",
+   "license": "PostgreSQL",
+   "stars": 3824,
+   "archived": false,
+   "last_commit": "2026-09-25T10:12:30Z",
+   "category": "devtools",
+   "competitor": "DBeaver"
+  },
+  "dbeaver": {
+   "name": "DBeaver",
+   "license": "Apache-2.0",
+   "stars": 51871,
+   "archived": false,
+   "last_commit": "2026-09-25T07:24:58Z",
+   "category": "devtools",
+   "competitor": "DataGrip"
+  },
+  "adminer": {
+   "name": "Adminer",
+   "license": "Apache-2.0 / GPL-2.0",
+   "stars": 7904,
+   "archived": false,
+   "last_commit": "2026-09-21T15:42:11Z",
+   "category": "devtools",
+   "competitor": "phpMyAdmin"
+  },
+  "phpmyadmin": {
+   "name": "phpMyAdmin",
+   "license": "GPL-2.0",
+   "stars": 7939,
+   "archived": false,
+   "last_commit": "2026-09-23T13:24:02Z",
+   "category": "devtools",
+   "competitor": "Adminer"
+  },
+  "strapi": {
+   "name": "Strapi",
+   "license": "MIT",
+   "stars": 73234,
+   "archived": false,
+   "last_commit": "2026-09-25T07:35:57Z",
+   "category": "devtools",
+   "competitor": "Contentful"
+  },
+  "coder": {
+   "name": "code-server",
+   "license": "MIT",
+   "stars": 79410,
+   "archived": false,
+   "last_commit": "2026-09-23T16:19:40Z",
+   "category": "devtools",
+   "competitor": "GitHub Codespaces"
+  },
+  "openvscode": {
+   "name": "OpenVSCode Server",
+   "license": "MIT",
+   "stars": 6179,
+   "archived": false,
+   "last_commit": "2026-09-24T15:23:21Z",
+   "category": "devtools",
+   "competitor": "GitHub Codespaces"
+  },
+  "devpod": {
+   "name": "DevPod",
+   "license": "MPL-2.0",
+   "stars": 15236,
+   "archived": false,
+   "last_commit": "2025-11-14T06:33:38Z",
+   "category": "devtools",
+   "competitor": "GitHub Codespaces"
+  },
+  "docusaurus": {
+   "name": "Docusaurus",
+   "license": "MIT",
+   "stars": 66335,
+   "archived": false,
+   "last_commit": "2026-09-24T18:29:32Z",
+   "category": "note-docs",
+   "competitor": "GitBook"
+  },
+  "mkdocs": {
+   "name": "MkDocs",
+   "license": "BSD-2-Clause",
+   "stars": 22469,
+   "archived": false,
+   "last_commit": "2025-10-20T13:17:06Z",
+   "category": "note-docs",
+   "competitor": "GitBook"
+  },
+  "vitepress": {
+   "name": "VitePress",
+   "license": "MIT",
+   "stars": 18345,
+   "archived": false,
+   "last_commit": "2026-09-24T22:05:45Z",
+   "category": "note-docs",
+   "competitor": "GitBook"
+  },
+  "windmill": {
+   "name": "Windmill",
+   "license": "AGPL-3.0",
+   "stars": 18029,
+   "archived": false,
+   "last_commit": "2026-09-25T07:37:41Z",
+   "category": "automation",
+   "competitor": "Zapier"
+  },
+  "node-red": {
+   "name": "Node-RED",
+   "license": "Apache-2.0",
+   "stars": 23687,
+   "archived": false,
+   "last_commit": "2026-09-18T11:58:12Z",
+   "category": "automation",
+   "competitor": "Zapier"
+  },
+  "huginn": {
+   "name": "Huginn",
+   "license": "MIT",
+   "stars": 49990,
+   "archived": false,
+   "last_commit": "2026-09-24T12:33:45Z",
+   "category": "automation",
+   "competitor": "IFTTT"
+  },
+  "kestra": {
+   "name": "Kestra",
+   "license": "Apache-2.0",
+   "stars": 28341,
+   "archived": false,
+   "last_commit": "2026-09-25T07:42:26Z",
+   "category": "automation",
+   "competitor": "Zapier"
+  },
+  "temporal": {
+   "name": "Temporal",
+   "license": "MIT",
+   "stars": 23294,
+   "archived": false,
+   "last_commit": "2026-09-25T19:37:07Z",
+   "category": "automation",
+   "competitor": "Zapier"
+  },
+  "airflow": {
+   "name": "Apache Airflow",
+   "license": "Apache-2.0",
+   "stars": 46968,
+   "archived": false,
+   "last_commit": "2026-09-25T07:14:21Z",
+   "category": "automation",
+   "competitor": "Zapier"
+  },
+  "dagster": {
+   "name": "Dagster",
+   "license": "Apache-2.0",
+   "stars": 16198,
+   "archived": false,
+   "last_commit": "2026-09-24T19:54:01Z",
+   "category": "automation",
+   "competitor": "Zapier"
+  },
+  "prefect": {
+   "name": "Prefect",
+   "license": "Apache-2.0",
+   "stars": 23926,
+   "archived": false,
+   "last_commit": "2026-09-25T20:33:49Z",
+   "category": "automation",
+   "competitor": "Zapier"
+  },
+  "robotframework": {
+   "name": "Robot Framework",
+   "license": "Apache-2.0",
+   "stars": 11914,
+   "archived": false,
+   "last_commit": "2026-09-21T15:19:54Z",
+   "category": "automation",
+   "competitor": "UiPath"
+  },
+  "playwright": {
+   "name": "Playwright",
+   "license": "Apache-2.0",
+   "stars": 96649,
+   "archived": false,
+   "last_commit": "2026-09-25T01:41:29Z",
+   "category": "automation",
+   "competitor": "UiPath"
+  },
+  "open-webui": {
+   "name": "Open WebUI",
+   "license": "Open WebUI License",
+   "stars": 153177,
+   "archived": false,
+   "last_commit": "2026-09-25T05:06:56Z",
+   "category": "ai",
+   "competitor": "ChatGPT"
+  },
+  "librechat": {
+   "name": "LibreChat",
+   "license": "MIT",
+   "stars": 44923,
+   "archived": false,
+   "last_commit": "2026-09-25T07:36:49Z",
+   "category": "ai",
+   "competitor": "ChatGPT"
+  },
+  "lobechat": {
+   "name": "LobeChat",
+   "license": "LobeHub Community License",
+   "stars": 82814,
+   "archived": false,
+   "last_commit": "2026-09-25T07:49:23Z",
+   "category": "ai",
+   "competitor": "ChatGPT"
+  },
+  "anythingllm": {
+   "name": "AnythingLLM",
+   "license": "MIT",
+   "stars": 66468,
+   "archived": false,
+   "last_commit": "2026-09-25T19:41:16Z",
+   "category": "ai",
+   "competitor": "ChatGPT with files"
+  },
+  "jan": {
+   "name": "Jan",
+   "license": "Apache-2.0",
+   "stars": 44644,
+   "archived": false,
+   "last_commit": "2026-09-25T07:20:57Z",
+   "category": "ai",
+   "competitor": "ChatGPT"
+  },
+  "ollama": {
+   "name": "Ollama",
+   "license": "MIT",
+   "stars": 181665,
+   "archived": false,
+   "last_commit": "2026-09-25T02:27:55Z",
+   "category": "ai",
+   "competitor": "ChatGPT"
+  },
+  "llama-cpp": {
+   "name": "llama.cpp",
+   "license": "MIT",
+   "stars": 129509,
+   "archived": false,
+   "last_commit": "2026-09-25T20:26:38Z",
+   "category": "ai",
+   "competitor": "ChatGPT API"
+  },
+  "localai": {
+   "name": "LocalAI",
+   "license": "MIT",
+   "stars": 49261,
+   "archived": false,
+   "last_commit": "2026-09-25T07:29:05Z",
+   "category": "ai",
+   "competitor": "OpenAI API"
+  },
+  "vllm": {
+   "name": "vLLM",
+   "license": "Apache-2.0",
+   "stars": 92654,
+   "archived": false,
+   "last_commit": "2026-09-25T07:38:30Z",
+   "category": "ai",
+   "competitor": "OpenAI API"
+  },
+  "gpt4all": {
+   "name": "GPT4All",
+   "license": "MIT",
+   "stars": 77382,
+   "archived": false,
+   "last_commit": "2025-05-27T20:05:19Z",
+   "category": "ai",
+   "competitor": "ChatGPT"
+  },
+  "dify": {
+   "name": "Dify",
+   "license": "Apache-2.0（改変条項あり）",
+   "stars": 157155,
+   "archived": false,
+   "last_commit": "2026-09-25T04:20:42Z",
+   "category": "ai",
+   "competitor": "ChatGPT Plus"
+  },
+  "flowise": {
+   "name": "Flowise",
+   "license": "Apache-2.0",
+   "stars": 55478,
+   "archived": true,
+   "last_commit": "2026-08-13T12:38:19Z",
+   "category": "ai",
+   "competitor": "ChatGPT Plus"
+  },
+  "langflow": {
+   "name": "Langflow",
+   "license": "MIT",
+   "stars": 155250,
+   "archived": false,
+   "last_commit": "2026-09-25T20:31:24Z",
+   "category": "ai",
+   "competitor": "ChatGPT Plus"
+  },
+  "ragflow": {
+   "name": "RAGFlow",
+   "license": "Apache-2.0",
+   "stars": 91283,
+   "archived": false,
+   "last_commit": "2026-09-24T13:14:16Z",
+   "category": "ai",
+   "competitor": "ChatGPT Plus"
+  },
+  "khoj": {
+   "name": "Khoj",
+   "license": "AGPL-3.0",
+   "stars": 37491,
+   "archived": false,
+   "last_commit": "2026-08-02T01:55:40Z",
+   "category": "ai",
+   "competitor": "ChatGPT Plus"
+  },
+  "quivr": {
+   "name": "Quivr",
+   "license": "Apache-2.0",
+   "stars": 39552,
+   "archived": false,
+   "last_commit": "2026-08-31T18:02:45Z",
+   "category": "ai",
+   "competitor": "ChatGPT Plus"
+  },
+  "private-gpt": {
+   "name": "PrivateGPT",
+   "license": "Apache-2.0",
+   "stars": 57530,
+   "archived": false,
+   "last_commit": "2026-09-22T11:32:31Z",
+   "category": "ai",
+   "competitor": "ChatGPT Plus"
+  },
+  "whisper": {
+   "name": "Whisper",
+   "license": "MIT",
+   "stars": 109568,
+   "archived": false,
+   "last_commit": "2026-08-31T17:19:19Z",
+   "category": "ai",
+   "competitor": "Notta"
+  },
+  "faster-whisper": {
+   "name": "faster-whisper",
+   "license": "MIT",
+   "stars": 25567,
+   "archived": false,
+   "last_commit": "2025-11-19T14:40:46Z",
+   "category": "ai",
+   "competitor": "Notta"
+  },
+  "whisperx": {
+   "name": "WhisperX",
+   "license": "BSD-2-Clause",
+   "stars": 24233,
+   "archived": false,
+   "last_commit": "2026-08-30T15:40:47Z",
+   "category": "ai",
+   "competitor": "Notta"
+  },
+  "whisper-cpp": {
+   "name": "whisper.cpp",
+   "license": "MIT",
+   "stars": 53917,
+   "archived": false,
+   "last_commit": "2026-09-24T08:29:15Z",
+   "category": "ai",
+   "competitor": "Notta"
+  },
+  "tesseract": {
+   "name": "Tesseract",
+   "license": "Apache-2.0",
+   "stars": 76678,
+   "archived": false,
+   "last_commit": "2026-09-11T05:17:27Z",
+   "category": "documents",
+   "competitor": "Adobe Acrobat OCR"
+  },
+  "paddleocr": {
+   "name": "PaddleOCR",
+   "license": "Apache-2.0",
+   "stars": 90183,
+   "archived": false,
+   "last_commit": "2026-09-16T03:31:50Z",
+   "category": "documents",
+   "competitor": "Adobe Acrobat OCR"
+  },
+  "stable-diffusion-webui": {
+   "name": "Stable Diffusion WebUI",
+   "license": "AGPL-3.0",
+   "stars": 165106,
+   "archived": false,
+   "last_commit": "2026-03-02T07:00:53Z",
+   "category": "ai",
+   "competitor": "Adobe Firefly"
+  },
+  "comfyui": {
+   "name": "ComfyUI",
+   "license": "GPL-3.0",
+   "stars": 134963,
+   "archived": false,
+   "last_commit": "2026-09-25T20:48:55Z",
+   "category": "ai",
+   "competitor": "Adobe Firefly"
+  },
+  "invokeai": {
+   "name": "InvokeAI",
+   "license": "Apache-2.0",
+   "stars": 28287,
+   "archived": false,
+   "last_commit": "2026-09-24T16:26:37Z",
+   "category": "ai",
+   "competitor": "Adobe Firefly"
+  },
+  "qdrant": {
+   "name": "Qdrant",
+   "license": "Apache-2.0",
+   "stars": 34805,
+   "archived": false,
+   "last_commit": "2026-09-25T07:32:46Z",
+   "category": "ai",
+   "competitor": "Pinecone"
+  },
+  "weaviate": {
+   "name": "Weaviate",
+   "license": "BSD-3-Clause",
+   "stars": 16847,
+   "archived": false,
+   "last_commit": "2026-09-25T16:09:32Z",
+   "category": "ai",
+   "competitor": "Pinecone"
+  },
+  "chroma": {
+   "name": "Chroma",
+   "license": "Apache-2.0",
+   "stars": 29370,
+   "archived": false,
+   "last_commit": "2026-09-24T20:25:26Z",
+   "category": "ai",
+   "competitor": "Pinecone"
+  },
+  "milvus": {
+   "name": "Milvus",
+   "license": "Apache-2.0",
+   "stars": 46253,
+   "archived": false,
+   "last_commit": "2026-09-24T16:50:27Z",
+   "category": "ai",
+   "competitor": "Pinecone"
+  },
+  "pgvector": {
+   "name": "pgvector",
+   "license": "PostgreSQL",
+   "stars": 23159,
+   "archived": false,
+   "last_commit": "2026-09-22T18:39:28Z",
+   "category": "ai",
+   "competitor": "Pinecone"
+  },
+  "langfuse": {
+   "name": "Langfuse",
+   "license": "MIT",
+   "stars": 35031,
+   "archived": false,
+   "last_commit": "2026-09-25T07:42:53Z",
+   "category": "ai",
+   "competitor": "LangSmith"
+  },
+  "arize-phoenix": {
+   "name": "Phoenix",
+   "license": "Elastic License 2.0",
+   "stars": 11607,
+   "archived": false,
+   "last_commit": "2026-09-25T06:36:59Z",
+   "category": "ai",
+   "competitor": "LangSmith"
+  },
+  "helicone": {
+   "name": "Helicone",
+   "license": "Apache-2.0",
+   "stars": 6175,
+   "archived": false,
+   "last_commit": "2026-09-16T19:29:27Z",
+   "category": "ai",
+   "competitor": "LangSmith"
+  },
+  "libretranslate": {
+   "name": "LibreTranslate",
+   "license": "AGPL-3.0",
+   "stars": 16822,
+   "archived": false,
+   "last_commit": "2026-09-03T17:05:31Z",
+   "category": "translation",
+   "competitor": "DeepL"
+  },
+  "argos-translate": {
+   "name": "Argos Translate",
+   "license": "MIT",
+   "stars": 6507,
+   "archived": false,
+   "last_commit": "2026-08-08T12:09:57Z",
+   "category": "translation",
+   "competitor": "DeepL"
+  },
+  "piper": {
+   "name": "Piper",
+   "license": "MIT",
+   "stars": 11289,
+   "archived": true,
+   "last_commit": "2025-08-26T15:01:29Z",
+   "category": "ai",
+   "competitor": "Voicepeak"
+  },
+  "kokoro": {
+   "name": "Kokoro",
+   "license": "Apache-2.0",
+   "stars": 8996,
+   "archived": false,
+   "last_commit": "2025-08-06T22:28:53Z",
+   "category": "ai",
+   "competitor": "Voicepeak"
+  },
+  "jitsi": {
+   "name": "Jitsi Meet",
+   "license": "Apache-2.0",
+   "stars": 29990,
+   "archived": false,
+   "last_commit": "2026-09-25T00:43:54Z",
+   "category": "video",
+   "competitor": "Zoom"
+  },
+  "bigbluebutton": {
+   "name": "BigBlueButton",
+   "license": "LGPL-3.0",
+   "stars": 9228,
+   "archived": false,
+   "last_commit": "2026-09-25T20:22:12Z",
+   "category": "video",
+   "competitor": "Zoom"
+  },
+  "livekit": {
+   "name": "LiveKit",
+   "license": "Apache-2.0",
+   "stars": 21102,
+   "archived": false,
+   "last_commit": "2026-09-25T06:07:19Z",
+   "category": "video",
+   "competitor": "Zoom"
+  },
+  "openvidu": {
+   "name": "OpenVidu",
+   "license": "Apache-2.0",
+   "stars": 2131,
+   "archived": false,
+   "last_commit": "2026-09-24T23:18:06Z",
+   "category": "video",
+   "competitor": "Zoom"
+  },
+  "galene": {
+   "name": "Galène",
+   "license": "MIT",
+   "stars": 1409,
+   "archived": false,
+   "last_commit": "2026-09-25T14:21:56Z",
+   "category": "video",
+   "competitor": "Zoom"
+  },
+  "owncast": {
+   "name": "Owncast",
+   "license": "MIT",
+   "stars": 11556,
+   "archived": false,
+   "last_commit": "2026-09-24T22:47:01Z",
+   "category": "video",
+   "competitor": "Twitch"
+  },
+  "peertube": {
+   "name": "PeerTube",
+   "license": "AGPL-3.0",
+   "stars": 15332,
+   "archived": false,
+   "last_commit": "2026-09-24T14:39:45Z",
+   "category": "video",
+   "competitor": "YouTube"
+  },
+  "mediacms": {
+   "name": "MediaCMS",
+   "license": "AGPL-3.0",
+   "stars": 5126,
+   "archived": false,
+   "last_commit": "2026-09-24T09:04:25Z",
+   "category": "video",
+   "competitor": "Vimeo"
+  },
+  "rustdesk": {
+   "name": "RustDesk",
+   "license": "AGPL-3.0",
+   "stars": 124490,
+   "archived": false,
+   "last_commit": "2026-09-25T07:36:09Z",
+   "category": "support",
+   "competitor": "TeamViewer"
+  },
+  "meshcentral": {
+   "name": "MeshCentral",
+   "license": "Apache-2.0",
+   "stars": 7283,
+   "archived": false,
+   "last_commit": "2026-09-24T00:51:46Z",
+   "category": "support",
+   "competitor": "TeamViewer"
+  },
+  "guacamole": {
+   "name": "Apache Guacamole",
+   "license": "Apache-2.0",
+   "stars": 3992,
+   "archived": false,
+   "last_commit": "2026-09-14T21:11:26Z",
+   "category": "support",
+   "competitor": "TeamViewer"
+  },
+  "tigervnc": {
+   "name": "TigerVNC",
+   "license": "GPL-2.0",
+   "stars": 7505,
+   "archived": false,
+   "last_commit": "2026-09-23T15:44:58Z",
+   "category": "support",
+   "competitor": "TeamViewer"
+  },
+  "espocrm": {
+   "name": "EspoCRM",
+   "license": "AGPL-3.0",
+   "stars": 3389,
+   "archived": false,
+   "last_commit": "2026-09-24T20:09:26Z",
+   "category": "crm",
+   "competitor": "Salesforce"
+  },
+  "suitecrm": {
+   "name": "SuiteCRM",
+   "license": "AGPL-3.0",
+   "stars": 5770,
+   "archived": false,
+   "last_commit": "2026-09-17T14:14:36Z",
+   "category": "crm",
+   "competitor": "Salesforce"
+  },
+  "krayin": {
+   "name": "Krayin",
+   "license": "MIT",
+   "stars": 23942,
+   "archived": false,
+   "last_commit": "2026-09-21T06:01:09Z",
+   "category": "crm",
+   "competitor": "Hubspot"
+  },
+  "monica": {
+   "name": "Monica",
+   "license": "AGPL-3.0",
+   "stars": 25360,
+   "archived": false,
+   "last_commit": "2026-09-24T15:21:07Z",
+   "category": "crm",
+   "competitor": "Sansan"
+  },
+  "freescout": {
+   "name": "FreeScout",
+   "license": "AGPL-3.0",
+   "stars": 4560,
+   "archived": false,
+   "last_commit": "2026-09-25T04:46:33Z",
+   "category": "support",
+   "competitor": "Zendesk"
+  },
+  "osticket": {
+   "name": "osTicket",
+   "license": "GPL-2.0",
+   "stars": 3923,
+   "archived": false,
+   "last_commit": "2026-06-17T22:06:29Z",
+   "category": "support",
+   "competitor": "Zendesk"
+  },
+  "uvdesk": {
+   "name": "UVdesk",
+   "license": "OSL-3.0",
+   "stars": 19612,
+   "archived": false,
+   "last_commit": "2025-10-01T07:16:24Z",
+   "category": "support",
+   "competitor": "Zendesk"
+  },
+  "faveo": {
+   "name": "Faveo",
+   "license": "OSL-3.0",
+   "stars": 1256,
+   "archived": false,
+   "last_commit": "2026-09-25T11:36:36Z",
+   "category": "support",
+   "competitor": "Zendesk"
+  },
+  "helpy": {
+   "name": "Helpy",
+   "license": "MIT",
+   "stars": 2471,
+   "archived": false,
+   "last_commit": "2023-03-08T21:42:10Z",
+   "category": "support",
+   "competitor": "Intercom"
+  },
+  "libredesk": {
+   "name": "Libredesk",
+   "license": "AGPL-3.0",
+   "stars": 2963,
+   "archived": false,
+   "last_commit": "2026-09-25T06:22:54Z",
+   "category": "support",
+   "competitor": "Intercom"
+  },
+  "papercups": {
+   "name": "Papercups",
+   "license": "MIT",
+   "stars": 6115,
+   "archived": false,
+   "last_commit": "2024-02-15T05:21:47Z",
+   "category": "support",
+   "competitor": "Intercom"
+  },
+  "invoice-ninja": {
+   "name": "Invoice Ninja",
+   "license": "Elastic License 2.0",
+   "stars": 10110,
+   "archived": false,
+   "last_commit": "2026-09-22T02:40:10Z",
+   "category": "accounting",
+   "competitor": "freee"
+  },
+  "akaunting": {
+   "name": "Akaunting",
+   "license": "BUSL 1.1",
+   "stars": 10138,
+   "archived": false,
+   "last_commit": "2026-09-24T11:23:43Z",
+   "category": "accounting",
+   "competitor": "freee"
+  },
+  "solidinvoice": {
+   "name": "SolidInvoice",
+   "license": "MIT",
+   "stars": 974,
+   "archived": false,
+   "last_commit": "2026-09-24T01:03:49Z",
+   "category": "accounting",
+   "competitor": "freee"
+  },
+  "crater": {
+   "name": "Crater",
+   "license": "AGPL-3.0",
+   "stars": 8349,
+   "archived": false,
+   "last_commit": "2024-08-10T09:32:07Z",
+   "category": "accounting",
+   "competitor": "freee"
+  },
+  "firefly-iii": {
+   "name": "Firefly III",
+   "license": "AGPL-3.0",
+   "stars": 24723,
+   "archived": false,
+   "last_commit": "2026-09-25T05:44:01Z",
+   "category": "accounting",
+   "competitor": "マネーフォワード"
+  },
+  "actual": {
+   "name": "Actual Budget",
+   "license": "MIT",
+   "stars": 29144,
+   "archived": false,
+   "last_commit": "2026-09-25T17:03:54Z",
+   "category": "accounting",
+   "competitor": "マネーフォワード"
+  },
+  "hledger": {
+   "name": "hledger",
+   "license": "GPL-3.0",
+   "stars": 4731,
+   "archived": false,
+   "last_commit": "2026-09-25T04:20:51Z",
+   "category": "accounting",
+   "competitor": "マネーフォワード"
+  },
+  "gnucash": {
+   "name": "GnuCash",
+   "license": "GPL-2.0",
+   "stars": 4356,
+   "archived": false,
+   "last_commit": "2026-09-24T22:58:51Z",
+   "category": "accounting",
+   "competitor": "マネーフォワード"
+  },
+  "beancount": {
+   "name": "Beancount",
+   "license": "GPL-2.0",
+   "stars": 6031,
+   "archived": false,
+   "last_commit": "2026-08-23T20:17:45Z",
+   "category": "accounting",
+   "competitor": "マネーフォワード"
+  },
+  "kill-bill": {
+   "name": "Kill Bill",
+   "license": "Apache-2.0",
+   "stars": 5761,
+   "archived": false,
+   "last_commit": "2026-09-24T09:38:30Z",
+   "category": "accounting",
+   "competitor": "Stripe Billing"
+  },
+  "hyperswitch": {
+   "name": "Hyperswitch",
+   "license": "Apache-2.0",
+   "stars": 43962,
+   "archived": false,
+   "last_commit": "2026-09-25T07:39:15Z",
+   "category": "accounting",
+   "competitor": "Stripe"
+  },
+  "kimai": {
+   "name": "Kimai",
+   "license": "AGPL-3.0",
+   "stars": 5044,
+   "archived": false,
+   "last_commit": "2026-09-22T03:31:55Z",
+   "category": "hr",
+   "competitor": "King of Time"
+  },
+  "traggo": {
+   "name": "Traggo",
+   "license": "GPL-3.0",
+   "stars": 1633,
+   "archived": false,
+   "last_commit": "2026-07-31T13:04:36Z",
+   "category": "hr",
+   "competitor": "King of Time"
+  },
+  "orangehrm": {
+   "name": "OrangeHRM",
+   "license": "GPL-3.0",
+   "stars": 1143,
+   "archived": false,
+   "last_commit": "2026-06-28T23:52:36Z",
+   "category": "hr",
+   "competitor": "SmartHR"
+  },
+  "horilla": {
+   "name": "Horilla",
+   "license": "LGPL-2.1",
+   "stars": 1436,
+   "archived": false,
+   "last_commit": "2026-09-25T19:59:26Z",
+   "category": "hr",
+   "competitor": "SmartHR"
+  },
+  "docuseal": {
+   "name": "DocuSeal",
+   "license": "AGPL-3.0",
+   "stars": 18615,
+   "archived": false,
+   "last_commit": "2026-09-21T12:25:09Z",
+   "category": "legal",
+   "competitor": "CloudSign"
+  },
+  "opensign": {
+   "name": "OpenSign",
+   "license": "AGPL-3.0",
+   "stars": 7029,
+   "archived": false,
+   "last_commit": "2026-08-21T12:29:09Z",
+   "category": "legal",
+   "competitor": "CloudSign"
+  },
+  "libresign": {
+   "name": "LibreSign",
+   "license": "AGPL-3.0",
+   "stars": 824,
+   "archived": false,
+   "last_commit": "2026-09-25T18:01:08Z",
+   "category": "legal",
+   "competitor": "CloudSign"
+  },
+  "documenso": {
+   "name": "Documenso",
+   "license": "AGPL-3.0",
+   "stars": 15184,
+   "archived": false,
+   "last_commit": "2026-09-25T07:09:38Z",
+   "category": "legal",
+   "competitor": "DocuSign"
+  },
+  "docassemble": {
+   "name": "Docassemble",
+   "license": "MIT",
+   "stars": 988,
+   "archived": false,
+   "last_commit": "2026-09-21T03:44:38Z",
+   "category": "legal",
+   "competitor": "CloudSign"
+  },
+  "paperless-ngx": {
+   "name": "Paperless-ngx",
+   "license": "GPL-3.0",
+   "stars": 46015,
+   "archived": false,
+   "last_commit": "2026-09-25T19:42:36Z",
+   "category": "documents",
+   "competitor": "Adobe Acrobat"
+  },
+  "papermerge": {
+   "name": "Papermerge",
+   "license": "Apache-2.0",
+   "stars": 2936,
+   "archived": true,
+   "last_commit": "2026-09-05T08:02:32Z",
+   "category": "documents",
+   "competitor": "Adobe Acrobat"
+  },
+  "pdfsam": {
+   "name": "PDFsam",
+   "license": "AGPL-3.0",
+   "stars": 4580,
+   "archived": false,
+   "last_commit": "2026-08-10T01:05:01Z",
+   "category": "documents",
+   "competitor": "Adobe Acrobat"
+  },
+  "ocrmypdf": {
+   "name": "OCRmyPDF",
+   "license": "MPL-2.0",
+   "stars": 34876,
+   "archived": false,
+   "last_commit": "2026-09-22T07:31:10Z",
+   "category": "documents",
+   "competitor": "Adobe Acrobat"
+  },
+  "docspell": {
+   "name": "Docspell",
+   "license": "AGPL-3.0",
+   "stars": 2334,
+   "archived": false,
+   "last_commit": "2026-09-25T02:32:10Z",
+   "category": "documents",
+   "competitor": "Adobe Acrobat"
+  },
+  "limesurvey": {
+   "name": "LimeSurvey",
+   "license": "GPL-2.0",
+   "stars": 3733,
+   "archived": false,
+   "last_commit": "2026-09-25T07:39:46Z",
+   "category": "marketing",
+   "competitor": "Typeform"
+  },
+  "heyform": {
+   "name": "HeyForm",
+   "license": "AGPL-3.0",
+   "stars": 8986,
+   "archived": false,
+   "last_commit": "2026-09-09T07:29:46Z",
+   "category": "marketing",
+   "competitor": "Typeform"
+  },
+  "surveyjs": {
+   "name": "SurveyJS",
+   "license": "MIT",
+   "stars": 4879,
+   "archived": false,
+   "last_commit": "2026-09-25T07:35:51Z",
+   "category": "marketing",
+   "competitor": "Typeform"
+  },
+  "ohmyform": {
+   "name": "OhMyForm",
+   "license": "AGPL-3.0",
+   "stars": 2888,
+   "archived": true,
+   "last_commit": "2024-10-31T16:11:33Z",
+   "category": "marketing",
+   "competitor": "Google フォーム"
+  },
+  "mautic": {
+   "name": "Mautic",
+   "license": "GPL-3.0",
+   "stars": 10558,
+   "archived": false,
+   "last_commit": "2026-09-25T11:45:32Z",
+   "category": "marketing",
+   "competitor": "HubSpot"
+  },
+  "keila": {
+   "name": "Keila",
+   "license": "AGPL-3.0",
+   "stars": 2223,
+   "archived": false,
+   "last_commit": "2026-09-21T14:41:02Z",
+   "category": "marketing",
+   "competitor": "Mailchimp"
+  },
+  "medusa": {
+   "name": "Medusa",
+   "license": "MIT",
+   "stars": 36457,
+   "archived": false,
+   "last_commit": "2026-09-25T07:36:14Z",
+   "category": "ecommerce",
+   "competitor": "Shopify"
+  },
+  "saleor": {
+   "name": "Saleor",
+   "license": "BSD-3-Clause",
+   "stars": 23375,
+   "archived": false,
+   "last_commit": "2026-09-25T15:50:17Z",
+   "category": "ecommerce",
+   "competitor": "Shopify"
+  },
+  "bagisto": {
+   "name": "Bagisto",
+   "license": "MIT",
+   "stars": 28169,
+   "archived": false,
+   "last_commit": "2026-09-23T05:59:37Z",
+   "category": "ecommerce",
+   "competitor": "Shopify"
+  },
+  "sylius": {
+   "name": "Sylius",
+   "license": "MIT",
+   "stars": 8543,
+   "archived": false,
+   "last_commit": "2026-09-25T02:11:49Z",
+   "category": "ecommerce",
+   "competitor": "Shopify"
+  },
+  "vendure": {
+   "name": "Vendure",
+   "license": "GPL-3.0",
+   "stars": 8475,
+   "archived": false,
+   "last_commit": "2026-09-25T15:20:49Z",
+   "category": "ecommerce",
+   "competitor": "Shopify"
+  },
+  "woocommerce": {
+   "name": "WooCommerce",
+   "license": "GPL-2.0",
+   "stars": 10534,
+   "archived": false,
+   "last_commit": "2026-09-25T07:45:28Z",
+   "category": "ecommerce",
+   "competitor": "Shopify"
+  },
+  "prestashop": {
+   "name": "PrestaShop",
+   "license": "OSL-3.0（コアのみ）",
+   "stars": 9218,
+   "archived": false,
+   "last_commit": "2026-09-25T05:52:10Z",
+   "category": "ecommerce",
+   "competitor": "Shopify"
+  },
+  "opencart": {
+   "name": "OpenCart",
+   "license": "GPL-3.0",
+   "stars": 8200,
+   "archived": false,
+   "last_commit": "2026-09-25T19:10:34Z",
+   "category": "ecommerce",
+   "competitor": "Shopify"
+  },
+  "ec-cube": {
+   "name": "EC-CUBE",
+   "license": "GPL-2.0",
+   "stars": 789,
+   "archived": false,
+   "last_commit": "2026-09-25T07:12:25Z",
+   "category": "ecommerce",
+   "competitor": "Shopify"
+  },
+  "shopware": {
+   "name": "Shopware",
+   "license": "MIT",
+   "stars": 3429,
+   "archived": false,
+   "last_commit": "2026-09-25T07:49:38Z",
+   "category": "ecommerce",
+   "competitor": "Shopify"
+  },
+  "spree": {
+   "name": "Spree",
+   "license": "BSD-3-Clause",
+   "stars": 15722,
+   "archived": false,
+   "last_commit": "2026-09-25T19:35:45Z",
+   "category": "ecommerce",
+   "competitor": "Shopify"
+  },
+  "magento": {
+   "name": "Magento",
+   "license": "OSL-3.0",
+   "stars": 12200,
+   "archived": false,
+   "last_commit": "2026-09-24T18:40:35Z",
+   "category": "ecommerce",
+   "competitor": "Shopify"
+  },
+  "appsmith": {
+   "name": "Appsmith",
+   "license": "Apache-2.0",
+   "stars": 40940,
+   "archived": false,
+   "last_commit": "2026-09-25T05:47:07Z",
+   "category": "nocode",
+   "competitor": "kintone"
+  },
+  "tooljet": {
+   "name": "ToolJet",
+   "license": "AGPL-3.0",
+   "stars": 40994,
+   "archived": false,
+   "last_commit": "2026-09-25T18:54:52Z",
+   "category": "nocode",
+   "competitor": "kintone"
+  },
+  "frappe-hr": {
+   "name": "Frappe HR",
+   "license": "GPL-3.0",
+   "stars": 8822,
+   "archived": false,
+   "last_commit": "2026-09-25T05:01:17Z",
+   "category": "hr",
+   "competitor": "SmartHR"
+  },
+  "easy-appointments": {
+   "name": "Easy!Appointments",
+   "license": "GPL-3.0",
+   "stars": 4394,
+   "archived": false,
+   "last_commit": "2026-09-14T16:16:02Z",
+   "category": "scheduling",
+   "competitor": "Calendly"
+  },
+  "rallly": {
+   "name": "Rallly",
+   "license": "AGPL-3.0",
+   "stars": 5273,
+   "archived": false,
+   "last_commit": "2026-09-25T17:21:59Z",
+   "category": "scheduling",
+   "competitor": "Calendly"
+  },
+  "weblate": {
+   "name": "Weblate",
+   "license": "GPL-3.0",
+   "stars": 6089,
+   "archived": false,
+   "last_commit": "2026-09-25T07:00:47Z",
+   "category": "translation",
+   "competitor": "DeepL"
+  },
+  "payload": {
+   "name": "Payload",
+   "license": "MIT",
+   "stars": 44936,
+   "archived": false,
+   "last_commit": "2026-09-25T01:13:22Z",
+   "category": "cms",
+   "competitor": "WordPress"
+  },
+  "grav": {
+   "name": "Grav",
+   "license": "MIT",
+   "stars": 15677,
+   "archived": false,
+   "last_commit": "2026-09-25T17:47:54Z",
+   "category": "cms",
+   "competitor": "WordPress"
+  },
+  "typebot": {
+   "name": "Typebot",
+   "license": "FSL 1.1",
+   "stars": 10365,
+   "archived": false,
+   "last_commit": "2026-09-24T20:18:37Z",
+   "category": "marketing",
+   "competitor": "Typeform"
+  },
+  "keepassxc": {
+   "name": "KeePassXC",
+   "license": "GPL-2.0 / GPL-3.0",
+   "stars": 28946,
+   "archived": false,
+   "last_commit": "2026-09-23T06:20:27Z",
+   "category": "security",
+   "competitor": "1Password"
+  },
+  "gitness": {
+   "name": "Gitness",
+   "license": "Apache-2.0",
+   "stars": 38438,
+   "archived": false,
+   "last_commit": "2026-09-25T13:54:13Z",
+   "category": "devtools",
+   "competitor": "GitHub"
+  },
+  "continue": {
+   "name": "Continue",
+   "license": "Apache-2.0",
+   "stars": 36019,
+   "archived": false,
+   "last_commit": "2026-09-24T18:54:54Z",
+   "category": "ai",
+   "competitor": "GitHub Copilot"
+  },
+  "casdoor": {
+   "name": "Casdoor",
+   "license": "Apache-2.0",
+   "stars": 14471,
+   "archived": false,
+   "last_commit": "2026-09-24T16:26:27Z",
+   "category": "security",
+   "competitor": "Okta"
+  },
+  "writefreely": {
+   "name": "WriteFreely",
+   "license": "AGPL-3.0",
+   "stars": 5258,
+   "archived": false,
+   "last_commit": "2026-09-21T22:22:46Z",
+   "category": "cms",
+   "competitor": "note"
+  },
+  "harbor": {
+   "name": "Harbor",
+   "license": "Apache-2.0",
+   "stars": 29455,
+   "archived": false,
+   "last_commit": "2026-09-24T11:16:23Z",
+   "category": "devtools",
+   "competitor": "Docker Hub"
+  },
+  "couchdb": {
+   "name": "CouchDB",
+   "license": "Apache-2.0",
+   "stars": 6963,
+   "archived": false,
+   "last_commit": "2026-09-24T23:49:00Z",
+   "category": "database",
+   "competitor": "Firebase"
+  },
+  "libreoffice": {
+   "name": "LibreOffice",
+   "license": "GPL-3.0",
+   "stars": 4400,
+   "archived": false,
+   "last_commit": "2026-09-25T17:42:05Z",
+   "category": "office",
+   "competitor": "Microsoft 365"
+  },
+  "text-generation-webui": {
+   "name": "Text Generation WebUI",
+   "license": "AGPL-3.0",
+   "stars": 47707,
+   "archived": false,
+   "last_commit": "2026-08-17T17:38:16Z",
+   "category": "ai",
+   "competitor": "ChatGPT Plus"
+  },
+  "whisper-asr-webservice": {
+   "name": "Whisper ASR Webservice",
+   "license": "MIT",
+   "stars": 3343,
+   "archived": false,
+   "last_commit": "2026-08-09T20:36:38Z",
+   "category": "ai",
+   "competitor": "Otter.ai"
+  },
+  "surrealdb": {
+   "name": "SurrealDB",
+   "license": "BUSL 1.1",
+   "stars": 33070,
+   "archived": false,
+   "last_commit": "2026-09-14T23:11:22Z",
+   "category": "database",
+   "competitor": "Firebase"
+  },
+  "netmaker": {
+   "name": "Netmaker",
+   "license": "Apache-2.0（pro/配下は別ライセンス）",
+   "stars": 11803,
+   "archived": false,
+   "last_commit": "2026-09-25T06:52:27Z",
+   "category": "devtools",
+   "competitor": "Tailscale"
+  },
+  "mediamtx": {
+   "name": "MediaMTX",
+   "license": "MIT",
+   "stars": 20254,
+   "archived": false,
+   "last_commit": "2026-09-25T05:01:37Z",
+   "category": "video",
+   "competitor": "Twitch"
+  },
+  "chaskiq": {
+   "name": "Chaskiq",
+   "license": "AGPL-3.0 + Commons Clause",
+   "stars": 3572,
+   "archived": false,
+   "last_commit": "2026-06-30T17:20:11Z",
+   "category": "support",
+   "competitor": "Intercom"
+  },
+  "postiz": {
+   "name": "Postiz",
+   "license": "AGPL-3.0",
+   "stars": 36306,
+   "archived": false,
+   "last_commit": "2026-09-25T06:07:19Z",
+   "category": "marketing",
+   "competitor": "Buffer"
+  },
+  "discourse": {
+   "name": "Discourse",
+   "license": "GPL-2.0",
+   "stars": 47896,
+   "archived": false,
+   "last_commit": "2026-09-25T07:41:57Z",
+   "category": "communication",
+   "competitor": "Circle"
+  },
+  "flarum": {
+   "name": "Flarum",
+   "license": "MIT",
+   "stars": 6752,
+   "archived": false,
+   "last_commit": "2026-09-21T09:36:49Z",
+   "category": "communication",
+   "competitor": "Circle"
+  },
+  "nodebb": {
+   "name": "NodeBB",
+   "license": "GPL-3.0",
+   "stars": 15226,
+   "archived": false,
+   "last_commit": "2026-09-24T23:23:59Z",
+   "category": "communication",
+   "competitor": "Circle"
+  },
+  "ntfy": {
+   "name": "Ntfy",
+   "license": "Apache-2.0",
+   "stars": 34427,
+   "archived": false,
+   "last_commit": "2026-09-23T23:13:38Z",
+   "category": "communication",
+   "competitor": "Pushover"
+  },
+  "gotify": {
+   "name": "Gotify",
+   "license": "MIT",
+   "stars": 15976,
+   "archived": false,
+   "last_commit": "2026-09-24T04:28:44Z",
+   "category": "communication",
+   "competitor": "Pushover"
+  },
+  "redmine": {
+   "name": "Redmine",
+   "license": "GPL-2.0",
+   "stars": 6040,
+   "archived": false,
+   "last_commit": "2026-09-25T06:15:08Z",
+   "category": "project",
+   "competitor": "Backlog"
+  },
+  "cockpit-cms": {
+   "name": "Cockpit",
+   "license": "MIT",
+   "stars": 748,
+   "archived": false,
+   "last_commit": "2026-08-26T20:52:56Z",
+   "category": "cms",
+   "competitor": "WordPress"
+  },
+  "bolt-cms": {
+   "name": "Bolt",
+   "license": "MIT",
+   "stars": 591,
+   "archived": false,
+   "last_commit": "2026-09-09T18:38:10Z",
+   "category": "cms",
+   "competitor": "WordPress"
+  },
+  "highlight": {
+   "name": "Highlight",
+   "license": "Apache-2.0（一部は別ライセンス）",
+   "stars": 9377,
+   "archived": false,
+   "last_commit": "2026-08-20T23:34:52Z",
+   "category": "observability",
+   "competitor": "Datadog"
+  },
+  "cerbos": {
+   "name": "Cerbos",
+   "license": "Apache-2.0",
+   "stars": 4593,
+   "archived": false,
+   "last_commit": "2026-09-25T06:45:54Z",
+   "category": "security",
+   "competitor": "Okta"
+  },
+  "coder-oss": {
+   "name": "Coder",
+   "license": "AGPL-3.0",
+   "stars": 16691,
+   "archived": false,
+   "last_commit": "2026-09-25T20:50:49Z",
+   "category": "devtools",
+   "competitor": "GitHub Copilot"
+  },
+  "automatisch": {
+   "name": "Automatisch",
+   "license": "AGPL-3.0",
+   "stars": 13983,
+   "archived": false,
+   "last_commit": "2026-02-11T19:53:04Z",
+   "category": "automation",
+   "competitor": "Zapier"
+  },
+  "peppermint": {
+   "name": "Peppermint",
+   "license": "AGPL-3.0",
+   "stars": 3162,
+   "archived": true,
+   "last_commit": "2025-09-21T10:59:09Z",
+   "category": "support",
+   "competitor": "Zendesk"
+  },
+  "trudesk": {
+   "name": "Trudesk",
+   "license": "Apache-2.0",
+   "stars": 1496,
+   "archived": false,
+   "last_commit": "2026-05-11T03:54:22Z",
+   "category": "support",
+   "competitor": "Zendesk"
+  },
+  "freshrss": {
+   "name": "FreshRSS",
+   "license": "AGPL-3.0",
+   "stars": 16138,
+   "archived": false,
+   "last_commit": "2026-09-25T06:53:17Z",
+   "category": "note-docs",
+   "competitor": "Feedly"
+  },
+  "miniflux": {
+   "name": "Miniflux",
+   "license": "Apache-2.0",
+   "stars": 9733,
+   "archived": false,
+   "last_commit": "2026-09-23T22:32:27Z",
+   "category": "note-docs",
+   "competitor": "Feedly"
+  },
+  "shiori": {
+   "name": "Shiori",
+   "license": "MIT",
+   "stars": 11652,
+   "archived": false,
+   "last_commit": "2026-07-10T06:36:40Z",
+   "category": "note-docs",
+   "competitor": "Pocket"
+  },
+  "tracim": {
+   "name": "Tracim",
+   "license": "AGPL-3.0 / LGPL-3.0 / MIT（構成要素により異なる）",
+   "stars": 275,
+   "archived": false,
+   "last_commit": "2026-09-24T11:53:16Z",
+   "category": "note-docs",
+   "competitor": "Confluence"
+  },
+  "xwiki": {
+   "name": "XWiki",
+   "license": "LGPL-2.1",
+   "stars": 1314,
+   "archived": false,
+   "last_commit": "2026-09-24T15:00:59Z",
+   "category": "note-docs",
+   "competitor": "Confluence"
+  },
+  "maybe-finance": {
+   "name": "Maybe",
+   "license": "AGPL-3.0",
+   "stars": 54263,
+   "archived": true,
+   "last_commit": "2025-07-24T22:20:44Z",
+   "category": "accounting",
+   "competitor": "マネーフォワード"
+  },
+  "ghostfolio": {
+   "name": "Ghostfolio",
+   "license": "AGPL-3.0",
+   "stars": 9348,
+   "archived": false,
+   "last_commit": "2026-09-24T09:08:31Z",
+   "category": "accounting",
+   "competitor": "マネーフォワード"
+  },
+  "wallos": {
+   "name": "Wallos",
+   "license": "GPL-3.0",
+   "stars": 8578,
+   "archived": false,
+   "last_commit": "2026-09-18T20:39:19Z",
+   "category": "accounting",
+   "competitor": "マネーフォワード"
+  },
+  "invoiceplane": {
+   "name": "InvoicePlane",
+   "license": "MIT",
+   "stars": 3142,
+   "archived": false,
+   "last_commit": "2026-09-25T15:37:59Z",
+   "category": "accounting",
+   "competitor": "freee"
+  },
+  "tryton": {
+   "name": "Tryton",
+   "license": "GPL-3.0",
+   "stars": 223,
+   "archived": false,
+   "last_commit": "2026-09-24T23:03:47Z",
+   "category": "accounting",
+   "competitor": "freee"
+  },
+  "dub": {
+   "name": "Dub",
+   "license": null,
+   "stars": 24823,
+   "archived": false,
+   "last_commit": "2026-09-26T00:12:44Z",
+   "category": "marketing",
+   "competitor": "Bitly"
+  },
+  "pretix": {
+   "name": "Pretix",
+   "license": null,
+   "stars": 2523,
+   "archived": false,
+   "last_commit": "2026-09-25T22:19:39Z",
+   "category": "scheduling",
+   "competitor": "Peatix"
+  },
+  "frappe-crm": {
+   "name": "Frappe CRM",
+   "license": "AGPL-3.0",
+   "stars": 3601,
+   "archived": false,
+   "last_commit": "2026-09-25T08:43:45Z",
+   "category": "crm",
+   "competitor": "Salesforce"
+  },
+  "tolgee": {
+   "name": "Tolgee",
+   "license": null,
+   "stars": 4114,
+   "archived": false,
+   "last_commit": "2026-09-25T14:24:21Z",
+   "category": "translation",
+   "competitor": "Crowdin"
+  }
+ }
+}
