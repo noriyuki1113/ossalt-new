@@ -83,6 +83,7 @@ export const MESSAGES = {
     "filter.all": "すべて",
     "filter.license": "ライセンス",
     "filter.selfhost": "Docker対応",
+    "filter.japanese": "日本語の画面・資料あり",
     "filter.sort": "並び順",
     "sort.health": "健全度が高い順",
     "sort.stars": "スターが多い順",
@@ -107,6 +108,7 @@ export const MESSAGES = {
     "metric.security": "セキュリティ",
     "metric.docker": "Docker対応",
     "metric.jaDocs": "日本語ドキュメント",
+    "metric.jaUi": "画面の日本語化",
 
     "health.title": "健全度スコア",
     "health.explain":

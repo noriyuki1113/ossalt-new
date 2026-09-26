@@ -63,6 +63,8 @@ export type Tool = {
    * （scripts/check-ja-docs.mjs）。null は「無い」ではなく「まだ調べていない」。
    */
   ja_docs: "official" | "community" | "none" | null;
+  /** 画面の日本語翻訳ファイルがリポジトリにある（自動判定）。null は未確認 */
+  ja_ui: boolean | null;
 
   /**
    * 検索用の別名（カタカナ表記・通称など）。例: excalidraw なら
@@ -398,7 +400,17 @@ export function jaDocsLabel(v: Tool["ja_docs"]): string {
   if (v === "official") return "あり（公式）";
   if (v === "community") return "有志訳あり";
   if (v === "none") return "英語のみ";
-  return "未調査";
+  return "未確認";
+}
+
+export function jaUiLabel(v: boolean | null | undefined): string {
+  if (v === true) return "日本語の翻訳あり";
+  return "未確認";
+}
+
+/** 画面の翻訳か、日本語のドキュメントのどちらかがある */
+export function hasJapanese(t: Pick<Tool, "ja_ui" | "ja_docs">): boolean {
+  return t.ja_ui === true || t.ja_docs === "official" || t.ja_docs === "community";
 }
 
 /* ------------------------------------------------------------------ *
@@ -429,6 +441,7 @@ export function filterAndSort(
     category?: string;
     license?: string;
     dockerOnly?: boolean;
+    japaneseOnly?: boolean;
     sort?: SortKey;
   }
 ): Tool[] {
@@ -438,6 +451,7 @@ export function filterAndSort(
   if (opts.category) out = out.filter((t) => t.category === opts.category);
   if (opts.license) out = out.filter((t) => licenseLabel(t.license) === opts.license);
   if (opts.dockerOnly) out = out.filter((t) => t.docker_available === true);
+  if (opts.japaneseOnly) out = out.filter(hasJapanese);
 
   if (q) {
     out = out.filter((t) =>

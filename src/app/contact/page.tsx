@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { getMeta } from "@/lib/data";
 import { SITE, t } from "@/lib/site";
@@ -30,7 +31,9 @@ export default function ContactPage() {
           <div className="panel__body prose" style={{ maxWidth: "none" }}>
             <ul style={{ paddingLeft: "1.2rem" }}>
               <li>掲載情報の誤りのご指摘</li>
-              <li>ツールの追加リクエスト</li>
+              <li>
+                ツールの追加リクエスト（<Link href="/submit/">掲載リクエストのページ</Link>からも送れます）
+              </li>
               <li>ライセンス表記の訂正</li>
               <li>広告・スポンサーに関するお問い合わせ</li>
             </ul>

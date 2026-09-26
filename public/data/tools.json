@@ -67,7 +67,8 @@
    "workflow-automation"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "エヌエイトエヌ"
   ]
@@ -121,7 +122,8 @@
    "web"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -172,7 +174,8 @@
    "qwen"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "オラマ"
   ]
@@ -229,7 +232,8 @@
    "workflow"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "ディファイ"
   ]
@@ -282,7 +286,8 @@
    "webui"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "オープンウェブユーアイ"
   ]
@@ -321,7 +326,8 @@
    "ggml"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -363,7 +369,8 @@
    "react-flow"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "ラングフロー"
   ]
@@ -407,7 +414,8 @@
    "stable-diffusion"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -465,7 +473,8 @@
    "whiteboard"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "エクスカリドロー",
    "えくすかりどろー"
@@ -523,7 +532,8 @@
    "windows"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "ラストデスク"
   ]
@@ -581,7 +591,8 @@
    "transformer"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -651,7 +662,8 @@
    "websockets"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "スーパーベース"
   ]
@@ -707,7 +719,8 @@
    "search-engine"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -757,7 +770,8 @@
   "health_score": 34271,
   "topics": [],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -810,7 +824,8 @@
    "python"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -868,7 +883,8 @@
    "python"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -920,7 +936,8 @@
    "videos"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -989,7 +1006,8 @@
    "superset"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -1043,7 +1061,8 @@
    "skills"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -1095,6 +1114,7 @@
   ],
   "languages": [],
   "ja_docs": "official",
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -1159,6 +1179,7 @@
   ],
   "languages": [],
   "ja_docs": "official",
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -1224,7 +1245,8 @@
    "prometheus"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "グラファナ"
   ]
@@ -1294,7 +1316,8 @@
    "self-hosted"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -1315,7 +1338,7 @@
   "license": "Apache-2.0",
   "last_commit": "2026-09-25T01:41:29Z",
   "created_at": "2019-11-15T18:32:42Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 6.5,
   "scorecard_date": "2022-08-15",
   "scorecard_checks": {
@@ -1361,7 +1384,8 @@
    "webkit"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -1409,7 +1433,8 @@
    "websocket"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "アップタイムクマ"
   ]
@@ -1465,6 +1490,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -1519,7 +1545,8 @@
    "synchronization"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "シンクシング"
   ]
@@ -1579,7 +1606,8 @@
    "tesseract-ocr"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -1641,7 +1669,8 @@
    "youtube-live"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -1707,7 +1736,8 @@
    "webm"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -1778,7 +1808,8 @@
    "prometheus"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -1848,7 +1879,8 @@
    "typescript"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "ストラピ"
   ]
@@ -1888,7 +1920,8 @@
    "llm-inference"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -1931,7 +1964,8 @@
    "vscode-remote"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -2000,7 +2034,8 @@
    "websocket"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "ホップスコッチ"
   ]
@@ -2073,7 +2108,8 @@
    "workflow-orchestration"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -2135,7 +2171,8 @@
    "time-series"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -2183,7 +2220,8 @@
    "wiki"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "アップフロウィー"
   ]
@@ -2243,7 +2281,8 @@
    "website"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -2297,7 +2336,8 @@
    "workspace"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "アフィン"
   ]
@@ -2358,7 +2398,8 @@
    "web-application"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "ゴースト"
   ]
@@ -2411,7 +2452,8 @@
    "vector-database"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -2458,7 +2500,8 @@
    "zod"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "カルドットコム"
   ]
@@ -2525,7 +2568,8 @@
    "zookeeper"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -2578,7 +2622,8 @@
    "web"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -2640,7 +2685,8 @@
    "webrtc"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "ロケットチャット"
   ]
@@ -2698,7 +2744,8 @@
    "terraform"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -2769,7 +2816,8 @@
    "vue"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "ギテア"
   ]
@@ -2836,7 +2884,8 @@
    "swagger"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "ノコディービー"
   ]
@@ -2880,7 +2929,8 @@
    "vaultwarden"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "ボルトウォーデン"
   ]
@@ -2938,7 +2988,8 @@
    "svelte5"
   ],
   "languages": [],
-  "ja_docs": "none",
+  "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "クーリファイ"
   ]
@@ -2990,6 +3041,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -3061,6 +3113,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -3100,6 +3153,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -3155,6 +3209,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "ゼリーフィン"
   ]
@@ -3213,6 +3268,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -3282,6 +3338,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "ジョプリン"
   ]
@@ -3355,6 +3412,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -3413,6 +3471,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "ペンポット"
   ]
@@ -3473,6 +3532,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -3528,6 +3588,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -3570,6 +3631,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -3637,6 +3699,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -3681,6 +3744,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -3737,6 +3801,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -3806,6 +3871,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "メタベース"
   ]
@@ -3864,6 +3930,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -3933,6 +4000,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -3968,6 +4036,7 @@
   "topics": [],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -4030,6 +4099,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "マターモスト"
   ]
@@ -4094,6 +4164,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -4157,6 +4228,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -4211,6 +4283,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "キークローク"
   ]
@@ -4267,6 +4340,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -4315,6 +4389,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -4381,6 +4456,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -4452,6 +4528,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -4522,6 +4599,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "チャットウート"
   ]
@@ -4569,6 +4647,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -4638,6 +4717,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -4694,6 +4774,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -4764,6 +4845,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -4814,6 +4896,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -4868,6 +4951,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -4916,6 +5000,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -4976,6 +5061,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -5038,6 +5124,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "ログシーク",
    "ログシーケ"
@@ -5112,6 +5199,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -5156,6 +5244,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -5227,6 +5316,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "ネクストクラウド"
   ]
@@ -5275,6 +5365,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -5330,6 +5421,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -5384,6 +5476,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -5447,6 +5540,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -5508,6 +5602,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -5579,6 +5674,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "ディレクタス"
   ]
@@ -5642,6 +5738,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -5713,6 +5810,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -5771,6 +5869,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "アウトライン"
   ]
@@ -5835,6 +5934,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -5896,6 +5996,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -5962,6 +6063,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -6003,6 +6105,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -6059,6 +6162,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -6107,6 +6211,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -6168,6 +6273,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -6227,6 +6333,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -6291,6 +6398,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -6349,6 +6457,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -6420,6 +6529,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -6473,6 +6583,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "ドックプロイ"
   ]
@@ -6530,6 +6641,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -6585,6 +6697,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -6641,6 +6754,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -6682,6 +6796,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -6745,6 +6860,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -6802,6 +6918,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -6868,6 +6985,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -6924,6 +7042,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -6981,6 +7100,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -7022,6 +7142,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -7084,6 +7205,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -7154,6 +7276,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -7212,6 +7335,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -7269,6 +7393,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -7304,6 +7429,7 @@
   "topics": [],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -7366,6 +7492,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -7422,6 +7549,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -7462,6 +7590,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -7516,6 +7645,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -7575,6 +7705,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -7634,6 +7765,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -7707,6 +7839,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -7767,6 +7900,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -7838,6 +7972,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -7909,6 +8044,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -7958,6 +8094,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -8015,6 +8152,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -8071,6 +8209,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -8120,6 +8259,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -8183,6 +8323,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -8236,6 +8377,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -8297,6 +8439,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -8368,6 +8511,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -8439,6 +8583,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "ブディベース"
   ]
@@ -8516,6 +8661,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -8573,6 +8719,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -8642,6 +8789,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -8688,6 +8836,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "フォーカルボード"
   ]
@@ -8737,6 +8886,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -8790,6 +8940,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "オーセンティック"
   ]
@@ -8851,6 +9002,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -8913,6 +9065,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -8970,6 +9123,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -9040,6 +9194,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -9105,6 +9260,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -9174,6 +9330,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -9218,6 +9375,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -9287,6 +9445,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -9351,6 +9510,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -9392,6 +9552,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -9458,6 +9619,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -9524,6 +9686,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -9595,6 +9758,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -9649,6 +9813,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -9705,6 +9870,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -9765,6 +9931,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -9832,6 +9999,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -9897,6 +10065,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -9950,6 +10119,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -10006,6 +10176,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -10049,6 +10220,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -10102,6 +10274,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -10147,6 +10320,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -10198,6 +10372,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -10254,6 +10429,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -10303,6 +10479,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -10359,6 +10536,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -10416,6 +10594,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -10472,6 +10651,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -10520,6 +10700,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -10577,6 +10758,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -10647,6 +10829,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -10689,6 +10872,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -10760,6 +10944,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -10822,6 +11007,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -10893,6 +11079,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -10952,6 +11139,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -11001,6 +11189,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -11067,6 +11256,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -11133,6 +11323,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -11190,6 +11381,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -11244,6 +11436,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -11306,6 +11499,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -11366,6 +11560,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -11421,6 +11616,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -11459,6 +11655,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -11510,6 +11707,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -11566,6 +11764,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -11607,6 +11806,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -11666,6 +11866,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -11735,6 +11936,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -11778,6 +11980,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -11843,6 +12046,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -11914,6 +12118,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -11971,6 +12176,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -12032,6 +12238,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -12073,6 +12280,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -12133,6 +12341,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -12181,6 +12390,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -12247,6 +12457,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -12305,6 +12516,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -12348,6 +12560,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -12411,6 +12624,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -12467,6 +12681,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -12539,6 +12754,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -12595,6 +12811,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -12645,6 +12862,7 @@
   "topics": [],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -12698,6 +12916,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -12766,6 +12985,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -12825,6 +13045,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -12889,6 +13110,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -12951,6 +13173,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -12992,6 +13215,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -13052,6 +13276,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -13122,6 +13347,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -13178,6 +13404,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -13248,6 +13475,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -13290,6 +13518,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -13360,6 +13589,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -13425,6 +13655,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -13480,6 +13711,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -13542,6 +13774,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -13611,6 +13844,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -13681,6 +13915,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -13716,6 +13951,7 @@
   "topics": [],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -13778,6 +14014,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -13836,6 +14073,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -13879,6 +14117,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -13939,6 +14178,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -14006,6 +14246,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -14049,6 +14290,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "プランカ"
   ]
@@ -14121,6 +14363,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -14177,6 +14420,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -14244,6 +14488,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -14300,6 +14545,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -14352,6 +14598,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -14417,6 +14664,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -14477,6 +14725,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -14529,6 +14778,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -14596,6 +14846,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -14667,6 +14918,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -14723,6 +14975,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -14783,6 +15036,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -14833,6 +15087,7 @@
   "topics": [],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -14872,6 +15127,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -14943,6 +15199,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -15010,6 +15267,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -15049,6 +15307,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -15088,6 +15347,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -15145,6 +15405,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -15200,6 +15461,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -15261,6 +15523,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -15314,6 +15577,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -15363,6 +15627,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -15406,6 +15671,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -15456,6 +15722,7 @@
   "topics": [],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -15509,6 +15776,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -15559,6 +15827,7 @@
   "topics": [],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -15603,6 +15872,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -15653,6 +15923,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -15719,6 +15990,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -15785,6 +16057,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -15840,6 +16113,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -15894,6 +16168,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -15952,6 +16227,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -16002,6 +16278,7 @@
   "topics": [],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -16064,6 +16341,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -16114,6 +16392,7 @@
   "topics": [],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -16169,6 +16448,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -16227,6 +16507,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -16266,6 +16547,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -16316,6 +16598,7 @@
   "topics": [],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -16385,6 +16668,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -16451,6 +16735,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -16493,6 +16778,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -16557,6 +16843,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -16601,6 +16888,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -16662,6 +16950,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -16719,6 +17008,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -16790,6 +17080,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -16832,6 +17123,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -16889,6 +17181,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -16932,6 +17225,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -16975,6 +17269,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -17034,6 +17329,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -17099,6 +17395,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -17153,6 +17450,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -17209,6 +17507,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -17274,6 +17573,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -17294,7 +17594,7 @@
   "license": "GPL-3.0",
   "last_commit": "2026-09-24T01:38:50Z",
   "created_at": "2015-06-01T08:39:27Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 3.8,
   "scorecard_date": "2026-09-21",
   "scorecard_checks": {
@@ -17334,6 +17634,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -17394,6 +17695,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -17465,6 +17767,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -17525,6 +17828,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -17565,6 +17869,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -17620,6 +17925,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -17670,6 +17976,7 @@
   "topics": [],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -17714,6 +18021,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -17777,6 +18085,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -17832,6 +18141,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -17884,6 +18194,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "ベースロウ"
   ]
@@ -17936,6 +18247,7 @@
   "topics": [],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -18007,6 +18319,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -18051,6 +18364,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -18093,6 +18407,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -18137,6 +18452,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": [
    "ビクーニャ"
   ]
@@ -18193,6 +18509,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -18243,6 +18560,7 @@
   "topics": [],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -18314,6 +18632,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -18349,6 +18668,7 @@
   "topics": [],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -18391,6 +18711,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -18439,6 +18760,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -18491,6 +18813,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -18562,6 +18885,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -18628,6 +18952,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -18689,6 +19014,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -18742,6 +19068,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -18781,6 +19108,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -18836,6 +19164,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -18891,6 +19220,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -18939,6 +19269,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -18988,6 +19319,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -19050,6 +19382,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -19100,6 +19433,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -19171,6 +19505,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -19214,6 +19549,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -19262,6 +19598,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -19322,6 +19659,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -19379,6 +19717,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -19434,6 +19773,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -19503,6 +19843,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -19573,6 +19914,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -19632,6 +19974,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -19678,6 +20021,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -19748,6 +20092,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -19800,6 +20145,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -19871,6 +20217,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -19932,6 +20279,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -20001,6 +20349,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -20044,6 +20393,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -20079,6 +20429,7 @@
   "topics": [],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -20129,6 +20480,7 @@
   "topics": [],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -20175,6 +20527,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -20225,6 +20578,7 @@
   "topics": [],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -20281,6 +20635,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -20340,6 +20695,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -20398,6 +20754,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -20466,6 +20823,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -20520,6 +20878,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -20580,6 +20939,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -20637,6 +20997,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -20689,6 +21050,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -20745,6 +21107,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -20795,6 +21158,7 @@
   "topics": [],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -20848,6 +21212,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -20916,6 +21281,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -20956,6 +21322,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -20991,6 +21358,7 @@
   "topics": [],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -21050,6 +21418,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -21102,6 +21471,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -21156,6 +21526,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -21217,6 +21588,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -21252,6 +21624,7 @@
   "topics": [],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -21292,6 +21665,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -21327,6 +21701,7 @@
   "topics": [],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -21374,6 +21749,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -21429,6 +21805,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -21488,6 +21865,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -21547,6 +21925,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -21599,6 +21978,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -21665,6 +22045,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -21721,6 +22102,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -21769,6 +22151,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -21826,6 +22209,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -21872,6 +22256,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -21912,6 +22297,7 @@
   ],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -21947,6 +22333,7 @@
   "topics": [],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  },
  {
@@ -21982,6 +22369,7 @@
   "topics": [],
   "languages": [],
   "ja_docs": null,
+  "ja_ui": null,
   "aliases": []
  }
 ]

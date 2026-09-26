@@ -7,7 +7,7 @@
  *   license / stars_num / forks_num / github_archived / topics /
  *   scorecard_score / scorecard_date / scorecard_checks /
  *   security_md / dependabot_configured / latest_release_at /
- *   releases_12mo / advisories_count / docker_available
+ *   releases_12mo / advisories_count / docker_available / ja_docs / ja_ui
  *
  * セキュリティ関連の項目（2026-09-25追加）:
  *   - scorecard_*: OpenSSF Scorecard（api.securityscorecards.dev）。
@@ -375,6 +375,7 @@ async function checkFileExists(base, filePath) {
  * API呼び出しが失敗した場合は checked:false とし、既存の判定を変えない。
  */
 const DOCKER_RECHECK_DAYS = 30;
+const REPO_SIGNAL_KEYS = new Set(["docker_available", "ja_docs", "ja_ui"]);
 const DOCKER_FILE_RE = /^(dockerfile(\..+)?|.+\.dockerfile|(docker-)?compose(\.[\w-]+)?\.ya?ml)$/i;
 // テスト・例示・CI・開発環境用のDockerfileは「利用者向けの配布」ではないので除外する
 const DOCKER_EXCLUDE_DIR_RE =
@@ -409,26 +410,98 @@ export function detectDocker({ paths = [], readme = "" }) {
   return null;
 }
 
-async function fetchDockerSignal(base, branch, tool) {
-  const last = tool.docker_checked_at ? Date.parse(tool.docker_checked_at) : 0;
-  if (Date.now() - last < DOCKER_RECHECK_DAYS * 86400000) return { value: null, checked: false };
+/**
+ * 日本語対応の自動判定（2026-09-26追加）。Docker判定と同じファイル一覧・README を使う。
+ *
+ *   ja_docs = "official": 日本語の README / ドキュメントがリポジトリ内にある
+ *     - README.ja.md・README_JP.md など日本語版 README
+ *     - docs/ja/・i18n/ja/docusaurus-plugin-content-docs/ など、ドキュメント用フォルダ内の日本語版
+ *     - メインの README に日本語版への言語切り替えリンクがある
+ *   ja_ui = true: 画面の日本語翻訳ファイルがある
+ *     - locales/ja.json・i18n/ja/…・values-ja/strings.xml・messages_ja.properties など
+ *
+ * 見つからなければどちらも null（未確認）。「英語のみ」「日本語非対応」とは断定しない。
+ * 公式サイト側だけに日本語版がある、翻訳を別リポジトリ（Crowdin 等）で管理している、
+ * といったケースがあるため。「翻訳ファイルがある」は「全画面が翻訳済み」を意味しないので、
+ * 表示では「日本語の翻訳あり」と書き、「完全対応」とは書かない。
+ */
+const JA_SEG = "(ja|jp|ja[-_]jp)";
+const JA_README_RE = new RegExp(`^readme[._-]${JA_SEG}\\.(md|markdown|rst|txt|adoc)$`, "i");
+const JA_DIR_RE = new RegExp(`^(values-)?${JA_SEG}$`, "i");
+const JA_FILE_RE = new RegExp(
+  `(^|[._-])${JA_SEG}\\.(json|ya?ml|po|mo|properties|xlf|xliff|arb|ts|js|mjs|resx|toml|ftl|ini|php|strings|xml|lang)$`,
+  "i"
+);
+const JA_DOC_DIR_RE = /^(docs?|documentation|website|site|guide|manual|docusaurus-plugin-content-docs)$/i;
+const JA_UI_DIR_RE = /^(locales?|i18n|l10n|lang|langs|languages|translations?|messages|res|intl|po)$/i;
+// 依存ライブラリをそのまま同梱したもの（日付ライブラリの ja.js 等）は数えない
+const JA_EXCLUDE_DIR_RE = /^(pdfjs[\w-]*|node_modules|vendor|third[_-]?party|external|deps|tests?|e2e|fixtures?|examples?)$/i;
+const JA_LINK_RE =
+  /\[\s*(日本語|Japanese)\s*\]\([^)]+\)|<a [^>]*>\s*(日本語|Japanese)\s*<\/a>|readme[._-](ja|jp|ja[-_]jp)\.md/i;
+
+export function detectJapanese({ paths = [], readme = "" }) {
+  let docs = null;
+  let ui = null;
+  for (const p of paths) {
+    const parts = p.split("/");
+    const name = parts[parts.length - 1];
+    const dirs = parts.slice(0, -1);
+    if (dirs.some((d) => JA_EXCLUDE_DIR_RE.test(d))) continue;
+
+    if (!docs && JA_README_RE.test(name)) docs = p;
+    const jaDirIdx = dirs.findIndex((d) => JA_DIR_RE.test(d));
+    const isJaFile = JA_FILE_RE.test(name);
+    if (jaDirIdx === -1 && !isJaFile) continue;
+
+    // 日本語のフォルダ・ファイルが、ドキュメント用か画面用かを、上位のフォルダ名で見分ける
+    const above = jaDirIdx === -1 ? dirs : dirs.slice(0, jaDirIdx);
+    const isDoc = above.some((d) => JA_DOC_DIR_RE.test(d)) || /\.(md|mdx|rst|adoc)$/i.test(name);
+    if (isDoc) {
+      if (!docs && /\.(md|mdx|rst|adoc|html?|txt)$/i.test(name)) docs = p;
+    } else if (!ui && (above.some((d) => JA_UI_DIR_RE.test(d)) || /^values-/i.test(dirs[jaDirIdx] ?? "") || isJaFile)) {
+      ui = p;
+    }
+    if (docs && ui) break;
+  }
+  if (!docs && readme && JA_LINK_RE.test(readme)) docs = "README内の日本語版リンク";
+  return { docs, ui };
+}
+
+/**
+ * リポジトリのファイル一覧と README から、Docker対応・日本語対応をまとめて判定する。
+ * どちらも頻繁には変わらないため、前回から DOCKER_RECHECK_DAYS 日以内なら取り直さない。
+ * 戻り値: { checked: boolean, docker: true|null, jaDocs: "official"|null, jaUi: true|null }
+ * API呼び出しが失敗した場合は checked:false とし、既存の判定を変えない。
+ */
+async function fetchRepoSignals(base, branch, tool) {
+  const skip = { checked: false, docker: null, jaDocs: null, jaUi: null };
+  const fresh = (iso) => iso && Date.now() - Date.parse(iso) < DOCKER_RECHECK_DAYS * 86400000;
+  if (fresh(tool.docker_checked_at) && fresh(tool.ja_checked_at)) return skip;
 
   const treeRes = await ghFetch(`${base}/git/trees/${encodeURIComponent(branch)}?recursive=1`);
-  if (!treeRes || !treeRes.ok) return { value: null, checked: false };
+  if (!treeRes || !treeRes.ok) return skip;
   const tree = await treeRes.json().catch(() => null);
-  if (!Array.isArray(tree?.tree)) return { value: null, checked: false };
+  if (!Array.isArray(tree?.tree)) return skip;
   const paths = tree.tree.filter((e) => e.type === "blob").map((e) => e.path);
-  if (detectDocker({ paths })) return { value: true, checked: true };
 
+  let docker = detectDocker({ paths }) ? true : null;
+  let ja = detectJapanese({ paths });
+
+  // ファイルだけで決まらなかった項目は README も見る。
   // README は種類（.md / .rst / 拡張子なし）を問わず readme API で本文を取る
-  const readmeRes = await ghFetch(`${base}/readme`);
-  if (!readmeRes) return { value: null, checked: false };
-  if (readmeRes.status === 404) return { value: null, checked: true };
-  if (!readmeRes.ok) return { value: null, checked: false };
-  const body = await readmeRes.json().catch(() => null);
-  const readme =
-    body?.content && body.encoding === "base64" ? Buffer.from(body.content, "base64").toString("utf8") : "";
-  return { value: detectDocker({ readme }) ? true : null, checked: true };
+  if (!docker || !ja.docs) {
+    const readmeRes = await ghFetch(`${base}/readme`);
+    if (!readmeRes) return skip;
+    if (readmeRes.status !== 404) {
+      if (!readmeRes.ok) return skip;
+      const body = await readmeRes.json().catch(() => null);
+      const readme =
+        body?.content && body.encoding === "base64" ? Buffer.from(body.content, "base64").toString("utf8") : "";
+      if (!docker && detectDocker({ readme })) docker = true;
+      if (!ja.docs) ja = { ...ja, docs: detectJapanese({ readme }).docs };
+    }
+  }
+  return { checked: true, docker, jaDocs: ja.docs ? "official" : null, jaUi: ja.ui ? true : null };
 }
 
 /**
@@ -548,13 +621,13 @@ async function fetchOne(slug, id, tool) {
 
   // セキュリティ関連シグナル（タスク1）。既存の repo/contributors 取得とは
   // 独立しており、どれか1つが失敗しても他の項目・他のツールには影響しない。
-  const [scorecard, securityMd, dependabotConfigured, releaseInfo, advisoriesCount, docker] = await Promise.all([
+  const [scorecard, securityMd, dependabotConfigured, releaseInfo, advisoriesCount, signals] = await Promise.all([
     fetchScorecard(...slug.split("/")),
     checkFileExists(base, "SECURITY.md"),
     checkFileExists(base, ".github/dependabot.yml"),
     fetchReleaseInfo(base),
     fetchAdvisoriesCount(base),
-    repo.default_branch ? fetchDockerSignal(base, repo.default_branch, tool) : { value: null, checked: false },
+    repo.default_branch ? fetchRepoSignals(base, repo.default_branch, tool) : { checked: false },
   ]);
 
   return {
@@ -583,8 +656,14 @@ async function fetchOne(slug, id, tool) {
       releases_12mo: releaseInfo.releases_12mo,
       advisories_count: advisoriesCount,
       // 判定できたときだけ入れる（null＝未確認も上書きする。下の書き込み処理を参照）
-      ...(docker.checked
-        ? { docker_available: docker.value, docker_checked_at: new Date().toISOString() }
+      ...(signals.checked
+        ? {
+            docker_available: signals.docker,
+            docker_checked_at: new Date().toISOString(),
+            ja_docs: signals.jaDocs,
+            ja_ui: signals.jaUi,
+            ja_checked_at: new Date().toISOString(),
+          }
         : {}),
       github_checked_at: new Date().toISOString(),
     },
@@ -644,9 +723,9 @@ async function main() {
         // API が null を返した項目（例: ライセンスが NOASSERTION）は、既に入っている値を消さない。
         // 「未取得を補完する」スクリプトなので、取得できなかったことを理由に既知の値を捨てない。
         for (const [k, v] of Object.entries(res.data)) {
-          // docker_available の null は「判定した結果、痕跡が無かった（未確認）」なので、
-          // 旧データの手入力値（誤った false を含む）を残さず上書きする。
-          if (v === null && tool[k] != null && k !== "docker_available") continue;
+          // docker_available / ja_docs / ja_ui の null は「判定した結果、痕跡が無かった（未確認）」
+          // なので、旧データの値（誤った false や、README だけで決めた "none" を含む）を残さず上書きする。
+          if (v === null && tool[k] != null && !REPO_SIGNAL_KEYS.has(k)) continue;
           tool[k] = v;
         }
         updated += 1;

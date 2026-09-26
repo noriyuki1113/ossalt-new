@@ -35,17 +35,18 @@ export function ToolBrowser({
   const [category, setCategory] = useState("");
   const [license, setLicense] = useState("");
   const [dockerOnly, setDockerOnly] = useState(false);
+  const [japaneseOnly, setJapaneseOnly] = useState(false);
   const [sort, setSort] = useState<SortKey>(defaultSort);
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
   const licenses = useMemo(() => licenseFacets(tools), [tools]);
 
   const results = useMemo(
-    () => filterAndSort(tools, { query, category, license, dockerOnly, sort }),
-    [tools, query, category, license, dockerOnly, sort]
+    () => filterAndSort(tools, { query, category, license, dockerOnly, japaneseOnly, sort }),
+    [tools, query, category, license, dockerOnly, japaneseOnly, sort]
   );
 
-  const dirty = Boolean(query || category || license || dockerOnly);
+  const dirty = Boolean(query || category || license || dockerOnly || japaneseOnly);
   // 並び替えだけを変えた場合も「操作した」とみなし、全件表示に切り替える。
   const isCustomized = dirty || sort !== defaultSort;
   const shown = isCustomized ? results : results.slice(0, visibleCount);
@@ -56,6 +57,7 @@ export function ToolBrowser({
     setCategory("");
     setLicense("");
     setDockerOnly(false);
+    setJapaneseOnly(false);
     setSort(defaultSort);
     setVisibleCount(PAGE_SIZE);
   }
@@ -149,6 +151,21 @@ export function ToolBrowser({
               />
               <label htmlFor="docker-only" style={{ cursor: "pointer" }}>
                 {t("filter.selfhost")}
+              </label>
+            </span>
+          </label>
+          <label className="field" style={{ alignSelf: "end" }}>
+            <span className="field__label">&nbsp;</span>
+            <span style={{ display: "inline-flex", gap: "0.5rem", alignItems: "center" }}>
+              <input
+                type="checkbox"
+                checked={japaneseOnly}
+                onChange={(e) => setJapaneseOnly(e.target.checked)}
+                id="japanese-only"
+                style={{ width: 16, height: 16 }}
+              />
+              <label htmlFor="japanese-only" style={{ cursor: "pointer" }}>
+                {t("filter.japanese")}
               </label>
             </span>
           </label>

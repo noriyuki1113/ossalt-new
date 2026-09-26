@@ -166,7 +166,11 @@ const tools = raw.map((t) => {
     health_score: pick(t, ["health_score"]) ?? null,
     topics: Array.isArray(t.topics) ? t.topics : [],
     languages: Array.isArray(t.languages) ? t.languages : [],
-    ja_docs: t.ja_docs ?? null,
+    // 自動判定（fetch-github-api.mjs）済みならその値。未判定のものは旧データのうち
+    // "official"（日本語版を実際に確認済み）だけを残す。旧データの "none"（英語のみ）は
+    // README だけを見て決めたもので断定が強すぎるため出さない（未確認にする）
+    ja_docs: t.ja_checked_at ? t.ja_docs ?? null : t.ja_docs === "official" ? "official" : null,
+    ja_ui: t.ja_checked_at ? t.ja_ui ?? null : null,
     aliases: Array.isArray(t.aliases) ? t.aliases : [],
   };
 });

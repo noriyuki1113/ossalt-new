@@ -16,6 +16,8 @@ import {
   getScorecardTier,
   getSecurityFallback,
   jaDocsLabel,
+  jaUiLabel,
+  hasJapanese,
   licenseLabel,
   releaseInfoLabel,
   securityMdLabel,
@@ -254,9 +256,9 @@ export function ToolRow({ tool }: { tool: Tool }) {
               {tool.license ? ` ／ ${tool.license}` : ""}
             </p>
           </div>
-          {(tool.ja_docs === "official" || tool.ja_docs === "community") && (
+          {hasJapanese(tool) && (
             <span className="tag" style={{ alignSelf: "flex-start", flexShrink: 0 }}>
-              日本語ドキュメント{tool.ja_docs === "official" ? "あり" : "（有志訳）"}
+              {tool.ja_ui === true ? "日本語の画面あり" : "日本語の資料あり"}
             </span>
           )}
         </div>
@@ -301,6 +303,7 @@ export function SpecTable({ tool }: { tool: Tool }) {
     ],
     [t("metric.created"), formatDate(tool.created_at)],
     [t("metric.docker"), dockerLabel(tool.docker_available)],
+    [t("metric.jaUi"), jaUiLabel(tool.ja_ui)],
     [t("metric.jaDocs"), jaDocsLabel(tool.ja_docs)],
     [t("metric.health"), tool.health_score != null ? Math.round(tool.health_score).toLocaleString("ja-JP") : "—"],
   ];
