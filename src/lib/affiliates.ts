@@ -37,7 +37,7 @@ export interface AffiliateVps {
  * |----------|---------------|----------|----------------------------------------------------|
  * | conoha   | ConoHa VPS    | A8.net   | 1,000円 〜 最大53,900円（プラン・期間別）            |
  * | kagoya   | KAGOYA CLOUD  | A8.net   | 1,000円（VPS）                                      |
- * | sakura   | さくらのVPS   | A8.net   | 512プラン585円 〜 32Gプラン24,000円（プラン別）      |
+ * | sakura   | さくらのVPS   | A8.net   | 提携済み                                            |
  * | xserver  | Xserver VPS   | A8.net   | 提携済み                                            |
  *
  * 出典:
@@ -70,8 +70,8 @@ export const AFFILIATE_VPS: AffiliateVps[] = [
     id: "sakura",
     name: "さくらのVPS",
     officialUrl: "https://vps.sakura.ad.jp/",
-    // TODO: A8.net の「さくらのVPS」プログラムで発行したアフィリエイトURLを貼る
-    affiliateUrl: "",
+    affiliateUrl: "https://px.a8.net/svt/ejp?a8mat=4BCKBS+6W9S1E+D8Y+C9YHU",
+    trackingImageUrl: "https://www16.a8.net/0.gif?a8mat=4BCKBS+6W9S1E+D8Y+C9YHU",
     description: "root権限つきで自由度が高く、国内でも運用実績が長い。",
     recommendedFor: "はじめてroot権限のサーバーを触る人",
     ctaLabel: "公式サイトで詳細を見る",
