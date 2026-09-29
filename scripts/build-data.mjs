@@ -190,6 +190,31 @@ const tools = raw.map((t) => {
   };
 });
 
+/**
+ * 代替対象SaaS名の表記ゆれの正規化（2026-09-30 修正指示書タスク4）。
+ * 大文字小文字だけが違う名前を同一のSaaSとして数えられるよう、正式表記にそろえる。
+ * ここに無い表記ゆれが残っていないかは、正規化後に検査して警告する。
+ */
+const COMPETITOR_CANONICAL = { hubspot: "HubSpot", sendgrid: "SendGrid" };
+for (const t of tools) {
+  const key = (t.primary_competitor ?? "").trim().toLowerCase();
+  if (key && COMPETITOR_CANONICAL[key]) t.primary_competitor = COMPETITOR_CANONICAL[key];
+}
+{
+  const seenByKey = new Map();
+  for (const t of tools) {
+    const key = (t.primary_competitor ?? "").trim().toLowerCase();
+    if (!key) continue;
+    if (!seenByKey.has(key)) seenByKey.set(key, new Set());
+    seenByKey.get(key).add(t.primary_competitor);
+  }
+  for (const [key, names] of seenByKey) {
+    if (names.size > 1) {
+      console.warn(`⚠️ 代替対象SaaS名の表記ゆれが残っています: ${[...names].join(" / ")}（正規化マップに追加してください）`);
+    }
+  }
+}
+
 // 健全度スコアが無い場合は式から再計算する。
 // ただし式はスター・フォーク・コントリビュータ・ウォッチャーの4項目を前提とするため、
 // いずれかが未取得のときは再計算しない（一部だけの値を合計として出さない）。
@@ -211,8 +236,16 @@ for (const t of tools) {
 
 tools.sort((a, b) => (b.health_score ?? -1) - (a.health_score ?? -1));
 
+// トップ・フッター・一覧・SaaS一覧・ガイド・Aboutの件数表示をすべて一致させるため、
+// meta・categories・件数系の指標はアーカイブ済み（開発終了）を除いた「掲載中」から
+// 算出する（2026-09-30 修正指示書タスク4）。アーカイブ済みの件数は別途 archived_count
+// として持たせる。詳細ページ自体（/tools/<id>/）は getTools() 経由のままなので、
+// アーカイブ済みでも既存リンク・検索流入は維持される。
+const active = tools.filter((t) => !t.github_archived);
+const archivedCount = tools.length - active.length;
+
 const counts = {};
-for (const t of tools) counts[t.category] = (counts[t.category] ?? 0) + 1;
+for (const t of active) counts[t.category] = (counts[t.category] ?? 0) + 1;
 
 const categories = Object.entries(CATEGORY_META).map(([slug, [nameJa, ledeJa]]) => ({
   slug,
@@ -221,7 +254,7 @@ const categories = Object.entries(CATEGORY_META).map(([slug, [nameJa, ledeJa]]) 
   count: counts[slug] ?? 0,
 }));
 
-const scored = tools.filter((t) => t.scorecard_score != null).length;
+const scored = active.filter((t) => t.scorecard_score != null).length;
 
 /**
  * 健全度スコアの分布（パーセンタイル）。
@@ -238,15 +271,15 @@ function percentile(sortedAsc, p) {
   return sortedAsc[idx];
 }
 
-const healthScores = tools
+const healthScores = active
   .map((t) => t.health_score)
   .filter((v) => v != null)
   .sort((a, b) => a - b);
 
 // 「更新の新しさ」の減点は最終コミットから90日で頭打ち（最大-45点）になる。
 // 90日以内にコミットがある件数を出し、/guide/ でこの限界（91日でも2年放置でも
-// 減点が同じ）を説明するときに使う。
-const within90dCount = tools.filter(
+// 減点が同じ）を説明するときに使う。tool_countと同じ母集団（掲載中）で数える。
+const within90dCount = active.filter(
   (t) => t.freshness_days != null && t.freshness_days <= 90
 ).length;
 
@@ -268,13 +301,14 @@ const health =
 
 const meta = {
   built_at: new Date().toISOString(),
-  tool_count: tools.length,
+  tool_count: active.length,
   scored_count: scored,
-  unrated_count: tools.length - scored,
-  with_contributors: tools.filter((t) => t.contributors_num != null).length,
-  with_watchers: tools.filter((t) => t.watchers_num != null).length,
+  unrated_count: active.length - scored,
+  with_contributors: active.filter((t) => t.contributors_num != null).length,
+  with_watchers: active.filter((t) => t.watchers_num != null).length,
   categories: categories.length,
-  competitors: new Set(tools.map((t) => t.primary_competitor).filter(Boolean)).size,
+  competitors: new Set(active.map((t) => t.primary_competitor).filter(Boolean)).size,
+  archived_count: archivedCount,
   health,
 };
 

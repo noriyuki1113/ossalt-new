@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getCompetitors, getTools } from "@/lib/data";
+import { getActiveTools, getCompetitors } from "@/lib/data";
 import { getBlogPosts } from "@/lib/blog";
 import { CATEGORIES } from "@/lib/categories";
 import { SITE } from "@/lib/site";
@@ -31,7 +31,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.6,
     })),
-    ...getTools().map((t) => ({
+    // アーカイブ済み（開発終了）のツールは、ページ自体は残す（getTools()経由で生成
+    // され続ける）が、サイトマップには載せない。検索エンジンに新規のインデックス登録を
+    // 促すのは掲載中のツールだけでよいため（2026-09-30 修正指示書タスク4）。
+    ...getActiveTools().map((t) => ({
       url: `${base}/tools/${t.id}/`,
       lastModified: t.last_commit ? new Date(t.last_commit) : now,
       changeFrequency: "weekly" as const,

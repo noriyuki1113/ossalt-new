@@ -21,7 +21,7 @@
   "slug": "database",
   "nameJa": "データベース・表作成",
   "ledeJa": "Airtableのような表形式のデータ管理を、社内に置く。",
-  "count": 11
+  "count": 9
  },
  {
   "slug": "cms",
@@ -63,7 +63,7 @@
   "slug": "files",
   "nameJa": "ファイル管理・写真",
   "ledeJa": "クラウドストレージと写真のバックアップを、自分のディスクに。",
-  "count": 18
+  "count": 17
  },
  {
   "slug": "design",
@@ -81,13 +81,13 @@
   "slug": "marketing",
   "nameJa": "マーケティング・フォーム",
   "ledeJa": "アンケート、メール配信、流入計測まわり。",
-  "count": 11
+  "count": 10
  },
  {
   "slug": "support",
   "nameJa": "カスタマーサポート",
   "ledeJa": "問い合わせ対応を、外部SaaSに預けず運用する。",
-  "count": 16
+  "count": 15
  },
  {
   "slug": "scheduling",
@@ -105,7 +105,7 @@
   "slug": "documents",
   "nameJa": "PDF・文書処理",
   "ledeJa": "PDFの結合・変換・編集を、外部サービスに送らずに処理する。",
-  "count": 8
+  "count": 7
  },
  {
   "slug": "office",
@@ -129,7 +129,7 @@
   "slug": "accounting",
   "nameJa": "会計・請求書・経費",
   "ledeJa": "請求書の発行や入出金の管理を、外部サービスに預けずに行う。",
-  "count": 16
+  "count": 15
  },
  {
   "slug": "legal",
@@ -147,7 +147,7 @@
   "slug": "ai",
   "nameJa": "AI・LLM基盤",
   "ledeJa": "生成AIを自前のサーバで動かす。入力内容を外部に送らずに使える。",
-  "count": 37
+  "count": 35
  },
  {
   "slug": "video",

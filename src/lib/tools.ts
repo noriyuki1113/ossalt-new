@@ -86,6 +86,8 @@ export type DataMeta = {
   with_contributors?: number;
   /** ウォッチャー数を取得できた件数 */
   with_watchers?: number;
+  /** アーカイブ済み（開発終了）で、tool_count等の集計には含めていない件数 */
+  archived_count?: number;
   /** 健全度スコアの分布（build-data.mjs が実データから算出） */
   health?: {
     count: number;
