@@ -1,23 +1,23 @@
 {
- "built_at": "2026-09-29T18:34:20.183Z",
- "tool_count": 375,
- "scored_count": 229,
+ "built_at": "2026-09-29T18:37:17.445Z",
+ "tool_count": 373,
+ "scored_count": 227,
  "unrated_count": 146,
- "with_contributors": 375,
- "with_watchers": 375,
+ "with_contributors": 373,
+ "with_watchers": 373,
  "categories": 28,
- "competitors": 142,
+ "competitors": 141,
  "archived_count": 9,
  "health": {
-  "count": 375,
+  "count": 373,
   "min": 18,
   "p10": 1268,
   "p25": 2449,
-  "p50": 5562,
-  "p75": 12145,
-  "p90": 21101,
-  "p95": 28761,
+  "p50": 5531,
+  "p75": 12041,
+  "p90": 20566,
+  "p95": 28564,
   "max": 82611,
-  "within_90d_count": 351
+  "within_90d_count": 349
  }
 }

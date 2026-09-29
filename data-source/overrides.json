@@ -1,5 +1,5 @@
 {
-  "exclude": ["terraform", "elasticsearch", "vault", "inkscape"],
+  "exclude": ["terraform", "elasticsearch", "vault", "inkscape", "ansible", "playwright"],
   "patch": {
     "weblate": { "primary_competitor": "Crowdin" }
   }

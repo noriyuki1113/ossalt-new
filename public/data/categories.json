@@ -51,13 +51,13 @@
   "slug": "devtools",
   "nameJa": "開発・デプロイ基盤",
   "ledeJa": "Gitホスティング、デプロイ、バックエンド。開発の土台を自前で。",
-  "count": 46
+  "count": 45
  },
  {
   "slug": "automation",
   "nameJa": "業務自動化",
   "ledeJa": "Zapier的な連携を、実行回数を気にせず使う。",
-  "count": 13
+  "count": 12
  },
  {
   "slug": "files",
