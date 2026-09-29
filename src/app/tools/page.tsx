@@ -4,14 +4,15 @@ import { ToolBrowser } from "@/components/tool-browser";
 import { getActiveTools, getMeta } from "@/lib/data";
 import { CATEGORIES } from "@/lib/categories";
 import { t } from "@/lib/site";
+import { pageMeta } from "@/lib/seo";
 import { formatCompactJa } from "@/lib/tools";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "オープンソースツール一覧",
   description:
     "自前で動かせるオープンソースソフトの一覧。スター数・ライセンス・Docker対応・セキュリティ評価で絞り込めます。",
-  alternates: { canonical: "/tools/" },
-};
+  path: "/tools/",
+});
 
 export default function ToolsPage() {
   const tools = getActiveTools();

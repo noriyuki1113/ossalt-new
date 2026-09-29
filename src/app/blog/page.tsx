@@ -5,12 +5,13 @@ import { getBlogPosts } from "@/lib/blog";
 import { getMeta } from "@/lib/data";
 import { formatDate } from "@/lib/tools";
 import { t } from "@/lib/site";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: t("blog.title"),
   description: t("blog.lede"),
-  alternates: { canonical: "/blog/" },
-};
+  path: "/blog/",
+});
 
 export default function BlogIndexPage() {
   const meta = getMeta();

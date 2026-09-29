@@ -4,13 +4,14 @@ import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { getActiveTools, getMeta } from "@/lib/data";
 import { CATEGORIES } from "@/lib/categories";
 import { t } from "@/lib/site";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "カテゴリから探す",
   description:
     "用途別にオープンソース代替ソフトを探せます。ノート、チャット、プロジェクト管理、解析、認証、開発基盤など。",
-  alternates: { canonical: "/categories/" },
-};
+  path: "/categories/",
+});
 
 export default function CategoriesPage() {
   const tools = getActiveTools();

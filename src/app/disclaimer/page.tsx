@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { getMeta } from "@/lib/data";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "免責事項",
   description: "掲載情報の正確性、外部サイトへのリンク、スポンサー掲載の扱いについてOSSアルタナティブの免責事項を説明します。",
-  alternates: { canonical: "/disclaimer/" },
-};
+  path: "/disclaimer/",
+});
 
 export default function DisclaimerPage() {
   const meta = getMeta();

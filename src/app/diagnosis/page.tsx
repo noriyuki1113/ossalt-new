@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { DiagnosisWizard } from "@/components/diagnosis-wizard";
 import { getMeta } from "@/lib/data";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "あなたに合うOSS診断",
   description:
     "6つの質問に答えるだけで、今使っているSaaSに合うオープンソースの代替候補を探せます。ログイン不要・無料・約2分。",
-  alternates: { canonical: "/diagnosis/" },
-};
+  path: "/diagnosis/",
+});
 
 export default function DiagnosisPage() {
   const meta = getMeta();

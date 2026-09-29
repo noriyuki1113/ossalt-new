@@ -5,6 +5,7 @@ import { ToolRow } from "@/components/tool-views";
 import { getActiveTools, getMeta } from "@/lib/data";
 import { CATEGORIES, getCategory } from "@/lib/categories";
 import { t } from "@/lib/site";
+import { pageMeta } from "@/lib/seo";
 
 type Params = { slug: string };
 
@@ -20,11 +21,11 @@ export async function generateMetadata({
   const { slug } = await params;
   const category = getCategory(slug);
   if (!category) return { title: t("detail.notFound") };
-  return {
+  return pageMeta({
     title: `${category.nameJa} のオープンソース代替`,
     description: category.ledeJa,
-    alternates: { canonical: `/categories/${category.slug}/` },
-  };
+    path: `/categories/${category.slug}/`,
+  });
 }
 
 export default async function CategoryPage({ params }: { params: Promise<Params> }) {

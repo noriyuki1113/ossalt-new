@@ -4,13 +4,14 @@ import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { getBlogPost } from "@/lib/blog";
 import { getMeta } from "@/lib/data";
 import { t } from "@/lib/site";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "自前で動かすソフトの選び方",
   description:
     "オープンソースへの乗り換えで後悔しないための確認項目。ライセンス、セキュリティ、更新の継続性、運用コストの見積もり方。",
-  alternates: { canonical: "/guide/" },
-};
+  path: "/guide/",
+});
 
 /**
  * 健全度スコアの目安をキリのよい数字で示すための丸め。

@@ -7,6 +7,7 @@ import { HouseAd } from "@/components/house-ad";
 import { getAlternativeGuide } from "@/lib/alternative-guides";
 import { getCompetitor, getCompetitors, getMeta, getTool } from "@/lib/data";
 import { SITE, t } from "@/lib/site";
+import { pageMeta } from "@/lib/seo";
 import { formatDate } from "@/lib/tools";
 
 type Params = { slug: string };
@@ -24,13 +25,14 @@ export async function generateMetadata({
   const c = getCompetitor(slug);
   if (!c) return { title: t("detail.notFound") };
   const guide = getAlternativeGuide(slug);
-  return {
+  return pageMeta({
     title: `${c.name} のオープンソース代替 ${c.tools.length}選`,
     description:
       guide?.description ||
       `${c.name} の代わりに自前で動かせるオープンソースソフトを、ライセンス・スター数・セキュリティ評価つきで比較できます。`,
-    alternates: { canonical: `/alternatives/${c.slug}/` },
-  };
+    path: `/alternatives/${c.slug}/`,
+    type: "article",
+  });
 }
 
 export default async function AlternativeDetailPage({

@@ -15,6 +15,7 @@ import {
 import { getActiveTools, getMeta, getTool, getTools } from "@/lib/data";
 import { getCategory } from "@/lib/categories";
 import { SITE, t } from "@/lib/site";
+import { pageMeta } from "@/lib/seo";
 import { formatDate, licenseLabel, slugifyCompetitor } from "@/lib/tools";
 
 type Params = { slug: string };
@@ -32,13 +33,14 @@ export async function generateMetadata({
   const tool = getTool(slug);
   if (!tool) return { title: t("detail.notFound") };
   const competitor = tool.primary_competitor_ja || tool.primary_competitor;
-  return {
+  return pageMeta({
     title: `${tool.name} — ${competitor} のオープンソース代替`,
     description:
       tool.description_ja?.slice(0, 110) ??
       `${tool.name}は${competitor}のオープンソース代替候補です。ライセンス・スター数・セキュリティ評価をまとめています。`,
-    alternates: { canonical: `/tools/${tool.id}/` },
-  };
+    path: `/tools/${tool.id}/`,
+    type: "article",
+  });
 }
 
 export default async function ToolDetailPage({

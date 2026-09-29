@@ -7,6 +7,7 @@ import { getBlogPost, getBlogPosts } from "@/lib/blog";
 import { getMeta, getTool } from "@/lib/data";
 import { formatDate } from "@/lib/tools";
 import { t } from "@/lib/site";
+import { pageMeta } from "@/lib/seo";
 
 type Params = { slug: string };
 
@@ -22,11 +23,12 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = getBlogPost(slug);
   if (!post) return { title: t("detail.notFound") };
-  return {
+  return pageMeta({
     title: post.title,
     description: post.description,
-    alternates: { canonical: `/blog/${post.slug}/` },
-  };
+    path: `/blog/${post.slug}/`,
+    type: "article",
+  });
 }
 
 export default async function BlogPostPage({ params }: { params: Promise<Params> }) {

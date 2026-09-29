@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { getMeta } from "@/lib/data";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "利用規約",
   description: "OSSアルタナティブの利用条件、掲載ツールの選定基準、禁止事項について定めた利用規約です。",
-  alternates: { canonical: "/terms/" },
-};
+  path: "/terms/",
+});
 
 export default function TermsPage() {
   const meta = getMeta();

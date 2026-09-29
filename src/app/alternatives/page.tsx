@@ -3,13 +3,14 @@ import Link from "next/link";
 import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { getCompetitors, getMeta } from "@/lib/data";
 import { t } from "@/lib/site";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "SaaSから探す",
   description:
     "使っているSaaSを選ぶと、そのオープンソース代替候補を一覧できます。Notion・Slack・Airtable・Google Analytics など。",
-  alternates: { canonical: "/alternatives/" },
-};
+  path: "/alternatives/",
+});
 
 export default function AlternativesPage() {
   const competitors = getCompetitors();

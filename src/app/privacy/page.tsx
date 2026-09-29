@@ -3,12 +3,13 @@ import Link from "next/link";
 import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { getMeta } from "@/lib/data";
 import { SITE, t } from "@/lib/site";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "プライバシーポリシー",
   description: "ossalt.jp における個人情報の取り扱い、Cookie、アクセス解析について。",
-  alternates: { canonical: "/privacy/" },
-};
+  path: "/privacy/",
+});
 
 export default function PrivacyPage() {
   const meta = getMeta();
