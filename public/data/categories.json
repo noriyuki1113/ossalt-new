@@ -45,13 +45,13 @@
   "slug": "security",
   "nameJa": "認証・パスワード管理",
   "ledeJa": "ID基盤とパスワード保管庫。ここは自前運用の効果が大きい領域。",
-  "count": 28
+  "count": 27
  },
  {
   "slug": "devtools",
   "nameJa": "開発・デプロイ基盤",
   "ledeJa": "Gitホスティング、デプロイ、バックエンド。開発の土台を自前で。",
-  "count": 48
+  "count": 46
  },
  {
   "slug": "automation",

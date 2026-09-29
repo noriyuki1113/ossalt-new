@@ -15,6 +15,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { loadOverrides } from "./overrides.mjs";
 
 const ROOT = process.cwd();
 const SRC_TOOLS = path.join(ROOT, "data-source", "tools.json");
@@ -73,9 +74,13 @@ const uniq = [...new Map(entries.map((e) => [e.slug, e])).values()];
 const existing = JSON.parse(fs.readFileSync(SRC_TOOLS, "utf8"));
 const existIds = new Set(existing.map((t) => t.id));
 const existNames = new Set(existing.map((t) => String(t.name || "").toLowerCase()));
+// 掲載除外リスト（data-source/overrides.json）に載っているidは、
+// 一度掲載を外した理由（用途の不一致・非OSSライセンス等）があるため、
+// 未掲載候補としても提案しない。
+const { exclude: excludedIds } = loadOverrides();
 
 const fresh = uniq.filter(
-  (e) => !existIds.has(e.slug) && !existNames.has(e.name.toLowerCase())
+  (e) => !existIds.has(e.slug) && !existNames.has(e.name.toLowerCase()) && !excludedIds.has(e.slug)
 );
 
 fs.mkdirSync(OUT_DIR, { recursive: true });

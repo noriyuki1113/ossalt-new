@@ -24,6 +24,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { loadOverrides } from "./overrides.mjs";
 
 const ROOT = process.cwd();
 const CAND = path.join(ROOT, "scripts", "candidates");
@@ -93,7 +94,8 @@ async function mapLimit(items, limit, fn) {
 const categories = JSON.parse(fs.readFileSync(CATEGORIES_JSON, "utf8"));
 const VALID_CATEGORIES = new Set(categories.map((c) => c.slug));
 
-/* ---------------- 既存データ ---------------- */
+/* ---------------- 既存データ・除外リスト ---------------- */
+const overrides = loadOverrides();
 const existing = JSON.parse(fs.readFileSync(SRC_TOOLS, "utf8"));
 const byId = new Map(existing.map((t) => [t.id, t]));
 const existingRepos = new Set(
@@ -153,6 +155,10 @@ for (const raw of lines) {
   }
   if (byId.has(id) || seenIds.has(id)) {
     fail(`id が重複: ${id}`);
+    continue;
+  }
+  if (overrides.exclude.has(id)) {
+    fail(`id は data-source/overrides.json の除外リストに含まれています: ${id}`);
     continue;
   }
   if (existingRepos.has(gh.toLowerCase())) {

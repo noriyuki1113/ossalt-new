@@ -4,7 +4,7 @@ description: "当サイトに掲載しているツールのライセンスを分
 date: "2026-09-26"
 updated: "2026-09-26"
 category: "guide"
-relatedTools: ["n8n", "activepieces", "dify", "open-webui", "outline", "bookstack", "terraform", "opentofu"]
+relatedTools: ["n8n", "activepieces", "dify", "open-webui", "outline", "bookstack", "opentofu"]
 ---
 
 「オープンソースの代替」と一口に言っても、ライセンスの条件はツールによって大きく違います。社内で使うだけなら気にしなくてよい場合がほとんどですが、自社のサービスに組み込んだり、お客さんに提供したりする場合は、条件によってできることが変わります。
@@ -71,7 +71,7 @@ GPLの考え方に加えて、**改変したものをネットワーク越しに
 
 ## ライセンスは変わることがある
 
-ライセンスは、一度確認したら終わりではありません。[Terraform](/tools/terraform/)とVaultは2023年にBUSLへ変わり、Terraformからは[OpenTofu](/tools/opentofu/)が分かれて開発が続いています。Elasticsearchも、一度オープンソースのライセンスから外れた後、2024年にAGPLを選択肢に加えています。
+ライセンスは、一度確認したら終わりではありません。TerraformとVaultは2023年にBUSLへ変わり、Terraformからは[OpenTofu](/tools/opentofu/)が分かれて開発が続いています（この経緯から、当サイトではTerraform・Vault自体はオープンソース代替として掲載していません）。Elasticsearchも、一度オープンソースのライセンスから外れた後、2024年にAGPLを選択肢に加えています。
 
 長く使う予定のツールは、選ぶときに「開発元がライセンスを変えたらどうするか」も考えておくと安心です。同じ用途で許容型のツールがあれば、それも候補に入れておきましょう。たとえば自動化ツールなら、n8nに対して[Activepieces](/tools/activepieces/)（MIT）、社内Wikiなら、Outlineに対して[BookStack](/tools/bookstack/)（MIT）があります。
 

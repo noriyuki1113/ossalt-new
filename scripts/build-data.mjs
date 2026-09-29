@@ -15,6 +15,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { loadOverrides } from "./overrides.mjs";
 
 const ROOT = process.cwd();
 const SRC = path.join(ROOT, "data-source");
@@ -93,10 +94,24 @@ function pick(obj, keys) {
   return null;
 }
 
-const raw = readJson(path.join(SRC, "tools.json"), null);
-if (!Array.isArray(raw) || raw.length === 0) {
+const rawAll = readJson(path.join(SRC, "tools.json"), null);
+if (!Array.isArray(rawAll) || rawAll.length === 0) {
   console.error("data-source/tools.json が見つからないか空です。");
   process.exit(1);
+}
+
+// data-source/overrides.json を適用する（除外・項目の上書き）。
+// exclude のidは public/data/tools.json に出力しない。
+// これは data-source/tools.json 側の削除・修正を補う安全網であり、
+// add-tools.mjs も同じファイルを参照して再追加を防ぐ。
+const overrides = loadOverrides();
+if (overrides.exclude.size > 0) {
+  console.log(`overrides.json により除外: ${[...overrides.exclude].join(", ")}`);
+}
+const raw = rawAll.filter((t) => !overrides.exclude.has(String(t.id ?? t.slug)));
+for (const t of raw) {
+  const patch = overrides.patch[String(t.id ?? t.slug)];
+  if (patch) Object.assign(t, patch);
 }
 
 // GitHubの追加メタデータ（contributors / watchers など）を任意でマージ
