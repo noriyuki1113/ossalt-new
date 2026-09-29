@@ -73,6 +73,12 @@ export function SiteFooter({ meta }: { meta?: { built_at: string; tool_count: nu
               <li>
                 <Link href="/alternatives/">SaaSから探す</Link>
               </li>
+              <li>
+                <Link href="/compare/">2つずつ比較</Link>
+              </li>
+              <li>
+                <Link href="/diagnosis/">OSS診断</Link>
+              </li>
             </ul>
           </div>
           <div className="foot-col">

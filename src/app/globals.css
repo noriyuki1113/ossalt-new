@@ -1885,3 +1885,85 @@ hr {
   background: transparent;
   color: var(--ink);
 }
+
+/* ---------- 比較ページ（/compare/a-vs-b/） ---------- */
+
+.compare-heads {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin: 1.25rem 0 0;
+}
+
+.compare-head {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  background: var(--card);
+  text-decoration: none;
+  color: var(--ink);
+  min-width: 0;
+}
+
+.compare-head:hover {
+  border-color: var(--indigo);
+}
+
+.compare-head__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--step-1);
+  overflow-wrap: break-word;
+  min-width: 0;
+}
+
+.compare-diffs {
+  display: grid;
+  gap: 0.55rem;
+  padding-left: 1.2rem;
+}
+
+/* .ctable の min-width: 640px（多列の比較表向け）は、3列のこの表では不要 */
+.compare-table {
+  min-width: 0;
+}
+
+.compare-table th[scope="row"] {
+  text-align: left;
+  font-weight: 700;
+  color: var(--ink-2);
+  min-width: 6.5rem;
+  vertical-align: top;
+}
+
+.compare-table td {
+  min-width: 9rem;
+  vertical-align: top;
+}
+
+@media (max-width: 720px) {
+  .compare-head {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.7rem 0.75rem;
+    gap: 0.4rem;
+  }
+
+  .compare-head__name {
+    font-size: var(--step-0);
+  }
+
+  /* 項目名の列＋2ツールの列が390px幅に収まるよう詰める */
+  .compare-table th[scope="row"] {
+    min-width: 5.5rem;
+    font-size: 0.75rem;
+  }
+
+  .compare-table td {
+    min-width: 6.25rem;
+    font-size: 0.8125rem;
+  }
+}

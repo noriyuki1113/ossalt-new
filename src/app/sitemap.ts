@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getActiveTools, getCompetitors } from "@/lib/data";
+import { getActiveTools, getComparePairs, getCompetitors } from "@/lib/data";
 import { getBlogPosts } from "@/lib/blog";
 import { CATEGORIES } from "@/lib/categories";
 import { SITE } from "@/lib/site";
@@ -10,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = SITE.url.replace(/\/$/, "");
   const now = new Date();
 
-  const staticPages = ["/", "/tools/", "/categories/", "/alternatives/", "/guide/", "/diagnosis/", "/blog/", "/about/", "/contact/", "/submit/", "/privacy/", "/terms/", "/disclaimer/"];
+  const staticPages = ["/", "/tools/", "/categories/", "/alternatives/", "/compare/", "/guide/", "/diagnosis/", "/blog/", "/about/", "/contact/", "/submit/", "/privacy/", "/terms/", "/disclaimer/"];
 
   return [
     ...staticPages.map((p) => ({
@@ -39,6 +39,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: t.last_commit ? new Date(t.last_commit) : now,
       changeFrequency: "weekly" as const,
       priority: 0.8,
+    })),
+    ...getComparePairs().map((p) => ({
+      url: `${base}/compare/${p.slug}/`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.6,
     })),
     ...getCompetitors().map((c) => ({
       url: `${base}/alternatives/${c.slug}/`,

@@ -12,7 +12,7 @@ import {
   SecurityListBadge,
   SpecTable,
 } from "@/components/tool-views";
-import { getActiveTools, getMeta, getTool, getTools } from "@/lib/data";
+import { getActiveTools, getComparePairsForTool, getMeta, getTool, getTools } from "@/lib/data";
 import { getCategory } from "@/lib/categories";
 import { SITE, t } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
@@ -69,6 +69,7 @@ export default async function ToolDetailPage({
     .slice(0, 6);
 
   const compareSet = [tool, ...alternatives];
+  const comparePairs = getComparePairsForTool(tool.id);
 
   return (
     <>
@@ -223,6 +224,24 @@ export default async function ToolDetailPage({
             <p className="muted mt1" style={{ fontSize: "0.75rem" }}>
               {t("alt.compareNote")}
             </p>
+          </section>
+        )}
+
+        {comparePairs.length > 0 && (
+          <section className="mt2">
+            <h2 className="h3">{tool.name} とほかの候補を比べる</h2>
+            <ul>
+              {comparePairs.map((p) => {
+                const other = getTool(p.a === tool.id ? p.b : p.a);
+                return (
+                  <li key={p.slug}>
+                    <Link href={`/compare/${p.slug}/`}>
+                      {tool.name} と {other?.name ?? (p.a === tool.id ? p.b : p.a)} の違い
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
           </section>
         )}
 

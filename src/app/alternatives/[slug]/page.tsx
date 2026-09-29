@@ -5,7 +5,7 @@ import { Breadcrumbs, JsonLd, SiteFooter, SiteHeader } from "@/components/site-c
 import { ComparisonTable } from "@/components/tool-views";
 import { HouseAd } from "@/components/house-ad";
 import { getAlternativeGuide } from "@/lib/alternative-guides";
-import { getCompetitor, getCompetitors, getMeta, getTool } from "@/lib/data";
+import { getComparePairs, getCompetitor, getCompetitors, getMeta, getTool } from "@/lib/data";
 import { SITE, t } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
 import { formatDate } from "@/lib/tools";
@@ -45,6 +45,8 @@ export default async function AlternativeDetailPage({
   if (!c) notFound();
   const meta = getMeta();
   const guide = getAlternativeGuide(slug);
+  const toolIds = new Set(c.tools.map((tl) => tl.id));
+  const comparePairs = getComparePairs().filter((p) => toolIds.has(p.a) && toolIds.has(p.b));
 
   return (
     <>
@@ -99,6 +101,21 @@ export default async function AlternativeDetailPage({
                 {`最終更新：${formatDate(guide.updated)}。機能・ライセンス・提供条件は変わることがあるため、導入前に各ツールの公式情報をご確認ください。`}
               </p>
             )}
+          </section>
+        )}
+
+        {comparePairs.length > 0 && (
+          <section className="section">
+            <h2 className="h3">2つずつ比べる</h2>
+            <ul>
+              {comparePairs.map((p) => (
+                <li key={p.slug}>
+                  <Link href={`/compare/${p.slug}/`}>
+                    {`${getTool(p.a)?.name ?? p.a} と ${getTool(p.b)?.name ?? p.b} の違い`}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </section>
         )}
 

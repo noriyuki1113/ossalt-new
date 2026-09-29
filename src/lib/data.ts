@@ -6,6 +6,7 @@ import {
   type DataMeta,
   type Tool,
 } from "./tools";
+import { buildComparePairs, type ComparePair } from "./compare";
 
 /**
  * JSONデータの読み込み（サーバー専用）
@@ -80,4 +81,17 @@ export function getCompetitors(): CompetitorGroup[] {
 
 export function getCompetitor(slug: string): CompetitorGroup | undefined {
   return getCompetitors().find((c) => c.slug === slug);
+}
+
+/**
+ * 「A vs B」比較ページの組み合わせ（掲載中のツールのみ）。
+ * 各SaaSの代替のうち健全度の上位 COMPARE_TOP_N 件どうしを組む（src/lib/compare.ts）。
+ */
+export function getComparePairs(): ComparePair[] {
+  return buildComparePairs(getActiveTools());
+}
+
+/** 指定したツールが含まれる比較ページ */
+export function getComparePairsForTool(toolId: string): ComparePair[] {
+  return getComparePairs().filter((p) => p.a === toolId || p.b === toolId);
 }
