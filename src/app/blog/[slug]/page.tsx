@@ -3,10 +3,11 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ToolRow } from "@/components/tool-views";
 import { HouseAd } from "@/components/house-ad";
+import { PostActions } from "@/components/post-actions";
 import { getBlogPost, getBlogPosts } from "@/lib/blog";
 import { getMeta, getTool } from "@/lib/data";
 import { formatDate } from "@/lib/tools";
-import { t } from "@/lib/site";
+import { SITE, t } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
 
 type Params = { slug: string };
@@ -62,6 +63,12 @@ export default async function BlogPostPage({ params }: { params: Promise<Params>
         </p>
 
         <div className="prose" dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+
+        <PostActions
+          slug={post.slug}
+          title={post.title}
+          url={`${SITE.url.replace(/\/$/, "")}/blog/${post.slug}/`}
+        />
 
         {relatedTools.length > 0 && (
           <section className="mt2">
