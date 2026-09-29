@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { getMeta } from "@/lib/data";
+import { SITE } from "@/lib/site";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "掲載リクエスト",
   description:
     "ossalt.jp に掲載してほしいオープンソースのツールを受け付けています。掲載の条件と、リクエストの送り方を説明します。",
-  alternates: { canonical: "/submit/" },
-};
+  path: "/submit/",
+});
 
 const REQUEST_URL =
   "https://github.com/noriyuki1113/ossalt-new/issues/new?template=tool-request.yml";
@@ -62,10 +63,16 @@ export default function SubmitPage() {
             </a>
           </p>
           <p className="muted" style={{ fontSize: "0.875rem" }}>
-            {"送った内容は GitHub 上で公開されます。個人情報は書かないでください。GitHub のアカウントが無い場合は、"}
-            <Link href="/contact/">お問い合わせ</Link>
-            {"からもお送りいただけます。"}
+            {"送った内容は GitHub 上で公開されます。個人情報は書かないでください。"}
           </p>
+          {SITE.contactEmail && (
+            <p>
+              {"GitHubが使えない場合はメールでも受け付けます："}
+              <a href={`mailto:${SITE.contactEmail}?subject=${encodeURIComponent("掲載リクエスト")}`}>
+                {SITE.contactEmail}
+              </a>
+            </p>
+          )}
 
           <h2>掲載までの流れ</h2>
           <ol>

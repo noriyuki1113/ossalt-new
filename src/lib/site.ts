@@ -19,7 +19,10 @@ export const SITE = {
   dataUpdatedAt: null as string | null,
   // お問い合わせ先。未設定でもビルドは通り、画面にはプレースホルダを出さず
   // 未設定なら該当行を表示しない（値は運営者が環境変数で設定する）。
-  contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || null,
+  // GitHub Issuesが使えない人（アカウントが無い、制限がかかっている等）のための
+  // 連絡手段を必ず残すため、環境変数が未設定でも既定値を持たせる
+  // （contact@ossalt.jpはサイト内の複数箇所で既に公開している連絡先）。
+  contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "contact@ossalt.jp",
   contactUrl: process.env.NEXT_PUBLIC_CONTACT_URL || null,
   // 運営者名・プライバシーポリシーの制定日。同様に未設定でもプレースホルダは出さない。
   operatorName: process.env.NEXT_PUBLIC_OPERATOR_NAME || null,

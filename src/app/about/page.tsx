@@ -3,13 +3,14 @@ import Link from "next/link";
 import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { getMeta } from "@/lib/data";
 import { SITE, t } from "@/lib/site";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "このサイトについて",
   description:
     "ossalt.jp は、日本のチームがオープンソースソフトへ乗り換える判断をするための情報をまとめたディレクトリです。",
-  alternates: { canonical: "/about/" },
-};
+  path: "/about/",
+});
 
 export default function AboutPage() {
   const meta = getMeta();
@@ -61,19 +62,24 @@ export default function AboutPage() {
               <h2>運営者</h2>
               <p>
                 {SITE.operatorName}
+                {"（お問い合わせ："}
+                {SITE.contactEmail && <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a>}
+                {SITE.contactEmail && SITE.contactUrl && " / "}
                 {SITE.contactUrl && (
                   <>
-                    {"（"}
+                    掲載リクエストは
                     <a href={SITE.contactUrl} target="_blank" rel="noreferrer noopener">
-                      お問い合わせ
+                      GitHubで連絡する
                     </a>
-                    {"）"}
+                    ことも可能
                   </>
                 )}
+                {"）"}
               </p>
               <p>
                 当サイトは個人が運営しています。掲載内容の誤りのご指摘、ツールの追加提案、
-                広告・スポンサーに関するご相談は上記の窓口までお願いします。
+                広告・スポンサーに関するご相談は上記の窓口までお願いします。GitHubのアカウントが
+                無い場合や、Issueの作成が制限されている場合は、メールでご連絡ください。
               </p>
             </section>
           )}
