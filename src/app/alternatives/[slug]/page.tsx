@@ -9,6 +9,7 @@ import { getComparePairs, getCompetitor, getCompetitors, getMeta, getTool } from
 import { SITE, t } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
 import { alternativeDescription, alternativeTitle } from "@/lib/seo-copy";
+import { buildAlternativeFaq } from "@/lib/alternative-faq";
 import { formatDate } from "@/lib/tools";
 
 type Params = { slug: string };
@@ -46,6 +47,7 @@ export default async function AlternativeDetailPage({
   const guide = getAlternativeGuide(slug);
   const toolIds = new Set(c.tools.map((tl) => tl.id));
   const comparePairs = getComparePairs().filter((p) => toolIds.has(p.a) && toolIds.has(p.b));
+  const faq = buildAlternativeFaq(c.name, c.tools);
 
   return (
     <>
@@ -100,6 +102,23 @@ export default async function AlternativeDetailPage({
                 {`最終更新：${formatDate(guide.updated)}。機能・ライセンス・提供条件は変わることがあるため、導入前に各ツールの公式情報をご確認ください。`}
               </p>
             )}
+          </section>
+        )}
+
+        {faq.length > 0 && (
+          <section className="section">
+            <h2 className="h3">{`${c.name}の代替についてよくある質問`}</h2>
+            <p className="muted" style={{ fontSize: "0.8125rem" }}>
+              {"回答は掲載データ（GitHubの公開情報）から自動でまとめています。"}
+            </p>
+            <dl className="faq">
+              {faq.map((f) => (
+                <div key={f.q}>
+                  <dt>{f.q}</dt>
+                  <dd>{f.a}</dd>
+                </div>
+              ))}
+            </dl>
           </section>
         )}
 
