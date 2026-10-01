@@ -18,6 +18,7 @@ import { getCategory } from "@/lib/categories";
 import { SITE, t } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
 import { toolDescription, toolTitle } from "@/lib/seo-copy";
+import { getToolGuide } from "@/lib/tool-guides";
 import { LICENSE_CLASS_LABELS, classifyLicense } from "@/lib/compare";
 import { getLicensePage } from "@/lib/licenses";
 import { formatDate, licenseLabel, slugifyCompetitor } from "@/lib/tools";
@@ -38,7 +39,7 @@ export async function generateMetadata({
   if (!tool) return { title: t("detail.notFound") };
   return pageMeta({
     title: toolTitle(tool),
-    description: toolDescription(tool),
+    description: getToolGuide(tool.id)?.description || toolDescription(tool),
     path: `/tools/${tool.id}/`,
     type: "article",
   });
@@ -56,6 +57,7 @@ export default async function ToolDetailPage({
   const meta = getMeta();
   const category = getCategory(tool.category);
   const competitorSlug = slugifyCompetitor(tool.primary_competitor);
+  const guide = getToolGuide(tool.id);
   const competitor = tool.primary_competitor_ja || tool.primary_competitor;
   // 「同じカテゴリのツール」「代替候補を比較」に挙げる候補は、アーカイブ済み
   // （開発停止）のツールを除く。閲覧中の tool 自身がアーカイブ済みでも、
@@ -132,6 +134,18 @@ export default async function ToolDetailPage({
                   </span>
                 ))}
               </p>
+            )}
+
+            {guide && (
+              <section className="section" style={{ paddingTop: 0, marginBottom: "2.5rem" }}>
+                <h2 className="h3 mt0">{`${tool.name}とは`}</h2>
+                <div className="prose" dangerouslySetInnerHTML={{ __html: guide.contentHtml }} />
+                {guide.updated && (
+                  <p className="muted" style={{ fontSize: "0.75rem" }}>
+                    {`解説の最終更新：${formatDate(guide.updated)}。機能や提供条件は変わることがあるため、導入前に公式の情報をご確認ください。`}
+                  </p>
+                )}
+              </section>
             )}
 
             <section>
