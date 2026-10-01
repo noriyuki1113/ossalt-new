@@ -691,8 +691,16 @@ async function main() {
         86400000
     );
     const shardIndex = dayOfYear % SHARDS;
-    targets = targets.filter((_, i) => i % SHARDS === shardIndex);
-    console.log(`シャード ${shardIndex + 1}/${SHARDS}（${targets.length}件を取得）`);
+    // 一度も取得できていないツール（追加直後など）は、担当日を待たずに毎回取得する。
+    // 件数はわずかなので、API上限への影響は小さい。
+    const neverFetched = (t) => t.stars_num == null && t.last_commit == null;
+    targets = targets.filter((t, i) => i % SHARDS === shardIndex || neverFetched(t));
+    const extra = targets.filter(neverFetched).length;
+    console.log(
+      `シャード ${shardIndex + 1}/${SHARDS}（${targets.length}件を取得` +
+        (extra ? `。うち未取得のツール: ${extra}件` : "") +
+        "）"
+    );
   }
 
   if (LIMIT) targets = targets.slice(0, LIMIT);
