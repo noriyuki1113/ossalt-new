@@ -9,6 +9,7 @@ import { LICENSE_CLASS_LABELS, buildDifferences, classifyLicense } from "@/lib/c
 import { SAAS_IDS, SAAS_LABELS } from "@/lib/diagnosis-types";
 import { SITE } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
+import { getCompareGuide } from "@/lib/compare-guides";
 import {
   advisoriesLabel,
   dependabotLabel,
@@ -47,7 +48,9 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const { a, b, competitor } = r;
   return pageMeta({
     title: `${a.name} と ${b.name} の違い — ${competitor} の代替OSSを比較`,
-    description: `${competitor}の代わりになるオープンソース、${a.name}と${b.name}を、ライセンス・更新状況・Docker対応・日本語対応・セキュリティの公開データで比べます。`,
+    description:
+      getCompareGuide(slug)?.description ||
+      `${competitor}の代わりになるオープンソース、${a.name}と${b.name}を、ライセンス・更新状況・Docker対応・日本語対応・セキュリティの公開データで比べます。`,
     path: `/compare/${slug}/`,
     type: "article",
   });
@@ -61,6 +64,7 @@ export default async function ComparePage({ params }: { params: Promise<Params> 
   const { slug } = await params;
   const r = resolve(slug);
   if (!r) notFound();
+  const guide = getCompareGuide(slug);
   const { pair, a, b, competitor } = r;
   const meta = getMeta();
   const differences = buildDifferences(a, b);
@@ -131,6 +135,18 @@ export default async function ComparePage({ params }: { params: Promise<Params> 
             {`掲載データ（${formatDate(meta.built_at)}時点）から自動で作成した比較です。機能の細かな違いや提供条件は、各ツールの公式情報で確認してください。`}
           </p>
         </section>
+
+        {guide && (
+          <section className="section">
+            <h2 className="h3">{`${a.name}と${b.name}、どっちを選ぶ？`}</h2>
+            <div className="prose" dangerouslySetInnerHTML={{ __html: guide.contentHtml }} />
+            {guide.updated && (
+              <p className="muted" style={{ fontSize: "0.75rem" }}>
+                {`編集部のまとめ（最終更新：${formatDate(guide.updated)}）。機能や提供条件は変わることがあるため、導入前に公式の情報をご確認ください。`}
+              </p>
+            )}
+          </section>
+        )}
 
         <section className="section">
           <h2 className="h3">項目ごとの比較</h2>

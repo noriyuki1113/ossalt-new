@@ -162,7 +162,7 @@ if (snap) {
     add(
       "スターの伸び",
       `${snap.date}〜${DATA_DATE}（${days}日間）`,
-      `この${days}日間でGitHubのスターが多く増えたオープンソース\n\n${lines.join("\n")}\n\n各ツールのライセンスや更新状況はこちら\n${SITE}/tools/`,
+      `この${days}日間でGitHubのスターが多く増えたオープンソース\n\n${lines.join("\n")}\n\nランキングの続きはこちら\n${SITE}/trending/`,
     );
   }
 }
