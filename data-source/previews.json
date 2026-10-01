@@ -73,16 +73,6 @@
   "file": null,
   "checked_at": "2026-10-01T16:48:31.325Z"
  },
- "ansible": {
-  "file": "/previews/ansible.jpg",
-  "source": "official",
-  "page": "https://www.ansible.com",
-  "image": "https://www.redhat.com/themes/custom/rhdc/img/red-hat-social-share.jpg",
-  "width": 800,
-  "height": 420,
-  "bytes": 19346,
-  "checked_at": "2026-10-01T16:48:51.361Z"
- },
  "anythingllm": {
   "file": "/previews/anythingllm.jpg",
   "source": "official",
@@ -712,13 +702,7 @@
   "checked_at": "2026-10-01T16:48:05.171Z"
  },
  "faster-whisper": {
-  "file": "/previews/faster-whisper.jpg",
-  "source": "official",
-  "page": "https://github.com/SYSTRAN/faster-whisper",
-  "image": "https://opengraph.githubassets.com/26e1b62019eb1721ea8fb46766d43e50f5996535054fee967606c7e8568cf2b3/SYSTRAN/faster-whisper",
-  "width": 800,
-  "height": 400,
-  "bytes": 19095,
+  "file": null,
   "checked_at": "2026-10-01T16:48:58.163Z"
  },
  "fathom": {
@@ -780,13 +764,7 @@
   "checked_at": "2026-10-01T16:49:27.233Z"
  },
  "focalboard": {
-  "file": "/previews/focalboard.jpg",
-  "source": "official",
-  "page": "https://github.com/mattermost-community/focalboard",
-  "image": "https://opengraph.githubassets.com/ba046d257b7d70707b382a7af3d859a6cd9e185201384169f5f8d1a0e30764ec/mattermost-community/focalboard",
-  "width": 800,
-  "height": 400,
-  "bytes": 17777,
+  "file": null,
   "checked_at": "2026-10-01T16:48:24.883Z"
  },
  "formbricks": {
@@ -824,13 +802,7 @@
   "checked_at": "2026-10-01T16:49:04.987Z"
  },
  "freshrss": {
-  "file": "/previews/freshrss.jpg",
-  "source": "official",
-  "page": "https://github.com/FreshRSS/FreshRSS",
-  "image": "https://opengraph.githubassets.com/4aa900e02e07825fec7bb0d25152e179c7c119e1ddb9aa9e65a64a7d65eb69d3/FreshRSS/FreshRSS",
-  "width": 800,
-  "height": 400,
-  "bytes": 17793,
+  "file": null,
   "checked_at": "2026-10-01T16:49:30.625Z"
  },
  "galene": {
@@ -876,13 +848,7 @@
   "checked_at": "2026-10-01T16:48:07.168Z"
  },
  "gitness": {
-  "file": "/previews/gitness.jpg",
-  "source": "official",
-  "page": "https://github.com/harness/gitness",
-  "image": "https://opengraph.githubassets.com/54580feef792319021aeead95f9d014dd6099922b4cb191b279e0833076bafd2/harness/harness",
-  "width": 800,
-  "height": 400,
-  "bytes": 22335,
+  "file": null,
   "checked_at": "2026-10-01T16:49:21.659Z"
  },
  "glitchtip": {
@@ -914,13 +880,7 @@
   "checked_at": "2026-10-01T16:48:45.736Z"
  },
  "gotify": {
-  "file": "/previews/gotify.jpg",
-  "source": "official",
-  "page": "https://github.com/gotify/server",
-  "image": "https://opengraph.githubassets.com/d598d6a576394234dc33c9b49da45225d5fc5d2abbb8edd074f7b10c1d4b9042/gotify/server",
-  "width": 800,
-  "height": 400,
-  "bytes": 18603,
+  "file": null,
   "checked_at": "2026-10-01T16:49:28.227Z"
  },
  "gpt4all": {
@@ -944,13 +904,7 @@
   "checked_at": "2026-10-01T16:48:05.745Z"
  },
  "grav": {
-  "file": "/previews/grav.jpg",
-  "source": "official",
-  "page": "https://github.com/getgrav/grav",
-  "image": "https://opengraph.githubassets.com/476def17d1f99433fe5698b53ba0a5456ecdecd7a8f7d8a435891bf11a579967/getgrav/grav",
-  "width": 800,
-  "height": 400,
-  "bytes": 20798,
+  "file": null,
   "checked_at": "2026-10-01T16:49:21.073Z"
  },
  "graylog": {
@@ -1030,13 +984,7 @@
   "checked_at": "2026-10-01T16:48:33.400Z"
  },
  "hedgedoc": {
-  "file": "/previews/hedgedoc.jpg",
-  "source": "official",
-  "page": "https://github.com/hedgedoc/hedgedoc",
-  "image": "https://opengraph.githubassets.com/4dfb2674d04cb7e70f314435e8555e1d0ad3b7b3c17d27ccec4ea1c6a72f9e4c/hedgedoc/hedgedoc",
-  "width": 800,
-  "height": 400,
-  "bytes": 16191,
+  "file": null,
   "checked_at": "2026-10-01T16:48:14.996Z"
  },
  "helicone": {
@@ -1050,13 +998,7 @@
   "checked_at": "2026-10-01T16:49:00.775Z"
  },
  "helpy": {
-  "file": "/previews/helpy.jpg",
-  "source": "official",
-  "page": "https://github.com/helpyio/helpy",
-  "image": "https://opengraph.githubassets.com/7ae67e14a418a028cd1713296826a784ffa749bb9f7eaeace9571667d1ab336c/helpyio/helpy",
-  "width": 800,
-  "height": 400,
-  "bytes": 22222,
+  "file": null,
   "checked_at": "2026-10-01T16:49:05.956Z"
  },
  "heyform": {
@@ -1110,13 +1052,7 @@
   "checked_at": "2026-10-01T16:49:11.483Z"
  },
  "huginn": {
-  "file": "/previews/huginn.jpg",
-  "source": "official",
-  "page": "https://github.com/huginn/huginn",
-  "image": "https://opengraph.githubassets.com/c612357e7c4bf3b39df289edb87d6dc3866840c72ab30c1b293b615c7ff6bc63/huginn/huginn",
-  "width": 800,
-  "height": 400,
-  "bytes": 17127,
+  "file": null,
   "checked_at": "2026-10-01T16:48:53.900Z"
  },
  "hyperswitch": {
@@ -1149,16 +1085,6 @@
   "bytes": 21477,
   "checked_at": "2026-10-01T16:48:33.631Z"
  },
- "inkscape": {
-  "file": "/previews/inkscape.jpg",
-  "source": "official",
-  "page": "https://github.com/inkscape/inkscape",
-  "image": "https://opengraph.githubassets.com/588d43483ac8af1cab981b808ff87ddcbefc1f7b192df91a7b872041bd4b928b/inkscape/inkscape",
-  "width": 800,
-  "height": 400,
-  "bytes": 18274,
-  "checked_at": "2026-10-01T16:48:42.465Z"
- },
  "insomnia": {
   "file": "/previews/insomnia.jpg",
   "source": "official",
@@ -1174,13 +1100,7 @@
   "checked_at": "2026-10-01T16:49:07.545Z"
  },
  "invoiceplane": {
-  "file": "/previews/invoiceplane.jpg",
-  "source": "official",
-  "page": "https://github.com/InvoicePlane/InvoicePlane",
-  "image": "https://opengraph.githubassets.com/c56f892e6b1cc237eca3c40d81319fd7ba67b7ed6cd3dc7c8a1dacdf7186f2e8/InvoicePlane/InvoicePlane",
-  "width": 800,
-  "height": 400,
-  "bytes": 19801,
+  "file": null,
   "checked_at": "2026-10-01T16:49:32.388Z"
  },
  "invokeai": {
@@ -1274,13 +1194,7 @@
   "checked_at": "2026-10-01T16:48:43.373Z"
  },
  "keepassxc": {
-  "file": "/previews/keepassxc.jpg",
-  "source": "official",
-  "page": "https://github.com/keepassxreboot/keepassxc",
-  "image": "https://opengraph.githubassets.com/2b8b2f7eb601fe82a8529fd9fde7b2d9dd792eaaf3e7bb9635893d31749ac202/keepassxreboot/keepassxc",
-  "width": 800,
-  "height": 400,
-  "bytes": 23144,
+  "file": null,
   "checked_at": "2026-10-01T16:49:21.404Z"
  },
  "keila": {
@@ -1542,13 +1456,7 @@
   "checked_at": "2026-10-01T16:48:32.712Z"
  },
  "lossless-cut": {
-  "file": "/previews/lossless-cut.jpg",
-  "source": "official",
-  "page": "https://github.com/mifi/lossless-cut",
-  "image": "https://opengraph.githubassets.com/0fbb9702cc0bceb904175e90896314199fb9a6180e6151840a593280b67cb2da/mifi/lossless-cut",
-  "width": 800,
-  "height": 400,
-  "bytes": 17127,
+  "file": null,
   "checked_at": "2026-10-01T16:48:44.074Z"
  },
  "magento": {
@@ -1566,13 +1474,7 @@
   "checked_at": "2026-10-01T16:48:21.160Z"
  },
  "mailhog": {
-  "file": "/previews/mailhog.jpg",
-  "source": "official",
-  "page": "https://github.com/mailhog/MailHog",
-  "image": "https://opengraph.githubassets.com/25d85df407905eb80049b4c25641e657beb8c7dd088bed3a54a18ab8a4d731b2/mailhog/MailHog",
-  "width": 800,
-  "height": 400,
-  "bytes": 13799,
+  "file": null,
   "checked_at": "2026-10-01T16:48:23.111Z"
  },
  "mailpit": {
@@ -1590,13 +1492,7 @@
   "checked_at": "2026-10-01T16:48:22.609Z"
  },
  "mailtrain": {
-  "file": "/previews/mailtrain.jpg",
-  "source": "official",
-  "page": "https://github.com/Mailtrain-org/mailtrain",
-  "image": "https://opengraph.githubassets.com/93bb55d248fce166b7076552d3ea6d21078a358699ad26ed5bd9d56fb5ced7fd/Mailtrain-org/mailtrain",
-  "width": 800,
-  "height": 400,
-  "bytes": 14213,
+  "file": null,
   "checked_at": "2026-10-01T16:48:23.271Z"
  },
  "mailu": {
@@ -1632,13 +1528,7 @@
   "checked_at": "2026-10-01T16:49:03.418Z"
  },
  "mediamtx": {
-  "file": "/previews/mediamtx.jpg",
-  "source": "official",
-  "page": "https://github.com/bluenviron/mediamtx",
-  "image": "https://opengraph.githubassets.com/f8871b3292ec6b5ad18f53d3e444b604fe4ae2fde8aaa3eb77f36950070d7924/bluenviron/mediamtx",
-  "width": 800,
-  "height": 400,
-  "bytes": 21095,
+  "file": null,
   "checked_at": "2026-10-01T16:49:25.970Z"
  },
  "mediawiki": {
@@ -1706,13 +1596,7 @@
   "checked_at": "2026-10-01T16:49:00.071Z"
  },
  "miniflux": {
-  "file": "/previews/miniflux.jpg",
-  "source": "official",
-  "page": "https://github.com/miniflux/v2",
-  "image": "https://opengraph.githubassets.com/05bac939989fd1097ba85d5647d44a8426b35741702520bb69e70a4a4135f291/miniflux/v2",
-  "width": 800,
-  "height": 400,
-  "bytes": 13162,
+  "file": null,
   "checked_at": "2026-10-01T16:49:30.854Z"
  },
  "mkdocs": {
@@ -1764,13 +1648,7 @@
   "checked_at": "2026-10-01T16:48:28.541Z"
  },
  "netmaker": {
-  "file": "/previews/netmaker.jpg",
-  "source": "official",
-  "page": "https://github.com/gravitl/netmaker",
-  "image": "https://opengraph.githubassets.com/7934eeb1fbdd7d84ff127908b0148e2df2d3e0b916efb319db35f81059f28651/gravitl/netmaker",
-  "width": 800,
-  "height": 400,
-  "bytes": 20073,
+  "file": null,
   "checked_at": "2026-10-01T16:49:25.882Z"
  },
  "nextcloud": {
@@ -1932,13 +1810,7 @@
   "checked_at": "2026-10-01T16:48:54.986Z"
  },
  "opencart": {
-  "file": "/previews/opencart.jpg",
-  "source": "official",
-  "page": "https://github.com/opencart/opencart",
-  "image": "https://opengraph.githubassets.com/464a265bf2d9a2e9ce5ddee31f964c8cc58f060c3df979877a10c264a6d75a81/opencart/opencart",
-  "width": 800,
-  "height": 400,
-  "bytes": 18067,
+  "file": null,
   "checked_at": "2026-10-01T16:49:17.081Z"
  },
  "openobserve": {
@@ -2078,13 +1950,7 @@
   "checked_at": "2026-10-01T16:49:07.243Z"
  },
  "paperless-ngx": {
-  "file": "/previews/paperless-ngx.jpg",
-  "source": "official",
-  "page": "https://github.com/paperless-ngx/paperless-ngx",
-  "image": "https://opengraph.githubassets.com/81ecbe6f68b188ef1cbef6296205f25245b22dd248c70f32b1cfece6c7b31b88/paperless-ngx/paperless-ngx",
-  "width": 800,
-  "height": 400,
-  "bytes": 18688,
+  "file": null,
   "checked_at": "2026-10-01T16:49:12.726Z"
  },
  "parse": {
@@ -2146,13 +2012,7 @@
   "checked_at": "2026-10-01T16:48:51.398Z"
  },
  "pgvector": {
-  "file": "/previews/pgvector.jpg",
-  "source": "official",
-  "page": "https://github.com/pgvector/pgvector",
-  "image": "https://opengraph.githubassets.com/357ed9dac2467b751fb167fe65f3b1640a03a03059d350be9227465d40536455/pgvector/pgvector",
-  "width": 800,
-  "height": 400,
-  "bytes": 14501,
+  "file": null,
   "checked_at": "2026-10-01T16:49:00.142Z"
  },
  "photoprism": {
@@ -2212,16 +2072,6 @@
   "height": 419,
   "bytes": 23478,
   "checked_at": "2026-10-01T16:48:10.002Z"
- },
- "playwright": {
-  "file": "/previews/playwright.jpg",
-  "source": "official",
-  "page": "https://playwright.dev",
-  "image": "https://repository-images.githubusercontent.com/221981891/8c5c6942-c91f-4df1-825f-4cf474056bd7",
-  "width": 800,
-  "height": 400,
-  "bytes": 11596,
-  "checked_at": "2026-10-01T16:48:54.773Z"
  },
  "pocketbase": {
   "file": "/previews/pocketbase.jpg",
@@ -2310,13 +2160,7 @@
   "checked_at": "2026-10-01T16:48:29.026Z"
  },
  "psitransfer": {
-  "file": "/previews/psitransfer.jpg",
-  "source": "official",
-  "page": "https://github.com/psi-4ward/psitransfer",
-  "image": "https://opengraph.githubassets.com/62ac45b5550bc948c129234a8b2602531c5fba36ecd4108e775b1f7f2be95d6f/psi-4ward/psitransfer",
-  "width": 800,
-  "height": 400,
-  "bytes": 15319,
+  "file": null,
   "checked_at": "2026-10-01T16:48:39.519Z"
  },
  "pulumi": {
@@ -2390,13 +2234,7 @@
   "checked_at": "2026-10-01T16:48:25.891Z"
  },
  "redmine": {
-  "file": "/previews/redmine.jpg",
-  "source": "official",
-  "page": "https://github.com/redmine/redmine",
-  "image": "https://opengraph.githubassets.com/68ef6cf4a8b0c7c29414f8a1f8da8772df73dc1b3e20c198e433515175fba2b4/redmine/redmine",
-  "width": 800,
-  "height": 400,
-  "bytes": 20854,
+  "file": null,
   "checked_at": "2026-10-01T16:49:28.308Z"
  },
  "restic": {
@@ -2482,13 +2320,7 @@
   "checked_at": "2026-10-01T16:49:34.190Z"
  },
  "serpbear": {
-  "file": "/previews/serpbear.jpg",
-  "source": "official",
-  "page": "https://docs.serpbear.com",
-  "image": "https://docs.serpbear.com/img/docusaurus-social-card.jpg",
-  "width": 800,
-  "height": 450,
-  "bytes": 23006,
+  "file": null,
   "checked_at": "2026-10-01T16:49:33.814Z"
  },
  "sharex": {
@@ -2566,13 +2398,7 @@
   "checked_at": "2026-10-01T16:48:13.168Z"
  },
  "solidinvoice": {
-  "file": "/previews/solidinvoice.jpg",
-  "source": "official",
-  "page": "https://github.com/SolidInvoice/SolidInvoice",
-  "image": "https://opengraph.githubassets.com/eb6535c01914cb72283f622531580caa1963e146a45c612493fbf063bcf01fbc/SolidInvoice/SolidInvoice",
-  "width": 800,
-  "height": 400,
-  "bytes": 17644,
+  "file": null,
   "checked_at": "2026-10-01T16:49:08.020Z"
  },
  "sops": {
@@ -2600,13 +2426,7 @@
   "checked_at": "2026-10-01T16:49:18.153Z"
  },
  "stable-diffusion-webui": {
-  "file": "/previews/stable-diffusion-webui.jpg",
-  "source": "official",
-  "page": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
-  "image": "https://opengraph.githubassets.com/6db068c538267136aa7755ef5eb6cd514818d2f5a80392e932c88b21a2d7c9ae/AUTOMATIC1111/stable-diffusion-webui",
-  "width": 800,
-  "height": 400,
-  "bytes": 18843,
+  "file": null,
   "checked_at": "2026-10-01T16:48:58.951Z"
  },
  "stalwart": {
@@ -2770,13 +2590,7 @@
   "checked_at": "2026-10-01T16:48:58.709Z"
  },
  "text-generation-webui": {
-  "file": "/previews/text-generation-webui.jpg",
-  "source": "official",
-  "page": "https://github.com/oobabooga/text-generation-webui",
-  "image": "https://opengraph.githubassets.com/d15a7aa37f9b1a5e55b4eb9e47a9989a5d368776c969223cb4b9c555ad7ea037/oobabooga/textgen",
-  "width": 800,
-  "height": 400,
-  "bytes": 20680,
+  "file": null,
   "checked_at": "2026-10-01T16:49:24.459Z"
  },
  "tigervnc": {
@@ -2850,23 +2664,11 @@
   "checked_at": "2026-10-01T16:48:34.271Z"
  },
  "trudesk": {
-  "file": "/previews/trudesk.jpg",
-  "source": "official",
-  "page": "https://github.com/polonel/Trudesk",
-  "image": "https://opengraph.githubassets.com/c9c209600a8d1f7132ef13113433057610f36b5465170833d78a874390bc42c7/polonel/trudesk",
-  "width": 800,
-  "height": 400,
-  "bytes": 17737,
+  "file": null,
   "checked_at": "2026-10-01T16:49:30.404Z"
  },
  "tryton": {
-  "file": "/previews/tryton.jpg",
-  "source": "official",
-  "page": "https://github.com/tryton/tryton",
-  "image": "https://opengraph.githubassets.com/154943a55faded327f903d44f8807863a577d04e07e6c3e5cde1801ac64a2e67/tryton/tryton",
-  "width": 800,
-  "height": 400,
-  "bytes": 11898,
+  "file": null,
   "checked_at": "2026-10-01T16:49:32.419Z"
  },
  "twenty": {
@@ -3042,13 +2844,7 @@
   "checked_at": "2026-10-01T16:48:57.883Z"
  },
  "whisper-asr-webservice": {
-  "file": "/previews/whisper-asr-webservice.jpg",
-  "source": "official",
-  "page": "https://github.com/ahmetoner/whisper-asr-webservice",
-  "image": "https://opengraph.githubassets.com/76cdc55f6d09a9d25b4473207c722781518680989461c15762c01a0c4014c421/ahmetoner/whisper-asr-webservice",
-  "width": 800,
-  "height": 400,
-  "bytes": 16705,
+  "file": null,
   "checked_at": "2026-10-01T16:49:24.659Z"
  },
  "whisper-cpp": {
@@ -3062,13 +2858,7 @@
   "checked_at": "2026-10-01T16:48:58.527Z"
  },
  "whisperx": {
-  "file": "/previews/whisperx.jpg",
-  "source": "official",
-  "page": "https://github.com/m-bain/whisperX",
-  "image": "https://opengraph.githubassets.com/23051b1545c10a187a5f40ac519022b0b5aeeb9512a8c583e841822d2894a9f0/m-bain/whisperX",
-  "width": 800,
-  "height": 400,
-  "bytes": 20273,
+  "file": null,
   "checked_at": "2026-10-01T16:48:58.441Z"
  },
  "wikijs": {

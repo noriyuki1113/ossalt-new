@@ -25,7 +25,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
-import { acceptDimensions, extractOgImage, isCustomGithubPreview } from "./og-image.mjs";
+import { acceptDimensions, extractOgImage, isCustomGithubPreview, isGithubAutoCard } from "./og-image.mjs";
+import { loadOverrides } from "./overrides.mjs";
 
 const ROOT = process.cwd();
 const TOOLS_PATH = path.join(ROOT, "data-source", "tools.json");
@@ -47,7 +48,11 @@ const MAX_IMAGE = 8 * 1024 * 1024;
 const UA = "Mozilla/5.0 (compatible; ossalt-preview/1.0; +https://ossalt.jp/about/)";
 
 const raw = JSON.parse(fs.readFileSync(TOOLS_PATH, "utf8"));
-const tools = (Array.isArray(raw) ? raw : raw.tools).filter((t) => !t.github_archived);
+// 掲載から外したツール（overrides.json の exclude）と、画像を載せないツール（preview_block）は対象外
+const { exclude, previewBlock } = loadOverrides();
+const tools = (Array.isArray(raw) ? raw : raw.tools).filter(
+  (t) => !t.github_archived && !exclude.has(t.id) && !previewBlock.has(t.id)
+);
 const state = fs.existsSync(STATE_PATH) ? JSON.parse(fs.readFileSync(STATE_PATH, "utf8")) : {};
 fs.mkdirSync(OUT_DIR, { recursive: true });
 
@@ -109,7 +114,7 @@ async function processTool(t) {
 
   for (const c of candidates) {
     const imageUrl = await findImage(c.page);
-    if (!imageUrl) continue;
+    if (!imageUrl || isGithubAutoCard(imageUrl)) continue;
     if (c.source === "github" && !isCustomGithubPreview(imageUrl)) continue;
     const saved = await saveImage(imageUrl, t.id);
     if (!saved) continue;

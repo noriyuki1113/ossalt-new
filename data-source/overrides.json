@@ -1,6 +1,18 @@
 {
-  "exclude": ["terraform", "elasticsearch", "vault", "inkscape", "ansible", "playwright"],
+  "exclude": [
+    "terraform",
+    "elasticsearch",
+    "vault",
+    "inkscape",
+    "ansible",
+    "playwright"
+  ],
   "patch": {
-    "weblate": { "primary_competitor": "Crowdin" }
-  }
+    "weblate": {
+      "primary_competitor": "Crowdin"
+    }
+  },
+  "preview_block": [
+    "serpbear"
+  ]
 }

@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { acceptDimensions, extractOgImage, isCustomGithubPreview } from "./og-image.mjs";
+import { acceptDimensions, extractOgImage, isCustomGithubPreview, isGithubAutoCard } from "./og-image.mjs";
 
 test("og:image を取り出し、相対URLを解決する", () => {
   const html = `<head><meta property="og:title" content="x"><meta content="/img/og.png" property="og:image"></head>`;
@@ -33,4 +33,9 @@ test("横長で十分な大きさの画像だけを採用する", () => {
   assert.equal(acceptDimensions(400, 210), false);
   assert.equal(acceptDimensions(3000, 600), false);
   assert.equal(acceptDimensions(null, 600), false);
+});
+
+test("GitHubの自動生成カードを見分ける", () => {
+  assert.equal(isGithubAutoCard("https://opengraph.githubassets.com/abc/FreshRSS/FreshRSS"), true);
+  assert.equal(isGithubAutoCard("https://freshrss.org/og.png"), false);
 });

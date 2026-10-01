@@ -54,3 +54,15 @@ export function acceptDimensions(width, height) {
   const ratio = width / height;
   return width >= 600 && ratio >= 1.3 && ratio <= 2.6;
 }
+
+/**
+ * GitHubが自動で作る共有用カード（リポジトリ名・説明・作者のアイコンを並べた画像）。
+ * 公式サイトとしてGitHubのURLが登録されているツールでも出てくるため、取得元に関係なく使わない。
+ */
+export function isGithubAutoCard(url) {
+  try {
+    return new URL(url).hostname === "opengraph.githubassets.com";
+  } catch {
+    return false;
+  }
+}

@@ -197,10 +197,11 @@ const tools = raw.map((t) => {
  */
 {
   const previews = readJson(path.join(ROOT, "data-source", "previews.json"), {});
+  const { previewBlock } = loadOverrides();
   for (const t of tools) {
     const p = previews[t.id];
     t.preview =
-      p?.file && fs.existsSync(path.join(ROOT, "public", p.file))
+      p?.file && !previewBlock.has(t.id) && fs.existsSync(path.join(ROOT, "public", p.file))
         ? { src: p.file, source: p.source, width: p.width, height: p.height }
         : null;
   }

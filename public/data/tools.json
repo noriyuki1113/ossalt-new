@@ -133,12 +133,7 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/stable-diffusion-webui.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "ollama",
@@ -4183,12 +4178,7 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/text-generation-webui.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "mattermost",
@@ -4398,12 +4388,7 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/huginn.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "keycloak",
@@ -5189,12 +5174,7 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/paperless-ngx.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "tooljet",
@@ -6003,12 +5983,7 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/lossless-cut.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "sharex",
@@ -6532,12 +6507,7 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/gitness.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "insomnia",
@@ -8855,12 +8825,7 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/keepassxc.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "ente",
@@ -9418,12 +9383,7 @@
   "also_competitors": [
    "Jooto"
   ],
-  "preview": {
-   "src": "/previews/focalboard.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "dub",
@@ -10013,12 +9973,7 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/faster-whisper.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "pulumi",
@@ -10139,12 +10094,7 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/whisperx.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "listmonk",
@@ -11067,12 +11017,7 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/pgvector.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "sops",
@@ -11233,12 +11178,7 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/mediamtx.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "docmost",
@@ -13165,12 +13105,7 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/opencart.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "postal",
@@ -13277,12 +13212,7 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/freshrss.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "semgrep",
@@ -13407,12 +13337,7 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/grav.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "seafile",
@@ -13838,12 +13763,7 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/mailhog.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "zitadel",
@@ -14042,12 +13962,7 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/gotify.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "robotframework",
@@ -16484,12 +16399,7 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/netmaker.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "piper",
@@ -16770,12 +16680,7 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/miniflux.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "libreoffice",
@@ -17108,12 +17013,7 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/redmine.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "mailpit",
@@ -18819,12 +18719,7 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/hedgedoc.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "plasmic",
@@ -20085,12 +19980,7 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/mailtrain.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "synapse",
@@ -21684,12 +21574,7 @@
   "also_competitors": [
    "Misoca"
   ],
-  "preview": {
-   "src": "/previews/invoiceplane.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "piwigo",
@@ -22142,12 +22027,7 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/whisper-asr-webservice.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "ethercalc",
@@ -22745,12 +22625,7 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/helpy.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "horilla",
@@ -23514,12 +23389,7 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/serpbear.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 450
-  }
+  "preview": null
  },
  {
   "id": "bugsink",
@@ -23612,12 +23482,7 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/trudesk.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "psitransfer",
@@ -23675,12 +23540,7 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/psitransfer.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "galene",
@@ -23935,12 +23795,7 @@
   "also_competitors": [
    "Misoca"
   ],
-  "preview": {
-   "src": "/previews/solidinvoice.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "libresign",
@@ -24320,12 +24175,7 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
-  "preview": {
-   "src": "/previews/tryton.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 400
-  }
+  "preview": null
  },
  {
   "id": "tracim",
