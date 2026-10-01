@@ -1,37 +1,48 @@
 {
  "added": [
   {
-   "name": "Pretix",
-   "id": "pretix",
-   "competitor": "Peatix",
-   "gh": "pretix/pretix",
-   "url": "https://pretix.eu",
-   "category": "scheduling",
-   "descJa": "イベントや講演会のチケット販売・参加受付を自前で運用できるシステム。",
+   "name": "SerpBear",
+   "id": "serpbear",
+   "competitor": "Ahrefs",
+   "gh": "towfiqi/serpbear",
+   "url": "https://docs.serpbear.com",
+   "category": "seo",
+   "descJa": "Googleの検索順位をキーワードごとに記録し、変動をメールで知らせる順位チェックツール。Search Consoleと連携できる。検索結果の取得には外部のスクレイピングAPIかプロキシが必要。",
    "exists": true,
-   "urlVerified": true
+   "urlVerified": false
   },
   {
-   "name": "Frappe CRM",
-   "id": "frappe-crm",
-   "competitor": "Salesforce",
-   "gh": "frappe/crm",
-   "url": "https://frappe.io/crm",
-   "category": "crm",
-   "descJa": "商談・顧客・問い合わせを一元管理できる、シンプルな営業管理ツール。",
+   "name": "SEOnaut",
+   "id": "seonaut",
+   "competitor": "Semrush",
+   "gh": "StJudeWasHere/seonaut",
+   "url": "https://seonaut.org",
+   "category": "seo",
+   "descJa": "サイト全体を巡回し、リンク切れ・リダイレクト・重複タイトルなどSEOの問題を重要度別に一覧にする監査ツール。",
    "exists": true,
-   "urlVerified": true
+   "urlVerified": false
   },
   {
-   "name": "Tolgee",
-   "id": "tolgee",
-   "competitor": "Crowdin",
-   "gh": "tolgee/tolgee-platform",
-   "url": "https://tolgee.io",
-   "category": "translation",
-   "descJa": "アプリやWebサイトの翻訳文言を、画面上で編集しながら管理できる多言語化基盤。",
+   "name": "SiteOne Crawler",
+   "id": "siteone-crawler",
+   "competitor": "Screaming Frog",
+   "gh": "janreges/siteone-crawler",
+   "url": "https://crawler.siteone.io",
+   "category": "seo",
+   "descJa": "サイト全体を巡回して、リンク切れ・SEO・表示速度・セキュリティを分析し、HTMLのレポートにまとめるクローラー。",
    "exists": true,
-   "urlVerified": true
+   "urlVerified": false
+  },
+  {
+   "name": "Unlighthouse",
+   "id": "unlighthouse",
+   "competitor": "PageSpeed Insights",
+   "gh": "harlan-zw/unlighthouse",
+   "url": "https://unlighthouse.dev",
+   "category": "seo",
+   "descJa": "Google Lighthouseでサイトの全ページをまとめて計測し、表示速度やSEOの点数を一覧で比べられる。",
+   "exists": true,
+   "urlVerified": false
   }
  ],
  "rejected": []

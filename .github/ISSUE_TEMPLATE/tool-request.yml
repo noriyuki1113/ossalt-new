@@ -72,6 +72,7 @@ body:
         - "ビデオ会議・配信（video）"
         - "EC・決済（ecommerce）"
         - "翻訳（translation）"
+        - "SEO・サイト分析（seo）"
     validations:
       required: true
   - type: textarea

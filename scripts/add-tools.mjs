@@ -146,7 +146,7 @@ for (const raw of lines) {
     continue;
   }
   if (!VALID_CATEGORIES.has(category)) {
-    fail(`カテゴリが不正: ${category}（28種のいずれか）`);
+    fail(`カテゴリが不正: ${category}（${VALID_CATEGORIES.size}種のいずれか）`);
     continue;
   }
   if (!descJa) {
