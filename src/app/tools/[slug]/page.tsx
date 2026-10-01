@@ -10,7 +10,7 @@ import {
   HealthLegend,
   HealthMeter,
   ScorecardPanel,
-  SecurityListBadge,
+  KeyFacts,
   SpecTable,
 } from "@/components/tool-views";
 import { getActiveTools, getComparePairsForTool, getMeta, getTool, getTools } from "@/lib/data";
@@ -103,6 +103,8 @@ export default async function ToolDetailPage({
               {tool.description_ja ? ` ${tool.description_ja}` : ""}
             </p>
 
+            <KeyFacts tool={tool} />
+
             {tool.github_archived && (
               <p className="notice notice--warn" style={{ marginBottom: "1.25rem" }}>
                 <strong>{t("health.archived")}</strong>{" "}{"このツールは一覧・カテゴリ・比較のページには表示していません（このページのみ残しています）。"}
@@ -137,7 +139,21 @@ export default async function ToolDetailPage({
             )}
 
             {guide && (
-              <section className="section" style={{ paddingTop: 0, marginBottom: "2.5rem" }}>
+              <nav className="toc" aria-label="このページの目次">
+                <p className="toc__title">目次</p>
+                <ol>
+                  <li><a href="#about">{`${tool.name}とは`}</a></li>
+                  <li><a href="#health">健全度スコア</a></li>
+                  <li><a href="#spec">スペック</a></li>
+                  <li><a href="#security">セキュリティ</a></li>
+                  <li><a href="#selfhost">自前で動かすには</a></li>
+                  {compareSet.length > 1 && <li><a href="#compare">{`${competitor} の代替候補を比較`}</a></li>}
+                </ol>
+              </nav>
+            )}
+
+            {guide && (
+              <section id="about" className="section" style={{ paddingTop: 0, marginBottom: "2.5rem" }}>
                 <h2 className="h3 mt0">{`${tool.name}とは`}</h2>
                 <div className="prose" dangerouslySetInnerHTML={{ __html: guide.contentHtml }} />
                 {guide.updated && (
@@ -148,7 +164,7 @@ export default async function ToolDetailPage({
               </section>
             )}
 
-            <section>
+            <section id="health">
               <h2 className="h3 mt0">{t("health.title")}</h2>
               <div className="panel">
                 <div className="panel__head">
@@ -174,9 +190,9 @@ export default async function ToolDetailPage({
               </div>
             </section>
 
-            <section>
+            <section id="spec">
               <h2 className="h3">スペック</h2>
-              <SpecTable tool={tool} />
+              <SpecTable tool={tool} compact />
               <p className="muted" style={{ fontSize: "0.75rem" }}>
                 ライセンス表記は「{licenseLabel(tool.license)}」。最終コミット
                 {formatDate(tool.last_commit)}時点の情報です。
@@ -215,44 +231,23 @@ export default async function ToolDetailPage({
 
           </div>
 
-          <aside className="detail-aside stack">
+          <aside id="security" className="detail-aside stack">
             <ScorecardPanel tool={tool} />
-            <div className="panel">
-              <div className="panel__head">
-                <h2 className="panel__title">要点</h2>
-              </div>
-              <div className="panel__body">
-                <dl className="spec">
-                  <div className="spec__row">
-                    <dt className="spec__key">代替対象</dt>
-                    <dd className="spec__val">{competitor}</dd>
-                  </div>
-                  <div className="spec__row">
-                    <dt className="spec__key">ライセンス</dt>
-                    <dd className="spec__val">{licenseLabel(tool.license)}</dd>
-                  </div>
-                  <div className="spec__row">
-                    <dt className="spec__key">セキュリティ</dt>
-                    <dd className="spec__val">
-                      <SecurityListBadge tool={tool} />
-                    </dd>
-                  </div>
-                </dl>
-                <p className="muted" style={{ fontSize: "0.75rem", marginBottom: 0 }}>
-                  {t("footer.disclaimer")}
-                </p>
-              </div>
-            </div>
+            <p className="muted" style={{ fontSize: "0.75rem", margin: 0 }}>
+              {t("footer.disclaimer")}
+            </p>
           </aside>
         </div>
 
-        <VpsRecommendation path={`/tools/${tool.id}/`} />
+        <div id="selfhost">
+          <VpsRecommendation path={`/tools/${tool.id}/`} />
+        </div>
 
         {/* 比較表・同じカテゴリの一覧は横長になりやすいため、2カラムグリッドの外に出して
             ページ全幅で表示する（detail-layout の中に置くと、aside が grid-row: 1/-1 で
             全行にまたがっているため、追加の行を横幅いっぱいに置けなくなる）。 */}
         {compareSet.length > 1 && (
-          <section className="mt2">
+          <section id="compare" className="mt2">
             <h2 className="h3">{competitor} の代替候補を比較</h2>
             <ComparisonTable tools={compareSet} />
             <p className="muted mt1" style={{ fontSize: "0.75rem" }}>

@@ -24,6 +24,7 @@ import {
   type Tool,
 } from "@/lib/tools";
 import { t } from "@/lib/site";
+import { classifyLicense, LICENSE_CLASS_LABELS } from "@/lib/compare";
 
 /* ------------------------------------------------------------------ *
  * 健全度メーター — このサイトの署名要素
@@ -286,12 +287,61 @@ export function ToolRow({ tool }: { tool: Tool }) {
  * 詳細ページのスペック表
  * ------------------------------------------------------------------ */
 
-export function SpecTable({ tool }: { tool: Tool }) {
+/**
+ * ツールページの冒頭に置く「ひと目で分かる要点」。
+ * 検索から来た人が、最初の画面で自分に合うかを判断できるようにする。
+ * データが無い項目は「未確認」とし、「非対応」とは書かない。
+ */
+export function KeyFacts({ tool }: { tool: Tool }) {
+  const cls = classifyLicense(tool.license);
+  const clsLabel = LICENSE_CLASS_LABELS[cls].replace(/（.*）/, "");
+  const licenseWarn = cls === "source-available" || cls === "unknown";
+  const ja =
+    tool.ja_ui === true
+      ? "画面あり"
+      : tool.ja_docs === "official" || tool.ja_docs === "community"
+        ? "ドキュメントあり"
+        : "未確認";
+  const facts: Array<{ key: string; value: string; sub?: string; warn?: boolean; good?: boolean }> = [
+    { key: "ライセンス", value: licenseLabel(tool.license), sub: clsLabel, warn: licenseWarn },
+    { key: "日本語", value: ja, good: ja !== "未確認" },
+    { key: "Docker", value: dockerLabel(tool.docker_available), good: tool.docker_available === true },
+    { key: "最終更新", value: formatRelativeDays(tool.freshness_days), warn: (tool.freshness_days ?? 0) > 365 },
+    { key: "スター", value: formatCompactJa(tool.stars_num) },
+    {
+      key: "セキュリティ評価",
+      value: tool.scorecard_score != null ? `${tool.scorecard_score} / 10` : "未評価",
+    },
+  ];
+  return (
+    <dl className="keyfacts" aria-label="要点">
+      {facts.map((f) => (
+        <div
+          key={f.key}
+          className={`keyfacts__item${f.warn ? " keyfacts__item--warn" : ""}${f.good ? " keyfacts__item--good" : ""}`}
+        >
+          <dt>{f.key}</dt>
+          <dd>
+            {f.value}
+            {f.sub && <small>{f.sub}</small>}
+          </dd>
+        </div>
+      ))}
+    </dl>
+  );
+}
+
+export function SpecTable({ tool, compact = false }: { tool: Tool; compact?: boolean }) {
   const rows: Array<[string, ReactNode]> = [
-    [t("metric.stars"), formatFull(tool.stars_num)],
-    [t("metric.forks"), formatFull(tool.forks_num)],
-    [t("metric.contributors"), formatFull(tool.contributors_num)],
-    [t("metric.watchers"), formatFull(tool.watchers_num)],
+    // compact：健全度スコアの欄に同じ数字があるページでは、スター等の4項目と健全度を省く
+    ...(compact
+      ? []
+      : ([
+          [t("metric.stars"), formatFull(tool.stars_num)],
+          [t("metric.forks"), formatFull(tool.forks_num)],
+          [t("metric.contributors"), formatFull(tool.contributors_num)],
+          [t("metric.watchers"), formatFull(tool.watchers_num)],
+        ] as Array<[string, ReactNode]>)),
     [t("metric.license"), licenseLabel(tool.license)],
     [t("metric.language"), tool.language ?? "—"],
     [
@@ -305,7 +355,11 @@ export function SpecTable({ tool }: { tool: Tool }) {
     [t("metric.docker"), dockerLabel(tool.docker_available)],
     [t("metric.jaUi"), jaUiLabel(tool.ja_ui)],
     [t("metric.jaDocs"), jaDocsLabel(tool.ja_docs)],
-    [t("metric.health"), tool.health_score != null ? Math.round(tool.health_score).toLocaleString("ja-JP") : "—"],
+    ...(compact
+      ? []
+      : ([[t("metric.health"), tool.health_score != null ? Math.round(tool.health_score).toLocaleString("ja-JP") : "—"]] as Array<
+          [string, ReactNode]
+        >)),
   ];
 
   return (
