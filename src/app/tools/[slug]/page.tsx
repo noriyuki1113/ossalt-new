@@ -17,6 +17,7 @@ import { getActiveTools, getComparePairsForTool, getMeta, getTool, getTools } fr
 import { getCategory } from "@/lib/categories";
 import { SITE, t } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
+import { toolDescription, toolTitle } from "@/lib/seo-copy";
 import { LICENSE_CLASS_LABELS, classifyLicense } from "@/lib/compare";
 import { getLicensePage } from "@/lib/licenses";
 import { formatDate, licenseLabel, slugifyCompetitor } from "@/lib/tools";
@@ -35,12 +36,9 @@ export async function generateMetadata({
   const { slug } = await params;
   const tool = getTool(slug);
   if (!tool) return { title: t("detail.notFound") };
-  const competitor = tool.primary_competitor_ja || tool.primary_competitor;
   return pageMeta({
-    title: `${tool.name} — ${competitor} のオープンソース代替`,
-    description:
-      tool.description_ja?.slice(0, 110) ??
-      `${tool.name}は${competitor}のオープンソース代替候補です。ライセンス・スター数・セキュリティ評価をまとめています。`,
+    title: toolTitle(tool),
+    description: toolDescription(tool),
     path: `/tools/${tool.id}/`,
     type: "article",
   });

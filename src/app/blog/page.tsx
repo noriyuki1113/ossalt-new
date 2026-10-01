@@ -8,8 +8,9 @@ import { t } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata: Metadata = pageMeta({
-  title: t("blog.title"),
-  description: t("blog.lede"),
+  title: "ブログ｜セルフホスト・オープンソース導入の実践ガイド",
+  description:
+    "SaaSからオープンソースへの乗り換えを検討するときに役立つ記事をまとめています。ライセンスの読み方、GitHubでの見極め方、Dockerでの試し方、VPSの選び方など、導入前に知っておきたいことを解説します。",
   path: "/blog/",
 });
 

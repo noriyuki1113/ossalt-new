@@ -8,6 +8,7 @@ import { getAlternativeGuide } from "@/lib/alternative-guides";
 import { getComparePairs, getCompetitor, getCompetitors, getMeta, getTool } from "@/lib/data";
 import { SITE, t } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
+import { alternativeDescription, alternativeTitle } from "@/lib/seo-copy";
 import { formatDate } from "@/lib/tools";
 
 type Params = { slug: string };
@@ -26,10 +27,8 @@ export async function generateMetadata({
   if (!c) return { title: t("detail.notFound") };
   const guide = getAlternativeGuide(slug);
   return pageMeta({
-    title: `${c.name} のオープンソース代替 ${c.tools.length}選`,
-    description:
-      guide?.description ||
-      `${c.name} の代わりに自前で動かせるオープンソースソフトを、ライセンス・スター数・セキュリティ評価つきで比較できます。`,
+    title: alternativeTitle(c.name, c.tools, new Date(getMeta().built_at).getFullYear()),
+    description: guide?.description || alternativeDescription(c.name, c.tools),
     path: `/alternatives/${c.slug}/`,
     type: "article",
   });

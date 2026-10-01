@@ -165,14 +165,30 @@ export function Breadcrumbs({
 }: {
   items: Array<{ href?: string; label: string }>;
 }) {
+  // 検索結果にパンくずを表示してもらうための構造化データ（BreadcrumbList）
+  const base = SITE.url.replace(/\/$/, "");
   return (
-    <nav className="crumbs" aria-label="パンくず">
-      {items.map((it, i) => (
-        <span key={`${it.label}-${i}`} style={{ display: "contents" }}>
-          {i > 0 && <span aria-hidden="true">/</span>}
-          {it.href ? <Link href={it.href}>{it.label}</Link> : <span>{it.label}</span>}
-        </span>
-      ))}
-    </nav>
+    <>
+      <nav className="crumbs" aria-label="パンくず">
+        {items.map((it, i) => (
+          <span key={`${it.label}-${i}`} style={{ display: "contents" }}>
+            {i > 0 && <span aria-hidden="true">/</span>}
+            {it.href ? <Link href={it.href}>{it.label}</Link> : <span>{it.label}</span>}
+          </span>
+        ))}
+      </nav>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: items.map((it, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name: it.label,
+            ...(it.href ? { item: `${base}${it.href}` } : {}),
+          })),
+        }}
+      />
+    </>
   );
 }
