@@ -2,7 +2,7 @@
 title: "SaaSの代わりになるOSS 377件を調べたら、日本語で使えるのは約半分だった"
 emoji: "🗾"
 type: "idea"
-topics: ["oss", "セルフホスト", "i18n", "github", "saas"]
+topics: ["oss", "selfhosted", "saas", "i18n", "個人開発"]
 published: false
 ---
 
