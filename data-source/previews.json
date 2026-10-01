@@ -1,1 +1,3166 @@
-{}
+{
+ "ackee": {
+  "file": "/previews/ackee.jpg",
+  "source": "official",
+  "page": "https://ackee.electerious.com",
+  "image": "https://ackee.electerious.com/assets/images/og.jpg",
+  "width": 800,
+  "height": 533,
+  "bytes": 18245,
+  "checked_at": "2026-10-01T16:48:26.603Z"
+ },
+ "activepieces": {
+  "file": "/previews/activepieces.jpg",
+  "source": "official",
+  "page": "https://www.activepieces.com",
+  "image": "https://www.activepieces.com/og-default.jpg",
+  "width": 800,
+  "height": 420,
+  "bytes": 17680,
+  "checked_at": "2026-10-01T16:48:10.179Z"
+ },
+ "actual": {
+  "file": "/previews/actual.jpg",
+  "source": "official",
+  "page": "https://actualbudget.org",
+  "image": "https://actualbudget.org/img/og.webp",
+  "width": 800,
+  "height": 420,
+  "bytes": 6341,
+  "checked_at": "2026-10-01T16:49:08.760Z"
+ },
+ "adminer": {
+  "file": "/previews/adminer.jpg",
+  "source": "github",
+  "page": "https://github.com/vrana/adminer",
+  "image": "https://repository-images.githubusercontent.com/627735/781b5938-fe17-49f4-9b50-4eb0915b5f9f",
+  "width": 800,
+  "height": 470,
+  "bytes": 24577,
+  "checked_at": "2026-10-01T16:48:51.472Z"
+ },
+ "affine": {
+  "file": "/previews/affine.jpg",
+  "source": "official",
+  "page": "https://affine.pro",
+  "image": "https://affine.pro/og.jpeg",
+  "width": 800,
+  "height": 420,
+  "bytes": 17830,
+  "checked_at": "2026-10-01T16:48:06.100Z"
+ },
+ "airflow": {
+  "file": "/previews/airflow.jpg",
+  "source": "official",
+  "page": "https://airflow.apache.org",
+  "image": "https://airflow.apache.org/images/feature-image.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 13362,
+  "checked_at": "2026-10-01T16:48:54.219Z"
+ },
+ "akaunting": {
+  "file": "/previews/akaunting.jpg",
+  "source": "github",
+  "page": "https://github.com/akaunting/akaunting",
+  "image": "https://repository-images.githubusercontent.com/95011974/be62d28c-658b-4242-bc8c-097533687aa2",
+  "width": 800,
+  "height": 400,
+  "bytes": 25931,
+  "checked_at": "2026-10-01T16:49:07.931Z"
+ },
+ "alerta": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:31.325Z"
+ },
+ "ansible": {
+  "file": "/previews/ansible.jpg",
+  "source": "official",
+  "page": "https://www.ansible.com",
+  "image": "https://www.redhat.com/themes/custom/rhdc/img/red-hat-social-share.jpg",
+  "width": 800,
+  "height": 420,
+  "bytes": 19346,
+  "checked_at": "2026-10-01T16:48:51.361Z"
+ },
+ "anythingllm": {
+  "file": "/previews/anythingllm.jpg",
+  "source": "official",
+  "page": "https://anythingllm.com",
+  "image": "https://anythingllm.com/share-card.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 25785,
+  "checked_at": "2026-10-01T16:48:55.566Z"
+ },
+ "anytype": {
+  "file": "/previews/anytype.jpg",
+  "source": "official",
+  "page": "https://anytype.io",
+  "image": "https://anytype.io/ogimage.jpg",
+  "width": 800,
+  "height": 526,
+  "bytes": 16314,
+  "checked_at": "2026-10-01T16:48:14.704Z"
+ },
+ "apisix": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:49.495Z"
+ },
+ "appflowy": {
+  "file": "/previews/appflowy.jpg",
+  "source": "official",
+  "page": "https://appflowy.com",
+  "image": "https://appflowy.com/_next/static/media/og-image.838814e7.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 23994,
+  "checked_at": "2026-10-01T16:48:05.524Z"
+ },
+ "appsmith": {
+  "file": "/previews/appsmith.jpg",
+  "source": "official",
+  "page": "https://github.com/appsmithorg/appsmith",
+  "image": "https://repository-images.githubusercontent.com/275993885/62a587c5-9d63-4115-8569-1bb27e105a74",
+  "width": 800,
+  "height": 400,
+  "bytes": 28461,
+  "checked_at": "2026-10-01T16:49:18.640Z"
+ },
+ "appwrite": {
+  "file": "/previews/appwrite.jpg",
+  "source": "official",
+  "page": "https://appwrite.io",
+  "image": "https://appwrite.io/og/image.png?title=Appwrite&subtitle=The+open-source+developer+platform+with+Auth%2C+Databases%2C+Storage%2C+Functions%2C+Messaging%2C+and+Sites.+The+open-source+cloud+for+agents+and+developers.",
+  "width": 800,
+  "height": 420,
+  "bytes": 14591,
+  "checked_at": "2026-10-01T16:48:48.016Z"
+ },
+ "argo-cd": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:47.618Z"
+ },
+ "argos-translate": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:01.154Z"
+ },
+ "arize-phoenix": {
+  "file": "/previews/arize-phoenix.jpg",
+  "source": "official",
+  "page": "https://phoenix.arize.com",
+  "image": "https://arize.com/wp-content/uploads/2026/05/Phoenix.jpg",
+  "width": 800,
+  "height": 416,
+  "bytes": 26273,
+  "checked_at": "2026-10-01T16:49:00.342Z"
+ },
+ "audacity": {
+  "file": "/previews/audacity.jpg",
+  "source": "official",
+  "page": "https://www.audacityteam.org",
+  "image": "https://www.audacityteam.org/og-image.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 27787,
+  "checked_at": "2026-10-01T16:48:44.690Z"
+ },
+ "audiobookshelf": {
+  "file": "/previews/audiobookshelf.jpg",
+  "source": "github",
+  "page": "https://github.com/advplyr/audiobookshelf",
+  "image": "https://repository-images.githubusercontent.com/397401267/6aea7743-b3b5-4271-8a25-86df97ce2d39",
+  "width": 800,
+  "height": 400,
+  "bytes": 12633,
+  "checked_at": "2026-10-01T16:48:39.032Z"
+ },
+ "authelia": {
+  "file": "/previews/authelia.jpg",
+  "source": "official",
+  "page": "https://www.authelia.com",
+  "image": "https://www.authelia.com/cover.png",
+  "width": 800,
+  "height": 400,
+  "bytes": 15268,
+  "checked_at": "2026-10-01T16:48:32.364Z"
+ },
+ "authentik": {
+  "file": "/previews/authentik.jpg",
+  "source": "official",
+  "page": "https://goauthentik.io",
+  "image": "https://goauthentik.io/img/social.png",
+  "width": 800,
+  "height": 400,
+  "bytes": 10745,
+  "checked_at": "2026-10-01T16:48:31.861Z"
+ },
+ "automatisch": {
+  "file": "/previews/automatisch.jpg",
+  "source": "official",
+  "page": "https://github.com/automatisch/automatisch",
+  "image": "https://repository-images.githubusercontent.com/412217739/e20eb725-1a93-4d85-bc6b-be4862d7b510",
+  "width": 800,
+  "height": 406,
+  "bytes": 5246,
+  "checked_at": "2026-10-01T16:49:30.375Z"
+ },
+ "bagisto": {
+  "file": "/previews/bagisto.jpg",
+  "source": "official",
+  "page": "https://bagisto.com",
+  "image": "https://bagisto.com/wp-content/uploads/2018/08/og-image.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 16892,
+  "checked_at": "2026-10-01T16:49:14.814Z"
+ },
+ "baikal": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:18.073Z"
+ },
+ "baserow": {
+  "file": "/previews/baserow.jpg",
+  "source": "official",
+  "page": "https://baserow.io",
+  "image": "https://baserow.io/img/baserow_open_graph.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 24116,
+  "checked_at": "2026-10-01T16:48:11.168Z"
+ },
+ "beancount": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:09.557Z"
+ },
+ "bigbluebutton": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:01.861Z"
+ },
+ "blender": {
+  "file": "/previews/blender.jpg",
+  "source": "github",
+  "page": "https://github.com/blender/blender",
+  "image": "https://repository-images.githubusercontent.com/213916896/88a85980-6fcb-11ea-9a93-e566f8f29ea9",
+  "width": 800,
+  "height": 400,
+  "bytes": 64704,
+  "checked_at": "2026-10-01T16:48:42.832Z"
+ },
+ "bolt-cms": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:28.806Z"
+ },
+ "bookstack": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:14.016Z"
+ },
+ "borg": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:39.750Z"
+ },
+ "bruno": {
+  "file": "/previews/bruno.jpg",
+  "source": "official",
+  "page": "https://www.usebruno.com",
+  "image": "https://www.usebruno.com/og/home.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 6546,
+  "checked_at": "2026-10-01T16:48:48.775Z"
+ },
+ "budibase": {
+  "file": "/previews/budibase.jpg",
+  "source": "official",
+  "page": "https://budibase.com",
+  "image": "https://budibase.com/og.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 6406,
+  "checked_at": "2026-10-01T16:48:10.073Z"
+ },
+ "bugsink": {
+  "file": "/previews/bugsink.jpg",
+  "source": "official",
+  "page": "https://www.bugsink.com",
+  "image": "https://www.bugsink.com/static/images/og.8c994ca0bc34.png",
+  "width": 800,
+  "height": 458,
+  "bytes": 42432,
+  "checked_at": "2026-10-01T16:48:29.906Z"
+ },
+ "cachet": {
+  "file": "/previews/cachet.jpg",
+  "source": "official",
+  "page": "https://cachethq.io",
+  "image": "https://cachethq.io/images/og/home.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 24229,
+  "checked_at": "2026-10-01T16:48:31.738Z"
+ },
+ "cal-com": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:08.778Z"
+ },
+ "cap": {
+  "file": "/previews/cap.jpg",
+  "source": "official",
+  "page": "https://cap.so",
+  "image": "https://cap.so/api/og?title=Record.+Edit.+Share.&description=The+open+source+screen+recorder+for+Mac%2C+Windows%2C+and+Linux.&s=bc2b79cfa175099f36c87a6c360590fc",
+  "width": 800,
+  "height": 420,
+  "bytes": 27651,
+  "checked_at": "2026-10-01T16:48:45.166Z"
+ },
+ "caprover": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:46.642Z"
+ },
+ "casdoor": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:22.033Z"
+ },
+ "cerbos": {
+  "file": "/previews/cerbos.jpg",
+  "source": "official",
+  "page": "https://github.com/cerbos/cerbos",
+  "image": "https://repository-images.githubusercontent.com/350005438/56735bad-bf8e-4b90-be85-962afd1eeece",
+  "width": 800,
+  "height": 400,
+  "bytes": 10706,
+  "checked_at": "2026-10-01T16:49:29.491Z"
+ },
+ "chaskiq": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:26.271Z"
+ },
+ "chatwoot": {
+  "file": "/previews/chatwoot.jpg",
+  "source": "official",
+  "page": "https://www.chatwoot.com/help-center",
+  "image": "https://www.chatwoot.com/images/preview.png",
+  "width": 800,
+  "height": 418,
+  "bytes": 29890,
+  "checked_at": "2026-10-01T16:48:09.655Z"
+ },
+ "chroma": {
+  "file": "/previews/chroma.jpg",
+  "source": "official",
+  "page": "https://www.trychroma.com",
+  "image": "https://www.trychroma.com/card.png",
+  "width": 800,
+  "height": 419,
+  "bytes": 37931,
+  "checked_at": "2026-10-01T16:48:59.911Z"
+ },
+ "cockpit-cms": {
+  "file": "/previews/cockpit-cms.jpg",
+  "source": "official",
+  "page": "https://github.com/Cockpit-HQ/Cockpit",
+  "image": "https://repository-images.githubusercontent.com/331007481/525579d1-84b0-45d0-8e43-a64ca01820be",
+  "width": 800,
+  "height": 450,
+  "bytes": 46131,
+  "checked_at": "2026-10-01T16:49:28.355Z"
+ },
+ "coder": {
+  "file": "/previews/coder.jpg",
+  "source": "official",
+  "page": "https://coder.com",
+  "image": "https://coder.com/_next/static/media/OpenGraph.f7fb2003.jpg",
+  "width": 800,
+  "height": 420,
+  "bytes": 20282,
+  "checked_at": "2026-10-01T16:48:52.178Z"
+ },
+ "coder-oss": {
+  "file": "/previews/coder-oss.jpg",
+  "source": "official",
+  "page": "https://github.com/coder/coder",
+  "image": "https://repository-images.githubusercontent.com/440752086/eb56ccad-14f2-4c61-a024-20d1e77296c1",
+  "width": 800,
+  "height": 400,
+  "bytes": 18517,
+  "checked_at": "2026-10-01T16:49:29.660Z"
+ },
+ "collabora-online": {
+  "file": "/previews/collabora-online.jpg",
+  "source": "official",
+  "page": "https://www.collaboraonline.com",
+  "image": "https://www.collaboraonline.com/wp-content/uploads/2025/02/Collab-rabbits.png",
+  "width": 800,
+  "height": 546,
+  "bytes": 45030,
+  "checked_at": "2026-10-01T16:48:16.471Z"
+ },
+ "comfyui": {
+  "file": "/previews/comfyui.jpg",
+  "source": "official",
+  "page": "https://www.comfy.org",
+  "image": "https://media.comfy.org/website/comfy.webp",
+  "width": 800,
+  "height": 420,
+  "bytes": 16736,
+  "checked_at": "2026-10-01T16:48:59.484Z"
+ },
+ "continue": {
+  "file": "/previews/continue.jpg",
+  "source": "official",
+  "page": "https://github.com/continuedev/continue",
+  "image": "https://repository-images.githubusercontent.com/644686905/00ec1de7-baa4-4b71-8700-13ba6cb759c4",
+  "width": 800,
+  "height": 400,
+  "bytes": 66816,
+  "checked_at": "2026-10-01T16:49:22.024Z"
+ },
+ "coolify": {
+  "file": "/previews/coolify.jpg",
+  "source": "official",
+  "page": "https://coolify.io",
+  "image": "https://cdn.coollabs.io/og-images/coolify.png",
+  "width": 800,
+  "height": 400,
+  "bytes": 13679,
+  "checked_at": "2026-10-01T16:48:06.841Z"
+ },
+ "couchdb": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:23.683Z"
+ },
+ "countly": {
+  "file": "/previews/countly.jpg",
+  "source": "official",
+  "page": "https://countly.com",
+  "image": "https://cdn.prod.website-files.com/61c1b7c3e2f3805325be4594/668ce80fb93226b6ad88d718_d587926ef3277bc26935a28e68750dcb_Meta%20Tag-Countly.com.jpg",
+  "width": 800,
+  "height": 420,
+  "bytes": 26957,
+  "checked_at": "2026-10-01T16:48:27.067Z"
+ },
+ "crater": {
+  "file": "/previews/crater.jpg",
+  "source": "official",
+  "page": "https://craterapp.com",
+  "image": "https://crater.financial/images/share-social.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 16303,
+  "checked_at": "2026-10-01T16:49:08.606Z"
+ },
+ "crowdsec": {
+  "file": "/previews/crowdsec.jpg",
+  "source": "official",
+  "page": "https://crowdsec.net",
+  "image": "https://cms.crowdsec.net/wp-content/uploads/2024/09/Thumbnail-Homepage.png",
+  "width": 800,
+  "height": 450,
+  "bytes": 27069,
+  "checked_at": "2026-10-01T16:48:35.337Z"
+ },
+ "cryptpad": {
+  "file": "/previews/cryptpad.jpg",
+  "source": "official",
+  "page": "https://cryptpad.fr",
+  "image": "https://cryptpad.fr/customize/images/opengraph_preview/og-default.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 8621,
+  "checked_at": "2026-10-01T16:48:15.368Z"
+ },
+ "dagster": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:54.406Z"
+ },
+ "dbeaver": {
+  "file": "/previews/dbeaver.jpg",
+  "source": "github",
+  "page": "https://github.com/dbeaver/dbeaver",
+  "image": "https://repository-images.githubusercontent.com/44662669/f3f5c080-808b-11ea-9713-2bea65875d95",
+  "width": 800,
+  "height": 400,
+  "bytes": 14843,
+  "checked_at": "2026-10-01T16:48:51.423Z"
+ },
+ "defectdojo": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:35.140Z"
+ },
+ "dependency-track": {
+  "file": "/previews/dependency-track.jpg",
+  "source": "official",
+  "page": "https://dependencytrack.org",
+  "image": "https://dependencytrack.org/assets/images/social-card-og.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 23060,
+  "checked_at": "2026-10-01T16:48:34.914Z"
+ },
+ "devpod": {
+  "file": "/previews/devpod.jpg",
+  "source": "official",
+  "page": "https://devpod.sh",
+  "image": "https://cdn.prod.website-files.com/645b6806227d4a212e2d01ca/67d8d6796238b736fb3b37b8_Open%20Graph.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 6815,
+  "checked_at": "2026-10-01T16:48:52.652Z"
+ },
+ "dify": {
+  "file": "/previews/dify.jpg",
+  "source": "official",
+  "page": "https://dify.ai",
+  "image": "https://dify.ai/assets/og/default.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 15600,
+  "checked_at": "2026-10-01T16:48:56.619Z"
+ },
+ "directus": {
+  "file": "/previews/directus.jpg",
+  "source": "official",
+  "page": "https://directus.com",
+  "image": "https://framerusercontent.com/images/wDMzR3oV9R51pVCPoOz6PGTRs54.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 24136,
+  "checked_at": "2026-10-01T16:48:09.588Z"
+ },
+ "discourse": {
+  "file": "/previews/discourse.jpg",
+  "source": "official",
+  "page": "https://github.com/discourse/discourse",
+  "image": "https://repository-images.githubusercontent.com/7569578/1d05ae2e-20bb-42dd-98ad-e6ece6ce4dbe",
+  "width": 800,
+  "height": 420,
+  "bytes": 15082,
+  "checked_at": "2026-10-01T16:49:27.162Z"
+ },
+ "docassemble": {
+  "file": "/previews/docassemble.jpg",
+  "source": "official",
+  "page": "https://docassemble.org",
+  "image": "http://docassemble.org/img/docassemble-logo.jpg",
+  "width": 800,
+  "height": 491,
+  "bytes": 10967,
+  "checked_at": "2026-10-01T16:49:12.654Z"
+ },
+ "docker-mailserver": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:21.708Z"
+ },
+ "docmost": {
+  "file": "/previews/docmost.jpg",
+  "source": "official",
+  "page": "https://docmost.com",
+  "image": "https://docmost.com/screenshots/editor.png",
+  "width": 800,
+  "height": 472,
+  "bytes": 30771,
+  "checked_at": "2026-10-01T16:48:10.634Z"
+ },
+ "docspell": {
+  "file": "/previews/docspell.jpg",
+  "source": "official",
+  "page": "https://docspell.org",
+  "image": "https://docspell.org/img/poster.png",
+  "width": 800,
+  "height": 400,
+  "bytes": 9591,
+  "checked_at": "2026-10-01T16:49:13.179Z"
+ },
+ "documenso": {
+  "file": "/previews/documenso.jpg",
+  "source": "official",
+  "page": "https://documenso.com",
+  "image": "https://framerusercontent.com/images/x66EcGbzu3IQEriNXuRmOBonGyo.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 11388,
+  "checked_at": "2026-10-01T16:49:12.371Z"
+ },
+ "docusaurus": {
+  "file": "/previews/docusaurus.jpg",
+  "source": "official",
+  "page": "https://docusaurus.io",
+  "image": "https://docusaurus.io/img/docusaurus-social-card.jpg",
+  "width": 800,
+  "height": 450,
+  "bytes": 23006,
+  "checked_at": "2026-10-01T16:48:52.908Z"
+ },
+ "docuseal": {
+  "file": "/previews/docuseal.jpg",
+  "source": "official",
+  "page": "https://www.docuseal.com",
+  "image": "https://www.docuseal.com/packs/static/images/preview-99e68f3c26abb97d939d.png",
+  "width": 800,
+  "height": 400,
+  "bytes": 17780,
+  "checked_at": "2026-10-01T16:49:11.606Z"
+ },
+ "dokku": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:46.844Z"
+ },
+ "dokploy": {
+  "file": "/previews/dokploy.jpg",
+  "source": "official",
+  "page": "https://dokploy.com",
+  "image": "https://dokploy.com/og.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 15677,
+  "checked_at": "2026-10-01T16:48:46.036Z"
+ },
+ "drawio": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:41.116Z"
+ },
+ "dub": {
+  "file": "/previews/dub.jpg",
+  "source": "official",
+  "page": "https://dub.co",
+  "image": "https://assets.dub.co/thumbnail.jpg",
+  "width": 800,
+  "height": 420,
+  "bytes": 28048,
+  "checked_at": "2026-10-01T16:49:32.782Z"
+ },
+ "duplicati": {
+  "file": "/previews/duplicati.jpg",
+  "source": "official",
+  "page": "https://www.duplicati.com",
+  "image": "https://framerusercontent.com/images/sK16ZZeM3bLvzk4MGpFsclRNU.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 27356,
+  "checked_at": "2026-10-01T16:48:40.318Z"
+ },
+ "easy-appointments": {
+  "file": "/previews/easy-appointments.jpg",
+  "source": "official",
+  "page": "https://github.com/alextselegidis/easyappointments",
+  "image": "https://repository-images.githubusercontent.com/27195711/4a6cf180-defc-11ea-8bef-85dc686a72c3",
+  "width": 800,
+  "height": 400,
+  "bytes": 10651,
+  "checked_at": "2026-10-01T16:49:19.872Z"
+ },
+ "ec-cube": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:17.141Z"
+ },
+ "element": {
+  "file": "/previews/element.jpg",
+  "source": "official",
+  "page": "https://element.io",
+  "image": "https://static.element.io/images/open-graph-large.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 28275,
+  "checked_at": "2026-10-01T16:48:18.578Z"
+ },
+ "ente": {
+  "file": "/previews/ente.jpg",
+  "source": "official",
+  "page": "https://ente.io",
+  "image": "https://ente.com/assets/preview.99NhZcqA.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 28125,
+  "checked_at": "2026-10-01T16:48:38.186Z"
+ },
+ "erpnext": {
+  "file": "/previews/erpnext.jpg",
+  "source": "official",
+  "page": "https://frappe.io/erpnext",
+  "image": "https://frappe.io/files/ERPNexte2a3b6.png",
+  "width": 800,
+  "height": 450,
+  "bytes": 16394,
+  "checked_at": "2026-10-01T16:48:16.891Z"
+ },
+ "espocrm": {
+  "file": "/previews/espocrm.jpg",
+  "source": "official",
+  "page": "https://www.espocrm.com",
+  "image": "http://www.espocrm.com/images/free-crm-social.jpg",
+  "width": 700,
+  "height": 461,
+  "bytes": 29109,
+  "checked_at": "2026-10-01T16:49:04.469Z"
+ },
+ "ethercalc": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:26.226Z"
+ },
+ "etherpad": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:15.190Z"
+ },
+ "excalidraw": {
+  "file": "/previews/excalidraw.jpg",
+  "source": "official",
+  "page": "https://excalidraw.com",
+  "image": "https://excalidraw.com/og-image-3.png",
+  "width": 800,
+  "height": 450,
+  "bytes": 20319,
+  "checked_at": "2026-10-01T16:48:05.171Z"
+ },
+ "faster-whisper": {
+  "file": "/previews/faster-whisper.jpg",
+  "source": "official",
+  "page": "https://github.com/SYSTRAN/faster-whisper",
+  "image": "https://opengraph.githubassets.com/26e1b62019eb1721ea8fb46766d43e50f5996535054fee967606c7e8568cf2b3/SYSTRAN/faster-whisper",
+  "width": 800,
+  "height": 400,
+  "bytes": 19095,
+  "checked_at": "2026-10-01T16:48:58.163Z"
+ },
+ "fathom": {
+  "file": "/previews/fathom.jpg",
+  "source": "official",
+  "page": "https://usefathom.com",
+  "image": "https://usefathom.com/assets/src/social-share-default.png",
+  "width": 800,
+  "height": 436,
+  "bytes": 22260,
+  "checked_at": "2026-10-01T16:48:26.872Z"
+ },
+ "faveo": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:05.936Z"
+ },
+ "ffmpeg": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:44.399Z"
+ },
+ "filestash": {
+  "file": "/previews/filestash.jpg",
+  "source": "github",
+  "page": "https://github.com/mickael-kerjean/filestash",
+  "image": "https://repository-images.githubusercontent.com/94173064/dfcaf300-719b-11e9-8f9d-cbfb4152e228",
+  "width": 800,
+  "height": 400,
+  "bytes": 5536,
+  "checked_at": "2026-10-01T16:48:36.433Z"
+ },
+ "firefly-iii": {
+  "file": "/previews/firefly-iii.jpg",
+  "source": "official",
+  "page": "https://github.com/firefly-iii/firefly-iii",
+  "image": "https://repository-images.githubusercontent.com/21298446/df3f3500-938f-11eb-9ced-1fc42aec4e90",
+  "width": 800,
+  "height": 400,
+  "bytes": 8239,
+  "checked_at": "2026-10-01T16:49:08.641Z"
+ },
+ "flameshot": {
+  "file": "/previews/flameshot.jpg",
+  "source": "official",
+  "page": "https://flameshot.org",
+  "image": "https://flameshot.org/img/flameshot-hero.jpg",
+  "width": 800,
+  "height": 516,
+  "bytes": 22115,
+  "checked_at": "2026-10-01T16:48:45.106Z"
+ },
+ "flarum": {
+  "file": "/previews/flarum.jpg",
+  "source": "official",
+  "page": "https://github.com/flarum/framework",
+  "image": "https://repository-images.githubusercontent.com/28257573/caf0bb80-0557-11eb-949d-f402ae5b8597",
+  "width": 800,
+  "height": 401,
+  "bytes": 9834,
+  "checked_at": "2026-10-01T16:49:27.233Z"
+ },
+ "focalboard": {
+  "file": "/previews/focalboard.jpg",
+  "source": "official",
+  "page": "https://github.com/mattermost-community/focalboard",
+  "image": "https://opengraph.githubassets.com/ba046d257b7d70707b382a7af3d859a6cd9e185201384169f5f8d1a0e30764ec/mattermost-community/focalboard",
+  "width": 800,
+  "height": 400,
+  "bytes": 17777,
+  "checked_at": "2026-10-01T16:48:24.883Z"
+ },
+ "formbricks": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:11.026Z"
+ },
+ "frappe-crm": {
+  "file": "/previews/frappe-crm.jpg",
+  "source": "official",
+  "page": "https://frappe.io/crm",
+  "image": "https://frappe.io/files/CRM01c543.png",
+  "width": 800,
+  "height": 450,
+  "bytes": 21753,
+  "checked_at": "2026-10-01T16:49:33.051Z"
+ },
+ "frappe-hr": {
+  "file": "/previews/frappe-hr.jpg",
+  "source": "official",
+  "page": "https://github.com/frappe/hrms",
+  "image": "https://repository-images.githubusercontent.com/501292795/010f358b-8afb-4e41-a7c8-8444983055c8",
+  "width": 800,
+  "height": 450,
+  "bytes": 20478,
+  "checked_at": "2026-10-01T16:49:19.814Z"
+ },
+ "freescout": {
+  "file": "/previews/freescout.jpg",
+  "source": "github",
+  "page": "https://github.com/freescout-help-desk/freescout",
+  "image": "https://repository-images.githubusercontent.com/138328462/3d2ffd7a-acf2-416a-8e1b-16fec140ad5e",
+  "width": 800,
+  "height": 400,
+  "bytes": 22470,
+  "checked_at": "2026-10-01T16:49:04.987Z"
+ },
+ "freshrss": {
+  "file": "/previews/freshrss.jpg",
+  "source": "official",
+  "page": "https://github.com/FreshRSS/FreshRSS",
+  "image": "https://opengraph.githubassets.com/4aa900e02e07825fec7bb0d25152e179c7c119e1ddb9aa9e65a64a7d65eb69d3/FreshRSS/FreshRSS",
+  "width": 800,
+  "height": 400,
+  "bytes": 17793,
+  "checked_at": "2026-10-01T16:49:30.625Z"
+ },
+ "galene": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:02.327Z"
+ },
+ "gatus": {
+  "file": "/previews/gatus.jpg",
+  "source": "official",
+  "page": "https://github.com/TwiN/gatus",
+  "image": "https://repository-images.githubusercontent.com/206214867/b23a0946-ca97-439c-9024-bb8ff3e99701",
+  "width": 800,
+  "height": 550,
+  "bytes": 46139,
+  "checked_at": "2026-10-01T16:48:27.622Z"
+ },
+ "ghost": {
+  "file": "/previews/ghost.jpg",
+  "source": "official",
+  "page": "https://ghost.org",
+  "image": "https://ghost.org/images/meta/ghost-6.png",
+  "width": 800,
+  "height": 401,
+  "bytes": 31104,
+  "checked_at": "2026-10-01T16:48:08.423Z"
+ },
+ "ghostfolio": {
+  "file": "/previews/ghostfolio.jpg",
+  "source": "official",
+  "page": "https://github.com/ghostfolio/ghostfolio",
+  "image": "https://repository-images.githubusercontent.com/357671824/18c68729-fa17-4b01-80e5-b1c88569dbdc",
+  "width": 800,
+  "height": 400,
+  "bytes": 9904,
+  "checked_at": "2026-10-01T16:49:32.000Z"
+ },
+ "gimp": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:41.743Z"
+ },
+ "gitea": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:07.168Z"
+ },
+ "gitness": {
+  "file": "/previews/gitness.jpg",
+  "source": "official",
+  "page": "https://github.com/harness/gitness",
+  "image": "https://opengraph.githubassets.com/54580feef792319021aeead95f9d014dd6099922b4cb191b279e0833076bafd2/harness/harness",
+  "width": 800,
+  "height": 400,
+  "bytes": 22335,
+  "checked_at": "2026-10-01T16:49:21.659Z"
+ },
+ "glitchtip": {
+  "file": "/previews/glitchtip.jpg",
+  "source": "official",
+  "page": "https://glitchtip.com",
+  "image": "https://glitchtip.com/assets/og-default.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 33919,
+  "checked_at": "2026-10-01T16:48:12.254Z"
+ },
+ "gnucash": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:09.337Z"
+ },
+ "goatcounter": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:26.368Z"
+ },
+ "gogs": {
+  "file": "/previews/gogs.jpg",
+  "source": "official",
+  "page": "https://gogs.io",
+  "image": "https://unknwon.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DGetting%2Bstarted%26title%3DIntroduction%26description%3DThe%2Bpainless%2Bway%2Bto%2Bhost%2Byour%2Bown%2BGit%2Bservice%26theme%3Dae1e6af0f2409a2f7f17f292&w=1200&q=100",
+  "width": 800,
+  "height": 420,
+  "bytes": 9348,
+  "checked_at": "2026-10-01T16:48:45.736Z"
+ },
+ "gotify": {
+  "file": "/previews/gotify.jpg",
+  "source": "official",
+  "page": "https://github.com/gotify/server",
+  "image": "https://opengraph.githubassets.com/d598d6a576394234dc33c9b49da45225d5fc5d2abbb8edd074f7b10c1d4b9042/gotify/server",
+  "width": 800,
+  "height": 400,
+  "bytes": 18603,
+  "checked_at": "2026-10-01T16:49:28.227Z"
+ },
+ "gpt4all": {
+  "file": "/previews/gpt4all.jpg",
+  "source": "official",
+  "page": "https://gpt4all.io",
+  "image": "https://www.nomic.ai/images/og-default.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 29486,
+  "checked_at": "2026-10-01T16:48:56.461Z"
+ },
+ "grafana": {
+  "file": "/previews/grafana.jpg",
+  "source": "official",
+  "page": "https://grafana.com",
+  "image": "https://a-us.storyblok.com/f/1022730/1920x1080/f5f38546c4/image-homepage-metaimage.png/m/1200x630/filters:quality(80)/",
+  "width": 800,
+  "height": 420,
+  "bytes": 28896,
+  "checked_at": "2026-10-01T16:48:05.745Z"
+ },
+ "grav": {
+  "file": "/previews/grav.jpg",
+  "source": "official",
+  "page": "https://github.com/getgrav/grav",
+  "image": "https://opengraph.githubassets.com/476def17d1f99433fe5698b53ba0a5456ecdecd7a8f7d8a435891bf11a579967/getgrav/grav",
+  "width": 800,
+  "height": 400,
+  "bytes": 20798,
+  "checked_at": "2026-10-01T16:49:21.073Z"
+ },
+ "graylog": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:30.429Z"
+ },
+ "greenshot": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:45.130Z"
+ },
+ "grist": {
+  "file": "/previews/grist.jpg",
+  "source": "official",
+  "page": "https://www.getgrist.com",
+  "image": "https://www.getgrist.com/wp-content/uploads/2026/04/thumbnail.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 14350,
+  "checked_at": "2026-10-01T16:48:25.275Z"
+ },
+ "grype": {
+  "file": "/previews/grype.jpg",
+  "source": "official",
+  "page": "https://github.com/anchore/grype",
+  "image": "https://repository-images.githubusercontent.com/267054247/c41d4c8f-cd32-4bdd-9f2a-89a82992a359",
+  "width": 800,
+  "height": 406,
+  "bytes": 10977,
+  "checked_at": "2026-10-01T16:48:34.272Z"
+ },
+ "guacamole": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:03.904Z"
+ },
+ "handbrake": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:44.078Z"
+ },
+ "hanko": {
+  "file": "/previews/hanko.jpg",
+  "source": "official",
+  "page": "https://www.hanko.io",
+  "image": "https://cdn.prod.website-files.com/6971fcb9a62495657c79e358/69fc9ec91f04c8312dc8db15_Hanko.jpg",
+  "width": 800,
+  "height": 420,
+  "bytes": 7822,
+  "checked_at": "2026-10-01T16:48:32.946Z"
+ },
+ "harbor": {
+  "file": "/previews/harbor.jpg",
+  "source": "official",
+  "page": "https://github.com/goharbor/harbor",
+  "image": "https://repository-images.githubusercontent.com/50613991/70e44abd-500f-46e0-8ff4-98745949dba8",
+  "width": 800,
+  "height": 363,
+  "bytes": 19550,
+  "checked_at": "2026-10-01T16:49:23.141Z"
+ },
+ "headlamp": {
+  "file": "/previews/headlamp.jpg",
+  "source": "official",
+  "page": "https://headlamp.dev",
+  "image": "https://headlamp.dev/img/social-card.png",
+  "width": 800,
+  "height": 400,
+  "bytes": 13113,
+  "checked_at": "2026-10-01T16:48:50.962Z"
+ },
+ "headscale": {
+  "file": "/previews/headscale.jpg",
+  "source": "github",
+  "page": "https://github.com/juanfont/headscale",
+  "image": "https://repository-images.githubusercontent.com/273871859/f1e0953c-56b1-48a2-8f36-80b784329303",
+  "width": 800,
+  "height": 400,
+  "bytes": 11757,
+  "checked_at": "2026-10-01T16:48:33.400Z"
+ },
+ "hedgedoc": {
+  "file": "/previews/hedgedoc.jpg",
+  "source": "official",
+  "page": "https://github.com/hedgedoc/hedgedoc",
+  "image": "https://opengraph.githubassets.com/4dfb2674d04cb7e70f314435e8555e1d0ad3b7b3c17d27ccec4ea1c6a72f9e4c/hedgedoc/hedgedoc",
+  "width": 800,
+  "height": 400,
+  "bytes": 16191,
+  "checked_at": "2026-10-01T16:48:14.996Z"
+ },
+ "helicone": {
+  "file": "/previews/helicone.jpg",
+  "source": "official",
+  "page": "https://www.helicone.ai",
+  "image": "https://www.helicone.ai/static/new-open-graph.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 26993,
+  "checked_at": "2026-10-01T16:49:00.775Z"
+ },
+ "helpy": {
+  "file": "/previews/helpy.jpg",
+  "source": "official",
+  "page": "https://github.com/helpyio/helpy",
+  "image": "https://opengraph.githubassets.com/7ae67e14a418a028cd1713296826a784ffa749bb9f7eaeace9571667d1ab336c/helpyio/helpy",
+  "width": 800,
+  "height": 400,
+  "bytes": 22222,
+  "checked_at": "2026-10-01T16:49:05.956Z"
+ },
+ "heyform": {
+  "file": "/previews/heyform.jpg",
+  "source": "official",
+  "page": "https://heyform.net",
+  "image": "https://heyform.net/static/og.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 20512,
+  "checked_at": "2026-10-01T16:49:13.384Z"
+ },
+ "highlight": {
+  "file": "/previews/highlight.jpg",
+  "source": "official",
+  "page": "https://github.com/highlight/highlight",
+  "image": "https://repository-images.githubusercontent.com/289073337/bcdbf22d-d1e3-4c51-97d9-2cfb5594c5dc",
+  "width": 800,
+  "height": 418,
+  "bytes": 23478,
+  "checked_at": "2026-10-01T16:49:28.852Z"
+ },
+ "hledger": {
+  "file": "/previews/hledger.jpg",
+  "source": "github",
+  "page": "https://github.com/hledgerorg/hledger",
+  "image": "https://repository-images.githubusercontent.com/9301414/f55337d5-af64-417c-8ad6-30ea5b96cb1a",
+  "width": 800,
+  "height": 400,
+  "bytes": 11449,
+  "checked_at": "2026-10-01T16:49:09.212Z"
+ },
+ "hoppscotch": {
+  "file": "/previews/hoppscotch.jpg",
+  "source": "official",
+  "page": "https://hoppscotch.io",
+  "image": "https://hoppscotch.io/banner.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 16886,
+  "checked_at": "2026-10-01T16:48:05.510Z"
+ },
+ "horilla": {
+  "file": "/previews/horilla.jpg",
+  "source": "official",
+  "page": "https://www.horilla.com",
+  "image": "https://www.horilla.com/wp-content/uploads/2023/05/horilla-og-image-home.jpg",
+  "width": 800,
+  "height": 420,
+  "bytes": 25531,
+  "checked_at": "2026-10-01T16:49:11.483Z"
+ },
+ "huginn": {
+  "file": "/previews/huginn.jpg",
+  "source": "official",
+  "page": "https://github.com/huginn/huginn",
+  "image": "https://opengraph.githubassets.com/c612357e7c4bf3b39df289edb87d6dc3866840c72ab30c1b293b615c7ff6bc63/huginn/huginn",
+  "width": 800,
+  "height": 400,
+  "bytes": 17127,
+  "checked_at": "2026-10-01T16:48:53.900Z"
+ },
+ "hyperswitch": {
+  "file": "/previews/hyperswitch.jpg",
+  "source": "official",
+  "page": "https://hyperswitch.io",
+  "image": "https://hyperswitch.io/hyperswitch-homepage.webp",
+  "width": 800,
+  "height": 444,
+  "bytes": 19604,
+  "checked_at": "2026-10-01T16:49:10.416Z"
+ },
+ "immich": {
+  "file": "/previews/immich.jpg",
+  "source": "official",
+  "page": "https://immich.app",
+  "image": "https://immich.app/img/social-preview.png",
+  "width": 800,
+  "height": 450,
+  "bytes": 27636,
+  "checked_at": "2026-10-01T16:48:05.173Z"
+ },
+ "infisical": {
+  "file": "/previews/infisical.jpg",
+  "source": "official",
+  "page": "https://infisical.com",
+  "image": "https://infisical.com/images/ogimage.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 21477,
+  "checked_at": "2026-10-01T16:48:33.631Z"
+ },
+ "inkscape": {
+  "file": "/previews/inkscape.jpg",
+  "source": "official",
+  "page": "https://github.com/inkscape/inkscape",
+  "image": "https://opengraph.githubassets.com/588d43483ac8af1cab981b808ff87ddcbefc1f7b192df91a7b872041bd4b928b/inkscape/inkscape",
+  "width": 800,
+  "height": 400,
+  "bytes": 18274,
+  "checked_at": "2026-10-01T16:48:42.465Z"
+ },
+ "insomnia": {
+  "file": "/previews/insomnia.jpg",
+  "source": "official",
+  "page": "https://insomnia.rest",
+  "image": "https://insomnia.rest/images/open-graph-insomnia.png",
+  "width": 800,
+  "height": 419,
+  "bytes": 30790,
+  "checked_at": "2026-10-01T16:48:49.262Z"
+ },
+ "invoice-ninja": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:07.545Z"
+ },
+ "invoiceplane": {
+  "file": "/previews/invoiceplane.jpg",
+  "source": "official",
+  "page": "https://github.com/InvoicePlane/InvoicePlane",
+  "image": "https://opengraph.githubassets.com/c56f892e6b1cc237eca3c40d81319fd7ba67b7ed6cd3dc7c8a1dacdf7186f2e8/InvoicePlane/InvoicePlane",
+  "width": 800,
+  "height": 400,
+  "bytes": 19801,
+  "checked_at": "2026-10-01T16:49:32.388Z"
+ },
+ "invokeai": {
+  "file": "/previews/invokeai.jpg",
+  "source": "official",
+  "page": "https://github.com/invoke-ai/InvokeAI",
+  "image": "https://repository-images.githubusercontent.com/525592995/360aff04-be2b-47a6-9417-7e98f2fb55b1",
+  "width": 800,
+  "height": 450,
+  "bytes": 30977,
+  "checked_at": "2026-10-01T16:48:59.488Z"
+ },
+ "jaeger": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:31.221Z"
+ },
+ "jan": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:55.635Z"
+ },
+ "jellyfin": {
+  "file": "/previews/jellyfin.jpg",
+  "source": "official",
+  "page": "https://jellyfin.org",
+  "image": "https://jellyfin.org/images/social.png?v2",
+  "width": 800,
+  "height": 419,
+  "bytes": 12078,
+  "checked_at": "2026-10-01T16:48:38.682Z"
+ },
+ "jenkins": {
+  "file": "/previews/jenkins.jpg",
+  "source": "official",
+  "page": "https://www.jenkins.io",
+  "image": "https://www.jenkins.io/images/logo-title-opengraph.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 13054,
+  "checked_at": "2026-10-01T16:48:47.527Z"
+ },
+ "jitsi": {
+  "file": "/previews/jitsi.jpg",
+  "source": "official",
+  "page": "https://jitsi.org",
+  "image": "https://jitsi.org/wp-content/uploads/2020/04/Jitsi_opengraph.jpg",
+  "width": 800,
+  "height": 325,
+  "bytes": 13955,
+  "checked_at": "2026-10-01T16:49:01.730Z"
+ },
+ "jitsu": {
+  "file": "/previews/jitsu.jpg",
+  "source": "official",
+  "page": "https://jitsu.com",
+  "image": "https://jitsu.com/api/og",
+  "width": 800,
+  "height": 420,
+  "bytes": 14865,
+  "checked_at": "2026-10-01T16:48:27.213Z"
+ },
+ "joplin": {
+  "file": "/previews/joplin.jpg",
+  "source": "github",
+  "page": "https://github.com/laurent22/joplin",
+  "image": "https://repository-images.githubusercontent.com/79162682/0c735ba6-6d35-40cf-8e3c-b3e33651a7c4",
+  "width": 800,
+  "height": 400,
+  "bytes": 21014,
+  "checked_at": "2026-10-01T16:48:12.668Z"
+ },
+ "k3s": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:50.611Z"
+ },
+ "kamal": {
+  "file": "/previews/kamal.jpg",
+  "source": "official",
+  "page": "https://kamal-deploy.org",
+  "image": "https://kamal-deploy.org/assets/images/opengraph.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 7680,
+  "checked_at": "2026-10-01T16:48:46.969Z"
+ },
+ "kanboard": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:24.413Z"
+ },
+ "kdenlive": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:43.373Z"
+ },
+ "keepassxc": {
+  "file": "/previews/keepassxc.jpg",
+  "source": "official",
+  "page": "https://github.com/keepassxreboot/keepassxc",
+  "image": "https://opengraph.githubassets.com/2b8b2f7eb601fe82a8529fd9fde7b2d9dd792eaaf3e7bb9635893d31749ac202/keepassxreboot/keepassxc",
+  "width": 800,
+  "height": 400,
+  "bytes": 23144,
+  "checked_at": "2026-10-01T16:49:21.404Z"
+ },
+ "keila": {
+  "file": "/previews/keila.jpg",
+  "source": "official",
+  "page": "https://www.keila.io",
+  "image": "https://www.keila.io/og-images/index_en.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 18255,
+  "checked_at": "2026-10-01T16:49:14.548Z"
+ },
+ "kestra": {
+  "file": "/previews/kestra.jpg",
+  "source": "official",
+  "page": "https://kestra.io",
+  "image": "https://kestra.io/og-image.png",
+  "width": 800,
+  "height": 450,
+  "bytes": 19750,
+  "checked_at": "2026-10-01T16:48:54.000Z"
+ },
+ "keycloak": {
+  "file": "/previews/keycloak.jpg",
+  "source": "official",
+  "page": "https://www.keycloak.org",
+  "image": "https://www.keycloak.org/preview/index.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 29713,
+  "checked_at": "2026-10-01T16:48:09.675Z"
+ },
+ "khoj": {
+  "file": "/previews/khoj.jpg",
+  "source": "official",
+  "page": "https://khoj.dev",
+  "image": "https://khoj.dev/social-banner.jpg",
+  "width": 800,
+  "height": 420,
+  "bytes": 28290,
+  "checked_at": "2026-10-01T16:48:56.930Z"
+ },
+ "kill-bill": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:10.113Z"
+ },
+ "kimai": {
+  "file": "/previews/kimai.jpg",
+  "source": "official",
+  "page": "https://www.kimai.org",
+  "image": "https://www.kimai.org/images/screenshots/screenshot-dashboard.webp",
+  "width": 800,
+  "height": 532,
+  "bytes": 31554,
+  "checked_at": "2026-10-01T16:49:10.426Z"
+ },
+ "kokoro": {
+  "file": "/previews/kokoro.jpg",
+  "source": "official",
+  "page": "https://huggingface.co/hexgrad/Kokoro-82M",
+  "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/hexgrad/Kokoro-82M.png",
+  "width": 800,
+  "height": 432,
+  "bytes": 13108,
+  "checked_at": "2026-10-01T16:49:01.377Z"
+ },
+ "kong": {
+  "file": "/previews/kong.jpg",
+  "source": "official",
+  "page": "https://konghq.com",
+  "image": "https://prd-mktg-konghq-com.imgix.net/images/2026/03/69ca7138-kong-thumbnail-2026.png?auto=format",
+  "width": 800,
+  "height": 445,
+  "bytes": 7738,
+  "checked_at": "2026-10-01T16:48:49.313Z"
+ },
+ "kopia": {
+  "file": "/previews/kopia.jpg",
+  "source": "official",
+  "page": "https://kopia.io",
+  "image": "https://kopia.io/featured-background.jpg",
+  "width": 800,
+  "height": 395,
+  "bytes": 38333,
+  "checked_at": "2026-10-01T16:48:40.223Z"
+ },
+ "kratos": {
+  "file": "/previews/kratos.jpg",
+  "source": "official",
+  "page": "https://www.ory.sh/kratos/",
+  "image": "https://www.ory.com/api/og?title=Cloud%20Native%20Identity%20%26%20User%20Management%20System%20%7C%20Ory%20Kratos&image=&kind=default",
+  "width": 800,
+  "height": 420,
+  "bytes": 32442,
+  "checked_at": "2026-10-01T16:48:32.188Z"
+ },
+ "krayin": {
+  "file": "/previews/krayin.jpg",
+  "source": "official",
+  "page": "https://krayincrm.com",
+  "image": "https://krayincrm.com/wp-content/uploads/2021/07/krayin_og.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 13921,
+  "checked_at": "2026-10-01T16:49:04.641Z"
+ },
+ "krita": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:42.276Z"
+ },
+ "langflow": {
+  "file": "/previews/langflow.jpg",
+  "source": "github",
+  "page": "https://github.com/langflow-ai/langflow",
+  "image": "https://repository-images.githubusercontent.com/599320067/a9637c6a-7347-4a7a-8bf3-7bbdae6974b6",
+  "width": 800,
+  "height": 400,
+  "bytes": 15129,
+  "checked_at": "2026-10-01T16:48:56.797Z"
+ },
+ "langfuse": {
+  "file": "/previews/langfuse.jpg",
+  "source": "official",
+  "page": "https://langfuse.com",
+  "image": "https://langfuse.com/api/og?title=Langfuse+%E2%80%93+Open+Source+Agent+Evals+%26+Observability&description=Trace%2C+evaluate%2C+and+improve+AI+agents+with+one+open+platform.+Use+production+data+to+understand+behavior%2C+collaborate+on+fixes%2C+and+ship+better+quality+at+lower+cost+and+latency.",
+  "width": 800,
+  "height": 420,
+  "bytes": 23644,
+  "checked_at": "2026-10-01T16:49:00.259Z"
+ },
+ "leantime": {
+  "file": "/previews/leantime.jpg",
+  "source": "official",
+  "page": "https://leantime.io",
+  "image": "https://assets.leantime.io/wp-content/uploads/2023/01/Leantime-Pitch-Deck-Project-Management-Slide.webp",
+  "width": 800,
+  "height": 450,
+  "bytes": 28262,
+  "checked_at": "2026-10-01T16:48:24.604Z"
+ },
+ "librechat": {
+  "file": "/previews/librechat.jpg",
+  "source": "official",
+  "page": "https://www.librechat.ai",
+  "image": "https://www.librechat.ai/api/og?v=a40e77512dc1",
+  "width": 800,
+  "height": 420,
+  "bytes": 11094,
+  "checked_at": "2026-10-01T16:48:55.015Z"
+ },
+ "libredesk": {
+  "file": "/previews/libredesk.jpg",
+  "source": "official",
+  "page": "https://libredesk.io",
+  "image": "https://libredesk.io/og.png",
+  "width": 800,
+  "height": 442,
+  "bytes": 27817,
+  "checked_at": "2026-10-01T16:49:07.039Z"
+ },
+ "libreoffice": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:23.832Z"
+ },
+ "librephotos": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:37.956Z"
+ },
+ "libresign": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:12.187Z"
+ },
+ "libretranslate": {
+  "file": "/previews/libretranslate.jpg",
+  "source": "official",
+  "page": "https://libretranslate.com",
+  "image": "https://user-images.githubusercontent.com/1951843/102724116-32a6df00-42db-11eb-8cc0-129ab39cdfb5.png",
+  "width": 800,
+  "height": 417,
+  "bytes": 27429,
+  "checked_at": "2026-10-01T16:49:01.035Z"
+ },
+ "lightdash": {
+  "file": "/previews/lightdash.jpg",
+  "source": "official",
+  "page": "https://www.lightdash.com",
+  "image": "https://framerusercontent.com/images/A3BTwvXbAjHYhlotVfVz41cm20w.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 25159,
+  "checked_at": "2026-10-01T16:48:25.984Z"
+ },
+ "limesurvey": {
+  "file": "/previews/limesurvey.jpg",
+  "source": "official",
+  "page": "https://www.limesurvey.org",
+  "image": "https://www.limesurvey.org/images/2025/home/survey-editor@2x.jpg",
+  "width": 800,
+  "height": 500,
+  "bytes": 25299,
+  "checked_at": "2026-10-01T16:49:13.308Z"
+ },
+ "listmonk": {
+  "file": "/previews/listmonk.jpg",
+  "source": "official",
+  "page": "https://listmonk.app",
+  "image": "https://listmonk.app/static/images/thumbnail.webp",
+  "width": 800,
+  "height": 556,
+  "bytes": 23351,
+  "checked_at": "2026-10-01T16:48:10.382Z"
+ },
+ "livekit": {
+  "file": "/previews/livekit.jpg",
+  "source": "official",
+  "page": "https://livekit.io",
+  "image": "https://livekit.com/opengraph-image.png?opengraph-image.10qgazecccxaz.png",
+  "width": 800,
+  "height": 419,
+  "bytes": 34348,
+  "checked_at": "2026-10-01T16:49:01.868Z"
+ },
+ "llama-cpp": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:55.839Z"
+ },
+ "lobechat": {
+  "file": "/previews/lobechat.jpg",
+  "source": "official",
+  "page": "https://lobehub.com",
+  "image": "https://lobehub.com/assets/cao-og.webp",
+  "width": 800,
+  "height": 450,
+  "bytes": 16040,
+  "checked_at": "2026-10-01T16:48:55.100Z"
+ },
+ "localai": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:55.840Z"
+ },
+ "logseq": {
+  "file": "/previews/logseq.jpg",
+  "source": "official",
+  "page": "https://logseq.com",
+  "image": "https://asset.logseq.com/static/img/social-banner-230118.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 20736,
+  "checked_at": "2026-10-01T16:48:13.074Z"
+ },
+ "logto": {
+  "file": "/previews/logto.jpg",
+  "source": "official",
+  "page": "https://logto.io",
+  "image": "https://logto.io/assets/social-CH_XwNBP.jpg",
+  "width": 800,
+  "height": 400,
+  "bytes": 16892,
+  "checked_at": "2026-10-01T16:48:32.712Z"
+ },
+ "lossless-cut": {
+  "file": "/previews/lossless-cut.jpg",
+  "source": "official",
+  "page": "https://github.com/mifi/lossless-cut",
+  "image": "https://opengraph.githubassets.com/0fbb9702cc0bceb904175e90896314199fb9a6180e6151840a593280b67cb2da/mifi/lossless-cut",
+  "width": 800,
+  "height": 400,
+  "bytes": 17127,
+  "checked_at": "2026-10-01T16:48:44.074Z"
+ },
+ "magento": {
+  "file": "/previews/magento.jpg",
+  "source": "github",
+  "page": "https://github.com/magento/magento2",
+  "image": "https://repository-images.githubusercontent.com/2884111/4bf49300-b50e-11e9-8d1f-c7add453ddb5",
+  "width": 800,
+  "height": 400,
+  "bytes": 9134,
+  "checked_at": "2026-10-01T16:49:18.435Z"
+ },
+ "mailcow": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:21.160Z"
+ },
+ "mailhog": {
+  "file": "/previews/mailhog.jpg",
+  "source": "official",
+  "page": "https://github.com/mailhog/MailHog",
+  "image": "https://opengraph.githubassets.com/25d85df407905eb80049b4c25641e657beb8c7dd088bed3a54a18ab8a4d731b2/mailhog/MailHog",
+  "width": 800,
+  "height": 400,
+  "bytes": 13799,
+  "checked_at": "2026-10-01T16:48:23.111Z"
+ },
+ "mailpit": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:22.667Z"
+ },
+ "mailspring": {
+  "file": "/previews/mailspring.jpg",
+  "source": "official",
+  "page": "https://getmailspring.com",
+  "image": "https://www.getmailspring.com/static/img/og-share.jpg",
+  "width": 800,
+  "height": 420,
+  "bytes": 42502,
+  "checked_at": "2026-10-01T16:48:22.609Z"
+ },
+ "mailtrain": {
+  "file": "/previews/mailtrain.jpg",
+  "source": "official",
+  "page": "https://github.com/Mailtrain-org/mailtrain",
+  "image": "https://opengraph.githubassets.com/93bb55d248fce166b7076552d3ea6d21078a358699ad26ed5bd9d56fb5ced7fd/Mailtrain-org/mailtrain",
+  "width": 800,
+  "height": 400,
+  "bytes": 14213,
+  "checked_at": "2026-10-01T16:48:23.271Z"
+ },
+ "mailu": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:21.272Z"
+ },
+ "matomo": {
+  "file": "/previews/matomo.jpg",
+  "source": "official",
+  "page": "https://matomo.org/",
+  "image": "https://matomo.org/wp-content/uploads/2026/04/mockup_matomo-dashboard-2026.webp",
+  "width": 800,
+  "height": 505,
+  "bytes": 29755,
+  "checked_at": "2026-10-01T16:48:10.567Z"
+ },
+ "mattermost": {
+  "file": "/previews/mattermost.jpg",
+  "source": "official",
+  "page": "https://mattermost.com",
+  "image": "https://assets.mattermost.com/images/page-previews/homepage.webp",
+  "width": 800,
+  "height": 480,
+  "bytes": 22585,
+  "checked_at": "2026-10-01T16:48:09.383Z"
+ },
+ "mautic": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:13.870Z"
+ },
+ "mediacms": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:03.418Z"
+ },
+ "mediamtx": {
+  "file": "/previews/mediamtx.jpg",
+  "source": "official",
+  "page": "https://github.com/bluenviron/mediamtx",
+  "image": "https://opengraph.githubassets.com/f8871b3292ec6b5ad18f53d3e444b604fe4ae2fde8aaa3eb77f36950070d7924/bluenviron/mediamtx",
+  "width": 800,
+  "height": 400,
+  "bytes": 21095,
+  "checked_at": "2026-10-01T16:49:25.970Z"
+ },
+ "mediawiki": {
+  "file": "/previews/mediawiki.jpg",
+  "source": "official",
+  "page": "https://www.mediawiki.org",
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Wikimedia_Hackathon_2026_group_photo_01.jpg/1280px-Wikimedia_Hackathon_2026_group_photo_01.jpg?utm_source=www.mediawiki.org&utm_campaign=index&utm_content=thumbnail",
+  "width": 800,
+  "height": 533,
+  "bytes": 119692,
+  "checked_at": "2026-10-01T16:48:14.318Z"
+ },
+ "medusa": {
+  "file": "/previews/medusa.jpg",
+  "source": "official",
+  "page": "https://medusajs.com",
+  "image": "https://assets.medusajs.com/cdn-cgi/image/width=1200,quality=82,format=auto,fit=contain/uploads/2024/08/social-media-graphics-2024-meta-image-nps9tuy6.webp",
+  "width": 800,
+  "height": 420,
+  "bytes": 4271,
+  "checked_at": "2026-10-01T16:49:14.598Z"
+ },
+ "meilisearch": {
+  "file": "/previews/meilisearch.jpg",
+  "source": "official",
+  "page": "https://www.meilisearch.com",
+  "image": "https://www.meilisearch.com/og-image.png",
+  "width": 800,
+  "height": 428,
+  "bytes": 24174,
+  "checked_at": "2026-10-01T16:48:49.652Z"
+ },
+ "memos": {
+  "file": "/previews/memos.jpg",
+  "source": "github",
+  "page": "https://github.com/usememos/memos",
+  "image": "https://repository-images.githubusercontent.com/436297812/fb02ce35-e716-48bb-81fa-24da9ad90dfa",
+  "width": 800,
+  "height": 400,
+  "bytes": 16558,
+  "checked_at": "2026-10-01T16:48:13.288Z"
+ },
+ "meshcentral": {
+  "file": "/previews/meshcentral.jpg",
+  "source": "github",
+  "page": "https://github.com/Ylianst/MeshCentral",
+  "image": "https://repository-images.githubusercontent.com/101663032/a0f76700-4b4f-11eb-981e-ee7eea9fddf2",
+  "width": 800,
+  "height": 400,
+  "bytes": 23598,
+  "checked_at": "2026-10-01T16:49:03.601Z"
+ },
+ "metabase": {
+  "file": "/previews/metabase.jpg",
+  "source": "official",
+  "page": "https://metabase.com",
+  "image": "https://cdn.metabase.com/images/opengraph/home-og.webp",
+  "width": 800,
+  "height": 420,
+  "bytes": 17771,
+  "checked_at": "2026-10-01T16:48:08.604Z"
+ },
+ "milvus": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:00.071Z"
+ },
+ "miniflux": {
+  "file": "/previews/miniflux.jpg",
+  "source": "official",
+  "page": "https://github.com/miniflux/v2",
+  "image": "https://opengraph.githubassets.com/05bac939989fd1097ba85d5647d44a8426b35741702520bb69e70a4a4135f291/miniflux/v2",
+  "width": 800,
+  "height": 400,
+  "bytes": 13162,
+  "checked_at": "2026-10-01T16:49:30.854Z"
+ },
+ "mkdocs": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:53.017Z"
+ },
+ "monica": {
+  "file": "/previews/monica.jpg",
+  "source": "official",
+  "page": "https://www.monicahq.com",
+  "image": "https://www.monicahq.com/og/monica-en.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 11466,
+  "checked_at": "2026-10-01T16:49:04.674Z"
+ },
+ "n8n": {
+  "file": "/previews/n8n.jpg",
+  "source": "official",
+  "page": "https://n8n.io",
+  "image": "https://n8niostorageaccount.blob.core.windows.net/n8nio-strapi-blobs-stage/assets/og_image_website_3_afd66761a9.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 14031,
+  "checked_at": "2026-10-01T16:48:05.143Z"
+ },
+ "navidrome": {
+  "file": "/previews/navidrome.jpg",
+  "source": "official",
+  "page": "https://www.navidrome.org",
+  "image": "https://www.navidrome.org/featured-background.jpg",
+  "width": 800,
+  "height": 571,
+  "bytes": 40443,
+  "checked_at": "2026-10-01T16:48:38.861Z"
+ },
+ "netbird": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:33.557Z"
+ },
+ "netdata": {
+  "file": "/previews/netdata.jpg",
+  "source": "official",
+  "page": "https://www.netdata.cloud",
+  "image": "https://www.netdata.cloud/img/og-image.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 16399,
+  "checked_at": "2026-10-01T16:48:28.541Z"
+ },
+ "netmaker": {
+  "file": "/previews/netmaker.jpg",
+  "source": "official",
+  "page": "https://github.com/gravitl/netmaker",
+  "image": "https://opengraph.githubassets.com/7934eeb1fbdd7d84ff127908b0148e2df2d3e0b916efb319db35f81059f28651/gravitl/netmaker",
+  "width": 800,
+  "height": 400,
+  "bytes": 20073,
+  "checked_at": "2026-10-01T16:49:25.882Z"
+ },
+ "nextcloud": {
+  "file": "/previews/nextcloud.jpg",
+  "source": "official",
+  "page": "https://nextcloud.com",
+  "image": "https://nextcloud.com/c/uploads/2026/03/Homepage-featured-image.png",
+  "width": 800,
+  "height": 450,
+  "bytes": 39735,
+  "checked_at": "2026-10-01T16:48:09.968Z"
+ },
+ "nextcloud-talk": {
+  "file": "/previews/nextcloud-talk.jpg",
+  "source": "official",
+  "page": "https://nextcloud.com/talk",
+  "image": "https://nextcloud.com/c/uploads/2026/03/Talk-page.png",
+  "width": 800,
+  "height": 450,
+  "bytes": 43177,
+  "checked_at": "2026-10-01T16:48:19.995Z"
+ },
+ "nhost": {
+  "file": "/previews/nhost.jpg",
+  "source": "official",
+  "page": "https://nhost.io",
+  "image": "https://nhost.io/images/og-new.png",
+  "width": 800,
+  "height": 427,
+  "bytes": 15525,
+  "checked_at": "2026-10-01T16:48:48.298Z"
+ },
+ "nocobase": {
+  "file": "/previews/nocobase.jpg",
+  "source": "official",
+  "page": "https://www.nocobase.com",
+  "image": "https://static-docs.nocobase.com/20260513-og-github-v3.jpg",
+  "width": 800,
+  "height": 400,
+  "bytes": 28686,
+  "checked_at": "2026-10-01T16:48:10.339Z"
+ },
+ "nocodb": {
+  "file": "/previews/nocodb.jpg",
+  "source": "official",
+  "page": "https://nocodb.com",
+  "image": "https://cdn.prod.website-files.com/650a7aeba6c28976499496bb/686278d1c40e23ec5f1ac414_66245a0c0a05baffdf947012613f7c7b_Website%20Thumbnail.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 31677,
+  "checked_at": "2026-10-01T16:48:06.395Z"
+ },
+ "node-red": {
+  "file": "/previews/node-red.jpg",
+  "source": "github",
+  "page": "https://github.com/node-red/node-red",
+  "image": "https://repository-images.githubusercontent.com/12618379/33692d8a-01f5-4144-ab44-eb2bb9f6089c",
+  "width": 800,
+  "height": 400,
+  "bytes": 13632,
+  "checked_at": "2026-10-01T16:48:53.785Z"
+ },
+ "nodebb": {
+  "file": "/previews/nodebb.jpg",
+  "source": "official",
+  "page": "https://github.com/NodeBB/NodeBB",
+  "image": "https://repository-images.githubusercontent.com/9603889/e174fda2-a71b-42e8-af15-e57d178ddcc6",
+  "width": 800,
+  "height": 400,
+  "bytes": 28078,
+  "checked_at": "2026-10-01T16:49:27.285Z"
+ },
+ "notesnook": {
+  "file": "/previews/notesnook.jpg",
+  "source": "official",
+  "page": "https://notesnook.com",
+  "image": "https://notesnook.com/social-2.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 21706,
+  "checked_at": "2026-10-01T16:48:15.620Z"
+ },
+ "ntfy": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:27.726Z"
+ },
+ "nuclei": {
+  "file": "/previews/nuclei.jpg",
+  "source": "official",
+  "page": "https://projectdiscovery.io",
+  "image": "https://projectdiscovery.io/images/ProjectDiscovery_share.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 25822,
+  "checked_at": "2026-10-01T16:48:34.517Z"
+ },
+ "obs": {
+  "file": "/previews/obs.jpg",
+  "source": "github",
+  "page": "https://github.com/obsproject/obs-studio",
+  "image": "https://repository-images.githubusercontent.com/13233158/2e2fae80-da26-11e9-8da2-e1e0b931a235",
+  "width": 640,
+  "height": 360,
+  "bytes": 11405,
+  "checked_at": "2026-10-01T16:48:42.865Z"
+ },
+ "ocrmypdf": {
+  "file": "/previews/ocrmypdf.jpg",
+  "source": "github",
+  "page": "https://github.com/ocrmypdf/OCRmyPDF",
+  "image": "https://repository-images.githubusercontent.com/15333471/e04d2d80-a1ce-11e9-9a19-3c7090039f98",
+  "width": 800,
+  "height": 401,
+  "bytes": 14472,
+  "checked_at": "2026-10-01T16:49:13.033Z"
+ },
+ "odoo": {
+  "file": "/previews/odoo.jpg",
+  "source": "official",
+  "page": "https://www.odoo.com",
+  "image": "https://www.odoo.com/web/image/54404732-3d9bec26/SPI_homepage.png",
+  "width": 800,
+  "height": 450,
+  "bytes": 25604,
+  "checked_at": "2026-10-01T16:48:16.803Z"
+ },
+ "ollama": {
+  "file": "/previews/ollama.jpg",
+  "source": "official",
+  "page": "https://ollama.com",
+  "image": "https://ollama.com/public/og.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 7832,
+  "checked_at": "2026-10-01T16:48:55.648Z"
+ },
+ "onedev": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:45.967Z"
+ },
+ "onlyoffice": {
+  "file": "/previews/onlyoffice.jpg",
+  "source": "github",
+  "page": "https://github.com/ONLYOFFICE/DocumentServer",
+  "image": "https://repository-images.githubusercontent.com/21525321/44c23f6c-f2cb-48a2-9fd7-b0733831c1fe",
+  "width": 800,
+  "height": 400,
+  "bytes": 28677,
+  "checked_at": "2026-10-01T16:48:16.444Z"
+ },
+ "open-webui": {
+  "file": "/previews/open-webui.jpg",
+  "source": "official",
+  "page": "https://openwebui.com",
+  "image": "https://openwebui.com/og-image.png",
+  "width": 800,
+  "height": 400,
+  "bytes": 16406,
+  "checked_at": "2026-10-01T16:48:54.986Z"
+ },
+ "opencart": {
+  "file": "/previews/opencart.jpg",
+  "source": "official",
+  "page": "https://github.com/opencart/opencart",
+  "image": "https://opengraph.githubassets.com/464a265bf2d9a2e9ce5ddee31f964c8cc58f060c3df979877a10c264a6d75a81/opencart/opencart",
+  "width": 800,
+  "height": 400,
+  "bytes": 18067,
+  "checked_at": "2026-10-01T16:49:17.081Z"
+ },
+ "openobserve": {
+  "file": "/previews/openobserve.jpg",
+  "source": "official",
+  "page": "https://openobserve.ai",
+  "image": "https://openobserve.ai/o2-seo-image.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 10082,
+  "checked_at": "2026-10-01T16:48:31.164Z"
+ },
+ "openproject": {
+  "file": "/previews/openproject.jpg",
+  "source": "official",
+  "page": "https://www.openproject.org",
+  "image": "https://www.openproject.org/assets/images/cover/openproject-home-5ab8cc23.jpg",
+  "width": 800,
+  "height": 418,
+  "bytes": 26975,
+  "checked_at": "2026-10-01T16:48:23.652Z"
+ },
+ "openreplay": {
+  "file": "/previews/openreplay.jpg",
+  "source": "official",
+  "page": "https://openreplay.com",
+  "image": "https://openreplay.com/images/og/openreplay-og.png",
+  "width": 800,
+  "height": 400,
+  "bytes": 19732,
+  "checked_at": "2026-10-01T16:48:27.087Z"
+ },
+ "opensearch": {
+  "file": "/previews/opensearch.jpg",
+  "source": "official",
+  "page": "https://opensearch.org",
+  "image": "https://opensearch.org/wp-content/uploads/2025/01/OpenSearch-Feature-Image.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 28501,
+  "checked_at": "2026-10-01T16:48:49.903Z"
+ },
+ "openshot": {
+  "file": "/previews/openshot.jpg",
+  "source": "official",
+  "page": "https://www.openshot.org",
+  "image": "https://cdn.openshot.org/images/hero/openshot-social-poster.jpg",
+  "width": 800,
+  "height": 420,
+  "bytes": 24716,
+  "checked_at": "2026-10-01T16:48:43.682Z"
+ },
+ "opensign": {
+  "file": "/previews/opensign.jpg",
+  "source": "github",
+  "page": "https://github.com/OpenSignLabs/OpenSign",
+  "image": "https://repository-images.githubusercontent.com/699424633/488ac36a-8942-4330-bb39-41919d3397c0",
+  "width": 800,
+  "height": 433,
+  "bytes": 13691,
+  "checked_at": "2026-10-01T16:49:11.757Z"
+ },
+ "opentofu": {
+  "file": "/previews/opentofu.jpg",
+  "source": "official",
+  "page": "https://opentofu.org",
+  "image": "https://opentofu.org/img/og.png",
+  "width": 800,
+  "height": 450,
+  "bytes": 10601,
+  "checked_at": "2026-10-01T16:48:51.051Z"
+ },
+ "openvidu": {
+  "file": "/previews/openvidu.jpg",
+  "source": "official",
+  "page": "https://openvidu.io",
+  "image": "https://openvidu.io/assets/images/og/openvidu-card.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 16378,
+  "checked_at": "2026-10-01T16:49:01.981Z"
+ },
+ "openvscode": {
+  "file": "/previews/openvscode.jpg",
+  "source": "official",
+  "page": "https://www.gitpod.io",
+  "image": "https://ona.com/images/content/sanity/Ona_OG_Image__4_.jpg?v=1",
+  "width": 800,
+  "height": 420,
+  "bytes": 25001,
+  "checked_at": "2026-10-01T16:48:52.531Z"
+ },
+ "orangehrm": {
+  "file": "/previews/orangehrm.jpg",
+  "source": "official",
+  "page": "https://www.orangehrm.com",
+  "image": "https://www.orangehrm.com/assets/Uploads/ohrm-home.jpg?width=1200&#x26;format=pjpg&#x26;optimize=medium",
+  "width": 800,
+  "height": 430,
+  "bytes": 34461,
+  "checked_at": "2026-10-01T16:49:11.157Z"
+ },
+ "osticket": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:05.158Z"
+ },
+ "outline": {
+  "file": "/previews/outline.jpg",
+  "source": "official",
+  "page": "https://www.getoutline.com",
+  "image": "https://www.getoutline.com/images/screenshot.png",
+  "width": 800,
+  "height": 498,
+  "bytes": 38151,
+  "checked_at": "2026-10-01T16:48:09.077Z"
+ },
+ "owncast": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:02.433Z"
+ },
+ "owncloud": {
+  "file": "/previews/owncloud.jpg",
+  "source": "official",
+  "page": "https://owncloud.com",
+  "image": "https://owncloud.com/wp-content/uploads/2020/08/ownCloud-Trademark.png",
+  "width": 800,
+  "height": 419,
+  "bytes": 7740,
+  "checked_at": "2026-10-01T16:48:36.425Z"
+ },
+ "paddleocr": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:58.776Z"
+ },
+ "papercups": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:07.243Z"
+ },
+ "paperless-ngx": {
+  "file": "/previews/paperless-ngx.jpg",
+  "source": "official",
+  "page": "https://github.com/paperless-ngx/paperless-ngx",
+  "image": "https://opengraph.githubassets.com/81ecbe6f68b188ef1cbef6296205f25245b22dd248c70f32b1cfece6c7b31b88/paperless-ngx/paperless-ngx",
+  "width": 800,
+  "height": 400,
+  "bytes": 18688,
+  "checked_at": "2026-10-01T16:49:12.726Z"
+ },
+ "parse": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:48.610Z"
+ },
+ "passbolt": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:32.969Z"
+ },
+ "payload": {
+  "file": "/previews/payload.jpg",
+  "source": "official",
+  "page": "https://github.com/payloadcms/payload",
+  "image": "https://repository-images.githubusercontent.com/327089870/cad363b3-be67-42cb-95a7-e28818d49a29",
+  "width": 800,
+  "height": 419,
+  "bytes": 22103,
+  "checked_at": "2026-10-01T16:49:20.643Z"
+ },
+ "pdfsam": {
+  "file": "/previews/pdfsam.jpg",
+  "source": "official",
+  "page": "https://pdfsam.org",
+  "image": "https://pdfsam.org/imgs/home.png",
+  "width": 800,
+  "height": 473,
+  "bytes": 24403,
+  "checked_at": "2026-10-01T16:49:12.909Z"
+ },
+ "peertube": {
+  "file": "/previews/peertube.jpg",
+  "source": "official",
+  "page": "https://joinpeertube.org",
+  "image": "https://joinpeertube.org/img/card-opengraph.jpg",
+  "width": 800,
+  "height": 420,
+  "bytes": 10714,
+  "checked_at": "2026-10-01T16:49:02.591Z"
+ },
+ "penpot": {
+  "file": "/previews/penpot.jpg",
+  "source": "official",
+  "page": "https://penpot.app",
+  "image": "https://site-assets.plasmic.app/bd5cdab7f749bba987c8de1f2cbdff60.webp",
+  "width": 800,
+  "height": 470,
+  "bytes": 21914,
+  "checked_at": "2026-10-01T16:48:07.008Z"
+ },
+ "pgadmin": {
+  "file": "/previews/pgadmin.jpg",
+  "source": "github",
+  "page": "https://github.com/pgadmin-org/pgadmin4",
+  "image": "https://repository-images.githubusercontent.com/82552640/1c8966fb-7426-4a54-8a36-71639cb42622",
+  "width": 800,
+  "height": 400,
+  "bytes": 35616,
+  "checked_at": "2026-10-01T16:48:51.398Z"
+ },
+ "pgvector": {
+  "file": "/previews/pgvector.jpg",
+  "source": "official",
+  "page": "https://github.com/pgvector/pgvector",
+  "image": "https://opengraph.githubassets.com/357ed9dac2467b751fb167fe65f3b1640a03a03059d350be9227465d40536455/pgvector/pgvector",
+  "width": 800,
+  "height": 400,
+  "bytes": 14501,
+  "checked_at": "2026-10-01T16:49:00.142Z"
+ },
+ "photoprism": {
+  "file": "/previews/photoprism.jpg",
+  "source": "official",
+  "page": "https://photoprism.app",
+  "image": "https://i.photoprism.app/prism?cover=64&style=centered+dark",
+  "width": 800,
+  "height": 420,
+  "bytes": 16730,
+  "checked_at": "2026-10-01T16:48:37.523Z"
+ },
+ "phpmyadmin": {
+  "file": "/previews/phpmyadmin.jpg",
+  "source": "official",
+  "page": "https://www.phpmyadmin.net",
+  "image": "https://www.phpmyadmin.net/static/images/logo-og.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 15725,
+  "checked_at": "2026-10-01T16:48:51.653Z"
+ },
+ "piwigo": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:38.351Z"
+ },
+ "plane": {
+  "file": "/previews/plane.jpg",
+  "source": "official",
+  "page": "http://plane.so",
+  "image": "https://plane.so/opengraph-image-4usi79.png?opengraph-image.4436jy9bcexkf.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 22381,
+  "checked_at": "2026-10-01T16:48:07.094Z"
+ },
+ "planka": {
+  "file": "/previews/planka.jpg",
+  "source": "official",
+  "page": "https://planka.app",
+  "image": "https://planka.app/assets/marketing/og-image.png?v=6a87a0a1",
+  "width": 800,
+  "height": 417,
+  "bytes": 17087,
+  "checked_at": "2026-10-01T16:48:24.163Z"
+ },
+ "plasmic": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:41.708Z"
+ },
+ "plausible": {
+  "file": "/previews/plausible.jpg",
+  "source": "official",
+  "page": "https://plausible.io",
+  "image": "https://plausible.io/assets/images/plausible_promo.jpg",
+  "width": 800,
+  "height": 419,
+  "bytes": 23478,
+  "checked_at": "2026-10-01T16:48:10.002Z"
+ },
+ "playwright": {
+  "file": "/previews/playwright.jpg",
+  "source": "official",
+  "page": "https://playwright.dev",
+  "image": "https://repository-images.githubusercontent.com/221981891/8c5c6942-c91f-4df1-825f-4cf474056bd7",
+  "width": 800,
+  "height": 400,
+  "bytes": 11596,
+  "checked_at": "2026-10-01T16:48:54.773Z"
+ },
+ "pocketbase": {
+  "file": "/previews/pocketbase.jpg",
+  "source": "official",
+  "page": "https://pocketbase.io",
+  "image": "https://pocketbase.io/images/og.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 15747,
+  "checked_at": "2026-10-01T16:48:48.231Z"
+ },
+ "podman": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:50.233Z"
+ },
+ "portainer": {
+  "file": "/previews/portainer.jpg",
+  "source": "official",
+  "page": "https://www.portainer.io",
+  "image": "https://www.portainer.io/assets/img/portainer-generic-hero.png",
+  "width": 800,
+  "height": 450,
+  "bytes": 22936,
+  "checked_at": "2026-10-01T16:48:49.981Z"
+ },
+ "postal": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:23.144Z"
+ },
+ "posthog": {
+  "file": "/previews/posthog.jpg",
+  "source": "official",
+  "page": "https://posthog.com",
+  "image": "https://posthog.com/images/og/default.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 35873,
+  "checked_at": "2026-10-01T16:48:09.322Z"
+ },
+ "postiz": {
+  "file": "/previews/postiz.jpg",
+  "source": "official",
+  "page": "https://github.com/gitroomhq/postiz-app",
+  "image": "https://repository-images.githubusercontent.com/664013991/8b16b484-683a-4ed9-a132-6d070704cc12",
+  "width": 800,
+  "height": 421,
+  "bytes": 25804,
+  "checked_at": "2026-10-01T16:49:26.460Z"
+ },
+ "prefect": {
+  "file": "/previews/prefect.jpg",
+  "source": "official",
+  "page": "https://www.prefect.io",
+  "image": "https://www.prefect.io/og/home.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 24455,
+  "checked_at": "2026-10-01T16:48:54.507Z"
+ },
+ "prestashop": {
+  "file": "/previews/prestashop.jpg",
+  "source": "official",
+  "page": "https://www.prestashop.com",
+  "image": "https://dsv16luwmjfsl.cloudfront.net/wp-content/uploads/2023/02/home.jpg",
+  "width": 800,
+  "height": 408,
+  "bytes": 28827,
+  "checked_at": "2026-10-01T16:49:16.412Z"
+ },
+ "pretix": {
+  "file": "/previews/pretix.jpg",
+  "source": "official",
+  "page": "https://pretix.eu",
+  "image": "https://static.pretix.cloud/static/pretixeu/img/opengraph.74fa3c379c1d.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 15049,
+  "checked_at": "2026-10-01T16:49:32.864Z"
+ },
+ "private-gpt": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:57.333Z"
+ },
+ "prometheus": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:29.026Z"
+ },
+ "psitransfer": {
+  "file": "/previews/psitransfer.jpg",
+  "source": "official",
+  "page": "https://github.com/psi-4ward/psitransfer",
+  "image": "https://opengraph.githubassets.com/62ac45b5550bc948c129234a8b2602531c5fba36ecd4108e775b1f7f2be95d6f/psi-4ward/psitransfer",
+  "width": 800,
+  "height": 400,
+  "bytes": 15319,
+  "checked_at": "2026-10-01T16:48:39.519Z"
+ },
+ "pulumi": {
+  "file": "/previews/pulumi.jpg",
+  "source": "official",
+  "page": "https://www.pulumi.com",
+  "image": "https://www.pulumi.com/images/home/home-meta.png",
+  "width": 800,
+  "height": 419,
+  "bytes": 23032,
+  "checked_at": "2026-10-01T16:48:51.167Z"
+ },
+ "pydio": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:36.841Z"
+ },
+ "qdrant": {
+  "file": "/previews/qdrant.jpg",
+  "source": "official",
+  "page": "https://qdrant.tech",
+  "image": "https://qdrant.tech/images/social_preview.png",
+  "width": 800,
+  "height": 400,
+  "bytes": 33072,
+  "checked_at": "2026-10-01T16:48:59.548Z"
+ },
+ "quivr": {
+  "file": "/previews/quivr.jpg",
+  "source": "github",
+  "page": "https://github.com/The-Vibe-Company/quivr",
+  "image": "https://repository-images.githubusercontent.com/640079149/6fe15a1f-b9b1-4d6b-acb7-8d5a6feb9414",
+  "width": 800,
+  "height": 400,
+  "bytes": 20597,
+  "checked_at": "2026-10-01T16:48:57.102Z"
+ },
+ "radicale": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:17.583Z"
+ },
+ "ragflow": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:56.869Z"
+ },
+ "rallly": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:20.242Z"
+ },
+ "rancher-desktop": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:50.128Z"
+ },
+ "rclone": {
+  "file": "/previews/rclone.jpg",
+  "source": "official",
+  "page": "https://rclone.org",
+  "image": "https://rclone.org/img/rclone-1200x630.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 11879,
+  "checked_at": "2026-10-01T16:48:37.179Z"
+ },
+ "redash": {
+  "file": "/previews/redash.jpg",
+  "source": "official",
+  "page": "https://redash.io",
+  "image": "https://redash.io/assets/images/social-facebook-1200x630.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 26019,
+  "checked_at": "2026-10-01T16:48:25.891Z"
+ },
+ "redmine": {
+  "file": "/previews/redmine.jpg",
+  "source": "official",
+  "page": "https://github.com/redmine/redmine",
+  "image": "https://opengraph.githubassets.com/68ef6cf4a8b0c7c29414f8a1f8da8772df73dc1b3e20c198e433515175fba2b4/redmine/redmine",
+  "width": 800,
+  "height": 400,
+  "bytes": 20854,
+  "checked_at": "2026-10-01T16:49:28.308Z"
+ },
+ "restic": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:39.723Z"
+ },
+ "revolt": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:19.287Z"
+ },
+ "robotframework": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:54.767Z"
+ },
+ "rocket-chat": {
+  "file": "/previews/rocket-chat.jpg",
+  "source": "official",
+  "page": "https://rocket.chat/",
+  "image": "https://cdn.prod.website-files.com/611a19b9853b7414a0f6b3f6/686fbd4a2a7b7a789d821c45_Secure%20CommsOS%20hero.png",
+  "width": 800,
+  "height": 418,
+  "bytes": 24592,
+  "checked_at": "2026-10-01T16:48:08.904Z"
+ },
+ "roundcube": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:22.505Z"
+ },
+ "rudderstack": {
+  "file": "/previews/rudderstack.jpg",
+  "source": "official",
+  "page": "https://www.rudderstack.com",
+  "image": "https://rs-og.vercel.app/api/og?title=RudderStack+%7C+The+Agentic+Customer+Data+Platform",
+  "width": 800,
+  "height": 419,
+  "bytes": 10697,
+  "checked_at": "2026-10-01T16:48:27.287Z"
+ },
+ "rustdesk": {
+  "file": "/previews/rustdesk.jpg",
+  "source": "official",
+  "page": "https://rustdesk.com",
+  "image": "https://rustdesk.com/_astro/default.BnGe5sEj_Mm9fb.webp",
+  "width": 800,
+  "height": 419,
+  "bytes": 26499,
+  "checked_at": "2026-10-01T16:49:03.461Z"
+ },
+ "saleor": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:14.675Z"
+ },
+ "seafile": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:35.566Z"
+ },
+ "semgrep": {
+  "file": "/previews/semgrep.jpg",
+  "source": "official",
+  "page": "https://semgrep.dev",
+  "image": "https://semgrep.dev/assets/content/global/blog-thumbnail-default.png",
+  "width": 800,
+  "height": 450,
+  "bytes": 20501,
+  "checked_at": "2026-10-01T16:48:34.422Z"
+ },
+ "send": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:39.050Z"
+ },
+ "sentry": {
+  "file": "/previews/sentry.jpg",
+  "source": "official",
+  "page": "https://sentry.io",
+  "image": "https://sentry.io/_astro/home-hero-meta.DJDejDMD.webp",
+  "width": 800,
+  "height": 420,
+  "bytes": 31224,
+  "checked_at": "2026-10-01T16:48:29.861Z"
+ },
+ "seonaut": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:34.190Z"
+ },
+ "serpbear": {
+  "file": "/previews/serpbear.jpg",
+  "source": "official",
+  "page": "https://docs.serpbear.com",
+  "image": "https://docs.serpbear.com/img/docusaurus-social-card.jpg",
+  "width": 800,
+  "height": 450,
+  "bytes": 23006,
+  "checked_at": "2026-10-01T16:49:33.814Z"
+ },
+ "sharex": {
+  "file": "/previews/sharex.jpg",
+  "source": "official",
+  "page": "https://getsharex.com",
+  "image": "https://getsharex.com/img/ShareX_Card_Large.png",
+  "width": 800,
+  "height": 400,
+  "bytes": 14254,
+  "checked_at": "2026-10-01T16:48:44.704Z"
+ },
+ "shiori": {
+  "file": "/previews/shiori.jpg",
+  "source": "official",
+  "page": "https://github.com/go-shiori/shiori",
+  "image": "https://repository-images.githubusercontent.com/118617559/6e24c780-dd7f-11e9-8d11-1e9fef05c9eb",
+  "width": 800,
+  "height": 392,
+  "bytes": 42875,
+  "checked_at": "2026-10-01T16:49:31.403Z"
+ },
+ "shopware": {
+  "file": "/previews/shopware.jpg",
+  "source": "official",
+  "page": "https://www.shopware.com",
+  "image": "https://images.ctfassets.net/nqzs8zsepqpi/7f1d5mBYgcP8rCOWho4vO6/32f04a0b3bb687d2df562966d5099138/og_image.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 12972,
+  "checked_at": "2026-10-01T16:49:17.603Z"
+ },
+ "shotcut": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:42.890Z"
+ },
+ "signoz": {
+  "file": "/previews/signoz.jpg",
+  "source": "official",
+  "page": "https://signoz.io",
+  "image": "https://signoz.io/img/signoz-meta-image.webp",
+  "width": 800,
+  "height": 420,
+  "bytes": 23557,
+  "checked_at": "2026-10-01T16:48:29.576Z"
+ },
+ "silverbullet": {
+  "file": "/previews/silverbullet.jpg",
+  "source": "official",
+  "page": "https://silverbullet.md",
+  "image": "https://silverbullet.md/media/og/default.jpg",
+  "width": 800,
+  "height": 420,
+  "bytes": 37052,
+  "checked_at": "2026-10-01T16:48:15.962Z"
+ },
+ "siteone-crawler": {
+  "file": "/previews/siteone-crawler.jpg",
+  "source": "official",
+  "page": "https://crawler.siteone.io",
+  "image": "https://crawler.siteone.io/siteone-crawler-collage.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 46146,
+  "checked_at": "2026-10-01T16:49:34.192Z"
+ },
+ "siyuan": {
+  "file": "/previews/siyuan.jpg",
+  "source": "github",
+  "page": "https://github.com/siyuan-note/siyuan",
+  "image": "https://repository-images.githubusercontent.com/291438522/83d02045-6956-4cbe-b255-62cf230b655f",
+  "width": 800,
+  "height": 400,
+  "bytes": 28711,
+  "checked_at": "2026-10-01T16:48:13.168Z"
+ },
+ "solidinvoice": {
+  "file": "/previews/solidinvoice.jpg",
+  "source": "official",
+  "page": "https://github.com/SolidInvoice/SolidInvoice",
+  "image": "https://opengraph.githubassets.com/eb6535c01914cb72283f622531580caa1963e146a45c612493fbf063bcf01fbc/SolidInvoice/SolidInvoice",
+  "width": 800,
+  "height": 400,
+  "bytes": 17644,
+  "checked_at": "2026-10-01T16:49:08.020Z"
+ },
+ "sops": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:34.071Z"
+ },
+ "spacebar": {
+  "file": "/previews/spacebar.jpg",
+  "source": "github",
+  "page": "https://github.com/spacebarchat/server",
+  "image": "https://repository-images.githubusercontent.com/316730850/24e69d23-3897-4ba7-a684-07611a780f78",
+  "width": 800,
+  "height": 400,
+  "bytes": 30590,
+  "checked_at": "2026-10-01T16:48:19.958Z"
+ },
+ "spree": {
+  "file": "/previews/spree.jpg",
+  "source": "official",
+  "page": "https://spreecommerce.org",
+  "image": "https://spreecommerce.org/wp-content/uploads/2026/03/Spree-Commerce-Open-Source-eCommerce-Platform-B2B-Marketplace-Multi-tenant-1200-x-630.webp",
+  "width": 800,
+  "height": 420,
+  "bytes": 7825,
+  "checked_at": "2026-10-01T16:49:18.153Z"
+ },
+ "stable-diffusion-webui": {
+  "file": "/previews/stable-diffusion-webui.jpg",
+  "source": "official",
+  "page": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+  "image": "https://opengraph.githubassets.com/6db068c538267136aa7755ef5eb6cd514818d2f5a80392e932c88b21a2d7c9ae/AUTOMATIC1111/stable-diffusion-webui",
+  "width": 800,
+  "height": 400,
+  "bytes": 18843,
+  "checked_at": "2026-10-01T16:48:58.951Z"
+ },
+ "stalwart": {
+  "file": "/previews/stalwart.jpg",
+  "source": "official",
+  "page": "https://stalw.art",
+  "image": "https://stalw.art/img/stalwart-social-card.jpg",
+  "width": 800,
+  "height": 450,
+  "bytes": 14336,
+  "checked_at": "2026-10-01T16:48:22.330Z"
+ },
+ "standard-notes": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:15.949Z"
+ },
+ "stirling-pdf": {
+  "file": "/previews/stirling-pdf.jpg",
+  "source": "github",
+  "page": "https://github.com/Stirling-Tools/Stirling-PDF",
+  "image": "https://repository-images.githubusercontent.com/594155488/e847631d-8898-4616-b558-8a9dde7f743a",
+  "width": 800,
+  "height": 400,
+  "bytes": 9163,
+  "checked_at": "2026-10-01T16:48:05.416Z"
+ },
+ "strapi": {
+  "file": "/previews/strapi.jpg",
+  "source": "official",
+  "page": "https://strapi.io",
+  "image": "https://delicate-dawn-ac25646e6d.media.strapiapp.com/strapi-cover_1fabc982ce.png",
+  "width": 800,
+  "height": 345,
+  "bytes": 5264,
+  "checked_at": "2026-10-01T16:48:52.173Z"
+ },
+ "suitecrm": {
+  "file": "/previews/suitecrm.jpg",
+  "source": "github",
+  "page": "https://github.com/SuiteCRM/SuiteCRM",
+  "image": "https://repository-images.githubusercontent.com/13044600/42331400-886c-11e9-99c5-405e8b0ca823",
+  "width": 800,
+  "height": 400,
+  "bytes": 8989,
+  "checked_at": "2026-10-01T16:49:04.571Z"
+ },
+ "supabase": {
+  "file": "/previews/supabase.jpg",
+  "source": "official",
+  "page": "https://supabase.com",
+  "image": "https://supabase.com/images/og/supabase-og.png",
+  "width": 800,
+  "height": 400,
+  "bytes": 11021,
+  "checked_at": "2026-10-01T16:48:05.174Z"
+ },
+ "superset": {
+  "file": "/previews/superset.jpg",
+  "source": "official",
+  "page": "https://superset.apache.org",
+  "image": "https://superset.apache.org/img/superset-og-image.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 25109,
+  "checked_at": "2026-10-01T16:48:25.765Z"
+ },
+ "supertokens": {
+  "file": "/previews/supertokens.jpg",
+  "source": "official",
+  "page": "https://supertokens.com",
+  "image": "https://supertokens.com/assets/images/website/og/homepage.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 15653,
+  "checked_at": "2026-10-01T16:48:32.508Z"
+ },
+ "suricata": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:35.441Z"
+ },
+ "surrealdb": {
+  "file": "/previews/surrealdb.jpg",
+  "source": "official",
+  "page": "https://github.com/surrealdb/surrealdb",
+  "image": "https://repository-images.githubusercontent.com/436658287/48975688-cf92-4b36-9fe1-fbe0a492a74b",
+  "width": 800,
+  "height": 400,
+  "bytes": 19511,
+  "checked_at": "2026-10-01T16:49:25.557Z"
+ },
+ "surveyjs": {
+  "file": "/previews/surveyjs.jpg",
+  "source": "github",
+  "page": "https://github.com/surveyjs/survey-library",
+  "image": "https://repository-images.githubusercontent.com/40705341/527a98ca-a1d0-482e-a472-014998d08a32",
+  "width": 800,
+  "height": 400,
+  "bytes": 29626,
+  "checked_at": "2026-10-01T16:49:13.679Z"
+ },
+ "sylius": {
+  "file": "/previews/sylius.jpg",
+  "source": "official",
+  "page": "https://sylius.com",
+  "image": "https://sylius.com/wp-content/uploads/2023/10/Artboard1.png",
+  "width": 800,
+  "height": 450,
+  "bytes": 23876,
+  "checked_at": "2026-10-01T16:49:15.713Z"
+ },
+ "synapse": {
+  "file": "/previews/synapse.jpg",
+  "source": "official",
+  "page": "https://element.io",
+  "image": "https://static.element.io/images/open-graph-large.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 28275,
+  "checked_at": "2026-10-01T16:48:18.929Z"
+ },
+ "syncthing": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:36.211Z"
+ },
+ "taiga": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:12.039Z"
+ },
+ "teable": {
+  "file": "/previews/teable.jpg",
+  "source": "official",
+  "page": "https://teable.io",
+  "image": "https://teable.ai/assets/images/og-image.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 6153,
+  "checked_at": "2026-10-01T16:48:25.398Z"
+ },
+ "tekton": {
+  "file": "/previews/tekton.jpg",
+  "source": "official",
+  "page": "https://tekton.dev",
+  "image": "https://tekton.dev/featured-background.jpeg",
+  "width": 800,
+  "height": 450,
+  "bytes": 28348,
+  "checked_at": "2026-10-01T16:48:47.649Z"
+ },
+ "temporal": {
+  "file": "/previews/temporal.jpg",
+  "source": "official",
+  "page": "https://temporal.io",
+  "image": "https://temporal.io/images/open-graph/shiny.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 8660,
+  "checked_at": "2026-10-01T16:48:54.017Z"
+ },
+ "tesseract": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:58.709Z"
+ },
+ "text-generation-webui": {
+  "file": "/previews/text-generation-webui.jpg",
+  "source": "official",
+  "page": "https://github.com/oobabooga/text-generation-webui",
+  "image": "https://opengraph.githubassets.com/d15a7aa37f9b1a5e55b4eb9e47a9989a5d368776c969223cb4b9c555ad7ea037/oobabooga/textgen",
+  "width": 800,
+  "height": 400,
+  "bytes": 20680,
+  "checked_at": "2026-10-01T16:49:24.459Z"
+ },
+ "tigervnc": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:03.998Z"
+ },
+ "tldraw": {
+  "file": "/previews/tldraw.jpg",
+  "source": "github",
+  "page": "https://github.com/tldraw/tldraw",
+  "image": "https://repository-images.githubusercontent.com/365739812/92710d91-3a08-41f4-8aaf-1037d299bd2d",
+  "width": 800,
+  "height": 400,
+  "bytes": 8353,
+  "checked_at": "2026-10-01T16:48:40.819Z"
+ },
+ "tolgee": {
+  "file": "/previews/tolgee.jpg",
+  "source": "official",
+  "page": "https://tolgee.io",
+  "image": "https://framerusercontent.com/assets/od4noC0fhYjE0sFtp3pHTfh6A2U.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 22307,
+  "checked_at": "2026-10-01T16:49:33.280Z"
+ },
+ "tooljet": {
+  "file": "/previews/tooljet.jpg",
+  "source": "official",
+  "page": "https://github.com/ToolJet/ToolJet",
+  "image": "https://repository-images.githubusercontent.com/352933140/1f60da49-6bb2-4cfb-86f4-7d84d99743c2",
+  "width": 800,
+  "height": 400,
+  "bytes": 14492,
+  "checked_at": "2026-10-01T16:49:19.507Z"
+ },
+ "trac": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:24.985Z"
+ },
+ "tracim": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:31.512Z"
+ },
+ "traefik": {
+  "file": "/previews/traefik.jpg",
+  "source": "official",
+  "page": "https://traefik.io",
+  "image": "https://traefik.io/images/traefik-labs-cover.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 12358,
+  "checked_at": "2026-10-01T16:48:49.384Z"
+ },
+ "traggo": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:10.947Z"
+ },
+ "trilium": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:13.148Z"
+ },
+ "trivy": {
+  "file": "/previews/trivy.jpg",
+  "source": "official",
+  "page": "https://trivy.dev",
+  "image": "https://trivy.dev/assets/images/trivy-horizontal-featured-image.png",
+  "width": 800,
+  "height": 440,
+  "bytes": 17131,
+  "checked_at": "2026-10-01T16:48:34.271Z"
+ },
+ "trudesk": {
+  "file": "/previews/trudesk.jpg",
+  "source": "official",
+  "page": "https://github.com/polonel/Trudesk",
+  "image": "https://opengraph.githubassets.com/c9c209600a8d1f7132ef13113433057610f36b5465170833d78a874390bc42c7/polonel/trudesk",
+  "width": 800,
+  "height": 400,
+  "bytes": 17737,
+  "checked_at": "2026-10-01T16:49:30.404Z"
+ },
+ "tryton": {
+  "file": "/previews/tryton.jpg",
+  "source": "official",
+  "page": "https://github.com/tryton/tryton",
+  "image": "https://opengraph.githubassets.com/154943a55faded327f903d44f8807863a577d04e07e6c3e5cde1801ac64a2e67/tryton/tryton",
+  "width": 800,
+  "height": 400,
+  "bytes": 11898,
+  "checked_at": "2026-10-01T16:49:32.419Z"
+ },
+ "twenty": {
+  "file": "/previews/twenty.jpg",
+  "source": "official",
+  "page": "https://twenty.com",
+  "image": "https://twenty.com/images/og/default.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 2124,
+  "checked_at": "2026-10-01T16:48:08.015Z"
+ },
+ "typebot": {
+  "file": "/previews/typebot.jpg",
+  "source": "official",
+  "page": "https://github.com/baptisteArno/typebot.io",
+  "image": "https://repository-images.githubusercontent.com/429736266/def0f4d3-93d9-4ffb-8b3a-e3c441c21f4d",
+  "width": 800,
+  "height": 420,
+  "bytes": 19717,
+  "checked_at": "2026-10-01T16:49:21.342Z"
+ },
+ "typesense": {
+  "file": "/previews/typesense.jpg",
+  "source": "official",
+  "page": "https://typesense.org",
+  "image": "https://typesense.org/opengraph.png",
+  "width": 800,
+  "height": 419,
+  "bytes": 18873,
+  "checked_at": "2026-10-01T16:48:49.686Z"
+ },
+ "umami": {
+  "file": "/previews/umami.jpg",
+  "source": "official",
+  "page": "https://umami.is",
+  "image": "https://umami.is/opengraph-image-j8qpfc.png?opengraph-image.061x5-78_1ett.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 25066,
+  "checked_at": "2026-10-01T16:48:09.577Z"
+ },
+ "univer": {
+  "file": "/previews/univer.jpg",
+  "source": "github",
+  "page": "https://github.com/dream-num/univer",
+  "image": "https://repository-images.githubusercontent.com/543101941/085c0737-5cb6-434f-ac47-1c26f51c46d0",
+  "width": 800,
+  "height": 400,
+  "bytes": 18188,
+  "checked_at": "2026-10-01T16:48:26.261Z"
+ },
+ "unlighthouse": {
+  "file": "/previews/unlighthouse.jpg",
+  "source": "official",
+  "page": "https://unlighthouse.dev",
+  "image": "https://unlighthouse.dev/_og/s/c_NuxtSeoSatori,title_Unlighthouse,description_~TGlrZSBHb29nbGUgTGlnaHRob3VzZSwgYnV0IGl0IHNjYW5zIGV2ZXJ5IHNpbmdsZSBwYWdlLg,theme_~I2E4NTVmNw,ch_1g7qzvgumiqf6.png",
+  "width": 800,
+  "height": 400,
+  "bytes": 8277,
+  "checked_at": "2026-10-01T16:49:35.386Z"
+ },
+ "uptime-kuma": {
+  "file": "/previews/uptime-kuma.jpg",
+  "source": "github",
+  "page": "https://github.com/louislam/uptime-kuma",
+  "image": "https://repository-images.githubusercontent.com/382496361/f21b61f5-693a-4925-9f1f-fea237ade223",
+  "width": 800,
+  "height": 400,
+  "bytes": 15384,
+  "checked_at": "2026-10-01T16:48:27.565Z"
+ },
+ "uvdesk": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:05.822Z"
+ },
+ "vaultwarden": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:06.232Z"
+ },
+ "velero": {
+  "file": "/previews/velero.jpg",
+  "source": "github",
+  "page": "https://github.com/velero-io/velero",
+  "image": "https://repository-images.githubusercontent.com/99143276/43f37cb6-08f4-462b-a321-1cce2476e3fe",
+  "width": 800,
+  "height": 400,
+  "bytes": 14290,
+  "checked_at": "2026-10-01T16:48:40.594Z"
+ },
+ "vendure": {
+  "file": "/previews/vendure.jpg",
+  "source": "official",
+  "page": "https://vendure.io",
+  "image": "https://vendure.io/api/og/home",
+  "width": 800,
+  "height": 420,
+  "bytes": 21278,
+  "checked_at": "2026-10-01T16:49:15.857Z"
+ },
+ "victoria-metrics": {
+  "file": "/previews/victoria-metrics.jpg",
+  "source": "official",
+  "page": "https://victoriametrics.com",
+  "image": "https://victoriametrics.com/images/preview/victoria-metrics-home-100.webp",
+  "width": 800,
+  "height": 418,
+  "bytes": 23081,
+  "checked_at": "2026-10-01T16:48:29.097Z"
+ },
+ "vikunja": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:11.531Z"
+ },
+ "vitepress": {
+  "file": "/previews/vitepress.jpg",
+  "source": "official",
+  "page": "https://vitepress.dev",
+  "image": "https://vitepress.dev/vitepress-og.jpg",
+  "width": 800,
+  "height": 400,
+  "bytes": 19134,
+  "checked_at": "2026-10-01T16:48:53.397Z"
+ },
+ "vllm": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:55.905Z"
+ },
+ "wallos": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:32.105Z"
+ },
+ "wazuh": {
+  "file": "/previews/wazuh.jpg",
+  "source": "official",
+  "page": "https://wazuh.com",
+  "image": "https://wazuh.com/uploads/2024/01/wazuh-cover.png",
+  "width": 800,
+  "height": 511,
+  "bytes": 4917,
+  "checked_at": "2026-10-01T16:48:35.255Z"
+ },
+ "wbo": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:41.655Z"
+ },
+ "weaviate": {
+  "file": "/previews/weaviate.jpg",
+  "source": "official",
+  "page": "https://weaviate.io",
+  "image": "https://weaviate.io/og/website/home.jpg",
+  "width": 800,
+  "height": 400,
+  "bytes": 23635,
+  "checked_at": "2026-10-01T16:48:59.668Z"
+ },
+ "weblate": {
+  "file": "/previews/weblate.jpg",
+  "source": "official",
+  "page": "https://github.com/WeblateOrg/weblate",
+  "image": "https://repository-images.githubusercontent.com/3559019/c5c40680-8781-11e9-9419-8bf4e40e7061",
+  "width": 800,
+  "height": 420,
+  "bytes": 29025,
+  "checked_at": "2026-10-01T16:49:20.596Z"
+ },
+ "wekan": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:23.876Z"
+ },
+ "whisper": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:57.883Z"
+ },
+ "whisper-asr-webservice": {
+  "file": "/previews/whisper-asr-webservice.jpg",
+  "source": "official",
+  "page": "https://github.com/ahmetoner/whisper-asr-webservice",
+  "image": "https://opengraph.githubassets.com/76cdc55f6d09a9d25b4473207c722781518680989461c15762c01a0c4014c421/ahmetoner/whisper-asr-webservice",
+  "width": 800,
+  "height": 400,
+  "bytes": 16705,
+  "checked_at": "2026-10-01T16:49:24.659Z"
+ },
+ "whisper-cpp": {
+  "file": "/previews/whisper-cpp.jpg",
+  "source": "official",
+  "page": "https://github.com/ggml-org/whisper.cpp",
+  "image": "https://repository-images.githubusercontent.com/541269386/2ca10f8c-2e85-4617-af0f-255330921384",
+  "width": 800,
+  "height": 400,
+  "bytes": 11421,
+  "checked_at": "2026-10-01T16:48:58.527Z"
+ },
+ "whisperx": {
+  "file": "/previews/whisperx.jpg",
+  "source": "official",
+  "page": "https://github.com/m-bain/whisperX",
+  "image": "https://opengraph.githubassets.com/23051b1545c10a187a5f40ac519022b0b5aeeb9512a8c583e841822d2894a9f0/m-bain/whisperX",
+  "width": 800,
+  "height": 400,
+  "bytes": 20273,
+  "checked_at": "2026-10-01T16:48:58.441Z"
+ },
+ "wikijs": {
+  "file": "/previews/wikijs.jpg",
+  "source": "github",
+  "page": "https://github.com/requarks/wiki",
+  "image": "https://repository-images.githubusercontent.com/65848095/7655d480-b066-11e9-991b-81088c474331",
+  "width": 640,
+  "height": 320,
+  "bytes": 12241,
+  "checked_at": "2026-10-01T16:48:14.110Z"
+ },
+ "windmill": {
+  "file": "/previews/windmill.jpg",
+  "source": "official",
+  "page": "https://www.windmill.dev",
+  "image": "https://www.windmill.dev/img/og_card.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 27677,
+  "checked_at": "2026-10-01T16:48:53.467Z"
+ },
+ "woocommerce": {
+  "file": "/previews/woocommerce.jpg",
+  "source": "official",
+  "page": "https://woocommerce.com",
+  "image": "https://woocommerce.com/wp-content/uploads/2025/02/woo-take-control-of-your-success.jpg",
+  "width": 800,
+  "height": 420,
+  "bytes": 34126,
+  "checked_at": "2026-10-01T16:49:16.275Z"
+ },
+ "woodpecker": {
+  "file": "/previews/woodpecker.jpg",
+  "source": "github",
+  "page": "https://github.com/woodpecker-ci/woodpecker",
+  "image": "https://repository-images.githubusercontent.com/179344069/53c53c80-3e8c-11ea-84eb-44079754b680",
+  "width": 800,
+  "height": 412,
+  "bytes": 8893,
+  "checked_at": "2026-10-01T16:48:47.413Z"
+ },
+ "writefreely": {
+  "file": "/previews/writefreely.jpg",
+  "source": "official",
+  "page": "https://github.com/writefreely/writefreely",
+  "image": "https://repository-images.githubusercontent.com/86956808/cd618b80-cee7-11e9-8579-e6a6e8f21ddb",
+  "width": 800,
+  "height": 400,
+  "bytes": 9557,
+  "checked_at": "2026-10-01T16:49:22.668Z"
+ },
+ "xwiki": {
+  "file": null,
+  "checked_at": "2026-10-01T16:49:31.786Z"
+ },
+ "zabbix": {
+  "file": "/previews/zabbix.jpg",
+  "source": "official",
+  "page": "https://www.zabbix.com",
+  "image": "https://assets.zabbix.com/img/banners/og/index_1200x628.png",
+  "width": 800,
+  "height": 419,
+  "bytes": 39527,
+  "checked_at": "2026-10-01T16:48:28.754Z"
+ },
+ "zammad": {
+  "file": "/previews/zammad.jpg",
+  "source": "official",
+  "page": "https://zammad.com",
+  "image": "https://zammad.com/media/assets/assets/images/1601169394-1790275795/sharing-preview-1200x630-crop-q85.jpg",
+  "width": 800,
+  "height": 420,
+  "bytes": 7878,
+  "checked_at": "2026-10-01T16:48:20.168Z"
+ },
+ "zap": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:34.330Z"
+ },
+ "zitadel": {
+  "file": "/previews/zitadel.jpg",
+  "source": "github",
+  "page": "https://github.com/zitadel/zitadel",
+  "image": "https://repository-images.githubusercontent.com/247714750/50c7f6bd-54bc-4878-84cb-9e05af2c782f",
+  "width": 800,
+  "height": 418,
+  "bytes": 10378,
+  "checked_at": "2026-10-01T16:48:32.005Z"
+ },
+ "zulip": {
+  "file": null,
+  "checked_at": "2026-10-01T16:48:18.238Z"
+ }
+}
