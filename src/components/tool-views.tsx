@@ -342,6 +342,12 @@ export function KeyFacts({
             {`掲載ツール全体の上位${stars.topPercent}%`}
           </>
         )}
+        {tool.star_gain && tool.star_gain.gain > 0 && (
+          <>
+            <br />
+            {`直近${tool.star_gain.days}日間で+${tool.star_gain.gain.toLocaleString("ja-JP")}`}
+          </>
+        )}
       </>
     ) : undefined;
 

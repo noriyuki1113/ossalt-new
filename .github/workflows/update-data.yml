@@ -76,7 +76,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data-source/tools.json public/data/tools.json public/data/meta.json public/data/categories.json
+          git add data-source/tools.json data-source/star-history.json public/data/tools.json public/data/meta.json public/data/categories.json
           if git diff --cached --quiet; then
             echo "更新なし"
           else

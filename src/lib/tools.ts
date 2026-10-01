@@ -73,6 +73,8 @@ export type Tool = {
   aliases: string[];
   /** 主な代替対象のほかに、代わりになるSaaS（data-source/extra-alternatives.json） */
   also_competitors?: string[];
+  /** 直近30日（履歴が短ければ記録のある期間）のスターの増加 */
+  star_gain?: { gain: number; days: number; from: string } | null;
   /** 共有用の画像（公式サイト or GitHub）。public/previews/ に保存したもの */
   preview?: { src: string; source: "official" | "github"; width: number; height: number } | null;
 };

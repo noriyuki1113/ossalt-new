@@ -73,6 +73,11 @@
    "エヌエイトエヌ"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 393,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/n8n.jpg",
    "source": "official",
@@ -133,6 +138,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 46,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -189,6 +199,11 @@
    "オラマ"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 334,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/ollama.jpg",
    "source": "official",
@@ -214,7 +229,7 @@
   "license": "Apache-2.0（改変条項あり）",
   "last_commit": "2026-09-27T17:19:54Z",
   "created_at": "2023-04-12T07:40:24Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -254,6 +269,11 @@
    "ディファイ"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 182,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/dify.jpg",
    "source": "official",
@@ -279,7 +299,7 @@
   "license": "Open WebUI License",
   "last_commit": "2026-09-30T17:06:01Z",
   "created_at": "2023-10-06T22:08:27Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -315,6 +335,11 @@
    "オープンウェブユーアイ"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 527,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/open-webui.jpg",
    "source": "official",
@@ -360,6 +385,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 227,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -407,6 +437,11 @@
    "ラングフロー"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 172,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/langflow.jpg",
    "source": "github",
@@ -457,6 +492,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 732,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/comfyui.jpg",
    "source": "official",
@@ -526,6 +566,11 @@
    "えくすかりどろー"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 448,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/excalidraw.jpg",
    "source": "official",
@@ -591,6 +636,11 @@
    "ラストデスク"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 148,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/rustdesk.jpg",
    "source": "official",
@@ -655,6 +705,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 348,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -730,6 +785,11 @@
    "スーパーベース"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 108,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/supabase.jpg",
    "source": "official",
@@ -755,7 +815,7 @@
   "license": "MIT",
   "last_commit": "2026-08-31T17:19:19Z",
   "created_at": "2022-09-16T20:02:54Z",
-  "freshness_days": 30,
+  "freshness_days": 31,
   "scorecard_score": 4.3,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -788,6 +848,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 258,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -849,6 +914,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 178,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/odoo.jpg",
    "source": "official",
@@ -909,6 +979,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 397,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/immich.jpg",
    "source": "official",
@@ -986,6 +1061,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 57,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/superset.jpg",
    "source": "official",
@@ -1048,6 +1128,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 44,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/lobechat.jpg",
    "source": "official",
@@ -1107,6 +1192,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 287,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -1174,6 +1264,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 102,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -1245,6 +1340,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 292,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/stirling-pdf.jpg",
    "source": "github",
@@ -1321,6 +1421,11 @@
    "グラファナ"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 66,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/grafana.jpg",
    "source": "official",
@@ -1379,6 +1484,11 @@
    "アップタイムクマ"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 197,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/uptime-kuma.jpg",
    "source": "github",
@@ -1440,6 +1550,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 16,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -1500,6 +1615,11 @@
    "シンクシング"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 156,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -1565,6 +1685,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 237,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/obs.jpg",
    "source": "github",
@@ -1631,6 +1756,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 108,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -1700,6 +1830,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 151,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -1774,6 +1909,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 28,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/netdata.jpg",
    "source": "official",
@@ -1854,6 +1994,11 @@
    "ストラピ"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 20,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/strapi.jpg",
    "source": "official",
@@ -1900,6 +2045,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 6,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/gpt4all.jpg",
    "source": "official",
@@ -1951,6 +2101,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 105,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/coder.jpg",
    "source": "official",
@@ -2030,6 +2185,11 @@
    "ホップスコッチ"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 50,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/hoppscotch.jpg",
    "source": "official",
@@ -2109,6 +2269,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 44,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/airflow.jpg",
    "source": "official",
@@ -2179,6 +2344,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 109,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -2232,6 +2402,11 @@
    "アップフロウィー"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 121,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/appflowy.jpg",
    "source": "official",
@@ -2298,6 +2473,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 34,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/docusaurus.jpg",
    "source": "official",
@@ -2362,6 +2542,11 @@
    "アフィン"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 149,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/affine.jpg",
    "source": "official",
@@ -2421,6 +2606,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 161,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/anythingllm.jpg",
    "source": "official",
@@ -2490,6 +2680,11 @@
    "ゴースト"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 32,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/ghost.jpg",
    "source": "official",
@@ -2549,6 +2744,11 @@
   "also_competitors": [
    "TimeRex"
   ],
+  "star_gain": {
+   "gain": 145,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -2617,6 +2817,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 9,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/traefik.jpg",
    "source": "official",
@@ -2678,6 +2883,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 195,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/twenty.jpg",
    "source": "official",
@@ -2752,6 +2962,11 @@
   "also_competitors": [
    "Chatwork"
   ],
+  "star_gain": {
+   "gain": 12,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/rocket-chat.jpg",
    "source": "official",
@@ -2833,6 +3048,11 @@
    "ギテア"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 93,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -2903,6 +3123,11 @@
    "ノコディービー"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 74,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/nocodb.jpg",
    "source": "official",
@@ -2955,6 +3180,11 @@
    "ボルトウォーデン"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 215,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -3016,6 +3246,11 @@
    "クーリファイ"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 106,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/coolify.jpg",
    "source": "official",
@@ -3074,6 +3309,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 107,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/memos.jpg",
    "source": "github",
@@ -3153,6 +3393,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/rclone.jpg",
    "source": "official",
@@ -3200,6 +3445,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 25,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -3260,6 +3510,11 @@
    "ゼリーフィン"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 159,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/jellyfin.jpg",
    "source": "official",
@@ -3324,6 +3579,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 320,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/plane.jpg",
    "source": "official",
@@ -3403,6 +3663,11 @@
    "ジョプリン"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 54,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/joplin.jpg",
    "source": "github",
@@ -3482,6 +3747,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 47,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/appwrite.jpg",
    "source": "official",
@@ -3550,6 +3820,11 @@
    "ペンポット"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 155,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/penpot.jpg",
    "source": "official",
@@ -3616,6 +3891,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 31,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/discourse.jpg",
    "source": "official",
@@ -3679,6 +3959,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 72,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/pocketbase.jpg",
    "source": "official",
@@ -3729,6 +4014,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 130,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/whisper-cpp.jpg",
    "source": "official",
@@ -3804,6 +4094,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 157,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/erpnext.jpg",
    "source": "official",
@@ -3868,6 +4163,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 40,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/meilisearch.jpg",
    "source": "official",
@@ -3920,6 +4220,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": -3,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -3994,6 +4299,11 @@
    "メタベース"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 68,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/metabase.jpg",
    "source": "official",
@@ -4058,6 +4368,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 249,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/librechat.jpg",
    "source": "official",
@@ -4135,6 +4450,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 60,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/dbeaver.jpg",
    "source": "github",
@@ -4160,7 +4480,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2026-08-17T17:38:16Z",
   "created_at": "2022-12-21T04:17:37Z",
-  "freshness_days": 44,
+  "freshness_days": 45,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -4178,6 +4498,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 14,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -4247,6 +4572,11 @@
   "also_competitors": [
    "Chatwork"
   ],
+  "star_gain": {
+   "gain": 51,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/mattermost.jpg",
    "source": "official",
@@ -4317,6 +4647,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 15,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/gogs.jpg",
    "source": "official",
@@ -4388,6 +4723,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 26,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -4447,6 +4787,11 @@
    "キークローク"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 95,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/keycloak.jpg",
    "source": "official",
@@ -4509,6 +4854,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 63,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -4568,6 +4918,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 1291,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/hyperswitch.jpg",
    "source": "official",
@@ -4624,6 +4979,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 126,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/tldraw.jpg",
    "source": "github",
@@ -4698,6 +5058,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 44,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/sentry.jpg",
    "source": "official",
@@ -4778,6 +5143,11 @@
    "チャットウート"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 197,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/chatwoot.jpg",
    "source": "official",
@@ -4857,6 +5227,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 37,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/kong.jpg",
    "source": "official",
@@ -4910,6 +5285,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 73,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/umami.jpg",
    "source": "official",
@@ -4987,6 +5367,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 41,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -5007,7 +5392,7 @@
   "license": "MIT",
   "last_commit": "2026-09-26T17:36:14Z",
   "created_at": "2021-01-05T18:49:45Z",
-  "freshness_days": 4,
+  "freshness_days": 5,
   "scorecard_score": 4.5,
   "scorecard_date": "2026-09-21",
   "scorecard_checks": {
@@ -5060,6 +5445,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 51,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/payload.jpg",
    "source": "official",
@@ -5118,6 +5508,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 88,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/bruno.jpg",
    "source": "official",
@@ -5174,6 +5569,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 209,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -5231,6 +5631,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 27,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/tooljet.jpg",
    "source": "official",
@@ -5256,7 +5661,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2026-09-28T17:10:11Z",
   "created_at": "2020-08-30T09:21:35Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 4.6,
   "scorecard_date": "2026-09-21",
   "scorecard_checks": {
@@ -5299,6 +5704,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 47,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/siyuan.jpg",
    "source": "github",
@@ -5372,6 +5782,11 @@
    "ログシーケ"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 45,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/logseq.jpg",
    "source": "official",
@@ -5451,6 +5866,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 40,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/appsmith.jpg",
    "source": "official",
@@ -5503,6 +5923,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 78,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -5579,6 +6004,11 @@
    "ネクストクラウド"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 37,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/nextcloud.jpg",
    "source": "official",
@@ -5604,7 +6034,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2026-09-29T17:05:45Z",
   "created_at": "2023-07-08T17:24:22Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -5633,6 +6063,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 189,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/postiz.jpg",
    "source": "official",
@@ -5696,6 +6131,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 91,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/headscale.jpg",
    "source": "github",
@@ -5769,6 +6209,11 @@
   "also_competitors": [
    "Chatwork"
   ],
+  "star_gain": {
+   "gain": 28,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -5833,6 +6278,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 21,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/jenkins.jpg",
    "source": "official",
@@ -5914,6 +6364,11 @@
    "ディレクタス"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 32,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/directus.jpg",
    "source": "official",
@@ -5983,6 +6438,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 156,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -6057,6 +6517,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 94,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/sharex.jpg",
    "source": "official",
@@ -6125,6 +6590,11 @@
    "アウトライン"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 56,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/outline.jpg",
    "source": "official",
@@ -6195,6 +6665,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 59,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/medusa.jpg",
    "source": "official",
@@ -6269,6 +6744,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 121,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/posthog.jpg",
    "source": "official",
@@ -6338,6 +6818,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 15,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/jitsi.jpg",
    "source": "official",
@@ -6387,6 +6872,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 47,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/continue.jpg",
    "source": "official",
@@ -6451,6 +6941,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 16,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/quivr.jpg",
    "source": "github",
@@ -6507,6 +7002,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 10,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -6571,6 +7071,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 9,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/insomnia.jpg",
    "source": "official",
@@ -6638,6 +7143,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 23,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/photoprism.jpg",
    "source": "official",
@@ -6710,6 +7220,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 44,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/portainer.jpg",
    "source": "official",
@@ -6776,6 +7291,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": -5,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -6850,6 +7370,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 57,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -6908,6 +7433,11 @@
    "ドックプロイ"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 74,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/dokploy.jpg",
    "source": "official",
@@ -6971,6 +7501,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 133,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -7029,6 +7564,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 175,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/langfuse.jpg",
    "source": "official",
@@ -7093,6 +7633,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 35,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/khoj.jpg",
    "source": "official",
@@ -7142,6 +7687,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 51,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -7208,6 +7758,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 10,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/harbor.jpg",
    "source": "official",
@@ -7273,6 +7828,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 110,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -7332,6 +7892,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 48,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/qdrant.jpg",
    "source": "official",
@@ -7406,6 +7971,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/trivy.jpg",
    "source": "official",
@@ -7471,6 +8041,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 6,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -7515,6 +8090,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 37,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/ocrmypdf.jpg",
    "source": "github",
@@ -7585,6 +8165,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/nuclei.jpg",
    "source": "official",
@@ -7663,6 +8248,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 20,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/redash.jpg",
    "source": "official",
@@ -7729,6 +8319,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 103,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -7789,6 +8384,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": -4,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/magento.jpg",
    "source": "github",
@@ -7832,6 +8432,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 55,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/opentofu.jpg",
    "source": "official",
@@ -7902,6 +8507,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 11,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -7961,6 +8571,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 49,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/signoz.jpg",
    "source": "official",
@@ -8009,6 +8624,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 41,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/actual.jpg",
    "source": "official",
@@ -8071,6 +8691,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 22,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -8135,6 +8760,11 @@
   "also_competitors": [
    "BASE"
   ],
+  "star_gain": {
+   "gain": 1,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/woocommerce.jpg",
    "source": "official",
@@ -8160,7 +8790,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2026-09-28T17:07:55Z",
   "created_at": "2016-08-16T19:35:26Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 5.9,
   "scorecard_date": "2022-08-15",
   "scorecard_checks": {
@@ -8202,6 +8832,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 33,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/wikijs.jpg",
    "source": "github",
@@ -8283,6 +8918,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 16,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/surrealdb.jpg",
    "source": "official",
@@ -8362,6 +9002,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 239,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/kestra.jpg",
    "source": "official",
@@ -8430,6 +9075,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/flameshot.jpg",
    "source": "official",
@@ -8511,6 +9161,11 @@
   "also_competitors": [
    "BASE"
   ],
+  "star_gain": {
+   "gain": 15,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/bagisto.jpg",
    "source": "official",
@@ -8568,6 +9223,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 33,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/invokeai.jpg",
    "source": "official",
@@ -8633,6 +9293,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 46,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/chroma.jpg",
    "source": "official",
@@ -8697,6 +9362,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 114,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/infisical.jpg",
    "source": "official",
@@ -8754,6 +9424,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 102,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/activepieces.jpg",
    "source": "official",
@@ -8825,6 +9500,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 89,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -8881,6 +9561,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 116,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/ente.jpg",
    "source": "official",
@@ -8950,6 +9635,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 114,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -9024,6 +9714,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 49,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/plausible.jpg",
    "source": "official",
@@ -9105,6 +9800,11 @@
    "ブディベース"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 24,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/budibase.jpg",
    "source": "official",
@@ -9188,6 +9888,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 66,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/authelia.jpg",
    "source": "official",
@@ -9253,6 +9958,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 13,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/node-red.jpg",
    "source": "github",
@@ -9330,6 +10040,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -9383,6 +10098,11 @@
   "also_competitors": [
    "Jooto"
   ],
+  "star_gain": {
+   "gain": 5,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -9433,6 +10153,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 24,
+   "days": 6,
+   "from": "2026-09-26"
+  },
   "preview": {
    "src": "/previews/dub.jpg",
    "source": "official",
@@ -9496,6 +10221,11 @@
    "オーセンティック"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 53,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/authentik.jpg",
    "source": "official",
@@ -9563,6 +10293,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 29,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/monica.jpg",
    "source": "official",
@@ -9633,6 +10368,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 14,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -9693,6 +10433,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 95,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/blender.jpg",
    "source": "github",
@@ -9771,6 +10516,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 34,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/nocobase.jpg",
    "source": "official",
@@ -9844,6 +10594,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 38,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/prefect.jpg",
    "source": "official",
@@ -9921,6 +10676,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 66,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/firefly-iii.jpg",
    "source": "official",
@@ -9973,6 +10733,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 45,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -10045,6 +10810,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 23,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/pulumi.jpg",
    "source": "official",
@@ -10094,6 +10864,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 70,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -10161,6 +10936,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 53,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/listmonk.jpg",
    "source": "official",
@@ -10235,6 +11015,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 18,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/matomo.jpg",
    "source": "official",
@@ -10309,6 +11094,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 9,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/spree.jpg",
    "source": "official",
@@ -10388,6 +11178,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 23,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/typesense.jpg",
    "source": "official",
@@ -10450,6 +11245,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 4,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -10509,6 +11309,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 12,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -10574,6 +11379,11 @@
   "also_competitors": [
    "Jooto"
   ],
+  "star_gain": {
+   "gain": 3,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -10642,6 +11452,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 130,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/navidrome.jpg",
    "source": "official",
@@ -10717,6 +11532,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 34,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/temporal.jpg",
    "source": "official",
@@ -10778,6 +11598,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 23,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/krayin.jpg",
    "source": "official",
@@ -10842,6 +11667,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 197,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/cap.jpg",
    "source": "official",
@@ -10893,6 +11723,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 115,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/livekit.jpg",
    "source": "official",
@@ -10956,6 +11791,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 4161,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/univer.jpg",
    "source": "github",
@@ -11017,6 +11857,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 14,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -11065,6 +11910,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 52,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -11119,6 +11969,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 2,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -11178,6 +12033,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 51,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -11237,6 +12097,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 53,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/docmost.jpg",
    "source": "official",
@@ -11301,6 +12166,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 52,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/audacity.jpg",
    "source": "official",
@@ -11365,6 +12235,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 52,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/openobserve.jpg",
    "source": "official",
@@ -11430,6 +12305,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 19,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/vitepress.jpg",
    "source": "official",
@@ -11486,6 +12366,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 30,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/teable.jpg",
    "source": "official",
@@ -11551,6 +12436,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 11,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -11624,6 +12514,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 8,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -11698,6 +12593,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 75,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/openproject.jpg",
    "source": "official",
@@ -11748,6 +12648,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/opensearch.jpg",
    "source": "official",
@@ -11818,6 +12723,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 11,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -11892,6 +12802,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 57,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/wazuh.jpg",
    "source": "official",
@@ -11949,6 +12864,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 22,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/docuseal.jpg",
    "source": "official",
@@ -12016,6 +12936,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 2,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/prestashop.jpg",
    "source": "official",
@@ -12090,6 +13015,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 27,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -12159,6 +13089,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 31,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/victoria-metrics.jpg",
    "source": "official",
@@ -12221,6 +13156,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 77,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/documenso.jpg",
    "source": "official",
@@ -12286,6 +13226,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 2,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -12351,6 +13296,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 1,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/nodebb.jpg",
    "source": "official",
@@ -12419,6 +13369,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 26,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -12462,6 +13417,11 @@
   "also_competitors": [
    "Chatwork"
   ],
+  "star_gain": {
+   "gain": 27,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/element.jpg",
    "source": "official",
@@ -12521,6 +13481,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 3,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -12580,6 +13545,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 8,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/peertube.jpg",
    "source": "official",
@@ -12605,7 +13575,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2026-09-03T17:05:31Z",
   "created_at": "2020-12-19T19:19:34Z",
-  "freshness_days": 27,
+  "freshness_days": 28,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -12629,6 +13599,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 44,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/libretranslate.jpg",
    "source": "official",
@@ -12696,6 +13671,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 11,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/mailspring.jpg",
    "source": "official",
@@ -12773,6 +13753,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 7,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -12819,6 +13804,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 10,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/windmill.jpg",
    "source": "official",
@@ -12892,6 +13882,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 39,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/coder-oss.jpg",
    "source": "official",
@@ -12971,6 +13966,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 15,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/weaviate.jpg",
    "source": "official",
@@ -13036,6 +14036,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 3,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/phpmyadmin.jpg",
    "source": "official",
@@ -13105,6 +14110,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 3,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -13149,6 +14159,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 9,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -13212,6 +14227,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 21,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -13263,6 +14283,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 67,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/semgrep.jpg",
    "source": "official",
@@ -13337,6 +14362,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -13398,6 +14428,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 16,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -13444,6 +14479,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 4,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/cachet.jpg",
    "source": "official",
@@ -13508,6 +14548,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 30,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -13574,6 +14619,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 8,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -13651,6 +14701,11 @@
   "also_competitors": [
    "formrun"
   ],
+  "star_gain": {
+   "gain": 19,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -13671,7 +14726,7 @@
   "license": "GPL-3.0",
   "last_commit": "2026-09-24T17:00:56Z",
   "created_at": "2012-04-23T22:37:04Z",
-  "freshness_days": 6,
+  "freshness_days": 7,
   "scorecard_score": 1.5,
   "scorecard_date": "2026-09-21",
   "scorecard_checks": {
@@ -13710,6 +14765,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -13763,6 +14823,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 1,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -13783,7 +14848,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2026-09-29T17:09:44Z",
   "created_at": "2020-03-16T13:51:31Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -13819,6 +14884,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 39,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/zitadel.jpg",
    "source": "github",
@@ -13895,6 +14965,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 29,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -13962,6 +15037,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 39,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -14024,6 +15104,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 2,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -14068,6 +15153,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 80,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/audiobookshelf.jpg",
    "source": "github",
@@ -14138,6 +15228,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 22,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/duplicati.jpg",
    "source": "official",
@@ -14216,6 +15311,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 6,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -14279,6 +15379,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -14338,6 +15443,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 15,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/logto.jpg",
    "source": "official",
@@ -14416,6 +15526,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 1,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/supertokens.jpg",
    "source": "official",
@@ -14466,6 +15581,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 70,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/typebot.jpg",
    "source": "official",
@@ -14544,6 +15664,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 25,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/filestash.jpg",
    "source": "github",
@@ -14617,6 +15742,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 58,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/stalwart.jpg",
    "source": "official",
@@ -14680,6 +15810,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 59,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/notesnook.jpg",
    "source": "official",
@@ -14750,6 +15885,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 6,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/kratos.jpg",
    "source": "official",
@@ -14827,6 +15967,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 7,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/crowdsec.jpg",
    "source": "official",
@@ -14905,6 +16050,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 10,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/akaunting.jpg",
    "source": "github",
@@ -14948,6 +16098,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/kamal.jpg",
    "source": "official",
@@ -15018,6 +16173,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 5,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/devpod.jpg",
    "source": "official",
@@ -15084,6 +16244,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 33,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -15156,6 +16321,11 @@
   "also_competitors": [
    "Misoca"
   ],
+  "star_gain": {
+   "gain": 72,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -15202,6 +16372,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 1,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/automatisch.jpg",
    "source": "official",
@@ -15270,6 +16445,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/kopia.jpg",
    "source": "official",
@@ -15325,6 +16505,11 @@
   "also_competitors": [
    "Jooto"
   ],
+  "star_gain": {
+   "gain": 12,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/planka.jpg",
    "source": "official",
@@ -15403,6 +16588,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 28,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/grype.jpg",
    "source": "official",
@@ -15469,6 +16659,11 @@
   "also_competitors": [
    "Jooto"
   ],
+  "star_gain": {
+   "gain": 10,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -15539,6 +16734,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 2,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/sylius.jpg",
    "source": "official",
@@ -15603,6 +16803,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 7,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/frappe-hr.jpg",
    "source": "official",
@@ -15663,6 +16868,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 33,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/openreplay.jpg",
    "source": "official",
@@ -15736,6 +16946,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/owncloud.jpg",
    "source": "official",
@@ -15804,6 +17019,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 6,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/velero.jpg",
    "source": "github",
@@ -15864,6 +17084,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 59,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/arize-phoenix.jpg",
    "source": "official",
@@ -15943,6 +17168,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 32,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/leantime.jpg",
    "source": "official",
@@ -16018,6 +17248,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 7,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -16077,6 +17312,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 59,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/gatus.jpg",
    "source": "official",
@@ -16145,6 +17385,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/tekton.jpg",
    "source": "official",
@@ -16203,6 +17448,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -16245,6 +17495,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 19,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/grist.jpg",
    "source": "official",
@@ -16320,6 +17575,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 12,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/weblate.jpg",
    "source": "official",
@@ -16399,6 +17659,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 3,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -16441,6 +17706,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 8,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -16483,6 +17753,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 1,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/openvscode.jpg",
    "source": "official",
@@ -16548,6 +17823,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 8,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/shiori.jpg",
    "source": "official",
@@ -16611,6 +17891,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 40,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/ghostfolio.jpg",
    "source": "official",
@@ -16680,6 +17965,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 25,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -16736,6 +18026,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 23,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -16788,6 +18083,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 15,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/vendure.jpg",
    "source": "official",
@@ -16841,6 +18141,11 @@
   "also_competitors": [
    "Misoca"
   ],
+  "star_gain": {
+   "gain": 1,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/crater.jpg",
    "source": "official",
@@ -16899,6 +18204,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 5,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -16955,6 +18265,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 7,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/suitecrm.jpg",
    "source": "github",
@@ -17013,6 +18328,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": -1,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -17060,6 +18380,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 64,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -17113,6 +18438,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 1,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/hanko.jpg",
    "source": "official",
@@ -17187,6 +18517,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 9,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -17256,6 +18591,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 6,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -17309,6 +18649,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 104,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/kokoro.jpg",
    "source": "official",
@@ -17372,6 +18717,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 13,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/nhost.jpg",
    "source": "official",
@@ -17438,6 +18788,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 11,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/adminer.jpg",
    "source": "github",
@@ -17500,6 +18855,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 11,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -17553,6 +18913,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 18,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -17618,6 +18983,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 2,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/highlight.jpg",
    "source": "official",
@@ -17681,6 +19051,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 7,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/mediawiki.jpg",
    "source": "official",
@@ -17747,6 +19122,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 18,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/woodpecker.jpg",
    "source": "github",
@@ -17796,6 +19176,11 @@
   "also_competitors": [
    "formrun"
   ],
+  "star_gain": {
+   "gain": 4,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/heyform.jpg",
    "source": "official",
@@ -17854,6 +19239,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 22,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -17926,6 +19316,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 15,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/headlamp.jpg",
    "source": "official",
@@ -18000,6 +19395,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 16,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -18045,6 +19445,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 20,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/anytype.jpg",
    "source": "official",
@@ -18117,6 +19522,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 6,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -18164,6 +19574,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 13,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/cryptpad.jpg",
    "source": "official",
@@ -18233,6 +19648,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 6,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -18293,6 +19713,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 23,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/meshcentral.jpg",
    "source": "github",
@@ -18343,6 +19768,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 20,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -18417,6 +19847,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 14,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/onlyoffice.jpg",
    "source": "github",
@@ -18482,6 +19917,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 13,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/zabbix.jpg",
    "source": "official",
@@ -18533,6 +19973,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 5,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -18579,6 +20024,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 4,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/flarum.jpg",
    "source": "official",
@@ -18646,6 +20096,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 2,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/fathom.jpg",
    "source": "official",
@@ -18719,6 +20174,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 7,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -18776,6 +20236,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 13,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -18835,6 +20300,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 17,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/opensign.jpg",
    "source": "github",
@@ -18910,6 +20380,11 @@
   "also_competitors": [
    "メールディーラー"
   ],
+  "star_gain": {
+   "gain": 12,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/zammad.jpg",
    "source": "official",
@@ -18978,6 +20453,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 27,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/openshot.jpg",
    "source": "official",
@@ -19046,6 +20526,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 7,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -19120,6 +20605,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 2,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/countly.jpg",
    "source": "official",
@@ -19188,6 +20678,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 7,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -19231,6 +20726,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 9,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/lightdash.jpg",
    "source": "official",
@@ -19294,6 +20794,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 2,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -19341,6 +20846,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 4,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -19394,6 +20904,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -19462,6 +20977,11 @@
   "also_competitors": [
    "TimeRex"
   ],
+  "star_gain": {
+   "gain": 3,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/easy-appointments.jpg",
    "source": "official",
@@ -19525,6 +21045,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 15,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/helicone.jpg",
    "source": "official",
@@ -19587,6 +21112,11 @@
    "ベースロウ"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 28,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/baserow.jpg",
    "source": "official",
@@ -19645,6 +21175,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 8,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -19719,6 +21254,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 8,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/shopware.jpg",
    "source": "official",
@@ -19769,6 +21309,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 33,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/silverbullet.jpg",
    "source": "official",
@@ -19821,6 +21366,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 13,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -19870,6 +21420,11 @@
    "ビクーニャ"
   ],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 57,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -19923,6 +21478,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 30,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -19980,6 +21540,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 2,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -20018,6 +21583,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 10,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/synapse.jpg",
    "source": "official",
@@ -20097,6 +21667,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 1,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -20148,6 +21723,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 7,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -20193,6 +21773,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -20248,6 +21833,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 9,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -20322,6 +21912,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 5,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/surveyjs.jpg",
    "source": "github",
@@ -20396,6 +21991,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 10,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/kimai.jpg",
    "source": "official",
@@ -20467,6 +22067,11 @@
   "also_competitors": [
    "formrun"
   ],
+  "star_gain": {
+   "gain": 3,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/limesurvey.jpg",
    "source": "official",
@@ -20528,6 +22133,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 4,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -20570,6 +22180,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 28,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -20590,7 +22205,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2026-09-27T17:28:11Z",
   "created_at": "2023-07-19T08:53:35Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -20628,6 +22243,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 12,
+   "days": 6,
+   "from": "2026-09-26"
+  },
   "preview": {
    "src": "/previews/frappe-crm.jpg",
    "source": "official",
@@ -20691,6 +22311,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 13,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -20744,6 +22369,11 @@
   "also_competitors": [
    "調整さん"
   ],
+  "star_gain": {
+   "gain": 14,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -20796,6 +22426,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 14,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/collabora-online.jpg",
    "source": "official",
@@ -20866,6 +22501,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 1,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/writefreely.jpg",
    "source": "official",
@@ -20926,6 +22566,11 @@
   "also_competitors": [
    "メールディーラー"
   ],
+  "star_gain": {
+   "gain": 6,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/freescout.jpg",
    "source": "github",
@@ -21005,6 +22650,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 9,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/dependency-track.jpg",
    "source": "official",
@@ -21056,6 +22706,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 21,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/pgadmin.jpg",
    "source": "github",
@@ -21112,6 +22767,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 3,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/hledger.jpg",
    "source": "github",
@@ -21180,6 +22840,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 5,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/jitsu.jpg",
    "source": "official",
@@ -21245,6 +22910,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 3,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -21317,6 +22987,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 28,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/espocrm.jpg",
    "source": "official",
@@ -21380,6 +23055,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 3,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/ackee.jpg",
    "source": "official",
@@ -21458,6 +23138,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 10,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/pdfsam.jpg",
    "source": "official",
@@ -21505,6 +23190,7 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": null,
   "preview": {
    "src": "/previews/unlighthouse.jpg",
    "source": "official",
@@ -21574,6 +23260,11 @@
   "also_competitors": [
    "Misoca"
   ],
+  "star_gain": {
+   "gain": 1,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -21623,6 +23314,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 1,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -21696,6 +23392,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 11,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/cerbos.jpg",
    "source": "official",
@@ -21756,6 +23457,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 3,
+   "days": 6,
+   "from": "2026-09-26"
+  },
   "preview": {
    "src": "/previews/tolgee.jpg",
    "source": "official",
@@ -21825,6 +23531,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 5,
+   "days": 6,
+   "from": "2026-09-26"
+  },
   "preview": {
    "src": "/previews/pretix.jpg",
    "source": "official",
@@ -21904,6 +23615,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 7,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/rudderstack.jpg",
    "source": "official",
@@ -21929,7 +23645,7 @@
   "license": "AGPL-3.0 + Commons Clause",
   "last_commit": "2026-06-30T17:20:11Z",
   "created_at": "2018-05-29T06:26:06Z",
-  "freshness_days": 92,
+  "freshness_days": 93,
   "scorecard_score": 3.3,
   "scorecard_date": "2026-09-21",
   "scorecard_checks": {
@@ -21981,6 +23697,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 1,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -22027,6 +23748,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 3,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -22080,6 +23806,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 1,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -22129,6 +23860,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 15,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -22182,6 +23918,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 6,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -22241,6 +23982,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": -1,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -22303,6 +24049,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 3,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/nextcloud-talk.jpg",
    "source": "official",
@@ -22379,6 +24130,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": -1,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -22440,6 +24196,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 2,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -22497,6 +24258,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 15,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/libredesk.jpg",
    "source": "official",
@@ -22565,6 +24331,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -22625,6 +24396,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": -1,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -22645,7 +24421,7 @@
   "license": "LGPL-2.1",
   "last_commit": "2026-09-29T17:39:28Z",
   "created_at": "2023-05-10T09:33:48Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -22680,6 +24456,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 4,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/horilla.jpg",
    "source": "official",
@@ -22744,6 +24525,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 1,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -22797,6 +24583,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -22853,6 +24644,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": -2,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -22924,6 +24720,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 3,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/openvidu.jpg",
    "source": "official",
@@ -22972,6 +24773,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 2,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/spacebar.jpg",
    "source": "github",
@@ -23015,6 +24821,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 2,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -23079,6 +24890,11 @@
   "also_competitors": [
    "BASE"
   ],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -23134,6 +24950,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 2,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/docspell.jpg",
    "source": "official",
@@ -23196,6 +25017,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -23260,6 +25086,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 1,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/orangehrm.jpg",
    "source": "official",
@@ -23303,6 +25134,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/keila.jpg",
    "source": "official",
@@ -23351,6 +25187,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 2,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -23389,6 +25230,7 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": null,
   "preview": null
  },
  {
@@ -23427,6 +25269,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 9,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/bugsink.jpg",
    "source": "official",
@@ -23482,6 +25329,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -23540,6 +25392,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 1,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -23602,6 +25459,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 1,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -23664,6 +25526,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 2,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -23719,6 +25586,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 1,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/docassemble.jpg",
    "source": "official",
@@ -23795,6 +25667,11 @@
   "also_competitors": [
    "Misoca"
   ],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -23815,7 +25692,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2026-09-27T17:49:03Z",
   "created_at": "2020-08-25T14:46:17Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -23854,6 +25731,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 1,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -23874,7 +25756,7 @@
   "license": "MIT",
   "last_commit": "2026-09-29T17:46:50Z",
   "created_at": "2018-05-28T15:18:59Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -23905,6 +25787,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -23964,6 +25851,7 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": null,
   "preview": {
    "src": "/previews/siteone-crawler.jpg",
    "source": "official",
@@ -24029,6 +25917,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -24078,6 +25971,7 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": null,
   "preview": null
  },
  {
@@ -24127,6 +26021,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/cockpit-cms.jpg",
    "source": "official",
@@ -24175,6 +26074,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 3,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -24213,6 +26117,11 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": null
  },
  {
@@ -24251,6 +26160,11 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
+  "star_gain": {
+   "gain": 0,
+   "days": 7,
+   "from": "2026-09-25"
+  },
   "preview": {
    "src": "/previews/glitchtip.jpg",
    "source": "official",

@@ -16,6 +16,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { loadOverrides } from "./overrides.mjs";
+import { appendHistory, pruneHistory, starGain } from "./star-history-lib.mjs";
 
 const ROOT = process.cwd();
 const SRC = path.join(ROOT, "data-source");
@@ -191,6 +192,30 @@ const tools = raw.map((t) => {
     also_competitors: [],
   };
 });
+
+/**
+ * スター数の履歴（data-source/star-history.json）に今日の値を足し、直近30日の増加を付ける。
+ * 履歴が30日に満たない間は、記録のある期間での増加になる（days に実際の日数が入る）。
+ * 「急上昇中のOSS」（/trending/）とツールページで使う。
+ */
+{
+  const histPath = path.join(ROOT, "data-source", "star-history.json");
+  const history = readJson(histPath, {});
+  // 日本時間の日付で記録する
+  const today = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
+  appendHistory(history, tools, today);
+  pruneHistory(history, today);
+  for (const t of tools) {
+    const g = starGain(history[t.id], t.stars_num, today, 30);
+    // 期間が短すぎる（3日未満）ものは、ばらつきが大きいため出さない
+    t.star_gain = g && g.days >= 3 ? g : null;
+  }
+  // 1ツール1行で書く（毎日の差分を読みやすくするため）
+  const lines = Object.keys(history)
+    .sort()
+    .map((id) => `${JSON.stringify(id)}:${JSON.stringify(history[id])}`);
+  fs.writeFileSync(histPath, `{\n${lines.join(",\n")}\n}\n`);
+}
 
 /**
  * プレビュー画像（scripts/fetch-previews.mjs が取得）。画像のファイルが実際にある場合だけ付ける

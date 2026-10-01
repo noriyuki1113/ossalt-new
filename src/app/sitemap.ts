@@ -11,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = SITE.url.replace(/\/$/, "");
   const now = new Date();
 
-  const staticPages = ["/", "/tools/", "/categories/", "/alternatives/", "/alternatives/japan/", "/compare/", "/licenses/", "/japanese/", "/guide/", "/diagnosis/", "/blog/", "/about/", "/contact/", "/submit/", "/badge/", "/advertise/", "/privacy/", "/terms/", "/disclaimer/"];
+  const staticPages = ["/", "/tools/", "/categories/", "/alternatives/", "/alternatives/japan/", "/compare/", "/licenses/", "/japanese/", "/trending/", "/guide/", "/diagnosis/", "/blog/", "/about/", "/contact/", "/submit/", "/badge/", "/advertise/", "/privacy/", "/terms/", "/disclaimer/"];
 
   return [
     ...staticPages.map((p) => ({
