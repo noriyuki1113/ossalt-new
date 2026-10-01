@@ -5,10 +5,12 @@
  * 代替が掲載されていないslugは、ページ側で自動的に表示しない。
  */
 export const JAPAN_SAAS_GROUPS: Array<{ label: string; slugs: string[] }> = [
-  { label: "業務アプリ・プロジェクト管理", slugs: ["kintone", "backlog"] },
-  { label: "会計・お金", slugs: ["freee", "moneyforward"] },
+  { label: "チャット・業務アプリ", slugs: ["chatwork", "kintone"] },
+  { label: "タスク・プロジェクト管理", slugs: ["backlog", "jooto"] },
+  { label: "会計・請求書・お金", slugs: ["freee", "misoca", "moneyforward"] },
   { label: "人事・勤怠", slugs: ["smarthr", "king-of-time"] },
-  { label: "契約・営業", slugs: ["cloudsign", "sansan"] },
-  { label: "イベント・発信", slugs: ["peatix", "note"] },
+  { label: "契約・営業・問い合わせ", slugs: ["cloudsign", "sansan", "mail-dealer", "formrun"] },
+  { label: "日程調整・イベント", slugs: ["chouseisan", "timerex", "peatix"] },
+  { label: "ネットショップ・発信", slugs: ["base", "note"] },
   { label: "音声・文字起こし", slugs: ["notta", "voicepeak"] },
 ];

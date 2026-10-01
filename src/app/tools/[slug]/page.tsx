@@ -122,6 +122,18 @@ export default async function ToolDetailPage({
               )}
             </div>
 
+            {(tool.also_competitors ?? []).length > 0 && (
+              <p className="muted" style={{ marginTop: "-1rem", marginBottom: "2rem", fontSize: "0.875rem" }}>
+                {"ほかに、次のサービスの代わりにも使えます："}
+                {(tool.also_competitors ?? []).map((name, i) => (
+                  <span key={name}>
+                    {i > 0 && "、"}
+                    <Link href={`/alternatives/${slugifyCompetitor(name)}/`}>{`${name}の代替`}</Link>
+                  </span>
+                ))}
+              </p>
+            )}
+
             <section>
               <h2 className="h3 mt0">{t("health.title")}</h2>
               <div className="panel">

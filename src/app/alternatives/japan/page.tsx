@@ -7,9 +7,9 @@ import { JAPAN_SAAS_GROUPS } from "@/lib/japan-saas";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata: Metadata = pageMeta({
-  title: "kintone・freee・SmartHRなど、日本のSaaSの代わりになるオープンソース",
+  title: "Chatwork・kintone・freeeなど、日本のSaaSの代わりになるオープンソース",
   description:
-    "kintone・freee・マネーフォワード・SmartHR・Backlog・クラウドサインなど、国内で使われているSaaSの代わりに自前で動かせるオープンソースをまとめました。日本の制度への対応など、乗り換える前に確かめたいことも整理しています。",
+    "Chatwork・kintone・freee・SmartHR・Backlog・Misoca・BASEなど、国内で使われているSaaSの代わりに自前で動かせるオープンソースをまとめました。日本の制度への対応など、乗り換える前に確かめたいことも整理しています。",
   path: "/alternatives/japan/",
   type: "article",
 });
@@ -49,7 +49,7 @@ export default function JapanSaasPage() {
         />
         <h1 className="h2">日本のSaaSの代わりになるオープンソース</h1>
         <p className="lede">
-          {`kintone・freee・SmartHRなど、国内で使われているSaaS${total}件について、代わりに自前で動かせるオープンソースをまとめました。`}
+          {`Chatwork・kintone・freee・SmartHRなど、国内で使われているSaaS${total}件について、代わりに自前で動かせるオープンソースをまとめました。`}
         </p>
 
         <div className="prose">

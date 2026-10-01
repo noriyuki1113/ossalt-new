@@ -71,6 +71,8 @@ export type Tool = {
    * ["エクスカリドロー", "えくすかりどろー"]。検索対象にのみ使い、画面には出さない。
    */
   aliases: string[];
+  /** 主な代替対象のほかに、代わりになるSaaS（data-source/extra-alternatives.json） */
+  also_competitors?: string[];
 };
 
 export type DataMeta = {
@@ -121,6 +123,8 @@ export type CompetitorGroup = {
  */
 const COMPETITOR_SLUG_OVERRIDES: Record<string, string> = {
   マネーフォワード: "moneyforward",
+  調整さん: "chouseisan",
+  メールディーラー: "mail-dealer",
 };
 
 export function slugifyCompetitor(name: string): string {

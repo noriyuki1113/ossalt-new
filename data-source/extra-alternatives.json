@@ -1,0 +1,13 @@
+{
+  "_comment": "主な代替対象（primary_competitor）とは別に、そのツールが代わりになるSaaSを編集部が指定する。キーはSaaS名（画面に出る表記）、値は掲載ツールのid。build-data.mjs が also_competitors として各ツールに付け、/alternatives/<slug>/ に並べる。国内SaaSなど、主な代替対象だけでは拾えないSaaSのために使う。",
+  "alternatives": {
+    "Chatwork": ["mattermost", "rocket-chat", "zulip", "element"],
+    "Misoca": ["invoice-ninja", "invoiceplane", "crater", "solidinvoice"],
+    "調整さん": ["rallly"],
+    "TimeRex": ["cal-com", "easy-appointments"],
+    "BASE": ["ec-cube", "woocommerce", "bagisto"],
+    "Jooto": ["wekan", "kanboard", "planka", "focalboard"],
+    "メールディーラー": ["freescout", "zammad"],
+    "formrun": ["formbricks", "heyform", "limesurvey"]
+  }
+}

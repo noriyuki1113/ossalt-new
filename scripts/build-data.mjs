@@ -188,8 +188,30 @@ const tools = raw.map((t) => {
     ja_docs: t.ja_checked_at ? t.ja_docs ?? null : t.ja_docs === "official" ? "official" : null,
     ja_ui: t.ja_checked_at ? t.ja_ui ?? null : null,
     aliases: Array.isArray(t.aliases) ? t.aliases : [],
+    also_competitors: [],
   };
 });
+
+/**
+ * 主な代替対象とは別に、編集部が指定した「ほかにも代わりになるSaaS」を付ける
+ * （data-source/extra-alternatives.json）。国内SaaSの代替ページを作るため。
+ */
+{
+  const extraPath = path.join(ROOT, "data-source", "extra-alternatives.json");
+  const extra = readJson(extraPath, { alternatives: {} }).alternatives ?? {};
+  const byId = new Map(tools.map((t) => [t.id, t]));
+  for (const [saas, ids] of Object.entries(extra)) {
+    for (const id of ids) {
+      const t = byId.get(id);
+      if (!t) {
+        console.warn(`⚠️ extra-alternatives.json: 「${saas}」のid "${id}" が掲載ツールにありません`);
+        continue;
+      }
+      if (t.primary_competitor === saas || t.primary_competitor_ja === saas) continue;
+      if (!t.also_competitors.includes(saas)) t.also_competitors.push(saas);
+    }
+  }
+}
 
 /**
  * 代替対象SaaS名の表記ゆれの正規化（2026-09-30 修正指示書タスク4）。
@@ -315,7 +337,11 @@ const meta = {
   with_contributors: active.filter((t) => t.contributors_num != null).length,
   with_watchers: active.filter((t) => t.watchers_num != null).length,
   categories: categories.length,
-  competitors: new Set(active.map((t) => t.primary_competitor).filter(Boolean)).size,
+  // /alternatives/ の件数と一致させるため、編集部が追加指定したSaaS（also_competitors）も数える。
+  // 表記は小文字にそろえて数える（/alternatives/ はslugでまとめるため）
+  competitors: new Set(
+    active.flatMap((t) => [t.primary_competitor, ...t.also_competitors]).filter(Boolean).map((s) => s.toLowerCase())
+  ).size,
   archived_count: archivedCount,
   health,
 };

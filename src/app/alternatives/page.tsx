@@ -27,7 +27,7 @@ export default function AlternativesPage() {
         <p className="notice notice--info">
           <strong>日本のSaaSから探す：</strong>
           <Link href="/alternatives/japan/">
-            kintone・freee・SmartHR・Backlogなど、国内のSaaSの代わりになるオープンソースのまとめ
+            Chatwork・kintone・freee・SmartHRなど、国内のSaaSの代わりになるオープンソースのまとめ
           </Link>
         </p>
 

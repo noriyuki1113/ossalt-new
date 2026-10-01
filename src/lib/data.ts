@@ -64,15 +64,20 @@ export function getTool(id: string): Tool | undefined {
 
 export function getCompetitors(): CompetitorGroup[] {
   const map = new Map<string, CompetitorGroup>();
-  for (const t of getActiveTools()) {
-    const slug = slugifyCompetitor(t.primary_competitor);
-    if (!slug) continue;
+  const addTo = (name: string, displayName: string, t: Tool) => {
+    const slug = slugifyCompetitor(name);
+    if (!slug) return;
     let g = map.get(slug);
     if (!g) {
-      g = { slug, name: t.primary_competitor_ja || t.primary_competitor, tools: [] };
+      g = { slug, name: displayName, tools: [] };
       map.set(slug, g);
     }
-    g.tools.push(t);
+    if (!g.tools.includes(t)) g.tools.push(t);
+  };
+  for (const t of getActiveTools()) {
+    addTo(t.primary_competitor, t.primary_competitor_ja || t.primary_competitor, t);
+    // 主な代替対象のほかに、編集部が指定したSaaS（国内SaaSなど）
+    for (const name of t.also_competitors ?? []) addTo(name, name, t);
   }
   for (const g of map.values()) {
     g.tools.sort((a, b) => (b.health_score ?? 0) - (a.health_score ?? 0));

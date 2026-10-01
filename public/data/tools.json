@@ -71,7 +71,8 @@
   "ja_ui": null,
   "aliases": [
    "エヌエイトエヌ"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "stable-diffusion-webui",
@@ -124,7 +125,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "ollama",
@@ -178,7 +180,8 @@
   "ja_ui": null,
   "aliases": [
    "オラマ"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "dify",
@@ -236,7 +239,8 @@
   "ja_ui": true,
   "aliases": [
    "ディファイ"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "open-webui",
@@ -290,7 +294,8 @@
   "ja_ui": true,
   "aliases": [
    "オープンウェブユーアイ"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "llama-cpp",
@@ -328,7 +333,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "langflow",
@@ -373,7 +379,8 @@
   "ja_ui": true,
   "aliases": [
    "ラングフロー"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "comfyui",
@@ -416,7 +423,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "excalidraw",
@@ -478,7 +486,8 @@
   "aliases": [
    "エクスカリドロー",
    "えくすかりどろー"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "rustdesk",
@@ -498,7 +507,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2026-09-27T13:37:30Z",
   "created_at": "2020-09-28T15:36:08Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -536,7 +545,8 @@
   "ja_ui": null,
   "aliases": [
    "ラストデスク"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "vllm",
@@ -593,7 +603,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "supabase",
@@ -666,7 +677,8 @@
   "ja_ui": null,
   "aliases": [
    "スーパーベース"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "whisper",
@@ -717,7 +729,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "odoo",
@@ -776,7 +789,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "immich",
@@ -829,7 +843,8 @@
   "languages": [],
   "ja_docs": "official",
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "superset",
@@ -899,7 +914,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "lobechat",
@@ -954,7 +970,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "ragflow",
@@ -1006,7 +1023,8 @@
   "languages": [],
   "ja_docs": "official",
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "paddleocr",
@@ -1071,7 +1089,8 @@
   "languages": [],
   "ja_docs": "official",
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "stirling-pdf",
@@ -1140,7 +1159,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "grafana",
@@ -1209,7 +1229,8 @@
   "ja_ui": true,
   "aliases": [
    "グラファナ"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "uptime-kuma",
@@ -1260,7 +1281,8 @@
   "ja_ui": true,
   "aliases": [
    "アップタイムクマ"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "flowise",
@@ -1280,7 +1302,7 @@
   "license": "Apache-2.0",
   "last_commit": "2026-08-13T12:38:19Z",
   "created_at": "2023-03-31T12:23:09Z",
-  "freshness_days": 48,
+  "freshness_days": 49,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -1314,7 +1336,8 @@
   "languages": [],
   "ja_docs": "official",
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "syncthing",
@@ -1372,7 +1395,8 @@
   "ja_ui": true,
   "aliases": [
    "シンクシング"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "obs",
@@ -1435,7 +1459,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "tesseract",
@@ -1494,7 +1519,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "ffmpeg",
@@ -1561,7 +1587,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "netdata",
@@ -1633,7 +1660,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "strapi",
@@ -1706,7 +1734,8 @@
   "ja_ui": true,
   "aliases": [
    "ストラピ"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "gpt4all",
@@ -1745,7 +1774,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "coder",
@@ -1789,7 +1819,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "hoppscotch",
@@ -1809,7 +1840,7 @@
   "license": "MIT",
   "last_commit": "2026-09-30T12:26:26Z",
   "created_at": "2019-08-21T13:15:24Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 6,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -1861,7 +1892,8 @@
   "ja_ui": true,
   "aliases": [
    "ホップスコッチ"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "airflow",
@@ -1933,7 +1965,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "prometheus",
@@ -1953,7 +1986,7 @@
   "license": "Apache-2.0",
   "last_commit": "2026-09-30T14:40:07Z",
   "created_at": "2012-11-24T11:14:12Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 8.1,
   "scorecard_date": "2026-09-29T14:56:39Z",
   "scorecard_checks": {
@@ -1996,7 +2029,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "appflowy",
@@ -2047,7 +2081,8 @@
   "ja_ui": true,
   "aliases": [
    "アップフロウィー"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "docusaurus",
@@ -2106,7 +2141,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "affine",
@@ -2163,7 +2199,8 @@
   "ja_ui": true,
   "aliases": [
    "アフィン"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "anythingllm",
@@ -2215,7 +2252,8 @@
   "languages": [],
   "ja_docs": "official",
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "ghost",
@@ -2277,7 +2315,8 @@
   "ja_ui": true,
   "aliases": [
    "ゴースト"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "cal-com",
@@ -2327,6 +2366,9 @@
   "ja_ui": true,
   "aliases": [
    "カルドットコム"
+  ],
+  "also_competitors": [
+   "TimeRex"
   ]
  },
  {
@@ -2347,7 +2389,7 @@
   "license": "MIT",
   "last_commit": "2026-09-25T12:34:06Z",
   "created_at": "2015-09-13T19:04:02Z",
-  "freshness_days": 5,
+  "freshness_days": 6,
   "scorecard_score": 6.4,
   "scorecard_date": "2026-09-21",
   "scorecard_checks": {
@@ -2393,7 +2435,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "twenty",
@@ -2447,7 +2490,8 @@
   "languages": [],
   "ja_docs": "official",
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "rocket-chat",
@@ -2512,6 +2556,9 @@
   "ja_ui": true,
   "aliases": [
    "ロケットチャット"
+  ],
+  "also_competitors": [
+   "Chatwork"
   ]
  },
  {
@@ -2586,7 +2633,8 @@
   "ja_ui": true,
   "aliases": [
    "ギテア"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "nocodb",
@@ -2654,7 +2702,8 @@
   "ja_ui": true,
   "aliases": [
    "ノコディービー"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "vaultwarden",
@@ -2699,7 +2748,8 @@
   "ja_ui": null,
   "aliases": [
    "ボルトウォーデン"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "coolify",
@@ -2758,7 +2808,8 @@
   "ja_ui": true,
   "aliases": [
    "クーリファイ"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "memos",
@@ -2778,7 +2829,7 @@
   "license": "MIT",
   "last_commit": "2026-09-28T14:26:11Z",
   "created_at": "2021-12-08T15:30:18Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -2809,7 +2860,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "rclone",
@@ -2829,7 +2881,7 @@
   "license": "MIT",
   "last_commit": "2026-09-24T10:18:54Z",
   "created_at": "2014-03-16T16:19:57Z",
-  "freshness_days": 6,
+  "freshness_days": 7,
   "scorecard_score": 5.2,
   "scorecard_date": "2026-09-21",
   "scorecard_checks": {
@@ -2881,7 +2933,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "private-gpt",
@@ -2901,7 +2954,7 @@
   "license": "Apache-2.0",
   "last_commit": "2026-09-29T10:20:26Z",
   "created_at": "2023-05-02T09:15:31Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -2921,7 +2974,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "jellyfin",
@@ -2979,7 +3033,8 @@
   "ja_ui": true,
   "aliases": [
    "ゼリーフィン"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "plane",
@@ -3036,7 +3091,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "joplin",
@@ -3108,7 +3164,8 @@
   "ja_ui": true,
   "aliases": [
    "ジョプリン"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "appwrite",
@@ -3180,7 +3237,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "penpot",
@@ -3241,7 +3299,8 @@
   "ja_ui": true,
   "aliases": [
    "ペンポット"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "discourse",
@@ -3300,7 +3359,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "pocketbase",
@@ -3356,7 +3416,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "whisper-cpp",
@@ -3399,7 +3460,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "erpnext",
@@ -3467,7 +3529,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "meilisearch",
@@ -3524,7 +3587,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "maybe-finance",
@@ -3569,7 +3633,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "metabase",
@@ -3641,7 +3706,8 @@
   "ja_ui": true,
   "aliases": [
    "メタベース"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "librechat",
@@ -3698,7 +3764,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "dbeaver",
@@ -3768,7 +3835,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "text-generation-webui",
@@ -3804,7 +3872,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "mattermost",
@@ -3869,6 +3938,9 @@
   "ja_ui": true,
   "aliases": [
    "マターモスト"
+  ],
+  "also_competitors": [
+   "Chatwork"
   ]
  },
  {
@@ -3932,7 +4004,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "huginn",
@@ -3996,7 +4069,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "keycloak",
@@ -4053,7 +4127,8 @@
   "ja_ui": true,
   "aliases": [
    "キークローク"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "localai",
@@ -4108,7 +4183,8 @@
   "languages": [],
   "ja_docs": "official",
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "hyperswitch",
@@ -4165,7 +4241,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "tldraw",
@@ -4214,7 +4291,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "sentry",
@@ -4281,7 +4359,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "chatwoot",
@@ -4354,7 +4433,8 @@
   "ja_ui": true,
   "aliases": [
    "チャットウート"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "kong",
@@ -4426,7 +4506,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "umami",
@@ -4472,7 +4553,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "milvus",
@@ -4542,7 +4624,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "payload",
@@ -4613,7 +4696,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "bruno",
@@ -4664,7 +4748,8 @@
   "languages": [],
   "ja_docs": "official",
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "paperless-ngx",
@@ -4713,7 +4798,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "tooljet",
@@ -4768,7 +4854,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "siyuan",
@@ -4829,7 +4916,8 @@
   "languages": [],
   "ja_docs": "official",
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "logseq",
@@ -4895,7 +4983,8 @@
   "aliases": [
    "ログシーク",
    "ログシーケ"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "appsmith",
@@ -4967,7 +5056,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "jan",
@@ -5012,7 +5102,8 @@
   "languages": [],
   "ja_docs": "official",
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "nextcloud",
@@ -5086,7 +5177,8 @@
   "ja_ui": true,
   "aliases": [
    "ネクストクラウド"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "postiz",
@@ -5133,7 +5225,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "headscale",
@@ -5189,7 +5282,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "zulip",
@@ -5253,7 +5347,10 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": [
+   "Chatwork"
+  ]
  },
  {
   "id": "jenkins",
@@ -5315,7 +5412,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "directus",
@@ -5389,7 +5487,8 @@
   "ja_ui": true,
   "aliases": [
    "ディレクタス"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "lossless-cut",
@@ -5451,7 +5550,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "sharex",
@@ -5523,7 +5623,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "outline",
@@ -5543,7 +5644,7 @@
   "license": "BUSL 1.1",
   "last_commit": "2026-09-29T15:37:16Z",
   "created_at": "2016-05-22T21:31:47Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 5.7,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -5584,7 +5685,8 @@
   "ja_ui": true,
   "aliases": [
    "アウトライン"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "medusa",
@@ -5604,7 +5706,7 @@
   "license": "MIT",
   "last_commit": "2026-09-30T12:46:14Z",
   "created_at": "2020-01-18T13:39:04Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 5.3,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -5647,7 +5749,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "posthog",
@@ -5714,7 +5817,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "jitsi",
@@ -5776,7 +5880,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "continue",
@@ -5796,7 +5901,7 @@
   "license": "Apache-2.0",
   "last_commit": "2026-09-29T13:29:59Z",
   "created_at": "2023-05-24T03:39:39Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -5818,7 +5923,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "quivr",
@@ -5875,7 +5981,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "gitness",
@@ -5895,7 +6002,7 @@
   "license": "Apache-2.0",
   "last_commit": "2026-09-25T13:54:13Z",
   "created_at": "2014-02-07T07:54:44Z",
-  "freshness_days": 5,
+  "freshness_days": 6,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -5924,7 +6031,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "insomnia",
@@ -5986,7 +6094,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "photoprism",
@@ -6046,7 +6155,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "portainer",
@@ -6066,7 +6176,7 @@
   "license": "Zlib",
   "last_commit": "2026-09-28T13:04:30Z",
   "created_at": "2016-05-19T20:15:28Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 5.2,
   "scorecard_date": "2026-09-21",
   "scorecard_checks": {
@@ -6111,7 +6221,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "filebrowser",
@@ -6170,7 +6281,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "argo-cd",
@@ -6242,7 +6354,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "dokploy",
@@ -6298,7 +6411,8 @@
   "ja_ui": null,
   "aliases": [
    "ドックプロイ"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "trilium",
@@ -6354,7 +6468,8 @@
   "languages": [],
   "ja_docs": "official",
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "langfuse",
@@ -6410,7 +6525,8 @@
   "languages": [],
   "ja_docs": "official",
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "khoj",
@@ -6467,7 +6583,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "podman",
@@ -6509,7 +6626,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "harbor",
@@ -6529,7 +6647,7 @@
   "license": "Apache-2.0",
   "last_commit": "2026-09-25T11:16:24Z",
   "created_at": "2016-01-28T21:10:28Z",
-  "freshness_days": 5,
+  "freshness_days": 6,
   "scorecard_score": 8.3,
   "scorecard_date": "2026-09-21",
   "scorecard_checks": {
@@ -6573,7 +6691,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "restic",
@@ -6631,7 +6750,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "qdrant",
@@ -6688,7 +6808,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "trivy",
@@ -6755,7 +6876,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "k3s",
@@ -6813,7 +6935,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "ocrmypdf",
@@ -6855,7 +6978,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "nuclei",
@@ -6918,7 +7042,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "redash",
@@ -6989,7 +7114,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "ntfy",
@@ -7048,7 +7174,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "magento",
@@ -7106,7 +7233,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "opentofu",
@@ -7142,7 +7270,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "dokku",
@@ -7205,7 +7334,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "signoz",
@@ -7262,7 +7392,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "actual",
@@ -7303,7 +7434,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "saleor",
@@ -7358,7 +7490,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "woocommerce",
@@ -7418,7 +7551,10 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": [
+   "BASE"
+  ]
  },
  {
   "id": "wikijs",
@@ -7478,7 +7614,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "surrealdb",
@@ -7498,7 +7635,7 @@
   "license": "BUSL 1.1",
   "last_commit": "2026-09-28T11:40:46Z",
   "created_at": "2021-12-09T15:03:29Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 6.5,
   "scorecard_date": "2026-09-27T09:47:49Z",
   "scorecard_checks": {
@@ -7552,7 +7689,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "kestra",
@@ -7624,7 +7762,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "flameshot",
@@ -7685,7 +7824,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "bagisto",
@@ -7757,7 +7897,10 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": [
+   "BASE"
+  ]
  },
  {
   "id": "invokeai",
@@ -7807,7 +7950,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "chroma",
@@ -7865,7 +8009,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "infisical",
@@ -7922,7 +8067,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "activepieces",
@@ -7972,7 +8118,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "keepassxc",
@@ -8036,7 +8183,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "ente",
@@ -8090,7 +8238,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "netbird",
@@ -8152,7 +8301,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "plausible",
@@ -8224,7 +8374,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "budibase",
@@ -8244,7 +8395,7 @@
   "license": "BUSL 1.1",
   "last_commit": "2026-09-30T15:26:30Z",
   "created_at": "2019-06-07T11:03:41Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 6.1,
   "scorecard_date": "2022-08-15",
   "scorecard_checks": {
@@ -8298,7 +8449,8 @@
   "ja_ui": null,
   "aliases": [
    "ブディベース"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "authelia",
@@ -8374,7 +8526,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "node-red",
@@ -8394,7 +8547,7 @@
   "license": "Apache-2.0",
   "last_commit": "2026-09-18T11:58:12Z",
   "created_at": "2013-09-05T13:30:47Z",
-  "freshness_days": 12,
+  "freshness_days": 13,
   "scorecard_score": 6.3,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -8432,7 +8585,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "parse",
@@ -8452,7 +8606,7 @@
   "license": "Apache-2.0",
   "last_commit": "2026-09-24T11:32:55Z",
   "created_at": "2016-01-28T18:29:14Z",
-  "freshness_days": 6,
+  "freshness_days": 7,
   "scorecard_score": 6.9,
   "scorecard_date": "2026-09-21",
   "scorecard_checks": {
@@ -8502,7 +8656,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "focalboard",
@@ -8551,6 +8706,9 @@
   "ja_ui": true,
   "aliases": [
    "フォーカルボード"
+  ],
+  "also_competitors": [
+   "Jooto"
   ]
  },
  {
@@ -8599,7 +8757,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "authentik",
@@ -8655,7 +8814,8 @@
   "ja_ui": true,
   "aliases": [
    "オーセンティック"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "monica",
@@ -8675,7 +8835,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2026-09-24T15:21:07Z",
   "created_at": "2017-02-17T00:02:58Z",
-  "freshness_days": 6,
+  "freshness_days": 7,
   "scorecard_score": 4.6,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -8715,7 +8875,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "jaeger",
@@ -8778,7 +8939,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "blender",
@@ -8836,7 +8998,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "nocobase",
@@ -8856,7 +9019,7 @@
   "license": "NocoBase License",
   "last_commit": "2026-09-28T14:52:48Z",
   "created_at": "2020-10-24T07:27:48Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 3.9,
   "scorecard_date": "2026-09-21",
   "scorecard_checks": {
@@ -8907,7 +9070,8 @@
   "languages": [],
   "ja_docs": "official",
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "prefect",
@@ -8973,7 +9137,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "firefly-iii",
@@ -9043,7 +9208,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "faster-whisper",
@@ -9063,7 +9229,7 @@
   "license": "MIT",
   "last_commit": "2025-11-19T14:40:46Z",
   "created_at": "2023-02-11T09:17:27Z",
-  "freshness_days": 315,
+  "freshness_days": 316,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -9088,7 +9254,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "pulumi",
@@ -9158,7 +9325,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "whisperx",
@@ -9200,7 +9368,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "listmonk",
@@ -9265,7 +9434,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "matomo",
@@ -9332,7 +9502,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "spree",
@@ -9399,7 +9570,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "typesense",
@@ -9419,7 +9591,7 @@
   "license": "GPL-3.0",
   "last_commit": "2026-09-30T11:52:47Z",
   "created_at": "2017-01-18T08:01:47Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 5.7,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -9471,7 +9643,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "handbrake",
@@ -9526,7 +9699,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "mkdocs",
@@ -9546,7 +9720,7 @@
   "license": "BSD-2-Clause",
   "last_commit": "2025-10-20T13:17:06Z",
   "created_at": "2014-01-11T21:05:21Z",
-  "freshness_days": 345,
+  "freshness_days": 346,
   "scorecard_score": 4.1,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -9583,7 +9757,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "wekan",
@@ -9644,7 +9819,10 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": [
+   "Jooto"
+  ]
  },
  {
   "id": "navidrome",
@@ -9664,7 +9842,7 @@
   "license": "GPL-3.0",
   "last_commit": "2026-09-30T10:17:59Z",
   "created_at": "2016-02-24T23:25:12Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 4.9,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -9710,7 +9888,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "temporal",
@@ -9778,7 +9957,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "krayin",
@@ -9798,7 +9978,7 @@
   "license": "MIT",
   "last_commit": "2026-09-29T11:23:05Z",
   "created_at": "2021-06-05T14:18:48Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -9832,7 +10012,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "cap",
@@ -9889,7 +10070,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "livekit",
@@ -9909,7 +10091,7 @@
   "license": "Apache-2.0",
   "last_commit": "2026-09-30T15:11:49Z",
   "created_at": "2020-09-30T06:49:46Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -9933,7 +10115,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "univer",
@@ -9989,7 +10172,8 @@
   "languages": [],
   "ja_docs": "official",
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "pgvector",
@@ -10043,7 +10227,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "sops",
@@ -10089,7 +10274,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "etherpad",
@@ -10109,7 +10295,7 @@
   "license": "Apache-2.0",
   "last_commit": "2026-09-30T15:30:53Z",
   "created_at": "2011-03-26T13:09:02Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -10141,7 +10327,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "mediamtx",
@@ -10198,7 +10385,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "docmost",
@@ -10255,7 +10443,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "audacity",
@@ -10312,7 +10501,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "openobserve",
@@ -10369,7 +10559,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "vitepress",
@@ -10427,7 +10618,8 @@
   "languages": [],
   "ja_docs": "official",
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "teable",
@@ -10447,7 +10639,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2026-09-30T13:12:40Z",
   "created_at": "2022-11-01T07:02:49Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -10476,7 +10668,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "bookstack",
@@ -10496,7 +10689,7 @@
   "license": "MIT",
   "last_commit": "2026-09-30T13:58:27Z",
   "created_at": "2015-08-29T10:26:44Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 3.2,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -10534,7 +10727,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "apisix",
@@ -10605,7 +10799,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "openproject",
@@ -10677,7 +10872,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "opensearch",
@@ -10720,7 +10916,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "docker-mailserver",
@@ -10740,7 +10937,7 @@
   "license": "MIT",
   "last_commit": "2026-09-30T11:17:44Z",
   "created_at": "2015-03-28T14:56:28Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 5.5,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -10783,7 +10980,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "wazuh",
@@ -10855,7 +11053,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "docuseal",
@@ -10875,7 +11074,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2026-09-28T11:59:14Z",
   "created_at": "2023-07-03T19:54:54Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -10905,7 +11104,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "prestashop",
@@ -10965,7 +11165,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "dagster",
@@ -11032,7 +11233,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "victoria-metrics",
@@ -11099,7 +11301,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "documenso",
@@ -11154,7 +11357,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "bigbluebutton",
@@ -11212,7 +11416,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "nodebb",
@@ -11275,7 +11480,8 @@
   "languages": [],
   "ja_docs": "official",
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "zap",
@@ -11295,7 +11501,7 @@
   "license": "Apache-2.0",
   "last_commit": "2026-09-30T15:26:17Z",
   "created_at": "2015-06-03T16:55:01Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 6.8,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -11336,7 +11542,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "element",
@@ -11375,7 +11582,10 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": [
+   "Chatwork"
+  ]
  },
  {
   "id": "luckysheet",
@@ -11395,7 +11605,7 @@
   "license": "MIT",
   "last_commit": "2025-08-19T12:36:59Z",
   "created_at": "2020-05-15T07:24:59Z",
-  "freshness_days": 407,
+  "freshness_days": 408,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -11427,7 +11637,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "peertube",
@@ -11447,7 +11658,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2026-09-30T13:31:44Z",
   "created_at": "2015-10-29T22:09:42Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 7.3,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -11484,7 +11695,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "libretranslate",
@@ -11526,7 +11738,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "mailspring",
@@ -11586,7 +11799,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "uvdesk",
@@ -11656,7 +11870,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "windmill",
@@ -11700,7 +11915,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "coder-oss",
@@ -11766,7 +11982,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "weaviate",
@@ -11838,7 +12055,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "phpmyadmin",
@@ -11896,7 +12114,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "opencart",
@@ -11958,7 +12177,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "postal",
@@ -12000,7 +12220,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "freshrss",
@@ -12061,7 +12282,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "semgrep",
@@ -12110,7 +12332,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "grav",
@@ -12177,7 +12400,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "seafile",
@@ -12236,7 +12460,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "cachet",
@@ -12256,7 +12481,7 @@
   "license": "Cachet License",
   "last_commit": "2026-09-28T13:17:34Z",
   "created_at": "2014-11-16T22:23:11Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -12280,7 +12505,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "casdoor",
@@ -12337,7 +12563,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "mautic",
@@ -12357,7 +12584,7 @@
   "license": "GPL-3.0",
   "last_commit": "2026-09-25T11:45:32Z",
   "created_at": "2013-08-19T00:36:28Z",
-  "freshness_days": 5,
+  "freshness_days": 6,
   "scorecard_score": 6.9,
   "scorecard_date": "2026-09-21",
   "scorecard_checks": {
@@ -12401,7 +12628,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "formbricks",
@@ -12474,7 +12702,10 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": [
+   "formrun"
+  ]
  },
  {
   "id": "shotcut",
@@ -12531,7 +12762,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "mailhog",
@@ -12582,7 +12814,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "zitadel",
@@ -12636,7 +12869,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "mailcow",
@@ -12705,7 +12939,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "gotify",
@@ -12770,7 +13005,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "robotframework",
@@ -12790,7 +13026,7 @@
   "license": "Apache-2.0",
   "last_commit": "2026-09-21T15:19:54Z",
   "created_at": "2014-06-27T11:10:38Z",
-  "freshness_days": 9,
+  "freshness_days": 10,
   "scorecard_score": 4.2,
   "scorecard_date": "2026-09-21",
   "scorecard_checks": {
@@ -12830,7 +13066,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "audiobookshelf",
@@ -12872,7 +13109,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "duplicati",
@@ -12935,7 +13173,8 @@
   "languages": [],
   "ja_docs": "official",
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "caprover",
@@ -13006,7 +13245,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "onedev",
@@ -13067,7 +13307,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "logto",
@@ -13087,7 +13328,7 @@
   "license": "MPL-2.0",
   "last_commit": "2026-09-29T15:23:25Z",
   "created_at": "2021-06-19T03:01:50Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -13124,7 +13365,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "supertokens",
@@ -13144,7 +13386,7 @@
   "license": "Apache-2.0",
   "last_commit": "2026-09-28T12:59:54Z",
   "created_at": "2020-01-05T13:30:52Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 5.2,
   "scorecard_date": "2026-09-21",
   "scorecard_checks": {
@@ -13195,7 +13437,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "typebot",
@@ -13238,7 +13481,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "filestash",
@@ -13309,7 +13553,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "stalwart",
@@ -13329,7 +13574,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2026-09-28T12:34:45Z",
   "created_at": "2023-03-06T13:37:23Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 4.9,
   "scorecard_date": "2026-09-27T16:15:33Z",
   "scorecard_checks": {
@@ -13375,7 +13620,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "notesnook",
@@ -13395,7 +13641,7 @@
   "license": "GPL-3.0",
   "last_commit": "2026-09-28T12:31:55Z",
   "created_at": "2021-04-01T17:25:54Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -13431,7 +13677,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "kratos",
@@ -13494,7 +13741,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "crowdsec",
@@ -13514,7 +13762,7 @@
   "license": "MIT",
   "last_commit": "2026-09-25T14:51:08Z",
   "created_at": "2020-05-15T09:38:05Z",
-  "freshness_days": 5,
+  "freshness_days": 6,
   "scorecard_score": 6.9,
   "scorecard_date": "2026-09-21",
   "scorecard_checks": {
@@ -13564,7 +13812,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "akaunting",
@@ -13635,7 +13884,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "kamal",
@@ -13671,7 +13921,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "devpod",
@@ -13734,7 +13985,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "borg",
@@ -13793,7 +14045,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "invoice-ninja",
@@ -13861,7 +14114,10 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": [
+   "Misoca"
+  ]
  },
  {
   "id": "automatisch",
@@ -13905,7 +14161,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "kopia",
@@ -13966,7 +14223,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "planka",
@@ -14012,6 +14270,9 @@
   "ja_ui": true,
   "aliases": [
    "プランカ"
+  ],
+  "also_competitors": [
+   "Jooto"
   ]
  },
  {
@@ -14083,7 +14344,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "kanboard",
@@ -14140,7 +14402,10 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": [
+   "Jooto"
+  ]
  },
  {
   "id": "sylius",
@@ -14160,7 +14425,7 @@
   "license": "MIT",
   "last_commit": "2026-09-28T13:17:03Z",
   "created_at": "2011-11-05T22:05:52Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 5.8,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -14208,7 +14473,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "frappe-hr",
@@ -14265,7 +14531,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "openreplay",
@@ -14318,7 +14585,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "owncloud",
@@ -14384,7 +14652,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "velero",
@@ -14404,7 +14673,7 @@
   "license": "Apache-2.0",
   "last_commit": "2026-09-30T14:59:42Z",
   "created_at": "2017-08-02T17:22:11Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 7.2,
   "scorecard_date": "2026-09-30T14:59:57Z",
   "scorecard_checks": {
@@ -14445,7 +14714,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "arize-phoenix",
@@ -14498,7 +14768,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "leantime",
@@ -14570,7 +14841,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "owncast",
@@ -14638,7 +14910,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "gatus",
@@ -14658,7 +14931,7 @@
   "license": "Apache-2.0",
   "last_commit": "2026-09-30T13:32:31Z",
   "created_at": "2019-09-04T02:35:40Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -14695,7 +14968,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "tekton",
@@ -14756,7 +15030,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "krita",
@@ -14807,7 +15082,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "grist",
@@ -14847,7 +15123,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "weblate",
@@ -14915,7 +15192,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "netmaker",
@@ -14935,7 +15213,7 @@
   "license": "Apache-2.0（pro/配下は別ライセンス）",
   "last_commit": "2026-09-30T13:13:12Z",
   "created_at": "2021-03-25T15:33:08Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 4.5,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -14987,7 +15265,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "piper",
@@ -15007,7 +15286,7 @@
   "license": "MIT",
   "last_commit": "2025-08-26T15:01:29Z",
   "created_at": "2023-01-10T22:25:40Z",
-  "freshness_days": 400,
+  "freshness_days": 401,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -15027,7 +15306,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "openvscode",
@@ -15047,7 +15327,7 @@
   "license": "MIT",
   "last_commit": "2026-09-24T15:23:21Z",
   "created_at": "2020-09-04T13:57:59Z",
-  "freshness_days": 6,
+  "freshness_days": 7,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -15067,7 +15347,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "shiori",
@@ -15125,7 +15406,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "ghostfolio",
@@ -15181,7 +15463,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "miniflux",
@@ -15243,7 +15526,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "libreoffice",
@@ -15297,7 +15581,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "vendure",
@@ -15317,7 +15602,7 @@
   "license": "GPL-3.0",
   "last_commit": "2026-09-30T15:45:49Z",
   "created_at": "2018-06-11T14:29:20Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -15347,7 +15632,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "crater",
@@ -15391,7 +15677,10 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": [
+   "Misoca"
+  ]
  },
  {
   "id": "roundcube",
@@ -15442,7 +15731,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "suitecrm",
@@ -15462,7 +15752,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2026-09-17T14:14:36Z",
   "created_at": "2013-09-23T19:10:08Z",
-  "freshness_days": 13,
+  "freshness_days": 14,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -15496,7 +15786,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "redmine",
@@ -15547,7 +15838,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "mailpit",
@@ -15592,7 +15884,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "hanko",
@@ -15612,7 +15905,7 @@
   "license": "MIT",
   "last_commit": "2026-09-29T13:32:39Z",
   "created_at": "2022-03-14T17:03:46Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -15643,7 +15936,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "suricata",
@@ -15710,7 +16004,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "graylog",
@@ -15777,7 +16072,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "kokoro",
@@ -15828,7 +16124,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "nhost",
@@ -15884,7 +16181,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "adminer",
@@ -15904,7 +16202,7 @@
   "license": "Apache-2.0 / GPL-2.0",
   "last_commit": "2026-09-29T14:50:04Z",
   "created_at": "2010-04-25T08:30:07Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 3.9,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -15943,7 +16241,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "drawio",
@@ -15998,7 +16297,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "gimp",
@@ -16049,7 +16349,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "highlight",
@@ -16112,7 +16413,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "mediawiki",
@@ -16168,7 +16470,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "woodpecker",
@@ -16188,7 +16491,7 @@
   "license": "Apache-2.0",
   "last_commit": "2026-09-29T12:33:24Z",
   "created_at": "2019-04-03T18:06:38Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 6.1,
   "scorecard_date": "2026-09-21",
   "scorecard_checks": {
@@ -16227,7 +16530,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "heyform",
@@ -16267,7 +16571,10 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": [
+   "formrun"
+  ]
  },
  {
   "id": "tigervnc",
@@ -16287,7 +16594,7 @@
   "license": "GPL-2.0",
   "last_commit": "2026-09-25T14:44:21Z",
   "created_at": "2014-06-25T12:48:26Z",
-  "freshness_days": 5,
+  "freshness_days": 6,
   "scorecard_score": 3.9,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -16318,7 +16625,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "headlamp",
@@ -16388,7 +16696,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "defectdojo",
@@ -16455,7 +16764,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "anytype",
@@ -16498,7 +16808,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "mailu",
@@ -16518,7 +16829,7 @@
   "license": "MIT",
   "last_commit": "2026-09-30T14:54:23Z",
   "created_at": "2016-01-10T21:35:55Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 5.8,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -16563,7 +16874,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "cryptpad",
@@ -16583,7 +16895,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2026-09-28T14:50:03Z",
   "created_at": "2014-10-31T15:46:17Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -16608,7 +16920,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "couchdb",
@@ -16670,7 +16983,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "meshcentral",
@@ -16728,7 +17042,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "wallos",
@@ -16771,7 +17086,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "onlyoffice",
@@ -16843,7 +17159,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "zabbix",
@@ -16863,7 +17180,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2026-09-29T12:30:31Z",
   "created_at": "2014-02-27T15:36:03Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 3.2,
   "scorecard_date": "2026-09-21",
   "scorecard_checks": {
@@ -16901,7 +17218,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "librephotos",
@@ -16945,7 +17263,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "flarum",
@@ -16989,7 +17308,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "fathom",
@@ -17049,7 +17369,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "hedgedoc",
@@ -17115,7 +17436,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "plasmic",
@@ -17170,7 +17492,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "opensign",
@@ -17190,7 +17513,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2026-08-21T12:29:09Z",
   "created_at": "2023-10-02T15:53:30Z",
-  "freshness_days": 40,
+  "freshness_days": 41,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -17227,7 +17550,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "zammad",
@@ -17293,7 +17617,10 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": [
+   "メールディーラー"
+  ]
  },
  {
   "id": "openshot",
@@ -17354,7 +17681,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "rancher-desktop",
@@ -17415,7 +17743,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "countly",
@@ -17435,7 +17764,7 @@
   "license": "Countly Lite License",
   "last_commit": "2026-09-30T12:56:50Z",
   "created_at": "2012-05-28T18:48:40Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 6.6,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -17487,7 +17816,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "passbolt",
@@ -17548,7 +17878,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "lightdash",
@@ -17589,7 +17920,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "kill-bill",
@@ -17645,7 +17977,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "standard-notes",
@@ -17690,7 +18023,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "osticket",
@@ -17741,7 +18075,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "easy-appointments",
@@ -17761,7 +18096,7 @@
   "license": "GPL-3.0",
   "last_commit": "2026-09-25T14:45:55Z",
   "created_at": "2014-11-26T20:51:50Z",
-  "freshness_days": 5,
+  "freshness_days": 6,
   "scorecard_score": 4.7,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -17805,7 +18140,10 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": [
+   "TimeRex"
+  ]
  },
  {
   "id": "helicone",
@@ -17861,7 +18199,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "baserow",
@@ -17916,7 +18255,8 @@
   "ja_ui": true,
   "aliases": [
    "ベースロウ"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "gnucash",
@@ -17967,7 +18307,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "shopware",
@@ -18039,7 +18380,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "silverbullet",
@@ -18082,7 +18424,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "argos-translate",
@@ -18102,7 +18445,7 @@
   "license": "MIT",
   "last_commit": "2026-08-08T12:09:57Z",
   "created_at": "2020-04-07T16:22:23Z",
-  "freshness_days": 53,
+  "freshness_days": 54,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -18127,7 +18470,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "vikunja",
@@ -18174,7 +18518,8 @@
   "ja_ui": true,
   "aliases": [
    "ビクーニャ"
-  ]
+  ],
+  "also_competitors": []
  },
  {
   "id": "kdenlive",
@@ -18225,7 +18570,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "mailtrain",
@@ -18280,7 +18626,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "synapse",
@@ -18316,7 +18663,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "papercups",
@@ -18388,7 +18736,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "mediacms",
@@ -18437,7 +18786,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "send",
@@ -18480,7 +18830,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "beancount",
@@ -18533,7 +18884,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "surveyjs",
@@ -18605,7 +18957,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "kimai",
@@ -18625,7 +18978,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2026-09-30T11:34:59Z",
   "created_at": "2016-10-20T17:06:34Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 6,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -18672,7 +19025,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "limesurvey",
@@ -18734,7 +19088,10 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": [
+   "formrun"
+  ]
  },
  {
   "id": "greenshot",
@@ -18754,7 +19111,7 @@
   "license": "GPL-3.0",
   "last_commit": "2026-09-29T13:19:00Z",
   "created_at": "2015-06-02T19:34:01Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 4.7,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -18788,7 +19145,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "goatcounter",
@@ -18828,7 +19186,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "frappe-crm",
@@ -18884,7 +19243,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "radicale",
@@ -18940,7 +19300,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "rallly",
@@ -18989,7 +19350,10 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": [
+   "調整さん"
+  ]
  },
  {
   "id": "collabora-online",
@@ -19009,7 +19373,7 @@
   "license": "MPL-2.0",
   "last_commit": "2026-09-25T15:21:52Z",
   "created_at": "2020-10-01T05:23:57Z",
-  "freshness_days": 5,
+  "freshness_days": 6,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -19039,7 +19403,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "writefreely",
@@ -19102,7 +19467,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "freescout",
@@ -19122,7 +19488,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2026-09-27T10:45:02Z",
   "created_at": "2018-06-22T17:08:50Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -19153,7 +19519,10 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": [
+   "メールディーラー"
+  ]
  },
  {
   "id": "dependency-track",
@@ -19225,7 +19594,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "pgadmin",
@@ -19269,7 +19639,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "hledger",
@@ -19318,7 +19689,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "jitsu",
@@ -19338,7 +19710,7 @@
   "license": "MIT",
   "last_commit": "2026-09-28T12:42:52Z",
   "created_at": "2020-08-04T14:57:55Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 5.5,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -19379,7 +19751,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "guacamole",
@@ -19437,7 +19810,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "espocrm",
@@ -19507,7 +19881,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "ackee",
@@ -19527,7 +19902,7 @@
   "license": "MIT",
   "last_commit": "2026-09-19T11:11:56Z",
   "created_at": "2014-04-16T08:08:37Z",
-  "freshness_days": 11,
+  "freshness_days": 12,
   "scorecard_score": 5,
   "scorecard_date": "2026-09-21",
   "scorecard_checks": {
@@ -19563,7 +19938,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "pdfsam",
@@ -19583,7 +19959,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2026-09-29T13:11:59Z",
   "created_at": "2013-09-24T11:06:13Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 5.5,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -19634,7 +20010,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "unlighthouse",
@@ -19674,7 +20051,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "invoiceplane",
@@ -19694,7 +20072,7 @@
   "license": "MIT",
   "last_commit": "2026-09-25T15:37:59Z",
   "created_at": "2014-05-21T12:52:29Z",
-  "freshness_days": 5,
+  "freshness_days": 6,
   "scorecard_score": 4.6,
   "scorecard_date": "2026-09-21",
   "scorecard_checks": {
@@ -19734,7 +20112,10 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": [
+   "Misoca"
+  ]
  },
  {
   "id": "piwigo",
@@ -19754,7 +20135,7 @@
   "license": "GPL-2.0",
   "last_commit": "2026-09-24T10:24:21Z",
   "created_at": "2015-07-25T11:32:24Z",
-  "freshness_days": 6,
+  "freshness_days": 7,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -19781,7 +20162,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "cerbos",
@@ -19852,7 +20234,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "tolgee",
@@ -19872,7 +20255,7 @@
   "license": null,
   "last_commit": "2026-09-29T12:45:01Z",
   "created_at": "2020-10-13T16:36:39Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -19905,7 +20288,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "pretix",
@@ -19967,7 +20351,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "rudderstack",
@@ -20039,7 +20424,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "chaskiq",
@@ -20109,7 +20495,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "whisper-asr-webservice",
@@ -20153,7 +20540,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "ethercalc",
@@ -20173,7 +20561,7 @@
   "license": "MIT",
   "last_commit": "2026-09-15T11:00:50Z",
   "created_at": "2011-08-20T06:10:56Z",
-  "freshness_days": 15,
+  "freshness_days": 16,
   "scorecard_score": 5.5,
   "scorecard_date": "2026-09-21",
   "scorecard_checks": {
@@ -20204,7 +20592,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "revolt",
@@ -20224,7 +20613,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2026-09-29T14:06:09Z",
   "created_at": "2021-06-15T13:11:41Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -20251,7 +20640,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "baikal",
@@ -20302,7 +20692,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "peppermint",
@@ -20322,7 +20713,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2025-09-21T10:59:09Z",
   "created_at": "2020-11-05T21:56:53Z",
-  "freshness_days": 374,
+  "freshness_days": 375,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -20359,7 +20750,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "nextcloud-talk",
@@ -20419,7 +20811,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "ohmyform",
@@ -20488,7 +20881,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "wbo",
@@ -20547,7 +20941,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "libredesk",
@@ -20602,7 +20997,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "papermerge",
@@ -20663,7 +21059,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "helpy",
@@ -20721,7 +21118,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "horilla",
@@ -20774,7 +21172,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "alerta",
@@ -20831,7 +21230,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "xwiki",
@@ -20882,7 +21282,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "undb",
@@ -20936,7 +21337,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "openvidu",
@@ -20956,7 +21358,7 @@
   "license": "Apache-2.0",
   "last_commit": "2026-09-30T15:52:59Z",
   "created_at": "2016-10-10T13:31:27Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 3.9,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -21005,7 +21407,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "spacebar",
@@ -21025,7 +21428,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2026-09-30T12:19:21Z",
   "created_at": "2020-11-28T12:39:03Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -21046,7 +21449,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "taiga",
@@ -21082,7 +21486,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "ec-cube",
@@ -21142,7 +21547,10 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": [
+   "BASE"
+  ]
  },
  {
   "id": "docspell",
@@ -21195,7 +21603,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "pydio",
@@ -21215,7 +21624,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2026-09-30T13:49:44Z",
   "created_at": "2018-03-24T13:52:10Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 3.8,
   "scorecard_date": "2026-09-28",
   "scorecard_checks": {
@@ -21250,7 +21659,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "orangehrm",
@@ -21312,7 +21722,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "keila",
@@ -21332,7 +21743,7 @@
   "license": "AGPL-3.0",
   "last_commit": "2026-09-21T14:41:02Z",
   "created_at": "2021-01-01T22:29:37Z",
-  "freshness_days": 9,
+  "freshness_days": 10,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -21348,7 +21759,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "faveo",
@@ -21389,7 +21801,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "serpbear",
@@ -21425,7 +21838,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "bugsink",
@@ -21461,7 +21875,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "trudesk",
@@ -21509,7 +21924,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "psitransfer",
@@ -21565,7 +21981,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "galene",
@@ -21585,7 +22002,7 @@
   "license": "MIT",
   "last_commit": "2026-09-25T14:21:56Z",
   "created_at": "2020-12-19T18:44:46Z",
-  "freshness_days": 5,
+  "freshness_days": 6,
   "scorecard_score": 3.5,
   "scorecard_date": "2026-09-21",
   "scorecard_checks": {
@@ -21625,7 +22042,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "traggo",
@@ -21685,7 +22103,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "docassemble",
@@ -21738,7 +22157,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "solidinvoice",
@@ -21805,7 +22225,10 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": [
+   "Misoca"
+  ]
  },
  {
   "id": "libresign",
@@ -21862,7 +22285,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "bolt-cms",
@@ -21911,7 +22335,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "siteone-crawler",
@@ -21968,7 +22393,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "trac",
@@ -22026,7 +22452,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "seonaut",
@@ -22073,7 +22500,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "cockpit-cms",
@@ -22120,7 +22548,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "tryton",
@@ -22161,7 +22590,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "tracim",
@@ -22181,7 +22611,7 @@
   "license": "AGPL-3.0 / LGPL-3.0 / MIT（構成要素により異なる）",
   "last_commit": "2026-09-30T10:33:50Z",
   "created_at": "2014-11-10T13:54:13Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -22197,7 +22627,8 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": true,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  },
  {
   "id": "glitchtip",
@@ -22217,7 +22648,7 @@
   "license": "MIT",
   "last_commit": "2026-02-10T14:09:19Z",
   "created_at": "2021-02-15T17:36:43Z",
-  "freshness_days": 232,
+  "freshness_days": 233,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -22233,6 +22664,7 @@
   "languages": [],
   "ja_docs": null,
   "ja_ui": null,
-  "aliases": []
+  "aliases": [],
+  "also_competitors": []
  }
 ]

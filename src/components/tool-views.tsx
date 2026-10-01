@@ -332,7 +332,7 @@ export function ComparisonTable({ tools }: { tools: Tool[] }) {
         <thead>
           <tr>
             <th scope="col">ツール</th>
-            <th scope="col">代替対象</th>
+            <th scope="col">主な代替対象</th>
             <th scope="col" style={{ textAlign: "right" }}>
               {t("metric.stars")}
             </th>
