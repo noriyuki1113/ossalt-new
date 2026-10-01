@@ -24,6 +24,13 @@ export default function AlternativesPage() {
         <h1 className="h2">{t("alt.title")}</h1>
         <p className="lede">{t("alt.lede")}</p>
 
+        <p className="notice notice--info">
+          <strong>日本のSaaSから探す：</strong>
+          <Link href="/alternatives/japan/">
+            kintone・freee・SmartHR・Backlogなど、国内のSaaSの代わりになるオープンソースのまとめ
+          </Link>
+        </p>
+
         <div className="panel">
           <div className="panel__head">
             <h2 className="panel__title">代替対象SaaS</h2>

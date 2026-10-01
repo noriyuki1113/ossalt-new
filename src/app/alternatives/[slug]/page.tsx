@@ -10,6 +10,7 @@ import { SITE, t } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
 import { alternativeDescription, alternativeTitle } from "@/lib/seo-copy";
 import { buildAlternativeFaq } from "@/lib/alternative-faq";
+import { JAPAN_SAAS_GROUPS } from "@/lib/japan-saas";
 import { formatDate } from "@/lib/tools";
 
 type Params = { slug: string };
@@ -157,6 +158,11 @@ export default async function AlternativeDetailPage({
           <p>
             <Link href="/alternatives/">代替対象SaaSの一覧へ</Link>
           </p>
+          {JAPAN_SAAS_GROUPS.some((g) => g.slugs.includes(c.slug)) && (
+            <p>
+              <Link href="/alternatives/japan/">日本のSaaSの代わりになるオープンソースのまとめ</Link>
+            </p>
+          )}
         </section>
       </main>
       <SiteFooter meta={meta} />
