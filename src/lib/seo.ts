@@ -18,10 +18,15 @@ export function pageMeta(opts: {
   path: string; // 例: "/tools/n8n/"（末尾スラッシュあり）
   type?: "website" | "article";
   noindex?: boolean;
+  /** ページ固有の共有用画像（サイト内のパス）。無ければサイト共通の画像 */
+  image?: { src: string; width: number; height: number } | null;
 }): Metadata {
   const base = SITE.url.replace(/\/$/, "");
   const url = `${base}${opts.path}`;
   const ogTitle = `${opts.title} | ${SITE.name}`;
+  const img = opts.image
+    ? { url: `${base}${opts.image.src}`, width: opts.image.width, height: opts.image.height }
+    : { url: OG_IMAGE, width: 1200, height: 630 };
   return {
     title: opts.title,
     description: opts.description,
@@ -33,14 +38,14 @@ export function pageMeta(opts: {
       title: ogTitle,
       description: opts.description,
       url,
-      images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: ogTitle }],
+      images: [{ ...img, alt: ogTitle }],
     },
     twitter: {
       card: "summary_large_image",
       site: SITE.twitter,
       title: ogTitle,
       description: opts.description,
-      images: [OG_IMAGE],
+      images: [img.url],
     },
     ...(opts.noindex ? { robots: { index: false, follow: true } } : {}),
   };

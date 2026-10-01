@@ -1,0 +1,52 @@
+name: プレビュー画像の取得
+
+# 各ツールの公式サイト（無ければGitHub）の共有用画像（og:image）を取得し、
+# ツールページに載せる画像として public/previews/ に保存する。
+# 毎週月曜 04:17 JST（日曜 19:17 UTC）に実行。手動実行も可能（初回はこちらで）。
+# 1回の実行で取り直すのは、未取得のものと30日以上前に取得したものだけ。
+# 成功すると「GitHub Pages 公開」ワークフローが続けて動き、サイトに反映される。
+on:
+  schedule:
+    - cron: "17 19 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: previews
+  cancel-in-progress: false
+
+jobs:
+  previews:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      # 画像の変換に sharp を使う（next の依存として入る）
+      - run: npm ci
+
+      - name: 画像の取得
+        run: node scripts/fetch-previews.mjs
+
+      - name: サイト用データ生成
+        run: node scripts/build-data.mjs
+
+      - name: コミットと push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A public/previews data-source/previews.json public/data
+          if git diff --cached --quiet; then
+            echo "変更なし"
+            exit 0
+          fi
+          git commit -m "data: プレビュー画像の更新 $(date -u +%Y-%m-%d)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

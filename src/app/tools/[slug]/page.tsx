@@ -40,6 +40,7 @@ export async function generateMetadata({
   return pageMeta({
     title: toolTitle(tool),
     description: getToolGuide(tool.id)?.description || toolDescription(tool),
+    image: tool.preview ?? null,
     path: `/tools/${tool.id}/`,
     type: "article",
   });
@@ -125,6 +126,25 @@ export default async function ToolDetailPage({
                 </Link>
               )}
             </div>
+
+            {tool.preview && (
+              <figure className="tool-preview">
+                {/* eslint-disable-next-line @next/next/no-img-element -- 静的書き出しのため next/image の最適化は使わない */}
+                <img
+                  src={tool.preview.src}
+                  width={tool.preview.width}
+                  height={tool.preview.height}
+                  alt={`${tool.name}の共有用画像`}
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption>
+                  {tool.preview.source === "official"
+                    ? `画像：${tool.name} 公式サイトの共有用画像より`
+                    : `画像：GitHub（${tool.github_url.replace(/^https:\/\/github\.com\//, "")}）の共有用画像より`}
+                </figcaption>
+              </figure>
+            )}
 
             {(tool.also_competitors ?? []).length > 0 && (
               <p className="muted" style={{ marginTop: "-1rem", marginBottom: "2rem", fontSize: "0.875rem" }}>

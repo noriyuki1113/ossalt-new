@@ -193,6 +193,20 @@ const tools = raw.map((t) => {
 });
 
 /**
+ * プレビュー画像（scripts/fetch-previews.mjs が取得）。画像のファイルが実際にある場合だけ付ける
+ */
+{
+  const previews = readJson(path.join(ROOT, "data-source", "previews.json"), {});
+  for (const t of tools) {
+    const p = previews[t.id];
+    t.preview =
+      p?.file && fs.existsSync(path.join(ROOT, "public", p.file))
+        ? { src: p.file, source: p.source, width: p.width, height: p.height }
+        : null;
+  }
+}
+
+/**
  * 主な代替対象とは別に、編集部が指定した「ほかにも代わりになるSaaS」を付ける
  * （data-source/extra-alternatives.json）。国内SaaSの代替ページを作るため。
  */
