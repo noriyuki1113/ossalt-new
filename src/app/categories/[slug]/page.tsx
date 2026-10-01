@@ -8,6 +8,8 @@ import { CATEGORIES, getCategory } from "@/lib/categories";
 import { t } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
 import { categoryDescription, categoryTitle } from "@/lib/seo-copy";
+import { getCategoryGuide } from "@/lib/category-guides";
+import { formatDate } from "@/lib/tools";
 
 type Params = { slug: string };
 
@@ -47,6 +49,7 @@ export default async function CategoryPage({ params }: { params: Promise<Params>
     .filter((c) => c.n > 0)
     .sort((a, b) => b.n - a.n || a.name.localeCompare(b.name));
   const toolName = new Map(items.map((tl) => [tl.id, tl.name]));
+  const guide = getCategoryGuide(category.slug);
   const pairs = getComparePairs()
     .filter((p) => itemIds.has(p.a) && itemIds.has(p.b))
     .slice(0, 8);
@@ -75,6 +78,18 @@ export default async function CategoryPage({ params }: { params: Promise<Params>
               <ToolRow key={tool.id} tool={tool} />
             ))}
           </div>
+        )}
+
+        {guide && (
+          <section className="mt2">
+            <h2 className="h3">{`${category.nameJa}のオープンソースの選び方`}</h2>
+            <div className="prose" dangerouslySetInnerHTML={{ __html: guide.contentHtml }} />
+            {guide.updated && (
+              <p className="muted" style={{ fontSize: "0.75rem" }}>
+                {`最終更新：${formatDate(guide.updated)}`}
+              </p>
+            )}
+          </section>
         )}
 
         {competitors.length > 0 && (
