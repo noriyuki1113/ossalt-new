@@ -196,17 +196,24 @@ const tools = raw.map((t) => {
  * ここに無い表記ゆれが残っていないかは、正規化後に検査して警告する。
  */
 const COMPETITOR_CANONICAL = { hubspot: "HubSpot", sendgrid: "SendGrid" };
+// 画面には primary_competitor_ja があればそちらを表示するため、両方の欄を正規化する
+// （primary_competitor だけを直すと、表示用の欄に古い表記が残る）。
+const COMPETITOR_FIELDS = ["primary_competitor", "primary_competitor_ja"];
 for (const t of tools) {
-  const key = (t.primary_competitor ?? "").trim().toLowerCase();
-  if (key && COMPETITOR_CANONICAL[key]) t.primary_competitor = COMPETITOR_CANONICAL[key];
+  for (const f of COMPETITOR_FIELDS) {
+    const key = (t[f] ?? "").trim().toLowerCase();
+    if (key && COMPETITOR_CANONICAL[key]) t[f] = COMPETITOR_CANONICAL[key];
+  }
 }
 {
   const seenByKey = new Map();
   for (const t of tools) {
-    const key = (t.primary_competitor ?? "").trim().toLowerCase();
-    if (!key) continue;
-    if (!seenByKey.has(key)) seenByKey.set(key, new Set());
-    seenByKey.get(key).add(t.primary_competitor);
+    for (const f of COMPETITOR_FIELDS) {
+      const key = (t[f] ?? "").trim().toLowerCase();
+      if (!key) continue;
+      if (!seenByKey.has(key)) seenByKey.set(key, new Set());
+      seenByKey.get(key).add(t[f]);
+    }
   }
   for (const [key, names] of seenByKey) {
     if (names.size > 1) {
