@@ -25,6 +25,7 @@ import {
 } from "@/lib/tools";
 import { t } from "@/lib/site";
 import { classifyLicense, LICENSE_CLASS_LABELS } from "@/lib/compare";
+import { freshnessState, type StarContext } from "@/lib/star-context";
 
 /* ------------------------------------------------------------------ *
  * 健全度メーター — このサイトの署名要素
@@ -292,7 +293,32 @@ export function ToolRow({ tool }: { tool: Tool }) {
  * 検索から来た人が、最初の画面で自分に合うかを判断できるようにする。
  * データが無い項目は「未確認」とし、「非対応」とは書かない。
  */
-export function KeyFacts({ tool }: { tool: Tool }) {
+/** 0〜10点のセキュリティ評価を、目安（7.5）の線つきの細いバーで見せる */
+export function ScoreBar({ score }: { score: number }) {
+  const pct = Math.max(0, Math.min(10, score)) * 10;
+  return (
+    <span className="scorebar" role="img" aria-label={`10点満点中${score}点。7.5点以上が良好の目安`}>
+      <span className="scorebar__fill" style={{ width: `${pct}%` }} />
+      <span className="scorebar__tick" style={{ left: "75%" }} />
+    </span>
+  );
+}
+
+/**
+ * ツールページの冒頭に置く「ひと目で分かる要点」。
+ * 検索から来た人が、最初の画面で自分に合うかを判断できるようにする。
+ * 数字には「多いのか少ないのか」が分かる文脈を添える。
+ * データが無い項目は「未確認」とし、「非対応」とは書かない。
+ */
+export function KeyFacts({
+  tool,
+  stars,
+  categoryName,
+}: {
+  tool: Tool;
+  stars?: StarContext;
+  categoryName?: string;
+}) {
   const cls = classifyLicense(tool.license);
   const clsLabel = LICENSE_CLASS_LABELS[cls].replace(/（.*）/, "");
   const licenseWarn = cls === "source-available" || cls === "unknown";
@@ -302,15 +328,50 @@ export function KeyFacts({ tool }: { tool: Tool }) {
       : tool.ja_docs === "official" || tool.ja_docs === "community"
         ? "ドキュメントあり"
         : "未確認";
-  const facts: Array<{ key: string; value: string; sub?: string; warn?: boolean; good?: boolean }> = [
+  const fresh = freshnessState(tool.freshness_days);
+  const starSub: ReactNode =
+    stars?.catRank != null ? (
+      <>
+        <span title={categoryName ? `カテゴリ：${categoryName}` : undefined}>
+          {`同じカテゴリで${stars.catRank}位`}
+          <span className="nowrap">{`／${stars.catTotal}件`}</span>
+        </span>
+        {stars.topPercent != null && (
+          <>
+            <br />
+            {`掲載ツール全体の上位${stars.topPercent}%`}
+          </>
+        )}
+      </>
+    ) : undefined;
+
+  const facts: Array<{ key: string; value: ReactNode; sub?: ReactNode; warn?: boolean; good?: boolean }> = [
     { key: "ライセンス", value: licenseLabel(tool.license), sub: clsLabel, warn: licenseWarn },
     { key: "日本語", value: ja, good: ja !== "未確認" },
     { key: "Docker", value: dockerLabel(tool.docker_available), good: tool.docker_available === true },
-    { key: "最終更新", value: formatRelativeDays(tool.freshness_days), warn: (tool.freshness_days ?? 0) > 365 },
-    { key: "スター", value: formatCompactJa(tool.stars_num) },
+    {
+      key: "最終更新",
+      value: formatRelativeDays(tool.freshness_days),
+      sub: fresh ? (
+        <span className={`dotlabel dotlabel--${fresh.tone}`}>
+          <span aria-hidden="true">●</span> {fresh.label}
+        </span>
+      ) : undefined,
+      warn: fresh?.tone === "warn",
+    },
+    { key: "GitHubのスター", value: formatCompactJa(tool.stars_num), sub: starSub },
     {
       key: "セキュリティ評価",
       value: tool.scorecard_score != null ? `${tool.scorecard_score} / 10` : "未評価",
+      sub:
+        tool.scorecard_score != null ? (
+          <>
+            <ScoreBar score={tool.scorecard_score} />
+            {tool.scorecard_score >= 7.5 ? "良好の目安（7.5）以上" : "良好の目安は7.5以上"}
+          </>
+        ) : (
+          "OpenSSF Scorecard の評価なし"
+        ),
     },
   ];
   return (
@@ -379,6 +440,8 @@ export function SpecTable({ tool, compact = false }: { tool: Tool; compact?: boo
  * ------------------------------------------------------------------ */
 
 export function ComparisonTable({ tools }: { tools: Tool[] }) {
+  // スター数の横棒は、この表の中で最も多いものを100%とする（表の中での比較のため）
+  const maxStars = Math.max(0, ...tools.map((tl) => tl.stars_num ?? 0));
   return (
     <div className="ctable-scroll">
       <table className="ctable">
@@ -408,7 +471,14 @@ export function ComparisonTable({ tools }: { tools: Tool[] }) {
                 </span>
               </td>
               <td>{tool.primary_competitor_ja || tool.primary_competitor}</td>
-              <td className="num">{formatCompactJa(tool.stars_num)}</td>
+              <td className="num">
+                {formatCompactJa(tool.stars_num)}
+                {maxStars > 0 && tool.stars_num != null && (
+                  <span className="numbar" aria-hidden="true">
+                    <span style={{ width: `${Math.max(2, (tool.stars_num / maxStars) * 100)}%` }} />
+                  </span>
+                )}
+              </td>
               <td>{licenseLabel(tool.license)}</td>
               <td>{dockerLabel(tool.docker_available)}</td>
               <td className="num">

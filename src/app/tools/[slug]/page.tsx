@@ -19,6 +19,7 @@ import { SITE, t } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
 import { toolDescription, toolTitle } from "@/lib/seo-copy";
 import { getToolGuide } from "@/lib/tool-guides";
+import { starContext } from "@/lib/star-context";
 import { LICENSE_CLASS_LABELS, classifyLicense } from "@/lib/compare";
 import { getLicensePage } from "@/lib/licenses";
 import { formatDate, licenseLabel, slugifyCompetitor } from "@/lib/tools";
@@ -104,7 +105,7 @@ export default async function ToolDetailPage({
               {tool.description_ja ? ` ${tool.description_ja}` : ""}
             </p>
 
-            <KeyFacts tool={tool} />
+            <KeyFacts tool={tool} stars={starContext(tool, getActiveTools())} categoryName={category?.nameJa} />
 
             {tool.github_archived && (
               <p className="notice notice--warn" style={{ marginBottom: "1.25rem" }}>
