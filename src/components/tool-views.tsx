@@ -264,6 +264,18 @@ export function ToolRow({ tool }: { tool: Tool }) {
             </span>
           )}
         </div>
+        {tool.preview && (
+          // eslint-disable-next-line @next/next/no-img-element -- 静的書き出しのため next/image の最適化は使わない
+          <img
+            className="row__thumb"
+            src={tool.preview.src}
+            width={tool.preview.width}
+            height={tool.preview.height}
+            alt=""
+            loading="lazy"
+            decoding="async"
+          />
+        )}
         {tool.description_ja && <p className="row__desc">{tool.description_ja}</p>}
       </div>
       <div className="row__data">
@@ -288,11 +300,6 @@ export function ToolRow({ tool }: { tool: Tool }) {
  * 詳細ページのスペック表
  * ------------------------------------------------------------------ */
 
-/**
- * ツールページの冒頭に置く「ひと目で分かる要点」。
- * 検索から来た人が、最初の画面で自分に合うかを判断できるようにする。
- * データが無い項目は「未確認」とし、「非対応」とは書かない。
- */
 /** 0〜10点のセキュリティ評価を、目安（7.5）の線つきの細いバーで見せる */
 export function ScoreBar({ score }: { score: number }) {
   const pct = Math.max(0, Math.min(10, score)) * 10;

@@ -2248,3 +2248,26 @@ a.chip {
   font-size: 0.6875rem;
   color: var(--ink-3);
 }
+
+/* ---------- 一覧のサムネイル（共有用画像） ---------- */
+.row__thumb {
+  float: right;
+  width: 112px;
+  height: auto;
+  aspect-ratio: 1200 / 630;
+  object-fit: cover;
+  margin: 0.25rem 0 0.5rem 0.875rem;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--paper-deep);
+}
+@media (min-width: 640px) {
+  .row__thumb {
+    width: 168px;
+  }
+}
+.row__main::after {
+  content: "";
+  display: block;
+  clear: both;
+}
