@@ -1,0 +1,45 @@
+name: SNS投稿の下書き
+
+# 毎週月曜 06:47 JST（日曜 21:47 UTC）に、その週の X・Bluesky 投稿の下書きを作る。
+# 日次の「データ更新」（03:00 JST）の後に動かし、最新のデータで作る。手動実行も可能。
+#
+# scripts/sns-drafts.mjs が docs/sns/drafts/<日付>.md を作ってコミットする。
+# 自動投稿はしない（運営者が下書きを選んで手で投稿する）。
+# GITHUB_TOKEN での push なので「GitHub Pages 公開」は動かない（サイトには影響しない）。
+on:
+  schedule:
+    - cron: "47 21 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sns-drafts
+  cancel-in-progress: false
+
+jobs:
+  drafts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: 下書きの作成
+        run: node scripts/sns-drafts.mjs
+
+      - name: コミットと push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/sns/drafts
+          if git diff --cached --quiet; then
+            echo "変更なし"
+            exit 0
+          fi
+          git commit -m "docs: SNS投稿の下書き $(date -u -d '+9 hours' +%F)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
