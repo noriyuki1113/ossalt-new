@@ -16,6 +16,8 @@ import { getActiveTools, getComparePairsForTool, getMeta, getTool, getTools } fr
 import { getCategory } from "@/lib/categories";
 import { SITE, t } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
+import { LICENSE_CLASS_LABELS, classifyLicense } from "@/lib/compare";
+import { getLicensePage } from "@/lib/licenses";
 import { formatDate, licenseLabel, slugifyCompetitor } from "@/lib/tools";
 
 type Params = { slug: string };
@@ -155,6 +157,13 @@ export default async function ToolDetailPage({
                 {formatDate(tool.last_commit)}時点の情報です。
                 {tool.github_archived && " ※このリポジトリはアーカイブされています。"}
               </p>
+              {getLicensePage(classifyLicense(tool.license)) && (
+                <p className="muted" style={{ fontSize: "0.75rem" }}>
+                  {`ライセンスの種類：${LICENSE_CLASS_LABELS[classifyLicense(tool.license)]}（`}
+                  <Link href={`/licenses/${classifyLicense(tool.license)}/`}>同じ種類のツール一覧</Link>
+                  {"）"}
+                </p>
+              )}
             </section>
 
             {tool.description_en && (

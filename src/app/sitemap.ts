@@ -3,6 +3,7 @@ import { getActiveTools, getComparePairs, getCompetitors } from "@/lib/data";
 import { getBlogPosts } from "@/lib/blog";
 import { CATEGORIES } from "@/lib/categories";
 import { SITE } from "@/lib/site";
+import { LICENSE_PAGES } from "@/lib/licenses";
 
 export const dynamic = "force-static";
 
@@ -10,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = SITE.url.replace(/\/$/, "");
   const now = new Date();
 
-  const staticPages = ["/", "/tools/", "/categories/", "/alternatives/", "/compare/", "/guide/", "/diagnosis/", "/blog/", "/about/", "/contact/", "/submit/", "/privacy/", "/terms/", "/disclaimer/"];
+  const staticPages = ["/", "/tools/", "/categories/", "/alternatives/", "/compare/", "/licenses/", "/japanese/", "/guide/", "/diagnosis/", "/blog/", "/about/", "/contact/", "/submit/", "/privacy/", "/terms/", "/disclaimer/"];
 
   return [
     ...staticPages.map((p) => ({
@@ -39,6 +40,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: t.last_commit ? new Date(t.last_commit) : now,
       changeFrequency: "weekly" as const,
       priority: 0.8,
+    })),
+    ...LICENSE_PAGES.map((p) => ({
+      url: `${base}/licenses/${p.slug}/`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.6,
     })),
     ...getComparePairs().map((p) => ({
       url: `${base}/compare/${p.slug}/`,

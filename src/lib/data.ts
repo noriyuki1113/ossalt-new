@@ -1,12 +1,13 @@
 import fs from "node:fs";
 import path from "node:path";
 import {
+  hasJapanese,
   slugifyCompetitor,
   type CompetitorGroup,
   type DataMeta,
   type Tool,
 } from "./tools";
-import { buildComparePairs, type ComparePair } from "./compare";
+import { buildComparePairs, classifyLicense, type ComparePair, type LicenseClass } from "./compare";
 
 /**
  * JSONデータの読み込み（サーバー専用）
@@ -94,4 +95,14 @@ export function getComparePairs(): ComparePair[] {
 /** 指定したツールが含まれる比較ページ */
 export function getComparePairsForTool(toolId: string): ComparePair[] {
   return getComparePairs().filter((p) => p.a === toolId || p.b === toolId);
+}
+
+/** ライセンスの分類ごとの掲載中ツール（健全度順） */
+export function getToolsByLicenseClass(cls: LicenseClass): Tool[] {
+  return getActiveTools().filter((t) => classifyLicense(t.license) === cls);
+}
+
+/** 画面の翻訳か日本語のドキュメントがある掲載中ツール（健全度順） */
+export function getJapaneseTools(): Tool[] {
+  return getActiveTools().filter(hasJapanese);
 }

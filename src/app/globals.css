@@ -1967,3 +1967,8 @@ hr {
     font-size: 0.8125rem;
   }
 }
+
+/* リンクとして使うチップ（/japanese/ のカテゴリ移動など）は下線を付けない */
+a.chip {
+  text-decoration: none;
+}
