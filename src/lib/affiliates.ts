@@ -36,7 +36,7 @@ export interface AffiliateVps {
  * | id       | 事業者        | ASP      | 成果報酬の目安（公式ページ・2026-09-26確認）        |
  * |----------|---------------|----------|----------------------------------------------------|
  * | conoha   | ConoHa VPS    | A8.net   | 1,000円 〜 最大53,900円（プラン・期間別）            |
- * | kagoya   | KAGOYA CLOUD  | A8.net   | 1,000円（VPS）                                      |
+ * | kagoya   | KAGOYA CLOUD  | A8.net   | 提携済み                                            |
  * | sakura   | さくらのVPS   | A8.net   | 提携済み                                            |
  * | xserver  | Xserver VPS   | A8.net   | 提携済み                                            |
  *
@@ -60,8 +60,8 @@ export const AFFILIATE_VPS: AffiliateVps[] = [
     id: "kagoya",
     name: "KAGOYA CLOUD VPS",
     officialUrl: "https://www.kagoya.jp/vps/",
-    // TODO: A8.net の「KAGOYA CLOUD VPS」プログラムで発行したアフィリエイトURLを貼る
-    affiliateUrl: "",
+    affiliateUrl: "https://px.a8.net/svt/ejp?a8mat=4BCKBS+7JHOMQ+7YE+NXMIQ",
+    trackingImageUrl: "https://www16.a8.net/0.gif?a8mat=4BCKBS+7JHOMQ+7YE+NXMIQ",
     description: "完全定額制で追加料金なし。国内データセンター・日本語サポート。",
     recommendedFor: "費用を固定したい人・国産VPSを試したい人",
     ctaLabel: "公式サイトで詳細を見る",
