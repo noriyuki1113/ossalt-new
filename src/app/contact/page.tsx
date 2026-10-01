@@ -36,7 +36,9 @@ export default function ContactPage() {
                 ツールの追加リクエスト（<Link href="/submit/">掲載リクエストのページ</Link>からも送れます）
               </li>
               <li>ライセンス表記の訂正</li>
-              <li>広告・スポンサーに関するお問い合わせ</li>
+              <li>
+                広告・スポンサーに関するお問い合わせ（<Link href="/advertise/">広告・スポンサー掲載のページ</Link>もご覧ください）
+              </li>
             </ul>
             {hasContact && (
               <p className="muted" style={{ fontSize: "0.875rem" }}>

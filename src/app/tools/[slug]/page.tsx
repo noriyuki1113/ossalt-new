@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs, JsonLd, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ToolLogo } from "@/components/tool-logo";
 import { VpsRecommendation } from "@/components/vps-recommendation";
+import { ListingBadge } from "@/components/listing-badge";
 import {
   ComparisonTable,
   HealthLegend,
@@ -269,6 +270,7 @@ export default async function ToolDetailPage({
             </ul>
           </section>
         )}
+        {!tool.github_archived && <ListingBadge toolId={tool.id} toolName={tool.name} />}
       </main>
       <SiteFooter meta={meta} />
       <JsonLd

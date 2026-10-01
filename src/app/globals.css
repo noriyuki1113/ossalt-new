@@ -1972,3 +1972,56 @@ hr {
 a.chip {
   text-decoration: none;
 }
+
+/* ---------- 掲載バッジ ---------- */
+
+.badge-box {
+  margin-top: 2.5rem;
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  background: var(--card);
+}
+
+.badge-box > summary {
+  cursor: pointer;
+  padding: 0.85rem 1.15rem;
+  font-size: var(--step--1);
+  font-weight: 700;
+  color: var(--ink-2);
+}
+
+.badge-box__body {
+  padding: 0 1.15rem 1.15rem;
+}
+
+.badge-box__preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0.75rem 0 1rem;
+}
+
+.badge-box__snippet {
+  margin-bottom: 0.85rem;
+}
+
+.badge-box__label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+  font-size: 0.75rem;
+  color: var(--ink-3);
+}
+
+.badge-box__snippet code {
+  display: block;
+  padding: 0.6rem 0.75rem;
+  background: var(--paper-deep);
+  border-radius: var(--radius);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}

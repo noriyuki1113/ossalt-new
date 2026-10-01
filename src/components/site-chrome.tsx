@@ -108,6 +108,12 @@ export function SiteFooter({ meta }: { meta?: { built_at: string; tool_count: nu
                 <Link href="/submit/">掲載リクエスト</Link>
               </li>
               <li>
+                <Link href="/badge/">掲載バッジ</Link>
+              </li>
+              <li>
+                <Link href="/advertise/">広告・スポンサー</Link>
+              </li>
+              <li>
                 <Link href="/contact/">お問い合わせ</Link>
               </li>
               <li>
