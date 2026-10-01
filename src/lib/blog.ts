@@ -23,6 +23,8 @@ export type BlogPost = {
   updated: string;
   category: string;
   relatedTools: string[];
+  /** 記事の下に国内VPSの紹介枠（アフィリエイト）を出し、冒頭にプロモーションの表記を出す */
+  showVps: boolean;
   contentHtml: string;
 };
 
@@ -54,6 +56,7 @@ function readAll(): BlogPost[] {
         updated: String(data.updated ?? data.date ?? ""),
         category: String(data.category ?? ""),
         relatedTools,
+        showVps: data.showVps === true,
         contentHtml: marked.parse(content, { async: false }) as string,
       };
     });

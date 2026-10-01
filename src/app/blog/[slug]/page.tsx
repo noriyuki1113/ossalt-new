@@ -4,6 +4,7 @@ import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ToolRow } from "@/components/tool-views";
 import { HouseAd } from "@/components/house-ad";
 import { PostActions } from "@/components/post-actions";
+import { VpsRecommendation } from "@/components/vps-recommendation";
 import { getBlogPost, getBlogPosts } from "@/lib/blog";
 import { getMeta, getTool } from "@/lib/data";
 import { formatDate } from "@/lib/tools";
@@ -62,7 +63,21 @@ export default async function BlogPostPage({ params }: { params: Promise<Params>
             : ""}
         </p>
 
+        {post.showVps && (
+          <p className="notice" style={{ fontSize: "0.8125rem" }}>
+            {"この記事はプロモーション（アフィリエイトリンク）を含みます。紹介するサービスの並び順や内容は、紹介料の有無や金額によって変えていません。"}
+          </p>
+        )}
+
         <div className="prose" dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+
+        {post.showVps && (
+          <VpsRecommendation
+            path={`/blog/${post.slug}/`}
+            title="記事で紹介したVPS"
+            lede="最低月額（2026年10月1日時点）の安い順に並べています。"
+          />
+        )}
 
         <PostActions
           slug={post.slug}

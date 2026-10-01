@@ -2025,3 +2025,20 @@ a.chip {
   overflow-wrap: anywhere;
   white-space: pre-wrap;
 }
+
+/* 記事内の列の多い表（料金比較など）は、スマホでは表だけを横スクロールさせ、
+   ページ全体がはみ出さないようにする */
+@media (max-width: 720px) {
+  .prose table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* 細い列で「1コア」などが1文字ずつ折れないよう、セルに最小幅を持たせる */
+  .prose table th,
+  .prose table td {
+    min-width: 5.5em;
+  }
+}

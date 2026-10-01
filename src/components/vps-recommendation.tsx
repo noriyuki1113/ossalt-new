@@ -4,12 +4,20 @@ import { AFFILIATE_REL, AFFILIATE_VPS, getAffiliateHref, getTrackingImageUrl } f
 import { trackAffiliateClick } from "@/lib/affiliate-track";
 import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
 
-export function VpsRecommendation({ path }: { path: string }) {
+export function VpsRecommendation({
+  path,
+  title = "このツールを自前で動かすには",
+  lede = "OSSセルフホストでよく選ばれる4つのVPSをまとめました。",
+}: {
+  path: string;
+  title?: string;
+  lede?: string;
+}) {
   return (
     <section className="mt2">
-      <h2 className="h3">このツールを自前で動かすには</h2>
+      <h2 className="h3">{title}</h2>
       <p className="muted" style={{ fontSize: "0.875rem" }}>
-        OSSセルフホストでよく選ばれる4つのVPSをまとめました。
+        {lede}
       </p>
       <div style={{ display: "grid", gap: "1rem", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))" }}>
         {AFFILIATE_VPS.map((v) => {
