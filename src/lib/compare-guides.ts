@@ -11,7 +11,7 @@ import { marked } from "marked";
 
 const DIR = path.join(process.cwd(), "content", "compare");
 
-export type CompareGuide = { slug: string; description: string; updated: string; contentHtml: string };
+export type CompareGuide = { slug: string; description: string; updated: string; contentHtml: string; markdown: string };
 
 let cache: Map<string, CompareGuide> | null = null;
 
@@ -27,6 +27,7 @@ export function getCompareGuide(slug: string): CompareGuide | undefined {
           description: String(data.description ?? ""),
           updated: String(data.updated ?? ""),
           contentHtml: marked.parse(content, { async: false }) as string,
+          markdown: content.trim(),
         });
       }
     }

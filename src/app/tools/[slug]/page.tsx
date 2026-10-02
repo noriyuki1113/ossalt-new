@@ -42,6 +42,7 @@ export async function generateMetadata({
     title: toolTitle(tool),
     description: getToolGuide(tool.id)?.description || toolDescription(tool),
     image: tool.preview ?? null,
+    markdown: tool.github_archived ? undefined : `/md/tools/${tool.id}.md`,
     path: `/tools/${tool.id}/`,
     type: "article",
   });

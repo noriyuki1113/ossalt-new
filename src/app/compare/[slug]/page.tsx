@@ -53,6 +53,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
       `${competitor}の代わりになるオープンソース、${a.name}と${b.name}を、ライセンス・更新状況・Docker対応・日本語対応・セキュリティの公開データで比べます。`,
     path: `/compare/${slug}/`,
     type: "article",
+    markdown: getCompareGuide(slug) ? `/md/compare/${slug}.md` : undefined,
   });
 }
 

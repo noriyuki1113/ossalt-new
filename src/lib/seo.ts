@@ -20,6 +20,8 @@ export function pageMeta(opts: {
   noindex?: boolean;
   /** ページ固有の共有用画像（サイト内のパス）。無ければサイト共通の画像 */
   image?: { src: string; width: number; height: number } | null;
+  /** このページのMarkdown版（AIエージェント向け。サイト内のパス） */
+  markdown?: string;
 }): Metadata {
   const base = SITE.url.replace(/\/$/, "");
   const url = `${base}${opts.path}`;
@@ -30,7 +32,10 @@ export function pageMeta(opts: {
   return {
     title: opts.title,
     description: opts.description,
-    alternates: { canonical: opts.path },
+    alternates: {
+      canonical: opts.path,
+      ...(opts.markdown ? { types: { "text/markdown": opts.markdown } } : {}),
+    },
     openGraph: {
       type: opts.type ?? "website",
       locale: SITE.locale,

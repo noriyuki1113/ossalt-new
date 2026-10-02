@@ -22,6 +22,8 @@ export type AlternativeGuide = {
   intro: string;
   picks: GuidePick[];
   contentHtml: string;
+  /** 元のMarkdown（AI向けのMarkdown版・APIで使う） */
+  markdown: string;
 };
 
 function readAll(): Map<string, AlternativeGuide> {
@@ -45,6 +47,7 @@ function readAll(): Map<string, AlternativeGuide> {
       intro: String(data.intro ?? ""),
       picks: picks.filter((p) => toolIds.has(p.tool)),
       contentHtml: marked.parse(content, { async: false }) as string,
+          markdown: content.trim(),
     });
   }
   return map;

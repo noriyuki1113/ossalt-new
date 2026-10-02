@@ -86,6 +86,9 @@ export function SiteFooter({ meta }: { meta?: { built_at: string; tool_count: nu
                 <Link href="/trending/">急上昇中のOSS</Link>
               </li>
               <li>
+                <Link href="/api/">データAPI</Link>
+              </li>
+              <li>
                 <Link href="/diagnosis/">OSS診断</Link>
               </li>
             </ul>

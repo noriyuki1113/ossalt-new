@@ -33,6 +33,7 @@ export async function generateMetadata({
     description: guide?.description || alternativeDescription(c.name, c.tools),
     path: `/alternatives/${c.slug}/`,
     type: "article",
+    markdown: `/md/alternatives/${c.slug}.md`,
   });
 }
 

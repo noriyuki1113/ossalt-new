@@ -18,6 +18,8 @@ export type ToolGuide = {
   description: string;
   updated: string;
   contentHtml: string;
+  /** 元のMarkdown（AI向けのMarkdown版・APIで使う） */
+  markdown: string;
 };
 
 let cache: Map<string, ToolGuide> | null = null;
@@ -33,6 +35,7 @@ function readAll(): Map<string, ToolGuide> {
       description: String(data.description ?? ""),
       updated: String(data.updated ?? ""),
       contentHtml: marked.parse(content, { async: false }) as string,
+          markdown: content.trim(),
     });
   }
   return map;

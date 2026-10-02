@@ -11,7 +11,7 @@ import { marked } from "marked";
 
 const DIR = path.join(process.cwd(), "content", "categories");
 
-export type CategoryGuide = { slug: string; updated: string; contentHtml: string };
+export type CategoryGuide = { slug: string; updated: string; contentHtml: string; markdown: string };
 
 let cache: Map<string, CategoryGuide> | null = null;
 
@@ -26,6 +26,7 @@ export function getCategoryGuide(slug: string): CategoryGuide | undefined {
           slug: s,
           updated: String(data.updated ?? ""),
           contentHtml: marked.parse(content, { async: false }) as string,
+          markdown: content.trim(),
         });
       }
     }
