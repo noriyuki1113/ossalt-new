@@ -1,0 +1,12 @@
+{
+  "name": "ossalt-mcp",
+  "version": "0.1.0",
+  "description": "ossalt.jp の MCP サーバー：SaaSの代わりになるオープンソースを、ライセンス・日本語対応・Docker・GitHubの活発さ・セキュリティ評価で探す",
+  "type": "module",
+  "bin": { "ossalt-mcp": "bin/ossalt-mcp.mjs" },
+  "files": ["bin", "src", "README.md"],
+  "engines": { "node": ">=18" },
+  "license": "MIT",
+  "homepage": "https://ossalt.jp/api/",
+  "keywords": ["mcp", "model-context-protocol", "open-source", "self-hosted", "saas-alternatives"]
+}

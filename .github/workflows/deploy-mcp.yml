@@ -1,0 +1,56 @@
+name: MCPサーバーの公開
+
+# mcp/ のMCPサーバーを Cloudflare Workers に公開する（リモートMCP）。
+# 必要な設定（Settings → Secrets and variables → Actions → Secrets）:
+#   CLOUDFLARE_API_TOKEN  … 「Workers スクリプトの編集」権限のAPIトークン
+#   CLOUDFLARE_ACCOUNT_ID … Cloudflare のアカウントID
+# ※ GitHub は「GITHUB_」で始まる名前のシークレットを作れないため、上の名前にしている。
+# 2つが未設定の間は、何もせずに成功で終わる。
+on:
+  push:
+    paths:
+      - "mcp/**"
+      - ".github/workflows/deploy-mcp.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-mcp
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: テスト
+        run: node --test mcp/test/*.test.mjs
+
+      - name: 設定の確認
+        id: check
+        env:
+          TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -z "$TOKEN" ] || [ -z "$ACCOUNT" ]; then
+            echo "CLOUDFLARE_API_TOKEN または CLOUDFLARE_ACCOUNT_ID が未設定のため、公開しません。"
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Cloudflare Workers に公開
+        if: steps.check.outputs.ready == 'true'
+        working-directory: mcp
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@4 deploy

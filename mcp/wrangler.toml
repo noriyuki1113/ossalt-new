@@ -1,0 +1,9 @@
+# Cloudflare Workers の設定（リモートMCP）
+# デプロイは .github/workflows/deploy-mcp.yml から行う。
+name = "ossalt-mcp"
+main = "src/worker.mjs"
+compatibility_date = "2025-09-01"
+
+# 独自のサブドメイン（例: mcp.ossalt.jp）で公開する場合は、運営者が決めてから次を有効にする。
+# 有効にしない間は https://ossalt-mcp.<アカウント名>.workers.dev で公開される。
+# routes = [{ pattern = "mcp.ossalt.jp", custom_domain = true }]
