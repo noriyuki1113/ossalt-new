@@ -5,13 +5,23 @@
  * `locale` を切り替えるだけで済むようにしている。
  */
 
+/**
+ * 環境変数の読み取り。GitHub の Variables に値を貼り付けたときに末尾の改行や空白が
+ * 入ることがあり（実際に URL へ改行が混入した）、そのまま使うと canonical・sitemap・
+ * 構造化データの URL が壊れるため、前後の空白を除き、空なら null にする。
+ */
+function env(name: string): string | null {
+  const v = process.env[name]?.trim();
+  return v ? v : null;
+}
+
 export const SITE = {
   name: "ossalt.jp",
   nameJa: "オルタナ",
   tagline: "国産SaaSの代わりに、自前で動かす",
   description:
     "日本のチームのための、オープンソース代替ソフトウェア事典。SaaSの月額をやめて自分のサーバで動かすための、ライセンス・セキュリティ・導入難易度をまとめて比較できます。",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://ossalt.jp",
+  url: (env("NEXT_PUBLIC_SITE_URL") ?? "https://ossalt.jp").replace(/\/+$/, ""),
   locale: "ja_JP",
   lang: "ja",
   twitter: "@ossaltjp",
@@ -22,11 +32,11 @@ export const SITE = {
   // GitHub Issuesが使えない人（アカウントが無い、制限がかかっている等）のための
   // 連絡手段を必ず残すため、環境変数が未設定でも既定値を持たせる
   // （contact@ossalt.jpはサイト内の複数箇所で既に公開している連絡先）。
-  contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "contact@ossalt.jp",
-  contactUrl: process.env.NEXT_PUBLIC_CONTACT_URL || null,
+  contactEmail: env("NEXT_PUBLIC_CONTACT_EMAIL") ?? "contact@ossalt.jp",
+  contactUrl: env("NEXT_PUBLIC_CONTACT_URL"),
   // 運営者名・プライバシーポリシーの制定日。同様に未設定でもプレースホルダは出さない。
-  operatorName: process.env.NEXT_PUBLIC_OPERATOR_NAME || null,
-  privacyEffectiveDate: process.env.NEXT_PUBLIC_PRIVACY_EFFECTIVE_DATE || null,
+  operatorName: env("NEXT_PUBLIC_OPERATOR_NAME"),
+  privacyEffectiveDate: env("NEXT_PUBLIC_PRIVACY_EFFECTIVE_DATE"),
 } as const;
 
 // アクセス解析（Umami Cloud）。このIDは公開値（全ページのHTMLに出力される）で、
@@ -39,7 +49,7 @@ const UMAMI_DEFAULT_SITE_ID = "e1003fc4-1a2c-404c-abb9-ac669e5e8e94";
  * "off" を渡すと計測そのものを無効化する（script タグを出力しない）。
  */
 export const UMAMI_SITE_ID: string | null = (() => {
-  const raw = process.env.NEXT_PUBLIC_UMAMI_SITE_ID;
+  const raw = env("NEXT_PUBLIC_UMAMI_SITE_ID");
   if (raw === "off") return null;
   return raw && raw.length > 0 ? raw : UMAMI_DEFAULT_SITE_ID;
 })();

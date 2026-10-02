@@ -1,6 +1,6 @@
 {
   "name": "ossalt-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ossalt.jp の MCP サーバー：SaaSの代わりになるオープンソースを、ライセンス・日本語対応・Docker・GitHubの活発さ・セキュリティ評価で探す",
   "type": "module",
   "bin": { "ossalt-mcp": "bin/ossalt-mcp.mjs" },

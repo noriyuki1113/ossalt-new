@@ -24,6 +24,7 @@ export function GET() {
     `- [代替対象SaaSの一覧](${API_BASE}/alternatives.json): SaaSごとの代替ツールへのリンク`,
     `- [カテゴリの一覧](${API_BASE}/categories.json)`,
     `- [APIの説明](${BASE}/api/)`,
+    "- MCPサーバー: https://mcp.ossalt.jp/mcp （Streamable HTTP・認証不要・読み取り専用。search_alternatives / search_tools / get_tool / compare_tools / list_categories）",
     "",
     "## 主なページ",
     "",

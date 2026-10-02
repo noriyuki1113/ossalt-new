@@ -18,6 +18,7 @@ export function GET() {
       tool_markdown: `${BASE}/md/tools/{id}.md`,
       alternative_markdown: `${BASE}/md/alternatives/{slug}.md`,
     },
+    mcp: { url: "https://mcp.ossalt.jp/mcp", transport: "streamable-http", auth: "none" },
     notice: DATA_NOTICE,
   });
 }

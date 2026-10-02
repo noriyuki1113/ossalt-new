@@ -66,6 +66,37 @@ export default function ApiPage() {
         </section>
 
         <section className="section">
+          <h2 className="h3">MCPサーバー（AIのアプリから使う）</h2>
+          <div className="prose">
+            <p>
+              ClaudeやChatGPTなど、MCPに対応したAIのアプリにURLを登録すると、「Notionの代わりで、日本語の画面があるOSSは？」のような質問に、ossalt.jp のデータで答えられるようになります。認証は不要で、読み取り専用です。
+            </p>
+            <pre>
+              <code>https://mcp.ossalt.jp/mcp</code>
+            </pre>
+            <ul>
+              <li>
+                <strong>Claude</strong>：設定 → コネクタ → カスタムコネクタを追加 で、上のURLを登録します。
+              </li>
+              <li>
+                <strong>ChatGPT</strong>：設定のコネクタ（開発者モード）から、上のURLを登録します。
+              </li>
+            </ul>
+            <p>使える機能は次の5つです（アプリの画面での名前は英語で表示されます）。</p>
+            <ul>
+              <li><code>search_alternatives</code>：SaaSの名前から、代わりになるOSSを探す（日本語・Docker・一般的なOSSのみ で絞り込み）</li>
+              <li><code>search_tools</code>：OSSを名前・代替対象・カテゴリで検索する</li>
+              <li><code>get_tool</code>：OSSの詳細を見る</li>
+              <li><code>compare_tools</code>：2〜4件のOSSを並べて比べる</li>
+              <li><code>list_categories</code>：カテゴリの一覧</li>
+            </ul>
+            <p className="muted" style={{ fontSize: "0.8125rem" }}>
+              手元のパソコンで動かす版（stdio）もあります。ご希望の方は<Link href="/contact/">お問い合わせ</Link>ください。
+            </p>
+          </div>
+        </section>
+
+        <section className="section">
           <h2 className="h3">データの読み方</h2>
           <div className="prose">
             <ul>
