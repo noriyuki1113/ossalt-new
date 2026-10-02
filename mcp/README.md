@@ -1,5 +1,11 @@
 # ossalt.jp MCP サーバー
 
+> **English:** An MCP server for [ossalt.jp](https://ossalt.jp/), a Japanese directory of open-source alternatives to SaaS.
+> Search ~380 self-hostable projects by the SaaS they replace (Notion, Slack, Zapier, kintone, freee…), with license class,
+> Japanese UI support, Docker support, GitHub activity and OpenSSF Scorecard. Read-only, no authentication.
+> Remote endpoint (Streamable HTTP): `https://mcp.ossalt.jp/mcp` — tools: `search_alternatives`, `search_tools`, `get_tool`, `compare_tools`, `list_categories`.
+> A `null` value means "not verified", not "unsupported".
+
 [ossalt.jp](https://ossalt.jp/) のデータを、Claude や ChatGPT などのAIから直接使えるようにする
 [MCP](https://modelcontextprotocol.io/) サーバーです。
 「Notionの代わりになる、日本語の画面があってDockerで動かせるOSSは？」のような質問に、

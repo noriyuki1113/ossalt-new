@@ -1,0 +1,13 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "jp.ossalt/mcp",
+  "description": "Find open-source alternatives to SaaS (license, Japanese UI, Docker, GitHub activity). Read-only.",
+  "version": "0.1.1",
+  "websiteUrl": "https://ossalt.jp/api/",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.ossalt.jp/mcp"
+    }
+  ]
+}
