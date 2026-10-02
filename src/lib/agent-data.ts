@@ -19,6 +19,7 @@ import { getCategories, getCategory } from "./categories";
 import { getCompareGuide } from "./compare-guides";
 import { getActiveTools, getComparePairs, getCompetitor, getCompetitors, getMeta, getTool } from "./data";
 import { getToolGuide } from "./tool-guides";
+import { buildToolFaq } from "./tool-faq";
 import { SITE } from "./site";
 import { API_VERSION, alternativeMarkdown, toolMarkdown, toolRecord, toolSummary, type ToolRecord } from "./agent-format";
 import type { Tool } from "./tools";
@@ -66,7 +67,10 @@ export function toolDetail(id: string) {
 export function toolMd(id: string): string | null {
   const t = getTool(id);
   if (!t) return null;
-  return toolMarkdown(record(t), { guideMarkdown: getToolGuide(id)?.markdown, builtAt: builtAt() });
+  const r = record(t);
+  const others = getActiveTools().filter((x) => x.primary_competitor === t.primary_competitor);
+  const faq = buildToolFaq(t, { competitor: r.alternative_to[0] ?? null, others: [t, ...others.filter((x) => x.id !== t.id)] });
+  return toolMarkdown(r, { guideMarkdown: getToolGuide(id)?.markdown, faq, builtAt: builtAt() });
 }
 
 export function alternativesList() {

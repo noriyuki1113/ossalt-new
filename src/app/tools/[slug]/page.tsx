@@ -20,6 +20,8 @@ import { pageMeta } from "@/lib/seo";
 import { toolDescription, toolTitle } from "@/lib/seo-copy";
 import { getToolGuide } from "@/lib/tool-guides";
 import { starContext } from "@/lib/star-context";
+import { buildToolFaq } from "@/lib/tool-faq";
+import { getAlternativeGuide } from "@/lib/alternative-guides";
 import { LICENSE_CLASS_LABELS, classifyLicense } from "@/lib/compare";
 import { getLicensePage } from "@/lib/licenses";
 import { formatDate, licenseLabel, slugifyCompetitor } from "@/lib/tools";
@@ -75,6 +77,23 @@ export default async function ToolDetailPage({
     .slice(0, 6);
 
   const compareSet = [tool, ...alternatives];
+
+  // 代替ページの「用途別の候補」に書いた一言（編集部の手書き）を、このツールの位置づけとして出す
+  const positions = [
+    { name: competitor, raw: tool.primary_competitor },
+    ...(tool.also_competitors ?? []).map((n) => ({ name: n, raw: n })),
+  ]
+    .map(({ name, raw }) => {
+      const slug = slugifyCompetitor(raw);
+      const pick = slug ? getAlternativeGuide(slug)?.picks.find((p) => p.tool === tool.id) : undefined;
+      return pick ? { name, slug, fit: pick.fit } : null;
+    })
+    .filter((x): x is { name: string; slug: string; fit: string } => x !== null);
+
+  const faq = buildToolFaq(tool, {
+    competitor: competitorSlug ? competitor : null,
+    others: [tool, ...alternatives],
+  });
   const comparePairs = getComparePairsForTool(tool.id);
 
   return (
@@ -160,6 +179,24 @@ export default async function ToolDetailPage({
               </p>
             )}
 
+            {positions.length > 0 && (
+              <section className="positioning">
+                <h2 className="h3 mt0">{`${tool.name}が向いている使い方`}</h2>
+                <ul>
+                  {positions.map((p) => (
+                    <li key={p.slug}>
+                      <strong>{`${p.name}の代わりとして`}</strong>
+                      {"："}
+                      {p.fit}
+                      {"（"}
+                      <Link href={`/alternatives/${p.slug}/`}>{`${p.name}の代替をすべて見る`}</Link>
+                      {"）"}
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
             {guide && (
               <nav className="toc" aria-label="このページの目次">
                 <p className="toc__title">目次</p>
@@ -167,6 +204,7 @@ export default async function ToolDetailPage({
                   <li><a href="#about">{`${tool.name}とは`}</a></li>
                   <li><a href="#health">健全度スコア</a></li>
                   <li><a href="#spec">スペック</a></li>
+                  <li><a href="#faq">よくある質問</a></li>
                   <li><a href="#security">セキュリティ</a></li>
                   <li><a href="#selfhost">自前で動かすには</a></li>
                   {compareSet.length > 1 && <li><a href="#compare">{`${competitor} の代替候補を比較`}</a></li>}
@@ -198,16 +236,19 @@ export default async function ToolDetailPage({
                     <HealthMeter tool={tool} />
                   </div>
                   <HealthLegend tool={tool} />
-                  <p className="muted" style={{ fontSize: "0.75rem" }}>
-                    {t("health.explain")} {t("health.formulaNote")}
-                  </p>
-                  <p className="muted" style={{ fontSize: "0.75rem", marginBottom: 0 }}>
-                    {"スコアの読み方と目安は"}
-                    <Link href="/guide/">選び方のページ</Link>
-                    {"に、スターやフォークなど各数字の意味は"}
-                    <Link href="/blog/how-to-read-github/">GitHubの見方</Link>
-                    {"にまとめています。"}
-                  </p>
+                  <details className="more">
+                    <summary>健全度スコアの説明</summary>
+                    <p className="muted" style={{ fontSize: "0.75rem" }}>
+                      {t("health.explain")} {t("health.formulaNote")}
+                    </p>
+                    <p className="muted" style={{ fontSize: "0.75rem", marginBottom: 0 }}>
+                      {"スコアの読み方と目安は"}
+                      <Link href="/guide/">選び方のページ</Link>
+                      {"に、スターやフォークなど各数字の意味は"}
+                      <Link href="/blog/how-to-read-github/">GitHubの見方</Link>
+                      {"にまとめています。"}
+                    </p>
+                  </details>
                 </div>
               </div>
             </section>
@@ -227,6 +268,21 @@ export default async function ToolDetailPage({
                   {"）"}
                 </p>
               )}
+            </section>
+
+            <section id="faq">
+              <h2 className="h3">{`${tool.name}についてよくある質問`}</h2>
+              <dl className="faq">
+                {faq.map((f) => (
+                  <div key={f.q}>
+                    <dt>{f.q}</dt>
+                    <dd>{f.a}</dd>
+                  </div>
+                ))}
+              </dl>
+              <p className="muted" style={{ fontSize: "0.75rem" }}>
+                {`回答は掲載データ（GitHubの公開情報と、リポジトリの自動調査）から作成しています（${formatDate(meta.built_at)}時点）。`}
+              </p>
             </section>
 
             {tool.description_en && (

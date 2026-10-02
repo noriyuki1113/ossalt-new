@@ -115,7 +115,10 @@ const LICENSE_CLASS_JA: Record<LicenseClass, string> = {
 const yn = (v: unknown, yes: string) => (v ? yes : "未確認");
 
 /** ツールのMarkdown版 */
-export function toolMarkdown(r: ToolRecord, opts: { guideMarkdown?: string; builtAt: string }): string {
+export function toolMarkdown(
+  r: ToolRecord,
+  opts: { guideMarkdown?: string; faq?: Array<{ q: string; a: string }>; builtAt: string },
+): string {
   const lines = [
     `# ${r.name}`,
     "",
@@ -137,6 +140,10 @@ export function toolMarkdown(r: ToolRecord, opts: { guideMarkdown?: string; buil
     r.archived ? "- 注意: このリポジトリはアーカイブされています（開発終了）" : null,
   ].filter((l): l is string => l !== null);
   if (opts.guideMarkdown) lines.push("", `## ${r.name}とは`, "", opts.guideMarkdown);
+  if (opts.faq?.length) {
+    lines.push("", "## よくある質問");
+    for (const f of opts.faq) lines.push("", `**${f.q}**`, "", f.a);
+  }
   lines.push(
     "",
     "---",

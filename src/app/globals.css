@@ -2271,3 +2271,28 @@ a.chip {
   display: block;
   clear: both;
 }
+
+/* ---------- ツールページ：向いている使い方・たたんだ説明 ---------- */
+.positioning {
+  margin: 0 0 2rem;
+  padding: 0.875rem 1rem;
+  border-left: 3px solid var(--indigo);
+  background: var(--indigo-soft);
+  border-radius: var(--radius);
+}
+.positioning ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.125rem;
+}
+.positioning li {
+  margin: 0.25rem 0;
+  line-height: 1.8;
+}
+details.more {
+  margin-top: 0.5rem;
+}
+details.more > summary {
+  cursor: pointer;
+  font-size: 0.8125rem;
+  color: var(--ink-2);
+}
