@@ -23,10 +23,10 @@
 
 ### A. リモートMCP（URLを登録するだけ）
 
-Cloudflare Workers で公開している場合は、AIのアプリのコネクタ（カスタムコネクタ）の設定に、次のURLを登録します。
+AIのアプリのコネクタ（カスタムコネクタ）の設定に、次のURLを登録します。
 
 ```
-https://<公開先>/mcp
+https://mcp.ossalt.jp/mcp
 ```
 
 ### B. 手元で動かす（Claude Desktop など）

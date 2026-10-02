@@ -4,6 +4,9 @@ name = "ossalt-mcp"
 main = "src/worker.mjs"
 compatibility_date = "2025-09-01"
 
-# 独自のサブドメイン（例: mcp.ossalt.jp）で公開する場合は、運営者が決めてから次を有効にする。
-# 有効にしない間は https://ossalt-mcp.<アカウント名>.workers.dev で公開される。
-# routes = [{ pattern = "mcp.ossalt.jp", custom_domain = true }]
+# https://mcp.ossalt.jp/mcp で公開する（ossalt.jp のゾーンにサブドメインを自動で作る）
+routes = [{ pattern = "mcp.ossalt.jp", custom_domain = true }]
+
+# workers.dev のURL（アカウント名が入る）とプレビュー用のURLは使わない
+workers_dev = false
+preview_urls = false
