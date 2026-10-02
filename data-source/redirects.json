@@ -1,0 +1,15 @@
+{
+  "_comment": "掲載をやめたページの転送。キーが消えたページ、値が転送先（サイト内のパス）。scripts/make-redirects.mjs が public/ に転送用のページを作る。キーが今ある別のページになった場合は npm test が失敗する。",
+  "redirects": {
+    "/tools/terraform/": "/alternatives/terraform/",
+    "/tools/elasticsearch/": "/alternatives/elasticsearch/",
+    "/tools/vault/": "/alternatives/hashicorp-vault/",
+    "/tools/ansible/": "/categories/devtools/",
+    "/tools/playwright/": "/categories/automation/",
+    "/tools/inkscape/": "/categories/design/",
+    "/alternatives/opentofu/": "/alternatives/terraform/",
+    "/alternatives/opensearch/": "/alternatives/elasticsearch/",
+    "/alternatives/chef/": "/alternatives/",
+    "/alternatives/illustrator/": "/categories/design/"
+  }
+}
