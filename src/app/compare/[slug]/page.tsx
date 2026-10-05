@@ -54,6 +54,9 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
     path: `/compare/${slug}/`,
     type: "article",
     markdown: getCompareGuide(slug) ? `/md/compare/${slug}.md` : undefined,
+    // 手書きの解説がない組は、データから機械的に作った文章だけになるため、
+    // 検索結果には出さない（ページは残す）。解説を書いた組から順に検索に出す。
+    noindex: !getCompareGuide(slug),
   });
 }
 

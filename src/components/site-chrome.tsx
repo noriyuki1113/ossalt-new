@@ -103,6 +103,9 @@ export function SiteFooter({ meta }: { meta?: { built_at: string; tool_count: nu
                 <Link href="/about/">このサイトについて</Link>
               </li>
               <li>
+                <Link href="/editorial/">編集方針</Link>
+              </li>
+              <li>
                 <Link href="/feed/">RSS</Link>
               </li>
             </ul>

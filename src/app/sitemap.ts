@@ -4,6 +4,7 @@ import { getBlogPosts } from "@/lib/blog";
 import { CATEGORIES } from "@/lib/categories";
 import { SITE } from "@/lib/site";
 import { LICENSE_PAGES } from "@/lib/licenses";
+import { getCompareGuide } from "@/lib/compare-guides";
 
 export const dynamic = "force-static";
 
@@ -11,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = SITE.url.replace(/\/$/, "");
   const now = new Date();
 
-  const staticPages = ["/", "/tools/", "/categories/", "/alternatives/", "/alternatives/japan/", "/compare/", "/licenses/", "/japanese/", "/trending/", "/api/", "/guide/", "/diagnosis/", "/blog/", "/about/", "/contact/", "/submit/", "/badge/", "/advertise/", "/privacy/", "/terms/", "/disclaimer/"];
+  const staticPages = ["/", "/tools/", "/categories/", "/alternatives/", "/alternatives/japan/", "/compare/", "/licenses/", "/japanese/", "/trending/", "/api/", "/guide/", "/diagnosis/", "/blog/", "/about/", "/editorial/", "/contact/", "/submit/", "/badge/", "/advertise/", "/privacy/", "/terms/", "/disclaimer/"];
 
   return [
     ...staticPages.map((p) => ({
@@ -47,7 +48,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.6,
     })),
-    ...getComparePairs().map((p) => ({
+    // 手書きの解説がある組だけ（解説のない組は noindex。src/app/compare/[slug]/page.tsx）
+    ...getComparePairs().filter((p) => getCompareGuide(p.slug)).map((p) => ({
       url: `${base}/compare/${p.slug}/`,
       lastModified: now,
       changeFrequency: "weekly" as const,
