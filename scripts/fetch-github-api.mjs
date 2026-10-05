@@ -197,10 +197,14 @@ const LICENSE_OVERRIDES = {
   // コンポーネントごとに異なる4つのライセンスが混在（単一のライセンスではない）
   tracim: "AGPL-3.0 / LGPL-3.0 / MIT（構成要素により異なる）", // https://raw.githubusercontent.com/tracim/tracim/HEAD/LICENSE.md
 
-  // directus / inkscape / dokploy は、リポジトリ直下に LICENSE ファイルが
-  // 見つからず（inkscapeは開発本体がGitLab側で、GitHubは同期用ミラー）、
-  // package.json の license フィールドにも記載が無かったため、確認できないまま
-  // null（未取得）にしている。ここには入れない。
+  // Monospace Sustainable Core License 1.0（ソース公開型。競合する提供を禁止、
+  // 4年後にGPL-3.0へ移行）。リポジトリ直下の小文字の license に本文（2026-10-06確認）
+  directus: "MSCL 1.0", // https://raw.githubusercontent.com/directus/directus/main/license
+  // 基本はApache-2.0。/proprietary ディレクトリがある場合、その部分だけ別ライセンス（2026-10-06確認）
+  dokploy: "Apache-2.0（/proprietary 部分は別ライセンス）", // https://raw.githubusercontent.com/Dokploy/dokploy/canary/LICENSE.MD
+
+  // inkscape は開発本体がGitLab側で、GitHubは同期用ミラーのため、
+  // 確認できないまま null（未取得）にしている。ここには入れない。
 };
 
 const HEADERS = {

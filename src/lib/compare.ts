@@ -35,7 +35,7 @@ export const LICENSE_CLASS_LABELS: Record<LicenseClass, string> = {
 };
 
 const SOURCE_AVAILABLE_RE =
-  /BUSL|SSPL|Elastic License|FSL|Sustainable Use|Commons Clause|改変条項|独自条項|Source Available|Community License|(^|\s)[A-Za-z]+ (Lite )?License$/;
+  /BUSL|SSPL|MSCL|Elastic License|FSL|Sustainable Use|Commons Clause|改変条項|独自条項|Source Available|Community License|(^|\s)[A-Za-z]+ (Lite )?License$/;
 const PARTIAL_RE = /構成要素|別ライセンス|コアのみ/;
 
 function classifySingle(part: string): LicenseClass {

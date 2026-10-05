@@ -17,6 +17,8 @@ test("ライセンス分類: 代表的な表記", () => {
   assert.equal(classifyLicense("Open WebUI License"), "source-available");
   assert.equal(classifyLicense("Apache-2.0（改変条項あり）"), "source-available");
   assert.equal(classifyLicense("Apache-2.0（一部は別ライセンス）"), "partial");
+  assert.equal(classifyLicense("MSCL 1.0"), "source-available");
+  assert.equal(classifyLicense("Apache-2.0（/proprietary 部分は別ライセンス）"), "partial");
   assert.equal(classifyLicense("GPL-2.0 / GPL-3.0"), "copyleft");
   assert.equal(classifyLicense("Apache-2.0 / GPL-2.0"), "dual");
   assert.equal(classifyLicense(null), "unknown");
