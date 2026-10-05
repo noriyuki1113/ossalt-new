@@ -1,0 +1,52 @@
+name: 解説の点検
+# 毎週月曜 05:37 JST（日曜 20:37 UTC）に、手書きの解説（content/）と最新の掲載データを
+# 突き合わせ、食い違い（ライセンスの変更、アーカイブ、日本語対応の確認状況、
+# 比較の組み合わせからの脱落、リンク切れ、未公開の記事へのリンクなど）を
+# docs/content-check.md にまとめる。日次の「データ更新」（03:00 JST）の後に動かす。手動実行も可能。
+#
+# 判定は scripts/content-check-lib.mjs（テストは scripts/content-check.test.mjs）。
+# 解説そのものは書き換えない（直すのは人、またはClaudeへの依頼で行う）。
+# GITHUB_TOKEN での push なので「GitHub Pages 公開」は動かない（サイトには影響しない）。
+on:
+  schedule:
+    - cron: "37 20 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: content-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - run: npm ci
+
+      - name: 点検
+        run: node --experimental-strip-types scripts/content-check.mjs
+
+      - name: 結果をサマリに表示
+        run: cat docs/content-check.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: コミットと push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/content-check.md
+          if git diff --cached --quiet; then
+            echo "変更なし"
+            exit 0
+          fi
+          git commit -m "docs: 解説の点検 $(date -u -d '+9 hours' +%F)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

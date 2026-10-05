@@ -1,12 +1,12 @@
 ---
-updated: "2026-10-01"
+updated: "2026-10-06"
 ---
 
 AIのツールは数が多く、このカテゴリには35件を掲載しています。まず、目的ごとに見ていきましょう。
 
 - **AIモデルを手元で動かす**：[Ollama](/tools/ollama/)や[llama.cpp](/tools/llama-cpp/)が代表的です。画面から使いたいなら、デスクトップアプリの[Jan](/tools/jan/)があります。たくさんの人に提供する用途には[vLLM](/tools/vllm/)が向いています。
 - **ChatGPTのようなチャット画面**：[Open WebUI](/tools/open-webui/)、[LibreChat](/tools/librechat/)、[LobeChat](/tools/lobechat/)が候補です。
-- **AIアプリ・社内文書のAI**：AIを使った業務アプリを作るなら[Dify](/tools/dify/)、処理を細かく組み立てるなら[Langflow](/tools/langflow/)や[Flowise](/tools/flowise/)、社内文書に答えさせるなら[RAGFlow](/tools/ragflow/)や[AnythingLLM](/tools/anythingllm/)があります。
+- **AIアプリ・社内文書のAI**：AIを使った業務アプリを作るなら[Dify](/tools/dify/)、処理を細かく組み立てるなら[Langflow](/tools/langflow/)、社内文書に答えさせるなら[RAGFlow](/tools/ragflow/)や[AnythingLLM](/tools/anythingllm/)があります。
 - **画像の生成**：[Stable Diffusion WebUI](/tools/stable-diffusion-webui/)や[ComfyUI](/tools/comfyui/)があります。
 - **文字起こし**：会議の録音などを文字にするなら[Whisper](/tools/whisper/)があります。
 
