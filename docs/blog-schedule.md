@@ -22,10 +22,10 @@ ossalt.jp のブログ（`content/blog/`）と、Zennの記事の予定表です
 | 11月10日 | 予約済み | セルフホストを始めるVPSの選び方 | vps 選び方 セルフホスト | `vps-for-selfhosting.md`（**公開前にVPSの料金を再確認**） |
 | 11月17日 | 予約済み | n8nで業務を自動化する前に：Zapierとの違いとライセンス | n8n zapier 違い / n8n 商用利用 | `n8n-license-zapier.md` |
 | 11月24日 | 予約済み | 社内でChatGPTのように使えるAIを自前で動かす | chatgpt 社内 自前 / ollama open webui | `private-ai-chat-ollama.md` |
-| 12月1日 | 未作成 | 自前で動かすツールのバックアップの基本（restic・Kopia） | セルフホスト バックアップ | `/tools/restic/`、`/tools/kopia/` |
-| 12月8日 | 未作成 | Googleフォトから自前の写真の保存に移る（Immich・Ente） | googleフォト 代わり | `/alternatives/google-photos/`、比較ページ |
+| 12月1日 | 予約済み（`selfhost-backup-basics.md`） | 自前で動かすツールのバックアップの基本（restic・Kopia） | セルフホスト バックアップ | `/tools/restic/`、`/tools/kopia/` |
+| 12月8日 | 予約済み（`google-photos-migration.md`） | Googleフォトから自前の写真の保存に移る（Immich・Ente） | googleフォト 代わり | `/alternatives/google-photos/`、比較ページ |
 | 12月15日 | 未作成 | 2026年にGitHubのスターが伸びたOSS（データのまとめ） | oss 2026 人気 | `/trending/`（数字は書く日のデータで集計） |
-| 12月22日 | 未作成 | パスワード管理を自前でするときの注意点（Vaultwarden） | vaultwarden 使い方 / bitwarden 自前 | `/tools/vaultwarden/` |
+| 12月22日 | 予約済み（`vaultwarden-password-manager.md`） | パスワード管理を自前でするときの注意点（Vaultwarden） | vaultwarden 使い方 / bitwarden 自前 | `/tools/vaultwarden/` |
 | 1月5日 | 未作成 | （1月に決める） | | |
 
 ## Zennの予定
