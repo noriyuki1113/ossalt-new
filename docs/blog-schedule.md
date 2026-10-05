@@ -18,10 +18,10 @@ ossalt.jp のブログ（`content/blog/`）と、Zennの記事の予定表です
 | 10月13日 | 予約済み | SEOツールを自前で | seo ツール オープンソース | `seo-tools-opensource.md` |
 | 10月20日 | 予約済み | 社内Wikiを自前で持つなら | 社内wiki オープンソース | `team-wiki-selfhosted.md` |
 | 10月27日 | 予約済み | VPS 1台で社内ツールをそろえる | 社内ツール セルフホスト | `small-team-selfhost-stack.md` |
-| **11月3日** | **未作成** | Slackの代わりになるチャットの選び方（Mattermost・Rocket.Chat・Zulip） | slack 代替 / slack 無料 代わり | `/alternatives/slack/`、比較ページ |
+| 11月3日 | 予約済み | Slackの代わりになるチャットの選び方 | slack 代替 / slack 無料 代わり | `slack-alternatives-chat.md` |
 | 11月10日 | 予約済み | セルフホストを始めるVPSの選び方 | vps 選び方 セルフホスト | `vps-for-selfhosting.md`（**公開前にVPSの料金を再確認**） |
-| 11月17日 | 未作成 | n8nで業務を自動化する前に：Zapierとの違いとライセンスの注意点 | n8n zapier 違い / n8n 商用利用 | `/tools/n8n/`、`/alternatives/zapier/` |
-| 11月24日 | 未作成 | 社内でChatGPTのように使えるAIを自前で動かす（Open WebUI・Ollama） | chatgpt 社内 自前 / ollama open webui | `/alternatives/chatgpt/`、比較ページ |
+| 11月17日 | 予約済み | n8nで業務を自動化する前に：Zapierとの違いとライセンス | n8n zapier 違い / n8n 商用利用 | `n8n-license-zapier.md` |
+| 11月24日 | 予約済み | 社内でChatGPTのように使えるAIを自前で動かす | chatgpt 社内 自前 / ollama open webui | `private-ai-chat-ollama.md` |
 | 12月1日 | 未作成 | 自前で動かすツールのバックアップの基本（restic・Kopia） | セルフホスト バックアップ | `/tools/restic/`、`/tools/kopia/` |
 | 12月8日 | 未作成 | Googleフォトから自前の写真の保存に移る（Immich・Ente） | googleフォト 代わり | `/alternatives/google-photos/`、比較ページ |
 | 12月15日 | 未作成 | 2026年にGitHubのスターが伸びたOSS（データのまとめ） | oss 2026 人気 | `/trending/`（数字は書く日のデータで集計） |
