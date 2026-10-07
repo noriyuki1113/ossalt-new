@@ -10,6 +10,17 @@
     "/alternatives/opentofu/": "/alternatives/terraform/",
     "/alternatives/opensearch/": "/alternatives/elasticsearch/",
     "/alternatives/chef/": "/alternatives/",
-    "/alternatives/illustrator/": "/categories/design/"
+    "/alternatives/illustrator/": "/categories/design/",
+    "/guides/notion-alternatives/": "/alternatives/notion/",
+    "/guides/appflowy-selfhost-vps/": "/tools/appflowy/",
+    "/guides/baserow-selfhost-vps/": "/tools/baserow/",
+    "/guides/plane-selfhost-vps/": "/tools/plane/",
+    "/guides/mattermost-selfhost-vps/": "/tools/mattermost/",
+    "/guides/vikunja-selfhost-vps/": "/tools/vikunja/",
+    "/category/security/": "/categories/security/",
+    "/category/developer-tools/": "/categories/devtools/",
+    "/compare/mattermost-vs-slack/": "/alternatives/slack/",
+    "/compare/gitea-vs-github/": "/alternatives/github/",
+    "/sponsor/": "/advertise/"
   }
 }
