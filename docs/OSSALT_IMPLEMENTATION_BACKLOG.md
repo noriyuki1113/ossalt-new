@@ -29,7 +29,7 @@
 | P2-8 | ESLint の導入の要否 | — | — | ⏸ 現時点では不要（tsc とテストで足りている） |
 | P2-9 | OSS別の必要スペック（公式の資料から、出典・確認日つき） | — | 推測の数値なし。出典のURL・確認日をテストで検査 | ✅ 10件（`data-source/requirements.json`）。ツール詳細に広告とは別の枠で表示 |
 | P2-10 | VPS枠のスマホでの表示（2社＋「ほか2社も見る」）と「手元で試せる」の一言 | — | 並び順を変えない。横にはみ出さない | ✅ |
-| P2-11 | 収益につながる記事の企画と下書き | — | 自動で公開しない | ✅ 企画書（`docs/revenue/CONTENT_BRIEFS.md`）、下書き1本、Immichの解説の改善 |
+| P2-11 | 収益につながる記事の企画と下書き | — | 自動で公開しない | ✅ 企画書（`docs/revenue/CONTENT_BRIEFS.md`）、下書き2本（Immich・Uptime Kuma）、Immich・Uptime Kuma・Ollamaの解説改善、Ollamaの予約記事の改善。新規下書きは運営者の承認待ち |
 | P2-12 | Revenue Dashboard の再判断 | A8の手入力の記録が数か月 | — | ⏸ データ待ち |
 
 ## Phase 3〜5（概要。Phase 2の後に具体化）
