@@ -1,0 +1,30 @@
+{
+  "errors": [],
+  "github": {
+    "budget_stopped": null,
+    "errors": 0,
+    "max_requests": 300,
+    "notModified": 0,
+    "remaining": null,
+    "requests": 0,
+    "retried": 0,
+    "used": false
+  },
+  "last_changed_at": "2026-10-09T21:57:23.091Z",
+  "last_run_at": "2026-10-09T21:57:23.091Z",
+  "summary": {
+    "blocked": 16,
+    "candidates": 189,
+    "config_verified": 122,
+    "duplicates_merged": 77,
+    "existing": 0,
+    "github_enriched": 0,
+    "needs_review": 173,
+    "new": 189,
+    "raw_entries": {
+      "appflare": 136,
+      "awesome": 130
+    },
+    "update_review": 0
+  }
+}

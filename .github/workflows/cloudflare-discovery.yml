@@ -1,0 +1,75 @@
+name: Cloudflare OSS 候補の収集
+
+# 毎週水曜 06:23 JST（火曜 21:23 UTC）と、手動実行。
+# Cloudflare で動くOSSの掲載候補を集め、data-source/discovery/ と docs/discovery/ に書く。
+# 処理は scripts/discover-cloudflare.mjs（設計：docs/discovery/CLOUDFLARE_DISCOVERY.md）。
+#
+# ・data-source/tools.json には一切触れない（サイトの掲載は変わらない）。掲載は人が「ツール追加」で行う。
+# ・GITHUB_TOKEN での push なので「GitHub Pages 公開」は動かない（サイトには影響しない）。
+# ・GitHub API の使用は1回あたり最大 300 リクエスト（max_requests で変更可）。
+#   ETag の控えは Actions のキャッシュで引き継ぎ、変わっていないリポジトリは 304（制限に数えられない）で済ませる。
+on:
+  schedule:
+    - cron: "23 21 * * 2"
+  workflow_dispatch:
+    inputs:
+      max_requests:
+        description: "GitHub API のリクエストの上限（1回あたり）"
+        required: false
+        type: string
+        default: "300"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cloudflare-discovery
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: ETag の控えを復元
+        uses: actions/cache@v4
+        with:
+          path: data-source/discovery/.etag-cache.json
+          key: discovery-etag-${{ github.run_id }}
+          restore-keys: discovery-etag-
+
+      # 入力は env: 経由で受け取る（run: に直接埋め込まない）
+      - name: 収集
+        env:
+          GITHUB_TOKEN: ${{ secrets.DATA_FETCH_TOKEN || secrets.GITHUB_TOKEN }}
+          DISCOVERY_MAX_REQUESTS: ${{ inputs.max_requests || '300' }}
+        run: node scripts/discover-cloudflare.mjs
+
+      - name: 結果をサマリに表示
+        run: |
+          {
+            echo "## 収集の結果"
+            echo '```json'
+            node -e "const s=require('./data-source/discovery/state.json');console.log(JSON.stringify({summary:s.summary,github:{requests:s.github.requests,notModified:s.github.notModified,errors:s.github.errors,budget_stopped:s.github.budget_stopped},errors:s.errors},null,2))"
+            echo '```'
+            echo "一覧：docs/discovery/cloudflare-candidates.md"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: コミットと push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data-source/discovery/cloudflare-candidates.json data-source/discovery/state.json docs/discovery/cloudflare-candidates.md
+          if git diff --cached --quiet; then
+            echo "変更なし"
+            exit 0
+          fi
+          git commit -m "data: Cloudflare OSS 候補 $(date -u -d '+9 hours' +%F)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
