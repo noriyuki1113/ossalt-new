@@ -1,15 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect } from "react";
-
-declare global {
-  interface Window {
-    umami?: {
-      track: (eventName: string, data?: Record<string, unknown>) => void;
-    };
-  }
-}
+import { trackEvent } from "@/lib/analytics";
+import { useViewable } from "@/lib/use-viewable";
 
 type HouseAdConfig = {
   id: string;
@@ -50,27 +43,18 @@ function getHouseAd(placement: string): HouseAdConfig {
 }
 
 function track(eventName: "house_ad_impression" | "house_ad_click", data: Record<string, unknown>) {
-  try {
-    if (typeof window.umami?.track === "function") {
-      window.umami.track(eventName, data);
-    }
-  } catch {
-    // 計測失敗で表示や遷移を妨げない。
-  }
+  trackEvent(eventName, data);
 }
 
 export function HouseAd({ placement }: { placement: string }) {
   const ad = getHouseAd(placement);
 
-  useEffect(() => {
-    track("house_ad_impression", {
-      ad_id: ad.id,
-      placement,
-    });
-  }, [ad.id, placement]);
+  // 読み込んだだけでは数えない。枠が画面内で見られたとき（50%以上・1秒以上）に1回だけ送る
+  const ref = useViewable<HTMLElement>(() => track("house_ad_impression", { ad_id: ad.id, placement }));
 
   return (
     <aside
+      ref={ref}
       className="panel"
       aria-label="ossalt.jp からのおすすめ"
       style={{

@@ -1,0 +1,1454 @@
+{
+  "session": "phase0",
+  "date": "2026-10-09",
+  "summary": "Phase 0の監査ブリーフ（候補C1〜C12）を、6つの役割のサブエージェントが互いの結果を見ずに独立して採点した。統括（lead）が合議の結果と運営者の指示（Phase 1の範囲）をもとに判断した。各役割の全体所見はoverallsに残す。",
+  "overalls": {
+    "chief_editor": {
+      "top3": [
+        "C1",
+        "C7",
+        "C2"
+      ],
+      "conflicts": "(1) 収益重視の役割はC2・C11・C12を上位にしそうだが、編集の立場では読者の判断材料にならない広告枠は後回しにしたい。C2は『そのツールを動かすのに必要なスペック』と結びつく場合のみ支持。(2) SEO・成長重視の役割はC3（導入ガイド）とC9（掲載追加）の量を推しそうだが、未検証の手順や解説なしのページ追加は読者の信頼とC10・C12（薄いページの整理）に反する。(3) 技術・運用の役割はC4・C5・C8の基盤づくりを先にしたがるが、C5・C8は読者価値がなく、C4の最小限で足りる。",
+      "notes": "最も大事な点：C3は読者価値が最も高い候補の1つだが、作業側で手順を検証できない事実がある以上、『手順書』として出すべきではない。公式手順への案内＋前提条件（必要メモリ・依存・ライセンス）の整理に絞るか、運営者が実機検証できる体制ができるまで保留すべき。C1は試算の初期値に推測の価格を入れないこと（出典つき・日付つき、または利用者入力）。数値スコアは監査事実に基づく私の判断であり、効果の実測値ではない（Umami・A8の成果は計測不可）。確認した事実：docker_available=True は389件中283件、残り106件は未確認（null）。C3の6ツールはいずれも掲載済みでDocker確認済み。"
+    },
+    "seo_strategist": {
+      "top3": [
+        "C10",
+        "C7",
+        "C4"
+      ],
+      "conflicts": "(1) 収益担当とはC2の表示範囲で対立しそう：全ツールページに出すと、解説なしの約244ページが「薄い本文＋アフィリエイト」になる。手書き解説がある範囲からの開始を主張する。(2) コンテンツ／成長担当とはC3で対立しそう：検証できない導入手順と既存のブログ記事・ツール解説とのカニバリゼーションを懸念。(3) AI配信・MCP担当とはC10で対立しうる：/md/・/api/ はrobots.txtで塞がず、X-Robots-Tag: noindexで検索インデックスからだけ外す折衷案を提案。(4) C9の大量追加は、C10の薄いページ整理と逆方向に働く。",
+      "notes": "Search Consoleの実績は10/4までの全体の推移（表示回数20〜30→150〜219/日、登録461・未登録1,211）しか手元になく、クエリ・ページ別の実績は未確認。したがって個別施策の検索需要はすべて仮説。リポジトリで確認した事実：sitemap.tsは全アクティブツールを載せ、比較ページのみ解説なしをnoindexにしている／ツールページのJSON-LDはOpenSSF Scorecardの値をReview（author: OpenSSF Scorecard）として出しており、リッチリザルトのレビューガイドラインに合わない可能性がある（要確認・C10の一部として見直し推奨）／旧 /guides/*-selfhost-vps/ はmeta refresh＋canonicalでツールページへ転送済み（C3でURLを新設する場合はここと整合させる）／robots.tsは全面許可。"
+    },
+    "revenue_officer": {
+      "top3": [
+        "C2",
+        "C4",
+        "C1"
+      ],
+      "conflicts": "(1) SEO担当とはC10で衝突しうる：解説なしツールページを広くnoindexにすると、VPS導線つきのページの流入も消えるため、収益側は『サーバー系ツールは解説を優先して残す』を主張する。(2) ユーザー体験・信頼担当とはC2・C3で衝突しうる：収益側は導線拡大を推すが、検証できない導入ガイドや無関係なページへの広告は信頼を損なう。(3) 自動化・仕組み担当とはC5・C8・C6で衝突しうる：計測データがないうちの仕組み投資は収益側としては後回し。(4) C12のCookie同意はプライバシー方針担当と対立しうる。",
+      "notes": "最重要の事実確認：ブリーフ3節の『ツール詳細ページにVPS導線は表示されていない／公開ページに導線0』は、リポジトリの記述と食い違う。src/app/tools/[slug]/page.tsx 321行目で VpsRecommendation が全ツールに無条件で描画され（commit 12355c9で追加）、10/7時点のローカルビルド out/tools/ では386ページに px.a8.net リンクがある（代替ページには0）。本番サイトはこのセッションから接続できず未確認だが、事実ならC2は『新設』ではなく『絞り込み』で、デスクトップアプリ等にもVPSを出している現状は信頼性と規約上の見え方の課題になる。また、affiliate_clickのUmami集計がすでに存在する可能性があるため、C4で運営者がUmami画面から実数を確認することを最優先に。成約率・報酬額は計測不可のため、本評価では数値を仮定していない。"
+    },
+    "ux_designer": {
+      "top3": [
+        "C1",
+        "C7",
+        "C2"
+      ],
+      "conflicts": "(1) 収益担当とはC2で対立しそう：VPS枠を全ツールに出す方がクリックは増えるが、デスクトップアプリにVPSを勧めるのは初心者を混乱させる。docker_availableがnullのツールの扱いを決める必要がある。(2) SEO・コンテンツ担当とはC9で対立しそう：件数を増やしたい側と、解説のない薄いページを増やしたくないUX側。(3) 収益担当とはC12・C11で対立しそう：同意バナー・広告・スポンサー枠は、モバイルで比較情報を見つける体験を悪くする。(4) 正確性重視の担当とはC1で対立しそう：初心者に入力を減らすには既定値が要るが、既定値は推測値になりやすい。",
+      "notes": "事実確認の指摘：リポジトリHEAD（b43f472）の src/app/tools/[slug]/page.tsx 321行目では VpsRecommendation（A8のaffiliateUrl付き）が全ツールページに無条件で出ており、ブリーフの『ツール詳細ページにVPS導線0』と食い違う。このセッションから本番（ossalt.jp）には接続できず（プロキシ403）、本番HTMLは未確認。もしこれが本番に出ているなら、C2は新規実装ではなく『絞り込み』の改善になり、現在の公開ページにすでにデスクトップアプリにもVPSを勧める表示がある可能性がある。また site.ts の説明文は『導入難易度で比較できる』とうたうが、tools.jsonに難易度の項目はなく（診断用の technicalLevel が diagnosis-data.ts に約30件あるのみ）、初心者向けの難易度表示は現状ほぼ存在しない。Docker有無・日本語UI有無・技術レベルから『はじめての人向け／慣れた人向け』の目安を出すのは、C1・C7と組み合わせると安価で効果が大きい（ただし判定基準を公開し、nullは未確認と表示すること）。"
+    },
+    "automation_architect": {
+      "top3": [
+        "C2",
+        "C6",
+        "C9"
+      ],
+      "conflicts": "Revenue 系の役割は C8 収益ダッシュボードや C11 の早期商品化を推しそうだが、データ源が無く推測値を置くことになるため反対する。SEO 系の役割は C9 の追加と C10 の noindex 拡大を同時に推しそうだが、両者は薄いページの増減で逆向きに働くので、追加分の解説方針とインデックス基準を先に一本化すべき。編集・品質系の役割とは C3 で対立しうる：検証できない手順記事は公開後の保守（OSS の更新への追従）が最も重く、C6 の検知を前提にしない限り本数を増やすべきでない。C1 は SaaS 料金という新しい手入力データを生むため、価値重視の役割より自分は慎重。",
+      "notes": "評価の軸は『既存の毎日のデータ取得（fetch-github-api.mjs）と週次の点検（content-check）に何を足すだけで済むか』。C2 は既存の VpsRecommendation と docker_available だけで実装でき、現状0の収益導線を直接埋める。C6 は追加のAPI呼び出しなしで前日のデータとの差分から作れる。C9 は add-tools パイプラインの実行で済む。C4 のイベント名の型つき一覧は他施策の効果判定の前提なので、上位3件と並行して小さく行うべき。公開リポジトリには収益・計測の実数を置かないことを C5 のテストで機械的に守る。AI処理は差分の検知まではコードで行い、Claude 利用枠は文章化（下書き）にのみ使う。数値はすべて主観の採点で、実測値ではない。"
+    },
+    "critical_investor": {
+      "top3": [
+        "C4",
+        "C2",
+        "C10"
+      ],
+      "stop": [
+        "C3",
+        "C5",
+        "C8",
+        "C11"
+      ],
+      "conflicts": "成長・SEO担当とはC3（導入ガイド）とC1（Cost Lab）で対立する見込み。彼らは検索需要とアフィリエイトの相性を重く見るが、私は実行検証できない手順と推測の初期値を、OSSALTの信頼という唯一の資産を削るリスクとして見る。エンジニア・自動化担当とはC5・C8で対立しそう（仕組み作りは楽しいが、利用者にも収益にも届かない）。収益担当とはC11・C12で対立しそう（早く収益の選択肢を増やしたいが、現在の流入規模では見込みが小さい）。",
+      "notes": "『なぜ他サイトではなくOSSALTか』に答えられる要素は、日本語・健全度などのデータ・AI向けMCP/API・推測を載せない姿勢の4つで、導入ガイドや汎用の内部リンクはこれを強めない。順序は、測る（C4）→今ある流入を収益の入口につなぐ（C2）→品質を上げる（C10）。C1とC6は、需要確認（費用系クエリの実績）や範囲の限定（ライセンス変更のみ）を条件に後で判断する。収益・ページビューの基準値はすべて運営者が実数を確認して設定すること（現時点でこのシステムからは取得できない）。"
+    }
+  },
+  "candidates": [
+    {
+      "id": "C1",
+      "title": "Cost Lab MVP",
+      "problem": "SaaSをやめてOSSに移ると本当に安くなるのか、運用の手間まで含めて判断できる場所がない",
+      "proposal": "入力値だけで総保有コストを比べる /cost-lab/（価格の既定値なし、例は仮入力と明示）",
+      "audience": "SaaSの見直しを検討している中小企業・IT担当者",
+      "evidence": [
+        "/tools/",
+        "/alternatives/"
+      ],
+      "expected_effect": "費用の判断材料を提供し、ツール詳細・代替ページから回遊させる",
+      "revenue_link": "サーバーで動かすOSSを選んだ利用者に、結果の下で国内VPSの紹介枠（PR表記つき）を出す",
+      "evaluations": [
+        {
+          "agent": "chief_editor",
+          "scores": {
+            "user_value": 85,
+            "revenue_potential": 60,
+            "seo_opportunity": 60,
+            "differentiation": 80,
+            "implementation_cost": 65,
+            "maintenance_cost": 70,
+            "confidence": 65
+          },
+          "action": "BUILD",
+          "rationale": "「SaaSをやめてOSSにすると本当に安くなるのか」を自分の数字で判断できるようになり、読者の意思決定に直結する。運用時間×時給を含めOSSが必ず勝つ設計にしない方針は、読者第一の編集方針と一致し信頼を生む。静的ページで完結し、サーバー不要で作れる。",
+          "objection": "SaaS価格・VPS価格の初期値を載せる場合、推測値や古い価格になりやすく『推測の値を載せない』方針と衝突する。初期値は出典つきか空欄にすべき。"
+        },
+        {
+          "agent": "seo_strategist",
+          "scores": {
+            "user_value": 72,
+            "revenue_potential": 55,
+            "seo_opportunity": 45,
+            "differentiation": 75,
+            "implementation_cost": 55,
+            "maintenance_cost": 60,
+            "confidence": 45
+          },
+          "action": "BUILD",
+          "rationale": "仮説：「セルフホスト 費用」「〇〇 料金 比較」系の検索意図に答える計算ページは国内に少なく、代替ページ153件からの内部リンク先として機能しうる。ただし計算ツール単体（/cost-lab/ 1URL）は入力前の本文が薄く、検索流入の主役にはなりにくい。SEO上の価値は、代替・ツールページからの回遊とVPS導線の受け皿としての間接効果が中心。",
+          "objection": "Search Consoleにこの意図のクエリ実績は未確認で、検索需要は仮説。計算前提（SaaS料金・時給）を推測値で埋めると「推測の値を載せない」方針と衝突し、YMYL寄りの費用情報として品質評価を下げる恐れがある。"
+        },
+        {
+          "agent": "revenue_officer",
+          "scores": {
+            "user_value": 80,
+            "revenue_potential": 70,
+            "seo_opportunity": 65,
+            "differentiation": 80,
+            "implementation_cost": 60,
+            "maintenance_cost": 60,
+            "confidence": 60
+          },
+          "action": "BUILD",
+          "rationale": "「SaaS月額と比べていくらか」を計算した直後は、VPSを選ぶ判断に最も近い瞬間で、計算結果の『サーバー費』欄から文脈どおりにVPS比較へつなげられる（購買意図の高い導線）。運用時間×時給を含めた公正な計算は、アフィリエイト誘導の信頼性を担保し、同時に『〇〇 費用 比較』系の検索意図を取りにいける。収益化はC2の導線とC4の計測があって初めて検証可能。",
+          "objection": "入力式ツールは検索流入を取りにくく、静的ページで結果のURL共有や事例データを持たないと薄く見える恐れ。VPS料金の前提値の更新を怠ると誤誘導になる。"
+        },
+        {
+          "agent": "ux_designer",
+          "scores": {
+            "user_value": 88,
+            "revenue_potential": 62,
+            "seo_opportunity": 60,
+            "differentiation": 78,
+            "implementation_cost": 62,
+            "maintenance_cost": 70,
+            "confidence": 68
+          },
+          "action": "BUILD",
+          "rationale": "「SaaSをやめたら本当に安くなるのか」は初訪問者が最初に抱く問いで、いまのツール詳細ページには費用の情報が一切ない（tools.jsonに料金・難易度の項目がない）ため、答えを出せる場所を作る価値が最も高い。初心者向けの入力設計の提案：(1) 最初に聞くのは3つだけ＝「今のSaaSの月額（1人あたり）」「使う人数」「月に何時間くらい保守に使えるか（0・1・2〜4・5時間以上の選択肢）」、時給・VPS月額・初期構築時間は既定値つきの『詳しく設定』に畳む。(2) 単位は全部『円・月』に統一し、ドル建ての入力にはその場で為替レートの欄を出す（data-source/fx.jsonのusd_jpy=150は暫定値と明記されているので、既定値として黙って使わず、ユーザーが確認できる形にする）。(3) VPS月額は国内4社の確認済み最低月額（affiliates.tsの293〜1,265円）を『小・中・大』のプリセットで選ばせ、メモリの目安は『わからない』を選べるようにする。(4) 結果は『SaaSのほうが安い／ほぼ同じ／OSSのほうが安い』の3段階ラベルと、損益分岐の人数を1行で先に見せ、内訳表は後ろに置く。(5) ツール・代替ページから来たらURLのクエリでSaaS名と人数を事前入力し、モバイルでは入力1列・結果を画面下に固定表示する。",
+          "objection": "既定値（時給・構築時間）は推測値になりやすく、『推測の値を載せない』方針とぶつかる。既定値は『例』と明示し、ユーザーが必ず見える位置に置く必要がある。"
+        },
+        {
+          "agent": "automation_architect",
+          "scores": {
+            "user_value": 70,
+            "revenue_potential": 55,
+            "seo_opportunity": 55,
+            "differentiation": 75,
+            "implementation_cost": 55,
+            "maintenance_cost": 50,
+            "confidence": 55
+          },
+          "action": "BUILD",
+          "rationale": "静的ページのクライアント計算で完結し、サーバー不要。VPS月額は src/lib/affiliates.ts の確認済み最低月額、為替は data-source/fx.json、ツール側の docker_available 等は public/data/tools.json を読み込めるので、入力の既定値の多くは既存データから供給できる。導線のイベントは src/lib/analytics.ts の trackEvent をそのまま使える。",
+          "objection": "SaaS側の料金データは既存の自動取得に存在せず、手入力の値が古くなる保守負担が増える。既定値には確認日を必ず持たせ、content-check に期限切れ検知を足さないと推測値の掲載になりかねない。"
+        },
+        {
+          "agent": "critical_investor",
+          "scores": {
+            "user_value": 60,
+            "revenue_potential": 40,
+            "seo_opportunity": 45,
+            "differentiation": 65,
+            "implementation_cost": 50,
+            "maintenance_cost": 45,
+            "confidence": 45
+          },
+          "action": "RESEARCH",
+          "rationale": "英語圏のディレクトリ（alternativeto等）にない「日本語・円建て・運用時間込み」の比較は差別化になり得る唯一の候補だが、需要の証拠がない。初期値（SaaS料金・VPS月額・作業時間）を置いた瞬間に『推測の値を載せない』方針と衝突し、料金改定のたびに保守が発生する。まずSearch Consoleで費用系クエリ（料金・コスト・費用・安い）の表示実績を確認してから作るべき。",
+          "objection": "利用者が自分で数値を入れる計算機は表計算で代替でき、検索流入も得にくい。初期値なしだと使われず、初期値ありだと推測値の掲載と古くなった料金のリスクを抱える。",
+          "kill_criteria": "公開後8週間で /cost-lab/ のページビューがツール詳細ページ合計の1%未満、または計算実行イベントがページビューの20%未満なら、機能を増やさず縮小（代替ページ内の静的な説明へ置き換え）する。"
+        }
+      ],
+      "decision": {
+        "action": "BUILD",
+        "decided_by": "lead",
+        "reason": "6役割中5がBUILD。批判役の懸念（推測の初期値・需要の証拠なし）に対し、価格の既定値を持たない・例は仮入力と明示する設計にし、需要は公開後のイベントで確かめる。",
+        "effort_hours_estimate": 6,
+        "success_metrics": [
+          "cost_lab_entry（どこから来たか）",
+          "cost_lab_result",
+          "affiliate_click（placement=cost_lab）"
+        ],
+        "phase": 1,
+        "status": "done"
+      }
+    },
+    {
+      "id": "C2",
+      "title": "VPS導線を文脈に合わせる",
+      "problem": "VPSの紹介枠が全ツールページに条件なしで出ており、パソコンのアプリにまでVPSを勧めていた（監査で発見）",
+      "proposal": "自分のサーバーで動かすツールにだけ出す。パソコンのアプリ・道具・GPUが要るもの・アーカイブ済みには出さない",
+      "audience": "ツールを自分のサーバーで動かしたい人",
+      "evidence": [
+        "src/lib/affiliate-context.ts"
+      ],
+      "expected_effect": "無関係な広告をなくして信頼を守り、関係のあるページの導線は残す",
+      "revenue_link": "サーバーを必要とする利用者にだけ紹介し、成約の見込みのある表示に絞る",
+      "evaluations": [
+        {
+          "agent": "chief_editor",
+          "scores": {
+            "user_value": 55,
+            "revenue_potential": 75,
+            "seo_opportunity": 10,
+            "differentiation": 35,
+            "implementation_cost": 80,
+            "maintenance_cost": 75,
+            "confidence": 70
+          },
+          "action": "BUILD",
+          "rationale": "現在公開ページのVPS導線は0で、セルフホスト型のツールを見た読者が『どこで動かすか』の次の一歩を得られる。Docker確認済み283件に限定し、安い順・PR表記を守るなら読者の役にも立つ。",
+          "objection": "ツールごとの必要メモリ等の要件と結びつかない汎用の枠だと、読者には単なる広告に見える。最低スペックの目安を示せないなら価値は薄い。"
+        },
+        {
+          "agent": "seo_strategist",
+          "scores": {
+            "user_value": 55,
+            "revenue_potential": 75,
+            "seo_opportunity": 15,
+            "differentiation": 30,
+            "implementation_cost": 75,
+            "maintenance_cost": 70,
+            "confidence": 60
+          },
+          "action": "BUILD",
+          "rationale": "現在の公開ページにVPS導線が0という事実からすると、収益の土台として最小コストの施策。SEO面ではプラス要因はほぼないが、Docker確認済みのツールに限定し、PR表記つき・本文より下に置く限り、ページ品質への悪影響は小さいと判断する。",
+          "objection": "約244件ある解説なしの自動生成ツールページにアフィリエイト枠だけが載ると、「薄い本文＋アフィリエイト」の典型パターンになる。手書き解説がある133件から始めるべき。"
+        },
+        {
+          "agent": "revenue_officer",
+          "scores": {
+            "user_value": 70,
+            "revenue_potential": 85,
+            "seo_opportunity": 20,
+            "differentiation": 45,
+            "implementation_cost": 85,
+            "maintenance_cost": 75,
+            "confidence": 70
+          },
+          "action": "IMPROVE",
+          "rationale": "リポジトリを確認すると、src/app/tools/[slug]/page.tsx の321行目で VpsRecommendation が条件なしで全ツールページに描画されており、10/7時点のローカルビルド out/ でも386のツールページに px.a8.net リンクが入っていた。つまりブリーフの『公開ページにVPS導線0』とは食い違い、課題は『新設』ではなく『全ツールに一律表示→サーバー系だけに絞り、文言をツール文脈に合わせる』改善である。デスクトップアプリ等への無関係な表示を消すことで、信頼性とクリックの質を上げる、最も直接的な収益レバー。",
+          "objection": "本番の公開ページに実際に出ているかは、このセッションからossalt.jpへ接続できず未確認（コードとビルドからの判断）。docker等がnull（未確認）のツールをどう扱うかの基準を先に決める必要がある。"
+        },
+        {
+          "agent": "ux_designer",
+          "scores": {
+            "user_value": 60,
+            "revenue_potential": 72,
+            "seo_opportunity": 15,
+            "differentiation": 40,
+            "implementation_cost": 80,
+            "maintenance_cost": 75,
+            "confidence": 55
+          },
+          "action": "IMPROVE",
+          "rationale": "リポジトリの既定ブランチHEAD（b43f472）では、src/app/tools/[slug]/page.tsx の321行目で VpsRecommendation（A8リンク付き4社）が全ツールに無条件で出ており、目次にも『自前で動かすには』がある。ブリーフの『ツール詳細ページにVPS導線0』とコードが食い違うので、本番HTMLで要確認（このセッションからは本番に接続できず未確認）。新規BUILDではなく、既存枠を『サーバーで動かすツールだけに出す』『カードを4枚並べる前に、必要なスペックの目安と次の一歩を1行で示す』形に直すのが初心者には親切。",
+          "objection": "docker_available は True 283件／null 106件で、null には nextcloud・matomo のようなサーバー型の主要ツールも含まれる（nullは『未確認』）。Docker確認済みだけで絞ると肝心のページで導線が消え、逆にmailspring等のデスクトップアプリを除く判定には別の項目が必要。"
+        },
+        {
+          "agent": "automation_architect",
+          "scores": {
+            "user_value": 55,
+            "revenue_potential": 80,
+            "seo_opportunity": 10,
+            "differentiation": 30,
+            "implementation_cost": 90,
+            "maintenance_cost": 85,
+            "confidence": 75
+          },
+          "action": "BUILD",
+          "rationale": "src/components/vps-recommendation.tsx（PR表記・A8計測img・affiliate_click計測つき）がすでにあり、ツール詳細ページに条件つきで差し込むだけで済む。表示条件は fetch-github-api.mjs／detect-docker.mjs が毎日更新する docker_available === true で機械的に決められ、新しいデータ収集は要らない。現状の公開ページにVPS導線が0という事実に対し、最小の工数で直接効く。",
+          "objection": "docker_available はリポジトリ内の手がかりからの推定でもあり、null（未確認）は表示しない側に倒すべき。デスクトップアプリ等の除外にはカテゴリ単位の除外リストが追加で要り、その一覧の保守が発生する。"
+        },
+        {
+          "agent": "critical_investor",
+          "scores": {
+            "user_value": 50,
+            "revenue_potential": 70,
+            "seo_opportunity": 10,
+            "differentiation": 30,
+            "implementation_cost": 85,
+            "maintenance_cost": 80,
+            "confidence": 70
+          },
+          "action": "BUILD",
+          "rationale": "現在、公開ページにVPS導線が0で、収益化の入口がそもそも存在しない。docker_available=Trueは389件中283件あり、表示対象は十分。既存の4社・最低月額順の部品を流用でき、実装も保守も最も軽い。",
+          "objection": "差別化はゼロで、ツール詳細ページを読む人がその場でVPSを契約する保証はない。流入が1日数百表示の段階では、成果が出ても小さく、PR枠がページの信頼性を下げる恐れがある。",
+          "kill_criteria": "公開後8週間で affiliate_click がVPS枠の表示ページのページビュー合計の0.3%未満、かつA8の発生成果が0件なら、表示対象を上位のページだけに絞るか撤去する。"
+        }
+      ],
+      "decision": {
+        "action": "IMPROVE",
+        "decided_by": "lead",
+        "reason": "6役割すべてが上位または支持。監査の事実（全ページに出ていた）を受けて、新規ではなく改善として実施。",
+        "effort_hours_estimate": 2,
+        "success_metrics": [
+          "affiliate_click（placement=tool_detail）",
+          "表示ページ数（306/377）"
+        ],
+        "phase": 1,
+        "status": "done"
+      }
+    },
+    {
+      "id": "C3",
+      "title": "導入ガイド（Deployment Lab）",
+      "problem": "読者は手順を求めているが、作業側に手順を実行して確かめる環境がない",
+      "proposal": "当面は手順書を出さず、公式手順への案内と前提条件の整理に絞る。検証できる環境ができてから再検討",
+      "audience": "OSSを初めて導入する人",
+      "evidence": [
+        "docs/OSSALT_CONTENT_STRATEGY.md"
+      ],
+      "expected_effect": "検証できない手順で信頼を損なうことを避ける",
+      "revenue_link": "検証済みのガイドができれば、VPSの導線の最も自然な置き場所になる",
+      "evaluations": [
+        {
+          "agent": "chief_editor",
+          "scores": {
+            "user_value": 80,
+            "revenue_potential": 65,
+            "seo_opportunity": 75,
+            "differentiation": 45,
+            "implementation_cost": 40,
+            "maintenance_cost": 30,
+            "confidence": 45
+          },
+          "action": "RESEARCH",
+          "rationale": "読者が実際に『動かせるようになる』最も直接的な施策で、検索需要もある。ただし作業側で手順を実行できず、未検証の手順を公開すると読者が詰まり、サイトの信頼を損なう。公式ドキュメントへの案内と前提条件の整理に限定する形なら検討の余地がある。",
+          "objection": "未検証の手順書は『推測を載せない』方針に実質的に反する。各ツールの更新でコマンドが古くなり、保守負担が大きい。"
+        },
+        {
+          "agent": "seo_strategist",
+          "scores": {
+            "user_value": 70,
+            "revenue_potential": 60,
+            "seo_opportunity": 55,
+            "differentiation": 45,
+            "implementation_cost": 35,
+            "maintenance_cost": 30,
+            "confidence": 40
+          },
+          "action": "RESEARCH",
+          "rationale": "「n8n セルフホスト」「Immich Docker」などの導入系クエリは検索意図が明確で、VPS導線とも相性がよい（仮説：需要はSearch Consoleで未確認）。一方、既存のブログ記事（private-ai-chat-ollama、google-photos-migration、n8n-license-zapier、docker-checklist）や、ツール解説（6件とも content/tools にあり）と意図が重なり、カニバリゼーションが起きやすい。旧サイトの /guides/*-selfhost-vps/ は現在ツールページへのmeta refreshになっており、URL設計次第で旧URLの評価を活かせるか、逆に混乱させるかが変わる。",
+          "objection": "手順を実行して検証できないまま書く導入手順は、E-E-A-T上もっとも弱い型で、手順が間違っていれば信頼を失う。先にクエリの実績確認と、既存記事との役割分担（どのURLがどの意図を担当するか）を決めるべき。"
+        },
+        {
+          "agent": "revenue_officer",
+          "scores": {
+            "user_value": 80,
+            "revenue_potential": 75,
+            "seo_opportunity": 80,
+            "differentiation": 55,
+            "implementation_cost": 40,
+            "maintenance_cost": 35,
+            "confidence": 45
+          },
+          "action": "WRITE",
+          "rationale": "『n8n セルフホスト』『Immich 導入』などはVPS契約の直前にいる検索者で、記事内のVPS導線は最も成約に近い位置になる。6本に絞れば制作量も限定でき、C1・C2の受け皿にもなる。",
+          "objection": "手順を実行して検証できないため、誤った手順は信頼とアフィリエイト規約上のリスクになる。『公式手順の要約＋公式ドキュメントへのリンク＋未検証の明記』に範囲を限定すべきで、競合記事が多く差別化は弱い。"
+        },
+        {
+          "agent": "ux_designer",
+          "scores": {
+            "user_value": 78,
+            "revenue_potential": 58,
+            "seo_opportunity": 72,
+            "differentiation": 45,
+            "implementation_cost": 35,
+            "maintenance_cost": 30,
+            "confidence": 50
+          },
+          "action": "RESEARCH",
+          "rationale": "初心者が一番つまずくのは『比べた後、どう動かすか』なので、ニーズは高い。ただし作業側で手順を実行できないため、動かない手順を出すと初心者ほど深く傷つき、サイトへの信頼を失う。まずは公式ドキュメントへの道案内＋前提条件（必要メモリ、Docker Composeの有無、ドメイン・HTTPSが要るか）のチェックリスト形式で6本のうち1〜2本を試すのが安全。",
+          "objection": "検証していない手順を『導入ガイド』と呼ぶのは誤解を招く。名称と冒頭の注意書きで『公式手順の要点と確認日』であることを明示すべき。"
+        },
+        {
+          "agent": "automation_architect",
+          "scores": {
+            "user_value": 75,
+            "revenue_potential": 65,
+            "seo_opportunity": 70,
+            "differentiation": 55,
+            "implementation_cost": 40,
+            "maintenance_cost": 25,
+            "confidence": 50
+          },
+          "action": "WRITE",
+          "rationale": "記事は既存の content/ と blog.ts の仕組みに載せられ、content-check の点検対象にも加えられるので配信面の新規実装はほぼ不要。各OSSの latest_release_at を手順記事の確認日と突き合わせれば、手順が古くなった候補を自動で出せる（C6と共通化）。",
+          "objection": "作業側で手順を実行して確かめられないため、誤った手順を載せる危険が最も大きい。公式ドキュメントへの出典リンクと確認日の明記、対象バージョンの固定を必須にし、本数は最小限から始めるべき。"
+        },
+        {
+          "agent": "critical_investor",
+          "scores": {
+            "user_value": 70,
+            "revenue_potential": 45,
+            "seo_opportunity": 60,
+            "differentiation": 20,
+            "implementation_cost": 40,
+            "maintenance_cost": 20,
+            "confidence": 70
+          },
+          "action": "REJECT",
+          "rationale": "n8n・Immich・Ollama等の導入手順は公式ドキュメント・Qiita・Zenn・個人ブログで既に飽和しており、実行検証していない手順は後発で勝てる理由がない。誤った手順はOSSALTの『推測を載せない』信頼を直接傷つけ、バージョン更新ごとに古くなる保守負担も重い。",
+          "objection": "導入ガイドはVPSアフィリエイトと最も相性の良いコンテンツで、検索需要も大きい、という反論は強い。ただしそれは検証できる環境があって初めて成り立つ。",
+          "kill_criteria": "実施する場合でも、1本目の公開後8週間で検索表示回数が月100回未満、または手順の誤り指摘が1件でもあれば、残りの記事を作らない（公式手順へのリンク集に置き換える）。"
+        }
+      ],
+      "decision": {
+        "action": "RESEARCH",
+        "decided_by": "lead",
+        "reason": "3役割がRESEARCH、批判役がREJECT。実行して確かめられない手順を「検証済み」と書けないため。運営者が手元で検証する場合の手順を先に決める。",
+        "effort_hours_estimate": null,
+        "success_metrics": [],
+        "phase": 2,
+        "status": "proposed"
+      }
+    },
+    {
+      "id": "C4",
+      "title": "計測の整備",
+      "problem": "クリックの導線ごとの比較ができず、収益もこのシステムから取れないため、どの施策の中止基準も働かない",
+      "proposal": "affiliate_click に placement を付け、Cost Lab のイベントを追加。運営者がUmamiの画面で週1回確かめる手順を文書化（数字は公開リポジトリに置かない）",
+      "audience": "運営者",
+      "evidence": [
+        "src/lib/affiliate-track.ts"
+      ],
+      "expected_effect": "施策の効果と中止の判断ができるようになる",
+      "revenue_link": "導線ごとのクリックの比較で、効く場所に注力できる",
+      "evaluations": [
+        {
+          "agent": "chief_editor",
+          "scores": {
+            "user_value": 20,
+            "revenue_potential": 55,
+            "seo_opportunity": 5,
+            "differentiation": 10,
+            "implementation_cost": 85,
+            "maintenance_cost": 60,
+            "confidence": 75
+          },
+          "action": "IMPROVE",
+          "rationale": "読者に直接の価値はないが、どの施策が読者に役立ったかを知る手段が今はない（Umami集計を取得できない）。イベント名の整理と週1の転記手順は軽く、C1・C2の効果判定の前提になる。",
+          "objection": "手動転記は1人運営では続かない恐れがある。記録先を公開リポジトリに置くと数字が公開される点に注意。"
+        },
+        {
+          "agent": "seo_strategist",
+          "scores": {
+            "user_value": 20,
+            "revenue_potential": 50,
+            "seo_opportunity": 30,
+            "differentiation": 10,
+            "implementation_cost": 80,
+            "maintenance_cost": 60,
+            "confidence": 80
+          },
+          "action": "BUILD",
+          "rationale": "現状はUmami・A8.netとも数字をこのシステムから取れず、どの施策も効果検証ができない。Search Consoleの週次記録（クエリ・ページ別の表示回数・CTR・掲載順位、登録/未登録の件数）も同じ手順に入れれば、SEO施策の判断を仮説から実績に置き換えられる。",
+          "objection": "手動の転記は1人運営では途切れやすい。記録先をリポジトリにすると公開リポジトリのため数字が公開される点に注意（SEO指標は公開しても害は小さいが、収益値は不可）。"
+        },
+        {
+          "agent": "revenue_officer",
+          "scores": {
+            "user_value": 15,
+            "revenue_potential": 60,
+            "seo_opportunity": 5,
+            "differentiation": 10,
+            "implementation_cost": 85,
+            "maintenance_cost": 70,
+            "confidence": 80
+          },
+          "action": "BUILD",
+          "rationale": "直接の収益はゼロだが、現状はA8の成果もUmamiの集計もこのシステムから取れず、どの施策が収益に効いたか判定できない。イベント名の体系化と週1の転記手順は、C1・C2・C3の投資対効果を測るための前提条件で、コストが最も軽い。",
+          "objection": "手動転記は1人運営では途切れやすい。転記した数字をこの公開リポジトリに置くと収益が公開されるため、記録先はリポジトリ外にする必要がある。"
+        },
+        {
+          "agent": "ux_designer",
+          "scores": {
+            "user_value": 20,
+            "revenue_potential": 55,
+            "seo_opportunity": 5,
+            "differentiation": 10,
+            "implementation_cost": 85,
+            "maintenance_cost": 60,
+            "confidence": 75
+          },
+          "action": "BUILD",
+          "rationale": "ユーザーに直接は見えないが、Cost Labの入力をどこで諦めたか、VPS枠が押されたかが分からないと、導線のUX改善の判断ができない。イベント名の体系化はコードの小さな変更で済む。",
+          "objection": "週1回の手動転記は1人運営では続かない可能性が高い。記録項目は5つ程度に絞るべき。"
+        },
+        {
+          "agent": "automation_architect",
+          "scores": {
+            "user_value": 15,
+            "revenue_potential": 60,
+            "seo_opportunity": 5,
+            "differentiation": 10,
+            "implementation_cost": 85,
+            "maintenance_cost": 75,
+            "confidence": 75
+          },
+          "action": "IMPROVE",
+          "rationale": "trackEvent／trackAffiliateClick の2つの入口がすでにあり、イベント名を src/lib 内の定数（型つきの一覧）にまとめてテストで未登録名を検出するだけで体系化できる。他の施策（C1・C2・C11）の効果判定はこの計測なしでは不可能で、前提作業として価値が高い。",
+          "objection": "UmamiのAPIキーが未設定なので数値の取得は手動転記に依存し、運営者の時間を毎週消費する。転記した数値をこの公開リポジトリに置くと公開されてしまうので、記録先はリポジトリ外にすべき。"
+        },
+        {
+          "agent": "critical_investor",
+          "scores": {
+            "user_value": 10,
+            "revenue_potential": 55,
+            "seo_opportunity": 5,
+            "differentiation": 5,
+            "implementation_cost": 85,
+            "maintenance_cost": 70,
+            "confidence": 85
+          },
+          "action": "BUILD",
+          "rationale": "現状、収益もクリックも集計値を取得できず、どの施策も成否を判定できない。中止基準を機能させる前提条件であり、他の全施策より先に必要。イベント名の整理と週1回の転記手順だけなら費用はほぼない。",
+          "objection": "週1回の手動転記は個人運営では続かない可能性が高く、続かなければ仕組みだけが残る。",
+          "kill_criteria": "4週連続で週次の記録が欠けたら、転記項目を3つ（総PV・affiliate_click・Search Console表示回数）に減らす。"
+        }
+      ],
+      "decision": {
+        "action": "BUILD",
+        "decided_by": "lead",
+        "reason": "批判役・収益・SEOの3役割が上位。実装が軽く、ほかの施策の前提になる。",
+        "effort_hours_estimate": 1,
+        "success_metrics": [
+          "イベントがUmamiで確認できること"
+        ],
+        "phase": 1,
+        "status": "done"
+      }
+    },
+    {
+      "id": "C5",
+      "title": "改善候補と評価の記録",
+      "problem": "施策の判断の根拠が残らない",
+      "proposal": "docs/council/*.json に候補と6役割の評価を記録し、形式と公開してはいけない内容をテストで検査",
+      "audience": "運営者・将来の自動運用",
+      "evidence": [
+        "src/lib/council.ts"
+      ],
+      "expected_effect": "判断の再現性と、後からの検証",
+      "revenue_link": "直接はつながらない（判断の質を上げる前提）",
+      "evaluations": [
+        {
+          "agent": "chief_editor",
+          "scores": {
+            "user_value": 5,
+            "revenue_potential": 10,
+            "seo_opportunity": 0,
+            "differentiation": 10,
+            "implementation_cost": 70,
+            "maintenance_cost": 55,
+            "confidence": 70
+          },
+          "action": "REJECT",
+          "rationale": "内部の意思決定のための仕組みで、読者が何かできるようになるわけではない。今は記録の仕組みより、読者向けの施策を1つ出すほうが先。",
+          "objection": "簡易な記録（このJSON程度）で足りるため、テスト付きの仕組み化は過剰。"
+        },
+        {
+          "agent": "seo_strategist",
+          "scores": {
+            "user_value": 10,
+            "revenue_potential": 15,
+            "seo_opportunity": 10,
+            "differentiation": 15,
+            "implementation_cost": 70,
+            "maintenance_cost": 55,
+            "confidence": 65
+          },
+          "action": "IMPROVE",
+          "rationale": "評価の記録自体は意思決定の質を上げるが、SEOにもユーザーにも直接の効果はない。既存のcontent-checkの仕組みに最小限で載せる程度に留めるのが妥当。",
+          "objection": "公開リポジトリに置けば施策の検討内容が外部に見える。仕組み作りが目的化し、実際の改善（C10・C7など）の時間を奪う懸念。"
+        },
+        {
+          "agent": "revenue_officer",
+          "scores": {
+            "user_value": 5,
+            "revenue_potential": 15,
+            "seo_opportunity": 5,
+            "differentiation": 15,
+            "implementation_cost": 70,
+            "maintenance_cost": 60,
+            "confidence": 65
+          },
+          "action": "RESEARCH",
+          "rationale": "意思決定の記録は施策の取捨選択を速めるが、収益への経路は間接的で、成果データ（C4）がないうちは評価の質も上がらない。最小限のJSON記録に留め、自動ジョブは後回しでよい。",
+          "objection": "仕組み作り自体が目的化しやすく、限られたAI利用枠を収益導線から奪う。"
+        },
+        {
+          "agent": "ux_designer",
+          "scores": {
+            "user_value": 5,
+            "revenue_potential": 10,
+            "seo_opportunity": 0,
+            "differentiation": 15,
+            "implementation_cost": 75,
+            "maintenance_cost": 55,
+            "confidence": 60
+          },
+          "action": "REJECT",
+          "rationale": "訪問者の体験には何も影響しない内部の仕組みで、私の評価軸（初訪問者が必要な情報を見つけられるか）への寄与はほぼゼロ。今やるなら、このJSONをリポジトリに置く程度の最小構成で十分。",
+          "objection": "公開リポジトリなので、記録に収益や運営の判断を書くとそのまま公開される点に注意。"
+        },
+        {
+          "agent": "automation_architect",
+          "scores": {
+            "user_value": 10,
+            "revenue_potential": 20,
+            "seo_opportunity": 0,
+            "differentiation": 15,
+            "implementation_cost": 80,
+            "maintenance_cost": 70,
+            "confidence": 65
+          },
+          "action": "BUILD",
+          "rationale": "置き場所は data-source/ と同じ流儀で docs/initiatives/ に、候補1件1ファイルの JSON（id・title・status・created・evidence[出典URLか『未確認』]・evaluations[agent・scores・action]・decision）とし、検証は既存の node:test（npm test の対象に scripts/*.test.mjs として追加）でスキーマ・必須の出典・スコア範囲を確かめる。公開リポジトリなので、収益の実数・A8の成果・Umamiの数値・アカウント名は入れない規則をテストで機械的に禁止し（キー名の拒否リスト）、非公開の数値はローカルの .gitignore 対象ファイルか運営者の手元に分ける。候補の自動作成は content-check や sns-drafts と同じく『ファイルを書いてコミットするだけ、公開はしない』型で後から足せる。",
+          "objection": "記録の仕組み自体はユーザー価値を生まず、運用されなければ形骸化する。Phase 3 の自動作成ジョブまで作ると候補が溜まるだけになりやすいので、最初はスキーマとテストだけに止めるべき。"
+        },
+        {
+          "agent": "critical_investor",
+          "scores": {
+            "user_value": 0,
+            "revenue_potential": 5,
+            "seo_opportunity": 0,
+            "differentiation": 5,
+            "implementation_cost": 60,
+            "maintenance_cost": 50,
+            "confidence": 75
+          },
+          "action": "REJECT",
+          "rationale": "利用者にも収益にも直接届かない内部の仕組みで、1人運営の段階では過剰開発の典型。施策候補の記録はMarkdownの表1枚で足りる。さらにリポジトリが公開なので、評価や収益の判断をJSONで置くと外部に公開される。",
+          "objection": "AIエージェントによる継続改善の土台になる、という反論はあり得るが、改善の結果を測る計測（C4）がない状態では記録だけが増える。",
+          "kill_criteria": "実施する場合、作成した候補のうち3か月で実際に公開まで進んだものが3件未満なら仕組みを廃止する。"
+        }
+      ],
+      "decision": {
+        "action": "BUILD",
+        "decided_by": "lead",
+        "reason": "3役割がREJECT（読者・収益に直結しない）だが、運営者の指示（Phase 1の必須範囲）のため、最小限（JSONとテストのみ、画面なし）で実施。反対意見を記録する。",
+        "effort_hours_estimate": 2,
+        "success_metrics": [
+          "記録がテストを通ること"
+        ],
+        "phase": 1,
+        "status": "done"
+      }
+    },
+    {
+      "id": "C6",
+      "title": "OSSの更新の監視",
+      "problem": "ライセンス変更や開発の停止に、解説が追いつかない",
+      "proposal": "既存の毎日のデータと週1回の点検（content-check）を拡張し、ライセンス・アーカイブ・リリースの変化を候補として出す",
+      "audience": "読者・運営者",
+      "evidence": [
+        "scripts/content-check-lib.mjs"
+      ],
+      "expected_effect": "古い・誤った情報を早く直す",
+      "revenue_link": "信頼の維持（間接）",
+      "evaluations": [
+        {
+          "agent": "chief_editor",
+          "scores": {
+            "user_value": 65,
+            "revenue_potential": 25,
+            "seo_opportunity": 50,
+            "differentiation": 60,
+            "implementation_cost": 50,
+            "maintenance_cost": 50,
+            "confidence": 55
+          },
+          "action": "IMPROVE",
+          "rationale": "ライセンス変更やメジャー更新を知れることは、導入を検討・運用中の読者にとって実用的で、日本語でまとまった情報源は少ない。既存の点検の仕組みの拡張として、解説の修正候補づくりから始めるのが妥当。",
+          "objection": "候補が大量に出ると1人では点検しきれず、ニュース化すると薄い記事が量産される恐れがある。"
+        },
+        {
+          "agent": "seo_strategist",
+          "scores": {
+            "user_value": 55,
+            "revenue_potential": 25,
+            "seo_opportunity": 45,
+            "differentiation": 60,
+            "implementation_cost": 55,
+            "maintenance_cost": 50,
+            "confidence": 55
+          },
+          "action": "IMPROVE",
+          "rationale": "ライセンス変更（例：n8nのような改変）は解説の正確性に直結し、古い情報の放置はインデックス品質と信頼を下げる。既存の点検の仕組みの拡張として「解説修正の候補」を出すのはSEO上の鮮度維持に有効。",
+          "objection": "「更新ニュース」を量産すると短命で薄いURLが増え、インデックス品質を下げる。新規URLは作らず、既存ページの修正と更新日の正確な反映に使うべき（仮説：ニュース型ページの検索需要は小さい）。"
+        },
+        {
+          "agent": "revenue_officer",
+          "scores": {
+            "user_value": 60,
+            "revenue_potential": 25,
+            "seo_opportunity": 50,
+            "differentiation": 60,
+            "implementation_cost": 50,
+            "maintenance_cost": 50,
+            "confidence": 55
+          },
+          "action": "RESEARCH",
+          "rationale": "ライセンス変更の検知は『このOSSは使い続けて大丈夫か』という信頼の根拠になり、鮮度のあるページは検索評価にも寄与し得る。ただし収益化の仕組みは、流入増→ツールページのVPS導線という間接的なものに限られる。",
+          "objection": "更新ニュースは量産すると薄いページが増え、AdSense審査（C12）と衝突する。まず『ライセンス変更の検知と解説修正の候補化』だけに範囲を絞るべき。"
+        },
+        {
+          "agent": "ux_designer",
+          "scores": {
+            "user_value": 55,
+            "revenue_potential": 25,
+            "seo_opportunity": 45,
+            "differentiation": 60,
+            "implementation_cost": 50,
+            "maintenance_cost": 45,
+            "confidence": 55
+          },
+          "action": "IMPROVE",
+          "rationale": "ライセンス変更は、乗り換えを検討する初心者にとって知らないと困る重大情報で、ツールページ上部の警告（既存の notice--warn の位置）に出せれば価値が高い。既存の点検の仕組みの拡張として、まずライセンス変更の検知だけに絞るのがよい。",
+          "objection": "リリースごとのニュース候補まで作ると、初心者には違いが分からない更新情報が増え、運営者のレビュー負担も増える。"
+        },
+        {
+          "agent": "automation_architect",
+          "scores": {
+            "user_value": 60,
+            "revenue_potential": 30,
+            "seo_opportunity": 50,
+            "differentiation": 65,
+            "implementation_cost": 75,
+            "maintenance_cost": 70,
+            "confidence": 70
+          },
+          "action": "BUILD",
+          "rationale": "fetch-github-api.mjs がすでに毎日 license・latest_release_at・releases_12mo・github_archived を取得しており、新たなAPI呼び出しは不要。update-data のジョブ内で前回コミットの public/data/tools.json（git の1つ前の版）と差分を取り、変化を content-check-lib.mjs の『解説のライセンス記載との食い違い』判定と同じ形式で docs/ に書き出せば、既存の点検の拡張で済む。",
+          "objection": "月次スナップショット（data-source/snapshots）は現在1件しかなく、それに頼ると検知が遅れる。リリース本文の要約までAIで行うとClaude利用枠を消費するので、最初はライセンス変更・アーカイブ・メジャー版の検知に限るべき。"
+        },
+        {
+          "agent": "critical_investor",
+          "scores": {
+            "user_value": 55,
+            "revenue_potential": 15,
+            "seo_opportunity": 35,
+            "differentiation": 55,
+            "implementation_cost": 55,
+            "maintenance_cost": 40,
+            "confidence": 55
+          },
+          "action": "RESEARCH",
+          "rationale": "ライセンス変更の検知は、日本語で即座に伝えるサイトが少なく、差別化と信頼につながる。一方、リリースごとのニュースは件数が多く、GitHubの通知やリリースノートと競合し、ノイズになる。既に latest_release_at 等は取得しているので、対象をライセンス変更だけに絞れば軽く済む。",
+          "objection": "ライセンス変更は年に数件しか起きず、作った仕組みがほとんど働かない可能性がある。リリースのニュース化はAI生成の薄い記事の量産になりやすい。",
+          "kill_criteria": "運用開始後3か月で、検知から実際に解説の修正・記事化に至った件数が2件未満なら、検知だけ残して記事化の作業はやめる。"
+        }
+      ],
+      "decision": {
+        "action": "RESEARCH",
+        "decided_by": "lead",
+        "reason": "自動化担当はBUILD、批判役はライセンス変更の検知だけならと条件つき。既存の点検ですでに一部を拾っているため、差分の仕様を決めてからPhase 2で実施。",
+        "effort_hours_estimate": 4,
+        "success_metrics": [
+          "見つかった変化の件数と、直した件数"
+        ],
+        "phase": 2,
+        "status": "proposed"
+      }
+    },
+    {
+      "id": "C7",
+      "title": "内部リンクの強化",
+      "problem": "Cost Lab・比較・代替・解説が十分につながっていない",
+      "proposal": "データから関係を出し、読者にとって自然なリンクだけを追加",
+      "audience": "回遊する読者",
+      "evidence": [
+        "src/app/tools/[slug]/page.tsx"
+      ],
+      "expected_effect": "回遊と、検索エンジンの理解の向上",
+      "revenue_link": "Cost Labやツール詳細を経由した導線の増加",
+      "evaluations": [
+        {
+          "agent": "chief_editor",
+          "scores": {
+            "user_value": 60,
+            "revenue_potential": 40,
+            "seo_opportunity": 65,
+            "differentiation": 30,
+            "implementation_cost": 70,
+            "maintenance_cost": 75,
+            "confidence": 65
+          },
+          "action": "IMPROVE",
+          "rationale": "代替ページ→比較→ツール→コスト試算と、読者が次に知りたいことへ迷わず進めるようになる。データから自動で出すので保守が軽く、既存688URLの回遊とインデックスにも効く。",
+          "objection": "解説なし（noindex）の比較ページへ多くリンクすると読者が薄いページに着地する。リンク先は解説つきに絞るべき。"
+        },
+        {
+          "agent": "seo_strategist",
+          "scores": {
+            "user_value": 60,
+            "revenue_potential": 40,
+            "seo_opportunity": 70,
+            "differentiation": 40,
+            "implementation_cost": 60,
+            "maintenance_cost": 75,
+            "confidence": 60
+          },
+          "action": "BUILD",
+          "rationale": "代替153・比較98（index対象）・ツール解説133・カテゴリ29という資産がすでにあり、データから関連づけを自動生成すれば、クロールの深さと手書きページへのリンク評価の集中を両立できる。Search Consoleで未登録・未クロールが多い事実とも整合し、インデックス促進に効く可能性が高い（効果量は仮説）。",
+          "objection": "noindexの比較ページ（解説なし107組）や薄いツールページへのリンクを大量に出すと、クロール予算を薄い側に流す。リンク先は「解説あり・index対象」に限定する条件が必要。"
+        },
+        {
+          "agent": "revenue_officer",
+          "scores": {
+            "user_value": 55,
+            "revenue_potential": 55,
+            "seo_opportunity": 65,
+            "differentiation": 30,
+            "implementation_cost": 70,
+            "maintenance_cost": 75,
+            "confidence": 60
+          },
+          "action": "BUILD",
+          "rationale": "153の代替ページ（全件解説つき）は収益導線がハウス広告のみで、VPS導線のあるツールページ・導入ガイド・Cost Labへ送る内部リンクが、既存流入を収益ページへ回す安価な手段になる。データから自動生成なので保守も軽い。",
+          "objection": "リンク先（C1・C3）ができる前に作ると効果が薄い。機械的な関連リンクの羅列はユーザー価値を下げる。"
+        },
+        {
+          "agent": "ux_designer",
+          "scores": {
+            "user_value": 72,
+            "revenue_potential": 45,
+            "seo_opportunity": 65,
+            "differentiation": 35,
+            "implementation_cost": 65,
+            "maintenance_cost": 75,
+            "confidence": 65
+          },
+          "action": "BUILD",
+          "rationale": "ツール詳細ページはすでに目次・健全度・スペック・FAQ・比較・同カテゴリと情報が多く、初訪問者が『次に何を見ればいいか』が分かりにくい。データから自動で『費用を試算する』『比較する』『代替ページに戻る』の次の一歩を出すのは、迷いを減らす最も安い手段。",
+          "objection": "リンクを増やしすぎるとかえって選べなくなる。ページあたり次の一歩は3つ程度に絞り、位置はページ上部（hero__actions付近）とFAQ後の2か所に限定すべき。"
+        },
+        {
+          "agent": "automation_architect",
+          "scores": {
+            "user_value": 50,
+            "revenue_potential": 35,
+            "seo_opportunity": 70,
+            "differentiation": 30,
+            "implementation_cost": 70,
+            "maintenance_cost": 80,
+            "confidence": 65
+          },
+          "action": "IMPROVE",
+          "rationale": "compare.ts の buildComparePairs、slugifyCompetitor、category や japan-saas のデータなど、関連づけに必要な関係はすでにデータに存在し、ビルド時の純粋関数で出せる。content-check-lib の extractLinks で壊れたリンクの検出も既にあるので、手書き不要・保守ほぼゼロにできる。",
+          "objection": "導入ガイドや Cost Lab がまだ無い段階では、関連づける先が少なく効果が限定的。C1・C3 の後に実施する順序が妥当。"
+        },
+        {
+          "agent": "critical_investor",
+          "scores": {
+            "user_value": 45,
+            "revenue_potential": 25,
+            "seo_opportunity": 50,
+            "differentiation": 15,
+            "implementation_cost": 70,
+            "maintenance_cost": 75,
+            "confidence": 60
+          },
+          "action": "IMPROVE",
+          "rationale": "データから自動で出せるので保守が軽く、既存の比較・代替ページの回遊とクロールを改善できる。ただし導入ガイドやCost Labはまだ存在しないため、今は既存ページ同士の関連づけに範囲を絞るべき。",
+          "objection": "内部リンクは、どのサイトでも行う基本対策で差別化にならず、薄いページへリンクを増やすと品質評価を悪化させる恐れがある。",
+          "kill_criteria": "実施後8週間で、対象ページ群の登録済み（インデックス）数またはページあたりの閲覧ページ数に改善が見られなければ、追加の関連枠は作らない。"
+        }
+      ],
+      "decision": {
+        "action": "IMPROVE",
+        "decided_by": "lead",
+        "reason": "編集・SEO・UXの上位。Phase 1ではCost Labへの導線（ツール詳細・代替ページ・フッター）だけを入れ、残りはPhase 2。",
+        "effort_hours_estimate": 4,
+        "success_metrics": [
+          "cost_lab_entry の from 別の件数"
+        ],
+        "phase": 2,
+        "status": "in_progress"
+      }
+    },
+    {
+      "id": "C8",
+      "title": "収益ダッシュボード",
+      "problem": "収益とアクセスの数字を1か所で見たい",
+      "proposal": "（不採用）データの取得手段がなく、公開リポジトリ・静的サイトでは非公開にできない",
+      "audience": "運営者",
+      "evidence": [],
+      "expected_effect": "—",
+      "revenue_link": "—",
+      "evaluations": [
+        {
+          "agent": "chief_editor",
+          "scores": {
+            "user_value": 0,
+            "revenue_potential": 30,
+            "seo_opportunity": 0,
+            "differentiation": 5,
+            "implementation_cost": 30,
+            "maintenance_cost": 40,
+            "confidence": 70
+          },
+          "action": "REJECT",
+          "rationale": "読者価値はゼロで、そもそもA8・Umamiの数値をシステムから取得できないため、表示するデータがない。現段階では手動記録（C4）で足りる。",
+          "objection": "収益が実際に発生し、数字が増えてから再検討すればよい。"
+        },
+        {
+          "agent": "seo_strategist",
+          "scores": {
+            "user_value": 5,
+            "revenue_potential": 30,
+            "seo_opportunity": 0,
+            "differentiation": 5,
+            "implementation_cost": 35,
+            "maintenance_cost": 35,
+            "confidence": 70
+          },
+          "action": "REJECT",
+          "rationale": "SEOへの寄与はゼロで、現時点では表示する収益データ自体が計測不可。C4の手動記録で十分な段階であり、別基盤を立てるコストに見合わない。",
+          "objection": "収益の実績が出始めた時点（VPS導線公開後数か月）で、ローカルスクリプトとして再検討する余地はある。"
+        },
+        {
+          "agent": "revenue_officer",
+          "scores": {
+            "user_value": 5,
+            "revenue_potential": 15,
+            "seo_opportunity": 0,
+            "differentiation": 5,
+            "implementation_cost": 30,
+            "maintenance_cost": 35,
+            "confidence": 70
+          },
+          "action": "REJECT",
+          "rationale": "現時点で可視化すべき収益データ自体が取得できず（A8もUmamiも計測不可）、ダッシュボードは見る数字がない箱になる。C4の週1転記（リポジトリ外のスプレッドシート等）で十分。",
+          "objection": "成果が出始め、数字の量が手作業で追えなくなった段階では再検討の価値がある。"
+        },
+        {
+          "agent": "ux_designer",
+          "scores": {
+            "user_value": 0,
+            "revenue_potential": 30,
+            "seo_opportunity": 0,
+            "differentiation": 5,
+            "implementation_cost": 35,
+            "maintenance_cost": 40,
+            "confidence": 65
+          },
+          "action": "REJECT",
+          "rationale": "訪問者のUXには無関係で、A8・Umamiの数字はこのシステムから取得できない（計測不可）ため、作っても表示する実数がない。運営者の画面での手動確認で当面足りる。",
+          "objection": "収益の判断材料がないまま施策を選び続けることになる点は残るので、C4の手動記録で代替する前提。"
+        },
+        {
+          "agent": "automation_architect",
+          "scores": {
+            "user_value": 5,
+            "revenue_potential": 30,
+            "seo_opportunity": 0,
+            "differentiation": 5,
+            "implementation_cost": 30,
+            "maintenance_cost": 30,
+            "confidence": 60
+          },
+          "action": "REJECT",
+          "rationale": "A8.net の成果も Umami の集計もこのシステムから取得できず、データ源が無い状態でダッシュボードを作っても手入力の画面になるだけ。Cloudflare Access 等は新しい運用対象を増やし、1人運営の保守負担に見合わない。必要ならリポジトリ外のローカルスプレッドシートで十分。",
+          "objection": "収益の把握自体は重要なので、C4 の手動記録が回り始め、API 取得手段が確保できた時点で再検討の余地はある。"
+        },
+        {
+          "agent": "critical_investor",
+          "scores": {
+            "user_value": 0,
+            "revenue_potential": 10,
+            "seo_opportunity": 0,
+            "differentiation": 0,
+            "implementation_cost": 30,
+            "maintenance_cost": 30,
+            "confidence": 85
+          },
+          "action": "REJECT",
+          "rationale": "A8の成果もUmamiの集計もこのシステムから取得できず、表示すべきデータがない状態でダッシュボードを作るのは順序が逆。Cloudflare Access等の外部構成は1人運営の保守を増やす。手元の表計算で足りる。",
+          "objection": "数字が見えないと判断が遅れるという反論はあるが、それは週次の転記（C4）で解決でき、専用画面は不要。",
+          "kill_criteria": "月間の承認収益が手動集計に週30分以上かかる規模になるまで着手しない。"
+        }
+      ],
+      "decision": {
+        "action": "REJECT",
+        "decided_by": "lead",
+        "reason": "6役割すべてがREJECT。A8.netとUmamiの数値を取り出す手段がない現状で作っても、手入力の画面になるだけ。データの取得手段ができたら再検討。",
+        "effort_hours_estimate": null,
+        "success_metrics": [],
+        "phase": 5,
+        "status": "rejected"
+      }
+    },
+    {
+      "id": "C9",
+      "title": "掲載OSSの追加（保留中の20件）",
+      "problem": "旧サイトのURLの転送先がなく、注目度の高いOSSが未掲載",
+      "proposal": "git stash に保留中の20件を、C10のインデックスの基準を決めてから追加",
+      "audience": "OSSを探す読者",
+      "evidence": [
+        "git stash（保留: OSS20件の追加）"
+      ],
+      "expected_effect": "掲載の網羅性と、旧URLの評価の引き継ぎ",
+      "revenue_link": "掲載ページが増えれば導線も増えるが、薄いページは逆効果",
+      "evaluations": [
+        {
+          "agent": "chief_editor",
+          "scores": {
+            "user_value": 70,
+            "revenue_potential": 45,
+            "seo_opportunity": 65,
+            "differentiation": 50,
+            "implementation_cost": 70,
+            "maintenance_cost": 60,
+            "confidence": 60
+          },
+          "action": "WRITE",
+          "rationale": "LiteLLM・OpenHands・Aider・Cline等のAI系やLago・GrowthBook等は読者が今探している分野で、掲載がないと探しに来た読者が手ぶらで帰る。旧URLの転送先にもなり、既存のデータ取得パイプラインに乗せられる。",
+          "objection": "追加するだけで解説がないと、薄いページを増やすことになりC10・C12と衝突する。解説つきで少数ずつ追加すべき。"
+        },
+        {
+          "agent": "seo_strategist",
+          "scores": {
+            "user_value": 60,
+            "revenue_potential": 35,
+            "seo_opportunity": 55,
+            "differentiation": 40,
+            "implementation_cost": 60,
+            "maintenance_cost": 55,
+            "confidence": 50
+          },
+          "action": "WRITE",
+          "rationale": "旧サイトURLの転送先になるという点は、未登録1,211件の中の旧URLの整理に直接効く（事実：旧URLが未登録の大半）。LiteLLM・OpenHands・Cline等はAI系で検索需要の伸びが見込める（仮説）。ただし解説なしで追加すると薄いページが増えるだけなので、手書き解説つきで追加する前提でWRITEとした。",
+          "objection": "20件すべてを一度に追加するより、旧URLの被リンク・表示実績があるものから優先すべき（その実績は未確認）。GitLabなど競合の強い名詞クエリでは上位は望みにくい。"
+        },
+        {
+          "agent": "revenue_officer",
+          "scores": {
+            "user_value": 60,
+            "revenue_potential": 45,
+            "seo_opportunity": 60,
+            "differentiation": 40,
+            "implementation_cost": 60,
+            "maintenance_cost": 55,
+            "confidence": 55
+          },
+          "action": "BUILD",
+          "rationale": "LiteLLM・OpenHands・GitLab・Lago・Unleash等はサーバーで動かす前提のツールが多く、VPS導線と相性が良い。旧サイトURLの転送先にもなり、既存の被リンク・クロール資産を回収できる。",
+          "objection": "Aider・Cline・Beekeeper Studio等はローカル/デスクトップ用途でVPS収益に結びつかない。解説なしで追加すると薄いページが増えるため、解説とセットで段階追加すべき。"
+        },
+        {
+          "agent": "ux_designer",
+          "scores": {
+            "user_value": 55,
+            "revenue_potential": 35,
+            "seo_opportunity": 60,
+            "differentiation": 40,
+            "implementation_cost": 60,
+            "maintenance_cost": 55,
+            "confidence": 55
+          },
+          "action": "IMPROVE",
+          "rationale": "LiteLLM・OpenHands・Aider・Cline等のAI系は検索需要がありそうで、旧URLの転送先にもなる。ただし初心者目線では、解説のないツールが増えても『何に使うのか』が分からないページが増えるだけなので、追加は解説を付けられる件数ずつ行うべき。",
+          "objection": "現状で手書き解説は35%（133/389件）しかなく、件数を増やすほど薄いページの割合が上がり、C10・C12と逆方向になる。"
+        },
+        {
+          "agent": "automation_architect",
+          "scores": {
+            "user_value": 60,
+            "revenue_potential": 40,
+            "seo_opportunity": 65,
+            "differentiation": 45,
+            "implementation_cost": 90,
+            "maintenance_cost": 75,
+            "confidence": 75
+          },
+          "action": "BUILD",
+          "rationale": "add-tools.yml（pending.txt → add-tools.mjs → fetch-github-api.mjs --only → build-data.mjs）という確立したパイプラインがあり、20件の追加はほぼワークフロー実行だけで済む。旧サイトURLの転送先にもなり、make-redirects.mjs／redirects-lib.mjs で転送を足せる。",
+          "objection": "解説なしで追加すると薄いページが増え、C10・C12 と逆行する。追加分のうち解説を書くもの以外は、インデックスの扱いを事前に決めておくべき。"
+        },
+        {
+          "agent": "critical_investor",
+          "scores": {
+            "user_value": 55,
+            "revenue_potential": 30,
+            "seo_opportunity": 55,
+            "differentiation": 30,
+            "implementation_cost": 70,
+            "maintenance_cost": 60,
+            "confidence": 60
+          },
+          "action": "WRITE",
+          "rationale": "LiteLLM・OpenHands・Aider・Cline等のAI関連は検索需要が伸びている領域で、旧サイトURLの転送先にもなるため、既存の被リンクや登録を回収できる。データ取得は既存の仕組みで自動化済み。ただし解説なしで追加すると、薄いページを20件増やすだけになる。",
+          "objection": "AIコーディング系は変化が速く、比較記事は英語圏の大手メディアや開発者ブログが先行しており、日本語でも追いつかれるのが早い。",
+          "kill_criteria": "追加後8週間で、追加した20件の検索表示回数の合計が既存ツールページの中央値の20件分を下回るなら、以降の追加は旧URLの転送先になるものだけに限定する。"
+        }
+      ],
+      "decision": {
+        "action": "RESEARCH",
+        "decided_by": "lead",
+        "reason": "自動化・収益はBUILD、SEO・編集・批判役はWRITE（解説つきでの追加）。薄いページを増やす方向と、C10で減らす方向が逆に働くため、基準を先に決める。",
+        "effort_hours_estimate": 2,
+        "success_metrics": [],
+        "phase": 2,
+        "status": "proposed"
+      }
+    },
+    {
+      "id": "C10",
+      "title": "インデックス品質",
+      "problem": "手書き解説のないツールページ約244件が、すべてサイトマップに入っている。/md/・/api/ が検索の対象になっている",
+      "proposal": "解説のないツールページの扱いの基準を決める。/md/・/api/ は X-Robots-Tag で検索の索引から外す（Cloudflareの設定、運営者の作業）",
+      "audience": "検索から来る読者",
+      "evidence": [
+        "src/app/sitemap.ts"
+      ],
+      "expected_effect": "サイト全体の品質の評価の向上、AdSenseの審査の前提",
+      "revenue_link": "審査・検索の評価の前提（間接）",
+      "evaluations": [
+        {
+          "agent": "chief_editor",
+          "scores": {
+            "user_value": 50,
+            "revenue_potential": 50,
+            "seo_opportunity": 70,
+            "differentiation": 15,
+            "implementation_cost": 65,
+            "maintenance_cost": 70,
+            "confidence": 60
+          },
+          "action": "IMPROVE",
+          "rationale": "掲載389件中、手書き解説は133件（35%）で、読者が検索から着地したとき中身の薄いページに当たる確率が高い。/md/・/api/ が検索に出るのも読者には不親切。品質の底上げはC12の前提にもなる。",
+          "objection": "薄いページを一律noindexにすると、データ（健全度・スター等）だけでも役立つページまで隠してしまう。基準を決めてから扱うべき。"
+        },
+        {
+          "agent": "seo_strategist",
+          "scores": {
+            "user_value": 45,
+            "revenue_potential": 45,
+            "seo_opportunity": 80,
+            "differentiation": 20,
+            "implementation_cost": 65,
+            "maintenance_cost": 75,
+            "confidence": 70
+          },
+          "action": "IMPROVE",
+          "rationale": "事実：サイトマップには掲載中の全ツール（約377件）が入り、手書き解説は133件のみで、ツールページには比較ページのような解説なしnoindexの条件がない。登録461に対し未登録1,211という状況で、約244件の自動生成ページの扱い（noindex化・統合・解説追加の優先順）を決めることがサイト全体の品質評価に最も効く。/md/・/api/v1/ はmetaタグを持てないため、X-Robots-Tag（Cloudflareのレスポンスヘッダー）での除外が必要で、robots.txtのDisallowにするとAI向け提供・MCPとの方針と衝突する点に注意。",
+          "objection": "一律noindexにすると、ロングテールで表示が出ているツールページまで落とすリスクがある。Search Consoleのページ別の表示実績で、表示のあるページを残す判定にすべき。"
+        },
+        {
+          "agent": "revenue_officer",
+          "scores": {
+            "user_value": 40,
+            "revenue_potential": 50,
+            "seo_opportunity": 75,
+            "differentiation": 15,
+            "implementation_cost": 70,
+            "maintenance_cost": 70,
+            "confidence": 65
+          },
+          "action": "IMPROVE",
+          "rationale": "未登録1,211件の状況で、薄いページや/md/・/api/が評価を薄めると、収益ページの検索順位を引き下げる。AdSense審査の通過条件（C12）とも重なり、二つの収益源の前提条件になる。",
+          "objection": "解説なしツール（約65%）を一律noindexにすると、VPS導線つきページの流入も減る。noindexの基準は慎重に決める必要がある。"
+        },
+        {
+          "agent": "ux_designer",
+          "scores": {
+            "user_value": 50,
+            "revenue_potential": 45,
+            "seo_opportunity": 70,
+            "differentiation": 15,
+            "implementation_cost": 60,
+            "maintenance_cost": 65,
+            "confidence": 60
+          },
+          "action": "IMPROVE",
+          "rationale": "検索から薄いページに着地した初訪問者は、英語の公式説明と数値だけを見て離脱しやすい。解説のないツールページにも、データから作れる『誰向けか・Docker有無・日本語UI有無（nullは未確認と表示）』の要約を上部に出すと、noindexにするより体験と評価の両方が良くなる。",
+          "objection": "/md/・/api/の除外はCloudflare側の設定で、AI向け提供（MCP・llms.txt）の方針とぶつからないか確認が要る。"
+        },
+        {
+          "agent": "automation_architect",
+          "scores": {
+            "user_value": 30,
+            "revenue_potential": 45,
+            "seo_opportunity": 75,
+            "differentiation": 15,
+            "implementation_cost": 75,
+            "maintenance_cost": 80,
+            "confidence": 60
+          },
+          "action": "IMPROVE",
+          "rationale": "比較ページですでに『解説なしは noindex』の仕組み（seo.ts の noindex オプションと sitemap.ts の除外）が実装済みで、同じ条件をツールページに広げるのは小さな変更。/md/・/api/ は静的ファイルなので、Cloudflare の応答ヘッダー（X-Robots-Tag）で除外するのが最も保守が軽い。",
+          "objection": "ツールの65%に解説が無く、一律に noindex にするとインデックス数が大きく減る。データだけでも価値のあるページの基準（スター数・健全度など）を決めないと、検索流入を自分で削る恐れがある。"
+        },
+        {
+          "agent": "critical_investor",
+          "scores": {
+            "user_value": 35,
+            "revenue_potential": 35,
+            "seo_opportunity": 70,
+            "differentiation": 20,
+            "implementation_cost": 75,
+            "maintenance_cost": 75,
+            "confidence": 70
+          },
+          "action": "IMPROVE",
+          "rationale": "ツールの65%が解説なしで、未登録1,211件が残っている。サイト全体の品質評価はAdSense審査にも検索流入にも効き、新しい施策よりも先に効く。/md/・/api/ はX-Robots-Tag等で検索から外せば、AI向け提供（差別化要素）を保ったまま重複を避けられる。",
+          "objection": "解説のないページをnoindexにすると、一時的に表示回数が減る。解説を書き足す方法は、AIの利用枠を大量に使う。",
+          "kill_criteria": "noindex化・除外の後8週間で、Search Consoleの総表示回数が実施前の4週平均より30%以上落ち、回復の兆しがなければ、noindexの範囲を戻す。"
+        }
+      ],
+      "decision": {
+        "action": "IMPROVE",
+        "decided_by": "lead",
+        "reason": "6役割すべてがIMPROVE。ただし約244ページを一度にnoindexにするのは影響が大きいため、Search Consoleのページ別の実績を見てからPhase 2で決める。",
+        "effort_hours_estimate": 3,
+        "success_metrics": [
+          "登録済みのページ数",
+          "クロール済み・未登録の件数"
+        ],
+        "phase": 2,
+        "status": "proposed"
+      }
+    },
+    {
+      "id": "C11",
+      "title": "スポンサー枠の商品化",
+      "problem": "/advertise/ はあるが、具体的な枠と価格の案内がない",
+      "proposal": "（今は見送り）流入が増えたら再検討",
+      "audience": "OSSのホスティング事業者など",
+      "evidence": [
+        "/advertise/"
+      ],
+      "expected_effect": "—",
+      "revenue_link": "直接の収益だが、今の流入規模では見込みが小さい",
+      "evaluations": [
+        {
+          "agent": "chief_editor",
+          "scores": {
+            "user_value": 10,
+            "revenue_potential": 30,
+            "seo_opportunity": 0,
+            "differentiation": 15,
+            "implementation_cost": 80,
+            "maintenance_cost": 75,
+            "confidence": 40
+          },
+          "action": "REJECT",
+          "rationale": "表示回数は1日150〜219回程度で、価格を示しても買い手がつく根拠がない（問い合わせ実績は未確認）。読者価値もなく、今は優先度が低い。",
+          "objection": "スポンサー枠は編集の独立性への疑念を招きやすく、比較サイトとしての信頼に響く。"
+        },
+        {
+          "agent": "seo_strategist",
+          "scores": {
+            "user_value": 10,
+            "revenue_potential": 30,
+            "seo_opportunity": 5,
+            "differentiation": 20,
+            "implementation_cost": 75,
+            "maintenance_cost": 70,
+            "confidence": 35
+          },
+          "action": "RESEARCH",
+          "rationale": "表示回数が1日150〜219回規模の段階では、スポンサーが買う根拠となる流入実績がまだ乏しい。SEO上は影響が小さい。",
+          "objection": "スポンサー掲載が順位や評価に影響すると読まれると、比較サイトとしての中立性（信頼）を損なう。有料リンクにはrel=\"sponsored\"が必須。"
+        },
+        {
+          "agent": "revenue_officer",
+          "scores": {
+            "user_value": 10,
+            "revenue_potential": 30,
+            "seo_opportunity": 5,
+            "differentiation": 30,
+            "implementation_cost": 85,
+            "maintenance_cost": 75,
+            "confidence": 40
+          },
+          "action": "RESEARCH",
+          "rationale": "スポンサーは1件でも決まれば収益が大きい可能性があるが、表示回数が1日200回前後の段階では、広告主に示せる実績がなく売りにくい。価格帯を書き換えるだけなら軽いので、C4で数字が取れてから具体化すべき。",
+          "objection": "実績値なしで価格を掲示すると、根拠のない数字の掲示に近くなり運営方針と緊張関係にある。"
+        },
+        {
+          "agent": "ux_designer",
+          "scores": {
+            "user_value": 10,
+            "revenue_potential": 35,
+            "seo_opportunity": 5,
+            "differentiation": 20,
+            "implementation_cost": 80,
+            "maintenance_cost": 70,
+            "confidence": 40
+          },
+          "action": "WRITE",
+          "rationale": "ページの文章を具体化するだけなので軽いが、訪問者の体験への寄与は小さい。表示回数が1日150〜219回の段階では、価格を示しても問い合わせにつながるかは不明。",
+          "objection": "スポンサー枠を比較の結果の近くに置くと、初心者は中立な比較なのか広告なのか区別できなくなる。置き場所の制限を先に決めるべき。"
+        },
+        {
+          "agent": "automation_architect",
+          "scores": {
+            "user_value": 10,
+            "revenue_potential": 35,
+            "seo_opportunity": 5,
+            "differentiation": 20,
+            "implementation_cost": 85,
+            "maintenance_cost": 80,
+            "confidence": 40
+          },
+          "action": "WRITE",
+          "rationale": "既存の /advertise/ ページの文章修正で済み、技術的な新規実装はほぼ無い。掲載枠の表示はハウス広告の既存の枠を流用できる。",
+          "objection": "表示回数がまだ1日数百程度で実績も未確認のため、価格を提示する根拠となる数値が無い。推測の数値を載せない方針と衝突しやすい。"
+        },
+        {
+          "agent": "critical_investor",
+          "scores": {
+            "user_value": 5,
+            "revenue_potential": 20,
+            "seo_opportunity": 0,
+            "differentiation": 10,
+            "implementation_cost": 80,
+            "maintenance_cost": 70,
+            "confidence": 75
+          },
+          "action": "REJECT",
+          "rationale": "検索表示が1日150〜219回の段階で、OSSベンダーが日本語の個人サイトに広告費を払う根拠を示せない。価格表を出しても実績がなければ問い合わせは来ず、運営者の時間を営業対応に使う結果になる。",
+          "objection": "価格を出すだけなら費用はほぼない、という反論はあるが、根拠のない価格は『推測の値を載せない』方針と緊張関係にある。",
+          "kill_criteria": "月間のページビューが一定水準（運営者が決める目安、例えば月1万）を超えるまで再検討しない。実施した場合も、6か月で問い合わせ0件なら元に戻す。"
+        }
+      ],
+      "decision": {
+        "action": "REJECT",
+        "decided_by": "lead",
+        "reason": "編集・批判役がREJECT、収益・SEOもRESEARCH。流入の規模が分かってから再検討する。",
+        "effort_hours_estimate": null,
+        "success_metrics": [],
+        "phase": 5,
+        "status": "rejected"
+      }
+    },
+    {
+      "id": "C12",
+      "title": "AdSenseの申請準備",
+      "problem": "12月中旬に申請予定。「Cookieを使わない」方針とのトレードオフがある",
+      "proposal": "申請の前に、見込みの収益と、同意の仕組みの導入・保守の手間を比べて判断する",
+      "audience": "運営者",
+      "evidence": [
+        "/privacy/"
+      ],
+      "expected_effect": "広告収益の可能性",
+      "revenue_link": "広告の収益（流入に比例）",
+      "evaluations": [
+        {
+          "agent": "chief_editor",
+          "scores": {
+            "user_value": 25,
+            "revenue_potential": 55,
+            "seo_opportunity": 20,
+            "differentiation": 5,
+            "implementation_cost": 55,
+            "maintenance_cost": 50,
+            "confidence": 50
+          },
+          "action": "RESEARCH",
+          "rationale": "収益源としては現実的だが、読者には広告と同意バナーが増えるだけで、現在の『Cookieを使わない』方針を変えることになる。申請前に、読者体験への影響と、現在の流入規模で得られる額を見積もる必要がある。",
+          "objection": "ツール比較ページへの広告は読者の判断を邪魔しやすく、アフィリエイトの中立性の約束とも整合を取る必要がある。"
+        },
+        {
+          "agent": "seo_strategist",
+          "scores": {
+            "user_value": 15,
+            "revenue_potential": 40,
+            "seo_opportunity": 35,
+            "differentiation": 5,
+            "implementation_cost": 55,
+            "maintenance_cost": 55,
+            "confidence": 55
+          },
+          "action": "IMPROVE",
+          "rationale": "作業の中身（薄いページの整理）はC10とほぼ同じで、SEO面ではC10を先に行えば自然に満たされる。同意の仕組みの導入はCookieを使わない方針の変更を伴い、表示速度（CWV）にも影響しうる。",
+          "objection": "現状の流入規模ではAdSense収益は小さい（仮説）。広告がファーストビューを占めると、薄い比較サイトという印象を強める恐れがある。"
+        },
+        {
+          "agent": "revenue_officer",
+          "scores": {
+            "user_value": 10,
+            "revenue_potential": 45,
+            "seo_opportunity": 10,
+            "differentiation": 5,
+            "implementation_cost": 55,
+            "maintenance_cost": 60,
+            "confidence": 50
+          },
+          "action": "IMPROVE",
+          "rationale": "申請自体の準備（ポリシー整備、薄いページ整理）はC10と大半が共通で、12月の申請に向けて着実に進める価値はある。収益は表示回数に比例するため、現状の流入規模では小さく、アフィリエイト導線の方が先。",
+          "objection": "Cookie同意の導入は『Cookieを使わない』方針の転換で、表示広告はアフィリエイト導線の視認性やUXと競合しうる。"
+        },
+        {
+          "agent": "ux_designer",
+          "scores": {
+            "user_value": 25,
+            "revenue_potential": 55,
+            "seo_opportunity": 30,
+            "differentiation": 5,
+            "implementation_cost": 50,
+            "maintenance_cost": 50,
+            "confidence": 50
+          },
+          "action": "RESEARCH",
+          "rationale": "同意バナーはモバイルで画面の大部分を覆い、初訪問の体験を確実に悪くする。現在の『Cookieを使わない』方針を変える判断なので、表示位置・頻度とモバイルでの見え方を先に検討すべき。",
+          "objection": "AdSenseの広告自体が比較表やCost Labの結果の近くに入ると、モバイルで情報が見つけにくくなる。広告を出さない領域を先に決める必要がある。"
+        },
+        {
+          "agent": "automation_architect",
+          "scores": {
+            "user_value": 15,
+            "revenue_potential": 55,
+            "seo_opportunity": 30,
+            "differentiation": 5,
+            "implementation_cost": 50,
+            "maintenance_cost": 45,
+            "confidence": 50
+          },
+          "action": "RESEARCH",
+          "rationale": "薄いページの整理は C10 と同じ仕組みで共通化できる。一方、同意の仕組みは現在の『Cookieを使わない』方針と同意バナー無しの構成を変える新しい外部依存になり、静的サイトでの実装方式（同意管理の外部サービスの要否）を先に調べる必要がある。",
+          "objection": "AdSense を入れると Cookie なしの方針が崩れ、ページの読み込みも重くなる。12月の申請に向けて、収益見込みと方針変更の負担を比べてから決めるべき。"
+        },
+        {
+          "agent": "critical_investor",
+          "scores": {
+            "user_value": 10,
+            "revenue_potential": 30,
+            "seo_opportunity": 20,
+            "differentiation": 0,
+            "implementation_cost": 55,
+            "maintenance_cost": 50,
+            "confidence": 55
+          },
+          "action": "RESEARCH",
+          "rationale": "現在の流入規模ではAdSense収益は小さいと見込まれ、同意バナーの導入は『Cookieを使わない』という現在の方針と、技術者向けサイトとしての読みやすさを損なう。申請の準備のうち、薄いページの整理はC10と重複するので、C10で行えば十分。",
+          "objection": "審査には時間がかかるので早めに申請しておくべきだ、という反論はあるが、不承認のときに得られる情報は少なく、急ぐ理由は弱い。",
+          "kill_criteria": "申請前に、月間ページビューと想定広告枠数から収益の上限を見積もり、同意の仕組みの導入・保守の時間に見合わない（例えば月数千円未満）なら申請を見送る。"
+        }
+      ],
+      "decision": {
+        "action": "RESEARCH",
+        "decided_by": "lead",
+        "reason": "4役割がRESEARCH。12/10の準備の時点で、流入の実数を見て判断する。",
+        "effort_hours_estimate": null,
+        "success_metrics": [],
+        "phase": 5,
+        "status": "proposed"
+      }
+    }
+  ]
+}

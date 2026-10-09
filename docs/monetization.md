@@ -1,4 +1,6 @@
-# ossalt.jp 収益化ロードマップ
+# ossalt.jp 収益化ロードマップ（旧版）
+
+> **2026-10-09 以降は [docs/revenue/REVENUE_STRATEGY.md](revenue/REVENUE_STRATEGY.md) が優先します。** この文書は過去の計画の記録です。KAGOYA・さくらのVPSは現在すべて提携済み、「直接スポンサー販売は当面行わない」は「受け皿だけ用意し、販売は計測の実数がそろうまで保留」に変わりました。
 
 ## 方針
 

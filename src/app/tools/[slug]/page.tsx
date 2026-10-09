@@ -13,7 +13,9 @@ import {
   KeyFacts,
   SpecTable,
 } from "@/components/tool-views";
-import { getActiveTools, getComparePairsForTool, getMeta, getTool, getTools } from "@/lib/data";
+import { getActiveTools, getComparePairsForTool, getMeta, getRequirement, getTool, getTools } from "@/lib/data";
+import { RequirementPanel } from "@/components/requirement-panel";
+import { getBlogPosts } from "@/lib/blog";
 import { getCategory } from "@/lib/categories";
 import { SITE, t } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
@@ -25,6 +27,10 @@ import { getAlternativeGuide } from "@/lib/alternative-guides";
 import { LICENSE_CLASS_LABELS, classifyLicense } from "@/lib/compare";
 import { getLicensePage } from "@/lib/licenses";
 import { formatDate, licenseLabel, slugifyCompetitor } from "@/lib/tools";
+import { vpsPlacementFor } from "@/lib/affiliate-context";
+import { toSearchParams as costLabParams } from "@/lib/cost-lab";
+
+const toCostLabParams = (saas: string, oss: string) => costLabParams({}, { saas, oss });
 
 type Params = { slug: string };
 
@@ -64,6 +70,15 @@ export default async function ToolDetailPage({
   const competitorSlug = slugifyCompetitor(tool.primary_competitor);
   const guide = getToolGuide(tool.id);
   const competitor = tool.primary_competitor_ja || tool.primary_competitor;
+  // VPSの紹介枠は、自分のサーバーで動かすツールにだけ出す（src/lib/affiliate-context.ts）
+  // このツールを扱った公開済みのブログ記事（記事の relatedTools から。予約投稿は含まない）
+  const relatedPosts = getBlogPosts().filter((p) => p.relatedTools.includes(tool.id)).slice(0, 5);
+  const vps = vpsPlacementFor(tool);
+  // 公式の資料に数値があるときだけ（推測で埋めない）
+  const requirement = vps.show ? getRequirement(tool.id) : null;
+  // Cost Lab への導線も、サーバーで動かすツールにだけ出す（パソコンのアプリはサーバー代の比較にならない）
+  const costLabHref =
+    vps.show && competitorSlug ? `/cost-lab/?${toCostLabParams(competitorSlug, tool.id)}` : null;
   // 「同じカテゴリのツール」「代替候補を比較」に挙げる候補は、アーカイブ済み
   // （開発停止）のツールを除く。閲覧中の tool 自身がアーカイブ済みでも、
   // その情報は本文中の警告表示で伝えるので、ここでは他のツールの推薦から外すだけでよい。
@@ -285,6 +300,19 @@ export default async function ToolDetailPage({
               </p>
             </section>
 
+            {relatedPosts.length > 0 && (
+              <section id="articles">
+                <h2 className="h3">{tool.name}を扱った記事</h2>
+                <ul>
+                  {relatedPosts.map((p) => (
+                    <li key={p.slug}>
+                      <Link href={`/blog/${p.slug}/`}>{p.title}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
             {tool.description_en && (
               <section>
                 <h2 className="h3">公式の説明（英語）</h2>
@@ -317,9 +345,24 @@ export default async function ToolDetailPage({
           </aside>
         </div>
 
-        <div id="selfhost">
-          <VpsRecommendation path={`/tools/${tool.id}/`} />
-        </div>
+        {requirement && <RequirementPanel name={tool.name} req={requirement} />}
+
+        {costLabHref && (
+          <aside className="notice notice--info mt2 costlab-cta">
+            <strong>{competitor}を使い続ける場合と、{tool.name}に移る場合の費用を比べる</strong>
+            <br />
+            サーバー代だけでなく、運用の手間と移行の費用も含めて計算できます。{" "}
+            <Link href={costLabHref} data-umami-event="cost_lab_entry" data-umami-event-from="tool_detail">
+              Cost Labで試算する
+            </Link>
+          </aside>
+        )}
+
+        {vps.show && (
+          <div id="selfhost">
+            <VpsRecommendation path={`/tools/${tool.id}/`} placement="tool_detail" variant={vps.variant} title={vps.title} lede={vps.lede} />
+          </div>
+        )}
 
         {/* 比較表・同じカテゴリの一覧は横長になりやすいため、2カラムグリッドの外に出して
             ページ全幅で表示する（detail-layout の中に置くと、aside が grid-row: 1/-1 で
@@ -377,26 +420,12 @@ export default async function ToolDetailPage({
           name: tool.name,
           url: tool.url,
           applicationCategory: category?.nameJa ?? "BusinessApplication",
-          operatingSystem: "Linux, macOS, Windows",
           description: tool.description_ja ?? undefined,
           license: tool.license ?? undefined,
           sameAs: tool.github_url,
           offers: { "@type": "Offer", price: "0", priceCurrency: "JPY" },
-          // スコアがある場合のみ評価を出力する（未評価を0として出さない）
-          ...(tool.scorecard_score != null
-            ? {
-                review: {
-                  "@type": "Review",
-                  reviewRating: {
-                    "@type": "Rating",
-                    ratingValue: tool.scorecard_score,
-                    bestRating: 10,
-                    worstRating: 0,
-                  },
-                  author: { "@type": "Organization", name: "OpenSSF Scorecard" },
-                },
-              }
-            : {}),
+          // OpenSSF Scorecard は第三者の自動の採点で、利用者のレビューではないため、
+          // Review / Rating としては出さない（2026-10-09 の監査で削除。Googleのレビューの指針に合わないおそれ）
           isPartOf: { "@type": "WebSite", name: SITE.name, url: SITE.url },
         }}
       />

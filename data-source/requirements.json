@@ -1,0 +1,76 @@
+{
+  "_note": "セルフホストの必要スペックの目安。公式の資料に書かれている数値だけを、出典と確認日つきで載せる（推測しない）。形式と検査：src/lib/requirements.ts",
+  "requirements": {
+    "immich": {
+      "minimum": { "ram_gb": 6, "cpu_cores": 2 },
+      "recommended": { "ram_gb": 8, "cpu_cores": 4 },
+      "note": "メモリが4GBしかない場合は、機械学習の機能を止めれば動かせると書かれています。サムネイルと変換した動画で、写真の容量が平均10〜20%増えます。",
+      "source_title": "Immich の公式ドキュメント「Requirements」",
+      "source_url": "https://github.com/immich-app/immich/blob/main/docs/docs/install/requirements.md",
+      "checked_on": "2026-10-09"
+    },
+    "dify": {
+      "minimum": { "ram_gb": 4, "cpu_cores": 2 },
+      "source_title": "Dify の README「Quick start」",
+      "source_url": "https://github.com/langgenius/dify/blob/main/README.md",
+      "checked_on": "2026-10-09"
+    },
+    "discourse": {
+      "minimum": { "ram_gb": 1, "cpu_cores": 1, "disk_gb": 10 },
+      "recommended": { "ram_gb": 2, "cpu_cores": 2, "disk_gb": 20 },
+      "note": "最小の1GBは、スワップ（ディスクをメモリの代わりに使う設定）がある場合です。",
+      "source_title": "Discourse の公式のインストール手順（INSTALL-cloud.md）",
+      "source_url": "https://github.com/discourse/discourse/blob/main/docs/INSTALL-cloud.md",
+      "checked_on": "2026-10-09"
+    },
+    "grafana": {
+      "minimum": { "ram_gb": 0.5, "cpu_cores": 1 },
+      "source_title": "Grafana の公式ドキュメント「Install Grafana」",
+      "source_url": "https://github.com/grafana/grafana/blob/main/docs/sources/setup-grafana/installation/_index.md",
+      "checked_on": "2026-10-09"
+    },
+    "authentik": {
+      "minimum": { "ram_gb": 2, "cpu_cores": 2 },
+      "note": "Docker Compose での導入（試用と小規模な本番向け）の要件です。",
+      "source_title": "authentik の公式ドキュメント「Docker Compose installation」",
+      "source_url": "https://github.com/goauthentik/authentik/blob/main/website/docs/install-config/install/docker-compose.mdx",
+      "checked_on": "2026-10-09"
+    },
+    "plausible": {
+      "recommended": { "ram_gb": 2 },
+      "note": "CPUは SSE 4.2 か NEON の命令に対応している必要があります（ClickHouse の要件）。",
+      "source_title": "Plausible Community Edition の README（v3.0.1）",
+      "source_url": "https://github.com/plausible/community-edition/blob/v3.0.1/README.md",
+      "checked_on": "2026-10-09"
+    },
+    "zammad": {
+      "minimum": { "ram_gb": 6, "cpu_cores": 2 },
+      "note": "同じサーバーで Elasticsearch も動かす場合は、メモリをさらに4GB足すように書かれています。",
+      "source_title": "Zammad の公式ドキュメント「Hardware」",
+      "source_url": "https://github.com/zammad/zammad-documentation/blob/main/prerequisites/hardware.rst",
+      "checked_on": "2026-10-09"
+    },
+    "supabase": {
+      "minimum": { "ram_gb": 4, "cpu_cores": 2, "disk_gb": 40 },
+      "recommended": { "ram_gb": 8, "cpu_cores": 4, "disk_gb": 80 },
+      "note": "すべての構成要素を動かす場合の要件です。ディスクはSSDとされています。",
+      "source_title": "Supabase の公式ドキュメント「Self-Hosting with Docker」",
+      "source_url": "https://github.com/supabase/supabase/blob/master/apps/docs/content/guides/self-hosting/docker.mdx",
+      "checked_on": "2026-10-09"
+    },
+    "openproject": {
+      "minimum": { "ram_gb": 4, "cpu_cores": 4, "disk_gb": 20 },
+      "note": "CPUは2GHz以上の4コアとされています。",
+      "source_title": "OpenProject の公式ドキュメント「System requirements」",
+      "source_url": "https://github.com/opf/openproject/blob/dev/docs/installation-and-operations/system-requirements/README.md",
+      "checked_on": "2026-10-09"
+    },
+    "posthog": {
+      "minimum": { "ram_gb": 16, "cpu_cores": 4, "disk_gb": 30 },
+      "note": "公式の手順では「4 vCPU・16GBメモリ・30GBを超えるストレージの仮想サーバー相当」が必要とされています。紹介している国内VPSの小さなプランでは足りません。",
+      "source_title": "PostHog の公式ドキュメント「Self-host」",
+      "source_url": "https://github.com/PostHog/posthog.com/blob/master/contents/docs/self-host/index.mdx",
+      "checked_on": "2026-10-09"
+    }
+  }
+}

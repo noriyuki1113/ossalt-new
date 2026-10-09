@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs, JsonLd, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ComparisonTable } from "@/components/tool-views";
 import { HouseAd } from "@/components/house-ad";
+import { SponsorSlot } from "@/components/sponsor-slot";
 import { getAlternativeGuide } from "@/lib/alternative-guides";
 import { getComparePairs, getCompetitor, getCompetitors, getMeta, getTool } from "@/lib/data";
 import { SITE, t } from "@/lib/site";
@@ -74,8 +75,13 @@ export default async function AlternativeDetailPage({
           <strong>乗り換えの判断について</strong>
           <br />
           {t("alt.compareNote")}
+          <br />
+          <Link href={`/cost-lab/?saas=${c.slug}`} data-umami-event="cost_lab_entry" data-umami-event-from="alternative">
+            {c.name}を使い続ける場合との費用を、Cost Labで比べる
+          </Link>
         </div>
 
+        <SponsorSlot placement="alternative" slug={c.slug} />
         <HouseAd placement={`alternative_${c.slug}`} />
 
         {guide && guide.picks.length > 0 && (

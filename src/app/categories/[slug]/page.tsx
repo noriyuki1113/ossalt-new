@@ -10,6 +10,7 @@ import { pageMeta } from "@/lib/seo";
 import { categoryDescription, categoryTitle } from "@/lib/seo-copy";
 import { getCategoryGuide } from "@/lib/category-guides";
 import { formatDate } from "@/lib/tools";
+import { SponsorSlot } from "@/components/sponsor-slot";
 
 type Params = { slug: string };
 
@@ -120,6 +121,7 @@ export default async function CategoryPage({ params }: { params: Promise<Params>
             </ul>
           </section>
         )}
+        <SponsorSlot placement="category" slug={slug} />
       </main>
       <SiteFooter meta={meta} />
     </>
