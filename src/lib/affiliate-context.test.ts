@@ -20,3 +20,14 @@ test("パソコンのアプリ・道具・GPUが要るもの・アーカイブ�
 test("分類の一覧に重複がない", () => {
   for (const id of ["gimp", "ffmpeg", "comfyui"]) assert.notEqual(runtimeKind(id), "server");
 });
+
+test("前置きの文言は用途に合わせて1文だけ変え、数値は書かない", () => {
+  const immich = vpsPlacementFor({ id: "immich", name: "Immich", github_archived: false, category: "files" });
+  assert.equal(immich.show && immich.variant, "storage");
+  if (immich.show) assert.match(immich.lede, /バックアップ/);
+  const kuma = vpsPlacementFor({ id: "uptime-kuma", name: "Uptime Kuma", github_archived: false, category: "observability" });
+  assert.equal(kuma.show && kuma.variant, "monitoring");
+  const crm = vpsPlacementFor({ id: "twenty", name: "Twenty", github_archived: false, category: "crm" });
+  assert.equal(crm.show && crm.variant, "general");
+  for (const p of [immich, kuma, crm]) if (p.show) assert.doesNotMatch(p.lede, /\d+\s*(GB|MB|コア|vCPU)/);
+});

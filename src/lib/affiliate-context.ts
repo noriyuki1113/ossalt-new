@@ -45,16 +45,50 @@ export function runtimeKind(id: string): RuntimeKind {
   return "server";
 }
 
-export type VpsPlacement = { show: true; title: string; lede: string } | { show: false; reason: RuntimeKind | "archived" };
+/**
+ * 紹介枠の前置きを、ツールの用途に合わせて1文だけ変える（Revenue Council R4 の小規模な検証。TEST）。
+ * CPU・メモリの必要量のデータは持っていないので、数値は書かない。どのツールにも言える一般的な注意だけ。
+ * 効果は affiliate_viewable / affiliate_click の variant で、general と比べて確かめる。
+ */
+export type VpsVariant = "storage" | "monitoring" | "always_on" | "general";
+
+const VARIANT_BY_CATEGORY: Record<string, VpsVariant> = {
+  files: "storage",
+  video: "storage",
+  observability: "monitoring",
+  automation: "always_on",
+};
+
+const VARIANT_NOTE: Record<VpsVariant, string> = {
+  storage:
+    "写真・動画・ファイルを保存するツールは、使うほどデータが増えます。メモリやCPUに加えて、ディスクの容量と、別の場所へのバックアップの方法も確かめてください。",
+  monitoring:
+    "監視のツールは、監視する対象と同じサーバーに置くと、そのサーバーが止まったときに知らせることができません。別のサーバーに置くことも検討してください。",
+  always_on:
+    "ワークフローを決まった時刻や外部からの通知で動かすには、常に起動しているサーバーが必要です。",
+  general: "",
+};
+
+export function vpsVariantFor(category: string | undefined): VpsVariant {
+  return (category && VARIANT_BY_CATEGORY[category]) || "general";
+}
+
+export type VpsPlacement =
+  | { show: true; title: string; lede: string; variant: VpsVariant }
+  | { show: false; reason: RuntimeKind | "archived" };
 
 /** ツールの詳細ページにVPSの紹介枠を出すかと、その見出し */
-export function vpsPlacementFor(tool: Pick<Tool, "id" | "name" | "github_archived">): VpsPlacement {
+export function vpsPlacementFor(tool: Pick<Tool, "id" | "name" | "github_archived"> & { category?: string }): VpsPlacement {
   if (tool.github_archived) return { show: false, reason: "archived" };
   const kind = runtimeKind(tool.id);
   if (kind !== "server") return { show: false, reason: kind };
+  const variant = vpsVariantFor(tool.category);
+  const base =
+    "セルフホストでよく選ばれる国内のVPSです。必要なメモリやCPUはツールによって違うため、プランは公式のドキュメントの推奨に合わせて選んでください。";
   return {
     show: true,
     title: `${tool.name}を自分のサーバーで動かすには`,
-    lede: "セルフホストでよく選ばれる国内のVPSです。必要なメモリやCPUはツールによって違うため、プランは公式のドキュメントの推奨に合わせて選んでください。",
+    lede: VARIANT_NOTE[variant] ? `${VARIANT_NOTE[variant]}${base}` : base,
+    variant,
   };
 }

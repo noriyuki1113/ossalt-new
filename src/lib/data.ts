@@ -7,6 +7,8 @@ import {
   type DataMeta,
   type Tool,
 } from "./tools";
+import type { Requirement } from "./requirements";
+import type { Sponsor } from "./sponsors";
 import { buildComparePairs, classifyLicense, type ComparePair, type LicenseClass } from "./compare";
 
 /**
@@ -110,4 +112,33 @@ export function getToolsByLicenseClass(cls: LicenseClass): Tool[] {
 /** 画面の翻訳か日本語のドキュメントがある掲載中ツール（健全度順） */
 export function getJapaneseTools(): Tool[] {
   return getActiveTools().filter(hasJapanese);
+}
+
+/**
+ * スポンサー枠の掲載（data-source/sponsors.json）。契約が0件なら空配列。
+ * 検査（src/lib/sponsors.ts）に通らない掲載は、表示の段階で除かれる。
+ */
+export function getSponsors(): Sponsor[] {
+  try {
+    const raw = JSON.parse(
+      fs.readFileSync(path.join(process.cwd(), "data-source", "sponsors.json"), "utf8"),
+    ) as { sponsors?: Sponsor[] };
+    return raw.sponsors ?? [];
+  } catch {
+    return [];
+  }
+}
+
+/**
+ * セルフホストの必要スペックの目安（data-source/requirements.json）。公式の資料に数値があるツールだけ。
+ */
+export function getRequirement(id: string): Requirement | null {
+  try {
+    const raw = JSON.parse(
+      fs.readFileSync(path.join(process.cwd(), "data-source", "requirements.json"), "utf8"),
+    ) as { requirements?: Record<string, Requirement> };
+    return raw.requirements?.[id] ?? null;
+  } catch {
+    return null;
+  }
 }

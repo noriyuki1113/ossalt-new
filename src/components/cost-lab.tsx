@@ -58,6 +58,7 @@ export function CostLab({ saasList }: { saasList: CostLabSaas[] }) {
   const [isExample, setIsExample] = useState(false);
   const [shareUrl, setShareUrl] = useState("");
   const tracked = useRef(false);
+  const started = useRef(false);
 
   // URLから入力値を読み込む（ツールのページ・代替ページからのリンクや、共有されたURL）
   useEffect(() => {
@@ -85,6 +86,10 @@ export function CostLab({ saasList }: { saasList: CostLabSaas[] }) {
   }, [validation, saas, oss, result, isExample]);
 
   const set = (key: keyof FormState, value: string) => {
+    if (!started.current) {
+      started.current = true;
+      trackEvent("cost_lab_start", { saas: saas || "-", oss: oss || "-" });
+    }
     setIsExample(false);
     setForm((f) => ({ ...f, [key]: value }));
   };

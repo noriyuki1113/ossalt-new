@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs, JsonLd, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ComparisonTable } from "@/components/tool-views";
 import { HouseAd } from "@/components/house-ad";
+import { SponsorSlot } from "@/components/sponsor-slot";
 import { getAlternativeGuide } from "@/lib/alternative-guides";
 import { getComparePairs, getCompetitor, getCompetitors, getMeta, getTool } from "@/lib/data";
 import { SITE, t } from "@/lib/site";
@@ -80,6 +81,7 @@ export default async function AlternativeDetailPage({
           </Link>
         </div>
 
+        <SponsorSlot placement="alternative" slug={c.slug} />
         <HouseAd placement={`alternative_${c.slug}`} />
 
         {guide && guide.picks.length > 0 && (

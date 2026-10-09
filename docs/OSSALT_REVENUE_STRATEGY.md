@@ -2,6 +2,8 @@
 
 作成：2026-10-09（Phase 0）
 
+> 収益化の詳しい戦略は [docs/revenue/REVENUE_STRATEGY.md](revenue/REVENUE_STRATEGY.md)（Revenue Strategy 2.0）に移りました。スポンサー枠の判断（下の「今は見送り」）は、2.0 で「受け皿だけ用意し、販売は保留」に更新しています。
+
 ## 1. 現状（事実）
 
 - **承認済みの収益：計測不可**（A8.netの成果をこのシステムから取得できない。運営者の申告もない）。
