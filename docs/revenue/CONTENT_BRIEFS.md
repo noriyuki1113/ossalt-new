@@ -15,7 +15,7 @@
 | テーマ | 既存のページ | 公式の必要スペック | 企画 | 状態 |
 |---|---|---|---|---|
 | Immich | 解説あり（**2026-10-09に公式の要件の数値を追記**）、ブログ「Googleフォトからの移行」（12/8公開予定） | あり（メモリ6GB〜、CPU2コア〜） | 「Immichを動かすサーバーの選び方」 | **下書きあり**（`content/drafts/immich-server-sizing.md`、12/1以降に公開可） |
-| n8n | 解説あり、ブログ「n8nのライセンスとZapier」 | 公式の資料（docs.n8n.io）に作業環境から接続できず**未確認** | 「n8nを社内で使う前に確かめること（ライセンス・常時起動・費用）」 | 企画のみ。要件は運営者が公式の資料で確認 |
+| n8n | 解説あり、ブログ「n8nのライセンスとZapier」 | 公式の資料（docs.n8n.io）に作業環境から接続できず**未確認** | 「n8nを社内で使う前に確かめること（ライセンス・常時起動・費用）」 | 既存の11/17予約記事を改善（運用担当・総費用・データ送信・公式ライセンス原文）。重複する新規記事は作らない。必要スペックと実機手順は未確認 |
 | Uptime Kuma | 解説あり（2026-10-09に監視の配置・通知・費用を補強）、ブログ「小さなチームの自前運用の構成」で言及 | READMEにメモリの数値なし（Node.js 20.4以上、対応OSのみ） | 「外からの死活監視をUptime Kumaで：監視する対象とは別の場所に置く」 | 下書きあり（`content/drafts/uptime-kuma-monitor-placement.md`）。公開は運営者の承認後 |
 | AppFlowy | 解説あり、ブログ「チームのWiki」で言及 | 取得したデプロイの資料にメモリの数値なし | 「Notionからの移行先としてのAppFlowy：できること・できないこと」 | 企画のみ。実際の移行は運営者が試してから |
 | Directus | 解説あり | 取得した資料にメモリの数値なし | 「Directusのライセンス（MSCL）：社内の利用と、サービスとしての提供の違い」 | 企画のみ。ライセンスの解釈は断定しない（専門家への確認を促す） |
@@ -57,4 +57,6 @@
 - Ollama：https://github.com/ollama/ollama/blob/main/README.md
 - Ollamaのデータの扱い・クラウド機能：https://docs.ollama.com/faq 、https://docs.ollama.com/cloud
 - Ollamaの公式アプリとモデルの選択：https://docs.ollama.com/quickstart
+- n8n公式README：https://github.com/n8n-io/n8n/blob/master/README.md （2026-10-09確認）
+- n8n公式ライセンス：https://github.com/n8n-io/n8n/blob/master/LICENSE.md （2026-10-09確認）
 - n8n：https://docs.n8n.io/hosting/ （作業環境から接続できず**未確認**）

@@ -29,7 +29,7 @@
 | P2-8 | ESLint の導入の要否 | — | — | ⏸ 現時点では不要（tsc とテストで足りている） |
 | P2-9 | OSS別の必要スペック（公式の資料から、出典・確認日つき） | — | 推測の数値なし。出典のURL・確認日をテストで検査 | ✅ 10件（`data-source/requirements.json`）。ツール詳細に広告とは別の枠で表示 |
 | P2-10 | VPS枠のスマホでの表示（2社＋「ほか2社も見る」）と「手元で試せる」の一言 | — | 並び順を変えない。横にはみ出さない | ✅ |
-| P2-11 | 収益につながる記事の企画と下書き | — | 自動で公開しない | ✅ 企画書（`docs/revenue/CONTENT_BRIEFS.md`）、下書き2本（Immich・Uptime Kuma）、Immich・Uptime Kuma・Ollamaの解説改善、Ollamaの予約記事の改善。新規下書きは運営者の承認待ち |
+| P2-11 | 収益につながる記事の企画と下書き | — | 自動で公開しない | ✅ 企画書（`docs/revenue/CONTENT_BRIEFS.md`）、下書き2本（Immich・Uptime Kuma）、Immich・Uptime Kuma・Ollamaの解説改善、Ollama・n8nの予約記事の改善。新規下書きは運営者の承認待ち |
 | P2-12 | Revenue Dashboard の再判断 | A8の手入力の記録が数か月 | — | ⏸ データ待ち |
 
 ## Phase 3〜5（概要。Phase 2の後に具体化）
@@ -48,6 +48,6 @@
 - 本番コミット `42aca9c`：PR #2・#3・#4 はマージ済み。GitHub Pages の公開処理は成功。
 - PR #5：Uptime Kuma・Ollama・n8n の解説改善と Uptime Kuma の下書き、進捗文書の更新。390pxで3ツールページの横はみ出しなしを確認。未マージ。新規下書きの公開承認とは別に扱う。
 - P2-2：公開中の `/api/v1/tools.json` と `/md/tools/immich.md` に `X-Robots-Tag` がないことを確認。[設定手順](SEARCH_NOINDEX_OPERATIONS.md)に沿ってCloudflare の設定後に再確認する。
-- P2-1：Search Console のページ別実績待ち。P2-3 の20件追加はこの基準を決めてから。
+- P2-1：Search Console のページ別実績待ち。[確認手順](SEARCH_CONSOLE_REVIEW.md)を作成済み。P2-3 の20件追加はこの基準を決めてから。
 - 枠別・用途別の効果判断は4週間以上の計測後。10月9日を起点とする場合は11月6日以降。計測値・報酬は非公開で扱う。
 - 保留ブランチは古い本番が土台。生成データをそのまま取り込まず、最新本番へ元データ・解説・転送設定を取り込み直して検査する。
