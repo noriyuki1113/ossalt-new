@@ -339,7 +339,7 @@ export default async function ToolDetailPage({
 
         {vps.show && (
           <div id="selfhost">
-            <VpsRecommendation path={`/tools/${tool.id}/`} placement="tool_detail" title={vps.title} lede={vps.lede} />
+            <VpsRecommendation path={`/tools/${tool.id}/`} placement="tool_detail" variant={vps.variant} title={vps.title} lede={vps.lede} />
           </div>
         )}
 

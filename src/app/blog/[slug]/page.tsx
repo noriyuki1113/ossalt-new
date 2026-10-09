@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ToolRow } from "@/components/tool-views";
 import { HouseAd } from "@/components/house-ad";
+import { SponsorSlot } from "@/components/sponsor-slot";
 import { PostActions } from "@/components/post-actions";
 import { VpsRecommendation } from "@/components/vps-recommendation";
 import { getBlogPost, getBlogPosts } from "@/lib/blog";
@@ -74,6 +75,7 @@ export default async function BlogPostPage({ params }: { params: Promise<Params>
         {post.showVps && (
           <VpsRecommendation
             path={`/blog/${post.slug}/`}
+            placement="blog"
             title="記事で紹介したVPS"
             lede="最低月額（2026年10月1日時点）の安い順に並べています。"
           />
@@ -96,6 +98,7 @@ export default async function BlogPostPage({ params }: { params: Promise<Params>
           </section>
         )}
 
+        <SponsorSlot placement="blog" slug={post.slug} />
         <HouseAd placement={`blog_${post.slug}`} />
 
         <p className="muted mt2" style={{ fontSize: "0.8125rem" }}>

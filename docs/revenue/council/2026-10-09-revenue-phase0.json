@@ -1,0 +1,1777 @@
+{
+  "schema": "revenue-council/1",
+  "session": "Revenue Strategy 2.0 / Phase 0",
+  "date": "2026-10-09",
+  "summary": "6役割を別々のサブエージェントで独立に評価（同じ監査ブリーフ、ほかの役割の結果は見せない）。全員の最優先は、既存のアフィリエイト表示の修正（R3）。スポンサー枠（R2）は多数がHOLDだが、運営者の指示の範囲として最小限で実施。販売（R6）・ダッシュボード（R7）・AdSense（R11）は見送り。",
+  "scores_note": "点数はすべて各役割の専門的な判断で、実測値ではない（アクセス・収益の実数はこの作業環境から取得できない）。",
+  "overalls": {
+    "chief_editor": {
+      "overall": "最優先は収益の拡大ではなく、今ある導線の信頼の穴を埋めることだ。ツール詳細のVPS枠は「PR／広告」の見出しがなく、注記も「この記事には…場合があります」と曖昧で、2023年10月施行のステマ規制（景品表示法）の観点で弱い。編集方針ページも実態（ツール詳細・Cost Lab）を書いていない。これをR3で直し、次に読者の課題を解く導入・移行記事（R8）とOSSごとの文脈に合った紹介（R4）で、読者の利益と収益が同じ方向を向く形を作る。販売・ダッシュボード・広告ネットワークは、流入と計測の根拠ができるまで見送る。",
+      "top3": [
+        "R3",
+        "R8",
+        "R4"
+      ],
+      "new_proposals": [
+        {
+          "title": "広告・アフィリエイトの表示ルールを1ページに集約し、全枠で同じ部品を使う",
+          "why": "現在は枠ごとに注記の文言が異なる（ブログは冒頭で断定、ツール詳細は「記事」「場合があります」）。PR表示の部品を1つにまとめ、編集方針ページの文言と自動で一致させれば、ステマ規制への備えと読者の分かりやすさを同時に満たし、今後の枠追加でも表示漏れが起きない。"
+        },
+        {
+          "title": "導入ガイドの品質基準と「確認日」表示",
+          "why": "R8の前提として、出典（公式ドキュメント）・確認したバージョン・確認日・未検証である旨を記事に載せる基準を定める。実機検証なしでも誠実さを示せ、古くなった手順を読者が見分けられる。収益記事の信頼を担保する最低条件。"
+        },
+        {
+          "title": "「セルフホストしないほうがよい場合」を明記するコーナー",
+          "why": "各ガイド・代替ページに、SaaSのままのほうが良い条件（運用担当がいない、バックアップを回せない等）を書く。VPS紹介と逆方向に見えるが、読者の失敗を防ぐ情報は信頼を高め、結果として紹介の説得力も上げる。"
+        }
+      ]
+    },
+    "seo_strategist": {
+      "overall": "流入実績データ（Search Console・Umami）が取得できない以上、収益策はすべて仮説段階。SEO面での最優先は、既に306ページに出ている同一文面のVPS枠（4社×同じ説明文）と開示の曖昧さを正すこと（R3・R4）、そして予約中10本を含むブログを導入ガイドとして内部リンクでツール/代替/比較ページと結ぶクラスタ化（R8）。スポンサー即売（R6）・AdSense（R11）は流入不足かつページ品質・CWVへの悪影響が先に来るため今は認めない。",
+      "top3": [
+        "R3",
+        "R8",
+        "R4"
+      ],
+      "new_proposals": [
+        {
+          "title": "Search Console 実績の月次確認と、ページ種別ごとのindex方針の棚卸し",
+          "why": "検索流入が全判断の前提なのに数値がない。手書きでない比較組はnoindex済みだが、代替ページ153件・ツール389件（手書き133件）の機械生成部分も同様に評価が必要。表示回数ゼロのページ群を把握し、手書き追加かnoindexかを決めることで薄いページ比率を下げる。"
+        },
+        {
+          "title": "予約投稿10本の内部リンク設計を公開前に固める",
+          "why": "10本（n8nライセンス、Ollama、Googleフォト移行、VPS選び、バックアップ等）は収益テーマと重なる。公開前に各記事→ツール詳細・代替・比較、逆方向のリンクとアンカーテキストを設計すれば、新規記事を書く前に既存資産でクラスタを作れる。"
+        },
+        {
+          "title": "VPS枠とA8計測画像のCWV影響の確認",
+          "why": "306ページに4社分のクライアントコンポーネントと1x1画像4件が載る。LighthouseでLCP/CLS/リクエスト数を枠あり・なしで比較し、悪化があれば画像の配置・読み込み方を見直す。"
+        }
+      ]
+    },
+    "revenue_officer": {
+      "overall": "今ある収益源は、提携済みのA8国内VPS 4社だけ。成果報酬は1件で数千円から数万円（ConoHaは公式表記で最大53,900円）になり得るので、最初に伸ばすべきはスポンサー販売ではなくVPS導線の成約率。ただし、クリック数も成果も計測できていない。だから順番は、①表示を正しく直し、計測を正しくする（R3・R5）、②記事と文脈別の文言で、送客の量と質を上げる（R8・R4）、③媒体資料と、表示しない状態のスポンサー枠を用意して、問い合わせを待つ（R1・R2）。今すぐの販売（R6）とダッシュボード（R7）は、売る根拠も作る基盤もないので見送る。",
+      "top3": [
+        "R3",
+        "R5",
+        "R8"
+      ],
+      "new_proposals": [
+        {
+          "title": "Cost Lab の結果からVPS枠への導線を、PR #2 のマージ後に最優先で計測する",
+          "why": "「OSSで自分で動かすといくらか」を計算した人は、サーバーを借りる直前の人。サイトの中で、成約に一番近い場所になり得る。cost_lab_result → affiliate_click（placement=cost_lab）の流れを4〜8週間見れば、R4・R8のどこに力を入れるかを根拠を持って決められる。まず PR #2 をマージして公開することが、売上への最短の一歩。"
+        },
+        {
+          "title": "代替ページ（153件）にも、サーバー用ツールのときだけVPS枠を出す",
+          "why": "「Notion 代わり」のような代替ページの読者は、乗り換えを考えている人。今は内製広告（収益なし）だけなので、既存の VpsRecommendation を placement=alternative で再利用すれば、追加の提携なしで送客の場所を増やせる。PR表示（R3）と同じルールで、GPU必須・デスクトップのみのページには出さない。"
+        },
+        {
+          "title": "内製広告の一部を、VPS選びの記事・Cost Lab への誘導に切り替える",
+          "why": "HouseAd は収益がないので、行き先を、収益のある導線を持つページ（VPSの選び方、Cost Lab）にすれば、新しい広告を増やさずに売上の可能性を上げられる。R5 の画面内閲覧の計測で効果を比べる。"
+        }
+      ],
+      "pricing_view": "月5,000円という仮価格は、今は根拠がなく決められない。OpenAlternative（$147〜597/月、月15万訪問と自称）・SaaSHub（$99/月）・DevHunt（$89〜149/週）は公表価格で、実際にいくらで何件売れているか（売上）はわからない。しかも英語圏で、流入の規模が違うので、そのまま当てはめられない。一方で、VPSの成果1件の報酬が数千円から数万円になり得るので、月5,000円の枠は、VPS導線の成約1件分より安い可能性があり、手間と中立性のリスクに見合うかも疑わしい。決めるのに必要なデータは、(1) 掲載予定の枠（代替ページ・ブログ）の月間の画面内表示回数とクリック数（R5で4週間以上）、(2) 掲載するページの検索流入の実数（Search Console）、(3) 同じ枠に置いたVPS枠の収益（R12、A8の確定額）＝その枠の機会費用、(4) 問い合わせの件数と相手の予算感。価格は「枠の表示回数×想定のクリック単価」と「同じ枠でのアフィリエイトの実績」の高いほうを下限にする。データがそろうまでは、料金は非公開（問い合わせ）とし、最初の1社は「試験掲載・1か月・実績報告つき」で個別に決め、それを価格の根拠にする。",
+      "sales_targets": "営業先の候補は、(1) 掲載中のOSSの開発元で、有料のクラウド版・サポートを売っている企業（n8n、Directus、AppFlowy など。日本市場に関心があるか、日本語のページがあるか）、(2) 国内のVPS・クラウド事業者（既にA8で提携済みの4社は、アフィリエイトの担当経由で「特集・記事広告」の相談ができる）、(3) OSSの導入・運用を受託する国内のSIer・フリーランスの開発会社、(4) バックアップ・オブジェクトストレージ・監視など、セルフホストの周辺サービス。最初の打診の条件：自動の営業メールは送らない。打診は、(a) R1 の媒体資料と R2 の枠が公開済みで、(b) R5 の計測が4週間以上あり、実測の値を「計測期間つき」で示せること、(c) 相手の製品をサイトで既に正しく紹介していて、相手のメリット（日本語の読者に届く）を具体的に説明できること、(d) 「並び順・評価・比較の内容は売らない、PR表示は必須」という条件を最初に書くこと、をそろえてから、運営者が個人で1社ずつ手書きで連絡する。最初は月1〜2社までに絞り、返事がない相手に何度も送らない。"
+    },
+    "ux_designer": {
+      "overall": "最優先はR3。ツール詳細のVPS枠は見出しが「〇〇を自分のサーバーで動かすには」という編集記事風で、PR表記は枠の下に0.75remの小さな字で「この記事には…含まれる場合があります」とあるだけ。ステマ規制の「一般消費者が広告と判別できるか」の観点で最も弱い箇所で、306ページに出る。並び順の根拠もツール詳細の枠には書かれていない。新しい枠を足すより、既存の導線を『広告と分かり、納得して押せる』形に直すことが、信頼と長期の収益の両方に効く。スポンサー枠は器だけ先に作り、何も表示しない状態で待つのが現実的。",
+      "top3": [
+        "R3",
+        "R2",
+        "R8"
+      ],
+      "new_proposals": [
+        {
+          "title": "広告表記の統一コンポーネント（AdLabel）",
+          "why": "VPS枠・ブログ冒頭・Cost Lab・将来のスポンサー枠で表記がばらばら（『この記事には…場合があります』『プロモーションを含みます』）。1つの部品と固定文言にすれば、ステマ規制の観点で抜け漏れが出にくく、点検も容易。"
+        },
+        {
+          "title": "ツール詳細のVPS枠をモバイルで折りたたみ（2社表示＋『ほか2社』）",
+          "why": "auto-fill minmax(240px) によりモバイルでは4枚が縦に並び、本文より長い広告ブロックになる。ただし並び順の約束（安い順）を崩さないこと、選ばれなかった社が不利にならないよう『すべて見る』を同じ枠内に置くことが条件。"
+        },
+        {
+          "title": "『VPSが要らない人』への一言を枠に入れる",
+          "why": "『まずは手元のPCやDockerで試せます』と添えることで、押し売り感を消し、押す人の納得度を上げる。基本原則（納得して選択できる導線）に直結。"
+        }
+      ],
+      "sponsor_slot_design": "位置：代替ページ・ブログの本文と関連ツール一覧の後、HouseAd の前に1枠のみ。ツール詳細・比較表・ランキング・検索結果の中には置かない（順位と混同させない）。見た目：細い実線枠＋薄いグレー背景（HouseAd の indigo 枠とは別色）。枠の左上に『スポンサー』のラベルを常時表示（文字サイズは本文と同等の0.875rem以上、背景色付きタグ）、右上に『スポンサー掲載について』（/advertise/ へのリンク）。中身はロゴ（任意・小）、サービス名、2行以内の説明、ボタン1つ（『〇〇の公式サイトへ』、外部リンクアイコン付き、rel=\"sponsored noopener\"）。枠下に1行『この枠は広告です。ツールの順位・評価には影響しません』。モバイル：横幅いっぱい・縦積み、ボタンは全幅で高さ44px以上、ロゴは省略可、本文との間に1.5rem以上の余白。sticky・フローティング・ポップアップ・自動再生は不可。契約がないときはDOM自体を出さない。アニメーションなし。",
+      "affiliate_label_fix": "対象：src/components/vps-recommendation.tsx と affiliate-disclosure.tsx。(1) 見出しの直上（または見出し横）に『PR』または『広告』のタグを置く（例：<span class=\"tag\">PR</span>、0.75remでなく本文に近いサイズで、背景色付き）。(2) 見出し下の lede を『以下は紹介リンク（アフィリエイト）です。申し込みがあると ossalt.jp に紹介料が入ります。並びは公開されている最低月額の安い順（2026年10月1日時点）で、紹介料では並べていません。』のように断定で書き、ツール詳細でも並び順の根拠を示す。(3) 枠下の『この記事にはアフィリエイトリンクが含まれる場合があります』は、ツールページでは『記事』『場合があります』が実態と合わないので削除するか『このページのVPSの紹介リンクはアフィリエイトです（編集方針）』に置き換え、/editorial/ へリンク。(4) section に aria-label=\"広告：VPSの紹介\" を付け、スクリーンリーダーでも広告と分かるようにする。(5) ボタン文言『公式サイトで詳細を見る』に外部リンクであることを示すアイコン／『（外部サイト）』を添える。(6) ブログ側は placement=\"blog_{slug}\" を渡す。(7) /editorial/ の『一部のブログ記事には』をツール詳細・ブログ・Cost Lab の実態に合わせて更新。"
+    },
+    "automation_architect": {
+      "overall": "収益の出入口はA8のVPS枠1系統だけで、しかも計測が穴だらけ（ブログ枠はplacement=unknown、アフィリエイト枠の表示イベントなし、house_ad_impressionはマウント時送信、window.umamiの型宣言とtrack関数が3か所に重複）。集計値もこの環境から取れない。売る前・書く前に「測れる状態」を作るのが最優先で、R3とR5を同じPRで直し、R13で記録形式をcouncil.tsと揃える。R7・R12は公開リポジトリと認証なしの制約上、リポジトリの外で作るべきで今は保留。R6・R11はCookieなし方針や実績ゼロと衝突する。",
+      "top3": [
+        "R5",
+        "R3",
+        "R13"
+      ],
+      "new_proposals": [
+        {
+          "title": "計測の型付きイベント定義（events.ts）と単体テスト",
+          "why": "イベント名とデータ項目を1ファイルの定数・型で定義し、trackEvent をその型でしか呼べないようにする。現状は文字列が house-ad.tsx・affiliate-track.ts・各コンポーネント・data-umami-event 属性に散らばり、名前の揺れや項目の欠落（placement=unknown）を防げない。テストで全イベントに金額・メールアドレス・入力値の自由文字列が入らないことも検査できる。"
+        },
+        {
+          "title": "Umami のイベント使用量の月次確認（Actions＋シークレット）",
+          "why": "Umami API キーを GitHub Secrets に入れ、月1回イベント総数だけを取得して上限に近づいたら Issue を立てる（数値はIssue本文に書かず「上限の何割を超えた」の判定のみ、またはワークフローのログにも出さない）。表示イベント導入で上限超過して計測が止まる事故を防ぐ。キーがない間は何もせず成功で終わる（deploy-mcp.yml と同じ作法）。"
+        },
+        {
+          "title": "収益関連ページの公開前チェック（content-check への追加）",
+          "why": "アフィリエイト枠を含むページに PR/広告 表示があるか、sponsor 設定に期限切れがないか、リポジトリ内に収益の実数らしき記述がないかを毎週の content-check.yml で機械的に検査する。人の注意に頼らず規制対応と公開リポジトリの制約を守れる。"
+        }
+      ],
+      "event_taxonomy": "命名規則：<対象>_<動作>（小文字スネーク）。対象は ad（収益に関わる枠すべて）と、既存の機能名（cost_lab, diagnosis, blog）。収益の枠は kind で区別し、1つのイベント名に寄せてイベント名の種類を増やさない。\n【収益の枠】\n(1) ad_view：枠が画面内で見られた。項目 kind（affiliate|sponsor|house）, placement（tool_detail|blog|cost_lab|alternative|home 等、必須・unknown禁止）, slot_id（affiliate は provider群ではなく枠単位で 'vps'、sponsor は設定のid、house は ad_id）, copy_variant（R4用、任意）。条件：要素の50%以上が連続1秒以上画面内（IntersectionObserver＋タイマー）。1ページ表示につき1枠1回（メモリ上のSet、ページ遷移でリセット、保存しない）。\n(2) ad_click：枠内リンクのクリック。項目 kind, placement, slot_id, provider（affiliate のみ：conoha 等）, path, position（並び順の何番目か。安い順の規則の下で位置の影響を見る）。\n既存との対応：affiliate_click → ad_click{kind:affiliate}、house_ad_click → ad_click{kind:house}、house_ad_impression（マウント時）→ ad_view{kind:house}（画面内条件に変更）。移行：旧名と新名を並行して送るとイベント数が倍になるので避け、切り替え日を決めて一斉に新名へ移し、切り替え日を記録（council の記録か CHANGELOG）に残して前後を比較する。A8 の1x1計測画像は A8 側の表示数で、ad_view とは定義が違う（マウント時に読み込まれる）ことを注記。\n【表示と画面内閲覧の区別】Umami のページビューを「表示の機会（枠がDOMにある）」の分母とし、ad_view を「画面内閲覧」とする。マウント時イベントは送らない（ページビューと枠の有無から算出できるため、イベント数の節約にもなる）。\n【機能のイベント（既存名を維持）】cost_lab_entry{from}, cost_lab_result{saas,oss,years,verdict,example}, cost_lab_example, cost_lab_link_click{to}, diagnosis_start, saas_selected{saas}, diagnosis_completed{saas}, diagnosis_restart, result_detail_click{toolId}, compare_click, share_click{network}, blog_helpful{slug}, blog_share{slug,network}。追加候補：advertise_contact_click（R1）、intelligence_interest（R9）。cost_lab_result に金額は入れない（現状も入れていない。layout.tsx の data-exclude-search でURLの金額も送らない）。\n【重複・ボット対策】(a) 同一ページ内の重複：Setで抑止。(b) 連打：ad_click は同じ枠・同じ provider で2秒以内の再送を捨てる。(c) ボット：navigator.webdriver===true、document.visibilityState!=='visible' のときは送らない。Umami 側のボット除外にも依存。(d) 保存しない：Cookie・localStorage・sessionStorage を使わないため、訪問者をまたいだ重複除去はしない（方針上の割り切りとして明記）。\n【Umami のイベント数への影響】ad_view は枠のあるページの閲覧のうち枠までスクロールされた分だけ発生し、最大でページビュー×枠数。対策として、ad_view は kind=affiliate と sponsor のみ送り、house は ad_click のみにする（house の表示は収益判定に不要）。上限値を公式で確認するまで、ad_view の送信率を設定値（例：全量 or 一部の割合）で絞れるようにしておく。ただし割合で絞る場合は分析時に戻す係数が必要で、混乱の元になるので、上限に余裕があるなら全量が望ましい。",
+      "dashboard_architecture": "原則：サイト（公開リポジトリ・GitHub Pages）には一切置かない。収益データは公開リポジトリに入れない。\n構成案（データがそろってから着手）：\n1. 置き場所：非公開の別リポジトリ（例 ossalt-ops）。運営者1人のための社内ツールとする。\n2. 入力：(a) Umami API（キーは非公開リポジトリの Secrets）から、ad_view / ad_click を placement・kind・provider 別に月次集計。(b) A8 の成果は R12 の手入力CSVを非公開リポジトリにコミット。\n3. 処理：非公開リポジトリの GitHub Actions が月1回（monthly-report の後）集計し、静的なHTML（グラフは同梱のJS、外部送信なし）を生成。\n4. 配信と認証：Cloudflare Pages（既に Cloudflare アカウントと Workers の公開運用がある）に出し、Cloudflare Access（メールのワンタイムコード認証）で運営者のみに限定。サイト本体のドメインのサブドメイン（例 ops.ossalt.jp）でも、Access が前段にあるので公開されない。Cookie は Access のセッションCookie が管理画面にだけ付くが、一般読者向けのサイト（ossalt.jp）には影響せず、Cookieなし方針と両立する。\n5. 代替案（さらに簡単）：HTMLを作らず、非公開リポジトリの Actions が月次の集計表を Issue に投稿するだけ。認証は GitHub の権限に任せる。最初はこちらで十分。\n6. 公開側に戻してよいもの：比率や順位など実数を含まない判断結果のみ（council の記録に、containsSensitiveNumbers の検査を通した文言で）。\n前提条件：Umami API キー発行、R5 の計測が稼働、R12 の手入力が数か月続いていること。満たすまでは HOLD。"
+    },
+    "critical_investor": {
+      "overall": "売上の実数・PV・クリックが一切見えない状態で、新しい仕組み（スポンサー枠・ダッシュボード・Intelligence）を作るのは根拠がない。優先は①既存唯一の収益源（A8のVPS）の表示を法令と約束に合わせる（R3）、②集客の本体である検索記事を需要確認つきで少数（R8）、③コードを書かない需要検証（R6の個別打診）。それ以外は運営者がUmami・A8・Search Consoleの実数を見てから判断すべきで、契約0件のための先行開発（R2）とR7は不要。",
+      "top3": [
+        "R3",
+        "R8",
+        "R6"
+      ],
+      "new_proposals": [
+        {
+          "title": "PR #2 を先にマージ・公開し、実数を1回だけ見る",
+          "why": "Cost Lab・placement計測が未公開のまま次の施策を議論している。運営者がUmami・A8・Search Consoleの実数（PV、affiliate_click、発生件数）を一度確認するまで、新規開発の優先順位は推測でしかない。"
+        },
+        {
+          "title": "既存ページの「当たり」探し（Search Consoleの表示はあるがクリック率が低いページのタイトル・説明の改善）",
+          "why": "新規記事より軽く、389ツール・153代替・205比較の既存資産を活かせる。効果判定も運営者がSearch Consoleで直接できる。"
+        },
+        {
+          "title": "収益施策の時間予算を月単位で上限設定",
+          "why": "個人運営で最大の制約は時間。各施策に上限時間を決め、超えたら撤退基準に関係なく止めるルールで過剰開発を防ぐ。"
+        }
+      ],
+      "intelligence_view": "差別化：GitHub通知・Dependabot・Renovateは自社リポジトリの依存関係のCVE・更新を無料で自動処理し、OSV・deps.devも無料。OSSALTが勝てる余地は「SaaS代替として採用したOSS（n8n・Directus等）のライセンス変更・開発停滞・日本語対応の変化を、非エンジニアの意思決定者向けに日本語でまとめる」部分だけで、これはデータとしてはサイトに既にある公開情報の再整理にすぎず、模倣も容易。企業が払う理由：導入済みOSSの監視を外注したい中小企業はいるかもしれないが、その証拠はゼロ。決裁者が個人運営のレポートに継続課金する信頼の壁は高い。最小コストの検証：フォームやSaaSは作らず、サンプル1本（公開データから作成）と価格を明記したページを置き、既存メールへの社名付き問い合わせ件数だけを見る。無料登録数は支払い意思の証拠ではない。限界：AI・自動集計はライセンスの法的解釈（SUL・MSCLの商用利用の可否など）や脆弱性の有無・安全性を保証できない。「安全」「適合」と書けば誤った場合の責任リスクを負うため、事実（ライセンス名・変更日・リリース日）の提示に限定し、判断は利用者と専門家に委ねると明記すべき。",
+      "competitor_view": "言えること：英語圏の同種ディレクトリが「無料掲載＋有料の目立つ枠（定額、月$99〜$597程度）」という商品形態をとり、順位を売らないと明記する慣行があること。価格帯の参考と、中立性を約束しても広告商品は成立しうるという形態の参考にはなる。言えないこと：それが実際に売れているか、何社が買っているか、売上（OpenAlternativeの「年$80k」は第三者記事の自己申告で未確認）。公表価格は売り手の希望値で、成約率も解約率も分からない。また彼らは英語圏の世界市場と自称月15万訪問規模の流入を前提にしており、日本語のみ・流入実数不明のOSSALTに価格を当てはめる根拠にはならない。DevHuntのように公表情報同士が食い違う例もあり、価格表自体の信頼性も限定的。"
+    }
+  },
+  "proposals": [
+    {
+      "id": "R1",
+      "title": "媒体資料の初版（/advertise/ の作り直し）",
+      "business": "sponsors",
+      "problem": "広告の募集ページに、掲載方法・ルール・実績の扱いが書かれておらず、広告主が判断できない",
+      "proposal": "/advertise/ を媒体資料の初版にする。実績は「計測中」、料金は個別見積もり",
+      "revenue_link": "問い合わせの受け皿（スポンサー収益の入口）",
+      "evaluations": [
+        {
+          "agent": "chief_editor",
+          "scores": {
+            "revenue_potential": 35,
+            "user_value": 30,
+            "seo_impact": 10,
+            "brand_trust": 65,
+            "implementation_cost": 80,
+            "maintenance_cost": 75,
+            "time_to_revenue": 25,
+            "evidence_confidence": 45
+          },
+          "action": "IMPROVE",
+          "pros": "既存の /advertise/ に掲載ルール・中立性の約束・広告と編集の分離を明文化すれば、将来の広告主にも読者にも「何を売り、何を売らないか」が見える。競合（SaaSHub）も「順位は売らない」と明記しており、業界の作法に合う。",
+          "cons": "実績の数値がないため媒体資料としての説得力は弱く、短期の売上には効きにくい。「計測中」が長く続くと、かえって規模が小さく見える。推測の読者数を書く誘惑が生じる。",
+          "conditions": "推測のPV・読者数を一切書かない。「順位・評価・手書き解説の内容は売らない」「スポンサーはラベル付きで区別する」「広告主は記事の確認・修正を求められない」を明記。編集方針ページと相互リンクし、文言を一致させる。料金は書かないか「個別相談」にとどめる。"
+        },
+        {
+          "agent": "seo_strategist",
+          "scores": {
+            "revenue_potential": 25,
+            "user_value": 30,
+            "seo_impact": 50,
+            "brand_trust": 65,
+            "implementation_cost": 80,
+            "maintenance_cost": 75,
+            "time_to_revenue": 20,
+            "evidence_confidence": 40
+          },
+          "action": "IMPROVE",
+          "pros": "既存ページの更新で済み、独立性ルール（順位は売らない・rel=sponsored必須）を明文化できる。競合も同様の約束を公表しており信頼の土台になる。",
+          "cons": "流入・実績の数値がない媒体資料は営業力が弱い。検索流入はほぼ見込めない（指名・営業用ページ）。数値を盛ると推測値禁止の方針に反する。",
+          "conditions": "数値は『計測中』のみ。広告はすべてrel=\"sponsored\"、掲載でランキング・評価文・noindex判断が変わらないと明記。ページ自体はindexで構わないがサイトマップ優先度は低く。編集方針ページと相互リンク。"
+        },
+        {
+          "agent": "revenue_officer",
+          "scores": {
+            "revenue_potential": 45,
+            "user_value": 30,
+            "seo_impact": 10,
+            "brand_trust": 70,
+            "implementation_cost": 85,
+            "maintenance_cost": 80,
+            "time_to_revenue": 35,
+            "evidence_confidence": 50
+          },
+          "action": "BUILD",
+          "pros": "/advertise/ は既にあるので、作り直しは軽い。問い合わせを受ける窓口ができ、将来スポンサーが付く可能性を作れる。読者像・掲載ルール・独立性（順位は売らない）を明記すれば、競合（SaaSHub等）と同じ基準で信頼される。",
+          "cons": "流入の数値がないので、広告主が予算を判断する材料にならない。「計測中」だけの資料では、成約率は低い。料金を載せると、実績がない段階で価格に縛られる。",
+          "conditions": "PV・クリック数・売上を推測で書かない（「計測中」と書き、計測を始めた日を示す）。料金は「お問い合わせ」とし、公開する場合も「試験価格」と明記する。中立性のルール（並び順・評価・比較の内容は売らない、PR表示は必須）を最初に書く。掲載できる場所は、R2で実装したものだけを書く。"
+        },
+        {
+          "agent": "ux_designer",
+          "scores": {
+            "revenue_potential": 35,
+            "user_value": 30,
+            "seo_impact": 15,
+            "brand_trust": 65,
+            "implementation_cost": 80,
+            "maintenance_cost": 70,
+            "time_to_revenue": 30,
+            "evidence_confidence": 45
+          },
+          "action": "IMPROVE",
+          "pros": "/advertise/ は既にあり、読者像・中立性の約束・問い合わせまで揃っている。掲載例（枠の見た目のスクリーンショット）、表記ルール、計測方法を足せば広告主が判断しやすくなる。軽い作業で済む。",
+          "cons": "流入・実績の数値が出せないため、媒体資料としての説得力には限界がある。作り直しても問い合わせが来る根拠はない。",
+          "conditions": "数値は書かない（「計測中」とし、推測値を載せない）。枠の見た目（R2のデザイン）とスポンサー表記の例をそのまま載せる。『順位・評価・本文は売らない』を最上部に置く。ツール詳細ページには出さない方針も明記。"
+        },
+        {
+          "agent": "automation_architect",
+          "scores": {
+            "revenue_potential": 30,
+            "user_value": 25,
+            "seo_impact": 10,
+            "brand_trust": 60,
+            "implementation_cost": 80,
+            "maintenance_cost": 70,
+            "time_to_revenue": 25,
+            "evidence_confidence": 40
+          },
+          "action": "IMPROVE",
+          "pros": "/advertise/ は既に存在し、文言の改修だけで済む（静的ページ、計測不要）。中立性の約束を明文化すると、後のスポンサー枠の設計（R2）の仕様書を兼ねる。",
+          "cons": "流入の実数を示せないため、媒体資料として成立しない。「計測中」としか書けない状態で作り込んでも問い合わせ増は期待しにくい。料金を載せると推測値を載せない方針と、実績ゼロの事実の両方に引っかかる。",
+          "conditions": "実数・推計値は書かない（掲載ページ数・カテゴリ数など公開データから機械的に出せる数値だけ、ビルド時にデータから生成）。問い合わせリンクに data-umami-event=\"advertise_contact_click\" を付け、問い合わせ意向を測れるようにする。R2の仕様と同時に確定させる。"
+        },
+        {
+          "agent": "critical_investor",
+          "scores": {
+            "revenue_potential": 15,
+            "user_value": 20,
+            "seo_impact": 5,
+            "brand_trust": 55,
+            "implementation_cost": 85,
+            "maintenance_cost": 85,
+            "time_to_revenue": 15,
+            "evidence_confidence": 20
+          },
+          "action": "IMPROVE",
+          "pros": "既に /advertise/ は存在し、古い記述（料金・枠の不在）を正直に直すだけなら半日以内で済む。問い合わせが来たときに説明する手間が減り、中立性の約束を明文化できる。",
+          "cons": "「媒体資料」と呼べる中身（PV・読者属性・実績）が計測不可で何もない。数値のない媒体資料は買い手の判断材料にならず、作り込んでも問い合わせは増えない。スポンサー枠コンポーネントも契約実績もないのに掲載場所を約束すると、景品表示法（ステマ規制）や約束違反のリスクだけが増える。",
+          "conditions": "全面作り直しではなく既存ページの誤り修正にとどめる。存在しない枠や架空の実績を書かない。「計測中」と書くなら、いつ何を公開するか（例：Umamiの実数を運営者が確認後）を決めてから。料金を書くならR6の判断とセットで。",
+          "kill_criteria": "公開後に /advertise/ 経由の問い合わせメールが一定期間ゼロなら追加投資しない。判断材料は問い合わせ件数と /advertise/ の閲覧数（Umamiの実数）。"
+        }
+      ],
+      "decision": {
+        "action": "IMPROVE",
+        "decided_by": "lead",
+        "reason": "既存ページの改善で足りる。数値は掲載数だけ（ビルド時のデータ）で、アクセス数は「計測中」、読者の属性は「取得していない」と明記した",
+        "dissent_handling": "収益担当のBUILDは、既存ページがあるためIMPROVEとして実施",
+        "effort_hours_estimate": 3,
+        "success_metrics": [
+          "advertise_inquiry の件数"
+        ],
+        "phase": 1,
+        "status": "done"
+      }
+    },
+    {
+      "id": "R2",
+      "title": "スポンサー枠のコンポーネントと設定ファイル",
+      "business": "sponsors",
+      "problem": "スポンサー契約が取れても、表示・期間・計測の仕組みがない",
+      "proposal": "data-source/sponsors.json と SponsorSlot。契約0件では何も表示しない。画面内閲覧とクリックを計測。DB・管理画面は作らない",
+      "revenue_link": "スポンサー収益の受け皿（契約後すぐに掲載できる）",
+      "evaluations": [
+        {
+          "agent": "chief_editor",
+          "scores": {
+            "revenue_potential": 30,
+            "user_value": 15,
+            "seo_impact": 5,
+            "brand_trust": 55,
+            "implementation_cost": 60,
+            "maintenance_cost": 60,
+            "time_to_revenue": 15,
+            "evidence_confidence": 40
+          },
+          "action": "HOLD",
+          "pros": "契約が来たときに、ラベル・期間・rel属性を最初から正しく備えた枠を出せる。設定ファイル方式なら掲載終了の消し忘れも防げる。",
+          "cons": "契約0件・問い合わせ実績なしの段階で作るのは先回りしすぎで、何も表示しないコードの保守が増えるだけ。読者への利益は現時点でゼロ。",
+          "conditions": "最初の具体的な問い合わせが来てから作る。作る場合は見出しに「スポンサー」を必ず表示、rel=\"sponsored\"、検索結果・ランキング・比較表の中には差し込まない、代替候補の順位に影響させない、期間切れは自動で非表示。"
+        },
+        {
+          "agent": "seo_strategist",
+          "scores": {
+            "revenue_potential": 30,
+            "user_value": 15,
+            "seo_impact": 45,
+            "brand_trust": 55,
+            "implementation_cost": 60,
+            "maintenance_cost": 60,
+            "time_to_revenue": 25,
+            "evidence_confidence": 35
+          },
+          "action": "HOLD",
+          "pros": "契約0件時に何も描画しない設計ならSEO・CWVへの影響はゼロ。契約時の実装リードタイムを短縮できる。",
+          "cons": "契約が見込めない段階での先行実装は保守対象を増やすだけ。表示時のレイアウトシフト（CLS）、静的書き出しのため掲載切替に再ビルドが必要。",
+          "conditions": "作るなら：高さ固定（CLS0）、SSRで出力しJSで後挿入しない、リンクはrel=\"sponsored noopener\"固定、『PR』ラベル必須、掲載先は代替ページ・ブログに限定しツール詳細の比較本文の上には置かない、期間切れは自動で非表示。R1で1件でも問い合わせが来てから着手。"
+        },
+        {
+          "agent": "revenue_officer",
+          "scores": {
+            "revenue_potential": 40,
+            "user_value": 15,
+            "seo_impact": 5,
+            "brand_trust": 60,
+            "implementation_cost": 65,
+            "maintenance_cost": 70,
+            "time_to_revenue": 40,
+            "evidence_confidence": 45
+          },
+          "action": "BUILD",
+          "pros": "契約が取れた日にすぐ掲載でき、媒体資料（R1）の「掲載場所」に実物が付く。JSONの設定と掲載期間の自動終了で、運営の手間とミス（掲載期限切れの放置）を減らせる。画面内閲覧とクリックを計測すれば、更新の交渉の材料になる。",
+          "cons": "契約が0件の間は、作っても売上はゼロ。コンポーネントと計測の保守の負担が先に発生する。",
+          "conditions": "設定が空・無効・期限切れのときは何も描画しない（空の枠や「広告募集中」を出さない）。「PR」「スポンサー」の表示を必須にし、rel=\"sponsored\" を付ける。ツールの並び順・スコア・比較の結論に影響させない。Cookie・localStorage を使わない。契約の金額は公開リポジトリに書かない（JSONに入れるのは掲載の情報だけ）。実装は小さく1枠（代替ページ）から。"
+        },
+        {
+          "agent": "ux_designer",
+          "scores": {
+            "revenue_potential": 40,
+            "user_value": 20,
+            "seo_impact": 50,
+            "brand_trust": 60,
+            "implementation_cost": 60,
+            "maintenance_cost": 65,
+            "time_to_revenue": 30,
+            "evidence_confidence": 50
+          },
+          "action": "BUILD",
+          "pros": "/advertise/ が『「スポンサー」と明記した枠』を約束しているのに、コンポーネントが存在しない。器と表記ルールを先にコードで固定しておけば、契約時に表記がぶれない。契約0件で何も描画しなければ読者への負担はゼロ。",
+          "cons": "契約がない間は収益も効果もない。空の設定ファイルとコードの保守が少し増える。枠を確保するために余白だけ残すとレイアウトが崩れて見える。",
+          "conditions": "契約0件では要素もプレースホルダも出さない（空白・『広告募集中』も出さない）。ラベル『スポンサー』を枠の左上に固定表示し、設定で消せない作り。HouseAd と見た目を明確に分ける。rel=\"sponsored noopener\"。画面内閲覧は IntersectionObserver で1ページ1回。期限切れは自動で非表示（ビルド時に判定）。"
+        },
+        {
+          "agent": "automation_architect",
+          "scores": {
+            "revenue_potential": 35,
+            "user_value": 15,
+            "seo_impact": 5,
+            "brand_trust": 55,
+            "implementation_cost": 60,
+            "maintenance_cost": 65,
+            "time_to_revenue": 20,
+            "evidence_confidence": 35
+          },
+          "action": "HOLD",
+          "pros": "設定ファイル（JSON：id・期間・有効・掲載先・遷移先・表示ラベル）をビルド時に読む方式は静的サイトと相性がよく、契約が来たときにPR1本で掲載・終了できる。期間切れは毎日の再ビルド（update-data.yml）で自動的に外れる。",
+          "cons": "契約0件で何も表示しないコンポーネントは、使われないコードとテストの保守だけが増える。スポンサーの有無で変わる計測イベントも、表示実績がない間は検証できない。",
+          "conditions": "最初の具体的な問い合わせが来るまで作らない。作るときは：期限切れ・未来日付をビルドで除外する純粋関数とテスト、rel=\"sponsored noopener\"、見出しに「スポンサー」の明示、表示順・スコアに影響しないことをテストで保証、イベントは R5 の ad_view / ad_click に統一（kind=sponsor）。設定ファイルに金額は書かない（公開リポジトリ）。"
+        },
+        {
+          "agent": "critical_investor",
+          "scores": {
+            "revenue_potential": 10,
+            "user_value": 0,
+            "seo_impact": 0,
+            "brand_trust": 40,
+            "implementation_cost": 45,
+            "maintenance_cost": 50,
+            "time_to_revenue": 5,
+            "evidence_confidence": 10
+          },
+          "action": "HOLD",
+          "pros": "将来スポンサーが付いたときに表示・計測・期限切れ処理を安全にできる。設定ファイルで期限を管理すれば消し忘れを防げる。",
+          "cons": "契約0件の今、何も表示しないコンポーネントを作るのは典型的な過剰開発。売れる証拠ゼロ。Phase 0 でスポンサー枠は既にREJECT（流入不足）と判断済みで、それと矛盾する。画面内閲覧計測はUmamiの無料枠上限を食う可能性もある。最初の1社なら静的HTMLの手書き枠で十分足りる。",
+          "conditions": "最初の有償契約（入金確認済み）が成立した後に、その契約に必要な最小限だけ作る。それまではコードを書かない。",
+          "kill_criteria": "着手の条件自体が「契約成立」。成立しないまま次回月次レビューを迎えたらHOLD継続、2回連続で引き合いゼロなら候補から外す。"
+        }
+      ],
+      "decision": {
+        "action": "BUILD",
+        "decided_by": "lead",
+        "reason": "多数はHOLD（編集・SEO・自動化・批判役）だが、運営者のマスタープロンプトがPhase 1の範囲に「広告表示コンポーネントの基礎」を明示している。反対の理由（契約0件のための先行開発）に配慮し、最小限で作った",
+        "dissent_handling": "表示0件の状態で出荷し、空き枠・「募集中」も出さない。DB・管理画面・決済は作らない（Phase 4、需要が確認できた場合のみ）。active には契約を確認した日を必須にし、架空の広告を出せないようにした。営業はしない（R6）",
+        "effort_hours_estimate": 4,
+        "success_metrics": [
+          "契約後：sponsor_viewable と sponsor_click",
+          "契約0件の間：表示への影響がないこと"
+        ],
+        "phase": 1,
+        "status": "done"
+      }
+    },
+    {
+      "id": "R3",
+      "title": "既存のアフィリエイト表示の修正",
+      "business": "affiliate",
+      "problem": "ツール詳細のVPS枠（306ページ）にPR表示がなく、注記が「この記事には…場合があります」と曖昧。ブログの枠は計測が unknown。編集方針ページが実態と違う",
+      "proposal": "見出しに「PR」、言い切りの注記、並び順の根拠、aria-label、外部リンクの表示。ブログに placement。編集方針・プライバシーポリシーの更新",
+      "revenue_link": "唯一の収益源（A8のVPS）を、ステマ規制と提携の規約に合わせて守る",
+      "evaluations": [
+        {
+          "agent": "chief_editor",
+          "scores": {
+            "revenue_potential": 30,
+            "user_value": 75,
+            "seo_impact": 30,
+            "brand_trust": 95,
+            "implementation_cost": 90,
+            "maintenance_cost": 90,
+            "time_to_revenue": 40,
+            "evidence_confidence": 90
+          },
+          "action": "BUILD",
+          "pros": "コードで事実を確認済み：affiliate-disclosure.tsx は「この記事にはアフィリエイトリンクが含まれる場合があります」とツール詳細でも「記事」と書き、断定もしていない。編集方針ページは「一部のブログ記事」としか書いていない。ステマ規制への備えとして最も費用対効果が高く、読者の信頼を直接守る。placement の付与で既存導線の評価も可能になる。",
+          "cons": "収益を直接は増やさない。ラベルを明確にするとクリック率が下がる可能性はあるが、それは受け入れるべき代償。",
+          "conditions": "枠の見出し付近に「PR」または「広告」を目視しやすく表示（枠の下の小さな注記だけにしない）。文言を「このページには広告（アフィリエイトリンク）が含まれます」に断定。編集方針ページにツール詳細・Cost Lab・ブログの3箇所と並び順の規則を記載。monetization.md は現状に合わせて更新するか「古い計画」と明示。ブログ枠に placement を付ける。"
+        },
+        {
+          "agent": "seo_strategist",
+          "scores": {
+            "revenue_potential": 30,
+            "user_value": 70,
+            "seo_impact": 65,
+            "brand_trust": 90,
+            "implementation_cost": 85,
+            "maintenance_cost": 85,
+            "time_to_revenue": 50,
+            "evidence_confidence": 90
+          },
+          "action": "BUILD",
+          "pros": "コードで事実確認済み：ツール詳細の枠に見出しのPR表示がなく、開示文が『この記事』『場合があります』と曖昧。ステマ規制（2023年10月施行の景表法告示）対応としても必須。編集方針ページの記載が実態と不一致。blogのplacementがunknownで効果測定不能。いずれも小改修で、ページ品質評価（信頼性・E-E-A-T）を損なうリスクを除去する。",
+          "cons": "PR表示を強めるとクリック率が下がる可能性（仮説）。収益増ではなくリスク低減策。",
+          "conditions": "枠見出し直上に『PR（広告）』を明示、開示文は断定形に。rel=\"sponsored noopener noreferrer\"は維持。編集方針・プライバシーポリシー・monetization.mdを現状と一致させる。A8の1x1画像は遅延読み込み不可なら枠の下部に置きLCP要素と競合させない。"
+        },
+        {
+          "agent": "revenue_officer",
+          "scores": {
+            "revenue_potential": 55,
+            "user_value": 60,
+            "seo_impact": 25,
+            "brand_trust": 90,
+            "implementation_cost": 90,
+            "maintenance_cost": 90,
+            "time_to_revenue": 70,
+            "evidence_confidence": 90
+          },
+          "action": "BUILD",
+          "pros": "今の収益源（A8）を守る施策。ツール詳細の枠には、見出しに「PR／広告」の表示がない。2023年10月から施行のステマ規制（景品表示法）と、A8の規約から見て、表示の曖昧さは提携停止のリスクになる。提携停止は売上ゼロを意味するので、最優先。ブログの placement を付ければ、どの枠が効くかを比べられる。編集方針と古い monetization.md の矛盾も消える。",
+          "cons": "PR表示を目立たせると、クリック率が少し下がる可能性はある（計測できないので未確認）。",
+          "conditions": "枠の見出しの近くに「PR」または「広告」を明記し、「この記事」「場合があります」という曖昧な言い方をやめる（ページの種類に合わせ、「この枠のリンクはアフィリエイトリンクです」と断定する）。ブログ枠に placement（例：blog_<slug>）を付ける。/editorial/ にツール詳細とCost Labの枠を書き足す。monetization.md は現状に合わせて書き換えるか、古い文書と明記する。"
+        },
+        {
+          "agent": "ux_designer",
+          "scores": {
+            "revenue_potential": 45,
+            "user_value": 75,
+            "seo_impact": 55,
+            "brand_trust": 95,
+            "implementation_cost": 90,
+            "maintenance_cost": 85,
+            "time_to_revenue": 70,
+            "evidence_confidence": 90
+          },
+          "action": "BUILD",
+          "pros": "コードで確認した事実：ツール詳細の枠は見出しに広告表示がなく、開示文は枠の最後に小さく『この記事には…含まれる場合があります』（ツールページは記事ではなく、『場合があります』は実態と合わない）。並び順の根拠もツール詳細には書かれていない（ブログは lede に書いてある）。ブログ枠は placement 未指定で unknown。/editorial/ は『一部のブログ記事』とあり事実と食い違う。どれも数行の修正で、景表法のステマ規制への備えとして最優先。",
+          "cons": "表記を明確にすると短期的にクリック率が下がる可能性はある（測れないので不明）。",
+          "conditions": "広告表記は枠の先頭（見出しの上か横）に、本文と同じ程度に読める大きさで置く。『場合があります』をやめ断定にする。並び順の根拠をツール詳細にも書く。ブログ枠に placement=\"blog_{slug}\" を付ける。/editorial/ とプライバシーポリシーの記載を実態（ツール詳細・ブログ・Cost Lab）に合わせる。monetization.md は現状に更新するか古い旨を明記。"
+        },
+        {
+          "agent": "automation_architect",
+          "scores": {
+            "revenue_potential": 40,
+            "user_value": 55,
+            "seo_impact": 30,
+            "brand_trust": 90,
+            "implementation_cost": 85,
+            "maintenance_cost": 85,
+            "time_to_revenue": 70,
+            "evidence_confidence": 85
+          },
+          "action": "BUILD",
+          "pros": "コードで確認した事実に基づく修正で不確実性が低い：blog/[slug]/page.tsx の VpsRecommendation に placement がなく \"unknown\" になる、ツール詳細の枠に PR 表示がない、/editorial/ と docs/monetization.md が現状と食い違う。placement の欠落は唯一の収益導線の比較を不可能にしているので、計測の観点で最優先。ステマ規制（景品表示法）への対応でもある。",
+          "cons": "直接の収益増は小さい。PR表示を明確にするとクリック率が下がる可能性はある（下がっても、規制対応として必要）。",
+          "conditions": "placement を必須引数にして既定値 \"unknown\" をなくす（型で強制し、渡し忘れをビルドで止める）。ブログは blog、Cost Lab は cost_lab、ツール詳細は tool_detail。PR表示は枠の見出し直上に。表記の検査（枠に「広告」または「PR」を含む）を単体テストに入れる。R5 と同じPRで出す。"
+        },
+        {
+          "agent": "critical_investor",
+          "scores": {
+            "revenue_potential": 30,
+            "user_value": 60,
+            "seo_impact": 20,
+            "brand_trust": 90,
+            "implementation_cost": 85,
+            "maintenance_cost": 85,
+            "time_to_revenue": 55,
+            "evidence_confidence": 85
+          },
+          "action": "BUILD",
+          "pros": "唯一コードで事実確認できた明確な欠陥の修正。ツール詳細の枠に「PR／広告」表示がなく、注記が「この記事には〜場合があります」（affiliate-disclosure.tsx）と曖昧。2023年10月施行のステマ規制（景品表示法の告示）を考えると、既存の唯一の収益源（A8）を守るための必須対応。編集方針ページとの不整合も信頼を損なう。ブログの placement=unknown 解消で既存収益の分析精度も上がる。作業は小さい。",
+          "cons": "直接売上は増えない（むしろPR表示でクリック率が下がる可能性はある）。ただしそれは受け入れるべきコスト。",
+          "conditions": "枠の見出し近くに「PR」「広告」を明示。注記を「このページの〜は広告（アフィリエイトリンク）です」と断定形に。/editorial/ と privacy の記述を現状（ツール詳細・ブログ・Cost Lab）に合わせる。monetization.md は削除か「旧計画」と明記。報酬額順に並べない約束を維持。PR #2 のマージと同時か直後に。",
+          "kill_criteria": "中止基準は設けない（コンプライアンス対応）。完了判定は：全表示箇所でPR表示があること、placementにunknownが残らないこと、編集方針の記述が実装と一致すること。"
+        }
+      ],
+      "decision": {
+        "action": "BUILD",
+        "decided_by": "lead",
+        "reason": "6役割すべてが上位に挙げた（5役割が1位）",
+        "dissent_handling": "",
+        "effort_hours_estimate": 2,
+        "success_metrics": [
+          "affiliate_click の placement に unknown が出ないこと"
+        ],
+        "phase": 1,
+        "status": "done"
+      }
+    },
+    {
+      "id": "R4",
+      "title": "OSSの用途に合わせたVPS枠の文言",
+      "business": "affiliate",
+      "problem": "306ページのVPS枠の文面がすべて同じで、読者の状況に合っていない",
+      "proposal": "カテゴリで前置きを1文変える（保存系：容量とバックアップ、監視：別のサーバー、自動化：常時起動）。CPU・メモリの数値は書かない。variant で効果を比べる",
+      "revenue_link": "文脈に合った紹介でクリックの質を上げる（検証）",
+      "evaluations": [
+        {
+          "agent": "chief_editor",
+          "scores": {
+            "revenue_potential": 55,
+            "user_value": 60,
+            "seo_impact": 25,
+            "brand_trust": 60,
+            "implementation_cost": 65,
+            "maintenance_cost": 60,
+            "time_to_revenue": 55,
+            "evidence_confidence": 50
+          },
+          "action": "TEST",
+          "pros": "汎用の「VPSならこちら」より、例えば Immich なら「写真の容量とバックアップの置き場所を先に考える」と書くほうが読者の判断に役立つ。読者の利益と紹介が一致する好例になりうる。",
+          "cons": "要件データ（CPU/RAM）がないため、文言が抽象的になり「それっぽいだけの文章」になる危険。テンプレート的な文言を大量生成すると薄いコンテンツの反復になり、品質を下げる。",
+          "conditions": "数値の要件を書かない（公式ドキュメントで確認できたものだけ、出典付きで）。カテゴリ単位（写真・ファイル、自動化、監視など）の少数パターンで始め、手書きで正確性を確認。事業者ごとの推し文句は書かず、並びは最低月額順を維持。文脈文言はPR枠の外（編集側の「動かすのに必要なもの」）に置き、広告との混同を避ける。"
+        },
+        {
+          "agent": "seo_strategist",
+          "scores": {
+            "revenue_potential": 45,
+            "user_value": 55,
+            "seo_impact": 60,
+            "brand_trust": 65,
+            "implementation_cost": 65,
+            "maintenance_cost": 60,
+            "time_to_revenue": 45,
+            "evidence_confidence": 55
+          },
+          "action": "TEST",
+          "pros": "現状306ページに4社の同一説明文が並び、テンプレート由来の重複ブロックが多い。カテゴリ（写真・ファイル系→ストレージ容量とバックアップ、自動化系→常時稼働、DB系→データ保全）別の文言にすれば重複を減らし、読者の文脈に合う=クリックの質も上がる（仮説）。",
+          "cons": "要件データ（CPU/RAM）がないため具体性に上限。ツール単位で書くと389件分の保守負担。根拠のない『このツールにはこのVPS』という推奨は誤情報リスク。",
+          "conditions": "ツール単位ではなくカテゴリ単位（29以下）のテンプレートで開始。数値・推奨プランは書かない。並び順（最低月額順）は変えない。placement別にクリックを比較し、効果がなければ戻す。"
+        },
+        {
+          "agent": "revenue_officer",
+          "scores": {
+            "revenue_potential": 55,
+            "user_value": 55,
+            "seo_impact": 20,
+            "brand_trust": 60,
+            "implementation_cost": 70,
+            "maintenance_cost": 60,
+            "time_to_revenue": 65,
+            "evidence_confidence": 40
+          },
+          "action": "TEST",
+          "pros": "サーバー用ツール306ページに同じ文言を出すより、「Immichなら写真の保存容量とバックアップ」のように読者の不安に合わせた文言のほうが、クリックの質は上がると見込める。既存の枠の文言を変えるだけで、売上に一番近い施策。",
+          "cons": "CPU・RAMの要件データがないので、具体的なプランを勧められない。文言が強すぎると、広告っぽさが増えて信頼が下がる。効果は R5 の計測がないと判定できない。",
+          "conditions": "数値（必要なメモリ、推奨プラン）は書かない。カテゴリ単位（写真・ファイル、自動化、監視、DB・CMS など）で数パターンに限り、ページごとの手書きはしない。並び順は最低月額順のまま。R5 で placement と文言のパターンをイベントに付けてから始め、一定期間（例：8週間）クリックを比べる。"
+        },
+        {
+          "agent": "ux_designer",
+          "scores": {
+            "revenue_potential": 45,
+            "user_value": 60,
+            "seo_impact": 40,
+            "brand_trust": 60,
+            "implementation_cost": 55,
+            "maintenance_cost": 45,
+            "time_to_revenue": 55,
+            "evidence_confidence": 35
+          },
+          "action": "TEST",
+          "pros": "全ページ同じ lede より、『写真を貯めるならディスク容量とバックアップも検討を』のような一言の方が読者の判断に役立ち、自然な導線になる。",
+          "cons": "CPU/RAM の要件データがないので、具体的に書けることが少ない。カテゴリ単位の定型文が増えると保守がかさみ、外れた助言は信頼を下げる。効果を測る手段も限られる。",
+          "conditions": "カテゴリ単位（数種類）に限定し、数値や『このプランで動く』とは書かない。公式ドキュメントへのリンクを優先。R3の表記修正の後に行う。"
+        },
+        {
+          "agent": "automation_architect",
+          "scores": {
+            "revenue_potential": 40,
+            "user_value": 50,
+            "seo_impact": 20,
+            "brand_trust": 60,
+            "implementation_cost": 65,
+            "maintenance_cost": 55,
+            "time_to_revenue": 50,
+            "evidence_confidence": 35
+          },
+          "action": "TEST",
+          "pros": "vps-recommendation は title / lede を既に受け取れるので、カテゴリ単位の文言表（データ）を足すだけで実現できる。文脈が合えばクリック率の改善が見込める。",
+          "cons": "CPU/RAM の要件データがないため具体性に限界がある。389件を個別に書くと保守が破綻する。効果の検証には R3・R5 の計測修正が前提で、今やっても良し悪しを判定できない。",
+          "conditions": "ツール個別ではなくカテゴリ単位（29以下）の文言表にする。数値（メモリ量・価格）は書かない。affiliate_click / ad_view に copy_variant（文言表のキー）を付け、変更前後で placement=tool_detail のクリック率を比較する。比較期間と判定基準を先に決めてから着手。"
+        },
+        {
+          "agent": "critical_investor",
+          "scores": {
+            "revenue_potential": 25,
+            "user_value": 45,
+            "seo_impact": 15,
+            "brand_trust": 55,
+            "implementation_cost": 65,
+            "maintenance_cost": 60,
+            "time_to_revenue": 35,
+            "evidence_confidence": 25
+          },
+          "action": "TEST",
+          "pros": "既存の唯一の収益導線（VPSアフィリエイト）のクリック率改善を狙う施策で、新規提携も不要。文脈に合った説明は読者の役にも立つ。",
+          "cons": "CPU/RAM要件データがないため、具体性のない定型文になりやすい。300ページ超に文言を出し分けると保守が増え、誤った示唆（このVPSで動く等）は信頼を損なう。そもそもクリック数の実数が見えていないので効果判定ができない。",
+          "conditions": "カテゴリ単位（写真・ファイル系、自動化系など数種類）の文言テンプレートに限定し、ツールごとの手書きはしない。数値・動作保証を書かない。R3・R5（placement計測）完了後に、変更前後のaffiliate_click率をUmamiで比較できる状態で行う。",
+          "kill_criteria": "運営者がUmamiで変更前後の一定期間のaffiliate_click（ページ閲覧あたり）を比較し、改善が見えなければ汎用文言に戻す。A8の発生件数に変化がなければ追加投資しない。"
+        }
+      ],
+      "decision": {
+        "action": "TEST",
+        "decided_by": "lead",
+        "reason": "6役割すべてがTEST",
+        "dissent_handling": "",
+        "effort_hours_estimate": 2,
+        "success_metrics": [
+          "variant 別の affiliate_click ÷ affiliate_viewable"
+        ],
+        "phase": 1,
+        "status": "done"
+      }
+    },
+    {
+      "id": "R5",
+      "title": "計測の統一（画面内閲覧・重複・ボット）",
+      "business": "analytics",
+      "problem": "アフィリエイト枠は表示を数えておらずクリック率が出ない。内製広告は読み込み時に表示を送る。計測の関数が3か所に重複",
+      "proposal": "affiliate_viewable・sponsor_viewable（50%以上・1秒以上、1表示1回、裏のタブは除外）、advertise_inquiry、cost_lab_start。自動操作のブラウザからは送らない。計測の関数を analytics.ts に統一",
+      "revenue_link": "クリック率・枠ごとの比較ができるようになり、改善の判断ができる",
+      "evaluations": [
+        {
+          "agent": "chief_editor",
+          "scores": {
+            "revenue_potential": 25,
+            "user_value": 10,
+            "seo_impact": 0,
+            "brand_trust": 50,
+            "implementation_cost": 70,
+            "maintenance_cost": 65,
+            "time_to_revenue": 20,
+            "evidence_confidence": 55
+          },
+          "action": "IMPROVE",
+          "pros": "どの施策が読者に使われているかを判断する基礎になる。ハウス広告のimpressionがマウント時送信で過大計測になっている点は直すべき。",
+          "cons": "読者に見える利益はない。Umami無料枠の上限が不明のまま閲覧イベントを増やすと、肝心のクリック計測が欠ける恐れ。計測を増やすこと自体がプライバシー方針への読者の不信を招きうる。",
+          "conditions": "Cookie・localStorage を使わない方針を維持。個人を識別する値は送らない。画面内閲覧は1ページ1回に限定し、上限を確認するまで対象を affiliate 枠に絞る。プライバシーポリシーの記載と一致させる。"
+        },
+        {
+          "agent": "seo_strategist",
+          "scores": {
+            "revenue_potential": 20,
+            "user_value": 10,
+            "seo_impact": 40,
+            "brand_trust": 55,
+            "implementation_cost": 65,
+            "maintenance_cost": 60,
+            "time_to_revenue": 20,
+            "evidence_confidence": 50
+          },
+          "action": "IMPROVE",
+          "pros": "placement統一・命名統一は判断の前提。現状house_ad_impressionがマウント時送信で実閲覧と区別できず、数字が誤った判断を招く。",
+          "cons": "IntersectionObserverやイベント追加はJS増でINP/TBTに微小な負荷。Umami無料枠の上限が未確認のまま閲覧イベントを全ページで送ると枠を食う。",
+          "conditions": "閲覧イベントは1ページ1枠1回、50%表示・1秒以上など閾値つき、全ページではなくサンプリングを検討。上限値を先に確認。追加JSは既存スクリプトに統合しバンドル増を最小に。"
+        },
+        {
+          "agent": "revenue_officer",
+          "scores": {
+            "revenue_potential": 45,
+            "user_value": 10,
+            "seo_impact": 0,
+            "brand_trust": 60,
+            "implementation_cost": 70,
+            "maintenance_cost": 70,
+            "time_to_revenue": 55,
+            "evidence_confidence": 70
+          },
+          "action": "BUILD",
+          "pros": "これがないと、R4・R8・R1・価格設計のすべてが勘で決まる。house_ad_impression は表示で数えているため、表示回数が多めに出る。画面内閲覧を数えれば、枠ごとのクリック率が営業資料にも使える。",
+          "cons": "それ自体は売上を生まない。Umami Cloud 無料枠のイベント上限（未確認）を超えると、計測が止まるおそれがある。集計値はこの環境から取れず、運営者が手で見る必要がある。",
+          "conditions": "イベントの命名を <種類>_<動作>（affiliate_view / affiliate_click / sponsor_view / sponsor_click）にそろえ、placement を必須にする。画面内閲覧は IntersectionObserver で、1ページの表示につき1回だけ送る。Cookie・localStorage は使わない（ページ内の変数で重複を防ぐ）。イベント数を増やしすぎない（スクロールなどは計測しない）。先に Umami の無料枠の上限を運営者が確認する。"
+        },
+        {
+          "agent": "ux_designer",
+          "scores": {
+            "revenue_potential": 20,
+            "user_value": 15,
+            "seo_impact": 10,
+            "brand_trust": 55,
+            "implementation_cost": 70,
+            "maintenance_cost": 65,
+            "time_to_revenue": 25,
+            "evidence_confidence": 60
+          },
+          "action": "IMPROVE",
+          "pros": "house_ad_impression はマウント時送信で、見られたかが分からない。画面内閲覧にすれば、枠の位置（ページ下部のVPS枠がそもそも見られているか）を判断できる。UX判断の材料になる。",
+          "cons": "集計値をこの環境から見られないため、改善しても判断に使えるかは運営者の確認次第。イベント上限が未確認で、増やしすぎると欠損のおそれ。",
+          "conditions": "Cookie・localStorage を使わない方針を守る（ページ内メモリでの重複抑制のみ）。イベントは枠ごとに1ページ1回。名称変更は旧名との対応表を残す。"
+        },
+        {
+          "agent": "automation_architect",
+          "scores": {
+            "revenue_potential": 35,
+            "user_value": 10,
+            "seo_impact": 0,
+            "brand_trust": 70,
+            "implementation_cost": 75,
+            "maintenance_cost": 80,
+            "time_to_revenue": 55,
+            "evidence_confidence": 80
+          },
+          "action": "BUILD",
+          "pros": "すべての収益施策の判定の土台。現状、アフィリエイト枠の表示が計測されておらずクリック率が出せない。house_ad_impression はマウント時送信で、ページ下部の枠は見られていなくても数えられる。window.umami の型宣言と track 関数が analytics.ts・affiliate-track.ts・house-ad.tsx に3重にある。IntersectionObserver はCookie・localStorage を使わずに実装でき、方針と両立する。",
+          "cons": "表示イベントはイベント数を大きく増やす（ページビューとほぼ同数×枠数）。Umami Cloud 無料枠の上限値が未確認で、上限を超えると計測が止まる・有料化の恐れ。ユーザーへの直接の価値はない。",
+          "conditions": "計測は src/lib/analytics.ts の trackEvent に一本化（型宣言も1か所）。表示イベントは「枠の50%以上が1秒以上画面内」で1ページ1枠1回だけ（メモリ上のSetで重複抑止、保存はしない）。navigator.webdriver が true なら送らない。イベント名は既存名を残しつつ新名へ移行期間を設ける（下記 event_taxonomy）。上限値を Umami の公式情報で確認するまでは、表示イベントは affiliate と sponsor のみに限定し、house_ad の表示は送信をやめるか同方式に揃える。"
+        },
+        {
+          "agent": "critical_investor",
+          "scores": {
+            "revenue_potential": 15,
+            "user_value": 5,
+            "seo_impact": 0,
+            "brand_trust": 30,
+            "implementation_cost": 60,
+            "maintenance_cost": 65,
+            "time_to_revenue": 10,
+            "evidence_confidence": 50
+          },
+          "action": "IMPROVE",
+          "pros": "計測が分析の前提。イベント名がばらばらだと月次レビューが成り立たない。",
+          "cons": "計測できても集計値をこの環境から取れず、運営者が手で見るしかない。Umamiの無料枠上限が未確認のまま画面内閲覧（impression）を大量送信すると上限超過のリスク。ボット抑制はUmami側である程度されるので自作は過剰になりやすい。売上を直接生まない。",
+          "conditions": "最低限（affiliateのplacement必須化、名称の統一）に限定。impression計測はIntersectionObserverで1ページ1回に絞るか、まず導入しない。Umamiの上限を運営者が先に確認する。スポンサー計測はR2と同じく契約後。",
+          "kill_criteria": "Umamiのイベント数が上限に近づいたら impression 系から止める。月次レビューで実際に参照されなかったイベントは削除する。"
+        }
+      ],
+      "decision": {
+        "action": "BUILD",
+        "decided_by": "lead",
+        "reason": "収益・自動化がBUILD、ほかはIMPROVE。実施した",
+        "dissent_handling": "自動化担当の「ad_view / ad_click に名前をまとめる」案は採らなかった：affiliate_click は公開中のサイトで既に記録されており、名前を変えると過去の数値と比べられなくなるため。代わりに一覧（EVENTS）で名前を管理する",
+        "effort_hours_estimate": 3,
+        "success_metrics": [
+          "枠ごとのクリック率（運営者がUmamiで確認）"
+        ],
+        "phase": 1,
+        "status": "done"
+      }
+    },
+    {
+      "id": "R6",
+      "title": "試験スポンサー商品の販売（1社限定・仮価格 月5,000円）",
+      "business": "sponsors",
+      "problem": "スポンサー収益がゼロ",
+      "proposal": "仮価格で今すぐ販売する",
+      "revenue_link": "スポンサー収益",
+      "evaluations": [
+        {
+          "agent": "chief_editor",
+          "scores": {
+            "revenue_potential": 20,
+            "user_value": 5,
+            "seo_impact": 0,
+            "brand_trust": 25,
+            "implementation_cost": 55,
+            "maintenance_cost": 50,
+            "time_to_revenue": 40,
+            "evidence_confidence": 15
+          },
+          "action": "REJECT",
+          "pros": "成立すれば需要の確認にはなる。",
+          "cons": "流入の数値を示せない状態で価格を付けて売るのは、広告主に対して根拠のない約束になる。Phase 0 で既に「流入不足」でREJECT済みで、状況は変わっていない。読者への利益がなく、無理な販売は掲載内容への影響圧力を生む。",
+          "conditions": "（再検討するなら）計測で流入の実数を示せるようになり、R1の掲載ルールとR2の枠が整い、問い合わせが自然に来た後。価格は掲載ルールと一緒に公開。"
+        },
+        {
+          "agent": "seo_strategist",
+          "scores": {
+            "revenue_potential": 20,
+            "user_value": 10,
+            "seo_impact": 30,
+            "brand_trust": 30,
+            "implementation_cost": 50,
+            "maintenance_cost": 45,
+            "time_to_revenue": 40,
+            "evidence_confidence": 15
+          },
+          "action": "REJECT",
+          "pros": "売れれば最短で現金化。",
+          "cons": "Phase 0でスポンサー枠は流入不足を理由にREJECT済みで、状況は変わっていない（流入数値は依然不明）。価格の根拠がなく、売れない場合も売れた場合も（成果が出ず）信頼を損なう。スポンサー先リンクがdofollowになる事故はGoogleのリンクスパムポリシー違反で手動対策リスク。",
+          "conditions": "再検討の条件：Search Consoleで月次の検索流入実績が確認でき、R1・R3が完了し、R2の仕様が固まってから。"
+        },
+        {
+          "agent": "revenue_officer",
+          "scores": {
+            "revenue_potential": 25,
+            "user_value": 10,
+            "seo_impact": 0,
+            "brand_trust": 35,
+            "implementation_cost": 55,
+            "maintenance_cost": 50,
+            "time_to_revenue": 50,
+            "evidence_confidence": 15
+          },
+          "action": "HOLD",
+          "pros": "売れれば、すぐの現金収入になる。価格の感触（高すぎるか、安すぎるか）がわかる。",
+          "cons": "流入と枠のクリックの数値がなく、広告主に価値を説明できない。売れても月5,000円は、VPSの成果1〜数件分にしかならないので、手間と中立性のリスクに見合わない。実績0の状態で価格を出すと、後で値上げしにくい。スポンサー枠のコンポーネントもない。Phase 0 で「流入不足でREJECT」と判断した状況が、まだ変わっていない。",
+          "conditions": "販売を始めるのは、(1) R5 の計測が4週間以上たまり、(2) R2 の枠が実装済みで、(3) R1 の媒体資料に実測の値を書ける状態になってから。それまでは、相手からの問い合わせが来たときだけ、「試験掲載（1社・1か月・実績報告つき）」として個別に相談する。"
+        },
+        {
+          "agent": "ux_designer",
+          "scores": {
+            "revenue_potential": 25,
+            "user_value": 15,
+            "seo_impact": 40,
+            "brand_trust": 35,
+            "implementation_cost": 55,
+            "maintenance_cost": 45,
+            "time_to_revenue": 40,
+            "evidence_confidence": 20
+          },
+          "action": "HOLD",
+          "pros": "1社限定・低価格なら試験として小さく始められる。",
+          "cons": "流入の数値を示せないまま価格を出すと、広告主にも読者にも説明できない。Phase 0 で流入不足を理由にREJECT済みで、状況は変わっていない。枠の器（R2）も未実装。合わない広告主を入れると信頼を失う。",
+          "conditions": "R2・R3完了と、運営者が流入を確認できてから。価格は公開ページに書く前に根拠を整理。受け入れ基準（読者に関係する事業者のみ）を先に決める。"
+        },
+        {
+          "agent": "automation_architect",
+          "scores": {
+            "revenue_potential": 25,
+            "user_value": 10,
+            "seo_impact": 0,
+            "brand_trust": 30,
+            "implementation_cost": 50,
+            "maintenance_cost": 45,
+            "time_to_revenue": 35,
+            "evidence_confidence": 15
+          },
+          "action": "REJECT",
+          "pros": "1社限定・月額固定なら運用は単純で、OpenAlternative 等も定額の枠で売っている（公表価格）。",
+          "cons": "流入の実数を示せず、表示・クリックの計測（R5）も未整備のため、スポンサーに成果報告ができない。Phase 0 で流入不足を理由に REJECT した判断を覆す新しい根拠がない。金額を公開リポジトリやページに置く扱いも未設計。",
+          "conditions": "再検討の条件：R5 の表示計測が稼働し、数か月分の枠ごとの表示・クリックを運営者が非公開の場所で確認できること。価格は公開リポジトリに書かず、/advertise/ には「問い合わせ」とする。"
+        },
+        {
+          "agent": "critical_investor",
+          "scores": {
+            "revenue_potential": 25,
+            "user_value": 5,
+            "seo_impact": 0,
+            "brand_trust": 35,
+            "implementation_cost": 80,
+            "maintenance_cost": 70,
+            "time_to_revenue": 40,
+            "evidence_confidence": 15
+          },
+          "action": "RESEARCH",
+          "pros": "コードをほぼ書かずに需要を確かめられる唯一の直接販売テスト。売れれば最も強い証拠になる。月5,000円という低価格は試験として妥当。",
+          "cons": "PV・読者属性を一切提示できない媒体に払う企業がいる証拠はない。Phase 0 でスポンサー枠はREJECT済み。OSS開発元は予算が小さく、VPS事業者はA8で既に関係があり別途払う理由が薄い。売れた場合、表示コンポーネント・請求・契約書・インボイス対応・掲載の中立性管理が個人運営の時間を奪う。「売れなかった」ことも媒体の弱さを露呈するだけ。",
+          "conditions": "公開販売ではなく、運営者がUmamiの実数を見た上で、候補3〜5社（日本語対応を求めている海外OSS/商用OSS企業など）に個別にメールで打診するだけにする。価格は仮、枠は手書き、期間1か月、順位・評価は売らないと明記。インボイス・請求の手間を事前に確認。",
+          "kill_criteria": "打診した全社から有料の意向が一つもなければ終了し、次の判断はPVが増えてから。成約しても更新されなければ再販しない。"
+        }
+      ],
+      "decision": {
+        "action": "HOLD",
+        "decided_by": "lead",
+        "reason": "価格の根拠（流入・画面内閲覧・クリックの実数）がない。収益担当も、VPSの成約1件の報酬より安くなり得ると指摘。料金は公開せず個別見積もりにした",
+        "dissent_handling": "批判役の案（コードを書かない、数社への個別の打診）は、4週間以上の計測がそろってから運営者が判断する",
+        "effort_hours_estimate": null,
+        "success_metrics": [
+          "打診の件数と返答"
+        ],
+        "phase": null,
+        "status": "on_hold"
+      }
+    },
+    {
+      "id": "R7",
+      "title": "Revenue Dashboard（管理者専用）",
+      "business": "analytics",
+      "problem": "収益・コスト・利益を一か所で見られない",
+      "proposal": "管理者専用の画面",
+      "revenue_link": "収益の分析と改善",
+      "evaluations": [
+        {
+          "agent": "chief_editor",
+          "scores": {
+            "revenue_potential": 5,
+            "user_value": 0,
+            "seo_impact": 0,
+            "brand_trust": 30,
+            "implementation_cost": 30,
+            "maintenance_cost": 35,
+            "time_to_revenue": 5,
+            "evidence_confidence": 20
+          },
+          "action": "REJECT",
+          "pros": "運営者が数字を一箇所で見られる。",
+          "cons": "認証のない静的サイト・公開リポジトリでは「管理者専用」を実現できず、収益情報の漏えいリスクがある。データ取得手段もない。Phase 0 の判断から変化なし。読者価値ゼロ。",
+          "conditions": "公開サイトとは別の非公開環境で、各サービスの管理画面を直接見る運用で足りる。"
+        },
+        {
+          "agent": "seo_strategist",
+          "scores": {
+            "revenue_potential": 5,
+            "user_value": 5,
+            "seo_impact": 50,
+            "brand_trust": 40,
+            "implementation_cost": 30,
+            "maintenance_cost": 30,
+            "time_to_revenue": 5,
+            "evidence_confidence": 80
+          },
+          "action": "REJECT",
+          "pros": "なし（数値を集約したい動機は理解できる）。",
+          "cons": "静的サイトに認証がなく、公開リポジトリ・公開ページに収益情報が出る。データ取得手段もない。Phase 0の判断と同じ。",
+          "conditions": "必要ならサイト外（Umami・A8・Search Consoleの各管理画面、または非公開のスプレッドシート）で代替。"
+        },
+        {
+          "agent": "revenue_officer",
+          "scores": {
+            "revenue_potential": 5,
+            "user_value": 0,
+            "seo_impact": 0,
+            "brand_trust": 40,
+            "implementation_cost": 20,
+            "maintenance_cost": 20,
+            "time_to_revenue": 5,
+            "evidence_confidence": 80
+          },
+          "action": "REJECT",
+          "pros": "数値を一か所で見られれば、判断が速くなる。",
+          "cons": "サーバー・認証がない静的サイトに管理画面を作ると、公開されるおそれがある。データを取るAPIキーもない。Umami・A8の管理画面を直接見れば足りる。Phase 0 の REJECT の理由は変わっていない。",
+          "conditions": "作らない。必要なのは、運営者が月1回、Umami と A8 の管理画面で見る項目を決めたチェックリスト（R13の月次レビューに入れる）。"
+        },
+        {
+          "agent": "ux_designer",
+          "scores": {
+            "revenue_potential": 5,
+            "user_value": 0,
+            "seo_impact": 0,
+            "brand_trust": 30,
+            "implementation_cost": 20,
+            "maintenance_cost": 20,
+            "time_to_revenue": 5,
+            "evidence_confidence": 80
+          },
+          "action": "REJECT",
+          "pros": "収益の見える化自体は運営者に有用。",
+          "cons": "静的サイトに認証がなく、公開リポジトリに収益を置けない。データ取得手段もない。読者の体験には何も寄与しない。",
+          "conditions": "やるならサイト外（Umami・A8の管理画面、手元の表計算）で行う。"
+        },
+        {
+          "agent": "automation_architect",
+          "scores": {
+            "revenue_potential": 10,
+            "user_value": 5,
+            "seo_impact": 0,
+            "brand_trust": 50,
+            "implementation_cost": 25,
+            "maintenance_cost": 30,
+            "time_to_revenue": 10,
+            "evidence_confidence": 50
+          },
+          "action": "HOLD",
+          "pros": "収益とクリックを1画面で見られれば月次判断が速くなる。",
+          "cons": "サイトは静的・認証なしで、公開リポジトリに収益データを置けない。サイト内に作ると、ページを隠しても配信物とソースが公開される。Umami・A8 とも、自動取得の手段（APIキー、A8の成果データの取り込み）が現時点でない。データがないダッシュボードは空箱。",
+          "conditions": "サイトのリポジトリ・ドメインには作らない。作るなら dashboard_architecture の構成（別の非公開の場所＋Cloudflare Access）。前提は (1) Umami API キーの発行、(2) R12 の非公開CSVの運用が数か月続いていること。それまでは Umami の管理画面と A8 の管理画面を直接見る運用で足りる。"
+        },
+        {
+          "agent": "critical_investor",
+          "scores": {
+            "revenue_potential": 0,
+            "user_value": 0,
+            "seo_impact": 0,
+            "brand_trust": 10,
+            "implementation_cost": 15,
+            "maintenance_cost": 20,
+            "time_to_revenue": 0,
+            "evidence_confidence": 5
+          },
+          "action": "REJECT",
+          "pros": "なし（Phase 0 と同じ判断）。",
+          "cons": "静的サイトで認証がなく、公開リポジトリに収益を置けない。データ取得手段もない。作っても見る数字がない。Umami・A8の管理画面で足りる。",
+          "conditions": "再検討するのはサーバー側の仕組みを別に持つ必要が生じた場合のみ。",
+          "kill_criteria": "既にREJECT。再提案されたら、A8・Umamiの管理画面で足りない具体的な判断が何かを先に示させる。"
+        }
+      ],
+      "decision": {
+        "action": "HOLD",
+        "decided_by": "lead",
+        "reason": "多数はREJECT。静的サイト・公開リポジトリには認証付きの画面を置けず、取得できるデータもない。マスタープロンプトのPhase 2の項目なので、REJECTではなく、構成案（非公開リポジトリ＋Cloudflare Access）だけ残してPhase 2で再判断",
+        "dissent_handling": "今回は作らない。Phase 2で、A8の手入力（R12）が数か月続いてから判断する",
+        "effort_hours_estimate": null,
+        "success_metrics": [
+          "—"
+        ],
+        "phase": 2,
+        "status": "on_hold"
+      }
+    },
+    {
+      "id": "R8",
+      "title": "収益につながる記事（導入・VPS選び・移行・運用）",
+      "business": "content",
+      "problem": "優先テーマ（n8n・Immich・Uptime Kuma・AppFlowy・Directus・Ollama）の解説はあるが、導入・移行の記事が少ない",
+      "proposal": "既存の解説・ブログの改善を優先し、少数の記事を需要を確かめてから書く。実機で確かめていない手順を「検証済み」と書かない。AIの下書きは可、公開は人の承認",
+      "revenue_link": "検索流入と、文脈に合ったVPSの紹介",
+      "evaluations": [
+        {
+          "agent": "chief_editor",
+          "scores": {
+            "revenue_potential": 65,
+            "user_value": 90,
+            "seo_impact": 85,
+            "brand_trust": 70,
+            "implementation_cost": 40,
+            "maintenance_cost": 40,
+            "time_to_revenue": 45,
+            "evidence_confidence": 55
+          },
+          "action": "BUILD",
+          "pros": "読者が本当に困るのは「どれを選ぶか」の次の「どう動かし、どう移行し、どう守るか」。優先6テーマは掲載済み・手書き解説ありで、ガイドへの内部リンクが自然に張れる。良いガイドは検索流入とVPS紹介の両方に効き、読者の利益と収益が一致する本筋の施策。",
+          "cons": "実機検証の環境がないため、手順を書くと誤りや古さのリスクが高い。誤った導入手順はセキュリティ事故につながり、信頼を大きく損なう。手順の陳腐化で保守負担が大きい。",
+          "conditions": "「実機で検証済み」と書かない。手順は公式ドキュメントを一次出典として明示し、バージョンと確認日を記載。コマンドの丸写しより、判断のポイント（必要なもの、データの置き場所、バックアップ、更新方法、ライセンスの注意＝n8nのSUL・DirectusのMSCL）に重点。セキュリティ上の注意（公開ポート、認証、HTTPS）を必ず含める。VPS紹介は記事の価値の後ろに置き、冒頭にPR表示。1本ずつ品質を確認して公開し、量産しない。"
+        },
+        {
+          "agent": "seo_strategist",
+          "scores": {
+            "revenue_potential": 60,
+            "user_value": 80,
+            "seo_impact": 85,
+            "brand_trust": 70,
+            "implementation_cost": 40,
+            "maintenance_cost": 45,
+            "time_to_revenue": 30,
+            "evidence_confidence": 50
+          },
+          "action": "BUILD",
+          "pros": "SEOで最も長期的に効く候補。優先6テーマはすべて手書き解説済みで、ツール詳細⇔代替ページ⇔比較⇔導入/移行記事のクラスタを組める。『n8n 導入』『Immich 移行』『Uptime Kuma VPS』などはサーバー導入直前の検索意図でVPS枠と文脈が一致（検索量は仮説・未検証）。既存ブログ（VPSの選び方・バックアップ）をハブにできる。",
+          "cons": "実機検証環境がないため、手順を書くと誤り・陳腐化のリスク。検証なしの手順記事は薄い/不正確なページとして評価を下げうる。予約中10本の公開前にさらに増やすと品質管理が追いつかない。",
+          "conditions": "手順は公式ドキュメントへのリンクと要点・注意点の整理に留め、実行していない手順を『動作確認済み』と書かない。各記事から該当ツール詳細・代替・比較へ文脈リンク、ツール詳細からも記事へ逆リンク。ライセンス（n8nはSUL、Directusはソース公開型）を正確に。1テーマずつ公開し、Search Consoleで表示回数を確認してから次へ。"
+        },
+        {
+          "agent": "revenue_officer",
+          "scores": {
+            "revenue_potential": 70,
+            "user_value": 75,
+            "seo_impact": 75,
+            "brand_trust": 65,
+            "implementation_cost": 45,
+            "maintenance_cost": 55,
+            "time_to_revenue": 40,
+            "evidence_confidence": 55
+          },
+          "action": "BUILD",
+          "pros": "「n8n 導入」「Immich VPS」のような検索は、サーバーを借りる直前の人の検索なので、成約に一番近い。ブログは既にPR表示とVPS枠（showVps）の仕組みを持つ。ツール詳細より読者の動機が強く、長期で流入を積み上げられる。優先6テーマは掲載済みで、内部リンクも作りやすい。",
+          "cons": "作業側に実機の検証環境がなく、導入手順の正確さを保証できない。間違った手順は、信頼とSEOを両方下げる。検索で上位に出るまで時間がかかる。",
+          "conditions": "実機で確かめていない手順は「公式ドキュメントの手順」として出典を付け、「動作確認済み」と書かない（記事に確認日と、検証していないことを明記）。コマンドは公式ドキュメントから転記する。n8n・Directus はライセンス（ソース公開型）を冒頭で説明する。Ollama などGPUが要るテーマでは、VPS枠を出さない（Phase 1 の方針と同じ）。月2本程度で、既存の予約投稿10本と重ならない題材を選ぶ。"
+        },
+        {
+          "agent": "ux_designer",
+          "scores": {
+            "revenue_potential": 65,
+            "user_value": 80,
+            "seo_impact": 75,
+            "brand_trust": 70,
+            "implementation_cost": 35,
+            "maintenance_cost": 40,
+            "time_to_revenue": 40,
+            "evidence_confidence": 45
+          },
+          "action": "BUILD",
+          "pros": "読者が『導入を決めた後』に読む記事は、VPS枠が最も自然に役立つ場所。ブログ冒頭のPR表示の仕組みも既にある。検索流入の土台にもなる。",
+          "cons": "実機検証できないため、手順を断定すると誤りのリスク。記事数を増やすと保守が重い。アフィリエイトのための記事に見えると逆効果。",
+          "conditions": "検証していない手順は公式ドキュメントへの案内にとどめ、その旨を書く。VPS枠は本文の後に1回だけ、冒頭にPR表示。本文中のリンクを広告リンクだらけにしない。ライセンス（n8n・Directus がソース公開型）を正確に。"
+        },
+        {
+          "agent": "automation_architect",
+          "scores": {
+            "revenue_potential": 55,
+            "user_value": 70,
+            "seo_impact": 65,
+            "brand_trust": 55,
+            "implementation_cost": 45,
+            "maintenance_cost": 50,
+            "time_to_revenue": 40,
+            "evidence_confidence": 45
+          },
+          "action": "TEST",
+          "pros": "VPSが必要なツール（n8n・Immich・Uptime Kuma 等、すでに手書き解説あり）の導入ガイドは、検索意図とVPS枠が自然に一致する唯一の導線。ブログには showVps の仕組みがあり、追加の実装は小さい。",
+          "cons": "実機検証の環境がなく、手順の正確さを保証できない（誤った手順は信頼を損なう）。Ollama は GPU 必須でVPS枠の対象外。効果の判定には placement を記事ごとに分けた計測が要る。",
+          "conditions": "実機検証なしの手順は「公式ドキュメントの要約と出典リンク」に限定し、コマンドは公式から引用して出典を併記。ブログ枠の placement を blog に統一したうえで、affiliate_click に path（既にある）で記事を区別。2〜3本で試し、記事経由のクリックを他の枠と比較してから本数を増やす。"
+        },
+        {
+          "agent": "critical_investor",
+          "scores": {
+            "revenue_potential": 50,
+            "user_value": 75,
+            "seo_impact": 75,
+            "brand_trust": 65,
+            "implementation_cost": 40,
+            "maintenance_cost": 40,
+            "time_to_revenue": 35,
+            "evidence_confidence": 45
+          },
+          "action": "BUILD",
+          "pros": "OSSALTの集客の本体はSEOで、VPSアフィリエイトと最も直結するのは「導入・移行・VPS選び」の検索意図。優先6テーマは掲載・手書き解説済みで内部リンク先が揃っている。既存の資産を伸ばす施策で、新しい仕組みを要しない。",
+          "cons": "実機検証の環境がないため、手順記事は誤りが出やすく、古くなる（バージョン更新）。誤った手順は信頼を大きく損なう。AI的な量産記事は検索で評価されないリスク。記事1本あたりの時間コストが重く、効果が出るまで数か月かかる。既に10本予約投稿があり、効果測定前に積み増すのは楽観的。",
+          "conditions": "本数ではなく選択と集中：検索需要が確認できる（Search Consoleで表示回数がある）テーマから1〜2本ずつ。手順は公式ドキュメントへのリンクを主にし、未検証の手順を断定しない。ライセンス（n8nのSUL、DirectusのMSCL）を正確に。予約済み10本の効果を見てから追加。",
+          "kill_criteria": "運営者がSearch Consoleで公開後の表示回数・クリックを確認し、一定期間（例：3か月）で表示がほぼないテーマは追加しない。記事経由のaffiliate_click（placement付き）が出ないなら収益記事としては打ち切り、SEO記事として扱う。"
+        }
+      ],
+      "decision": {
+        "action": "BUILD",
+        "decided_by": "lead",
+        "reason": "5役割がBUILD・自動化はTEST。Phase 1の範囲外のため、Phase 2で実施",
+        "dissent_handling": "",
+        "effort_hours_estimate": null,
+        "success_metrics": [
+          "記事ごとの検索流入とaffiliate_click"
+        ],
+        "phase": 2,
+        "status": "approved"
+      }
+    },
+    {
+      "id": "R9",
+      "title": "OSSALT Intelligence の需要検証",
+      "business": "intelligence",
+      "problem": "将来の有料事業の需要が分からない",
+      "proposal": "サンプルレポートと、希望者の登録方法の設計だけ（有料SaaSは作らない）",
+      "revenue_link": "将来のB2B収益",
+      "evaluations": [
+        {
+          "agent": "chief_editor",
+          "scores": {
+            "revenue_potential": 35,
+            "user_value": 45,
+            "seo_impact": 15,
+            "brand_trust": 55,
+            "implementation_cost": 55,
+            "maintenance_cost": 50,
+            "time_to_revenue": 15,
+            "evidence_confidence": 25
+          },
+          "action": "RESEARCH",
+          "pros": "手書き解説と比較の蓄積は、法人向けの選定レポートとして価値を持ちうる。サンプルを出すこと自体が読者向けコンテンツにもなる。",
+          "cons": "登録方法はサーバー・DBなしの構成では外部フォームが必要で、Cookie不使用の方針と衝突しやすい。需要の根拠は今のところない。有料レポートを始めると無料ページの質を落とす誘惑が生まれる。",
+          "conditions": "無料ページの情報を削って有料に回さない。登録はメール問い合わせ程度にとどめ、外部の追跡を持ち込まない。サンプルは無料公開記事として成立する品質にする。"
+        },
+        {
+          "agent": "seo_strategist",
+          "scores": {
+            "revenue_potential": 25,
+            "user_value": 35,
+            "seo_impact": 40,
+            "brand_trust": 55,
+            "implementation_cost": 55,
+            "maintenance_cost": 50,
+            "time_to_revenue": 10,
+            "evidence_confidence": 20
+          },
+          "action": "RESEARCH",
+          "pros": "サイトの比較データ資産を活かせる。サンプルレポートは被リンク獲得の素材になりうる（仮説）。",
+          "cons": "需要の根拠がゼロ。登録フォームはサーバーなしだと外部サービス依存＝Cookie/個人情報の方針と衝突しやすい。主事業の記事品質から工数を奪う。",
+          "conditions": "まずは既存データから作れる公開レポート1本（例：日本語UI対応状況の集計）を通常記事として出し、反応（被リンク・問い合わせ）を見る。登録の仕組みはメール問い合わせで代用。"
+        },
+        {
+          "agent": "revenue_officer",
+          "scores": {
+            "revenue_potential": 30,
+            "user_value": 40,
+            "seo_impact": 10,
+            "brand_trust": 55,
+            "implementation_cost": 55,
+            "maintenance_cost": 55,
+            "time_to_revenue": 15,
+            "evidence_confidence": 20
+          },
+          "action": "RESEARCH",
+          "pros": "毎日更新のデータ（389件・GitHub上の指標）は独自の資産。法人向けのレポートは、広告より単価が高くなり得る。",
+          "cons": "サーバー・DBがないので、希望者の登録を受けるにはフォームの外部サービスが必要で、Cookie・個人情報の方針と衝突しやすい。需要の根拠が全くなく、売上は早くても半年以上先。",
+          "conditions": "まず無料のサンプルレポートを1本、ブログとして公開し、問い合わせはメールだけにする（登録フォームを作らない）。一定期間（例：3か月）に問い合わせが来るかどうかで、続けるか決める。有料の仕組みは作らない。"
+        },
+        {
+          "agent": "ux_designer",
+          "scores": {
+            "revenue_potential": 30,
+            "user_value": 40,
+            "seo_impact": 20,
+            "brand_trust": 50,
+            "implementation_cost": 55,
+            "maintenance_cost": 55,
+            "time_to_revenue": 15,
+            "evidence_confidence": 20
+          },
+          "action": "RESEARCH",
+          "pros": "広告に頼らない収益の可能性を探れる。",
+          "cons": "サーバー・DBがなく登録の受け口が作りにくい。メール収集は個人情報の扱いが増える。需要の根拠がない。",
+          "conditions": "まず既存のお問い合わせ経由で希望を受けるだけにし、フォームやリストを新設しない。サンプルは無料公開ページとして価値があるものに。"
+        },
+        {
+          "agent": "automation_architect",
+          "scores": {
+            "revenue_potential": 30,
+            "user_value": 35,
+            "seo_impact": 10,
+            "brand_trust": 50,
+            "implementation_cost": 55,
+            "maintenance_cost": 55,
+            "time_to_revenue": 15,
+            "evidence_confidence": 20
+          },
+          "action": "RESEARCH",
+          "pros": "データは毎日 GitHub Actions で集めており、月次レポート（monthly-report.yml）の仕組みもある。サンプルレポートはその延長で作れる。",
+          "cons": "希望者の登録はメールアドレスの収集になり、サーバー・DBがない静的サイトでは外部フォーム（第三者サービス）が必要。個人情報の扱いとプライバシーポリシーの改訂が発生する。需要の根拠がない。",
+          "conditions": "まずは登録フォームを作らず、サンプルレポートのページに「関心がある」ボタン（Umami イベント intelligence_interest、個人情報なし）だけを置いて関心を測る。メールを集めるのは、関心イベントが一定数を超えてから、外部フォームとポリシー改訂を伴って判断。"
+        },
+        {
+          "agent": "critical_investor",
+          "scores": {
+            "revenue_potential": 20,
+            "user_value": 30,
+            "seo_impact": 10,
+            "brand_trust": 45,
+            "implementation_cost": 60,
+            "maintenance_cost": 80,
+            "time_to_revenue": 5,
+            "evidence_confidence": 10
+          },
+          "action": "RESEARCH",
+          "pros": "大規模開発なしで需要を測る設計（サンプル＋希望者登録）であれば、損失は限定的。法人向けの継続課金は当たれば利益率が高い。",
+          "cons": "差別化が弱い（intelligence_view参照）。登録方法を作るとフォーム＝個人情報の取得になり、Cookieなし・サーバーなしの方針と衝突し、プライバシーポリシー改定が必要。サンプルレポートを作る時間そのものが個人運営には重い。登録があっても支払い意思の証拠にはならない。",
+          "conditions": "フォームを作らず、既存の問い合わせメール宛に「関心があれば連絡を」と書く1ページだけ。サンプルは既存の公開データ（ライセンス・更新状況）から機械的に作れる範囲に限る。安全性・法的適合性を保証する表現を一切使わない。価格を提示して反応を見る（無料登録数で判断しない）。",
+          "kill_criteria": "一定期間で価格提示に対する具体的な問い合わせ（社名付き）がなければ終了。登録数・閲覧数だけでは継続理由にしない。"
+        }
+      ],
+      "decision": {
+        "action": "RESEARCH",
+        "decided_by": "lead",
+        "reason": "6役割すべてがRESEARCH。設計だけを docs/revenue/INTELLIGENCE_VALIDATION.md に書いた",
+        "dissent_handling": "",
+        "effort_hours_estimate": null,
+        "success_metrics": [
+          "希望の連絡の件数"
+        ],
+        "phase": null,
+        "status": "proposed"
+      }
+    },
+    {
+      "id": "R10",
+      "title": "VPS以外のアフィリエイト（バックアップ・ドメイン等）",
+      "business": "affiliate",
+      "problem": "VPS以外の提携がない",
+      "proposal": "運営者がA8で提携先を探し、提携できたものだけを載せる",
+      "revenue_link": "収益源の分散",
+      "evaluations": [
+        {
+          "agent": "chief_editor",
+          "scores": {
+            "revenue_potential": 45,
+            "user_value": 50,
+            "seo_impact": 10,
+            "brand_trust": 50,
+            "implementation_cost": 55,
+            "maintenance_cost": 55,
+            "time_to_revenue": 25,
+            "evidence_confidence": 30
+          },
+          "action": "RESEARCH",
+          "pros": "セルフホストで最も事故が多いのはバックアップ。既存のブログ「バックアップの基本」と結びつけば、読者の実利に直結する紹介になりうる。",
+          "cons": "提携が未契約で、すぐには動けない。リンク先を増やすと「何でも売るサイト」に見え、ディレクトリの中立性が薄まる。",
+          "conditions": "まず記事中で必要と判断した分野（オブジェクトストレージ等）に限り、提携の有無と無関係に選定基準を先に公開する。提携のない良い選択肢も併記。広告枠の増設ではなく記事の文脈内に限定し、PR表示を徹底。"
+        },
+        {
+          "agent": "seo_strategist",
+          "scores": {
+            "revenue_potential": 35,
+            "user_value": 45,
+            "seo_impact": 45,
+            "brand_trust": 55,
+            "implementation_cost": 60,
+            "maintenance_cost": 55,
+            "time_to_revenue": 30,
+            "evidence_confidence": 30
+          },
+          "action": "RESEARCH",
+          "pros": "バックアップ・ストレージは『バックアップの基本』記事やImmich移行と文脈が合い、記事クラスタの自然な出口になる。",
+          "cons": "提携未契約。リンク先を増やすと広告比率が上がり、薄い紹介ページ化のリスク。A8計測画像が増えるとリクエスト増。",
+          "conditions": "既存記事の文脈で自然に必要とされる商材に限定（独立した『おすすめ○選』ページは作らない）。rel=sponsored・PR表示はR3の基準を流用。提携可否をA8で調査してから判断。"
+        },
+        {
+          "agent": "revenue_officer",
+          "scores": {
+            "revenue_potential": 50,
+            "user_value": 45,
+            "seo_impact": 10,
+            "brand_trust": 55,
+            "implementation_cost": 60,
+            "maintenance_cost": 55,
+            "time_to_revenue": 30,
+            "evidence_confidence": 30
+          },
+          "action": "RESEARCH",
+          "pros": "セルフホストの読者は、ドメイン・バックアップ先（オブジェクトストレージ）も必ず使う。VPSに頼る一本足の収益を分散できる。バックアップの基本の記事が既にある。",
+          "cons": "提携は0件で、審査待ちの期間がある。単価が低い商材（ドメインなど）が多く、枠を増やすと、ページが広告だらけに見える。",
+          "conditions": "まずA8などで、国内のドメイン・オブジェクトストレージ・バックアップ関連の案件があるか、報酬の条件を運営者が調べる（金額は公開リポジトリに書かない）。提携が取れたら、関係する記事（バックアップ、Immich）だけに出す。ツール詳細の枠は増やさない。並び順は料金など読者側の基準で決める。"
+        },
+        {
+          "agent": "ux_designer",
+          "scores": {
+            "revenue_potential": 40,
+            "user_value": 50,
+            "seo_impact": 30,
+            "brand_trust": 50,
+            "implementation_cost": 50,
+            "maintenance_cost": 45,
+            "time_to_revenue": 20,
+            "evidence_confidence": 25
+          },
+          "action": "RESEARCH",
+          "pros": "バックアップ・ドメインはセルフホストの読者に本当に必要で、文脈が合えば自然。",
+          "cons": "提携がない。枠を増やすとページが広告だらけに見える。",
+          "conditions": "提携が取れて、記事の文脈（例：バックアップの基本）に合う場合のみ。ツール詳細に新しい枠は足さない。並び順の基準を先に決めて公開。"
+        },
+        {
+          "agent": "automation_architect",
+          "scores": {
+            "revenue_potential": 45,
+            "user_value": 45,
+            "seo_impact": 15,
+            "brand_trust": 50,
+            "implementation_cost": 60,
+            "maintenance_cost": 55,
+            "time_to_revenue": 30,
+            "evidence_confidence": 30
+          },
+          "action": "RESEARCH",
+          "pros": "バックアップ・ドメインはセルフホストの文脈で自然に必要になる。既存の affiliates.ts の構造（並び順の規則、rel、計測画像）を流用できる。",
+          "cons": "提携が未契約で、審査待ちの間は何も出せない。枠が増えるとページが広告で重くなり、計測の分母（どのページに何の枠があるか）も複雑になる。",
+          "conditions": "先にA8等で提携可否だけを調べる（コード変更なし）。実装するときは affiliates.ts にカテゴリ（vps/backup/domain）を足し、表示条件をツールの性質（サーバー型・ストレージ系）から機械的に決める。affiliate_click に kind を追加。並びは報酬順にしない規則をカテゴリごとにも適用。"
+        },
+        {
+          "agent": "critical_investor",
+          "scores": {
+            "revenue_potential": 25,
+            "user_value": 35,
+            "seo_impact": 10,
+            "brand_trust": 45,
+            "implementation_cost": 70,
+            "maintenance_cost": 60,
+            "time_to_revenue": 25,
+            "evidence_confidence": 15
+          },
+          "action": "RESEARCH",
+          "pros": "バックアップ・ドメインはセルフホスト読者の文脈に合い、ブログ「バックアップの基本」など受け皿もある。提携申請はコードを書かずにできる。",
+          "cons": "提携ゼロで、どの案件がA8等にあるか・承認されるかも未確認。VPSでさえクリック実数が見えていない段階で導線を増やすと、広告だらけの印象とPR表示の負担が増える。外部ストレージ等は日本語の検索需要との一致が未確認。",
+          "conditions": "まず提携可能な案件と条件の調査だけ（申請は無料）。表示は既存記事内のごく少数に限り、R3のPR表示基準に従う。並び順のルール（報酬額で並べない）を適用。",
+          "kill_criteria": "提携できなければ終了。表示後、運営者がA8等で発生を確認し、一定期間で成果がなければリンクを外す。"
+        }
+      ],
+      "decision": {
+        "action": "RESEARCH",
+        "decided_by": "lead",
+        "reason": "6役割すべてがRESEARCH。提携していないサービスを提携済みのように見せない",
+        "dissent_handling": "",
+        "effort_hours_estimate": null,
+        "success_metrics": [
+          "提携の可否"
+        ],
+        "phase": null,
+        "status": "proposed"
+      }
+    },
+    {
+      "id": "R11",
+      "title": "AdSense",
+      "business": "platform",
+      "problem": "広告ネットワークの収益がない",
+      "proposal": "AdSenseを申請する",
+      "revenue_link": "表示回数に応じた収益",
+      "evaluations": [
+        {
+          "agent": "chief_editor",
+          "scores": {
+            "revenue_potential": 30,
+            "user_value": 0,
+            "seo_impact": 0,
+            "brand_trust": 20,
+            "implementation_cost": 70,
+            "maintenance_cost": 60,
+            "time_to_revenue": 35,
+            "evidence_confidence": 40
+          },
+          "action": "HOLD",
+          "pros": "契約交渉なしで収益化できる。",
+          "cons": "AdSenseは通常Cookieを使い、同意バナーが必要になる可能性が高く、「Cookieを使わない」というサイトの約束を壊す。広告内容を選べず、比較対象のSaaSの広告が代替ページに出て中立性を損なう。表示速度と可読性も落ちる。",
+          "conditions": "Cookie不使用の方針を変える判断を明示的に行い、読者に告知するまで導入しない。導入時はブログ以外（比較表・代替一覧）に置かない、競合SaaS広告のブロックを設定。12月のRESEARCHは方針との両立可否の調査に限定。"
+        },
+        {
+          "agent": "seo_strategist",
+          "scores": {
+            "revenue_potential": 20,
+            "user_value": 5,
+            "seo_impact": 25,
+            "brand_trust": 35,
+            "implementation_cost": 60,
+            "maintenance_cost": 60,
+            "time_to_revenue": 30,
+            "evidence_confidence": 40
+          },
+          "action": "HOLD",
+          "pros": "運用の手間が少ない受動収益。",
+          "cons": "AdSenseはCookieを使うため『Cookie不使用・バナーなし』の方針と正面衝突（同意管理が必要）。広告JSはLCP/CLS/INPを悪化させやすい。流入不明のままでは収益も期待薄。ディレクトリ型で機械生成ページが多いサイトは審査で『価値の低いコンテンツ』判定のリスク。",
+          "conditions": "12月のRESEARCH予定は維持するが、導入は検索流入実績の確認、Cookie方針の改訂判断、CWV予算（広告枠は高さ予約・本文外）を満たす場合のみ。noindexの比較ページには出さない。"
+        },
+        {
+          "agent": "revenue_officer",
+          "scores": {
+            "revenue_potential": 25,
+            "user_value": 0,
+            "seo_impact": 0,
+            "brand_trust": 30,
+            "implementation_cost": 70,
+            "maintenance_cost": 60,
+            "time_to_revenue": 35,
+            "evidence_confidence": 40
+          },
+          "action": "RESEARCH",
+          "pros": "審査に通れば、営業なしで自動的に売上が入る。",
+          "cons": "AdSense は Cookie を使うので、「Cookieを使わない・Cookieバナーなし」の方針と衝突する（EEA向けの同意管理も必要）。技術系の日本語ディレクトリは、流入が少ない間は収益が小さいと見込まれる。表示速度と見た目の信頼を下げ、アフィリエイトの成約を食う可能性がある。",
+          "conditions": "Phase 0 の予定どおり12月に再検討する。その時に、(1) Cookie方針を変えるか、(2) 実測の流入でVPSアフィリエイトより期待値が大きいか、を判断する。Cookieを使わない広告（制限付き広告）の条件も調べる。それまで申請しない。"
+        },
+        {
+          "agent": "ux_designer",
+          "scores": {
+            "revenue_potential": 35,
+            "user_value": 5,
+            "seo_impact": 35,
+            "brand_trust": 30,
+            "implementation_cost": 70,
+            "maintenance_cost": 60,
+            "time_to_revenue": 40,
+            "evidence_confidence": 40
+          },
+          "action": "HOLD",
+          "pros": "運用の手間が少なく、契約営業が不要。",
+          "cons": "Cookie を使わない方針と真っ向から衝突（同意バナーが必要になる）。モバイルで表示速度・レイアウト移動が悪化しやすい。比較サイトでの無関係な広告は信頼を下げる。",
+          "conditions": "検討するならCookie方針の見直しを運営者が明示的に決めてから。ツール詳細・比較表の間には入れない。予約領域を確保しCLSを出さない。"
+        },
+        {
+          "agent": "automation_architect",
+          "scores": {
+            "revenue_potential": 25,
+            "user_value": 0,
+            "seo_impact": 0,
+            "brand_trust": 20,
+            "implementation_cost": 70,
+            "maintenance_cost": 60,
+            "time_to_revenue": 30,
+            "evidence_confidence": 40
+          },
+          "action": "HOLD",
+          "pros": "導入はタグ1つで、静的サイトでも動く。",
+          "cons": "AdSense は Cookie 等を使う（パーソナライズ広告には同意管理が必要）ため、「Cookieなし・バナーなし」の方針と正面から衝突する。ページ速度（Core Web Vitals）と中立性の印象も悪化する。流入の実数が不明で、収益規模の見込みも立たない。",
+          "conditions": "Phase 0 の通り12月のRESEARCHで判断。採用するなら、プライバシーポリシーとCookie方針の改訂、同意管理（CMP）の導入、表示ページの限定（ツール詳細は除外）を先に決める。方針を変えないなら REJECT が筋。"
+        },
+        {
+          "agent": "critical_investor",
+          "scores": {
+            "revenue_potential": 20,
+            "user_value": 0,
+            "seo_impact": 0,
+            "brand_trust": 25,
+            "implementation_cost": 70,
+            "maintenance_cost": 70,
+            "time_to_revenue": 25,
+            "evidence_confidence": 20
+          },
+          "action": "RESEARCH",
+          "pros": "審査通過後は手間が少なく、トラフィックに比例する収益源。",
+          "cons": "AdSenseは第三者Cookieを使い、サイトの「Cookieなし・バナーなし」方針と正面衝突する（同意管理が必要になる可能性）。少ないPVでは収益が小さく、表示速度・見た目・信頼を確実に削る。ディレクトリ型の自動生成ページが多いと審査で不利な可能性。",
+          "conditions": "Phase 0 の通り12月にRESEARCH。判断前に、Cookie方針の変更コスト（プライバシーポリシー、同意の扱い）と、運営者が見たPV実数での期待値を比較する。導入するなら手書き記事に限定するなど範囲を絞る。",
+          "kill_criteria": "方針変更コストがPV実数から見込める収益に見合わないなら見送り。導入後に直帰率・滞在が悪化したら撤去。"
+        }
+      ],
+      "decision": {
+        "action": "HOLD",
+        "decided_by": "lead",
+        "reason": "Cookieを使わない方針と衝突し、流入も少ない。12月に運営者が実数を見て再判断（Growth OS C12 と同じ）",
+        "dissent_handling": "",
+        "effort_hours_estimate": null,
+        "success_metrics": [
+          "—"
+        ],
+        "phase": null,
+        "status": "on_hold"
+      }
+    },
+    {
+      "id": "R12",
+      "title": "A8の成果の手入力による記録",
+      "business": "analytics",
+      "problem": "承認済みの報酬をこのシステムから取得できない",
+      "proposal": "運営者が月に1回、A8の管理画面の数値を非公開の表に記録する。公開リポジトリには置かない。月次レビューの形式では、収益の指標は「非公開」とだけ書く",
+      "revenue_link": "承認済みの収益という最重要指標を、実数で追えるようにする",
+      "evaluations": [
+        {
+          "agent": "chief_editor",
+          "scores": {
+            "revenue_potential": 15,
+            "user_value": 0,
+            "seo_impact": 0,
+            "brand_trust": 45,
+            "implementation_cost": 75,
+            "maintenance_cost": 60,
+            "time_to_revenue": 10,
+            "evidence_confidence": 50
+          },
+          "action": "HOLD",
+          "pros": "どの記事・枠が成果に結びつくかを運営者が把握でき、読者に役立たない枠を削る判断材料になる。",
+          "cons": "公開リポジトリには置けず、本サイトのコードの範囲外。仕組み化するほどのデータ量は現時点で不明。",
+          "conditions": "リポジトリ外（運営者の手元の表計算等）で行う。サイトのコードに収益の金額を入れない。"
+        },
+        {
+          "agent": "seo_strategist",
+          "scores": {
+            "revenue_potential": 15,
+            "user_value": 5,
+            "seo_impact": 50,
+            "brand_trust": 50,
+            "implementation_cost": 80,
+            "maintenance_cost": 60,
+            "time_to_revenue": 10,
+            "evidence_confidence": 60
+          },
+          "action": "IMPROVE",
+          "pros": "placement別のクリックと成果を突き合わせる唯一の手段。どの検索意図のページが収益に結びつくかの判断材料になる。",
+          "cons": "公開リポジトリに置けないため、サイトのコードとしては作れない。SEOへの直接効果なし。",
+          "conditions": "リポジトリ外（非公開スプレッドシート等）で月1回の手入力。コード化しない。"
+        },
+        {
+          "agent": "revenue_officer",
+          "scores": {
+            "revenue_potential": 20,
+            "user_value": 0,
+            "seo_impact": 0,
+            "brand_trust": 50,
+            "implementation_cost": 85,
+            "maintenance_cost": 70,
+            "time_to_revenue": 30,
+            "evidence_confidence": 70
+          },
+          "action": "IMPROVE",
+          "pros": "どの施策が実際の成果につながったかを、運営者が振り返れる。売上の把握は、価格設計にも必要。",
+          "cons": "公開リポジトリには置けない。A8の管理画面に既にある情報と重なる。",
+          "conditions": "リポジトリに入れず、運営者の手元（非公開のスプレッドシート等）で、月1回だけ記録する。項目は月・事業者・発生/確定件数・確定金額・主なplacement（Umamiと突き合わせ）に限る。コードは書かない。"
+        },
+        {
+          "agent": "ux_designer",
+          "scores": {
+            "revenue_potential": 10,
+            "user_value": 0,
+            "seo_impact": 0,
+            "brand_trust": 50,
+            "implementation_cost": 75,
+            "maintenance_cost": 55,
+            "time_to_revenue": 10,
+            "evidence_confidence": 60
+          },
+          "action": "IMPROVE",
+          "pros": "どの枠が成果につながったかを運営者が振り返れる。",
+          "cons": "公開リポジトリに置けない。サイトのUXには関係しない。",
+          "conditions": "リポジトリ外（運営者の手元）で管理。サイト側のコードは触らない。"
+        },
+        {
+          "agent": "automation_architect",
+          "scores": {
+            "revenue_potential": 15,
+            "user_value": 0,
+            "seo_impact": 0,
+            "brand_trust": 60,
+            "implementation_cost": 70,
+            "maintenance_cost": 55,
+            "time_to_revenue": 20,
+            "evidence_confidence": 60
+          },
+          "action": "TEST",
+          "pros": "A8 の成果は Umami では取れず、収益の唯一の正解データ。月1回の手入力でも、placement 別のクリックと成果を突き合わせる基礎になる。CSVの形式を今決めておけば、将来のダッシュボード（R7）の入力になる。",
+          "cons": "手入力は続かない・誤記のリスク。公開リポジトリに置けないため、置き場所を別に用意する必要がある。誤ってコミットする事故の恐れ。",
+          "conditions": "置き場所はサイトのリポジトリの外（非公開リポジトリか運営者のローカル）。形式は 月,事業者,発生件数,確定件数,報酬額 程度に限定し、個人を特定する情報は入れない。サイトのリポジトリの .gitignore に *.revenue.csv 等を追加し、council.ts の containsSensitiveNumbers に相当する検査を content-check に入れてコミット事故を止める。"
+        },
+        {
+          "agent": "critical_investor",
+          "scores": {
+            "revenue_potential": 5,
+            "user_value": 0,
+            "seo_impact": 0,
+            "brand_trust": 10,
+            "implementation_cost": 75,
+            "maintenance_cost": 55,
+            "time_to_revenue": 0,
+            "evidence_confidence": 40
+          },
+          "action": "IMPROVE",
+          "pros": "どの施策が効いたかを判断する唯一の収益データになる。月次レビューの前提。",
+          "cons": "公開リポジトリに置けないので、サイト側に作る意味はない。A8の管理画面とスプレッドシートで足りる。ツール化は過剰。",
+          "conditions": "コード化しない。運営者が非公開のスプレッドシート（月・案件・発生・確定）を月1回付けるだけ。Council側は「件数の増減」など非公開値を参照しない形でのみ扱う。",
+          "kill_criteria": "月次レビューで参照されなくなったら止める。記録に15分以上かかるなら項目を減らす。"
+        }
+      ],
+      "decision": {
+        "action": "TEST",
+        "decided_by": "lead",
+        "reason": "IMPROVE・TEST・HOLDに分かれた。コードを書かない運用の手順と、月次レビューの形式（数値を持てない）だけを用意した",
+        "dissent_handling": "自動化担当の「リポジトリの外で作る」意見に沿い、CSVの取り込みは作らない",
+        "effort_hours_estimate": 1,
+        "success_metrics": [
+          "記録が3か月続くか"
+        ],
+        "phase": 1,
+        "status": "done"
+      }
+    },
+    {
+      "id": "R13",
+      "title": "Revenue Council の記録形式",
+      "business": "platform",
+      "problem": "Growth OS の記録形式（7項目・5行動）が収益化の会議に合わない",
+      "proposal": "8項目の採点、BUILD/TEST/RESEARCH/IMPROVE/HOLD/REJECT、反対意見の扱い、月次レビューの形式。6役割と公開できない内容の検査は既存のものを使う",
+      "revenue_link": "会議の結果を、将来のダッシュボードや月次の会議が読める形で残す",
+      "evaluations": [
+        {
+          "agent": "chief_editor",
+          "scores": {
+            "revenue_potential": 15,
+            "user_value": 20,
+            "seo_impact": 0,
+            "brand_trust": 60,
+            "implementation_cost": 80,
+            "maintenance_cost": 65,
+            "time_to_revenue": 10,
+            "evidence_confidence": 60
+          },
+          "action": "IMPROVE",
+          "pros": "既存の docs/council/*.json と検査の延長で軽い。収益施策ごとに「読者価値」「信頼」を必ず採点させる仕組みは、編集の独立性を守る歯止めになる。",
+          "cons": "記録のための記録になりやすい。月次レビューは個人運営では負担。公開リポジトリなので金額を書けず、判断の根拠が薄くなる。",
+          "conditions": "user_value と brand_trust が低い案は総合点に関わらず BUILD にしない、というルールを入れる。金額は書かない。レビューは四半期でもよい。"
+        },
+        {
+          "agent": "seo_strategist",
+          "scores": {
+            "revenue_potential": 10,
+            "user_value": 10,
+            "seo_impact": 50,
+            "brand_trust": 60,
+            "implementation_cost": 85,
+            "maintenance_cost": 75,
+            "time_to_revenue": 10,
+            "evidence_confidence": 70
+          },
+          "action": "IMPROVE",
+          "pros": "既存のdocs/council/*.jsonと検査を流用でき、仮説と実績を分けて記録する規律になる。",
+          "cons": "記録自体は収益もSEOも生まない。月次レビューが形骸化しやすい。",
+          "conditions": "金額は公開リポジトリに書かない。月次レビューには必ずSearch Consoleの表示回数・クリック（取得できる範囲）を入力欄として設け、SEO悪影響のチェック項目（rel・PR表示・noindex・CWV）を固定で含める。"
+        },
+        {
+          "agent": "revenue_officer",
+          "scores": {
+            "revenue_potential": 20,
+            "user_value": 10,
+            "seo_impact": 0,
+            "brand_trust": 60,
+            "implementation_cost": 85,
+            "maintenance_cost": 75,
+            "time_to_revenue": 20,
+            "evidence_confidence": 70
+          },
+          "action": "IMPROVE",
+          "pros": "既存の docs/council/*.json と検査（src/lib/council.ts）を広げれば、軽く作れる。「やらない理由」を記録すれば、同じ議論の繰り返しを防げる。",
+          "cons": "記録そのものは売上を生まない。形式が重くなると、決定が遅くなる。",
+          "conditions": "Phase 1 の形式を流用し、新しい仕組みは作らない。月次レビューでは、毎月「何を作ったか」と「どの指標（placement別クリック、A8の確定件数）を見たか」を一行で書く。金額は書かない。HOLD・RESEARCH の項目には、再検討の日付か条件を必ず付ける。"
+        },
+        {
+          "agent": "ux_designer",
+          "scores": {
+            "revenue_potential": 10,
+            "user_value": 10,
+            "seo_impact": 0,
+            "brand_trust": 55,
+            "implementation_cost": 75,
+            "maintenance_cost": 60,
+            "time_to_revenue": 5,
+            "evidence_confidence": 60
+          },
+          "action": "IMPROVE",
+          "pros": "判断の記録が残り、勢いで広告を増やすことを防げる。docs/council と src/lib/council.ts の既存の仕組みを流用できる。",
+          "cons": "記録作業そのものが目的化しやすい。個人運営には重い。",
+          "conditions": "既存形式を拡張するだけにする。月次レビューで『広告表記の点検』を必ず1項目入れる。金額は書かない。"
+        },
+        {
+          "agent": "automation_architect",
+          "scores": {
+            "revenue_potential": 15,
+            "user_value": 10,
+            "seo_impact": 0,
+            "brand_trust": 55,
+            "implementation_cost": 70,
+            "maintenance_cost": 70,
+            "time_to_revenue": 15,
+            "evidence_confidence": 70
+          },
+          "action": "IMPROVE",
+          "pros": "既に src/lib/council.ts に記録の型・検査・集計（確からしさの重みづけ、多数決、批判役の反対）があり、仕組みを新設せずに拡張できる。月次レビューは monthly-report.yml と同じ cron で Issue を立てる程度で自動化できる。",
+          "cons": "現行の council.ts は7項目（seo_opportunity・differentiation・confidence）と行動5種（BUILD/WRITE/IMPROVE/RESEARCH/REJECT）で、今回の8項目（brand_trust・time_to_revenue・evidence_confidence）と TEST/HOLD を含む行動と一致しない。別形式を作ると2系統になり集計が壊れる。",
+          "conditions": "新形式は別ファイルにせず council.ts を版付き（schema_version）で拡張し、旧記録は変換関数で読めるようにする。TEST と HOLD を ACTIONS と TIE_ORDER に追加。収益の実数は記録に入れない（既存の containsSensitiveNumbers を流用）。月次レビューは「判断の status が in_progress のまま30日以上」などを機械的に洗い出す Issue 作成に留める。"
+        },
+        {
+          "agent": "critical_investor",
+          "scores": {
+            "revenue_potential": 5,
+            "user_value": 0,
+            "seo_impact": 0,
+            "brand_trust": 30,
+            "implementation_cost": 80,
+            "maintenance_cost": 65,
+            "time_to_revenue": 0,
+            "evidence_confidence": 50
+          },
+          "action": "IMPROVE",
+          "pros": "撤退基準を事前に書く習慣は過剰開発の防止に有効。既に docs/council/*.json と検査がある。",
+          "cons": "8項目の採点は主観の数字で、精緻に見えて根拠がない（evidence_confidence が低いのに点数だけ独り歩きする危険）。記録作業自体が個人運営の時間を食う。仕組みの拡張は売上を生まない。",
+          "conditions": "既存形式を流用し、拡張しない。月次レビューは「各施策の撤退基準を満たしたか」だけを見る30分以内の手順にする。収益の金額は公開リポジトリに書かない方針を維持。",
+          "kill_criteria": "レビューが2か月続けて実施されない、または判断が変わらないなら簡略化する。"
+        }
+      ],
+      "decision": {
+        "action": "IMPROVE",
+        "decided_by": "lead",
+        "reason": "多数がIMPROVE。src/lib/revenue-council.ts を、council.ts の役割と検査を使って追加した",
+        "dissent_handling": "",
+        "effort_hours_estimate": 2,
+        "success_metrics": [
+          "—"
+        ],
+        "phase": 1,
+        "status": "done"
+      }
+    }
+  ]
+}
