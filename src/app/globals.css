@@ -67,18 +67,6 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* 罫線のグリッドをうっすら敷く（紙の質感） */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  background-image: linear-gradient(var(--rule) 1px, transparent 1px);
-  background-size: 100% 48px;
-  opacity: 0.28;
-  pointer-events: none;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -999,18 +987,26 @@ hr {
   background: var(--paper-deep);
   border: 1px solid var(--rule);
   border-radius: var(--radius);
-  padding: 1rem 1.25rem 0.4rem;
-  margin: 1.5rem 0 2.5rem;
+  padding: 0.875rem 1rem;
+  margin: 1.25rem 0 1.75rem;
 }
 
 .guide-toc__title {
-  font-family: var(--font-mono);
-  font-size: 0.6875rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  color: var(--ink-2);
+  font-size: 0.875rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.guide-toc__count {
+  float: right;
   color: var(--ink-3);
-  font-weight: 500;
-  margin: 0 0 0.4rem;
+  font-weight: 400;
+  margin-left: 0.75rem;
+}
+
+.guide-toc[open] .guide-toc__title {
+  margin-bottom: 0.5rem;
 }
 
 .guide-toc ol {
@@ -1157,6 +1153,12 @@ hr {
   line-height: 1.3;
   margin: 0 0 0.75rem;
   text-wrap: balance;
+  word-break: auto-phrase;
+  overflow-wrap: break-word;
+}
+
+.title-phrase {
+  display: inline-block;
 }
 
 .h3 {
@@ -1498,6 +1500,30 @@ hr {
    文字を16px相当に上げると1行の文字数が減り行数が増えるため、
    行間はやや強めに詰めて全体の高さが増えすぎないようにする。 */
 @media (max-width: 720px) {
+  .page {
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+  }
+
+  h1.h2 {
+    font-size: clamp(1.5rem, 6.7vw, 1.75rem);
+    line-height: 1.4;
+  }
+
+  .lede,
+  .hero__lede {
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+  }
+
+  .prose h2,
+  .prose h3 {
+    line-height: 1.5;
+    word-break: auto-phrase;
+    overflow-wrap: break-word;
+  }
+
   .prose p,
   .prose li {
     font-size: 1rem;

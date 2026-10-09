@@ -86,19 +86,27 @@ export default function GuidePage() {
       <SiteHeader current="/guide" />
       <main className="wrap page">
         <Breadcrumbs items={[{ href: "/", label: "トップ" }, { label: "選び方" }]} />
-        <h1 className="h2">{t("guide.title")}</h1>
+        <h1 className="h2">
+          <span className="title-phrase">自前で動かす</span><wbr />
+          <span className="title-phrase">ソフトの選び方</span>
+        </h1>
         <p className="lede">{t("guide.lede")}</p>
 
-        <nav className="guide-toc" aria-label="目次">
-          <p className="guide-toc__title">目次</p>
-          <ol>
-            {SECTIONS.map((s) => (
-              <li key={s.id}>
-                <a href={`#${s.id}`}>{s.label}</a>
-              </li>
-            ))}
-          </ol>
-        </nav>
+        <details className="guide-toc">
+          <summary className="guide-toc__title">
+            このページの目次
+            <span className="guide-toc__count">{SECTIONS.length}項目</span>
+          </summary>
+          <nav aria-label="目次">
+            <ol>
+              {SECTIONS.map((s) => (
+                <li key={s.id}>
+                  <a href={`#${s.id}`}>{s.label}</a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+        </details>
 
         <div className="prose">
           <h2 id="sec-1">1. まず「やめたい理由」を特定する</h2>
