@@ -15,11 +15,11 @@
 | テーマ | 既存のページ | 公式の必要スペック | 企画 | 状態 |
 |---|---|---|---|---|
 | Immich | 解説あり（**2026-10-09に公式の要件の数値を追記**）、ブログ「Googleフォトからの移行」（12/8公開予定） | あり（メモリ6GB〜、CPU2コア〜） | 「Immichを動かすサーバーの選び方」 | **下書きあり**（`content/drafts/immich-server-sizing.md`、12/1以降に公開可） |
-| n8n | 解説あり、ブログ「n8nのライセンスとZapier」 | 公式の資料（docs.n8n.io）に作業環境から接続できず**未確認** | 「n8nを社内で使う前に確かめること（ライセンス・常時起動・費用）」 | 企画のみ。要件は運営者が公式の資料で確認 |
-| Uptime Kuma | 解説あり、ブログ「小さなチームの自前運用の構成」で言及 | READMEにメモリの数値なし（Node.js 20.4以上、対応OSのみ） | 「外からの死活監視をUptime Kumaで：監視する対象とは別の場所に置く」 | 企画のみ |
+| n8n | 解説あり、ブログ「n8nのライセンスとZapier」 | 公式の資料（docs.n8n.io）に作業環境から接続できず**未確認** | 「n8nを社内で使う前に確かめること（ライセンス・常時起動・費用）」 | 既存の11/17予約記事を改善（運用担当・総費用・データ送信・公式ライセンス原文）。重複する新規記事は作らない。必要スペックと実機手順は未確認 |
+| Uptime Kuma | 解説あり（2026-10-09に監視の配置・通知・費用を補強）、ブログ「小さなチームの自前運用の構成」で言及 | READMEにメモリの数値なし（Node.js 20.4以上、対応OSのみ） | 「外からの死活監視をUptime Kumaで：監視する対象とは別の場所に置く」 | 下書きあり（`content/drafts/uptime-kuma-monitor-placement.md`）。公開は運営者の承認後 |
 | AppFlowy | 解説あり、ブログ「チームのWiki」で言及 | 取得したデプロイの資料にメモリの数値なし | 「Notionからの移行先としてのAppFlowy：できること・できないこと」 | 企画のみ。実際の移行は運営者が試してから |
 | Directus | 解説あり | 取得した資料にメモリの数値なし | 「Directusのライセンス（MSCL）：社内の利用と、サービスとしての提供の違い」 | 企画のみ。ライセンスの解釈は断定しない（専門家への確認を促す） |
-| Ollama | 解説あり、ブログ「プライベートAIチャット」（11/24公開予定） | READMEにメモリの数値なし（モデルによって大きく変わる） | 既存のブログの改善を優先 | 新しい記事は作らない。GPUのサービスは提携がないため紹介しない |
+| Ollama | 解説あり、ブログ「プライベートAIチャット」（11/24公開予定）。2026-10-09に両方のローカル・クラウドの説明と公式出典を改善 | 一律の最低メモリは記載しない（モデル・同時利用で異なる） | 既存のブログの改善を優先 | 改善済み。予約日は変更していない。新しい記事は作らない。GPUのサービスは提携がないため紹介しない |
 
 ## 各企画の3点
 
@@ -35,7 +35,7 @@
 
 ### Uptime Kuma で外からの死活監視
 1. 問題：社内のサービスが止まったことに気づけない。
-2. 独自の情報：監視する対象と同じサーバーに置かない理由、小さなVPSで足りるかの考え方（公式の数値がないことを明記）。
+2. 独自の情報：監視する対象と同じサーバー・回線に置く場合の限界、通知の確認、性能の判断（公式の最低数値が確認できないことを明記）。配置の説明は編集上の設計提案として区別する。
 3. 導線：VPSの紹介枠（監視の用途の一言つき）。
 
 ### Notion から AppFlowy へ
@@ -55,4 +55,8 @@
 - AppFlowy Cloud：https://github.com/AppFlowy-IO/AppFlowy-Cloud/blob/main/doc/DEPLOYMENT.md
 - Directus：https://github.com/directus/docs/blob/main/content/self-hosting/1.overview.md
 - Ollama：https://github.com/ollama/ollama/blob/main/README.md
+- Ollamaのデータの扱い・クラウド機能：https://docs.ollama.com/faq 、https://docs.ollama.com/cloud
+- Ollamaの公式アプリとモデルの選択：https://docs.ollama.com/quickstart
+- n8n公式README：https://github.com/n8n-io/n8n/blob/master/README.md （2026-10-09確認）
+- n8n公式ライセンス：https://github.com/n8n-io/n8n/blob/master/LICENSE.md （2026-10-09確認）
 - n8n：https://docs.n8n.io/hosting/ （作業環境から接続できず**未確認**）
