@@ -2296,3 +2296,74 @@ details.more > summary {
   font-size: 0.8125rem;
   color: var(--ink-2);
 }
+
+/* ---------- Cost Lab（/cost-lab/） ---------- */
+
+.costlab__grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+}
+
+.costlab__hint,
+.costlab__error {
+  display: block;
+  font-size: var(--step--1);
+  margin-top: 0.25rem;
+  color: var(--ink-3);
+}
+
+.costlab__error {
+  color: #9b2c1b;
+}
+
+.costlab__verdict {
+  font-size: var(--step-1);
+  font-weight: 700;
+  margin: 0.5rem 0 1rem;
+}
+
+.costlab__stats {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+}
+
+.costlab__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--step--1);
+}
+
+.costlab__table th,
+.costlab__table td {
+  text-align: left;
+  padding: 0.5rem 0.6rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.costlab__table td {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.costlab__cautions,
+.costlab__next {
+  padding-left: 1.2rem;
+}
+
+.costlab__cautions li,
+.costlab__next li {
+  margin: 0.35rem 0;
+}
+
+.costlab__share {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}

@@ -74,7 +74,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </a>
         <div id="main">{children}</div>
         {UMAMI_SITE_ID && (
-          <script defer src={UMAMI_SCRIPT_URL} data-website-id={UMAMI_SITE_ID} />
+          // data-exclude-search：URLの「?」以降を記録しない（Cost Labの共有URLに入る金額などを、計測に送らないため）
+          <script defer src={UMAMI_SCRIPT_URL} data-website-id={UMAMI_SITE_ID} data-exclude-search="true" />
         )}
       </body>
     </html>

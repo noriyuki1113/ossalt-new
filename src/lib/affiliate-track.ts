@@ -17,6 +17,8 @@ export function trackAffiliateClick(params: {
   provider: string;
   path: string;
   label: string;
+  /** どの枠から押されたか（tool_detail / blog / cost_lab など）。収益の導線ごとの比較に使う */
+  placement?: string;
 }) {
   try {
     if (typeof window.umami?.track === "function") {

@@ -74,6 +74,10 @@ export default async function AlternativeDetailPage({
           <strong>乗り換えの判断について</strong>
           <br />
           {t("alt.compareNote")}
+          <br />
+          <Link href={`/cost-lab/?saas=${c.slug}`} data-umami-event="cost_lab_entry" data-umami-event-from="alternative">
+            {c.name}を使い続ける場合との費用を、Cost Labで比べる
+          </Link>
         </div>
 
         <HouseAd placement={`alternative_${c.slug}`} />

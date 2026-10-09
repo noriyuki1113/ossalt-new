@@ -6,10 +6,13 @@ import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
 
 export function VpsRecommendation({
   path,
+  placement = "unknown",
   title = "このツールを自前で動かすには",
   lede = "OSSセルフホストでよく選ばれる4つのVPSをまとめました。",
 }: {
   path: string;
+  /** 計測用の枠の名前（affiliate_click の placement） */
+  placement?: string;
   title?: string;
   lede?: string;
 }) {
@@ -37,7 +40,7 @@ export function VpsRecommendation({
                   target="_blank"
                   rel={AFFILIATE_REL}
                   onClick={() =>
-                    trackAffiliateClick({ provider: v.id, path, label: v.ctaLabel })
+                    trackAffiliateClick({ provider: v.id, path, label: v.ctaLabel, placement })
                   }
                 >
                   {v.ctaLabel}
