@@ -1,0 +1,4 @@
+{
+  "_note": "掲載候補への運営者の判断（人が書く）。キーは owner/repo（小文字）。state は approved（掲載する）／rejected（掲載しない）／hold（保留）。ここに approved と書いてもサイトには出ない。掲載は「ツール追加」ワークフローで行う。手順：docs/discovery/CLOUDFLARE_DISCOVERY.md",
+  "decisions": {}
+}
