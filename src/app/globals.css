@@ -2423,3 +2423,41 @@ details.more > summary {
   display: inline-flex;
   align-items: center;
 }
+
+/* ===== VPSの紹介枠：スマホでは2社＋「ほか2社も見る」 ===== */
+.vps-reco__toggle {
+  display: none;
+  margin-top: 1rem;
+}
+@media (max-width: 640px) {
+  .vps-reco__grid:not(.is-open) .vps-reco__more {
+    display: none;
+  }
+  .vps-reco__toggle {
+    display: inline-flex;
+    min-height: 44px;
+  }
+}
+
+/* ===== 必要なスペックの目安（公式の資料から） ===== */
+.req-panel table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+.req-panel th,
+.req-panel td {
+  text-align: left;
+  padding: 0.4rem 0.5rem;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+.req-panel th {
+  width: 7em;
+  color: var(--ink-2);
+  font-weight: 700;
+}
+.req-panel__source {
+  margin: 0.75rem 0 0;
+  font-size: 0.8125rem;
+}

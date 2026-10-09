@@ -13,7 +13,9 @@ import {
   KeyFacts,
   SpecTable,
 } from "@/components/tool-views";
-import { getActiveTools, getComparePairsForTool, getMeta, getTool, getTools } from "@/lib/data";
+import { getActiveTools, getComparePairsForTool, getMeta, getRequirement, getTool, getTools } from "@/lib/data";
+import { RequirementPanel } from "@/components/requirement-panel";
+import { getBlogPosts } from "@/lib/blog";
 import { getCategory } from "@/lib/categories";
 import { SITE, t } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
@@ -69,7 +71,11 @@ export default async function ToolDetailPage({
   const guide = getToolGuide(tool.id);
   const competitor = tool.primary_competitor_ja || tool.primary_competitor;
   // VPSの紹介枠は、自分のサーバーで動かすツールにだけ出す（src/lib/affiliate-context.ts）
+  // このツールを扱った公開済みのブログ記事（記事の relatedTools から。予約投稿は含まない）
+  const relatedPosts = getBlogPosts().filter((p) => p.relatedTools.includes(tool.id)).slice(0, 5);
   const vps = vpsPlacementFor(tool);
+  // 公式の資料に数値があるときだけ（推測で埋めない）
+  const requirement = vps.show ? getRequirement(tool.id) : null;
   // Cost Lab への導線も、サーバーで動かすツールにだけ出す（パソコンのアプリはサーバー代の比較にならない）
   const costLabHref =
     vps.show && competitorSlug ? `/cost-lab/?${toCostLabParams(competitorSlug, tool.id)}` : null;
@@ -294,6 +300,19 @@ export default async function ToolDetailPage({
               </p>
             </section>
 
+            {relatedPosts.length > 0 && (
+              <section id="articles">
+                <h2 className="h3">{tool.name}を扱った記事</h2>
+                <ul>
+                  {relatedPosts.map((p) => (
+                    <li key={p.slug}>
+                      <Link href={`/blog/${p.slug}/`}>{p.title}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
             {tool.description_en && (
               <section>
                 <h2 className="h3">公式の説明（英語）</h2>
@@ -325,6 +344,8 @@ export default async function ToolDetailPage({
             </p>
           </aside>
         </div>
+
+        {requirement && <RequirementPanel name={tool.name} req={requirement} />}
 
         {costLabHref && (
           <aside className="notice notice--info mt2 costlab-cta">

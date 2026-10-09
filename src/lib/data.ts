@@ -7,6 +7,7 @@ import {
   type DataMeta,
   type Tool,
 } from "./tools";
+import type { Requirement } from "./requirements";
 import type { Sponsor } from "./sponsors";
 import { buildComparePairs, classifyLicense, type ComparePair, type LicenseClass } from "./compare";
 
@@ -125,5 +126,19 @@ export function getSponsors(): Sponsor[] {
     return raw.sponsors ?? [];
   } catch {
     return [];
+  }
+}
+
+/**
+ * セルフホストの必要スペックの目安（data-source/requirements.json）。公式の資料に数値があるツールだけ。
+ */
+export function getRequirement(id: string): Requirement | null {
+  try {
+    const raw = JSON.parse(
+      fs.readFileSync(path.join(process.cwd(), "data-source", "requirements.json"), "utf8"),
+    ) as { requirements?: Record<string, Requirement> };
+    return raw.requirements?.[id] ?? null;
+  } catch {
+    return null;
   }
 }

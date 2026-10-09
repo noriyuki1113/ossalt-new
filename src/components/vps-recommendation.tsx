@@ -2,6 +2,7 @@
 
 import { AFFILIATE_REL, AFFILIATE_VPS, getAffiliateHref, getTrackingImageUrl } from "@/lib/affiliates";
 import { trackAffiliateClick, trackAffiliateViewable } from "@/lib/affiliate-track";
+import { useState } from "react";
 import { useViewable } from "@/lib/use-viewable";
 import { AdLabel, AffiliateDisclosure } from "@/components/affiliate-disclosure";
 
@@ -21,6 +22,7 @@ export function VpsRecommendation({
   lede?: string;
 }) {
   // 描画されただけでは数えない。枠が画面内で見られたときに1回だけ送る
+  const [showAll, setShowAll] = useState(false);
   const ref = useViewable<HTMLElement>(() => trackAffiliateViewable({ path, placement, ...(variant ? { variant } : {}) }));
 
   return (
@@ -32,12 +34,18 @@ export function VpsRecommendation({
         {lede}
       </p>
       <AffiliateDisclosure />
-      <div style={{ display: "grid", gap: "1rem", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))" }}>
-        {AFFILIATE_VPS.map((v) => {
+      <p className="muted" style={{ fontSize: "0.8125rem" }}>
+        多くのツールは、VPSを借りる前に、手元のパソコン（Dockerなど）で試せます。
+      </p>
+      <div
+        className={`vps-reco__grid${showAll ? " is-open" : ""}`}
+        style={{ display: "grid", gap: "1rem", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))" }}
+      >
+        {AFFILIATE_VPS.map((v, i) => {
           const href = getAffiliateHref(v);
           const trackingImg = getTrackingImageUrl(v.id);
           return (
-            <div key={v.id} className="panel">
+            <div key={v.id} className={`panel${i >= 2 ? " vps-reco__more" : ""}`}>
               <div className="panel__head">
                 <h3 className="panel__title">{v.name}</h3>
                 <span className="panel__meta">{v.recommendedFor}</span>
@@ -71,6 +79,12 @@ export function VpsRecommendation({
           );
         })}
       </div>
+      {/* スマホでは最初の2社だけを見せ、残りはこのボタンで開く（並び順＝最低月額の安い順は変えない） */}
+      {!showAll && AFFILIATE_VPS.length > 2 && (
+        <button type="button" className="btn btn--sm vps-reco__toggle" onClick={() => setShowAll(true)}>
+          ほか{AFFILIATE_VPS.length - 2}社も見る
+        </button>
+      )}
     </section>
   );
 }
