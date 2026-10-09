@@ -1,10 +1,16 @@
 ---
-description: "GitHub Copilotの代わりに自前で動かせるAIコーディング支援。Continueと、開発環境の基盤となるCoderの役割、ソースコードを外に出さないための注意点を解説します。"
-updated: "2026-09-26"
+description: "GitHub Copilotの代わりに使えるオープンソースのAIコーディング支援。Continue・Tabby・Cline・Aider・OpenHandsの違いと、ソースコードを外に出さないための注意点を解説します。"
+updated: "2026-10-09"
 intro: "GitHub Copilotの代替を自前で持つ目的は、ソースコードを外部のAIサービスに送らないことです。AIモデルを自社で動かし、エディタの拡張機能からそれを呼び出す構成が一般的です。ただし、自前で動かせるモデルとCopilotの最新モデルとでは、提案の質に差があることが多い点は理解しておきましょう。"
 picks:
   - tool: continue
     fit: "エディタにAIのコーディング支援を組み込み、使うモデルを自分で選びたい"
+  - tool: tabby
+    fit: "コードの補完のAIを、自分のサーバーでまとめて動かしたい"
+  - tool: cline
+    fit: "エディタの中で、AIにファイルの編集やコマンドの実行を、確認しながら任せたい"
+  - tool: aider
+    fit: "ターミナルで、AIと会話しながらGitのリポジトリのコードを書き換えたい"
   - tool: coder-oss
     fit: "開発環境そのものを社内のサーバーにまとめ、AIもその中で使いたい"
 ---
@@ -12,6 +18,8 @@ picks:
 ## 選び方
 
 - **エディタの拡張機能**：Continueは、VS CodeやJetBrainsのエディタに組み込むAIアシスタントで、自前のモデルにも外部のAPIにも接続できます。
+- **補完のサーバー**：[Tabby](/tools/tabby/)は、コードの補完のAIを社内のサーバーで動かし、チームで共有する作りです。
+- **AIのエージェント**：[Cline](/tools/cline/)（VS Codeの拡張機能）や[Aider](/tools/aider/)（ターミナル）は、補完にとどまらず、ファイルの編集やコマンドの実行までをAIに任せられます。[OpenHands](/tools/openhands/)は、さらに自律的に作業を進めるエージェントです。どれも、使うAIのモデルを選べます。
 - **モデルの用意**：自前でモデルを動かすなら、[ChatGPTの代替](/alternatives/chatgpt/)で紹介しているOllamaなどと組み合わせます。コードの補完には、応答の速さが重要です。
 - **開発環境の基盤**：Coderは、開発環境を社内のサーバーに立てて管理する基盤です。AIの支援そのものではありませんが、コードを社外に出さない開発の土台になります。
 - **ライセンス**：ContinueはApache-2.0、CoderはAGPL-3.0です。

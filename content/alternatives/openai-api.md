@@ -1,18 +1,21 @@
 ---
-description: "OpenAI APIの代わりに自前で動かせるオープンソースの推論サーバー。vLLMとLocalAIの違いと、OpenAI互換APIへ切り替えるときの注意点を解説します。"
-updated: "2026-09-26"
+description: "OpenAI APIの代わりに自前で動かせるオープンソースの推論サーバーとゲートウェイ。vLLM・LocalAI・LiteLLMの違いと、OpenAI互換APIへ切り替えるときの注意点を解説します。"
+updated: "2026-10-09"
 intro: "OpenAI APIの代替は、AIモデルを自社のサーバーで動かし、同じ形式のAPIで呼び出せるようにしたい場合の選択肢です。どちらもOpenAIと互換のAPIを提供するため、アプリ側の変更を小さく抑えられます。ただし、自前で動かせるモデルとOpenAIの最新モデルとでは、性能に差があることが多い点に注意が必要です。"
 picks:
   - tool: vllm
     fit: "GPUを使い、大量のリクエストを速くさばく推論サーバーを動かしたい"
   - tool: localai
     fit: "OpenAI互換のAPIを、手元の環境で手軽に動かしたい"
+  - tool: litellm
+    fit: "複数のAIのモデルやサービスを、同じ形のAPIでまとめて管理したい"
 ---
 
 ## 選び方
 
 - **本番の大量処理**：vLLMは、GPUで多くのリクエストを効率よく処理することに特化した推論サーバーです。
 - **手軽さ**：LocalAIは、さまざまなモデルをOpenAI互換のAPIで動かせる、導入しやすいツールです。同じ用途で[Ollama](/tools/ollama/)もOpenAI互換のAPIを提供しています。
+- **まとめる役**：[LiteLLM](/tools/litellm/)は、モデルを動かすのではなく、OpenAIや自前のvLLMなど**複数の接続先を、同じ形のAPIでまとめる**ゲートウェイです。利用者ごとの上限や、費用の集計もできます。
 - **ライセンス**：vLLMはApache-2.0、LocalAIはMITです。使うモデル自体のライセンスは、別に確認が必要です。
 
 ## 移行するときの注意

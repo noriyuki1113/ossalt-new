@@ -1,1 +1,20 @@
-SerpBear|serpbear|Ahrefs|towfiqi/serpbear|https://docs.serpbear.com|seo|Googleの検索順位をキーワードごとに記録し、変動をメールで知らせる順位チェックツール。Search Consoleと連携できる。検索結果の取得には外部のスクレイピングAPIかプロキシが必要。 ; SEOnaut|seonaut|Semrush|StJudeWasHere/seonaut|https://seonaut.org|seo|サイト全体を巡回し、リンク切れ・リダイレクト・重複タイトルなどSEOの問題を重要度別に一覧にする監査ツール。 ; SiteOne Crawler|siteone-crawler|Screaming Frog|janreges/siteone-crawler|https://crawler.siteone.io|seo|サイト全体を巡回して、リンク切れ・SEO・表示速度・セキュリティを分析し、HTMLのレポートにまとめるクローラー。 ; Unlighthouse|unlighthouse|PageSpeed Insights|harlan-zw/unlighthouse|https://unlighthouse.dev|seo|Google Lighthouseでサイトの全ページをまとめて計測し、表示速度やSEOの点数を一覧で比べられる。
+LiteLLM|litellm|OpenAI API|BerriAI/litellm|https://www.litellm.ai|ai|OpenAI APIの代わりに、多くのAIのモデルを同じ形のAPIでまとめて呼び出せるゲートウェイ。モデルの切り替え、利用量と費用の管理、利用者ごとの上限の設定ができる。
+Onyx|onyx|ChatGPT Plus|onyx-dot-app/onyx|https://onyx.app|ai|ChatGPT Plusの代わりに、社内の文書や各種のサービスとつないで、質問に答えるAIの検索とチャットを自分のサーバーで動かせる基盤。
+OpenHands|openhands|GitHub Copilot|OpenHands/OpenHands|https://www.all-hands.dev|devtools|GitHub Copilotの代わりにも使える、AIのコーディングのエージェント。指示を受けて、コードの変更、コマンドの実行、テストまでを自動で進める。
+Aider|aider|GitHub Copilot|Aider-AI/aider|https://aider.chat|devtools|GitHub Copilotの代わりに使える、ターミナルで動くAIのペアプログラミングのツール。手元のGitのリポジトリのコードを、AIと会話しながら書き換える。
+Cline|cline|GitHub Copilot|cline/cline|https://cline.bot|devtools|GitHub Copilotの代わりに使える、VS CodeのAIのコーディングのエージェント。ファイルの編集やコマンドの実行を、一つずつ確認しながら進められる。
+Tabby|tabby|GitHub Copilot|TabbyML/tabby|https://www.tabbyml.com|devtools|GitHub Copilotの代わりに、コードの補完のAIを自分のサーバーで動かせるツール。社内のコードを外部に送らずに、補完やチャットを使える。
+GitLab|gitlab|GitHub|gitlabhq/gitlabhq|https://about.gitlab.com|devtools|GitHubの代わりに使える、コードの管理、CI/CD、課題の管理などを1つにまとめた開発の基盤。自分のサーバーで動かせる無料の版がある。
+Unleash|unleash|LaunchDarkly|Unleash/unleash|https://www.getunleash.io|devtools|LaunchDarklyの代わりに使える、機能のオン・オフを切り替えるフィーチャーフラグの基盤。一部の利用者だけに新しい機能を出す、段階的な公開ができる。
+GrowthBook|growthbook|LaunchDarkly|growthbook/growthbook|https://www.growthbook.io|devtools|LaunchDarklyの代わりに使える、フィーチャーフラグとA/Bテストの基盤。機能の出し分けと、その効果の分析を1つで行える。
+Huly|huly|Linear|hcengineering/platform|https://huly.io|project|Linearの代わりに使える、課題の管理、チャット、文書、ビデオ会議などをまとめたチームの作業の基盤。自分のサーバーで動かせる。
+OneUptime|oneuptime|PagerDuty|OneUptime/oneuptime|https://oneuptime.com|observability|PagerDutyの代わりに使える、監視、障害の通知、当番の管理、稼働状況のページなどをまとめた基盤。
+Lago|lago|Stripe Billing|getlago/lago|https://www.getlago.com|accounting|Stripe Billingの代わりに使える、利用量に応じた課金とサブスクリプションの請求の基盤。料金プラン、利用量の集計、請求書の発行を扱える。
+Beekeeper Studio|beekeeper-studio|DataGrip|beekeeper-studio/beekeeper-studio|https://www.beekeeperstudio.io|database|DataGripの代わりに使える、データベースの管理のアプリ。PostgreSQLやMySQLなどにつないで、SQLの実行や表の編集を見やすい画面で行える。
+Apache Answer|apache-answer|Circle|apache/answer|https://answer.apache.org|communication|Circleの代わりにも使える、Q&Aのコミュニティを作るソフト。質問と回答、投票、タグで、社内や利用者の知識を蓄積できる。
+Shlink|shlink|Bitly|shlinkio/shlink|https://shlink.io|marketing|Bitlyの代わりに使える、短縮URLのサービスを自分のサーバーで動かすソフト。独自のドメインで短いURLを作り、クリック数を計測できる。
+Coroot|coroot|Datadog|coroot/coroot|https://coroot.com|observability|Datadogの代わりに使える、監視の基盤。eBPFで、アプリを変えずにサービス間の通信や性能のデータを集め、問題の原因を探しやすくする。
+Webiny|webiny|Contentful|webiny/webiny-js|https://www.webiny.com|cms|Contentfulの代わりに使える、ヘッドレスCMS。AWSのサーバーレスの仕組みの上で動くように作られている。
+TinaCMS|tinacms|Contentful|tinacms/tinacms|https://tina.io|cms|Contentfulの代わりに使える、Gitで管理するMarkdownのコンテンツを、画面で編集できるヘッドレスCMS。編集した内容はGitに保存される。
+Keep|keep|PagerDuty|keephq/keep|https://www.keephq.dev|observability|PagerDutyの代わりに使える、アラートの管理の基盤。いろいろな監視のツールからのアラートをまとめ、重複を減らし、自動の対応を組める。
+OpenStatus|openstatus|Statuspage|openstatusHQ/openstatus|https://www.openstatus.dev|observability|Statuspageの代わりに使える、稼働状況のページと外形監視のツール。複数の地点からサービスを監視し、状況をページで公開できる。

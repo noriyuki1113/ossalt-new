@@ -1,10 +1,12 @@
 ---
-description: "DataGripの代わりに使えるオープンソースのデータベースクライアント、DBeaverの特徴と、移行時の注意点を解説します。"
-updated: "2026-09-26"
+description: "DataGripの代わりに使えるオープンソースのデータベースクライアント。DBeaverとBeekeeper Studioの違いと、移行時の注意点を解説します。"
+updated: "2026-10-09"
 intro: "DBeaverは、さまざまなデータベースに接続して、SQLの実行やデータの閲覧・編集を行えるデスクトップアプリです。無償版で多くのデータベースに対応しており、DataGripの代わりとして広く使われています。"
 ---
 
 ## 導入前に確認したいこと
+
+- **候補の違い**：[DBeaver](/tools/dbeaver/)は、対応するデータベースの種類と機能が多い定番です。[Beekeeper Studio](/tools/beekeeper-studio/)は、画面がすっきりしていて、SQLの実行と表の確認を手軽に行いたい人に向いています。
 
 - **無償版と有償版**：DBeaverには無償のCommunity版と、有償の版があります。使いたい機能や接続先が無償版に含まれるか確認しましょう。
 - **ライセンス**：DBeaver（Community版）はApache-2.0です。

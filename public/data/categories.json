@@ -9,25 +9,25 @@
   "slug": "communication",
   "nameJa": "チャット・コミュニケーション",
   "ledeJa": "SlackやTeamsの代わりに、社内チャットを自社サーバで動かす。",
-  "count": 13
+  "count": 14
  },
  {
   "slug": "project",
   "nameJa": "プロジェクト管理",
   "ledeJa": "タスク管理・課題管理を自前で。日本のチームの運用にも合わせやすい。",
-  "count": 11
+  "count": 12
  },
  {
   "slug": "database",
   "nameJa": "データベース・表作成",
   "ledeJa": "Airtableのような表形式のデータ管理を、社内に置く。",
-  "count": 9
+  "count": 10
  },
  {
   "slug": "cms",
   "nameJa": "CMS・コンテンツ管理",
   "ledeJa": "コーポレートサイトやブログの裏側を自前で持つ。",
-  "count": 7
+  "count": 9
  },
  {
   "slug": "analytics",
@@ -39,7 +39,7 @@
   "slug": "observability",
   "nameJa": "監視・エラー追跡",
   "ledeJa": "障害の検知と原因追跡を、外部サービスに依存せず行う。",
-  "count": 17
+  "count": 21
  },
  {
   "slug": "security",
@@ -51,7 +51,7 @@
   "slug": "devtools",
   "nameJa": "開発・デプロイ基盤",
   "ledeJa": "Gitホスティング、デプロイ、バックエンド。開発の土台を自前で。",
-  "count": 45
+  "count": 52
  },
  {
   "slug": "automation",
@@ -81,7 +81,7 @@
   "slug": "marketing",
   "nameJa": "マーケティング・フォーム",
   "ledeJa": "アンケート、メール配信、流入計測まわり。",
-  "count": 10
+  "count": 11
  },
  {
   "slug": "support",
@@ -129,7 +129,7 @@
   "slug": "accounting",
   "nameJa": "会計・請求書・経費",
   "ledeJa": "請求書の発行や入出金の管理を、外部サービスに預けずに行う。",
-  "count": 15
+  "count": 16
  },
  {
   "slug": "legal",
@@ -147,7 +147,7 @@
   "slug": "ai",
   "nameJa": "AI・LLM基盤",
   "ledeJa": "生成AIを自前のサーバで動かす。入力内容を外部に送らずに使える。",
-  "count": 35
+  "count": 37
  },
  {
   "slug": "video",
