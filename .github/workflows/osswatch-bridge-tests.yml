@@ -1,0 +1,29 @@
+name: OSSALT Watch bridge tests
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/osswatch-bridge.mjs'
+      - 'scripts/osswatch-bridge.test.mjs'
+      - '.github/workflows/osswatch-bridge-tests.yml'
+  push:
+    branches: [claude/ossalt-jp-setup-deploy-tsv3x8]
+    paths:
+      - 'scripts/osswatch-bridge.mjs'
+      - 'scripts/osswatch-bridge.test.mjs'
+      - '.github/workflows/osswatch-bridge-tests.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate exact repository matching and safe evidence export
+        run: node --test scripts/osswatch-bridge.test.mjs
