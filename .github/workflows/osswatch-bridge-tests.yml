@@ -5,6 +5,11 @@ on:
     paths:
       - 'scripts/osswatch-bridge.mjs'
       - 'scripts/osswatch-bridge.test.mjs'
+      - 'scripts/fetch-osswatch-signals.mjs'
+      - 'scripts/fetch-osswatch-signals.test.mjs'
+      - 'src/lib/watch-signals.ts'
+      - 'src/components/watch-signal-panel.tsx'
+      - 'src/app/tools/[slug]/page.tsx'
       - '.github/workflows/osswatch-bridge-tests.yml'
   push:
     branches: [claude/ossalt-jp-setup-deploy-tsv3x8]
@@ -26,4 +31,4 @@ jobs:
         with:
           node-version: '22'
       - name: Validate exact repository matching and safe evidence export
-        run: node --test scripts/osswatch-bridge.test.mjs
+        run: node --test scripts/osswatch-bridge.test.mjs scripts/fetch-osswatch-signals.test.mjs
