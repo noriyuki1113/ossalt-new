@@ -46,12 +46,19 @@ export function pickSignal(feed: WatchSignalFeed | null, githubUrl: string): Wat
   return signal;
 }
 
-export function getSignalForTool(githubUrl: string): WatchSignal | null {
+/** Static on-disk feed; deliberately no external request during site rendering. */
+export function getWatchSignalFeed(): WatchSignalFeed | null {
   try {
     const file = path.join(process.cwd(), "public", "data", "osswatch-signals.json");
     const data = JSON.parse(fs.readFileSync(file, "utf8")) as WatchSignalFeed;
-    return pickSignal(data, githubUrl);
+    if (data.schema_version !== 1 || !Number.isFinite(Date.parse(data.generated_at))
+        || !Array.isArray(data.observations)) return null;
+    return data;
   } catch {
     return null;
   }
+}
+
+export function getSignalForTool(githubUrl: string): WatchSignal | null {
+  return pickSignal(getWatchSignalFeed(), githubUrl);
 }

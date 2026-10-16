@@ -6,10 +6,13 @@ import { getActiveTools, getMeta } from "@/lib/data";
 import { CATEGORIES } from "@/lib/categories";
 import { SITE, t } from "@/lib/site";
 import { formatCompactJa } from "@/lib/tools";
+import { buildActivityReport } from "@/lib/watch-changes";
+import { getWatchSignalFeed } from "@/lib/watch-signals";
 
 export default function HomePage() {
   const tools = getActiveTools();
   const meta = getMeta();
+  const changes = buildActivityReport(getActiveTools(), getWatchSignalFeed());
   const top = tools.slice(0, 8);
   const categoriesWithCount = CATEGORIES.map((c) => ({
     ...c,
@@ -90,6 +93,30 @@ export default function HomePage() {
             <span className="stat__label">{t("stats.scored")}</span>
           </div>
         </div>
+
+        {changes.rows.length > 0 && (
+          <section className="panel" aria-labelledby="watch-home-heading"
+            style={{ marginTop: "1.4rem", borderTop: "3px solid var(--indigo)" }}>
+            <div className="panel__body" style={{ display: "flex", gap: "1.2rem",
+              alignItems: "center", flexWrap: "wrap", paddingTop: "1.2rem", paddingBottom: "1.2rem" }}>
+              <div style={{ flex: "1 1 20rem" }}>
+                <span className="mono" style={{ fontSize: ".72rem", color: "var(--shu)" }}>
+                  OSSALT / OBSERVATION DESK
+                </span>
+                <h2 id="watch-home-heading" style={{ fontSize: "1.25rem", margin: ".35rem 0" }}>
+                  重要な変化を、見逃さない。
+                </h2>
+                <p className="muted" style={{ fontSize: ".85rem", margin: 0 }}>
+                  {changes.rows.length}件のOSSを継続観測中。
+                  {changes.changed > 0 ? "直近で" + changes.changed + "件の注目シグナルを確認しています。" :
+                    "観測した活動と、検証できた変化だけを紹介します。"}
+                  履歴が足りない項目は推測しません。
+                </p>
+              </div>
+              <Link className="btn" href="/changes/">OSSの変化レポートを見る →</Link>
+            </div>
+          </section>
+        )}
 
         <section className="section section--first">
           <div className="section__head">
