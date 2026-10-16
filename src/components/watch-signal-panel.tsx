@@ -1,4 +1,5 @@
 import { getSignalForTool, type WatchSignal } from "@/lib/watch-signals";
+import Link from "next/link";
 
 /**
  * Independent observations support (never replace) OSSALT's tool catalog.
@@ -74,6 +75,7 @@ export function WatchSignalPanel({githubUrl}: {githubUrl: string}) {
           <a href={signal.source_url} target="_blank" rel="noopener noreferrer">
             GitHubの一次データを確認 ↗
           </a>
+          {" · "}<Link href="/changes/">15件のOSS変化レポート ↗</Link>
         </p>
       </div>
     </section>
