@@ -9,3 +9,4 @@ dist/
 .vercel
 *.tsbuildinfo
 data-source/discovery/.etag-cache.json
+reports/private/
