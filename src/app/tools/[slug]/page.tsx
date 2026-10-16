@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs, JsonLd, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ToolLogo } from "@/components/tool-logo";
 import { VpsRecommendation } from "@/components/vps-recommendation";
+import { WatchSignalPanel } from "@/components/watch-signal-panel";
 import { ListingBadge } from "@/components/listing-badge";
 import {
   ComparisonTable,
@@ -141,6 +142,8 @@ export default async function ToolDetailPage({
             </p>
 
             <KeyFacts tool={tool} stars={starContext(tool, getActiveTools())} categoryName={category?.nameJa} />
+
+            <WatchSignalPanel githubUrl={tool.github_url} />
 
             {tool.github_archived && (
               <p className="notice notice--warn" style={{ marginBottom: "1.25rem" }}>

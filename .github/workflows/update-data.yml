@@ -69,6 +69,11 @@ jobs:
       - name: サイト用データ生成
         run: node scripts/build-data.mjs
 
+      # Watch側の公開済み、検証可能な15件のみを静的データへ取り込む。
+      # Render障害時は前回の取得済みデータを保持し、詳細ページの表示を止めない。
+      - name: Watch GitHub観測サマリー取得（best effort）
+        run: node scripts/fetch-osswatch-signals.mjs
+
       # 3) 差分があればコミットして push（変更がなければ何もしない）。
       #    実行中に別のpushが入ると非fast-forwardでpushが失敗するため、
       #    push直前にrebaseする。
@@ -76,7 +81,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data-source/tools.json data-source/star-history.json public/data/tools.json public/data/meta.json public/data/categories.json
+          git add data-source/tools.json data-source/star-history.json public/data/tools.json public/data/meta.json public/data/categories.json public/data/osswatch-signals.json
           if git diff --cached --quiet; then
             echo "更新なし"
           else
