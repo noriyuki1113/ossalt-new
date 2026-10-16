@@ -10,6 +10,13 @@ on:
       - 'src/lib/watch-signals.ts'
       - 'src/components/watch-signal-panel.tsx'
       - 'src/app/tools/[slug]/page.tsx'
+      - 'src/app/changes/**'
+      - 'src/lib/watch-changes.ts'
+      - 'src/lib/watch-changes.test.ts'
+      - 'src/lib/site.ts'
+      - 'src/app/sitemap.ts'
+      - 'src/app/page.tsx'
+      - 'src/components/site-chrome.tsx'
       - '.github/workflows/osswatch-bridge-tests.yml'
   push:
     branches: [claude/ossalt-jp-setup-deploy-tsv3x8]
@@ -31,7 +38,7 @@ jobs:
         with:
           node-version: '22'
       - name: Validate exact repository matching and safe evidence export
-        run: node --test scripts/osswatch-bridge.test.mjs scripts/fetch-osswatch-signals.test.mjs
+        run: node --test scripts/osswatch-bridge.test.mjs scripts/fetch-osswatch-signals.test.mjs src/lib/watch-changes.test.ts
       - name: Build OSSALT static site with seeded observations
         run: |
           npm ci --no-audit --no-fund
