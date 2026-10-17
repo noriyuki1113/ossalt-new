@@ -11,6 +11,8 @@ const PORT = Number(process.env.E2E_PORT || 4173);
 export default defineConfig({
   testDir: "./e2e",
   testMatch: /.*\.spec\.ts/,
+  // 巡回（sweep）は E2E_SWEEP=1 のときだけ。通常のCIでは動かさない
+  testIgnore: process.env.E2E_SWEEP ? [] : [/sweep\.spec\.ts/],
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 1 : 0,

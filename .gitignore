@@ -13,3 +13,4 @@ reports/private/
 playwright-report/
 test-results/
 reports/qa/runs/
+autodev/out/

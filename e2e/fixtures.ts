@@ -22,6 +22,9 @@ export const test = base.extend<{ problems: PageProblems }>({
       }
     });
     await use(problems);
+    // 失敗時の再現情報として、最後に開いていたURLと検出した問題を記録する（autodev/qa.mjs が読む）
+    base.info().annotations.push({ type: "url", description: page.url() });
+    for (const p of problems) base.info().annotations.push({ type: "problem", description: p });
     expect(problems, "JavaScriptエラー／console.error").toEqual([]);
   },
 });
