@@ -167,13 +167,15 @@ function main() {
     run = { ...run, iterations: run.iterations + 1 };
     const ts = state.tasks[task.id] ?? { firstFailure: null, lastFailure: null, lastSignature: null, repeats: 0 };
     log(`セッション ${run.iterations}/${limits.maxIterations}：${task.id} ${task.title}（試行 ${task.attempts + 1}/${limits.maxAttemptsPerTask}）`);
-    doc = updateTask(doc, task.id, { status: "in_progress", attempts: task.attempts + 1 });
-    writeJson(TASKS, doc);
+    if (agentKind !== "dry-run") {
+      doc = updateTask(doc, task.id, { status: "in_progress", attempts: task.attempts + 1 });
+      writeJson(TASKS, doc);
+    }
 
     const ag = runAgent(agentKind, buildPrompt(task, ts), { limits, model: config.model });
     run = { ...run, costUsd: run.costUsd + ag.costUsd };
     log(`エージェント: ${ag.ok ? "完了" : "失敗"}（約$${ag.costUsd.toFixed(2)}）`);
-    if (agentKind === "dry-run") { log(ag.text); doc = updateTask(doc, task.id, { status: "todo", attempts: task.attempts }); writeJson(TASKS, doc); break; }
+    if (agentKind === "dry-run") { log(ag.text); break; }
 
     const v = ag.ok ? verify(task) : { ok: false, steps: [{ name: "エージェント", ok: false, detail: "失敗" }], errorText: ag.text, failureMd: "```\n" + ag.text + "\n```" };
     if (v.ok) {
