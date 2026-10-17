@@ -1,0 +1,22 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [{ "type": "command", "command": "node autodev/hooks/bash-guard.mjs" }]
+      }
+    ]
+  },
+  "permissions": {
+    "deny": [
+      "Read(./.env*)",
+      "Read(~/.ssh/**)",
+      "Edit(./.github/**)",
+      "Edit(./autodev/lib/security.mjs)",
+      "Edit(./autodev/hooks/**)",
+      "Edit(./autodev/claude-settings.json)",
+      "WebFetch",
+      "WebSearch"
+    ]
+  }
+}

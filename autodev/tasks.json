@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "note": "改善タスクの一覧（claude-quickstarts の feature_list.json に相当）。新規アプリは作らず、既存の ossalt-new への改善だけを書く。status は run.mjs が更新する。passed には証拠（lastResult.evidence）が必要。",
+  "tasks": [
+    {
+      "id": "AD-001",
+      "priority": 1,
+      "feature": "Browser QA / 巡回",
+      "title": "サイトマップ巡回で、スマホ幅の横はみ出し・h1の重複・alt欠落・canonical欠落がないことを保つ",
+      "acceptance": [
+        "E2E_SWEEP=1 の巡回が、デスクトップとスマホの両方で成功する",
+        "巡回で見つかった問題は、原因を直して再び成功させる（テストを緩めたり除外したりしない）"
+      ],
+      "verification": [{ "kind": "sweep" }, { "kind": "unit" }, { "kind": "build" }],
+      "status": "todo",
+      "attempts": 0,
+      "lastResult": null
+    },
+    {
+      "id": "AD-002",
+      "priority": 2,
+      "feature": "Cost Lab",
+      "title": "Cost Lab の入力エラーの表示を、スマホで読みやすくする（探索的な改善）",
+      "acceptance": [
+        "不正な値を入れたとき、該当の入力欄の下にエラー文が出て、aria-invalid が true になる（既存のE2Eを維持）",
+        "スマホ幅（Pixel 7）でも横にはみ出さない",
+        "計算結果（純粋関数 src/lib/cost-lab.ts）は変更しない。既存の単体テストがすべて通る"
+      ],
+      "verification": [{ "kind": "e2e", "grep": "Cost Lab" }, { "kind": "unit" }, { "kind": "build" }],
+      "status": "todo",
+      "attempts": 0,
+      "lastResult": null
+    },
+    {
+      "id": "AD-003",
+      "priority": 3,
+      "feature": "OSS診断",
+      "title": "OSS診断の途中で戻る・やり直す操作を、キーボードだけでも操作できることを確かめる",
+      "acceptance": [
+        "ボタンは Tab で到達でき、Enter/Space で選べる（E2Eを追加する）",
+        "既存のOSS診断のE2Eと単体テストが通る"
+      ],
+      "verification": [{ "kind": "e2e", "grep": "OSS診断" }, { "kind": "unit" }, { "kind": "build" }],
+      "status": "todo",
+      "attempts": 0,
+      "lastResult": null
+    }
+  ]
+}
