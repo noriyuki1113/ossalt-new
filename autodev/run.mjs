@@ -19,6 +19,7 @@ import { resolveLimits, checkBudget, errorSignature, recordOutcome, newRunState 
 import { scrubEnv, agentEnv } from "./lib/security.mjs";
 import { renderPrBody } from "./lib/pr.mjs";
 import { runQa } from "./qa.mjs";
+import { explore } from "./explore.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const P = (...p) => path.join(root, ...p);
@@ -208,6 +209,12 @@ function main() {
     run = recordOutcome({ ...run, lastSignature: ts.lastSignature, sameErrorRepeats: ts.repeats }, { ok: false, signature: sig });
     const failedStep = v.steps.find((s) => !s.ok)?.name ?? "不明";
     state.tasks[task.id] = { firstFailure: ts.firstFailure ?? `${failedStep}\n${v.failureMd}`, lastFailure: `${failedStep}\n${v.failureMd}`, lastSignature: sig, repeats: run.sameErrorRepeats };
+    // 2回目以降の同じタスクの失敗では、読み取り専用の調査（probe.mjs で実ブラウザを確認）を1回だけ行い、原因の仮説を渡す
+    if (agentKind === "claude" && config.exploreOnFailure !== false && task.attempts >= 1 && run.costUsd < limits.maxCostUsd) {
+      const ex = explore({ failuresMd: state.tasks[task.id].lastFailure, id: task.id, agent: "claude", maxCostUsd: Math.min(1, limits.maxCostUsdPerSession), model: config.model });
+      run = { ...run, costUsd: run.costUsd + ex.costUsd };
+      if (ex.ok && ex.text) state.tasks[task.id].lastFailure += `\n\n### 調査担当の報告（原因の仮説）\n${ex.text}`;
+    }
     const attempts = task.attempts + 1;
     const blocked = run.sameErrorRepeats >= limits.maxSameErrorRepeats || attempts >= limits.maxAttemptsPerTask;
     doc = updateTask(doc, task.id, { status: blocked ? "blocked" : "failed", lastResult: { at: new Date().toISOString(), summary: `${failedStep}で失敗`, evidence: v.evidenceDir ?? null } });

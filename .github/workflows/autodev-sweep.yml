@@ -1,0 +1,44 @@
+name: autodev 巡回QA（AIなし）
+
+# 手動起動だけ。AI は使わない（無料の範囲の Playwright だけ）。
+# 安定したら、下の schedule のコメントを外して週1回にできる。公開・書き込み・デプロイはしない。
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: "17 22 * * 0"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: autodev-sweep
+  cancel-in-progress: true
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+        env:
+          NEXT_PUBLIC_SITE_URL: https://ossalt.jp
+      - run: npx playwright install --with-deps chromium
+      - name: 巡回（デスクトップ＋スマホ）
+        run: node autodev/qa.mjs --sweep --no-build
+        env:
+          E2E_SWEEP_PER_SECTION: "12"
+      - name: 証拠を保存
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: autodev-sweep-evidence
+          path: |
+            reports/qa/runs/
+            test-results/
+          retention-days: 14
