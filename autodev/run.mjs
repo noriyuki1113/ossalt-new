@@ -22,8 +22,10 @@ import { runQa } from "./qa.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const P = (...p) => path.join(root, ...p);
-const TASKS = P("autodev", "tasks.json");
-const STATE = P("autodev", "state.json");
+// テスト・検証用に、タスクと状態のファイルを差し替えられる（上限や安全装置は変えられない）
+const argVal = (k) => (process.argv.includes(k) ? process.argv[process.argv.indexOf(k) + 1] : null);
+const TASKS = argVal("--tasks-file") ? path.resolve(argVal("--tasks-file")) : P("autodev", "tasks.json");
+const STATE = argVal("--state-file") ? path.resolve(argVal("--state-file")) : P("autodev", "state.json");
 const PROGRESS = P("autodev", "progress.md");
 const OUT = P("autodev", "out");
 
