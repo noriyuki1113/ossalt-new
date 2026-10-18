@@ -32,6 +32,37 @@ test.describe("OSS診断", () => {
     await expect(page.locator("main a[href^='/tools/']").first()).toBeVisible();
   });
 
+  test("キーボードだけで選択・戻る操作ができる（Tab / Enter / Space）", async ({ page }) => {
+    await page.goto("/diagnosis/");
+    const label = page.locator(".diag-progress__label");
+    const options = page.locator(".diag-option");
+
+    // Tab で選択肢に到達でき、Enter で選べる
+    const first = options.first();
+    await expect(label).toContainText("1 /");
+    await first.focus();
+    await expect(first).toBeFocused();
+    await page.keyboard.press("Enter");
+    await expect(label).toContainText("2 /");
+
+    // 戻るボタンへ Tab だけで到達でき、Enter で戻れる
+    const back = page.getByRole("button", { name: "← 戻る" });
+    await page.locator("body").click({ position: { x: 0, y: 0 } });
+    let reached = false;
+    for (let i = 0; i < 30 && !reached; i++) {
+      await page.keyboard.press("Tab");
+      reached = await back.evaluate((el) => el === document.activeElement);
+    }
+    expect(reached).toBe(true);
+    await page.keyboard.press("Enter");
+    await expect(label).toContainText("1 /");
+
+    // Space でも選べる
+    await options.first().focus();
+    await page.keyboard.press("Space");
+    await expect(label).toContainText("2 /");
+  });
+
   test("結果ページは検索に載せない（noindex）", async ({ page }) => {
     await page.goto("/diagnosis/result/");
     await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
