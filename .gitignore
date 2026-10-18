@@ -10,3 +10,7 @@ dist/
 *.tsbuildinfo
 data-source/discovery/.etag-cache.json
 reports/private/
+playwright-report/
+test-results/
+reports/qa/runs/
+autodev/out/

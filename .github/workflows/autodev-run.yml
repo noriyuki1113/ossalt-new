@@ -1,0 +1,84 @@
+name: autodev 実行（AI・手動のみ）
+
+# 手動起動だけ。AI（Coding Agent）が1タスクを実装し、検証に合格したら autodev/<ID> ブランチを push して
+# Pull Request を「作成」する。マージ・本番公開は行わない（人がレビューしてマージする）。
+# 必要な Secret：ANTHROPIC_API_KEY。実行前に Environment「autodev」で承認を必須にしておくと安全。
+# 注意：このワークフローが GITHUB_TOKEN で作った PR には、他のワークフロー（e2e.yml）が自動では起動しない。
+#       検証は run.mjs の中で済ませており、PR を開いたあとに「ブラウザテスト（E2E）」を手動で実行できる。
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "タスクID（例：AD-001）"
+        required: true
+      max_cost_usd:
+        description: "AI利用額の上限（ドル。設定ファイルの上限より上げられない）"
+        default: "3"
+      max_iterations:
+        description: "最大セッション数"
+        default: "2"
+
+permissions:
+  contents: write # autodev/* ブランチの push のため
+  pull-requests: write # PR の作成のため（マージはしない）
+
+concurrency:
+  group: autodev-run
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    environment: autodev
+    timeout-minutes: 90
+    # 公開用ブランチ・main から起動した場合は動かさない（作業は autodev/* ブランチで行う）
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          # 資格情報を .git に残さない（エージェントが読めないようにする）。push は専用のステップだけが行う
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm i -g @anthropic-ai/claude-code@2.1.302
+      - name: 実行（AI は ANTHROPIC_API_KEY のみ受け取り、GitHub の資格情報は受け取らない）
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          git config user.name "autodev"
+          git config user.email "autodev@users.noreply.github.com"
+          node autodev/run.mjs --agent claude --task "${{ inputs.task }}" \
+            --max-cost "${{ inputs.max_cost_usd }}" --max-iterations "${{ inputs.max_iterations }}"
+      - name: 合格した作業ブランチだけを push（autodev/ 以外・保護ブランチには push しない）
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          branch="autodev/${{ inputs.task }}"
+          if [ "$(git rev-parse --abbrev-ref HEAD)" = "$branch" ] && [ -f "autodev/out/PR_BODY-${{ inputs.task }}.md" ]; then
+            git push "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" "$branch"
+          fi
+      - name: Pull Request を作成（マージはしない）
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          body="autodev/out/PR_BODY-${{ inputs.task }}.md"
+          if [ -f "$body" ]; then
+            gh pr create --base "${{ github.event.repository.default_branch }}" --head "autodev/${{ inputs.task }}" \
+              --title "autodev(${{ inputs.task }}): 自動改善" --body-file "$body" --draft
+          else
+            echo "合格したタスクがないため、PRは作成しません。"
+          fi
+      - name: 停止した場合の原因とログ・証拠を保存
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: autodev-evidence
+          path: |
+            autodev/out/
+            autodev/progress.md
+            reports/qa/runs/
+          retention-days: 14
