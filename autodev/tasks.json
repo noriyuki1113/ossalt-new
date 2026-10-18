@@ -84,6 +84,85 @@
         "summary": "単体テスト（npm test）: 153件 合格 / ビルド（npm run build）: 成功 / ブラウザ検証（OSS診断）: 成功 6 / 回帰テスト（全E2E・デスクトップ＋スマホ）: 成功 74",
         "evidence": "reports/qa/runs/2026-10-18T08-21-02-889Z-AD-003-regression"
       }
+    },
+    {
+      "id": "AD-004",
+      "priority": 2,
+      "feature": "SEO（技術面）",
+      "title": "ビルド済みの全ページ（out/）を静的に調べ、canonical・title・JSON-LD・h1 の不備を検出するテストを追加する",
+      "acceptance": [
+        "out/ の全HTMLについて、canonical が1つでそのページ自身のURLと一致する、title が空でない、JSON-LD がすべて JSON として読める、h1 が1つ、を調べるテストがある（ブラウザは使わない。E2Eの外の単体テストか、e2e の静的チェックとして追加する）",
+        "不備が見つかった場合は、原因がコード（src/）にあるものだけ直す。content/ や public/data/ は変更しない。直せないものは、ページ一覧と理由を報告に書く",
+        "既存のSEOテスト（src/lib/seo-copy.test.ts、e2e/seo-revenue.spec.ts）と重複しない。既存のテストは緩めない",
+        "テストは out/ がないとき（ビルド前）は、分かりやすい理由でスキップする。npm test を壊さない"
+      ],
+      "verification": [
+        {
+          "kind": "unit"
+        },
+        {
+          "kind": "build"
+        },
+        {
+          "kind": "e2e",
+          "grep": "SEO"
+        }
+      ],
+      "status": "todo",
+      "attempts": 0,
+      "lastResult": null
+    },
+    {
+      "id": "AD-005",
+      "priority": 3,
+      "feature": "アクセシビリティ",
+      "title": "全ページ共通の基本のアクセシビリティ（lang・ランドマーク・フォームのラベル・ボタンの名前）をE2Eで確かめる",
+      "acceptance": [
+        "代表のページ（/、/tools/、/tools/immich/、/diagnosis/、/cost-lab/、/blog/）で、html の lang が ja、main・nav・header・footer がある、すべての input/select にラベルがある、すべての button/a に読み上げ用の名前がある、ことを確かめるE2Eがある",
+        "不備が見つかった場合は、src/ の該当箇所を最小限で直す。見た目（色・レイアウト）を変えない",
+        "新しいnpmパッケージを追加しない（axe などは使わず、Playwrightだけで書く）",
+        "既存のE2Eと単体テストがすべて通る。デスクトップとスマホの両方で成功する"
+      ],
+      "verification": [
+        {
+          "kind": "e2e"
+        },
+        {
+          "kind": "unit"
+        },
+        {
+          "kind": "build"
+        }
+      ],
+      "status": "todo",
+      "attempts": 0,
+      "lastResult": null
+    },
+    {
+      "id": "AD-006",
+      "priority": 3,
+      "feature": "Cost Lab",
+      "title": "Cost Lab の共有URLの往復（入力 → 共有URL → 開き直す → 同じ結果）をE2Eで確かめる",
+      "acceptance": [
+        "例の値を入れて共有URLを作り、そのURLを開き直すと、入力欄と計算結果（SaaS合計・OSS合計）が同じになることを確かめるE2Eがある",
+        "src/lib/cost-lab.ts の計算は変更しない。不具合が見つかった場合は、再現手順を報告し、画面側（src/components/cost-lab.tsx）だけで直せるものを直す",
+        "既存のE2Eと単体テストがすべて通る。デスクトップとスマホの両方で成功する"
+      ],
+      "verification": [
+        {
+          "kind": "e2e",
+          "grep": "Cost Lab"
+        },
+        {
+          "kind": "unit"
+        },
+        {
+          "kind": "build"
+        }
+      ],
+      "status": "todo",
+      "attempts": 0,
+      "lastResult": null
     }
   ]
 }
