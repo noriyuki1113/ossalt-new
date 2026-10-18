@@ -2341,6 +2341,30 @@ details.more > summary {
 
 .costlab__error {
   color: #9b2c1b;
+  font-weight: 600;
+  line-height: 1.5;
+  padding-left: 0.5rem;
+  border-left: 3px solid #9b2c1b;
+}
+
+.costlab__hint,
+.costlab__error {
+  overflow-wrap: anywhere;
+}
+
+.costlab .input[aria-invalid="true"] {
+  border-color: #9b2c1b;
+}
+
+@media (max-width: 640px) {
+  .costlab .input {
+    font-size: 1rem; /* iOSの自動ズームを避ける */
+  }
+
+  .costlab__hint,
+  .costlab__error {
+    font-size: 0.875rem;
+  }
 }
 
 .costlab__verdict {
