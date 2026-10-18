@@ -182,7 +182,15 @@ function main() {
 
     const v = ag.ok ? verify(task) : { ok: false, steps: [{ name: "エージェント", ok: false, detail: "失敗" }], errorText: ag.text, failureMd: "```\n" + ag.text + "\n```" };
     if (v.ok) {
-      const files = git("diff", "--name-only", "HEAD").out.split("\n").filter(Boolean).concat(git("ls-files", "--others", "--exclude-standard").out.split("\n").filter(Boolean)).filter((f) => !f.startsWith("autodev/out/") && f !== "autodev/state.json");
+      // Agent 自身がコミットした変更も含めるため、HEAD ではなく、ベースブランチとの差分で数える
+      const base = config.baseBranch ? `origin/${config.baseBranch}` : "HEAD";
+      const files = [...new Set([
+        ...git("diff", "--name-only", `${base}...HEAD`).out.split("\n"),
+        ...git("diff", "--name-only", "HEAD").out.split("\n"),
+        ...git("ls-files", "--others", "--exclude-standard").out.split("\n"),
+      ])].filter((f) => f && !f.startsWith("autodev/out/") && f !== "autodev/state.json");
+      // Agent の報告（確かめていないこと・残課題を含む）を、既知の制約としてPR本文に残す
+      v.notes = ag.text ? [`エージェントの報告（原文）：${ag.text.replace(/\s+/g, " ").slice(0, 800)}`] : ["（エージェントの報告なし）"];
       const evidence = v.evidenceDir ?? "unit/build only";
       doc = updateTask(doc, task.id, { status: "passed", lastResult: { at: new Date().toISOString(), summary: v.steps.map((s) => `${s.name}: ${s.detail}`).join(" / "), evidence } });
       state.tasks[task.id] = { ...ts, lastFailure: null, lastSignature: null, repeats: 0 };
