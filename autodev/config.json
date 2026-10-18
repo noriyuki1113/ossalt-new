@@ -5,7 +5,12 @@
   "maxCostUsd": 5,
   "maxCostUsdPerSession": 2,
   "maxWallClockMinutes": 60,
-  "protectedBranches": ["main", "master", "claude/ossalt-jp-setup-deploy-tsv3x8"],
+  "protectedBranches": [
+    "main",
+    "master",
+    "claude/ossalt-jp-setup-deploy-tsv3x8"
+  ],
   "branchPrefix": "autodev/",
-  "model": null
+  "model": null,
+  "baseBranch": "claude/ossalt-jp-setup-deploy-tsv3x8"
 }
