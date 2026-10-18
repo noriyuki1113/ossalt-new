@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "AD-002": {
+      "firstFailure": null,
+      "lastFailure": null,
+      "lastSignature": null,
+      "repeats": 0
+    }
+  }
+}

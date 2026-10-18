@@ -24,6 +24,8 @@ export function resolveLimits(config = {}, overrides = {}) {
     if (!Number.isFinite(n) || n <= 0) throw new Error(`上限 ${k} が不正です: ${wanted}`);
     out[k] = Math.min(n, HARD_CAPS[k], config[k] ?? Infinity, overrides[k] ?? Infinity);
   }
+  // 1セッションの上限は、全体の上限を超えられない（--max-cost 1 なら、1セッションも最大 $1）
+  out.maxCostUsdPerSession = Math.min(out.maxCostUsdPerSession, out.maxCostUsd);
   return out;
 }
 

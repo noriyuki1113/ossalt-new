@@ -11,7 +11,17 @@
         "E2E_SWEEP=1 の巡回が、デスクトップとスマホの両方で成功する",
         "巡回で見つかった問題は、原因を直して再び成功させる（テストを緩めたり除外したりしない）"
       ],
-      "verification": [{ "kind": "sweep" }, { "kind": "unit" }, { "kind": "build" }],
+      "verification": [
+        {
+          "kind": "sweep"
+        },
+        {
+          "kind": "unit"
+        },
+        {
+          "kind": "build"
+        }
+      ],
       "status": "todo",
       "attempts": 0,
       "lastResult": null
@@ -26,10 +36,25 @@
         "スマホ幅（Pixel 7）でも横にはみ出さない",
         "計算結果（純粋関数 src/lib/cost-lab.ts）は変更しない。既存の単体テストがすべて通る"
       ],
-      "verification": [{ "kind": "e2e", "grep": "Cost Lab" }, { "kind": "unit" }, { "kind": "build" }],
-      "status": "todo",
-      "attempts": 0,
-      "lastResult": null
+      "verification": [
+        {
+          "kind": "e2e",
+          "grep": "Cost Lab"
+        },
+        {
+          "kind": "unit"
+        },
+        {
+          "kind": "build"
+        }
+      ],
+      "status": "passed",
+      "attempts": 1,
+      "lastResult": {
+        "at": "2026-10-18T08:09:31.253Z",
+        "summary": "単体テスト（npm test）: 153件 合格 / ビルド（npm run build）: 成功 / ブラウザ検証（Cost Lab）: 成功 8 / 回帰テスト（全E2E・デスクトップ＋スマホ）: 成功 72",
+        "evidence": "reports/qa/runs/2026-10-18T08-09-31-241Z-AD-002-regression"
+      }
     },
     {
       "id": "AD-003",
@@ -40,7 +65,18 @@
         "ボタンは Tab で到達でき、Enter/Space で選べる（E2Eを追加する）",
         "既存のOSS診断のE2Eと単体テストが通る"
       ],
-      "verification": [{ "kind": "e2e", "grep": "OSS診断" }, { "kind": "unit" }, { "kind": "build" }],
+      "verification": [
+        {
+          "kind": "e2e",
+          "grep": "OSS診断"
+        },
+        {
+          "kind": "unit"
+        },
+        {
+          "kind": "build"
+        }
+      ],
       "status": "todo",
       "attempts": 0,
       "lastResult": null

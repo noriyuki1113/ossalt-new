@@ -7,6 +7,7 @@ test("上限は設定とコマンドラインの小さいほう。ハードキ�
   assert.equal(resolveLimits({ maxCostUsd: 3 }, { maxCostUsd: 1 }).maxCostUsd, 1);
   assert.equal(resolveLimits({ maxIterations: 999 }).maxIterations, HARD_CAPS.maxIterations);
   assert.equal(resolveLimits({}).maxIterations, DEFAULT_LIMITS.maxIterations);
+  assert.equal(resolveLimits({}, { maxCostUsd: 1 }).maxCostUsdPerSession, 1); // 1セッションは全体の上限を超えない
   assert.throws(() => resolveLimits({ maxCostUsd: 0 }));
   assert.throws(() => resolveLimits({}, { maxIterations: "abc" }));
 });
