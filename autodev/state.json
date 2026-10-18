@@ -5,6 +5,12 @@
       "lastFailure": null,
       "lastSignature": null,
       "repeats": 0
+    },
+    "AD-003": {
+      "firstFailure": null,
+      "lastFailure": null,
+      "lastSignature": null,
+      "repeats": 0
     }
   }
 }

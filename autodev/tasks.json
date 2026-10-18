@@ -77,9 +77,13 @@
           "kind": "build"
         }
       ],
-      "status": "todo",
-      "attempts": 0,
-      "lastResult": null
+      "status": "passed",
+      "attempts": 1,
+      "lastResult": {
+        "at": "2026-10-18T08:21:02.905Z",
+        "summary": "単体テスト（npm test）: 153件 合格 / ビルド（npm run build）: 成功 / ブラウザ検証（OSS診断）: 成功 6 / 回帰テスト（全E2E・デスクトップ＋スマホ）: 成功 74",
+        "evidence": "reports/qa/runs/2026-10-18T08-21-02-889Z-AD-003-regression"
+      }
     }
   ]
 }
