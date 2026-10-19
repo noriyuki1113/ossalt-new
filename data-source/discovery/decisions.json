@@ -56,10 +56,10 @@
       "id": "lago",
       "name": "Lago",
       "competitor": "Stripe Billing",
-      "category": "ecommerce",
+      "category": "accounting",
       "official_url": "https://www.getlago.com",
       "description_ja": "利用量に応じた課金（従量課金）の仕組みを作るための、請求の基盤。Stripe Billingの代替として、アプリから送った利用の記録を、料金プラン・前払いクレジット・請求書・支払いにつなげられる。REST APIとSDKで組み込み、Docker Composeでセルフホストできる。",
-      "note": "下書き（運営者の確認待ち）。公式README・LICENSE（AGPL-3.0）を2026-10-20に確認。AIサービス向けの従量課金を主な用途として説明している。READMEに、一部の機能（アシスタント・企業向け連携など）は有料のPremium（要問い合わせ）とある。アプリに組み込む開発が前提で、一般の事務用ではない。"
+      "note": "下書き（運営者の確認待ち）。公式README・LICENSE（AGPL-3.0）を2026-10-20に確認。AIサービス向けの従量課金を主な用途として説明している。READMEに、一部の機能（アシスタント・企業向け連携など）は有料のPremium（要問い合わせ）とある。アプリに組み込む開発が前提で、一般の事務用ではない。 カテゴリは、同じ代替先（Stripe）の既存ツール（hyperswitch・kill-bill）に合わせて accounting。"
     },
     "fluxerapp/fluxer": {
       "state": "hold",
