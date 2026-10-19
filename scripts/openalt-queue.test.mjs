@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { createGitHubClient } from "./discovery/github.mjs";
 import { stableStringify } from "./discovery/lib.mjs";
 import {
-  draftProblems, extractPageFacts, formatAddToolsLine, licensesAgree, parseOpenAltReadme, parseStarHint,
+  cleanCompetitor, draftProblems, extractPageFacts, formatAddToolsLine, licensesAgree, parseOpenAltReadme, parseStarHint,
 } from "./discovery/openalt.mjs";
 import { runOpenAltDiscovery } from "./discovery/openalt-run.mjs";
 
@@ -181,4 +181,19 @@ test("ツール追加の1行は7フィールド", () => {
   assert.equal(licensesAgree("AGPL-3.0", "AGPL-3.0-only"), true);
   assert.equal(licensesAgree("MIT", "AGPL-3.0"), false);
   assert.equal(licensesAgree(null, "MIT"), null);
+});
+
+test("代替先に {name} などテンプレートの取り残しが入っていても、代替先として扱わない（保存済みの値も直す）", async () => {
+  assert.equal(cleanCompetitor("{name}"), null);
+  assert.equal(cleanCompetitor("<b>X</b>"), null);
+  assert.equal(cleanCompetitor("  Notion "), "Notion");
+  assert.equal(extractPageFacts('<html>Alternative to {name} <a href="https://github.com/acme/x">x</a></html>').competitor, null);
+  // 前回の結果に {name} が残っていても、ネットワークなしで直る（出典は unknown に戻る）
+  const first = await runOpenAltDiscovery(base());
+  const dirty = JSON.parse(JSON.stringify(first.queue));
+  dirty.candidates.find((c) => c.slug === "alpha").fields.replaces_claimed.value = "{name}";
+  const again = await runOpenAltDiscovery(base({ prevQueue: dirty }));
+  const f = again.queue.candidates.find((c) => c.slug === "alpha").fields.replaces_claimed;
+  assert.equal(f.value, null);
+  assert.equal(f.status, "unknown");
 });

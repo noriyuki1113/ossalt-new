@@ -54,6 +54,13 @@ export function parseOpenAltReadme(markdown) {
   return entries.filter((e) => (seen.has(e.slug) ? false : (seen.add(e.slug), true))); // 同じ slug は最初の1件
 }
 
+/** ページの代替先の表記から、テンプレートの取り残し（{name} など）や不正な文字を除く。使えなければ null */
+export function cleanCompetitor(value) {
+  const v = String(value ?? "").trim();
+  if (!v || /[{}<>\\]/.test(v) || v.length > 80) return null;
+  return v;
+}
+
 /**
  * openalternative.co/<slug> のページから、公式リポジトリの手がかりと代替先を読む。
  * ページに GitHub のリンクが複数あるときは「あいまい」として人の確認に回す（多数決で決めて黙って採用しない）。
@@ -85,7 +92,7 @@ export function extractPageFacts(html) {
     }
   }
   const alt = text.match(/Alternative to ([^"<.]+)/i);
-  const competitor = alt ? alt[1].split(",")[0].split(" and ")[0].trim() || null : null;
+  const competitor = alt ? cleanCompetitor(alt[1].split(",")[0].split(" and ")[0]) : null;
   const sites = [...text.matchAll(/https:\/\/(?!(?:[^"'\s<>]*)(?:github\.com|openalternative\.co|go\.openalternative|dm\.|influxdata))([a-z0-9.-]+\.[a-z]{2,})/g)].map((m) => `https://${m[1]}`);
   return { repo, confidence, candidates, competitor, website: sites[0] ?? null };
 }

@@ -13,7 +13,7 @@ import {
   carryOverFetchedAt, indexTools, matchExisting, normalizeRepo, stableStringify,
 } from "./lib.mjs";
 import {
-  OPENALT_BLOCKING, OPENALT_SOURCE_NAME, buildOpenAltCandidate, draftProblems, extractPageFacts,
+  OPENALT_BLOCKING, OPENALT_SOURCE_NAME, buildOpenAltCandidate, cleanCompetitor, draftProblems, extractPageFacts,
   openAltIssues, parseOpenAltReadme, REVIEW_STATES,
 } from "./openalt.mjs";
 
@@ -35,7 +35,7 @@ export function reviewOf(c, decision, { categories, takenIds }) {
 export async function runOpenAltDiscovery(deps) {
   const {
     now, readme, getPage, client, useGithub = true, tools, excludedIds = new Set(), decisions = {},
-    categories = new Set(), prevQueue = { candidates: [], skipped: {} }, maxNew = 40, refreshDays = 7,
+    categories = new Set(), prevQueue = { candidates: [], skipped: {} }, maxNew = 100, refreshDays = 7,
     sleep = async () => {},
   } = deps;
   const entries = parseOpenAltReadme(readme);
@@ -46,12 +46,19 @@ export async function runOpenAltDiscovery(deps) {
   const repoIdIndex = new Map(); // 掲載データにリポジトリIDが入っていれば、ここで使う
   for (const t of tools) if (t.github_repo_id != null) repoIdIndex.set(t.github_repo_id, t.id);
 
-  const prevBySlug = new Map(prevQueue.candidates.map((c) => [c.slug, c]));
+  // 前回までに保存された代替先に、テンプレートの取り残し（{name} など）があれば取り除く（取得日時はそのまま）
+  const sanitize = (c) => {
+    const f = c.fields?.replaces_claimed;
+    if (f && f.value != null && cleanCompetitor(f.value) == null) return { ...c, fields: { ...c.fields, replaces_claimed: { ...f, value: null, status: "unknown", source: null } } };
+    return c;
+  };
+  const prevQ = { ...prevQueue, candidates: prevQueue.candidates.map(sanitize) };
+  const prevBySlug = new Map(prevQ.candidates.map((c) => [c.slug, c]));
   const skipped = {};
-  for (const [slug, s] of Object.entries(prevQueue.skipped ?? {})) skipped[slug] = s;
+  for (const [slug, s] of Object.entries(prevQ.skipped ?? {})) skipped[slug] = s;
   // 同じ理由で外したものは、最初に外した日時を保つ（再実行しても出力が変わらないようにする）
   const setSkipped = (slug, v) => {
-    const old = prevQueue.skipped?.[slug];
+    const old = prevQ.skipped?.[slug];
     skipped[slug] = old && old.reason === v.reason && old.repo === v.repo && old.tool_id === v.tool_id ? old : v;
   };
   const errors = [];
@@ -108,7 +115,7 @@ export async function runOpenAltDiscovery(deps) {
   // 3) 既存の候補の更新（公式リポジトリの最新の状態。ETag の 304 は上限に数えられにくい）
   const refreshed = [];
   const staleBefore = Date.parse(now) - refreshDays * 86400e3;
-  const prevSorted = [...prevQueue.candidates].sort((a, b) => (a.fields.stars?.fetched_at ?? "").localeCompare(b.fields.stars?.fetched_at ?? ""));
+  const prevSorted = [...prevQ.candidates].sort((a, b) => (a.fields.stars?.fetched_at ?? "").localeCompare(b.fields.stars?.fetched_at ?? ""));
   for (const prev of prevSorted) {
     const entry = entries.find((x) => x.slug === prev.slug);
     if (!entry) { refreshed.push({ ...prev, removed_from_list: true }); continue; } // 元の一覧から消えた。履歴として残す
@@ -120,7 +127,7 @@ export async function runOpenAltDiscovery(deps) {
     try {
       const gh = await verifyRepo(repoNow);
       if (gh && !gh.not_found) {
-        const pg = { repo: repoNow, confidence: dec?.repo ? "single" : prev.fields.repo_resolution?.value?.confidence ?? "none", candidates: prev.fields.repo_resolution?.value?.candidates ?? [], competitor: prev.fields.replaces_claimed?.value ?? null };
+        const pg = { repo: repoNow, confidence: dec?.repo ? "single" : prev.fields.repo_resolution?.value?.confidence ?? "none", candidates: prev.fields.repo_resolution?.value?.candidates ?? [], competitor: cleanCompetitor(prev.fields.replaces_claimed?.value) };
         refreshed.push(carryOverFetchedAt(buildOpenAltCandidate({ entry, page: pg, gh, now, firstSeen: prev.first_seen }), prev));
         continue;
       }

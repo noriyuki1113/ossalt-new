@@ -1,6 +1,6 @@
 # OpenAlternative 候補の確認キュー
 
-作成：2026-10-19 ／ 処理：`scripts/discover-openalt.mjs`（本体：`scripts/discovery/openalt-run.mjs`、純粋関数：`scripts/discovery/openalt.mjs`、テスト：`scripts/openalt-queue.test.mjs`）／ 定期実行：`.github/workflows/openalt-queue.yml`（毎月1日 06:11 JST・手動）
+作成：2026-10-19 ／ 処理：`scripts/discover-openalt.mjs`（本体：`scripts/discovery/openalt-run.mjs`、純粋関数：`scripts/discovery/openalt.mjs`、テスト：`scripts/openalt-queue.test.mjs`）／ 定期実行：`.github/workflows/openalt-queue.yml`（毎週月曜 06:11 JST・手動）
 
 ## 1. 既存の仕組みとの関係（作り直していないもの）
 
@@ -45,7 +45,7 @@
 
 ## 4. 確認キューを使う手順（運営者）
 
-1. **収集**：Actions → 「OpenAlternative候補の確認キュー」→ Run workflow（毎月1日にも自動）。1回に処理する新規の候補は既定 40件（`max_new`）。残りは次回に続く。
+1. **収集**：Actions → 「OpenAlternative候補の確認キュー」→ Run workflow（毎週月曜にも自動）。1回に処理する新規の候補は既定 100件（`max_new`。GitHub API は1件あたり2リクエストで、上限300の範囲）。残りは次回に続く。既存の候補の更新は、古いものから順に、残りのリクエストの範囲で行う。
 2. **一覧を見る**：`docs/discovery/openalt-queue.md`。状態は「確認待ち／止める問題あり」。
 3. **判断を書く**：`data-source/discovery/decisions.json`（GitHub の画面で編集できる）。キーは `owner/repo`（小文字）。公式リポジトリが未確定なものは `openalt:<slug>`。
    ```json
@@ -68,7 +68,7 @@
 ## 5. 上限・安全
 
 - GitHub API は1回あたり最大300リクエスト（`max_requests`）。残りが50を切るか制限に当たったら止まる。ETag で変わっていないものは 304。
-- openalternative.co へのアクセスは、1件ごとに間隔をあける（400ms）・タイムアウト12秒・再試行3回。1回あたり新規の候補数の上限で抑える。
+- openalternative.co へのアクセスは、1件ごとに間隔をあける（400ms）・タイムアウト12秒・再試行3回。1回あたり新規の候補数の上限（既定100）で抑える。
 - 同じ入力なら、出力のファイルは変わらない（冪等）。値が変わらない項目は取得日時も前回のまま。README の取得に失敗したときは前回の結果を消さずに失敗で終わる。
 - AI は使わない。tools.json・サイトの表示は変えない。公開用の GitHub Pages ワークフローは動かない（`GITHUB_TOKEN` での push）。
 
