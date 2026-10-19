@@ -197,3 +197,27 @@ test("代替先に {name} などテンプレートの取り残しが入ってい
   assert.equal(f.value, null);
   assert.equal(f.status, "unknown");
 });
+
+test("同じ公式リポジトリの別名の項目は1件にまとめ、処理済みとして記録する（再実行でページ・APIを取り直さず、also_listed_as も増えない）", async () => {
+  const readme = [
+    "## P", "### N",
+    item("Alpha", "alpha", "Notes app", "MIT", "1K"),
+    item("Alpha Cloud", "alpha-cloud", "Same repo, other product page", "MIT", "1K"),
+    item("Alpha Mail", "alpha-mail", "Same repo again", "MIT", "1K"),
+  ].join("\n");
+  const pages = { "https://openalternative.co/alpha": page("acme/alpha"), "https://openalternative.co/alpha-cloud": page("acme/alpha"), "https://openalternative.co/alpha-mail": page("acme/alpha") };
+  const fetched = [];
+  const getPage = async (u) => { fetched.push(u); return { ok: true, text: pages[u] }; };
+  const first = await runOpenAltDiscovery(base({ readme, getPage, tools: [], excludedIds: new Set() }));
+  assert.deepEqual(first.queue.candidates.map((c) => c.slug), ["alpha"]);
+  assert.deepEqual(first.queue.candidates[0].also_listed_as, ["alpha-cloud", "alpha-mail"]);
+  assert.equal(first.queue.skipped["alpha-cloud"].reason, "same_repo_as_queue_entry");
+  assert.equal(first.summary.unprocessed, 0);
+  fetched.length = 0;
+  const log = [];
+  const second = await runOpenAltDiscovery(base({ readme, getPage, tools: [], excludedIds: new Set(), prevQueue: first.queue, client: makeClient(log) }));
+  assert.deepEqual(fetched, []); // 処理済みのページは取り直さない
+  assert.equal(log.length, 0); // 更新の間隔（7日）より前なので、API も呼ばない
+  assert.deepEqual(second.queue.candidates[0].also_listed_as, ["alpha-cloud", "alpha-mail"]); // 増えない
+  assert.equal(stableStringify(second.queue), stableStringify(first.queue));
+});

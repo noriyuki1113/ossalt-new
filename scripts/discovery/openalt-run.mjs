@@ -149,7 +149,12 @@ export async function runOpenAltDiscovery(deps) {
     const base = { ...c1, quality: { issues, blocking: issues.filter((i) => OPENALT_BLOCKING.has(i)) } };
     if (base.repo) {
       const dup = byRepo.get(base.repo);
-      if (dup) { dup.also_listed_as = [...(dup.also_listed_as ?? []), base.slug].sort(); continue; } // 同じリポジトリが別の名前で載っている
+      if (dup) {
+        // 同じリポジトリが別の名前で載っている。1件にまとめ、処理済みとして記録する（記録しないと、毎回ページと API を取り直し、also_listed_as が増え続ける）
+        dup.also_listed_as = [...new Set([...(dup.also_listed_as ?? []), base.slug, ...(base.also_listed_as ?? [])])].filter((s) => s !== dup.slug).sort();
+        setSkipped(base.slug, { reason: "same_repo_as_queue_entry", repo: base.repo, merged_into: dup.slug, at: now });
+        continue;
+      }
       byRepo.set(base.repo, base);
     }
     final.push(base);
