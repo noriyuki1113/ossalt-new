@@ -208,6 +208,9 @@ const OSI_LIKE = new Set([
   "GPL-2.0", "GPL-2.0-only", "GPL-2.0-or-later", "GPL-3.0", "GPL-3.0-only", "GPL-3.0-or-later",
   "AGPL-3.0", "AGPL-3.0-only", "AGPL-3.0-or-later", "LGPL-2.1", "LGPL-2.1-only", "LGPL-2.1-or-later",
   "LGPL-3.0", "LGPL-3.0-only", "LGPL-3.0-or-later", "EUPL-1.2", "Zlib", "BSL-1.0", "CC0-1.0",
+  // 確認キューの初回の実行で、EPL-2.0（Huly）が OSI 承認なのに「OSI以外」と判定されたため追加（OSI 承認の SPDX）
+  "EPL-1.0", "EPL-2.0", "CDDL-1.0", "MS-PL", "MS-RL", "OSL-3.0", "AFL-3.0", "Artistic-2.0", "EUPL-1.1",
+  "MPL-1.1", "NCSA", "PostgreSQL", "UPL-1.0", "ECL-2.0", "CECILL-2.1", "Apache-1.1", "BSD-1-Clause", "Python-2.0",
 ]);
 
 /** OSI が承認したライセンス（主なもの）か。ソース公開型（BUSL・FSL・PolyForm など）や不明は false */

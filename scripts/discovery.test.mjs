@@ -313,3 +313,9 @@ test("公開の操作は管理者だけ：収集は掲載データに書き込�
   assert.match(on, /workflow_dispatch/);
   assert.doesNotMatch(on, /schedule|push:|pull_request|issue/);
 });
+
+test("OSI 承認のライセンス（EPL-2.0 など）を「OSI以外」と判定しない。ソース公開型・不明は引き続き OSI 以外", async () => {
+  const { isOsiLicense } = await import("./discovery/lib.mjs");
+  for (const id of ["EPL-2.0", "EPL-1.0", "MS-PL", "Artistic-2.0", "CDDL-1.0", "MIT", "AGPL-3.0"]) assert.equal(isOsiLicense(id), true, id);
+  for (const id of ["BUSL-1.1", "FSL-1.1-MIT", "PolyForm-Shield-1.0", "SSPL-1.0", "Elastic-2.0", "NOASSERTION", "", null]) assert.equal(isOsiLicense(id), false, String(id));
+});
