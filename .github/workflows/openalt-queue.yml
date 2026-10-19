@@ -1,6 +1,6 @@
 name: OpenAlternative 候補の確認キュー
 
-# 毎月1日 06:11 JST（前日 21:11 UTC）と、手動実行。
+# 毎週月曜 06:11 JST（日曜 21:11 UTC）と、手動実行。
 # OpenAlternative（piotrkulpinski/open-source-alternatives）の一覧から新しい候補を見つけ、
 # 公式リポジトリ（GitHub API）で確認した結果を data-source/discovery/openalt-queue.json に書く。
 # 処理は scripts/discover-openalt.mjs（設計：docs/discovery/OPENALT_QUEUE.md）。
@@ -11,14 +11,14 @@ name: OpenAlternative 候補の確認キュー
 # ・AI は使わない（費用は0）。
 on:
   schedule:
-    - cron: "11 21 28-31 * *"
+    - cron: "11 21 * * 0"
   workflow_dispatch:
     inputs:
       max_new:
-        description: "1回で処理する新規の候補数（既定 40）"
+        description: "1回で処理する新規の候補数（既定 100。GitHub API は1件あたり2リクエスト）"
         required: false
         type: string
-        default: "40"
+        default: "100"
       max_requests:
         description: "GitHub API のリクエストの上限（既定 300）"
         required: false
@@ -50,28 +50,15 @@ jobs:
           key: openalt-etag-${{ github.run_id }}
           restore-keys: openalt-etag-
 
-      # 月末の4日間（28〜31日）に動かし、翌日が1日のときだけ実行する（cron は「毎月1日」を直接書けないため）
-      - name: 実行日の確認
-        id: gate
-        run: |
-          if [ "${{ github.event_name }}" = "schedule" ] && [ "$(date -u -d tomorrow +%d)" != "01" ]; then
-            echo "run=false" >> "$GITHUB_OUTPUT"
-            echo "月末ではないためスキップ"
-          else
-            echo "run=true" >> "$GITHUB_OUTPUT"
-          fi
-
       # 入力は env: 経由で受け取る（run: に直接埋め込まない）
       - name: 収集と確認
-        if: steps.gate.outputs.run == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.DATA_FETCH_TOKEN || secrets.GITHUB_TOKEN }}
-          OPENALT_MAX_NEW: ${{ inputs.max_new || '40' }}
+          OPENALT_MAX_NEW: ${{ inputs.max_new || '100' }}
           OPENALT_MAX_REQUESTS: ${{ inputs.max_requests || '300' }}
         run: node scripts/discover-openalt.mjs
 
       - name: 結果をサマリに表示
-        if: steps.gate.outputs.run == 'true'
         run: |
           {
             echo "## 確認キューの更新結果"
@@ -82,7 +69,6 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: コミットと push
-        if: steps.gate.outputs.run == 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

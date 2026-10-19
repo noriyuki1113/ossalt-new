@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * OpenAlternative 候補の確認キューを更新する（手動実行／月1回の定期実行）。
- *   node scripts/discover-openalt.mjs [--no-github] [--max-new 40] [--max-requests 300]
+ *   node scripts/discover-openalt.mjs [--no-github] [--max-new 100] [--max-requests 300]
  * 設計：docs/discovery/OPENALT_QUEUE.md
  *
  * 書くもの（すべて非掲載。サイトには出ない）：
@@ -29,7 +29,7 @@ const argv = process.argv.slice(2);
 const arg = (k, d) => (argv.includes(k) ? argv[argv.indexOf(k) + 1] : d);
 const TOKEN = process.env.GITHUB_TOKEN || "";
 const NO_GITHUB = argv.includes("--no-github");
-const MAX_NEW = Number(arg("--max-new", process.env.OPENALT_MAX_NEW || 40));
+const MAX_NEW = Number(arg("--max-new", process.env.OPENALT_MAX_NEW || 100));
 const MAX_REQUESTS = Number(arg("--max-requests", process.env.OPENALT_MAX_REQUESTS || 300));
 
 const readJson = (f, fb) => (fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : fb);
