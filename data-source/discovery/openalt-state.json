@@ -2,33 +2,34 @@
   "errors": [],
   "github": {
     "budget_stopped": null,
-    "errors": 14,
+    "errors": 13,
     "max_requests": 300,
-    "notModified": 3,
-    "remaining": 4745,
-    "requests": 196,
+    "notModified": 4,
+    "remaining": 4635,
+    "requests": 200,
     "retried": 0,
     "used": true
   },
-  "last_changed_at": "2026-10-19T21:28:09.371Z",
-  "last_run_at": "2026-10-19T21:28:09.371Z",
+  "last_changed_at": "2026-10-19T22:03:46.849Z",
+  "last_run_at": "2026-10-19T22:03:46.849Z",
   "summary": {
     "approved": 0,
-    "blocked": 45,
+    "blocked": 69,
     "hold": 0,
-    "needs_review": 182,
+    "needs_review": 254,
     "processed_this_run": 100,
-    "queue": 227,
+    "queue": 323,
     "readme_entries": 831,
     "ready": 0,
     "rejected": 0,
-    "skipped": 215,
+    "skipped": 219,
     "skipped_by_reason": {
       "excluded_in_overrides": 3,
       "listed_by_name": 203,
-      "listed_by_repo": 4,
-      "repo_not_found": 5
+      "listed_by_repo": 5,
+      "repo_not_found": 5,
+      "same_repo_as_queue_entry": 3
     },
-    "unprocessed": 386
+    "unprocessed": 289
   }
 }
