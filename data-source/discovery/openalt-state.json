@@ -1,0 +1,32 @@
+{
+  "errors": [],
+  "github": {
+    "budget_stopped": null,
+    "errors": 5,
+    "max_requests": 300,
+    "notModified": 0,
+    "remaining": 4954,
+    "requests": 80,
+    "retried": 0,
+    "used": true
+  },
+  "last_changed_at": "2026-10-19T21:11:37.853Z",
+  "last_run_at": "2026-10-19T21:11:37.853Z",
+  "summary": {
+    "approved": 0,
+    "blocked": 11,
+    "hold": 0,
+    "needs_review": 29,
+    "processed_this_run": 40,
+    "queue": 40,
+    "readme_entries": 831,
+    "ready": 0,
+    "rejected": 0,
+    "skipped": 206,
+    "skipped_by_reason": {
+      "excluded_in_overrides": 3,
+      "listed_by_name": 203
+    },
+    "unprocessed": 585
+  }
+}
