@@ -2,54 +2,54 @@
   "_note": "掲載候補への運営者の判断（人が書く）。キーは owner/repo（小文字）。state は approved（掲載する）／rejected（掲載しない）／hold（保留）。ここに approved と書いてもサイトには出ない。掲載は「ツール追加」ワークフローで行う。手順：docs/discovery/CLOUDFLARE_DISCOVERY.md",
   "decisions": {
     "karakeep-app/karakeep": {
-      "state": "hold",
+      "state": "approved",
       "id": "karakeep",
       "name": "Karakeep",
       "competitor": "Pocket",
       "category": "note-docs",
       "official_url": "https://karakeep.app",
       "description_ja": "リンク・メモ・画像・PDFをまとめて保存するブックマーク管理アプリ。Pocketの代替として、ページ全文の保存、全文検索、リストの共同利用、AIによる自動タグ付け（ローカルモデルにも対応）ができる。Pocketなどからのインポートに対応し、ブラウザ拡張とiOS・Androidアプリもある。",
-      "note": "下書き（運営者の確認待ち）。公式README・LICENSE（AGPL-3.0）を2026-10-20に確認。Docker導入・多言語対応の記載あり（日本語UIの有無は未確認）。"
+      "note": "運営者が承認（2026-10-20）。公式README・LICENSE（AGPL-3.0）を2026-10-20に確認。Docker導入・多言語対応の記載あり（日本語UIの有無は未確認）。"
     },
     "suitenumerique/docs": {
-      "state": "hold",
+      "state": "approved",
       "id": "la-suite-docs",
       "name": "La Suite Docs",
       "competitor": "Notion",
       "category": "note-docs",
       "official_url": "https://docs.la-suite.eu/",
       "description_ja": "リアルタイムで共同編集できる文書エディタ。Notionの代替として、サブページでの整理、コメントと共有、権限の細かい設定、オフライン編集ができる。フランス政府の組織が開発し、KubernetesやDocker Composeでセルフホストできる。PDF出力などの一部の機能は、GPLのパッケージに依存する。",
-      "note": "下書き（運営者の確認待ち）。公式README・LICENSE（MIT）を2026-10-20に確認。READMEに「PDF出力などの一部機能はMIT互換でないGPLパッケージ（BlockNote XL）に依存」との注意あり。解説にも明記すること。"
+      "note": "運営者が承認（2026-10-20）。公式README・LICENSE（MIT）を2026-10-20に確認。READMEに「PDF出力などの一部機能はMIT互換でないGPLパッケージ（BlockNote XL）に依存」との注意あり。解説にも明記すること。"
     },
     "rybbit-io/rybbit": {
-      "state": "hold",
+      "state": "approved",
       "id": "rybbit",
       "name": "Rybbit",
       "competitor": "Google Analytics",
       "category": "analytics",
       "official_url": "https://rybbit.com",
       "description_ja": "Cookieを使わない、プライバシー重視のウェブ・プロダクト分析。Google Analyticsの代替として、セッションやページビュー、ファネル、リテンション、ユーザーの導線、セッションリプレイ、リアルタイム表示ができる。ホスト版とセルフホストの両方がある。",
-      "note": "下書き（運営者の確認待ち）。公式README（AGPL-3.0と明記）・GitHubのライセンス判定（AGPL-3.0）を2026-10-20に確認。ただしリポジトリ直下の LICENSE（取得パス）が見つからなかったため、ライセンスのファイルの場所を人が確認すること。最終pushは2026-09-12。"
+      "note": "運営者が承認（2026-10-20）。公式README（AGPL-3.0と明記）・GitHubのライセンス判定（AGPL-3.0）を2026-10-20に確認。ただしリポジトリ直下の LICENSE（取得パス）が見つからなかったため、ライセンスのファイルの場所を人が確認すること。最終pushは2026-09-12。"
     },
     "every-app/open-seo": {
-      "state": "hold",
+      "state": "approved",
       "id": "openseo",
       "name": "OpenSEO",
       "competitor": "Semrush",
       "category": "seo",
       "official_url": "https://openseo.so",
       "description_ja": "キーワード調査、順位追跡、競合分析、被リンク、サイト監査ができるSEOツール。SemrushやAhrefsの代替。セルフホストできるが、SEOデータの取得にDataForSEOのAPIキー（外部サービス・従量課金）が別途必要。AIエージェント向けのMCPも備える。",
-      "note": "下書き（運営者の確認待ち）。公式README・LICENSE（MIT）を2026-10-20に確認。セルフホストでもDataForSEOの有料APIが必要（READMEの Costs）。SaaSのままのほうがよい場合の注意として解説に書くこと。"
+      "note": "運営者が承認（2026-10-20）。公式README・LICENSE（MIT）を2026-10-20に確認。セルフホストでもDataForSEOの有料APIが必要（READMEの Costs）。SaaSのままのほうがよい場合の注意として解説に書くこと。"
     },
     "usekaneo/kaneo": {
-      "state": "hold",
+      "state": "approved",
       "id": "kaneo",
       "name": "Kaneo",
       "competitor": "Linear",
       "category": "project",
       "official_url": "https://kaneo.app/",
       "description_ja": "ボード・リスト・カレンダー・ガントで見られる、シンプルなプロジェクト管理。Linearの代替として、サブタスクや依存関係、コメント、時間記録、共有ワークスペース、GitHub連携、REST APIとMCPを備える。セルフホストできる。",
-      "note": "下書き（運営者の確認待ち）。公式README・LICENSE（MIT）を2026-10-20に確認。"
+      "note": "運営者が承認（2026-10-20）。公式README・LICENSE（MIT）を2026-10-20に確認。"
     }
   }
 }
