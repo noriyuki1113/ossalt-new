@@ -85,7 +85,7 @@ export default function TrendingPage() {
         <Breadcrumbs items={[{ href: "/", label: "トップ" }, { label: "急上昇中のオープンソース" }]} />
         <h1 className="h2">急上昇中のオープンソース</h1>
         <p className="lede">
-          {`SaaSの代わりになるオープンソースのうち、GitHubのスターが最近多く増えたものです。直近${maxDays}日間の記録をもとに、${formatDate(meta.built_at)}に更新しました。`}
+          {`SaaSの代わりになるオープンソースのうち、GitHubのスターが最近多く増えたものです。直近${maxDays}日間の記録をもとにしています。スター数は${formatDate(meta.stars_as_of ?? meta.built_at)}までにGitHubから取得した最新の値です。`}
         </p>
 
         {all.length === 0 ? (

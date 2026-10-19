@@ -11,11 +11,14 @@
  *
  * 既存の data-source/tools.json と照合し、掲載済みを除いた「未掲載のみ」を出す。
  * GitHub リポジトリや代替SaaSは次段階（enrich-openalt-candidates.mjs）で補完する。
+ * ※ ここに出るライセンス・スター・説明は第三者の一覧の記載（未確認）。確認と掲載の流れは
+ *   確認キュー（scripts/discover-openalt.mjs、docs/discovery/OPENALT_QUEUE.md）を使う。
  */
 
 import fs from "node:fs";
 import path from "node:path";
 import { loadOverrides } from "./overrides.mjs";
+import { parseOpenAltReadme } from "./discovery/openalt.mjs";
 
 const ROOT = process.cwd();
 const SRC_TOOLS = path.join(ROOT, "data-source", "tools.json");
@@ -29,46 +32,8 @@ const res = await fetch(SOURCE, {
 if (!res.ok) throw new Error(`README 取得失敗: ${res.status}`);
 const markdown = await res.text();
 
-const excluded = new Set(["Sponsors", "Contents", "Contributing", "Footnotes"]);
-const entries = [];
-let major = null;
-let sub = null;
-
-for (const line of markdown.split(/\r?\n/)) {
-  if (line.startsWith("## ")) {
-    const t = line.slice(3).trim();
-    major = excluded.has(t) ? null : t;
-    sub = null;
-    continue;
-  }
-  if (line.startsWith("### ")) {
-    if (major) sub = line.slice(4).trim();
-    continue;
-  }
-  if (!major || !sub || !line.startsWith("- ")) continue;
-
-  const m = line.match(
-    /^-\s+(?:\*\*)?\[([^\]]+)\]\((https:\/\/openalternative\.co\/[^)]+)\)(?:\*\*)?\s+-\s+(.+)$/
-  );
-  if (!m) continue;
-  const [, rawName, sourceUrl, tail] = m;
-  const hints = [...tail.matchAll(/`([^`]+)`/g)].map((x) => x[1].trim());
-  const description = tail.replace(/\s*`[^`]+`/g, "").trim();
-
-  entries.push({
-    name: rawName.trim(),
-    slug: sourceUrl.replace(/\/+$/, "").split("/").pop(),
-    sourceUrl,
-    description: description || null,
-    license_hint: hints.find((h) => !h.startsWith("⭐")) ?? null,
-    stars_hint: hints.find((h) => h.startsWith("⭐"))?.replace(/^⭐\s*/, "") ?? null,
-    major,
-    sub,
-  });
-}
-
-// slug で重複除去
-const uniq = [...new Map(entries.map((e) => [e.slug, e])).values()];
+// 解析は確認キュー（discover-openalt.mjs）と共通（scripts/discovery/openalt.mjs）。同じ slug は最初の1件。
+const uniq = parseOpenAltReadme(markdown);
 
 // 既存掲載との照合（id または name の小文字一致）
 const existing = JSON.parse(fs.readFileSync(SRC_TOOLS, "utf8"));
@@ -94,7 +59,8 @@ let md = `# OpenAlternative 追加候補（未掲載のみ）\n\n`;
 md += `- 元: ${SOURCE}\n`;
 md += `- 全ユニーク: ${uniq.length}件 / **未掲載: ${fresh.length}件**\n`;
 md += `- 生成: ${new Date().toISOString().slice(0, 10)}\n\n`;
-md += `採用したいものは slug を控え、次を実行:\n`;
+md += `※ ライセンス・Star・説明は OpenAlternative 一覧の記載（第三者の情報・未確認）です。公式リポジトリでの確認は確認キュー（docs/discovery/openalt-queue.md）で行います。\n\n`;
+ md += `採用したいものは slug を控え、次を実行:\n`;
 md += "`node scripts/enrich-openalt-candidates.mjs --only slug1,slug2`\n\n";
 const byMajor = new Map();
 for (const e of fresh) {

@@ -16,6 +16,8 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { extractPageFacts } from "./discovery/openalt.mjs";
+import { indexTools } from "./discovery/lib.mjs";
 
 const ROOT = process.cwd();
 const CAND_JSON = path.join(ROOT, "docs", "openalt-candidates.json");
@@ -32,6 +34,7 @@ if (onlyIdx === -1 || !args[onlyIdx + 1]) {
 const wanted = args[onlyIdx + 1].split(",").map((s) => s.trim()).filter(Boolean);
 
 const all = JSON.parse(fs.readFileSync(CAND_JSON, "utf8"));
+const toolIdx = indexTools(JSON.parse(fs.readFileSync(path.join(ROOT, "data-source", "tools.json"), "utf8")));
 const targets = all.filter((e) => wanted.includes(e.slug));
 const missing = wanted.filter((w) => !targets.some((t) => t.slug === w));
 if (missing.length) console.warn(`候補一覧に無い slug: ${missing.join(", ")}`);
@@ -76,27 +79,17 @@ const results = await mapLimit(targets, CONCURRENCY, async (e) => {
   const html = await get(`https://openalternative.co/${e.slug}`);
   if (!html) return { ...e, error: "ページ取得失敗" };
 
-  // GitHub リポジトリ（プレースホルダの posthog/posthog は除外し、頻出1件を採用）
-  const ghMatches = [...html.matchAll(/github\.com\/([A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+)/g)]
-    .map((m) => m[1])
-    .filter((g) => g.toLowerCase() !== "posthog/posthog");
-  const gh = ghMatches.length
-    ? Object.entries(
-        ghMatches.reduce((acc, g) => ((acc[g] = (acc[g] || 0) + 1), acc), {})
-      ).sort((a, b) => b[1] - a[1])[0][0]
-    : null;
-
-  // 代替するSaaS（"Alternative to X"）
-  const altM = html.match(/Alternative to ([^"<.]+)/i);
-  const competitor = altM ? altM[1].split(",")[0].split(" and ")[0].trim() : null;
-
-  // 公式サイト（github.com でも openalternative.co でもない https リンクの代表）
-  const siteM = [...html.matchAll(/https:\/\/(?!.*github\.com)(?!.*openalternative\.co)([a-z0-9.-]+\.[a-z]{2,})/g)]
-    .map((m) => "https://" + m[1])
-    .filter((u) => !/go\.openalternative|dm\.|influxdata/.test(u));
-  const website = siteM.length ? siteM[0] : null;
-
-  if (!gh) return { ...e, error: "GitHub リポジトリを特定できない" };
+  // 公式リポジトリの手がかり。ページにリポジトリが複数あるときは決めずに保留する（確認キューと同じ判定）
+  const facts = extractPageFacts(html);
+  if (!facts.repo) {
+    return { ...e, error: facts.confidence === "ambiguous" ? `GitHub リポジトリが複数あり特定できない（${facts.candidates.map((c) => c.repo).join(", ")}）` : "GitHub リポジトリを特定できない" };
+  }
+  const gh = facts.repo;
+  // 掲載済みのリポジトリ（旧名を含む）なら、名前が違っても重複として止める
+  const dupId = toolIdx.get(gh);
+  if (dupId) return { ...e, error: `公式リポジトリが掲載済み（${dupId}）` };
+  const competitor = facts.competitor;
+  const website = facts.website;
   return { ...e, gh, competitor, website };
 });
 

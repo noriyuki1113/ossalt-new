@@ -4,7 +4,7 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 
-import {validateAndReduceFeed, syncSignals, FEED_URL} from "./fetch-osswatch-signals.mjs";
+import {validateAndReduceFeed, syncSignals, FEED_URL, feedStall} from "./fetch-osswatch-signals.mjs";
 
 const base = {
   schema_version:1, generated_at:"2026-10-17T00:40:00Z",
@@ -101,4 +101,15 @@ test("fetch failures leave the existing artifact untouched",async()=>{
     }));
     assert.match(fs.readFileSync(output,"utf8"),/last validated data/);
   }finally{fs.rmSync(root,{recursive:true,force:true})}
+});
+
+test("配信元の更新停止を検知する：36時間以内なら警告なし、超えたら警告（前回と同じ生成日時なら、そのことも書く）",()=>{
+  const now=Date.parse("2026-10-19T14:00:00Z");
+  assert.equal(feedStall({previousGeneratedAt:"2026-10-19T00:00:00Z",generatedAt:"2026-10-19T00:00:00Z",now}),null);
+  assert.equal(feedStall({previousGeneratedAt:"2026-10-17T00:00:00Z",generatedAt:"2026-10-18T10:00:00Z",now}),null); // 28時間
+  const same=feedStall({previousGeneratedAt:"2026-10-16T15:53:22Z",generatedAt:"2026-10-16T15:53:22Z",now});
+  assert.match(same,/70 時間/);
+  assert.match(same,/前回の取り込みと同じ/);
+  assert.match(feedStall({previousGeneratedAt:null,generatedAt:"2026-10-16T15:53:22Z",now}),/更新されていません/);
+  assert.equal(feedStall({previousGeneratedAt:null,generatedAt:"broken",now}),null);
 });

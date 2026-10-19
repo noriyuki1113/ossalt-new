@@ -81,6 +81,8 @@ export type Tool = {
 
 export type DataMeta = {
   built_at: string;
+  /** GitHub のスター数などを最後に取得した日時（built_at はビルドした日時で、取得日とは限らない） */
+  stars_as_of?: string | null;
   tool_count: number;
   scored_count: number;
   unrated_count: number;
