@@ -369,8 +369,12 @@ const health =
       }
     : null;
 
+// スター数などを GitHub から最後に取得した日時（ビルドした日時ではない。ツールごとに数日おきの取得なので、最新のもの）
+const starsAsOf = raw.map((t) => t.github_checked_at).filter(Boolean).sort().pop() ?? null;
+
 const meta = {
   built_at: new Date().toISOString(),
+  stars_as_of: starsAsOf,
   tool_count: active.length,
   scored_count: scored,
   unrated_count: active.length - scored,

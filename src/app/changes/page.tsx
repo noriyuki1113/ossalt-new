@@ -34,6 +34,11 @@ function ActivityCard({ row }: { row: ActivityRow }) {
         <div><span>観測時Star</span><strong>{obs.stars.toLocaleString("ja-JP")}</strong></div>
         <div><span>7日間のStar増減</span><strong>
           {obs.stars_delta_7d === null ? <small>履歴蓄積中</small> : (obs.stars_delta_7d > 0 ? "+" : "") + obs.stars_delta_7d.toLocaleString("ja-JP")}
+          {row.ownGain && (
+            <small title="OSSALTが毎日GitHubから取得して記録したStar数の差です。Watchの観測値とは別の出典です">
+              OSSALT記録：+{row.ownGain.gain.toLocaleString("ja-JP")}／{row.ownGain.days}日間
+            </small>
+          )}
         </strong></div>
         <div><span>最新安定版タグ</span><strong className={styles.release}>
           {obs.release_status === "ok" && obs.latest_stable_release_tag ? obs.latest_stable_release_tag : <small>未取得／対象外</small>}
@@ -72,6 +77,14 @@ export default function ChangesPage() {
           </div>
         </header>
 
+        {report.feedStalled && report.generatedAt && (
+          <aside className={styles.note} aria-label="観測データの更新について" role="status">
+            <strong>観測データの更新が止まっている可能性があります。</strong>
+            <p>配信元の最新の観測は{activityDateJst(report.generatedAt)}（JST）です。それより新しい変化は反映されていません。
+              Star数などの最新の値は、各ツールのページと<Link href="/trending/">急上昇ランキング</Link>（OSSALTが毎日取得）で確認できます。</p>
+          </aside>
+        )}
+
         <section className={styles.stats} aria-label="観測サマリー">
           <div><span>最新の観測対象</span><strong>{report.rows.length}<small> OSS</small></strong></div>
           <div><span>直近の変化シグナル</span><strong>{report.changed}<small> 件</small></strong></div>
@@ -83,7 +96,9 @@ export default function ChangesPage() {
           <aside className={styles.note} aria-label="比較期間について">
             <strong>履歴を蓄積しています。</strong>
             <p>7日前の実測値がないOSSについては、増減を「0」ではなく「履歴蓄積中」と表示しています。
-              初めての観測からすぐに成長率を算出することはできません。</p>
+              初めての観測からすぐに成長率を算出することはできません。
+              {report.historyNotAccumulating ? "現在、配信元の観測回数が増えていないため、履歴が積み上がっていません。" : ""}
+              代わりに、OSSALT自身が毎日取得して記録したStar数の差を「OSSALT記録」として別に表示しています。</p>
           </aside>
         )}
 

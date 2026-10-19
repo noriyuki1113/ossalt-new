@@ -79,3 +79,31 @@ test("missing and unsupported feeds produce honest empty report",()=>{
     observations:[]},now).rows,[]);
   assert.equal(activityDateJst("not a date"),"未確認");
 });
+
+test("履歴蓄積中の行には、OSSALT自身の記録による増加を別の出典として添える（Watch の値は書き換えない）",()=>{
+  const withGain=[{...tools[0],star_gain:{gain:123,days:24,from:"2026-09-25"}}];
+  const result=buildActivityReport(withGain,feed(record("n8n-io/n8n")),now);
+  assert.deepEqual(result.rows[0].ownGain,{gain:123,days:24,from:"2026-09-25"});
+  assert.equal(result.rows[0].observation.stars_delta_7d,null); // Watch の値はそのまま（null）
+  assert.equal(result.with7dBaseline,0);
+  // Watch に7日間の値があるときは、OSSALT記録は添えない
+  const real=buildActivityReport(withGain,feed(record("n8n-io/n8n",{stars_delta_7d:5,baseline_date_7d:"2026-10-10"})),now);
+  assert.equal(real.rows[0].ownGain,null);
+  // 記録が無い・減少（gain < 0）のときも添えない
+  assert.equal(buildActivityReport([{...tools[0],star_gain:null}],feed(record("n8n-io/n8n")),now).rows[0].ownGain,null);
+  assert.equal(buildActivityReport([{...tools[0],star_gain:{gain:-1,days:5,from:"2026-10-01"}}],feed(record("n8n-io/n8n")),now).rows[0].ownGain,null);
+});
+
+test("配信元の更新停止：生成日時が36時間より古ければ検知し、観測回数が1のままなら履歴が積み上がっていないと示す",()=>{
+  const fresh=buildActivityReport(tools,feed(record("n8n-io/n8n")),now); // 生成から1時間
+  assert.equal(fresh.feedStalled,false);
+  assert.equal(fresh.historyNotAccumulating,false);
+  const later=new Date("2026-10-19T14:00:00Z"); // 生成から62時間
+  const stalled=buildActivityReport(tools,feed(record("n8n-io/n8n",{observed_at:"2026-10-16T00:00:00Z"})),later); // 観測から86時間
+  assert.equal(stalled.feedStalled,true);
+  assert.equal(stalled.historyNotAccumulating,true);
+  assert.equal(stalled.rows[0].outdated,true); // 古い観測は「現在の変化」として扱わない（従来どおり）
+  const growing=buildActivityReport(tools,feed(record("n8n-io/n8n",{observed_at:"2026-10-17T00:00:00Z",observation_count:3})),later);
+  assert.equal(growing.historyNotAccumulating,false);
+  assert.equal(buildActivityReport(tools,null,later).feedStalled,false); // データなしは別の表示（NO VERIFIED DATA）
+});

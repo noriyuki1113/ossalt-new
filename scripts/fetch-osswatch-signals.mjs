@@ -79,6 +79,18 @@ export function validateAndReduceFeed(raw, catalog) {
   };
 }
 
+/**
+ * 取り込みは成功しても、配信元の観測が進んでいないことがある（生成日時が前回と同じ、または古いまま）。
+ * 黙って古いデータを出し続けないよう、止まっていれば警告を返す。
+ */
+export function feedStall({previousGeneratedAt, generatedAt, now = Date.now(), hours = 36}) {
+  if (!validDate(generatedAt)) return null;
+  const ageH = (now - Date.parse(generatedAt)) / 3600000;
+  if (ageH <= hours) return null;
+  const same = validDate(previousGeneratedAt) && Date.parse(previousGeneratedAt) === Date.parse(generatedAt);
+  return `配信元（OSS Intelligence Watch）の観測が ${Math.floor(ageH)} 時間更新されていません（生成: ${generatedAt}${same ? "・前回の取り込みと同じ" : ""}）。配信元の定期実行を確認してください。`;
+}
+
 export async function syncSignals({url=FEED_URL, catalogPath="data-source/tools.json",
                                   outPath="public/data/osswatch-signals.json", fetcher=fetch}={}) {
   // This is for the dedicated public source only. It must not turn into an
@@ -97,6 +109,15 @@ export async function syncSignals({url=FEED_URL, catalogPath="data-source/tools.
       }
     } catch (err) {
       if (err.message?.includes("older")) throw err;
+    }
+  }
+  let previousGeneratedAt = null;
+  try { previousGeneratedAt = JSON.parse(fs.readFileSync(outPath,"utf8")).generated_at; } catch {}
+  const stall = feedStall({previousGeneratedAt, generatedAt: reduced.generated_at});
+  if (stall) {
+    console.warn("::warning title=OSS Watch の更新停止::" + stall);
+    if (process.env.GITHUB_STEP_SUMMARY) {
+      try { fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, "## ⚠ OSS Watch の更新停止\n" + stall + "\n"); } catch {}
     }
   }
   fs.mkdirSync(path.dirname(outPath), {recursive:true});
