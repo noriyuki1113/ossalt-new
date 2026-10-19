@@ -1,48 +1,59 @@
 {
  "added": [
   {
-   "name": "SerpBear",
-   "id": "serpbear",
-   "competitor": "Ahrefs",
-   "gh": "towfiqi/serpbear",
-   "url": "https://docs.serpbear.com",
-   "category": "seo",
-   "descJa": "Googleの検索順位をキーワードごとに記録し、変動をメールで知らせる順位チェックツール。Search Consoleと連携できる。検索結果の取得には外部のスクレイピングAPIかプロキシが必要。",
+   "name": "La Suite Docs",
+   "id": "la-suite-docs",
+   "competitor": "Notion",
+   "gh": "suitenumerique/docs",
+   "url": "https://docs.la-suite.eu/",
+   "category": "note-docs",
+   "descJa": "リアルタイムで共同編集できる文書エディタ。Notionの代替として、サブページでの整理、コメントと共有、権限の細かい設定、オフライン編集ができる。フランス政府の組織が開発し、KubernetesやDocker Composeでセルフホストできる。PDF出力などの一部の機能は、GPLのパッケージに依存する。",
    "exists": true,
-   "urlVerified": false
+   "urlVerified": true
   },
   {
-   "name": "SEOnaut",
-   "id": "seonaut",
+   "name": "Kaneo",
+   "id": "kaneo",
+   "competitor": "Linear",
+   "gh": "usekaneo/kaneo",
+   "url": "https://kaneo.app/",
+   "category": "project",
+   "descJa": "ボード・リスト・カレンダー・ガントで見られる、シンプルなプロジェクト管理。Linearの代替として、サブタスクや依存関係、コメント、時間記録、共有ワークスペース、GitHub連携、REST APIとMCPを備える。セルフホストできる。",
+   "exists": true,
+   "urlVerified": true
+  },
+  {
+   "name": "Karakeep",
+   "id": "karakeep",
+   "competitor": "Pocket",
+   "gh": "karakeep-app/karakeep",
+   "url": "https://karakeep.app",
+   "category": "note-docs",
+   "descJa": "リンク・メモ・画像・PDFをまとめて保存するブックマーク管理アプリ。Pocketの代替として、ページ全文の保存、全文検索、リストの共同利用、AIによる自動タグ付け（ローカルモデルにも対応）ができる。Pocketなどからのインポートに対応し、ブラウザ拡張とiOS・Androidアプリもある。",
+   "exists": true,
+   "urlVerified": true
+  },
+  {
+   "name": "OpenSEO",
+   "id": "openseo",
    "competitor": "Semrush",
-   "gh": "StJudeWasHere/seonaut",
-   "url": "https://seonaut.org",
+   "gh": "every-app/open-seo",
+   "url": "https://openseo.so",
    "category": "seo",
-   "descJa": "サイト全体を巡回し、リンク切れ・リダイレクト・重複タイトルなどSEOの問題を重要度別に一覧にする監査ツール。",
+   "descJa": "キーワード調査、順位追跡、競合分析、被リンク、サイト監査ができるSEOツール。SemrushやAhrefsの代替。セルフホストできるが、SEOデータの取得にDataForSEOのAPIキー（外部サービス・従量課金）が別途必要。AIエージェント向けのMCPも備える。",
    "exists": true,
-   "urlVerified": false
+   "urlVerified": true
   },
   {
-   "name": "SiteOne Crawler",
-   "id": "siteone-crawler",
-   "competitor": "Screaming Frog",
-   "gh": "janreges/siteone-crawler",
-   "url": "https://crawler.siteone.io",
-   "category": "seo",
-   "descJa": "サイト全体を巡回して、リンク切れ・SEO・表示速度・セキュリティを分析し、HTMLのレポートにまとめるクローラー。",
+   "name": "Rybbit",
+   "id": "rybbit",
+   "competitor": "Google Analytics",
+   "gh": "rybbit-io/rybbit",
+   "url": "https://rybbit.com",
+   "category": "analytics",
+   "descJa": "Cookieを使わない、プライバシー重視のウェブ・プロダクト分析。Google Analyticsの代替として、セッションやページビュー、ファネル、リテンション、ユーザーの導線、セッションリプレイ、リアルタイム表示ができる。ホスト版とセルフホストの両方がある。",
    "exists": true,
-   "urlVerified": false
-  },
-  {
-   "name": "Unlighthouse",
-   "id": "unlighthouse",
-   "competitor": "PageSpeed Insights",
-   "gh": "harlan-zw/unlighthouse",
-   "url": "https://unlighthouse.dev",
-   "category": "seo",
-   "descJa": "Google Lighthouseでサイトの全ページをまとめて計測し、表示速度やSEOの点数を一覧で比べられる。",
-   "exists": true,
-   "urlVerified": false
+   "urlVerified": true
   }
  ],
  "rejected": []

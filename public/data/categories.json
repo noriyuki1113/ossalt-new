@@ -3,7 +3,7 @@
   "slug": "note-docs",
   "nameJa": "ノート・ドキュメント",
   "ledeJa": "社内Wikiやドキュメント共有を自前で運用するためのツール。",
-  "count": 27
+  "count": 29
  },
  {
   "slug": "communication",
@@ -15,7 +15,7 @@
   "slug": "project",
   "nameJa": "プロジェクト管理",
   "ledeJa": "タスク管理・課題管理を自前で。日本のチームの運用にも合わせやすい。",
-  "count": 11
+  "count": 12
  },
  {
   "slug": "database",
@@ -33,7 +33,7 @@
   "slug": "analytics",
   "nameJa": "アクセス解析・プロダクト分析",
   "ledeJa": "Cookieに依存せず、計測データを自社に留める。",
-  "count": 11
+  "count": 12
  },
  {
   "slug": "observability",
@@ -171,6 +171,6 @@
   "slug": "seo",
   "nameJa": "SEO・サイト分析",
   "ledeJa": "検索順位の記録やサイトの監査を、自前の環境で回数を気にせず行う。",
-  "count": 4
+  "count": 5
  }
 ]
