@@ -68,7 +68,7 @@ const redirectSamples = [
 ];
 
 async function inspectLegacyRedirect(base, sample) {
-  const requestUrl = base.replace(/\\/$/, '') + sample.path;
+  const requestUrl = (base.endsWith('/') ? base.slice(0, -1) : base) + sample.path;
   try {
     const response = await fetch(requestUrl, {
       redirect: 'manual',
