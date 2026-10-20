@@ -61,6 +61,34 @@ async function inspectSource(source, retries = 1) {
   return { ...source, routes: result };
 }
 
+
+const redirectSamples = [
+  { path: '/tools/194/', target: '/tools/zammad/' },
+  { path: '/tools/254/', target: '/tools/plane/' },
+];
+
+async function inspectLegacyRedirect(base, sample) {
+  const requestUrl = (base.endsWith('/') ? base.slice(0, -1) : base) + sample.path;
+  try {
+    const response = await fetch(requestUrl, {
+      redirect: 'manual',
+      signal: AbortSignal.timeout(17000),
+      headers: { 'user-agent': 'OSSALT-Growth-Deployment-Check/1.0', 'cache-control': 'no-cache', pragma: 'no-cache' },
+    });
+    const location = response.headers.get('location') || '';
+    const target = location ? new URL(location, requestUrl).pathname : '';
+    return {
+      path: sample.path,
+      expected: sample.target,
+      status: response.status,
+      location,
+      ok: (response.status === 301 || response.status === 308) && target === sample.target,
+    };
+  } catch (e) {
+    return { path: sample.path, expected: sample.target, status: 'ERROR', location: String(e.message), ok: false };
+  }
+}
+
 async function dnsInfo() {
   const result = {};
   for (const name of ['ossalt.jp', 'www.ossalt.jp']) {
@@ -81,6 +109,9 @@ async function main() {
   ]);
   const results = [custom, cloudflare, github];
   const dnsResults = await dnsInfo();
+  // HTTPリダイレクトをfollowしてしまうとmeta refresh（200）との区別ができない。
+  const legacy = await Promise.all(redirectSamples.map((x) => inspectLegacyRedirect(sources[0].base, x)));
+  const legacyPages = await Promise.all(redirectSamples.map((x) => inspectLegacyRedirect(sources[1].base, x)));
   const lines = [
     '## OSSALT 公開ドメイン反映チェック', '',
     'GitHub Pagesの公開成功だけでなく、ユーザーが開くドメインのHTMLを直接確認します。',
@@ -93,9 +124,17 @@ async function main() {
       lines.push('| ' + [source.name, r.path, r.status, r.ok ? 'OK' : '未確認/旧版', r.cfCache, r.age, r.responseUrl || r.error || ''].map(escapeCell).join(' | ') + ' |');
     }
   }
+  lines.push('', '### 旧URLのHTTP 301確認', '',
+    '| 配信先 | 旧URL | HTTP | Location | 結果 |',
+    '| --- | --- | --- | --- | --- |');
+  for (const [source, entries] of [['ossalt.jp', legacy], ['Cloudflare Pages', legacyPages]]) {
+    for (const r of entries) {
+      lines.push('| ' + [source, r.path, r.status, r.location || '', r.ok ? 'OK' : 'NG'].map(escapeCell).join(' | ') + ' |');
+    }
+  }
   lines.push('', '### DNS（公開情報）', '', JSON.stringify(dnsResults, null, 2), '');
-  const passed = custom.routes.every((r) => r.ok);
-  lines.push(passed ? '✅ ossalt.jp の必須4ページで新しい文章を確認' : '❌ ossalt.jp に未反映・取得失敗のページがあります。Cloudflare Pagesの本番ブランチ、カスタムドメインとCDNを確認してください。', '');
+  const passed = custom.routes.every((r) => r.ok) && legacy.every((r) => r.ok);
+  lines.push(passed ? '✅ ossalt.jp の必須4ページと旧URL301を確認' : '❌ ossalt.jp のHTMLか旧URLのHTTP 301が未確認です。Cloudflare Pages本番とカスタムドメインを点検してください。', '');
   const report = lines.join('\n');
   console.log(report);
   if (process.env.GITHUB_STEP_SUMMARY) await appendFile(process.env.GITHUB_STEP_SUMMARY, report);
