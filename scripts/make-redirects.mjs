@@ -7,7 +7,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { redirectHtml, validateRedirects } from "./redirects-lib.mjs";
+import { redirectHtml, validateRedirects, cloudflarePagesRedirects } from "./redirects-lib.mjs";
 
 const ROOT = process.cwd();
 const { redirects } = JSON.parse(fs.readFileSync(path.join(ROOT, "data-source", "redirects.json"), "utf8"));
@@ -16,6 +16,8 @@ if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
 }
+// Cloudflare PagesのカスタムドメインではHTTP 301を返す。既存HTMLは別ホスト向けのフォールバック。
+fs.writeFileSync(path.join(ROOT, "public", "_redirects"), cloudflarePagesRedirects(redirects));
 for (const [from, to] of Object.entries(redirects)) {
   const file = path.join(ROOT, "public", from, "index.html");
   fs.mkdirSync(path.dirname(file), { recursive: true });
