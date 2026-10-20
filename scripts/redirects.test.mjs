@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
-import { redirectHtml, validateRedirects } from "./redirects-lib.mjs";
+import { redirectHtml, validateRedirects, cloudflarePagesRedirects } from "./redirects-lib.mjs";
 
 const { redirects } = JSON.parse(fs.readFileSync(new URL("../data-source/redirects.json", import.meta.url), "utf8"));
 
@@ -28,4 +28,20 @@ test("転送元が、今ある別のページになっていない（上書き�
     if (kind === "tools") assert.ok(!toolIds.has(id), `${from} は今あるツールのページです`);
     if (kind === "alternatives") assert.ok(!competitors.has(id), `${from} は今ある代替のページです`);
   }
+});
+
+test("Cloudflare Pages: 旧URLがHTTP 301になり、対応表と一致する", () => {
+  const rules = cloudflarePagesRedirects(redirects);
+  const committed = fs.readFileSync(new URL("../public/_redirects", import.meta.url), "utf8");
+  assert.equal(committed, rules, "生成した_redirectsとコミット済みファイルが異なります");
+  assert.match(rules, /^\/tools\/194\/ \/tools\/zammad\/ 301$/m);
+  assert.match(rules, /^\/tools\/254\/ \/tools\/plane\/ 301$/m);
+  assert.equal(rules.split("\n").filter((line) => line && !line.startsWith("#")).length, Object.keys(redirects).length);
+  assert.equal(rules.split("\n").filter((line) => /^\/tools\/\d+\/ /.test(line)).length, 125);
+});
+
+test("Cloudflare Pages: 二重転送や上限超過は出力させない", () => {
+  assert.throws(() => cloudflarePagesRedirects({ "/a/": "/b/", "/b/": "/c/" }), /二重の転送/);
+  const tooMany = Object.fromEntries(Array.from({ length: 2001 }, (_, i) => ["/old-" + i + "/", "/tools/"]));
+  assert.throws(() => cloudflarePagesRedirects(tooMany), /上限/);
 });
