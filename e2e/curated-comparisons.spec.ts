@@ -22,7 +22,8 @@ for (const p of curated) {
     expect(res?.status()).toBe(200);
     await expect(page.locator("h1")).toHaveCount(1);
     await expect(page.getByRole("heading", { name: p.title })).toBeVisible();
-    const robots = (await page.locator('meta[name="robots"]').getAttribute("content")) ?? "";
+    const robotsTag = page.locator('meta[name="robots"]');
+    const robots = (await robotsTag.count()) > 0 ? (await robotsTag.getAttribute("content")) ?? "" : "";
     expect(robots).not.toContain("noindex");
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
       "href", new RegExp("/compare/" + p.slug + "/$")
