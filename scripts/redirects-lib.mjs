@@ -36,3 +36,18 @@ export function validateRedirects(map) {
   }
   return errors;
 }
+
+/**
+ * Cloudflare Pages用HTTP 301のルール。
+ * 静的アセットが存在しても _redirects が先に評価される。
+ * GitHub Pages等では従来のmeta refresh HTMLがフォールバックとなる。
+ */
+export function cloudflarePagesRedirects(map) {
+  const errors = validateRedirects(map);
+  if (errors.length) throw new Error(errors.join("\n"));
+  const entries = Object.entries(map).sort(([a], [b]) => a.localeCompare(b));
+  if (entries.length > 2000) throw new Error("Cloudflare Pagesの静的リダイレクト上限（2000件）を超えています");
+  return "# Auto-generated from data-source/redirects.json. Do not edit manually.\n"
+    + "# Cloudflare Pages: HTTP 301; GitHub Pages: legacy HTML fallback remains.\n"
+    + entries.map(([from, to]) => from + " " + to + " 301").join("\n") + "\n";
+}
