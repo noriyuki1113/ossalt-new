@@ -1,0 +1,34 @@
+name: OSSALT 本番反映確認
+
+# GitHub Pagesのデプロイ成功と、独自ドメインの配信は別。
+# デプロイ成功時だけ実HTMLを読み、反映されていないページを検出する。
+on:
+  workflow_run:
+    workflows: ["GitHub Pages 公開"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ossalt-production-smoke
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.head_branch == github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: 公開サイトのHTML・CDNヘッダー・DNSを確認
+        run: node scripts/verify-production.mjs
