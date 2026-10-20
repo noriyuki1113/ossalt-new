@@ -61,7 +61,7 @@ export function cloudflarePagesRedirects(map) {
 export function cloudflareBulkRedirectsCsv(map, hostname = "ossalt.jp") {
   const errors = validateRedirects(map);
   if (errors.length) throw new Error(errors.join("\n"));
-  if (!/^[a-z0-9-]+(?:\\.[a-z0-9-]+)+$/.test(hostname)) throw new Error("ホスト名が不正です");
+  if (!/^[a-z0-9.-]+$/.test(hostname) || !hostname.includes(".") || hostname.includes("..")) throw new Error("ホスト名が不正です");
   const rows = [];
   for (const [from, to] of Object.entries(map).sort(([a], [b]) => a.localeCompare(b))) {
     for (const p of [from.slice(0, -1), from]) {
