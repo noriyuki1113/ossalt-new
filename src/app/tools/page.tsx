@@ -9,9 +9,9 @@ import { pageMeta } from "@/lib/seo";
 import { formatCompactJa } from "@/lib/tools";
 
 export const metadata: Metadata = pageMeta({
-  title: "オープンソースツール一覧",
+  title: "オープンソースソフトウェア一覧｜用途・SaaSの代替から探す",
   description:
-    "自前で動かせるオープンソースソフトの一覧。スター数・ライセンス・Docker対応・セキュリティ評価で絞り込めます。",
+    "オープンソースソフトウェアの一覧。SaaSの代替候補を、用途・ライセンス・Docker対応・日本語対応・セキュリティ評価から探せます。",
   path: "/tools/",
 });
 
@@ -38,7 +38,7 @@ export default function ToolsPage() {
       <SiteHeader current="/tools" />
       <main className="wrap page">
         <Breadcrumbs items={[{ href: "/", label: "トップ" }, { label: "ツール一覧" }]} />
-        <h1 className="h2">オープンソースツール一覧</h1>
+        <h1 className="h2">オープンソースソフトウェア一覧</h1>
         <p className="lede">
           {meta.tool_count}件を収録。スター合計は約{formatCompactJa(totalStars)}{"。セキュリティ評価（OpenSSF Scorecard）は"}{meta.scored_count}{"件で取得済み、残り"}{meta.unrated_count}件は「未評価」として表示しています。
         </p>
