@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
-import { redirectHtml, validateRedirects, cloudflarePagesRedirects } from "./redirects-lib.mjs";
+import { redirectHtml, validateRedirects, cloudflarePagesRedirects, cloudflareBulkRedirectsCsv } from "./redirects-lib.mjs";
 
 const { redirects } = JSON.parse(fs.readFileSync(new URL("../data-source/redirects.json", import.meta.url), "utf8"));
 
@@ -44,4 +44,16 @@ test("Cloudflare Pages: 二重転送や上限超過は出力させない", () =>
   assert.throws(() => cloudflarePagesRedirects({ "/a/": "/b/", "/b/": "/c/" }), /二重の転送/);
   const tooMany = Object.fromEntries(Array.from({ length: 2001 }, (_, i) => ["/old-" + i + "/", "/tools/"]));
   assert.throws(() => cloudflarePagesRedirects(tooMany), /上限/);
+});
+
+test("Cloudflare Bulk Redirects CSVは既存対応表と一致、slash有無292件", () => {
+  const generated = cloudflareBulkRedirectsCsv(redirects);
+  const committed = fs.readFileSync(new URL("../ops/cloudflare/ossalt-legacy-bulk-redirects.csv", import.meta.url), "utf8");
+  assert.equal(generated, committed, "CSVがリダイレクト対応表と一致しません");
+  const rows = generated.trim().split("\n");
+  assert.equal(rows.length, Object.keys(redirects).length * 2);
+  assert.ok(rows.includes("ossalt.jp/tools/194,https://ossalt.jp/tools/zammad/,301,TRUE,FALSE,FALSE,FALSE"));
+  assert.ok(rows.includes("ossalt.jp/tools/194/,https://ossalt.jp/tools/zammad/,301,TRUE,FALSE,FALSE,FALSE"));
+  assert.ok(!rows[0].toLowerCase().includes("source_url"), "Cloudflare用CSVにはヘッダー行を入れない");
+  assert.equal(new Set(rows.map((line) => line.split(",")[0])).size, rows.length, "転送元の重複がありません");
 });
