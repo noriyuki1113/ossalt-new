@@ -5,9 +5,9 @@
 
 状態の意味：verified＝プロジェクト自身の設定ファイルで確認／api＝GitHub API／claimed＝第三者の一覧の記載／unknown＝未確認（「非対応」ではない）
 
-- 候補 187件（新規 187件・掲載済み 0件）
-- 審査待ち 171件・公開できない問題あり 16件・掲載済みで差分あり 0件
-- 設定ファイルで機能を確認できた 119件・GitHub API で補完 150件
+- 候補 191件（新規 190件・掲載済み 1件）
+- 審査待ち 174件・公開できない問題あり 16件・掲載済みで差分あり 0件
+- 設定ファイルで機能を確認できた 123件・GitHub API で補完 150件
 
 ## 審査待ち（新規）
 
@@ -24,6 +24,7 @@
 | [hostc](https://github.com/akazwz/hostc) | Apache-2.0（api） | durable_objects（claimed） | 未確認 | — |
 | [blobatar API](https://github.com/alain00/blobatar) | MIT（api） | —（unknown） | 不要 | cloudflare_bindings_unverified |
 | [cindermail](https://github.com/amandoti-win/cindermail) | MIT（api） | cron, d1（verified） | 未確認 | — |
+| [Larafeed](https://github.com/angristan/larafeed) | MIT（api） | cron, d1, kv, queues, workers_ai（verified） | 不要 | — |
 | [EdgeChat](https://github.com/aozorae/edgechat) | GPL-3.0（api） | cron, d1, durable_objects, kv, r2（claimed） | 不要 | — |
 | [AwaitStep](https://github.com/awaitstep/awaitstep) | Apache-2.0（api） | d1, durable_objects（claimed） | 未確認 | — |
 | [Memory Note](https://github.com/azu/memory-note) | MIT（api） | kv（verified） | 不要 | — |
@@ -53,7 +54,7 @@
 | [Nodrix](https://github.com/decoded-cipher/nodrix) | MIT（api） | cron, d1, durable_objects, kv, r2, workflows（verified） | 不要 | — |
 | [ShotSync](https://github.com/defiabell/shotsync) | MIT（api） | r2（verified） | 不要 | — |
 | [yixi](https://github.com/defiabell/yixi) | MIT（api） | cron, d1（verified） | 未確認 | — |
-| [Codra](https://github.com/devarshishimpi/codra) | AGPL-3.0（api） | cron, hyperdrive, kv, queues, workers_ai, workflows（claimed） | 未確認 | — |
+| [Codra](https://github.com/devarshishimpi/codra) | AGPL-3.0（api） | cron, hyperdrive, kv, queues, workers_ai, workflows（claimed） | 不要 | has_extra_requirements |
 | [Discohook](https://github.com/discohook/discohook) | AGPL-3.0（api） | durable_objects, hyperdrive（claimed） | 未確認 | — |
 | [Quickinbox](https://github.com/divinprince/quickinbox) | MIT（api） | d1, email_routing, r2, workers_ai（verified） | 不要 | — |
 | [Cloudflare Temp Email](https://github.com/dreamhunter2333/cloudflare_temp_email) | MIT（api） | cron, d1, email_routing, kv, workers_ai（claimed） | 未確認 | — |
@@ -61,11 +62,10 @@
 | [EmDash](https://github.com/emdash-cms/emdash) | MIT（api） | cron, d1, images, kv, r2（claimed） | 不要 | — |
 | [Doota](https://github.com/ethercorps/doota) | Apache-2.0（api） | cron, d1, durable_objects, email_routing, kv, queues, r2（claimed） | 未確認 | — |
 | [Firefly III MCP](https://github.com/etnperlong/firefly-iii-mcp) | MIT（api） | durable_objects（claimed） | 不要 | — |
-| [OpenSEO](https://github.com/every-app/open-seo) | MIT（api） | cron, d1, durable_objects, kv, r2, workflows（verified） | 不要 | has_extra_requirements |
 | [Davflare](https://github.com/fanchenggang/davflare) | MIT（api） | r2（verified） | 未確認 | — |
 | [Screendrop Cloud](https://github.com/fayazara/screendrop) | CC0-1.0（api） | d1, r2（claimed） | 不要 | — |
 | [KISS Worker](https://github.com/fishjar/kiss-worker) | MIT（api） | durable_objects, kv（verified） | 不要 | — |
-| [Cloudflarebase](https://github.com/frostbase-dev/frostbase) | Apache-2.0（api） | d1, kv, workers_ai（verified） | 不要 | has_extra_requirements |
+| [Frostbase](https://github.com/frostbase-dev/frostbase) | Apache-2.0（api） | d1, kv, workers_ai（verified） | 不要 | has_extra_requirements |
 | [Email Explorer](https://github.com/g4brym/email-explorer) | MIT（api） | durable_objects, email_routing, r2（claimed） | 不要 | has_extra_requirements |
 | [R2 Explorer](https://github.com/g4brym/r2-explorer) | MIT（api） | access, r2（claimed） | 不要 | has_extra_requirements |
 | [workers-firecrawl](https://github.com/g4brym/workers-firecrawl) | MIT（api） | browser_rendering（verified） | 不要 | has_extra_requirements |
@@ -74,16 +74,16 @@
 | [Exception-Notify workspace](https://github.com/guangyiding/exception-notify) | Apache-2.0（claimed） | d1, kv（claimed） | 不要 | — |
 | [ternssh](https://github.com/haradakashiwa/ternssh) | GPL-3.0-or-later（claimed） | d1, durable_objects（verified） | 不要 | has_extra_requirements |
 | [loginbase](https://github.com/harlonwang/loginbase) | MIT（api） | d1, kv（verified） | 未確認 | — |
-| [Reminal](https://github.com/harshalgajjar/reminal) | AGPL-3.0（api） | durable_objects（claimed） | 未確認 | — |
+| [Reminal](https://github.com/harshalgajjar/reminal) | AGPL-3.0（api） | durable_objects（claimed） | 不要 | — |
 | [Edgemetry](https://github.com/hayaran/edgemetry) | MIT（api） | cron, d1（verified） | 不要 | — |
 | [Collection Down](https://github.com/heartalborada-del/collection-down) | MIT（api） | （verified） | 不要 | — |
 | [AndroMeld TURN Relay](https://github.com/heruoxin/webrtc_turn) | GPL-3.0（api） | —（unknown） | 不要 | cloudflare_bindings_unverified |
 | [Heyo Docs](https://github.com/heyo-sh/heyo-docs) | MIT（api） | —（unknown） | 未確認 | cloudflare_bindings_unverified |
-| [MailFlare](https://github.com/hieunc229/mailflare) | AGPL-3.0（api） | cron, d1, durable_objects, email_routing, queues, r2, workers_ai（verified） | 未確認 | — |
+| [MailFlare](https://github.com/hieunc229/mailflare) | AGPL-3.0（api） | cron, d1, durable_objects, email_routing, queues, r2, workers_ai（verified） | 要 | needs_workers_paid, has_extra_requirements |
 | [Tempik](https://github.com/hirotomasato/tempik) | MIT（api） | d1（verified） | 不要 | has_extra_requirements |
 | [Synch](https://github.com/hjinco/synch) | MIT（api） | cron, d1, durable_objects, email_routing, queues, r2（claimed） | 不要 | — |
 | [usage-guard-collector](https://github.com/howardzlh/usage-guard-collector) | MIT（api） | cron, d1（verified） | 不要 | — |
-| [HQBase](https://github.com/hqbase/hqbase) | AGPL-3.0（api） | cron, d1, durable_objects, email_routing, queues, r2（verified） | 未確認 | — |
+| [HQBase](https://github.com/hqbase/hqbase) | AGPL-3.0（api） | cron, d1, durable_objects, email_routing, queues, r2（verified） | 要 | needs_workers_paid, has_extra_requirements |
 | [CF Server Monitor](https://github.com/huilang-me/cf-server-monitor) | MIT（api） | cron, d1, durable_objects（verified） | 不要 | — |
 | [Free4Chat](https://github.com/i365dev/free4chat) | MIT（api） | cron, durable_objects, kv（claimed） | 未確認 | — |
 | [LetterDrop](https://github.com/i365dev/letterdrop) | MIT（api） | d1, kv, queues, r2, workers_ai（claimed） | 未確認 | — |
@@ -110,6 +110,7 @@
 | [Deepcrawl](https://github.com/lumpinif/deepcrawl) | MIT（api） | browser_rendering, d1, durable_objects, kv, queues, r2, workers_ai（claimed） | 不要 | — |
 | [UptimeFlare](https://github.com/lyc8503/uptimeflare) | Apache-2.0（api） | d1（verified） | 未確認 | — |
 | [Cloud Mail](https://github.com/maillab/cloud-mail) | MIT（api） | cron, d1, email_routing, kv, r2, workers_ai（claimed） | 未確認 | — |
+| [Mainbrella Voice](https://github.com/mainbrella/ai-receptionist) | GPL-3.0（api） | cron, d1, durable_objects, workers_ai（verified） | 要 | needs_workers_paid, has_extra_requirements |
 | [Auto Reaction Bot](https://github.com/malith-rukshan/auto-reaction-bot) | MIT（api） | （verified） | 不要 | — |
 | [Cloudflare ImgBed](https://github.com/marseventh/cloudflare-imgbed) | MIT（api） | d1, images, kv, r2（claimed） | 不要 | — |
 | [md.page](https://github.com/maypaz/md.page) | MIT（api） | analytics_engine, kv, r2（claimed） | 不要 | has_extra_requirements |
@@ -121,15 +122,16 @@
 | [ni-mail](https://github.com/mskatoni/ni-mail) | Apache-2.0（api） | （verified） | 不要 | has_extra_requirements |
 | [Wormhole](https://github.com/muhammadhananasghar/wormhole) | MIT（api） | d1, durable_objects（claimed） | 未確認 | — |
 | [Bookshelf](https://github.com/murerkinn/bookshelf) | MIT（api） | r2（claimed） | 不要 | — |
-| [CloudSSH](https://github.com/newbietan/cloudssh) | Apache-2.0（api） | durable_objects（verified） | 未確認 | — |
+| [CloudSSH](https://github.com/newbietan/cloudssh) | Apache-2.0（api） | durable_objects（verified） | 不要 | — |
 | [Cloudsail](https://github.com/nkzw-tech/cloudsail) | MIT（api） | durable_objects（verified） | 未確認 | — |
 | [BinThere](https://github.com/nxfu/binthere) | MIT（api） | durable_objects, kv（verified） | 不要 | — |
 | [shrtnr](https://github.com/oddbit/shrtnr) | Apache-2.0（api） | d1, durable_objects, kv（verified） | 不要 | — |
-| [vmail](https://github.com/oiov/vmail) | GPL-3.0（api） | cron, d1, email_routing（verified） | 未確認 | — |
+| [vmail](https://github.com/oiov/vmail) | GPL-3.0（api） | cron, d1, durable_objects, email_routing（verified） | 未確認 | — |
 | [fxTikTok](https://github.com/okdargy/fxtiktok) | MIT（claimed） | （verified） | 不要 | — |
 | [Monolith](https://github.com/one-ea/monolith) | MIT（api） | analytics_engine, cron, d1, r2（claimed） | 未確認 | — |
 | [Cloudflare Clist](https://github.com/ooyyh/cloudflare-clist) | MIT（api） | d1（claimed） | 不要 | — |
 | [Rin](https://github.com/openrin/rin) | MIT（api） | —（unknown） | 未確認 | cloudflare_bindings_unverified |
+| [OpenStory](https://github.com/openstory-so/openstory) | MIT（api） | cron, d1, durable_objects, email_routing, r2, workflows（verified） | 要 | needs_workers_paid, has_extra_requirements |
 | [scrapedown](https://github.com/ozanvos/scrapedown) | MIT（api） | （verified） | 不要 | — |
 | [Ownlist](https://github.com/pfstr/ownlist) | MIT（api） | cron, d1（verified） | 未確認 | — |
 | [StatusBeam](https://github.com/pleaseai/statusbeam) | MIT（api） | cron, d1, images, kv, queues（claimed） | 不要 | — |
@@ -148,7 +150,7 @@
 | [LLM API Proxy](https://github.com/rxliuli/llm-api-proxy) | GPL-3.0（api） | （verified） | 不要 | — |
 | [kukuroo](https://github.com/saiday/kukuroo) | MIT（api） | kv（claimed） | 不要 | — |
 | [Forja](https://github.com/santmun/forja) | MIT（api） | cron, d1, durable_objects, r2, vectorize, workers_ai（verified） | 未確認 | — |
-| [cftgsx](https://github.com/scshirker/cftgsx) | MIT（api） | （verified） | 不要 | — |
+| [cftgsx](https://github.com/scshirker/cftgsx) | MIT（claimed） | （verified） | 不要 | — |
 | [Semantic Search](https://github.com/semanticsearch-ai/semanticsearch) | Apache-2.0（claimed） | vectorize, workers_ai（verified） | 不要 | has_extra_requirements |
 | [Pastebin Worker](https://github.com/sharzyl/pastebin-worker) | MIT（claimed） | cron, kv, r2（verified） | 不要 | — |
 | [elm-chat](https://github.com/shawnbure/elm-chat) | AGPL-3.0-only（claimed） | durable_objects（verified） | 不要 | — |
@@ -162,10 +164,11 @@
 | [Supaflare](https://github.com/supaflare/supaflare) | MIT（claimed） | kv（claimed） | 未確認 | — |
 | [Sveltia CMS Authenticator](https://github.com/sveltia/sveltia-cms-auth) | MIT（claimed） | （verified） | 不要 | — |
 | [Projektor](https://github.com/tajd/projektor) | MIT（claimed） | access, cron, d1, durable_objects, kv, r2（claimed） | 不要 | has_extra_requirements |
-| [888wiki](https://github.com/tbdavid2019/888wiki) | AGPL-3.0（claimed） | cron, d1, kv, r2（verified） | 未確認 | — |
+| [888wiki](https://github.com/tbdavid2019/888wiki) | AGPL-3.0-only（claimed） | cron, d1, kv, r2（verified） | 不要 | — |
 | [ChatGPT Telegram Bot](https://github.com/tbxark/chatgpt-telegram-workers) | MIT（claimed） | kv, workers_ai（verified） | 不要 | — |
 | [mail2telegram](https://github.com/tbxark/mail2telegram) | MIT（claimed） | cron, d1, r2, workers_ai（verified） | 不要 | has_extra_requirements |
-| [EdgeEver](https://github.com/tianma-if/edgeever) | AGPL-3.0（claimed） | d1, r2（verified） | 未確認 | — |
+| [HashPay](https://github.com/tgdash/hashpay) | Apache-2.0（claimed） | cron, d1, queues（verified） | 不要 | — |
+| [EdgeEver](https://github.com/tianma-if/edgeever) | AGPL-3.0-only（claimed） | d1, r2（verified） | 不要 | — |
 | [tldraw sync for Cloudflare](https://github.com/tldraw/tldraw-sync-cloudflare) | MIT（claimed） | durable_objects, r2（verified） | 未確認 | — |
 | [Auth Inbox](https://github.com/tooonychen/authinbox) | MIT（claimed） | d1, email_routing, kv（claimed） | 不要 | has_extra_requirements |
 | [Melody Auth](https://github.com/valuemelody/melody-auth) | MIT（claimed） | d1, kv（claimed） | 未確認 | — |
@@ -201,7 +204,7 @@
 | [bashupload-r2](https://github.com/dulljz/bashupload-r2) | 未確認（unknown） | cron, r2（verified） | 不要 | license_unknown |
 | [RoamRadar](https://github.com/giovannibrees/travel-roamradar) | PolyForm（claimed） | cron, kv（verified） | 未確認 | license_not_osi |
 | [MindPocket](https://github.com/jihe520/mindpocket) | 未確認（unknown） | d1, r2, vectorize（claimed） | 未確認 | license_unknown |
-| [Kody](https://github.com/kentcdodds/kody) | FSL-1.1（claimed） | analytics_engine, cron, d1, durable_objects, email_routing, images, kv, queues, r2, vectorize, workers_ai, workflows（claimed） | 未確認 | license_not_osi |
+| [Kody](https://github.com/kody-hq/kody) | FSL-1.1（claimed） | analytics_engine, cron, d1, durable_objects, email_routing, images, kv, queues, r2, vectorize, workers_ai, workflows（claimed） | 未確認 | license_not_osi |
 | [Veet](https://github.com/megaconfidence/veet) | 未確認（unknown） | durable_objects（verified） | 不要 | license_unknown |
 | [ResolveHQ](https://github.com/mirza-rizvi/resolvehq) | LicenseRef-ResolveHQ-Source-Available（claimed） | cron, d1, queues, r2（verified） | 不要 | license_not_osi, has_extra_requirements |
 | [Cloudflare Drop](https://github.com/oustn/cloudflare-drop) | 未確認（unknown） | cron, d1, kv, r2（claimed） | 未確認 | license_unknown |
