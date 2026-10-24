@@ -29,6 +29,8 @@ export type Tool = {
   license_source?: "github" | "manual" | null;
   /** 手動で書いた判定理由（data-source/overrides.json の patch）。無ければ分類から自動で作る */
   license_note?: string | null;
+  /** 公式が出している保守停止などの警告。OSSALTが原文を確認して手動で設定したものだけ */
+  maintenance_notice?: { text: string; source_url: string; checked_at: string } | null;
 
   last_commit: string | null;
   created_at: string | null;

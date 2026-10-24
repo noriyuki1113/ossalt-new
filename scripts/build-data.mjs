@@ -169,6 +169,10 @@ const tools = raw.map((t) => {
     license: t.license ?? null,
     license_source: t.license_source ?? null,
     ...(t.license_note ? { license_note: t.license_note } : {}),
+    // 公式が出している保守停止などの警告（overrides.json の patch で手動設定。出典URLと確認日つき）
+    ...(t.maintenance_notice?.text && t.maintenance_notice?.source_url
+      ? { maintenance_notice: t.maintenance_notice }
+      : {}),
     last_commit: lastCommit,
     created_at: t.created_at ?? null,
     freshness_days: freshness,
