@@ -19,7 +19,7 @@ ossalt.jp のブログ（`content/blog/`）と、Zennの記事の予定表です
 | 10月20日 | 予約済み | 社内Wikiを自前で持つなら | 社内wiki オープンソース | `team-wiki-selfhosted.md` |
 | 10月27日 | 予約済み | VPS 1台で社内ツールをそろえる | 社内ツール セルフホスト | `small-team-selfhost-stack.md` |
 | 11月3日 | 予約済み | Slackの代わりになるチャットの選び方 | slack 代替 / slack 無料 代わり | `slack-alternatives-chat.md` |
-| 11月10日 | 予約済み | セルフホストを始めるVPSの選び方 | vps 選び方 セルフホスト | `vps-for-selfhosting.md`（**公開前にVPSの料金を再確認**。10月14日の確認はクラウド環境から4社の公式サイトに接続できず未実施。11月3日の週に運営者が確認するか、接続できる環境で行う） |
+| 11月10日 | 予約済み | セルフホストを始めるVPSの選び方 | vps 選び方 セルフホスト | `vps-for-selfhosting.md`（**10月18日に運営者が公式ページで再確認済み。最安プランの料金は10月1日から変更なし**。記事の確認日も10月18日に更新。公開の直前（11月3日の週）にもう一度、料金に変更がないか確認する） |
 | 11月17日 | 予約済み | n8nで業務を自動化する前に：Zapierとの違いとライセンス | n8n zapier 違い / n8n 商用利用 | `n8n-license-zapier.md` |
 | 11月24日 | 予約済み | 社内でChatGPTのように使えるAIを自前で動かす | chatgpt 社内 自前 / ollama open webui | `private-ai-chat-ollama.md` |
 | 12月1日 | 予約済み（`selfhost-backup-basics.md`） | 自前で動かすツールのバックアップの基本（restic・Kopia） | セルフホスト バックアップ | `/tools/restic/`、`/tools/kopia/` |
