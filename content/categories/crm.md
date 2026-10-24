@@ -13,4 +13,4 @@ updated: "2026-10-01"
 - **日本語の画面**：このカテゴリは、画面の日本語翻訳を確認できているツールが多い分野です。
 - **ほかのツールとの連携**：メールや会計のツールとつないでいる場合は、移行先で同じ連携ができるかを確かめましょう。
 
-[Salesforceの代替](/alternatives/salesforce/)、[HubSpotの代替](/alternatives/hubspot/)、[Sansanの代替](/alternatives/sansan/)のページも参考にしてください。
+[Salesforceの代替](/alternatives/salesforce/)、[HubSpotの代替](/alternatives/hubspot/)のページも参考にしてください。個人の人間関係を記録したい場合は、[Dexの代替](/alternatives/dex/)で紹介しているMonicaが合います。

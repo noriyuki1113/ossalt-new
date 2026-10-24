@@ -152,6 +152,16 @@ export default async function ToolDetailPage({
               </p>
             )}
 
+            {tool.maintenance_notice && (
+              <p className="notice notice--warn" style={{ marginBottom: "1.25rem" }}>
+                <strong>保守停止の公式警告</strong>{" "}
+                {tool.maintenance_notice.text}
+                {"（"}
+                <a href={tool.maintenance_notice.source_url} rel="noopener">公式の表示</a>
+                {`・${tool.maintenance_notice.checked_at}確認）`}
+              </p>
+            )}
+
             <div className="hero__actions" style={{ marginBottom: "2rem" }}>
               <a className="btn btn--primary" href={tool.url} rel="noopener">
                 公式サイト

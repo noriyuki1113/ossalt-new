@@ -146,6 +146,7 @@
     "/tools/721/": "/tools/undb/",
     "/tools/722/": "/tools/weaviate/",
     "/tools/809/": "/tools/lossless-cut/",
-    "/tools/812/": "/tools/shotcut/"
+    "/tools/812/": "/tools/shotcut/",
+    "/alternatives/sansan/": "/categories/crm/"
   }
 }
