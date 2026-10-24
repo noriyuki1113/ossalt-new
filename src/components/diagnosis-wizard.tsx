@@ -19,11 +19,14 @@ import {
   TEAM_SIZE_LABELS,
   TECHNICAL_LEVELS,
   TECHNICAL_LEVEL_LABELS,
+  USAGE_CONDITIONS,
+  USAGE_CONDITION_LABELS,
   type HostingPreference,
   type SaasId,
   type Strength,
   type TeamSize,
   type TechnicalLevel,
+  type UsageCondition,
 } from "@/lib/diagnosis-types";
 
 type Answers = Partial<DiagnosisAnswers>;
@@ -35,6 +38,7 @@ const STEP_TITLES = [
   "データをどこで管理したいですか？",
   "特に重視するものを2つまで選んでください",
   "絶対に必要な機能はありますか？",
+  "あてはまる利用の条件はありますか？",
 ];
 
 /**
@@ -94,6 +98,15 @@ export function DiagnosisWizard() {
   }
   function selectNoFeature() {
     setAnswers((a) => ({ ...a, requiredFeatures: [] }));
+  }
+  function toggleCondition(c: UsageCondition) {
+    setAnswers((a) => {
+      const cur = a.conditions ?? [];
+      return { ...a, conditions: cur.includes(c) ? cur.filter((x) => x !== c) : [...cur, c] };
+    });
+  }
+  function selectNoCondition() {
+    setAnswers((a) => ({ ...a, conditions: [] }));
   }
 
   function submit() {
@@ -258,6 +271,40 @@ export function DiagnosisWizard() {
                 className="diag-option diag-option--other"
                 aria-pressed={(answers.requiredFeatures?.length ?? 0) === 0}
                 onClick={selectNoFeature}
+              >
+                特になし
+              </button>
+            </div>
+            <div className="diag-actions">
+              <button type="button" className="btn btn--primary" onClick={goNext}>
+                次へ
+              </button>
+            </div>
+          </>
+        )}
+
+        {step === 6 && (
+          <>
+            <p className="diag-q__hint">
+              あてはまるものをすべて選べます。一致度の点数には加えず、結果に「合っている点」と「不向きな条件」として示します。
+            </p>
+            <div className="diag-options">
+              {USAGE_CONDITIONS.map((c) => (
+                <button
+                  key={c}
+                  type="button"
+                  className="diag-option"
+                  aria-pressed={answers.conditions?.includes(c) ?? false}
+                  onClick={() => toggleCondition(c)}
+                >
+                  {USAGE_CONDITION_LABELS[c]}
+                </button>
+              ))}
+              <button
+                type="button"
+                className="diag-option diag-option--other"
+                aria-pressed={(answers.conditions?.length ?? 0) === 0}
+                onClick={selectNoCondition}
               >
                 特になし
               </button>

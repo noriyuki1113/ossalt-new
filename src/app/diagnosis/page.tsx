@@ -7,7 +7,7 @@ import { pageMeta } from "@/lib/seo";
 export const metadata: Metadata = pageMeta({
   title: "あなたに合うOSS診断",
   description:
-    "6つの質問に答えるだけで、今使っているSaaSに合うオープンソースの代替候補を探せます。ログイン不要・無料・約2分。",
+    "7つの質問に答えるだけで、今使っているSaaSに合うオープンソースの代替候補を探せます。ログイン不要・無料・約2分。",
   path: "/diagnosis/",
 });
 

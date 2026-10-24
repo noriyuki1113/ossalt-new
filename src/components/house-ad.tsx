@@ -17,7 +17,7 @@ function getHouseAd(placement: string): HouseAdConfig {
     return {
       id: "oss_diagnosis",
       title: "どのOSSが自分に合うか迷っていますか？",
-      description: "6つの質問に答えるだけで、条件に合うOSSを探せます。登録不要・約2分。",
+      description: "7つの質問に答えるだけで、条件に合うOSSを探せます。登録不要・約2分。",
       href: "/diagnosis/",
       ctaLabel: "OSS診断をはじめる",
     };

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { DiagnosisResult, type ToolFact } from "@/components/diagnosis-result";
-import { getMeta, getTools } from "@/lib/data";
+import { getComparePairs, getMeta, getTools } from "@/lib/data";
 import { getAllDiagnosisToolInputs, getHealthPercentiles } from "@/lib/diagnosis-tools";
 import { pageMeta } from "@/lib/seo";
 
@@ -36,6 +36,7 @@ export default function DiagnosisResultPage() {
           toolInputs={toolInputs}
           healthPercentiles={healthPercentiles}
           toolFacts={toolFacts}
+          compareSlugs={getComparePairs().map((p) => p.slug)}
         />
       </main>
       <SiteFooter meta={meta} />
