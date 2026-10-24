@@ -23,7 +23,10 @@ import {
   type TeamSize,
   type TechnicalLevel,
   type ToolDiagnosisMeta,
+  type UsageCondition,
+  USAGE_CONDITIONS,
 } from "./diagnosis-types.ts";
+import { classifyLicense, licenseGroupOf } from "./compare.ts";
 
 /* ------------------------------------------------------------------ *
  * 質問の回答
@@ -38,9 +41,11 @@ export type DiagnosisAnswers = {
   strengths: Strength[];
   /** SAAS_FEATURES[saas] のid配列。「特になし」の場合は空配列。 */
   requiredFeatures: string[];
+  /** Q7 利用の条件（任意）。古い結果URLには無いため、省略時は空配列として扱う */
+  conditions?: UsageCondition[];
 };
 
-export const TOTAL_STEPS = 6;
+export const TOTAL_STEPS = 7;
 
 export function isCompleteAnswers(a: Partial<DiagnosisAnswers>): a is DiagnosisAnswers {
   return (
@@ -62,6 +67,15 @@ export type DiagnosisToolInput = {
   name: string;
   /** ossalt.jp本体の health_score。算出できていなければ null。 */
   healthScore: number | null;
+  /** 利用の条件の判定に使う掲載データ。無ければ「未確認」として扱う */
+  facts?: DiagnosisFacts;
+};
+
+/** 掲載データのうち、利用の条件（Q7）の判定に使う項目。null は「未確認」 */
+export type DiagnosisFacts = {
+  license: string | null;
+  jaUi: boolean | null;
+  jaDocs: "official" | "community" | "none" | null;
 };
 
 /** meta.health の分布（build-data.mjsが算出）のうち、スコアリングに使う3点。 */
@@ -278,6 +292,61 @@ export function buildReasons(
   return { good, check };
 }
 
+/**
+ * 利用の条件（Q7）についての「合っている点」と「不向きな条件・確認しておきたい点」。
+ * 掲載データだけから作り、未確認のものは「非対応」と書かない。点数には加えない。
+ */
+export function buildConditionNotes(
+  conditions: UsageCondition[],
+  facts: DiagnosisFacts | undefined
+): { good: string[]; check: string[] } {
+  const good: string[] = [];
+  const check: string[] = [];
+  const license = facts?.license ?? null;
+
+  if (conditions.includes("ja")) {
+    if (facts?.jaUi === true) good.push("日本語の画面がある");
+    else if (facts?.jaDocs === "official" || facts?.jaDocs === "community") {
+      good.push("日本語のドキュメントがある");
+      check.push("日本語の画面があるかは未確認");
+    } else check.push("日本語の画面は未確認（英語で使う前提で検討を）");
+  }
+
+  if (conditions.includes("commercial")) {
+    const cls = classifyLicense(license);
+    switch (licenseGroupOf(license)) {
+      case "osi":
+        if (cls === "permissive" || cls === "dual") good.push(`商用でも使いやすいOSI承認ライセンス（${license}）`);
+        else {
+          good.push(`商用でも使えるOSI承認ライセンス（${license}）`);
+          check.push(
+            cls === "network-copyleft"
+              ? `${license}：改変したものを利用者に提供するときは、ソースの公開が必要`
+              : `${license}：改変したものを配布するときは、ソースの公開が必要`
+          );
+        }
+        break;
+      case "source-available":
+        check.push(`${license}はソース公開型：商用での使い方に条件があるため、ライセンス本文の確認が必要`);
+        break;
+      case "mixed":
+        check.push(`ライセンスが複数・混在（${license}）：使う部分の条件の確認が必要`);
+        break;
+      default:
+        check.push("ライセンスが未確認：商用で使う前にLICENSEファイルの確認が必要");
+    }
+  }
+
+  if (conditions.includes("budget")) {
+    const group = licenseGroupOf(license);
+    if (group === "osi") good.push("ソフト自体は無料で使える");
+    else check.push("無料で使える範囲は、ライセンスの条件の確認が必要");
+    check.push("自分で動かす場合も、サーバー代と運用の手間はかかる（Cost Labで試算できます）");
+  }
+
+  return { good, check };
+}
+
 /* ------------------------------------------------------------------ *
  * 診断結果の1候補
  * ------------------------------------------------------------------ */
@@ -302,7 +371,10 @@ function buildCandidate(
 ): CandidateResult {
   const { total, breakdown } = scoreCandidate(input.meta, input.healthScore, answers, healthPercentiles);
   const { matched, total: totalRequired } = countFeatureMatch(input.meta, answers.requiredFeatures);
-  const { good, check } = buildReasons(input.meta, answers);
+  const reasons = buildReasons(input.meta, answers);
+  const notes = buildConditionNotes(answers.conditions ?? [], input.facts);
+  const good = [...reasons.good, ...notes.good];
+  const check = [...reasons.check, ...notes.check];
   return {
     toolId: input.meta.toolId,
     name: input.name,
@@ -391,6 +463,7 @@ export function encodeAnswersToSearchParams(answers: DiagnosisAnswers): URLSearc
   p.set("hosting", answers.hosting);
   if (answers.strengths.length > 0) p.set("strengths", answers.strengths.join(","));
   p.set("features", answers.requiredFeatures.length > 0 ? answers.requiredFeatures.join(",") : NO_REQUIRED_FEATURE);
+  if (answers.conditions && answers.conditions.length > 0) p.set("needs", answers.conditions.join(","));
   return p;
 }
 
@@ -405,6 +478,7 @@ export function decodeAnswersFromSearchParams(params: URLSearchParams): Diagnosi
   const hosting = params.get("hosting");
   const strengthsRaw = params.get("strengths");
   const featuresRaw = params.get("features");
+  const needsRaw = params.get("needs");
 
   if (!saas || !SAAS_ID_SET.has(saas)) return null;
   if (!team || !TEAM_SIZE_SET.has(team)) return null;
@@ -424,6 +498,11 @@ export function decodeAnswersFromSearchParams(params: URLSearchParams): Diagnosi
       ? []
       : featuresRaw.split(",").filter((f) => validFeatureIds.has(f));
 
+  const validConditions = new Set<string>(USAGE_CONDITIONS);
+  const conditions = [...new Set(needsRaw ? needsRaw.split(",") : [])].filter((c): c is UsageCondition =>
+    validConditions.has(c)
+  );
+
   return {
     saas: saasId,
     teamSize: team as TeamSize,
@@ -431,6 +510,7 @@ export function decodeAnswersFromSearchParams(params: URLSearchParams): Diagnosi
     hosting: hosting as HostingPreference,
     strengths,
     requiredFeatures,
+    conditions,
   };
 }
 

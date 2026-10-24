@@ -14,6 +14,7 @@ import {
 } from "@/lib/diagnosis";
 import { SAAS_LABELS } from "@/lib/diagnosis-types";
 import { licenseLabel, dockerLabel } from "@/lib/tools";
+import { LICENSE_GROUP_LABELS, compareSlug, licenseGroupOf } from "@/lib/compare";
 
 export type ToolFact = {
   name: string;
@@ -25,6 +26,8 @@ type Props = {
   toolInputs: DiagnosisToolInput[];
   healthPercentiles: HealthPercentiles | null;
   toolFacts: Record<string, ToolFact>;
+  /** 実在する比較ページ（/compare/<slug>/）。無いページへはリンクしない */
+  compareSlugs: string[];
 };
 
 export function DiagnosisResult(props: Props) {
@@ -35,7 +38,7 @@ export function DiagnosisResult(props: Props) {
   );
 }
 
-function DiagnosisResultInner({ toolInputs, healthPercentiles, toolFacts }: Props) {
+function DiagnosisResultInner({ toolInputs, healthPercentiles, toolFacts, compareSlugs }: Props) {
   const searchParams = useSearchParams();
   const answers = useMemo(() => decodeAnswersFromSearchParams(searchParams), [searchParams]);
 
@@ -89,7 +92,7 @@ function DiagnosisResultInner({ toolInputs, healthPercentiles, toolFacts }: Prop
         </p>
       )}
 
-      <CandidateCard candidate={result.primary} primary />
+      <CandidateCard candidate={result.primary} primary saas={answers.saas} />
 
       {result.others.length > 0 && (
         <div className="diag-others">
@@ -97,12 +100,13 @@ function DiagnosisResultInner({ toolInputs, healthPercentiles, toolFacts }: Prop
             その他の候補
           </h2>
           {result.others.map((c) => (
-            <CandidateCard key={c.toolId} candidate={c} />
+            <CandidateCard key={c.toolId} candidate={c} saas={answers.saas} />
           ))}
         </div>
       )}
 
       {all.length > 1 && <CompareTable candidates={all} toolFacts={toolFacts} />}
+      {all.length > 1 && <CompareLinks candidates={all} compareSlugs={compareSlugs} />}
 
       <div className="diag-share">
         <ShareButton
@@ -150,7 +154,7 @@ function ShareButton({ network, href }: { network: "x" | "bluesky"; href: string
   );
 }
 
-function CandidateCard({ candidate, primary }: { candidate: CandidateResult; primary?: boolean }) {
+function CandidateCard({ candidate, primary, saas }: { candidate: CandidateResult; primary?: boolean; saas: string }) {
   return (
     <div className={`panel${primary ? " diag-result__primary" : ""}`} style={{ marginBottom: "1rem" }}>
       <div className="panel__head">
@@ -185,7 +189,7 @@ function CandidateCard({ candidate, primary }: { candidate: CandidateResult; pri
           )}
           {candidate.check.length > 0 && (
             <div>
-              <h4>確認しておきたい点</h4>
+              <h4>不向きな条件・確認しておきたい点</h4>
               <ul className="diag-reasons--check">
                 {candidate.check.map((c) => (
                   <li key={c}>{c}</li>
@@ -202,6 +206,13 @@ function CandidateCard({ candidate, primary }: { candidate: CandidateResult; pri
             onClick={() => trackEvent("result_detail_click", { toolId: candidate.toolId })}
           >
             詳しく見る
+          </Link>
+          <Link
+            className="btn"
+            href={`/cost-lab/?saas=${encodeURIComponent(saas)}&oss=${encodeURIComponent(candidate.toolId)}`}
+            onClick={() => trackEvent("cost_lab_link_click", { from: "diagnosis", toolId: candidate.toolId })}
+          >
+            費用をCost Labで試算
           </Link>
         </div>
       </div>
@@ -255,7 +266,11 @@ function CompareTable({
                   <td>
                     {c.totalRequired > 0 ? `${c.matchedRequired}/${c.totalRequired}` : "—"}
                   </td>
-                  <td>{licenseLabel(fact?.license)}</td>
+                  <td>
+                    {licenseLabel(fact?.license)}
+                    <br />
+                    <small className="muted">{LICENSE_GROUP_LABELS[licenseGroupOf(fact?.license)]}</small>
+                  </td>
                 </tr>
               );
             })}
@@ -263,5 +278,29 @@ function CompareTable({
         </table>
       </div>
     </section>
+  );
+}
+
+/** 候補どうしの比較ページ（実在するものだけ）へのリンク */
+function CompareLinks({ candidates, compareSlugs }: { candidates: CandidateResult[]; compareSlugs: string[] }) {
+  const exists = new Set(compareSlugs);
+  const links: { slug: string; label: string }[] = [];
+  for (let i = 0; i < candidates.length; i++) {
+    for (let j = i + 1; j < candidates.length; j++) {
+      const slug = compareSlug(candidates[i].toolId, candidates[j].toolId);
+      if (exists.has(slug)) links.push({ slug, label: `${candidates[i].name} と ${candidates[j].name} を詳しく比較` });
+    }
+  }
+  if (links.length === 0) return null;
+  return (
+    <ul className="mt1" aria-label="候補どうしの比較ページ">
+      {links.map((l) => (
+        <li key={l.slug}>
+          <Link href={`/compare/${l.slug}/`} onClick={() => trackEvent("compare_click")}>
+            {l.label}
+          </Link>
+        </li>
+      ))}
+    </ul>
   );
 }
