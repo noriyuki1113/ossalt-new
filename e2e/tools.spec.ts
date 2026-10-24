@@ -42,6 +42,19 @@ test.describe("OSS一覧の検索と絞り込み", () => {
     }
   });
 
+  test("ライセンスの種類（ソース公開型）で絞り込める", async ({ page }) => {
+    await page.goto("/tools/");
+    const count = page.locator("#browser-count");
+    const before = (await count.textContent()) ?? "";
+    const select = page.locator("select", { has: page.locator('option[value="group:source-available"]') });
+    await select.selectOption("group:source-available");
+    await expect(count).not.toHaveText(before);
+    await page.getByRole("searchbox").fill("n8n");
+    await expect(page.locator("article.row").first()).toContainText("n8n");
+    await page.getByRole("searchbox").fill("immich"); // AGPL-3.0（OSI承認）は出ない
+    await expect(page.locator("article.row")).toHaveCount(0);
+  });
+
   test("「もっと見る」で表示件数が増える", async ({ page }) => {
     await page.goto("/tools/");
     const rows = page.locator("article.row");
@@ -66,6 +79,13 @@ test.describe("ツール詳細ページ", () => {
     await expect(page.getByRole("heading", { level: 1 })).toContainText("Immich");
     await expect(page.getByRole("navigation", { name: "パンくず" })).toBeVisible();
     await expect(page.locator("main")).toContainText(/ライセンス/);
+    await expect(page.locator(".license-verdict__badge")).toHaveText("OSI承認のオープンソース");
     expect(problems).toEqual([]);
+  });
+
+  test("ソース公開型のツールは区分と判定理由を出す", async ({ page }) => {
+    await page.goto("/tools/n8n/");
+    await expect(page.locator(".license-verdict__badge")).toHaveText(/ソース公開型/);
+    await expect(page.locator(".license-verdict__reason")).toContainText("OSI承認のオープンソースライセンスではありません");
   });
 });

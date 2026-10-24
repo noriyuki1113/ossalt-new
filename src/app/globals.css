@@ -2511,3 +2511,26 @@ details.more > summary {
   margin: 0.75rem 0 0;
   font-size: 0.8125rem;
 }
+
+/* ツール詳細：ライセンスの区分と判定理由 */
+.license-verdict {
+  margin-top: 0.75rem;
+  padding: 0.7rem 0.9rem;
+  border-left: 3px solid var(--midori);
+  background: var(--midori-soft);
+  font-size: 0.8rem;
+  line-height: 1.75;
+}
+.license-verdict--source-available,
+.license-verdict--mixed {
+  border-left-color: var(--yamabuki);
+  background: var(--yamabuki-soft);
+}
+.license-verdict--unknown {
+  border-left-color: var(--ink-3);
+  background: var(--paper-deep);
+}
+.license-verdict p { margin: 0; }
+.license-verdict__head { display: flex; flex-wrap: wrap; gap: 0.25rem 0.75rem; align-items: baseline; }
+.license-verdict__badge { font-weight: 700; color: var(--ink); }
+.license-verdict__reason { color: var(--ink-2); margin-top: 0.25rem !important; }

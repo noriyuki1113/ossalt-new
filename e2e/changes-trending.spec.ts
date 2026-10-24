@@ -14,6 +14,11 @@ test.describe("変化レポートと急上昇", () => {
     await page.goto("/changes/");
     await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
     await expect(page.getByText(/OBSERVATION \/ .*JST|NO VERIFIED DATA/)).toBeVisible();
+    // 取り込み状況：配信元の観測日時・最終成功・最終試行を分けて示す（記録が無ければ推測で埋めない）
+    const sync = page.getByLabel("観測データの取り込み状況");
+    await expect(sync).toContainText("配信元の観測日時");
+    await expect(sync).toContainText("最終取り込み成功");
+    await expect(sync).toContainText(/最終試行.*(\d{4}\/\d{2}\/\d{2}|記録開始前)/);
     const rows = page.locator("article");
     if (await rows.count()) {
       await expect(rows.first().getByText(/最終観測：/)).toBeVisible();

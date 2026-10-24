@@ -649,6 +649,11 @@ async function fetchOne(slug, id, tool) {
         repo.license?.spdx_id && repo.license.spdx_id !== "NOASSERTION"
           ? repo.license.spdx_id
           : LICENSE_OVERRIDES[id] ?? null,
+      // ライセンスの出典（詳細ページの判定理由に表示）。取得できなければ null のまま
+      license_source:
+        repo.license?.spdx_id && repo.license.spdx_id !== "NOASSERTION"
+          ? "github"
+          : LICENSE_OVERRIDES[id] ? "manual" : null,
       github_archived: repo.archived === true,
       ...(Array.isArray(repo.topics) && repo.topics.length ? { topics: repo.topics } : {}),
       scorecard_score: scorecard.score,

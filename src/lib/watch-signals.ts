@@ -62,3 +62,27 @@ export function getWatchSignalFeed(): WatchSignalFeed | null {
 export function getSignalForTool(githubUrl: string): WatchSignal | null {
   return pickSignal(getWatchSignalFeed(), githubUrl);
 }
+
+/** scripts/fetch-osswatch-signals.mjs が毎回書く取り込み状態。無ければ null（記録開始前） */
+export type WatchSyncStatus = {
+  schema_version: 1;
+  last_attempt_at: string;
+  last_success_at: string | null;
+  last_result: "ok" | "error";
+  attempts: number;
+  consecutive_failures: number;
+  feed_generated_at: string | null;
+  error: { kind: string; label: string; http_status: number | null } | null;
+};
+
+export function getWatchSyncStatus(): WatchSyncStatus | null {
+  try {
+    const file = path.join(process.cwd(), "public", "data", "osswatch-status.json");
+    const s = JSON.parse(fs.readFileSync(file, "utf8")) as WatchSyncStatus;
+    if (s.schema_version !== 1 || !Number.isFinite(Date.parse(s.last_attempt_at))
+        || (s.last_result !== "ok" && s.last_result !== "error")) return null;
+    return s;
+  } catch {
+    return null;
+  }
+}
