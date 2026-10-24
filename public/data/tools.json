@@ -77,7 +77,14 @@
   "star_gain": {
    "gain": 2495,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 888,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/n8n.jpg",
@@ -143,7 +150,14 @@
   "star_gain": {
    "gain": 20,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 67,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -204,8 +218,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 2523,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 1140,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/ollama.jpg",
@@ -275,8 +296,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 2120,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 798,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/dify.jpg",
@@ -342,8 +370,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 3163,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 1322,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/open-webui.jpg",
@@ -393,8 +428,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 2566,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 858,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -446,8 +488,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 638,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 310,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/langflow.jpg",
@@ -502,8 +551,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 5766,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 3522,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/comfyui.jpg",
@@ -573,8 +629,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 2141,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 810,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/rustdesk.jpg",
@@ -648,8 +711,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1412,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 546,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/excalidraw.jpg",
@@ -734,8 +804,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 2676,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 1876,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/supabase.jpg",
@@ -804,8 +881,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1739,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 727,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -863,8 +947,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1447,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 554,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -924,8 +1015,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1854,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 687,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/immich.jpg",
@@ -996,8 +1094,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 614,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 200,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/odoo.jpg",
@@ -1079,7 +1184,14 @@
   "star_gain": {
    "gain": 1834,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 528,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/stirling-pdf.jpg",
@@ -1162,7 +1274,14 @@
   "star_gain": {
    "gain": 358,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 111,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/superset.jpg",
@@ -1226,8 +1345,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1325,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 453,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -1289,8 +1415,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 611,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 190,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/lobechat.jpg",
@@ -1367,8 +1500,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1347,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 420,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -1444,8 +1584,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 541,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 165,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/grafana.jpg",
@@ -1508,8 +1655,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 885,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 311,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/uptime-kuma.jpg",
@@ -1576,7 +1730,14 @@
   "star_gain": {
    "gain": 43,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 16,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -1641,8 +1802,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 689,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 242,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -1712,8 +1880,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1279,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 422,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/obs.jpg",
@@ -1793,7 +1968,14 @@
   "star_gain": {
    "gain": 1113,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 377,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -1859,8 +2041,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 428,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 124,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -1939,8 +2128,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 442,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 153,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/netdata.jpg",
@@ -2026,7 +2222,14 @@
   "star_gain": {
    "gain": 131,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 46,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/strapi.jpg",
@@ -2082,8 +2285,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 247,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 66,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/coder.jpg",
@@ -2134,9 +2344,11 @@
   "also_competitors": [],
   "star_gain": {
    "gain": -34,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
   },
+  "star_gain_7d": null,
   "preview": {
    "src": "/previews/gpt4all.jpg",
    "source": "official",
@@ -2219,8 +2431,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 158,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 66,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/hoppscotch.jpg",
@@ -2305,7 +2524,14 @@
   "star_gain": {
    "gain": 301,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 83,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/airflow.jpg",
@@ -2380,8 +2606,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 446,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 146,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -2439,8 +2672,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 718,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 338,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/appflowy.jpg",
@@ -2512,7 +2752,14 @@
   "star_gain": {
    "gain": 242,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 84,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/docusaurus.jpg",
@@ -2582,7 +2829,14 @@
   "star_gain": {
    "gain": 825,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 237,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/affine.jpg",
@@ -2647,7 +2901,14 @@
   "star_gain": {
    "gain": 1042,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 328,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/anythingllm.jpg",
@@ -2722,7 +2983,14 @@
   "star_gain": {
    "gain": 172,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 55,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/ghost.jpg",
@@ -2786,8 +3054,15 @@
   ],
   "star_gain": {
    "gain": 565,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 228,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -2860,8 +3135,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 366,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 110,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/traefik.jpg",
@@ -2927,8 +3209,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 2054,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 1179,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/twenty.jpg",
@@ -3014,8 +3303,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 460,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 141,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -3089,8 +3385,15 @@
   ],
   "star_gain": {
    "gain": 122,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 23,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/rocket-chat.jpg",
@@ -3147,8 +3450,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1217,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 432,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -3214,8 +3524,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1222,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 489,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/coolify.jpg",
@@ -3295,8 +3612,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 250,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 51,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/nocodb.jpg",
@@ -3360,7 +3684,14 @@
   "star_gain": {
    "gain": 705,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 209,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/memos.jpg",
@@ -3444,8 +3775,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 529,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 166,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/rclone.jpg",
@@ -3516,7 +3854,14 @@
   "star_gain": {
    "gain": 980,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 345,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/jellyfin.jpg",
@@ -3585,8 +3930,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1322,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 461,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/plane.jpg",
@@ -3638,8 +3990,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 68,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 25,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -3719,7 +4078,14 @@
   "star_gain": {
    "gain": 370,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 100,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/joplin.jpg",
@@ -3793,7 +4159,14 @@
   "star_gain": {
    "gain": 1196,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 416,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/penpot.jpg",
@@ -3878,7 +4251,14 @@
   "star_gain": {
    "gain": 294,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 63,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/appwrite.jpg",
@@ -3933,8 +4313,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 595,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 187,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/whisper-cpp.jpg",
@@ -4014,8 +4401,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 890,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 319,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/erpnext.jpg",
@@ -4083,8 +4477,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 362,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 129,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/pocketbase.jpg",
@@ -4155,8 +4556,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 103,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 31,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/discourse.jpg",
@@ -4225,8 +4633,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1203,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 489,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/librechat.jpg",
@@ -4295,8 +4710,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 211,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 63,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/meilisearch.jpg",
@@ -4354,7 +4776,14 @@
   "star_gain": {
    "gain": -53,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": -7,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -4433,8 +4862,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 354,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 134,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/metabase.jpg",
@@ -4516,8 +4952,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 279,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 117,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/dbeaver.jpg",
@@ -4565,8 +5008,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 27,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 6,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -4640,8 +5090,15 @@
   ],
   "star_gain": {
    "gain": 221,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 78,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/mattermost.jpg",
@@ -4716,8 +5173,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 63,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 28,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/gogs.jpg",
@@ -4786,8 +5250,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 474,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 128,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/keycloak.jpg",
@@ -4861,8 +5332,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 93,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 32,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -4925,7 +5403,14 @@
   "star_gain": {
    "gain": 626,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 330,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -4990,7 +5475,14 @@
   "star_gain": {
    "gain": 1438,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 77,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/hyperswitch.jpg",
@@ -5051,8 +5543,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 467,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 128,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/tldraw.jpg",
@@ -5132,7 +5631,14 @@
   "star_gain": {
    "gain": 794,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 63,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/sentry.jpg",
@@ -5217,8 +5723,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 844,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 280,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/chatwoot.jpg",
@@ -5276,8 +5789,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 546,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 167,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/umami.jpg",
@@ -5361,8 +5881,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 96,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 26,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/kong.jpg",
@@ -5444,8 +5971,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 202,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 79,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -5523,8 +6057,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 492,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 184,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/payload.jpg",
@@ -5588,7 +6129,14 @@
   "star_gain": {
    "gain": 626,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 164,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/bruno.jpg",
@@ -5649,8 +6197,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 974,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 346,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -5712,8 +6267,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 123,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 25,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/tooljet.jpg",
@@ -5787,8 +6349,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 389,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 112,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/siyuan.jpg",
@@ -5848,7 +6417,14 @@
   "star_gain": {
    "gain": 1339,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 406,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/postiz.jpg",
@@ -5926,8 +6502,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 255,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 91,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/logseq.jpg",
@@ -5955,7 +6538,7 @@
   "license_source": null,
   "last_commit": "2026-10-20T13:39:37Z",
   "created_at": "2023-08-17T02:17:10Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -5984,8 +6567,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 377,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 102,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -6064,8 +6654,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 155,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 42,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/appsmith.jpg",
@@ -6151,8 +6748,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 322,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 126,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/nextcloud.jpg",
@@ -6220,8 +6824,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 785,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 266,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/headscale.jpg",
@@ -6308,7 +6919,14 @@
   "star_gain": {
    "gain": 662,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 102,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/directus.jpg",
@@ -6386,8 +7004,15 @@
   ],
   "star_gain": {
    "gain": 134,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 52,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -6456,8 +7081,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 806,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 306,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -6526,8 +7158,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 83,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 26,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/jenkins.jpg",
@@ -6611,8 +7250,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 553,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 240,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/sharex.jpg",
@@ -6687,8 +7333,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 371,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 114,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/medusa.jpg",
@@ -6762,7 +7415,14 @@
   "star_gain": {
    "gain": 344,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 132,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/outline.jpg",
@@ -6841,8 +7501,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 440,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 118,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/posthog.jpg",
@@ -6897,7 +7564,14 @@
   "star_gain": {
    "gain": 281,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 72,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/continue.jpg",
@@ -6971,8 +7645,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 133,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 45,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/jitsi.jpg",
@@ -7042,7 +7723,14 @@
   "star_gain": {
    "gain": 51,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 15,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/quivr.jpg",
@@ -7103,8 +7791,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 228,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 123,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -7173,8 +7868,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 40,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 23,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/insomnia.jpg",
@@ -7247,7 +7949,14 @@
   "star_gain": {
    "gain": 115,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 48,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/photoprism.jpg",
@@ -7325,7 +8034,14 @@
   "star_gain": {
    "gain": 144,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 39,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/portainer.jpg",
@@ -7394,7 +8110,14 @@
   "star_gain": {
    "gain": 479,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 173,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/dokploy.jpg",
@@ -7463,7 +8186,14 @@
   "star_gain": {
    "gain": 1236,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 392,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/langfuse.jpg",
@@ -7535,7 +8265,14 @@
   "star_gain": {
    "gain": -51,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": -1,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -7614,8 +8351,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 203,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 48,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -7678,8 +8422,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 459,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 127,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -7743,8 +8494,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 296,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 102,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/khoj.jpg",
@@ -7798,8 +8556,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 167,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 60,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -7870,8 +8635,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 142,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 51,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/harbor.jpg",
@@ -7941,8 +8713,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 446,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 150,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -8016,8 +8795,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 554,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 204,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/trivy.jpg",
@@ -8086,8 +8872,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 385,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 115,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/qdrant.jpg",
@@ -8162,8 +8955,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 736,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 204,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/nuclei.jpg",
@@ -8233,8 +9033,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 204,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 45,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -8283,8 +9090,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 231,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 100,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/ocrmypdf.jpg",
@@ -8367,8 +9181,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 32,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 7,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/redash.jpg",
@@ -8440,7 +9261,14 @@
   "star_gain": {
    "gain": 591,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 179,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -8506,7 +9334,14 @@
   "star_gain": {
    "gain": 11,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 6,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/magento.jpg",
@@ -8590,8 +9425,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1593,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 379,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/kestra.jpg",
@@ -8639,8 +9481,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 272,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 81,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/opentofu.jpg",
@@ -8709,8 +9558,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 239,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 70,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/signoz.jpg",
@@ -8785,8 +9641,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 41,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 18,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -8834,8 +9697,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 536,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 186,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/actual.jpg",
@@ -8902,8 +9772,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 86,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 25,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -8972,8 +9849,15 @@
   ],
   "star_gain": {
    "gain": 27,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 14,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/woocommerce.jpg",
@@ -9060,7 +9944,14 @@
   "star_gain": {
    "gain": 155,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 60,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/surrealdb.jpg",
@@ -9133,8 +10024,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 370,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 101,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/flameshot.jpg",
@@ -9206,8 +10104,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 103,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 26,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/wikijs.jpg",
@@ -9269,8 +10174,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 520,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 189,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/invokeai.jpg",
@@ -9356,8 +10268,15 @@
   ],
   "star_gain": {
    "gain": 99,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 28,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/bagisto.jpg",
@@ -9426,8 +10345,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 464,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 165,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/infisical.jpg",
@@ -9497,8 +10423,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 170,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 52,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/chroma.jpg",
@@ -9560,8 +10493,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 433,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 121,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/activepieces.jpg",
@@ -9637,8 +10577,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 405,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 141,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -9708,7 +10655,14 @@
   "star_gain": {
    "gain": 660,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 177,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -9769,8 +10723,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 440,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 128,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/ente.jpg",
@@ -9855,7 +10816,14 @@
   "star_gain": {
    "gain": 410,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 192,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/plausible.jpg",
@@ -9911,9 +10879,11 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 72,
-   "days": 4,
-   "from": "2026-10-20"
+   "days": 3,
+   "from": "2026-10-20",
+   "to": "2026-10-23"
   },
+  "star_gain_7d": null,
   "preview": null
  },
  {
@@ -9993,9 +10963,11 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 30,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
   },
+  "star_gain_7d": null,
   "preview": {
    "src": "/previews/budibase.jpg",
    "source": "official",
@@ -10082,8 +11054,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 291,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 118,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/authelia.jpg",
@@ -10154,7 +11133,14 @@
   "star_gain": {
    "gain": 90,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 28,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/node-red.jpg",
@@ -10236,8 +11222,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": -5,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 3,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -10301,8 +11294,15 @@
   ],
   "star_gain": {
    "gain": 33,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 17,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -10358,8 +11358,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 95,
-   "days": 28,
-   "from": "2026-09-26"
+   "days": 25,
+   "from": "2026-09-26",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 41,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/dub.jpg",
@@ -10427,8 +11434,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 339,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 92,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/authentik.jpg",
@@ -10489,8 +11503,10 @@
   "star_gain": {
    "gain": 508,
    "days": 4,
-   "from": "2026-10-20"
+   "from": "2026-10-20",
+   "to": "2026-10-24"
   },
+  "star_gain_7d": null,
   "preview": null
  },
  {
@@ -10554,8 +11570,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 583,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 233,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/blender.jpg",
@@ -10631,7 +11654,14 @@
   "star_gain": {
    "gain": 95,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 36,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -10698,8 +11728,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 152,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 32,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/monica.jpg",
@@ -10782,8 +11819,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 320,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 87,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/nocobase.jpg",
@@ -10840,8 +11884,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 496,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 192,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -10914,8 +11965,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 134,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 39,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/prefect.jpg",
@@ -10997,8 +12055,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 241,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 79,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/firefly-iii.jpg",
@@ -11053,7 +12118,14 @@
   "star_gain": {
    "gain": 573,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 224,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -11126,7 +12198,14 @@
   "star_gain": {
    "gain": 376,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 145,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/listmonk.jpg",
@@ -11208,8 +12287,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 73,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 13,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/pulumi.jpg",
@@ -11293,8 +12379,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 427,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 149,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/typesense.jpg",
@@ -11373,8 +12466,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 69,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 14,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/matomo.jpg",
@@ -11453,8 +12553,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 52,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 16,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/spree.jpg",
@@ -11521,8 +12628,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 260,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 83,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -11597,8 +12711,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 638,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 217,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/temporal.jpg",
@@ -11676,8 +12797,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 485,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 135,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/navidrome.jpg",
@@ -11746,8 +12874,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 39,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 9,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -11817,8 +12952,15 @@
   ],
   "star_gain": {
    "gain": 39,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 16,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -11882,8 +13024,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 669,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 214,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/cap.jpg",
@@ -11949,8 +13098,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 92,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 35,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/krayin.jpg",
@@ -12006,8 +13162,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 594,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 304,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/livekit.jpg",
@@ -12075,8 +13238,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 4691,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 116,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/univer.jpg",
@@ -12142,8 +13312,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 286,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 79,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -12196,8 +13373,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 265,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 95,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -12256,8 +13440,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 37,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 6,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -12321,8 +13512,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 229,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 77,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -12386,8 +13584,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 269,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 88,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/docmost.jpg",
@@ -12456,8 +13661,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 339,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 88,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/openobserve.jpg",
@@ -12528,8 +13740,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 240,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 76,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/audacity.jpg",
@@ -12598,8 +13817,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 81,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 25,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/vitepress.jpg",
@@ -12674,8 +13900,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 768,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 113,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -12754,8 +13987,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 339,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 133,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/openproject.jpg",
@@ -12816,8 +14056,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 89,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 22,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/teable.jpg",
@@ -12887,8 +14134,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 34,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 9,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -12967,7 +14221,14 @@
   "star_gain": {
    "gain": 86,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 25,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -13017,8 +14278,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 123,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 25,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/opensearch.jpg",
@@ -13102,8 +14370,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 362,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 113,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/wazuh.jpg",
@@ -13171,7 +14446,14 @@
   "star_gain": {
    "gain": 346,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 103,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/documenso.jpg",
@@ -13233,8 +14515,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 140,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 56,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/docuseal.jpg",
@@ -13313,8 +14602,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 106,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 36,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -13381,8 +14677,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 16,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 5,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/prestashop.jpg",
@@ -13461,8 +14764,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 122,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 37,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/victoria-metrics.jpg",
@@ -13533,7 +14843,14 @@
   "star_gain": {
    "gain": 22,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 7,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -13601,8 +14918,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 159,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 58,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -13672,8 +14996,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 14,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 3,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/nodebb.jpg",
@@ -13726,8 +15057,15 @@
   ],
   "star_gain": {
    "gain": 99,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 36,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/element.jpg",
@@ -13792,7 +15130,14 @@
   "star_gain": {
    "gain": -10,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": -4,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -13841,8 +15186,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 329,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 76,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/libretranslate.jpg",
@@ -13911,8 +15263,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 30,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 2,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/peertube.jpg",
@@ -13990,8 +15349,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 459,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 127,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/coder-oss.jpg",
@@ -14047,8 +15413,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 218,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 61,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/windmill.jpg",
@@ -14130,8 +15503,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 25,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 6,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -14198,8 +15578,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 76,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 27,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/mailspring.jpg",
@@ -14284,7 +15671,14 @@
   "star_gain": {
    "gain": 63,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 23,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/weaviate.jpg",
@@ -14357,8 +15751,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 250,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 102,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -14423,8 +15824,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 20,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 2,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/phpmyadmin.jpg",
@@ -14485,8 +15893,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 415,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 134,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/semgrep.jpg",
@@ -14561,7 +15976,14 @@
   "star_gain": {
    "gain": 21,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 5,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -14611,7 +16033,14 @@
   "star_gain": {
    "gain": 61,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 24,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -14686,7 +16115,14 @@
   "star_gain": {
    "gain": 18,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 7,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -14752,8 +16188,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 77,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 30,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -14804,8 +16247,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 14,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 7,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/cachet.jpg",
@@ -14881,8 +16331,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 272,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 57,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -14946,8 +16403,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 141,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 61,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -15029,8 +16493,15 @@
   ],
   "star_gain": {
    "gain": 116,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 32,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -15094,8 +16565,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 200,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 54,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -15157,7 +16635,14 @@
   "star_gain": {
    "gain": 320,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 94,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/zitadel.jpg",
@@ -15220,8 +16705,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 25,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 8,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -15279,11 +16771,8 @@
   "ja_ui": null,
   "aliases": [],
   "also_competitors": [],
-  "star_gain": {
-   "gain": 2,
-   "days": 4,
-   "from": "2026-10-20"
-  },
+  "star_gain": null,
+  "star_gain_7d": null,
   "preview": null
  },
  {
@@ -15359,7 +16848,14 @@
   "star_gain": {
    "gain": 160,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 53,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -15408,8 +16904,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 294,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 99,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/audiobookshelf.jpg",
@@ -15486,8 +16989,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 128,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 50,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -15554,8 +17064,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 47,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 21,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -15626,7 +17143,14 @@
   "star_gain": {
    "gain": 138,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 66,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/duplicati.jpg",
@@ -15699,8 +17223,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 67,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 20,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -15778,8 +17309,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 19,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 4,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -15844,7 +17382,14 @@
   "star_gain": {
    "gain": 135,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 77,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/logto.jpg",
@@ -15922,8 +17467,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 437,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 143,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/stalwart.jpg",
@@ -15978,8 +17530,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 199,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 29,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/typebot.jpg",
@@ -16062,8 +17621,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 92,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 24,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/filestash.jpg",
@@ -16146,8 +17712,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 12,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": -17,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/supertokens.jpg",
@@ -16229,8 +17802,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 306,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 90,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/crowdsec.jpg",
@@ -16299,7 +17879,14 @@
   "star_gain": {
    "gain": 184,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 56,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/notesnook.jpg",
@@ -16374,8 +17961,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 32,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 8,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/kratos.jpg",
@@ -16458,8 +18052,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 64,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 19,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/akaunting.jpg",
@@ -16507,8 +18108,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 71,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 28,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/kamal.jpg",
@@ -16583,8 +18191,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 50,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 21,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/devpod.jpg",
@@ -16655,8 +18270,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 106,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 32,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -16724,8 +18346,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 207,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 61,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/kopia.jpg",
@@ -16807,8 +18436,15 @@
   ],
   "star_gain": {
    "gain": 201,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 42,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -16860,7 +18496,14 @@
   "star_gain": {
    "gain": 17,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 1,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/automatisch.jpg",
@@ -16921,7 +18564,14 @@
   "star_gain": {
    "gain": 55,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 19,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/planka.jpg",
@@ -17005,7 +18655,14 @@
   "star_gain": {
    "gain": 167,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 62,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/grype.jpg",
@@ -17074,8 +18731,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 126,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 23,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/frappe-hr.jpg",
@@ -17146,8 +18810,15 @@
   ],
   "star_gain": {
    "gain": 34,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 10,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -17223,8 +18894,10 @@
   "star_gain": {
    "gain": 19,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
   },
+  "star_gain_7d": null,
   "preview": {
    "src": "/previews/sylius.jpg",
    "source": "official",
@@ -17288,8 +18961,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 127,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 47,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/openreplay.jpg",
@@ -17354,8 +19034,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 320,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 115,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/arize-phoenix.jpg",
@@ -17406,11 +19093,8 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
-  "star_gain": {
-   "gain": 6,
-   "days": 4,
-   "from": "2026-10-20"
-  },
+  "star_gain": null,
+  "star_gain_7d": null,
   "preview": null
  },
  {
@@ -17482,9 +19166,11 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 8,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
   },
+  "star_gain_7d": null,
   "preview": {
    "src": "/previews/owncloud.jpg",
    "source": "official",
@@ -17567,8 +19253,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 221,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 53,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/leantime.jpg",
@@ -17641,9 +19334,11 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 37,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
   },
+  "star_gain_7d": null,
   "preview": {
    "src": "/previews/velero.jpg",
    "source": "github",
@@ -17723,7 +19418,14 @@
   "star_gain": {
    "gain": 68,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 29,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -17787,8 +19489,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 214,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 72,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/gatus.jpg",
@@ -17861,8 +19570,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 18,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 6,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/tekton.jpg",
@@ -17890,7 +19606,7 @@
   "license_source": null,
   "last_commit": "2026-10-22T13:53:01Z",
   "created_at": "2015-10-09T19:24:19Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 2.5,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -17925,8 +19641,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 182,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 59,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -17973,8 +19696,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 120,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 40,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/grist.jpg",
@@ -18054,8 +19784,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 27,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 7,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/weblate.jpg",
@@ -18139,8 +19876,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 28,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 5,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -18187,8 +19931,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 14,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 5,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -18235,8 +19986,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 15,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 8,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/openvscode.jpg",
@@ -18306,8 +20064,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 24,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 4,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/shiori.jpg",
@@ -18375,8 +20140,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 195,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 100,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/ghostfolio.jpg",
@@ -18442,8 +20214,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 140,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 40,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -18513,7 +20292,14 @@
   "star_gain": {
    "gain": 86,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 17,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -18570,8 +20356,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 57,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 19,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/vendure.jpg",
@@ -18629,8 +20422,15 @@
   ],
   "star_gain": {
    "gain": 6,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 1,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/crater.jpg",
@@ -18694,7 +20494,14 @@
   "star_gain": {
    "gain": 53,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 24,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -18756,8 +20563,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 594,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 170,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -18810,11 +20624,8 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
-  "star_gain": {
-   "gain": 25,
-   "days": 4,
-   "from": "2026-10-20"
-  },
+  "star_gain": null,
+  "star_gain_7d": null,
   "preview": null
  },
  {
@@ -18871,8 +20682,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 570,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 273,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/kokoro.jpg",
@@ -18929,8 +20747,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 279,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 84,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -18992,7 +20817,14 @@
   "star_gain": {
    "gain": 37,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 12,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/suitecrm.jpg",
@@ -19055,8 +20887,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 12,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 7,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -19114,8 +20953,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 9,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 3,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/hanko.jpg",
@@ -19195,7 +21041,14 @@
   "star_gain": {
    "gain": 101,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 34,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -19269,9 +21122,11 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 16,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
   },
+  "star_gain_7d": null,
   "preview": null
  },
  {
@@ -19333,8 +21188,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 58,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 9,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/nhost.jpg",
@@ -19397,8 +21259,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 92,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 29,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -19468,8 +21337,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 7,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 1,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/highlight.jpg",
@@ -19542,8 +21418,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 15,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 5,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/adminer.jpg",
@@ -19615,7 +21498,14 @@
   "star_gain": {
    "gain": 132,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 34,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/woodpecker.jpg",
@@ -19683,8 +21573,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 34,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 11,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/mediawiki.jpg",
@@ -19767,7 +21664,14 @@
   "star_gain": {
    "gain": 163,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 47,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/headlamp.jpg",
@@ -19822,7 +21726,14 @@
   "star_gain": {
    "gain": 63,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 22,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/heyform.jpg",
@@ -19885,8 +21796,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 117,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 50,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -19937,7 +21855,14 @@
   "star_gain": {
    "gain": 133,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 56,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/anytype.jpg",
@@ -20016,8 +21941,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 59,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 23,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -20089,8 +22021,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 45,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 16,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -20142,8 +22081,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 67,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 14,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/cryptpad.jpg",
@@ -20214,7 +22160,14 @@
   "star_gain": {
    "gain": 191,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 66,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/meshcentral.jpg",
@@ -20289,7 +22242,14 @@
   "star_gain": {
    "gain": 23,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 12,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -20368,8 +22328,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 102,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 22,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/onlyoffice.jpg",
@@ -20424,8 +22391,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 147,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 56,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -20491,7 +22465,14 @@
   "star_gain": {
    "gain": 86,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 23,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/zabbix.jpg",
@@ -20547,8 +22528,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 29,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 7,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -20599,8 +22587,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 8,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 2,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/flarum.jpg",
@@ -20669,8 +22664,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 109,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 44,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/opensign.jpg",
@@ -20748,8 +22750,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 43,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 8,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -20811,8 +22820,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 80,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 25,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -20880,7 +22896,14 @@
   "star_gain": {
    "gain": 0,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 0,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/fathom.jpg",
@@ -20960,8 +22983,15 @@
   ],
   "star_gain": {
    "gain": 74,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 15,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/zammad.jpg",
@@ -21034,8 +23064,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 115,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 37,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/openshot.jpg",
@@ -21108,8 +23145,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 34,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 4,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -21188,8 +23232,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 12,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 5,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/countly.jpg",
@@ -21262,8 +23313,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 44,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 17,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -21311,8 +23369,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 39,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 12,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/lightdash.jpg",
@@ -21340,7 +23405,7 @@
   "license_source": null,
   "last_commit": "2026-10-22T13:40:39Z",
   "created_at": "2012-10-21T20:55:05Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 4.6,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -21380,8 +23445,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 53,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 20,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -21440,7 +23512,14 @@
   "star_gain": {
    "gain": 66,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 4,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -21514,7 +23593,14 @@
   "star_gain": {
    "gain": 63,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 22,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/easy-appointments.jpg",
@@ -21571,8 +23657,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 39,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 13,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -21635,7 +23728,14 @@
   "star_gain": {
    "gain": 204,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 38,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/baserow.jpg",
@@ -21703,8 +23803,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 56,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 13,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/helicone.jpg",
@@ -21759,8 +23866,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 207,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 58,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/silverbullet.jpg",
@@ -21819,8 +23933,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 298,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 98,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -21878,8 +23999,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 24,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 6,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -21958,8 +24086,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 24,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 6,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/shopware.jpg",
@@ -22017,7 +24152,14 @@
   "star_gain": {
    "gain": 83,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 27,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -22076,7 +24218,14 @@
   "star_gain": {
    "gain": 184,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 52,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -22119,8 +24268,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 75,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 23,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/synapse.jpg",
@@ -22187,8 +24343,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 6,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 5,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -22267,8 +24430,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 2,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 1,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -22324,8 +24494,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 36,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 15,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -22385,8 +24562,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 77,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 29,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -22436,8 +24620,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 19,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 8,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -22516,8 +24707,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 28,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 9,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/surveyjs.jpg",
@@ -22585,8 +24783,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 242,
-   "days": 28,
-   "from": "2026-09-26"
+   "days": 27,
+   "from": "2026-09-26",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 56,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/frappe-crm.jpg",
@@ -22665,8 +24870,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 41,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 16,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/kimai.jpg",
@@ -22742,8 +24954,15 @@
   ],
   "star_gain": {
    "gain": 42,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 9,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/limesurvey.jpg",
@@ -22810,7 +25029,14 @@
   "star_gain": {
    "gain": 70,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 26,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -22857,8 +25083,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 76,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 23,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -22921,8 +25154,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 93,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 27,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -22980,8 +25220,15 @@
   ],
   "star_gain": {
    "gain": 42,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 12,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -23039,7 +25286,14 @@
   "star_gain": {
    "gain": 35,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 7,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/collabora-online.jpg",
@@ -23124,7 +25378,14 @@
   "star_gain": {
    "gain": 99,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 49,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/dependency-track.jpg",
@@ -23189,8 +25450,15 @@
   ],
   "star_gain": {
    "gain": 52,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 13,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/freescout.jpg",
@@ -23247,7 +25515,14 @@
   "star_gain": {
    "gain": 83,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 22,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/pgadmin.jpg",
@@ -23322,8 +25597,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 17,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 5,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/writefreely.jpg",
@@ -23385,7 +25667,14 @@
   "star_gain": {
    "gain": 51,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 16,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/hledger.jpg",
@@ -23458,8 +25747,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 23,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 7,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/jitsu.jpg",
@@ -23529,8 +25825,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 24,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 6,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -23553,7 +25856,7 @@
   "license_source": null,
   "last_commit": "2026-10-22T13:52:32Z",
   "created_at": "2014-09-25T13:38:46Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 4.6,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -23607,8 +25910,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 123,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 24,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/espocrm.jpg",
@@ -23676,8 +25986,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 8,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": -3,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/ackee.jpg",
@@ -23761,7 +26078,14 @@
   "star_gain": {
    "gain": 61,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 20,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/pdfsam.jpg",
@@ -23835,8 +26159,15 @@
   ],
   "star_gain": {
    "gain": 92,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 41,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -23884,7 +26215,14 @@
   "star_gain": {
    "gain": 30,
    "days": 23,
-   "from": "2026-10-01"
+   "from": "2026-10-01",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 3,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/unlighthouse.jpg",
@@ -23943,8 +26281,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 5,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 3,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -24022,8 +26367,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 35,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 7,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/cerbos.jpg",
@@ -24090,7 +26442,14 @@
   "star_gain": {
    "gain": 25,
    "days": 28,
-   "from": "2026-09-26"
+   "from": "2026-09-26",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 12,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/tolgee.jpg",
@@ -24175,7 +26534,14 @@
   "star_gain": {
    "gain": 17,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 5,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/rudderstack.jpg",
@@ -24250,8 +26616,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 21,
-   "days": 28,
-   "from": "2026-09-26"
+   "days": 26,
+   "from": "2026-09-26",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 3,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/pretix.jpg",
@@ -24307,9 +26680,11 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 19,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
   },
+  "star_gain_7d": null,
   "preview": null
  },
  {
@@ -24385,8 +26760,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 5,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 5,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -24441,7 +26823,14 @@
   "star_gain": {
    "gain": 75,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 27,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -24499,8 +26888,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 7,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 2,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -24559,7 +26955,14 @@
   "star_gain": {
    "gain": 25,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 10,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -24623,8 +27026,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": -2,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 2,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -24687,7 +27097,14 @@
   "star_gain": {
    "gain": 104,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 34,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/libredesk.jpg",
@@ -24759,8 +27176,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 17,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 4,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/nextcloud-talk.jpg",
@@ -24832,7 +27256,14 @@
   "star_gain": {
    "gain": 15,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 4,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -24908,9 +27339,11 @@
   "also_competitors": [],
   "star_gain": {
    "gain": -1,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
   },
+  "star_gain_7d": null,
   "preview": null
  },
  {
@@ -24974,9 +27407,11 @@
   "also_competitors": [],
   "star_gain": {
    "gain": -2,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
   },
+  "star_gain_7d": null,
   "preview": null
  },
  {
@@ -25043,8 +27478,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": -2,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 3,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -25108,9 +27550,11 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 2,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
   },
+  "star_gain_7d": null,
   "preview": null
  },
  {
@@ -25170,7 +27614,14 @@
   "star_gain": {
    "gain": 35,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 11,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/horilla.jpg",
@@ -25233,8 +27684,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 10,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 7,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -25295,8 +27753,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": -4,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": -2,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -25372,9 +27837,11 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 7,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
   },
+  "star_gain_7d": null,
   "preview": {
    "src": "/previews/openvidu.jpg",
    "source": "official",
@@ -25426,8 +27893,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 12,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 6,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/spacebar.jpg",
@@ -25475,8 +27949,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 14,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 5,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -25545,8 +28026,15 @@
   ],
   "star_gain": {
    "gain": -1,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": -1,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -25606,8 +28094,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 5,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 2,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/docspell.jpg",
@@ -25674,8 +28169,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 2,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 0,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -25744,8 +28246,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 12,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 4,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/orangehrm.jpg",
@@ -25794,7 +28303,14 @@
   "star_gain": {
    "gain": 23,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 13,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/keila.jpg",
@@ -25842,8 +28358,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 18,
-   "days": 23,
-   "from": "2026-10-01"
+   "days": 20,
+   "from": "2026-10-01",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 7,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": null
  },
@@ -25891,8 +28414,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": -1,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 0,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -25935,8 +28465,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 44,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 15,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/bugsink.jpg",
@@ -25996,8 +28533,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 3,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 3,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -26061,7 +28605,14 @@
   "star_gain": {
    "gain": 11,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 3,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -26128,9 +28679,11 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 13,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
   },
+  "star_gain_7d": null,
   "preview": null
  },
  {
@@ -26196,8 +28749,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 5,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": -2,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -26257,8 +28817,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 4,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 26,
+   "from": "2026-09-25",
+   "to": "2026-10-21"
+  },
+  "star_gain_7d": {
+   "gain": 1,
+   "days": 8,
+   "from": "2026-10-13",
+   "to": "2026-10-21"
   },
   "preview": {
    "src": "/previews/docassemble.jpg",
@@ -26340,7 +28907,14 @@
   "star_gain": {
    "gain": 3,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": -2,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -26404,8 +28978,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 11,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 5,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -26462,7 +29043,14 @@
   "star_gain": {
    "gain": 1,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 0,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -26526,8 +29114,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 41,
-   "days": 23,
-   "from": "2026-10-01"
+   "days": 22,
+   "from": "2026-10-01",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 22,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/siteone-crawler.jpg",
@@ -26586,8 +29181,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 20,
-   "days": 23,
-   "from": "2026-10-01"
+   "days": 21,
+   "from": "2026-10-01",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 14,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -26653,7 +29255,14 @@
   "star_gain": {
    "gain": 1,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 2,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -26707,8 +29316,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 7,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 5,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/cockpit-cms.jpg",
@@ -26762,7 +29378,14 @@
   "star_gain": {
    "gain": 12,
    "days": 29,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 4,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -26805,8 +29428,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 0,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 2,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -26849,8 +29479,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 7,
-   "days": 29,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 1,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/glitchtip.jpg",
