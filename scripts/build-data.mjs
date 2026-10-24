@@ -16,7 +16,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { loadOverrides } from "./overrides.mjs";
-import { appendHistory, pruneHistory, starGain } from "./star-history-lib.mjs";
+import { appendHistory, jstDate, pruneHistory, starGain } from "./star-history-lib.mjs";
 
 const ROOT = process.cwd();
 const SRC = path.join(ROOT, "data-source");
@@ -209,10 +209,18 @@ const tools = raw.map((t) => {
   const today = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
   appendHistory(history, tools, today);
   pruneHistory(history, today);
+  const checkedAt = new Map(raw.map((t) => [String(t.id ?? t.slug), t.github_checked_at]));
   for (const t of tools) {
-    const g = starGain(history[t.id], t.stars_num, today, 30);
+    // 期間の終わりは、現在のスター数を実際に取得した日（取得は数日おきのため、ビルド日にすると期間を長く数えてしまう）
+    const observed = jstDate(checkedAt.get(t.id));
+    const end = observed && observed <= today ? observed : today;
+    const g = starGain(history[t.id], t.stars_num, end, 30);
     // 期間が短すぎる（3日未満）ものは、ばらつきが大きいため出さない
     t.star_gain = g && g.days >= 3 ? g : null;
+    // 直近7日間：7日以上前の実測の記録があるものだけ。記録の間隔が空きすぎたもの（10日超）は出さない。
+    // 期間を短くした代用や、1日あたりへの換算（推計）はしない
+    const w = starGain(history[t.id], t.stars_num, end, 7, { strict: true, maxDays: 10 });
+    t.star_gain_7d = w;
   }
   // 1ツール1行で書く（毎日の差分を読みやすくするため）
   const lines = Object.keys(history)
