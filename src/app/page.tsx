@@ -50,7 +50,7 @@ export default function HomePage() {
                 どのOSSを選べばいいか迷っていますか？
               </p>
               <p className="muted" style={{ margin: 0, fontSize: "0.875rem" }}>
-                6つの質問に答えるだけで、あなたの条件に合うOSSを探します。
+                7つの質問に答えるだけで、あなたの条件に合うOSSを探します。
               </p>
             </div>
             <div>

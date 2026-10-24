@@ -81,7 +81,7 @@ export default function ToolsPage() {
             </div>
           </div>
           <p style={{ marginTop: "1rem" }}>
-            <Link href="/diagnosis/">条件が決まっていない方は、6つの質問からOSSを探す →</Link>
+            <Link href="/diagnosis/">条件が決まっていない方は、7つの質問からOSSを探す →</Link>
           </p>
         </section>
 

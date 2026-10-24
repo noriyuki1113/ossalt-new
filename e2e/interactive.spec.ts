@@ -25,11 +25,21 @@ test.describe("OSS診断", () => {
     await page.getByRole("button", { name: "次へ" }).click();
 
     await page.locator(".diag-option--other").click(); // 絶対に必要な機能：特になし
+    await page.getByRole("button", { name: "次へ" }).click();
+
+    // 利用の条件（任意）：日本語と商用利用を選ぶ
+    await expect(page.locator(".diag-progress__label")).toContainText("7 /");
+    await page.getByRole("button", { name: "日本語の画面で使いたい" }).click();
+    await page.getByRole("button", { name: /商用利用/ }).click();
     await page.getByRole("button", { name: "診断結果を見る" }).click();
 
-    await expect(page).toHaveURL(/\/diagnosis\/result\/\?/);
+    await expect(page).toHaveURL(/\/diagnosis\/result\/\?.*needs=ja%2Ccommercial/);
     await expect(page.locator("main")).toContainText(/一致|候補|診断結果/);
     await expect(page.locator("main a[href^='/tools/']").first()).toBeVisible();
+    // 条件ごとの根拠（ライセンス・日本語）と、Cost Lab への導線
+    await expect(page.locator("main")).toContainText(/ライセンス/);
+    await expect(page.locator("main")).toContainText(/日本語/);
+    await expect(page.locator("main a[href^='/cost-lab/?saas=']").first()).toBeVisible();
   });
 
   test("キーボードだけで選択・戻る操作ができる（Tab / Enter / Space）", async ({ page }) => {

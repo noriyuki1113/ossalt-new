@@ -6,6 +6,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import {
+  buildConditionNotes,
   computeCompleteness,
   decodeAnswersFromSearchParams,
   encodeAnswersToSearchParams,
@@ -183,10 +184,40 @@ test("URLパラメータの往復（エンコード→デコードで復元で�
     hosting: "selfhost",
     strengths: ["security", "privacy"],
     requiredFeatures: ["chat", "sso"],
+    conditions: ["ja", "commercial"],
   });
   const params = encodeAnswersToSearchParams(answers);
+  assert.equal(params.get("needs"), "ja,commercial");
   const decoded = decodeAnswersFromSearchParams(params);
   assert.deepEqual(decoded, answers);
+});
+
+test("利用の条件が無い古い結果URLも読める（conditions は空）。不正な値は捨てる", () => {
+  const old = new URLSearchParams("saas=notion&team=small&skill=1&hosting=either&features=__none__");
+  assert.deepEqual(decodeAnswersFromSearchParams(old)?.conditions, []);
+  const bad = new URLSearchParams("saas=notion&team=small&skill=1&hosting=either&features=__none__&needs=ja,evil,ja");
+  assert.deepEqual(decodeAnswersFromSearchParams(bad)?.conditions, ["ja"]);
+});
+
+test("利用の条件：掲載データだけから合っている点・不向きな条件を出す（未確認を非対応と書かない）", () => {
+  const ja = buildConditionNotes(["ja"], { license: "MIT", jaUi: null, jaDocs: null });
+  assert.deepEqual(ja.good, []);
+  assert.match(ja.check[0], /未確認/);
+  assert.ok(!ja.check.join().includes("非対応"));
+  assert.deepEqual(buildConditionNotes(["ja"], { license: "MIT", jaUi: true, jaDocs: null }).good, ["日本語の画面がある"]);
+
+  const mit = buildConditionNotes(["commercial"], { license: "MIT", jaUi: null, jaDocs: null });
+  assert.match(mit.good[0], /商用でも使いやすい/);
+  assert.equal(mit.check.length, 0);
+  const agpl = buildConditionNotes(["commercial"], { license: "AGPL-3.0", jaUi: null, jaDocs: null });
+  assert.match(agpl.check[0], /利用者に提供するときは、ソースの公開が必要/);
+  const sa = buildConditionNotes(["commercial", "budget"], { license: "Sustainable Use License", jaUi: null, jaDocs: null });
+  assert.deepEqual(sa.good, []);
+  assert.match(sa.check.join(), /ソース公開型/);
+  assert.match(sa.check.join(), /Cost Lab/);
+  assert.match(buildConditionNotes(["commercial"], undefined).check[0], /ライセンスが未確認/);
+  // 条件を選ばなければ何も足さない
+  assert.deepEqual(buildConditionNotes([], { license: "MIT", jaUi: true, jaDocs: "official" }), { good: [], check: [] });
 });
 
 test("URLパラメータの往復（必須機能なし＝none）", () => {
