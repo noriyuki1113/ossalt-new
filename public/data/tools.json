@@ -18,7 +18,7 @@
   "license_source": null,
   "last_commit": "2026-10-23T20:47:40Z",
   "created_at": "2019-06-22T09:24:21Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 7.1,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -76,8 +76,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 2495,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 888,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/n8n.jpg",
@@ -142,8 +149,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 20,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 67,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -166,7 +180,7 @@
   "license_source": null,
   "last_commit": "2026-10-21T20:12:58Z",
   "created_at": "2023-06-26T19:39:32Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -204,8 +218,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 2523,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 1140,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/ollama.jpg",
@@ -275,8 +296,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 2120,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 798,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/dify.jpg",
@@ -343,7 +371,14 @@
   "star_gain": {
    "gain": 3526,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 730,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/open-webui.jpg",
@@ -371,7 +406,7 @@
   "license_source": null,
   "last_commit": "2026-10-22T20:19:17Z",
   "created_at": "2023-03-10T18:58:00Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -393,8 +428,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 2566,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 858,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -447,7 +489,14 @@
   "star_gain": {
    "gain": 753,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 229,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/langflow.jpg",
@@ -503,7 +552,14 @@
   "star_gain": {
    "gain": 7695,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 4693,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/comfyui.jpg",
@@ -573,8 +629,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 2141,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 810,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/rustdesk.jpg",
@@ -649,7 +712,14 @@
   "star_gain": {
    "gain": 1618,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 500,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/excalidraw.jpg",
@@ -677,7 +747,7 @@
   "license_source": null,
   "last_commit": "2026-10-22T20:57:01Z",
   "created_at": "2019-10-12T05:56:49Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 6.9,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -734,8 +804,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 2676,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 1876,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/supabase.jpg",
@@ -805,7 +882,14 @@
   "star_gain": {
    "gain": 2672,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 1384,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -863,8 +947,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1447,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 554,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -887,7 +978,7 @@
   "license_source": null,
   "last_commit": "2026-10-21T20:51:32Z",
   "created_at": "2022-02-03T15:56:27Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -924,8 +1015,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1854,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 687,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/immich.jpg",
@@ -997,7 +1095,14 @@
   "star_gain": {
    "gain": 720,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 211,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/odoo.jpg",
@@ -1078,8 +1183,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1834,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 528,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/stirling-pdf.jpg",
@@ -1107,7 +1219,7 @@
   "license_source": null,
   "last_commit": "2026-10-23T20:46:39Z",
   "created_at": "2015-07-21T18:55:34Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 5.4,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -1161,8 +1273,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 358,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 111,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/superset.jpg",
@@ -1226,8 +1345,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1325,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 453,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -1250,7 +1376,7 @@
   "license_source": null,
   "last_commit": "2026-10-22T20:22:47Z",
   "created_at": "2023-05-21T07:19:12Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -1289,8 +1415,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 611,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 190,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/lobechat.jpg",
@@ -1367,8 +1500,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1347,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 420,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -1391,7 +1531,7 @@
   "license_source": null,
   "last_commit": "2026-10-22T20:58:17Z",
   "created_at": "2013-12-11T15:59:56Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 6.8,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -1444,8 +1584,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 541,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 165,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/grafana.jpg",
@@ -1509,7 +1656,14 @@
   "star_gain": {
    "gain": 1062,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 298,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/uptime-kuma.jpg",
@@ -1575,8 +1729,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 43,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 16,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -1641,8 +1802,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 689,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 242,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -1712,8 +1880,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1279,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 422,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/obs.jpg",
@@ -1741,7 +1916,7 @@
   "license_source": null,
   "last_commit": "2026-10-23T20:34:33Z",
   "created_at": "2011-04-14T14:12:38Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 5.2,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -1792,8 +1967,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1113,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 377,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -1859,8 +2041,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 428,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 124,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -1939,8 +2128,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 442,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 153,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/netdata.jpg",
@@ -2025,8 +2221,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 131,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 46,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/strapi.jpg",
@@ -2083,7 +2286,14 @@
   "star_gain": {
    "gain": 280,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 57,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/coder.jpg",
@@ -2111,7 +2321,7 @@
   "license_source": null,
   "last_commit": "2025-05-27T20:05:19Z",
   "created_at": "2023-03-27T18:49:32Z",
-  "freshness_days": 514,
+  "freshness_days": 515,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -2134,9 +2344,11 @@
   "also_competitors": [],
   "star_gain": {
    "gain": -34,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
   },
+  "star_gain_7d": null,
   "preview": {
    "src": "/previews/gpt4all.jpg",
    "source": "official",
@@ -2220,7 +2432,14 @@
   "star_gain": {
    "gain": 173,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 44,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/hoppscotch.jpg",
@@ -2304,8 +2523,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 301,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 83,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/airflow.jpg",
@@ -2381,7 +2607,14 @@
   "star_gain": {
    "gain": 515,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 142,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -2439,8 +2672,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 718,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 338,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/appflowy.jpg",
@@ -2468,7 +2708,7 @@
   "license_source": null,
   "last_commit": "2026-10-23T20:44:37Z",
   "created_at": "2017-06-20T16:13:53Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 7.5,
   "scorecard_date": "2022-08-15",
   "scorecard_checks": {
@@ -2511,8 +2751,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 242,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 84,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/docusaurus.jpg",
@@ -2581,8 +2828,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 825,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 237,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/affine.jpg",
@@ -2646,8 +2900,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1042,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 328,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/anythingllm.jpg",
@@ -2721,8 +2982,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 172,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 55,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/ghost.jpg",
@@ -2786,8 +3054,15 @@
   ],
   "star_gain": {
    "gain": 565,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 228,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -2860,8 +3135,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 366,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 110,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/traefik.jpg",
@@ -2889,7 +3171,7 @@
   "license_source": null,
   "last_commit": "2026-10-22T20:51:44Z",
   "created_at": "2022-12-01T13:04:40Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -2927,8 +3209,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 2054,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 1179,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/twenty.jpg",
@@ -3014,8 +3303,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 460,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 141,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -3038,7 +3334,7 @@
   "license_source": null,
   "last_commit": "2026-10-22T20:54:56Z",
   "created_at": "2015-05-19T07:36:09Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 8.8,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -3089,8 +3385,15 @@
   ],
   "star_gain": {
    "gain": 122,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 23,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/rocket-chat.jpg",
@@ -3148,7 +3451,14 @@
   "star_gain": {
    "gain": 1461,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 425,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -3214,8 +3524,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1222,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 489,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/coolify.jpg",
@@ -3295,8 +3612,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 250,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 51,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/nocodb.jpg",
@@ -3359,8 +3683,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 705,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 209,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/memos.jpg",
@@ -3444,8 +3775,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 529,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 166,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/rclone.jpg",
@@ -3515,7 +3853,14 @@
   "star_gain": {
    "gain": 1514,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 428,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/plane.jpg",
@@ -3585,8 +3930,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 980,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 345,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/jellyfin.jpg",
@@ -3639,7 +3991,14 @@
   "star_gain": {
    "gain": 85,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 26,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -3662,7 +4021,7 @@
   "license_source": null,
   "last_commit": "2026-10-23T20:28:11Z",
   "created_at": "2017-01-16T21:49:41Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 4.6,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -3718,8 +4077,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 370,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 100,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/joplin.jpg",
@@ -3792,8 +4158,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1196,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 416,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/penpot.jpg",
@@ -3821,7 +4194,7 @@
   "license_source": null,
   "last_commit": "2026-10-23T20:29:47Z",
   "created_at": "2019-04-08T16:36:25Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 7.5,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -3877,8 +4250,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 294,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 63,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/appwrite.jpg",
@@ -3934,7 +4314,14 @@
   "star_gain": {
    "gain": 711,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 188,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/whisper-cpp.jpg",
@@ -4003,7 +4390,14 @@
   "star_gain": {
    "gain": 439,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 137,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/pocketbase.jpg",
@@ -4031,7 +4425,7 @@
   "license_source": null,
   "last_commit": "2026-10-21T20:56:46Z",
   "created_at": "2011-06-08T08:20:56Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 6,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -4083,8 +4477,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 890,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 319,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/erpnext.jpg",
@@ -4156,7 +4557,14 @@
   "star_gain": {
    "gain": 108,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 19,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/discourse.jpg",
@@ -4184,7 +4592,7 @@
   "license_source": null,
   "last_commit": "2026-10-21T20:32:53Z",
   "created_at": "2023-02-12T01:06:52Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -4225,8 +4633,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1203,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 489,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/librechat.jpg",
@@ -4296,7 +4711,14 @@
   "star_gain": {
    "gain": 248,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 68,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/meilisearch.jpg",
@@ -4353,8 +4775,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": -53,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": -7,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -4434,7 +4863,14 @@
   "star_gain": {
    "gain": 420,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 131,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/metabase.jpg",
@@ -4517,7 +4953,14 @@
   "star_gain": {
    "gain": 323,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 107,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/dbeaver.jpg",
@@ -4565,8 +5008,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 27,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 6,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -4589,7 +5039,7 @@
   "license_source": null,
   "last_commit": "2026-10-21T20:41:05Z",
   "created_at": "2015-06-15T06:50:02Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 7.3,
   "scorecard_date": "2026-10-21T07:02:18Z",
   "scorecard_checks": {
@@ -4640,8 +5090,15 @@
   ],
   "star_gain": {
    "gain": 221,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 78,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/mattermost.jpg",
@@ -4716,8 +5173,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 63,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 28,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/gogs.jpg",
@@ -4792,7 +5256,14 @@
   "star_gain": {
    "gain": 131,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 54,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -4856,8 +5327,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 474,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 128,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/keycloak.jpg",
@@ -4885,7 +5363,7 @@
   "license_source": null,
   "last_commit": "2026-10-23T20:26:23Z",
   "created_at": "2023-03-18T22:58:02Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -4924,8 +5402,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 626,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 330,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -4989,8 +5474,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1438,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 77,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/hyperswitch.jpg",
@@ -5051,8 +5543,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 467,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 128,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/tldraw.jpg",
@@ -5080,7 +5579,7 @@
   "license_source": null,
   "last_commit": "2026-10-23T20:43:15Z",
   "created_at": "2010-08-30T22:06:41Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 6.1,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -5131,8 +5630,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 794,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 63,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/sentry.jpg",
@@ -5218,7 +5724,14 @@
   "star_gain": {
    "gain": 1007,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 310,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/chatwoot.jpg",
@@ -5276,8 +5789,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 546,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 167,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/umami.jpg",
@@ -5361,8 +5881,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 96,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 26,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/kong.jpg",
@@ -5444,8 +5971,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 202,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 79,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -5468,7 +6002,7 @@
   "license_source": null,
   "last_commit": "2026-10-22T20:10:02Z",
   "created_at": "2021-01-05T18:49:45Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 4.6,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -5523,8 +6057,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 492,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 184,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/payload.jpg",
@@ -5587,8 +6128,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 626,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 164,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/bruno.jpg",
@@ -5649,8 +6197,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 974,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 346,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -5673,7 +6228,7 @@
   "license_source": null,
   "last_commit": "2026-10-21T20:19:45Z",
   "created_at": "2021-03-30T08:51:34Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -5712,8 +6267,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 123,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 25,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/tooljet.jpg",
@@ -5787,8 +6349,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 389,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 112,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/siyuan.jpg",
@@ -5847,8 +6416,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1339,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 406,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/postiz.jpg",
@@ -5927,7 +6503,14 @@
   "star_gain": {
    "gain": 306,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 102,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/logseq.jpg",
@@ -5985,7 +6568,14 @@
   "star_gain": {
    "gain": 419,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 90,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -6065,7 +6655,14 @@
   "star_gain": {
    "gain": 174,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 38,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/appsmith.jpg",
@@ -6151,8 +6748,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 322,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 126,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/nextcloud.jpg",
@@ -6180,7 +6784,7 @@
   "license_source": null,
   "last_commit": "2026-10-22T20:36:04Z",
   "created_at": "2020-06-21T09:21:05Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 5.4,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -6220,8 +6824,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 785,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 266,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/headscale.jpg",
@@ -6249,7 +6860,7 @@
   "license_source": null,
   "last_commit": "2026-10-23T20:39:13Z",
   "created_at": "2012-12-12T01:35:36Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 6.2,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -6307,8 +6918,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 662,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 102,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/directus.jpg",
@@ -6387,7 +7005,14 @@
   "star_gain": {
    "gain": 156,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 53,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -6456,8 +7081,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 806,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 306,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -6527,7 +7159,14 @@
   "star_gain": {
    "gain": 93,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 11,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/jenkins.jpg",
@@ -6611,8 +7250,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 553,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 240,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/sharex.jpg",
@@ -6688,7 +7334,14 @@
   "star_gain": {
    "gain": 470,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 156,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/medusa.jpg",
@@ -6761,8 +7414,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 344,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 132,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/outline.jpg",
@@ -6842,7 +7502,14 @@
   "star_gain": {
    "gain": 490,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 104,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/posthog.jpg",
@@ -6896,8 +7563,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 281,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 72,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/continue.jpg",
@@ -6925,7 +7599,7 @@
   "license_source": null,
   "last_commit": "2026-10-22T20:21:54Z",
   "created_at": "2013-12-16T12:51:09Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 5.6,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -6971,8 +7645,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 133,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 45,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/jitsi.jpg",
@@ -7041,8 +7722,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 51,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 15,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/quivr.jpg",
@@ -7103,8 +7791,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 228,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 123,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -7174,7 +7869,14 @@
   "star_gain": {
    "gain": 44,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 25,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/insomnia.jpg",
@@ -7246,8 +7948,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 115,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 48,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/photoprism.jpg",
@@ -7324,8 +8033,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 144,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 39,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/portainer.jpg",
@@ -7353,7 +8069,7 @@
   "license_source": null,
   "last_commit": "2026-10-23T20:30:06Z",
   "created_at": "2024-04-19T07:49:30Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -7393,8 +8109,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 479,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 173,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/dokploy.jpg",
@@ -7462,8 +8185,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1236,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 392,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/langfuse.jpg",
@@ -7534,8 +8264,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": -51,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": -1,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -7558,7 +8295,7 @@
   "license_source": null,
   "last_commit": "2026-10-21T20:29:15Z",
   "created_at": "2018-02-09T11:12:01Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 8.9,
   "scorecard_date": "2026-10-21T20:16:32Z",
   "scorecard_checks": {
@@ -7614,8 +8351,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 203,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 48,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -7638,7 +8382,7 @@
   "license_source": null,
   "last_commit": "2026-10-21T20:58:02Z",
   "created_at": "2017-05-23T00:30:20Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -7678,8 +8422,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 459,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 127,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -7743,8 +8494,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 296,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 102,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/khoj.jpg",
@@ -7798,8 +8556,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 167,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 60,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -7870,8 +8635,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 142,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 51,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/harbor.jpg",
@@ -7942,7 +8714,14 @@
   "star_gain": {
    "gain": 536,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 165,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -8016,8 +8795,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 554,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 204,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/trivy.jpg",
@@ -8086,8 +8872,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 385,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 115,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/qdrant.jpg",
@@ -8162,8 +8955,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 736,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 204,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/nuclei.jpg",
@@ -8233,8 +9033,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 204,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 45,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -8284,7 +9091,14 @@
   "star_gain": {
    "gain": 265,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 83,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/ocrmypdf.jpg",
@@ -8368,7 +9182,14 @@
   "star_gain": {
    "gain": 42,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 15,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/redash.jpg",
@@ -8396,7 +9217,7 @@
   "license_source": null,
   "last_commit": "2026-10-23T20:39:18Z",
   "created_at": "2021-10-23T19:25:32Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 4.3,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -8439,8 +9260,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 591,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 179,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -8505,8 +9333,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 11,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 6,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/magento.jpg",
@@ -8534,7 +9369,7 @@
   "license_source": null,
   "last_commit": "2026-10-21T20:30:39Z",
   "created_at": "2019-08-24T13:56:15Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 6.3,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -8590,8 +9425,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1593,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 379,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/kestra.jpg",
@@ -8640,7 +9482,14 @@
   "star_gain": {
    "gain": 320,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 81,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/opentofu.jpg",
@@ -8709,8 +9558,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 239,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 70,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/signoz.jpg",
@@ -8738,7 +9594,7 @@
   "license_source": null,
   "last_commit": "2026-10-21T21:01:43Z",
   "created_at": "2013-06-08T10:26:57Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 5.2,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -8785,8 +9641,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 41,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 18,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -8834,8 +9697,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 536,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 186,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/actual.jpg",
@@ -8902,8 +9772,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 86,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 25,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -8926,7 +9803,7 @@
   "license_source": null,
   "last_commit": "2026-10-21T20:41:03Z",
   "created_at": "2011-08-09T15:12:11Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 4.1,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -8972,8 +9849,15 @@
   ],
   "star_gain": {
    "gain": 27,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 14,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/woocommerce.jpg",
@@ -9059,8 +9943,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 155,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 60,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/surrealdb.jpg",
@@ -9133,8 +10024,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 370,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 101,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/flameshot.jpg",
@@ -9206,8 +10104,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 103,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 26,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/wikijs.jpg",
@@ -9235,7 +10140,7 @@
   "license_source": null,
   "last_commit": "2026-10-21T20:21:19Z",
   "created_at": "2022-08-17T01:04:27Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -9269,8 +10174,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 520,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 189,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/invokeai.jpg",
@@ -9356,8 +10268,15 @@
   ],
   "star_gain": {
    "gain": 99,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 28,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/bagisto.jpg",
@@ -9427,7 +10346,14 @@
   "star_gain": {
    "gain": 552,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 165,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/infisical.jpg",
@@ -9455,7 +10381,7 @@
   "license_source": "github",
   "last_commit": "2026-10-23T21:15:34Z",
   "created_at": "2022-10-05T17:58:44Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 5.1,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -9498,7 +10424,14 @@
   "star_gain": {
    "gain": 200,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 57,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/chroma.jpg",
@@ -9526,7 +10459,7 @@
   "license_source": null,
   "last_commit": "2026-10-21T20:59:02Z",
   "created_at": "2022-12-03T02:52:46Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -9560,8 +10493,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 433,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 121,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/activepieces.jpg",
@@ -9589,7 +10529,7 @@
   "license_source": null,
   "last_commit": "2026-10-21T20:49:14Z",
   "created_at": "2016-02-28T15:52:40Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 7.5,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -9637,8 +10577,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 405,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 141,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -9707,8 +10654,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 660,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 177,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -9769,8 +10723,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 440,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 128,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/ente.jpg",
@@ -9854,8 +10815,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 410,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 192,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/plausible.jpg",
@@ -9911,9 +10879,11 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 72,
-   "days": 5,
-   "from": "2026-10-20"
+   "days": 3,
+   "from": "2026-10-20",
+   "to": "2026-10-23"
   },
+  "star_gain_7d": null,
   "preview": null
  },
  {
@@ -9994,7 +10964,14 @@
   "star_gain": {
    "gain": 44,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 15,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/budibase.jpg",
@@ -10082,8 +11059,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 291,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 118,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/authelia.jpg",
@@ -10153,8 +11137,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 90,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 28,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/node-red.jpg",
@@ -10236,8 +11227,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": -5,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 3,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -10301,8 +11299,15 @@
   ],
   "star_gain": {
    "gain": 33,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 17,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -10359,7 +11364,14 @@
   "star_gain": {
    "gain": 112,
    "days": 29,
-   "from": "2026-09-26"
+   "from": "2026-09-26",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 34,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/dub.jpg",
@@ -10430,7 +11442,14 @@
   "star_gain": {
    "gain": 684,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 248,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/blender.jpg",
@@ -10458,7 +11477,7 @@
   "license_source": null,
   "last_commit": "2026-10-22T20:57:37Z",
   "created_at": "2019-12-30T09:19:48Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -10498,8 +11517,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 339,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 92,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/authentik.jpg",
@@ -10559,9 +11585,11 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 508,
-   "days": 5,
-   "from": "2026-10-20"
+   "days": 4,
+   "from": "2026-10-20",
+   "to": "2026-10-24"
   },
+  "star_gain_7d": null,
   "preview": null
  },
  {
@@ -10630,8 +11658,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 95,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 36,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -10698,8 +11733,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 152,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 32,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/monica.jpg",
@@ -10782,8 +11824,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 320,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 87,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/nocobase.jpg",
@@ -10840,8 +11889,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 496,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 192,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -10914,8 +11970,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 134,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 39,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/prefect.jpg",
@@ -10997,8 +12060,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 241,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 79,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/firefly-iii.jpg",
@@ -11052,8 +12122,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 573,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 224,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -11125,8 +12202,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 376,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 145,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/listmonk.jpg",
@@ -11154,7 +12238,7 @@
   "license_source": null,
   "last_commit": "2026-10-21T20:52:44Z",
   "created_at": "2016-10-31T21:02:47Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 7.1,
   "scorecard_date": "2026-10-12",
   "scorecard_checks": {
@@ -11208,8 +12292,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 73,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 13,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/pulumi.jpg",
@@ -11293,8 +12384,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 427,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 149,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/typesense.jpg",
@@ -11374,7 +12472,14 @@
   "star_gain": {
    "gain": 85,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 22,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/matomo.jpg",
@@ -11453,8 +12558,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 52,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 16,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/spree.jpg",
@@ -11521,8 +12633,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 260,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 83,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -11545,7 +12664,7 @@
   "license_source": null,
   "last_commit": "2026-10-22T20:57:10Z",
   "created_at": "2019-10-16T22:15:35Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 5.7,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -11597,8 +12716,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 638,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 217,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/temporal.jpg",
@@ -11677,7 +12803,14 @@
   "star_gain": {
    "gain": 561,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 147,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/navidrome.jpg",
@@ -11747,7 +12880,14 @@
   "star_gain": {
    "gain": 44,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 5,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -11817,8 +12957,15 @@
   ],
   "star_gain": {
    "gain": 39,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 16,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -11883,7 +13030,14 @@
   "star_gain": {
    "gain": 891,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 304,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/cap.jpg",
@@ -11950,7 +13104,14 @@
   "star_gain": {
    "gain": 107,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 34,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/krayin.jpg",
@@ -12007,7 +13168,14 @@
   "star_gain": {
    "gain": 683,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 290,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/livekit.jpg",
@@ -12076,7 +13244,14 @@
   "star_gain": {
    "gain": 4699,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 61,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/univer.jpg",
@@ -12104,7 +13279,7 @@
   "license_source": null,
   "last_commit": "2026-10-22T20:48:35Z",
   "created_at": "2021-04-20T21:13:52Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 4.4,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -12142,8 +13317,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 286,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 79,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -12196,8 +13378,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 265,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 95,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -12256,8 +13445,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 37,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 6,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -12321,8 +13517,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 229,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 77,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -12386,8 +13589,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 269,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 88,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/docmost.jpg",
@@ -12415,7 +13625,7 @@
   "license_source": null,
   "last_commit": "2026-10-22T20:29:30Z",
   "created_at": "2023-02-02T03:29:51Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -12456,8 +13666,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 339,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 88,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/openobserve.jpg",
@@ -12529,7 +13746,14 @@
   "star_gain": {
    "gain": 265,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 76,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/audacity.jpg",
@@ -12557,7 +13781,7 @@
   "license_source": null,
   "last_commit": "2026-10-19T20:38:10Z",
   "created_at": "2020-04-30T23:16:17Z",
-  "freshness_days": 4,
+  "freshness_days": 5,
   "scorecard_score": 4.5,
   "scorecard_date": "2026-10-12",
   "scorecard_checks": {
@@ -12598,8 +13822,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 81,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 25,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/vitepress.jpg",
@@ -12674,8 +13905,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 768,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 113,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -12698,7 +13936,7 @@
   "license_source": null,
   "last_commit": "2026-10-21T20:01:47Z",
   "created_at": "2012-11-28T09:59:11Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 7,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -12754,8 +13992,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 339,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 133,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/openproject.jpg",
@@ -12816,8 +14061,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 89,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 22,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/teable.jpg",
@@ -12888,7 +14140,14 @@
   "star_gain": {
    "gain": 39,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 10,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -12966,8 +14225,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 86,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 25,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -13017,8 +14283,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 123,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 25,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/opensearch.jpg",
@@ -13046,7 +14319,7 @@
   "license_source": null,
   "last_commit": "2026-10-21T20:30:59Z",
   "created_at": "2015-08-11T17:39:03Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 6.4,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -13102,8 +14375,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 362,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 113,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/wazuh.jpg",
@@ -13170,8 +14450,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 346,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 103,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/documenso.jpg",
@@ -13234,7 +14521,14 @@
   "star_gain": {
    "gain": 166,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 43,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/docuseal.jpg",
@@ -13314,7 +14608,14 @@
   "star_gain": {
    "gain": 124,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 39,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -13381,8 +14682,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 16,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 5,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/prestashop.jpg",
@@ -13461,8 +14769,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 122,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 37,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/victoria-metrics.jpg",
@@ -13536,7 +14851,14 @@
   "star_gain": {
    "gain": 199,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 74,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -13601,8 +14923,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 22,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 7,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -13672,8 +15001,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 14,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 3,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/nodebb.jpg",
@@ -13726,8 +15062,15 @@
   ],
   "star_gain": {
    "gain": 99,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 36,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/element.jpg",
@@ -13791,8 +15134,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": -10,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": -4,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -13841,8 +15191,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 329,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 76,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/libretranslate.jpg",
@@ -13870,7 +15227,7 @@
   "license_source": null,
   "last_commit": "2026-10-22T20:45:11Z",
   "created_at": "2021-12-22T06:08:52Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 8.6,
   "scorecard_date": "2026-10-22T14:49:55Z",
   "scorecard_checks": {
@@ -13920,8 +15277,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 459,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 127,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/coder-oss.jpg",
@@ -13991,7 +15355,14 @@
   "star_gain": {
    "gain": 31,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": -3,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/peertube.jpg",
@@ -14047,8 +15418,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 218,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 61,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/windmill.jpg",
@@ -14131,7 +15509,14 @@
   "star_gain": {
    "gain": 25,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 2,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -14199,7 +15584,14 @@
   "star_gain": {
    "gain": 80,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 17,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/mailspring.jpg",
@@ -14283,8 +15675,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 63,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 23,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/weaviate.jpg",
@@ -14312,7 +15711,7 @@
   "license_source": null,
   "last_commit": "2026-10-22T20:35:48Z",
   "created_at": "2012-10-21T16:48:50Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 6.9,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -14357,8 +15756,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 250,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 102,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -14423,8 +15829,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 20,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 2,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/phpmyadmin.jpg",
@@ -14485,8 +15898,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 415,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 134,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/semgrep.jpg",
@@ -14560,8 +15980,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 21,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 5,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -14610,8 +16037,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 61,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 24,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -14685,8 +16119,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 18,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 7,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -14753,7 +16194,14 @@
   "star_gain": {
    "gain": 104,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 40,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -14804,8 +16252,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 14,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 7,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/cachet.jpg",
@@ -14833,7 +16288,7 @@
   "license_source": null,
   "last_commit": "2026-10-21T21:09:54Z",
   "created_at": "2013-08-19T00:36:28Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 7,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -14881,8 +16336,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 272,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 57,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -14947,7 +16409,14 @@
   "star_gain": {
    "gain": 181,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 60,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -15029,8 +16498,15 @@
   ],
   "star_gain": {
    "gain": 116,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 32,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -15094,8 +16570,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 200,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 54,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -15156,8 +16639,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 320,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 94,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/zitadel.jpg",
@@ -15220,8 +16710,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 25,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 8,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -15282,8 +16779,10 @@
   "star_gain": {
    "gain": 7,
    "days": 5,
-   "from": "2026-10-20"
+   "from": "2026-10-20",
+   "to": "2026-10-25"
   },
+  "star_gain_7d": null,
   "preview": null
  },
  {
@@ -15358,8 +16857,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 160,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 53,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -15408,8 +16914,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 294,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 99,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/audiobookshelf.jpg",
@@ -15487,7 +17000,14 @@
   "star_gain": {
    "gain": 138,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 33,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -15554,8 +17074,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 47,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 21,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -15625,8 +17152,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 138,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 66,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/duplicati.jpg",
@@ -15699,8 +17233,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 67,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 20,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -15779,8 +17320,10 @@
   "star_gain": {
    "gain": 18,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
   },
+  "star_gain_7d": null,
   "preview": null
  },
  {
@@ -15843,8 +17386,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 135,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 77,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/logto.jpg",
@@ -15922,8 +17472,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 437,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 143,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/stalwart.jpg",
@@ -15979,7 +17536,14 @@
   "star_gain": {
    "gain": 213,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 28,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/typebot.jpg",
@@ -16063,7 +17627,14 @@
   "star_gain": {
    "gain": 102,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 22,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/filestash.jpg",
@@ -16146,8 +17717,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 12,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": -17,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/supertokens.jpg",
@@ -16229,8 +17807,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 306,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 90,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/crowdsec.jpg",
@@ -16298,8 +17883,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 184,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 56,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/notesnook.jpg",
@@ -16375,7 +17967,14 @@
   "star_gain": {
    "gain": 40,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 9,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/kratos.jpg",
@@ -16458,8 +18057,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 64,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 19,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/akaunting.jpg",
@@ -16507,8 +18113,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 71,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 28,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/kamal.jpg",
@@ -16583,8 +18196,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 50,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 21,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/devpod.jpg",
@@ -16655,8 +18275,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 106,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 32,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -16724,8 +18351,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 207,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 61,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/kopia.jpg",
@@ -16807,8 +18441,15 @@
   ],
   "star_gain": {
    "gain": 201,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 42,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -16859,8 +18500,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 17,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 1,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/automatisch.jpg",
@@ -16920,8 +18568,15 @@
   ],
   "star_gain": {
    "gain": 55,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 19,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/planka.jpg",
@@ -17004,8 +18659,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 167,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 62,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/grype.jpg",
@@ -17074,8 +18736,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 126,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 23,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/frappe-hr.jpg",
@@ -17147,8 +18816,10 @@
   "star_gain": {
    "gain": 46,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
   },
+  "star_gain_7d": null,
   "preview": null
  },
  {
@@ -17222,9 +18893,11 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 19,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
   },
+  "star_gain_7d": null,
   "preview": {
    "src": "/previews/sylius.jpg",
    "source": "official",
@@ -17289,7 +18962,14 @@
   "star_gain": {
    "gain": 378,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 110,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/arize-phoenix.jpg",
@@ -17354,8 +19034,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 127,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 47,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/openreplay.jpg",
@@ -17409,8 +19096,10 @@
   "star_gain": {
    "gain": 20,
    "days": 5,
-   "from": "2026-10-20"
+   "from": "2026-10-20",
+   "to": "2026-10-25"
   },
+  "star_gain_7d": null,
   "preview": null
  },
  {
@@ -17482,9 +19171,11 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 8,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
   },
+  "star_gain_7d": null,
   "preview": {
    "src": "/previews/owncloud.jpg",
    "source": "official",
@@ -17567,8 +19258,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 221,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 53,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/leantime.jpg",
@@ -17642,7 +19340,14 @@
   "star_gain": {
    "gain": 43,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 14,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/velero.jpg",
@@ -17722,8 +19427,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 68,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 29,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -17787,8 +19499,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 214,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 72,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/gatus.jpg",
@@ -17816,7 +19535,7 @@
   "license_source": null,
   "last_commit": "2026-10-22T20:55:24Z",
   "created_at": "2018-08-29T18:21:55Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 6.5,
   "scorecard_date": "2026-10-22T20:55:45Z",
   "scorecard_checks": {
@@ -17861,8 +19580,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 18,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 6,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/tekton.jpg",
@@ -17925,8 +19651,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 182,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 59,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -17974,7 +19707,14 @@
   "star_gain": {
    "gain": 131,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 31,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/grist.jpg",
@@ -18002,7 +19742,7 @@
   "license_source": null,
   "last_commit": "2026-10-21T20:24:27Z",
   "created_at": "2012-02-27T09:33:29Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 7.8,
   "scorecard_date": "2026-10-21T17:54:25Z",
   "scorecard_checks": {
@@ -18054,8 +19794,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 27,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 7,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/weblate.jpg",
@@ -18140,7 +19887,14 @@
   "star_gain": {
    "gain": 33,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 9,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -18188,7 +19942,14 @@
   "star_gain": {
    "gain": 18,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 5,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -18235,8 +19996,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 15,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 8,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/openvscode.jpg",
@@ -18307,7 +20075,14 @@
   "star_gain": {
    "gain": 33,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 15,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/shiori.jpg",
@@ -18376,7 +20151,14 @@
   "star_gain": {
    "gain": 218,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 78,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/ghostfolio.jpg",
@@ -18443,7 +20225,14 @@
   "star_gain": {
    "gain": 155,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 31,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -18512,8 +20301,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 86,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 17,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -18571,7 +20367,14 @@
   "star_gain": {
    "gain": 66,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 17,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/vendure.jpg",
@@ -18630,7 +20433,14 @@
   "star_gain": {
    "gain": 6,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 2,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/crater.jpg",
@@ -18693,8 +20503,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 53,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 24,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -18756,8 +20573,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 594,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 170,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -18810,11 +20634,8 @@
   "ja_ui": true,
   "aliases": [],
   "also_competitors": [],
-  "star_gain": {
-   "gain": 25,
-   "days": 5,
-   "from": "2026-10-20"
-  },
+  "star_gain": null,
+  "star_gain_7d": null,
   "preview": null
  },
  {
@@ -18871,8 +20692,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 570,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 273,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/kokoro.jpg",
@@ -18929,8 +20757,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 279,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 84,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -18991,8 +20826,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 37,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 12,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/suitecrm.jpg",
@@ -19020,7 +20862,7 @@
   "license_source": null,
   "last_commit": "2026-10-21T20:35:08Z",
   "created_at": "2012-11-19T22:47:09Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 3.8,
   "scorecard_date": "2026-10-12",
   "scorecard_checks": {
@@ -19055,8 +20897,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 12,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 7,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -19115,8 +20964,10 @@
   "star_gain": {
    "gain": 10,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
   },
+  "star_gain_7d": null,
   "preview": {
    "src": "/previews/hanko.jpg",
    "source": "official",
@@ -19194,8 +21045,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 101,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 34,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -19218,7 +21076,7 @@
   "license_source": null,
   "last_commit": "2026-10-21T20:55:25Z",
   "created_at": "2010-05-17T21:27:02Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 6.8,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -19269,9 +21127,11 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 16,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
   },
+  "star_gain_7d": null,
   "preview": null
  },
  {
@@ -19333,8 +21193,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 58,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 9,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/nhost.jpg",
@@ -19362,7 +21229,7 @@
   "license_source": null,
   "last_commit": "2026-10-21T20:59:53Z",
   "created_at": "2012-06-03T13:37:45Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 3.1,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -19397,8 +21264,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 92,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 29,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -19469,7 +21343,14 @@
   "star_gain": {
    "gain": 7,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 3,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/highlight.jpg",
@@ -19542,8 +21423,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 15,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 5,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/adminer.jpg",
@@ -19614,8 +21502,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 132,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 34,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/woodpecker.jpg",
@@ -19643,7 +21538,7 @@
   "license_source": null,
   "last_commit": "2026-10-22T20:55:25Z",
   "created_at": "2012-11-01T19:03:08Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 3.1,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -19683,8 +21578,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 34,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 11,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/mediawiki.jpg",
@@ -19766,8 +21668,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 163,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 47,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/headlamp.jpg",
@@ -19821,8 +21730,15 @@
   ],
   "star_gain": {
    "gain": 63,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 22,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/heyform.jpg",
@@ -19885,8 +21801,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 117,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 50,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -19961,7 +21884,14 @@
   "star_gain": {
    "gain": 143,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 94,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -20011,8 +21941,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 133,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 56,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/anytype.jpg",
@@ -20090,7 +22027,14 @@
   "star_gain": {
    "gain": 64,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 31,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -20142,8 +22086,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 67,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 14,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/cryptpad.jpg",
@@ -20213,8 +22164,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 191,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 66,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/meshcentral.jpg",
@@ -20288,8 +22246,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 23,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 12,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -20368,8 +22333,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 102,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 22,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/onlyoffice.jpg",
@@ -20424,8 +22396,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 147,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 56,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -20490,8 +22469,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 86,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 23,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/zabbix.jpg",
@@ -20548,7 +22534,14 @@
   "star_gain": {
    "gain": 29,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 6,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -20599,8 +22592,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 8,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 2,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/flarum.jpg",
@@ -20669,8 +22669,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 109,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 44,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/opensign.jpg",
@@ -20738,7 +22745,14 @@
   "star_gain": {
    "gain": 84,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 18,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -20812,7 +22826,14 @@
   "star_gain": {
    "gain": 46,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 6,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -20879,8 +22900,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 0,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 0,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/fathom.jpg",
@@ -20960,8 +22988,15 @@
   ],
   "star_gain": {
    "gain": 74,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 15,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/zammad.jpg",
@@ -21035,7 +23070,14 @@
   "star_gain": {
    "gain": 142,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 51,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/openshot.jpg",
@@ -21109,7 +23151,14 @@
   "star_gain": {
    "gain": 38,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 3,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -21189,7 +23238,14 @@
   "star_gain": {
    "gain": 14,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 3,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/countly.jpg",
@@ -21262,8 +23318,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 44,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 17,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -21286,7 +23349,7 @@
   "license_source": null,
   "last_commit": "2026-10-21T20:52:30Z",
   "created_at": "2021-03-19T09:44:40Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -21311,8 +23374,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 39,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 12,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/lightdash.jpg",
@@ -21380,8 +23450,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 53,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 20,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -21439,8 +23516,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 66,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 4,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -21513,8 +23597,15 @@
   ],
   "star_gain": {
    "gain": 63,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 22,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/easy-appointments.jpg",
@@ -21572,7 +23663,14 @@
   "star_gain": {
    "gain": 49,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 14,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -21634,8 +23732,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 204,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 38,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/baserow.jpg",
@@ -21703,8 +23808,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 56,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 13,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/helicone.jpg",
@@ -21764,7 +23876,14 @@
   "star_gain": {
    "gain": 335,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 71,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -21814,8 +23933,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 207,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 58,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/silverbullet.jpg",
@@ -21843,7 +23969,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-20T21:13:42Z",
   "created_at": "2013-02-01T21:22:29Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": 4.7,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -21879,7 +24005,14 @@
   "star_gain": {
    "gain": 26,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 6,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -21902,7 +24035,7 @@
   "license_source": null,
   "last_commit": "2026-10-21T21:00:21Z",
   "created_at": "2018-05-03T13:00:31Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 5.5,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -21958,8 +24091,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 24,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 6,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/shopware.jpg",
@@ -22016,8 +24156,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 83,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 27,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -22075,8 +24222,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 184,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 52,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -22119,8 +24273,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 75,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 23,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/synapse.jpg",
@@ -22188,7 +24349,14 @@
   "star_gain": {
    "gain": 2,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": -3,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -22268,7 +24436,14 @@
   "star_gain": {
    "gain": 3,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 1,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -22324,8 +24499,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 36,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 15,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -22348,7 +24530,7 @@
   "license_source": null,
   "last_commit": "2026-08-23T20:17:45Z",
   "created_at": "2020-05-22T16:32:56Z",
-  "freshness_days": 61,
+  "freshness_days": 62,
   "scorecard_score": 3.5,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -22385,8 +24567,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 77,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 29,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -22436,8 +24625,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 19,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 8,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -22517,7 +24713,14 @@
   "star_gain": {
    "gain": 35,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 10,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/surveyjs.jpg",
@@ -22545,7 +24748,7 @@
   "license_source": null,
   "last_commit": "2026-10-22T20:31:58Z",
   "created_at": "2023-07-19T08:53:35Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -22585,8 +24788,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 242,
-   "days": 29,
-   "from": "2026-09-26"
+   "days": 27,
+   "from": "2026-09-26",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 56,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/frappe-crm.jpg",
@@ -22666,7 +24876,14 @@
   "star_gain": {
    "gain": 53,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 19,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/kimai.jpg",
@@ -22694,7 +24911,7 @@
   "license_source": null,
   "last_commit": "2026-10-22T20:22:06Z",
   "created_at": "2012-01-30T14:14:53Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 4.5,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -22742,8 +24959,15 @@
   ],
   "star_gain": {
    "gain": 42,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 9,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/limesurvey.jpg",
@@ -22809,8 +25033,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 70,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 26,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -22857,8 +25088,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 76,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 23,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -22921,8 +25159,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 93,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 27,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -22981,7 +25226,14 @@
   "star_gain": {
    "gain": 49,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 11,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -23038,8 +25290,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 35,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 7,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/collabora-online.jpg",
@@ -23123,8 +25382,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 99,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 49,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/dependency-track.jpg",
@@ -23189,8 +25455,15 @@
   ],
   "star_gain": {
    "gain": 52,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 13,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/freescout.jpg",
@@ -23246,8 +25519,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 83,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 22,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/pgadmin.jpg",
@@ -23322,8 +25602,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 17,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 5,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/writefreely.jpg",
@@ -23384,8 +25671,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 51,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 16,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/hledger.jpg",
@@ -23458,8 +25752,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 23,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 7,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/jitsu.jpg",
@@ -23530,7 +25831,14 @@
   "star_gain": {
    "gain": 26,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 6,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -23607,8 +25915,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 123,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 24,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/espocrm.jpg",
@@ -23676,8 +25991,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 8,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": -3,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/ackee.jpg",
@@ -23760,8 +26082,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 61,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 20,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/pdfsam.jpg",
@@ -23835,8 +26164,15 @@
   ],
   "star_gain": {
    "gain": 92,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 41,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -23883,8 +26219,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 30,
-   "days": 24,
-   "from": "2026-10-01"
+   "days": 23,
+   "from": "2026-10-01",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 3,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/unlighthouse.jpg",
@@ -23967,8 +26310,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 35,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 7,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/cerbos.jpg",
@@ -24027,8 +26377,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 5,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 3,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -24089,8 +26446,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 25,
-   "days": 29,
-   "from": "2026-09-26"
+   "days": 28,
+   "from": "2026-09-26",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 12,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/tolgee.jpg",
@@ -24174,8 +26538,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 17,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 5,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/rudderstack.jpg",
@@ -24250,8 +26621,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 21,
-   "days": 29,
-   "from": "2026-09-26"
+   "days": 26,
+   "from": "2026-09-26",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 3,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/pretix.jpg",
@@ -24307,9 +26685,11 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 19,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
   },
+  "star_gain_7d": null,
   "preview": null
  },
  {
@@ -24385,8 +26765,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 5,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 5,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -24440,8 +26827,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 75,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 27,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -24499,8 +26893,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 7,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 2,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -24558,8 +26959,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 25,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 10,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -24624,7 +27032,14 @@
   "star_gain": {
    "gain": -2,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 0,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -24686,8 +27101,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 104,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 34,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/libredesk.jpg",
@@ -24715,7 +27137,7 @@
   "license_source": null,
   "last_commit": "2026-10-21T21:00:48Z",
   "created_at": "2016-09-01T08:08:37Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 6.4,
   "scorecard_date": "2026-10-12",
   "scorecard_checks": {
@@ -24759,8 +27181,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 17,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 4,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/nextcloud-talk.jpg",
@@ -24831,8 +27260,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 15,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 4,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -24908,9 +27344,11 @@
   "also_competitors": [],
   "star_gain": {
    "gain": -1,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
   },
+  "star_gain_7d": null,
   "preview": null
  },
  {
@@ -24974,9 +27412,11 @@
   "also_competitors": [],
   "star_gain": {
    "gain": -2,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
   },
+  "star_gain_7d": null,
   "preview": null
  },
  {
@@ -25043,8 +27483,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": -2,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 3,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -25109,8 +27556,10 @@
   "star_gain": {
    "gain": 2,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
   },
+  "star_gain_7d": null,
   "preview": null
  },
  {
@@ -25132,7 +27581,7 @@
   "license_source": null,
   "last_commit": "2026-10-23T20:19:29Z",
   "created_at": "2023-05-10T09:33:48Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -25169,8 +27618,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 35,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 11,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/horilla.jpg",
@@ -25198,7 +27654,7 @@
   "license_source": null,
   "last_commit": "2026-10-22T20:37:26Z",
   "created_at": "2011-03-10T13:26:41Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 5.7,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -25233,8 +27689,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 10,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 7,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -25295,8 +27758,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": -4,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": -2,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -25372,9 +27842,11 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 7,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
   },
+  "star_gain_7d": null,
   "preview": {
    "src": "/previews/openvidu.jpg",
    "source": "official",
@@ -25427,7 +27899,14 @@
   "star_gain": {
    "gain": 13,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 5,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/spacebar.jpg",
@@ -25475,8 +27954,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 14,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 5,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -25546,7 +28032,14 @@
   "star_gain": {
    "gain": -1,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 1,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -25606,8 +28099,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 5,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 2,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": {
    "src": "/previews/docspell.jpg",
@@ -25674,8 +28174,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 2,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 0,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -25744,8 +28251,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 12,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 4,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/orangehrm.jpg",
@@ -25793,8 +28307,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 23,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 13,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": {
    "src": "/previews/keila.jpg",
@@ -25843,7 +28364,14 @@
   "star_gain": {
    "gain": 35,
    "days": 24,
-   "from": "2026-10-01"
+   "from": "2026-10-01",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 18,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": null
  },
@@ -25891,8 +28419,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": -1,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 0,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -25936,7 +28471,14 @@
   "star_gain": {
    "gain": 54,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 17,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/bugsink.jpg",
@@ -25996,8 +28538,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 3,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 3,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -26060,8 +28609,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 11,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 3,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -26084,7 +28640,7 @@
   "license_source": null,
   "last_commit": "2026-10-04T20:29:18Z",
   "created_at": "2020-12-19T18:44:46Z",
-  "freshness_days": 19,
+  "freshness_days": 20,
   "scorecard_score": 3.5,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -26128,9 +28684,11 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 13,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
   },
+  "star_gain_7d": null,
   "preview": null
  },
  {
@@ -26196,8 +28754,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 5,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": -2,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -26258,7 +28823,14 @@
   "star_gain": {
    "gain": 4,
    "days": 30,
-   "from": "2026-09-25"
+   "from": "2026-09-25",
+   "to": "2026-10-25"
+  },
+  "star_gain_7d": {
+   "gain": 0,
+   "days": 8,
+   "from": "2026-10-17",
+   "to": "2026-10-25"
   },
   "preview": {
    "src": "/previews/docassemble.jpg",
@@ -26286,7 +28858,7 @@
   "license_source": null,
   "last_commit": "2026-10-23T20:31:50Z",
   "created_at": "2012-12-19T11:21:32Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 5.7,
   "scorecard_date": "2026-10-23T20:03:59Z",
   "scorecard_checks": {
@@ -26339,8 +28911,15 @@
   ],
   "star_gain": {
    "gain": 3,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": -2,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -26404,8 +28983,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 11,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 5,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": null
  },
@@ -26461,8 +29047,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 0,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -26526,8 +29119,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 41,
-   "days": 24,
-   "from": "2026-10-01"
+   "days": 22,
+   "from": "2026-10-01",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 22,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/siteone-crawler.jpg",
@@ -26586,8 +29186,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 20,
-   "days": 24,
-   "from": "2026-10-01"
+   "days": 21,
+   "from": "2026-10-01",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 14,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -26652,8 +29259,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 2,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -26707,8 +29321,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 7,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 5,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/cockpit-cms.jpg",
@@ -26761,8 +29382,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 12,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 29,
+   "from": "2026-09-25",
+   "to": "2026-10-24"
+  },
+  "star_gain_7d": {
+   "gain": 4,
+   "days": 8,
+   "from": "2026-10-16",
+   "to": "2026-10-24"
   },
   "preview": null
  },
@@ -26805,8 +29433,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 0,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 27,
+   "from": "2026-09-25",
+   "to": "2026-10-22"
+  },
+  "star_gain_7d": {
+   "gain": 2,
+   "days": 8,
+   "from": "2026-10-14",
+   "to": "2026-10-22"
   },
   "preview": null
  },
@@ -26849,8 +29484,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 7,
-   "days": 30,
-   "from": "2026-09-25"
+   "days": 28,
+   "from": "2026-09-25",
+   "to": "2026-10-23"
+  },
+  "star_gain_7d": {
+   "gain": 1,
+   "days": 8,
+   "from": "2026-10-15",
+   "to": "2026-10-23"
   },
   "preview": {
    "src": "/previews/glitchtip.jpg",
