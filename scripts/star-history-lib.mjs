@@ -42,18 +42,31 @@ function daysBetween(a, b) {
 
 /**
  * 直近 windowDays 日のスターの増加。
+ * today は「現在のスター数を実際に取得した日」（ビルド日ではない）。
  * 起点は「期間の開始日以前で最後の記録」。無ければ最初の記録（その場合、期間は短くなる）。
- * @returns {{ gain: number, days: number, from: string } | null}
+ * strict のときは、開始日以前の記録が無ければ null（期間を短くして代用しない）。
+ * maxDays を超える期間（記録の間隔が空きすぎたもの）も null。
+ * @returns {{ gain: number, days: number, from: string, to: string } | null}
  */
-export function starGain(rows, currentStars, today, windowDays = 30) {
+export function starGain(rows, currentStars, today, windowDays = 30, { strict = false, maxDays = Infinity } = {}) {
   if (!rows || rows.length === 0 || currentStars == null) return null;
   const start = shiftDate(today, -windowDays);
-  let base = rows[0];
+  let base = null;
   for (const r of rows) {
     if (r[0] <= start) base = r;
     else break;
   }
+  if (!base) {
+    if (strict) return null;
+    base = rows[0];
+  }
   const days = daysBetween(base[0], today);
-  if (days <= 0) return null;
-  return { gain: currentStars - base[1], days, from: base[0] };
+  if (days <= 0 || days > maxDays) return null;
+  return { gain: currentStars - base[1], days, from: base[0], to: today };
+}
+
+/** 取得日時（ISO）を、履歴と同じ日本時間の日付にする。不正なら null */
+export function jstDate(iso) {
+  const t = Date.parse(iso ?? "");
+  return Number.isFinite(t) ? new Date(t + 9 * 3600e3).toISOString().slice(0, 10) : null;
 }

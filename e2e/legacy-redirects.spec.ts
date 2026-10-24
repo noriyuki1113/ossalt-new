@@ -9,5 +9,8 @@ test("Cloudflare Pages向け301ルールが静的ビルド成果物に含まれ�
   expect(text).toContain("/tools/194/ /tools/zammad/ 301");
   expect(text).toContain("/tools/254/ /tools/plane/ 301");
   const rules = text.split("\n").filter((s) => s && !s.startsWith("#"));
-  expect(rules).toHaveLength(146);
+  // 転送の定義（data-source/redirects.json）と同じ件数だけ、ルールがあること
+  const { redirects } = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data-source", "redirects.json"), "utf8"));
+  expect(rules).toHaveLength(Object.keys(redirects).length);
+  expect(text).toContain("/alternatives/sansan/ /categories/crm/ 301");
 });
