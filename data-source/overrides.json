@@ -10,6 +10,18 @@
   "patch": {
     "weblate": {
       "primary_competitor": "Crowdin"
+    },
+    "dub": {
+      "license": "AGPL-3.0（ee/ 配下は別ライセンス）",
+      "license_note": "リポジトリの大部分はOSI承認のAGPL-3.0ですが、(ee) ディレクトリ配下は別ライセンス（ee/LICENSE.md）です。LICENSE.md を確認（2026-10-24）。"
+    },
+    "tolgee": {
+      "license": "Apache-2.0（ee/ 配下は別ライセンス）",
+      "license_note": "リポジトリの大部分はOSI承認のApache-2.0ですが、ee/ と webapp/src/ee 配下は別ライセンス（ee/LICENSE）です。LICENSE を確認（2026-10-24）。"
+    },
+    "pretix": {
+      "license": "AGPL-3.0（追加条項あり）",
+      "license_note": "OSI承認のAGPL-3.0に、第7条に基づく追加条項が付きます（SaaSとして提供しない場合の第13条の免除、生成ページの「pretix」表記を残す義務など）。LICENSE を確認（2026-10-24）。"
     }
   },
   "preview_block": [

@@ -60,6 +60,56 @@ export function classifyLicense(license: string | null | undefined): LicenseClas
   return classifySingle(l);
 }
 
+/**
+ * 7分類を、利用者が最初に知りたい4つの区分にまとめる。
+ * 「OSI承認」は、分類に使う接頭辞（MIT・Apache・BSD・GPL・AGPL・MPL・LGPL・EPL・OSL など）が
+ * すべてOSI承認ライセンスであることに基づく。独自名称のライセンスは推測で含めない。
+ */
+export type LicenseGroup = "osi" | "source-available" | "mixed" | "unknown";
+
+export const LICENSE_GROUP_LABELS: Record<LicenseGroup, string> = {
+  osi: "OSI承認のオープンソース",
+  "source-available": "ソース公開型（利用条件あり）",
+  mixed: "複数・混在（使う部分の確認が必要）",
+  unknown: "ライセンス未確認",
+};
+
+export const LICENSE_GROUP_ORDER: LicenseGroup[] = ["osi", "source-available", "mixed", "unknown"];
+
+/** 選択式（「A / B」）で、どの選択肢もOSI承認の分類に入るか */
+function allChoicesOsi(license: string): boolean {
+  const parts = license.split("/").map((s) => s.trim()).filter(Boolean);
+  return parts.length > 1 && parts.every((p) => classifySingle(p) !== "unknown");
+}
+
+export function licenseGroupOf(license: string | null | undefined): LicenseGroup {
+  const cls = classifyLicense(license);
+  if (cls === "source-available" || cls === "unknown") return cls;
+  if (cls === "dual") return allChoicesOsi(license ?? "") ? "osi" : "mixed";
+  if (cls === "partial") return "mixed";
+  return "osi";
+}
+
+/** 区分の判定理由。ライセンスの表記と分類だけから作り、個別の利用条件は推測で書かない */
+export function licenseReason(license: string | null | undefined): string {
+  const cls = classifyLicense(license);
+  const l = license?.trim() ?? "";
+  switch (licenseGroupOf(license)) {
+    case "osi":
+      return cls === "dual"
+        ? `「${l}」は、いずれもOSI（Open Source Initiative）が承認したオープンソースライセンスから選べます。`
+        : `「${l}」はOSI（Open Source Initiative）が承認したオープンソースライセンスです（${LICENSE_CLASS_LABELS[cls]}）。`;
+    case "source-available":
+      return `「${l}」はOSI承認のオープンソースライセンスではありません。ソースコードは公開されていますが、商用提供など利用目的に条件が付くことがあります。業務で使う前にライセンス本文を確認してください。`;
+    case "mixed":
+      return cls === "dual"
+        ? `「${l}」は複数のライセンスから選ぶ形式で、OSI承認ではない選択肢（商用ライセンスなど）を含みます。どのライセンスで使うかを確認してください。`
+        : `「${l}」は構成要素によってライセンスが異なります。使う部分のライセンスを確認してください。`;
+    default:
+      return "ライセンスを自動で取得できず、手動でも確認できていません。「ライセンスが無い」という意味ではありません。リポジトリのLICENSEファイルで確認してください。";
+  }
+}
+
 /* ------------------------------------------------------------------ *
  * 比較する組み合わせ
  * ------------------------------------------------------------------ */

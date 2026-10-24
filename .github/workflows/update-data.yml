@@ -71,6 +71,8 @@ jobs:
 
       # Watch側の公開済み、検証可能な15件のみを静的データへ取り込む。
       # Render障害時は前回の取得済みデータを保持し、詳細ページの表示を止めない。
+      # 一時的な失敗（接続・タイムアウト・5xx・429）は最大3回まで再試行し、
+      # 成否と失敗理由を public/data/osswatch-status.json に記録する。
       - name: Watch GitHub観測サマリー取得（best effort）
         run: node scripts/fetch-osswatch-signals.mjs
 
@@ -82,6 +84,8 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data-source/tools.json data-source/star-history.json public/data/tools.json public/data/meta.json public/data/categories.json public/data/osswatch-signals.json
+          # 取り込みの成否・最終試行・最終成功（/changes/ が表示する）。失敗時も書かれる
+          if [ -f public/data/osswatch-status.json ]; then git add public/data/osswatch-status.json; fi
           if git diff --cached --quiet; then
             echo "更新なし"
           else

@@ -114,6 +114,8 @@ const raw = rawAll.filter((t) => !overrides.exclude.has(String(t.id ?? t.slug)))
 for (const t of raw) {
   const patch = overrides.patch[String(t.id ?? t.slug)];
   if (patch) Object.assign(t, patch);
+  // overrides.json で license を直したものは、出典を「手動」にする
+  if (patch && "license" in patch) t.license_source = "manual";
 }
 
 // GitHubの追加メタデータ（contributors / watchers など）を任意でマージ
@@ -165,6 +167,8 @@ const tools = raw.map((t) => {
       pick(extra, ["watchers_num", "watchers"]),
     language: t.language ?? null,
     license: t.license ?? null,
+    license_source: t.license_source ?? null,
+    ...(t.license_note ? { license_note: t.license_note } : {}),
     last_commit: lastCommit,
     created_at: t.created_at ?? null,
     freshness_days: freshness,

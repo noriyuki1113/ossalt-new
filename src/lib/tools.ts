@@ -25,6 +25,10 @@ export type Tool = {
   watchers_num: number | null;
   language: string | null;
   license: string | null;
+  /** ライセンスの出典。github＝GitHub APIのSPDX判定、manual＝LICENSEファイルを確認して手動設定。未記録はnull */
+  license_source?: "github" | "manual" | null;
+  /** 手動で書いた判定理由（data-source/overrides.json の patch）。無ければ分類から自動で作る */
+  license_note?: string | null;
 
   last_commit: string | null;
   created_at: string | null;
