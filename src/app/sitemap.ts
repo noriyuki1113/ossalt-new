@@ -11,7 +11,7 @@ export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = SITE.url.replace(/\/$/, "");
 
-  const staticPages = ["/", "/tools/", "/categories/", "/alternatives/", "/alternatives/japan/", "/compare/", "/licenses/", "/japanese/", "/trending/", "/changes/", "/api/", "/guide/", "/diagnosis/", "/cost-lab/", "/blog/", "/about/", "/editorial/", "/contact/", "/submit/", "/badge/", "/advertise/", "/privacy/", "/terms/", "/disclaimer/"];
+  const staticPages = ["/", "/tools/", "/categories/", "/alternatives/", "/alternatives/japan/", "/compare/", "/licenses/", "/japanese/", "/trending/", "/rankings/", "/changes/", "/api/", "/guide/", "/diagnosis/", "/cost-lab/", "/blog/", "/about/", "/editorial/", "/contact/", "/submit/", "/badge/", "/advertise/", "/privacy/", "/terms/", "/disclaimer/"];
 
   return [
     ...staticPages.map((p) => ({
