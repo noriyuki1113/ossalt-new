@@ -92,17 +92,17 @@ export default function ChangesPage() {
             OSSALTが掲載するOSSのうち、継続観測中のプロジェクトについて、
             GitHubの公開データから確認できた変化をまとめています。</p>
           <div className={styles.heroTail}>
-            <span>OBSERVATION / {report.generatedAt ? activityDateJst(report.generatedAt) + " JST" : "NO VERIFIED DATA"}</span>
+            <span>OBSERVATION / {report.generatedAt ? activityDateJst(report.latestObservedAt ?? report.generatedAt) + " JST" : "NO VERIFIED DATA"}</span>
             <Link href="/trending/">Star増加ランキングを見る ↗</Link>
           </div>
         </header>
 
-        <SyncStatus status={sync} generatedAt={report.generatedAt} />
+        <SyncStatus status={sync} generatedAt={report.latestObservedAt ?? report.generatedAt} />
 
         {report.feedStalled && report.generatedAt && (
           <aside className={styles.note} aria-label="観測データの更新について" role="status">
             <strong>観測データの更新が止まっている可能性があります。</strong>
-            <p>配信元の最新の観測は{activityDateJst(report.generatedAt)}（JST）です。それより新しい変化は反映されていません。
+            <p>配信元の最新の観測は{activityDateJst(report.latestObservedAt ?? report.generatedAt)}（JST）です。それより新しい変化は反映されていません。
               Star数などの最新の値は、各ツールのページと<Link href="/trending/">急上昇ランキング</Link>（OSSALTが毎日取得）で確認できます。</p>
           </aside>
         )}

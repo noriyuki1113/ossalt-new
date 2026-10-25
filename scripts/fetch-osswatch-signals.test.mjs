@@ -173,3 +173,19 @@ test("runSync records failures without touching the data file and never leaks ra
     assert.equal(forged.consecutive_failures,2);
   }finally{fs.rmSync(root,{recursive:true,force:true})}
 });
+
+test("出力した時刻が新しくても、観測が古いままなら更新停止の警告を出す",async()=>{
+  const root=fs.mkdtempSync(path.join(os.tmpdir(),"osswatch-bridge-"));
+  const warnings=[];
+  const orig=console.warn; console.warn=(m)=>warnings.push(String(m));
+  try{
+    const source=path.join(root,"catalog.json"),output=path.join(root,"signals.json");
+    fs.writeFileSync(source,JSON.stringify(catalog));
+    const stuck={...base,generated_at:"2026-10-25T02:49:00Z"}; // 観測は 10/17 00:37 のまま
+    stuck.observations=[{...base.observations[0],observed_at:"2026-10-17T00:37:00Z"},base.observations[1]];
+    await syncSignals({catalogPath:source,outPath:output,fetcher:async()=>({ok:true,json:async()=>stuck}),
+      // 取り込み時刻を固定できないため、警告の有無は feedStall の単体でも確認する
+    });
+    assert.ok(warnings.some(w=>w.includes("更新されていません")));
+  }finally{console.warn=orig;fs.rmSync(root,{recursive:true,force:true})}
+});

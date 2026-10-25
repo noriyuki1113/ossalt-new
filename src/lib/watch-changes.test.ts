@@ -107,3 +107,18 @@ test("配信元の更新停止：生成日時が36時間より古ければ検知
   assert.equal(growing.historyNotAccumulating,false);
   assert.equal(buildActivityReport(tools,null,later).feedStalled,false); // データなしは別の表示（NO VERIFIED DATA）
 });
+
+test("生成日時が新しくても、観測が止まっていれば停止とみなす（収集の失敗が隠れない）", () => {
+  const t = new Date("2026-10-25T03:00:00Z");
+  // 配信元は今朝出力したが、中身の観測は10日前のまま
+  const stuck: WatchSignalFeed = {schema_version:1,generated_at:"2026-10-25T02:49:00Z",observations:[record("n8n-io/n8n",{observed_at:"2026-10-16T15:53:00Z"})]};
+  const r = buildActivityReport(tools, stuck, t);
+  assert.equal(r.feedStalled, true);
+  assert.equal(r.latestObservedAt, "2026-10-16T15:53:00.000Z");
+  assert.equal(r.rows[0].outdated, true);
+  // 観測も新しければ停止ではない
+  const fresh: WatchSignalFeed = {schema_version:1,generated_at:"2026-10-25T02:49:00Z",observations:[record("n8n-io/n8n",{observed_at:"2026-10-25T02:40:00Z"})]};
+  const f = buildActivityReport(tools, fresh, t);
+  assert.equal(f.feedStalled, false);
+  assert.equal(f.latestObservedAt, "2026-10-25T02:40:00.000Z");
+});
