@@ -59,6 +59,7 @@ export const UMAMI_SCRIPT_URL = "https://cloud.umami.is/script.js";
 /** サイト内ナビゲーション */
 export const NAV = [
   { href: "/tools/", label: "ツール一覧" },
+  { href: "/rankings/", label: "ランキング" },
   { href: "/changes/", label: "変化レポート" },
   { href: "/categories/", label: "カテゴリ" },
   { href: "/alternatives/", label: "SaaSから探す" },
