@@ -32,8 +32,8 @@ export default function PrivacyPage() {
           </ul>
 
           <h2>3. Cookie とアクセス解析</h2>
-          <p>{"当サイトは、アクセス状況の把握のためにアクセス解析ツール Umami（オープンソース・MITライセンス）を利用しています。Umami はCookieを使用せず、個人を特定できる情報も取得しません。取得するのはページビューなどの統計情報のみです。"}</p>
-          <p>{"Cookieを使用していないため、当サイトでは（アクセス解析に関する）Cookie同意バナーを設けていません。"}</p>
+          <p>{"当サイトはアクセス状況の把握のため、Umami Cloudのアクセス解析を使用しています。サイトに組み込んだ解析スクリプトはCookieを使わずにページビューなどを計測します。ただし、Cookieを使用しなくても外部サービスにアクセスすると通信先にはIPアドレスなどの接続情報が届き得ます。Cookieがないことだけで、すべての地域で同意が不要になるわけではありません。"}</p>
+          <p>{"現行のサイトコードには、訪問者の画面操作を録画するセッションリプレイ機能（Hotjar、FullStory、Microsoft Clarity、PostHog Replay等）を組み込んでいません。今後これらを導入する際は、事前のプライバシー評価・必要な同意の取得・入力情報のマスキングを行います。"}</p>
           <p>{"解析データはUmami Cloud（アメリカ・EUのサーバー）に保存され、現在利用しているプランでは6か月間保持された後に削除されます。"}</p>
           <p>{"アクセス解析そのものを望まない場合は、ブラウザの拡張機能（トラッキング防止機能）等でブロックできます。"}</p>
 
@@ -64,7 +64,7 @@ export default function PrivacyPage() {
           {SITE.privacyEffectiveDate && (
             <p className="muted">制定日：{SITE.privacyEffectiveDate}</p>
           )}
-          <p className="muted">最終改定日：2026年10月9日（スポンサー枠についての記載を追加）</p>
+          <p className="muted">最終改定日：2026年10月25日（アクセス解析と外部通信に関する説明を明確化）</p>
           {SITE.operatorName && (
             <p className="muted">運営者：{SITE.operatorName}</p>
           )}
