@@ -1838,6 +1838,7 @@
           "repo_unverified"
         ]
       },
+      "removed_from_list": true,
       "repo": null,
       "review": {
         "blocking": [
@@ -14003,6 +14004,146 @@
     {
       "fields": {
         "archived": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/leepokai/codync",
+          "status": "api",
+          "value": false
+        },
+        "canonical_repo": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/leepokai/codync",
+          "status": "api",
+          "value": "leepokai/codync"
+        },
+        "description_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "Message your coding agents as bots from any device"
+        },
+        "description_en": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/leepokai/codync",
+          "status": "api",
+          "value": "Open source Grok Bot alternative, Bring your own agent and subscription: message Claude Code, Codex, Gemini CLI, Cursor, Copilot and 40+ AI agents as bots on your own computer, from iPhone, Mac, Windows, Linux or terminal. Agent-agnostic and free. Also a Muse and Dots alternative. Built in Rust."
+        },
+        "forks": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/leepokai/codync",
+          "status": "api",
+          "value": 103
+        },
+        "github_repo_id": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/leepokai/codync",
+          "status": "api",
+          "value": 1185223752
+        },
+        "homepage": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/leepokai/codync",
+          "status": "api",
+          "value": "https://www.codync.dev"
+        },
+        "language": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/leepokai/codync",
+          "status": "api",
+          "value": "Rust"
+        },
+        "latest_release_at": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/leepokai/codync",
+          "status": "api",
+          "value": "2026-10-25T19:05:00Z"
+        },
+        "license": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/leepokai/codync",
+          "status": "api",
+          "value": "Apache-2.0"
+        },
+        "license_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "Apache-2.0"
+        },
+        "name": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "Codync"
+        },
+        "pushed_at": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/leepokai/codync",
+          "status": "api",
+          "value": "2026-10-25T22:54:48Z"
+        },
+        "replaces_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://openalternative.co/codync",
+          "status": "claimed",
+          "value": "Grok Bot"
+        },
+        "repo_resolution": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://openalternative.co/codync",
+          "status": "claimed",
+          "value": {
+            "candidates": [
+              {
+                "count": 9,
+                "repo": "leepokai/codync"
+              }
+            ],
+            "confidence": "single",
+            "method": "openalternative_page_link"
+          }
+        },
+        "source_category": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": {
+            "major": "AI & Machine Learning",
+            "sub": "AI Interaction & Interfaces"
+          }
+        },
+        "stars": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/leepokai/codync",
+          "status": "api",
+          "value": 853
+        },
+        "stars_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "785"
+        }
+      },
+      "first_seen": "2026-10-25T23:11:48.096Z",
+      "matched_tool_id": null,
+      "quality": {
+        "blocking": [],
+        "issues": []
+      },
+      "repo": "leepokai/codync",
+      "review": {
+        "blocking": [],
+        "draft_problems": [],
+        "note": null,
+        "ready": false,
+        "state": "needs_review"
+      },
+      "slug": "codync",
+      "source_url": "https://openalternative.co/codync"
+    },
+    {
+      "fields": {
+        "archived": {
           "fetched_at": "2026-10-19T21:22:02.742Z",
           "source": "https://api.github.com/repos/colanode/colanode",
           "status": "api",
@@ -18921,7 +19062,7 @@
         }
       },
       "first_seen": "2026-10-19T21:28:09.371Z",
-      "matched_tool_id": null,
+      "matched_tool_id": "la-suite-docs",
       "quality": {
         "blocking": [],
         "issues": []
@@ -18930,9 +19071,9 @@
       "review": {
         "blocking": [],
         "draft_problems": [],
-        "note": null,
+        "note": "掲載済み（la-suite-docs）",
         "ready": false,
-        "state": "needs_review"
+        "state": "listed"
       },
       "slug": "docs",
       "source_url": "https://openalternative.co/docs"
@@ -19349,6 +19490,7 @@
           "repo_unverified"
         ]
       },
+      "removed_from_list": true,
       "repo": null,
       "review": {
         "blocking": [
@@ -21061,6 +21203,146 @@
       },
       "slug": "elementary-data",
       "source_url": "https://openalternative.co/elementary-data"
+    },
+    {
+      "fields": {
+        "archived": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/elmohq/elmo",
+          "status": "api",
+          "value": false
+        },
+        "canonical_repo": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/elmohq/elmo",
+          "status": "api",
+          "value": "elmohq/elmo"
+        },
+        "description_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "Self-hosted AI visibility tracking for your brand"
+        },
+        "description_en": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/elmohq/elmo",
+          "status": "api",
+          "value": "Open-source Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) platform. Track how ChatGPT, Claude, Perplexity, Gemini, Copilot, Grok, and Google AI Overviews mention and cite your brand in AI search. MIT-licensed, self-hostable, every metric auditable in code."
+        },
+        "forks": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/elmohq/elmo",
+          "status": "api",
+          "value": 118
+        },
+        "github_repo_id": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/elmohq/elmo",
+          "status": "api",
+          "value": 1047155750
+        },
+        "homepage": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/elmohq/elmo",
+          "status": "api",
+          "value": "https://www.elmohq.com"
+        },
+        "language": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/elmohq/elmo",
+          "status": "api",
+          "value": "TypeScript"
+        },
+        "latest_release_at": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/elmohq/elmo",
+          "status": "api",
+          "value": "2026-10-25T19:32:40Z"
+        },
+        "license": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/elmohq/elmo",
+          "status": "api",
+          "value": "MIT"
+        },
+        "license_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "MIT"
+        },
+        "name": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "Elmo"
+        },
+        "pushed_at": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/elmohq/elmo",
+          "status": "api",
+          "value": "2026-10-25T19:32:39Z"
+        },
+        "replaces_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://openalternative.co/elmo",
+          "status": "claimed",
+          "value": "Profound"
+        },
+        "repo_resolution": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://openalternative.co/elmo",
+          "status": "claimed",
+          "value": {
+            "candidates": [
+              {
+                "count": 9,
+                "repo": "elmohq/elmo"
+              }
+            ],
+            "confidence": "single",
+            "method": "openalternative_page_link"
+          }
+        },
+        "source_category": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": {
+            "major": "Business Software",
+            "sub": "Marketing & Customer Engagement"
+          }
+        },
+        "stars": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/elmohq/elmo",
+          "status": "api",
+          "value": 492
+        },
+        "stars_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "490"
+        }
+      },
+      "first_seen": "2026-10-25T23:11:48.096Z",
+      "matched_tool_id": null,
+      "quality": {
+        "blocking": [],
+        "issues": []
+      },
+      "repo": "elmohq/elmo",
+      "review": {
+        "blocking": [],
+        "draft_problems": [],
+        "note": null,
+        "ready": false,
+        "state": "needs_review"
+      },
+      "slug": "elmo",
+      "source_url": "https://openalternative.co/elmo"
     },
     {
       "fields": {
@@ -23593,6 +23875,7 @@
           "archived"
         ]
       },
+      "removed_from_list": true,
       "repo": "serversideup/financial-freedom",
       "review": {
         "blocking": [
@@ -25023,6 +25306,146 @@
       },
       "slug": "flipt",
       "source_url": "https://openalternative.co/flipt"
+    },
+    {
+      "fields": {
+        "archived": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/floci-io/floci",
+          "status": "api",
+          "value": false
+        },
+        "canonical_repo": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/floci-io/floci",
+          "status": "api",
+          "value": "floci-io/floci"
+        },
+        "description_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "Local AWS emulator with no account, gates, or paid tiers"
+        },
+        "description_en": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/floci-io/floci",
+          "status": "api",
+          "value": "Light, fluffy, and always free - The AWS Local Emulator alternative"
+        },
+        "forks": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/floci-io/floci",
+          "status": "api",
+          "value": 2980
+        },
+        "github_repo_id": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/floci-io/floci",
+          "status": "api",
+          "value": 1160497244
+        },
+        "homepage": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/floci-io/floci",
+          "status": "api",
+          "value": "https://floci.io/floci/"
+        },
+        "language": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/floci-io/floci",
+          "status": "api",
+          "value": "Java"
+        },
+        "latest_release_at": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/floci-io/floci",
+          "status": "api",
+          "value": "2026-10-15T05:39:06Z"
+        },
+        "license": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/floci-io/floci",
+          "status": "api",
+          "value": "MIT"
+        },
+        "license_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "MIT"
+        },
+        "name": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "Floci"
+        },
+        "pushed_at": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/floci-io/floci",
+          "status": "api",
+          "value": "2026-10-25T21:54:12Z"
+        },
+        "replaces_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": null,
+          "status": "unknown",
+          "value": null
+        },
+        "repo_resolution": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://openalternative.co/floci",
+          "status": "claimed",
+          "value": {
+            "candidates": [
+              {
+                "count": 9,
+                "repo": "floci-io/floci"
+              }
+            ],
+            "confidence": "single",
+            "method": "openalternative_page_link"
+          }
+        },
+        "source_category": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": {
+            "major": "Developer Tools",
+            "sub": "Testing & Quality Assurance"
+          }
+        },
+        "stars": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/floci-io/floci",
+          "status": "api",
+          "value": 27124
+        },
+        "stars_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "27K"
+        }
+      },
+      "first_seen": "2026-10-25T23:11:48.096Z",
+      "matched_tool_id": null,
+      "quality": {
+        "blocking": [],
+        "issues": []
+      },
+      "repo": "floci-io/floci",
+      "review": {
+        "blocking": [],
+        "draft_problems": [],
+        "note": null,
+        "ready": false,
+        "state": "needs_review"
+      },
+      "slug": "floci",
+      "source_url": "https://openalternative.co/floci"
     },
     {
       "fields": {
@@ -36450,7 +36873,7 @@
         }
       },
       "first_seen": "2026-10-19T21:22:02.742Z",
-      "matched_tool_id": null,
+      "matched_tool_id": "kaneo",
       "quality": {
         "blocking": [],
         "issues": []
@@ -36459,9 +36882,9 @@
       "review": {
         "blocking": [],
         "draft_problems": [],
-        "note": null,
+        "note": "掲載済み（kaneo）",
         "ready": false,
-        "state": "needs_review"
+        "state": "listed"
       },
       "slug": "kaneo",
       "source_url": "https://openalternative.co/kaneo"
@@ -36872,7 +37295,7 @@
         }
       },
       "first_seen": "2026-10-19T22:17:56.887Z",
-      "matched_tool_id": null,
+      "matched_tool_id": "karakeep",
       "quality": {
         "blocking": [],
         "issues": []
@@ -36881,9 +37304,9 @@
       "review": {
         "blocking": [],
         "draft_problems": [],
-        "note": null,
+        "note": "掲載済み（karakeep）",
         "ready": false,
-        "state": "needs_review"
+        "state": "listed"
       },
       "slug": "karakeep",
       "source_url": "https://openalternative.co/karakeep"
@@ -43254,6 +43677,146 @@
       },
       "slug": "mage",
       "source_url": "https://openalternative.co/mage"
+    },
+    {
+      "fields": {
+        "archived": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/marclou/mailcheap",
+          "status": "api",
+          "value": false
+        },
+        "canonical_repo": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/marclou/mailcheap",
+          "status": "api",
+          "value": "marclou/mailcheap"
+        },
+        "description_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "Open-source newsletter app billed by emails sent"
+        },
+        "description_en": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/marclou/mailcheap",
+          "status": "api",
+          "value": "Newsletters where you pay for the emails you send, not for dormant subscribers, at a fraction of the price of beehiiv and the like. Open source: self-host it, or use mailcheap.ai."
+        },
+        "forks": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/marclou/mailcheap",
+          "status": "api",
+          "value": 376
+        },
+        "github_repo_id": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/marclou/mailcheap",
+          "status": "api",
+          "value": 1413187188
+        },
+        "homepage": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/marclou/mailcheap",
+          "status": "api",
+          "value": "https://mailcheap.ai"
+        },
+        "language": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/marclou/mailcheap",
+          "status": "api",
+          "value": "JavaScript"
+        },
+        "latest_release_at": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": null,
+          "status": "unknown",
+          "value": null
+        },
+        "license": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/marclou/mailcheap",
+          "status": "api",
+          "value": "AGPL-3.0"
+        },
+        "license_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "AGPL-3.0"
+        },
+        "name": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "MailCheap"
+        },
+        "pushed_at": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/marclou/mailcheap",
+          "status": "api",
+          "value": "2026-10-25T16:32:53Z"
+        },
+        "replaces_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://openalternative.co/mailcheap",
+          "status": "claimed",
+          "value": "Substack"
+        },
+        "repo_resolution": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://openalternative.co/mailcheap",
+          "status": "claimed",
+          "value": {
+            "candidates": [
+              {
+                "count": 9,
+                "repo": "marclou/mailcheap"
+              }
+            ],
+            "confidence": "single",
+            "method": "openalternative_page_link"
+          }
+        },
+        "source_category": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": {
+            "major": "Business Software",
+            "sub": "Marketing & Customer Engagement"
+          }
+        },
+        "stars": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/marclou/mailcheap",
+          "status": "api",
+          "value": 1447
+        },
+        "stars_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "1.4K"
+        }
+      },
+      "first_seen": "2026-10-25T23:11:48.096Z",
+      "matched_tool_id": null,
+      "quality": {
+        "blocking": [],
+        "issues": []
+      },
+      "repo": "marclou/mailcheap",
+      "review": {
+        "blocking": [],
+        "draft_problems": [],
+        "note": null,
+        "ready": false,
+        "state": "needs_review"
+      },
+      "slug": "mailcheap",
+      "source_url": "https://openalternative.co/mailcheap"
     },
     {
       "fields": {
@@ -50046,6 +50609,146 @@
     {
       "fields": {
         "archived": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/oneglanse/oneglanse",
+          "status": "api",
+          "value": false
+        },
+        "canonical_repo": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/oneglanse/oneglanse",
+          "status": "api",
+          "value": "oneglanse/oneglanse"
+        },
+        "description_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "Track your brand's presence in AI-generated answers"
+        },
+        "description_en": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/oneglanse/oneglanse",
+          "status": "api",
+          "value": "Open-source AI visibility, AEO & GEO tracker. Monitor how ChatGPT, Perplexity, Gemini, Claude, and Google AI Overview mention and cite your brand through real product UIs. MIT-licensed and self-hostable."
+        },
+        "forks": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/oneglanse/oneglanse",
+          "status": "api",
+          "value": 41
+        },
+        "github_repo_id": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/oneglanse/oneglanse",
+          "status": "api",
+          "value": 1053432514
+        },
+        "homepage": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/oneglanse/oneglanse",
+          "status": "api",
+          "value": "https://oneglanse.com"
+        },
+        "language": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/oneglanse/oneglanse",
+          "status": "api",
+          "value": "TypeScript"
+        },
+        "latest_release_at": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": null,
+          "status": "unknown",
+          "value": null
+        },
+        "license": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/oneglanse/oneglanse",
+          "status": "api",
+          "value": "MIT"
+        },
+        "license_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "MIT"
+        },
+        "name": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "OneGlanse"
+        },
+        "pushed_at": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/oneglanse/oneglanse",
+          "status": "api",
+          "value": "2026-10-04T09:02:19Z"
+        },
+        "replaces_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://openalternative.co/oneglanse",
+          "status": "claimed",
+          "value": "Profound"
+        },
+        "repo_resolution": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://openalternative.co/oneglanse",
+          "status": "claimed",
+          "value": {
+            "candidates": [
+              {
+                "count": 9,
+                "repo": "oneglanse/oneglanse"
+              }
+            ],
+            "confidence": "single",
+            "method": "openalternative_page_link"
+          }
+        },
+        "source_category": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": {
+            "major": "Business Software",
+            "sub": "Marketing & Customer Engagement"
+          }
+        },
+        "stars": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/oneglanse/oneglanse",
+          "status": "api",
+          "value": 233
+        },
+        "stars_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "231"
+        }
+      },
+      "first_seen": "2026-10-25T23:11:48.096Z",
+      "matched_tool_id": null,
+      "quality": {
+        "blocking": [],
+        "issues": []
+      },
+      "repo": "oneglanse/oneglanse",
+      "review": {
+        "blocking": [],
+        "draft_problems": [],
+        "note": null,
+        "ready": false,
+        "state": "needs_review"
+      },
+      "slug": "oneglanse",
+      "source_url": "https://openalternative.co/oneglanse"
+    },
+    {
+      "fields": {
+        "archived": {
           "fetched_at": "2026-10-19T22:17:56.887Z",
           "source": "https://api.github.com/repos/onehumanai/onehuman",
           "status": "api",
@@ -53983,7 +54686,7 @@
         }
       },
       "first_seen": "2026-10-19T21:22:02.742Z",
-      "matched_tool_id": null,
+      "matched_tool_id": "openseo",
       "quality": {
         "blocking": [],
         "issues": []
@@ -53992,9 +54695,9 @@
       "review": {
         "blocking": [],
         "draft_problems": [],
-        "note": null,
+        "note": "掲載済み（openseo）",
         "ready": false,
-        "state": "needs_review"
+        "state": "listed"
       },
       "slug": "openseo",
       "source_url": "https://openalternative.co/openseo"
@@ -59001,6 +59704,146 @@
       },
       "slug": "phase",
       "source_url": "https://openalternative.co/phase"
+    },
+    {
+      "fields": {
+        "archived": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/alchemy-fr/phrasea",
+          "status": "api",
+          "value": false
+        },
+        "canonical_repo": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/alchemy-fr/phrasea",
+          "status": "api",
+          "value": "alchemy-fr/phrasea"
+        },
+        "description_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "Self-hosted DAM with fast search and asset workflows"
+        },
+        "description_en": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/alchemy-fr/phrasea",
+          "status": "api",
+          "value": "The open-source DAM for modern organizations"
+        },
+        "forks": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/alchemy-fr/phrasea",
+          "status": "api",
+          "value": 12
+        },
+        "github_repo_id": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/alchemy-fr/phrasea",
+          "status": "api",
+          "value": 181030685
+        },
+        "homepage": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/alchemy-fr/phrasea",
+          "status": "api",
+          "value": "https://phrasea.com"
+        },
+        "language": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/alchemy-fr/phrasea",
+          "status": "api",
+          "value": "PHP"
+        },
+        "latest_release_at": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/alchemy-fr/phrasea",
+          "status": "api",
+          "value": "2026-10-21T18:48:59Z"
+        },
+        "license": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/alchemy-fr/phrasea",
+          "status": "api",
+          "value": "MIT"
+        },
+        "license_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "MIT"
+        },
+        "name": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "Phrasea"
+        },
+        "pushed_at": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/alchemy-fr/phrasea",
+          "status": "api",
+          "value": "2026-10-25T12:01:25Z"
+        },
+        "replaces_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://openalternative.co/phrasea",
+          "status": "claimed",
+          "value": "Brandfolder"
+        },
+        "repo_resolution": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://openalternative.co/phrasea",
+          "status": "claimed",
+          "value": {
+            "candidates": [
+              {
+                "count": 9,
+                "repo": "alchemy-fr/phrasea"
+              }
+            ],
+            "confidence": "single",
+            "method": "openalternative_page_link"
+          }
+        },
+        "source_category": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": {
+            "major": "Content & Publishing",
+            "sub": "Digital Asset Management (DAM)"
+          }
+        },
+        "stars": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/alchemy-fr/phrasea",
+          "status": "api",
+          "value": 26
+        },
+        "stars_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "26"
+        }
+      },
+      "first_seen": "2026-10-25T23:11:48.096Z",
+      "matched_tool_id": null,
+      "quality": {
+        "blocking": [],
+        "issues": []
+      },
+      "repo": "alchemy-fr/phrasea",
+      "review": {
+        "blocking": [],
+        "draft_problems": [],
+        "note": null,
+        "ready": false,
+        "state": "needs_review"
+      },
+      "slug": "phrasea",
+      "source_url": "https://openalternative.co/phrasea"
     },
     {
       "fields": {
@@ -64502,7 +65345,7 @@
         }
       },
       "first_seen": "2026-10-19T22:03:46.849Z",
-      "matched_tool_id": null,
+      "matched_tool_id": "rybbit",
       "quality": {
         "blocking": [],
         "issues": []
@@ -64511,9 +65354,9 @@
       "review": {
         "blocking": [],
         "draft_problems": [],
-        "note": null,
+        "note": "掲載済み（rybbit）",
         "ready": false,
-        "state": "needs_review"
+        "state": "listed"
       },
       "slug": "rybbit",
       "source_url": "https://openalternative.co/rybbit"
@@ -66494,6 +67337,7 @@
           "repo_unverified"
         ]
       },
+      "removed_from_list": true,
       "repo": null,
       "review": {
         "blocking": [
@@ -73857,6 +74701,146 @@
     {
       "fields": {
         "archived": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/thunderbird/thunderbird-android",
+          "status": "api",
+          "value": false
+        },
+        "canonical_repo": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/thunderbird/thunderbird-android",
+          "status": "api",
+          "value": "thunderbird/thunderbird-android"
+        },
+        "description_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "Privacy-first email app for Android, no ads ever"
+        },
+        "description_en": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/thunderbird/thunderbird-android",
+          "status": "api",
+          "value": "Thunderbird for Android – Open Source Email App for Android (fka K-9 Mail)"
+        },
+        "forks": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/thunderbird/thunderbird-android",
+          "status": "api",
+          "value": 2863
+        },
+        "github_repo_id": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/thunderbird/thunderbird-android",
+          "status": "api",
+          "value": 1326671
+        },
+        "homepage": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/thunderbird/thunderbird-android",
+          "status": "api",
+          "value": "https://thunderbird.net/mobile"
+        },
+        "language": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/thunderbird/thunderbird-android",
+          "status": "api",
+          "value": "Kotlin"
+        },
+        "latest_release_at": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/thunderbird/thunderbird-android",
+          "status": "api",
+          "value": "2026-10-05T23:38:15Z"
+        },
+        "license": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/thunderbird/thunderbird-android",
+          "status": "api",
+          "value": "Apache-2.0"
+        },
+        "license_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "Apache-2.0"
+        },
+        "name": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "Thunderbird for Android"
+        },
+        "pushed_at": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/thunderbird/thunderbird-android",
+          "status": "api",
+          "value": "2026-10-22T14:31:01Z"
+        },
+        "replaces_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://openalternative.co/thunderbird-for-android",
+          "status": "claimed",
+          "value": "Gmail"
+        },
+        "repo_resolution": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://openalternative.co/thunderbird-for-android",
+          "status": "claimed",
+          "value": {
+            "candidates": [
+              {
+                "count": 9,
+                "repo": "thunderbird/thunderbird-android"
+              }
+            ],
+            "confidence": "single",
+            "method": "openalternative_page_link"
+          }
+        },
+        "source_category": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": {
+            "major": "Productivity & Utilities",
+            "sub": "Email & Communication"
+          }
+        },
+        "stars": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/thunderbird/thunderbird-android",
+          "status": "api",
+          "value": 14138
+        },
+        "stars_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "14K"
+        }
+      },
+      "first_seen": "2026-10-25T23:11:48.096Z",
+      "matched_tool_id": null,
+      "quality": {
+        "blocking": [],
+        "issues": []
+      },
+      "repo": "thunderbird/thunderbird-android",
+      "review": {
+        "blocking": [],
+        "draft_problems": [],
+        "note": null,
+        "ready": false,
+        "state": "needs_review"
+      },
+      "slug": "thunderbird-for-android",
+      "source_url": "https://openalternative.co/thunderbird-for-android"
+    },
+    {
+      "fields": {
+        "archived": {
           "fetched_at": "2026-10-19T22:03:46.849Z",
           "source": "https://api.github.com/repos/msgbyte/tianji",
           "status": "api",
@@ -77225,6 +78209,146 @@
       },
       "slug": "typerelay",
       "source_url": "https://openalternative.co/typerelay"
+    },
+    {
+      "fields": {
+        "archived": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/ubicloud/ubicloud",
+          "status": "api",
+          "value": false
+        },
+        "canonical_repo": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/ubicloud/ubicloud",
+          "status": "api",
+          "value": "ubicloud/ubicloud"
+        },
+        "description_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "Open source cloud platform for bare metal providers"
+        },
+        "description_en": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/ubicloud/ubicloud",
+          "status": "api",
+          "value": "Open source alternative to AWS. Elastic compute, block storage (non replicated), firewall and load balancer, managed Postgres, K8s, AI inference, and IAM services."
+        },
+        "forks": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/ubicloud/ubicloud",
+          "status": "api",
+          "value": 598
+        },
+        "github_repo_id": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/ubicloud/ubicloud",
+          "status": "api",
+          "value": 590158156
+        },
+        "homepage": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/ubicloud/ubicloud",
+          "status": "api",
+          "value": "https://ubicloud.com"
+        },
+        "language": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/ubicloud/ubicloud",
+          "status": "api",
+          "value": "Ruby"
+        },
+        "latest_release_at": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": null,
+          "status": "unknown",
+          "value": null
+        },
+        "license": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/ubicloud/ubicloud",
+          "status": "api",
+          "value": "AGPL-3.0"
+        },
+        "license_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "AGPL-3.0"
+        },
+        "name": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "Ubicloud"
+        },
+        "pushed_at": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/ubicloud/ubicloud",
+          "status": "api",
+          "value": "2026-10-25T22:39:28Z"
+        },
+        "replaces_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://openalternative.co/ubicloud",
+          "status": "claimed",
+          "value": "Amazon Web Services"
+        },
+        "repo_resolution": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://openalternative.co/ubicloud",
+          "status": "claimed",
+          "value": {
+            "candidates": [
+              {
+                "count": 9,
+                "repo": "ubicloud/ubicloud"
+              }
+            ],
+            "confidence": "single",
+            "method": "openalternative_page_link"
+          }
+        },
+        "source_category": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": {
+            "major": "Infrastructure & Operations",
+            "sub": "Cloud Infrastructure Management"
+          }
+        },
+        "stars": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://api.github.com/repos/ubicloud/ubicloud",
+          "status": "api",
+          "value": 12345
+        },
+        "stars_claimed": {
+          "fetched_at": "2026-10-25T23:11:48.096Z",
+          "source": "https://github.com/piotrkulpinski/open-source-alternatives",
+          "status": "claimed",
+          "value": "12K"
+        }
+      },
+      "first_seen": "2026-10-25T23:11:48.096Z",
+      "matched_tool_id": null,
+      "quality": {
+        "blocking": [],
+        "issues": []
+      },
+      "repo": "ubicloud/ubicloud",
+      "review": {
+        "blocking": [],
+        "draft_problems": [],
+        "note": null,
+        "ready": false,
+        "state": "needs_review"
+      },
+      "slug": "ubicloud",
+      "source_url": "https://openalternative.co/ubicloud"
     },
     {
       "fields": {
@@ -86225,6 +87349,10 @@
       "reason": "same_repo_as_queue_entry",
       "repo": "macro-inc/macro"
     },
+    "mailspring": {
+      "at": "2026-10-25T23:11:48.096Z",
+      "reason": "listed_by_name"
+    },
     "malak": {
       "at": "2026-10-19T21:28:09.371Z",
       "reason": "repo_not_found",
@@ -86417,6 +87545,10 @@
       "at": "2026-10-19T21:11:37.853Z",
       "reason": "listed_by_name"
     },
+    "postal": {
+      "at": "2026-10-25T23:11:48.096Z",
+      "reason": "listed_by_name"
+    },
     "posthog": {
       "at": "2026-10-19T21:11:37.853Z",
       "reason": "listed_by_name"
@@ -86478,6 +87610,10 @@
     },
     "rocket-chat": {
       "at": "2026-10-19T21:11:37.853Z",
+      "reason": "listed_by_name"
+    },
+    "roundcube": {
+      "at": "2026-10-25T23:11:48.096Z",
       "reason": "listed_by_name"
     },
     "rustdesk": {

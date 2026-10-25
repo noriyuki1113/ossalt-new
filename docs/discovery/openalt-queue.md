@@ -3,8 +3,8 @@
 このファイルは `scripts/discover-openalt.mjs` が作ります。**ここに載っていても、サイトには公開されません。**
 一覧（OpenAlternative）の記載は第三者の情報です。**ライセンス・更新状況は公式リポジトリ（GitHub API）で確かめた値だけを信頼し**、日本語の説明と代替SaaSは人が書きます。手順：docs/discovery/OPENALT_QUEUE.md
 
-- 一覧 831件 → キュー 606件（確認待ち 471・止める問題あり 135・承認済み 0（うち貼れる状態 0）・保留 0・却下 0）
-- 掲載済み・除外などで外したもの 225件 {"listed_by_name":203,"listed_by_repo":9,"excluded_in_overrides":3,"repo_not_found":5,"same_repo_as_queue_entry":5}／未処理 0件（次回の続きで処理）
+- 一覧 838件 → キュー 614件（確認待ち 474・止める問題あり 135・承認済み 0（うち貼れる状態 0）・保留 0・却下 0）
+- 掲載済み・除外などで外したもの 228件 {"listed_by_name":206,"listed_by_repo":9,"excluded_in_overrides":3,"repo_not_found":5,"same_repo_as_queue_entry":5}／未処理 0件（次回の続きで処理）
 
 | 候補 | 公式リポジトリ | ライセンス（GitHub） | Star（GitHub） | 最終push | 状態 | 注意 |
 |---|---|---|---|---|---|---|
@@ -107,6 +107,7 @@
 | CodeEdit（`codeedit`） | [codeeditapp/codeedit](https://github.com/codeeditapp/codeedit) | MIT | 23078 | 2026-10-17 | 確認待ち | — |
 | Codex CLI（`codex-cli`） | [openai/codex](https://github.com/openai/codex) | Apache-2.0 | 129932 | 2026-10-19 | 確認待ち | — |
 | CodeZero（`codezero`） | [code0-tech/codezero](https://github.com/code0-tech/codezero) | 未確認 | 56 | 2026-10-15 | 止める問題あり | ライセンス不明 |
+| Codync（`codync`） | [leepokai/codync](https://github.com/leepokai/codync) | Apache-2.0 | 853 | 2026-10-25 | 確認待ち | — |
 | Colanode（`colanode`） | [colanode/colanode](https://github.com/colanode/colanode) | Apache-2.0 | 5169 | 2026-04-03 | 確認待ち | — |
 | CoMaps（`comaps`） | （未確定） | 未確認 | 未確認 | 未確認 | 止める問題あり | ライセンス不明・公式リポジトリを特定できない・公式リポジトリを確認できていない |
 | Comp AI（`comp`） | [trycompai/comp](https://github.com/trycompai/comp) | AGPL-3.0 | 2045 | 2026-10-09 | 確認待ち | — |
@@ -141,7 +142,6 @@
 | /dev/push（`dev-push`） | [hunvreus/devpush](https://github.com/hunvreus/devpush) | MIT | 4770 | 2026-03-03 | 確認待ち | — |
 | Digger（`digger`） | [diggerhq/digger](https://github.com/diggerhq/digger) | MIT | 5056 | 2026-10-11 | 確認待ち | — |
 | Dittofeed（`dittofeed`） | [dittofeed/dittofeed](https://github.com/dittofeed/dittofeed) | MIT | 3013 | 2026-10-12 | 確認待ち | — |
-| Docs（`docs`） | [suitenumerique/docs](https://github.com/suitenumerique/docs) | MIT | 16934 | 2026-10-19 | 確認待ち | — |
 | Dograh（`dograh`） | [dograh-hq/dograh](https://github.com/dograh-hq/dograh) | BSD-2-Clause | 5906 | 2026-10-19 | 確認待ち | — |
 | Donetick（`donetick`） | [donetick/donetick](https://github.com/donetick/donetick) | AGPL-3.0 | 2662 | 2026-10-19 | 確認待ち | — |
 | DoubleZero（`doublezero`） | （未確定） | 未確認 | 未確認 | 未確認 | 止める問題あり | ライセンス不明・公式リポジトリを特定できない・公式リポジトリを確認できていない |
@@ -157,6 +157,7 @@
 | ego lite（`ego-lite`） | [citrolabs/ego-lite](https://github.com/citrolabs/ego-lite) | MIT | 17735 | 2026-10-19 | 確認待ち | — |
 | Eigent（`eigent`） | [eigent-ai/eigent](https://github.com/eigent-ai/eigent) | Apache-2.0 | 15609 | 2026-10-19 | 確認待ち | — |
 | Elementary Data（`elementary-data`） | [elementary-data/elementary](https://github.com/elementary-data/elementary) | Apache-2.0 | 2425 | 2026-10-13 | 確認待ち | — |
+| Elmo（`elmo`） | [elmohq/elmo](https://github.com/elmohq/elmo) | MIT | 492 | 2026-10-25 | 確認待ち | — |
 | Emdash（`emdash`） | [generalaction/emdash](https://github.com/generalaction/emdash) | Apache-2.0 | 6028 | 2026-10-19 | 確認待ち | — |
 | Encore（`encore`） | [encoredev/encore](https://github.com/encoredev/encore) | MPL-2.0 | 12469 | 2026-10-19 | 確認待ち | — |
 | Envoy AI Gateway（`envoy-ai-gateway`） | [theagentrouter/agent-router](https://github.com/theagentrouter/agent-router) | Apache-2.0 | 2245 | 2026-10-19 | 確認待ち | — |
@@ -185,6 +186,7 @@
 | FleetBase（`fleetbase`） | [fleetbase/fleetbase](https://github.com/fleetbase/fleetbase) | AGPL-3.0 | 4369 | 2026-10-19 | 確認待ち | — |
 | Flexprice（`flexprice`） | [flexprice/flexprice](https://github.com/flexprice/flexprice) | AGPL-3.0 | 6883 | 2026-10-19 | 確認待ち | — |
 | Flipt（`flipt`） | [flipt-io/flipt](https://github.com/flipt-io/flipt) | 未確認 | 4923 | 2026-10-16 | 止める問題あり | ライセンス不明 |
+| Floci（`floci`） | [floci-io/floci](https://github.com/floci-io/floci) | MIT | 27124 | 2026-10-25 | 確認待ち | — |
 | Flow（`flow`） | [multiboxlabs/flow-browser](https://github.com/multiboxlabs/flow-browser) | GPL-3.0 | 1080 | 2026-05-30 | 確認待ち | — |
 | FluidVoice（`fluidvoice`） | [altic-dev/fluidvoice](https://github.com/altic-dev/fluidvoice) | GPL-3.0 | 12302 | 2026-10-19 | 確認待ち | — |
 | Fluxer（`fluxer`） | [fluxerapp/fluxer](https://github.com/fluxerapp/fluxer) | AGPL-3.0 | 10620 | 2026-10-19 | 確認待ち | — |
@@ -265,10 +267,8 @@
 | Justnote（`justnote`） | [stxapps/justnote-client](https://github.com/stxapps/justnote-client) | GPL-2.0 | 67 | 2026-02-03 | 確認待ち | — |
 | Kan（`kan`） | [kanbn/kan](https://github.com/kanbn/kan) | AGPL-3.0 | 5784 | 2026-10-19 | 確認待ち | — |
 | Kanba（`kanba`） | [kanba-co/kanba](https://github.com/kanba-co/kanba) | MIT | 663 | 2026-08-08 | 確認待ち | — |
-| Kaneo（`kaneo`） | [usekaneo/kaneo](https://github.com/usekaneo/kaneo) | MIT | 9520 | 2026-10-19 | 確認待ち | — |
 | Kanri（`kanri`） | [kanriapp/kanri](https://github.com/kanriapp/kanri) | GPL-3.0 | 2067 | 2026-10-17 | 確認待ち | — |
 | Kap（`kap`） | [wulkano/kap](https://github.com/wulkano/kap) | MIT | 19403 | 2024-11-12 | 確認待ち | 1年以上更新なし |
-| Karakeep（`karakeep`） | [karakeep-app/karakeep](https://github.com/karakeep-app/karakeep) | AGPL-3.0 | 29824 | 2026-10-19 | 確認待ち | — |
 | Keep（`keep`） | [keephq/keep](https://github.com/keephq/keep) | 未確認 | 12420 | 2026-09-28 | 止める問題あり | ライセンス不明 |
 | Kener（`kener`） | [rajnandan1/kener](https://github.com/rajnandan1/kener) | MIT | 5211 | 2026-10-19 | 確認待ち | — |
 | Keploy（`keploy`） | [keploy/keploy](https://github.com/keploy/keploy) | Apache-2.0 | 18656 | 2026-10-19 | 確認待ち | — |
@@ -314,6 +314,7 @@
 | LyteNyte Grid（`lytenyte-grid`） | [1771-technologies/lytenyte](https://github.com/1771-technologies/lytenyte) | 未確認 | 1029 | 2026-08-15 | 止める問題あり | ライセンス不明 |
 | Macro Mail（`macro-mail`） | [macro-inc/macro](https://github.com/macro-inc/macro) | AGPL-3.0 | 4753 | 2026-10-19 | 確認待ち | — |
 | Mage（`mage`） | [mage-ai/mage-ai](https://github.com/mage-ai/mage-ai) | Apache-2.0 | 8833 | 2026-10-16 | 確認待ち | — |
+| MailCheap（`mailcheap`） | [marclou/mailcheap](https://github.com/marclou/mailcheap) | AGPL-3.0 | 1447 | 2026-10-25 | 確認待ち | — |
 | Manage（`manage`） | [techulus/manage](https://github.com/techulus/manage) | AGPL-3.0 | 71 | 2026-08-07 | 確認待ち | — |
 | Manticore Search（`manticore`） | [manticoresoftware/manticoresearch](https://github.com/manticoresoftware/manticoresearch) | GPL-3.0 | 12063 | 2026-10-19 | 確認待ち | — |
 | Maple（`maple`） | [mapletechlabs/maple](https://github.com/mapletechlabs/maple) | 未確認 | 1848 | 2026-10-19 | 止める問題あり | ライセンス不明 |
@@ -362,6 +363,7 @@
 | OctoBot（`octobot`） | [drakkar-software/octobot](https://github.com/drakkar-software/octobot) | GPL-3.0 | 6829 | 2026-10-16 | 確認待ち | — |
 | Omnara（`omnara`） | [omnara-ai/omnara](https://github.com/omnara-ai/omnara) | Apache-2.0 | 2942 | 2026-10-19 | 確認待ち | — |
 | Omnigent（`omnigent`） | [omnigent-ai/omnigent](https://github.com/omnigent-ai/omnigent) | Apache-2.0 | 10910 | 2026-10-19 | 確認待ち | — |
+| OneGlanse（`oneglanse`） | [oneglanse/oneglanse](https://github.com/oneglanse/oneglanse) | MIT | 233 | 2026-10-04 | 確認待ち | — |
 | OneHuman（`onehuman`） | [onehumanai/onehuman](https://github.com/onehumanai/onehuman) | 未確認 | 19 | 2026-10-07 | 止める問題あり | ライセンス不明 |
 | OneUptime（`oneuptime`） | [oneuptime/oneuptime](https://github.com/oneuptime/oneuptime) | 未確認 | 7745 | 2026-10-19 | 止める問題あり | ライセンス不明 |
 | Onlook（`onlook`） | [onlook-dev/onlook](https://github.com/onlook-dev/onlook) | Apache-2.0 | 26958 | 2026-08-25 | 確認待ち | — |
@@ -389,7 +391,6 @@
 | OpenPanel（`openpanel-co`） | [stefanpejcic/openpanel](https://github.com/stefanpejcic/openpanel) | 未確認 | 763 | 2026-10-19 | 止める問題あり | ライセンス不明 |
 | OpenPencil（`openpencil`） | [open-pencil/open-pencil](https://github.com/open-pencil/open-pencil) | MIT | 9129 | 2026-10-19 | 確認待ち | — |
 | OpenPolicy（`openpolicy`） | [jamiedavenport/policystack](https://github.com/jamiedavenport/policystack) | Apache-2.0 | 165 | 2026-10-19 | 確認待ち | — |
-| OpenSEO（`openseo`） | [every-app/open-seo](https://github.com/every-app/open-seo) | MIT | 24155 | 2026-10-19 | 確認待ち | — |
 | OpenSERP（`openserp`） | [karust/openserp](https://github.com/karust/openserp) | MIT | 1486 | 2026-10-19 | 確認待ち | — |
 | OpenStack（`openstack`） | [openstack/openstack](https://github.com/openstack/openstack) | Apache-2.0 | 6063 | 2026-10-19 | 確認待ち | — |
 | OpenStatus（`openstatus`） | [openstatushq/openstatus](https://github.com/openstatushq/openstatus) | AGPL-3.0 | 9196 | 2026-10-19 | 確認待ち | — |
@@ -425,6 +426,7 @@
 | Peergos（`peergos`） | [peergos/peergos](https://github.com/peergos/peergos) | AGPL-3.0 | 2536 | 2026-10-19 | 確認待ち | — |
 | Permify（`permify`） | [permify/permify](https://github.com/permify/permify) | AGPL-3.0 | 5965 | 2026-10-15 | 確認待ち | — |
 | Phase（`phase`） | [phasehq/console](https://github.com/phasehq/console) | 未確認 | 931 | 2026-10-19 | 止める問題あり | ライセンス不明 |
+| Phrasea（`phrasea`） | [alchemy-fr/phrasea](https://github.com/alchemy-fr/phrasea) | MIT | 26 | 2026-10-25 | 確認待ち | — |
 | pi（`pi`） | [earendil-works/pi](https://github.com/earendil-works/pi) | MIT | 116409 | 2026-10-19 | 確認待ち | — |
 | Pipeshub（`pipeshub`） | [pipeshub-ai/pipeshub-ai](https://github.com/pipeshub-ai/pipeshub-ai) | Apache-2.0 | 3841 | 2026-10-19 | 確認待ち | — |
 | Pixelfed（`pixelfed`） | [pixelfed/pixelfed](https://github.com/pixelfed/pixelfed) | AGPL-3.0 | 7124 | 2026-10-19 | 確認待ち | — |
@@ -463,7 +465,6 @@
 | Rivet（`rivet`） | [rivet-dev/rivet](https://github.com/rivet-dev/rivet) | Apache-2.0 | 6317 | 2026-10-19 | 確認待ち | — |
 | Roomote（`roomote`） | [roocodeinc/roomote](https://github.com/roocodeinc/roomote) | 未確認 | 294 | 2026-10-19 | 止める問題あり | ライセンス不明 |
 | Rowy（`rowy`） | [buildship-ai/rowy](https://github.com/buildship-ai/rowy) | 未確認 | 6842 | 2024-11-23 | 止める問題あり | ライセンス不明・1年以上更新なし |
-| Rybbit（`rybbit`） | [rybbit-io/rybbit](https://github.com/rybbit-io/rybbit) | AGPL-3.0 | 13136 | 2026-10-19 | 確認待ち | — |
 | Ryot（`ryot`） | [ignisda/ryot](https://github.com/ignisda/ryot) | GPL-3.0 | 3644 | 2026-10-18 | 確認待ち | — |
 | SAMA（`sama`） | [sama-communications/sama-server](https://github.com/sama-communications/sama-server) | GPL-3.0 | 161 | 2026-10-05 | 確認待ち | — |
 | Sayr（`sayr`） | [dorasto/sayr](https://github.com/dorasto/sayr) | 未確認 | 30 | 2026-10-19 | 止める問題あり | ライセンス不明 |
@@ -530,6 +531,7 @@
 | TeamPass（`teampass`） | [nilsteampassnet/teampass](https://github.com/nilsteampassnet/teampass) | GPL-3.0 | 1837 | 2026-10-17 | 確認待ち | リポジトリは多数決で選んだ（要確認） |
 | Temps（`temps`） | [gotempsh/temps](https://github.com/gotempsh/temps) | Apache-2.0 | 851 | 2026-10-19 | 確認待ち | — |
 | Terrateam（`terrateam`） | [stategraph/stategraph](https://github.com/stategraph/stategraph) | MPL-2.0 | 1308 | 2026-10-19 | 確認待ち | — |
+| Thunderbird for Android（`thunderbird-for-android`） | [thunderbird/thunderbird-android](https://github.com/thunderbird/thunderbird-android) | Apache-2.0 | 14138 | 2026-10-22 | 確認待ち | — |
 | Tianji（`tianji`） | [msgbyte/tianji](https://github.com/msgbyte/tianji) | Apache-2.0 | 3115 | 2026-10-18 | 確認待ち | — |
 | TiDB（`tidb`） | [pingcap/tidb](https://github.com/pingcap/tidb) | Apache-2.0 | 40654 | 2026-10-19 | 確認待ち | — |
 | Tiledesk（`tiledesk`） | [tiledesk/tiledesk-dashboard](https://github.com/tiledesk/tiledesk-dashboard) | MIT | 15 | 2026-10-19 | 確認待ち | — |
@@ -554,6 +556,7 @@
 | Tyk（`tyk`） | [tyktechnologies/tyk](https://github.com/tyktechnologies/tyk) | 未確認 | 10867 | 2026-10-19 | 止める問題あり | ライセンス不明 |
 | Typemill（`typemill`） | [typemill/typemill](https://github.com/typemill/typemill) | MIT | 619 | 2026-09-20 | 確認待ち | — |
 | Typerelay（`typerelay`） | [typerelay/typerelay](https://github.com/typerelay/typerelay) | AGPL-3.0 | 42 | 2026-10-18 | 確認待ち | — |
+| Ubicloud（`ubicloud`） | [ubicloud/ubicloud](https://github.com/ubicloud/ubicloud) | AGPL-3.0 | 12345 | 2026-10-25 | 確認待ち | — |
 | Ueli（`ueli`） | [oliverschwendener/ueli](https://github.com/oliverschwendener/ueli) | MIT | 4610 | 2026-10-16 | 確認待ち | — |
 | UniBee（`unibee`） | [unibee-billing/unibee](https://github.com/unibee-billing/unibee) | AGPL-3.0 | 233 | 2026-02-23 | 確認待ち | — |
 | UnInbox（`uninbox`） | [un/inbox](https://github.com/un/inbox) | 未確認 | 1760 | 2026-02-11 | 止める問題あり | ライセンス不明 |
