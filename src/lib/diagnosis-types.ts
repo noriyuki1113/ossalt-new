@@ -78,6 +78,18 @@ export const STRENGTH_LABELS: Record<Strength, string> = {
 export const MAX_STRENGTHS = 2;
 
 /**
+ * Q7「利用の条件」（任意・複数選択）。点数（一致度）には加えず、
+ * 掲載データから「合っている点」「不向きな条件・確認しておきたい点」を出すために使う。
+ */
+export type UsageCondition = "ja" | "commercial" | "budget";
+export const USAGE_CONDITIONS: UsageCondition[] = ["ja", "commercial", "budget"];
+export const USAGE_CONDITION_LABELS: Record<UsageCondition, string> = {
+  ja: "日本語の画面で使いたい",
+  commercial: "会社の業務で使う（商用利用）",
+  budget: "ソフトの費用はかけたくない（サーバー代だけにしたい）",
+};
+
+/**
  * 機能の有無。boolean をそのまま使わず、3状態にする。
  * "unknown" は「確認できていない」であり、falseとして扱ってはいけない。
  */

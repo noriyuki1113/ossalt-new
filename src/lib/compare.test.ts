@@ -4,7 +4,7 @@
  */
 import test from "node:test";
 import assert from "node:assert/strict";
-import { buildComparePairs, buildDifferences, classifyLicense, compareSlug } from "./compare.ts";
+import { buildComparePairs, buildDifferences, classifyLicense, compareSlug, licenseGroupOf, licenseReason } from "./compare.ts";
 
 test("ライセンス分類: 代表的な表記", () => {
   assert.equal(classifyLicense("MIT"), "permissive");
@@ -87,4 +87,27 @@ test("違い: 更新が止まっているツールを指摘する", () => {
     { ...base, name: "B" }
   ).join("\n");
   assert.match(diffs, /Aは最終コミットから400日/);
+});
+
+test("licenseGroupOf: 4区分。推測でOSIに入れない", () => {
+  assert.equal(licenseGroupOf("MIT"), "osi");
+  assert.equal(licenseGroupOf("AGPL-3.0"), "osi");
+  assert.equal(licenseGroupOf("GPL-2.0 / GPL-3.0"), "osi");
+  assert.equal(licenseGroupOf("Apache-2.0 / GPL-2.0"), "osi");
+  assert.equal(licenseGroupOf("AGPL-3.0 / Metabase Commercial"), "mixed");
+  assert.equal(licenseGroupOf("Apache-2.0（pro/配下は別ライセンス）"), "mixed");
+  assert.equal(licenseGroupOf("Sustainable Use License"), "source-available");
+  assert.equal(licenseGroupOf("BUSL 1.1"), "source-available");
+  assert.equal(licenseGroupOf("Apache-2.0（改変条項あり）"), "source-available");
+  assert.equal(licenseGroupOf("AGPL-3.0 + Commons Clause"), "source-available");
+  assert.equal(licenseGroupOf(null), "unknown");
+  assert.equal(licenseGroupOf(""), "unknown");
+  assert.equal(licenseGroupOf("Some Unknown Thing"), "unknown");
+});
+
+test("licenseReason: 区分ごとの判定理由。未確認を「無い」と書かない", () => {
+  assert.match(licenseReason("MIT"), /OSI.*承認/);
+  assert.match(licenseReason("Elastic License 2.0"), /OSI承認のオープンソースライセンスではありません/);
+  assert.match(licenseReason("AGPL-3.0 / Metabase Commercial"), /選ぶ形式/);
+  assert.match(licenseReason(null), /「ライセンスが無い」という意味ではありません/);
 });

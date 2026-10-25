@@ -1,6 +1,6 @@
 ---
 description: "GitHubの代わりに自前で動かせるオープンソースのGitホスティング。Gitea・OneDev・Gogs・Gitnessを、軽さ・CIとの一体化・移行のしやすさから比較します。"
-updated: "2026-09-26"
+updated: "2026-10-20"
 intro: "GitHubの代替は、ソースコードを自社サーバーで管理したい場合の選択肢です。社外に出せないコードがある、社内ネットワークの中で完結させたい、という理由で選ばれます。Issue（課題管理）やプルリクエスト、CIまで含めて移すかどうかで、選ぶ候補が変わります。"
 picks:
   - tool: gitea
@@ -19,6 +19,14 @@ picks:
 - **CIとの一体化**：OneDevとGitnessは、GitホスティングとCI/CDを1つのツールで持てます。
 - **軽さ**：Gogsは機能を絞った軽量型です。Giteaは、もともとGogsから分かれて開発が進んだツールです。
 - **ライセンス**：Gitea・Gogs・OneDevはMIT、GitnessはApache-2.0です。
+
+## Giteaを候補にする場合
+
+「GitHubの代替オープンソースはどれがよいか」と迷う場合、まず[Giteaの詳細・ライセンス・更新状況](/tools/gitea/)を確認してください。GitHubに近いコードレビューやIssue管理が必要か、社内で使う軽量なGitサーバーが必要かによって、比較する観点が変わります。
+
+- **リポジトリを移すだけの場合**：Gitの履歴とアクセス権限が維持できるかを確認する。
+- **Issueやプルリクエストも移す場合**：Giteaの[公式移行機能](https://docs.gitea.com/1.26/usage/repository/migration/)の対応範囲を確認して、小規模に試す。
+- **GitHub Actionsを利用している場合**：Gitea Actionsには独立したランナーが必要です。ワークフローの互換性を事前にテストする（[公式説明](https://docs.gitea.com/usage/actions/overview/)）。
 
 ## 移行するときの注意
 

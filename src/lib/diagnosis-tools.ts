@@ -14,7 +14,12 @@ export function getAllDiagnosisToolInputs(): DiagnosisToolInput[] {
   for (const meta of Object.values(TOOL_DIAGNOSIS)) {
     const tool = byId.get(meta.toolId);
     if (!tool) continue; // データ側の不整合はテストで検出する。ここでは黙って除外する
-    out.push({ meta, name: tool.name, healthScore: tool.health_score });
+    out.push({
+      meta,
+      name: tool.name,
+      healthScore: tool.health_score,
+      facts: { license: tool.license, jaUi: tool.ja_ui, jaDocs: tool.ja_docs },
+    });
   }
   return out;
 }

@@ -9,6 +9,10 @@ import {
   type Tool,
 } from "@/lib/tools";
 import { t } from "@/lib/site";
+import { LICENSE_GROUP_LABELS, LICENSE_GROUP_ORDER, licenseGroupOf } from "@/lib/compare";
+
+// ライセンス欄の値。「group:osi」のように区分で絞り込むか、個別のライセンス表記で絞り込む
+const GROUP_PREFIX = "group:";
 
 type Props = {
   tools: Tool[];
@@ -40,11 +44,20 @@ export function ToolBrowser({
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
   const licenses = useMemo(() => licenseFacets(tools), [tools]);
+  const groups = useMemo(() => {
+    const m = new Map<string, number>();
+    for (const tool of tools) {
+      const g = licenseGroupOf(tool.license);
+      m.set(g, (m.get(g) ?? 0) + 1);
+    }
+    return LICENSE_GROUP_ORDER.filter((g) => m.has(g)).map((g) => ({ value: g, count: m.get(g)! }));
+  }, [tools]);
 
-  const results = useMemo(
-    () => filterAndSort(tools, { query, category, license, dockerOnly, japaneseOnly, sort }),
-    [tools, query, category, license, dockerOnly, japaneseOnly, sort]
-  );
+  const results = useMemo(() => {
+    const group = license.startsWith(GROUP_PREFIX) ? license.slice(GROUP_PREFIX.length) : "";
+    const base = group ? tools.filter((tool) => licenseGroupOf(tool.license) === group) : tools;
+    return filterAndSort(base, { query, category, license: group ? "" : license, dockerOnly, japaneseOnly, sort });
+  }, [tools, query, category, license, dockerOnly, japaneseOnly, sort]);
 
   const dirty = Boolean(query || category || license || dockerOnly || japaneseOnly);
   // 並び替えだけを変えた場合も「操作した」とみなし、全件表示に切り替える。
@@ -131,11 +144,20 @@ export function ToolBrowser({
                 onChange={(e) => setLicense(e.target.value)}
               >
                 <option value="">{t("filter.all")}</option>
-                {licenses.map((l) => (
-                  <option key={l.value} value={l.value}>
-                    {l.value}（{l.count}）
-                  </option>
-                ))}
+                <optgroup label="種類で絞り込む">
+                  {groups.map((g) => (
+                    <option key={g.value} value={GROUP_PREFIX + g.value}>
+                      {LICENSE_GROUP_LABELS[g.value]}（{g.count}）
+                    </option>
+                  ))}
+                </optgroup>
+                <optgroup label="ライセンス名で絞り込む">
+                  {licenses.map((l) => (
+                    <option key={l.value} value={l.value}>
+                      {l.value}（{l.count}）
+                    </option>
+                  ))}
+                </optgroup>
               </select>
             </label>
           )}

@@ -44,3 +44,7 @@
 .bottomLinks{display:flex;gap:.75rem 1.5rem;flex-wrap:wrap;margin:1.5rem 0 0;padding-top:1rem;border-top:1px solid var(--rule)}.bottomLinks a{font-size:.8rem;font-weight:700}
 @media(max-width:840px){.cards{grid-template-columns:1fr}.methodGrid{grid-template-columns:1fr;gap:.7rem}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.hero{padding:1.3rem}.hero h1{font-size:clamp(1.85rem,8.5vw,2.5rem)}.heroTail{font-size:.65rem}.stats>div{padding:.85rem}.card{padding:1rem}.cardStats>div{padding:.65rem .45rem}.cardStats strong{font-size:1rem}.cardStats span{font-size:.63rem}.signal{font-size:.63rem}}
+.sync{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.6rem 1.2rem;margin:0 0 1.2rem;font-size:.8rem}
+.sync div{min-width:0}.sync dt{color:var(--ink-2);font-size:.72rem}.sync dd{margin:.15rem 0 0;font-variant-numeric:tabular-nums}
+.sync small{display:block;font-size:.72rem;color:var(--ink-2)}.sync .syncError{color:#9b2c2c}
+@media (max-width:640px){.sync{grid-template-columns:1fr 1fr}}

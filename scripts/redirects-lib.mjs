@@ -36,3 +36,40 @@ export function validateRedirects(map) {
   }
   return errors;
 }
+
+/**
+ * Cloudflare Pages用HTTP 301のルール。
+ * 静的アセットが存在しても _redirects が先に評価される。
+ * GitHub Pages等では従来のmeta refresh HTMLがフォールバックとなる。
+ */
+export function cloudflarePagesRedirects(map) {
+  const errors = validateRedirects(map);
+  if (errors.length) throw new Error(errors.join("\n"));
+  const entries = Object.entries(map).sort(([a], [b]) => a.localeCompare(b));
+  if (entries.length > 2000) throw new Error("Cloudflare Pagesの静的リダイレクト上限（2000件）を超えています");
+  return "# Auto-generated from data-source/redirects.json. Do not edit manually.\n"
+    + "# Cloudflare Pages: HTTP 301; GitHub Pages: legacy HTML fallback remains.\n"
+    + entries.map(([from, to]) => from + " " + to + " 301").join("\n") + "\n";
+}
+
+/**
+ * Cloudflare Bulk RedirectsへのCSVインポート用。
+ * Sourceはスキームを省略し、http/https両方に一致させる。
+ * 末尾スラッシュ有無の2つを明示して、同一パスの判定差を避ける。
+ * ヘッダー行なし。1行: source,target,301,preserve_query,include_subdomains,subpath,preserve_suffix
+ */
+export function cloudflareBulkRedirectsCsv(map, hostname = "ossalt.jp") {
+  const errors = validateRedirects(map);
+  if (errors.length) throw new Error(errors.join("\n"));
+  if (!/^[a-z0-9.-]+$/.test(hostname) || !hostname.includes(".") || hostname.includes("..")) throw new Error("ホスト名が不正です");
+  const rows = [];
+  for (const [from, to] of Object.entries(map).sort(([a], [b]) => a.localeCompare(b))) {
+    for (const p of [from.slice(0, -1), from]) {
+      const source = hostname + p;
+      const target = "https://" + hostname + to;
+      rows.push([source, target, "301", "TRUE", "FALSE", "FALSE", "FALSE"].join(","));
+    }
+  }
+  if (rows.length > 10000) throw new Error("Redirect Listのデフォルト上限を超える可能性があります");
+  return rows.join("\n") + "\n";
+}

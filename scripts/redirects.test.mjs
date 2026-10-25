@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
-import { redirectHtml, validateRedirects } from "./redirects-lib.mjs";
+import { redirectHtml, validateRedirects, cloudflarePagesRedirects, cloudflareBulkRedirectsCsv } from "./redirects-lib.mjs";
 
 const { redirects } = JSON.parse(fs.readFileSync(new URL("../data-source/redirects.json", import.meta.url), "utf8"));
 
@@ -28,4 +28,32 @@ test("転送元が、今ある別のページになっていない（上書き�
     if (kind === "tools") assert.ok(!toolIds.has(id), `${from} は今あるツールのページです`);
     if (kind === "alternatives") assert.ok(!competitors.has(id), `${from} は今ある代替のページです`);
   }
+});
+
+test("Cloudflare Pages: 旧URLがHTTP 301になり、対応表と一致する", () => {
+  const rules = cloudflarePagesRedirects(redirects);
+  const committed = fs.readFileSync(new URL("../public/_redirects", import.meta.url), "utf8");
+  assert.equal(committed, rules, "生成した_redirectsとコミット済みファイルが異なります");
+  assert.match(rules, /^\/tools\/194\/ \/tools\/zammad\/ 301$/m);
+  assert.match(rules, /^\/tools\/254\/ \/tools\/plane\/ 301$/m);
+  assert.equal(rules.split("\n").filter((line) => line && !line.startsWith("#")).length, Object.keys(redirects).length);
+  assert.equal(rules.split("\n").filter((line) => /^\/tools\/\d+\/ /.test(line)).length, 125);
+});
+
+test("Cloudflare Pages: 二重転送や上限超過は出力させない", () => {
+  assert.throws(() => cloudflarePagesRedirects({ "/a/": "/b/", "/b/": "/c/" }), /二重の転送/);
+  const tooMany = Object.fromEntries(Array.from({ length: 2001 }, (_, i) => ["/old-" + i + "/", "/tools/"]));
+  assert.throws(() => cloudflarePagesRedirects(tooMany), /上限/);
+});
+
+test("Cloudflare Bulk Redirects CSVは既存対応表と一致、slash有無292件", () => {
+  const generated = cloudflareBulkRedirectsCsv(redirects);
+  const committed = fs.readFileSync(new URL("../ops/cloudflare/ossalt-legacy-bulk-redirects.csv", import.meta.url), "utf8");
+  assert.equal(generated, committed, "CSVがリダイレクト対応表と一致しません");
+  const rows = generated.trim().split("\n");
+  assert.equal(rows.length, Object.keys(redirects).length * 2);
+  assert.ok(rows.includes("ossalt.jp/tools/194,https://ossalt.jp/tools/zammad/,301,TRUE,FALSE,FALSE,FALSE"));
+  assert.ok(rows.includes("ossalt.jp/tools/194/,https://ossalt.jp/tools/zammad/,301,TRUE,FALSE,FALSE,FALSE"));
+  assert.ok(!rows[0].toLowerCase().includes("source_url"), "Cloudflare用CSVにはヘッダー行を入れない");
+  assert.equal(new Set(rows.map((line) => line.split(",")[0])).size, rows.length, "転送元の重複がありません");
 });

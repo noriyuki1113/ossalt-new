@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { getMeta, getTools } from "@/lib/data";
 import { pageMeta } from "@/lib/seo";
-import { getWatchSignalFeed } from "@/lib/watch-signals";
+import { getWatchSignalFeed, getWatchSyncStatus, type WatchSyncStatus } from "@/lib/watch-signals";
 import { activityDateJst, buildActivityReport, type ActivityRow } from "@/lib/watch-changes";
 import styles from "./changes.module.css";
 
@@ -55,9 +55,29 @@ function ActivityCard({ row }: { row: ActivityRow }) {
   );
 }
 
+/** 取り込みの状態。「最終成功」と「最終試行」を分け、失敗したときは理由を示す */
+function SyncStatus({ status, generatedAt }: { status: WatchSyncStatus | null; generatedAt: string | null }) {
+  return (
+    <dl className={styles.sync} aria-label="観測データの取り込み状況">
+      <div><dt>配信元の観測日時</dt><dd>{generatedAt ? activityDateJst(generatedAt) : "未取得"}</dd></div>
+      <div><dt>最終取り込み成功</dt><dd>{status?.last_success_at ? activityDateJst(status.last_success_at) : status ? "記録なし" : "記録開始前"}</dd></div>
+      <div><dt>最終試行</dt><dd>
+        {status ? activityDateJst(status.last_attempt_at) : "記録開始前"}
+        {status && (status.last_result === "ok"
+          ? <small>（成功）</small>
+          : <small className={styles.syncError}>
+              （失敗：{status.error?.label ?? "原因不明"}{status.error?.http_status ? `・HTTP ${status.error.http_status}` : ""}
+              {status.consecutive_failures > 1 ? `・${status.consecutive_failures}回連続` : ""}）
+            </small>)}
+      </dd></div>
+    </dl>
+  );
+}
+
 export default function ChangesPage() {
   const meta = getMeta();
   const report = buildActivityReport(getTools(), getWatchSignalFeed());
+  const sync = getWatchSyncStatus();
   const notable = report.rows.filter(row => row.severity !== "observing");
   const other = report.rows.filter(row => row.severity === "observing");
   return (
@@ -76,6 +96,8 @@ export default function ChangesPage() {
             <Link href="/trending/">Star増加ランキングを見る ↗</Link>
           </div>
         </header>
+
+        <SyncStatus status={sync} generatedAt={report.generatedAt} />
 
         {report.feedStalled && report.generatedAt && (
           <aside className={styles.note} aria-label="観測データの更新について" role="status">

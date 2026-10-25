@@ -2,7 +2,7 @@
   "errors": [],
   "github": {
     "budget_stopped": "GitHub API の予算切れ: maxRequests=300",
-    "errors": 66,
+    "errors": 64,
     "max_requests": 300,
     "notModified": 0,
     "remaining": 4848,
@@ -10,19 +10,19 @@
     "retried": 0,
     "used": true
   },
-  "last_changed_at": "2026-10-14T00:21:54.518Z",
-  "last_run_at": "2026-10-14T00:21:54.518Z",
+  "last_changed_at": "2026-10-20T23:57:26.523Z",
+  "last_run_at": "2026-10-20T23:57:26.523Z",
   "summary": {
     "blocked": 16,
-    "candidates": 187,
-    "config_verified": 119,
-    "duplicates_merged": 71,
-    "existing": 0,
+    "candidates": 191,
+    "config_verified": 123,
+    "duplicates_merged": 78,
+    "existing": 1,
     "github_enriched": 150,
-    "needs_review": 171,
-    "new": 187,
+    "needs_review": 174,
+    "new": 190,
     "raw_entries": {
-      "appflare": 128,
+      "appflare": 139,
       "awesome": 130
     },
     "update_review": 0

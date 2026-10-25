@@ -24,7 +24,7 @@ import {
   type Tool,
 } from "@/lib/tools";
 import { t } from "@/lib/site";
-import { classifyLicense, LICENSE_CLASS_LABELS } from "@/lib/compare";
+import { classifyLicense, LICENSE_CLASS_LABELS, licenseGroupOf } from "@/lib/compare";
 import { freshnessState, type StarContext } from "@/lib/star-context";
 
 /* ------------------------------------------------------------------ *
@@ -328,7 +328,7 @@ export function KeyFacts({
 }) {
   const cls = classifyLicense(tool.license);
   const clsLabel = LICENSE_CLASS_LABELS[cls].replace(/（.*）/, "");
-  const licenseWarn = cls === "source-available" || cls === "unknown";
+  const licenseWarn = licenseGroupOf(tool.license) !== "osi";
   const ja =
     tool.ja_ui === true
       ? "画面あり"

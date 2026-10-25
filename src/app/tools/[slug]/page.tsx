@@ -25,7 +25,7 @@ import { getToolGuide } from "@/lib/tool-guides";
 import { starContext } from "@/lib/star-context";
 import { buildToolFaq } from "@/lib/tool-faq";
 import { getAlternativeGuide } from "@/lib/alternative-guides";
-import { LICENSE_CLASS_LABELS, classifyLicense } from "@/lib/compare";
+import { LICENSE_CLASS_LABELS, LICENSE_GROUP_LABELS, classifyLicense, licenseGroupOf, licenseReason } from "@/lib/compare";
 import { getLicensePage } from "@/lib/licenses";
 import { formatDate, licenseLabel, slugifyCompetitor } from "@/lib/tools";
 import { vpsPlacementFor } from "@/lib/affiliate-context";
@@ -149,6 +149,16 @@ export default async function ToolDetailPage({
               <p className="notice notice--warn" style={{ marginBottom: "1.25rem" }}>
                 <strong>{t("health.archived")}</strong>{" "}{"このツールは一覧・カテゴリ・比較のページには表示していません（このページのみ残しています）。"}
                 {"新規に導入する場合は、下記の「"}{competitor} の代替を全部見る」から他の候補もあわせてご確認ください。
+              </p>
+            )}
+
+            {tool.maintenance_notice && (
+              <p className="notice notice--warn" style={{ marginBottom: "1.25rem" }}>
+                <strong>保守停止の公式警告</strong>{" "}
+                {tool.maintenance_notice.text}
+                {"（"}
+                <a href={tool.maintenance_notice.source_url} rel="noopener">公式の表示</a>
+                {`・${tool.maintenance_notice.checked_at}確認）`}
               </p>
             )}
 
@@ -279,13 +289,23 @@ export default async function ToolDetailPage({
                 {formatDate(tool.last_commit)}時点の情報です。
                 {tool.github_archived && " ※このリポジトリはアーカイブされています。"}
               </p>
-              {getLicensePage(classifyLicense(tool.license)) && (
-                <p className="muted" style={{ fontSize: "0.75rem" }}>
-                  {`ライセンスの種類：${LICENSE_CLASS_LABELS[classifyLicense(tool.license)]}（`}
-                  <Link href={`/licenses/${classifyLicense(tool.license)}/`}>同じ種類のツール一覧</Link>
-                  {"）"}
+              <div className={`license-verdict license-verdict--${licenseGroupOf(tool.license)}`}>
+                <p className="license-verdict__head">
+                  <span className="license-verdict__badge">{LICENSE_GROUP_LABELS[licenseGroupOf(tool.license)]}</span>
+                  {getLicensePage(classifyLicense(tool.license)) && (
+                    <span>
+                      {`分類：${LICENSE_CLASS_LABELS[classifyLicense(tool.license)]}（`}
+                      <Link href={`/licenses/${classifyLicense(tool.license)}/`}>同じ種類のツール一覧</Link>
+                      {"）"}
+                    </span>
+                  )}
                 </p>
-              )}
+                <p className="license-verdict__reason">
+                  {tool.license_note ?? licenseReason(tool.license)}
+                  {tool.license_source === "github" && " 出典：GitHub APIのライセンス判定（SPDX）。"}
+                  {tool.license_source === "manual" && " 出典：OSSALTがリポジトリのLICENSEファイルを確認して設定。"}
+                </p>
+              </div>
             </section>
 
             <section id="faq">
