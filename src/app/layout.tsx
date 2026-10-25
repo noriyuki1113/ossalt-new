@@ -1,7 +1,29 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
+import { JetBrains_Mono, Noto_Sans_JP, Zen_Kaku_Gothic_New } from "next/font/google";
 import "./globals.css";
 import { SITE, UMAMI_SCRIPT_URL, UMAMI_SITE_ID } from "@/lib/site";
+
+// Downloads fonts during the build, then serves them from this site's own origin.
+// Japanese font subsets are managed by Next.js; disable their automatic preload.
+const notoSansJP = Noto_Sans_JP({
+  weight: ["400", "500", "700"],
+  display: "swap",
+  variable: "--font-noto-jp",
+  preload: false,
+});
+const zenKakuGothic = Zen_Kaku_Gothic_New({
+  weight: ["700", "900"],
+  display: "swap",
+  variable: "--font-zen-kaku",
+  preload: false,
+});
+const jetBrainsMono = JetBrains_Mono({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-jetbrains",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -58,14 +80,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="ja">
+    <html
+      lang="ja"
+      className={`${notoSansJP.variable} ${zenKakuGothic.variable} ${jetBrainsMono.variable}`}
+      style={{
+        "--font-body": 'var(--font-noto-jp), "Hiragino Kaku Gothic ProN", "Yu Gothic", system-ui, sans-serif',
+        "--font-display": 'var(--font-zen-kaku), "Hiragino Kaku Gothic StdN", "Yu Gothic", system-ui, sans-serif',
+        "--font-mono": 'var(--font-jetbrains), ui-monospace, SFMono-Regular, Menlo, monospace',
+      } as CSSProperties}
+    >
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@700;900&family=JetBrains+Mono:wght@400;700&display=swap"
-        />
         <meta name="theme-color" content="#edefe9" />
       </head>
       <body>
