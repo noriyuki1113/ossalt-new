@@ -25,6 +25,10 @@ import { getToolGuide } from "@/lib/tool-guides";
 import { starContext } from "@/lib/star-context";
 import { buildToolFaq } from "@/lib/tool-faq";
 import { getAlternativeGuide } from "@/lib/alternative-guides";
+import { ToolBriefPanel } from "@/components/tool-brief";
+import { TOOL_DIAGNOSIS } from "@/lib/diagnosis-data";
+import { getStanding } from "@/lib/ranking-positions";
+import { buildToolBrief } from "@/lib/tool-brief";
 import { LICENSE_CLASS_LABELS, LICENSE_GROUP_LABELS, classifyLicense, licenseGroupOf, licenseReason } from "@/lib/compare";
 import { getLicensePage } from "@/lib/licenses";
 import { formatDate, licenseLabel, slugifyCompetitor } from "@/lib/tools";
@@ -142,6 +146,12 @@ export default async function ToolDetailPage({
             </p>
 
             <KeyFacts tool={tool} stars={starContext(tool, getActiveTools())} categoryName={category?.nameJa} />
+
+            <ToolBriefPanel
+              name={tool.name}
+              brief={buildToolBrief(tool, TOOL_DIAGNOSIS[tool.id], getStanding(tool.id))}
+              asOf={formatDate(meta.stars_as_of ?? meta.built_at)}
+            />
 
             <WatchSignalPanel githubUrl={tool.github_url} />
 

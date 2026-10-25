@@ -83,6 +83,26 @@ test.describe("ツール詳細ページ", () => {
     expect(problems).toEqual([]);
   });
 
+  test("選ぶ前の要約：強み・確認したい点に根拠が付き、人気・成長・公式の情報へ進める", async ({ page, problems }) => {
+    await page.goto("/tools/n8n/");
+    const brief = page.locator(".brief");
+    await expect(brief).toBeVisible();
+    await expect(brief).toContainText("データから分かる強み");
+    await expect(brief).toContainText("確認しておきたい点・向かない条件");
+    // ソース公開型のライセンスは、確認したい点に出る
+    await expect(brief.locator(".brief__list--check")).toContainText("ソース公開型");
+    // どの項目にも根拠が付く
+    const items = brief.locator(".brief__list li");
+    expect(await items.count()).toBeGreaterThan(2);
+    for (const li of await items.all()) await expect(li.locator("small")).toContainText("根拠：");
+    // 導入・運用、人気・成長、公式の情報
+    await expect(brief).toContainText(/導入・運用の難易度：/);
+    await expect(brief).toContainText(/人気：掲載\d+件中\d+位/);
+    await expect(brief.getByRole("link", { name: "GitHubのREADME" })).toHaveAttribute("href", /github\.com\/.+#readme$/);
+    await expect(brief.getByRole("link", { name: /計算の根拠を見る/ })).toHaveAttribute("href", "/rankings/");
+    expect(problems).toEqual([]);
+  });
+
   test("ソース公開型のツールは区分と判定理由を出す", async ({ page }) => {
     await page.goto("/tools/n8n/");
     await expect(page.locator(".license-verdict__badge")).toHaveText(/ソース公開型/);

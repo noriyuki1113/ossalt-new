@@ -2591,3 +2591,22 @@ details.more > summary {
 @media (min-width: 720px) { .home-cards { grid-template-columns: 1fr 1fr; } }
 .home-cards .panel__body { height: 100%; display: flex; flex-direction: column; gap: 0.5rem; justify-content: space-between; }
 .home-rank__more { display: inline-block; margin-top: 0.75rem; }
+
+/* ---------- ツール詳細：選ぶ前の要約 ---------- */
+.brief { margin: 0 0 2rem; }
+.brief__cols { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+@media (min-width: 720px) { .brief__cols { grid-template-columns: 1fr 1fr; gap: 1.5rem; } }
+.brief__h { margin: 0 0 0.5rem; font-size: 0.9375rem; }
+.brief__list { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.625rem; }
+.brief__list li { position: relative; padding-left: 1.25rem; font-size: 0.875rem; line-height: 1.6; }
+.brief__list li::before { position: absolute; left: 0; font-weight: 700; }
+.brief__list--good li::before { content: "✓"; color: var(--midori); }
+.brief__list--check li::before { content: "△"; color: var(--yamabuki); }
+.brief__list small { display: block; color: var(--ink-2); font-size: 0.75rem; }
+.brief__facts { display: grid; grid-template-columns: 1fr; gap: 0.75rem; margin: 1.25rem 0 0; padding-top: 1rem; border-top: 1px solid var(--rule); }
+@media (min-width: 720px) { .brief__facts { grid-template-columns: 1fr 1fr; } }
+.brief__facts dt { font-size: 0.75rem; color: var(--ink-2); font-weight: 600; }
+.brief__facts dd { margin: 0.125rem 0 0; display: grid; gap: 0.125rem; font-size: 0.875rem; }
+.brief__facts small { color: var(--ink-2); font-size: 0.75rem; }
+.brief__link { display: flex; gap: 0.5rem; align-items: baseline; flex-wrap: wrap; }
+.brief__foot { margin: 1rem 0 0; font-size: 0.75rem; }
