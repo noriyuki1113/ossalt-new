@@ -15,3 +15,4 @@ test-results/
 reports/qa/runs/
 autodev/out/
 data-source/discovery/.etag-cache-openalt.json
+\n# Raw Google Search Console exports and generated private SEO reviews\nagency/data/\nagency/reports/\n
