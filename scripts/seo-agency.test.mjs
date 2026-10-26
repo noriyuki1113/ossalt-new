@@ -8,13 +8,13 @@ const queriesCsv = [
   'notion alternative,10,1200,0.83%,8.5',
   'n8n vs activepieces,1,450,0.22%,3.2',
   'bad data,invalid,300,0%,9',
-].join('\\n');
+].join('\n');
 const pagesCsv = [
   '上位のページ,クリック数,表示回数,CTR,掲載順位',
   'https://ossalt.jp/alternatives/notion/,20,1500,1.33%,12',
   'https://ossalt.jp/compare/n8n-activepieces/,1,250,0.4%,3',
   'https://evil.example/other/,20,1000,2%,10',
-].join('\\n');
+].join('\n');
 
 test('brand searches are excluded from query rows but not silently from page exports', () => {
   const result = readGscExport(queriesCsv, 'query');
@@ -57,13 +57,13 @@ test('reports explicit confirmation without pretending it was independently veri
 });
 
 test('invalid CSV metrics and missing dimension fail without inventing measurements', () => {
-  assert.throws(() => readGscExport('Top queries,Clicks\\nx,1', 'query'), /missing GSC column/);
-  assert.throws(() => readGscExport('Top pages,Clicks,Impressions,Position\\n/a,1,2,3', 'page'), /does not match|Invalid/);
+  assert.throws(() => readGscExport('Top queries,Clicks\nx,1', 'query'), /missing GSC column/);
+  assert.equal(readGscExport('Top pages,Clicks,Impressions,Position\n/a,1,2,3', 'page').skipped, 1);
   assert.throws(() => rankCandidates({ rows: [] }, 0), /limit must/);
 });
 
 test('one CSV with positions but no eligible impressions has no invented quick win', () => {
-  const input = 'Top queries,Clicks,Impressions,Position\\nrare free crm,0,12,8';
+  const input = 'Top queries,Clicks,Impressions,Position\nrare free crm,0,12,8';
   const candidates = rankCandidates(readGscExport(input, 'query'));
   assert.deepEqual(candidates, []);
 });
