@@ -9,7 +9,7 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseCsv } from './gsc-weekly-report.mjs';
 
-const normalize = (s) => String(s ?? '').normalize('NFKC').toLowerCase().trim().replace(/[\\s_-]+/g, '');
+const normalize = (s) => String(s ?? '').normalize('NFKC').toLowerCase().trim().replace(/[\s_-]+/g, '');
 const columns = {
   query: ['top queries', 'top search queries', 'query', 'queries', 'search query', '上位のクエリ', 'クエリ', '検索クエリ'],
   page: ['top pages', 'page', 'pages', 'url', '上位のページ', 'ページ'],
@@ -21,7 +21,7 @@ const columns = {
 const findIndex = (headers, aliases) => headers.findIndex((h) => aliases.some((x) => normalize(h) === normalize(x)));
 
 function number(value, label) {
-  const n = Number(String(value ?? '').replace(/[,\\s\\u00a0]/g, ''));
+  const n = Number(String(value ?? '').replace(/[,\s\u00a0]/g, ''));
   if (value == null || String(value).trim() === '' || !Number.isFinite(n) || n < 0)
     throw new Error('Invalid ' + label);
   return n;
@@ -34,7 +34,7 @@ function rate(value, clicks, impressions) {
   if (v > 1) throw new Error('Invalid CTR');
   return v;
 }
-const escapeCell = (s) => String(s).replace(/[|]/g, '\\|').replace(/[\\r\\n]/g, ' ').replace(/</g, '&lt;').slice(0, 220);
+const escapeCell = (s) => String(s).replace(/[|]/g, '\\|').replace(/[\r\n]/g, ' ').replace(/</g, '&lt;').slice(0, 220);
 const format = (n) => new Intl.NumberFormat('ja-JP', { maximumFractionDigits: 0 }).format(n);
 
 export function readGscExport(input, kind, { brand = 'ossalt' } = {}) {
@@ -88,7 +88,7 @@ export function rankCandidates(exportData, limit = 5) {
       priority = r.impressions * 0.5;
     } else return [];
     // Paths are a business relevance hint, NOT a claim of conversions.
-    const money = r.kind === 'page' && /\\/(alternatives|compare|licenses)\\//.test(r.label);
+    const money = r.kind === 'page' && /\/(alternatives|compare|licenses)\//.test(r.label);
     return [{ ...r, reason, score: priority * (money ? 1.15 : 1) }];
   }).sort((a, b) => b.score - a.score || b.impressions - a.impressions || a.label.localeCompare(b.label)).slice(0, limit);
 }
@@ -101,7 +101,7 @@ function table(items) {
     (r.ctr * 100).toFixed(2) + '%', r.position.toFixed(1), escapeCell(r.reason)
   ].join(' | ') + ' |');
   if (!items.length) lines.push('| 基準に合う候補なし | — | — | — | — | 実際のデータを確認 |');
-  return lines.join('\\n');
+  return lines.join('\n');
 }
 
 export function renderAgencyReport({ queries, pages, period, brand = 'ossalt', pagesNonbrandConfirmed = false, generatedAt = new Date().toISOString().slice(0, 10) }) {
@@ -130,7 +130,7 @@ export function renderAgencyReport({ queries, pages, period, brand = 'ossalt', p
     '- sitemap / canonical / noindex / ビルド / 表示 / 一次情報を検証し、根拠を記録。',
     '- agency/LEDGER.mdに公開日と変更前データを記録。28日後の兆候・約90日後の方向性を比較（Googleの固定ルールではない）。',
     '- クリックと表示回数をコンバージョンや売上と混同しない。変換データが無ければ「未計測」。', ''
-  ].join('\\n');
+  ].join('\n');
 }
 
 function argumentsFrom(argv) {
