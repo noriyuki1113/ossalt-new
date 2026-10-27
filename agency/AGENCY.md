@@ -1,6 +1,17 @@
 # OSSALT SEO Agency — Operating Rules
 
+> 実行の手順は `agency/README.md`、運用モードは `.claude/skills/ossalt-seo/SKILL.md`、優先順位の考え方は `agency/PRIORITY.md`、成果物の雛形は `agency/templates/` にあります。
+
 One Claude Code agent, five **sequential** roles, with versioned handoffs. This is a decision and review workflow, not an autonomous publishing bot.
+
+## 部門と道具（すべて手動実行。定期実行のGitHub Actionsは追加しない）
+| 部門 | 成果物 | 使う道具（コードで処理できることはAIに任せない） |
+| --- | --- | --- |
+| Strategist | STRATEGY.md | `scripts/seo-agency.mjs`（GSC CSV→候補・採点）、`scripts/gsc-weekly-report.mjs` |
+| Writer | BRIEF.md、PAGE.md | `docs/content-writing-guide.md`、`scripts/content-check.mjs` |
+| Linker | LINKS.md | `scripts/seo-links.mjs`（データ上の関連と、実在のページ） |
+| Technician | TECH.md | `scripts/seo-audit.mjs`（ビルド済み `out/` の読み取り専用の監査） |
+| Analyst | LEDGER.md、WEEKLY.md | `scripts/seo-ledger.mjs`（28日・約90日の期限管理） |
 
 ## Order and outputs
 1. **Strategist:** read CLIENT.md, actual dated GSC exports, existing URLs and live search results. Write STRATEGY.md (proposal, not an assumed fact).

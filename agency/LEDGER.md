@@ -1,9 +1,9 @@
 # OSSALT SEO change ledger
 
-This is the **reviewed change log**, not an AI success claim. No SEO changes from this initiative have shipped as of 2026-10-27.
+公開した変更の記録です（`agency/ledger.json` から `node scripts/seo-ledger.mjs render` で作ります。直接編集しないでください）。
+リポジトリは公開されているため、Search Console の数値は書きません。変更前後の数値は、ignored の `agency/data/` に保存します。
+90日は計画上の目安で、Googleの固定ルールではありません。事実の誤りや技術的な不具合は、期限を待たず直します。
 
-| Ship date | URL | Exact query | Data window / baseline | Change + evidence | PR | 28-day check | ~90-day check | Outcome |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| _none yet_ | — | — | — | Awaiting GSC export and owner-approved target | — | — | — | Not evaluated |
-
-For each new row: record the precise GSC property, search type, country and device filter, and period for both baseline and follow-up. Do not treat an entire site's average position as the exact query/page position. Report conversions separately from impressions and clicks.
+| # | 公開日 | URL | 対象クエリ | 比較の条件（期間・検索の種類・国・デバイス） | 変更内容と根拠 | PR | 28日の確認 | 約90日の確認 | 備考 |
+| ---: | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| — | — | — | — | — | まだ公開した変更はありません | — | — | — | — |
