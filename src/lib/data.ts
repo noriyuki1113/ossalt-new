@@ -9,7 +9,8 @@ import {
 } from "./tools";
 import type { Requirement } from "./requirements";
 import type { Sponsor } from "./sponsors";
-import { buildComparePairs, classifyLicense, type ComparePair, type LicenseClass } from "./compare";
+import { buildComparePairs, classifyLicense, COMPARE_TOP_N, type ComparePair, type LicenseClass } from "./compare";
+import { listCompareGuideSlugs } from "./compare-guides";
 
 /**
  * JSONデータの読み込み（サーバー専用）
@@ -96,7 +97,7 @@ export function getCompetitor(slug: string): CompetitorGroup | undefined {
  * 各SaaSの代替のうち健全度の上位 COMPARE_TOP_N 件どうしを組む（src/lib/compare.ts）。
  */
 export function getComparePairs(): ComparePair[] {
-  return buildComparePairs(getActiveTools());
+  return buildComparePairs(getActiveTools(), COMPARE_TOP_N, listCompareGuideSlugs());
 }
 
 /** 指定したツールが含まれる比較ページ */
