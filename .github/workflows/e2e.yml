@@ -42,6 +42,8 @@ jobs:
       - name: ビルド
         env:
           NEXT_PUBLIC_SITE_URL: https://ossalt.jp
+          # For You の導線（機能フラグ）も含めて検証する。本番の公開は deploy-pages.yml の Variables で決まる
+          NEXT_PUBLIC_FEATURE_FOR_YOU: "1"
         run: npm run build
       - name: ブラウザのインストール
         run: npx playwright install --with-deps chromium

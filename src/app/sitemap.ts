@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { getActiveTools, getComparePairs, getCompetitors } from "@/lib/data";
 import { getBlogPosts } from "@/lib/blog";
 import { CATEGORIES } from "@/lib/categories";
-import { SITE } from "@/lib/site";
+import { FEATURES, SITE } from "@/lib/site";
 import { LICENSE_PAGES } from "@/lib/licenses";
 import { getCompareGuide } from "@/lib/compare-guides";
 
@@ -11,7 +11,7 @@ export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = SITE.url.replace(/\/$/, "");
 
-  const staticPages = ["/", "/tools/", "/categories/", "/alternatives/", "/alternatives/japan/", "/compare/", "/licenses/", "/japanese/", "/trending/", "/rankings/", "/changes/", "/api/", "/guide/", "/diagnosis/", "/cost-lab/", "/blog/", "/about/", "/editorial/", "/contact/", "/submit/", "/badge/", "/advertise/", "/privacy/", "/terms/", "/disclaimer/"];
+  const staticPages = ["/", "/tools/", "/categories/", "/alternatives/", "/alternatives/japan/", "/compare/", "/licenses/", "/japanese/", "/trending/", "/rankings/", "/changes/", "/api/", "/guide/", "/diagnosis/", ...(FEATURES.forYou ? ["/for-you/"] : []), "/cost-lab/", "/blog/", "/about/", "/editorial/", "/contact/", "/submit/", "/badge/", "/advertise/", "/privacy/", "/terms/", "/disclaimer/"];
 
   return [
     ...staticPages.map((p) => ({

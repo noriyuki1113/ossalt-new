@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { NAV, SITE, t } from "@/lib/site";
+import { FEATURES, NAV, SITE, t } from "@/lib/site";
 
 /**
  * サイトのロゴマーク。SaaSの選択肢の中からオープンソースの代替を1つ選ぶ、という
@@ -27,7 +27,7 @@ export function SiteHeader({ current }: { current?: string }) {
           <span className="brand__sub">.jp</span>
         </Link>
         <nav className="nav" aria-label="メインナビゲーション">
-          {NAV.map((item) => (
+          {[...NAV, ...(FEATURES.forYou ? [{ href: "/for-you/", label: "For You" }] : [])].map((item) => (
             <Link
               key={item.href}
               href={item.href}
