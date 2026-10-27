@@ -158,6 +158,15 @@ test.describe("OSS一覧 Phase 2 — カード表示と大量データ", () => {
     await expect(page.locator(".hero__actions").getByRole("link", { name: "公式サイト" })).toBeVisible();
   });
 
+  test("最終コミットが1年以上前のツールは、詳細ページの先頭に事実を表示し、更新中のツールには出さない", async ({ page }) => {
+    await page.goto("/tools/helpy/");
+    const notice = page.locator(".notice--warn", { hasText: "更新が1年以上ありません" });
+    await expect(notice).toBeVisible();
+    await expect(notice).toContainText("最終コミットは");
+    await page.goto("/tools/n8n/");
+    await expect(page.getByText("更新が1年以上ありません")).toHaveCount(0);
+  });
+
   test("検索欄とカテゴリ列が画面幅に収まる（チップ列は横スクロール）", async ({ page }) => {
     await page.goto("/tools/");
     const vw = page.viewportSize()!.width;

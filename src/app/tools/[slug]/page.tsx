@@ -32,7 +32,7 @@ import { getStanding } from "@/lib/ranking-positions";
 import { buildToolBrief } from "@/lib/tool-brief";
 import { LICENSE_CLASS_LABELS, LICENSE_GROUP_LABELS, classifyLicense, licenseGroupOf, licenseReason } from "@/lib/compare";
 import { getLicensePage } from "@/lib/licenses";
-import { formatDate, licenseLabel, slugifyCompetitor } from "@/lib/tools";
+import { formatDate, getMaintenanceWarning, licenseLabel, slugifyCompetitor } from "@/lib/tools";
 import { vpsPlacementFor } from "@/lib/affiliate-context";
 import { toSearchParams as costLabParams } from "@/lib/cost-lab";
 
@@ -164,6 +164,13 @@ export default async function ToolDetailPage({
               <p className="notice notice--warn" style={{ marginBottom: "1.25rem" }}>
                 <strong>{t("health.archived")}</strong>{" "}{"このツールは一覧・カテゴリ・比較のページには表示していません（このページのみ残しています）。"}
                 {"新規に導入する場合は、下記の「"}{competitor} の代替を全部見る」から他の候補もあわせてご確認ください。
+              </p>
+            )}
+
+            {!tool.github_archived && !tool.maintenance_notice && getMaintenanceWarning(tool)?.level === "stale" && (
+              <p className="notice notice--warn" style={{ marginBottom: "1.25rem" }}>
+                <strong>更新が1年以上ありません</strong>{" "}
+                {`最終コミットは${formatDate(tool.last_commit)}です。完成して安定しているソフトは更新が少なくなりますが、脆弱性の修正が行われない可能性があります。導入前に、公式の最新の状況を確認してください。`}
               </p>
             )}
 
