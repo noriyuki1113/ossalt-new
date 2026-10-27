@@ -123,7 +123,7 @@ test.describe("OSS一覧 Phase 2 — カード表示と大量データ", () => {
     const card = page.locator("article.browse-card").filter({ hasText: "Immich" }).first();
     await expect(card).toBeVisible();
     await card.locator("a.row__link").click();
-    await expect(page).toHaveURL(/\\/tools\\/immich\\/$/);
+    await expect(page).toHaveURL(/\/tools\/immich\/$/);
   });
 
   test("並び替え後も表示は50件ずつで、もっと見ると追加される", async ({ page }) => {
