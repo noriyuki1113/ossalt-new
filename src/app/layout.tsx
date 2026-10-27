@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
+import "./ui-refresh.css";
 import { SITE, UMAMI_SCRIPT_URL, UMAMI_SITE_ID } from "@/lib/site";
 
 export const metadata: Metadata = {

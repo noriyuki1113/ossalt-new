@@ -57,7 +57,7 @@ export default function HomePage() {
   return (
     <>
       <SiteHeader current="/" />
-      <main className="wrap">
+      <main className="wrap home-page">
         <section className="hero">
           <p className="hero__eyebrow">Open Source Alternatives / for Japanese teams</p>
           <h1 className="hero__title">
