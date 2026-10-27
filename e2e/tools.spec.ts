@@ -109,3 +109,48 @@ test.describe("ツール詳細ページ", () => {
     await expect(page.locator(".license-verdict__reason")).toContainText("OSI承認のオープンソースライセンスではありません");
   });
 });
+
+
+test.describe("OSS一覧 Phase 2 — カード表示と大量データ", () => {
+  test("一覧とカード表示を切り替え、同じツールへ移動できる", async ({ page }) => {
+    await page.goto("/tools/");
+    const switcher = page.getByRole("group", { name: "表示形式" });
+    await expect(switcher.getByRole("button", { name: "一覧" })).toHaveAttribute("aria-pressed", "true");
+    await switcher.getByRole("button", { name: "カード" }).click();
+    await expect(page.locator("article.browse-card")).toHaveCount(50);
+    await expect(page.locator("article.row")).toHaveCount(0);
+    await page.getByRole("searchbox").fill("immich");
+    const card = page.locator("article.browse-card").filter({ hasText: "Immich" }).first();
+    await expect(card).toBeVisible();
+    await card.locator("a.row__link").click();
+    await expect(page).toHaveURL(/\/tools\/immich\/$/);
+  });
+
+  test("並び替え後も表示は50件ずつで、もっと見ると追加される", async ({ page }) => {
+    await page.goto("/tools/");
+    await page.locator("select.select").first().selectOption("name");
+    const rows = page.locator("article.row");
+    await expect(rows).toHaveCount(50);
+    await page.getByRole("button", { name: /もっと見る/ }).click();
+    await expect(rows).toHaveCount(100);
+    await expect(page.locator(".browser-results-summary")).toContainText("100件を表示");
+  });
+
+  test("検索条件のチップでその条件だけを解除できる", async ({ page }) => {
+    await page.goto("/tools/");
+    await page.getByRole("searchbox").fill("immich");
+    await expect(page.locator(".browser-active-filters")).toContainText("immich");
+    await page.getByRole("button", { name: "検索: immichを解除" }).click();
+    await expect(page.getByRole("searchbox")).toHaveValue("");
+    await expect(page.locator("article.row")).toHaveCount(50);
+  });
+
+  test("検索欄とカテゴリ列が画面幅に収まる（チップ列は横スクロール）", async ({ page }) => {
+    await page.goto("/tools/");
+    const vw = page.viewportSize()!.width;
+    const box = await page.getByRole("searchbox").boundingBox();
+    expect(box!.x + box!.width).toBeLessThanOrEqual(vw);
+    const sw = await page.evaluate(() => document.documentElement.scrollWidth);
+    expect(sw).toBeLessThanOrEqual(vw);
+  });
+});

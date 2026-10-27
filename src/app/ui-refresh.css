@@ -223,6 +223,227 @@
   }
 }
 
+/* Phase 2 — result count, switchable list/card layout, removable filters */
+.tools-page .browser-results-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0.8rem 1.15rem;
+  background: #f7f8f4;
+  border-bottom: 1px solid var(--rule);
+}
+
+.tools-page .browser-results-summary {
+  margin: 0;
+  color: var(--ink-2);
+  font-size: 0.8125rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.tools-page .browser-view-switch {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--rule-strong);
+  border-radius: 8px;
+  padding: 3px;
+  background: #fff;
+}
+
+.tools-page .browser-view-switch button {
+  min-height: 38px;
+  padding: 0.35rem 0.9rem;
+  background: transparent;
+  border: 0;
+  border-radius: 5px;
+  color: var(--ink-2);
+  font: inherit;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tools-page .browser-view-switch button[aria-pressed="true"] {
+  background: var(--indigo);
+  color: #fff;
+}
+
+.tools-page .browser-view-switch button:focus-visible,
+.tools-page .browser-active-filters__item:focus-visible {
+  outline: 2px solid var(--shu);
+  outline-offset: 2px;
+}
+
+.tools-page .browser-active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  padding: 0.7rem 1.15rem;
+  border-bottom: 1px solid var(--rule);
+  background: #fff;
+}
+
+.tools-page .browser-active-filters__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 100%;
+  min-height: 38px;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--indigo);
+  background: var(--indigo-soft);
+  color: var(--indigo);
+  font: inherit;
+  font-size: 0.8125rem;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+.tools-page .browser-ledger {
+  padding: 0 1.15rem 0.5rem;
+}
+
+.tools-page .browser-ledger .row {
+  transition: background 150ms ease;
+}
+
+.tools-page .browse-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 1.15rem;
+  background: #f8f9f5;
+}
+
+.tools-page .browse-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  padding: 1.15rem;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(18, 22, 26, 0.025);
+}
+
+.tools-page .browse-card:hover {
+  border-color: var(--indigo);
+  box-shadow: 0 7px 20px rgba(18, 22, 26, 0.075);
+}
+
+.tools-page .browse-card__heading {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.tools-page .browse-card__heading-copy {
+  min-width: 0;
+}
+
+.tools-page .browse-card__name {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-family: var(--font-display);
+}
+
+.tools-page .browse-card__name a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.tools-page .browse-card__alternative {
+  margin: 0.2rem 0 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+
+.tools-page .browse-card__preview {
+  width: 100%;
+  height: auto;
+  max-height: 165px;
+  aspect-ratio: 16 / 9;
+  margin-top: 0.9rem;
+  object-fit: cover;
+  object-position: top center;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+}
+
+.tools-page .browse-card__description {
+  margin: 0.8rem 0;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: var(--ink-2);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.tools-page .browse-card__tags {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: auto;
+  padding-top: 0.6rem;
+}
+
+.tools-page .browse-card__tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 25px;
+  max-width: 100%;
+  padding: 0.2rem 0.45rem;
+  border-radius: 5px;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  font-size: 0.7rem;
+  color: var(--ink-2);
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.tools-page .browse-card__metrics {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.8rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--rule);
+}
+
+.tools-page .browse-card__metrics > div {
+  display: grid;
+  gap: 0.1rem;
+}
+
+.tools-page .browse-card__metric-label {
+  font-size: 0.65rem;
+  color: var(--ink-3);
+}
+
+.tools-page .browse-card__metric-value {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 760px) {
+  .tools-page .browse-grid { grid-template-columns: 1fr; padding: 0.7rem; gap: 0.7rem; }
+  .tools-page .browse-card { padding: 1rem; }
+  .tools-page .browser-ledger { padding-inline: 0.75rem; }
+  .tools-page .browser-results-header { padding-inline: 0.75rem; }
+  .tools-page .browser-active-filters { padding-inline: 0.75rem; }
+}
+
 /* 見出しの強調語「動かせる。」が行末で「る。」だけ残らないようにする */
 .home-page .hero__title .hl {
   display: inline-block;
