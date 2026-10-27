@@ -529,3 +529,21 @@
     font-size: clamp(1.15rem, calc((100vw - 4.6rem) / 12.6), 2.1rem);
   }
 }
+
+/* OSS詳細ページ：目次・本文中のリンクのタップ領域を24px以上にする */
+.toc a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+}
+
+.brief__facts a,
+.positioning a {
+  display: inline-block;
+  padding-block: 0.15rem;
+}
+
+/* 「向いている使い方」は要点の直後に置くので、下の余白をそろえる */
+.detail-layout .positioning {
+  margin-block: 0 1.5rem;
+}

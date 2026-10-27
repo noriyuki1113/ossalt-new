@@ -146,15 +146,19 @@ export default async function ToolDetailPage({
               {tool.description_ja ? ` ${tool.description_ja}` : ""}
             </p>
 
-            <KeyFacts tool={tool} stars={starContext(tool, getActiveTools())} categoryName={category?.nameJa} />
-
-            <ToolBriefPanel
-              name={tool.name}
-              brief={buildToolBrief(tool, TOOL_DIAGNOSIS[tool.id], getStanding(tool.id))}
-              asOf={formatDate(meta.stars_as_of ?? meta.built_at)}
-            />
-
-            <WatchSignalPanel githubUrl={tool.github_url} />
+            <div className="hero__actions" style={{ marginBottom: "1.25rem" }}>
+              <a className="btn btn--primary" href={tool.url} rel="noopener">
+                公式サイト
+              </a>
+              <a className="btn" href={tool.github_url} rel="noopener">
+                GitHub
+              </a>
+              {competitorSlug && (
+                <Link className="btn" href={`/alternatives/${competitorSlug}/`}>
+                  {competitor} の代替を全部見る
+                </Link>
+              )}
+            </div>
 
             {tool.github_archived && (
               <p className="notice notice--warn" style={{ marginBottom: "1.25rem" }}>
@@ -173,19 +177,33 @@ export default async function ToolDetailPage({
               </p>
             )}
 
-            <div className="hero__actions" style={{ marginBottom: "2rem" }}>
-              <a className="btn btn--primary" href={tool.url} rel="noopener">
-                公式サイト
-              </a>
-              <a className="btn" href={tool.github_url} rel="noopener">
-                GitHub
-              </a>
-              {competitorSlug && (
-                <Link className="btn" href={`/alternatives/${competitorSlug}/`}>
-                  {competitor} の代替を全部見る
-                </Link>
-              )}
-            </div>
+            <KeyFacts tool={tool} stars={starContext(tool, getActiveTools())} categoryName={category?.nameJa} />
+
+            {positions.length > 0 && (
+              <section className="positioning">
+                <h2 className="h3 mt0">{`${tool.name}が向いている使い方`}</h2>
+                <ul>
+                  {positions.map((p) => (
+                    <li key={p.slug}>
+                      <strong>{`${p.name}の代わりとして`}</strong>
+                      {"："}
+                      {p.fit}
+                      {"（"}
+                      <Link href={`/alternatives/${p.slug}/`}>{`${p.name}の代替をすべて見る`}</Link>
+                      {"）"}
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
+            <ToolBriefPanel
+              name={tool.name}
+              brief={buildToolBrief(tool, TOOL_DIAGNOSIS[tool.id], getStanding(tool.id))}
+              asOf={formatDate(meta.stars_as_of ?? meta.built_at)}
+            />
+
+            <WatchSignalPanel githubUrl={tool.github_url} />
 
             {tool.preview && (
               <figure className="tool-preview">
@@ -216,24 +234,6 @@ export default async function ToolDetailPage({
                   </span>
                 ))}
               </p>
-            )}
-
-            {positions.length > 0 && (
-              <section className="positioning">
-                <h2 className="h3 mt0">{`${tool.name}が向いている使い方`}</h2>
-                <ul>
-                  {positions.map((p) => (
-                    <li key={p.slug}>
-                      <strong>{`${p.name}の代わりとして`}</strong>
-                      {"："}
-                      {p.fit}
-                      {"（"}
-                      <Link href={`/alternatives/${p.slug}/`}>{`${p.name}の代替をすべて見る`}</Link>
-                      {"）"}
-                    </li>
-                  ))}
-                </ul>
-              </section>
             )}
 
             {guide && (
