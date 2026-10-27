@@ -128,10 +128,15 @@ export function compareSlug(id1: string, id2: string): string {
 /**
  * アーカイブ済みを除いたツール一覧から、比較ページの組み合わせを作る。
  * 同じ primary_competitor の中で健全度の上位 topN 件どうしを組み合わせる。
+ *
+ * keepSlugs：手書きの解説（content/compare/）がある組は、上位N件から外れても残す。
+ * 掲載を増やして順位が入れ替わったときに、すでに公開している比較ページが消えて
+ * （404になって）しまうのを防ぐ。同じ primary_competitor の2つがともに掲載中のときだけ。
  */
 export function buildComparePairs(
   tools: Pick<Tool, "id" | "primary_competitor" | "health_score" | "github_archived">[],
-  topN = COMPARE_TOP_N
+  topN = COMPARE_TOP_N,
+  keepSlugs: ReadonlySet<string> = new Set()
 ): ComparePair[] {
   const groups = new Map<string, typeof tools>();
   for (const t of tools) {
@@ -149,6 +154,19 @@ export function buildComparePairs(
       for (let j = i + 1; j < top.length; j += 1) {
         const [a, b] = [top[i].id, top[j].id].sort();
         pairs.push({ slug: `${a}-vs-${b}`, a, b, competitor });
+      }
+    }
+    if (keepSlugs.size > 0) {
+      const have = new Set(pairs.map((p) => p.slug));
+      for (let i = 0; i < list.length; i += 1) {
+        for (let j = i + 1; j < list.length; j += 1) {
+          const [a, b] = [list[i].id, list[j].id].sort();
+          const slug = `${a}-vs-${b}`;
+          if (keepSlugs.has(slug) && !have.has(slug)) {
+            have.add(slug);
+            pairs.push({ slug, a, b, competitor });
+          }
+        }
       }
     }
   }
