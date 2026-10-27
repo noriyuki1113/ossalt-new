@@ -67,8 +67,8 @@ export default function HomePage() {
             <br />
             <span className="nb">
               <em>自分のサーバ</em>で
+              <span className="hl">動かせる。</span>
             </span>
-            <span className="hl">動かせる。</span>
           </h1>
           <SaasSearch entries={saasEntries} />
           <PopularSaas entries={saasEntries} />
