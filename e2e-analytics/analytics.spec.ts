@@ -120,6 +120,8 @@ test.describe("同意後", () => {
     for (const forbidden of ["社外秘", "%E7%A4%BE", "secret=abc", "#frag", "?q="]) {
       expect(everything, `送信内容に「${forbidden}」が含まれている`).not.toContain(forbidden);
     }
+    // GeoIP（IPからの国・都市の推定）は、すべてのイベントで無効
+    for (const e of posthog.events()) expect(e.properties.$geoip_disable, `${e.event} に $geoip_disable がない`).toBe(true);
     // Cookie は使わない（localStorageのみ）
     expect(await context.cookies()).toEqual([]);
   });

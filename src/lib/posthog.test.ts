@@ -76,7 +76,9 @@ test("プロパティ: URL系・リファラ・IP・位置情報・$setを無害
   assert.equal(out.$pathname, "/tools/");
   for (const k of ["$ip", "$geoip_city_name", "$set"]) assert.equal(k in out, false, k);
   assert.equal(out.custom, "kept");
-  assert.deepEqual(sanitizeProperties(undefined), {});
+  // GeoIP（IPから国・都市を付ける処理）は、すべてのイベントで無効にする
+  assert.equal(out.$geoip_disable, true);
+  assert.equal(sanitizeProperties(undefined).$geoip_disable, true);
 });
 
 test("プロパティ: SDKが付ける未知のURL項目（$session_entry_url など）も、クエリ・ハッシュを落とす", () => {

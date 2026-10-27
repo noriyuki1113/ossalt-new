@@ -91,7 +91,7 @@ SDK は `posthog-js`（公式。Apache-2.0 AND MIT）を **動的import** で読
 | アンケート・フラグ・実験の取得を無効 | `disable_surveys`、`disable_web_experiments`、`advanced_disable_flags`。外部スクリプトの読み込みも無効 |
 | Cookie を使わない | `persistence: "localStorage"`（Cookieは0件であることを確認） |
 | 個人のプロフィールを作らない | `person_profiles: "never"` |
-| IPを保存しない | `ip: false`。`before_send` でも `$ip`・位置情報・`$set` を削除 |
+| IPを保存しない・位置情報を付けない | **すべてのイベントに `$geoip_disable: true`**（GeoIPを無効）。`before_send` で `$ip`・位置情報・`$set` を削除。**IPアドレスそのものは、PostHogの管理画面の「Discard client IP data」を ON にして保存させない**（運営者の設定。§7）。※SDKの `ip` オプションは効果がない（非推奨）ため使っていない |
 | 検索語・URLのクエリを送らない | `before_send` で、すべてのURL型の値を「オリジン＋パス」に（リファラはオリジンのみ）。イベントの属性に検索語を持たない（実通信で検証。**この検証で `$session_entry_url` にクエリが入る漏れを見つけ、修正した**） |
 | Do Not Track を尊重 | `respect_dnt: true` |
 | ボットを送らない | SDKの既定（`opt_out_useragent_filter: false`）。E2Eのテスト用ビルドだけ許可 |
@@ -174,6 +174,7 @@ GitHub の Variables に設定する（Secrets ではない）。`deploy-pages.y
 **実際のPostHogプロジェクトへの送信は、確認できていない**（トークンがないため。上のテストは、SDKが実際に出す通信をモックで受けて確認したもので、サーバー側の受理は含まない）。
 
 ## 7. 運営者が行う作業
+0. **PostHog の管理画面で、IPを保存しない設定にする**：Project settings →「IP data capture configuration」（IPデータの取得設定）→ **「Discard client IP data」を ON**。これをしないと、サーバーがリクエストのIPアドレスを保存する（コード側では止められない）。
 1. **PostHog**：アカウント／プロジェクトを作成（無料枠。課金の設定はしない）→ 地域を選ぶ → Project Token（`phc_…`）とホストを確認 → GitHub の Variables に `NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN`・`NEXT_PUBLIC_POSTHOG_HOST` を設定 → 公開ワークフローを実行（**承認後**）。
 2. **公開後の実画面での確認**：バナーが出る／「同意しない」で通信が出ない（ブラウザの開発者ツールのネットワーク）／「同意する」でPostHogの「Live events」に `$pageview` が出る／イベントの属性に検索語がない。
 3. **PostHog**：ダッシュボード A・B・C を、§5 の手順で作成。

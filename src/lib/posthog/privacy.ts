@@ -38,6 +38,10 @@ export function sanitizeProperties<T extends Record<string, unknown>>(props: T |
   for (const k of URL_KEYS) if (k in out) out[k] = stripUrl(out[k]);
   for (const k of REFERRER_KEYS) if (k in out) out[k] = originOf(out[k]);
   for (const k of DROP_KEYS) delete out[k];
+  // GeoIP（IPアドレスから国・都市・大陸などを付ける処理）を、イベントごとに無効にする。
+  // SDKの `ip` オプションは効果がない（非推奨）ため、PostHog に「GeoIPを使わない」と伝えるのは、この属性。
+  // IPアドレスそのものを保存しない設定は、PostHogの管理画面（Discard client IP data）で行う。
+  out.$geoip_disable = true;
   // SDKが付ける項目は将来増えうる。上の既知のキー以外でも、http(s)のURLに見える文字列は、必ず無害化する
   // （名前に referrer を含むものはオリジンだけ、それ以外はオリジン＋パスだけ）。
   for (const [k, v] of Object.entries(out)) {
