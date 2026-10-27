@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ForYouLink } from "@/components/for-you-link";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs, JsonLd, SiteFooter, SiteHeader } from "@/components/site-chrome";
@@ -25,6 +26,10 @@ import { getToolGuide } from "@/lib/tool-guides";
 import { starContext } from "@/lib/star-context";
 import { buildToolFaq } from "@/lib/tool-faq";
 import { getAlternativeGuide } from "@/lib/alternative-guides";
+import { ToolBriefPanel } from "@/components/tool-brief";
+import { TOOL_DIAGNOSIS } from "@/lib/diagnosis-data";
+import { getStanding } from "@/lib/ranking-positions";
+import { buildToolBrief } from "@/lib/tool-brief";
 import { LICENSE_CLASS_LABELS, LICENSE_GROUP_LABELS, classifyLicense, licenseGroupOf, licenseReason } from "@/lib/compare";
 import { getLicensePage } from "@/lib/licenses";
 import { formatDate, licenseLabel, slugifyCompetitor } from "@/lib/tools";
@@ -142,6 +147,12 @@ export default async function ToolDetailPage({
             </p>
 
             <KeyFacts tool={tool} stars={starContext(tool, getActiveTools())} categoryName={category?.nameJa} />
+
+            <ToolBriefPanel
+              name={tool.name}
+              brief={buildToolBrief(tool, TOOL_DIAGNOSIS[tool.id], getStanding(tool.id))}
+              asOf={formatDate(meta.stars_as_of ?? meta.built_at)}
+            />
 
             <WatchSignalPanel githubUrl={tool.github_url} />
 
@@ -394,6 +405,9 @@ export default async function ToolDetailPage({
           <section id="compare" className="mt2">
             <h2 className="h3">{competitor} の代替候補を比較</h2>
             <ComparisonTable tools={compareSet} />
+            {competitorSlug && (
+              <ForYouLink query={{ saas: competitorSlug }}>{`あなたの条件（ライセンス・Docker・日本語など）で、${competitor}の代替を並べ替える`}</ForYouLink>
+            )}
             <p className="muted mt1" style={{ fontSize: "0.75rem" }}>
               {t("alt.compareNote")}
             </p>

@@ -4,6 +4,8 @@ import Link from "next/link";
 import { Suspense, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import { trackEvent } from "@/lib/analytics";
+import { FEATURES } from "@/lib/site";
+import { encodeQuery, queryFromDiagnosis } from "@/lib/recommend/query";
 import {
   DIFFICULTY_LABELS,
   decodeAnswersFromSearchParams,
@@ -122,6 +124,16 @@ function DiagnosisResultInner({ toolInputs, healthPercentiles, toolFacts, compar
           )}`}
         />
       </div>
+
+      {FEATURES.forYou && (
+        <div className="notice notice--info mt2">
+          <strong>条件を少しずつ変えて比べたい場合</strong>
+          <br />
+          {"この診断の回答を引き継いで、ライセンス・Docker・日本語などの条件を画面で切り替えながら、理由つきの候補を見られます。"}
+          <br />
+          <Link href={`/for-you/?${encodeQuery(queryFromDiagnosis(answers)).toString()}`}>OSSALT For Youで条件を調整する</Link>
+        </div>
+      )}
 
       <p className="diag-note">
         <Link
