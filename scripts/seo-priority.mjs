@@ -77,6 +77,20 @@ export function ctrMedianByBand(rows) {
  * ------------------------------------------------------------------ */
 
 export const MIN_IMPRESSIONS = 100;
+/** 入力の表示回数の合計がこれ未満の小さなサイトでは、しきい値を下げる（100回以上の行がほとんど無いため）。下げたことはレポートに明記する */
+export const SMALL_SITE_IMPRESSIONS = 50_000;
+export const SMALL_SITE_MIN = 30;
+export function resolveMinImpressions(rows, requested = "auto") {
+  if (requested !== "auto") {
+    const n = Number(requested);
+    if (!Number.isInteger(n) || n < 1) throw new Error("--min-impressions は1以上の整数か auto");
+    return { value: n, reason: "指定された値" };
+  }
+  const total = rows.reduce((s, r) => s + r.impressions, 0);
+  return total < SMALL_SITE_IMPRESSIONS
+    ? { value: SMALL_SITE_MIN, reason: `表示回数の合計が${total.toLocaleString("ja-JP")}回（${SMALL_SITE_IMPRESSIONS.toLocaleString("ja-JP")}回未満）の小さなサイトなので、しきい値を下げた（100回では候補がほとんど残らないため）` }
+    : { value: MIN_IMPRESSIONS, reason: "既定値" };
+}
 
 /** 施策の種類（仮説の実装コスト：小=1、中=2、大=3） */
 export const ACTIONS = {
@@ -89,8 +103,8 @@ export const ACTIONS = {
  * 1行（クエリ、ページ、またはクエリ×ページ）に対する候補判定。候補にならなければ null。
  * 戻り値の factors は、点数に効いた係数を、実測／仮説の区分つきで列挙する。
  */
-export function scoreRow(row, { bands, pageState = null } = {}) {
-  if (row.impressions < MIN_IMPRESSIONS) return null;
+export function scoreRow(row, { bands, pageState = null, minImpressions = MIN_IMPRESSIONS } = {}) {
+  if (row.impressions < minImpressions) return null;
   const band = bandOf(row.position);
   const med = bands?.[band] ?? null;
   const ctrGap = med != null && row.ctr < med;
@@ -130,18 +144,18 @@ export function scoreRow(row, { bands, pageState = null } = {}) {
   };
 }
 
-export function rankRows(rows, { limit = 5, siteState = null } = {}) {
+export function rankRows(rows, { limit = 5, siteState = null, minImpressions = MIN_IMPRESSIONS } = {}) {
   if (!Number.isInteger(limit) || limit < 1 || limit > 50) throw new Error("limit must be 1..50");
   const bands = ctrMedianByBand(rows);
   const out = [];
   for (const row of rows) {
     const page = row.page ?? (row.kind === "page" ? row.label : null);
     const pageState = page && siteState ? siteState(pathOf(page)) : null;
-    const s = scoreRow(row, { bands, pageState });
+    const s = scoreRow(row, { bands, pageState, minImpressions });
     if (s) out.push(s);
   }
   out.sort((a, b) => b.score - a.score || b.impressions - a.impressions || String(a.label ?? a.query).localeCompare(String(b.label ?? b.query)));
-  return { items: out.slice(0, limit), total: out.length, bands };
+  return { items: out.slice(0, limit), total: out.length, bands, minImpressions };
 }
 
 /** 検索パターンごとの実測の合計（需要の判定ではなく、手元のデータの内訳） */

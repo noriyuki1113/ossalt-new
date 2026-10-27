@@ -15,7 +15,7 @@ import { readFile, mkdir, writeFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseCsv } from './gsc-weekly-report.mjs';
-import { patternSummary, rankRows } from './seo-priority.mjs';
+import { patternSummary, rankRows, resolveMinImpressions, pathOf } from './seo-priority.mjs';
 
 const normalize = (s) => String(s ?? '').normalize('NFKC').toLowerCase().trim().replace(/[\s_-]+/g, '');
 const columns = {
@@ -101,6 +101,44 @@ export function readGscExport(input, kind, { brand = 'ossalt' } = {}) {
   return { kind, rows: parsed, examined: rows.length - 1, skipped, brandExcluded };
 }
 
+/** 日付別のCSV（日付・クリック数・表示回数・CTR・掲載順位）。週ごとの合計を返す（7日に満たない端数の週は含めない） */
+export function readDaily(input) {
+  const text = String(input).replace(/^\uFEFF/, '');
+  const rows = parseCsv(text, { delimiter: detectDelimiter(text) });
+  if (rows.length < 2) throw new Error('daily: GSC CSV needs a header and rows');
+  const h = rows[0];
+  const iDate = findIndex(h, ['日付', 'date']), iC = findIndex(h, columns.clicks), iI = findIndex(h, columns.impressions);
+  if (iDate < 0 || iC < 0 || iI < 0) throw new Error('daily: missing GSC column (date / clicks / impressions)');
+  const days = [];
+  for (const r of rows.slice(1)) {
+    try {
+      const date = String(r[iDate]).trim();
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) continue;
+      days.push({ date, clicks: number(r[iC], 'clicks'), impressions: number(r[iI], 'impressions') });
+    } catch { /* 不正な行は補わない */ }
+  }
+  days.sort((a, b) => a.date.localeCompare(b.date));
+  const weeks = [];
+  for (let i = 0; i + 7 <= days.length; i += 7) {
+    const w = days.slice(i, i + 7);
+    weeks.push({ from: w[0].date, to: w[6].date, clicks: w.reduce((s, d) => s + d.clicks, 0), impressions: w.reduce((s, d) => s + d.impressions, 0) });
+  }
+  return { days, weeks, from: days[0]?.date ?? null, to: days.at(-1)?.date ?? null };
+}
+
+/** ページCSVのURLを、ビルド済みサイトと照合して分類する（末尾スラッシュの有無はそろえて照合し、無い場合は別に数える） */
+export function classifyPageUrls(pageRows, siteState) {
+  const groups = { live: [], redirect: [], missing: [] };
+  for (const r of pageRows) {
+    const path = pathOf(r.label);
+    const norm = path.endsWith('/') ? path : path + '/';
+    const st = siteState(norm);
+    const kind = !st.exists ? 'missing' : st.refresh ? 'redirect' : 'live';
+    groups[kind].push({ path, slash: path.endsWith('/'), impressions: r.impressions, clicks: r.clicks, position: r.position });
+  }
+  return groups;
+}
+
 /** 互換用：行の候補だけを返す（採点は seo-priority.mjs） */
 export function rankCandidates(exportData, limit = 5, opts = {}) {
   return rankRows(exportData.rows, { limit, ...opts }).items;
@@ -161,12 +199,16 @@ export function renderNoDataReport({ generatedAt = new Date().toISOString().slic
 }
 
 export function renderAgencyReport({
-  queries, pages, pairs = null, period, brand = 'ossalt', pagesNonbrandConfirmed = false, siteState = null,
-  generatedAt = new Date().toISOString().slice(0, 10),
+  queries, pages, pairs = null, daily = null, period, brand = 'ossalt', pagesNonbrandConfirmed = false, siteState = null,
+  minImpressions = 'auto', generatedAt = new Date().toISOString().slice(0, 10),
 }) {
-  const q = rankRows(queries.rows, { limit: 5 });
-  const p = rankRows(pages.rows, { limit: 5, siteState });
-  const pr = pairs ? rankRows(pairs.rows, { limit: 5, siteState }) : null;
+  const minQ = resolveMinImpressions(queries.rows, minImpressions);
+  const minP = resolveMinImpressions(pages.rows, minImpressions);
+  const q = rankRows(queries.rows, { limit: 5, minImpressions: minQ.value });
+  const p = rankRows(pages.rows, { limit: 5, siteState, minImpressions: minP.value });
+  const pr = pairs ? rankRows(pairs.rows, { limit: 5, siteState, minImpressions: resolveMinImpressions(pairs.rows, minImpressions).value }) : null;
+  const sum = (rows, k) => rows.reduce((s, r) => s + r[k], 0);
+  const qImp = sum(queries.rows, 'impressions'), pImp = sum(pages.rows, 'impressions');
   const summary = patternSummary(queries.rows);
   const L = [
     '# OSSALT SEO Agency — 週次レポート', '',
@@ -177,11 +219,32 @@ export function renderAgencyReport({
     '- クエリ: ' + queries.examined + '行 / 読み飛ばし' + queries.skipped + '行 / ブランド除外' + queries.brandExcluded + '行',
     '- ページ: ' + pages.examined + '行 / 読み飛ばし' + pages.skipped + '行',
     '- クエリ×ページ: ' + (pairs ? pairs.examined + '行 / 読み飛ばし' + pairs.skipped + '行 / ブランド除外' + pairs.brandExcluded + '行' : '**未取得**（URLとクエリの対応は、この週は評価できない）'),
+    '- 候補にする表示回数のしきい値: クエリ' + minQ.value + '回以上・ページ' + minP.value + '回以上（' + minQ.reason + '）',
+    '- クエリCSVの表示合計 ' + format(qImp) + '回 / ページCSVの表示合計 ' + format(pImp) + '回' + (pImp ? `（クエリCSVはページCSVの${Math.round(qImp / pImp * 100)}%。GSCは、ごく少数のユーザーしか検索しない匿名のクエリを一覧から省くため、クエリの一覧は全体の一部）` : ''),
     '- ビルド済みサイトとの照合: ' + (siteState ? 'あり（転送ページ・noindexのページを候補から外す）' : 'なし（--site out を渡すと、転送ページ・noindexのページを検出できる）'),
     '',
     '> 点数の根拠は各行の「実測」「仮説」の区分で見分けられます。**実測**はCSV・ビルド結果の数値、**仮説**はOSSALT側の分類・重みで、需要や成果の証明ではありません。',
     '> クエリ集計とページ集計は別々の候補リストです。平均順位は集計の平均で、個別のクエリとURLの対応は示しません。', '',
   ];
+  if (daily?.weeks.length) {
+    L.push('## 推移（日付別CSV・実測）', '', '日付: ' + daily.from + '〜' + daily.to, '', '| 週（7日） | 表示 | クリック | 前の週との表示の比 |', '| --- | ---: | ---: | ---: |');
+    daily.weeks.forEach((w, i) => L.push(`| ${w.from}〜${w.to} | ${format(w.impressions)} | ${format(w.clicks)} | ${i && daily.weeks[i - 1].impressions ? (w.impressions / daily.weeks[i - 1].impressions).toFixed(2) + '倍' : '—'} |`));
+    L.push('', '> 直近の日は集計が確定していないことがあります（GSCは最新の数日分を暫定値として扱う）。', '');
+  }
+  if (siteState) {
+    const g = classifyPageUrls(pages.rows, siteState);
+    const agg = (a) => `${a.length}件・表示${format(sum(a, 'impressions'))}回・クリック${format(sum(a, 'clicks'))}`;
+    const noSlash = (a) => a.filter((x) => !x.slash);
+    L.push('## Technician — GSCに出ているURLと、現在のサイト（ビルド済み）の照合', '',
+      '| 状態 | ページ数・表示・クリック | うち末尾スラッシュ無しのURL |', '| --- | --- | --- |',
+      `| 現在のページ | ${agg(g.live)} | ${agg(noSlash(g.live))} |`,
+      `| 転送ページ（掲載をやめたURL。meta refresh） | ${agg(g.redirect)} | ${agg(noSlash(g.redirect))} |`,
+      `| 現在のサイトに無い | ${agg(g.missing)} | ${agg(noSlash(g.missing))} |`, '',
+      '> 末尾スラッシュ無しのURLは、旧サイトのURLがそのまま残っている可能性があります（このサイトは末尾スラッシュ付きが正）。数字のURLの転送は `docs/seo-cloudflare-redirects.md`（HTTP 301の適用待ち）を参照。件数は事実、原因は仮説です。', '');
+    const top = (a) => [...a].sort((x, y) => y.impressions - x.impressions).slice(0, 5).map((x) => `${escapeCell(x.path)}（表示${x.impressions}）`).join('、');
+    if (g.redirect.length) L.push('転送ページの上位: ' + top(g.redirect), '');
+    if (g.missing.length) L.push('現在のサイトに無いURLの上位: ' + top(g.missing), '');
+  }
   if (pr) L.push('## Strategist — クエリ×ページ（URLとクエリの対応が実測できる候補）', '', candidateTable(pr), '');
   L.push('## Strategist — 非ブランド検索（クエリ集計）', '', candidateTable(q), '',
     '## Strategist — ページ別の改善検討候補（ページ集計）', '', candidateTable(p), '',
@@ -203,7 +266,7 @@ export function renderAgencyReport({
 
 function argumentsFrom(argv) {
   const opts = { brand: 'ossalt', pagesNonbrandConfirmed: false };
-  const flags = { '--queries': 'queries', '--pages': 'pages', '--pairs': 'pairs', '--period': 'period', '--brand': 'brand', '--out': 'out', '--site': 'site' };
+  const flags = { '--queries': 'queries', '--pages': 'pages', '--pairs': 'pairs', '--period': 'period', '--brand': 'brand', '--out': 'out', '--site': 'site', '--daily': 'daily', '--min-impressions': 'minImpressions' };
   for (let i = 0; i < argv.length; i++) {
     if (argv[i] === '--pages-nonbrand-confirmed') { opts.pagesNonbrandConfirmed = true; continue; }
     if (!flags[argv[i]] || !argv[i + 1] || argv[i + 1].startsWith('--')) throw new Error('Invalid argument: ' + argv[i]);
@@ -224,11 +287,12 @@ async function main() {
   let markdown;
   if (!opts.queries) markdown = renderNoDataReport({ period: opts.period });
   else {
-    const [queryCsv, pageCsv, pairCsv] = await Promise.all([readText(opts.queries), readText(opts.pages), opts.pairs ? readText(opts.pairs) : null]);
+    const [queryCsv, pageCsv, pairCsv, dailyCsv] = await Promise.all([readText(opts.queries), readText(opts.pages), opts.pairs ? readText(opts.pairs) : null, opts.daily ? readText(opts.daily) : null]);
     markdown = renderAgencyReport({
       queries: readGscExport(queryCsv, 'query', { brand: opts.brand }),
       pages: readGscExport(pageCsv, 'page'),
       pairs: pairCsv ? readGscExport(pairCsv, 'pair', { brand: opts.brand }) : null,
+      daily: dailyCsv ? readDaily(dailyCsv) : null, minImpressions: opts.minImpressions ?? 'auto',
       period: opts.period, brand: opts.brand, pagesNonbrandConfirmed: opts.pagesNonbrandConfirmed,
       siteState: opts.site ? await loadSiteState(opts.site) : null,
     });

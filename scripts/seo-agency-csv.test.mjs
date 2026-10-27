@@ -110,3 +110,39 @@ test('週次レポート：クエリ×ページが無いときは「未取得」
   assert.ok(patternSummary(q.rows).length >= 2);
   assert.equal(rankCandidates(q, 1).length, 1);
 });
+
+import { readDaily, classifyPageUrls } from './seo-agency.mjs';
+import { resolveMinImpressions } from './seo-priority.mjs';
+
+test('日付別CSV（日本語の見出し）を、7日ごとの週の合計にする。端数の日は週に含めない', () => {
+  const lines = ['日付,クリック数,表示回数,CTR,掲載順位'];
+  for (let d = 1; d <= 16; d++) lines.push(`2026-10-${String(d).padStart(2, '0')},${d},${d * 10},1%,10`);
+  const r = readDaily(lines.join('\n'));
+  assert.equal(r.days.length, 16);
+  assert.equal(r.weeks.length, 2);
+  assert.equal(r.weeks[0].impressions, (1 + 2 + 3 + 4 + 5 + 6 + 7) * 10);
+  assert.equal(r.weeks[1].from, '2026-10-08');
+  assert.throws(() => readDaily('クエリ,クリック数\na,1'), /missing GSC column/);
+});
+
+test('表示回数のしきい値：小さなサイトでは下げ、その理由を残す。指定も受け付ける', () => {
+  const small = [{ impressions: 3000 }];
+  assert.equal(resolveMinImpressions(small).value, 30);
+  assert.match(resolveMinImpressions(small).reason, /小さなサイト/);
+  assert.equal(resolveMinImpressions([{ impressions: 80_000 }]).value, 100);
+  assert.equal(resolveMinImpressions(small, '15').value, 15);
+  assert.throws(() => resolveMinImpressions(small, '0'), /1以上/);
+});
+
+test('GSCのURLを、現在のページ・転送ページ・存在しないページに分け、末尾スラッシュ無しを別に数える', () => {
+  const state = (p) => ({
+    '/a/': { exists: true, refresh: null, noindex: false },
+    '/old/': { exists: true, refresh: '/a/', noindex: false },
+  }[p] ?? { exists: false, refresh: null, noindex: false });
+  const row = (url, impressions) => ({ label: url, impressions, clicks: 1, position: 5 });
+  const g = classifyPageUrls([row('https://ossalt.jp/a/', 10), row('https://ossalt.jp/old', 5), row('https://ossalt.jp/gone', 2), row('https://ossalt.jp/a', 1)], state);
+  assert.equal(g.live.length, 2);
+  assert.deepEqual(g.redirect.map((x) => x.slash), [false]);
+  assert.equal(g.missing[0].path, '/gone');
+  assert.equal(g.live.filter((x) => !x.slash).length, 1);
+});
