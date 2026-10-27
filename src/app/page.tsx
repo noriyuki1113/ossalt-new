@@ -65,7 +65,9 @@ export default function HomePage() {
           <h1 className="hero__title">
             そのSaaS、
             <br />
-            <em>自分のサーバ</em>で
+            <span className="nb">
+              <em>自分のサーバ</em>で
+            </span>
             <span className="hl">動かせる。</span>
           </h1>
           <SaasSearch entries={saasEntries} />
