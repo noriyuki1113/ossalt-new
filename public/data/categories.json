@@ -3,7 +3,7 @@
   "slug": "note-docs",
   "nameJa": "ノート・ドキュメント",
   "ledeJa": "社内Wikiやドキュメント共有を自前で運用するためのツール。",
-  "count": 29
+  "count": 32
  },
  {
   "slug": "communication",
@@ -15,13 +15,13 @@
   "slug": "project",
   "nameJa": "プロジェクト管理",
   "ledeJa": "タスク管理・課題管理を自前で。日本のチームの運用にも合わせやすい。",
-  "count": 12
+  "count": 13
  },
  {
   "slug": "database",
   "nameJa": "データベース・表作成",
   "ledeJa": "Airtableのような表形式のデータ管理を、社内に置く。",
-  "count": 9
+  "count": 10
  },
  {
   "slug": "cms",
@@ -33,25 +33,25 @@
   "slug": "analytics",
   "nameJa": "アクセス解析・プロダクト分析",
   "ledeJa": "Cookieに依存せず、計測データを自社に留める。",
-  "count": 12
+  "count": 13
  },
  {
   "slug": "observability",
   "nameJa": "監視・エラー追跡",
   "ledeJa": "障害の検知と原因追跡を、外部サービスに依存せず行う。",
-  "count": 17
+  "count": 18
  },
  {
   "slug": "security",
   "nameJa": "認証・パスワード管理",
   "ledeJa": "ID基盤とパスワード保管庫。ここは自前運用の効果が大きい領域。",
-  "count": 27
+  "count": 28
  },
  {
   "slug": "devtools",
   "nameJa": "開発・デプロイ基盤",
   "ledeJa": "Gitホスティング、デプロイ、バックエンド。開発の土台を自前で。",
-  "count": 45
+  "count": 46
  },
  {
   "slug": "automation",
@@ -123,7 +123,7 @@
   "slug": "hr",
   "nameJa": "人事・勤怠・採用",
   "ledeJa": "従業員情報、勤怠、採用の管理を社内に置く。",
-  "count": 5
+  "count": 6
  },
  {
   "slug": "accounting",
