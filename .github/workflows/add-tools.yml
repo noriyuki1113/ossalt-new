@@ -44,6 +44,10 @@ jobs:
 
       - name: 検証と tools.json への統合
         id: add
+        env:
+          # 掲載基準（docs/listing-criteria.md）を GitHub API で確かめる。取得できなければ却下する。
+          ADD_TOOLS_REQUIRE_GATES: "1"
+          GITHUB_TOKEN: ${{ secrets.DATA_FETCH_TOKEN || secrets.GITHUB_TOKEN }}
         run: node scripts/add-tools.mjs
 
       # 追加直後にスター数などを埋める。
