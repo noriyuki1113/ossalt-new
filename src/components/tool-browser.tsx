@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import type { FilterKind } from "@/lib/posthog/events";
+import { track } from "@/lib/posthog/track";
 import { ToolCard, ToolRow } from "@/components/tool-views";
 import {
   filterAndSort,
@@ -66,6 +68,23 @@ export function ToolBrowser({
   }, [tools, query, category, license, dockerOnly, japaneseOnly, sort]);
 
   const dirty = Boolean(query || category || license || dockerOnly || japaneseOnly);
+
+  // 計測（同意中だけ）：どの種類の絞り込みで何件になったか。検索語そのものは送らない。入力が落ち着いてから1回
+  const resultCount = results.length;
+  const filterKinds: FilterKind[] = [];
+  if (query.trim()) filterKinds.push("query");
+  if (category) filterKinds.push("category");
+  if (license) filterKinds.push("license");
+  if (dockerOnly) filterKinds.push("docker");
+  if (japaneseOnly) filterKinds.push("japanese");
+  const filterKey = filterKinds.join(",");
+  useEffect(() => {
+    if (!filterKey) return;
+    const timer = window.setTimeout(() => {
+      track("oss_search_performed", { result_count: resultCount, filter_kinds: filterKey.split(",") as FilterKind[], page_type: "tools_list" }, `${filterKey}:${resultCount}`);
+    }, 1200);
+    return () => window.clearTimeout(timer);
+  }, [filterKey, resultCount]);
   const shown = results.slice(0, visibleCount);
   const remaining = Math.max(0, results.length - shown.length);
 

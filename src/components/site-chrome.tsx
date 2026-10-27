@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AnalyticsSettingsLink } from "@/components/analytics-consent";
 import { FEATURES, NAV, SITE, t } from "@/lib/site";
 
 /**
@@ -142,6 +143,7 @@ export function SiteFooter({ meta }: { meta?: { built_at: string; tool_count: nu
               </li>
               <li>
                 <Link href="/privacy/">プライバシーポリシー</Link>
+                <AnalyticsSettingsLink />
               </li>
             </ul>
           </div>
