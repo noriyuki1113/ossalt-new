@@ -1,6 +1,6 @@
 ---
 description: "Notionの代わりに自前で動かせるオープンソースのノート・Wiki。AppFlowy・AFFiNE・Docmostなどを、チーム利用か個人利用か、ライセンスの違いから比較します。"
-updated: "2026-10-20"
+updated: "2026-10-27"
 intro: "Notionの代替を探す理由は「データを社外に置きたくない」「人数が増えて月額が膨らんだ」のどちらかが多いはずです。ただしNotionは文書・データベース・Wikiを1つにまとめた製品なので、すべてを1対1で置き換えられるツールは限られます。どの機能を重視するかを先に決めるのが近道です。"
 picks:
   - tool: appflowy
@@ -38,7 +38,9 @@ Notionのオープンソース代替を探すなら、最初に「文書」「�
 
 - **チームで使うか、個人で使うか**：AppFlowy・AFFiNE・Docmostはチームでの利用を想定したサーバー構成を持ちます。SiYuan・Anytypeは端末側にデータを置く「ローカル優先」の設計で、個人や少人数に向きます。
 - **データベース機能が必要か**：Notionの表・ボード表示を多用しているならAppFlowyが近い使い心地です。文書中心の使い方なら、Docmostのほうが構成がシンプルです。
-- **ライセンス**：AppFlowy・SiYuan・DocmostはAGPL-3.0、AFFiNEはMITです。社内で使うだけなら通常は問題になりませんが、改変したものを外部にサービスとして提供する場合は、AGPLのソース公開義務に注意が必要です。Anytypeは独自の「Any Source Available License」で、一般的なオープンソースライセンスではありません。
+- **ライセンス**：AppFlowy・SiYuan・DocmostはAGPL-3.0が中心です。社内で使うだけなら通常は問題になりませんが、改変したものを外部にサービスとして提供する場合は、AGPLのソース公開義務に注意が必要です。Anytypeは独自の「Any Source Available License」で、一般的なオープンソースライセンスではありません。
+- **AFFiNEは公式の記載を読み比べる**：リポジトリのLICENSEでは、`packages/backend` などを除く大半がMITとされています。一方で `packages/backend/server` には別の「Enterprise Edition License」があり、本番利用には購読条件が関わる旨が書かれています。READMEにはコミュニティ版を自前で動かせるとありますが、条件は更新されるため、導入前に[公式のライセンス](https://github.com/toeverything/AFFiNE)を自分で確認してください。
+- **Docmostはコア部分がAGPL-3.0**：一部のディレクトリ（Enterprise Edition）は別の条件です。使いたい機能が含まれるかを、導入前に確認しましょう。
 
 ## 移行するときの注意
 
