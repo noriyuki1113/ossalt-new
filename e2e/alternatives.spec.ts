@@ -24,6 +24,17 @@ test.describe("SaaS代替ページ：結局どれを選ぶか", () => {
     expect(problems).toEqual([]);
   });
 
+  test("用途別のおすすめ（カード）と早見表が、全候補の比較表より先に並び、ページ内リンクで移動できる", async ({ page }) => {
+    await page.goto("/alternatives/notion/");
+    const top = (sel: string) => page.locator(sel).first().evaluate((el) => el.getBoundingClientRect().top + window.scrollY);
+    expect(await top(".decide__picks")).toBeLessThan(await top("#all-candidates"));
+    expect(await top("#choose")).toBeLessThan(await top("#all-candidates"));
+    expect(await page.locator(".decide__picks li").count()).toBeGreaterThan(1);
+    await page.getByRole("navigation", { name: "このページの内容" }).getByRole("link", { name: "全候補の比較表" }).click();
+    await expect(page).toHaveURL(/#all-candidates$/);
+    await expect(page.locator("#all-candidates")).toBeVisible();
+  });
+
   test("機能データのないSaaS：機能の比較表・おすすめの点数は出さず、理由を説明する", async ({ page }) => {
     await page.goto("/alternatives/airtable/");
     const sec = page.locator("#choose");

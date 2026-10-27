@@ -82,7 +82,23 @@ export default async function AlternativeDetailPage({
         </p>
         {guide?.intro && <p>{guide.intro}</p>}
 
-        <ComparisonTable tools={c.tools} />
+        <nav className="alt-jump" aria-label="このページの内容">
+          {decision.rows.length > 0 && <a href="#choose">結局どれを選ぶ？</a>}
+          <a href="#all-candidates">全候補の比較表</a>
+          {hasMigration && <a href="#migration">移行の注意</a>}
+          {comparePairs.length > 0 && <a href="#pairs">2つずつ比べる</a>}
+          <Link href={`/cost-lab/?saas=${c.slug}`}>費用を試算</Link>
+        </nav>
+
+        <AlternativeDecisionPanel
+          saasName={c.name}
+          slug={c.slug}
+          decision={decision}
+          picks={(guide?.picks ?? []).map((p) => ({ ...p, name: getTool(p.tool)?.name ?? p.tool }))}
+          hasMigration={hasMigration}
+          hasStay={hasStay}
+          asOf={formatDate(meta.stars_as_of ?? meta.built_at)}
+        />
 
         <div className="notice notice--info mt2">
           <strong>乗り換えの判断について</strong>
@@ -94,15 +110,9 @@ export default async function AlternativeDetailPage({
           </Link>
         </div>
 
-        <AlternativeDecisionPanel
-          saasName={c.name}
-          slug={c.slug}
-          decision={decision}
-          picks={(guide?.picks ?? []).map((p) => ({ ...p, name: getTool(p.tool)?.name ?? p.tool }))}
-          hasMigration={hasMigration}
-          hasStay={hasStay}
-          asOf={formatDate(meta.stars_as_of ?? meta.built_at)}
-        />
+        <section id="all-candidates" className="section" aria-label="全候補の比較表">
+          <ComparisonTable tools={c.tools} />
+        </section>
 
         <ForYouLink query={{ saas: c.slug }}>{`条件を指定して、${c.name}の代替を理由つきで並べ替える（OSSALT For You）`}</ForYouLink>
 
@@ -138,7 +148,7 @@ export default async function AlternativeDetailPage({
         )}
 
         {comparePairs.length > 0 && (
-          <section className="section">
+          <section id="pairs" className="section">
             <h2 className="h3">2つずつ比べる</h2>
             <ul>
               {comparePairs.map((p) => (
