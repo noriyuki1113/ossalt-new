@@ -75,7 +75,6 @@ async function load(): Promise<PostHog | null> {
           opt_out_useragent_filter: POSTHOG.allowAutomation,
           // 低トラフィックのため、まとめ送り（既定3秒）はやめ、イベントごとに送る（ページを離れるときの取りこぼしも減る）
           request_batching: false,
-          ip: false,
           opt_out_capturing_by_default: true,
           before_send: (event) => {
             if (!event) return null;
