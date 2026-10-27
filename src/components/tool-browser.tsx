@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { ToolRow } from "@/components/tool-views";
+import { ToolCard, ToolRow } from "@/components/tool-views";
 import {
   filterAndSort,
   licenseFacets,
@@ -22,10 +22,7 @@ type Props = {
   defaultSort?: SortKey;
 };
 
-// 初期表示の件数。384件を一度に描画するとスマホで縦に長大なページになる
-// ため、まずこの件数だけ出し「もっと見る」で追加表示する。
-// 検索・絞り込み・並び替えを操作した場合は、この上限を無視して全件出す
-// （絞り込んだのに途中で切れると使いにくいため）。
+// 絞り込み後も一度に数百件を描画しないよう、常に50件ずつ追加表示する。
 const PAGE_SIZE = 50;
 
 export function ToolBrowser({
@@ -42,6 +39,7 @@ export function ToolBrowser({
   const [japaneseOnly, setJapaneseOnly] = useState(false);
   const [sort, setSort] = useState<SortKey>(defaultSort);
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+  const [view, setView] = useState<"list" | "cards">("list");
 
   // トップの検索ボックスや、サイトの検索（WebSite の SearchAction）から /tools/?q=〜 で来たとき、検索語を入れる
   useEffect(() => {
@@ -68,10 +66,29 @@ export function ToolBrowser({
   }, [tools, query, category, license, dockerOnly, japaneseOnly, sort]);
 
   const dirty = Boolean(query || category || license || dockerOnly || japaneseOnly);
-  // 並び替えだけを変えた場合も「操作した」とみなし、全件表示に切り替える。
-  const isCustomized = dirty || sort !== defaultSort;
-  const shown = isCustomized ? results : results.slice(0, visibleCount);
-  const remaining = isCustomized ? 0 : results.length - shown.length;
+  const shown = results.slice(0, visibleCount);
+  const remaining = Math.max(0, results.length - shown.length);
+
+  const activeFilters: Array<{ key: string; label: string }> = [];
+  if (query.trim()) activeFilters.push({ key: "query", label: `検索: ${query.trim().slice(0, 40)}` });
+  if (category) activeFilters.push({ key: "category", label: categories.find((c) => c.slug === category)?.nameJa ?? category });
+  if (license) activeFilters.push({
+    key: "license",
+    label: license.startsWith(GROUP_PREFIX)
+      ? (LICENSE_GROUP_LABELS[license.slice(GROUP_PREFIX.length)] ?? license)
+      : license,
+  });
+  if (dockerOnly) activeFilters.push({ key: "docker", label: "Docker対応" });
+  if (japaneseOnly) activeFilters.push({ key: "japanese", label: "日本語対応" });
+
+  function clearFilter(key: string) {
+    if (key === "query") setQuery("");
+    if (key === "category") setCategory("");
+    if (key === "license") setLicense("");
+    if (key === "docker") setDockerOnly(false);
+    if (key === "japanese") setJapaneseOnly(false);
+    setVisibleCount(PAGE_SIZE);
+  }
 
   function reset() {
     setQuery("");
@@ -93,7 +110,7 @@ export function ToolBrowser({
               className="input input--search"
               type="search"
               value={query}
-              onChange={(e) => setQuery(e.target.value)}
+              onChange={(e) => { setQuery(e.target.value); setVisibleCount(PAGE_SIZE); }}
               placeholder={t("search.placeholder")}
               aria-describedby="browser-count"
             />
@@ -103,7 +120,7 @@ export function ToolBrowser({
             <select
               className="select"
               value={sort}
-              onChange={(e) => setSort(e.target.value as SortKey)}
+              onChange={(e) => { setSort(e.target.value as SortKey); setVisibleCount(PAGE_SIZE); }}
             >
               <option value="health">{t("sort.health")}</option>
               <option value="stars">{t("sort.stars")}</option>
@@ -121,7 +138,7 @@ export function ToolBrowser({
                 type="button"
                 className="chip"
                 aria-pressed={category === ""}
-                onClick={() => setCategory("")}
+                onClick={() => { setCategory(""); setVisibleCount(PAGE_SIZE); }}
               >
                 {t("filter.all")}
                 <span className="chip__n">{tools.length}</span>
@@ -132,7 +149,7 @@ export function ToolBrowser({
                   type="button"
                   className="chip"
                   aria-pressed={category === c.slug}
-                  onClick={() => setCategory(category === c.slug ? "" : c.slug)}
+                  onClick={() => { setCategory(category === c.slug ? "" : c.slug); setVisibleCount(PAGE_SIZE); }}
                 >
                   {c.nameJa}
                   <span className="chip__n">{c.count}</span>
@@ -149,7 +166,7 @@ export function ToolBrowser({
               <select
                 className="select"
                 value={license}
-                onChange={(e) => setLicense(e.target.value)}
+                onChange={(e) => { setLicense(e.target.value); setVisibleCount(PAGE_SIZE); }}
               >
                 <option value="">{t("filter.all")}</option>
                 <optgroup label="種類で絞り込む">
@@ -175,7 +192,7 @@ export function ToolBrowser({
               <input
                 type="checkbox"
                 checked={dockerOnly}
-                onChange={(e) => setDockerOnly(e.target.checked)}
+                onChange={(e) => { setDockerOnly(e.target.checked); setVisibleCount(PAGE_SIZE); }}
                 id="docker-only"
                 style={{ width: 16, height: 16 }}
               />
@@ -190,7 +207,7 @@ export function ToolBrowser({
               <input
                 type="checkbox"
                 checked={japaneseOnly}
-                onChange={(e) => setJapaneseOnly(e.target.checked)}
+                onChange={(e) => { setJapaneseOnly(e.target.checked); setVisibleCount(PAGE_SIZE); }}
                 id="japanese-only"
                 style={{ width: 16, height: 16 }}
               />
@@ -223,6 +240,37 @@ export function ToolBrowser({
         </div>
       </div>
 
+      <div className="browser-results-header">
+        <p className="browser-results-summary">
+          {results.length}件中 {shown.length}件を表示
+        </p>
+        <div className="browser-view-switch" role="group" aria-label="表示形式">
+          <button
+            type="button"
+            aria-pressed={view === "list"}
+            onClick={() => setView("list")}
+          >一覧</button>
+          <button
+            type="button"
+            aria-pressed={view === "cards"}
+            onClick={() => setView("cards")}
+          >カード</button>
+        </div>
+      </div>
+      {activeFilters.length > 0 && (
+        <div className="browser-active-filters" aria-label="適用中の検索条件">
+          {activeFilters.map((f) => (
+            <button
+              key={f.key}
+              type="button"
+              className="browser-active-filters__item"
+              onClick={() => clearFilter(f.key)}
+              aria-label={`${f.label}を解除`}
+            >{f.label} <span aria-hidden="true">×</span></button>
+          ))}
+        </div>
+      )}
+
       {results.length === 0 ? (
         <div className="empty">
           <p style={{ margin: "0 0 0.5rem", color: "var(--ink-2)", fontWeight: 700 }}>
@@ -232,9 +280,11 @@ export function ToolBrowser({
         </div>
       ) : (
         <>
-          <div className="ledger" style={{ padding: "0 1.15rem 0.5rem" }}>
+          <div className={view === "cards" ? "browse-grid" : "ledger browser-ledger"}>
             {shown.map((tool) => (
-              <ToolRow key={tool.id} tool={tool} />
+              view === "cards"
+                ? <ToolCard key={tool.id} tool={tool} />
+                : <ToolRow key={tool.id} tool={tool} />
             ))}
           </div>
           {remaining > 0 && (
