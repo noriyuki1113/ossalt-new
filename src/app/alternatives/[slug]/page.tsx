@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ForYouLink } from "@/components/for-you-link";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs, JsonLd, SiteFooter, SiteHeader } from "@/components/site-chrome";
@@ -102,6 +103,8 @@ export default async function AlternativeDetailPage({
           hasStay={hasStay}
           asOf={formatDate(meta.stars_as_of ?? meta.built_at)}
         />
+
+        <ForYouLink query={{ saas: c.slug }}>{`条件を指定して、${c.name}の代替を理由つきで並べ替える（OSSALT For You）`}</ForYouLink>
 
         <SponsorSlot placement="alternative" slug={c.slug} />
         <HouseAd placement={`alternative_${c.slug}`} />

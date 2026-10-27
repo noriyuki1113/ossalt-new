@@ -56,6 +56,16 @@ export const UMAMI_SITE_ID: string | null = (() => {
 
 export const UMAMI_SCRIPT_URL = "https://cloud.umami.is/script.js";
 
+/**
+ * 機能フラグ（ビルド時に決まる公開値）。
+ * forYou: OSSALT For You（/for-you/）を公開扱いにする。"1" のときだけ、ナビ・各ページからの導線・
+ *   サイトマップに載せ、検索エンジンにも登録する。未設定ならページ自体は開けるが、導線は出さず noindex。
+ */
+export const FEATURES = {
+  // クライアント側でも値が埋め込まれるよう、process.env.NEXT_PUBLIC_... をそのまま書く（env() の動的な参照は埋め込まれない）
+  forYou: process.env.NEXT_PUBLIC_FEATURE_FOR_YOU?.trim() === "1",
+} as const;
+
 /** サイト内ナビゲーション */
 export const NAV = [
   { href: "/tools/", label: "ツール一覧" },

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ForYouLink } from "@/components/for-you-link";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs, JsonLd, SiteFooter, SiteHeader } from "@/components/site-chrome";
@@ -404,6 +405,9 @@ export default async function ToolDetailPage({
           <section id="compare" className="mt2">
             <h2 className="h3">{competitor} の代替候補を比較</h2>
             <ComparisonTable tools={compareSet} />
+            {competitorSlug && (
+              <ForYouLink query={{ saas: competitorSlug }}>{`あなたの条件（ライセンス・Docker・日本語など）で、${competitor}の代替を並べ替える`}</ForYouLink>
+            )}
             <p className="muted mt1" style={{ fontSize: "0.75rem" }}>
               {t("alt.compareNote")}
             </p>
