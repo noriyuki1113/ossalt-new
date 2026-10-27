@@ -20,7 +20,7 @@
 /tools/105/ /tools/twenty/ 301
 /tools/106/ /tools/erpnext/ 301
 /tools/109/ /tools/odoo/ 301
-/tools/117/ /tools/crater/ 301
+/tools/117/ /alternatives/misoca/ 301
 /tools/124/ /tools/hyperswitch/ 301
 /tools/125/ /tools/invoice-ninja/ 301
 /tools/126/ /tools/kimai/ 301
@@ -142,8 +142,12 @@
 /tools/97/ /tools/espocrm/ 301
 /tools/99/ /tools/frappe-crm/ 301
 /tools/ansible/ /categories/devtools/ 301
+/tools/crater/ /alternatives/misoca/ 301
 /tools/elasticsearch/ /alternatives/elasticsearch/ 301
+/tools/helpy/ /alternatives/intercom/ 301
 /tools/inkscape/ /categories/design/ 301
+/tools/mailhog/ /alternatives/mailtrap/ 301
+/tools/papercups/ /alternatives/intercom/ 301
 /tools/playwright/ /categories/automation/ 301
 /tools/terraform/ /alternatives/terraform/ 301
 /tools/vault/ /alternatives/hashicorp-vault/ 301

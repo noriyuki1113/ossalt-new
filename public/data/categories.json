@@ -87,7 +87,7 @@
   "slug": "support",
   "nameJa": "カスタマーサポート",
   "ledeJa": "問い合わせ対応を、外部SaaSに預けず運用する。",
-  "count": 15
+  "count": 13
  },
  {
   "slug": "scheduling",
@@ -117,7 +117,7 @@
   "slug": "email",
   "nameJa": "メール",
   "ledeJa": "メールサーバと配信を自前で運用する。ドメインと送信履歴を自分で管理できる。",
-  "count": 10
+  "count": 9
  },
  {
   "slug": "hr",
@@ -129,7 +129,7 @@
   "slug": "accounting",
   "nameJa": "会計・請求書・経費",
   "ledeJa": "請求書の発行や入出金の管理を、外部サービスに預けずに行う。",
-  "count": 15
+  "count": 14
  },
  {
   "slug": "legal",

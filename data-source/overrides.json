@@ -5,7 +5,11 @@
     "vault",
     "inkscape",
     "ansible",
-    "playwright"
+    "playwright",
+    "helpy",
+    "mailhog",
+    "papercups",
+    "crater"
   ],
   "patch": {
     "weblate": {

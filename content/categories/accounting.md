@@ -4,7 +4,7 @@ updated: "2026-10-01"
 
 会計・お金のツールは、扱う範囲で選びます。
 
-- **請求書・見積書**：請求書の作成と入金の管理なら、[Invoice Ninja](/tools/invoice-ninja/)、[InvoicePlane](/tools/invoiceplane/)、[Crater](/tools/crater/)、[SolidInvoice](/tools/solidinvoice/)が候補です。
+- **請求書・見積書**：請求書の作成と入金の管理なら、[Invoice Ninja](/tools/invoice-ninja/)、[InvoicePlane](/tools/invoiceplane/)、[SolidInvoice](/tools/solidinvoice/)が候補です。
 - **小規模事業の会計**：[Akaunting](/tools/akaunting/)は、請求と経費をまとめて管理できる小規模事業者向けの会計ツールです。
 - **家計簿・資産管理**：家計の記録なら[Actual](/tools/actual/)や[Firefly III](/tools/firefly-iii/)、投資の資産管理なら[Ghostfolio](/tools/ghostfolio/)、サブスクの管理なら[Wallos](/tools/wallos/)があります。
 - **複式簿記**：[GnuCash](/tools/gnucash/)や、テキストで帳簿を付ける[hledger](/tools/hledger/)・[Beancount](/tools/beancount/)があります。
