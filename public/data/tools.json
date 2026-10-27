@@ -9,14 +9,14 @@
   "category": "ai",
   "primary_competitor": "ChatGPT",
   "primary_competitor_ja": null,
-  "stars_num": 393189,
-  "forks_num": 82661,
-  "contributors_num": 3702,
-  "watchers_num": 1697,
+  "stars_num": 393213,
+  "forks_num": 82664,
+  "contributors_num": 3707,
+  "watchers_num": 1696,
   "language": "TypeScript",
   "license": "MIT",
   "license_source": "github",
-  "last_commit": "2026-10-27T12:25:26Z",
+  "last_commit": "2026-10-27T21:36:33Z",
   "created_at": "2025-11-24T10:16:47Z",
   "freshness_days": 0,
   "scorecard_score": null,
@@ -29,7 +29,7 @@
   "advisories_count": 722,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 141903,
+  "health_score": 141913,
   "topics": [
    "ai",
    "assistant",
@@ -113,14 +113,14 @@
   "category": "automation",
   "primary_competitor": "Zapier",
   "primary_competitor_ja": "Zapier",
-  "stars_num": 208741,
-  "forks_num": 61259,
+  "stars_num": 208799,
+  "forks_num": 61269,
   "contributors_num": 843,
   "watchers_num": 1181,
   "language": "TypeScript",
   "license": "Sustainable Use License",
   "license_source": "manual",
-  "last_commit": "2026-10-27T12:24:10Z",
+  "last_commit": "2026-10-27T21:30:35Z",
   "created_at": "2019-06-22T09:24:21Z",
   "freshness_days": 0,
   "scorecard_score": 7.1,
@@ -144,11 +144,11 @@
   "security_md": true,
   "dependabot_configured": false,
   "latest_release_at": "2026-10-27T08:49:50Z",
-  "releases_12mo": 445,
+  "releases_12mo": 444,
   "advisories_count": 225,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 83532,
+  "health_score": 83551,
   "topics": [
    "ai",
    "apis",
@@ -179,16 +179,16 @@
   ],
   "also_competitors": [],
   "star_gain": {
-   "gain": 2834,
-   "days": 32,
+   "gain": 2892,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 698,
-   "days": 7,
+   "gain": 756,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/n8n.jpg",
@@ -207,8 +207,8 @@
   "category": "ai",
   "primary_competitor": "Adobe Firefly",
   "primary_competitor_ja": null,
-  "stars_num": 165157,
-  "forks_num": 32509,
+  "stars_num": 165161,
+  "forks_num": 32505,
   "contributors_num": 639,
   "watchers_num": 1247,
   "language": "Python",
@@ -227,7 +227,7 @@
   "advisories_count": 0,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 58130,
+  "health_score": 58129,
   "topics": [
    "ai",
    "ai-art",
@@ -252,16 +252,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 51,
-   "days": 32,
+   "gain": 55,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 80,
-   "days": 7,
+   "gain": 84,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -284,7 +284,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T20:01:00Z",
   "created_at": "2023-06-26T19:39:32Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -295,7 +295,7 @@
   "advisories_count": 0,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 56039,
+  "health_score": 56038,
   "topics": [
    "deepseek",
    "gemma",
@@ -358,7 +358,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-26T18:54:26Z",
   "created_at": "2023-04-12T07:40:24Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -436,7 +436,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-24T19:50:40Z",
   "created_at": "2023-10-06T22:08:27Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -563,7 +563,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T18:48:29Z",
   "created_at": "2023-02-08T22:28:03Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -628,7 +628,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T19:51:02Z",
   "created_at": "2023-01-17T03:15:56Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -639,7 +639,7 @@
   "advisories_count": 4,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 44446,
+  "health_score": 44445,
   "topics": [
    "ai",
    "comfy",
@@ -769,7 +769,7 @@
   "license_source": "github",
   "last_commit": "2026-10-23T15:10:12Z",
   "created_at": "2020-01-02T01:04:43Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": 5.2,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -944,7 +944,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T16:44:19Z",
   "created_at": "2023-02-09T11:23:20Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -1016,7 +1016,7 @@
   "license_source": "github",
   "last_commit": "2026-08-31T17:19:19Z",
   "created_at": "2022-09-16T20:02:54Z",
-  "freshness_days": 56,
+  "freshness_days": 57,
   "scorecard_score": 4.3,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -1155,7 +1155,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-24T19:54:02Z",
   "created_at": "2014-05-13T15:38:58Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 4.5,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -1181,7 +1181,7 @@
   "advisories_count": 0,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 33429,
+  "health_score": 33428,
   "topics": [
    "apps",
    "business",
@@ -1225,14 +1225,14 @@
   "category": "nocode",
   "primary_competitor": "Tableau",
   "primary_competitor_ja": null,
-  "stars_num": 75329,
+  "stars_num": 75330,
   "forks_num": 18535,
-  "contributors_num": 1809,
+  "contributors_num": 1810,
   "watchers_num": 1533,
   "language": "Python",
   "license": "Apache-2.0",
   "license_source": "github",
-  "last_commit": "2026-10-27T11:35:02Z",
+  "last_commit": "2026-10-27T21:24:10Z",
   "created_at": "2015-07-21T18:55:34Z",
   "freshness_days": 0,
   "scorecard_score": 5.5,
@@ -1287,16 +1287,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 407,
-   "days": 31,
+   "gain": 408,
+   "days": 32,
    "from": "2026-09-26",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 114,
-   "days": 7,
+   "gain": 115,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/superset.jpg",
@@ -1315,34 +1315,34 @@
   "category": "documents",
   "primary_competitor": "Adobe Acrobat",
   "primary_competitor_ja": "Adobe Acrobat",
-  "stars_num": 95122,
-  "forks_num": 10625,
+  "stars_num": 95161,
+  "forks_num": 10624,
   "contributors_num": 320,
   "watchers_num": 294,
   "language": "TypeScript",
   "license": "MIT",
   "license_source": "manual",
-  "last_commit": "2026-10-27T12:24:15Z",
+  "last_commit": "2026-10-27T19:20:22Z",
   "created_at": "2023-01-27T18:22:42Z",
   "freshness_days": 0,
   "scorecard_score": 7.1,
-  "scorecard_date": "2026-10-27T11:29:29Z",
+  "scorecard_date": "2026-10-27T16:49:01Z",
   "scorecard_checks": {
-   "Maintained": 10,
    "Code-Review": 10,
-   "Dependency-Update-Tool": 10,
    "Security-Policy": 10,
+   "Maintained": 10,
    "Dangerous-Workflow": 10,
-   "Token-Permissions": 8,
+   "Dependency-Update-Tool": 10,
    "CII-Best-Practices": 2,
+   "Token-Permissions": 8,
    "Binary-Artifacts": 9,
    "Signed-Releases": 0,
    "Pinned-Dependencies": 9,
-   "SAST": 8,
    "Packaging": 10,
-   "License": 9,
+   "SAST": 8,
    "Vulnerabilities": 0,
    "Fuzzing": 0,
+   "License": 9,
    "Branch-Protection": 4,
    "CI-Tests": 10,
    "Contributors": 10
@@ -1354,7 +1354,7 @@
   "advisories_count": 16,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 29327,
+  "health_score": 29336,
   "topics": [
    "docker",
    "hacktoberfest",
@@ -1376,16 +1376,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 2113,
-   "days": 31,
+   "gain": 2152,
+   "days": 32,
    "from": "2026-09-26",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 568,
-   "days": 7,
+   "gain": 607,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/stirling-pdf.jpg",
@@ -1413,7 +1413,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T14:28:09Z",
   "created_at": "2023-12-12T06:13:13Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -1424,7 +1424,7 @@
   "advisories_count": 8,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 29302,
+  "health_score": 29301,
   "topics": [
    "agent-harness",
    "agentic-ai",
@@ -1724,7 +1724,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T18:34:17Z",
   "created_at": "2021-07-03T01:02:42Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -1786,8 +1786,8 @@
   "category": "ai",
   "primary_competitor": "ChatGPT Plus",
   "primary_competitor_ja": null,
-  "stars_num": 55530,
-  "forks_num": 25082,
+  "stars_num": 55531,
+  "forks_num": 25079,
   "contributors_num": 332,
   "watchers_num": 383,
   "language": "TypeScript",
@@ -1806,7 +1806,7 @@
   "advisories_count": 130,
   "docker_available": true,
   "github_archived": true,
-  "health_score": 26648,
+  "health_score": 26647,
   "topics": [
    "agentic-ai",
    "agentic-workflow",
@@ -1832,16 +1832,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 52,
-   "days": 32,
+   "gain": 53,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 17,
-   "days": 7,
+   "gain": 18,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -1864,7 +1864,7 @@
   "license_source": "github",
   "last_commit": "2026-10-23T20:48:25Z",
   "created_at": "2013-10-01T02:40:31Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": 6.1,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -2011,14 +2011,14 @@
   "category": "video",
   "primary_competitor": "Adobe Media Encoder",
   "primary_competitor_ja": null,
-  "stars_num": 65871,
-  "forks_num": 14433,
+  "stars_num": 65907,
+  "forks_num": 14435,
   "contributors_num": 2790,
   "watchers_num": 1551,
   "language": "C",
   "license": "GPL-2.0",
   "license_source": null,
-  "last_commit": "2026-10-27T05:07:45Z",
+  "last_commit": "2026-10-27T20:52:09Z",
   "created_at": "2011-04-14T14:12:38Z",
   "freshness_days": 0,
   "scorecard_score": 5.2,
@@ -2046,7 +2046,7 @@
   "advisories_count": 0,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 25467,
+  "health_score": 25477,
   "topics": [
    "audio",
    "c",
@@ -2070,16 +2070,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 1328,
-   "days": 30,
+   "gain": 1364,
+   "days": 31,
    "from": "2026-09-27",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 432,
-   "days": 7,
+   "gain": 468,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -2176,7 +2176,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T20:00:45Z",
   "created_at": "2013-06-17T18:39:10Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 7.8,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -2202,7 +2202,7 @@
   "advisories_count": 10,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 24316,
+  "health_score": 24315,
   "topics": [
    "ai",
    "alerting",
@@ -2259,14 +2259,14 @@
   "category": "devtools",
   "primary_competitor": "Contentful",
   "primary_competitor_ja": null,
-  "stars_num": 73387,
-  "forks_num": 9940,
+  "stars_num": 73388,
+  "forks_num": 9948,
   "contributors_num": 1412,
   "watchers_num": 647,
   "language": "TypeScript",
   "license": "MIT",
   "license_source": "manual",
-  "last_commit": "2026-10-27T12:22:46Z",
+  "last_commit": "2026-10-27T21:35:16Z",
   "created_at": "2015-09-30T15:34:48Z",
   "freshness_days": 0,
   "scorecard_score": 6.9,
@@ -2294,7 +2294,7 @@
   "advisories_count": 21,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 24185,
+  "health_score": 24189,
   "topics": [
    "api",
    "cms",
@@ -2324,16 +2324,16 @@
   ],
   "also_competitors": [],
   "star_gain": {
-   "gain": 153,
-   "days": 32,
+   "gain": 154,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 42,
-   "days": 7,
+   "gain": 43,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/strapi.jpg",
@@ -2425,7 +2425,7 @@
   "license_source": "github",
   "last_commit": "2025-05-27T20:05:19Z",
   "created_at": "2023-03-27T18:49:32Z",
-  "freshness_days": 517,
+  "freshness_days": 518,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -2567,14 +2567,14 @@
   "category": "automation",
   "primary_competitor": "Zapier",
   "primary_competitor_ja": null,
-  "stars_num": 47290,
-  "forks_num": 18173,
-  "contributors_num": 4745,
+  "stars_num": 47291,
+  "forks_num": 18180,
+  "contributors_num": 4746,
   "watchers_num": 786,
   "language": "Python",
   "license": "Apache-2.0",
   "license_source": "github",
-  "last_commit": "2026-10-27T12:11:57Z",
+  "last_commit": "2026-10-27T21:24:08Z",
   "created_at": "2015-04-13T18:04:58Z",
   "freshness_days": 0,
   "scorecard_score": 7.7,
@@ -2598,11 +2598,11 @@
   "security_md": false,
   "dependabot_configured": true,
   "latest_release_at": "2026-09-17T11:10:15Z",
-  "releases_12mo": 22,
+  "releases_12mo": 21,
   "advisories_count": 0,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 23478,
+  "health_score": 23482,
   "topics": [
    "airflow",
    "apache",
@@ -2631,16 +2631,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 322,
-   "days": 32,
+   "gain": 323,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 70,
-   "days": 7,
+   "gain": 71,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/airflow.jpg",
@@ -2668,7 +2668,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T14:23:35Z",
   "created_at": "2012-11-24T11:14:12Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 8.1,
   "scorecard_date": "2026-10-23T14:30:30Z",
   "scorecard_checks": {
@@ -2698,7 +2698,7 @@
   "advisories_count": 6,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 23181,
+  "health_score": 23180,
   "topics": [
    "alerting",
    "graphing",
@@ -2808,8 +2808,8 @@
   "category": "note-docs",
   "primary_competitor": "GitBook",
   "primary_competitor_ja": null,
-  "stars_num": 66593,
-  "forks_num": 10104,
+  "stars_num": 66592,
+  "forks_num": 10103,
   "contributors_num": 1367,
   "watchers_num": 431,
   "language": "TypeScript",
@@ -2817,7 +2817,7 @@
   "license_source": "github",
   "last_commit": "2026-10-23T20:44:37Z",
   "created_at": "2017-06-20T16:13:53Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": 7.5,
   "scorecard_date": "2022-08-15",
   "scorecard_checks": {
@@ -2844,7 +2844,7 @@
   "advisories_count": 0,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 22490,
+  "health_score": 22489,
   "topics": [
    "documentation",
    "hacktoberfest",
@@ -2859,16 +2859,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 258,
-   "days": 32,
+   "gain": 257,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 62,
-   "days": 7,
+   "gain": 61,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/docusaurus.jpg",
@@ -2887,8 +2887,8 @@
   "category": "note-docs",
   "primary_competitor": "Notion",
   "primary_competitor_ja": "Notion",
-  "stars_num": 73893,
-  "forks_num": 5405,
+  "stars_num": 73907,
+  "forks_num": 5409,
   "contributors_num": 272,
   "watchers_num": 291,
   "language": "TypeScript",
@@ -2907,7 +2907,7 @@
   "advisories_count": 2,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 21385,
+  "health_score": 21390,
   "topics": [
    "app",
    "crdt",
@@ -2936,16 +2936,16 @@
   ],
   "also_competitors": [],
   "star_gain": {
-   "gain": 939,
-   "days": 32,
+   "gain": 953,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 226,
-   "days": 7,
+   "gain": 240,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/affine.jpg",
@@ -2964,14 +2964,14 @@
   "category": "ai",
   "primary_competitor": "ChatGPT with files",
   "primary_competitor_ja": null,
-  "stars_num": 67629,
-  "forks_num": 7593,
-  "contributors_num": 277,
+  "stars_num": 67642,
+  "forks_num": 7595,
+  "contributors_num": 279,
   "watchers_num": 411,
   "language": "JavaScript",
   "license": "MIT",
   "license_source": "github",
-  "last_commit": "2026-10-26T23:33:22Z",
+  "last_commit": "2026-10-27T21:34:30Z",
   "created_at": "2023-06-04T02:29:14Z",
   "freshness_days": 0,
   "scorecard_score": null,
@@ -2984,7 +2984,7 @@
   "advisories_count": 25,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 20945,
+  "health_score": 20950,
   "topics": [
    "agent-computer",
    "agent-harness",
@@ -3008,16 +3008,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 1161,
-   "days": 31,
+   "gain": 1174,
+   "days": 32,
    "from": "2026-09-26",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 302,
-   "days": 7,
+   "gain": 315,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/anythingllm.jpg",
@@ -3036,14 +3036,14 @@
   "category": "cms",
   "primary_competitor": "WordPress",
   "primary_competitor_ja": "WordPress",
-  "stars_num": 55617,
-  "forks_num": 12043,
-  "contributors_num": 939,
+  "stars_num": 55620,
+  "forks_num": 12045,
+  "contributors_num": 941,
   "watchers_num": 1009,
   "language": "TypeScript",
   "license": "MIT",
   "license_source": "github",
-  "last_commit": "2026-10-27T11:38:39Z",
+  "last_commit": "2026-10-27T21:01:19Z",
   "created_at": "2013-05-04T11:09:13Z",
   "freshness_days": 0,
   "scorecard_score": 5.6,
@@ -3066,12 +3066,12 @@
   },
   "security_md": true,
   "dependabot_configured": false,
-  "latest_release_at": "2026-10-20T15:09:13Z",
-  "releases_12mo": 95,
+  "latest_release_at": "2026-10-27T15:22:16Z",
+  "releases_12mo": 96,
   "advisories_count": 80,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 20648,
+  "health_score": 20650,
   "topics": [
    "blogging",
    "cms",
@@ -3090,16 +3090,16 @@
   ],
   "also_competitors": [],
   "star_gain": {
-   "gain": 186,
-   "days": 31,
+   "gain": 189,
+   "days": 32,
    "from": "2026-09-26",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 48,
-   "days": 7,
+   "gain": 51,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/ghost.jpg",
@@ -3127,7 +3127,7 @@
   "license_source": "github",
   "last_commit": "2026-10-19T18:46:00Z",
   "created_at": "2021-03-22T13:47:42Z",
-  "freshness_days": 7,
+  "freshness_days": 8,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -3268,7 +3268,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T16:18:19Z",
   "created_at": "2015-09-13T19:04:02Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 6.4,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -3354,7 +3354,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T18:49:12Z",
   "created_at": "2021-01-25T20:54:01Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -3748,8 +3748,8 @@
   "category": "note-docs",
   "primary_competitor": "Flomo",
   "primary_competitor_ja": null,
-  "stars_num": 64110,
-  "forks_num": 4904,
+  "stars_num": 64121,
+  "forks_num": 4905,
   "contributors_num": 413,
   "watchers_num": 187,
   "language": "Go",
@@ -3768,7 +3768,7 @@
   "advisories_count": 1,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 18733,
+  "health_score": 18736,
   "topics": [
    "docker",
    "foss",
@@ -3791,16 +3791,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 789,
-   "days": 32,
+   "gain": 800,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 187,
-   "days": 7,
+   "gain": 198,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/memos.jpg",
@@ -3828,7 +3828,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T17:41:40Z",
   "created_at": "2014-03-16T16:19:57Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 5.4,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -3911,14 +3911,14 @@
   "category": "files",
   "primary_competitor": "Netflix",
   "primary_competitor_ja": null,
-  "stars_num": 58686,
-  "forks_num": 5720,
+  "stars_num": 58714,
+  "forks_num": 5724,
   "contributors_num": 1878,
-  "watchers_num": 376,
+  "watchers_num": 377,
   "language": "C#",
   "license": "GPL-2.0",
   "license_source": "github",
-  "last_commit": "2026-10-26T23:11:11Z",
+  "last_commit": "2026-10-27T20:40:14Z",
   "created_at": "2018-12-09T06:36:45Z",
   "freshness_days": 0,
   "scorecard_score": 7.4,
@@ -3946,7 +3946,7 @@
   "advisories_count": 23,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 18565,
+  "health_score": 18574,
   "topics": [
    "csharp",
    "dotnet",
@@ -3961,16 +3961,16 @@
   ],
   "also_competitors": [],
   "star_gain": {
-   "gain": 1145,
-   "days": 30,
+   "gain": 1173,
+   "days": 31,
    "from": "2026-09-27",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 421,
-   "days": 7,
+   "gain": 449,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/jellyfin.jpg",
@@ -3998,7 +3998,7 @@
   "license_source": "github",
   "last_commit": "2026-10-23T15:40:15Z",
   "created_at": "2022-11-19T12:55:01Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -4121,8 +4121,8 @@
   "category": "note-docs",
   "primary_competitor": "Evernote",
   "primary_competitor_ja": null,
-  "stars_num": 56903,
-  "forks_num": 6370,
+  "stars_num": 56908,
+  "forks_num": 6371,
   "contributors_num": 827,
   "watchers_num": 487,
   "language": "TypeScript",
@@ -4156,7 +4156,7 @@
   "advisories_count": 32,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 17946,
+  "health_score": 17948,
   "topics": [
    "android",
    "dropbox",
@@ -4185,16 +4185,16 @@
   ],
   "also_competitors": [],
   "star_gain": {
-   "gain": 424,
-   "days": 31,
+   "gain": 429,
+   "days": 32,
    "from": "2026-09-26",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 98,
-   "days": 7,
+   "gain": 103,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/joplin.jpg",
@@ -4213,14 +4213,14 @@
   "category": "design",
   "primary_competitor": "Figma",
   "primary_competitor_ja": "Figma",
-  "stars_num": 61747,
-  "forks_num": 4300,
+  "stars_num": 61752,
+  "forks_num": 4305,
   "contributors_num": 357,
   "watchers_num": 281,
   "language": "Clojure",
   "license": "MPL-2.0",
   "license_source": "github",
-  "last_commit": "2026-10-27T12:08:43Z",
+  "last_commit": "2026-10-27T21:05:45Z",
   "created_at": "2015-12-29T22:09:07Z",
   "freshness_days": 0,
   "scorecard_score": 5.9,
@@ -4248,7 +4248,7 @@
   "advisories_count": 24,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 17836,
+  "health_score": 17839,
   "topics": [
    "clojure",
    "clojurescript",
@@ -4266,16 +4266,16 @@
   ],
   "also_competitors": [],
   "star_gain": {
-   "gain": 1397,
-   "days": 32,
+   "gain": 1402,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 365,
-   "days": 7,
+   "gain": 370,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/penpot.jpg",
@@ -4294,14 +4294,14 @@
   "category": "devtools",
   "primary_competitor": "Firebase",
   "primary_competitor_ja": null,
-  "stars_num": 57771,
-  "forks_num": 5820,
+  "stars_num": 57778,
+  "forks_num": 5822,
   "contributors_num": 550,
   "watchers_num": 429,
   "language": "TypeScript",
   "license": "BSD-3-Clause",
   "license_source": "github",
-  "last_commit": "2026-10-27T12:17:13Z",
+  "last_commit": "2026-10-27T21:06:44Z",
   "created_at": "2019-04-08T16:36:25Z",
   "freshness_days": 0,
   "scorecard_score": 7.7,
@@ -4329,7 +4329,7 @@
   "advisories_count": 0,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 17735,
+  "health_score": 17738,
   "topics": [
    "android",
    "appwrite",
@@ -4358,16 +4358,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 289,
-   "days": 30,
+   "gain": 296,
+   "days": 31,
    "from": "2026-09-27",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 42,
-   "days": 7,
+   "gain": 49,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/appwrite.jpg",
@@ -4395,7 +4395,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T19:56:56Z",
   "created_at": "2011-06-08T08:20:56Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 6,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -4421,7 +4421,7 @@
   "advisories_count": 89,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 17429,
+  "health_score": 17428,
   "topics": [
    "accounting",
    "asset-management",
@@ -4483,7 +4483,7 @@
   "license_source": "github",
   "last_commit": "2026-10-19T14:14:00Z",
   "created_at": "2022-09-25T18:26:37Z",
-  "freshness_days": 7,
+  "freshness_days": 8,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -4494,7 +4494,7 @@
   "advisories_count": 0,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 17419,
+  "health_score": 17418,
   "topics": [
    "inference",
    "openai",
@@ -4572,7 +4572,7 @@
   "advisories_count": 3,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 17369,
+  "health_score": 17368,
   "topics": [
    "authentication",
    "backend",
@@ -4622,7 +4622,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T19:29:38Z",
   "created_at": "2013-01-12T00:25:55Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 4.2,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -4648,7 +4648,7 @@
   "advisories_count": 302,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 17346,
+  "health_score": 17345,
   "topics": [
    "discourse",
    "ember",
@@ -4701,7 +4701,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T20:04:24Z",
   "created_at": "2023-02-12T01:06:52Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -4712,7 +4712,7 @@
   "advisories_count": 29,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 16599,
+  "health_score": 16598,
   "topics": [
    "ai",
    "anthropic",
@@ -4778,7 +4778,7 @@
   "license_source": null,
   "last_commit": "2026-10-23T14:46:02Z",
   "created_at": "2018-04-23T11:45:28Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -4846,8 +4846,8 @@
   "category": "accounting",
   "primary_competitor": "マネーフォワード",
   "primary_competitor_ja": null,
-  "stars_num": 54212,
-  "forks_num": 5674,
+  "stars_num": 54211,
+  "forks_num": 5673,
   "contributors_num": 125,
   "watchers_num": 11,
   "language": "Ruby",
@@ -4883,16 +4883,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": -51,
-   "days": 31,
+   "gain": -52,
+   "days": 32,
    "from": "2026-09-26",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": -4,
-   "days": 7,
+   "gain": -5,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -4915,7 +4915,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-24T19:09:30Z",
   "created_at": "2015-02-02T19:25:47Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 7.1,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -5097,7 +5097,7 @@
   "license_source": "github",
   "last_commit": "2026-08-17T17:38:16Z",
   "created_at": "2022-12-21T04:17:37Z",
-  "freshness_days": 70,
+  "freshness_days": 71,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -5148,7 +5148,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-25T19:43:14Z",
   "created_at": "2015-06-15T06:50:02Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 7.3,
   "scorecard_date": "2026-10-25T06:57:10Z",
   "scorecard_checks": {
@@ -5395,7 +5395,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T19:12:51Z",
   "created_at": "2013-03-10T06:00:31Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 6.1,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -5463,14 +5463,14 @@
   "category": "ai",
   "primary_competitor": "OpenAI API",
   "primary_competitor_ja": null,
-  "stars_num": 49998,
-  "forks_num": 4551,
+  "stars_num": 50009,
+  "forks_num": 4552,
   "contributors_num": 272,
-  "watchers_num": 292,
+  "watchers_num": 293,
   "language": "Go",
   "license": "MIT",
   "license_source": "github",
-  "last_commit": "2026-10-27T12:12:43Z",
+  "last_commit": "2026-10-27T20:53:49Z",
   "created_at": "2023-03-18T22:58:02Z",
   "freshness_days": 0,
   "scorecard_score": null,
@@ -5483,7 +5483,7 @@
   "advisories_count": 0,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 14984,
+  "health_score": 14988,
   "topics": [
    "agents",
    "ai",
@@ -5510,16 +5510,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 737,
-   "days": 32,
+   "gain": 748,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 290,
-   "days": 7,
+   "gain": 301,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -5534,13 +5534,13 @@
   "primary_competitor": "Stripe",
   "primary_competitor_ja": null,
   "stars_num": 45421,
-  "forks_num": 6457,
+  "forks_num": 6458,
   "contributors_num": 264,
   "watchers_num": 128,
   "language": "Rust",
   "license": "Apache-2.0",
   "license_source": "github",
-  "last_commit": "2026-10-27T12:24:08Z",
+  "last_commit": "2026-10-27T21:25:20Z",
   "created_at": "2022-10-17T11:18:28Z",
   "freshness_days": 0,
   "scorecard_score": null,
@@ -5583,15 +5583,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1459,
-   "days": 32,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
    "gain": 50,
-   "days": 7,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/hyperswitch.jpg",
@@ -5619,7 +5619,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-25T14:41:30Z",
   "created_at": "2021-05-09T11:48:37Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -5679,14 +5679,14 @@
   "category": "observability",
   "primary_competitor": "Sentry",
   "primary_competitor_ja": null,
-  "stars_num": 45659,
+  "stars_num": 45665,
   "forks_num": 4956,
-  "contributors_num": 1107,
-  "watchers_num": 665,
+  "contributors_num": 1108,
+  "watchers_num": 664,
   "language": "Python",
   "license": "FSL 1.1",
   "license_source": "manual",
-  "last_commit": "2026-10-27T12:15:26Z",
+  "last_commit": "2026-10-27T21:34:48Z",
   "created_at": "2010-08-30T22:06:41Z",
   "freshness_days": 0,
   "scorecard_score": 6,
@@ -5714,7 +5714,7 @@
   "advisories_count": 22,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 14613,
+  "health_score": 14614,
   "topics": [
    "apm",
    "crash-reporting",
@@ -5738,16 +5738,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 820,
-   "days": 32,
+   "gain": 826,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 55,
-   "days": 7,
+   "gain": 61,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/sentry.jpg",
@@ -6111,7 +6111,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T21:02:26Z",
   "created_at": "2021-01-05T18:49:45Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 4.6,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -6137,7 +6137,7 @@
   "advisories_count": 50,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 13887,
+  "health_score": 13886,
   "topics": [
    "cms",
    "content-management",
@@ -6193,14 +6193,14 @@
   "category": "devtools",
   "primary_competitor": "Postman",
   "primary_competitor_ja": null,
-  "stars_num": 47869,
-  "forks_num": 3035,
+  "stars_num": 47878,
+  "forks_num": 3037,
   "contributors_num": 495,
   "watchers_num": 104,
   "language": "JavaScript",
   "license": "MIT",
   "license_source": "github",
-  "last_commit": "2026-10-27T11:48:25Z",
+  "last_commit": "2026-10-27T16:18:41Z",
   "created_at": "2022-09-27T20:51:45Z",
   "freshness_days": 0,
   "scorecard_score": null,
@@ -6213,7 +6213,7 @@
   "advisories_count": 5,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 13758,
+  "health_score": 13762,
   "topics": [
    "api-client",
    "api-testing",
@@ -6236,16 +6236,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 654,
-   "days": 30,
+   "gain": 663,
+   "days": 31,
    "from": "2026-09-27",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 123,
-   "days": 7,
+   "gain": 132,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/bruno.jpg",
@@ -6273,7 +6273,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T17:50:15Z",
   "created_at": "2022-02-12T21:56:52Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -6328,8 +6328,8 @@
   "category": "marketing",
   "primary_competitor": "Buffer",
   "primary_competitor_ja": null,
-  "stars_num": 38895,
-  "forks_num": 7473,
+  "stars_num": 39254,
+  "forks_num": 7502,
   "contributors_num": 75,
   "watchers_num": 139,
   "language": "TypeScript",
@@ -6337,7 +6337,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T18:27:21Z",
   "created_at": "2023-07-08T17:24:22Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -6348,7 +6348,7 @@
   "advisories_count": 19,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 13532,
+  "health_score": 13635,
   "topics": [
    "nextjs",
    "open-source",
@@ -6367,16 +6367,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 2589,
-   "days": 32,
+   "gain": 2948,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 1479,
-   "days": 7,
+   "gain": 1838,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/postiz.jpg",
@@ -6404,7 +6404,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T20:02:34Z",
   "created_at": "2021-03-30T08:51:34Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -6415,7 +6415,7 @@
   "advisories_count": 13,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 13425,
+  "health_score": 13424,
   "topics": [
    "ai-app-builder",
    "docker",
@@ -6479,7 +6479,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T17:22:38Z",
   "created_at": "2020-08-30T09:21:35Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 5,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -6505,7 +6505,7 @@
   "advisories_count": 227,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 13391,
+  "health_score": 13390,
   "topics": [
    "agentic-ai",
    "ai-agent",
@@ -6647,7 +6647,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-24T15:19:58Z",
   "created_at": "2023-08-17T02:17:10Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -6658,7 +6658,7 @@
   "advisories_count": 0,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 12969,
+  "health_score": 12968,
   "topics": [
    "chatgpt",
    "gpt",
@@ -6707,7 +6707,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T13:55:36Z",
   "created_at": "2020-06-30T04:07:36Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 6.2,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -6733,7 +6733,7 @@
   "advisories_count": 44,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 12953,
+  "health_score": 12952,
   "topics": [
    "admin-dashboard",
    "admin-panels",
@@ -6969,7 +6969,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T17:06:20Z",
   "created_at": "2016-10-30T10:49:56Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 3.7,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -6995,7 +6995,7 @@
   "advisories_count": 0,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 12603,
+  "health_score": 12602,
   "topics": [
    "codec",
    "cut",
@@ -7037,14 +7037,14 @@
   "category": "cms",
   "primary_competitor": "Contentful",
   "primary_competitor_ja": "Contentful",
-  "stars_num": 38645,
-  "forks_num": 4985,
+  "stars_num": 38648,
+  "forks_num": 4986,
   "contributors_num": 593,
   "watchers_num": 340,
   "language": "TypeScript",
   "license": "MSCL 1.0",
   "license_source": "manual",
-  "last_commit": "2026-10-27T12:19:10Z",
+  "last_commit": "2026-10-27T21:19:09Z",
   "created_at": "2012-12-12T01:35:36Z",
   "freshness_days": 0,
   "scorecard_score": 6.2,
@@ -7067,12 +7067,12 @@
   },
   "security_md": false,
   "dependabot_configured": false,
-  "latest_release_at": "2026-10-23T15:11:24Z",
-  "releases_12mo": 33,
+  "latest_release_at": "2026-10-27T16:59:02Z",
+  "releases_12mo": 34,
   "advisories_count": 80,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 12535,
+  "health_score": 12537,
   "topics": [
    "api",
    "app",
@@ -7103,16 +7103,16 @@
   ],
   "also_competitors": [],
   "star_gain": {
-   "gain": 682,
-   "days": 32,
+   "gain": 685,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 35,
-   "days": 7,
+   "gain": 38,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/directus.jpg",
@@ -7140,7 +7140,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T15:12:22Z",
   "created_at": "2015-09-25T16:37:25Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 7.1,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -7166,7 +7166,7 @@
   "advisories_count": 41,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 12527,
+  "health_score": 12526,
   "topics": [
    "apache",
    "chat",
@@ -7395,7 +7395,7 @@
   "license_source": null,
   "last_commit": "2026-10-23T16:10:48Z",
   "created_at": "2020-01-18T13:39:04Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": 5.3,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -7421,7 +7421,7 @@
   "advisories_count": 0,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 12308,
+  "health_score": 12307,
   "topics": [
    "ai-coding",
    "ai-tools",
@@ -7469,14 +7469,14 @@
   "category": "note-docs",
   "primary_competitor": "Confluence",
   "primary_competitor_ja": "Confluence",
-  "stars_num": 41079,
-  "forks_num": 3642,
+  "stars_num": 41084,
+  "forks_num": 3640,
   "contributors_num": 266,
   "watchers_num": 183,
   "language": "TypeScript",
   "license": "BUSL 1.1",
   "license_source": "manual",
-  "last_commit": "2026-10-27T03:27:10Z",
+  "last_commit": "2026-10-27T12:57:03Z",
   "created_at": "2016-05-22T21:31:47Z",
   "freshness_days": 0,
   "scorecard_score": 5.7,
@@ -7522,16 +7522,16 @@
   ],
   "also_competitors": [],
   "star_gain": {
-   "gain": 381,
-   "days": 32,
+   "gain": 386,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 103,
-   "days": 7,
+   "gain": 108,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/outline.jpg",
@@ -7559,7 +7559,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-24T19:57:39Z",
   "created_at": "2020-01-23T22:46:58Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 4.6,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -7637,14 +7637,14 @@
   "category": "ai",
   "primary_competitor": "GitHub Copilot",
   "primary_competitor_ja": null,
-  "stars_num": 36345,
-  "forks_num": 5527,
+  "stars_num": 36350,
+  "forks_num": 5529,
   "contributors_num": 507,
   "watchers_num": 165,
   "language": "TypeScript",
   "license": "Apache-2.0",
   "license_source": "github",
-  "last_commit": "2026-10-27T10:30:29Z",
+  "last_commit": "2026-10-27T15:39:03Z",
   "created_at": "2023-05-24T03:39:39Z",
   "freshness_days": 0,
   "scorecard_score": null,
@@ -7657,7 +7657,7 @@
   "advisories_count": 0,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 12145,
+  "health_score": 12147,
   "topics": [
    "agent",
    "ai",
@@ -7671,16 +7671,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 326,
-   "days": 32,
+   "gain": 331,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 78,
-   "days": 7,
+   "gain": 83,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/continue.jpg",
@@ -7708,7 +7708,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T20:40:07Z",
   "created_at": "2013-12-16T12:51:09Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 5.6,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -7734,7 +7734,7 @@
   "advisories_count": 5,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 12114,
+  "health_score": 12113,
   "topics": [
    "debian",
    "deep-video",
@@ -7781,7 +7781,7 @@
   "category": "ai",
   "primary_competitor": "ChatGPT Plus",
   "primary_competitor_ja": null,
-  "stars_num": 39607,
+  "stars_num": 39610,
   "forks_num": 3732,
   "contributors_num": 120,
   "watchers_num": 278,
@@ -7801,7 +7801,7 @@
   "advisories_count": 0,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 11897,
+  "health_score": 11898,
   "topics": [
    "ai",
    "api",
@@ -7830,16 +7830,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 55,
-   "days": 32,
+   "gain": 58,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 3,
-   "days": 7,
+   "gain": 6,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/quivr.jpg",
@@ -7867,7 +7867,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T12:42:15Z",
   "created_at": "2014-02-07T07:54:44Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -7878,7 +7878,7 @@
   "advisories_count": 1,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 11585,
+  "health_score": 11584,
   "topics": [
    "build-automation",
    "build-pipelines",
@@ -8004,14 +8004,14 @@
   "category": "files",
   "primary_competitor": "Google Photos",
   "primary_competitor_ja": null,
-  "stars_num": 40369,
-  "forks_num": 2336,
+  "stars_num": 40370,
+  "forks_num": 2335,
   "contributors_num": 199,
   "watchers_num": 315,
   "language": "Go",
   "license": "AGPL-3.0",
   "license_source": "manual",
-  "last_commit": "2026-10-27T11:46:30Z",
+  "last_commit": "2026-10-27T12:30:27Z",
   "created_at": "2018-01-27T12:00:15Z",
   "freshness_days": 0,
   "scorecard_score": 6.5,
@@ -8039,7 +8039,7 @@
   "advisories_count": 0,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 11439,
+  "health_score": 11438,
   "topics": [
    "ai",
    "golang",
@@ -8056,16 +8056,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 131,
-   "days": 30,
+   "gain": 132,
+   "days": 31,
    "from": "2026-09-27",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 43,
-   "days": 7,
+   "gain": 44,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/photoprism.jpg",
@@ -8084,16 +8084,16 @@
   "category": "devtools",
   "primary_competitor": "Docker Desktop",
   "primary_competitor_ja": null,
-  "stars_num": 38728,
+  "stars_num": 38731,
   "forks_num": 2928,
   "contributors_num": 264,
   "watchers_num": 466,
   "language": "TypeScript",
   "license": "Zlib",
   "license_source": "github",
-  "last_commit": "2026-10-24T13:01:34Z",
+  "last_commit": "2026-10-27T13:06:39Z",
   "created_at": "2016-05-19T20:15:28Z",
-  "freshness_days": 2,
+  "freshness_days": 0,
   "scorecard_score": 5.2,
   "scorecard_date": "2026-10-26",
   "scorecard_checks": {
@@ -8119,7 +8119,7 @@
   "advisories_count": 20,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 11394,
+  "health_score": 11395,
   "topics": [
    "docker",
    "docker-compose",
@@ -8141,16 +8141,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 162,
-   "days": 31,
-   "from": "2026-09-26",
-   "to": "2026-10-27"
+   "gain": 144,
+   "days": 30,
+   "from": "2026-09-28",
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 39,
-   "days": 7,
+   "gain": 42,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/portainer.jpg",
@@ -8169,14 +8169,14 @@
   "category": "ai",
   "primary_competitor": "LangSmith",
   "primary_competitor_ja": null,
-  "stars_num": 36585,
-  "forks_num": 4101,
+  "stars_num": 36615,
+  "forks_num": 4105,
   "contributors_num": 228,
   "watchers_num": 111,
   "language": "TypeScript",
   "license": "MIT",
   "license_source": null,
-  "last_commit": "2026-10-27T12:14:19Z",
+  "last_commit": "2026-10-27T17:21:32Z",
   "created_at": "2023-05-18T17:47:09Z",
   "freshness_days": 0,
   "scorecard_score": null,
@@ -8184,12 +8184,12 @@
   "scorecard_checks": null,
   "security_md": true,
   "dependabot_configured": true,
-  "latest_release_at": "2026-10-26T12:04:35Z",
+  "latest_release_at": "2026-10-27T15:03:06Z",
   "releases_12mo": 237,
   "advisories_count": 4,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 11339,
+  "health_score": 11348,
   "topics": [
    "analytics",
    "autogen",
@@ -8217,16 +8217,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 1554,
-   "days": 32,
+   "gain": 1584,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 547,
-   "days": 7,
+   "gain": 577,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/langfuse.jpg",
@@ -8245,8 +8245,8 @@
   "category": "devtools",
   "primary_competitor": "Vercel",
   "primary_competitor_ja": null,
-  "stars_num": 38066,
-  "forks_num": 3127,
+  "stars_num": 38076,
+  "forks_num": 3125,
   "contributors_num": 418,
   "watchers_num": 110,
   "language": "TypeScript",
@@ -8254,7 +8254,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-26T20:19:44Z",
   "created_at": "2024-04-19T07:49:30Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -8265,7 +8265,7 @@
   "advisories_count": 60,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 11317,
+  "health_score": 11318,
   "topics": [
    "agents",
    "ai",
@@ -8293,16 +8293,16 @@
   ],
   "also_competitors": [],
   "star_gain": {
-   "gain": 542,
-   "days": 30,
+   "gain": 552,
+   "days": 31,
    "from": "2026-09-27",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 195,
-   "days": 7,
+   "gain": 205,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/dokploy.jpg",
@@ -8330,7 +8330,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T19:39:00Z",
   "created_at": "2017-05-23T00:30:20Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -8341,7 +8341,7 @@
   "advisories_count": 27,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 11259,
+  "health_score": 11258,
   "topics": [
    "electron",
    "electron-app",
@@ -8401,7 +8401,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T18:35:14Z",
   "created_at": "2018-02-09T11:12:01Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 8.9,
   "scorecard_date": "2026-10-25T18:34:36Z",
   "scorecard_checks": {
@@ -8431,7 +8431,7 @@
   "advisories_count": 60,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 11247,
+  "health_score": 11246,
   "topics": [
    "argo",
    "argo-cd",
@@ -8479,7 +8479,7 @@
   "category": "files",
   "primary_competitor": "Google Drive",
   "primary_competitor_ja": null,
-  "stars_num": 35889,
+  "stars_num": 35887,
   "forks_num": 4167,
   "contributors_num": 261,
   "watchers_num": 338,
@@ -8514,7 +8514,7 @@
   "advisories_count": 62,
   "docker_available": true,
   "github_archived": true,
-  "health_score": 11227,
+  "health_score": 11226,
   "topics": [
    "file-browser",
    "file-manager",
@@ -8530,16 +8530,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": -48,
-   "days": 30,
+   "gain": -50,
+   "days": 31,
    "from": "2026-09-27",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 2,
-   "days": 7,
+   "gain": 0,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -8696,7 +8696,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T15:07:09Z",
   "created_at": "2016-01-28T21:10:28Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 7.8,
   "scorecard_date": "2026-10-26",
   "scorecard_checks": {
@@ -8722,7 +8722,7 @@
   "advisories_count": 41,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 10482,
+  "health_score": 10481,
   "topics": [
    "cloud-native",
    "cncf",
@@ -8780,7 +8780,7 @@
   "license_source": "github",
   "last_commit": "2026-10-18T14:23:55Z",
   "created_at": "2014-04-27T14:07:58Z",
-  "freshness_days": 8,
+  "freshness_days": 9,
   "scorecard_score": 7.3,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -9017,7 +9017,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T20:38:59Z",
   "created_at": "2020-04-03T18:47:11Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 6.8,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -9100,7 +9100,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T18:33:04Z",
   "created_at": "2018-05-31T01:37:46Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 8,
   "scorecard_date": "2026-10-23T12:42:47Z",
   "scorecard_checks": {
@@ -9130,7 +9130,7 @@
   "advisories_count": 3,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 10195,
+  "health_score": 10194,
   "topics": [
    "k8s",
    "kubernetes"
@@ -9235,7 +9235,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T13:35:05Z",
   "created_at": "2013-10-28T13:19:39Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 5.9,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -9317,8 +9317,8 @@
   "category": "communication",
   "primary_competitor": "Pushover",
   "primary_competitor_ja": null,
-  "stars_num": 35109,
-  "forks_num": 1680,
+  "stars_num": 35114,
+  "forks_num": 1682,
   "contributors_num": 437,
   "watchers_num": 99,
   "language": "Go",
@@ -9352,7 +9352,7 @@
   "advisories_count": 0,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 9861,
+  "health_score": 9863,
   "topics": [
    "curl",
    "notifications",
@@ -9368,16 +9368,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 682,
-   "days": 32,
+   "gain": 687,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 190,
-   "days": 7,
+   "gain": 195,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -9400,7 +9400,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T19:09:31Z",
   "created_at": "2019-08-24T13:56:15Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 6.3,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -9486,13 +9486,13 @@
   "stars_num": 12212,
   "forks_num": 9358,
   "contributors_num": 3202,
-  "watchers_num": 1204,
+  "watchers_num": 1203,
   "language": "PHP",
   "license": "OSL-3.0",
   "license_source": "github",
   "last_commit": "2026-10-22T15:47:51Z",
   "created_at": "2011-11-30T15:30:13Z",
-  "freshness_days": 4,
+  "freshness_days": 5,
   "scorecard_score": 6.2,
   "scorecard_date": "2026-10-26",
   "scorecard_checks": {
@@ -9518,7 +9518,7 @@
   "advisories_count": 0,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 9632,
+  "health_score": 9631,
   "topics": [
    "ecommerce",
    "ecommerce-platform",
@@ -9534,15 +9534,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 12,
-   "days": 32,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
    "gain": 4,
-   "days": 7,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/magento.jpg",
@@ -9570,7 +9570,7 @@
   "license_source": "github",
   "last_commit": "2026-10-23T13:47:21Z",
   "created_at": "2023-08-16T20:01:36Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -9581,7 +9581,7 @@
   "advisories_count": 10,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 9569,
+  "health_score": 9568,
   "topics": [],
   "languages": [],
   "ja_docs": null,
@@ -9626,7 +9626,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-26T18:41:26Z",
   "created_at": "2021-01-03T12:44:36Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -9637,7 +9637,7 @@
   "advisories_count": 6,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 9537,
+  "health_score": 9536,
   "topics": [
    "apm",
    "application-monitoring",
@@ -9781,7 +9781,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T20:50:27Z",
   "created_at": "2022-04-29T02:41:34Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -9792,7 +9792,7 @@
   "advisories_count": 14,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 9454,
+  "health_score": 9453,
   "topics": [
    "budgeting",
    "finance",
@@ -9842,7 +9842,7 @@
   "license_source": "github",
   "last_commit": "2026-10-23T17:42:09Z",
   "created_at": "2013-02-12T16:46:39Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -9912,7 +9912,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T19:08:04Z",
   "created_at": "2011-08-09T15:12:11Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 4.1,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -9938,7 +9938,7 @@
   "advisories_count": 2,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 9178,
+  "health_score": 9177,
   "topics": [
    "automattic",
    "ecommerce",
@@ -9985,7 +9985,7 @@
   "category": "database",
   "primary_competitor": "Firebase",
   "primary_competitor_ja": null,
-  "stars_num": 33238,
+  "stars_num": 33237,
   "forks_num": 1398,
   "contributors_num": 184,
   "watchers_num": 162,
@@ -10051,16 +10051,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 168,
-   "days": 31,
+   "gain": 167,
+   "days": 32,
    "from": "2026-09-26",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 31,
-   "days": 7,
+   "gain": 30,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/surrealdb.jpg",
@@ -10088,7 +10088,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T21:20:56Z",
   "created_at": "2017-05-10T19:44:51Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 5.3,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -10114,7 +10114,7 @@
   "advisories_count": 2,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 9106,
+  "health_score": 9105,
   "topics": [
    "capture",
    "cross-platform",
@@ -10249,7 +10249,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T18:16:30Z",
   "created_at": "2022-08-17T01:04:27Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -10490,7 +10490,7 @@
   "license_source": "github",
   "last_commit": "2026-10-23T21:15:34Z",
   "created_at": "2022-10-05T17:58:44Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": 5.1,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -10516,7 +10516,7 @@
   "advisories_count": 0,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 8822,
+  "health_score": 8821,
   "topics": [
    "agents",
    "ai",
@@ -10568,7 +10568,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-25T19:08:07Z",
   "created_at": "2022-12-03T02:52:46Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -10708,14 +10708,14 @@
   "category": "security",
   "primary_competitor": "Tailscale",
   "primary_competitor_ja": null,
-  "stars_num": 30253,
+  "stars_num": 30266,
   "forks_num": 1789,
-  "contributors_num": 176,
+  "contributors_num": 177,
   "watchers_num": 133,
   "language": "Go",
   "license": "BSD-3-Clause",
   "license_source": null,
-  "last_commit": "2026-10-27T12:22:38Z",
+  "last_commit": "2026-10-27T16:30:26Z",
   "created_at": "2021-04-14T12:27:20Z",
   "freshness_days": 0,
   "scorecard_score": 6.3,
@@ -10743,7 +10743,7 @@
   "advisories_count": 9,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 8579,
+  "health_score": 8583,
   "topics": [
    "golang",
    "mesh",
@@ -10762,16 +10762,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 732,
-   "days": 31,
+   "gain": 745,
+   "days": 32,
    "from": "2026-09-26",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 173,
-   "days": 7,
+   "gain": 186,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -10794,7 +10794,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T14:19:00Z",
   "created_at": "2022-11-01T06:10:25Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -10859,14 +10859,14 @@
   "category": "analytics",
   "primary_competitor": "Google Analytics",
   "primary_competitor_ja": "Google Analytics",
-  "stars_num": 29684,
+  "stars_num": 29690,
   "forks_num": 1921,
   "contributors_num": 119,
   "watchers_num": 153,
   "language": "Elixir",
   "license": "AGPL-3.0",
   "license_source": "github",
-  "last_commit": "2026-10-27T12:10:31Z",
+  "last_commit": "2026-10-27T14:58:04Z",
   "created_at": "2018-12-04T22:33:36Z",
   "freshness_days": 0,
   "scorecard_score": 6.4,
@@ -10894,7 +10894,7 @@
   "advisories_count": 1,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 8479,
+  "health_score": 8481,
   "topics": [
    "analytics",
    "analytics-dashboard",
@@ -10923,16 +10923,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 466,
-   "days": 31,
+   "gain": 472,
+   "days": 32,
    "from": "2026-09-26",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 125,
-   "days": 7,
+   "gain": 131,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/plausible.jpg",
@@ -11118,7 +11118,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T18:34:52Z",
   "created_at": "2016-12-07T00:56:57Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 9.4,
   "scorecard_date": "2026-10-24T10:29:33Z",
   "scorecard_checks": {
@@ -11148,7 +11148,7 @@
   "advisories_count": 7,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 8311,
+  "health_score": 8310,
   "topics": [
    "2fa",
    "authentication",
@@ -11206,9 +11206,9 @@
   "primary_competitor": "Zapier",
   "primary_competitor_ja": null,
   "stars_num": 23786,
-  "forks_num": 3959,
+  "forks_num": 3966,
   "contributors_num": 298,
-  "watchers_num": 531,
+  "watchers_num": 532,
   "language": "JavaScript",
   "license": "Apache-2.0",
   "license_source": "github",
@@ -11240,7 +11240,7 @@
   "advisories_count": 2,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 8207,
+  "health_score": 8211,
   "topics": [
    "flow-based-programming",
    "javascript",
@@ -11256,21 +11256,89 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 99,
-   "days": 31,
+   "days": 32,
    "from": "2026-09-26",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
    "gain": 24,
-   "days": 7,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/node-red.jpg",
    "source": "github",
    "width": 800,
    "height": 400
+  }
+ },
+ {
+  "id": "openseo",
+  "name": "OpenSEO",
+  "url": "https://openseo.so",
+  "github_url": "https://github.com/every-app/open-seo",
+  "description_ja": "キーワード調査、順位追跡、競合分析、被リンク、サイト監査ができるSEOツール。SemrushやAhrefsの代替。セルフホストできるが、SEOデータの取得にDataForSEOのAPIキー（外部サービス・従量課金）が別途必要。AIエージェント向けのMCPも備える。",
+  "description_en": null,
+  "category": "seo",
+  "primary_competitor": "Semrush",
+  "primary_competitor_ja": null,
+  "stars_num": 25318,
+  "forks_num": 3453,
+  "contributors_num": 20,
+  "watchers_num": 75,
+  "language": "TypeScript",
+  "license": "MIT",
+  "license_source": "github",
+  "last_commit": "2026-10-26T23:51:52Z",
+  "created_at": "2026-02-27T18:57:41Z",
+  "freshness_days": 0,
+  "scorecard_score": null,
+  "scorecard_date": null,
+  "scorecard_checks": null,
+  "security_md": true,
+  "dependabot_configured": false,
+  "latest_release_at": "2026-10-26T23:51:52Z",
+  "releases_12mo": 47,
+  "advisories_count": 0,
+  "docker_available": true,
+  "github_archived": false,
+  "health_score": 8085,
+  "topics": [
+   "backlink-analysis",
+   "google-search-console-mcp",
+   "keyword-research",
+   "mcp",
+   "seo",
+   "seo-agent",
+   "seo-audit",
+   "seo-automation",
+   "seo-skills",
+   "seo-tools",
+   "site-audit"
+  ],
+  "languages": [],
+  "ja_docs": null,
+  "ja_ui": null,
+  "aliases": [],
+  "also_competitors": [],
+  "star_gain": {
+   "gain": 1154,
+   "days": 8,
+   "from": "2026-10-20",
+   "to": "2026-10-28"
+  },
+  "star_gain_7d": {
+   "gain": 1154,
+   "days": 8,
+   "from": "2026-10-20",
+   "to": "2026-10-28"
+  },
+  "preview": {
+   "src": "/previews/openseo.jpg",
+   "source": "official",
+   "width": 800,
+   "height": 420
   }
  },
  {
@@ -11359,74 +11427,6 @@
   "preview": null
  },
  {
-  "id": "openseo",
-  "name": "OpenSEO",
-  "url": "https://openseo.so",
-  "github_url": "https://github.com/every-app/open-seo",
-  "description_ja": "キーワード調査、順位追跡、競合分析、被リンク、サイト監査ができるSEOツール。SemrushやAhrefsの代替。セルフホストできるが、SEOデータの取得にDataForSEOのAPIキー（外部サービス・従量課金）が別途必要。AIエージェント向けのMCPも備える。",
-  "description_en": null,
-  "category": "seo",
-  "primary_competitor": "Semrush",
-  "primary_competitor_ja": null,
-  "stars_num": 25228,
-  "forks_num": 3444,
-  "contributors_num": 20,
-  "watchers_num": 75,
-  "language": "TypeScript",
-  "license": "MIT",
-  "license_source": "github",
-  "last_commit": "2026-10-26T23:51:52Z",
-  "created_at": "2026-02-27T18:57:41Z",
-  "freshness_days": 0,
-  "scorecard_score": null,
-  "scorecard_date": null,
-  "scorecard_checks": null,
-  "security_md": true,
-  "dependabot_configured": false,
-  "latest_release_at": "2026-10-26T23:51:52Z",
-  "releases_12mo": 47,
-  "advisories_count": 0,
-  "docker_available": true,
-  "github_archived": false,
-  "health_score": 8058,
-  "topics": [
-   "backlink-analysis",
-   "google-search-console-mcp",
-   "keyword-research",
-   "mcp",
-   "seo",
-   "seo-agent",
-   "seo-audit",
-   "seo-automation",
-   "seo-skills",
-   "seo-tools",
-   "site-audit"
-  ],
-  "languages": [],
-  "ja_docs": null,
-  "ja_ui": null,
-  "aliases": [],
-  "also_competitors": [],
-  "star_gain": {
-   "gain": 1064,
-   "days": 7,
-   "from": "2026-10-20",
-   "to": "2026-10-27"
-  },
-  "star_gain_7d": {
-   "gain": 1064,
-   "days": 7,
-   "from": "2026-10-20",
-   "to": "2026-10-27"
-  },
-  "preview": {
-   "src": "/previews/openseo.jpg",
-   "source": "official",
-   "width": 800,
-   "height": 420
-  }
- },
- {
   "id": "focalboard",
   "name": "Focalboard",
   "url": "https://github.com/mattermost-community/focalboard",
@@ -11451,7 +11451,7 @@
   },
   "last_commit": "2026-05-18T16:05:00Z",
   "created_at": "2020-10-06T16:46:23Z",
-  "freshness_days": 161,
+  "freshness_days": 162,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -11518,7 +11518,7 @@
   "license_note": "リポジトリの大部分はOSI承認のAGPL-3.0ですが、(ee) ディレクトリ配下は別ライセンス（ee/LICENSE.md）です。LICENSE.md を確認（2026-10-24）。",
   "last_commit": "2026-10-24T14:13:38Z",
   "created_at": "2022-08-27T22:15:11Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -11586,7 +11586,7 @@
   "license_source": null,
   "last_commit": "2026-10-26T21:29:25Z",
   "created_at": "2019-12-30T09:19:48Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -11597,7 +11597,7 @@
   "advisories_count": 47,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 7917,
+  "health_score": 7916,
   "topics": [
    "authentication",
    "authentik",
@@ -11662,7 +11662,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-24T14:55:49Z",
   "created_at": "2019-10-09T12:47:28Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 3.5,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -11688,7 +11688,7 @@
   "advisories_count": 0,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 7903,
+  "health_score": 7902,
   "topics": [
    "3d",
    "animation",
@@ -11731,8 +11731,8 @@
   "category": "observability",
   "primary_competitor": "Datadog",
   "primary_competitor_ja": null,
-  "stars_num": 23345,
-  "forks_num": 3204,
+  "stars_num": 23348,
+  "forks_num": 3206,
   "contributors_num": 534,
   "watchers_num": 310,
   "language": "Go",
@@ -11740,7 +11740,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T20:32:49Z",
   "created_at": "2016-04-15T18:49:02Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 9,
   "scorecard_date": "2026-10-26T20:29:10Z",
   "scorecard_checks": {
@@ -11770,7 +11770,7 @@
   "advisories_count": 2,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 7782,
+  "health_score": 7784,
   "topics": [
    "cncf",
    "distributed-tracing",
@@ -11786,16 +11786,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 105,
-   "days": 31,
+   "gain": 108,
+   "days": 32,
    "from": "2026-09-26",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 29,
-   "days": 7,
+   "gain": 32,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -11818,7 +11818,7 @@
   "license_source": "github",
   "last_commit": "2026-09-24T15:21:07Z",
   "created_at": "2017-02-17T00:02:58Z",
-  "freshness_days": 32,
+  "freshness_days": 33,
   "scorecard_score": 4.5,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -11844,7 +11844,7 @@
   "advisories_count": 0,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 7772,
+  "health_score": 7771,
   "topics": [
    "crm",
    "family",
@@ -11898,7 +11898,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-26T16:31:13Z",
   "created_at": "2020-10-24T07:27:48Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 3.9,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -11924,7 +11924,7 @@
   "advisories_count": 11,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 7747,
+  "health_score": 7746,
   "topics": [
    "admin-dashboard",
    "ai-agent",
@@ -12049,7 +12049,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T13:15:25Z",
   "created_at": "2018-06-29T21:59:26Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 6.8,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -12075,7 +12075,7 @@
   "advisories_count": 0,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 7626,
+  "health_score": 7625,
   "topics": [
    "automation",
    "data",
@@ -12126,16 +12126,16 @@
   "category": "ai",
   "primary_competitor": "Notta",
   "primary_competitor_ja": null,
-  "stars_num": 24877,
+  "stars_num": 24885,
   "forks_num": 2505,
   "contributors_num": 120,
-  "watchers_num": 156,
+  "watchers_num": 157,
   "language": "Python",
   "license": "BSD-2-Clause",
   "license_source": "github",
   "last_commit": "2026-10-22T14:53:44Z",
   "created_at": "2022-12-09T02:34:23Z",
-  "freshness_days": 4,
+  "freshness_days": 5,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -12146,7 +12146,7 @@
   "advisories_count": 0,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 7569,
+  "health_score": 7571,
   "topics": [
    "asr",
    "speech",
@@ -12160,16 +12160,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 644,
-   "days": 32,
+   "gain": 652,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 189,
-   "days": 7,
+   "gain": 197,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -12192,7 +12192,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T17:44:17Z",
   "created_at": "2014-06-28T07:37:32Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 4.6,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -12273,14 +12273,14 @@
   "category": "marketing",
   "primary_competitor": "SendGrid",
   "primary_competitor_ja": "SendGrid",
-  "stars_num": 24002,
-  "forks_num": 2717,
+  "stars_num": 24005,
+  "forks_num": 2716,
   "contributors_num": 291,
   "watchers_num": 142,
   "language": "Go",
   "license": "AGPL-3.0",
   "license_source": "github",
-  "last_commit": "2026-10-27T08:53:33Z",
+  "last_commit": "2026-10-27T17:46:33Z",
   "created_at": "2019-06-26T05:08:39Z",
   "freshness_days": 0,
   "scorecard_score": 5,
@@ -12330,16 +12330,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 436,
-   "days": 32,
+   "gain": 439,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 139,
-   "days": 7,
+   "gain": 142,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/listmonk.jpg",
@@ -12367,7 +12367,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T19:40:42Z",
   "created_at": "2016-10-31T21:02:47Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 7.4,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -12393,7 +12393,7 @@
   "advisories_count": 0,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 7442,
+  "health_score": 7441,
   "topics": [
    "aws",
    "azure",
@@ -12723,7 +12723,7 @@
   "license_source": null,
   "last_commit": "2026-10-26T20:06:07Z",
   "created_at": "2015-08-22T16:32:28Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 5.9,
   "scorecard_date": "2026-10-26",
   "scorecard_checks": {
@@ -12749,7 +12749,7 @@
   "advisories_count": 0,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 7224,
+  "health_score": 7223,
   "topics": [
    "gplv2",
    "multi-platform",
@@ -13029,7 +13029,7 @@
   "license_source": "github",
   "last_commit": "2025-10-20T13:17:06Z",
   "created_at": "2014-01-11T21:05:21Z",
-  "freshness_days": 371,
+  "freshness_days": 372,
   "scorecard_score": 4.1,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -13101,7 +13101,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T13:41:18Z",
   "created_at": "2014-01-21T01:26:28Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 4.6,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -13127,7 +13127,7 @@
   "advisories_count": 84,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 7093,
+  "health_score": 7092,
   "topics": [
    "docker-image",
    "foss",
@@ -13179,7 +13179,7 @@
   "license_source": null,
   "last_commit": "2026-10-24T19:53:14Z",
   "created_at": "2023-11-17T20:31:46Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -13330,7 +13330,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T18:05:44Z",
   "created_at": "2020-09-30T06:49:46Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -13394,7 +13394,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T17:11:34Z",
   "created_at": "2022-09-29T12:09:14Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -13672,7 +13672,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T18:00:18Z",
   "created_at": "2011-03-26T13:09:02Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -13739,7 +13739,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T14:12:25Z",
   "created_at": "2023-08-03T15:35:48Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -13750,7 +13750,7 @@
   "advisories_count": 18,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 6389,
+  "health_score": 6388,
   "topics": [
    "ai",
    "ai-agents",
@@ -13893,7 +13893,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-23T13:36:39Z",
   "created_at": "2015-03-26T10:46:17Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": 4.8,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -13972,7 +13972,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T20:03:50Z",
   "created_at": "2012-11-28T09:59:11Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 7,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -14064,7 +14064,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T12:58:41Z",
   "created_at": "2020-04-30T23:16:17Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 4.6,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -14090,7 +14090,7 @@
   "advisories_count": 0,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 6227,
+  "health_score": 6226,
   "topics": [
    "docs-generator",
    "markdown",
@@ -14352,14 +14352,14 @@
   "category": "devtools",
   "primary_competitor": "AWS API Gateway",
   "primary_competitor_ja": null,
-  "stars_num": 17254,
+  "stars_num": 17256,
   "forks_num": 2980,
   "contributors_num": 522,
   "watchers_num": 305,
   "language": "Lua",
   "license": "Apache-2.0",
   "license_source": "github",
-  "last_commit": "2026-10-27T12:22:13Z",
+  "last_commit": "2026-10-27T14:12:27Z",
   "created_at": "2019-04-10T02:02:05Z",
   "freshness_days": 0,
   "scorecard_score": 7.2,
@@ -14415,16 +14415,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 86,
-   "days": 30,
+   "gain": 88,
+   "days": 31,
    "from": "2026-09-27",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 14,
-   "days": 7,
+   "gain": 16,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -14447,7 +14447,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T19:21:10Z",
   "created_at": "2021-01-29T22:10:00Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -14458,7 +14458,7 @@
   "advisories_count": 3,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 6140,
+  "health_score": 6139,
   "topics": [
    "analytics",
    "apache2",
@@ -14510,7 +14510,7 @@
   "license_source": null,
   "last_commit": "2026-10-24T19:15:33Z",
   "created_at": "2015-08-11T17:39:03Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 6.4,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -14593,14 +14593,14 @@
   "category": "legal",
   "primary_competitor": "DocuSign",
   "primary_competitor_ja": null,
-  "stars_num": 15587,
+  "stars_num": 15585,
   "forks_num": 3411,
   "contributors_num": 191,
   "watchers_num": 54,
   "language": "TypeScript",
   "license": "AGPL-3.0",
   "license_source": "github",
-  "last_commit": "2026-10-27T12:12:16Z",
+  "last_commit": "2026-10-27T20:06:12Z",
   "created_at": "2023-03-12T16:28:56Z",
   "freshness_days": 0,
   "scorecard_score": null,
@@ -14640,16 +14640,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 403,
-   "days": 32,
+   "gain": 401,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 108,
-   "days": 7,
+   "gain": 106,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/documenso.jpg",
@@ -14688,7 +14688,7 @@
   "advisories_count": 0,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 5663,
+  "health_score": 5662,
   "topics": [
    "document-signing",
    "documents",
@@ -14916,7 +14916,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-26T17:53:05Z",
   "created_at": "2012-11-19T16:41:31Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 4,
   "scorecard_date": "2026-10-26",
   "scorecard_checks": {
@@ -15063,14 +15063,14 @@
   "category": "video",
   "primary_competitor": "Zoom",
   "primary_competitor_ja": null,
-  "stars_num": 9255,
+  "stars_num": 9257,
   "forks_num": 5979,
   "contributors_num": 350,
   "watchers_num": 377,
   "language": "TypeScript",
   "license": "LGPL-3.0",
   "license_source": "github",
-  "last_commit": "2026-10-27T11:23:16Z",
+  "last_commit": "2026-10-27T20:13:32Z",
   "created_at": "2010-05-25T01:42:41Z",
   "freshness_days": 0,
   "scorecard_score": 5.5,
@@ -15113,16 +15113,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 27,
-   "days": 32,
+   "gain": 29,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 8,
-   "days": 7,
+   "gain": 10,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -15145,7 +15145,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T21:04:51Z",
   "created_at": "2013-04-22T16:49:40Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 5.4,
   "scorecard_date": "2026-10-26",
   "scorecard_checks": {
@@ -15228,7 +15228,7 @@
   "license_source": "github",
   "last_commit": "2026-10-23T20:27:24Z",
   "created_at": "2015-07-22T05:32:15Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -15239,7 +15239,7 @@
   "advisories_count": 10,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 5516,
+  "health_score": 5515,
   "topics": [
    "hacktoberfest",
    "matrix"
@@ -15325,9 +15325,9 @@
   "also_competitors": [],
   "star_gain": {
    "gain": -8,
-   "days": 32,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": null,
   "preview": null
@@ -15499,7 +15499,7 @@
   "license_source": "github",
   "last_commit": "2026-10-16T15:07:08Z",
   "created_at": "2015-10-29T22:09:42Z",
-  "freshness_days": 10,
+  "freshness_days": 11,
   "scorecard_score": 7.6,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -15731,7 +15731,7 @@
   "license_source": "github",
   "last_commit": "2026-10-23T21:23:21Z",
   "created_at": "2016-10-13T06:45:50Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": 4.6,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -15802,22 +15802,22 @@
   "category": "ai",
   "primary_competitor": "Pinecone",
   "primary_competitor_ja": null,
-  "stars_num": 16921,
+  "stars_num": 16923,
   "forks_num": 1429,
   "contributors_num": 191,
   "watchers_num": 137,
   "language": "Go",
   "license": "BSD-3-Clause",
   "license_source": null,
-  "last_commit": "2026-10-27T12:21:17Z",
+  "last_commit": "2026-10-27T20:01:10Z",
   "created_at": "2016-03-30T15:03:17Z",
   "freshness_days": 0,
   "scorecard_score": 6.7,
-  "scorecard_date": "2026-10-19",
+  "scorecard_date": "2026-10-26",
   "scorecard_checks": {
    "Code-Review": 10,
-   "Dangerous-Workflow": 10,
    "Maintained": 10,
+   "Dangerous-Workflow": 10,
    "Token-Permissions": 0,
    "CII-Best-Practices": 0,
    "Security-Policy": 0,
@@ -15827,13 +15827,13 @@
    "Branch-Protection": 5,
    "Signed-Releases": 0,
    "Pinned-Dependencies": 7,
-   "SAST": 10,
-   "Packaging": 10
+   "Packaging": 10,
+   "SAST": 10
   },
   "security_md": false,
   "dependabot_configured": true,
-  "latest_release_at": "2026-10-25T14:38:30Z",
-  "releases_12mo": 179,
+  "latest_release_at": "2026-10-27T20:04:10Z",
+  "releases_12mo": 181,
   "advisories_count": 1,
   "docker_available": true,
   "github_archived": false,
@@ -15866,16 +15866,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 74,
-   "days": 31,
+   "gain": 76,
+   "days": 32,
    "from": "2026-09-26",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 29,
-   "days": 7,
+   "gain": 31,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/weaviate.jpg",
@@ -15972,7 +15972,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T20:02:32Z",
   "created_at": "2012-10-21T16:48:50Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 6.9,
   "scorecard_date": "2026-10-26",
   "scorecard_checks": {
@@ -15998,7 +15998,7 @@
   "advisories_count": 36,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 5027,
+  "health_score": 5026,
   "topics": [
    "feed",
    "freshrss",
@@ -16048,7 +16048,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T20:27:09Z",
   "created_at": "2012-01-19T13:21:52Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 6.1,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -16117,14 +16117,14 @@
   "category": "ecommerce",
   "primary_competitor": "Shopify",
   "primary_competitor_ja": null,
-  "stars_num": 8222,
+  "stars_num": 8221,
   "forks_num": 5059,
   "contributors_num": 501,
   "watchers_num": 582,
   "language": "PHP",
   "license": "GPL-3.0",
   "license_source": "manual",
-  "last_commit": "2026-10-26T19:19:35Z",
+  "last_commit": "2026-10-27T18:35:01Z",
   "created_at": "2011-08-02T07:32:17Z",
   "freshness_days": 0,
   "scorecard_score": 3.4,
@@ -16171,16 +16171,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 22,
-   "days": 32,
+   "gain": 21,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 3,
-   "days": 7,
+   "gain": 2,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -16194,8 +16194,8 @@
   "category": "email",
   "primary_competitor": "SendGrid",
   "primary_competitor_ja": null,
-  "stars_num": 16897,
-  "forks_num": 1314,
+  "stars_num": 16896,
+  "forks_num": 1315,
   "contributors_num": 53,
   "watchers_num": 210,
   "language": "Ruby",
@@ -16203,7 +16203,7 @@
   "license_source": "github",
   "last_commit": "2026-10-20T17:55:47Z",
   "created_at": "2017-04-19T12:04:57Z",
-  "freshness_days": 6,
+  "freshness_days": 7,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -16228,16 +16228,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 68,
-   "days": 31,
+   "gain": 67,
+   "days": 32,
    "from": "2026-09-26",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 22,
-   "days": 7,
+   "gain": 21,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -16323,7 +16323,7 @@
   "language": "PHP",
   "license": "MIT",
   "license_source": "github",
-  "last_commit": "2026-10-27T01:43:15Z",
+  "last_commit": "2026-10-27T18:23:21Z",
   "created_at": "2014-08-02T18:29:10Z",
   "freshness_days": 0,
   "scorecard_score": 4.1,
@@ -16376,15 +16376,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 23,
-   "days": 31,
+   "days": 32,
    "from": "2026-09-26",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
    "gain": 11,
-   "days": 7,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -16481,7 +16481,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-26T21:23:55Z",
   "created_at": "2013-08-19T00:36:28Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 7,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -16507,7 +16507,7 @@
   "advisories_count": 63,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 4804,
+  "health_score": 4803,
   "topics": [
    "digital-experience-platform",
    "digitalexperienceplatform",
@@ -16696,7 +16696,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-26T16:33:52Z",
   "created_at": "2022-06-06T04:25:21Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 6.1,
   "scorecard_date": "2025-08-07T10:41:22Z",
   "scorecard_checks": {
@@ -16786,7 +16786,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T17:49:37Z",
   "created_at": "2012-04-23T22:37:04Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 1.7,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -16812,7 +16812,7 @@
   "advisories_count": 1,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 4749,
+  "health_score": 4748,
   "topics": [
    "cross-platform",
    "gplv3",
@@ -16849,14 +16849,14 @@
   "category": "security",
   "primary_competitor": "Auth0",
   "primary_competitor_ja": null,
-  "stars_num": 15452,
-  "forks_num": 1406,
-  "contributors_num": 264,
+  "stars_num": 15456,
+  "forks_num": 1405,
+  "contributors_num": 263,
   "watchers_num": 65,
   "language": "Go",
   "license": "AGPL-3.0",
   "license_source": "github",
-  "last_commit": "2026-10-26T20:22:28Z",
+  "last_commit": "2026-10-27T19:16:42Z",
   "created_at": "2020-03-16T13:51:31Z",
   "freshness_days": 0,
   "scorecard_score": null,
@@ -16895,16 +16895,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 359,
-   "days": 32,
+   "gain": 363,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 103,
-   "days": 7,
+   "gain": 107,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/zitadel.jpg",
@@ -17052,14 +17052,14 @@
   "category": "email",
   "primary_competitor": "Gmail",
   "primary_competitor_ja": null,
-  "stars_num": 13705,
-  "forks_num": 1853,
+  "stars_num": 13708,
+  "forks_num": 1855,
   "contributors_num": 384,
   "watchers_num": 198,
   "language": "JavaScript",
   "license": "GPL-3.0",
   "license_source": "github",
-  "last_commit": "2026-10-27T11:55:28Z",
+  "last_commit": "2026-10-27T13:19:58Z",
   "created_at": "2016-12-09T19:38:35Z",
   "freshness_days": 0,
   "scorecard_score": 5.7,
@@ -17087,7 +17087,7 @@
   "advisories_count": 22,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 4594,
+  "health_score": 4596,
   "topics": [
    "acme",
    "clamav",
@@ -17113,16 +17113,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 194,
-   "days": 32,
+   "gain": 197,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 73,
-   "days": 7,
+   "gain": 76,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -17145,7 +17145,7 @@
   "license_source": "github",
   "last_commit": "2026-10-23T19:58:38Z",
   "created_at": "2021-08-17T22:00:40Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -17156,7 +17156,7 @@
   "advisories_count": 24,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 4560,
+  "health_score": 4559,
   "topics": [
    "audiobook-manager",
    "audiobooks",
@@ -17360,7 +17360,7 @@
   "language": "C#",
   "license": "MIT",
   "license_source": null,
-  "last_commit": "2026-10-27T11:02:39Z",
+  "last_commit": "2026-10-27T14:49:02Z",
   "created_at": "2014-08-05T08:28:16Z",
   "freshness_days": 0,
   "scorecard_score": 5.7,
@@ -17409,15 +17409,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 141,
-   "days": 30,
+   "days": 31,
    "from": "2026-09-27",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
    "gain": 32,
-   "days": 7,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/duplicati.jpg",
@@ -17445,7 +17445,7 @@
   "license_source": null,
   "last_commit": "2026-10-26T15:45:24Z",
   "created_at": "2023-03-06T13:37:23Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 5.1,
   "scorecard_date": "2026-10-26T15:45:40Z",
   "scorecard_checks": {
@@ -17475,7 +17475,7 @@
   "advisories_count": 5,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 4395,
+  "health_score": 4394,
   "topics": [
    "caldav",
    "carddav",
@@ -17598,14 +17598,14 @@
   "category": "security",
   "primary_competitor": "Auth0",
   "primary_competitor_ja": null,
-  "stars_num": 14807,
-  "forks_num": 1205,
+  "stars_num": 14806,
+  "forks_num": 1206,
   "contributors_num": 122,
   "watchers_num": 79,
   "language": "TypeScript",
   "license": "MPL-2.0",
   "license_source": "github",
-  "last_commit": "2026-10-27T12:00:18Z",
+  "last_commit": "2026-10-27T13:55:21Z",
   "created_at": "2021-06-19T03:01:50Z",
   "freshness_days": 0,
   "scorecard_score": null,
@@ -17647,16 +17647,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 178,
-   "days": 32,
+   "gain": 177,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 111,
-   "days": 7,
+   "gain": 110,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/logto.jpg",
@@ -17765,7 +17765,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-23T17:01:15Z",
   "created_at": "2021-11-19T09:15:31Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -17828,7 +17828,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T14:16:43Z",
   "created_at": "2020-05-15T09:38:05Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 7.3,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -18000,14 +18000,14 @@
   "category": "note-docs",
   "primary_competitor": "Evernote",
   "primary_competitor_ja": null,
-  "stars_num": 14836,
+  "stars_num": 14841,
   "forks_num": 1039,
   "contributors_num": 55,
   "watchers_num": 74,
   "language": "TypeScript",
   "license": "GPL-3.0",
   "license_source": "github",
-  "last_commit": "2026-10-27T11:33:27Z",
+  "last_commit": "2026-10-27T17:24:28Z",
   "created_at": "2021-04-01T17:25:54Z",
   "freshness_days": 0,
   "scorecard_score": null,
@@ -18020,7 +18020,7 @@
   "advisories_count": 5,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 4275,
+  "health_score": 4276,
   "topics": [
    "asp-net-core",
    "dotnet-core",
@@ -18048,16 +18048,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 197,
-   "days": 31,
+   "gain": 202,
+   "days": 32,
    "from": "2026-09-26",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 38,
-   "days": 7,
+   "gain": 43,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/notesnook.jpg",
@@ -18259,7 +18259,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-26T12:59:21Z",
   "created_at": "2017-06-21T14:17:56Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 4,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -18489,7 +18489,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-25T14:01:16Z",
   "created_at": "2015-05-12T23:10:47Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 6.5,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -18515,7 +18515,7 @@
   "advisories_count": 2,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 4127,
+  "health_score": 4126,
   "topics": [
    "backup",
    "borgbackup",
@@ -18635,14 +18635,14 @@
   "category": "devtools",
   "primary_competitor": "LaunchDarkly",
   "primary_competitor_ja": null,
-  "stars_num": 13907,
+  "stars_num": 13908,
   "forks_num": 917,
   "contributors_num": 260,
   "watchers_num": 73,
   "language": "TypeScript",
   "license": "AGPL-3.0",
   "license_source": "github",
-  "last_commit": "2026-10-27T11:32:10Z",
+  "last_commit": "2026-10-27T15:21:51Z",
   "created_at": "2014-09-29T12:50:46Z",
   "freshness_days": 0,
   "scorecard_score": 6.1,
@@ -18665,9 +18665,9 @@
   },
   "security_md": false,
   "dependabot_configured": true,
-  "latest_release_at": "2026-10-22T08:46:40Z",
-  "releases_12mo": 23,
-  "advisories_count": 11,
+  "latest_release_at": "2026-10-27T14:18:36Z",
+  "releases_12mo": 24,
+  "advisories_count": 16,
   "docker_available": true,
   "github_archived": false,
   "health_score": 4084,
@@ -18805,7 +18805,7 @@
   "license_source": "manual",
   "last_commit": "2026-02-11T19:53:04Z",
   "created_at": "2021-09-30T20:28:16Z",
-  "freshness_days": 257,
+  "freshness_days": 258,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -18833,15 +18833,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 18,
-   "days": 32,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
    "gain": 0,
-   "days": 7,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/automatisch.jpg",
@@ -18860,8 +18860,8 @@
   "category": "project",
   "primary_competitor": "Trello",
   "primary_competitor_ja": null,
-  "stars_num": 12646,
-  "forks_num": 1394,
+  "stars_num": 12649,
+  "forks_num": 1393,
   "contributors_num": 161,
   "watchers_num": 81,
   "language": "JavaScript",
@@ -18869,7 +18869,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-23T17:05:53Z",
   "created_at": "2019-08-30T20:35:36Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -18900,16 +18900,16 @@
    "Jooto"
   ],
   "star_gain": {
-   "gain": 66,
-   "days": 32,
+   "gain": 69,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 19,
-   "days": 7,
+   "gain": 22,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/planka.jpg",
@@ -18935,23 +18935,23 @@
   "language": "PHP",
   "license": "MIT",
   "license_source": "github",
-  "last_commit": "2026-10-27T08:40:41Z",
+  "last_commit": "2026-10-27T15:04:34Z",
   "created_at": "2013-04-03T12:21:14Z",
   "freshness_days": 0,
   "scorecard_score": 5.5,
-  "scorecard_date": "2026-10-19",
+  "scorecard_date": "2026-10-26",
   "scorecard_checks": {
-   "Dangerous-Workflow": -1,
-   "Maintained": 10,
-   "Packaging": -1,
    "Code-Review": 10,
+   "Packaging": -1,
+   "Dangerous-Workflow": -1,
    "Security-Policy": 9,
    "Token-Permissions": -1,
+   "Maintained": 10,
    "Binary-Artifacts": 10,
    "CII-Best-Practices": 0,
+   "License": 10,
    "Fuzzing": 0,
    "Pinned-Dependencies": 1,
-   "License": 10,
    "Branch-Protection": -1,
    "Signed-Releases": 0,
    "SAST": 0
@@ -18992,14 +18992,14 @@
   "category": "security",
   "primary_competitor": "Snyk",
   "primary_competitor_ja": null,
-  "stars_num": 13112,
+  "stars_num": 13121,
   "forks_num": 925,
   "contributors_num": 163,
   "watchers_num": 79,
   "language": "Go",
   "license": "Apache-2.0",
   "license_source": "github",
-  "last_commit": "2026-10-26T21:12:05Z",
+  "last_commit": "2026-10-27T21:35:35Z",
   "created_at": "2020-05-26T13:44:38Z",
   "freshness_days": 0,
   "scorecard_score": 8.2,
@@ -19031,7 +19031,7 @@
   "advisories_count": 1,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 3842,
+  "health_score": 3844,
   "topics": [
    "container-image",
    "containers",
@@ -19055,16 +19055,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 181,
-   "days": 30,
+   "gain": 190,
+   "days": 31,
    "from": "2026-09-27",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 60,
-   "days": 7,
+   "gain": 69,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/grype.jpg",
@@ -19230,7 +19230,7 @@
   "primary_competitor": "Shopify",
   "primary_competitor_ja": null,
   "stars_num": 8563,
-  "forks_num": 2163,
+  "forks_num": 2164,
   "contributors_num": 952,
   "watchers_num": 257,
   "language": "PHP",
@@ -19290,15 +19290,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 20,
-   "days": 32,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
    "gain": 3,
-   "days": 7,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/sylius.jpg",
@@ -19326,7 +19326,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-23T16:26:08Z",
   "created_at": "2021-04-29T12:15:50Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -19399,7 +19399,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-24T16:10:22Z",
   "created_at": "2022-11-09T23:44:35Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -19410,7 +19410,7 @@
   "advisories_count": 0,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 3758,
+  "health_score": 3757,
   "topics": [
    "agents",
    "ai-monitoring",
@@ -19472,7 +19472,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T15:11:49Z",
   "created_at": "2025-01-14T17:31:13Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -19528,7 +19528,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T21:22:41Z",
   "created_at": "2012-08-25T10:32:48Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 7.7,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -19554,7 +19554,7 @@
   "advisories_count": 0,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 3696,
+  "health_score": 3695,
   "topics": [
    "enterprise",
    "federated",
@@ -19614,7 +19614,7 @@
   "license_source": "github",
   "last_commit": "2026-10-21T19:14:49Z",
   "created_at": "2015-01-23T17:52:06Z",
-  "freshness_days": 5,
+  "freshness_days": 6,
   "scorecard_score": 5.2,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -19706,7 +19706,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T19:15:16Z",
   "created_at": "2017-08-02T17:22:11Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 6.9,
   "scorecard_date": "2026-10-23T23:39:11Z",
   "scorecard_checks": {
@@ -19736,7 +19736,7 @@
   "advisories_count": 4,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 3666,
+  "health_score": 3665,
   "topics": [
    "backup",
    "disaster-recovery",
@@ -19855,8 +19855,8 @@
   "category": "video",
   "primary_competitor": "Twitch",
   "primary_competitor_ja": null,
-  "stars_num": 11627,
-  "forks_num": 1192,
+  "stars_num": 11629,
+  "forks_num": 1193,
   "contributors_num": 199,
   "watchers_num": 103,
   "language": "Go",
@@ -19864,7 +19864,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T19:03:37Z",
   "created_at": "2020-05-24T00:58:13Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 4.5,
   "scorecard_date": "2026-10-26",
   "scorecard_checks": {
@@ -19890,7 +19890,7 @@
   "advisories_count": 1,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 3628,
+  "health_score": 3629,
   "topics": [
    "activitypub",
    "broadcasting",
@@ -19915,16 +19915,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 71,
-   "days": 32,
+   "gain": 73,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 10,
-   "days": 7,
+   "gain": 12,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -19947,7 +19947,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T18:23:42Z",
   "created_at": "2018-08-29T18:21:55Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 6.7,
   "scorecard_date": "2026-10-26T12:45:51Z",
   "scorecard_checks": {
@@ -19977,7 +19977,7 @@
   "advisories_count": 8,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 3519,
+  "health_score": 3518,
   "topics": [
    "cdf",
    "hacktoberfest",
@@ -20028,7 +20028,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T16:59:51Z",
   "created_at": "2015-10-09T19:24:19Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 2.5,
   "scorecard_date": "2026-10-26",
   "scorecard_checks": {
@@ -20094,7 +20094,7 @@
   "license_source": "github",
   "last_commit": "2026-10-23T19:07:31Z",
   "created_at": "2020-05-22T06:16:02Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -20154,7 +20154,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T19:40:20Z",
   "created_at": "2012-02-27T09:33:29Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 7.6,
   "scorecard_date": "2026-10-25T19:40:41Z",
   "scorecard_checks": {
@@ -20329,7 +20329,7 @@
   "license_source": "github",
   "last_commit": "2025-08-26T15:01:29Z",
   "created_at": "2023-01-10T22:25:40Z",
-  "freshness_days": 426,
+  "freshness_days": 427,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -20384,7 +20384,7 @@
   "license_source": "github",
   "last_commit": "2026-09-24T15:23:21Z",
   "created_at": "2020-09-04T13:57:59Z",
-  "freshness_days": 32,
+  "freshness_days": 33,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -20395,7 +20395,7 @@
   "advisories_count": 0,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 3321,
+  "health_score": 3320,
   "topics": [
    "ide",
    "remote",
@@ -20444,7 +20444,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T13:40:56Z",
   "created_at": "2018-01-23T13:57:11Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 4.2,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -20568,7 +20568,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T15:45:17Z",
   "created_at": "2021-04-13T19:51:25Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -20579,7 +20579,7 @@
   "advisories_count": 3,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 3252,
+  "health_score": 3251,
   "topics": [
    "angular",
    "etf",
@@ -20694,7 +20694,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T19:12:18Z",
   "created_at": "2013-10-31T15:46:52Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 3.7,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -20754,7 +20754,7 @@
   "category": "note-docs",
   "primary_competitor": "Feedly",
   "primary_competitor_ja": null,
-  "stars_num": 9847,
+  "stars_num": 9849,
   "forks_num": 953,
   "contributors_num": 339,
   "watchers_num": 61,
@@ -20808,16 +20808,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 114,
-   "days": 32,
+   "gain": 116,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 38,
-   "days": 7,
+   "gain": 40,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -20840,7 +20840,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-23T13:52:18Z",
   "created_at": "2018-06-11T14:29:20Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -20851,7 +20851,7 @@
   "advisories_count": 33,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 3082,
+  "health_score": 3081,
   "topics": [
    "ecommerce",
    "ecommerce-api",
@@ -20901,7 +20901,7 @@
   "category": "email",
   "primary_competitor": "Gmail",
   "primary_competitor_ja": null,
-  "stars_num": 7242,
+  "stars_num": 7244,
   "forks_num": 1803,
   "contributors_num": 348,
   "watchers_num": 218,
@@ -20944,16 +20944,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 53,
-   "days": 32,
+   "gain": 55,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 16,
-   "days": 7,
+   "gain": 18,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -21047,7 +21047,7 @@
   "license_source": "github",
   "last_commit": "2026-10-23T17:44:10Z",
   "created_at": "2016-09-06T12:59:15Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": 3.4,
   "scorecard_date": "2026-10-26",
   "scorecard_checks": {
@@ -21117,7 +21117,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T19:38:57Z",
   "created_at": "2024-12-31T08:25:09Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -21128,7 +21128,7 @@
   "advisories_count": 18,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 2926,
+  "health_score": 2925,
   "topics": [
    "hono",
    "issue-management",
@@ -21278,15 +21278,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 45,
-   "days": 32,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
    "gain": 15,
-   "days": 7,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/suitecrm.jpg",
@@ -21380,7 +21380,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T19:49:30Z",
   "created_at": "2022-03-14T17:03:46Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -21498,7 +21498,7 @@
   "category": "security",
   "primary_competitor": "Cloudflare",
   "primary_competitor_ja": null,
-  "stars_num": 6779,
+  "stars_num": 6782,
   "forks_num": 1779,
   "contributors_num": 322,
   "watchers_num": 179,
@@ -21537,7 +21537,7 @@
   "advisories_count": 151,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 2790,
+  "health_score": 2791,
   "topics": [
    "cybersecurity",
    "ids",
@@ -21557,16 +21557,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 107,
-   "days": 30,
+   "gain": 110,
+   "days": 31,
    "from": "2026-09-27",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 27,
-   "days": 7,
+   "gain": 30,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -21589,7 +21589,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-23T21:19:11Z",
   "created_at": "2010-05-17T21:27:02Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": 6.8,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -21615,7 +21615,7 @@
   "advisories_count": 17,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 2763,
+  "health_score": 2762,
   "topics": [
    "amqp",
    "gelf",
@@ -21671,7 +21671,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T14:00:51Z",
   "created_at": "2021-02-09T13:33:34Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -21747,7 +21747,7 @@
   "license_source": null,
   "last_commit": "2026-10-25T18:30:04Z",
   "created_at": "2012-06-03T13:37:45Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 3.1,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -21878,6 +21878,85 @@
   }
  },
  {
+  "id": "woodpecker",
+  "name": "Woodpecker CI",
+  "url": "https://woodpecker-ci.org",
+  "github_url": "https://github.com/woodpecker-ci/woodpecker",
+  "description_ja": "CircleCIの代わりに使える、軽いCI/CDのツール。パイプラインをYAMLで書き、Dockerのコンテナの中で処理を実行する。Giteaなどのコードの置き場と連携できる。",
+  "description_en": "Woodpecker is a simple, yet powerful CI/CD engine with great extensibility. - woodpecker-ci/woodpecker",
+  "category": "devtools",
+  "primary_competitor": "CircleCI",
+  "primary_competitor_ja": null,
+  "stars_num": 8057,
+  "forks_num": 728,
+  "contributors_num": 692,
+  "watchers_num": 30,
+  "language": "Go",
+  "license": "Apache-2.0",
+  "license_source": "github",
+  "last_commit": "2026-10-27T20:55:00Z",
+  "created_at": "2019-04-03T18:06:38Z",
+  "freshness_days": 0,
+  "scorecard_score": 6.1,
+  "scorecard_date": "2026-10-19",
+  "scorecard_checks": {
+   "Packaging": -1,
+   "Code-Review": 8,
+   "Maintained": 10,
+   "Token-Permissions": -1,
+   "Dangerous-Workflow": -1,
+   "Binary-Artifacts": 10,
+   "CII-Best-Practices": 5,
+   "License": 10,
+   "Fuzzing": 10,
+   "Security-Policy": 9,
+   "Signed-Releases": 0,
+   "Pinned-Dependencies": 0,
+   "Branch-Protection": 5,
+   "SAST": 0
+  },
+  "security_md": false,
+  "dependabot_configured": false,
+  "latest_release_at": "2026-10-07T18:04:00Z",
+  "releases_12mo": 13,
+  "advisories_count": 5,
+  "docker_available": true,
+  "github_archived": false,
+  "health_score": 2732,
+  "topics": [
+   "automation",
+   "ci",
+   "cicd",
+   "devops",
+   "docker",
+   "kubernetes",
+   "woodpeckerci"
+  ],
+  "languages": [],
+  "ja_docs": null,
+  "ja_ui": true,
+  "aliases": [],
+  "also_competitors": [],
+  "star_gain": {
+   "gain": 144,
+   "days": 31,
+   "from": "2026-09-27",
+   "to": "2026-10-28"
+  },
+  "star_gain_7d": {
+   "gain": 37,
+   "days": 8,
+   "from": "2026-10-20",
+   "to": "2026-10-28"
+  },
+  "preview": {
+   "src": "/previews/woodpecker.jpg",
+   "source": "github",
+   "width": 800,
+   "height": 412
+  }
+ },
+ {
   "id": "adminer",
   "name": "Adminer",
   "url": "https://www.adminer.org",
@@ -21896,7 +21975,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-25T15:29:46Z",
   "created_at": "2010-04-25T08:30:07Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 3.9,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -21922,7 +22001,7 @@
   "advisories_count": 22,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 2732,
+  "health_score": 2731,
   "topics": [
    "database",
    "database-management",
@@ -21956,85 +22035,6 @@
    "source": "github",
    "width": 800,
    "height": 470
-  }
- },
- {
-  "id": "woodpecker",
-  "name": "Woodpecker CI",
-  "url": "https://woodpecker-ci.org",
-  "github_url": "https://github.com/woodpecker-ci/woodpecker",
-  "description_ja": "CircleCIの代わりに使える、軽いCI/CDのツール。パイプラインをYAMLで書き、Dockerのコンテナの中で処理を実行する。Giteaなどのコードの置き場と連携できる。",
-  "description_en": "Woodpecker is a simple, yet powerful CI/CD engine with great extensibility. - woodpecker-ci/woodpecker",
-  "category": "devtools",
-  "primary_competitor": "CircleCI",
-  "primary_competitor_ja": null,
-  "stars_num": 8056,
-  "forks_num": 727,
-  "contributors_num": 690,
-  "watchers_num": 30,
-  "language": "Go",
-  "license": "Apache-2.0",
-  "license_source": "github",
-  "last_commit": "2026-10-27T08:51:20Z",
-  "created_at": "2019-04-03T18:06:38Z",
-  "freshness_days": 0,
-  "scorecard_score": 6.1,
-  "scorecard_date": "2026-10-19",
-  "scorecard_checks": {
-   "Packaging": -1,
-   "Code-Review": 8,
-   "Maintained": 10,
-   "Token-Permissions": -1,
-   "Dangerous-Workflow": -1,
-   "Binary-Artifacts": 10,
-   "CII-Best-Practices": 5,
-   "License": 10,
-   "Fuzzing": 10,
-   "Security-Policy": 9,
-   "Signed-Releases": 0,
-   "Pinned-Dependencies": 0,
-   "Branch-Protection": 5,
-   "SAST": 0
-  },
-  "security_md": false,
-  "dependabot_configured": false,
-  "latest_release_at": "2026-10-07T18:04:00Z",
-  "releases_12mo": 13,
-  "advisories_count": 5,
-  "docker_available": true,
-  "github_archived": false,
-  "health_score": 2730,
-  "topics": [
-   "automation",
-   "ci",
-   "cicd",
-   "devops",
-   "docker",
-   "kubernetes",
-   "woodpeckerci"
-  ],
-  "languages": [],
-  "ja_docs": null,
-  "ja_ui": true,
-  "aliases": [],
-  "also_competitors": [],
-  "star_gain": {
-   "gain": 143,
-   "days": 30,
-   "from": "2026-09-27",
-   "to": "2026-10-27"
-  },
-  "star_gain_7d": {
-   "gain": 36,
-   "days": 7,
-   "from": "2026-10-20",
-   "to": "2026-10-27"
-  },
-  "preview": {
-   "src": "/previews/woodpecker.jpg",
-   "source": "github",
-   "width": 800,
-   "height": 412
   }
  },
  {
@@ -22123,34 +22123,34 @@
   "category": "devtools",
   "primary_competitor": "Lens",
   "primary_competitor_ja": null,
-  "stars_num": 7520,
-  "forks_num": 1196,
+  "stars_num": 7524,
+  "forks_num": 1195,
   "contributors_num": 364,
   "watchers_num": 25,
   "language": "TypeScript",
   "license": "Apache-2.0",
   "license_source": "github",
-  "last_commit": "2026-10-27T12:15:01Z",
+  "last_commit": "2026-10-27T16:32:35Z",
   "created_at": "2019-11-08T21:00:03Z",
   "freshness_days": 0,
-  "scorecard_score": 7.4,
-  "scorecard_date": "2026-10-27T12:15:28Z",
+  "scorecard_score": 7.5,
+  "scorecard_date": "2026-10-27T15:32:40Z",
   "scorecard_checks": {
    "Dependency-Update-Tool": 10,
+   "Maintained": 10,
    "Code-Review": 10,
    "Security-Policy": 10,
-   "Maintained": 10,
    "Dangerous-Workflow": 10,
-   "Token-Permissions": 10,
    "Binary-Artifacts": 10,
+   "Token-Permissions": 10,
    "CII-Best-Practices": 5,
    "Pinned-Dependencies": 9,
-   "SAST": 0,
-   "Fuzzing": 10,
-   "License": 10,
    "Signed-Releases": 1,
+   "SAST": 2,
+   "Fuzzing": 10,
    "Packaging": 10,
    "Branch-Protection": 2,
+   "License": 10,
    "Vulnerabilities": 0,
    "CI-Tests": 10,
    "Contributors": 10
@@ -22162,7 +22162,7 @@
   "advisories_count": 1,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 2666,
+  "health_score": 2667,
   "topics": [
    "cloud-native",
    "dashboard",
@@ -22185,16 +22185,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 185,
-   "days": 32,
-   "from": "2026-09-25",
-   "to": "2026-10-27"
+   "gain": 181,
+   "days": 30,
+   "from": "2026-09-28",
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 42,
-   "days": 7,
+   "gain": 46,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/headlamp.jpg",
@@ -22213,8 +22213,8 @@
   "category": "marketing",
   "primary_competitor": "Typeform",
   "primary_competitor_ja": null,
-  "stars_num": 9053,
-  "forks_num": 724,
+  "stars_num": 9054,
+  "forks_num": 723,
   "contributors_num": 45,
   "watchers_num": 28,
   "language": "TypeScript",
@@ -22230,7 +22230,7 @@
   "dependabot_configured": false,
   "latest_release_at": "2026-10-24T13:10:51Z",
   "releases_12mo": 16,
-  "advisories_count": 42,
+  "advisories_count": 43,
   "docker_available": true,
   "github_archived": false,
   "health_score": 2654,
@@ -22247,16 +22247,16 @@
    "formrun"
   ],
   "star_gain": {
-   "gain": 67,
-   "days": 32,
+   "gain": 68,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 13,
-   "days": 7,
+   "gain": 14,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/heyform.jpg",
@@ -22284,7 +22284,7 @@
   "license_source": "github",
   "last_commit": "2026-10-23T14:19:27Z",
   "created_at": "2014-06-25T12:48:26Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": 4.1,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -22350,7 +22350,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T19:42:36Z",
   "created_at": "2015-02-19T17:53:47Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 6.2,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -22423,7 +22423,7 @@
   "category": "note-docs",
   "primary_competitor": "Notion",
   "primary_competitor_ja": null,
-  "stars_num": 9010,
+  "stars_num": 9011,
   "forks_num": 605,
   "contributors_num": 91,
   "watchers_num": 35,
@@ -22443,7 +22443,7 @@
   "advisories_count": 0,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 2607,
+  "health_score": 2608,
   "topics": [
    "anytype",
    "e2ee",
@@ -22458,16 +22458,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 162,
-   "days": 32,
+   "gain": 163,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 67,
-   "days": 7,
+   "gain": 68,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/anytype.jpg",
@@ -22495,7 +22495,7 @@
   "license_source": null,
   "last_commit": "2026-10-24T19:53:54Z",
   "created_at": "2016-01-10T21:35:55Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 5.8,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -22521,7 +22521,7 @@
   "advisories_count": 10,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 2562,
+  "health_score": 2561,
   "topics": [
    "dkim",
    "dmarc",
@@ -22575,7 +22575,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T12:52:28Z",
   "created_at": "2024-01-16T15:30:47Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -22586,7 +22586,7 @@
   "advisories_count": 8,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 2539,
+  "health_score": 2538,
   "topics": [
    "laravel",
    "self-hosted",
@@ -22625,7 +22625,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T16:12:48Z",
   "created_at": "2014-10-31T15:46:17Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -22681,8 +22681,8 @@
   "category": "support",
   "primary_competitor": "TeamViewer",
   "primary_competitor_ja": null,
-  "stars_num": 7514,
-  "forks_num": 1047,
+  "stars_num": 7520,
+  "forks_num": 1046,
   "contributors_num": 202,
   "watchers_num": 118,
   "language": "HTML",
@@ -22690,7 +22690,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T14:30:08Z",
   "created_at": "2017-08-28T16:21:11Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 5,
   "scorecard_date": "2026-10-26",
   "scorecard_checks": {
@@ -22731,16 +22731,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 231,
-   "days": 32,
+   "gain": 237,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 72,
-   "days": 7,
+   "gain": 78,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/meshcentral.jpg",
@@ -22858,7 +22858,7 @@
   "language": "Erlang",
   "license": "Apache-2.0",
   "license_source": "github",
-  "last_commit": "2026-10-27T02:09:23Z",
+  "last_commit": "2026-10-27T17:40:19Z",
   "created_at": "2009-05-21T02:03:38Z",
   "freshness_days": 0,
   "scorecard_score": 7.2,
@@ -22906,15 +22906,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 29,
-   "days": 32,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
    "gain": 11,
-   "days": 7,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -22986,14 +22986,14 @@
   "category": "observability",
   "primary_competitor": "Datadog",
   "primary_competitor_ja": null,
-  "stars_num": 6512,
-  "forks_num": 1270,
+  "stars_num": 6516,
+  "forks_num": 1271,
   "contributors_num": 197,
   "watchers_num": 148,
   "language": "Go Template",
   "license": "AGPL-3.0",
   "license_source": "github",
-  "last_commit": "2026-10-27T09:30:41Z",
+  "last_commit": "2026-10-27T15:00:42Z",
   "created_at": "2014-02-27T15:36:03Z",
   "freshness_days": 0,
   "scorecard_score": 3.2,
@@ -23021,7 +23021,7 @@
   "advisories_count": 0,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 2399,
+  "health_score": 2400,
   "topics": [
    "alerting",
    "application-monitoring",
@@ -23036,16 +23036,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 100,
-   "days": 32,
+   "gain": 104,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 29,
-   "days": 7,
+   "gain": 33,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/zabbix.jpg",
@@ -23073,7 +23073,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T17:16:14Z",
   "created_at": "2020-11-11T23:08:19Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -23132,7 +23132,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T21:03:46Z",
   "created_at": "2014-12-20T05:12:03Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -23273,7 +23273,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T19:51:14Z",
   "created_at": "2021-02-02T19:37:59Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -23343,7 +23343,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T16:24:54Z",
   "created_at": "2019-03-27T12:14:01Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 7.6,
   "scorecard_date": "2026-10-22T00:02:13Z",
   "scorecard_checks": {
@@ -23468,9 +23468,9 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 12,
-   "days": 32,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": null,
   "preview": {
@@ -23499,7 +23499,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T14:16:14Z",
   "created_at": "2012-04-02T08:50:33Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 4.8,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -23587,7 +23587,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-24T15:19:18Z",
   "created_at": "2015-06-01T08:39:27Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 4.3,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -23613,7 +23613,7 @@
   "advisories_count": 0,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 2146,
+  "health_score": 2145,
   "topics": [
    "c-plus-plus",
    "ffmpeg",
@@ -23792,7 +23792,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-24T17:12:48Z",
   "created_at": "2012-05-28T18:48:40Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 6.4,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -23818,7 +23818,7 @@
   "advisories_count": 5,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 2088,
+  "health_score": 2087,
   "topics": [
    "ai",
    "analytics",
@@ -23960,7 +23960,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-25T14:29:31Z",
   "created_at": "2021-03-19T09:44:40Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -23971,7 +23971,7 @@
   "advisories_count": 59,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 2044,
+  "health_score": 2043,
   "topics": [
    "business-intelligence",
    "data-analytics",
@@ -24074,72 +24074,6 @@
   "preview": null
  },
  {
-  "id": "osticket",
-  "name": "osTicket",
-  "url": "https://osticket.com",
-  "github_url": "https://github.com/osTicket/osTicket",
-  "description_ja": "Zendeskの代わりに使える、問い合わせ管理のシステム。メールやフォームからの問い合わせをチケットとして管理し、担当者の割り当てや対応の期限を設定できる。",
-  "description_en": "The osTicket open source ticketing system official project repository, for versions 1.8 and later - osTicket/osTicket",
-  "category": "support",
-  "primary_competitor": "Zendesk",
-  "primary_competitor_ja": null,
-  "stars_num": 3994,
-  "forks_num": 1850,
-  "contributors_num": 138,
-  "watchers_num": 224,
-  "language": "PHP",
-  "license": "GPL-2.0",
-  "license_source": "github",
-  "last_commit": "2026-06-17T22:06:29Z",
-  "created_at": "2013-08-12T19:10:14Z",
-  "freshness_days": 131,
-  "scorecard_score": 2.3,
-  "scorecard_date": "2026-10-26",
-  "scorecard_checks": {
-   "Packaging": -1,
-   "Maintained": 0,
-   "Token-Permissions": -1,
-   "Code-Review": 0,
-   "Security-Policy": 3,
-   "Dangerous-Workflow": -1,
-   "CII-Best-Practices": 0,
-   "Binary-Artifacts": 10,
-   "License": 10,
-   "Pinned-Dependencies": -1,
-   "Fuzzing": 0,
-   "Signed-Releases": 0,
-   "Branch-Protection": -1,
-   "SAST": 0
-  },
-  "security_md": true,
-  "dependabot_configured": false,
-  "latest_release_at": "2026-06-17T22:12:12Z",
-  "releases_12mo": 4,
-  "advisories_count": 0,
-  "docker_available": null,
-  "github_archived": false,
-  "health_score": 2004,
-  "topics": [],
-  "languages": [],
-  "ja_docs": null,
-  "ja_ui": null,
-  "aliases": [],
-  "also_competitors": [],
-  "star_gain": {
-   "gain": 71,
-   "days": 32,
-   "from": "2026-09-25",
-   "to": "2026-10-27"
-  },
-  "star_gain_7d": {
-   "gain": 7,
-   "days": 7,
-   "from": "2026-10-20",
-   "to": "2026-10-27"
-  },
-  "preview": null
- },
- {
   "id": "easy-appointments",
   "name": "Easy!Appointments",
   "url": "https://github.com/alextselegidis/easyappointments",
@@ -24150,7 +24084,7 @@
   "primary_competitor": "Calendly",
   "primary_competitor_ja": null,
   "stars_num": 4461,
-  "forks_num": 1583,
+  "forks_num": 1584,
   "contributors_num": 118,
   "watchers_num": 152,
   "language": "PHP",
@@ -24158,7 +24092,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T16:30:01Z",
   "created_at": "2014-11-26T20:51:50Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 4.1,
   "scorecard_date": "2026-10-26",
   "scorecard_checks": {
@@ -24208,15 +24142,15 @@
   ],
   "star_gain": {
    "gain": 67,
-   "days": 32,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
    "gain": 13,
-   "days": 7,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/easy-appointments.jpg",
@@ -24224,6 +24158,72 @@
    "width": 800,
    "height": 400
   }
+ },
+ {
+  "id": "osticket",
+  "name": "osTicket",
+  "url": "https://osticket.com",
+  "github_url": "https://github.com/osTicket/osTicket",
+  "description_ja": "Zendeskの代わりに使える、問い合わせ管理のシステム。メールやフォームからの問い合わせをチケットとして管理し、担当者の割り当てや対応の期限を設定できる。",
+  "description_en": "The osTicket open source ticketing system official project repository, for versions 1.8 and later - osTicket/osTicket",
+  "category": "support",
+  "primary_competitor": "Zendesk",
+  "primary_competitor_ja": null,
+  "stars_num": 3995,
+  "forks_num": 1849,
+  "contributors_num": 138,
+  "watchers_num": 224,
+  "language": "PHP",
+  "license": "GPL-2.0",
+  "license_source": "github",
+  "last_commit": "2026-06-17T22:06:29Z",
+  "created_at": "2013-08-12T19:10:14Z",
+  "freshness_days": 131,
+  "scorecard_score": 2.3,
+  "scorecard_date": "2026-10-26",
+  "scorecard_checks": {
+   "Packaging": -1,
+   "Maintained": 0,
+   "Token-Permissions": -1,
+   "Code-Review": 0,
+   "Security-Policy": 3,
+   "Dangerous-Workflow": -1,
+   "CII-Best-Practices": 0,
+   "Binary-Artifacts": 10,
+   "License": 10,
+   "Pinned-Dependencies": -1,
+   "Fuzzing": 0,
+   "Signed-Releases": 0,
+   "Branch-Protection": -1,
+   "SAST": 0
+  },
+  "security_md": true,
+  "dependabot_configured": false,
+  "latest_release_at": "2026-06-17T22:12:12Z",
+  "releases_12mo": 4,
+  "advisories_count": 0,
+  "docker_available": null,
+  "github_archived": false,
+  "health_score": 2003,
+  "topics": [],
+  "languages": [],
+  "ja_docs": null,
+  "ja_ui": null,
+  "aliases": [],
+  "also_competitors": [],
+  "star_gain": {
+   "gain": 72,
+   "days": 33,
+   "from": "2026-09-25",
+   "to": "2026-10-28"
+  },
+  "star_gain_7d": {
+   "gain": 8,
+   "days": 8,
+   "from": "2026-10-20",
+   "to": "2026-10-28"
+  },
+  "preview": null
  },
  {
   "id": "standard-notes",
@@ -24244,7 +24244,7 @@
   "license_source": "github",
   "last_commit": "2026-10-23T21:25:31Z",
   "created_at": "2016-12-05T23:31:33Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -24255,7 +24255,7 @@
   "advisories_count": 0,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 1996,
+  "health_score": 1995,
   "topics": [
    "encrypted",
    "evernote",
@@ -24295,14 +24295,14 @@
   "category": "database",
   "primary_competitor": "Airtable",
   "primary_competitor_ja": "Airtable",
-  "stars_num": 6230,
+  "stars_num": 6231,
   "forks_num": 769,
   "contributors_num": 80,
   "watchers_num": 43,
   "language": "Python",
   "license": "MIT",
   "license_source": "manual",
-  "last_commit": "2026-10-27T12:07:23Z",
+  "last_commit": "2026-10-27T21:34:50Z",
   "created_at": "2020-07-20T09:32:04Z",
   "freshness_days": 0,
   "scorecard_score": null,
@@ -24342,16 +24342,16 @@
   ],
   "also_competitors": [],
   "star_gain": {
-   "gain": 234,
-   "days": 32,
+   "gain": 235,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 51,
-   "days": 7,
+   "gain": 52,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/baserow.jpg",
@@ -24455,7 +24455,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T17:53:03Z",
   "created_at": "2018-11-28T19:52:27Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -24517,7 +24517,7 @@
   "license_source": "github",
   "last_commit": "2026-10-22T13:47:42Z",
   "created_at": "2022-02-16T09:56:34Z",
-  "freshness_days": 4,
+  "freshness_days": 5,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -24528,7 +24528,7 @@
   "advisories_count": 0,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 1948,
+  "health_score": 1947,
   "topics": [
    "end-user-programming",
    "knowledge-management",
@@ -24672,7 +24672,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-20T21:13:42Z",
   "created_at": "2013-02-01T21:22:29Z",
-  "freshness_days": 6,
+  "freshness_days": 7,
   "scorecard_score": 4.7,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -24698,7 +24698,7 @@
   "advisories_count": 0,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 1924,
+  "health_score": 1923,
   "topics": [],
   "languages": [],
   "ja_docs": null,
@@ -24720,6 +24720,72 @@
   "preview": null
  },
  {
+  "id": "kdenlive",
+  "name": "Kdenlive",
+  "url": "https://kdenlive.org",
+  "github_url": "https://github.com/KDE/kdenlive",
+  "description_ja": "Adobe Premiereの代わりに使える、多機能な動画編集ソフト。複数のトラックを使った編集、エフェクト、字幕などに対応し、本格的な編集もできる。",
+  "description_en": "Free and open source video editor, based on MLT Framework and KDE Frameworks - KDE/kdenlive",
+  "category": "video",
+  "primary_competitor": "Adobe Premiere",
+  "primary_competitor_ja": null,
+  "stars_num": 5954,
+  "forks_num": 547,
+  "contributors_num": 229,
+  "watchers_num": 79,
+  "language": "C++",
+  "license": "GPL-3.0",
+  "license_source": "github",
+  "last_commit": "2026-10-27T17:22:05Z",
+  "created_at": "2015-09-18T13:16:08Z",
+  "freshness_days": 0,
+  "scorecard_score": 4.5,
+  "scorecard_date": "2026-10-26",
+  "scorecard_checks": {
+   "Packaging": -1,
+   "Maintained": 10,
+   "Code-Review": 0,
+   "Dangerous-Workflow": -1,
+   "Token-Permissions": -1,
+   "SAST": 0,
+   "CII-Best-Practices": 0,
+   "Binary-Artifacts": 10,
+   "License": 10,
+   "Pinned-Dependencies": -1,
+   "Signed-Releases": -1,
+   "Fuzzing": 10,
+   "Branch-Protection": 0,
+   "Security-Policy": 0
+  },
+  "security_md": false,
+  "dependabot_configured": false,
+  "latest_release_at": null,
+  "releases_12mo": 0,
+  "advisories_count": 0,
+  "docker_available": null,
+  "github_archived": false,
+  "health_score": 1896,
+  "topics": [],
+  "languages": [],
+  "ja_docs": null,
+  "ja_ui": true,
+  "aliases": [],
+  "also_competitors": [],
+  "star_gain": {
+   "gain": 212,
+   "days": 31,
+   "from": "2026-09-27",
+   "to": "2026-10-28"
+  },
+  "star_gain_7d": {
+   "gain": 53,
+   "days": 8,
+   "from": "2026-10-20",
+   "to": "2026-10-28"
+  },
+  "preview": null
+ },
+ {
   "id": "argos-translate",
   "name": "Argos Translate",
   "url": "https://www.argosopentech.com",
@@ -24730,7 +24796,7 @@
   "primary_competitor": "DeepL",
   "primary_competitor_ja": null,
   "stars_num": 6604,
-  "forks_num": 505,
+  "forks_num": 506,
   "contributors_num": 35,
   "watchers_num": 59,
   "language": "Python",
@@ -24767,81 +24833,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 97,
-   "days": 32,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
    "gain": 25,
-   "days": 7,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
-  },
-  "preview": null
- },
- {
-  "id": "kdenlive",
-  "name": "Kdenlive",
-  "url": "https://kdenlive.org",
-  "github_url": "https://github.com/KDE/kdenlive",
-  "description_ja": "Adobe Premiereの代わりに使える、多機能な動画編集ソフト。複数のトラックを使った編集、エフェクト、字幕などに対応し、本格的な編集もできる。",
-  "description_en": "Free and open source video editor, based on MLT Framework and KDE Frameworks - KDE/kdenlive",
-  "category": "video",
-  "primary_competitor": "Adobe Premiere",
-  "primary_competitor_ja": null,
-  "stars_num": 5940,
-  "forks_num": 542,
-  "contributors_num": 228,
-  "watchers_num": 79,
-  "language": "C++",
-  "license": "GPL-3.0",
-  "license_source": "github",
-  "last_commit": "2026-10-27T12:22:56Z",
-  "created_at": "2015-09-18T13:16:08Z",
-  "freshness_days": 0,
-  "scorecard_score": 4.5,
-  "scorecard_date": "2026-10-26",
-  "scorecard_checks": {
-   "Packaging": -1,
-   "Maintained": 10,
-   "Code-Review": 0,
-   "Dangerous-Workflow": -1,
-   "Token-Permissions": -1,
-   "SAST": 0,
-   "CII-Best-Practices": 0,
-   "Binary-Artifacts": 10,
-   "License": 10,
-   "Pinned-Dependencies": -1,
-   "Signed-Releases": -1,
-   "Fuzzing": 10,
-   "Branch-Protection": 0,
-   "Security-Policy": 0
-  },
-  "security_md": false,
-  "dependabot_configured": false,
-  "latest_release_at": null,
-  "releases_12mo": 0,
-  "advisories_count": 0,
-  "docker_available": null,
-  "github_archived": false,
-  "health_score": 1890,
-  "topics": [],
-  "languages": [],
-  "ja_docs": null,
-  "ja_ui": true,
-  "aliases": [],
-  "also_competitors": [],
-  "star_gain": {
-   "gain": 198,
-   "days": 30,
-   "from": "2026-09-27",
-   "to": "2026-10-27"
-  },
-  "star_gain_7d": {
-   "gain": 39,
-   "days": 7,
-   "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -24920,7 +24920,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T13:35:08Z",
   "created_at": "2020-10-01T15:56:00Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -24931,7 +24931,7 @@
   "advisories_count": 0,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 1845,
+  "health_score": 1844,
   "topics": [
    "encryption",
    "file-sharing",
@@ -24978,7 +24978,7 @@
   "license_source": "github",
   "last_commit": "2025-10-05T17:53:53Z",
   "created_at": "2016-04-04T12:04:33Z",
-  "freshness_days": 386,
+  "freshness_days": 387,
   "scorecard_score": 3,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -25112,7 +25112,7 @@
   "license_source": "github",
   "last_commit": "2026-08-23T20:17:45Z",
   "created_at": "2020-05-22T16:32:56Z",
-  "freshness_days": 64,
+  "freshness_days": 65,
   "scorecard_score": 3.5,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -25180,7 +25180,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T18:54:56Z",
   "created_at": "2015-08-14T08:53:22Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 5.2,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -25272,7 +25272,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T14:45:30Z",
   "created_at": "2023-07-19T08:53:35Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -25510,7 +25510,7 @@
   "category": "design",
   "primary_competitor": "Snagit",
   "primary_competitor_ja": null,
-  "stars_num": 5214,
+  "stars_num": 5216,
   "forks_num": 720,
   "contributors_num": 61,
   "watchers_num": 115,
@@ -25541,7 +25541,7 @@
   "security_md": true,
   "dependabot_configured": false,
   "latest_release_at": "2026-10-27T10:17:29Z",
-  "releases_12mo": 33,
+  "releases_12mo": 32,
   "advisories_count": 7,
   "docker_available": null,
   "github_archived": false,
@@ -25556,16 +25556,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 78,
-   "days": 30,
+   "gain": 80,
+   "days": 31,
    "from": "2026-09-27",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 17,
-   "days": 7,
+   "gain": 19,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -25643,7 +25643,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T21:26:37Z",
   "created_at": "2011-08-11T08:27:37Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 5.5,
   "scorecard_date": "2026-10-26",
   "scorecard_checks": {
@@ -25669,7 +25669,7 @@
   "advisories_count": 0,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 1672,
+  "health_score": 1671,
   "topics": [
    "caldav",
    "carddav",
@@ -25814,15 +25814,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 34,
-   "days": 32,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
    "gain": 2,
-   "days": 7,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/collabora-online.jpg",
@@ -25841,7 +25841,7 @@
   "category": "security",
   "primary_competitor": "Snyk",
   "primary_competitor_ja": null,
-  "stars_num": 4359,
+  "stars_num": 4365,
   "forks_num": 841,
   "contributors_num": 140,
   "watchers_num": 77,
@@ -25850,7 +25850,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T18:08:05Z",
   "created_at": "2013-07-16T19:16:43Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 7.5,
   "scorecard_date": "2026-10-26",
   "scorecard_checks": {
@@ -25876,7 +25876,7 @@
   "advisories_count": 9,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 1600,
+  "health_score": 1601,
   "topics": [
    "appsec",
    "bill-of-materials",
@@ -25905,16 +25905,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 121,
-   "days": 31,
+   "gain": 127,
+   "days": 32,
    "from": "2026-09-26",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 42,
-   "days": 7,
+   "gain": 48,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/dependency-track.jpg",
@@ -26007,7 +26007,7 @@
   "primary_competitor": "DBeaver",
   "primary_competitor_ja": null,
   "stars_num": 3909,
-  "forks_num": 914,
+  "forks_num": 913,
   "contributors_num": 245,
   "watchers_num": 54,
   "language": "Python",
@@ -26043,15 +26043,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 85,
-   "days": 31,
+   "days": 32,
    "from": "2026-09-26",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
    "gain": 17,
-   "days": 7,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/pgadmin.jpg",
@@ -26154,13 +26154,13 @@
   "primary_competitor": "マネーフォワード",
   "primary_competitor_ja": null,
   "stars_num": 4796,
-  "forks_num": 424,
+  "forks_num": 425,
   "contributors_num": 201,
-  "watchers_num": 44,
+  "watchers_num": 43,
   "language": "Haskell",
   "license": "GPL-3.0",
   "license_source": "github",
-  "last_commit": "2026-10-27T04:10:09Z",
+  "last_commit": "2026-10-27T19:14:46Z",
   "created_at": "2013-04-08T16:41:47Z",
   "freshness_days": 0,
   "scorecard_score": null,
@@ -26195,15 +26195,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 65,
-   "days": 32,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
    "gain": 21,
-   "days": 7,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/hledger.jpg",
@@ -26231,7 +26231,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T17:01:14Z",
   "created_at": "2020-08-04T14:57:55Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 5.5,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -26475,7 +26475,7 @@
   "license_source": "github",
   "last_commit": "2026-10-23T16:20:01Z",
   "created_at": "2014-04-16T08:08:37Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": 5,
   "scorecard_date": "2026-10-26",
   "scorecard_checks": {
@@ -26542,7 +26542,7 @@
   "category": "documents",
   "primary_competitor": "Adobe Acrobat",
   "primary_competitor_ja": null,
-  "stars_num": 4644,
+  "stars_num": 4645,
   "forks_num": 409,
   "contributors_num": 20,
   "watchers_num": 64,
@@ -26553,13 +26553,13 @@
   "created_at": "2013-09-24T11:06:13Z",
   "freshness_days": 25,
   "scorecard_score": 5.3,
-  "scorecard_date": "2026-10-19",
+  "scorecard_date": "2026-10-26",
   "scorecard_checks": {
-   "Code-Review": 0,
    "Maintained": 10,
-   "Dangerous-Workflow": 10,
-   "Token-Permissions": 0,
+   "Code-Review": 0,
    "Packaging": -1,
+   "Token-Permissions": 0,
+   "Dangerous-Workflow": 10,
    "Binary-Artifacts": 9,
    "CII-Best-Practices": 0,
    "Pinned-Dependencies": 10,
@@ -26605,16 +26605,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 64,
-   "days": 32,
+   "gain": 65,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 12,
-   "days": 7,
+   "gain": 13,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/pdfsam.jpg",
@@ -26642,7 +26642,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-26T18:46:18Z",
   "created_at": "2014-05-21T12:52:29Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 4.9,
   "scorecard_date": "2026-10-26",
   "scorecard_checks": {
@@ -26743,15 +26743,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 47,
-   "days": 26,
+   "days": 27,
    "from": "2026-10-01",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
    "gain": 16,
-   "days": 7,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/unlighthouse.jpg",
@@ -26870,7 +26870,7 @@
   "license_source": "github",
   "last_commit": "2026-10-23T13:29:09Z",
   "created_at": "2015-07-25T11:32:24Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -26926,7 +26926,7 @@
   "license": "Apache-2.0（ee/ 配下は別ライセンス）",
   "license_source": "manual",
   "license_note": "リポジトリの大部分はOSI承認のApache-2.0ですが、ee/ と webapp/src/ee 配下は別ライセンス（ee/LICENSE）です。LICENSE を確認（2026-10-24）。",
-  "last_commit": "2026-10-27T10:39:39Z",
+  "last_commit": "2026-10-27T14:09:20Z",
   "created_at": "2020-10-13T16:36:39Z",
   "freshness_days": 0,
   "scorecard_score": null,
@@ -26935,7 +26935,7 @@
   "security_md": true,
   "dependabot_configured": false,
   "latest_release_at": "2026-10-27T10:39:53Z",
-  "releases_12mo": 272,
+  "releases_12mo": 271,
   "advisories_count": 8,
   "docker_available": true,
   "github_archived": false,
@@ -26965,15 +26965,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 27,
-   "days": 31,
+   "days": 32,
    "from": "2026-09-26",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
    "gain": 7,
-   "days": 7,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/tolgee.jpg",
@@ -26999,7 +26999,7 @@
   "language": "Go",
   "license": "Elastic License 2.0",
   "license_source": "manual",
-  "last_commit": "2026-10-27T10:45:02Z",
+  "last_commit": "2026-10-27T18:57:39Z",
   "created_at": "2019-07-19T09:24:38Z",
   "freshness_days": 0,
   "scorecard_score": 8,
@@ -27057,15 +27057,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 18,
-   "days": 32,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
    "gain": 5,
-   "days": 7,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/rudderstack.jpg",
@@ -27094,7 +27094,7 @@
   "license_note": "OSI承認のAGPL-3.0に、第7条に基づく追加条項が付きます（SaaSとして提供しない場合の第13条の免除、生成ページの「pretix」表記を残す義務など）。LICENSE を確認（2026-10-24）。",
   "last_commit": "2026-10-23T18:14:20Z",
   "created_at": "2014-09-08T13:10:38Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": 6.9,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -27171,7 +27171,7 @@
   "license_source": "github",
   "last_commit": "2026-10-01T17:25:30Z",
   "created_at": "2022-09-22T14:26:49Z",
-  "freshness_days": 25,
+  "freshness_days": 26,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -27182,7 +27182,7 @@
   "advisories_count": 0,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 1138,
+  "health_score": 1137,
   "topics": [
    "asr",
    "automatic-speech-recognition",
@@ -27225,7 +27225,7 @@
   "license_source": "manual",
   "last_commit": "2026-06-30T17:20:11Z",
   "created_at": "2018-05-29T06:26:06Z",
-  "freshness_days": 118,
+  "freshness_days": 119,
   "scorecard_score": 3.3,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -27367,7 +27367,7 @@
   "category": "communication",
   "primary_competitor": "Discord",
   "primary_competitor_ja": null,
-  "stars_num": 3423,
+  "stars_num": 3424,
   "forks_num": 408,
   "contributors_num": 66,
   "watchers_num": 16,
@@ -27376,7 +27376,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-26T20:28:34Z",
   "created_at": "2021-06-15T13:11:41Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -27406,16 +27406,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 70,
-   "days": 31,
+   "gain": 71,
+   "days": 32,
    "from": "2026-09-26",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 17,
-   "days": 7,
+   "gain": 18,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -27438,7 +27438,7 @@
   "license_source": "github",
   "last_commit": "2026-10-19T19:02:31Z",
   "created_at": "2012-02-27T20:22:55Z",
-  "freshness_days": 7,
+  "freshness_days": 8,
   "scorecard_score": 4.7,
   "scorecard_date": "2026-10-26",
   "scorecard_checks": {
@@ -27464,7 +27464,7 @@
   "advisories_count": 1,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 1064,
+  "health_score": 1063,
   "topics": [],
   "languages": [],
   "ja_docs": null,
@@ -27473,15 +27473,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 29,
-   "days": 32,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
    "gain": 13,
-   "days": 7,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -27567,8 +27567,8 @@
   "category": "support",
   "primary_competitor": "Intercom",
   "primary_competitor_ja": null,
-  "stars_num": 3085,
-  "forks_num": 323,
+  "stars_num": 3088,
+  "forks_num": 324,
   "contributors_num": 41,
   "watchers_num": 16,
   "language": "Go",
@@ -27587,7 +27587,7 @@
   "advisories_count": 2,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 957,
+  "health_score": 959,
   "topics": [
    "ai-agent",
    "chat-widget",
@@ -27614,16 +27614,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 122,
-   "days": 32,
+   "gain": 125,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 30,
-   "days": 7,
+   "gain": 33,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/libredesk.jpg",
@@ -27651,7 +27651,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T15:26:23Z",
   "created_at": "2016-09-01T08:08:37Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 6.4,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -27722,7 +27722,7 @@
   "category": "design",
   "primary_competitor": "Miro",
   "primary_competitor_ja": null,
-  "stars_num": 2673,
+  "stars_num": 2674,
   "forks_num": 486,
   "contributors_num": 41,
   "watchers_num": 37,
@@ -27731,7 +27731,7 @@
   "license_source": "github",
   "last_commit": "2026-10-24T21:25:29Z",
   "created_at": "2013-08-27T17:35:17Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": 4.4,
   "scorecard_date": "2026-10-26",
   "scorecard_checks": {
@@ -27773,16 +27773,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 16,
-   "days": 30,
+   "gain": 17,
+   "days": 31,
    "from": "2026-09-27",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 3,
-   "days": 7,
+   "gain": 4,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -27805,7 +27805,7 @@
   "license_source": "github",
   "last_commit": "2024-10-31T16:11:33Z",
   "created_at": "2019-07-11T17:18:42Z",
-  "freshness_days": 725,
+  "freshness_days": 726,
   "scorecard_score": 2.9,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -28018,14 +28018,14 @@
   "category": "hr",
   "primary_competitor": "SmartHR",
   "primary_competitor_ja": null,
-  "stars_num": 1473,
-  "forks_num": 957,
+  "stars_num": 1474,
+  "forks_num": 959,
   "contributors_num": 47,
   "watchers_num": 23,
   "language": "HTML",
   "license": "LGPL-2.1",
   "license_source": "github",
-  "last_commit": "2026-10-26T18:18:03Z",
+  "last_commit": "2026-10-27T13:46:23Z",
   "created_at": "2023-05-10T09:33:48Z",
   "freshness_days": 0,
   "scorecard_score": null,
@@ -28038,7 +28038,7 @@
   "advisories_count": 53,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 876,
+  "health_score": 877,
   "topics": [
    "attendance",
    "biometrics",
@@ -28063,16 +28063,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 37,
-   "days": 31,
+   "gain": 38,
+   "days": 32,
    "from": "2026-09-26",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 12,
-   "days": 7,
+   "gain": 13,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/horilla.jpg",
@@ -28100,7 +28100,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T19:41:43Z",
   "created_at": "2011-03-10T13:26:41Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": 5.7,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -28126,7 +28126,7 @@
   "advisories_count": 234,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 850,
+  "health_score": 849,
   "topics": [],
   "languages": [],
   "ja_docs": null,
@@ -28235,7 +28235,7 @@
   "license_source": "github",
   "last_commit": "2026-10-25T14:36:22Z",
   "created_at": "2016-10-10T13:31:27Z",
-  "freshness_days": 1,
+  "freshness_days": 2,
   "scorecard_score": 4,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -28324,7 +28324,7 @@
   "license_source": "github",
   "last_commit": "2026-10-19T15:19:34Z",
   "created_at": "2020-11-28T12:39:03Z",
-  "freshness_days": 7,
+  "freshness_days": 8,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -28385,7 +28385,7 @@
   "license_source": "github",
   "last_commit": "2025-10-13T18:08:48Z",
   "created_at": "2021-04-14T12:20:11Z",
-  "freshness_days": 378,
+  "freshness_days": 379,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -28729,7 +28729,7 @@
   "category": "marketing",
   "primary_competitor": "Mailchimp",
   "primary_competitor_ja": null,
-  "stars_num": 2252,
+  "stars_num": 2253,
   "forks_num": 176,
   "contributors_num": 39,
   "watchers_num": 16,
@@ -28757,16 +28757,16 @@
   "aliases": [],
   "also_competitors": [],
   "star_gain": {
-   "gain": 29,
-   "days": 32,
+   "gain": 30,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
-   "gain": 14,
-   "days": 7,
+   "gain": 15,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": {
    "src": "/previews/keila.jpg",
@@ -28936,15 +28936,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 12,
-   "days": 30,
+   "days": 31,
    "from": "2026-09-27",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
    "gain": 3,
-   "days": 7,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -28967,7 +28967,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-24T19:57:58Z",
   "created_at": "2024-08-21T06:19:56Z",
-  "freshness_days": 2,
+  "freshness_days": 3,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -28978,7 +28978,7 @@
   "advisories_count": 17,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 631,
+  "health_score": 630,
   "topics": [],
   "languages": [],
   "ja_docs": null,
@@ -29081,7 +29081,7 @@
   "license_source": "github",
   "last_commit": "2026-10-23T20:56:33Z",
   "created_at": "2020-12-19T18:44:46Z",
-  "freshness_days": 3,
+  "freshness_days": 4,
   "scorecard_score": 3.5,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -29107,7 +29107,7 @@
   "advisories_count": 0,
   "docker_available": null,
   "github_archived": false,
-  "health_score": 481,
+  "health_score": 480,
   "topics": [
    "file-sharing",
    "galene",
@@ -29156,7 +29156,7 @@
   "license_source": "github",
   "last_commit": "2026-09-27T18:57:49Z",
   "created_at": "2018-12-08T17:58:45Z",
-  "freshness_days": 29,
+  "freshness_days": 30,
   "scorecard_score": 3.7,
   "scorecard_date": "2026-10-19",
   "scorecard_checks": {
@@ -29290,32 +29290,32 @@
   "category": "accounting",
   "primary_competitor": "freee",
   "primary_competitor_ja": null,
-  "stars_num": 978,
+  "stars_num": 977,
   "forks_num": 246,
   "contributors_num": 28,
   "watchers_num": 30,
   "language": "PHP",
   "license": "MIT",
   "license_source": "github",
-  "last_commit": "2026-10-26T13:00:36Z",
+  "last_commit": "2026-10-27T15:08:01Z",
   "created_at": "2012-12-19T11:21:32Z",
   "freshness_days": 0,
   "scorecard_score": 5.6,
-  "scorecard_date": "2026-10-26T11:48:57Z",
+  "scorecard_date": "2026-10-27T15:08:21Z",
   "scorecard_checks": {
-   "Code-Review": 0,
-   "Maintained": 10,
    "Dependency-Update-Tool": 10,
+   "Maintained": 10,
+   "Code-Review": 0,
+   "Security-Policy": 10,
    "Dangerous-Workflow": 10,
    "Packaging": -1,
-   "Security-Policy": 10,
    "Token-Permissions": 0,
    "Binary-Artifacts": 10,
+   "License": 10,
    "CII-Best-Practices": 0,
    "Signed-Releases": 0,
-   "License": 10,
-   "Vulnerabilities": 2,
    "Pinned-Dependencies": 9,
+   "Vulnerabilities": 2,
    "SAST": 10,
    "Fuzzing": 0,
    "Branch-Protection": 0,
@@ -29351,10 +29351,10 @@
    "Misoca"
   ],
   "star_gain": {
-   "gain": 4,
-   "days": 32,
+   "gain": 3,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": null,
   "preview": null
@@ -29378,7 +29378,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T18:31:52Z",
   "created_at": "2020-08-25T14:46:17Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -29450,7 +29450,7 @@
   "license_source": "github",
   "last_commit": "2026-10-26T16:42:45Z",
   "created_at": "2018-05-28T15:18:59Z",
-  "freshness_days": 0,
+  "freshness_days": 1,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -29483,9 +29483,9 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1,
-   "days": 32,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": null,
   "preview": null
@@ -29690,15 +29690,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 1,
-   "days": 32,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
    "gain": 1,
-   "days": 7,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -29813,15 +29813,15 @@
   "also_competitors": [],
   "star_gain": {
    "gain": 15,
-   "days": 32,
+   "days": 33,
    "from": "2026-09-25",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "star_gain_7d": {
    "gain": 5,
-   "days": 7,
+   "days": 8,
    "from": "2026-10-20",
-   "to": "2026-10-27"
+   "to": "2026-10-28"
   },
   "preview": null
  },
@@ -29844,7 +29844,7 @@
   "license_source": "manual",
   "last_commit": "2026-10-09T15:30:24Z",
   "created_at": "2014-11-10T13:54:13Z",
-  "freshness_days": 17,
+  "freshness_days": 18,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
@@ -29855,7 +29855,7 @@
   "advisories_count": 0,
   "docker_available": true,
   "github_archived": false,
-  "health_score": 126,
+  "health_score": 125,
   "topics": [],
   "languages": [],
   "ja_docs": null,
@@ -29895,7 +29895,7 @@
   "license_source": "github",
   "last_commit": "2026-02-10T14:09:19Z",
   "created_at": "2021-02-15T17:36:43Z",
-  "freshness_days": 258,
+  "freshness_days": 259,
   "scorecard_score": null,
   "scorecard_date": null,
   "scorecard_checks": null,
