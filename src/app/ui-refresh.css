@@ -1,0 +1,214 @@
+/*
+ * OSSALT UI refresh — Phase 1
+ * Design principles: clearer discovery, readable comparisons, preserve
+ * existing indigo/vermillion brand and static-site architecture.
+ *
+ * Kept separate from globals.css so the experiment is easy to review/revert.
+ */
+
+.home-page .hero {
+  margin-top: 1.6rem;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border: 1px solid var(--rule-strong);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 95% 0%, rgba(29, 59, 114, 0.12), transparent 40%),
+    linear-gradient(135deg, #fff, #f8f9f5);
+  box-shadow: 0 12px 36px rgba(18, 22, 26, 0.045);
+}
+
+.home-page .hero__eyebrow {
+  margin-bottom: 0.85rem;
+  font-weight: 700;
+}
+
+.home-page .hero__lede {
+  max-width: 60ch;
+}
+
+.home-page .saas-search {
+  max-width: 44rem;
+  margin-top: 1.5rem;
+}
+
+.home-page .saas-search__input {
+  border-radius: 10px;
+  border-color: var(--rule-strong);
+  box-shadow: 0 2px 8px rgba(18, 22, 26, 0.045);
+}
+
+.home-page .saas-search__input:focus {
+  border-color: var(--indigo);
+}
+
+.home-page .saas-search__submit {
+  border-radius: 10px;
+}
+
+.home-page .saas-popular .chip {
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  border-color: var(--rule);
+}
+
+.home-page .saas-popular .chip:hover {
+  border-color: var(--indigo);
+  background: var(--indigo-soft);
+}
+
+.home-page .home-cards {
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.home-page .home-cards .panel {
+  border-radius: 14px;
+  overflow: hidden;
+  border-color: var(--rule);
+  box-shadow: 0 5px 20px rgba(18, 22, 26, 0.035);
+}
+
+.home-page .home-cards .panel:first-child {
+  border-top: 3px solid var(--indigo);
+}
+
+.home-page .home-cards .panel:last-child {
+  border-top: 3px solid var(--midori);
+}
+
+.home-page .home-cards .panel__body {
+  padding: clamp(1.15rem, 2.3vw, 1.75rem);
+  gap: 1.1rem;
+}
+
+.home-page .home-cards .btn {
+  border-radius: 9px;
+  min-height: 44px;
+  justify-content: center;
+}
+
+.home-page .stats {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+  border: 0;
+  margin-bottom: 2.5rem;
+}
+
+.home-page .stat {
+  padding: 1.15rem;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+}
+
+.home-page .stat__label {
+  line-height: 1.4;
+}
+
+.home-page .section .grid-2 > .panel {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Bring discovery controls above explanatory content on /tools/. */
+.tools-page > .panel {
+  margin: 1.35rem 0 2.25rem;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.tools-page .toolbar {
+  padding: clamp(0.9rem, 2.5vw, 1.4rem);
+  background: linear-gradient(180deg, #fff, #fafbf9);
+}
+
+.tools-page .toolbar__row:first-child .field:first-child {
+  flex: 1 1 20rem;
+  min-width: 0;
+}
+
+.tools-page .input--search {
+  border-radius: 9px;
+  min-height: 48px;
+}
+
+.tools-page .select {
+  min-height: 44px;
+}
+
+.tools-page .toolbar .chips .chip {
+  min-height: 36px;
+}
+
+.tools-page .ledger {
+  background: #fff;
+}
+
+@media (max-width: 760px) {
+  .home-page .hero {
+    margin-top: 0.75rem;
+    padding: 1.3rem 1rem 1.5rem;
+    border-radius: 12px;
+  }
+
+  .home-page .saas-popular,
+  .tools-page .toolbar .chips {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.5rem;
+    scrollbar-width: thin;
+  }
+
+  .home-page .saas-popular > *,
+  .tools-page .toolbar .chips > * {
+    flex: 0 0 auto;
+  }
+
+  .home-page .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.6rem;
+  }
+
+  .home-page .stat {
+    padding: 0.9rem;
+  }
+
+  .home-page .stat__num {
+    font-size: clamp(1.25rem, 5.2vw, 1.65rem);
+  }
+
+  .tools-page .toolbar__row:first-child {
+    align-items: stretch;
+  }
+
+  .tools-page .toolbar__row:first-child .field {
+    flex: 1 1 100% !important;
+  }
+
+  .tools-page .toolbar .chips .chip {
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 390px) {
+  .home-page .saas-search__box {
+    gap: 0.4rem;
+  }
+
+  .home-page .saas-search__submit {
+    padding-inline: 0.85rem;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .home-page .home-cards .panel {
+    transition: transform 180ms ease, box-shadow 180ms ease;
+  }
+  .home-page .home-cards .panel:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(18, 22, 26, 0.07);
+  }
+}
