@@ -78,4 +78,16 @@ test.describe("OSSランキング（人気・急成長・おすすめ）", () =>
     await expect(page.locator("#panel-growth")).toBeVisible();
     await expect(page.getByRole("tab", { name: /急成長/ })).toHaveAttribute("aria-selected", "true");
   });
+
+  test("3種類の違いをカードで示し、押すとその種類のタブに切り替わる。棒の横には数値がある", async ({ page }) => {
+    await page.goto("/rankings/");
+    const kinds = page.getByRole("list", { name: "3つのランキングの違い" });
+    await expect(kinds.getByRole("link")).toHaveCount(3);
+    await kinds.getByRole("link", { name: /おすすめ/ }).click();
+    await expect(page.getByRole("tab", { name: /おすすめ/ })).toHaveAttribute("aria-selected", "true");
+    await expect(page.locator("#panel-recommended")).toBeVisible();
+    const row = page.locator("#panel-recommended .rank-row:visible").first();
+    await expect(row.locator(".rank-bar")).toBeVisible();
+    await expect(row.locator(".trend__value strong")).toContainText("点");
+  });
 });
