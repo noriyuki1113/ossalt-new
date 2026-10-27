@@ -67,3 +67,14 @@ API連携は、この版では入れていません（認証情報が無いた�
 
 ## 6. 承認が必要なこと
 本番へのデプロイ、PRのマージ、既存ページの削除、URLやcanonicalの大規模な変更、noindexやrobotsの変更、新しいキーワード戦略の確定、大量の新規記事、有料契約、外部への営業・リンク依頼。
+
+## Search Console API（任意・手元またはVPSで実行）
+
+```bash
+GSC_KEY_FILE=~/.config/ossalt/gsc-key.json GSC_SITE=sc-domain:ossalt.jp \
+  node scripts/gsc-api-fetch.mjs --days 28
+```
+
+- 読み取り専用（`webmasters.readonly`）。JSONキーは**リポジトリに置かない**（パスだけを環境変数で渡す）。
+- 保存先は `agency/data/api-YYYY-MM-DD/`（コミット対象外）。続けて `seo-agency.mjs --queries … --pages … --pairs …` に渡す。
+- テストは偽のAPI応答のみ。**実際のAPIへの接続は、キー発行後に初めて確認します（未確認）。**
