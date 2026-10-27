@@ -147,7 +147,7 @@
   "slug": "ai",
   "nameJa": "AI・LLM基盤",
   "ledeJa": "生成AIを自前のサーバで動かす。入力内容を外部に送らずに使える。",
-  "count": 35
+  "count": 37
  },
  {
   "slug": "video",
