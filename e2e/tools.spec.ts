@@ -144,4 +144,13 @@ test.describe("OSS一覧 Phase 2 — カード表示と大量データ", () => {
     await expect(page.getByRole("searchbox")).toHaveValue("");
     await expect(page.locator("article.row")).toHaveCount(50);
   });
+
+  test("検索欄とカテゴリ列が画面幅に収まる（チップ列は横スクロール）", async ({ page }) => {
+    await page.goto("/tools/");
+    const vw = page.viewportSize()!.width;
+    const box = await page.getByRole("searchbox").boundingBox();
+    expect(box!.x + box!.width).toBeLessThanOrEqual(vw);
+    const sw = await page.evaluate(() => document.documentElement.scrollWidth);
+    expect(sw).toBeLessThanOrEqual(vw);
+  });
 });

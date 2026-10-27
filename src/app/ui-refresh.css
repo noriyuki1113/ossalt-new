@@ -188,6 +188,16 @@
     flex: 1 1 100% !important;
   }
 
+  .tools-page .toolbar {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  /* チップ列は横スクロールにするため、フレックス項目が中身の幅まで広がらないようにする */
+  .tools-page .toolbar__row > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+
   .tools-page .toolbar .chips .chip {
     min-height: 44px;
   }
@@ -432,4 +442,10 @@
   .tools-page .browser-ledger { padding-inline: 0.75rem; }
   .tools-page .browser-results-header { padding-inline: 0.75rem; }
   .tools-page .browser-active-filters { padding-inline: 0.75rem; }
+}
+
+/* 見出しの強調語「動かせる。」が行末で「る。」だけ残らないようにする */
+.home-page .hero__title .hl {
+  display: inline-block;
+  white-space: nowrap;
 }
