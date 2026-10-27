@@ -81,4 +81,15 @@ test.describe("トップページ：目的のOSSへ早くたどり着く", () =>
     await cards.first().locator("a.row__link").click();
     await expect(page).toHaveURL(/\/tools\/[^/]+\/$/);
   });
+
+  test("計測（PostHog）が未設定のビルドでは、同意バナーも「計測の設定」も出ず、PostHogへの通信もない", async ({ page }) => {
+    const sent: string[] = [];
+    page.on("request", (r) => { if (/posthog/i.test(r.url())) sent.push(r.url()); });
+    await page.goto("/tools/immich/");
+    await page.waitForTimeout(800);
+    await expect(page.getByRole("dialog")).toHaveCount(0);
+    await expect(page.getByRole("button", { name: "計測の設定" })).toHaveCount(0);
+    expect(sent).toEqual([]);
+    expect(await page.evaluate(() => Object.keys(localStorage).filter((k) => /ph_|ossalt_analytics/.test(k)))).toEqual([]);
+  });
 });

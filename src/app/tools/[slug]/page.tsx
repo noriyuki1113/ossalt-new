@@ -27,6 +27,7 @@ import { starContext } from "@/lib/star-context";
 import { buildToolFaq } from "@/lib/tool-faq";
 import { getAlternativeGuide } from "@/lib/alternative-guides";
 import { ToolBriefPanel } from "@/components/tool-brief";
+import { TrackView } from "@/components/track-view";
 import { TOOL_DIAGNOSIS } from "@/lib/diagnosis-data";
 import { getStanding } from "@/lib/ranking-positions";
 import { buildToolBrief } from "@/lib/tool-brief";
@@ -130,6 +131,11 @@ export default async function ToolDetailPage({
           ]}
         />
 
+        <TrackView
+          event="oss_detail_viewed"
+          props={{ slug: tool.id, category: tool.category ?? "unknown", license_class: classifyLicense(tool.license) }}
+          dedupeKey={tool.id}
+        />
         <div className="detail-layout">
           <div>
             <p className="hero__eyebrow" style={{ marginBottom: "0.5rem" }}>
@@ -147,10 +153,10 @@ export default async function ToolDetailPage({
             </p>
 
             <div className="hero__actions" style={{ marginBottom: "1.25rem" }}>
-              <a className="btn btn--primary" href={tool.url} rel="noopener">
+              <a className="btn btn--primary" href={tool.url} rel="noopener" data-ph-link="official" data-ph-slug={tool.id}>
                 公式サイト
               </a>
-              <a className="btn" href={tool.github_url} rel="noopener">
+              <a className="btn" href={tool.github_url} rel="noopener" data-ph-link="github" data-ph-slug={tool.id}>
                 GitHub
               </a>
               {competitorSlug && (

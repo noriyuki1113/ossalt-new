@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs, JsonLd, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ComparisonTable } from "@/components/tool-views";
+import { TrackView } from "@/components/track-view";
 import { HouseAd } from "@/components/house-ad";
 import { SponsorSlot } from "@/components/sponsor-slot";
 import { getAlternativeGuide } from "@/lib/alternative-guides";
@@ -76,6 +77,7 @@ export default async function AlternativeDetailPage({
             { label: c.name },
           ]}
         />
+        <TrackView event="saas_alternative_viewed" props={{ slug: c.slug, candidate_count: c.tools.length }} dedupeKey={c.slug} />
         <h1 className="h2">{t("alt.h1", { competitor: c.name })}</h1>
         <p className="lede">
           {t("alt.ledeOne", { competitor: c.name, n: c.tools.length })}
