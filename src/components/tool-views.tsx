@@ -316,18 +316,6 @@ export function ToolCard({ tool }: { tool: Tool }) {
           </p>
         </div>
       </div>
-      {tool.preview && (
-        // eslint-disable-next-line @next/next/no-img-element -- 静的エクスポートのため
-        <img
-          className="browse-card__preview"
-          src={tool.preview.src}
-          alt=""
-          loading="lazy"
-          decoding="async"
-          width={tool.preview.width}
-          height={tool.preview.height}
-        />
-      )}
       {tool.description_ja && (
         <p className="browse-card__description">{tool.description_ja}</p>
       )}

@@ -39,7 +39,7 @@ export function ToolBrowser({
   const [japaneseOnly, setJapaneseOnly] = useState(false);
   const [sort, setSort] = useState<SortKey>(defaultSort);
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
-  const [view, setView] = useState<"list" | "cards">("list");
+  const [view, setView] = useState<"list" | "cards">("cards");
 
   // トップの検索ボックスや、サイトの検索（WebSite の SearchAction）から /tools/?q=〜 で来たとき、検索語を入れる
   useEffect(() => {

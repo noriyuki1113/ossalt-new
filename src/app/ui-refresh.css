@@ -309,7 +309,7 @@
   transition: background 150ms ease;
 }
 
-.tools-page .browse-grid {
+.browse-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
@@ -317,7 +317,7 @@
   background: #f8f9f5;
 }
 
-.tools-page .browse-card {
+.browse-card {
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -329,53 +329,41 @@
   box-shadow: 0 2px 12px rgba(18, 22, 26, 0.025);
 }
 
-.tools-page .browse-card:hover {
+.browse-card:hover {
   border-color: var(--indigo);
   box-shadow: 0 7px 20px rgba(18, 22, 26, 0.075);
 }
 
-.tools-page .browse-card__heading {
+.browse-card__heading {
   display: flex;
   gap: 0.75rem;
   align-items: flex-start;
 }
 
-.tools-page .browse-card__heading-copy {
+.browse-card__heading-copy {
   min-width: 0;
 }
 
-.tools-page .browse-card__name {
+.browse-card__name {
   margin: 0;
   font-size: 1.2rem;
   line-height: 1.4;
   font-family: var(--font-display);
 }
 
-.tools-page .browse-card__name a {
+.browse-card__name a {
   color: var(--ink);
   text-decoration: none;
 }
 
-.tools-page .browse-card__alternative {
+.browse-card__alternative {
   margin: 0.2rem 0 0;
   font-size: 0.8rem;
   line-height: 1.5;
   color: var(--ink-2);
 }
 
-.tools-page .browse-card__preview {
-  width: 100%;
-  height: auto;
-  max-height: 165px;
-  aspect-ratio: 16 / 9;
-  margin-top: 0.9rem;
-  object-fit: cover;
-  object-position: top center;
-  border: 1px solid var(--rule);
-  border-radius: 8px;
-}
-
-.tools-page .browse-card__description {
+.browse-card__description {
   margin: 0.8rem 0;
   font-size: 0.875rem;
   line-height: 1.7;
@@ -386,7 +374,7 @@
   overflow: hidden;
 }
 
-.tools-page .browse-card__tags {
+.browse-card__tags {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -395,7 +383,7 @@
   padding-top: 0.6rem;
 }
 
-.tools-page .browse-card__tag {
+.browse-card__tag {
   display: inline-flex;
   align-items: center;
   min-height: 25px;
@@ -410,7 +398,7 @@
   overflow-wrap: anywhere;
 }
 
-.tools-page .browse-card__metrics {
+.browse-card__metrics {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -421,24 +409,24 @@
   border-top: 1px solid var(--rule);
 }
 
-.tools-page .browse-card__metrics > div {
+.browse-card__metrics > div {
   display: grid;
   gap: 0.1rem;
 }
 
-.tools-page .browse-card__metric-label {
+.browse-card__metric-label {
   font-size: 0.65rem;
   color: var(--ink-3);
 }
 
-.tools-page .browse-card__metric-value {
+.browse-card__metric-value {
   font-family: var(--font-mono);
   font-size: 0.9rem;
 }
 
 @media (max-width: 760px) {
-  .tools-page .browse-grid { grid-template-columns: 1fr; padding: 0.7rem; gap: 0.7rem; }
-  .tools-page .browse-card { padding: 1rem; }
+  .browse-grid { grid-template-columns: 1fr; padding: 0.7rem; gap: 0.7rem; }
+  .browse-card { padding: 1rem; }
   .tools-page .browser-ledger { padding-inline: 0.75rem; }
   .tools-page .browser-results-header { padding-inline: 0.75rem; }
   .tools-page .browser-active-filters { padding-inline: 0.75rem; }
@@ -448,4 +436,76 @@
 .home-page .hero__title .hl {
   display: inline-block;
   white-space: nowrap;
+}
+
+@media (min-width: 1100px) {
+  .browse-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* ホーム：カテゴリのピル */
+.home-page .cat-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-page .cat-tile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  min-height: 44px;
+  padding: 0.5rem 0.95rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  white-space: nowrap;
+  background: #fff;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.home-page .cat-tile:hover {
+  border-color: var(--indigo);
+  background: var(--indigo-soft);
+}
+
+.home-page .cat-tile__n {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--ink-3);
+}
+
+/* ホームの注目カード：一覧のカードと同じ見た目（枠・背景なし） */
+.home-page .browse-grid {
+  padding: 0;
+  background: transparent;
+}
+
+.home-page .section__head .more {
+  white-space: nowrap;
+}
+
+/* ホームのヒーロー：中央にそろえ、検索を主役にする（広い画面のみ） */
+@media (min-width: 768px) {
+  .home-page .hero {
+    text-align: center;
+  }
+  .home-page .hero__title {
+    margin-inline: auto;
+    max-width: none;
+  }
+  .home-page .saas-search,
+  .home-page .hero__lede {
+    margin-inline: auto;
+  }
+  .home-page .saas-popular,
+  .home-page .hero__actions {
+    justify-content: center;
+  }
 }
