@@ -509,3 +509,15 @@
     justify-content: center;
   }
 }
+
+/* 見出しは「自分のサーバで」「動かせる。」の2かたまりで折り返す（「で」だけが次の行に残らないように） */
+.home-page .hero__title .nb {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* 本文は文節の途中で切れにくくする（対応ブラウザのみ） */
+.home-page .hero__lede {
+  word-break: auto-phrase;
+  text-wrap: pretty;
+}
