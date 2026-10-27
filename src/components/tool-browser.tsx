@@ -75,7 +75,7 @@ export function ToolBrowser({
   if (license) activeFilters.push({
     key: "license",
     label: license.startsWith(GROUP_PREFIX)
-      ? (LICENSE_GROUP_LABELS[license.slice(GROUP_PREFIX.length)] ?? license)
+      ? (LICENSE_GROUP_LABELS[license.slice(GROUP_PREFIX.length) as keyof typeof LICENSE_GROUP_LABELS] ?? license)
       : license,
   });
   if (dockerOnly) activeFilters.push({ key: "docker", label: "Docker対応" });
