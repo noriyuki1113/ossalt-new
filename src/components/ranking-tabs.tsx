@@ -77,6 +77,9 @@ function Rows({ rows, kind }: { rows: RankView[]; kind: TabId }) {
             <strong>{r.headline}</strong>
             <small>{r.sub}</small>
             {kind !== "recommended" && <span className="rank-score" title="合計点（0〜100）">{r.score}点</span>}
+            <span className="rank-bar" role="presentation" title={`合計 ${r.score}点（100点満点）`}>
+              <span style={{ width: `${Math.max(0, Math.min(100, r.score))}%` }} />
+            </span>
           </span>
         </li>
       ))}
