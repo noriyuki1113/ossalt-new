@@ -6,6 +6,10 @@ import { ComparisonTable } from "@/components/tool-views";
 import { HouseAd } from "@/components/house-ad";
 import { SponsorSlot } from "@/components/sponsor-slot";
 import { getAlternativeGuide } from "@/lib/alternative-guides";
+import { AlternativeDecisionPanel } from "@/components/alternative-decision";
+import { buildAlternativeDecision } from "@/lib/alternative-decision";
+import { TOOL_DIAGNOSIS } from "@/lib/diagnosis-data";
+import { getStanding } from "@/lib/ranking-positions";
 import { getComparePairs, getCompetitor, getCompetitors, getMeta, getTool } from "@/lib/data";
 import { SITE, t } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
@@ -51,6 +55,14 @@ export default async function AlternativeDetailPage({
   const toolIds = new Set(c.tools.map((tl) => tl.id));
   const comparePairs = getComparePairs().filter((p) => toolIds.has(p.a) && toolIds.has(p.b));
   const faq = buildAlternativeFaq(c.name, c.tools);
+  const decision = buildAlternativeDecision(slug, c.name, c.tools, Object.values(TOOL_DIAGNOSIS), (id) => getStanding(id));
+  // 手書きの解説に、移行の注意・「のままのほうがよい場合」の見出しがあれば、要約からそこへ飛べるようにする
+  let guideHtml = guide?.contentHtml ?? "";
+  const hasMigration = /<h2>移行するときの注意<\/h2>/.test(guideHtml);
+  const hasStay = /<h2>[^<]*のままの(ほう|方)がよい場合<\/h2>/.test(guideHtml);
+  guideHtml = guideHtml
+    .replace(/<h2>(移行するときの注意)<\/h2>/, '<h2 id="migration">$1</h2>')
+    .replace(/<h2>([^<]*のままの(?:ほう|方)がよい場合)<\/h2>/, '<h2 id="stay">$1</h2>');
 
   return (
     <>
@@ -81,30 +93,22 @@ export default async function AlternativeDetailPage({
           </Link>
         </div>
 
+        <AlternativeDecisionPanel
+          saasName={c.name}
+          slug={c.slug}
+          decision={decision}
+          picks={(guide?.picks ?? []).map((p) => ({ ...p, name: getTool(p.tool)?.name ?? p.tool }))}
+          hasMigration={hasMigration}
+          hasStay={hasStay}
+          asOf={formatDate(meta.stars_as_of ?? meta.built_at)}
+        />
+
         <SponsorSlot placement="alternative" slug={c.slug} />
         <HouseAd placement={`alternative_${c.slug}`} />
 
-        {guide && guide.picks.length > 0 && (
-          <section className="section">
-            <h2 className="h3">用途別の候補</h2>
-            <p className="muted" style={{ fontSize: "0.8125rem" }}>
-              {"編集部が機能と性格から整理した目安です。上の比較表の並び（健全度順）とは別の観点です。"}
-            </p>
-            <ul>
-              {guide.picks.map((p) => (
-                <li key={p.tool} style={{ marginBottom: "0.5rem" }}>
-                  <Link href={`/tools/${p.tool}/`}>{getTool(p.tool)?.name ?? p.tool}</Link>
-                  {"："}
-                  {p.fit}
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
-
         {guide && (
           <section className="section">
-            <div className="prose" dangerouslySetInnerHTML={{ __html: guide.contentHtml }} />
+            <div className="prose" dangerouslySetInnerHTML={{ __html: guideHtml }} />
             {guide.updated && (
               <p className="muted" style={{ fontSize: "0.75rem" }}>
                 {`最終更新：${formatDate(guide.updated)}。機能・ライセンス・提供条件は変わることがあるため、導入前に各ツールの公式情報をご確認ください。`}

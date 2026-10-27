@@ -2610,3 +2610,15 @@ details.more > summary {
 .brief__facts small { color: var(--ink-2); font-size: 0.75rem; }
 .brief__link { display: flex; gap: 0.5rem; align-items: baseline; flex-wrap: wrap; }
 .brief__foot { margin: 1rem 0 0; font-size: 0.75rem; }
+
+/* ---------- SaaS代替ページ：結局どれを選ぶ？ ---------- */
+.decide__h { margin: 1.5rem 0 0.5rem; font-size: 1rem; }
+.decide__picks { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.625rem; }
+.decide__picks li { display: grid; gap: 0.125rem; padding: 0.625rem 0.75rem; border-left: 3px solid var(--indigo); background: var(--indigo-soft); }
+.decide__picks small { color: var(--ink-2); font-size: 0.75rem; }
+.decide__rec { margin: 0; padding-left: 1.25rem; }
+.decide__rec li { padding: 0.25rem 0; }
+.decide__rec strong { margin-left: 0.75rem; font-family: var(--font-mono); color: var(--indigo); }
+.decide__list { margin: 0; padding-left: 1.25rem; display: grid; gap: 0.375rem; font-size: 0.875rem; line-height: 1.7; }
+.decide__matrix td { text-align: center; }
+.decide__matrix tbody th { text-align: left; font-weight: 600; white-space: nowrap; }
