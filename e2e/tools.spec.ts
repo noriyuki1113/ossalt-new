@@ -159,7 +159,7 @@ test.describe("OSS一覧 Phase 2 — カード表示と大量データ", () => {
   });
 
   test("最終コミットが1年以上前のツールは、詳細ページの先頭に事実を表示し、更新中のツールには出さない", async ({ page }) => {
-    await page.goto("/tools/helpy/");
+    await page.goto("/tools/gpt4all/");
     const notice = page.locator(".notice--warn", { hasText: "更新が1年以上ありません" });
     await expect(notice).toBeVisible();
     await expect(notice).toContainText("最終コミットは");
