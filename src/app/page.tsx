@@ -1,11 +1,15 @@
 import Link from "next/link";
 import { SiteFooter, SiteHeader, JsonLd } from "@/components/site-chrome";
 import { HouseAd } from "@/components/house-ad";
-import { ToolRow } from "@/components/tool-views";
-import { getActiveTools, getMeta } from "@/lib/data";
+import { HomeRankings, type HomeRow } from "@/components/home-rankings";
+import { PopularSaas, SaasSearch, type SaasEntry } from "@/components/saas-search";
+import { getActiveTools, getCompetitors, getMeta } from "@/lib/data";
+import { TOOL_DIAGNOSIS } from "@/lib/diagnosis-data";
+import { SAAS_IDS, SAAS_LABELS } from "@/lib/diagnosis-types";
+import { buildGrowth, buildPopularity, buildRecommended } from "@/lib/rankings";
 import { CATEGORIES } from "@/lib/categories";
 import { SITE, t } from "@/lib/site";
-import { formatCompactJa } from "@/lib/tools";
+import { formatCompactJa, formatDate, slugifyCompetitor } from "@/lib/tools";
 import { buildActivityReport } from "@/lib/watch-changes";
 import { getWatchSignalFeed } from "@/lib/watch-signals";
 
@@ -13,7 +17,38 @@ export default function HomePage() {
   const tools = getActiveTools();
   const meta = getMeta();
   const changes = buildActivityReport(getActiveTools(), getWatchSignalFeed());
-  const top = tools.slice(0, 8);
+  const asOf = formatDate(meta.stars_as_of ?? meta.built_at);
+
+  // SaaS名から探す：このSaaS自身を指す名前（英語名・日本語名・指定した別名）だけを候補に使う。
+  // 同じグループのツールが、別のSaaSの代替でもある場合に、その名前を拾わないようにする。
+  const saasEntries: SaasEntry[] = getCompetitors().map((c) => {
+    const names = new Set<string>();
+    for (const tl of c.tools) {
+      if (slugifyCompetitor(tl.primary_competitor) === c.slug) {
+        names.add(tl.primary_competitor);
+        if (tl.primary_competitor_ja) names.add(tl.primary_competitor_ja);
+      }
+      for (const n of tl.also_competitors ?? []) if (slugifyCompetitor(n) === c.slug) names.add(n);
+    }
+    names.delete(c.name);
+    return { slug: c.slug, name: c.name, aliases: [...names], count: c.tools.length };
+  });
+
+  // トップのランキング（3種類。計算の根拠は /rankings/）
+  const row = (t: (typeof tools)[number], headline: string, sub: string): HomeRow => ({
+    id: t.id, name: t.name, headline, sub,
+    meta: `${t.primary_competitor_ja || t.primary_competitor}の代替`,
+  });
+  const popularRows = buildPopularity(tools).rows.slice(0, 5)
+    .map((r) => row(r.tool, `★${formatCompactJa(r.tool.stars_num)}`, `Fork ${formatCompactJa(r.tool.forks_num)}`));
+  const growthRows = buildGrowth(tools).rows.slice(0, 5)
+    .map((r) => row(r.tool, r.parts[0].value, `7日間（実測${r.window7.days}日）`));
+  const rec = buildRecommended(tools, Object.values(TOOL_DIAGNOSIS));
+  const recommendedGroups = SAAS_IDS.filter((s) => rec.bySaas[s]?.length).map((s) => ({
+    saas: s,
+    label: SAAS_LABELS[s],
+    rows: rec.bySaas[s]!.slice(0, 3).map((r) => row(r.tool, `${r.score}点`, "100点満点")),
+  }));
   const categoriesWithCount = CATEGORIES.map((c) => ({
     ...c,
     count: tools.filter((tl) => tl.category === c.slug).length,
@@ -31,10 +66,12 @@ export default function HomePage() {
             <em>自分のサーバ</em>で
             <span className="hl">動かせる。</span>
           </h1>
+          <SaasSearch entries={saasEntries} />
+          <PopularSaas entries={saasEntries} />
           <p className="hero__lede">
             {t("home.lede", { n: meta.tool_count })}{"料金だけでは判断できない、ライセンス・セキュリティ・更新の勢いまで並べて出します。"}</p>
           <div className="hero__actions">
-            <Link className="btn btn--primary" href="/tools/">
+            <Link className="btn" href="/tools/">
               {t("home.cta.browse")}
             </Link>
             <Link className="btn" href="/guide/">
@@ -43,25 +80,41 @@ export default function HomePage() {
           </div>
         </section>
 
-        <div className="panel" style={{ marginTop: "1.5rem" }}>
-          <div className="panel__body" style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "1rem" }}>
-            <div style={{ flex: "1 1 20rem" }}>
-              <p style={{ margin: "0 0 0.25rem", fontWeight: 700, fontSize: "var(--step-1)" }}>
-                どのOSSを選べばいいか迷っていますか？
-              </p>
-              <p className="muted" style={{ margin: 0, fontSize: "0.875rem" }}>
-                7つの質問に答えるだけで、あなたの条件に合うOSSを探します。
-              </p>
+        <div className="home-cards">
+          <section className="panel" aria-labelledby="home-diag">
+            <div className="panel__body">
+              <div>
+                <h2 id="home-diag" style={{ margin: "0 0 0.25rem", fontSize: "var(--step-1)" }}>
+                  どのOSSを選べばいいか迷っていますか？
+                </h2>
+                <p className="muted" style={{ margin: 0, fontSize: "0.875rem" }}>
+                  7つの質問（日本語・商用利用・予算も）に答えるだけで、条件に合うOSSと、向かない点を示します。約2分・登録不要。
+                </p>
+              </div>
+              <div>
+                <Link className="btn btn--primary" href="/diagnosis/">
+                  OSS診断をはじめる →
+                </Link>
+              </div>
             </div>
-            <div>
-              <Link className="btn btn--primary" href="/diagnosis/">
-                OSS診断をはじめる →
-              </Link>
-              <p className="muted" style={{ margin: "0.4rem 0 0", fontSize: "0.75rem" }}>
-                約2分・登録不要
-              </p>
+          </section>
+          <section className="panel" aria-labelledby="home-cost">
+            <div className="panel__body">
+              <div>
+                <h2 id="home-cost" style={{ margin: "0 0 0.25rem", fontSize: "var(--step-1)" }}>
+                  乗り換えると、いくら変わる？
+                </h2>
+                <p className="muted" style={{ margin: 0, fontSize: "0.875rem" }}>
+                  人数・サーバー代・運用の手間から、SaaSとOSSの総費用を比べます。入力は端末の中だけで計算します。
+                </p>
+              </div>
+              <div>
+                <Link className="btn" href="/cost-lab/">
+                  Cost Labで試算する →
+                </Link>
+              </div>
             </div>
-          </div>
+          </section>
         </div>
 
         <div className="stats" style={{ marginTop: "2.5rem" }}>
@@ -118,18 +171,14 @@ export default function HomePage() {
           </section>
         )}
 
-        <section className="section section--first">
+        <section className="section section--first" aria-labelledby="home-rank-h">
           <div className="section__head">
-            <h2>勢いのある順に見る</h2>
+            <h2 id="home-rank-h">ランキングで見る</h2>
             <Link className="more" href="/tools/">
               全{meta.tool_count}件 →
             </Link>
           </div>
-          <div className="ledger">
-            {top.map((tool) => (
-              <ToolRow key={tool.id} tool={tool} />
-            ))}
-          </div>
+          <HomeRankings popular={popularRows} growth={growthRows} recommended={recommendedGroups} asOf={asOf} />
         </section>
 
         <section className="section">
@@ -177,8 +226,8 @@ export default function HomePage() {
               <br />{"第三者が機械的に採点した OpenSSF Scorecard を掲載し、未スキャンのものは「未評価」と明記しています。"}
               {"スコアが無いことを安全の証拠として扱わないでください。"}</div>
             <div className="notice">
-              <strong>健全度スコアは「勢い」の目安です。</strong>
-              <br />{"スターやフォークの数は規模の大きいプロジェクトほど有利になります。更新が止まっていないか（最終コミット日）を必ずあわせて確認してください。"}</div>
+              <strong>人気と、いま伸びていることは別です。</strong>
+              <br />{"スターやフォークの数は規模の大きいプロジェクトほど有利になります。人気・急成長・おすすめは「ランキング」で分けて、計算の根拠つきで確認できます。更新が止まっていないか（最終コミット日）もあわせて確認してください。"}</div>
           </div>
         </section>
       </main>

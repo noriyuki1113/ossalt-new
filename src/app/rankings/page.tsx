@@ -78,7 +78,7 @@ export default function RankingsPage() {
 
   return (
     <>
-      <SiteHeader current="/tools" />
+      <SiteHeader current="/rankings" />
       <main className="wrap page">
         <Breadcrumbs items={[{ href: "/", label: "トップ" }, { label: "OSSランキング" }]} />
         <h1 className="h2">OSSランキング</h1>

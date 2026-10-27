@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { ToolRow } from "@/components/tool-views";
 import {
   filterAndSort,
@@ -42,6 +42,14 @@ export function ToolBrowser({
   const [japaneseOnly, setJapaneseOnly] = useState(false);
   const [sort, setSort] = useState<SortKey>(defaultSort);
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+
+  // トップの検索ボックスや、サイトの検索（WebSite の SearchAction）から /tools/?q=〜 で来たとき、検索語を入れる
+  useEffect(() => {
+    try {
+      const q = new URLSearchParams(window.location.search).get("q");
+      if (q && q.trim()) setQuery(q.trim().slice(0, 100));
+    } catch { /* URLが読めなくても、空の検索で表示する */ }
+  }, []);
 
   const licenses = useMemo(() => licenseFacets(tools), [tools]);
   const groups = useMemo(() => {
