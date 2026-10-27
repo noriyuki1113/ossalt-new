@@ -147,6 +147,17 @@ test.describe("OSS一覧 Phase 2 — カード表示と大量データ", () => {
     await expect(page.locator("article.row, article.browse-card")).toHaveCount(50);
   });
 
+  test("詳細ページの最初に、公式サイトへの導線・基本情報・向いている使い方が、要約より先に並ぶ", async ({ page }) => {
+    await page.goto("/tools/immich/");
+    const top = (sel: string) => page.locator(sel).first().evaluate((el) => el.getBoundingClientRect().top + window.scrollY);
+    const actions = await top(".hero__actions");
+    const positioning = await top(".positioning");
+    const brief = await top(".brief");
+    expect(actions).toBeLessThan(positioning);
+    expect(positioning).toBeLessThan(brief);
+    await expect(page.locator(".hero__actions").getByRole("link", { name: "公式サイト" })).toBeVisible();
+  });
+
   test("検索欄とカテゴリ列が画面幅に収まる（チップ列は横スクロール）", async ({ page }) => {
     await page.goto("/tools/");
     const vw = page.viewportSize()!.width;
