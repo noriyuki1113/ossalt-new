@@ -25,6 +25,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { loadOverrides } from "./overrides.mjs";
+import { evaluateGates, fetchRepoInfo } from "./add-tools-gates.mjs";
 
 const ROOT = process.cwd();
 const CAND = path.join(ROOT, "scripts", "candidates");
@@ -179,8 +180,20 @@ const checked = await mapLimit(accepted, CONCURRENCY, async (c) => {
   return { ...c, exists: ok, urlVerified: urlStatus > 0 && urlStatus < 400 };
 });
 
+/* ---------------- 掲載基準の自動チェック（docs/listing-criteria.md） ----------------
+ * GitHub API で、アーカイブ・ライセンス・最終push・Star・トピックを確かめる。
+ * ADD_TOOLS_REQUIRE_GATES=1（ワークフローで設定）のときは、取得できなければ却下する。
+ * ローカルなど取得できない環境では、警告つきで通す（確認できていない旨をサマリに出す）。 */
+const REQUIRE_GATES = process.env.ADD_TOOLS_REQUIRE_GATES === "1";
+const apiToken = process.env.DATA_FETCH_TOKEN || process.env.GITHUB_TOKEN || "";
+const gated = await mapLimit(checked, CONCURRENCY, async (c) => {
+  if (!c.exists) return { ...c, gates: null };
+  const info = await fetchRepoInfo(c.gh, { token: apiToken });
+  return { ...c, gates: evaluateGates(info, { description: c.descJa }) };
+});
+
 const toAdd = [];
-for (const c of checked) {
+for (const c of gated) {
   if (!c.exists) {
     rejected.push({
       raw: `${c.name}|${c.id}|${c.gh}`,
@@ -188,7 +201,16 @@ for (const c of checked) {
     });
     continue;
   }
-  toAdd.push(c);
+  const g = c.gates;
+  if (g.reject.length) {
+    rejected.push({ raw: `${c.name}|${c.id}|${c.gh}`, reason: `掲載基準を満たさない：${g.reject.join("／")}` });
+    continue;
+  }
+  if (!g.verified && REQUIRE_GATES) {
+    rejected.push({ raw: `${c.name}|${c.id}|${c.gh}`, reason: "掲載基準を GitHub API で確認できなかったため却下（再実行してください）" });
+    continue;
+  }
+  toAdd.push({ ...c, warnings: g.verified ? g.warn : ["掲載基準を GitHub API で確認できていません（手元の実行など）。公開前に人が確認してください"] });
 }
 
 /* ---------------- tools.json へ統合 ---------------- */
@@ -245,6 +267,7 @@ if (toAdd.length) {
     summary.push(
       `- **${c.name}**（\`${c.id}\`）… ${c.category} / 公式サイト確認: ${c.urlVerified ? "OK" : "未確認"}`
     );
+    for (const w of c.warnings ?? []) summary.push(`  - ⚠ ${w}`);
   }
   summary.push("");
 }
