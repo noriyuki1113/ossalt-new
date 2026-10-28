@@ -85,14 +85,20 @@ export default function ChangesPage() {
       <SiteHeader current="/changes/" />
       <main className="wrap page">
         <Breadcrumbs items={[{ href: "/", label: "トップ" }, { label: "OSSの変化レポート" }]} />
+        {report.feedStalled && report.generatedAt && (
+          <aside className={styles.note} aria-label="観測データの更新について" role="status">
+            <strong>このページは、{activityDateJst(report.latestObservedAt ?? report.generatedAt)}（JST）までの観測記録です。現在、観測の更新が止まっています。</strong>
+            <p>それより新しい変化は反映されていません。最新のStar数などは、各ツールのページと<Link href="/trending/">急上昇ランキング</Link>（OSSALTが毎日取得）で確認できます。</p>
+          </aside>
+        )}
         <header className={styles.hero}>
           <div className={styles.heroMarker}>OSSALT RESEARCH DESK <span> / GITHUB OBSERVATIONS</span></div>
           <h1>変化を追う。<br /><em><span className={styles.nb}>選択の根拠を</span><span className={styles.nb}>増やす。</span></em></h1>
           <p>
             {[
               "OSSを選ぶとき、", "今のStar数だけでなく、", "その後どう変わったかも大切です。",
-              "OSSALTが掲載するOSSのうち、", "継続観測中のプロジェクトについて、",
-              "GitHubの公開データから", "確認できた変化を", "まとめています。",
+              ...(report.feedStalled ? ["OSSALTが掲載するOSSのうち、", "観測していたプロジェクトについて、"] : ["OSSALTが掲載するOSSのうち、", "継続観測中のプロジェクトについて、"]),
+              "GitHubの公開データから", "確認できた変化を", report.feedStalled ? "記録しています。" : "まとめています。",
             ].map((ph) => <span key={ph} className={styles.nb}>{ph}</span>)}
           </p>
           <div className={styles.heroTail}>
@@ -103,13 +109,6 @@ export default function ChangesPage() {
 
         <SyncStatus status={sync} generatedAt={report.latestObservedAt ?? report.generatedAt} />
 
-        {report.feedStalled && report.generatedAt && (
-          <aside className={styles.note} aria-label="観測データの更新について" role="status">
-            <strong>観測データの更新が止まっている可能性があります。</strong>
-            <p>配信元の最新の観測は{activityDateJst(report.latestObservedAt ?? report.generatedAt)}（JST）です。それより新しい変化は反映されていません。
-              Star数などの最新の値は、各ツールのページと<Link href="/trending/">急上昇ランキング</Link>（OSSALTが毎日取得）で確認できます。</p>
-          </aside>
-        )}
 
         <section className={styles.stats} aria-label="観測サマリー">
           <div><span>最新の観測対象</span><strong>{report.rows.length}<small> OSS</small></strong></div>

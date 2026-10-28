@@ -11,7 +11,7 @@ import { buildGrowth, buildPopularity, buildRecommended } from "@/lib/rankings";
 import { CATEGORIES } from "@/lib/categories";
 import { SITE, t } from "@/lib/site";
 import { formatCompactJa, formatDate, slugifyCompetitor } from "@/lib/tools";
-import { buildActivityReport } from "@/lib/watch-changes";
+import { activityDateJst, buildActivityReport } from "@/lib/watch-changes";
 import { getWatchSignalFeed } from "@/lib/watch-signals";
 
 export default function HomePage() {
@@ -194,16 +194,22 @@ export default function HomePage() {
                   OSSALT / OBSERVATION DESK
                 </span>
                 <h2 id="watch-home-heading" style={{ fontSize: "1.25rem", margin: ".35rem 0" }}>
-                  重要な変化を、見逃さない。
+                  {changes.feedStalled ? "OSSの変化レポート（更新停止中）" : "重要な変化を、見逃さない。"}
                 </h2>
-                <p className="muted" style={{ fontSize: ".85rem", margin: 0 }}>
-                  {changes.rows.length}件のOSSを継続観測中。
-                  {changes.changed > 0 ? "直近で" + changes.changed + "件の注目シグナルを確認しています。" :
-                    "観測した活動と、検証できた変化だけを紹介します。"}
-                  履歴が足りない項目は推測しません。
-                </p>
+                {changes.feedStalled ? (
+                  <p className="muted" style={{ fontSize: ".85rem", margin: 0 }}>
+                    {`${changes.rows.length}件のOSSの、過去の観測記録です。最新の観測は${activityDateJst(changes.latestObservedAt ?? changes.generatedAt ?? "")}（JST）で、それ以降の変化は反映されていません。`}
+                  </p>
+                ) : (
+                  <p className="muted" style={{ fontSize: ".85rem", margin: 0 }}>
+                    {changes.rows.length}件のOSSを継続観測中。
+                    {changes.changed > 0 ? "直近で" + changes.changed + "件の注目シグナルを確認しています。" :
+                      "観測した活動と、検証できた変化だけを紹介します。"}
+                    履歴が足りない項目は推測しません。
+                  </p>
+                )}
               </div>
-              <Link className="btn" href="/changes/">OSSの変化レポートを見る →</Link>
+              <Link className="btn" href="/changes/">{changes.feedStalled ? "過去の観測記録を見る →" : "OSSの変化レポートを見る →"}</Link>
             </div>
           </section>
         )}

@@ -32,6 +32,8 @@ jobs:
           mkdir -p reports/seo
           node scripts/seo-audit.mjs --dir out --out reports/seo/audit.md
           node scripts/seo-redirects-audit.mjs
+      - name: 掲載件数の整合性
+        run: node scripts/count-audit.mjs --strict
       - name: 監査（ブラウザ・重要24ページ）
         run: node scripts/page-audit.mjs
       - name: サマリー
