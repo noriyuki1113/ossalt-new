@@ -1,0 +1,75 @@
+{
+  "_comment": "SaaSの代替として掲載しているツールの『代替の種類』。根拠（掲載済みの解説・説明文）があるものだけを書く。無いものは書かない（画面には出さない）。relation は direct（直接代替）・partial（部分代替）・combo（組み合わせ型）・related（関連ツール）。source は根拠にしたOSSALT内の資料、checked_at は照合した日。公式資料や実機での検証を意味しない。",
+  "relations": {
+    "chatgpt": {
+      "ollama": {
+        "relation": "combo",
+        "with": ["open-webui", "librechat", "lobechat"],
+        "note": "AIモデルを動かす部分だけです。画面は持たないので、Open WebUI などのチャット画面と組み合わせて使います。",
+        "source": "content/tools/ollama.md、content/tools/jan.md（「Ollamaは…画面を持ちません」）",
+        "checked_at": "2026-10-28"
+      },
+      "open-webui": {
+        "relation": "combo",
+        "with": ["ollama"],
+        "note": "チャット画面です。AIモデルそのものは持たず、Ollamaなどにつないで使います。",
+        "source": "content/tools/open-webui.md",
+        "checked_at": "2026-10-28"
+      },
+      "librechat": {
+        "relation": "combo",
+        "with": ["ollama"],
+        "note": "チャット画面です。外部のAIサービスや、自前で動かすモデルにつないで使います。",
+        "source": "content/tools/librechat.md",
+        "checked_at": "2026-10-28"
+      },
+      "lobechat": {
+        "relation": "combo",
+        "with": ["ollama"],
+        "note": "チャット画面です。外部のAIサービスや、Ollamaで動かすモデルにつないで使います。",
+        "source": "content/tools/lobechat.md",
+        "checked_at": "2026-10-28"
+      },
+      "jan": {
+        "relation": "partial",
+        "note": "パソコンの中だけで、ChatGPTのように会話できます。ただし、動かせるモデルはChatGPTと同じではなく、性能に差があることが多いです。",
+        "source": "content/tools/jan.md、content/alternatives/chatgpt.md",
+        "checked_at": "2026-10-28"
+      },
+      "gpt4all": {
+        "relation": "partial",
+        "note": "パソコンの中だけで動くAIチャットのアプリです。動かせるモデルはChatGPTと同じではなく、性能に差があることが多いです。",
+        "source": "掲載の説明文、content/alternatives/chatgpt.md",
+        "checked_at": "2026-10-28"
+      },
+      "openclaw": {
+        "relation": "related",
+        "note": "メッセージアプリから使うAIアシスタント（エージェント）です。チャット画面の置き換えというより、別の使い方のツールです。",
+        "source": "掲載の説明文（「ChatGPTの代替は編集上の分類」と明記）",
+        "checked_at": "2026-10-28"
+      },
+      "hermes-agent": {
+        "relation": "related",
+        "note": "CLIやメッセージアプリから使うAIエージェントです。チャット画面の置き換えというより、別の使い方のツールです。",
+        "source": "掲載の説明文（「ChatGPTの代替は編集上の分類」と明記）",
+        "checked_at": "2026-10-28"
+      }
+    },
+    "netflix": {
+      "jellyfin": {
+        "relation": "related",
+        "note": "自分の動画・音楽ファイルを配信するメディアサーバーです。Netflixのように作品を提供するサービスではありません。",
+        "source": "content/alternatives/netflix.md",
+        "checked_at": "2026-10-28"
+      }
+    },
+    "youtube": {
+      "peertube": {
+        "relation": "partial",
+        "note": "自前の動画共有サイトを立てられます。ただし、YouTubeのような多くの視聴者や、広告による収益化の仕組みはありません。",
+        "source": "content/alternatives/youtube.md",
+        "checked_at": "2026-10-28"
+      }
+    }
+  }
+}
