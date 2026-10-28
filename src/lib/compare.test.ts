@@ -13,6 +13,7 @@ test("ライセンス分類: 代表的な表記", () => {
   assert.equal(classifyLicense("GPL-3.0"), "copyleft");
   assert.equal(classifyLicense("AGPL-3.0"), "network-copyleft");
   assert.equal(classifyLicense("BUSL 1.1"), "source-available");
+  assert.equal(classifyLicense("Any Source Available License"), "source-available");
   assert.equal(classifyLicense("Sustainable Use License"), "source-available");
   assert.equal(classifyLicense("Open WebUI License"), "source-available");
   assert.equal(classifyLicense("Apache-2.0（改変条項あり）"), "source-available");
@@ -115,6 +116,7 @@ test("licenseGroupOf: 4区分。推測でOSIに入れない", () => {
   assert.equal(licenseGroupOf("AGPL-3.0 / Metabase Commercial"), "mixed");
   assert.equal(licenseGroupOf("Apache-2.0（pro/配下は別ライセンス）"), "mixed");
   assert.equal(licenseGroupOf("Sustainable Use License"), "source-available");
+  assert.equal(licenseGroupOf("Any Source Available License"), "source-available");
   assert.equal(licenseGroupOf("BUSL 1.1"), "source-available");
   assert.equal(licenseGroupOf("Apache-2.0（改変条項あり）"), "source-available");
   assert.equal(licenseGroupOf("AGPL-3.0 + Commons Clause"), "source-available");
