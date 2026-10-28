@@ -719,3 +719,38 @@
 .nb {
   white-space: nowrap;
 }
+
+/* 代替ページ：導入文より先に、主な候補を見せる */
+.alt-picks {
+  margin: 0 0 1.25rem;
+}
+.alt-picks__title {
+  margin: 0 0 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--ink-2);
+}
+.alt-picks__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.alt-picks__list li {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.65rem 0.8rem;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 0.5rem;
+}
+.alt-picks__name {
+  font-weight: 700;
+}
+.alt-picks__fit {
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: var(--ink-2);
+}

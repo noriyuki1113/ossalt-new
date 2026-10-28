@@ -84,6 +84,19 @@ export default async function AlternativeDetailPage({
         <p className="lede">
           {c.name} の代わりに自前で動かせる<span className="nb">オープンソースソフト</span>は{c.tools.length}件あります。
         </p>
+        {guide && guide.picks.length > 0 && (
+          <section className="alt-picks" aria-label={`${c.name}の代替の主な候補`}>
+            <h2 className="alt-picks__title">主な候補（用途別）</h2>
+            <ul className="alt-picks__list">
+              {guide.picks.map((p) => (
+                <li key={p.tool}>
+                  <Link href={`/tools/${p.tool}/`} className="alt-picks__name">{getTool(p.tool)?.name ?? p.tool}</Link>
+                  <span className="alt-picks__fit">{p.fit}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
         {guide?.intro && <p>{guide.intro}</p>}
 
         <nav className="alt-jump" aria-label="このページの内容">
