@@ -26,6 +26,8 @@ export type ActivityReport = {
   stale: number;
   with7dBaseline: number;
   generatedAt: string | null;
+  /** 掲載ツールの観測のうち最も新しい観測日時。生成日時は「出力した時刻」で、収集が止まっていても新しく見えるため、停止の判定にはこちらも使う */
+  latestObservedAt: string | null;
   /** 配信元（Watch）の更新が止まっているとみられる（生成日時が 36 時間より古い） */
   feedStalled: boolean;
   /** 全件の観測回数が1のまま（履歴が積み上がっていない） */
@@ -56,7 +58,7 @@ export function buildActivityReport(
   if (!Number.isFinite(now)) throw new Error("Invalid report date");
   if (!feed || feed.schema_version !== 1 || !Array.isArray(feed.observations)
       || !Number.isFinite(Date.parse(feed.generated_at))) {
-    return {rows: [], changed: 0, stale: 0, with7dBaseline: 0, generatedAt: null, feedStalled: false, historyNotAccumulating: false};
+    return {rows: [], changed: 0, stale: 0, with7dBaseline: 0, generatedAt: null, latestObservedAt: null, feedStalled: false, historyNotAccumulating: false};
   }
   const rows: ActivityRow[] = [];
   for (const tool of tools) {
@@ -75,6 +77,12 @@ export function buildActivityReport(
       headline: outdated ? "古い観測データ（再確認が必要）" : SIGNAL_LABEL[obs.signal],
     });
   }
+  const observedTimes = rows.map(r => Date.parse(r.observation.observed_at));
+  const latestObservedMs = observedTimes.length ? Math.max(...observedTimes) : null;
+  // 生成日時と最新の観測のうち、古いほうを「データの新しさ」とみなす（観測が無い場合は生成日時）
+  const freshestMs = latestObservedMs === null
+    ? Date.parse(feed.generated_at)
+    : Math.min(Date.parse(feed.generated_at), latestObservedMs);
   const priority = {attention: 0, changed: 1, observing: 2};
   rows.sort((a, b) =>
     priority[a.severity] - priority[b.severity]
@@ -89,9 +97,10 @@ export function buildActivityReport(
     with7dBaseline: rows.filter(r => r.observation.stars_delta_7d !== null
       && r.observation.baseline_date_7d !== null).length,
     generatedAt: feed.generated_at,
-    feedStalled: now - Date.parse(feed.generated_at) > FEED_STALL_HOURS * 3600 * 1000,
+    latestObservedAt: latestObservedMs === null ? null : new Date(latestObservedMs).toISOString(),
+    feedStalled: now - freshestMs > FEED_STALL_HOURS * 3600 * 1000,
     historyNotAccumulating: rows.length > 0 && rows.every(r => r.observation.observation_count <= 1)
-      && now - Date.parse(feed.generated_at) > 24 * 3600 * 1000,
+      && now - freshestMs > 24 * 3600 * 1000,
   };
 }
 

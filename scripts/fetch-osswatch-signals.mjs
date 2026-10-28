@@ -216,7 +216,11 @@ export async function syncSignals({url=FEED_URL, catalogPath="data-source/tools.
   if (old && validDate(old.generated_at) && Date.parse(old.generated_at) > Date.parse(reduced.generated_at)) {
     throw new FeedError("older_feed", "Feed is older than the existing observation artifact");
   }
-  const stall = feedStall({previousGeneratedAt: old?.generated_at ?? null, generatedAt: reduced.generated_at});
+  // generated_at は配信元が出力した時刻で、収集が止まっていても新しくなる。観測日時の最新値も見て、古いほうで判定する
+  const latestObserved = reduced.observations.map(o => o.observed_at).filter(validDate).sort().pop() ?? null;
+  const freshest = latestObserved && Date.parse(latestObserved) < Date.parse(reduced.generated_at)
+    ? latestObserved : reduced.generated_at;
+  const stall = feedStall({previousGeneratedAt: old?.generated_at ?? null, generatedAt: freshest});
   if (stall) {
     console.warn("::warning title=OSS Watch の更新停止::" + stall);
     summary("## ⚠ OSS Watch の更新停止\n" + stall + "\n");
