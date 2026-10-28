@@ -854,3 +854,45 @@
   display: grid;
   gap: 0.35rem;
 }
+
+/* 詳細ページの「30秒で」要約 */
+.glance {
+  margin: 0 0 1.5rem;
+  padding: 1rem 1.1rem;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 0.6rem;
+}
+.glance__title {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.glance__what {
+  margin: 0 0 0.75rem;
+  line-height: 1.8;
+}
+.glance__cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 0.75rem 1.25rem;
+}
+.glance__h {
+  margin: 0 0 0.3rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--ink-2);
+}
+.glance__h--good { color: var(--midori); }
+.glance__h--not { color: var(--shu-ink); }
+.glance ul {
+  margin: 0 0 0.6rem;
+  padding-left: 1.1rem;
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+.glance__src {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--ink-3);
+}

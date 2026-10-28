@@ -10,6 +10,7 @@ import path from "node:path";
 import matter from "gray-matter";
 import { marked } from "marked";
 import { parseVerification, type Verification } from "./verification.ts";
+import { parseGlance, type Glance } from "./glance.ts";
 
 const DIR = path.join(process.cwd(), "content", "tools");
 
@@ -20,6 +21,8 @@ export type ToolGuide = {
   updated: string;
   /** 検証状態（記録が無ければ「未検証」） */
   verification: Verification;
+  /** 30秒で分かる要約（任意。解説の本文をもとに編集部がまとめたもの） */
+  glance: Glance | null;
   contentHtml: string;
   /** 元のMarkdown（AI向けのMarkdown版・APIで使う） */
   markdown: string;
@@ -38,6 +41,7 @@ function readAll(): Map<string, ToolGuide> {
       description: String(data.description ?? ""),
       updated: String(data.updated ?? ""),
       verification: parseVerification(data.verification),
+      glance: parseGlance(data.at_a_glance),
       contentHtml: marked.parse(content, { async: false }) as string,
           markdown: content.trim(),
     });
