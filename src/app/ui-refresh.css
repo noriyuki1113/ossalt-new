@@ -754,3 +754,67 @@
   line-height: 1.6;
   color: var(--ink-2);
 }
+
+/* 代替の種類（直接代替・部分代替・組み合わせ型・関連ツール） */
+.alt-picks__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+.rel-badge {
+  display: inline-block;
+  padding: 0.05rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.6;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.rel-badge--direct { color: var(--midori); }
+.rel-badge--partial { color: var(--yamabuki); }
+.rel-badge--combo { color: var(--indigo); }
+.rel-badge--related { color: var(--ink-2); }
+.rel__legend,
+.rel__list {
+  margin: 0.75rem 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+}
+.rel__legend li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  color: var(--ink-2);
+}
+.rel__list li {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.7rem 0.85rem;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 0.5rem;
+}
+.rel__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+}
+.rel__note {
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+.rel__with,
+.rel__src {
+  font-size: 0.75rem;
+  color: var(--ink-3);
+  line-height: 1.6;
+}

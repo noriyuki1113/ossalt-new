@@ -8,6 +8,7 @@ import { TrackView } from "@/components/track-view";
 import { HouseAd } from "@/components/house-ad";
 import { SponsorSlot } from "@/components/sponsor-slot";
 import { getAlternativeGuide } from "@/lib/alternative-guides";
+import { RELATION_DESCRIPTIONS, RELATION_LABELS, getRelations } from "@/lib/alternative-relations";
 import { AlternativeDecisionPanel } from "@/components/alternative-decision";
 import { buildAlternativeDecision } from "@/lib/alternative-decision";
 import { TOOL_DIAGNOSIS } from "@/lib/diagnosis-data";
@@ -59,6 +60,8 @@ export default async function AlternativeDetailPage({
   const toolIds = new Set(c.tools.map((tl) => tl.id));
   const comparePairs = getComparePairs().filter((p) => toolIds.has(p.a) && toolIds.has(p.b));
   const faq = buildAlternativeFaq(c.name, c.tools);
+  const relations = getRelations(slug);
+  const classified = c.tools.filter((tl) => relations[tl.id]);
   const decision = buildAlternativeDecision(slug, c.name, c.tools, Object.values(TOOL_DIAGNOSIS), (id) => getStanding(id));
   // 手書きの解説に、移行の注意・「のままのほうがよい場合」の見出しがあれば、要約からそこへ飛べるようにする
   let guideHtml = guide?.contentHtml ?? "";
@@ -90,7 +93,12 @@ export default async function AlternativeDetailPage({
             <ul className="alt-picks__list">
               {guide.picks.map((p) => (
                 <li key={p.tool}>
-                  <Link href={`/tools/${p.tool}/`} className="alt-picks__name">{getTool(p.tool)?.name ?? p.tool}</Link>
+                  <span className="alt-picks__head">
+                    <Link href={`/tools/${p.tool}/`} className="alt-picks__name">{getTool(p.tool)?.name ?? p.tool}</Link>
+                    {relations[p.tool] && (
+                      <a href="#relations" className={`rel-badge rel-badge--${relations[p.tool].relation}`}>{RELATION_LABELS[relations[p.tool].relation]}</a>
+                    )}
+                  </span>
                   <span className="alt-picks__fit">{p.fit}</span>
                 </li>
               ))}
@@ -101,6 +109,7 @@ export default async function AlternativeDetailPage({
 
         <nav className="alt-jump" aria-label="このページの内容">
           {decision.rows.length > 0 && <a href="#choose">結局どれを選ぶ？</a>}
+          {classified.length > 0 && <a href="#relations">代替の種類</a>}
           <a href="#all-candidates">全候補の比較表</a>
           {hasMigration && <a href="#migration">移行の注意</a>}
           {comparePairs.length > 0 && <a href="#pairs">2つずつ比べる</a>}
@@ -126,6 +135,43 @@ export default async function AlternativeDetailPage({
             {c.name}を使い続ける場合との費用を、Cost Labで比べる
           </Link>
         </div>
+
+        {classified.length > 0 && (
+          <section id="relations" className="section rel" aria-labelledby="relations-h">
+            <h2 id="relations-h" className="h3">{`${c.name}の代替の種類（確認できたもの）`}</h2>
+            <p className="muted" style={{ fontSize: "0.8125rem" }}>
+              {`「代替」は、同じ用途に使える候補という意味で、${c.name}をそのまま置き換えられるとは限りません。次の4つに分けて、OSSALTの掲載済みの解説と照らして確認できたものだけ示しています。分類のないツールは、まだ確認できていません（直接代替という意味ではありません）。`}
+            </p>
+            <ul className="rel__legend">
+              {(Object.keys(RELATION_LABELS) as Array<keyof typeof RELATION_LABELS>).map((k) => (
+                <li key={k}><span className={`rel-badge rel-badge--${k}`}>{RELATION_LABELS[k]}</span>{RELATION_DESCRIPTIONS[k]}</li>
+              ))}
+            </ul>
+            <ul className="rel__list">
+              {classified.map((tl) => {
+                const r = relations[tl.id];
+                return (
+                  <li key={tl.id}>
+                    <span className="rel__head">
+                      <Link href={`/tools/${tl.id}/`}>{tl.name}</Link>
+                      <span className={`rel-badge rel-badge--${r.relation}`}>{RELATION_LABELS[r.relation]}</span>
+                    </span>
+                    <span className="rel__note">{r.note}</span>
+                    {r.with && r.with.length > 0 && (
+                      <span className="rel__with">
+                        {"組み合わせ先："}
+                        {r.with.map((id, i) => (
+                          <span key={id}>{i > 0 && "、"}<Link href={`/tools/${id}/`}>{getTool(id)?.name ?? id}</Link></span>
+                        ))}
+                      </span>
+                    )}
+                    <span className="rel__src">{`根拠：${r.source}（${r.checked_at}照合）`}</span>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+        )}
 
         <section id="all-candidates" className="section" aria-label="全候補の比較表">
           <ComparisonTable tools={c.tools} />
