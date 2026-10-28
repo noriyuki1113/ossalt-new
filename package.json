@@ -17,7 +17,8 @@
     "autodev": "node autodev/run.mjs",
     "seo:weekly": "node scripts/gsc-weekly-report.mjs",
     "seo:page-audit": "node scripts/page-audit.mjs",
-    "seo:redirects": "node scripts/seo-redirects-audit.mjs"
+    "seo:redirects": "node scripts/seo-redirects-audit.mjs",
+    "seo:counts": "node scripts/count-audit.mjs"
   },
   "keywords": [],
   "author": "",
