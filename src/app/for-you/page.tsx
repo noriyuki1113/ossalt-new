@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Ja } from "@/components/ja";
 import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ForYou, type PurposeOption } from "@/components/for-you";
 import { getCompetitors, getMeta } from "@/lib/data";
@@ -45,7 +46,7 @@ export default function ForYouPage() {
           {!FEATURES.forYou && <span className="fy-beta">試験公開</span>}
         </h1>
         <p className="lede">
-          {"あなたに合うOSSを、理由とともに発見する。置き換えたいSaaSと、あなたの条件を選ぶと、掲載データから合う候補を並べ、なぜおすすめなのか・何を確かめるべきかを表示します。ログインは不要で、入力した条件はこの画面のURLにだけ保存されます。"}
+          <Ja>{"あなたに合うOSSを、理由とともに発見する。置き換えたいSaaSと、あなたの条件を選ぶと、掲載データから合う候補を並べ、なぜおすすめなのか・何を確かめるべきかを表示します。ログインは不要で、入力した条件はこの画面のURLにだけ保存されます。"}</Ja>
         </p>
 
         <ForYou saasOptions={saasOptions} featureSaas={[...SAAS_IDS]} categoryOptions={categoryOptions} />

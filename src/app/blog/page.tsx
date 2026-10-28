@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Ja } from "@/components/ja";
 import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { getBlogPosts } from "@/lib/blog";
 import { getMeta } from "@/lib/data";
@@ -37,7 +38,7 @@ export default function BlogIndexPage() {
                     {formatDate(post.date)}
                   </p>
                   <h2 className="h3" style={{ marginTop: 0 }}>
-                    <Link href={`/blog/${post.slug}/`}>{post.title}</Link>
+                    <Link href={`/blog/${post.slug}/`}><Ja>{post.title}</Ja></Link>
                   </h2>
                   <p style={{ marginBottom: 0 }}>{post.description}</p>
                 </div>

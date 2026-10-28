@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Ja } from "@/components/ja";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import { Breadcrumbs, JsonLd, SiteFooter, SiteHeader } from "@/components/site-chrome";
@@ -116,7 +117,7 @@ export default async function ComparePage({ params }: { params: Promise<Params> 
           {a.name} と {b.name} の違い
         </h1>
         <p className="lede">
-          {`どちらも${competitor}の代わりになるオープンソースです。当サイトが公開データから取得したライセンス・更新状況・Docker対応・日本語対応・セキュリティの情報を並べて比べます。`}
+          <Ja>{`どちらも${competitor}の代わりになるオープンソースです。当サイトが公開データから取得したライセンス・更新状況・Docker対応・日本語対応・セキュリティの情報を並べて比べます。`}</Ja>
         </p>
 
         <div className="compare-heads">

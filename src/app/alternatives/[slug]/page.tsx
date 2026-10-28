@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ForYouLink } from "@/components/for-you-link";
 import Link from "next/link";
+import { Ja } from "@/components/ja";
 import { notFound } from "next/navigation";
 import { Breadcrumbs, JsonLd, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ComparisonTable } from "@/components/tool-views";
@@ -85,7 +86,7 @@ export default async function AlternativeDetailPage({
         <TrackView event="saas_alternative_viewed" props={{ slug: c.slug, candidate_count: c.tools.length }} dedupeKey={c.slug} />
         <h1 className="h2">{c.name} の<span className="nb">オープンソース代替</span></h1>
         <p className="lede">
-          {c.name} の代わりに自前で動かせる<span className="nb">オープンソースソフト</span>は{c.tools.length}件あります。
+          <Ja>{`${c.name} の代わりに自前で動かせるオープンソースソフトは${c.tools.length}件あります。`}</Ja>
         </p>
         {guide && guide.picks.length > 0 && (
           <section className="alt-picks" aria-label={`${c.name}の代替の主な候補`}>
@@ -195,7 +196,7 @@ export default async function AlternativeDetailPage({
 
         {faq.length > 0 && (
           <section className="section">
-            <h2 className="h3">{`${c.name}の代替についてよくある質問`}</h2>
+            <h2 className="h3"><Ja>{`${c.name}の代替についてよくある質問`}</Ja></h2>
             <p className="muted" style={{ fontSize: "0.8125rem" }}>
               {"回答は掲載データ（GitHubの公開情報）から自動でまとめています。"}
             </p>
