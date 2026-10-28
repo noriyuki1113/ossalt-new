@@ -8,7 +8,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata: Metadata = pageMeta({
   title: "プライバシーポリシー",
-  description: "ossalt.jp における個人情報の取り扱い、Cookie、アクセス解析について。",
+  description: "ossalt.jp における個人情報の取り扱い、Cookie、アクセス解析、広告・紹介リンク（Google AdSense の導入検討を含む）について。",
   path: "/privacy/",
 });
 
@@ -52,9 +52,20 @@ export default function PrivacyPage() {
           <p>{"リンク先への遷移や成果の計測にあたり、遷移先の事業者がCookie等を使用する場合がありますが、これは当サイトが直接収集・管理するものではありません。"}</p>
           <p>{"掲載するツールの並び順・評価は、公開データ（健全度スコアなど）にもとづいており、紹介料の有無や金額によって変わることはありません。詳しくは"}<Link href="/about/">このサイトについて</Link>{"をご覧ください。"}</p>
 
+          <h3>Google AdSense（広告配信）について</h3>
+          <p>{"当サイトは、Google AdSense による広告配信の導入を検討しています。現時点（2026年10月28日）では、広告のタグを設置しておらず、Google による広告は配信していません。広告配信を始める場合は、事前に本ページを更新し、次のとおり取り扱います。"}</p>
+          <ul>
+            <li>{"Google を含む第三者配信事業者は、Cookie（広告IDなど）を使用して、ユーザーが当サイトや他のウェブサイトに過去にアクセスした際の情報に基づいて、広告を配信します。"}</li>
+            <li>{"Google が広告 Cookie を使用することにより、Google やそのパートナーは、当サイトや他のサイトへのアクセス情報に基づいて、ユーザーに広告を配信できます。"}</li>
+            <li>{"ユーザーは、"}<a href="https://adssettings.google.com/" rel="noopener">Google の広告設定</a>{"でパーソナライズド広告を無効にできます。また、"}<a href="https://www.aboutads.info/choices/" rel="noopener">aboutads.info</a>{"で、第三者配信事業者がパーソナライズド広告のために使用する Cookie を無効にできます。"}</li>
+            <li>{"Google による広告でのデータの使用について、詳しくは"}<a href="https://policies.google.com/technologies/ads" rel="noopener">Google のポリシーと規約</a>{"をご覧ください。"}</li>
+          </ul>
+          <p>{"広告配信のための情報処理（Google 等）と、当サイトのアクセス解析（Umami・PostHog）は、別のものです。PostHog の同意は、当サイト内の行動の分析にだけ適用され、広告の Cookie への同意ではありません。Umami は Cookie を使用しません。"}</p>
+          <p>{"欧州経済領域（EEA）・英国・スイスの利用者に広告を配信する場合は、Google の要件に沿った同意管理（Google 認定の同意管理プラットフォーム）を導入し、同意を得た範囲で配信します。"}</p>
+
           <h2>5. 第三者提供</h2>
           <p>
-            法令に基づく場合を除き、取得した個人情報を本人の同意なく第三者へ提供することはありません。
+            法令に基づく場合を除き、取得した個人情報を本人の同意なく第三者へ提供することはありません。ただし、広告の配信を始めた場合の Google 等による情報の取得は、上記「広告・紹介リンクについて」のとおりです。
           </p>
 
           <h2>6. 掲載情報について</h2>
@@ -73,7 +84,7 @@ export default function PrivacyPage() {
           {SITE.privacyEffectiveDate && (
             <p className="muted">制定日：{SITE.privacyEffectiveDate}</p>
           )}
-          <p className="muted">最終改定日：2026年10月9日（スポンサー枠についての記載を追加）</p>
+          <p className="muted">最終改定日：2026年10月28日（Google AdSense による広告配信の導入検討についての記載を追加）</p>
           {SITE.operatorName && (
             <p className="muted">運営者：{SITE.operatorName}</p>
           )}
