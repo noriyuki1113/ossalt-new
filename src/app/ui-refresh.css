@@ -818,3 +818,39 @@
   color: var(--ink-3);
   line-height: 1.6;
 }
+
+/* 解説の検証状態 */
+.vnote {
+  margin: 0 0 1rem;
+  font-size: 0.8125rem;
+  color: var(--ink-2);
+}
+.vnote p {
+  margin: 0 0 0.35rem;
+  line-height: 1.7;
+}
+.vnote__badge {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0.05rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  white-space: nowrap;
+}
+.vnote__badge--official { color: var(--midori); }
+.vnote__badge--hands-on { color: var(--indigo); }
+.vnote__badge--recheck { color: var(--yamabuki); }
+.vnote__badge--unverified { color: var(--ink-2); }
+.vnote__legend summary {
+  cursor: pointer;
+  color: var(--ink-3);
+}
+.vnote__legend ul {
+  margin: 0.4rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.35rem;
+}

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ForYouLink } from "@/components/for-you-link";
 import Link from "next/link";
+import { VerificationNote } from "@/components/verification-note";
 import { Ja } from "@/components/ja";
 import { notFound } from "next/navigation";
 import { Breadcrumbs, JsonLd, SiteFooter, SiteHeader } from "@/components/site-chrome";
@@ -268,6 +269,7 @@ export default async function ToolDetailPage({
             {guide && (
               <section id="about" className="section" style={{ paddingTop: 0, marginBottom: "2.5rem" }}>
                 <h2 className="h3 mt0">{`${tool.name}とは`}</h2>
+                <VerificationNote v={guide.verification} checkedAtLabel={guide.verification.checked_at ? formatDate(guide.verification.checked_at) : undefined} />
                 <div className="prose" dangerouslySetInnerHTML={{ __html: guide.contentHtml }} />
                 {guide.updated && (
                   <p className="muted" style={{ fontSize: "0.75rem" }}>
