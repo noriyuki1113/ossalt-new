@@ -87,10 +87,14 @@ export default function ChangesPage() {
         <Breadcrumbs items={[{ href: "/", label: "トップ" }, { label: "OSSの変化レポート" }]} />
         <header className={styles.hero}>
           <div className={styles.heroMarker}>OSSALT RESEARCH DESK <span> / GITHUB OBSERVATIONS</span></div>
-          <h1>変化を追う。<br /><em>選択の根拠を増やす。</em></h1>
-          <p>OSSを選ぶとき、今のStar数だけでなく、その後どう変わったかも大切です。
-            OSSALTが掲載するOSSのうち、継続観測中のプロジェクトについて、
-            GitHubの公開データから確認できた変化をまとめています。</p>
+          <h1>変化を追う。<br /><em><span className={styles.nb}>選択の根拠を</span><span className={styles.nb}>増やす。</span></em></h1>
+          <p>
+            {[
+              "OSSを選ぶとき、", "今のStar数だけでなく、", "その後どう変わったかも大切です。",
+              "OSSALTが掲載するOSSのうち、", "継続観測中のプロジェクトについて、",
+              "GitHubの公開データから", "確認できた変化を", "まとめています。",
+            ].map((ph) => <span key={ph} className={styles.nb}>{ph}</span>)}
+          </p>
           <div className={styles.heroTail}>
             <span>OBSERVATION / {report.generatedAt ? activityDateJst(report.generatedAt) + " JST" : "NO VERIFIED DATA"}</span>
             <Link href="/trending/">Star増加ランキングを見る ↗</Link>

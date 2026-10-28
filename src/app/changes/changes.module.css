@@ -48,3 +48,4 @@
 .sync div{min-width:0}.sync dt{color:var(--ink-2);font-size:.72rem}.sync dd{margin:.15rem 0 0;font-variant-numeric:tabular-nums}
 .sync small{display:block;font-size:.72rem;color:var(--ink-2)}.sync .syncError{color:#9b2c2c}
 @media (max-width:640px){.sync{grid-template-columns:1fr 1fr}}
+.nb{white-space:nowrap}
