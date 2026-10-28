@@ -8,7 +8,7 @@
  * node:test から直接読み込めるよう、compare.ts（純粋関数）以外のimportを持たない。
  */
 import type { Tool } from "./tools.ts";
-import { classifyLicense, LICENSE_CLASS_LABELS } from "./compare.ts";
+import { classifyLicense, LICENSE_CLASS_LABELS, licenseGroupOf } from "./compare.ts";
 
 export type FaqItem = { q: string; a: string };
 
@@ -29,15 +29,22 @@ export function buildAlternativeFaq(competitor: string, input: FaqTool[]): FaqIt
   const tools = [...input].sort(byHealth);
   const n = tools.length;
   if (n === 0) return [];
+  const osiCount = tools.filter((t) => licenseGroupOf(t.license) === "osi").length;
+  const hasNonOsi = osiCount !== n;
+  const countNote = hasNonOsi
+    ? `うちOSI承認のオープンソースは${osiCount}件です。その他にはソース公開型、混在またはライセンス未確認の候補が含まれます。`
+    : "";
   const faq: FaqItem[] = [];
 
   // 1) いくつあるか
   faq.push({
-    q: `${competitor}の代わりになるオープンソースはいくつありますか？`,
+    q: hasNonOsi
+      ? `${competitor}の代替候補はいくつありますか？`
+      : `${competitor}の代わりになるオープンソースはいくつありますか？`,
     a:
-      n === 1
+      (n === 1
         ? `当サイトでは${tools[0].name}の1件を掲載しています。`
-        : `当サイトでは${n}件を掲載しています。GitHubでの活発さ（健全度）の高い順に、${names(tools)}です。`,
+        : `当サイトでは${n}件を掲載しています。GitHubでの活発さ（健全度）の高い順に、${names(tools)}です。`) + countNote,
   });
 
   // 2) 日本語
