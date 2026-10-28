@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { getMeta } from "@/lib/data";
+import { POSTHOG } from "@/lib/posthog/config";
 import { SITE, t } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata: Metadata = pageMeta({
   title: "プライバシーポリシー",
-  description: "ossalt.jp における個人情報の取り扱い、Cookie、アクセス解析について。",
+  description: "ossalt.jp における個人情報の取り扱い、Cookie、アクセス解析、広告・紹介リンク（Google AdSense の導入検討を含む）について。",
   path: "/privacy/",
 });
 
@@ -33,9 +34,17 @@ export default function PrivacyPage() {
 
           <h2>3. Cookie とアクセス解析</h2>
           <p>{"当サイトは、アクセス状況の把握のためにアクセス解析ツール Umami（オープンソース・MITライセンス）を利用しています。Umami はCookieを使用せず、個人を特定できる情報も取得しません。取得するのはページビューなどの統計情報のみです。"}</p>
-          <p>{"Cookieを使用していないため、当サイトでは（アクセス解析に関する）Cookie同意バナーを設けていません。"}</p>
+          <p>{POSTHOG.enabled ? "Umami はCookieを使用しないため、Umami については同意バナーを設けていません。" : "Cookieを使用していないため、当サイトでは（アクセス解析に関する）Cookie同意バナーを設けていません。"}</p>
           <p>{"解析データはUmami Cloud（アメリカ・EUのサーバー）に保存され、現在利用しているプランでは6か月間保持された後に削除されます。"}</p>
           <p>{"アクセス解析そのものを望まない場合は、ブラウザの拡張機能（トラッキング防止機能）等でブロックできます。"}</p>
+          {POSTHOG.enabled && (
+            <>
+              <h3>サイト内の行動の分析（PostHog）</h3>
+              <p>{"当サイトは、サイトの改善のために、ご同意いただいた場合に限り、アクセス解析サービス PostHog を利用します。同意前と、同意しない場合は、PostHog への通信は一切行いません。ページの下部の「計測の設定」から、いつでも同意を変更・撤回できます。撤回すると、以後は何も送らず、端末に保存した識別子も削除します。"}</p>
+              <p>{"送る内容は、閲覧したページのURL（「?」以降は除く）、OSSの詳細ページや比較・代替ページの閲覧（公開されているツール名・カテゴリ・ライセンスの分類・候補の件数）、公式サイトやGitHubへのリンクを押したこと（リンクの種類・ツール名・移動先のドメイン名）、一覧の絞り込みの種類と結果の件数、診断の結果の件数と分類です。検索した言葉、入力した内容、メールアドレスなどの個人を特定できる情報、画面の録画は取得しません。PostHog の設定で、IPアドレスは保存せず、IPアドレスからの国・都市などの推定も行わない設定にしています。"}</p>
+              <p>{"端末には、分析のための匿名のIDをブラウザのローカルストレージ（Cookieではありません）に保存します。データの保存先は PostHog が提供する環境（ホストは運営者が設定した地域）です。利用目的は、どのOSSや機能が使われているかの把握と、サイトの改善に限ります。"}</p>
+            </>
+          )}
 
           <h2>4. 広告・紹介リンクについて</h2>
           <p>{"当サイトは、一部のリンクに、紹介先のサービスと提携した成果報酬型の紹介リンク（アフィリエイト）を含みます。読者がリンク経由でサービスを利用・申込みした場合、当サイトが紹介料を受け取ることがあります。"}</p>
@@ -43,9 +52,20 @@ export default function PrivacyPage() {
           <p>{"リンク先への遷移や成果の計測にあたり、遷移先の事業者がCookie等を使用する場合がありますが、これは当サイトが直接収集・管理するものではありません。"}</p>
           <p>{"掲載するツールの並び順・評価は、公開データ（健全度スコアなど）にもとづいており、紹介料の有無や金額によって変わることはありません。詳しくは"}<Link href="/about/">このサイトについて</Link>{"をご覧ください。"}</p>
 
+          <h3>Google AdSense（広告配信）について</h3>
+          <p>{"当サイトは、Google AdSense による広告配信の導入を検討しています。現時点（2026年10月28日）では、広告のタグを設置しておらず、Google による広告は配信していません。広告配信を始める場合は、事前に本ページを更新し、次のとおり取り扱います。"}</p>
+          <ul>
+            <li>{"Google を含む第三者配信事業者は、Cookie（広告IDなど）を使用して、ユーザーが当サイトや他のウェブサイトに過去にアクセスした際の情報に基づいて、広告を配信します。"}</li>
+            <li>{"Google が広告 Cookie を使用することにより、Google やそのパートナーは、当サイトや他のサイトへのアクセス情報に基づいて、ユーザーに広告を配信できます。"}</li>
+            <li>{"ユーザーは、"}<a href="https://adssettings.google.com/" rel="noopener">Google の広告設定</a>{"でパーソナライズド広告を無効にできます。また、"}<a href="https://www.aboutads.info/choices/" rel="noopener">aboutads.info</a>{"で、第三者配信事業者がパーソナライズド広告のために使用する Cookie を無効にできます。"}</li>
+            <li>{"Google による広告でのデータの使用について、詳しくは"}<a href="https://policies.google.com/technologies/ads" rel="noopener">Google のポリシーと規約</a>{"をご覧ください。"}</li>
+          </ul>
+          <p>{"広告配信のための情報処理（Google 等）と、当サイトのアクセス解析（Umami・PostHog）は、別のものです。PostHog の同意は、当サイト内の行動の分析にだけ適用され、広告の Cookie への同意ではありません。Umami は Cookie を使用しません。"}</p>
+          <p>{"欧州経済領域（EEA）・英国・スイスの利用者に広告を配信する場合は、Google の要件に沿った同意管理（Google 認定の同意管理プラットフォーム）を導入し、同意を得た範囲で配信します。"}</p>
+
           <h2>5. 第三者提供</h2>
           <p>
-            法令に基づく場合を除き、取得した個人情報を本人の同意なく第三者へ提供することはありません。
+            法令に基づく場合を除き、取得した個人情報を本人の同意なく第三者へ提供することはありません。ただし、広告の配信を始めた場合の Google 等による情報の取得は、上記「広告・紹介リンクについて」のとおりです。
           </p>
 
           <h2>6. 掲載情報について</h2>
@@ -64,7 +84,7 @@ export default function PrivacyPage() {
           {SITE.privacyEffectiveDate && (
             <p className="muted">制定日：{SITE.privacyEffectiveDate}</p>
           )}
-          <p className="muted">最終改定日：2026年10月9日（スポンサー枠についての記載を追加）</p>
+          <p className="muted">最終改定日：2026年10月28日（Google AdSense による広告配信の導入検討についての記載を追加）</p>
           {SITE.operatorName && (
             <p className="muted">運営者：{SITE.operatorName}</p>
           )}

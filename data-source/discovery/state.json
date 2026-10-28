@@ -10,16 +10,16 @@
     "retried": 0,
     "used": true
   },
-  "last_changed_at": "2026-10-20T23:57:26.523Z",
-  "last_run_at": "2026-10-20T23:57:26.523Z",
+  "last_changed_at": "2026-10-28T00:33:47.757Z",
+  "last_run_at": "2026-10-28T00:33:47.757Z",
   "summary": {
-    "blocked": 16,
+    "blocked": 15,
     "candidates": 191,
-    "config_verified": 123,
+    "config_verified": 122,
     "duplicates_merged": 78,
     "existing": 1,
     "github_enriched": 150,
-    "needs_review": 174,
+    "needs_review": 175,
     "new": 190,
     "raw_entries": {
       "appflare": 139,

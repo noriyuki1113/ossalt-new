@@ -35,3 +35,59 @@ test.describe("変化レポートと急上昇", () => {
     expect(problems).toEqual([]);
   });
 });
+
+test.describe("OSSランキング（人気・急成長・おすすめ）", () => {
+  test("3つに分かれ、切り替えでき、計算の根拠と観測日を確認できる", async ({ page, problems }) => {
+    await page.goto("/rankings/");
+    await expect(page.getByRole("heading", { level: 1 })).toContainText("ランキング");
+    const tabs = page.getByRole("tab");
+    await expect(tabs).toHaveCount(3);
+    // 既定は人気。重み（50・25・25%）を明示
+    await expect(page.locator("#panel-popular")).toBeVisible();
+    await expect(page.locator("#panel-popular")).toContainText("Stars 50%");
+    await expect(page.locator("#panel-growth")).toBeHidden();
+
+    // 計算の根拠（項目・重み・順位・加点）と、取得日
+    const first = page.locator("#panel-popular .rank-row").first();
+    await first.locator("summary").click();
+    await expect(first.locator(".rank-why__table")).toContainText("Contributors");
+    await expect(first.locator(".rank-why__obs")).toContainText(/取得日/);
+
+    // 急成長：重みと、実測の期間。記録が足りないものは未観測であることを説明
+    await page.getByRole("tab", { name: /急成長/ }).click();
+    await expect(page).toHaveURL(/#growth$/);
+    await expect(page.locator("#panel-growth")).toBeVisible();
+    await expect(page.locator("#panel-growth")).toContainText("直近7日の純増 50%");
+    await expect(page.locator("#panel-growth .rank-row").first()).toBeVisible();
+
+    // おすすめ：適用条件（5つのSaaSだけ）を明示し、SaaSを切り替えられる
+    await page.getByRole("tab", { name: /おすすめ/ }).click();
+    await expect(page.locator("#panel-recommended")).toContainText("順位を付けていません");
+    const chips = page.locator("#panel-recommended .chip");
+    await expect(chips).toHaveCount(5);
+    await chips.nth(1).click();
+    await expect(chips.nth(1)).toHaveAttribute("aria-pressed", "true");
+    await expect(page.locator("#panel-recommended .rank-row:visible").first()).toContainText(/点/);
+
+    expect(await horizontalOverflow(page)).toBeLessThanOrEqual(1);
+    expect(problems).toEqual([]);
+  });
+
+  test("URLの #growth で、急成長のタブが開く", async ({ page }) => {
+    await page.goto("/rankings/#growth");
+    await expect(page.locator("#panel-growth")).toBeVisible();
+    await expect(page.getByRole("tab", { name: /急成長/ })).toHaveAttribute("aria-selected", "true");
+  });
+
+  test("3種類の違いをカードで示し、押すとその種類のタブに切り替わる。棒の横には数値がある", async ({ page }) => {
+    await page.goto("/rankings/");
+    const kinds = page.getByRole("list", { name: "3つのランキングの違い" });
+    await expect(kinds.getByRole("link")).toHaveCount(3);
+    await kinds.getByRole("link", { name: /おすすめ/ }).click();
+    await expect(page.getByRole("tab", { name: /おすすめ/ })).toHaveAttribute("aria-selected", "true");
+    await expect(page.locator("#panel-recommended")).toBeVisible();
+    const row = page.locator("#panel-recommended .rank-row:visible").first();
+    await expect(row.locator(".rank-bar")).toBeVisible();
+    await expect(row.locator(".trend__value strong")).toContainText("点");
+  });
+});

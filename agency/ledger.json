@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": 1,
+      "date": "2026-10-28",
+      "url": "https://ossalt.jp/alternatives/notion/",
+      "query": "notion オープンソース",
+      "change": "titleを「〜の代わりになるオープンソースN選」に変更（frontmatter title）",
+      "pr": "https://github.com/noriyuki1113/ossalt-new/pull/66",
+      "window": "2026-09-28〜2026-10-25（Web・全デバイス・28日）",
+      "check28": "2026-11-25",
+      "check90": "2027-01-26",
+      "outcome28": null,
+      "outcome90": null,
+      "note": null
+    },
+    {
+      "id": 2,
+      "date": "2026-10-28",
+      "url": "https://ossalt.jp/alternatives/github/",
+      "query": "github オープンソース おすすめ",
+      "change": "titleを「〜の代わりになるオープンソースN選」に変更（frontmatter title）",
+      "pr": "https://github.com/noriyuki1113/ossalt-new/pull/66",
+      "window": "2026-09-28〜2026-10-25（Web・全デバイス・28日）",
+      "check28": "2026-11-25",
+      "check90": "2027-01-26",
+      "outcome28": null,
+      "outcome90": null,
+      "note": null
+    },
+    {
+      "id": 3,
+      "date": "2026-10-28",
+      "url": "https://ossalt.jp/alternatives/zendesk/",
+      "query": "zendesk oss",
+      "change": "titleを「〜の代わりになるオープンソースN選」に変更（frontmatter title）",
+      "pr": "https://github.com/noriyuki1113/ossalt-new/pull/66",
+      "window": "2026-09-28〜2026-10-25（Web・全デバイス・28日）",
+      "check28": "2026-11-25",
+      "check90": "2027-01-26",
+      "outcome28": null,
+      "outcome90": null,
+      "note": null
+    },
+    {
+      "id": 4,
+      "date": "2026-10-28",
+      "url": "https://ossalt.jp/alternatives/salesforce/",
+      "query": "salesforce oss",
+      "change": "titleを「〜の代わりになるオープンソースN選」に変更（frontmatter title）",
+      "pr": "https://github.com/noriyuki1113/ossalt-new/pull/66",
+      "window": "2026-09-28〜2026-10-25（Web・全デバイス・28日）",
+      "check28": "2026-11-25",
+      "check90": "2027-01-26",
+      "outcome28": null,
+      "outcome90": null,
+      "note": null
+    },
+    {
+      "id": 5,
+      "date": "2026-10-28",
+      "url": "https://ossalt.jp/alternatives/jira/",
+      "query": "plane プロジェクト管理",
+      "change": "Jiraの代替ガイドから /tools/plane/ へ直接リンクを追加",
+      "pr": "https://github.com/noriyuki1113/ossalt-new/pull/66",
+      "window": "2026-09-28〜2026-10-25（Web・全デバイス・28日）",
+      "check28": "2026-11-25",
+      "check90": "2027-01-26",
+      "outcome28": null,
+      "outcome90": null,
+      "note": null
+    }
+  ]
+}

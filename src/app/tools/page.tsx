@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Ja } from "@/components/ja";
 import { SiteFooter, SiteHeader, Breadcrumbs } from "@/components/site-chrome";
 import { ToolBrowser } from "@/components/tool-browser";
 import { getActiveTools, getCompetitors, getMeta } from "@/lib/data";
@@ -36,12 +37,13 @@ export default function ToolsPage() {
   return (
     <>
       <SiteHeader current="/tools" />
-      <main className="wrap page">
+      <main className="wrap page tools-page">
         <Breadcrumbs items={[{ href: "/", label: "トップ" }, { label: "ツール一覧" }]} />
         <h1 className="h2">オープンソースソフトウェア一覧</h1>
         <p className="lede">
-          {meta.tool_count}件を収録。スター合計は約{formatCompactJa(totalStars)}{"。セキュリティ評価（OpenSSF Scorecard）は"}{meta.scored_count}{"件で取得済み、残り"}{meta.unrated_count}件は「未評価」として表示しています。
+          <Ja>{`${meta.tool_count}件を収録。スター合計は約${formatCompactJa(totalStars)}。セキュリティ評価（OpenSSF Scorecard）は${meta.scored_count}件で取得済み、残り${meta.unrated_count}件は「未評価」として表示しています。`}</Ja>
         </p>
+        <ToolBrowser tools={tools} categories={categories} />
         <section className="section" aria-labelledby="tools-finding-guide">
           <h2 className="h3" id="tools-finding-guide">オープンソースの探し方</h2>
           <p className="muted" style={{ marginBottom: "1rem" }}>
@@ -85,7 +87,6 @@ export default function ToolsPage() {
           </p>
         </section>
 
-        <ToolBrowser tools={tools} categories={categories} />
         <p className="muted mt1" style={{ fontSize: "0.8125rem" }}>{"※ 並び順の初期値は健全度スコア（スター・フォーク・コントリビュータ・ウォッチャー・更新の新しさから算出）です。"}
           {"数値はGitHubの公開情報にもとづき、データ更新は日次で自動実行されます。"}</p>
       </main>

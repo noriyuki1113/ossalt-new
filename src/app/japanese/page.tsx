@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Ja } from "@/components/ja";
 import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ToolRow } from "@/components/tool-views";
 import { getJapaneseTools, getMeta } from "@/lib/data";
@@ -52,7 +53,7 @@ export default function JapanesePage() {
         {groups.map((g) => (
           <section className="section" key={g.slug} id={g.slug}>
             <div className="section__head">
-              <h2>{g.nameJa}</h2>
+              <h2><Ja>{g.nameJa}</Ja></h2>
               <Link className="more" href={`/categories/${g.slug}/`}>
                 カテゴリのすべてのツール →
               </Link>

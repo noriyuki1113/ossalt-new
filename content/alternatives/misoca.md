@@ -1,5 +1,5 @@
 ---
-description: "Misocaの代わりに自前で動かせるオープンソースの請求書作成ツール。Invoice Ninja・InvoicePlane・Crater・SolidInvoiceを比較し、日本の請求書の要件で確認したいことを整理します。"
+description: "Misocaの代わりに自前で動かせるオープンソースの請求書作成ツール。Invoice Ninja・InvoicePlane・SolidInvoiceを比較し、日本の請求書の要件で確認したいことを整理します。"
 updated: "2026-10-01"
 intro: "Misocaの代替は、見積書や請求書の作成と、取引先・入金の管理を自前で行いたい場合の選択肢です。先にお伝えすると、ここで紹介するツールは海外で作られたもので、インボイス制度に沿った請求書の要件を満たせるかは、自分で確かめる必要があります。"
 picks:
@@ -7,8 +7,6 @@ picks:
     fit: "見積・請求・入金の管理まで、1つで済ませたい"
   - tool: invoiceplane
     fit: "見積書と請求書を作るだけの、シンプルなツールがほしい"
-  - tool: crater
-    fit: "見た目の整った請求書を作り、経費もまとめて記録したい"
   - tool: solidinvoice
     fit: "見積から請求までの流れを、小さく自前で持ちたい"
 ---
@@ -16,9 +14,9 @@ picks:
 ## 選び方
 
 - **日本の請求書の要件**：インボイス制度に沿った請求書には、登録番号や税率ごとの消費税額などの記載が必要です。テンプレートを編集して必要な項目を載せられるかを、ツールごとに確かめてください。判断に迷う場合は税理士に相談しましょう。
-- **画面の言語**：Invoice NinjaとCraterは画面の日本語翻訳を確認できています。InvoicePlaneとSolidInvoiceは、当サイトでは確認できていません。
-- **ライセンス**：InvoicePlaneとSolidInvoiceはMIT、CraterはAGPL-3.0です。Invoice NinjaはElastic License 2.0で、一般的なオープンソースライセンスではありません。
-- **更新状況**：Craterは最後の更新から時間がたっています。各ツールのページで最終更新日を確認しましょう。
+- **画面の言語**：Invoice Ninjaは画面の日本語翻訳を確認できています。InvoicePlaneとSolidInvoiceは、当サイトでは確認できていません。
+- **ライセンス**：InvoicePlaneとSolidInvoiceはMITです。Invoice NinjaはElastic License 2.0で、一般的なオープンソースライセンスではありません。
+- **更新状況**：以前掲載していたCraterは、2024年8月を最後に更新がなく、掲載を終了しました。各ツールのページで最終更新日を確認しましょう。
 
 ## Misocaのままのほうがよい場合
 

@@ -1,10 +1,26 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
+import "./ui-refresh.css";
+import { AnalyticsConsent } from "@/components/analytics-consent";
 import { SITE, UMAMI_SCRIPT_URL, UMAMI_SITE_ID } from "@/lib/site";
+
+// 検索エンジンの所有権確認のメタタグ（任意）。Search Console は DNS TXT（ドメインプロパティ）を推奨し、
+// Bing は Search Console からのインポートを推奨するため、通常は設定しない。設定したときだけタグを出す。
+// 値は公開されるトークンで、秘密ではない（Googleが発行した実際の値だけを入れること）。
+const googleVerification = (process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ?? "").trim();
+const bingVerification = (process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION ?? "").trim();
+const verification: Metadata["verification"] | undefined =
+  googleVerification || bingVerification
+    ? {
+        ...(googleVerification ? { google: googleVerification } : {}),
+        ...(bingVerification ? { other: { "msvalidate.01": bingVerification } } : {}),
+      }
+    : undefined;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
+  ...(verification ? { verification } : {}),
   title: {
     default: `${SITE.name} — ${SITE.tagline}`,
     template: `%s | ${SITE.name}`,
@@ -64,7 +80,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@700;900&family=JetBrains+Mono:wght@400;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@700;900&family=JetBrains+Mono:wght@400;700&display=optional"
         />
         <meta name="theme-color" content="#edefe9" />
       </head>
@@ -73,6 +89,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           本文へスキップ
         </a>
         <div id="main">{children}</div>
+        <AnalyticsConsent />
         {UMAMI_SITE_ID && (
           // data-exclude-search：URLの「?」以降を記録しない（Cost Labの共有URLに入る金額などを、計測に送らないため）
           <script defer src={UMAMI_SCRIPT_URL} data-website-id={UMAMI_SITE_ID} data-exclude-search="true" />

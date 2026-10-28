@@ -39,7 +39,7 @@
     "/tools/105/": "/tools/twenty/",
     "/tools/106/": "/tools/erpnext/",
     "/tools/109/": "/tools/odoo/",
-    "/tools/117/": "/tools/crater/",
+    "/tools/117/": "/alternatives/misoca/",
     "/tools/124/": "/tools/hyperswitch/",
     "/tools/125/": "/tools/invoice-ninja/",
     "/tools/126/": "/tools/kimai/",
@@ -147,6 +147,17 @@
     "/tools/722/": "/tools/weaviate/",
     "/tools/809/": "/tools/lossless-cut/",
     "/tools/812/": "/tools/shotcut/",
-    "/alternatives/sansan/": "/categories/crm/"
+    "/alternatives/sansan/": "/categories/crm/",
+    "/tools/helpy/": "/alternatives/intercom/",
+    "/tools/papercups/": "/alternatives/intercom/",
+    "/tools/mailhog/": "/alternatives/mailtrap/",
+    "/tools/crater/": "/alternatives/misoca/",
+    "/ranking/": "/rankings/",
+    "/compare/outline-vs-confluence/": "/alternatives/confluence/",
+    "/compare/penpot-vs-figma/": "/alternatives/figma/",
+    "/compare/grafana-vs-datadog/": "/alternatives/datadog/",
+    "/compare/nextcloud-vs-google-drive/": "/alternatives/google-drive/",
+    "/compare/keycloak-vs-auth0/": "/alternatives/auth0/",
+    "/compare/mailhog-vs-mailpit/": "/tools/mailpit/"
   }
 }

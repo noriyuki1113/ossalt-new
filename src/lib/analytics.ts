@@ -34,6 +34,9 @@ export const EVENTS = [
   // サイト内の誘導（収益ではない）
   "house_ad_impression",
   "house_ad_click",
+  // OSSALT For You（個人を特定しない集計だけ。送るのは変えた項目の名前・押した順位のみ）
+  "for_you_update",
+  "for_you_click",
 ] as const;
 export type EventName = (typeof EVENTS)[number];
 

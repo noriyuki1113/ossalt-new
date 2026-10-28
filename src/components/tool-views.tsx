@@ -296,6 +296,52 @@ export function ToolRow({ tool }: { tool: Tool }) {
   );
 }
 
+
+/* ------------------------------------------------------------------ *
+ * OSS一覧のカード表示（一覧表示の代替ビュー）
+ * 公式で確認できた情報だけを表示し、未評価を0点扱いしない。
+ * ------------------------------------------------------------------ */
+
+export function ToolCard({ tool }: { tool: Tool }) {
+  return (
+    <article className="browse-card row--linked">
+      <div className="browse-card__heading">
+        <ToolLogo githubUrl={tool.github_url} name={tool.name} size={44} />
+        <div className="browse-card__heading-copy">
+          <h3 className="browse-card__name">
+            <Link className="row__link" href={`/tools/${tool.id}/`}>{tool.name}</Link>
+          </h3>
+          <p className="browse-card__alternative">
+            {tool.primary_competitor_ja || tool.primary_competitor} の代替
+          </p>
+        </div>
+      </div>
+      {tool.description_ja && (
+        <p className="browse-card__description">{tool.description_ja}</p>
+      )}
+      <div className="browse-card__tags" aria-label="特徴">
+        <span className="browse-card__tag">{tool.license || "ライセンス未確認"}</span>
+        {tool.docker_available === true && <span className="browse-card__tag">Docker対応</span>}
+        {hasJapanese(tool) && (
+          <span className="browse-card__tag">
+            {tool.ja_ui === true ? "日本語の画面あり" : "日本語資料あり"}
+          </span>
+        )}
+      </div>
+      <div className="browse-card__metrics">
+        <div>
+          <span className="browse-card__metric-label">GitHub Stars</span>
+          <strong className="browse-card__metric-value">★ {formatCompactJa(tool.stars_num)}</strong>
+        </div>
+        <div>
+          <span className="browse-card__metric-label">セキュリティ</span>
+          <SecurityListBadge tool={tool} />
+        </div>
+      </div>
+    </article>
+  );
+}
+
 /* ------------------------------------------------------------------ *
  * 詳細ページのスペック表
  * ------------------------------------------------------------------ */

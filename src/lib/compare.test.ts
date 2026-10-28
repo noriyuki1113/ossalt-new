@@ -44,6 +44,24 @@ test("組み合わせ: 同じ代替対象の上位N件どうしだけを組む",
   );
 });
 
+test("組み合わせ: 手書きの解説がある組は、上位N件から外れても残す（新しい掲載で順位が入れ替わっても404にしない）", () => {
+  const tools = [
+    { id: "a", primary_competitor: "X", health_score: 100, github_archived: false },
+    { id: "b", primary_competitor: "X", health_score: 90, github_archived: false },
+    { id: "c", primary_competitor: "X", health_score: 80, github_archived: false },
+    { id: "d", primary_competitor: "X", health_score: 70, github_archived: false },
+    { id: "e", primary_competitor: "Y", health_score: 50, github_archived: false },
+    { id: "f", primary_competitor: "Y", health_score: 40, github_archived: true },
+  ];
+  // c-vs-d・d-vs-e（別の代替対象）・e-vs-f（アーカイブ済み）・a-vs-b（すでに入る）・x-vs-y（存在しない）
+  const keep = new Set(["c-vs-d", "d-vs-e", "e-vs-f", "a-vs-b", "x-vs-y"]);
+  const slugs = buildComparePairs(tools, 3, keep).map((p) => p.slug);
+  assert.deepEqual(slugs, ["a-vs-b", "a-vs-c", "b-vs-c", "c-vs-d"]);
+  assert.equal(new Set(slugs).size, slugs.length, "重複しない");
+  // keepを渡さなければ、従来どおり
+  assert.deepEqual(buildComparePairs(tools, 3).map((p) => p.slug), ["a-vs-b", "a-vs-c", "b-vs-c"]);
+});
+
 test("組み合わせ: アーカイブ済みは含めない", () => {
   const tools = [
     { id: "a", primary_competitor: "X", health_score: 100, github_archived: false },

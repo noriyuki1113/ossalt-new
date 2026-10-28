@@ -25,7 +25,12 @@ const allTools = Array.isArray(rawTools) ? rawTools : rawTools.tools;
 const tools = new Map(allTools.map((t) => [t.id, t]));
 const active = allTools.filter((t) => !t.github_archived);
 
-const pairs = new Set(buildComparePairs(active).map((p) => p.slug));
+const guideSlugs = new Set(
+  fs.existsSync(path.join(ROOT, "content/compare"))
+    ? fs.readdirSync(path.join(ROOT, "content/compare")).filter((f) => f.endsWith(".md")).map((f) => f.replace(/\.md$/, ""))
+    : []
+);
+const pairs = new Set(buildComparePairs(active, undefined, guideSlugs).map((p) => p.slug));
 const alternatives = new Set();
 for (const t of active) {
   for (const name of [t.primary_competitor, ...(t.also_competitors ?? [])]) {

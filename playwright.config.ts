@@ -1,3 +1,4 @@
+import fs from "node:fs";
 import { defineConfig, devices } from "@playwright/test";
 
 /**
@@ -7,6 +8,10 @@ import { defineConfig, devices } from "@playwright/test";
  * 失敗時はスクリーンショット・トレース・動画を test-results/ に残す（CI では成果物としてアップロード）。
  */
 const PORT = Number(process.env.E2E_PORT || 4173);
+// 計測（PostHog）のE2E用ビルド（scripts/build-analytics-e2e.mjs）。ある場合だけ、別ポートで配信する
+const ANALYTICS_PORT = Number(process.env.E2E_ANALYTICS_PORT || 4174);
+const ANALYTICS_DIR = "out-analytics-e2e";
+const hasAnalyticsBuild = fs.existsSync(ANALYTICS_DIR);
 
 export default defineConfig({
   testDir: "./e2e",
@@ -36,11 +41,26 @@ export default defineConfig({
   projects: [
     { name: "desktop", use: { ...devices["Desktop Chrome"], viewport: { width: 1280, height: 800 } } },
     { name: "mobile", use: { ...devices["Pixel 7"] } },
+    {
+      name: "analytics",
+      testDir: "./e2e-analytics",
+      use: { ...devices["Desktop Chrome"], viewport: { width: 1280, height: 800 }, baseURL: `http://127.0.0.1:${ANALYTICS_PORT}` },
+    },
   ],
-  webServer: {
-    command: `node e2e/serve.mjs ${PORT}`,
-    url: `http://127.0.0.1:${PORT}/`,
-    reuseExistingServer: !process.env.CI,
-    timeout: 30_000,
-  },
+  webServer: [
+    {
+      command: `node e2e/serve.mjs ${PORT}`,
+      url: `http://127.0.0.1:${PORT}/`,
+      reuseExistingServer: !process.env.CI,
+      timeout: 30_000,
+    },
+    ...(hasAnalyticsBuild
+      ? [{
+          command: `node e2e/serve.mjs ${ANALYTICS_PORT} ${ANALYTICS_DIR}`,
+          url: `http://127.0.0.1:${ANALYTICS_PORT}/`,
+          reuseExistingServer: !process.env.CI,
+          timeout: 30_000,
+        }]
+      : []),
+  ],
 });

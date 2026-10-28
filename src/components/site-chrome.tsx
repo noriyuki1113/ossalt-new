@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { NAV, SITE, t } from "@/lib/site";
+import { AnalyticsSettingsLink } from "@/components/analytics-consent";
+import { FEATURES, NAV, SITE, t } from "@/lib/site";
 
 /**
  * サイトのロゴマーク。SaaSの選択肢の中からオープンソースの代替を1つ選ぶ、という
@@ -27,7 +28,7 @@ export function SiteHeader({ current }: { current?: string }) {
           <span className="brand__sub">.jp</span>
         </Link>
         <nav className="nav" aria-label="メインナビゲーション">
-          {NAV.map((item) => (
+          {[...NAV, ...(FEATURES.forYou ? [{ href: "/for-you/", label: "For You" }] : [])].map((item) => (
             <Link
               key={item.href}
               href={item.href}
@@ -81,6 +82,9 @@ export function SiteFooter({ meta }: { meta?: { built_at: string; tool_count: nu
               </li>
               <li>
                 <Link href="/japanese/">日本語対応のOSS</Link>
+              </li>
+              <li>
+                <Link href="/rankings/">OSSランキング</Link>
               </li>
               <li>
                 <Link href="/trending/">急上昇中のOSS</Link>
@@ -139,6 +143,7 @@ export function SiteFooter({ meta }: { meta?: { built_at: string; tool_count: nu
               </li>
               <li>
                 <Link href="/privacy/">プライバシーポリシー</Link>
+                <AnalyticsSettingsLink />
               </li>
             </ul>
           </div>

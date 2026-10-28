@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Ja } from "@/components/ja";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import { Breadcrumbs, JsonLd, SiteFooter, SiteHeader } from "@/components/site-chrome";
@@ -7,7 +8,7 @@ import { ToolLogo } from "@/components/tool-logo";
 import { getComparePairs, getMeta, getTool } from "@/lib/data";
 import { LICENSE_CLASS_LABELS, buildDifferences, classifyLicense } from "@/lib/compare";
 import { SAAS_IDS, SAAS_LABELS } from "@/lib/diagnosis-types";
-import { SITE } from "@/lib/site";
+import { FEATURES, SITE } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
 import { getCompareGuide } from "@/lib/compare-guides";
 import {
@@ -116,7 +117,7 @@ export default async function ComparePage({ params }: { params: Promise<Params> 
           {a.name} と {b.name} の違い
         </h1>
         <p className="lede">
-          {`どちらも${competitor}の代わりになるオープンソースです。当サイトが公開データから取得したライセンス・更新状況・Docker対応・日本語対応・セキュリティの情報を並べて比べます。`}
+          <Ja>{`どちらも${competitor}の代わりになるオープンソースです。当サイトが公開データから取得したライセンス・更新状況・Docker対応・日本語対応・セキュリティの情報を並べて比べます。`}</Ja>
         </p>
 
         <div className="compare-heads">
@@ -197,6 +198,13 @@ export default async function ComparePage({ params }: { params: Promise<Params> 
               <Link href="/blog/how-to-read-github/">GitHubの見方</Link>
               {"を参照してください。"}
             </li>
+            {competitorSlug && FEATURES.forYou && (
+              <li>
+                {"ほかの候補も含めて、あなたの条件で並べ替えるなら、"}
+                <Link href={`/for-you/?saas=${competitorSlug}`}>OSSALT For You</Link>
+                {"へ。"}
+              </li>
+            )}
             {diagnosisSaas && (
               <li>
                 {"利用人数や技術レベルから候補を絞りたい場合は、"}

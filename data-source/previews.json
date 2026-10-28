@@ -1189,6 +1189,26 @@
   "file": null,
   "checked_at": "2026-10-01T16:48:24.413Z"
  },
+ "kaneo": {
+  "file": "/previews/kaneo.jpg",
+  "source": "official",
+  "page": "https://kaneo.app/",
+  "image": "https://kaneo.app/images/hero.png",
+  "width": 800,
+  "height": 420,
+  "bytes": 12838,
+  "checked_at": "2026-10-25T21:46:06.217Z"
+ },
+ "karakeep": {
+  "file": "/previews/karakeep.jpg",
+  "source": "official",
+  "page": "https://karakeep.app",
+  "image": "https://karakeep.com/opengraph-image.png",
+  "width": 800,
+  "height": 432,
+  "bytes": 46373,
+  "checked_at": "2026-10-25T21:46:06.218Z"
+ },
  "kdenlive": {
   "file": null,
   "checked_at": "2026-10-01T16:48:43.373Z"
@@ -1304,6 +1324,16 @@
  "krita": {
   "file": null,
   "checked_at": "2026-10-01T16:48:42.276Z"
+ },
+ "la-suite-docs": {
+  "file": "/previews/la-suite-docs.jpg",
+  "source": "official",
+  "page": "https://docs.la-suite.eu/",
+  "image": "https://docs.la-suite.eu/assets/docs_hero.webp",
+  "width": 800,
+  "height": 488,
+  "bytes": 36617,
+  "checked_at": "2026-10-25T21:46:06.186Z"
  },
  "langflow": {
   "file": "/previews/langflow.jpg",
@@ -1853,6 +1883,16 @@
   "bytes": 28501,
   "checked_at": "2026-10-01T16:48:49.903Z"
  },
+ "openseo": {
+  "file": "/previews/openseo.jpg",
+  "source": "official",
+  "page": "https://openseo.so",
+  "image": "https://openseo.so/social-card.jpg",
+  "width": 800,
+  "height": 420,
+  "bytes": 25163,
+  "checked_at": "2026-10-25T21:46:06.219Z"
+ },
  "openshot": {
   "file": "/previews/openshot.jpg",
   "source": "official",
@@ -2282,6 +2322,16 @@
   "height": 419,
   "bytes": 26499,
   "checked_at": "2026-10-01T16:49:03.461Z"
+ },
+ "rybbit": {
+  "file": "/previews/rybbit.jpg",
+  "source": "official",
+  "page": "https://rybbit.com",
+  "image": "https://rybbit.com/og/image.png?title=Rybbit+-+Cookieless+Google+Analytics+Replacement&description=Open+source%2C+cookieless+web+%26+product+analytics+with+an+11+KB+script+and+one+readable+dashboard.+GDPR%2FCCPA+compliant%2C+no+cookie+banner+needed.",
+  "width": 800,
+  "height": 420,
+  "bytes": 22833,
+  "checked_at": "2026-10-25T21:46:06.674Z"
  },
  "saleor": {
   "file": null,

@@ -56,6 +56,15 @@ jobs:
           NEXT_PUBLIC_CONTACT_EMAIL: ${{ vars.NEXT_PUBLIC_CONTACT_EMAIL }}
           NEXT_PUBLIC_CONTACT_URL: ${{ vars.NEXT_PUBLIC_CONTACT_URL }}
           NEXT_PUBLIC_PRIVACY_EFFECTIVE_DATE: ${{ vars.NEXT_PUBLIC_PRIVACY_EFFECTIVE_DATE }}
+          # OSSALT For You の公開（"1" のときだけナビ・導線・サイトマップに載る）。未設定なら試験公開（noindex）
+          NEXT_PUBLIC_FEATURE_FOR_YOU: ${{ vars.NEXT_PUBLIC_FEATURE_FOR_YOU }}
+          # 計測（PostHog）。Project Token（phc_）とホストの両方を Variables に設定したときだけ有効になる。
+          # Personal API Key（phx_）は絶対に入れない。未設定のままなら、同意バナーも通信も出ない。
+          NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN: ${{ vars.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN }}
+          NEXT_PUBLIC_POSTHOG_HOST: ${{ vars.NEXT_PUBLIC_POSTHOG_HOST }}
+          # 検索エンジンの所有権確認のメタタグ（任意。通常は不要）
+          NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ vars.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }}
+          NEXT_PUBLIC_BING_SITE_VERIFICATION: ${{ vars.NEXT_PUBLIC_BING_SITE_VERIFICATION }}
         run: npm run build
 
       - uses: actions/upload-pages-artifact@v3

@@ -4,6 +4,9 @@ import Link from "next/link";
 import { Suspense, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import { trackEvent } from "@/lib/analytics";
+import { TrackView } from "@/components/track-view";
+import { FEATURES } from "@/lib/site";
+import { encodeQuery, queryFromDiagnosis } from "@/lib/recommend/query";
 import {
   DIFFICULTY_LABELS,
   decodeAnswersFromSearchParams,
@@ -75,9 +78,24 @@ function DiagnosisResultInner({ toolInputs, healthPercentiles, toolFacts, compar
   }
 
   const all = [result.primary, ...result.others];
+  // 匿名の分類だけ（どのSaaSか・条件の種類）。自由記述はない。形が合わないものは送らない
+  const conditions = [
+    `team_${answers.teamSize}`,
+    `skill_${answers.technicalLevel}`,
+    `hosting_${answers.hosting}`,
+    ...answers.strengths.map((s) => `strength_${s}`),
+    ...(answers.conditions ?? []).map((c) => `need_${c}`),
+  ]
+    .map((c) => c.toLowerCase())
+    .filter((c) => /^[a-z0-9_-]{1,40}$/.test(c));
 
   return (
     <div className="diag-result">
+      <TrackView
+        event="oss_diagnosis_completed"
+        props={{ saas: String(answers.saas), recommended_count: all.length, conditions }}
+        dedupeKey={`${String(answers.saas)}:${conditions.join(",")}`}
+      />
       <p className="diag-q__hint" style={{ marginBottom: "0.3rem" }}>
         {saasLabel}
         {"の代替として、"}
@@ -122,6 +140,16 @@ function DiagnosisResultInner({ toolInputs, healthPercentiles, toolFacts, compar
           )}`}
         />
       </div>
+
+      {FEATURES.forYou && (
+        <div className="notice notice--info mt2">
+          <strong>条件を少しずつ変えて比べたい場合</strong>
+          <br />
+          {"この診断の回答を引き継いで、ライセンス・Docker・日本語などの条件を画面で切り替えながら、理由つきの候補を見られます。"}
+          <br />
+          <Link href={`/for-you/?${encodeQuery(queryFromDiagnosis(answers)).toString()}`}>OSSALT For Youで条件を調整する</Link>
+        </div>
+      )}
 
       <p className="diag-note">
         <Link
