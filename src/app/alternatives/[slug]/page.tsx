@@ -9,6 +9,7 @@ import { TrackView } from "@/components/track-view";
 import { HouseAd } from "@/components/house-ad";
 import { SponsorSlot } from "@/components/sponsor-slot";
 import { getAlternativeGuide } from "@/lib/alternative-guides";
+import { licenseGroupOf } from "@/lib/compare";
 import { RELATION_DESCRIPTIONS, RELATION_LABELS, getRelations } from "@/lib/alternative-relations";
 import { AlternativeDecisionPanel } from "@/components/alternative-decision";
 import { buildAlternativeDecision } from "@/lib/alternative-decision";
@@ -58,6 +59,21 @@ export default async function AlternativeDetailPage({
   if (!c) notFound();
   const meta = getMeta();
   const guide = getAlternativeGuide(slug);
+  // 「ソース公開型」やライセンス不明の候補を、OSI承認のOSS件数に混ぜない。
+  const licenseCounts = c.tools.reduce(
+    (counts, tool) => {
+      counts[licenseGroupOf(tool.license)] += 1;
+      return counts;
+    },
+    { osi: 0, "source-available": 0, mixed: 0, unknown: 0 },
+  );
+  const hasNonOsi = licenseCounts.osi !== c.tools.length;
+  const licenseSummary = [
+    licenseCounts.osi > 0 ? `OSI承認のOSS ${licenseCounts.osi}件` : null,
+    licenseCounts["source-available"] > 0 ? `ソース公開型 ${licenseCounts["source-available"]}件` : null,
+    licenseCounts.mixed > 0 ? `複数・混在ライセンス ${licenseCounts.mixed}件` : null,
+    licenseCounts.unknown > 0 ? `ライセンス未確認 ${licenseCounts.unknown}件` : null,
+  ].filter(Boolean).join("、");
   const toolIds = new Set(c.tools.map((tl) => tl.id));
   const comparePairs = getComparePairs().filter((p) => toolIds.has(p.a) && toolIds.has(p.b));
   const faq = buildAlternativeFaq(c.name, c.tools);
@@ -84,9 +100,11 @@ export default async function AlternativeDetailPage({
           ]}
         />
         <TrackView event="saas_alternative_viewed" props={{ slug: c.slug, candidate_count: c.tools.length }} dedupeKey={c.slug} />
-        <h1 className="h2">{c.name} の<span className="nb">オープンソース代替</span></h1>
+        <h1 className="h2">{c.name} の<span className="nb">{hasNonOsi ? "代替候補を比較" : "オープンソース代替"}</span></h1>
         <p className="lede">
-          <Ja>{`${c.name} の代わりに自前で動かせるオープンソースソフトは${c.tools.length}件あります。`}</Ja>
+          <Ja>{hasNonOsi
+            ? `${c.name} の代替候補${c.tools.length}件を比較します（${licenseSummary}）。各ツールのライセンスと導入条件を確認してください。`
+            : `${c.name} の代わりに自前で動かせるオープンソースソフトは${c.tools.length}件あります。`}</Ja>
         </p>
         {guide && guide.picks.length > 0 && (
           <section className="alt-picks" aria-label={`${c.name}の代替の主な候補`}>
@@ -258,7 +276,7 @@ export default async function AlternativeDetailPage({
         data={{
           "@context": "https://schema.org",
           "@type": "ItemList",
-          name: `${c.name} のオープンソース代替`,
+          name: hasNonOsi ? `${c.name} の代替候補` : `${c.name} のオープンソース代替`,
           numberOfItems: c.tools.length,
           inLanguage: "ja",
           isPartOf: { "@type": "WebSite", name: SITE.name, url: SITE.url },
