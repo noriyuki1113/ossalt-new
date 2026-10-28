@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Ja } from "@/components/ja";
 import { SiteFooter, SiteHeader, Breadcrumbs } from "@/components/site-chrome";
 import { ToolBrowser } from "@/components/tool-browser";
 import { getActiveTools, getCompetitors, getMeta } from "@/lib/data";
@@ -40,7 +41,7 @@ export default function ToolsPage() {
         <Breadcrumbs items={[{ href: "/", label: "トップ" }, { label: "ツール一覧" }]} />
         <h1 className="h2">オープンソースソフトウェア一覧</h1>
         <p className="lede">
-          {meta.tool_count}件を収録。スター合計は約{formatCompactJa(totalStars)}{"。セキュリティ評価（OpenSSF Scorecard）は"}{meta.scored_count}{"件で取得済み、残り"}{meta.unrated_count}件は「未評価」として表示しています。
+          <Ja>{`${meta.tool_count}件を収録。スター合計は約${formatCompactJa(totalStars)}。セキュリティ評価（OpenSSF Scorecard）は${meta.scored_count}件で取得済み、残り${meta.unrated_count}件は「未評価」として表示しています。`}</Ja>
         </p>
         <ToolBrowser tools={tools} categories={categories} />
         <section className="section" aria-labelledby="tools-finding-guide">

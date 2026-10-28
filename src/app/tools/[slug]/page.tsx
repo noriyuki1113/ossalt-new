@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ForYouLink } from "@/components/for-you-link";
 import Link from "next/link";
+import { Ja } from "@/components/ja";
 import { notFound } from "next/navigation";
 import { Breadcrumbs, JsonLd, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ToolLogo } from "@/components/tool-logo";
@@ -333,7 +334,7 @@ export default async function ToolDetailPage({
             </section>
 
             <section id="faq">
-              <h2 className="h3">{`${tool.name}についてよくある質問`}</h2>
+              <h2 className="h3"><Ja>{`${tool.name}についてよくある質問`}</Ja></h2>
               <dl className="faq">
                 {faq.map((f) => (
                   <div key={f.q}>
