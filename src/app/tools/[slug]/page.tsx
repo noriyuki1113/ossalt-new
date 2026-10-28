@@ -27,12 +27,13 @@ import { starContext } from "@/lib/star-context";
 import { buildToolFaq } from "@/lib/tool-faq";
 import { getAlternativeGuide } from "@/lib/alternative-guides";
 import { ToolBriefPanel } from "@/components/tool-brief";
+import { TrackView } from "@/components/track-view";
 import { TOOL_DIAGNOSIS } from "@/lib/diagnosis-data";
 import { getStanding } from "@/lib/ranking-positions";
 import { buildToolBrief } from "@/lib/tool-brief";
 import { LICENSE_CLASS_LABELS, LICENSE_GROUP_LABELS, classifyLicense, licenseGroupOf, licenseReason } from "@/lib/compare";
 import { getLicensePage } from "@/lib/licenses";
-import { formatDate, licenseLabel, slugifyCompetitor } from "@/lib/tools";
+import { formatDate, getMaintenanceWarning, licenseLabel, slugifyCompetitor } from "@/lib/tools";
 import { vpsPlacementFor } from "@/lib/affiliate-context";
 import { toSearchParams as costLabParams } from "@/lib/cost-lab";
 
@@ -130,6 +131,11 @@ export default async function ToolDetailPage({
           ]}
         />
 
+        <TrackView
+          event="oss_detail_viewed"
+          props={{ slug: tool.id, category: tool.category ?? "unknown", license_class: classifyLicense(tool.license) }}
+          dedupeKey={tool.id}
+        />
         <div className="detail-layout">
           <div>
             <p className="hero__eyebrow" style={{ marginBottom: "0.5rem" }}>
@@ -146,20 +152,31 @@ export default async function ToolDetailPage({
               {tool.description_ja ? ` ${tool.description_ja}` : ""}
             </p>
 
-            <KeyFacts tool={tool} stars={starContext(tool, getActiveTools())} categoryName={category?.nameJa} />
-
-            <ToolBriefPanel
-              name={tool.name}
-              brief={buildToolBrief(tool, TOOL_DIAGNOSIS[tool.id], getStanding(tool.id))}
-              asOf={formatDate(meta.stars_as_of ?? meta.built_at)}
-            />
-
-            <WatchSignalPanel githubUrl={tool.github_url} />
+            <div className="hero__actions" style={{ marginBottom: "1.25rem" }}>
+              <a className="btn btn--primary" href={tool.url} rel="noopener" data-ph-link="official" data-ph-slug={tool.id}>
+                公式サイト
+              </a>
+              <a className="btn" href={tool.github_url} rel="noopener" data-ph-link="github" data-ph-slug={tool.id}>
+                GitHub
+              </a>
+              {competitorSlug && (
+                <Link className="btn" href={`/alternatives/${competitorSlug}/`}>
+                  {competitor} の代替を全部見る
+                </Link>
+              )}
+            </div>
 
             {tool.github_archived && (
               <p className="notice notice--warn" style={{ marginBottom: "1.25rem" }}>
                 <strong>{t("health.archived")}</strong>{" "}{"このツールは一覧・カテゴリ・比較のページには表示していません（このページのみ残しています）。"}
                 {"新規に導入する場合は、下記の「"}{competitor} の代替を全部見る」から他の候補もあわせてご確認ください。
+              </p>
+            )}
+
+            {!tool.github_archived && !tool.maintenance_notice && getMaintenanceWarning(tool)?.level === "stale" && (
+              <p className="notice notice--warn" style={{ marginBottom: "1.25rem" }}>
+                <strong>更新が1年以上ありません</strong>{" "}
+                {`最終コミットは${formatDate(tool.last_commit)}です。完成して安定しているソフトは更新が少なくなりますが、脆弱性の修正が行われない可能性があります。導入前に、公式の最新の状況を確認してください。`}
               </p>
             )}
 
@@ -173,19 +190,33 @@ export default async function ToolDetailPage({
               </p>
             )}
 
-            <div className="hero__actions" style={{ marginBottom: "2rem" }}>
-              <a className="btn btn--primary" href={tool.url} rel="noopener">
-                公式サイト
-              </a>
-              <a className="btn" href={tool.github_url} rel="noopener">
-                GitHub
-              </a>
-              {competitorSlug && (
-                <Link className="btn" href={`/alternatives/${competitorSlug}/`}>
-                  {competitor} の代替を全部見る
-                </Link>
-              )}
-            </div>
+            <KeyFacts tool={tool} stars={starContext(tool, getActiveTools())} categoryName={category?.nameJa} />
+
+            {positions.length > 0 && (
+              <section className="positioning">
+                <h2 className="h3 mt0">{`${tool.name}が向いている使い方`}</h2>
+                <ul>
+                  {positions.map((p) => (
+                    <li key={p.slug}>
+                      <strong>{`${p.name}の代わりとして`}</strong>
+                      {"："}
+                      {p.fit}
+                      {"（"}
+                      <Link href={`/alternatives/${p.slug}/`}>{`${p.name}の代替をすべて見る`}</Link>
+                      {"）"}
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
+            <ToolBriefPanel
+              name={tool.name}
+              brief={buildToolBrief(tool, TOOL_DIAGNOSIS[tool.id], getStanding(tool.id))}
+              asOf={formatDate(meta.stars_as_of ?? meta.built_at)}
+            />
+
+            <WatchSignalPanel githubUrl={tool.github_url} />
 
             {tool.preview && (
               <figure className="tool-preview">
@@ -216,24 +247,6 @@ export default async function ToolDetailPage({
                   </span>
                 ))}
               </p>
-            )}
-
-            {positions.length > 0 && (
-              <section className="positioning">
-                <h2 className="h3 mt0">{`${tool.name}が向いている使い方`}</h2>
-                <ul>
-                  {positions.map((p) => (
-                    <li key={p.slug}>
-                      <strong>{`${p.name}の代わりとして`}</strong>
-                      {"："}
-                      {p.fit}
-                      {"（"}
-                      <Link href={`/alternatives/${p.slug}/`}>{`${p.name}の代替をすべて見る`}</Link>
-                      {"）"}
-                    </li>
-                  ))}
-                </ul>
-              </section>
             )}
 
             {guide && (

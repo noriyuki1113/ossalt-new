@@ -2,6 +2,7 @@ import Link from "next/link";
 import { SiteFooter, SiteHeader, JsonLd } from "@/components/site-chrome";
 import { HouseAd } from "@/components/house-ad";
 import { HomeRankings, type HomeRow } from "@/components/home-rankings";
+import { ToolCard } from "@/components/tool-views";
 import { PopularSaas, SaasSearch, type SaasEntry } from "@/components/saas-search";
 import { getActiveTools, getCompetitors, getMeta } from "@/lib/data";
 import { TOOL_DIAGNOSIS } from "@/lib/diagnosis-data";
@@ -49,6 +50,7 @@ export default function HomePage() {
     label: SAAS_LABELS[s],
     rows: rec.bySaas[s]!.slice(0, 3).map((r) => row(r.tool, `${r.score}点`, "100点満点")),
   }));
+  const trendingTools = buildGrowth(tools).rows.slice(0, 6).map((r) => r.tool);
   const categoriesWithCount = CATEGORIES.map((c) => ({
     ...c,
     count: tools.filter((tl) => tl.category === c.slug).length,
@@ -57,14 +59,16 @@ export default function HomePage() {
   return (
     <>
       <SiteHeader current="/" />
-      <main className="wrap">
+      <main className="wrap home-page">
         <section className="hero">
           <p className="hero__eyebrow">Open Source Alternatives / for Japanese teams</p>
           <h1 className="hero__title">
             そのSaaS、
             <br />
-            <em>自分のサーバ</em>で
-            <span className="hl">動かせる。</span>
+            <span className="nb">
+              <em>自分のサーバ</em>で
+              <span className="hl">動かせる。</span>
+            </span>
           </h1>
           <SaasSearch entries={saasEntries} />
           <PopularSaas entries={saasEntries} />
@@ -77,6 +81,39 @@ export default function HomePage() {
             <Link className="btn" href="/guide/">
               {t("home.cta.guide")}
             </Link>
+          </div>
+        </section>
+
+        <section className="section section--first" aria-labelledby="home-cat-h">
+          <div className="section__head">
+            <h2 id="home-cat-h">用途から探す</h2>
+            <Link className="more" href="/categories/">
+              カテゴリ一覧 →
+            </Link>
+          </div>
+          <ul className="cat-tiles">
+            {categoriesWithCount.map((c) => (
+              <li key={c.slug}>
+                <Link className="cat-tile" href={`/categories/${c.slug}/`}>
+                  <span>{c.nameJa}</span>
+                  <span className="cat-tile__n">{c.count}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="section" aria-labelledby="home-trend-h">
+          <div className="section__head">
+            <h2 id="home-trend-h">いま伸びているOSS</h2>
+            <Link className="more" href="/rankings/">
+              根拠を見る →
+            </Link>
+          </div>
+          <div className="browse-grid">
+            {trendingTools.map((tool) => (
+              <ToolCard key={tool.id} tool={tool} />
+            ))}
           </div>
         </section>
 
@@ -171,7 +208,7 @@ export default function HomePage() {
           </section>
         )}
 
-        <section className="section section--first" aria-labelledby="home-rank-h">
+        <section className="section" aria-labelledby="home-rank-h">
           <div className="section__head">
             <h2 id="home-rank-h">ランキングで見る</h2>
             <Link className="more" href="/tools/">
@@ -179,39 +216,6 @@ export default function HomePage() {
             </Link>
           </div>
           <HomeRankings popular={popularRows} growth={growthRows} recommended={recommendedGroups} asOf={asOf} />
-        </section>
-
-        <section className="section">
-          <div className="section__head">
-            <h2>用途から探す</h2>
-            <Link className="more" href="/categories/">
-              カテゴリ一覧 →
-            </Link>
-          </div>
-          <div className="grid-2">
-            {categoriesWithCount.slice(0, 6).map((c) => (
-              <div className="panel" key={c.slug}>
-                <div className="panel__head">
-                  <h3 className="panel__title">
-                    <Link href={`/categories/${c.slug}/`}>{c.nameJa}</Link>
-                  </h3>
-                  <span className="panel__meta">{c.count}件</span>
-                </div>
-                <div className="panel__body">
-                  <p className="muted" style={{ margin: "0 0 0.75rem", fontSize: "0.875rem" }}>
-                    {c.ledeJa}
-                  </p>
-                  <p className="mono" style={{ margin: 0, fontSize: "0.8125rem" }}>
-                    {tools
-                      .filter((tl) => tl.category === c.slug)
-                      .slice(0, 3)
-                      .map((tl) => tl.name)
-                      .join(" / ")}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
         </section>
 
         <HouseAd placement="home_bottom" />

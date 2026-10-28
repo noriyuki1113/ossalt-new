@@ -31,7 +31,7 @@ test.describe("トップページ：目的のOSSへ早くたどり着く", () =>
     await expect(page).toHaveURL(/\/tools\/\?q=immich$/);
     // 一覧は ?q= を読んで絞り込む
     await expect(page.getByRole("searchbox")).toHaveValue("immich");
-    await expect(page.locator("article.row").first()).toContainText("Immich");
+    await expect(page.locator("article.row, article.browse-card").first()).toContainText("Immich");
   });
 
   test("人気のSaaSのリンクから代替ページへ行ける", async ({ page }) => {
@@ -67,5 +67,29 @@ test.describe("トップページ：目的のOSSへ早くたどり着く", () =>
   test("スマートフォンの幅でも横にはみ出さない", async ({ page }) => {
     await page.goto("/");
     expect(await horizontalOverflow(page)).toBeLessThanOrEqual(1);
+  });
+
+  test("用途のカテゴリ一覧と、伸びているOSSのカードが検索のすぐ下にある", async ({ page }) => {
+    await page.goto("/");
+    const tiles = page.locator(".cat-tile");
+    expect(await tiles.count()).toBeGreaterThan(10);
+    await tiles.first().click();
+    await expect(page).toHaveURL(/\/categories\/[^/]+\/$/);
+    await page.goBack();
+    const cards = page.locator("#home-trend-h ~ .browse-grid article.browse-card, section[aria-labelledby=home-trend-h] article.browse-card");
+    await expect(cards).toHaveCount(6);
+    await cards.first().locator("a.row__link").click();
+    await expect(page).toHaveURL(/\/tools\/[^/]+\/$/);
+  });
+
+  test("計測（PostHog）が未設定のビルドでは、同意バナーも「計測の設定」も出ず、PostHogへの通信もない", async ({ page }) => {
+    const sent: string[] = [];
+    page.on("request", (r) => { if (/posthog/i.test(r.url())) sent.push(r.url()); });
+    await page.goto("/tools/immich/");
+    await page.waitForTimeout(800);
+    await expect(page.getByRole("dialog")).toHaveCount(0);
+    await expect(page.getByRole("button", { name: "計測の設定" })).toHaveCount(0);
+    expect(sent).toEqual([]);
+    expect(await page.evaluate(() => Object.keys(localStorage).filter((k) => /ph_|ossalt_analytics/.test(k)))).toEqual([]);
   });
 });

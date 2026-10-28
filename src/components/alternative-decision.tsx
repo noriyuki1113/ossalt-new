@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { AlternativeDecision } from "@/lib/alternative-decision";
 import type { GuidePick } from "@/lib/alternative-guides";
+import { ToolLogo } from "@/components/tool-logo";
 import { RECOMMEND_WEIGHTS } from "@/lib/rankings";
 
 const STATE_MARK = { true: "○", false: "×", unknown: "？" } as const;
@@ -47,7 +48,10 @@ export function AlternativeDecisionPanel({
               const r = rowByTool.get(p.tool);
               return (
                 <li key={p.tool}>
-                  <Link href={`/tools/${p.tool}/`}><strong>{p.name}</strong></Link>
+                  <div className="decide__pick-head">
+                    {r && <ToolLogo githubUrl={r.tool.github_url} name={p.name} size={36} />}
+                    <Link href={`/tools/${p.tool}/`}><strong>{p.name}</strong></Link>
+                  </div>
                   <span>{p.fit}</span>
                   {r && (
                     <small>

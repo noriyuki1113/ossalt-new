@@ -19,3 +19,5 @@ data-source/discovery/.etag-cache-openalt.json
 # Raw Google Search Console exports and generated private SEO reviews
 agency/data/
 agency/reports/
+out-analytics-e2e/
+out.keep-analytics-e2e/

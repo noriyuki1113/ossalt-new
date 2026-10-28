@@ -86,6 +86,30 @@ export default function RankingsPage() {
           {`「よく使われている」「いま伸びている」「選ぶと失敗しにくい」は別のものです。人気・急成長・おすすめの3つに分けて、計算の根拠と観測日をすべて確認できるようにしています。データの取得日は${asOf}です。`}
         </p>
 
+        <ul className="rank-kinds" aria-label="3つのランキングの違い">
+          <li>
+            <a href="#popular">
+              <strong>人気</strong>
+              <span>長く多くの人に知られているか</span>
+              <small>Stars・Forks・Contributorsの掲載中での順位。注目度の目安で、品質の保証ではありません。</small>
+            </a>
+          </li>
+          <li>
+            <a href="#growth">
+              <strong>急成長</strong>
+              <span>最近、注目が増えているか</span>
+              <small>直近7日・30日のStar数の実測だけ。記録が足りないものは順位を付けません。</small>
+            </a>
+          </li>
+          <li>
+            <a href="#recommended">
+              <strong>おすすめ</strong>
+              <span>選ぶと失敗しにくいか</span>
+              <small>用途適合・保守・ライセンス・日本語・導入のしやすさ。機能データのある5つのSaaSの代替だけです。</small>
+            </a>
+          </li>
+        </ul>
+
         <RankingTabs
           popular={popular}
           growth={growth}

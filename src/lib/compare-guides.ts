@@ -15,6 +15,12 @@ export type CompareGuide = { slug: string; description: string; updated: string;
 
 let cache: Map<string, CompareGuide> | null = null;
 
+/** 手書きの解説がある組のslug（ファイル名だけを見る。中身は読まない） */
+export function listCompareGuideSlugs(): Set<string> {
+  if (!fs.existsSync(DIR)) return new Set();
+  return new Set(fs.readdirSync(DIR).filter((f) => f.endsWith(".md")).map((f) => f.replace(/\.md$/, "")));
+}
+
 export function getCompareGuide(slug: string): CompareGuide | undefined {
   if (!cache) {
     cache = new Map();
