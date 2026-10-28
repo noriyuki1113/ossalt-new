@@ -24,6 +24,17 @@ test("件数と健全度順", () => {
   assert.match(find(faq, "いくつ"), /3件.*Alpha、Beta、Gamma/);
 });
 
+test("ソース公開型が混じる候補を全件OSSとは呼ばない", () => {
+  const mixed = buildAlternativeFaq("Notion", tools);
+  assert.match(mixed[0].q, /Notionの代替候補はいくつ/);
+  assert.match(mixed[0].a, /3件/);
+  assert.match(mixed[0].a, /OSI承認のオープンソースは2件/);
+  assert.doesNotMatch(mixed[0].q, /オープンソースはいくつ/);
+
+  const osiOnly = buildAlternativeFaq("Notion", [tools[0], tools[2]]);
+  assert.match(osiOnly[0].q, /代わりになるオープンソースはいくつ/);
+});
+
 test("日本語：確認できたものだけ挙げ、残りは未確認とする", () => {
   const a = find(buildAlternativeFaq("Notion", tools), "日本語");
   assert.match(a, /画面の日本語翻訳を確認できたのはAlpha（1件）/);
