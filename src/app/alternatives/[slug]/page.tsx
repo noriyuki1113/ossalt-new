@@ -36,7 +36,9 @@ export async function generateMetadata({
   if (!c) return { title: t("detail.notFound") };
   const guide = getAlternativeGuide(slug);
   return pageMeta({
-    title: alternativeTitle(c.name, c.tools, new Date(getMeta().built_at).getFullYear()),
+    title: guide?.title
+      ? guide.title.replace("{n}", String(c.tools.length)).replace("{year}", String(new Date(getMeta().built_at).getFullYear()))
+      : alternativeTitle(c.name, c.tools, new Date(getMeta().built_at).getFullYear()),
     description: guide?.description || alternativeDescription(c.name, c.tools),
     path: `/alternatives/${c.slug}/`,
     type: "article",

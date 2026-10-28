@@ -14,7 +14,7 @@ picks:
 ## 選び方
 
 - **計画の管理**：OpenProjectは、ガントチャート、課題管理、工数の記録などを備え、計画と進捗の見える化に強い候補です。
-- **アジャイル開発**：Taigaは、スクラムのバックログやカンバンを中心とした使い方に向いています。より今風の操作感なら、[Linearの代替](/alternatives/linear/)で紹介しているPlaneも候補です。
+- **アジャイル開発**：Taigaは、スクラムのバックログやカンバンを中心とした使い方に向いています。より今風の操作感なら、[Plane](/tools/plane/)も候補です（[Linearの代替](/alternatives/linear/)でも紹介しています）。
 - **国内での定番**：日本で長く使われてきたRedmineは、[Backlogの代替](/alternatives/backlog/)のページで紹介しています。
 - **ライセンス**：OpenProjectはGPL-3.0、TaigaはMPL-2.0、TracはBSD-3-Clauseです。
 
