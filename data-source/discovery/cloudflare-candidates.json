@@ -89,10 +89,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/0xdps/emailflare",
           "status": "api",
-          "value": 41
+          "value": 40
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -131,10 +131,10 @@
           "value": "EmailFlare"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/0xdps/emailflare",
           "status": "api",
-          "value": "2026-10-20T07:07:47Z"
+          "value": "2026-10-26T23:17:01Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -155,10 +155,10 @@
           "value": "Email and inboxes"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/0xdps/emailflare",
           "status": "api",
-          "value": 256
+          "value": 258
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -193,11 +193,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/edgekey/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:58:04.000Z",
+            "last_verified": "2026-10-27T09:26:50.000Z",
             "slug": "edgekey"
           }
         },
@@ -266,10 +266,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/34892002/edgekey",
           "status": "api",
-          "value": 124
+          "value": 128
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -329,10 +329,10 @@
           "value": "Business and operations"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/34892002/edgekey",
           "status": "api",
-          "value": 284
+          "value": 291
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -364,11 +364,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/r2-webdav/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:07:07.000Z",
+            "last_verified": "2026-10-27T09:35:26.000Z",
             "slug": "r2-webdav"
           }
         },
@@ -437,10 +437,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/abersheeran/r2-webdav",
           "status": "api",
-          "value": 284
+          "value": 286
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -500,10 +500,10 @@
           "value": "Files, images and sharing"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/abersheeran/r2-webdav",
           "status": "api",
-          "value": 429
+          "value": 433
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -672,10 +672,10 @@
           "value": "Developer tools"
         },
         "stars": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/acoyfellow/cloudbox",
           "status": "api",
-          "value": 56
+          "value": 55
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -875,11 +875,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/turborepo-remote-cache/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:11:19.000Z",
+            "last_verified": "2026-10-27T09:39:27.000Z",
             "slug": "turborepo-remote-cache"
           }
         },
@@ -896,11 +896,12 @@
           "value": "adirishi/turborepo-remote-cache-cloudflare"
         },
         "cloudflare_features": {
-          "fetched_at": "2026-10-09T21:55:45.230Z",
-          "source": "https://github.com/adirishi/turborepo-remote-cache-cloudflare/blob/HEAD/wrangler.jsonc",
-          "status": "verified",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
+          "source": "https://appflare.dev/apps/turborepo-remote-cache/",
+          "status": "claimed",
           "value": [
             "cron",
+            "kv",
             "r2"
           ]
         },
@@ -923,19 +924,18 @@
           ]
         },
         "cloudflare_runtime": {
-          "fetched_at": "2026-10-09T21:55:45.230Z",
-          "source": "https://github.com/adirishi/turborepo-remote-cache-cloudflare/blob/HEAD/wrangler.jsonc",
-          "status": "verified",
-          "value": "workers"
+          "fetched_at": "2026-10-28T00:33:47.757Z",
+          "source": null,
+          "status": "unknown",
+          "value": null
         },
         "deploy_methods": {
-          "fetched_at": "2026-10-09T21:55:45.230Z",
-          "source": "https://github.com/adirishi/turborepo-remote-cache-cloudflare/blob/HEAD/wrangler.jsonc",
-          "status": "verified",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
+          "source": "https://appflare.dev/apps/turborepo-remote-cache/",
+          "status": "claimed",
           "value": [
             "appflare",
-            "cloudflare_deploy_button",
-            "wrangler"
+            "cloudflare_deploy_button"
           ]
         },
         "description": {
@@ -951,10 +951,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/adirishi/turborepo-remote-cache-cloudflare",
           "status": "api",
-          "value": 79
+          "value": 80
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -975,10 +975,10 @@
           "value": "TypeScript"
         },
         "latest_release_at": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/adirishi/turborepo-remote-cache-cloudflare",
           "status": "api",
-          "value": "2026-01-19T06:20:33Z"
+          "value": "2026-10-27T05:22:01Z"
         },
         "license": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -993,10 +993,10 @@
           "value": "turborepo-remote-cache-cloudflare"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/adirishi/turborepo-remote-cache-cloudflare",
           "status": "api",
-          "value": "2026-10-20T08:54:03Z"
+          "value": "2026-10-27T05:21:57Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -1217,11 +1217,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/skland-attendance/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:09:45.000Z",
+            "last_verified": "2026-10-26T09:38:46.000Z",
             "slug": "skland-attendance"
           }
         },
@@ -1289,10 +1289,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/aetherside/skland-daily-attendance",
           "status": "api",
-          "value": 719
+          "value": 731
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -1349,10 +1349,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/aetherside/skland-daily-attendance",
           "status": "api",
-          "value": 313
+          "value": 312
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -1447,10 +1447,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/akazwz/hostc",
           "status": "api",
-          "value": 63
+          "value": 65
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -1489,10 +1489,10 @@
           "value": "hostc"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/akazwz/hostc",
           "status": "api",
-          "value": "2026-10-07T16:07:49Z"
+          "value": "2026-10-24T04:31:15Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -1510,10 +1510,10 @@
           "value": "Remote access"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/akazwz/hostc",
           "status": "api",
-          "value": 602
+          "value": 607
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -1614,10 +1614,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/akazwz/smail",
           "status": "api",
-          "value": 191
+          "value": 188
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -1644,10 +1644,10 @@
           "value": "2026-10-08T11:40:24Z"
         },
         "license": {
-          "fetched_at": "2026-10-09T21:55:45.230Z",
-          "source": null,
-          "status": "unknown",
-          "value": null
+          "fetched_at": "2026-10-28T00:33:47.757Z",
+          "source": "https://api.github.com/repos/akazwz/smail",
+          "status": "api",
+          "value": "MIT"
         },
         "name": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -1656,10 +1656,10 @@
           "value": "smail"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/akazwz/smail",
           "status": "api",
-          "value": "2026-10-09T09:06:43Z"
+          "value": "2026-10-24T04:17:34Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -1677,10 +1677,10 @@
           "value": "Email and inboxes"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/akazwz/smail",
           "status": "api",
-          "value": 931
+          "value": 933
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -1694,18 +1694,14 @@
       "matched_by": null,
       "matched_tool_id": null,
       "quality": {
-        "blocking": [
-          "license_unknown"
-        ],
-        "issues": [
-          "license_unknown"
-        ]
+        "blocking": [],
+        "issues": []
       },
       "repo": "akazwz/smail",
       "repo_aliases": [],
       "review": {
         "note": null,
-        "state": "blocked"
+        "state": "needs_review"
       },
       "sources": [
         "awesome"
@@ -1715,11 +1711,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/blobatar/",
           "status": "claimed",
           "value": {
-            "last_verified": null,
+            "last_verified": "2026-10-27T09:23:36.000Z",
             "slug": "blobatar"
           }
         },
@@ -1845,10 +1841,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/alain00/blobatar",
           "status": "api",
-          "value": 1545
+          "value": 1600
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -1974,10 +1970,10 @@
           "value": "TypeScript"
         },
         "latest_release_at": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/amandoti-win/cindermail",
           "status": "api",
-          "value": "2026-10-01T23:52:30Z"
+          "value": "2026-10-24T18:53:00Z"
         },
         "license": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -1992,10 +1988,10 @@
           "value": "cindermail"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/amandoti-win/cindermail",
           "status": "api",
-          "value": "2026-10-20T01:50:18Z"
+          "value": "2026-10-24T18:52:59Z"
         },
         "replaces": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -2013,10 +2009,10 @@
           "value": "Email and inboxes"
         },
         "stars": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/amandoti-win/cindermail",
           "status": "api",
-          "value": 7
+          "value": 8
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -2049,11 +2045,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/larafeed/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:02:52.000Z",
+            "last_verified": "2026-10-27T09:31:05.000Z",
             "slug": "larafeed"
           }
         },
@@ -2226,11 +2222,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/edgechat/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:57:53.000Z",
+            "last_verified": "2026-10-27T09:26:53.000Z",
             "slug": "edgechat"
           }
         },
@@ -2305,10 +2301,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/aozorae/edgechat",
           "status": "api",
-          "value": 492
+          "value": 535
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -2347,10 +2343,10 @@
           "value": "EdgeChat"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/aozorae/edgechat",
           "status": "api",
-          "value": "2026-10-18T14:13:21Z"
+          "value": "2026-10-24T00:54:20Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -2371,10 +2367,10 @@
           "value": "Chat and realtime"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/aozorae/edgechat",
           "status": "api",
-          "value": 1279
+          "value": 1363
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -2406,11 +2402,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/dictdeck/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:57:28.000Z",
+            "last_verified": "2026-10-27T09:26:04.000Z",
             "slug": "dictdeck"
           }
         },
@@ -2524,10 +2520,10 @@
           "value": "DictDeck"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/asutorufa/hujiang_dictionary",
           "status": "api",
-          "value": "2026-10-16T10:29:58Z"
+          "value": "2026-10-27T23:18:06Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -2689,10 +2685,10 @@
           "value": "AwaitStep"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/awaitstep/awaitstep",
           "status": "api",
-          "value": "2026-09-01T15:04:19Z"
+          "value": "2026-10-22T15:32:29Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -2744,11 +2740,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/memory-note/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:03:23.000Z",
+            "last_verified": "2026-10-27T09:31:44.000Z",
             "slug": "memory-note"
           }
         },
@@ -2908,11 +2904,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/rdyrct/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:08:12.000Z",
+            "last_verified": "2026-10-27T09:36:27.000Z",
             "slug": "rdyrct"
           }
         },
@@ -3017,10 +3013,10 @@
           "value": "TypeScript"
         },
         "latest_release_at": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/baronunread/rdyrct",
           "status": "api",
-          "value": "2026-10-09T13:50:54Z"
+          "value": "2026-10-23T14:01:51Z"
         },
         "license": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -3035,10 +3031,10 @@
           "value": "rdyrct"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/baronunread/rdyrct",
           "status": "api",
-          "value": "2026-10-20T21:18:41Z"
+          "value": "2026-10-27T21:18:08Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -3161,10 +3157,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/beilunyang/moemail",
           "status": "api",
-          "value": 2596
+          "value": 2590
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -3224,10 +3220,10 @@
           "value": "Email and inboxes"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/beilunyang/moemail",
           "status": "api",
-          "value": 2822
+          "value": 2828
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -3258,11 +3254,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/counterscale/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:57:09.000Z",
+            "last_verified": "2026-10-27T09:25:58.000Z",
             "slug": "counterscale"
           }
         },
@@ -3333,10 +3329,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/benvinegar/counterscale",
           "status": "api",
-          "value": 135
+          "value": 137
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -3399,10 +3395,10 @@
           "value": "Analytics"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/benvinegar/counterscale",
           "status": "api",
-          "value": 2166
+          "value": 2171
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -3434,11 +3430,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/alle/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:54:09.000Z",
+            "last_verified": "2026-10-26T09:23:06.000Z",
             "slug": "alle"
           }
         },
@@ -3511,10 +3507,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/bestruirui/alle",
           "status": "api",
-          "value": 154
+          "value": 155
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -3610,11 +3606,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/civideo/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:56:13.000Z",
+            "last_verified": "2026-10-27T09:24:39.000Z",
             "slug": "civideo"
           }
         },
@@ -3746,10 +3742,10 @@
           "value": "Files, images and sharing"
         },
         "stars": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/bitoceango/civideo",
           "status": "api",
-          "value": 24
+          "value": 25
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -3781,11 +3777,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/formzero/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:59:42.000Z",
+            "last_verified": "2026-10-27T09:28:20.000Z",
             "slug": "formzero"
           }
         },
@@ -3918,10 +3914,10 @@
           "value": "Business and operations"
         },
         "stars": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/bohdanpetryshyn/formzero",
           "status": "api",
-          "value": 83
+          "value": 84
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -3953,11 +3949,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/rsshub-never-die/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:08:42.000Z",
+            "last_verified": "2026-10-27T09:36:41.000Z",
             "slug": "rsshub-never-die"
           }
         },
@@ -4043,10 +4039,10 @@
           "value": "TypeScript"
         },
         "latest_release_at": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/caomeiyouren/rsshub-never-die",
           "status": "api",
-          "value": "2026-06-21T15:18:24Z"
+          "value": "2026-10-23T03:16:50Z"
         },
         "license": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -4061,10 +4057,10 @@
           "value": "RSSHub Never Die"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/caomeiyouren/rsshub-never-die",
           "status": "api",
-          "value": "2026-10-02T10:44:36Z"
+          "value": "2026-10-23T04:15:48Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -4113,11 +4109,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/punctual/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:06:42.000Z",
+            "last_verified": "2026-10-27T09:35:13.000Z",
             "slug": "punctual"
           }
         },
@@ -4261,10 +4257,10 @@
           "value": "Business and operations"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/cccrafts/punctual",
           "status": "api",
-          "value": 120
+          "value": 124
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -4296,11 +4292,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/placeholders-dev/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:05:51.000Z",
+            "last_verified": "2026-10-27T09:34:21.000Z",
             "slug": "placeholders-dev"
           }
         },
@@ -4539,10 +4535,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/choyiny/saasmail",
           "status": "api",
-          "value": 55
+          "value": 54
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -4563,10 +4559,10 @@
           "value": "TypeScript"
         },
         "latest_release_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/choyiny/saasmail",
           "status": "api",
-          "value": "2026-10-20T20:22:02Z"
+          "value": "2026-10-27T03:49:50Z"
         },
         "license": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -4581,10 +4577,10 @@
           "value": "SaaSMail"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/choyiny/saasmail",
           "status": "api",
-          "value": "2026-10-20T23:50:24Z"
+          "value": "2026-10-27T15:45:05Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -4602,10 +4598,10 @@
           "value": "Email and inboxes"
         },
         "stars": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/choyiny/saasmail",
           "status": "api",
-          "value": 259
+          "value": 262
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -4636,11 +4632,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/folia/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:59:28.000Z",
+            "last_verified": "2026-10-27T09:27:58.000Z",
             "slug": "folia"
           }
         },
@@ -4702,10 +4698,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/chthollyphile/folia-major",
           "status": "api",
-          "value": 883
+          "value": 1071
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -4726,10 +4722,10 @@
           "value": "TypeScript"
         },
         "latest_release_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/chthollyphile/folia-major",
           "status": "api",
-          "value": "2026-10-18T07:05:19Z"
+          "value": "2026-10-27T13:49:43Z"
         },
         "license": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -4744,10 +4740,10 @@
           "value": "Folia"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/chthollyphile/folia-major",
           "status": "api",
-          "value": "2026-10-20T15:13:14Z"
+          "value": "2026-10-27T18:54:39Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -4762,10 +4758,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/chthollyphile/folia-major",
           "status": "api",
-          "value": 8519
+          "value": 9763
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -4796,11 +4792,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/agentic-inbox/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:54:03.000Z",
+            "last_verified": "2026-10-27T09:23:01.000Z",
             "slug": "agentic-inbox"
           }
         },
@@ -4880,10 +4876,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/cloudflare/agentic-inbox",
           "status": "api",
-          "value": 1092
+          "value": 1111
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -4945,10 +4941,10 @@
           "value": "Email and inboxes"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/cloudflare/agentic-inbox",
           "status": "api",
-          "value": 8395
+          "value": 8535
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -5062,10 +5058,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/cloudflare/cloudflare-os",
           "status": "api",
-          "value": 1388
+          "value": 1412
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -5104,10 +5100,10 @@
           "value": "Cloudflare OS"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/cloudflare/cloudflare-os",
           "status": "api",
-          "value": "2026-10-20T22:47:12Z"
+          "value": "2026-10-28T00:29:53Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -5125,10 +5121,10 @@
           "value": "Business and operations"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/cloudflare/cloudflare-os",
           "status": "api",
-          "value": 11508
+          "value": 11595
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -5163,11 +5159,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/cloudflare-prometheus-exporter/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:56:26.000Z",
+            "last_verified": "2026-10-27T09:25:11.000Z",
             "slug": "cloudflare-prometheus-exporter"
           }
         },
@@ -5235,10 +5231,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/cloudflare/cloudflare-prometheus-exporter",
           "status": "api",
-          "value": 43
+          "value": 44
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -5329,11 +5325,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/mpp-proxy/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:03:25.000Z",
+            "last_verified": "2026-10-27T09:31:59.000Z",
             "slug": "mpp-proxy"
           }
         },
@@ -5489,11 +5485,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/playwright-mcp/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:06:58.000Z",
+            "last_verified": "2026-10-27T09:35:21.000Z",
             "slug": "playwright-mcp"
           }
         },
@@ -5738,10 +5734,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/cloudflare/vibesdk",
           "status": "api",
-          "value": 1283
+          "value": 1282
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -5780,10 +5776,10 @@
           "value": "VibeSDK"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/cloudflare/vibesdk",
           "status": "api",
-          "value": "2026-09-22T10:49:08Z"
+          "value": "2026-10-22T01:20:01Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -5801,10 +5797,10 @@
           "value": "Developer tools"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/cloudflare/vibesdk",
           "status": "api",
-          "value": 5419
+          "value": 5435
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -5835,11 +5831,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/open-artifacts/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:04:52.000Z",
+            "last_verified": "2026-10-27T09:33:23.000Z",
             "slug": "open-artifacts"
           }
         },
@@ -5952,10 +5948,10 @@
           "value": "Open Artifacts"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/coda0hq/open-artifacts",
           "status": "api",
-          "value": "2026-10-18T14:39:37Z"
+          "value": "2026-10-21T12:23:08Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -5975,10 +5971,10 @@
           "value": "Developer tools"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/coda0hq/open-artifacts",
           "status": "api",
-          "value": 67
+          "value": 71
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -6010,11 +6006,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/neriplayer-listen-together/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:03:55.000Z",
+            "last_verified": "2026-10-27T09:32:23.000Z",
             "slug": "neriplayer-listen-together"
           }
         },
@@ -6079,10 +6075,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/cwuom/neriplayer",
           "status": "api",
-          "value": 137
+          "value": 148
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -6103,10 +6099,10 @@
           "value": "Kotlin"
         },
         "latest_release_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/cwuom/neriplayer",
           "status": "api",
-          "value": "2026-10-18T05:58:58Z"
+          "value": "2026-10-23T06:18:02Z"
         },
         "license": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -6121,10 +6117,10 @@
           "value": "NeriPlayer Listen Together"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/cwuom/neriplayer",
           "status": "api",
-          "value": "2026-10-20T12:57:31Z"
+          "value": "2026-10-27T14:34:20Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -6139,10 +6135,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/cwuom/neriplayer",
           "status": "api",
-          "value": 3828
+          "value": 3935
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -6173,11 +6169,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/bark-worker/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:54:45.000Z",
+            "last_verified": "2026-10-27T09:23:17.000Z",
             "slug": "bark-worker"
           }
         },
@@ -6244,10 +6240,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/cwxiaos/bark-worker",
           "status": "api",
-          "value": 440
+          "value": 442
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -6309,10 +6305,10 @@
           "value": "Notifications and push"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/cwxiaos/bark-worker",
           "status": "api",
-          "value": 688
+          "value": 690
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -6418,10 +6414,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/danielsyauqi/seeder",
           "status": "api",
-          "value": 26
+          "value": 27
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -6483,10 +6479,10 @@
           "value": "Business and operations"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/danielsyauqi/seeder",
           "status": "api",
-          "value": 107
+          "value": 114
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -6520,11 +6516,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/atalaya/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:54:13.000Z",
+            "last_verified": "2026-10-27T09:23:09.000Z",
             "slug": "atalaya"
           }
         },
@@ -6635,10 +6631,10 @@
           "value": "atalaya"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/dcarrillo/atalaya",
           "status": "api",
-          "value": "2026-10-20T21:35:24Z"
+          "value": "2026-10-25T10:11:54Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -6693,11 +6689,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/minshop/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:04:00.000Z",
+            "last_verified": "2026-10-27T09:32:16.000Z",
             "slug": "minshop"
           }
         },
@@ -6776,10 +6772,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/ddyy/minshop",
           "status": "api",
-          "value": 61
+          "value": 63
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -6818,10 +6814,10 @@
           "value": "minshop"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/ddyy/minshop",
           "status": "api",
-          "value": "2026-10-20T19:15:34Z"
+          "value": "2026-10-27T20:45:13Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -6841,10 +6837,10 @@
           "value": "Business and operations"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/ddyy/minshop",
           "status": "api",
-          "value": 177
+          "value": 179
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -6876,11 +6872,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/minvoice/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:03:37.000Z",
+            "last_verified": "2026-10-26T09:32:37.000Z",
             "slug": "minvoice"
           }
         },
@@ -7018,10 +7014,10 @@
           "value": "Business and operations"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/ddyy/minvoice",
           "status": "api",
-          "value": 39
+          "value": 41
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -7123,10 +7119,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/deathbyknowledge/ripgit",
           "status": "api",
-          "value": 11
+          "value": 12
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -7220,11 +7216,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/nodrix/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:04:44.000Z",
+            "last_verified": "2026-10-27T09:33:14.000Z",
             "slug": "nodrix"
           }
         },
@@ -7367,10 +7363,10 @@
           "value": "Business and operations"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/decoded-cipher/nodrix",
           "status": "api",
-          "value": 44
+          "value": 45
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -7402,11 +7398,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/shotsync/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:09:37.000Z",
+            "last_verified": "2026-10-27T09:37:51.000Z",
             "slug": "shotsync"
           }
         },
@@ -7537,10 +7533,10 @@
           "value": "Files, images and sharing"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/defiabell/shotsync",
           "status": "api",
-          "value": 207
+          "value": 210
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -7640,10 +7636,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/defiabell/yixi",
           "status": "api",
-          "value": 4
+          "value": 5
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -7682,10 +7678,10 @@
           "value": "yixi"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/defiabell/yixi",
           "status": "api",
-          "value": "2026-09-21T07:36:15Z"
+          "value": "2026-10-27T10:08:13Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -7818,10 +7814,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/devarshishimpi/codra",
           "status": "api",
-          "value": 23
+          "value": 24
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -7860,10 +7856,10 @@
           "value": "Codra"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/devarshishimpi/codra",
           "status": "api",
-          "value": "2026-10-20T06:16:09Z"
+          "value": "2026-10-27T12:28:58Z"
         },
         "replaces": {
           "fetched_at": "2026-10-20T23:57:26.523Z",
@@ -7883,10 +7879,10 @@
           "value": "Developer tools"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/devarshishimpi/codra",
           "status": "api",
-          "value": 122
+          "value": 125
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-20T23:57:26.523Z",
@@ -7986,10 +7982,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/discohook/discohook",
           "status": "api",
-          "value": 45
+          "value": 44
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -8049,10 +8045,10 @@
           "value": "Developer tools"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/discohook/discohook",
           "status": "api",
-          "value": 187
+          "value": 188
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -8083,11 +8079,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/quickinbox/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:07:05.000Z",
+            "last_verified": "2026-10-26T09:36:24.000Z",
             "slug": "quickinbox"
           }
         },
@@ -8161,10 +8157,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/divinprince/quickinbox",
           "status": "api",
-          "value": 68
+          "value": 71
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -8227,10 +8223,10 @@
           "value": "Email and inboxes"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/divinprince/quickinbox",
           "status": "api",
-          "value": 425
+          "value": 428
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -8262,11 +8258,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/cf-nav/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:55:22.000Z",
+            "last_verified": "2026-10-27T09:24:10.000Z",
             "slug": "cf-nav"
           }
         },
@@ -8507,10 +8503,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/dreamhunter2333/cloudflare_temp_email",
           "status": "api",
-          "value": 8033
+          "value": 8039
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -8549,10 +8545,10 @@
           "value": "Cloudflare Temp Email"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/dreamhunter2333/cloudflare_temp_email",
           "status": "api",
-          "value": "2026-10-18T13:28:32Z"
+          "value": "2026-10-25T07:03:27Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -8570,10 +8566,10 @@
           "value": "Email and inboxes"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/dreamhunter2333/cloudflare_temp_email",
           "status": "api",
-          "value": 11991
+          "value": 12022
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -8604,11 +8600,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/bashupload/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:54:46.000Z",
+            "last_verified": "2026-10-26T09:23:48.000Z",
             "slug": "bashupload"
           }
         },
@@ -8948,11 +8944,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/emdash/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:59:19.000Z",
+            "last_verified": "2026-10-27T09:28:23.000Z",
             "slug": "emdash"
           }
         },
@@ -9028,10 +9024,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/emdash-cms/emdash",
           "status": "api",
-          "value": 1318
+          "value": 1343
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -9070,10 +9066,10 @@
           "value": "EmDash"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/emdash-cms/emdash",
           "status": "api",
-          "value": "2026-10-20T23:45:47Z"
+          "value": "2026-10-28T00:13:33Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -9093,10 +9089,10 @@
           "value": "Blogs, CMS and docs"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/emdash-cms/emdash",
           "status": "api",
-          "value": 13830
+          "value": 14018
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -9204,10 +9200,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/ethercorps/doota",
           "status": "api",
-          "value": 2
+          "value": 3
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -9301,11 +9297,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/firefly-iii-mcp/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:59:43.000Z",
+            "last_verified": "2026-10-27T09:28:29.000Z",
             "slug": "firefly-iii-mcp"
           }
         },
@@ -9370,10 +9366,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/etnperlong/firefly-iii-mcp",
           "status": "api",
-          "value": 23
+          "value": 24
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -9430,10 +9426,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/etnperlong/firefly-iii-mcp",
           "status": "api",
-          "value": 89
+          "value": 91
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -9464,11 +9460,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/open-seo/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:05:39.000Z",
+            "last_verified": "2026-10-27T09:34:27.000Z",
             "slug": "open-seo"
           }
         },
@@ -9549,10 +9545,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/every-app/open-seo",
           "status": "api",
-          "value": 3275
+          "value": 3459
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -9573,10 +9569,10 @@
           "value": "TypeScript"
         },
         "latest_release_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/every-app/open-seo",
           "status": "api",
-          "value": "2026-10-19T20:16:37Z"
+          "value": "2026-10-26T23:51:52Z"
         },
         "license": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -9591,10 +9587,10 @@
           "value": "OpenSEO"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/every-app/open-seo",
           "status": "api",
-          "value": "2026-10-20T06:48:09Z"
+          "value": "2026-10-26T23:51:52Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -9615,10 +9611,10 @@
           "value": "Analytics"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/every-app/open-seo",
           "status": "api",
-          "value": 24318
+          "value": 25340
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -9718,10 +9714,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/fanchenggang/davflare",
           "status": "api",
-          "value": 60
+          "value": 62
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -9760,10 +9756,10 @@
           "value": "Davflare"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/fanchenggang/davflare",
           "status": "api",
-          "value": "2026-10-20T01:56:54Z"
+          "value": "2026-10-26T08:59:06Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -9781,10 +9777,10 @@
           "value": "Files, images and sharing"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/fanchenggang/davflare",
           "status": "api",
-          "value": 95
+          "value": 100
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -9815,11 +9811,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/screendrop/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:09:03.000Z",
+            "last_verified": "2026-10-27T09:37:18.000Z",
             "slug": "screendrop"
           }
         },
@@ -9888,10 +9884,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/fayazara/screendrop",
           "status": "api",
-          "value": 117
+          "value": 129
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -9912,10 +9908,10 @@
           "value": "Swift"
         },
         "latest_release_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/fayazara/screendrop",
           "status": "api",
-          "value": "2026-10-14T06:08:14Z"
+          "value": "2026-10-23T07:52:13Z"
         },
         "license": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -9930,10 +9926,10 @@
           "value": "Screendrop Cloud"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/fayazara/screendrop",
           "status": "api",
-          "value": "2026-10-14T06:08:17Z"
+          "value": "2026-10-23T14:02:56Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -9953,10 +9949,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/fayazara/screendrop",
           "status": "api",
-          "value": 2220
+          "value": 2325
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -9987,11 +9983,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/kiss-worker/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:01:57.000Z",
+            "last_verified": "2026-10-27T09:30:17.000Z",
             "slug": "kiss-worker"
           }
         },
@@ -10059,10 +10055,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/fishjar/kiss-worker",
           "status": "api",
-          "value": 127
+          "value": 130
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -10119,10 +10115,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/fishjar/kiss-worker",
           "status": "api",
-          "value": 230
+          "value": 235
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -10153,11 +10149,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/cloudflarebase/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:56:59.000Z",
+            "last_verified": "2026-10-27T09:25:35.000Z",
             "slug": "cloudflarebase"
           }
         },
@@ -10300,10 +10296,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/frostbase-dev/frostbase",
           "status": "api",
-          "value": 240
+          "value": 241
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -10336,11 +10332,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/email-explorer/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:58:12.000Z",
+            "last_verified": "2026-10-27T09:26:58.000Z",
             "slug": "email-explorer"
           }
         },
@@ -10479,10 +10475,10 @@
           "value": "Email and inboxes"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/g4brym/email-explorer",
           "status": "api",
-          "value": 166
+          "value": 168
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -10516,11 +10512,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/r2-explorer/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:06:40.000Z",
+            "last_verified": "2026-10-27T09:35:21.000Z",
             "slug": "r2-explorer"
           }
         },
@@ -10591,10 +10587,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/g4brym/r2-explorer",
           "status": "api",
-          "value": 610
+          "value": 617
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -10654,10 +10650,10 @@
           "value": "Files, images and sharing"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/g4brym/r2-explorer",
           "status": "api",
-          "value": 653
+          "value": 656
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -10691,11 +10687,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/workers-firecrawl/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:11:54.000Z",
+            "last_verified": "2026-10-27T09:40:12.000Z",
             "slug": "workers-firecrawl"
           }
         },
@@ -10829,10 +10825,10 @@
           "value": "Developer tools"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/g4brym/workers-firecrawl",
           "status": "api",
-          "value": 65
+          "value": 66
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -11295,10 +11291,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/gmwalletapp/gmshop-edge",
           "status": "api",
-          "value": 37
+          "value": 39
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -11319,10 +11315,10 @@
           "value": "TypeScript"
         },
         "latest_release_at": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/gmwalletapp/gmshop-edge",
           "status": "api",
-          "value": "2026-09-29T13:56:26Z"
+          "value": "2026-10-25T18:46:23Z"
         },
         "license": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -11337,10 +11333,10 @@
           "value": "GMShop Edge"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/gmwalletapp/gmshop-edge",
           "status": "api",
-          "value": "2026-09-29T18:37:12Z"
+          "value": "2026-10-25T18:46:22Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -11360,10 +11356,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/gmwalletapp/gmshop-edge",
           "status": "api",
-          "value": 71
+          "value": 73
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -11396,11 +11392,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/exception-notify/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:58:45.000Z",
+            "last_verified": "2026-10-27T09:27:31.000Z",
             "slug": "exception-notify"
           }
         },
@@ -11561,11 +11557,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/ternssh/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:11:02.000Z",
+            "last_verified": "2026-10-26T09:40:05.000Z",
             "slug": "ternssh"
           }
         },
@@ -11679,10 +11675,10 @@
           "value": "ternssh"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/haradakashiwa/ternssh",
           "status": "api",
-          "value": "2026-10-20T05:56:04Z"
+          "value": "2026-10-21T07:28:19Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -11904,11 +11900,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/reminal/",
           "status": "claimed",
           "value": {
-            "last_verified": null,
+            "last_verified": "2026-10-27T09:35:58.000Z",
             "slug": "reminal"
           }
         },
@@ -11973,10 +11969,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/harshalgajjar/reminal",
           "status": "api",
-          "value": 9
+          "value": 10
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -11997,10 +11993,10 @@
           "value": "Go"
         },
         "latest_release_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/harshalgajjar/reminal",
           "status": "api",
-          "value": "2026-10-20T23:45:22Z"
+          "value": "2026-10-27T23:37:59Z"
         },
         "license": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -12015,10 +12011,10 @@
           "value": "Reminal"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/harshalgajjar/reminal",
           "status": "api",
-          "value": "2026-10-20T23:48:23Z"
+          "value": "2026-10-28T00:32:49Z"
         },
         "replaces": {
           "fetched_at": "2026-10-20T23:57:26.523Z",
@@ -12039,10 +12035,10 @@
           "value": "Remote access"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/harshalgajjar/reminal",
           "status": "api",
-          "value": 326
+          "value": 321
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-20T23:57:26.523Z",
@@ -12074,11 +12070,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/edgemetry/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:58:01.000Z",
+            "last_verified": "2026-10-27T09:26:35.000Z",
             "slug": "edgemetry"
           }
         },
@@ -12246,11 +12242,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/collection-down/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:56:48.000Z",
+            "last_verified": "2026-10-27T09:25:38.000Z",
             "slug": "collection-down"
           }
         },
@@ -12372,10 +12368,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/heartalborada-del/collection-down",
           "status": "api",
-          "value": 122
+          "value": 126
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -12406,11 +12402,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/webrtc-turn/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:11:52.000Z",
+            "last_verified": "2026-10-27T09:40:16.000Z",
             "slug": "webrtc-turn"
           }
         },
@@ -12471,10 +12467,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/heruoxin/webrtc_turn",
           "status": "api",
-          "value": 22
+          "value": 24
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -12531,10 +12527,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/heruoxin/webrtc_turn",
           "status": "api",
-          "value": 134
+          "value": 140
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -12651,10 +12647,10 @@
           "value": "TypeScript"
         },
         "latest_release_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/heyo-sh/heyo-docs",
           "status": "api",
-          "value": "2026-10-20T23:34:28Z"
+          "value": "2026-10-21T00:59:07Z"
         },
         "license": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -12669,10 +12665,10 @@
           "value": "Heyo Docs"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/heyo-sh/heyo-docs",
           "status": "api",
-          "value": "2026-10-20T23:53:13Z"
+          "value": "2026-10-27T11:07:39Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -12690,10 +12686,10 @@
           "value": "Blogs, CMS and docs"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/heyo-sh/heyo-docs",
           "status": "api",
-          "value": 143
+          "value": 141
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -12814,10 +12810,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/hieunc229/mailflare",
           "status": "api",
-          "value": 709
+          "value": 727
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -12856,10 +12852,10 @@
           "value": "MailFlare"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/hieunc229/mailflare",
           "status": "api",
-          "value": "2026-10-20T16:55:54Z"
+          "value": "2026-10-24T20:38:00Z"
         },
         "replaces": {
           "fetched_at": "2026-10-20T23:57:26.523Z",
@@ -12879,10 +12875,10 @@
           "value": "Email and inboxes"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/hieunc229/mailflare",
           "status": "api",
-          "value": 5109
+          "value": 5181
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-20T23:57:26.523Z",
@@ -12917,11 +12913,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/tempik/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:10:46.000Z",
+            "last_verified": "2026-10-27T09:39:03.000Z",
             "slug": "tempik"
           }
         },
@@ -12991,10 +12987,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/hirotomasato/tempik",
           "status": "api",
-          "value": 51
+          "value": 54
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -13056,10 +13052,10 @@
           "value": "Email and inboxes"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/hirotomasato/tempik",
           "status": "api",
-          "value": 113
+          "value": 114
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -13093,11 +13089,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/synch/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:10:38.000Z",
+            "last_verified": "2026-10-27T09:38:51.000Z",
             "slug": "synch"
           }
         },
@@ -13174,10 +13170,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/hjinco/synch",
           "status": "api",
-          "value": 38
+          "value": 39
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -13216,10 +13212,10 @@
           "value": "Synch"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/hjinco/synch",
           "status": "api",
-          "value": "2026-10-20T07:38:23Z"
+          "value": "2026-10-23T09:33:57Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -13239,10 +13235,10 @@
           "value": "Notes, knowledge and sync"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/hjinco/synch",
           "status": "api",
-          "value": 265
+          "value": 269
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -13274,11 +13270,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/usage-guard-collector/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:11:21.000Z",
+            "last_verified": "2026-10-27T09:39:39.000Z",
             "slug": "usage-guard-collector"
           }
         },
@@ -13389,10 +13385,10 @@
           "value": "usage-guard-collector"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/howardzlh/usage-guard-collector",
           "status": "api",
-          "value": "2026-10-20T08:53:36Z"
+          "value": "2026-10-27T09:22:04Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -13530,10 +13526,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/hqbase/hqbase",
           "status": "api",
-          "value": 37
+          "value": 38
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -13595,10 +13591,10 @@
           "value": "Email and inboxes"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/hqbase/hqbase",
           "status": "api",
-          "value": 349
+          "value": 350
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-20T23:57:26.523Z",
@@ -13633,11 +13629,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/cf-server-monitor/",
           "status": "claimed",
           "value": {
-            "last_verified": null,
+            "last_verified": "2026-10-27T09:24:28.000Z",
             "slug": "cf-server-monitor"
           }
         },
@@ -13708,10 +13704,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/huilang-me/cf-server-monitor",
           "status": "api",
-          "value": 2524
+          "value": 2709
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -13750,10 +13746,10 @@
           "value": "CF Server Monitor"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/huilang-me/cf-server-monitor",
           "status": "api",
-          "value": "2026-10-19T00:45:25Z"
+          "value": "2026-10-27T07:21:33Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -13773,10 +13769,10 @@
           "value": "Uptime and status pages"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/huilang-me/cf-server-monitor",
           "status": "api",
-          "value": 2589
+          "value": 2764
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -13876,10 +13872,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/i365dev/free4chat",
           "status": "api",
-          "value": 169
+          "value": 168
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -13900,10 +13896,10 @@
           "value": "TypeScript"
         },
         "latest_release_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/i365dev/free4chat",
           "status": "api",
-          "value": "2026-10-17T03:09:41Z"
+          "value": "2026-10-21T14:02:21Z"
         },
         "license": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -13918,10 +13914,10 @@
           "value": "Free4Chat"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/i365dev/free4chat",
           "status": "api",
-          "value": "2026-10-17T03:08:31Z"
+          "value": "2026-10-21T14:03:50Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -13939,10 +13935,10 @@
           "value": "Chat and realtime"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/i365dev/free4chat",
           "status": "api",
-          "value": 1222
+          "value": 1223
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -14142,11 +14138,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/openshortlink/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:05:34.000Z",
+            "last_verified": "2026-10-27T09:33:58.000Z",
             "slug": "openshortlink"
           }
         },
@@ -14287,10 +14283,10 @@
           "value": "Link shorteners"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/idhamsy/openshortlink",
           "status": "api",
-          "value": 110
+          "value": 113
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -14324,11 +14320,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/freemail/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:00:04.000Z",
+            "last_verified": "2026-10-27T09:28:44.000Z",
             "slug": "freemail"
           }
         },
@@ -14401,10 +14397,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/idinging/freemail",
           "status": "api",
-          "value": 1070
+          "value": 1072
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -14467,10 +14463,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/idinging/freemail",
           "status": "api",
-          "value": 1619
+          "value": 1618
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -14503,11 +14499,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/renewhelper/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:07:37.000Z",
+            "last_verified": "2026-10-27T09:35:57.000Z",
             "slug": "renewhelper"
           }
         },
@@ -14575,10 +14571,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/ieax/renewhelper",
           "status": "api",
-          "value": 244
+          "value": 247
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -14640,10 +14636,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/ieax/renewhelper",
           "status": "api",
-          "value": 398
+          "value": 400
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -14839,11 +14835,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/screencapture-live/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:09:39.000Z",
+            "last_verified": "2026-10-27T09:37:59.000Z",
             "slug": "screencapture-live"
           }
         },
@@ -14908,10 +14904,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/itschip/screencapture",
           "status": "api",
-          "value": 50
+          "value": 51
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -14968,10 +14964,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/itschip/screencapture",
           "status": "api",
-          "value": 165
+          "value": 168
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -15002,11 +14998,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/isupmap/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:01:57.000Z",
+            "last_verified": "2026-10-27T09:30:25.000Z",
             "slug": "isupmap"
           }
         },
@@ -15185,11 +15181,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/jant/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:02:04.000Z",
+            "last_verified": "2026-10-27T09:30:39.000Z",
             "slug": "jant"
           }
         },
@@ -15258,10 +15254,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/jant-me/jant",
           "status": "api",
-          "value": 16
+          "value": 18
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -15300,10 +15296,10 @@
           "value": "Jant"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/jant-me/jant",
           "status": "api",
-          "value": "2026-10-20T03:22:37Z"
+          "value": "2026-10-27T19:03:48Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -15323,10 +15319,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/jant-me/jant",
           "status": "api",
-          "value": 79
+          "value": 86
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -15357,11 +15353,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/token-monitor/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:11:01.000Z",
+            "last_verified": "2026-10-27T09:39:18.000Z",
             "slug": "token-monitor"
           }
         },
@@ -15414,10 +15410,10 @@
           ]
         },
         "description": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/javis603/token-monitor",
           "status": "api",
-          "value": "Local-first desktop widget for tracking token usage, costs, limits, and session activity across 46+ AI coding tools—including Claude Code, Codex, Cursor, OpenCode, OpenClaw, and more—with multi-device sync."
+          "value": "Local-first desktop widget for tracking token usage, costs, limits, and session activity across 47+ AI coding tools—including Claude Code, Codex, Cursor, OpenCode, OpenClaw, and more—with multi-device sync."
         },
         "external_dependencies": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -15426,10 +15422,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/javis603/token-monitor",
           "status": "api",
-          "value": 308
+          "value": 326
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -15450,10 +15446,10 @@
           "value": "JavaScript"
         },
         "latest_release_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/javis603/token-monitor",
           "status": "api",
-          "value": "2026-10-20T06:46:15Z"
+          "value": "2026-10-26T19:12:16Z"
         },
         "license": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -15468,10 +15464,10 @@
           "value": "Token Monitor Hub"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/javis603/token-monitor",
           "status": "api",
-          "value": "2026-10-20T22:17:27Z"
+          "value": "2026-10-27T22:57:15Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -15486,10 +15482,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/javis603/token-monitor",
           "status": "api",
-          "value": 3224
+          "value": 3408
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -15520,11 +15516,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/lastfm-recently-played/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-19T09:28:05.000Z",
+            "last_verified": "2026-10-27T09:30:51.000Z",
             "slug": "lastfm-recently-played"
           }
         },
@@ -15586,10 +15582,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/jeffreyca/lastfm-recently-played-readme",
           "status": "api",
-          "value": 28
+          "value": 27
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -15646,10 +15642,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/jeffreyca/lastfm-recently-played-readme",
           "status": "api",
-          "value": 180
+          "value": 182
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -15811,10 +15807,10 @@
           "value": "Notes, knowledge and sync"
         },
         "stars": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/jihe520/mindpocket",
           "status": "api",
-          "value": 351
+          "value": 352
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -15849,11 +15845,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/jina-mcp/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:01:46.000Z",
+            "last_verified": "2026-10-27T09:30:17.000Z",
             "slug": "jina-mcp"
           }
         },
@@ -15915,10 +15911,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/jina-ai/mcp",
           "status": "api",
-          "value": 94
+          "value": 96
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -15975,10 +15971,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/jina-ai/mcp",
           "status": "api",
-          "value": 886
+          "value": 896
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -16172,11 +16168,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/sharehtml/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:09:22.000Z",
+            "last_verified": "2026-10-27T09:37:32.000Z",
             "slug": "sharehtml"
           }
         },
@@ -16479,10 +16475,10 @@
           "value": "Developer tools"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/jonesphillip/weft",
           "status": "api",
-          "value": 522
+          "value": 524
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -16513,11 +16509,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/yaos/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:12:15.000Z",
+            "last_verified": "2026-10-27T09:40:31.000Z",
             "slug": "yaos"
           }
         },
@@ -16587,10 +16583,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/kavinsood/yaos",
           "status": "api",
-          "value": 98
+          "value": 100
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -16629,10 +16625,10 @@
           "value": "YAOS"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/kavinsood/yaos",
           "status": "api",
-          "value": "2026-10-08T20:16:51Z"
+          "value": "2026-10-23T06:56:12Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -16652,10 +16648,10 @@
           "value": "Notes, knowledge and sync"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/kavinsood/yaos",
           "status": "api",
-          "value": 1061
+          "value": 1068
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -16687,11 +16683,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/garrul/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:00:48.000Z",
+            "last_verified": "2026-10-27T09:29:31.000Z",
             "slug": "garrul"
           }
         },
@@ -16792,10 +16788,10 @@
           "value": "TypeScript"
         },
         "latest_release_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/kingpin/garrul",
           "status": "api",
-          "value": "2026-10-19T16:16:53Z"
+          "value": "2026-10-21T16:09:04Z"
         },
         "license": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -16810,10 +16806,10 @@
           "value": "Garrul"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/kingpin/garrul",
           "status": "api",
-          "value": "2026-10-20T21:30:16Z"
+          "value": "2026-10-26T02:13:50Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -16835,10 +16831,10 @@
           "value": "Community and comments"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/kingpin/garrul",
           "status": "api",
-          "value": 51
+          "value": 52
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -16946,10 +16942,10 @@
           "value": []
         },
         "description": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/kody-hq/kody",
           "status": "api",
-          "value": "🐨 Your agents' cloud — the memory, keys, code, and automations your AI agent keeps, portable across every MCP host."
+          "value": "🐨 The cloud for your team's agents. Save your agent memory, credentials, code, and automations, portable across every agent with Kody."
         },
         "external_dependencies": {
           "fetched_at": "2026-10-20T23:57:26.523Z",
@@ -16958,10 +16954,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/kody-hq/kody",
           "status": "api",
-          "value": 81
+          "value": 83
         },
         "github_repo_id": {
           "fetched_at": "2026-10-20T23:57:26.523Z",
@@ -16982,10 +16978,10 @@
           "value": "TypeScript"
         },
         "latest_release_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/kody-hq/kody",
           "status": "api",
-          "value": "2026-10-20T10:03:12Z"
+          "value": "2026-10-27T10:06:08Z"
         },
         "license": {
           "fetched_at": "2026-10-20T23:57:26.523Z",
@@ -17000,10 +16996,10 @@
           "value": "Kody"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/kody-hq/kody",
           "status": "api",
-          "value": "2026-10-20T23:46:58Z"
+          "value": "2026-10-28T00:12:31Z"
         },
         "replaces": {
           "fetched_at": "2026-10-20T23:57:26.523Z",
@@ -17021,10 +17017,10 @@
           "value": "Developer tools"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/kody-hq/kody",
           "status": "api",
-          "value": 831
+          "value": 863
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-20T23:57:26.523Z",
@@ -17061,11 +17057,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/dispoflare/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:57:30.000Z",
+            "last_verified": "2026-10-27T09:26:07.000Z",
             "slug": "dispoflare"
           }
         },
@@ -17179,10 +17175,10 @@
           "value": "Dispoflare"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/leocolomb/dispoflare",
           "status": "api",
-          "value": "2026-10-20T13:18:25Z"
+          "value": "2026-10-27T22:14:57Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -17202,10 +17198,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/leocolomb/dispoflare",
           "status": "api",
-          "value": 108
+          "value": 109
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -17306,10 +17302,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/ling-drag0n/cloudpaste",
           "status": "api",
-          "value": 1805
+          "value": 1804
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -17369,10 +17365,10 @@
           "value": "Files, images and sharing"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/ling-drag0n/cloudpaste",
           "status": "api",
-          "value": 2705
+          "value": 2715
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -17470,10 +17466,10 @@
           ]
         },
         "description": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/linkcraftstudio/feedlog",
           "status": "api",
-          "value": "Open-source feedback & roadmap tool — feedback boards, public roadmap, AI-assisted changelog. Self-host on Cloudflare Workers, Vercel, or Docker."
+          "value": "Open-source AI customer support for SaaS teams — AI agent, help center, shared inbox, and feedback-to-changelog loop in one self-hostable platform."
         },
         "external_dependencies": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -17482,10 +17478,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/linkcraftstudio/feedlog",
           "status": "api",
-          "value": 39
+          "value": 42
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -17524,10 +17520,10 @@
           "value": "Feedlog"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/linkcraftstudio/feedlog",
           "status": "api",
-          "value": "2026-10-20T08:35:28Z"
+          "value": "2026-10-27T10:17:42Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -17548,10 +17544,10 @@
           "value": "Business and operations"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/linkcraftstudio/feedlog",
           "status": "api",
-          "value": 182
+          "value": 190
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -17722,10 +17718,10 @@
           "value": "Developer tools"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/littledivy/durable-git",
           "status": "api",
-          "value": 265
+          "value": 269
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -17759,11 +17755,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/wx2md/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:11:58.000Z",
+            "last_verified": "2026-10-26T09:41:05.000Z",
             "slug": "wx2md"
           }
         },
@@ -17930,11 +17926,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/deepcrawl/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:57:27.000Z",
+            "last_verified": "2026-10-27T09:26:10.000Z",
             "slug": "deepcrawl"
           }
         },
@@ -18011,10 +18007,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/lumpinif/deepcrawl",
           "status": "api",
-          "value": 81
+          "value": 82
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -18076,10 +18072,10 @@
           "value": "Developer tools"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/lumpinif/deepcrawl",
           "status": "api",
-          "value": 689
+          "value": 692
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -18177,10 +18173,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/lyc8503/uptimeflare",
           "status": "api",
-          "value": 612
+          "value": 610
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -18219,10 +18215,10 @@
           "value": "UptimeFlare"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/lyc8503/uptimeflare",
           "status": "api",
-          "value": "2026-10-07T12:22:32Z"
+          "value": "2026-10-21T02:28:15Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -18240,10 +18236,10 @@
           "value": "Uptime and status pages"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/lyc8503/uptimeflare",
           "status": "api",
-          "value": 3887
+          "value": 3912
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -18348,10 +18344,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/maillab/cloud-mail",
           "status": "api",
-          "value": 22609
+          "value": 22836
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -18360,10 +18356,10 @@
           "value": 971999086
         },
         "homepage": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/maillab/cloud-mail",
           "status": "api",
-          "value": "https://skymail.ink"
+          "value": "https://docs.skymail.ink"
         },
         "language": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -18372,10 +18368,10 @@
           "value": "JavaScript"
         },
         "latest_release_at": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/maillab/cloud-mail",
           "status": "api",
-          "value": "2026-09-04T22:59:05Z"
+          "value": "2026-10-23T07:23:07Z"
         },
         "license": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -18390,10 +18386,10 @@
           "value": "Cloud Mail"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/maillab/cloud-mail",
           "status": "api",
-          "value": "2026-10-20T18:28:05Z"
+          "value": "2026-10-25T18:37:03Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -18411,10 +18407,10 @@
           "value": "Email and inboxes"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/maillab/cloud-mail",
           "status": "api",
-          "value": 14860
+          "value": 14981
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -18622,11 +18618,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/auto-reaction-bot/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:54:37.000Z",
+            "last_verified": null,
             "slug": "auto-reaction-bot"
           }
         },
@@ -18688,10 +18684,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/malith-rukshan/auto-reaction-bot",
           "status": "api",
-          "value": 205
+          "value": 207
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -18730,10 +18726,10 @@
           "value": "Auto Reaction Bot"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/malith-rukshan/auto-reaction-bot",
           "status": "api",
-          "value": "2026-06-13T17:13:44Z"
+          "value": "2026-10-25T16:57:29Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -18748,10 +18744,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/malith-rukshan/auto-reaction-bot",
           "status": "api",
-          "value": 121
+          "value": 122
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -18782,11 +18778,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/imgbed/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:01:15.000Z",
+            "last_verified": null,
             "slug": "imgbed"
           }
         },
@@ -18859,10 +18855,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/marseventh/cloudflare-imgbed",
           "status": "api",
-          "value": 8610
+          "value": 8684
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -18883,10 +18879,10 @@
           "value": "JavaScript"
         },
         "latest_release_at": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/marseventh/cloudflare-imgbed",
           "status": "api",
-          "value": "2026-09-28T02:02:39Z"
+          "value": "2026-10-25T14:07:54Z"
         },
         "license": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -18901,10 +18897,10 @@
           "value": "Cloudflare ImgBed"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/marseventh/cloudflare-imgbed",
           "status": "api",
-          "value": "2026-10-15T08:07:01Z"
+          "value": "2026-10-25T16:02:56Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -18924,10 +18920,10 @@
           "value": "Files, images and sharing"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/marseventh/cloudflare-imgbed",
           "status": "api",
-          "value": 6743
+          "value": 6802
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -18959,11 +18955,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/md-page/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:03:21.000Z",
+            "last_verified": "2026-10-27T09:31:43.000Z",
             "slug": "md-page"
           }
         },
@@ -19137,11 +19133,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/veet/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:11:38.000Z",
+            "last_verified": "2026-10-27T09:39:55.000Z",
             "slug": "veet"
           }
         },
@@ -19310,11 +19306,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/cut/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:57:19.000Z",
+            "last_verified": "2026-10-27T09:25:56.000Z",
             "slug": "cut"
           }
         },
@@ -19480,11 +19476,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/sink/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:10:04.000Z",
+            "last_verified": "2026-10-27T09:38:04.000Z",
             "slug": "sink"
           }
         },
@@ -19563,10 +19559,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/miantiao-me/sink",
           "status": "api",
-          "value": 5350
+          "value": 5358
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -19605,10 +19601,10 @@
           "value": "Sink"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/miantiao-me/sink",
           "status": "api",
-          "value": "2026-09-27T04:13:04Z"
+          "value": "2026-10-27T06:01:00Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -19628,10 +19624,10 @@
           "value": "Link shorteners"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/miantiao-me/sink",
           "status": "api",
-          "value": 7226
+          "value": 7242
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -19665,11 +19661,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/omnimail/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:05:54.000Z",
+            "last_verified": "2026-10-27T09:33:52.000Z",
             "slug": "omnimail"
           }
         },
@@ -19751,10 +19747,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/mibgb65-cloud/omnimail",
           "status": "api",
-          "value": 214
+          "value": 223
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -19816,10 +19812,10 @@
           "value": "Email and inboxes"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/mibgb65-cloud/omnimail",
           "status": "api",
-          "value": 257
+          "value": 266
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -19853,11 +19849,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/microfeed/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:04:06.000Z",
+            "last_verified": "2026-10-27T09:32:19.000Z",
             "slug": "microfeed"
           }
         },
@@ -19931,10 +19927,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/microfeed/microfeed",
           "status": "api",
-          "value": 1430
+          "value": 1431
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -19996,10 +19992,10 @@
           "value": "Blogs, CMS and docs"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/microfeed/microfeed",
           "status": "api",
-          "value": 4116
+          "value": 4123
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -20031,11 +20027,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/resolvehq/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:08:28.000Z",
+            "last_verified": "2026-10-27T09:36:47.000Z",
             "slug": "resolvehq"
           }
         },
@@ -20156,10 +20152,10 @@
           "value": "ResolveHQ"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/mirza-rizvi/resolvehq",
           "status": "api",
-          "value": "2026-10-19T05:33:14Z"
+          "value": "2026-10-21T17:14:19Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -20180,10 +20176,10 @@
           "value": "Business and operations"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/mirza-rizvi/resolvehq",
           "status": "api",
-          "value": 206
+          "value": 208
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -20220,11 +20216,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/mailclaw/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:02:47.000Z",
+            "last_verified": "2026-10-27T09:31:24.000Z",
             "slug": "mailclaw"
           }
         },
@@ -20399,11 +20395,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/ni-mail/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:04:00.000Z",
+            "last_verified": "2026-10-27T09:32:32.000Z",
             "slug": "ni-mail"
           }
         },
@@ -20732,11 +20728,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/bookshelf/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:55:24.000Z",
+            "last_verified": "2026-10-27T09:23:58.000Z",
             "slug": "bookshelf"
           }
         },
@@ -20903,11 +20899,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/cloudssh/",
           "status": "claimed",
           "value": {
-            "last_verified": null,
+            "last_verified": "2026-10-27T09:25:25.000Z",
             "slug": "cloudssh"
           }
         },
@@ -20973,10 +20969,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/newbietan/cloudssh",
           "status": "api",
-          "value": 420
+          "value": 439
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -21015,10 +21011,10 @@
           "value": "CloudSSH"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/newbietan/cloudssh",
           "status": "api",
-          "value": "2026-10-20T13:01:07Z"
+          "value": "2026-10-26T10:51:16Z"
         },
         "replaces": {
           "fetched_at": "2026-10-20T23:57:26.523Z",
@@ -21038,10 +21034,10 @@
           "value": "Remote access"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/newbietan/cloudssh",
           "status": "api",
-          "value": 428
+          "value": 446
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-20T23:57:26.523Z",
@@ -21236,11 +21232,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/binthere/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:54:47.000Z",
+            "last_verified": "2026-10-27T09:23:33.000Z",
             "slug": "binthere"
           }
         },
@@ -21309,10 +21305,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/nxfu/binthere",
           "status": "api",
-          "value": 41
+          "value": 43
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -21375,10 +21371,10 @@
           "value": "Files, images and sharing"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/nxfu/binthere",
           "status": "api",
-          "value": 271
+          "value": 275
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -21410,11 +21406,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/shrtnr/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:09:46.000Z",
+            "last_verified": "2026-10-27T09:38:06.000Z",
             "slug": "shrtnr"
           }
         },
@@ -21549,10 +21545,10 @@
           "value": "Link shorteners"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/oddbit/shrtnr",
           "status": "api",
-          "value": 32
+          "value": 33
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -21655,10 +21651,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/oiov/vmail",
           "status": "api",
-          "value": 395
+          "value": 394
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -21718,10 +21714,10 @@
           "value": "Email and inboxes"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/oiov/vmail",
           "status": "api",
-          "value": 1488
+          "value": 1495
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -21752,11 +21748,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/fxtiktok/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:59:59.000Z",
+            "last_verified": "2026-10-27T09:28:28.000Z",
             "slug": "fxtiktok"
           }
         },
@@ -21818,10 +21814,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/okdargy/fxtiktok",
           "status": "api",
-          "value": 24
+          "value": 22
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -21878,10 +21874,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/okdargy/fxtiktok",
           "status": "api",
-          "value": 299
+          "value": 302
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -21982,10 +21978,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/one-ea/monolith",
           "status": "api",
-          "value": 73
+          "value": 72
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -22024,10 +22020,10 @@
           "value": "Monolith"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/one-ea/monolith",
           "status": "api",
-          "value": "2026-10-06T09:55:23Z"
+          "value": "2026-10-21T05:27:34Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -22045,10 +22041,10 @@
           "value": "Blogs, CMS and docs"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/one-ea/monolith",
           "status": "api",
-          "value": 343
+          "value": 345
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -22079,11 +22075,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/clist/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:56:10.000Z",
+            "last_verified": null,
             "slug": "clist"
           }
         },
@@ -22148,10 +22144,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/ooyyh/cloudflare-clist",
           "status": "api",
-          "value": 79
+          "value": 82
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -22190,10 +22186,10 @@
           "value": "Cloudflare Clist"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/ooyyh/cloudflare-clist",
           "status": "api",
-          "value": "2026-10-14T09:58:44Z"
+          "value": "2026-10-26T09:39:08Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -22213,10 +22209,10 @@
           "value": "Files, images and sharing"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/ooyyh/cloudflare-clist",
           "status": "api",
-          "value": 423
+          "value": 430
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -22308,10 +22304,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/openrin/rin",
           "status": "api",
-          "value": 2543
+          "value": 2550
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -22371,10 +22367,10 @@
           "value": "Blogs, CMS and docs"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/openrin/rin",
           "status": "api",
-          "value": 3113
+          "value": 3121
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -22490,10 +22486,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/openstory-so/openstory",
           "status": "api",
-          "value": 106
+          "value": 109
         },
         "github_repo_id": {
           "fetched_at": "2026-10-20T23:57:26.523Z",
@@ -22514,10 +22510,10 @@
           "value": "TypeScript"
         },
         "latest_release_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/openstory-so/openstory",
           "status": "api",
-          "value": "2026-10-19T10:14:50Z"
+          "value": "2026-10-24T03:01:42Z"
         },
         "license": {
           "fetched_at": "2026-10-20T23:57:26.523Z",
@@ -22532,10 +22528,10 @@
           "value": "OpenStory"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/openstory-so/openstory",
           "status": "api",
-          "value": "2026-10-20T23:36:13Z"
+          "value": "2026-10-27T23:42:15Z"
         },
         "replaces": {
           "fetched_at": "2026-10-20T23:57:26.523Z",
@@ -22550,10 +22546,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/openstory-so/openstory",
           "status": "api",
-          "value": 683
+          "value": 689
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-20T23:57:26.523Z",
@@ -22659,10 +22655,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/oustn/cloudflare-drop",
           "status": "api",
-          "value": 59
+          "value": 58
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -22722,10 +22718,10 @@
           "value": "Files, images and sharing"
         },
         "stars": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/oustn/cloudflare-drop",
           "status": "api",
-          "value": 65
+          "value": 64
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -22760,11 +22756,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/scrapedown/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:08:23.000Z",
+            "last_verified": "2026-10-27T09:36:32.000Z",
             "slug": "scrapedown"
           }
         },
@@ -22891,10 +22887,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/ozanvos/scrapedown",
           "status": "api",
-          "value": 133
+          "value": 134
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -23091,11 +23087,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/statusbeam/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:10:40.000Z",
+            "last_verified": "2026-10-27T09:38:54.000Z",
             "slug": "statusbeam"
           }
         },
@@ -23210,10 +23206,10 @@
           "value": "StatusBeam"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/pleaseai/statusbeam",
           "status": "api",
-          "value": "2026-10-20T12:56:17Z"
+          "value": "2026-10-27T22:53:52Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -23269,11 +23265,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/glance/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:01:10.000Z",
+            "last_verified": "2026-10-27T09:29:36.000Z",
             "slug": "glance"
           }
         },
@@ -23351,10 +23347,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/plivo-labs/glance",
           "status": "api",
-          "value": 8
+          "value": 9
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -23416,10 +23412,10 @@
           "value": "Developer tools"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/plivo-labs/glance",
           "status": "api",
-          "value": 50
+          "value": 52
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -23453,11 +23449,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/nabiz/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:04:05.000Z",
+            "last_verified": "2026-10-27T09:32:28.000Z",
             "slug": "nabiz"
           }
         },
@@ -23591,10 +23587,10 @@
           "value": "Uptime and status pages"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/productdevbook/nabiz",
           "status": "api",
-          "value": 38
+          "value": 39
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -23626,11 +23622,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/openai-gemini/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:05:16.000Z",
+            "last_verified": "2026-10-27T09:33:29.000Z",
             "slug": "openai-gemini"
           }
         },
@@ -23692,10 +23688,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/publicaffairs/openai-gemini",
           "status": "api",
-          "value": 5804
+          "value": 5792
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -23752,10 +23748,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/publicaffairs/openai-gemini",
           "status": "api",
-          "value": 3668
+          "value": 3667
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -23786,11 +23782,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/second-brain-cloudflare/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:09:08.000Z",
+            "last_verified": "2026-10-27T09:37:18.000Z",
             "slug": "second-brain-cloudflare"
           }
         },
@@ -23867,10 +23863,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/rahilp/second-brain-cloudflare",
           "status": "api",
-          "value": 120
+          "value": 124
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -23932,10 +23928,10 @@
           "value": "Notes, knowledge and sync"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/rahilp/second-brain-cloudflare",
           "status": "api",
-          "value": 815
+          "value": 834
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -23969,11 +23965,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/insightflare/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:01:47.000Z",
+            "last_verified": "2026-10-27T09:29:57.000Z",
             "slug": "insightflare"
           }
         },
@@ -24050,10 +24046,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/ravelloh/insightflare",
           "status": "api",
-          "value": 17
+          "value": 16
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -24092,10 +24088,10 @@
           "value": "InsightFlare"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/ravelloh/insightflare",
           "status": "api",
-          "value": "2026-10-19T01:13:25Z"
+          "value": "2026-10-27T08:16:49Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -24115,10 +24111,10 @@
           "value": "Analytics"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/ravelloh/insightflare",
           "status": "api",
-          "value": 640
+          "value": 696
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -24152,11 +24148,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/flaremo/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:59:36.000Z",
+            "last_verified": "2026-10-27T09:28:24.000Z",
             "slug": "flaremo"
           }
         },
@@ -24236,10 +24232,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/realchendahuang/flaremo",
           "status": "api",
-          "value": 93
+          "value": 97
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -24260,10 +24256,10 @@
           "value": "TypeScript"
         },
         "latest_release_at": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/realchendahuang/flaremo",
           "status": "api",
-          "value": "2026-10-10T06:42:06Z"
+          "value": "2026-10-23T10:16:34Z"
         },
         "license": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -24278,10 +24274,10 @@
           "value": "FlareMo"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/realchendahuang/flaremo",
           "status": "api",
-          "value": "2026-10-13T07:14:07Z"
+          "value": "2026-10-24T01:02:44Z"
         },
         "replaces": {
           "fetched_at": "2026-10-09T21:55:47.099Z",
@@ -24302,10 +24298,10 @@
           "value": "Notes, knowledge and sync"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/realchendahuang/flaremo",
           "status": "api",
-          "value": 317
+          "value": 327
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -24505,11 +24501,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/browser-relay/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:55:19.000Z",
+            "last_verified": "2026-10-27T09:23:48.000Z",
             "slug": "browser-relay"
           }
         },
@@ -24634,10 +24630,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/reliefeai/browser-relay",
           "status": "api",
-          "value": 135
+          "value": 137
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -24803,10 +24799,10 @@
           "value": "Blogs, CMS and docs"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/remorses/holocron",
           "status": "api",
-          "value": 804
+          "value": 805
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -24837,11 +24833,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/talorys/",
           "status": "claimed",
           "value": {
-            "last_verified": null,
+            "last_verified": "2026-10-27T09:38:41.000Z",
             "slug": "talorys"
           }
         },
@@ -24910,10 +24906,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/rociiu/talorys",
           "status": "api",
-          "value": 116
+          "value": 126
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -24952,10 +24948,10 @@
           "value": "Talorys"
         },
         "pushed_at": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/rociiu/talorys",
           "status": "api",
-          "value": "2026-10-20T22:50:43Z"
+          "value": "2026-10-27T01:38:06Z"
         },
         "replaces": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -24970,10 +24966,10 @@
           "value": null
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/rociiu/talorys",
           "status": "api",
-          "value": 1358
+          "value": 1396
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -25006,11 +25002,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/analytics-explorer/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:54:03.000Z",
+            "last_verified": "2026-10-27T09:22:36.000Z",
             "slug": "analytics-explorer"
           }
         },
@@ -25239,10 +25235,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/roimdev/roim-picx",
           "status": "api",
-          "value": 317
+          "value": 316
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -25302,10 +25298,10 @@
           "value": "Files, images and sharing"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/roimdev/roim-picx",
           "status": "api",
-          "value": 299
+          "value": 300
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -25336,11 +25332,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/llm-api-proxy/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:02:51.000Z",
+            "last_verified": "2026-10-27T09:31:10.000Z",
             "slug": "llm-api-proxy"
           }
         },
@@ -25402,10 +25398,10 @@
           "value": null
         },
         "forks": {
-          "fetched_at": "2026-10-14T00:21:54.518Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/rxliuli/llm-api-proxy",
           "status": "api",
-          "value": 68
+          "value": 69
         },
         "github_repo_id": {
           "fetched_at": "2026-10-14T00:21:54.518Z",
@@ -25501,11 +25497,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/kukuroo/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:02:09.000Z",
+            "last_verified": "2026-10-27T09:30:19.000Z",
             "slug": "kukuroo"
           }
         },
@@ -25811,10 +25807,10 @@
           "value": "Business and operations"
         },
         "stars": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://api.github.com/repos/santmun/forja",
           "status": "api",
-          "value": 129
+          "value": 132
         },
         "workers_paid_required": {
           "fetched_at": "2026-10-09T21:55:45.230Z",
@@ -25845,11 +25841,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/cftgsx/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:55:57.000Z",
+            "last_verified": "2026-10-27T09:24:28.000Z",
             "slug": "cftgsx"
           }
         },
@@ -26012,11 +26008,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/telegram-push/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:10:18.000Z",
+            "last_verified": "2026-10-27T09:38:40.000Z",
             "slug": "telegram-push"
           }
         },
@@ -26179,11 +26175,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/semanticsearch/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:09:07.000Z",
+            "last_verified": "2026-10-27T09:37:35.000Z",
             "slug": "semanticsearch"
           }
         },
@@ -26349,11 +26345,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/pastebin-worker/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:05:41.000Z",
+            "last_verified": null,
             "slug": "pastebin-worker"
           }
         },
@@ -26370,21 +26366,23 @@
           "value": null
         },
         "cloudflare_features": {
-          "fetched_at": "2026-10-09T21:55:45.230Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://github.com/sharzyl/pastebin-worker/blob/HEAD/wrangler.toml",
           "status": "verified",
           "value": [
             "cron",
+            "durable_objects",
             "kv",
             "r2"
           ]
         },
         "cloudflare_features_claimed": {
-          "fetched_at": "2026-10-09T21:55:45.230Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/pastebin-worker/",
           "status": "claimed",
           "value": [
             "cron",
+            "durable_objects",
             "kv",
             "r2"
           ]
@@ -26525,11 +26523,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/elm-chat/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:58:03.000Z",
+            "last_verified": "2026-10-27T09:26:46.000Z",
             "slug": "elm-chat"
           }
         },
@@ -26867,11 +26865,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/inkstone/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:01:29.000Z",
+            "last_verified": "2026-10-27T09:29:37.000Z",
             "slug": "inkstone"
           }
         },
@@ -27053,11 +27051,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/nodecrypt/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:04:14.000Z",
+            "last_verified": "2026-10-27T09:32:47.000Z",
             "slug": "nodecrypt"
           }
         },
@@ -27222,11 +27220,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/nodewarden/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:04:51.000Z",
+            "last_verified": "2026-10-27T09:32:58.000Z",
             "slug": "nodewarden"
           }
         },
@@ -28234,11 +28232,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/sveltia-cms-auth/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:11:16.000Z",
+            "last_verified": null,
             "slug": "sveltia-cms-auth"
           }
         },
@@ -28394,11 +28392,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/projektor/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:07:02.000Z",
+            "last_verified": "2026-10-27T09:35:08.000Z",
             "slug": "projektor"
           }
         },
@@ -28579,11 +28577,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/private-notes/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:06:23.000Z",
+            "last_verified": "2026-10-27T09:34:45.000Z",
             "slug": "private-notes"
           }
         },
@@ -28752,11 +28750,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/888wiki/",
           "status": "claimed",
           "value": {
-            "last_verified": null,
+            "last_verified": "2026-10-27T09:23:07.000Z",
             "slug": "888wiki"
           }
         },
@@ -28932,11 +28930,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/chatgpt-telegram-workers/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:56:13.000Z",
+            "last_verified": "2026-10-27T09:24:28.000Z",
             "slug": "chatgpt-telegram-workers"
           }
         },
@@ -29098,11 +29096,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/mail2telegram/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:02:48.000Z",
+            "last_verified": "2026-10-27T09:31:04.000Z",
             "slug": "mail2telegram"
           }
         },
@@ -29448,11 +29446,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/hashpay/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:00:54.000Z",
+            "last_verified": null,
             "slug": "hashpay"
           }
         },
@@ -29621,11 +29619,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/edgeever/",
           "status": "claimed",
           "value": {
-            "last_verified": null,
+            "last_verified": "2026-10-27T09:27:14.000Z",
             "slug": "edgeever"
           }
         },
@@ -29960,11 +29958,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/auth-inbox/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:54:38.000Z",
+            "last_verified": "2026-10-27T09:23:15.000Z",
             "slug": "auth-inbox"
           }
         },
@@ -30300,11 +30298,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/fodi/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:59:13.000Z",
+            "last_verified": "2026-10-27T09:27:46.000Z",
             "slug": "fodi"
           }
         },
@@ -30466,11 +30464,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/vps-jsq/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:11:43.000Z",
+            "last_verified": "2026-10-27T09:40:10.000Z",
             "slug": "vps-jsq"
           }
         },
@@ -30626,11 +30624,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/cloudmark/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:56:50.000Z",
+            "last_verified": "2026-10-27T09:25:14.000Z",
             "slug": "cloudmark"
           }
         },
@@ -30797,11 +30795,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/unifi-ddns/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:11:10.000Z",
+            "last_verified": "2026-10-27T09:39:27.000Z",
             "slug": "unifi-ddns"
           }
         },
@@ -30962,11 +30960,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/2fa/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:54:00.000Z",
+            "last_verified": "2026-10-27T09:22:44.000Z",
             "slug": "2fa"
           }
         },
@@ -31137,11 +31135,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/xiadd-pastebin/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:12:03.000Z",
+            "last_verified": "2026-10-27T09:40:28.000Z",
             "slug": "xiadd-pastebin"
           }
         },
@@ -31310,11 +31308,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/cap-worker/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:55:26.000Z",
+            "last_verified": "2026-10-27T09:23:51.000Z",
             "slug": "cap-worker"
           }
         },
@@ -31480,11 +31478,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/rssworker/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:08:06.000Z",
+            "last_verified": "2026-10-27T09:36:35.000Z",
             "slug": "rssworker"
           }
         },
@@ -31810,11 +31808,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/cattopic/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T08:55:39.000Z",
+            "last_verified": "2026-10-27T09:24:24.000Z",
             "slug": "cattopic"
           }
         },
@@ -31991,11 +31989,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/relay/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:07:29.000Z",
+            "last_verified": "2026-10-27T09:35:51.000Z",
             "slug": "relay"
           }
         },
@@ -32164,11 +32162,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/one-ip/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:04:39.000Z",
+            "last_verified": "2026-10-27T09:33:07.000Z",
             "slug": "one-ip"
           }
         },
@@ -32330,11 +32328,11 @@
       "diffs": [],
       "fields": {
         "appflare": {
-          "fetched_at": "2026-10-20T23:57:26.523Z",
+          "fetched_at": "2026-10-28T00:33:47.757Z",
           "source": "https://appflare.dev/apps/renewlet/",
           "status": "claimed",
           "value": {
-            "last_verified": "2026-10-20T09:08:19.000Z",
+            "last_verified": "2026-10-27T09:36:48.000Z",
             "slug": "renewlet"
           }
         },

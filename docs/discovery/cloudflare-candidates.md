@@ -6,8 +6,8 @@
 状態の意味：verified＝プロジェクト自身の設定ファイルで確認／api＝GitHub API／claimed＝第三者の一覧の記載／unknown＝未確認（「非対応」ではない）
 
 - 候補 191件（新規 190件・掲載済み 1件）
-- 審査待ち 174件・公開できない問題あり 16件・掲載済みで差分あり 0件
-- 設定ファイルで機能を確認できた 123件・GitHub API で補完 150件
+- 審査待ち 175件・公開できない問題あり 15件・掲載済みで差分あり 0件
+- 設定ファイルで機能を確認できた 122件・GitHub API で補完 150件
 
 ## 審査待ち（新規）
 
@@ -18,10 +18,11 @@
 | [r2-webdav](https://github.com/abersheeran/r2-webdav) | Apache-2.0（api） | r2（verified） | 不要 | — |
 | [Cloudbox](https://github.com/acoyfellow/cloudbox) | MIT（api） | d1, durable_objects, r2, workers_ai（verified） | 未確認 | — |
 | [Cloudshell](https://github.com/acoyfellow/cloudshell) | MIT（api） | d1, durable_objects, kv, r2, workers_ai（claimed） | 未確認 | — |
-| [turborepo-remote-cache-cloudflare](https://github.com/adirishi/turborepo-remote-cache-cloudflare) | MIT（api） | cron, r2（verified） | 不要 | — |
+| [turborepo-remote-cache-cloudflare](https://github.com/adirishi/turborepo-remote-cache-cloudflare) | MIT（api） | cron, kv, r2（claimed） | 不要 | — |
 | [CForum](https://github.com/adysec/cforum) | AGPL-3.0（api） | d1, r2（verified） | 未確認 | — |
 | [Skland Daily Attendance](https://github.com/aetherside/skland-daily-attendance) | MIT（claimed） | cron, kv（verified） | 不要 | — |
 | [hostc](https://github.com/akazwz/hostc) | Apache-2.0（api） | durable_objects（claimed） | 未確認 | — |
+| [smail](https://github.com/akazwz/smail) | MIT（api） | cron, d1, r2（claimed） | 未確認 | — |
 | [blobatar API](https://github.com/alain00/blobatar) | MIT（api） | —（unknown） | 不要 | cloudflare_bindings_unverified |
 | [cindermail](https://github.com/amandoti-win/cindermail) | MIT（api） | cron, d1（verified） | 未確認 | — |
 | [Larafeed](https://github.com/angristan/larafeed) | MIT（api） | cron, d1, kv, queues, workers_ai（verified） | 不要 | — |
@@ -152,7 +153,7 @@
 | [Forja](https://github.com/santmun/forja) | MIT（api） | cron, d1, durable_objects, r2, vectorize, workers_ai（verified） | 未確認 | — |
 | [cftgsx](https://github.com/scshirker/cftgsx) | MIT（claimed） | （verified） | 不要 | — |
 | [Semantic Search](https://github.com/semanticsearch-ai/semanticsearch) | Apache-2.0（claimed） | vectorize, workers_ai（verified） | 不要 | has_extra_requirements |
-| [Pastebin Worker](https://github.com/sharzyl/pastebin-worker) | MIT（claimed） | cron, kv, r2（verified） | 不要 | — |
+| [Pastebin Worker](https://github.com/sharzyl/pastebin-worker) | MIT（claimed） | cron, durable_objects, kv, r2（verified） | 不要 | — |
 | [elm-chat](https://github.com/shawnbure/elm-chat) | AGPL-3.0-only（claimed） | durable_objects（verified） | 不要 | — |
 | [traks](https://github.com/shivamanupadi/traks) | MIT（claimed） | analytics_engine, cron, d1, durable_objects, kv, pipelines, r2（claimed） | 未確認 | — |
 | [Inkstone](https://github.com/shuaiplus/inkstone) | LGPL-3.0-only（claimed） | cron, d1, durable_objects, kv, r2, workers_ai（verified） | 不要 | has_extra_requirements |
@@ -196,7 +197,6 @@
 
 | プロジェクト | ライセンス | Cloudflare の機能 | Workers Paid | 確認が必要な点 |
 |---|---|---|---|---|
-| [smail](https://github.com/akazwz/smail) | 未確認（unknown） | cron, d1, r2（claimed） | 未確認 | license_unknown |
 | [DictDeck](https://github.com/asutorufa/hujiang_dictionary) | 未確認（unknown） | cron, d1, workers_ai（verified） | 不要 | license_unknown, has_extra_requirements |
 | [Alle](https://github.com/bestruirui/alle) | 未確認（unknown） | d1, r2（verified） | 不要 | license_unknown, has_extra_requirements |
 | [Cloudflare Playwright MCP](https://github.com/cloudflare/playwright-mcp) | Apache-2.0（api） | browser_rendering, durable_objects（claimed） | 不要 | archived, has_extra_requirements |
