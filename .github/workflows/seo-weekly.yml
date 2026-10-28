@@ -1,0 +1,50 @@
+name: OSSALT SEO技術監査（週次）
+
+# 技術面の監査だけを行う（読み取り専用）。Search Consoleの数値は扱わない（公開リポジトリのartifactは誰でも取得できるため）。
+# 自動修正・自動PR・自動デプロイは行わない。結果は実行サマリーと、14日で消えるartifactで確認する。
+on:
+  schedule:
+    - cron: "17 21 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ossalt-seo-weekly
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run build
+      - name: 監査（静的）
+        run: |
+          mkdir -p reports/seo
+          node scripts/seo-audit.mjs --dir out --out reports/seo/audit.md
+          node scripts/seo-redirects-audit.mjs
+      - name: 監査（ブラウザ・重要24ページ）
+        run: node scripts/page-audit.mjs
+      - name: サマリー
+        run: |
+          {
+            echo "## OSSALT SEO技術監査"
+            echo
+            echo "測定条件は reports/seo/page-audit.md の冒頭を参照（ラボ値。実ユーザーの値ではない）。"
+            echo
+            head -12 reports/seo/page-audit.md
+          } >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: seo-audit
+          path: reports/seo/
+          retention-days: 14

@@ -1,4 +1,5 @@
 ---
+title: "Salesforceの代わりになるオープンソース{n}選｜自前で動かせるCRM【{year}年】"
 description: "Salesforceの代わりに自前で動かせるオープンソースのCRM。Frappe CRM・EspoCRM・SuiteCRM・Odooなどを、CRM専用か業務全体を扱うか、ライセンスの違いから比較します。"
 updated: "2026-09-26"
 intro: "Salesforceの代替は、顧客や商談の情報を自社サーバーで管理したい場合の選択肢です。利用者数に応じた課金から離れられる一方、Salesforceほどの作り込みやエコシステムは期待できません。どこまでの業務を載せるかを先に決めるのが大切です。"

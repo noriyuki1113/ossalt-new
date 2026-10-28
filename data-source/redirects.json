@@ -151,6 +151,13 @@
     "/tools/helpy/": "/alternatives/intercom/",
     "/tools/papercups/": "/alternatives/intercom/",
     "/tools/mailhog/": "/alternatives/mailtrap/",
-    "/tools/crater/": "/alternatives/misoca/"
+    "/tools/crater/": "/alternatives/misoca/",
+    "/ranking/": "/rankings/",
+    "/compare/outline-vs-confluence/": "/alternatives/confluence/",
+    "/compare/penpot-vs-figma/": "/alternatives/figma/",
+    "/compare/grafana-vs-datadog/": "/alternatives/datadog/",
+    "/compare/nextcloud-vs-google-drive/": "/alternatives/google-drive/",
+    "/compare/keycloak-vs-auth0/": "/alternatives/auth0/",
+    "/compare/mailhog-vs-mailpit/": "/tools/mailpit/"
   }
 }

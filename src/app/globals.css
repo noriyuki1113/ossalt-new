@@ -11,7 +11,7 @@
   --card: #ffffff;
   --ink: #12161a;
   --ink-2: #4e5860;
-  --ink-3: #7b858d;
+  --ink-3: #576168;
   --rule: #d3d7ce;
   --rule-strong: #b9bfb4;
 
@@ -19,9 +19,10 @@
   --indigo-soft: #e6ebf4;
   --shu: #d2452c;
   --shu-soft: #fbeae6;
+  --shu-ink: #b73a24;
   --midori: #2f6b4a;
   --midori-soft: #e6f0e9;
-  --yamabuki: #8a6a00;
+  --yamabuki: #7a5d00;
   --yamabuki-soft: #f7f0dc;
 
   /* 字 */
@@ -79,7 +80,7 @@ a {
 }
 
 a:hover {
-  color: var(--shu);
+  color: var(--shu-ink);
 }
 
 :focus-visible {
@@ -247,7 +248,7 @@ hr {
   font-size: 0.6875rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--shu);
+  color: var(--shu-ink);
   margin: 0 0 1.25rem;
 }
 
@@ -505,7 +506,7 @@ hr {
 .chip__n {
   font-family: var(--font-mono);
   font-size: 0.6875em;
-  opacity: 0.7;
+  opacity: 1;
   margin-left: 0.3em;
 }
 
@@ -593,7 +594,7 @@ hr {
 }
 
 .row__alt b {
-  color: var(--shu);
+  color: var(--shu-ink);
   font-weight: 500;
 }
 
@@ -811,7 +812,7 @@ hr {
 .sc--poor {
   border-color: color-mix(in srgb, var(--shu) 35%, var(--rule));
   background: var(--shu-soft);
-  color: var(--shu);
+  color: var(--shu-ink);
 }
 .sc--poor .sc__dot {
   background: var(--shu);

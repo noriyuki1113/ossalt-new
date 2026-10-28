@@ -1,0 +1,10 @@
+{
+  "_comment": "ブラウザ監査の対象（重要な25URL）。存在しないパスは警告して飛ばす。追加・削除は、このファイルだけで行う。",
+  "targets": [
+    "/", "/tools/", "/tools/gitea/", "/tools/plane/", "/tools/immich/", "/tools/supabase/", "/tools/zammad/",
+    "/alternatives/", "/alternatives/github/", "/alternatives/notion/", "/alternatives/zendesk/", "/alternatives/salesforce/", "/alternatives/hubspot/",
+    "/compare/", "/compare/ollama-vs-open-webui/", "/compare/borg-vs-restic/",
+    "/categories/", "/categories/note-docs/", "/rankings/", "/diagnosis/",
+    "/changes/", "/licenses/", "/blog/", "/submit/"
+  ]
+}

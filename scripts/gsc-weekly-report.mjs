@@ -14,7 +14,7 @@ const queryHeaders = ['top queries', 'top search queries', 'query', 'queries', '
 const norm = (s) => String(s ?? '').normalize('NFKC').toLowerCase().trim().replace(/[\s_-]+/g, '');
 const findColumn = (headers, aliases) => headers.findIndex((h) => aliases.some((a) => norm(h) === norm(a)));
 
-export function parseCsv(input) {
+export function parseCsv(input, { delimiter = ',' } = {}) {
   const s = String(input).replace(/^\uFEFF/, '');
   const rows = [];
   let row = [], cell = '', quoted = false;
@@ -23,7 +23,7 @@ export function parseCsv(input) {
     if (ch === '"') {
       if (quoted && s[i + 1] === '"') { cell += '"'; i++; }
       else quoted = !quoted;
-    } else if (ch === ',' && !quoted) {
+    } else if (ch === delimiter && !quoted) {
       row.push(cell); cell = '';
     } else if ((ch === '\r' || ch === '\n') && !quoted) {
       if (ch === '\r' && s[i + 1] === '\n') i++;

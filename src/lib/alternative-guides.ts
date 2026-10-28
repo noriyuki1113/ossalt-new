@@ -17,6 +17,8 @@ export type GuidePick = { tool: string; fit: string };
 
 export type AlternativeGuide = {
   slug: string;
+  /** 検索結果に出すtitle（任意）。{n}＝候補数、{year}＝年。無ければ自動生成のtitle */
+  title?: string;
   description: string;
   updated: string;
   intro: string;
@@ -42,6 +44,7 @@ function readAll(): Map<string, AlternativeGuide> {
     }
     map.set(slug, {
       slug,
+      title: data.title ? String(data.title) : undefined,
       description: String(data.description ?? ""),
       updated: String(data.updated ?? ""),
       intro: String(data.intro ?? ""),
