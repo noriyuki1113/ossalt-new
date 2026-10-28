@@ -28,7 +28,7 @@ concurrency:
 
 jobs:
   run:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     environment: autodev
     timeout-minutes: 90
     # 公開用ブランチ・main から起動した場合は動かさない（作業は autodev/* ブランチで行う）

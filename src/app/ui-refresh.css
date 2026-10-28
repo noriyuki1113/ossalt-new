@@ -818,3 +818,81 @@
   color: var(--ink-3);
   line-height: 1.6;
 }
+
+/* 解説の検証状態 */
+.vnote {
+  margin: 0 0 1rem;
+  font-size: 0.8125rem;
+  color: var(--ink-2);
+}
+.vnote p {
+  margin: 0 0 0.35rem;
+  line-height: 1.7;
+}
+.vnote__badge {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0.05rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  white-space: nowrap;
+}
+.vnote__badge--official { color: var(--midori); }
+.vnote__badge--hands-on { color: var(--indigo); }
+.vnote__badge--recheck { color: var(--yamabuki); }
+.vnote__badge--unverified { color: var(--ink-2); }
+.vnote__legend summary {
+  cursor: pointer;
+  color: var(--ink-3);
+}
+.vnote__legend ul {
+  margin: 0.4rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.35rem;
+}
+
+/* 詳細ページの「30秒で」要約 */
+.glance {
+  margin: 0 0 1.5rem;
+  padding: 1rem 1.1rem;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 0.6rem;
+}
+.glance__title {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.glance__what {
+  margin: 0 0 0.75rem;
+  line-height: 1.8;
+}
+.glance__cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 0.75rem 1.25rem;
+}
+.glance__h {
+  margin: 0 0 0.3rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--ink-2);
+}
+.glance__h--good { color: var(--midori); }
+.glance__h--not { color: var(--shu-ink); }
+.glance ul {
+  margin: 0 0 0.6rem;
+  padding-left: 1.1rem;
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+.glance__src {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--ink-3);
+}
