@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ForYouLink } from "@/components/for-you-link";
 import Link from "next/link";
+import { ToolGlance } from "@/components/tool-glance";
 import { VerificationNote } from "@/components/verification-note";
 import { Ja } from "@/components/ja";
 import { notFound } from "next/navigation";
@@ -191,6 +192,8 @@ export default async function ToolDetailPage({
                 {`・${tool.maintenance_notice.checked_at}確認）`}
               </p>
             )}
+
+            {guide?.glance && <ToolGlance name={tool.name} g={guide.glance} />}
 
             <KeyFacts tool={tool} stars={starContext(tool, getActiveTools())} categoryName={category?.nameJa} />
 
