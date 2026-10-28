@@ -10,11 +10,19 @@ import fs from "node:fs";
 import path from "node:path";
 import { formatAddToolsLine } from "./discovery/openalt.mjs";
 import { decisionKey } from "./discovery/openalt-run.mjs";
+import { indexTools } from "./discovery/lib.mjs";
 
 const ROOT = process.cwd();
 const readJson = (f, fb) => (fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : fb);
 const queue = readJson(path.join(ROOT, "data-source", "discovery", "openalt-queue.json"), { candidates: [] });
 const decisions = readJson(path.join(ROOT, "data-source", "discovery", "decisions.json"), { decisions: {} }).decisions ?? {};
+
+// 確認キューの更新は週1回なので、掲載したばかりのものがキュー上ではまだ「掲載済み」になっていないことがある。
+// 貼る行から外すため、掲載データ（tools.json）でも、公式リポジトリと id の重複を確認する。
+const toolsRaw = readJson(path.join(ROOT, "data-source", "tools.json"), []);
+const tools = Array.isArray(toolsRaw) ? toolsRaw : toolsRaw.tools;
+const toolIdx = indexTools(tools);
+const toolIds = new Set(tools.map((t) => t.id));
 
 const ready = [];
 const notReady = [];
@@ -23,7 +31,7 @@ for (const c of queue.candidates) {
   if (d?.state !== "approved") continue;
   const officialUrl = d.official_url ?? c.fields.homepage?.value ?? null;
   const problems = [...c.review.blocking.map((b) => `掲載を止める問題: ${b}`), ...c.review.draft_problems];
-  if (c.review.state === "listed") problems.push("すでに掲載済み");
+  if (c.review.state === "listed" || (c.repo && toolIdx.has(c.repo)) || (d.id && toolIds.has(d.id))) problems.push("すでに掲載済み（tools.json に同じ公式リポジトリまたは id がある）");
   if (!c.repo) problems.push("公式リポジトリが未確定");
   if (!officialUrl || !/^https:\/\//.test(officialUrl)) problems.push("公式URL（official_url または GitHub の homepage）が https:// で取れていない");
   if (problems.length) { notReady.push({ slug: c.slug, problems }); continue; }

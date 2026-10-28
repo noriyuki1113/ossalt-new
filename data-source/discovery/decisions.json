@@ -50,6 +50,60 @@
       "official_url": "https://kaneo.app/",
       "description_ja": "ボード・リスト・カレンダー・ガントで見られる、シンプルなプロジェクト管理。Linearの代替として、サブタスクや依存関係、コメント、時間記録、共有ワークスペース、GitHub連携、REST APIとMCPを備える。セルフホストできる。",
       "note": "運営者が承認（2026-10-20）。公式README・LICENSE（MIT）を2026-10-20に確認。"
+    },
+    "getlago/lago": {
+      "state": "hold",
+      "id": "lago",
+      "name": "Lago",
+      "competitor": "Stripe Billing",
+      "category": "accounting",
+      "official_url": "https://www.getlago.com",
+      "description_ja": "利用量に応じた課金（従量課金）の仕組みを作るための、請求の基盤。Stripe Billingの代替として、アプリから送った利用の記録を、料金プラン・前払いクレジット・請求書・支払いにつなげられる。REST APIとSDKで組み込み、Docker Composeでセルフホストできる。",
+      "note": "保留（2026-10-25、運営者の指示）。今回は掲載しない。下書き（運営者の確認待ち）。公式README・LICENSE（AGPL-3.0）を2026-10-20に確認。AIサービス向けの従量課金を主な用途として説明している。READMEに、一部の機能（アシスタント・企業向け連携など）は有料のPremium（要問い合わせ）とある。アプリに組み込む開発が前提で、一般の事務用ではない。 カテゴリは、同じ代替先（Stripe）の既存ツール（hyperswitch・kill-bill）に合わせて accounting。"
+    },
+    "fluxerapp/fluxer": {
+      "state": "approved",
+      "id": "fluxer",
+      "name": "Fluxer",
+      "competitor": "Discord",
+      "category": "communication",
+      "official_url": "https://fluxer.app",
+      "description_ja": "友人やグループ、コミュニティ向けの、無料のオープンソースのチャット・ボイス通話アプリ。Discordの代替として、ブラウザ、Windows・macOS・Linuxで使える。モバイル版（Android・iOS）はベータ版として提供されている。自分のインスタンスを立てるセルフホストにも対応している。",
+      "note": "運営者が承認（2026-10-25）。公式README・LICENSE（AGPL-3.0-or-later。画像はCC BY-SA 4.0）を2026-10-25に再確認。不具合報告・要望は feedback.fluxer.com に移り、GitHubのIssueとDiscussionsは閉鎖。公式サイトはREADMEのリンク（fluxer.app）。セルフホスト手順は docs.fluxer.app。更新は継続（最終コミット 2026-10-25）。"
+    },
+    "heyputer/puter": {
+      "state": "hold",
+      "id": "puter",
+      "name": "Puter",
+      "competitor": "Google Drive",
+      "category": "files",
+      "official_url": "https://puter.com",
+      "description_ja": "ブラウザで使える、自分のサーバーで動かせる「インターネット上のパソコン」。Google Driveの代替として、ファイル保存に加え、メモ帳や表計算などのアプリを同じ画面で使える。開発者向けには、クラウド保存やデータベース、AIなどの機能も備える。セルフホストの手順が公式にある。",
+      "note": "保留（2026-10-25、運営者の指示）。今回は掲載しない。下書き（運営者の確認待ち）。公式README・LICENSE.txt（AGPL-3.0）を2026-10-20に確認（READMEは「明記がない限りリポジトリ全体がAGPL-3.0」）。リポジトリ直下は LICENSE ではなく LICENSE.txt。"
+    },
+    "alyssaxuu/screenity": {
+      "state": "approved",
+      "id": "screenity",
+      "name": "Screenity",
+      "competitor": "Loom",
+      "category": "video",
+      "official_url": "https://screenity.io",
+      "description_ja": "画面を録画して注釈をつけられる、Chromeの拡張機能。Loomの「画面録画」の部分の代わりになり、時間の制限なし・サインイン不要・無料で録画できる。録画は自分のパソコンに保存される。共有リンクの発行やクラウドでの編集は、有料の別サービス（Screenity Pro）の機能で、Loomの全機能の代替ではない。",
+      "note": "運営者が承認（2026-10-25）。公式README・LICENSE（GPLv3。v3.0.0以降）・公式サイトを2026-10-25に再確認。サーバーではなくChrome拡張で、Loomの全機能の代替ではない（共有リンク・クラウド編集・文字起こしは有料のScreenity Pro＝EU・別サービス）。自分で組み込んだ版はローカルのみのモード。商用製品に使う場合は作者に相談とある。更新は継続（最新タグ v4.7.1、最終コミット 2026-10-22）。"
+    },
+    "linkwarden/linkwarden": {
+      "state": "approved",
+      "id": "linkwarden",
+      "name": "Linkwarden",
+      "competitor": "Pocket",
+      "category": "note-docs",
+      "official_url": "https://linkwarden.app",
+      "description_ja": "リンクを集めて、読み、注釈をつけ、ページごと保存できる、共同利用向けのブックマーク管理。2025年に終了したPocketの代わりとして使える。以前にPocketから書き出したCSVは取り込める（Pocket側の書き出しはすでに受付を終えている）。コレクションを複数人で共有でき、自分のサーバーで動かせる。",
+      "note": "運営者が承認（2026-10-25）。公式README・LICENSE.md（AGPL-3.0）・公式ドキュメントを2026-10-25に再確認。Pocketは2025-07-08に終了、書き出しは2025-11-12に受付終了（Mozillaの案内）。LinkwardenのドキュメントにPocket（CSV）の取り込み手順がある。公式のクラウド版（有料）もある。SSOは「Enterprise and Self-hosted users only」。更新は継続（最新タグ v2.16.3、dev ブランチの最終push 2026-10-19）。"
+    },
+    "hcengineering/platform": {
+      "state": "rejected",
+      "note": "却下（2026-10-20）。公式READMEに「このリポジトリは凍結され、保守されていない（開発は Platform-Collective/platform に移行）」「ホスト版Hulyは終了した」とある。公式リポジトリの確認で判明（GitHub APIのアーカイブ判定には出ない）。移行先 Platform-Collective/platform は別途の確認が必要。"
     }
   }
 }
