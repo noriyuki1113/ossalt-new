@@ -80,9 +80,9 @@ export default async function AlternativeDetailPage({
           ]}
         />
         <TrackView event="saas_alternative_viewed" props={{ slug: c.slug, candidate_count: c.tools.length }} dedupeKey={c.slug} />
-        <h1 className="h2">{t("alt.h1", { competitor: c.name })}</h1>
+        <h1 className="h2">{c.name} の<span className="nb">オープンソース代替</span></h1>
         <p className="lede">
-          {t("alt.ledeOne", { competitor: c.name, n: c.tools.length })}
+          {c.name} の代わりに自前で動かせる<span className="nb">オープンソースソフト</span>は{c.tools.length}件あります。
         </p>
         {guide?.intro && <p>{guide.intro}</p>}
 

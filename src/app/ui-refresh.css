@@ -714,3 +714,8 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+/* 単語の途中で改行しない（iOS Safariは word-break: auto-phrase に未対応のため） */
+.nb {
+  white-space: nowrap;
+}
