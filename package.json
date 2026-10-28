@@ -15,7 +15,9 @@
     "test:e2e:analytics": "playwright test --project=analytics",
     "qa": "node autodev/qa.mjs",
     "autodev": "node autodev/run.mjs",
-    "seo:weekly": "node scripts/gsc-weekly-report.mjs"
+    "seo:weekly": "node scripts/gsc-weekly-report.mjs",
+    "seo:page-audit": "node scripts/page-audit.mjs",
+    "seo:redirects": "node scripts/seo-redirects-audit.mjs"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +29,7 @@
     "react-dom": "^19.3.0"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
     "@playwright/test": "^1.56.1",
     "@types/node": "^26.6.2",
     "@types/react": "^19.3.0",
