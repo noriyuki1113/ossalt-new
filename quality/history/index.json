@@ -25,6 +25,19 @@
         "D": 0,
         "unrated": 0
       }
+    },
+    {
+      "id": "2026-10-29-aec4d5",
+      "generatedAt": "2026-10-29T08:28:55.059Z",
+      "rulesVersion": "qi-1.0",
+      "audited": 399,
+      "grades": {
+        "A": 28,
+        "B": 157,
+        "C": 214,
+        "D": 0,
+        "unrated": 0
+      }
     }
   ]
 }

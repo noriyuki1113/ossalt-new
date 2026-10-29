@@ -40,6 +40,10 @@
       "license": "AGPL-3.0（一部のクレートはMIT）",
       "license_note": "READMEのLicense節によると、cap-camera* と scap-* のクレート群はMIT、それ以外の大部分はAGPLv3です。第三者の部品は元のライセンスに従います。README と LICENSE を確認（2026-10-29）。"
     },
+    "wazuh": {
+      "license": "GPL-2.0（エンジンはAGPL-3.0）",
+      "license_note": "LICENSEによると、エンジン（src/engine/）はAGPL-3.0以降、共有ライブラリはGPL-2.0とAGPL-3.0以降のどちらか、それ以外はGPL-2.0。以前の「MIT」はLICENSEの記載と異なる。README と LICENSE を確認（2026-10-29）。"
+    },
     "quivr": {
       "description_ja": "流れ続ける内容を取り込み、数秒で検索でき、話題を追い続けられるようにする、オープンソースのエンジン（Quivr V2）。現在のREADMEは「評価の段階で、本番ではまだ動かさないでください」と書いている。完成したチャットのサービスではない。",
       "license_note": "README と LICENSE を確認（2026-10-29）。以前の「RAGの部品」という説明は、現在のREADME（V2）とは異なる。"
