@@ -1,0 +1,7 @@
+{
+  "_comment": "修正状況の記録（手で更新する）。キーはツールid。値は時系列の配列で、最後の要素が今の状態。status は 改善待ち／対応中／修正済み／確認済み。例：\"n8n\": [{ \"date\": \"2026-10-29\", \"status\": \"改善待ち\", \"note\": \"連携数の食い違い\", \"pr\": null }]",
+  "n8n": [{ "date": "2026-10-29", "status": "改善待ち", "note": "説明文の連携数（400以上）が公式README（1500+）と食い違う。共通テンプレートの「オープンソース代替」表記（Sustainable Use License）", "pr": null }],
+  "gimp": [{ "date": "2026-10-29", "status": "改善待ち", "note": "GitHubは読み取り専用のミラー。開発状況・Scorecardをミラーから取得している", "pr": null }],
+  "k3s": [{ "date": "2026-10-29", "status": "改善待ち", "note": "代替対象が Kubernetes（OSS）。SaaS代替としての分類の見直し", "pr": null }],
+  "dify": [{ "date": "2026-10-29", "status": "改善待ち", "note": "ChatGPT Plus の代替という分類（READMEはLLMアプリの開発基盤）。共通テンプレートの「オープンソース代替」表記", "pr": null }]
+}

@@ -7,7 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "npx --yes serve out",
-    "test": "node --experimental-strip-types --test src/lib/*.test.ts scripts/*.test.mjs mcp/test/*.test.mjs autodev/lib/*.test.mjs",
+    "test": "node --experimental-strip-types --test src/lib/*.test.ts scripts/*.test.mjs scripts/quality/*.test.mjs mcp/test/*.test.mjs autodev/lib/*.test.mjs",
     "test:e2e": "playwright test",
     "test:e2e:desktop": "playwright test --project=desktop",
     "test:e2e:mobile": "playwright test --project=mobile",
@@ -18,7 +18,11 @@
     "seo:weekly": "node scripts/gsc-weekly-report.mjs",
     "seo:page-audit": "node scripts/page-audit.mjs",
     "seo:redirects": "node scripts/seo-redirects-audit.mjs",
-    "seo:counts": "node scripts/count-audit.mjs"
+    "seo:counts": "node scripts/count-audit.mjs",
+    "qi:full": "node --experimental-strip-types scripts/quality/qi.mjs full",
+    "qi:diff": "node --experimental-strip-types scripts/quality/qi.mjs diff",
+    "qi:one": "node --experimental-strip-types scripts/quality/qi.mjs one",
+    "qi:report": "node --experimental-strip-types scripts/quality/qi.mjs report"
   },
   "keywords": [],
   "author": "",
