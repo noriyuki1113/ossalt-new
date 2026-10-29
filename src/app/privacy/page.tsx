@@ -46,6 +46,8 @@ export default function PrivacyPage() {
             </>
           )}
 
+          <p>{"Webフォントは、当サイトのサーバーから配信しています。フォントの表示のために、閲覧者のブラウザがGoogleのサーバーへ接続することはありません。"}</p>
+
           <h2>4. 広告・紹介リンクについて</h2>
           <p>{"当サイトは、一部のリンクに、紹介先のサービスと提携した成果報酬型の紹介リンク（アフィリエイト）を含みます。読者がリンク経由でサービスを利用・申込みした場合、当サイトが紹介料を受け取ることがあります。"}</p>
           <p>{"また、企業のスポンサー枠を掲載することがあります。スポンサー枠には必ず「スポンサー」と表示します。スポンサーの枠の表示回数・クリック数は、個人を特定しない集計の数としてのみ広告主に報告し、読者の個人情報を広告主に提供することはありません。"}</p>
@@ -84,7 +86,7 @@ export default function PrivacyPage() {
           {SITE.privacyEffectiveDate && (
             <p className="muted">制定日：{SITE.privacyEffectiveDate}</p>
           )}
-          <p className="muted">最終改定日：2026年10月28日（Google AdSense による広告配信の導入検討についての記載を追加）</p>
+          <p className="muted">最終改定日：2026年10月29日（Webフォントの配信元についての記載を追加）</p>
           {SITE.operatorName && (
             <p className="muted">運営者：{SITE.operatorName}</p>
           )}
