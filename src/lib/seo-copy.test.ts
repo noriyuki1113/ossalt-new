@@ -8,6 +8,7 @@ import {
   clampText,
   toolDescription,
   toolTitle,
+  isSourceAvailable,
   topCompetitors,
 } from "./seo-copy.ts";
 
@@ -62,6 +63,15 @@ test("category: タイトルと説明文", () => {
   const d = categoryDescription("ノート・ドキュメント", "社内Wikiを自前で。", tools);
   assert.match(d, /^社内Wikiを自前で。Notion・Confluenceの代わりになる/);
   assert.ok(d.length <= 160);
+});
+
+test("ソース公開型（OSI承認でない）のライセンスは、titleと説明文で「オープンソース」と呼ばない", () => {
+  const t = { ...tools[0], name: "n8n", license: "Sustainable Use License", primary_competitor: "Zapier", primary_competitor_ja: null, description_ja: null };
+  assert.equal(toolTitle(t), "n8nとは？Zapierの代替（ソース公開型）｜特徴・ライセンス・日本語対応");
+  assert.doesNotMatch(toolTitle(t), /オープンソース/);
+  assert.match(toolDescription(t), /ソース公開型のソフトウェア/);
+  assert.equal(isSourceAvailable("BUSL 1.1"), true);
+  assert.equal(isSourceAvailable("MIT"), false);
 });
 
 test("toolTitle / toolDescription", () => {

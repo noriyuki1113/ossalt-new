@@ -12,6 +12,19 @@
         "D": 0,
         "unrated": 0
       }
+    },
+    {
+      "id": "2026-10-29-fc9987",
+      "generatedAt": "2026-10-29T08:05:17.550Z",
+      "rulesVersion": "qi-1.0",
+      "audited": 399,
+      "grades": {
+        "A": 18,
+        "B": 157,
+        "C": 224,
+        "D": 0,
+        "unrated": 0
+      }
     }
   ]
 }
