@@ -24,7 +24,7 @@ import { getBlogPosts } from "@/lib/blog";
 import { getCategory } from "@/lib/categories";
 import { SITE, t } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
-import { toolDescription, toolTitle } from "@/lib/seo-copy";
+import { isSourceAvailable, toolDescription, toolTitle } from "@/lib/seo-copy";
 import { getToolGuide } from "@/lib/tool-guides";
 import { starContext } from "@/lib/star-context";
 import { buildToolFaq } from "@/lib/tool-faq";
@@ -151,7 +151,7 @@ export default async function ToolDetailPage({
               </h1>
             </div>
             <p className="lede" style={{ marginBottom: "1.25rem" }}>
-              {competitor} のオープンソース代替。
+              {isSourceAvailable(tool.license) ? `${competitor} の代替（ソース公開型のライセンス。OSI承認のオープンソースではありません）。` : `${competitor} のオープンソース代替。`}
               {tool.description_ja ? ` ${tool.description_ja}` : ""}
             </p>
 

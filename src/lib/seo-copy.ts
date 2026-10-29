@@ -5,9 +5,15 @@
  * 「〇〇とは」）に合わせつつ、掲載データだけから文章を作る。
  * 「無料」など、ツールによって成り立たない言い切りは使わない。
  *
- * node:test から直接読み込めるよう、型以外のimportを持たない。
+ * node:test から直接読み込めるよう、純粋関数（compare.ts）以外のimportを持たない。
  */
 import type { Tool } from "./tools.ts";
+import { licenseGroupOf } from "./compare.ts";
+
+/** OSI承認でない「ソース公開型」のライセンスか（サイトのライセンス分類と同じ判定）。「オープンソース」と呼ばないために使う */
+export function isSourceAvailable(license: string | null | undefined): boolean {
+  return licenseGroupOf(license ?? null) === "source-available";
+}
 
 type SeoTool = Pick<
   Tool,
@@ -105,6 +111,8 @@ export function categoryDescription(nameJa: string, lede: string, tools: SeoTool
 
 export function toolTitle(tool: SeoTool): string {
   const competitor = tool.primary_competitor_ja || tool.primary_competitor;
+  // ソース公開型（OSI承認でない）のライセンスは「オープンソース」と呼ばない
+  if (isSourceAvailable(tool.license)) return `${tool.name}とは？${competitor}の代替（ソース公開型）｜特徴・ライセンス・日本語対応`;
   return `${tool.name}とは？${competitor}の代替オープンソース｜特徴・ライセンス・日本語対応`;
 }
 
@@ -112,7 +120,9 @@ export function toolDescription(tool: SeoTool): string {
   const competitor = tool.primary_competitor_ja || tool.primary_competitor;
   const lead = tool.description_ja
     ? clampText(tool.description_ja, 80)
-    : `${tool.name}は${competitor}の代替候補になるオープンソースです。`;
+    : isSourceAvailable(tool.license)
+      ? `${tool.name}は${competitor}の代替候補になる、ソース公開型のソフトウェアです。`
+      : `${tool.name}は${competitor}の代替候補になるオープンソースです。`;
   const facts: string[] = [];
   if (tool.license) facts.push(`ライセンスは${tool.license}`);
   if (tool.ja_ui === true) facts.push("画面の日本語翻訳あり");
