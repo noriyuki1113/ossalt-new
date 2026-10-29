@@ -1,0 +1,17 @@
+{
+  "audits": [
+    {
+      "id": "2026-10-29-6bc264",
+      "generatedAt": "2026-10-29T06:50:42.624Z",
+      "rulesVersion": "qi-1.0",
+      "audited": 399,
+      "grades": {
+        "A": 18,
+        "B": 157,
+        "C": 224,
+        "D": 0,
+        "unrated": 0
+      }
+    }
+  ]
+}
