@@ -79,6 +79,8 @@ export type Tool = {
   aliases: string[];
   /** 主な代替対象のほかに、代わりになるSaaS（data-source/extra-alternatives.json） */
   also_competitors?: string[];
+  /** GitHub からこのツールの値を最後に取得した日時（ISO）。取得は数日おきの持ち回り。古い公開データには無い */
+  github_checked_at?: string | null;
   /** 直近30日（履歴が短ければ記録のある期間）のスターの増加 */
   star_gain?: { gain: number; days: number; from: string; to?: string } | null;
   /** 直近7日間の増加。7日以上前の実測の記録がある場合だけ（期間は実際の記録の間隔で、通常7〜10日） */
