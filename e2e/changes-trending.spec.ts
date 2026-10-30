@@ -15,24 +15,33 @@ test.describe("変化レポートと急上昇", () => {
     expect(problems).toEqual([]);
   });
 
-  test("/changes/ は観測日時（JST）を示し、履歴蓄積中の行にはOSSALT自身の記録を別の出典として表示する", async ({ page, problems }) => {
+  test("/changes/ は自前の実測（取得日時・比較の期間）を主に示し、外部の観測は過去の記録として分ける", async ({ page, problems }) => {
     await page.goto("/changes/");
-    await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
-    await expect(page.getByText(/OBSERVATION \/ .*JST|NO VERIFIED DATA/)).toBeVisible();
-    // 取り込み状況：配信元の観測日時・最終成功・最終試行を分けて示す（記録が無ければ推測で埋めない）
-    const sync = page.getByLabel("観測データの取り込み状況");
-    await expect(sync).toContainText("配信元の観測日時");
-    await expect(sync).toContainText("最終取り込み成功");
-    await expect(sync).toContainText(/最終試行.*(\d{4}\/\d{2}\/\d{2}|記録開始前)/);
-    const rows = page.locator("article");
-    if (await rows.count()) {
-      await expect(rows.first().getByText(/最終観測：/)).toBeVisible();
-      // 7日間の値が無い行は「履歴蓄積中」。OSSALT記録は、あれば別の表記で出る（Watchの値と混ぜない）
-      const accumulating = page.locator("article", { hasText: "履歴蓄積中" });
-      if (await accumulating.count()) await expect(accumulating.first()).toContainText(/OSSALT記録：\+[\d,]+／\d+日間/);
+    await expect(page.getByRole("heading", { level: 1 })).toContainText("OSSの変化レポート");
+    // 取得日時・ページの生成・データの状態を分けて示す
+    const dates = page.getByLabel("データの日時");
+    await expect(dates).toContainText(/GitHubからの最新の取得\s*(\d{4}\/\d{2}\/\d{2}|記録なし)/);
+    await expect(dates).toContainText("このページの生成");
+    await expect(page.getByLabel("検証できたOSSの件数")).toContainText("比較不可");
+    // Starの一覧は、行ごとに比較の期間（開始→終了・日数）を出す
+    const firstStar = page.locator("#stars-heading").locator("xpath=ancestor::section").locator("li").first();
+    if (await firstStar.count()) await expect(firstStar).toContainText(/\d+\/\d+→\d+\/\d+（\d+日間）/);
+    // 外部Watchの観測は「過去の観測記録」。観測時点のタグは現在の最新とは限らないと明記
+    const past = page.getByRole("heading", { name: "過去の観測記録" });
+    if (await past.count()) {
+      await page.getByText(/件の記録を見る/).click();
+      await expect(page.getByText(/観測時点のタグ：.*（現在の最新とは限りません）/).first()).toBeVisible();
     }
     expect(await horizontalOverflow(page)).toBeLessThanOrEqual(1);
     expect(problems).toEqual([]);
+  });
+
+  test("トップページと /changes/ の取得日時が一致する", async ({ page }) => {
+    await page.goto("/changes/");
+    const m = (await page.getByLabel("データの日時").innerText()).match(/GitHubからの最新の取得\s*(\d{4}\/\d{2}\/\d{2} \d{2}:\d{2})/);
+    await page.goto("/");
+    const home = page.locator("#watch-home-heading + p");
+    if (m && (await home.count())) await expect(home).toContainText(m[1]);
   });
 });
 

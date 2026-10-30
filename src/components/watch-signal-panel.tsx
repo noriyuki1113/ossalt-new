@@ -28,6 +28,27 @@ export function WatchSignalPanel({githubUrl}: {githubUrl: string}) {
   const observed = new Date(signal.observed_at).getTime();
   const stale = Date.now() - observed > 72 * 60 * 60 * 1000;
   const significant = signal.signal !== "monitoring";
+  // 古い観測は「最近の観測」として見せない。日付つきの過去の記録として、たたんで出す
+  // （観測時点のタグを、現在の最新安定版だと誤解させないため）
+  if (stale) {
+    return (
+      <details className="panel" style={{ marginBottom: "2rem" }}>
+        <summary className="panel__head" style={{ cursor: "pointer" }}>
+          <span className="panel__title">過去の観測記録（{dateJst(signal.observed_at)}・外部の観測サービス）</span>
+        </summary>
+        <div className="panel__body">
+          <p className="muted" style={{ fontSize: ".8125rem", lineHeight: 1.8, margin: 0 }}>
+            {dateJst(signal.observed_at)}（日本時間）の観測：Star {signal.stars.toLocaleString("ja-JP")}
+            {signal.release_status === "ok" && signal.latest_stable_release_tag
+              ? `、観測時点の安定版タグ ${signal.latest_stable_release_tag}（現在の最新とは限りません）` : ""}。
+            {" "}この観測は更新が止まっています。現在のStar数は上の表（OSSALTが毎日取得）を、
+            リリースは<a href={signal.source_url.replace("https://api.github.com/repos/", "https://github.com/") + "/releases"} target="_blank" rel="noopener noreferrer">GitHubのリリース ↗</a>を確認してください。
+            {" "}<Link href="/changes/">OSSの変化レポート ↗</Link>
+          </p>
+        </div>
+      </details>
+    );
+  }
   return (
     <section aria-labelledby="watch-signal-heading" className="panel"
       style={{marginBottom:"2rem", borderColor: significant ? "var(--accent,#66bba8)" : undefined}}>
@@ -39,11 +60,6 @@ export function WatchSignalPanel({githubUrl}: {githubUrl: string}) {
         <p style={{margin:"0 0 1rem",fontWeight:700,color:significant ? "var(--foreground)" : undefined}}>
           {label(signal)}
         </p>
-        {stale && (
-          <p className="notice notice--warn" style={{marginBottom:"1rem",fontSize:".8125rem"}}>
-            観測から3日以上経過しています。最新状況はGitHubで確認してください。
-          </p>
-        )}
         <dl style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(min(100%,160px),1fr))",gap:".85rem",margin:0}}>
           <div style={{padding:".8rem",border:"1px solid var(--border)",borderRadius:"10px"}}>
             <dt className="muted" style={{fontSize:".75rem"}}>観測時のStar</dt>
@@ -75,7 +91,7 @@ export function WatchSignalPanel({githubUrl}: {githubUrl: string}) {
           <a href={signal.source_url} target="_blank" rel="noopener noreferrer">
             GitHubの一次データを確認 ↗
           </a>
-          {" · "}<Link href="/changes/">15件のOSS変化レポート ↗</Link>
+          {" · "}<Link href="/changes/">OSSの変化レポート ↗</Link>
         </p>
       </div>
     </section>

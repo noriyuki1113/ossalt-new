@@ -182,6 +182,8 @@ const tools = raw.map((t) => {
     security_md: t.security_md ?? null,
     dependabot_configured: t.dependabot_configured ?? null,
     latest_release_at: t.latest_release_at ?? null,
+    // GitHub からこのツールの値を最後に取得した日時（/changes/ で、値の新しさを判断するために使う）
+    github_checked_at: t.github_checked_at ?? null,
     releases_12mo: t.releases_12mo ?? null,
     advisories_count: t.advisories_count ?? null,
     // 自動判定（fetch-github-api.mjs）済みならその値。未判定のものは旧データの手入力値のうち

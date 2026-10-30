@@ -49,3 +49,26 @@
 .sync small{display:block;font-size:.72rem;color:var(--ink-2)}.sync .syncError{color:#9b2c2c}
 @media (max-width:640px){.sync{grid-template-columns:1fr 1fr}}
 .nb{white-space:nowrap}
+/* 自前の実測によるレポート（2026-10 再構築） */
+.fine{font-size:.8rem;color:var(--ink-2);line-height:1.85;margin:.7rem 0}
+.sub{font-size:1rem;margin:1.6rem 0 .6rem}
+.bigNum{font:800 clamp(1.6rem,4vw,2.2rem)/1.2 var(--font-display);color:var(--indigo);font-variant-numeric:tabular-nums;margin:.2rem 0}
+.starList{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.starRow,.pastRow{display:flex;align-items:center;gap:.75rem;padding:.7rem 0;border-bottom:1px solid var(--rule);min-width:0}
+.rank{flex:0 0 1.8rem;font:700 .8rem var(--font-mono);color:var(--ink-3);text-align:right}
+.starName{flex:1 1 auto;min-width:0}
+.starName a{font-weight:700;text-decoration:none;overflow-wrap:anywhere}
+.starName small,.starNums small{display:block;font-size:.72rem;color:var(--ink-3);line-height:1.6;overflow-wrap:anywhere}
+.starNums{flex:0 0 auto;text-align:right;max-width:55%}
+.starNums strong{font:800 1.05rem var(--font-mono);color:var(--midori);font-variant-numeric:tabular-nums}
+.starNums strong.minus{color:#a23222}
+.pastRow .starNums{max-width:60%}
+.more{margin:.8rem 0}.more summary{cursor:pointer;font-weight:700;font-size:.88rem;padding:.4rem 0}
+.plainList{list-style:none;margin:.4rem 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,15rem),1fr));gap:.35rem 1.2rem}
+.plainList li{font-size:.86rem;min-width:0}.plainList small{display:block;font-size:.72rem;color:var(--ink-3)}
+.bars{list-style:none;margin:0;padding:0;display:grid;gap:.4rem}
+.bars li{display:grid;grid-template-columns:5.5rem 1fr 4rem;align-items:center;gap:.6rem;font-size:.82rem}
+.bars i{display:block;height:.7rem;background:var(--indigo);border-radius:2px;min-width:2px}
+.bars strong{text-align:right;font-variant-numeric:tabular-nums}
+@media(max-width:520px){.starNums{max-width:48%}.bars li{grid-template-columns:4.8rem 1fr 3.4rem}}
+@media(max-width:640px){.heading{flex-direction:column;align-items:start;gap:.4rem}}

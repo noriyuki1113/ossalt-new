@@ -4,20 +4,20 @@ import { HouseAd } from "@/components/house-ad";
 import { HomeRankings, type HomeRow } from "@/components/home-rankings";
 import { ToolCard } from "@/components/tool-views";
 import { PopularSaas, SaasSearch, type SaasEntry } from "@/components/saas-search";
-import { getActiveTools, getCompetitors, getMeta } from "@/lib/data";
+import { getActiveTools, getCompetitors, getMeta, getTools } from "@/lib/data";
 import { TOOL_DIAGNOSIS } from "@/lib/diagnosis-data";
 import { SAAS_IDS, SAAS_LABELS } from "@/lib/diagnosis-types";
 import { buildGrowth, buildPopularity, buildRecommended } from "@/lib/rankings";
 import { CATEGORIES } from "@/lib/categories";
 import { SITE, t } from "@/lib/site";
 import { formatCompactJa, formatDate, slugifyCompetitor } from "@/lib/tools";
-import { activityDateJst, buildActivityReport } from "@/lib/watch-changes";
-import { getWatchSignalFeed } from "@/lib/watch-signals";
+import { activityDateJst } from "@/lib/watch-changes";
+import { buildOwnReport, signed } from "@/lib/own-changes";
 
 export default function HomePage() {
   const tools = getActiveTools();
   const meta = getMeta();
-  const changes = buildActivityReport(getActiveTools(), getWatchSignalFeed());
+  const changes = buildOwnReport(getTools(), { starsAsOf: meta.stars_as_of ?? null });
   const asOf = formatDate(meta.stars_as_of ?? meta.built_at);
 
   // SaaS名から探す：このSaaS自身を指す名前（英語名・日本語名・指定した別名）だけを候補に使う。
@@ -184,7 +184,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        {changes.rows.length > 0 && (
+        {changes.status !== "none" && (
           <section className="panel" aria-labelledby="watch-home-heading"
             style={{ marginTop: "1.4rem", borderTop: "3px solid var(--indigo)" }}>
             <div className="panel__body" style={{ display: "flex", gap: "1.2rem",
@@ -194,22 +194,17 @@ export default function HomePage() {
                   OSSALT / OBSERVATION DESK
                 </span>
                 <h2 id="watch-home-heading" style={{ fontSize: "1.25rem", margin: ".35rem 0" }}>
-                  {changes.feedStalled ? "OSSの変化レポート（更新停止中）" : "重要な変化を、見逃さない。"}
+                  {changes.status === "fresh" ? "OSSの変化レポート" : "OSSの変化レポート（データの更新が止まっています）"}
                 </h2>
-                {changes.feedStalled ? (
-                  <p className="muted" style={{ fontSize: ".85rem", margin: 0 }}>
-                    {`${changes.rows.length}件のOSSの、過去の観測記録です。最新の観測は${activityDateJst(changes.latestObservedAt ?? changes.generatedAt ?? "")}（JST）で、それ以降の変化は反映されていません。`}
-                  </p>
-                ) : (
-                  <p className="muted" style={{ fontSize: ".85rem", margin: 0 }}>
-                    {changes.rows.length}件のOSSを継続観測中。
-                    {changes.changed > 0 ? "直近で" + changes.changed + "件の注目シグナルを確認しています。" :
-                      "観測した活動と、検証できた変化だけを紹介します。"}
-                    履歴が足りない項目は推測しません。
-                  </p>
-                )}
+                <p className="muted" style={{ fontSize: ".85rem", margin: 0 }}>
+                  {`${activityDateJst(changes.dataAsOf ?? "")}（JST）までにGitHubから取得した実測値です。`}
+                  {changes.status === "fresh"
+                    ? `${changes.star.comparable}件のOSSで7日間のStarの増減を比較できました。`
+                      + (changes.notable.byGain[0] ? `最も増えたのは${changes.notable.byGain[0].tool.name}（${signed(changes.notable.byGain[0].w7.gain)}）です。` : "")
+                    : "それ以降の変化は反映されていません。"}
+                </p>
               </div>
-              <Link className="btn" href="/changes/">{changes.feedStalled ? "過去の観測記録を見る →" : "OSSの変化レポートを見る →"}</Link>
+              <Link className="btn" href="/changes/">OSSの変化レポートを見る →</Link>
             </div>
           </section>
         )}
