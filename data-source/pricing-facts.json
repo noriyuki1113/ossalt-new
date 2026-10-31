@@ -1,0 +1,7 @@
+{
+  "_comment": "ソフトウェアの価格の事実（確認できたものだけ）。無いツールには、構造化データの offers（価格）を出さない。金額は書かない。出典URL・確認日つき。free_to_obtain＝支払いなしで入手して使える／paid_options＝有料の選択肢が公式に案内されている／basis＝official-statement（公式サイトの記載）か license（OSI承認のライセンス）",
+  "vikunja": { "free_to_obtain": true, "paid_options": true, "basis": "official-statement", "source_url": "https://vikunja.io/", "checked_at": "2026-10-31" },
+  "notesnook": { "free_to_obtain": true, "paid_options": true, "basis": "official-statement", "source_url": "https://notesnook.com/", "checked_at": "2026-10-31" },
+  "gitea": { "free_to_obtain": true, "paid_options": true, "basis": "official-statement", "source_url": "https://about.gitea.com/", "checked_at": "2026-10-31" },
+  "vaultwarden": { "free_to_obtain": true, "paid_options": false, "basis": "license", "source_url": "https://github.com/dani-garcia/vaultwarden/blob/HEAD/LICENSE.txt", "checked_at": "2026-10-31" }
+}
