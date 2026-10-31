@@ -1,6 +1,6 @@
 # Claude SEO と OSSALT の品質管理の連携（運用手順書）
 
-最終確認：2026-10-31。Claude SEO の仕様は、公式リポジトリ（AgriciDaniel/claude-seo、v2.5.0）の README・docs/INSTALLATION.md・SECURITY.md・各 SKILL.md・requirements.txt・install.sh を、`raw.githubusercontent.com` から取得して確認しました。**この環境では Claude SEO を導入・実行していません（未実行）。**
+最終確認：2026-10-31。Claude SEO の仕様は、公式リポジトリ（AgriciDaniel/claude-seo、v2.5.0、コミット 6be93f4・2026-10-22）の README・docs/INSTALLATION.md・SECURITY.md・PRIVACY.md・各 SKILL.md・requirements.txt・install.sh・hooks・agents を取得して確認しました。**オーナーの承認（条件付き）のもと、このClaude Code実行環境（クラウド）にプラグインを導入し、ヘルパースクリプトの試験を1ページで実施しました（11章）。** この環境は一時的なもので、セッションが終わると導入は失われます。
 
 ## 1. 方針（変えない条件）
 
@@ -72,7 +72,7 @@
 - 対象は、**`seo-specialist-queue` の上位から、最大5ページ**。1ページずつ、順番に
 - 使うコマンド：`/seo page <URL>`、必要に応じて `/seo content <URL>`・`/seo schema <URL>`・`/seo geo <URL>`
 - **使わないコマンド**：`/seo audit`（並列のフル監査）、`/seo drift`、`/seo google …`、`/seo backlinks`・`/seo seranking`・`/seo profound`・`/seo bing`・`/seo image-gen`・`/seo unlighthouse`、`/seo cluster`・`/seo programmatic`・`/seo competitor-pages`（新規ページの量産につながるため）
-- 対象URLは `https://ossalt.jp/...` の公開ページ。ローカルの `out/` は、公式のSSRF対策で拒否される
+- 対象URLは `https://ossalt.jp/...` の公開ページ。ローカルの `out/` を配信して試すときは、公式の許可リスト `CLAUDE_SEO_LOCAL_TARGETS=127.0.0.1:<ポート>`（最初のURLだけが対象。生のHTTP取得のみで、Chromiumでの描画は不可）を使う
 - 次のときは、**費用・理由を示して停止**し、承認を待つ：有料のAPI・拡張が必要／追加のエージェントの並列実行が必要／認証情報が必要／5ページを超える
 - 1回の作業は、5ページ以内。次の回は、前回の結果を記録し、実測の確認（28日）が済んだページを優先する
 
@@ -161,3 +161,32 @@ node scripts/seo-ledger.mjs record --id <番号> --stage 28 --outcome improved|f
 - 実際のSERP（日本・日本語）の順位の確認。Search Console の「クエリ×ページ」の完全一致の実測
 - Google の現行ガイドライン（構造化データ・AI検索）の原典の確認
 - 日本語の検索意図の実測（検索結果ツールの出力は、地域・言語を指定できない）
+
+## 11. 導入と試験の結果（2026-10-31・このクラウドの実行環境）
+
+承認の条件（公式の無料プラグインのみ／有料の拡張・seo-cockpit・Google認証・有料のSEO APIは導入しない／`doctor` で確認してから重要ページ1件だけ／全サイトの並列フル監査は禁止）に沿って実施しました。
+
+### 導入の前の確認（実際のコード。コミット 6be93f4）
+| 項目 | 確認した内容 |
+| --- | --- |
+| フック | `hooks.json` は **PostToolUse（Edit・Write）** のみ。`validate-schema.py`（341行）は、編集したファイルを**ローカルで読むだけ**（ネットワーク・サブプロセスなし。`open()` のみ）。実行は `run-python-hook.js` が Python を起動 |
+| 権限（エージェントの道具） | 専門のエージェントは `Read`・`Bash`・`Write`・`Glob`・`Grep`。一部は `WebFetch`・`WebSearch`。**呼び出したときだけ**動く。`seo-dataforseo` は `mcp__dataforseo__*`（有料の拡張。使わない） |
+| 外部への通信 | コアは、監査の対象のURL以外に、第三者のAPIを呼ばない（PRIVACY.md の記載）。テレメトリ・利用の追跡なし（PRIVACY.md の記載。コードの全体は精査していない）。拡張・バックリンクのAPIは、認証情報を設定したときだけ（設定しない） |
+| 依存 | `requirements.txt` の範囲指定（Python 3.11〜3.14）。専用の仮想環境に入る（グローバルに入れない） |
+| 導入の手順 | `claude plugin marketplace add AgriciDaniel/claude-seo` → `claude plugin install claude-seo@agricidaniel-claude-seo`（スコープ：user）→ `scripts/claude-seo setup`（`/seo setup` と同じ） |
+
+### 実行の結果
+| 段階 | 結果 |
+| --- | --- |
+| マーケットプレイスの追加・プラグインの導入 | 成功（v2.5.0、有効） |
+| `setup` | 専用のPython環境は完成（Python 3.13、**約750MB**）。**Chromiumの導入は失敗**（`cdn.playwright.dev` が、この環境のネットワーク許可に無く、403）。終了コード10（核の導入は完了、描画は不可） |
+| `doctor` | `Runtime: ready`／`Chromium: not installed` |
+| 重要ページ1件の試験（`/tools/gitea/`） | 公開サイトに接続できないため、ビルド済みの `out/` をローカルで配信し、`CLAUDE_SEO_LOCAL_TARGETS` で許可して、ヘルパースクリプトを実行（記録：`agency/templates/SPECIALIST.md` の様式。非公開の `agency/reports/claude-seo/`）。**`/seo page` のサブエージェントは実行していない**（追加のエージェント実行を避けた） |
+
+試験で分かったこと：
+- `metadata_template`（テンプレート由来のメタデータの判定）・`agentic_check`（クロール許可・llms.txt・JSなしの本文・404）は動き、**このページに新しい欠陥は見つからなかった**（OSSALT 自身の監査と同じ結論）
+- **`content_quality`（内容の品質の採点）は、日本語に対応していない**（辞書が英語のみ、entity density は未計算）。繰り返しの多い日本語の定型の見出し・表を、過大に「repetitive」と判定した。**日本語のページには、この採点を使わない**（上の「使わないコマンド」に準じる）
+- Chromiumが無い環境では、描画（SPA）・スクリーンショット・Core Web Vitals の実測はできない（あなたの端末では、`/seo setup` が成功する見込み。環境による）
+
+### 未実施（承認の範囲外、または環境の制約）
+`/seo page`・`content`・`schema`・`geo` のサブエージェントの実行／Chromiumでの描画／Google・有料の拡張／全サイトの監査
