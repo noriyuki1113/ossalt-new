@@ -183,6 +183,19 @@ export default async function ToolDetailPage({
               </p>
             )}
 
+            {tool.development_move && (
+              <p className="notice notice--info" style={{ marginBottom: "1.25rem" }}>
+                <strong>開発場所が移転しました</strong>{" "}
+                {"開発者は、旧GitHubリポジトリ（アーカイブ済み）から、新しい開発場所へ移ったと発表しています（"}
+                <a href={tool.development_move.source_url} rel="noopener">公式の発表</a>
+                {`・${tool.development_move.announced_on}）。新しい開発場所：`}
+                <a href={tool.development_move.to_url} rel="noopener">{tool.development_move.to_url.replace(/^https:\/\//, "")}</a>
+                {"。このページの Star・最終コミット・リリースの数値は旧GitHubリポジトリのもので、新しい開発場所の更新は反映していません。"}
+                {tool.development_move.note ? ` ${tool.development_move.note}` : ""}
+                {`（${tool.development_move.checked_at}確認）`}
+              </p>
+            )}
+
             {tool.maintenance_notice && (
               <p className="notice notice--warn" style={{ marginBottom: "1.25rem" }}>
                 <strong>保守停止の公式警告</strong>{" "}
@@ -318,6 +331,7 @@ export default async function ToolDetailPage({
                 ライセンス表記は「{licenseLabel(tool.license)}」。最終コミット
                 {formatDate(tool.last_commit)}時点の情報です。
                 {tool.github_archived && " ※このリポジトリはアーカイブされています。"}
+                {tool.development_move && " ※旧GitHubリポジトリはアーカイブされ、開発は移転しています（上の案内を参照）。"}
               </p>
               <div className={`license-verdict license-verdict--${licenseGroupOf(tool.license)}`}>
                 <p className="license-verdict__head">
