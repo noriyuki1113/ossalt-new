@@ -8,6 +8,7 @@
 | `node scripts/seo-audit.mjs` | ビルド済みサイトのテクニカルSEO・内部リンクの監査（読み取り専用） | `npm run build` の `out/` |
 | `node scripts/seo-links.mjs --target <パス>` | 内部リンクの候補（データ上関連するのに未リンクの実在ページ） | `out/` |
 | `node scripts/seo-ledger.mjs add\|due\|record\|render` | 変更履歴と、28日・約90日の確認期限 | なし |
+| `npm run seo:queue` | QIの品質の欠点 ＋ GSCのページ別実績から、専門監査の優先候補（最大10件・実測と仮説を分けた点数）。Claude SEO の連携は `docs/claude-seo-integration.md` | QIの監査（`npm run qi:full`） |
 | `node scripts/gsc-weekly-report.mjs` | 既存：1本のCSVの簡易アクションプラン（`seo-agency.mjs` が読み込みを共有） | CSV |
 
 テスト：`npm test`（SEO関連は `scripts/seo-*.test.mjs` と `scripts/gsc-weekly-report.test.mjs`）。

@@ -42,6 +42,12 @@ description: ossalt.jp の検索流入を改善する、承認制のSEO運用（
 - 出力：専用ブランチの PR（重複PRを作らない。既存PRに続ける）と `TECH.md`。公開したら `node scripts/seo-ledger.mjs add …` で記録する。
 - 停止：canonical・noindex・robots・URLの変更が必要になったら、止めてオーナーの承認を求める。
 
+### Specialist Mode（専門監査。Claude SEO は任意の補助）
+- 入力：`npm run seo:queue`（`scripts/seo-specialist-queue.mjs`）の上位。QIの品質の欠点・GSCのページ別実績・修正の見込み・範囲・信頼度の、独自の仮説の点数（実測と仮説を分けて表示）。**ページの削除・統合・noindex・canonical・URLは決めない**
+- 作業：上位から**最大5ページ、1ページずつ、手動**。Claude SEO（`/seo page`・`content`・`schema`・`geo` だけ）が導入済みなら使う。**使わない**：`/seo audit`（並列のフル監査）、`drift`、`google`、有料の拡張。未導入・実行できないときは、既存の `page-audit --only`・`qi:one`・`seo-links` ＋ 一次情報の照合で代替し、**「Claude SEO 未実行」と明記**する
+- 出力：`agency/templates/SPECIALIST.md` の様式（対象URL・確認日時・観測事実・根拠・推奨変更・信頼度・期待する効果・検証方法）。`agency/reports/claude-seo/<日付>/`（Git管理外）。検索実績の数値は書かない。AI検索での引用されやすさは推測と書く
+- 停止：有料のAPI・追加のエージェントの並列実行・認証情報が必要になったら、費用と理由を示して止まる。手順と承認事項は `docs/claude-seo-integration.md`
+
 ### Review Mode（独立レビュー）
 - 別の文脈（書いた作業の記憶を持たない状態）で、PRの差分・根拠・テスト・SEO上の悪影響だけを検証する。
 - 確認：事実の根拠の表（PAGE）を一次情報と突き合わせる／`seo-audit` の前後の差／既存の noindex・sitemap・canonical への非干渉／機密・GSCデータの混入／テストの実行結果（実行していないものは「未実行」）。

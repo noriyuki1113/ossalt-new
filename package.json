@@ -19,6 +19,7 @@
     "seo:page-audit": "node scripts/page-audit.mjs",
     "seo:redirects": "node scripts/seo-redirects-audit.mjs",
     "seo:counts": "node scripts/count-audit.mjs",
+    "seo:queue": "node scripts/seo-specialist-queue.mjs",
     "qi:full": "node --experimental-strip-types scripts/quality/qi.mjs full",
     "qi:diff": "node --experimental-strip-types scripts/quality/qi.mjs diff",
     "qi:one": "node --experimental-strip-types scripts/quality/qi.mjs one",
