@@ -39,6 +39,8 @@ export type ToolRecord = {
   last_commit: string | null;
   days_since_last_commit: number | null;
   archived: boolean;
+  /** アーカイブの理由（公式の記載を確認できたものだけ。無ければ null＝未確認） */
+  archive_reason: { kind: string; text: string; source_url: string; checked_at: string } | null;
   /** OpenSSF Scorecard（0〜10）。null = 未評価 */
   scorecard: { score: number; date: string | null } | null;
   security_policy: boolean | null;
@@ -75,6 +77,7 @@ export function toolRecord(
     last_commit: nn(t.last_commit),
     days_since_last_commit: nn(t.freshness_days),
     archived: Boolean(t.github_archived),
+    archive_reason: t.github_archived && t.archive_reason ? { kind: t.archive_reason.kind, text: t.archive_reason.text, source_url: t.archive_reason.source_url, checked_at: t.archive_reason.checked_at } : null,
     scorecard: t.scorecard_score != null ? { score: t.scorecard_score, date: nn(t.scorecard_date) } : null,
     security_policy: nn(t.security_md),
     releases_last_12_months: nn(t.releases_12mo),
@@ -137,7 +140,7 @@ export function toolMarkdown(
       (r.star_gain && r.star_gain.gain > 0 ? `（直近${r.star_gain.days}日間で+${r.star_gain.gain.toLocaleString("ja-JP")}）` : ""),
     `- 最終コミット: ${r.last_commit?.slice(0, 10) ?? "未取得"}`,
     `- OpenSSF Scorecard: ${r.scorecard ? `${r.scorecard.score} / 10` : "未評価"}`,
-    r.archived ? "- 注意: このリポジトリはアーカイブされています（開発終了）" : null,
+    r.archived ? `- 注意: このリポジトリはGitHubでアーカイブされています。${r.archive_reason ? `${r.archive_reason.text}（出典: ${r.archive_reason.source_url}、${r.archive_reason.checked_at}確認）` : "理由・後継は、公式の記載を確認できていません。"}` : null,
   ].filter((l): l is string => l !== null);
   if (opts.guideMarkdown) lines.push("", `## ${r.name}とは`, "", opts.guideMarkdown);
   if (opts.faq?.length) {

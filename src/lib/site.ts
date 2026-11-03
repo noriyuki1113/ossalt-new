@@ -143,7 +143,7 @@ export const MESSAGES = {
     "health.term.contributors": "コントリビュータ × 0.5",
     "health.term.watchers": "ウォッチャー × 0.25",
     "health.term.freshness": "更新の新しさ（最大−45）",
-    "health.archived": "このリポジトリはアーカイブされています（開発は終了しています）",
+    "health.archived": "このリポジトリはGitHubでアーカイブされています（読み取り専用。理由は、ページ上部の案内を参照）",
     "health.formulaNote":
       "スターなどの数値はGitHubの公開情報、更新日は最終コミット日をもとにしています。減点は最終コミットから90日で頭打ち（最大 −45点）になります。数値が大きいほど活発ですが、規模の大きいプロジェクトほど有利になる指標です。",
 

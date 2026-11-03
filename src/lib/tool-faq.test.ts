@@ -38,7 +38,16 @@ test("確認できた項目と、ライセンスの種類ごとの説明", () =>
 });
 
 test("開発の状況：アーカイブ・1年以上・スターの伸び", () => {
-  assert.match(find(buildToolFaq({ ...base, github_archived: true }, opts), "開発"), /開発は終了/);
+  const archived = (kind?: "ended" | "maintenance-ended" | "successor" | "unknown") =>
+    find(buildToolFaq({ ...base, github_archived: true, ...(kind ? { archive_reason: { kind, text: "x", source_url: "https://example.com/", checked_at: "2026-11-03" } } : {}) }, opts), "開発");
+  assert.match(archived("ended"), /開発（保守）は終了しています/);
+  assert.match(archived("maintenance-ended"), /開発（保守）は終了しています/);
+  assert.match(archived("successor"), /後継のプロジェクトへ移っています/);
+  // 理由を確認できていないものは、「開発は終了」と断定しない
+  for (const k of [undefined, "unknown" as const]) {
+    assert.match(archived(k), /理由.*後継は、公式の記載を確認できていません/);
+    assert.doesNotMatch(archived(k), /開発（保守）は終了|開発は終了/);
+  }
   assert.match(find(buildToolFaq({ ...base, freshness_days: 500 }, opts), "開発"), /1年以上更新がない/);
   const g = find(buildToolFaq({ ...base, star_gain: { gain: 1200, days: 7, from: "2026-09-25" } }, opts), "開発");
   assert.match(g, /直近7日間で1,200増えて/);

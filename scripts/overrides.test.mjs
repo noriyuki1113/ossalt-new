@@ -24,3 +24,32 @@ test("欠けているもの・不正なものは、推測で補わず null", () 
   assert.equal(sanitizeDevelopmentMove(null), null);
   assert.equal(sanitizeDevelopmentMove("x"), null);
 });
+
+import { sanitizeArchiveReason } from "./overrides.mjs";
+
+const reason = {
+  kind: "maintenance-ended", text: "  公式のREADMEに…とあります。  ", source_url: "https://github.com/filebrowser/filebrowser/blob/master/README.md", checked_at: "2026-11-03",
+};
+
+test("アーカイブの理由：区分・要約・出典・確認日がそろっていれば採用する", () => {
+  const r = sanitizeArchiveReason(reason, "2026-11-03");
+  assert.equal(r.kind, "maintenance-ended");
+  assert.equal(r.text, "公式のREADMEに…とあります。");
+  assert.equal(r.successor_id, undefined);
+  assert.equal(sanitizeArchiveReason({ ...reason, kind: "successor", successor_id: "univer" }, "2026-11-03").successor_id, "univer");
+});
+
+test("アーカイブの理由：欠けている・不正なものは、推測で補わず null", () => {
+  for (const k of ["kind", "text", "source_url", "checked_at"]) assert.equal(sanitizeArchiveReason({ ...reason, [k]: undefined }, "2026-11-03"), null, k);
+  assert.equal(sanitizeArchiveReason({ ...reason, kind: "paused" }, "2026-11-03"), null); // 区分は4つだけ（一時停止などを推測で作らない）
+  assert.equal(sanitizeArchiveReason({ ...reason, text: "   " }, "2026-11-03"), null);
+  assert.equal(sanitizeArchiveReason({ ...reason, source_url: "http://example.com" }, "2026-11-03"), null);
+  assert.equal(sanitizeArchiveReason({ ...reason, checked_at: "2026-11-30" }, "2026-11-03"), null); // 未来
+  assert.equal(sanitizeArchiveReason({ ...reason, checked_at: "2026-02-30" }, "2026-11-03"), null);
+  assert.equal(sanitizeArchiveReason(null), null);
+});
+
+test("アーカイブの理由：successor_id は、英数字とハイフンだけ（リンクに使うため）", () => {
+  assert.equal(sanitizeArchiveReason({ ...reason, successor_id: "../x" }, "2026-11-03").successor_id, undefined);
+  assert.equal(sanitizeArchiveReason({ ...reason, successor_id: "Univer" }, "2026-11-03").successor_id, undefined);
+});

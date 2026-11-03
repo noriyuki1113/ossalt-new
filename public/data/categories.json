@@ -105,7 +105,7 @@
   "slug": "documents",
   "nameJa": "PDF・文書処理",
   "ledeJa": "PDFの結合・変換・編集を、外部サービスに送らずに処理する。",
-  "count": 7
+  "count": 8
  },
  {
   "slug": "office",
@@ -147,7 +147,7 @@
   "slug": "ai",
   "nameJa": "AI・LLM基盤",
   "ledeJa": "生成AIを自前のサーバで動かす。入力内容を外部に送らずに使える。",
-  "count": 37
+  "count": 38
  },
  {
   "slug": "video",
