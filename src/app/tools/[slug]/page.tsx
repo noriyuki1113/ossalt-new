@@ -214,6 +214,18 @@ export default async function ToolDetailPage({
               </p>
             )}
 
+            {tool.source_mirror && (
+              <p className="notice notice--info" style={{ marginBottom: "1.25rem" }}>
+                <strong>GitHubはミラーです</strong>{" "}
+                {"このツールのGitHubのリポジトリは、別の場所で行われている開発のミラー（複製）です（"}
+                <a href={tool.source_mirror.source_url} rel="noopener">リポジトリの記載</a>
+                {"）。開発の場：「"}
+                <a href={tool.source_mirror.primary_url} rel="noopener">{tool.source_mirror.primary_url.replace(/^https:\/\//, "")}</a>
+                {"」。ミラーの設定を採点する OpenSSF Scorecard や、ミラーには無い Releases・SECURITY.md・Dependabot・アドバイザリは、実際の開発の状況を表さないため、「未確認」と表示しています。実際の状況は、開発の場で確認してください"}
+                {`（${tool.source_mirror.checked_at}確認）。`}
+              </p>
+            )}
+
             {tool.maintenance_notice && (
               <p className="notice notice--warn" style={{ marginBottom: "1.25rem" }}>
                 <strong>保守停止の公式警告</strong>{" "}

@@ -74,3 +74,24 @@ export function sanitizeArchiveReason(raw, today = new Date().toISOString().slic
   if (typeof raw.successor_id === "string" && /^[a-z0-9][a-z0-9-]{0,60}$/.test(raw.successor_id)) out.successor_id = raw.successor_id;
   return out;
 }
+
+/**
+ * GitHub のリポジトリが「ミラー」（本当の開発場所は別）であることの記録（patch の source_mirror）を検証する。
+ *   { primary_url, source_url, checked_at, hide_contributors? }
+ * 一次の開発元のURL（https）・根拠のURL（https。リポジトリの説明やREADME）・確認日（実在する、未来でない日付）がそろっているものだけを採用し、
+ * 欠けていれば null（推測で補わない）。採用されたツールは、ミラーの設定を採点する Scorecard や、ミラーに無い Releases・SECURITY.md・
+ * Dependabot・アドバイザリの値を「未確認」として扱う（build-data が null にする）。
+ */
+export function sanitizeSourceMirror(raw, today = new Date().toISOString().slice(0, 10)) {
+  if (!raw || typeof raw !== "object") return null;
+  const https = (v) => { try { const u = new URL(String(v)); return u.protocol === "https:" ? u.href : null; } catch { return null; } };
+  const s = String(raw.checked_at ?? "");
+  const d = /^\d{4}-\d{2}-\d{2}$/.test(s) ? new Date(`${s}T00:00:00Z`) : null;
+  const checked_at = d && Number.isFinite(d.getTime()) && d.toISOString().slice(0, 10) === s && s <= today ? s : null;
+  const primary_url = https(raw.primary_url), source_url = https(raw.source_url);
+  if (!primary_url || !source_url || !checked_at) return null;
+  return { primary_url, source_url, checked_at, ...(raw.hide_contributors === true ? { hide_contributors: true } : {}) };
+}
+
+/** ミラーの数値として「未確認（null）」にするフィールド */
+export const MIRROR_UNRELIABLE_FIELDS = ["scorecard_score", "scorecard_date", "scorecard_checks", "security_md", "dependabot_configured", "latest_release_at", "releases_12mo", "advisories_count"];

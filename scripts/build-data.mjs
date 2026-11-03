@@ -15,7 +15,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import { loadOverrides, sanitizeArchiveReason, sanitizeDevelopmentMove } from "./overrides.mjs";
+import { loadOverrides, sanitizeArchiveReason, sanitizeDevelopmentMove, sanitizeSourceMirror, MIRROR_UNRELIABLE_FIELDS } from "./overrides.mjs";
 import { appendHistory, jstDate, pruneHistory, starGain } from "./star-history-lib.mjs";
 
 const ROOT = process.cwd();
@@ -140,6 +140,12 @@ const now = Date.now();
 const tools = raw.map((t) => {
   const id = String(t.id ?? t.slug);
   const extra = ghById.get(id) ?? {};
+  // GitHub がミラーのツール（記録がそろっているときだけ）。ミラーの設定・履歴から取れる値は、実際の開発の状況を表さないため、未確認（null）にする
+  const mirror = sanitizeSourceMirror(t.source_mirror);
+  if (mirror) {
+    t = { ...t };
+    for (const f of MIRROR_UNRELIABLE_FIELDS) t[f] = null;
+  }
   const lastCommit = pick(t, ["last_commit", "lastCommit"]) ?? null;
   const freshness =
     extra.freshness_days ??
@@ -159,9 +165,10 @@ const tools = raw.map((t) => {
     primary_competitor_ja: t.primary_competitor_ja ?? null,
     stars_num: pick(t, ["stars_num"]) ?? pick(extra, ["stars_num", "stars"]),
     forks_num: pick(t, ["forks_num"]) ?? pick(extra, ["forks_num", "forks"]),
-    contributors_num:
-      pick(t, ["contributors_num", "contributors"]) ??
-      pick(extra, ["contributors_num", "contributors"]),
+    contributors_num: mirror?.hide_contributors
+      ? null
+      : pick(t, ["contributors_num", "contributors"]) ??
+        pick(extra, ["contributors_num", "contributors"]),
     watchers_num:
       pick(t, ["watchers_num", "watchers"]) ??
       pick(extra, ["watchers_num", "watchers"]),
@@ -169,6 +176,7 @@ const tools = raw.map((t) => {
     license: t.license ?? null,
     license_source: t.license_source ?? null,
     ...(t.license_note ? { license_note: t.license_note } : {}),
+    ...(mirror ? { source_mirror: mirror } : {}),
     // 公式が出している保守停止などの警告（overrides.json の patch で手動設定。出典URLと確認日つき）
     // 開発場所の移転（公式の発表・移転先つき。overrides.json の patch で手動設定。そろっていなければ出さない）
     ...(sanitizeDevelopmentMove(t.development_move) ? { development_move: sanitizeDevelopmentMove(t.development_move) } : {}),
