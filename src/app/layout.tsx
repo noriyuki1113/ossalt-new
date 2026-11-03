@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import type { CSSProperties, ReactNode } from "react";
-import { JetBrains_Mono, Noto_Sans_JP, Zen_Kaku_Gothic_New } from "next/font/google";
+import "./fonts.css";
 import "./globals.css";
 import "./ui-refresh.css";
 import { AnalyticsConsent } from "@/components/analytics-consent";
@@ -19,11 +19,9 @@ const verification: Metadata["verification"] | undefined =
       }
     : undefined;
 
-// ビルド時にフォントを取得し、このサイト自身から配信する（閲覧者のブラウザがGoogleに接続しない）。
-// display: "optional"：読み込みが間に合わなければ代替フォントのままにして、表示のずれ（CLS）を出さない（#53の計測どおり）。
-const notoSansJP = Noto_Sans_JP({ weight: ["400", "500", "700"], display: "optional", variable: "--font-noto-jp", preload: false });
-const zenKakuGothic = Zen_Kaku_Gothic_New({ weight: ["700", "900"], display: "optional", variable: "--font-zen-kaku", preload: false });
-const jetBrainsMono = JetBrains_Mono({ weight: ["400", "700"], subsets: ["latin"], display: "optional", variable: "--font-jetbrains" });
+// フォントは @fontsource（OFL-1.1）から同梱し、このサイト自身から配信する（ビルド時にも、閲覧者のブラウザにも、外部への接続がない）。
+// @font-face は scripts/gen-fonts-css.mjs が src/app/fonts.css に生成する。font-display: optional：読み込みが間に合わなければ
+// 代替フォントのままにして、表示のずれ（CLS）を出さない（#53の計測どおり）。
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -83,11 +81,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="ja"
-      className={`${notoSansJP.variable} ${zenKakuGothic.variable} ${jetBrainsMono.variable}`}
       style={{
-        "--font-body": 'var(--font-noto-jp), "Hiragino Kaku Gothic ProN", "Yu Gothic", system-ui, sans-serif',
-        "--font-display": 'var(--font-zen-kaku), "Hiragino Kaku Gothic StdN", "Yu Gothic", system-ui, sans-serif',
-        "--font-mono": 'var(--font-jetbrains), ui-monospace, SFMono-Regular, Menlo, monospace',
+        "--font-body": '"Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", system-ui, sans-serif',
+        "--font-display": '"Zen Kaku Gothic New", "Hiragino Kaku Gothic StdN", "Yu Gothic", system-ui, sans-serif',
+        "--font-mono": '"JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace',
       } as CSSProperties}
     >
       <head>
