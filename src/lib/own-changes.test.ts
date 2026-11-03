@@ -157,3 +157,17 @@ test("リポジトリの正規化とリリースのページ", () => {
   assert.equal(releasesUrl("https://github.com/n8n-io/n8n/"), "https://github.com/n8n-io/n8n/releases");
   assert.equal(releasesUrl("https://gitlab.com/x/y"), null);
 });
+
+test("開発場所が移転したOSSは、旧リポジトリの値を「変化なし」「更新なし」と数えず、比較不可にする", () => {
+  const move = { from_url: "https://github.com/a/old", to_url: "https://example.com/a/new", source_url: "https://github.com/a/old/discussions/1", announced_on: "2026-10-26", checked_at: "2026-10-31" };
+  const r = buildOwnReport([
+    tool("moved", { development_move: move, star_gain_7d: { gain: 0, days: 7, from: "2026-10-22", to: "2026-10-29" }, last_commit: "2024-01-01T00:00:00Z" }),
+    tool("normal"),
+  ], { asOf, starsAsOf });
+  assert.deepEqual(r.star.up.map((x) => x.tool.id), ["normal"]);
+  assert.equal(r.star.flat, 0);
+  assert.equal(r.star.notComparable, 1);
+  assert.equal(r.maintenance.buckets.over365, 0); // 1年超に数えない
+  assert.equal(r.maintenance.longQuiet.length, 0);
+  assert.equal(r.total, 2); // 掲載はされている
+});
