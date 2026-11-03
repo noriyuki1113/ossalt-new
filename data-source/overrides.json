@@ -40,6 +40,10 @@
       "license": "AGPL-3.0（一部のクレートはMIT）",
       "license_note": "READMEのLicense節によると、cap-camera* と scap-* のクレート群はMIT、それ以外の大部分はAGPLv3です。第三者の部品は元のライセンスに従います。README と LICENSE を確認（2026-10-29）。"
     },
+    "notesnook": {
+      "description_ja": "Evernoteの代わりに使えるノートアプリ。ノートを端末側で暗号化してから同期するため、同期サーバーの管理者からも中身が見えない。同期サーバーは別のリポジトリで公開されていて自前でも動かせるが、開発元は「アルファ・サポートなし・手順書は未整備」としている。",
+      "license_note": "本体はGPL-3.0、同期サーバー（notesnook-sync-server）はAGPL-3.0。本体と同期サーバーのREADME・LICENSEを確認（2026-10-31）。"
+    },
     "pocketbase": {
       "github_archived": false,
       "development_move": {
