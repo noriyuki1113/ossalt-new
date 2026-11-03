@@ -4,7 +4,7 @@ updated: "2026-10-01"
 
 ソフトウェアの開発や公開に使うツールは数が多く、このカテゴリには45件を掲載しています。目的別に代表的なものを挙げます。
 
-- **アプリの裏側（バックエンド）**：データベース・認証・ファイル保存をまとめて使うなら、[Supabase](/tools/supabase/)、[Appwrite](/tools/appwrite/)、[PocketBase](/tools/pocketbase/)が候補です。Firebaseの代わりになります。
+- **アプリの裏側（バックエンド）**：データベース・認証・ファイル保存をまとめて使うなら、[Supabase](/tools/supabase/)、[Appwrite](/tools/appwrite/)、[PocketBase](/tools/pocketbase/)（GitHubのリポジトリは移転のためアーカイブ済みで、入手先は公式で確認）が候補です。Firebaseの代わりになります。
 - **自分のサーバーへの公開**：VercelやHerokuのように手軽にアプリを公開するなら[Coolify](/tools/coolify/)があります。
 - **ソースコードの管理**：GitHubのような仕組みを自社で持つなら[Gitea](/tools/gitea/)が軽く動きます。
 - **APIの開発と確認**：Postmanの代わりに、[Hoppscotch](/tools/hoppscotch/)でAPIを試せます。

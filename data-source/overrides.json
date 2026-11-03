@@ -40,6 +40,17 @@
       "license": "AGPL-3.0（一部のクレートはMIT）",
       "license_note": "READMEのLicense節によると、cap-camera* と scap-* のクレート群はMIT、それ以外の大部分はAGPLv3です。第三者の部品は元のライセンスに従います。README と LICENSE を確認（2026-10-29）。"
     },
+    "pocketbase": {
+      "github_archived": false,
+      "development_move": {
+        "from_url": "https://github.com/pocketbase/pocketbase",
+        "to_url": "https://ganigeorgiev.com/pocketbase/pocketbase",
+        "source_url": "https://github.com/pocketbase/pocketbase/discussions/7873",
+        "announced_on": "2026-10-26",
+        "checked_at": "2026-10-31",
+        "note": "移転先のページで、タグ v0.41.0 を確認しました（2026-10-27時点の記録。リリース日は未確認）。"
+      }
+    },
     "wazuh": {
       "license": "GPL-2.0（エンジンはAGPL-3.0）",
       "license_note": "LICENSEによると、エンジン（src/engine/）はAGPL-3.0以降、共有ライブラリはGPL-2.0とAGPL-3.0以降のどちらか、それ以外はGPL-2.0。以前の「MIT」はLICENSEの記載と異なる。README と LICENSE を確認（2026-10-29）。"

@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { evaluatePage, priorityOf, diffAudits, countClaims, shingles, jaccard, RULES_VERSION } from "./qi-lib.mjs";
+import { evaluatePage, priorityOf, diffAudits, countClaims, shingles, jaccard, r2Result, RULES_VERSION } from "./qi-lib.mjs";
 
 const tool = (o = {}) => ({ id: "x", name: "X", url: "https://x.example", github_url: "https://github.com/x/x", license: "MIT", primary_competitor: "Slack", description_ja: "Slackの代わりに使えるチャット。", description_en: "Chat app", ...o });
 const html = (t) => `<a href="${t.url}">公式</a><a href="${t.github_url}">GitHub</a><a href="/alternatives/slack/">代替</a>`;
@@ -86,4 +86,32 @@ test("差分：入力の変更と、点数の改善・悪化・追加・削除�
   assert.deepEqual(d.added, ["new"]);
   assert.deepEqual(d.removed, ["gone"]);
   assert.deepEqual(d.changedInput, ["a"]);
+});
+
+test("R2（qi-1.1）：公式サイトが無く、公式リポジトリが入口なら、それだけで減点しない", () => {
+  assert.equal(RULES_VERSION, "qi-1.1");
+  for (const url of [null, undefined, "", "  "]) assert.equal(r2Result({ officialUrl: url, hasOfficialLink: false, hasRepoLink: true }).status, "pass");
+  assert.equal(r2Result({ officialUrl: "", hasOfficialLink: false, hasRepoLink: false }).status, "fail"); // リポジトリへのリンクも無い
+});
+
+test("R2：公式サイトがあるときは、そのリンクの有無を検査する（リポジトリだけでは足りない）", () => {
+  const base = { officialUrl: "https://example.com", hasRepoLink: true };
+  assert.equal(r2Result({ ...base, hasOfficialLink: true }).status, "pass");
+  assert.equal(r2Result({ ...base, hasOfficialLink: false }).status, "fail");
+  assert.equal(r2Result({ officialUrl: "https://example.com", hasOfficialLink: true, hasRepoLink: false }).status, "fail");
+  assert.equal(r2Result({ officialUrl: "example.com", hasOfficialLink: true, hasRepoLink: true }).status, "fail"); // 形式が不正
+});
+
+test("R2：ミラーとみられるリポジトリを、正規の入口とみなさない", () => {
+  assert.equal(r2Result({ officialUrl: "", hasOfficialLink: false, hasRepoLink: true, mirror: true }).status, "fail");
+  // 公式サイトがあれば、ミラーであっても、リンクの検査は従来どおり（ミラーの問題は R3 が別に示す）
+  assert.equal(r2Result({ officialUrl: "https://gimp.org", hasOfficialLink: true, hasRepoLink: true, mirror: true }).status, "pass");
+});
+
+test("基準のバージョンが変わった比較は、rulesChanged で区別する", () => {
+  const prev = { rulesVersion: "qi-1.0", pages: [{ id: "a", inputHash: "1", score: 90 }] };
+  const d = diffAudits(prev, { rulesVersion: "qi-1.1", pages: [{ id: "a", inputHash: "2", score: 95 }] });
+  assert.equal(d.rulesChanged, true);
+  assert.deepEqual([d.fromRules, d.toRules], ["qi-1.0", "qi-1.1"]);
+  assert.equal(diffAudits({ rulesVersion: "qi-1.1", pages: [] }, { rulesVersion: "qi-1.1", pages: [] }).rulesChanged, false);
 });
