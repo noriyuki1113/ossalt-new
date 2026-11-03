@@ -15,7 +15,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import { loadOverrides, sanitizeDevelopmentMove } from "./overrides.mjs";
+import { loadOverrides, sanitizeArchiveReason, sanitizeDevelopmentMove } from "./overrides.mjs";
 import { appendHistory, jstDate, pruneHistory, starGain } from "./star-history-lib.mjs";
 
 const ROOT = process.cwd();
@@ -172,6 +172,8 @@ const tools = raw.map((t) => {
     // 公式が出している保守停止などの警告（overrides.json の patch で手動設定。出典URLと確認日つき）
     // 開発場所の移転（公式の発表・移転先つき。overrides.json の patch で手動設定。そろっていなければ出さない）
     ...(sanitizeDevelopmentMove(t.development_move) ? { development_move: sanitizeDevelopmentMove(t.development_move) } : {}),
+    // アーカイブの理由（公式の記載の要約・出典・確認日つき。overrides.json の patch で手動設定。そろっていなければ出さない）
+    ...(t.github_archived === true && sanitizeArchiveReason(t.archive_reason) ? { archive_reason: sanitizeArchiveReason(t.archive_reason) } : {}),
     ...(t.maintenance_notice?.text && t.maintenance_notice?.source_url
       ? { maintenance_notice: t.maintenance_notice }
       : {}),

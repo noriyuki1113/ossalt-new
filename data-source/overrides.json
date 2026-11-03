@@ -68,6 +68,64 @@
     },
     "papermerge": {
       "license_note": "現在の開発場所（papermerge/papermerge-core）は、コミュニティのメンテナーチームが保守しているオープンソース版で、ライセンスはApache-2.0です（LICENSE）。以前の開発場所（ciur/papermerge）はアーカイブ済みです。papermerge.com は、別のコードベースのマネージドサービス（SaaS、Papermerge Cloud）で、機能や更新の時期はオープンソース版と異なる場合があります。新リポジトリのREADMEとLICENSEを確認（2026-11-03）。"
+    },
+    "filebrowser": {
+      "archive_reason": {
+        "kind": "maintenance-ended",
+        "source_url": "https://github.com/filebrowser/filebrowser/blob/master/README.md",
+        "checked_at": "2026-11-03",
+        "text": "公式のREADMEの先頭に、2026-09-01にアーカイブされ、これ以降のリリース・バグ修正・セキュリティ修正はない、とあります。READMEは、修正しない既知の問題の種類として、コマンドの実行（runner・hooks）と、セッションのJWTの扱い（ログアウトやパスワード変更後も、発行済みのトークンが期限まで有効なまま）を挙げています。使い続ける場合は、保守されないソフトとして扱い、インターネットに直接公開せず、TLSと認証を行うリバースプロキシの後ろに置く、コマンド実行を無効のままにする、権限を絞ってコンテナで動かす、と勧めています。"
+      }
+    },
+    "flowise": {
+      "archive_reason": {
+        "kind": "ended",
+        "source_url": "https://github.com/FlowiseAI/Flowise/discussions/6727",
+        "checked_at": "2026-11-03",
+        "text": "開発チームの発表（2026-08-13）によると、2026-07-29にコードを凍結して新しいプルリクエストの受け付けを止め、2026-08-13にリポジトリをアーカイブ（npmパッケージとDockerイメージは非推奨）、2026-08-31にEOL（公式のコアチームがDiscordとGitHubから退く）とされています。Apache-2.0のコードは公開されたままで、開発チームはフォークでの継続を勧めています。"
+      }
+    },
+    "maybe-finance": {
+      "archive_reason": {
+        "kind": "maintenance-ended",
+        "source_url": "https://github.com/maybe-finance/maybe/blob/main/README.md",
+        "checked_at": "2026-11-03",
+        "text": "公式のREADMEの先頭に、このリポジトリはもう積極的には保守されていない、とあり、最後のリリース（v0.6.0）の案内へのリンクがあります。"
+      }
+    },
+    "luckysheet": {
+      "archive_reason": {
+        "kind": "successor",
+        "source_url": "https://github.com/dream-num/Luckysheet/blob/master/README.md",
+        "checked_at": "2026-11-03",
+        "successor_id": "univer",
+        "text": "公式のREADMEの先頭に、Luckysheetはもう保守されておらず、本番環境では、アップグレード版のUniverを使うことを勧める、とあります。"
+      }
+    },
+    "undb": {
+      "archive_reason": {
+        "kind": "successor",
+        "source_url": "https://github.com/undb-io/undb/blob/main/README.md",
+        "checked_at": "2026-11-03",
+        "successor_id": "teable",
+        "text": "公式のREADMEに、このリポジトリはアーカイブされ、プロジェクトはTeableへ移った、とあります。"
+      }
+    },
+    "peppermint": {
+      "archive_reason": {
+        "kind": "unknown",
+        "source_url": "https://github.com/Peppermint-Lab/Peppermint",
+        "checked_at": "2026-11-03",
+        "text": "リポジトリは2026-07-17にオーナーがアーカイブしました（GitHubの記録）。READMEには、アーカイブの理由・後継の記載は見つかりませんでした。"
+      }
+    },
+    "ohmyform": {
+      "archive_reason": {
+        "kind": "unknown",
+        "source_url": "https://github.com/ohmyform/ohmyform",
+        "checked_at": "2026-11-03",
+        "text": "リポジトリは2024-10-31にオーナーがアーカイブしました（GitHubの記録）。READMEには、アーカイブの理由・後継の記載は見つかりませんでした。"
+      }
     }
   },
   "preview_block": [

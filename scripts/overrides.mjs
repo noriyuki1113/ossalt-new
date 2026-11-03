@@ -53,3 +53,24 @@ export function sanitizeDevelopmentMove(raw, today = new Date().toISOString().sl
   const note = typeof raw.note === "string" && raw.note.trim() ? raw.note.trim().slice(0, 300) : null;
   return note ? { ...out, note } : out;
 }
+
+/**
+ * アーカイブの理由（patch の archive_reason）を検証する。
+ *   { kind: ended | maintenance-ended | successor | unknown, text, source_url, checked_at, successor_id? }
+ * 公式の記載の要約（text）・出典（https）・確認日（実在する、未来でない日付）がそろっているものだけを採用し、
+ * 欠けていれば null（推測で補わない）。
+ */
+export function sanitizeArchiveReason(raw, today = new Date().toISOString().slice(0, 10)) {
+  if (!raw || typeof raw !== "object") return null;
+  if (!["ended", "maintenance-ended", "successor", "unknown"].includes(raw.kind)) return null;
+  const https = (v) => { try { const u = new URL(String(v)); return u.protocol === "https:" ? u.href : null; } catch { return null; } };
+  const s = String(raw.checked_at ?? "");
+  const d = /^\d{4}-\d{2}-\d{2}$/.test(s) ? new Date(`${s}T00:00:00Z`) : null;
+  const checked_at = d && Number.isFinite(d.getTime()) && d.toISOString().slice(0, 10) === s && s <= today ? s : null;
+  const text = typeof raw.text === "string" ? raw.text.trim().slice(0, 700) : "";
+  const source_url = https(raw.source_url);
+  if (!text || !source_url || !checked_at) return null;
+  const out = { kind: raw.kind, text, source_url, checked_at };
+  if (typeof raw.successor_id === "string" && /^[a-z0-9][a-z0-9-]{0,60}$/.test(raw.successor_id)) out.successor_id = raw.successor_id;
+  return out;
+}

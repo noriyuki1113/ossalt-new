@@ -26,7 +26,7 @@ type FaqTool = Pick<
   | "releases_12mo"
   | "scorecard_score"
   | "security_md"
-> & { star_gain?: Tool["star_gain"] };
+> & { star_gain?: Tool["star_gain"]; archive_reason?: Tool["archive_reason"] };
 
 const LICENSE_USE: Record<LicenseClass, string> = {
   permissive:
@@ -86,7 +86,14 @@ export function buildToolFaq(
   const fd = tool.freshness_days;
   const parts: string[] = [];
   if (tool.github_archived) {
-    parts.push("このリポジトリはアーカイブされていて、開発は終了しています。新しく導入する場合は、ほかの候補も検討してください。");
+    const kind = tool.archive_reason?.kind;
+    parts.push(
+      kind === "ended" || kind === "maintenance-ended"
+        ? "このリポジトリはアーカイブされていて、公式の記載では、開発（保守）は終了しています。新しく導入する場合は、ほかの候補も検討してください。"
+        : kind === "successor"
+          ? "このリポジトリはアーカイブされていて、公式の記載では、後継のプロジェクトへ移っています。新しく導入する場合は、後継もあわせて確認してください。"
+          : "このリポジトリはGitHubでアーカイブされています。理由（開発の終了か、移転か）や後継は、公式の記載を確認できていません。新しく導入する場合は、ほかの候補も検討してください。",
+    );
   } else if (fd == null) {
     parts.push("最終更新日は取得できていません。");
   } else {

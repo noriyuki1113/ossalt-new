@@ -5,6 +5,8 @@
  * JSONの読み込みは lib/data.ts が担当する。
  */
 
+import { archivedSecurityText, type ArchiveReason } from "./archive-reason.ts";
+
 export type LanguageShare = { name: string; pct: number; color: string };
 
 export type Tool = {
@@ -36,6 +38,8 @@ export type Tool = {
    * OSSALTが取得する Star・コミット・リリースの数値は、旧リポジトリ（from_url）のもので、移転先の数値は取得していない。
    */
   development_move?: { from_url: string; to_url: string; source_url: string; announced_on: string; checked_at: string; note?: string } | null;
+  /** アーカイブ済みのツールの理由（公式の記載を確認できたものだけ。無ければ、理由は未確認） */
+  archive_reason?: ArchiveReason | null;
 
   last_commit: string | null;
   created_at: string | null;
@@ -416,7 +420,7 @@ export function advisoriesLabel(v: number | null | undefined): string {
 export type SecurityFallback = { text: string; tier: "poor" | "fair" | "good" | "unrated" };
 
 export function getSecurityFallback(tool: Tool): SecurityFallback {
-  if (tool.github_archived) return { text: "開発終了", tier: "poor" };
+  if (tool.github_archived) return { text: archivedSecurityText(tool.archive_reason), tier: "poor" };
   if (tool.advisories_count != null && tool.advisories_count > 0) {
     return { text: "要確認", tier: "fair" };
   }

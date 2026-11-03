@@ -28,6 +28,7 @@ import { isSourceAvailable, toolDescription, toolTitle } from "@/lib/seo-copy";
 import { getToolGuide } from "@/lib/tool-guides";
 import { starContext } from "@/lib/star-context";
 import { buildToolFaq } from "@/lib/tool-faq";
+import { ARCHIVE_REASON_LABELS, archiveNoticeTone } from "@/lib/archive-reason";
 import { getAlternativeGuide } from "@/lib/alternative-guides";
 import { ToolBriefPanel } from "@/components/tool-brief";
 import { TrackView } from "@/components/track-view";
@@ -169,12 +170,29 @@ export default async function ToolDetailPage({
               )}
             </div>
 
-            {tool.github_archived && (
-              <p className="notice notice--warn" style={{ marginBottom: "1.25rem" }}>
-                <strong>{t("health.archived")}</strong>{" "}{"このツールは一覧・カテゴリ・比較のページには表示していません（このページのみ残しています）。"}
-                {"新規に導入する場合は、下記の「"}{competitor} の代替を全部見る」から他の候補もあわせてご確認ください。
-              </p>
-            )}
+            {tool.github_archived && (() => {
+              const reason = tool.archive_reason;
+              const successor = reason?.successor_id ? getTool(reason.successor_id) : null;
+              return (
+                <p className={`notice notice--${archiveNoticeTone(reason?.kind)}`} style={{ marginBottom: "1.25rem" }}>
+                  <strong>{reason ? ARCHIVE_REASON_LABELS[reason.kind] : ARCHIVE_REASON_LABELS.unknown}</strong>{" "}
+                  {reason ? (
+                    <>
+                      {reason.text}{"（"}
+                      <a href={reason.source_url} rel="noopener">出典</a>
+                      {`・${reason.checked_at}確認）`}
+                      {successor && (
+                        <> {"後継："}<Link href={`/tools/${successor.id}/`}>{successor.name}</Link>{"。"}</>
+                      )}
+                    </>
+                  ) : (
+                    "GitHubのアーカイブは、開発の終了・移転・保守の終了を区別しません。このページでは、公式の記載をまだ確認できていないため、理由は断定していません。"
+                  )}
+                  {" このツールは一覧・カテゴリ・比較のページには表示していません（このページのみ残しています）。"}
+                  {"新規に導入する場合は、下記の「"}{competitor} の代替を全部見る」から他の候補もあわせてご確認ください。
+                </p>
+              );
+            })()}
 
             {!tool.github_archived && !tool.maintenance_notice && getMaintenanceWarning(tool)?.level === "stale" && (
               <p className="notice notice--warn" style={{ marginBottom: "1.25rem" }}>
