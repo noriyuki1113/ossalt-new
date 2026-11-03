@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { sanitizeDevelopmentMove } from "./overrides.mjs";
+import { sanitizeDevelopmentMove, sanitizeSourceMirror, MIRROR_UNRELIABLE_FIELDS } from "./overrides.mjs";
 
 const ok = {
   from_url: "https://github.com/pocketbase/pocketbase", to_url: "https://ganigeorgiev.com/pocketbase/pocketbase",
@@ -52,4 +52,24 @@ test("アーカイブの理由：欠けている・不正なものは、推測�
 test("アーカイブの理由：successor_id は、英数字とハイフンだけ（リンクに使うため）", () => {
   assert.equal(sanitizeArchiveReason({ ...reason, successor_id: "../x" }, "2026-11-03").successor_id, undefined);
   assert.equal(sanitizeArchiveReason({ ...reason, successor_id: "Univer" }, "2026-11-03").successor_id, undefined);
+});
+
+const mirrorOk = { primary_url: "https://code.ffmpeg.org/FFmpeg/FFmpeg", source_url: "https://github.com/FFmpeg/FFmpeg", checked_at: "2026-11-03" };
+
+test("ミラー：一次の開発元・根拠・確認日がそろっていれば採用し、hide_contributors は true のときだけ残す", () => {
+  assert.deepEqual(sanitizeSourceMirror(mirrorOk, "2026-11-03"), mirrorOk);
+  assert.equal(sanitizeSourceMirror({ ...mirrorOk, hide_contributors: true }, "2026-11-03").hide_contributors, true);
+  assert.equal("hide_contributors" in sanitizeSourceMirror({ ...mirrorOk, hide_contributors: "yes" }, "2026-11-03"), false);
+});
+
+test("ミラー：欠けている・https でない・未来や存在しない日付は採用しない（推測で補わない）", () => {
+  for (const bad of [
+    null, "x", {}, { ...mirrorOk, primary_url: undefined }, { ...mirrorOk, source_url: "http://github.com/x/y" },
+    { ...mirrorOk, checked_at: "2026-11-04" }, { ...mirrorOk, checked_at: "2026-02-30" }, { ...mirrorOk, checked_at: "" },
+  ]) assert.equal(sanitizeSourceMirror(bad, "2026-11-03"), null);
+});
+
+test("ミラーで未確認にするフィールドは、ミラーの設定・履歴から取れる値だけ。Star・Fork・最終コミットは含めない", () => {
+  assert.ok(MIRROR_UNRELIABLE_FIELDS.includes("scorecard_score") && MIRROR_UNRELIABLE_FIELDS.includes("releases_12mo"));
+  for (const keep of ["stars_num", "forks_num", "last_commit", "freshness_days", "health_score", "contributors_num"]) assert.ok(!MIRROR_UNRELIABLE_FIELDS.includes(keep));
 });

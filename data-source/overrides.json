@@ -126,6 +126,62 @@
         "checked_at": "2026-11-03",
         "text": "リポジトリは2024-10-31にオーナーがアーカイブしました（GitHubの記録）。READMEには、アーカイブの理由・後継の記載は見つかりませんでした。"
       }
+    },
+    "ffmpeg": {
+      "license": "LGPL-2.1",
+      "license_source": "manual",
+      "license_note": "FFmpegのLICENSE.mdによると、大半のファイルが LGPL v2.1以降（一部はMIT/BSD系）で、全体として LGPL v2.1以降が適用されます。一部の任意の部品は GPL v2以降で、configure に --enable-gpl を指定して有効にすると、全体が GPL v2以降になります（公式のLICENSE.mdと ffmpeg.org/legal.html、2026-11-03確認）。",
+      "source_mirror": {
+        "primary_url": "https://code.ffmpeg.org/FFmpeg/FFmpeg",
+        "source_url": "https://github.com/FFmpeg/FFmpeg",
+        "checked_at": "2026-11-03"
+      }
+    },
+    "blender": {
+      "license": "GPL-3.0",
+      "license_source": "manual",
+      "license_note": "READMEは「Blender全体は GNU GPL v3」としています。blender.org の説明では、blender.org が開発するソースの既定は GPL v2以降で、全体を組み合わせた配布物は GPL v3以降です。Cycles レンダラーなど Apache-2.0 の部品があり、個々のファイルは別の互換ライセンスの場合があります（READMEと blender.org/about/license、2026-11-03確認）。",
+      "source_mirror": {
+        "primary_url": "https://projects.blender.org/blender/blender",
+        "source_url": "https://github.com/blender/blender",
+        "checked_at": "2026-11-03"
+      }
+    },
+    "gimp": {
+      "source_mirror": {
+        "primary_url": "https://gitlab.gnome.org/GNOME/gimp",
+        "source_url": "https://github.com/GNOME/gimp",
+        "checked_at": "2026-11-03"
+      }
+    },
+    "mediawiki": {
+      "source_mirror": {
+        "primary_url": "https://gerrit.wikimedia.org/g/mediawiki/core",
+        "source_url": "https://github.com/wikimedia/mediawiki",
+        "checked_at": "2026-11-03"
+      }
+    },
+    "send": {
+      "source_mirror": {
+        "primary_url": "https://gitlab.com/timvisee/send",
+        "source_url": "https://github.com/timvisee/send",
+        "checked_at": "2026-11-03"
+      }
+    },
+    "trac": {
+      "source_mirror": {
+        "primary_url": "https://trac.edgewall.org/",
+        "source_url": "https://github.com/edgewall/trac",
+        "checked_at": "2026-11-03"
+      }
+    },
+    "glitchtip": {
+      "source_mirror": {
+        "primary_url": "https://gitlab.com/glitchtip/glitchtip",
+        "source_url": "https://github.com/burke-software/GlitchTip",
+        "checked_at": "2026-11-03",
+        "hide_contributors": true
+      }
     }
   },
   "preview_block": [

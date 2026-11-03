@@ -38,6 +38,11 @@ export type Tool = {
    * OSSALTが取得する Star・コミット・リリースの数値は、旧リポジトリ（from_url）のもので、移転先の数値は取得していない。
    */
   development_move?: { from_url: string; to_url: string; source_url: string; announced_on: string; checked_at: string; note?: string } | null;
+  /**
+   * GitHub のリポジトリがミラー（本当の開発場所は別）であることの記録。ある場合、Scorecard・リリース・SECURITY.md・Dependabot・
+   * アドバイザリの値は、ミラーのものでは実際の開発の状況を表さないため、未確認（null）にしてある。
+   */
+  source_mirror?: { primary_url: string; source_url: string; checked_at: string; hide_contributors?: boolean } | null;
   /** アーカイブ済みのツールの理由（公式の記載を確認できたものだけ。無ければ、理由は未確認） */
   archive_reason?: ArchiveReason | null;
 
@@ -399,7 +404,8 @@ export function dependabotLabel(v: boolean | null | undefined): string {
 
 /** 「2026/08/12（直近12か月に5回）」のような表示。リリースが無い場合はその旨を返す。 */
 export function releaseInfoLabel(latestReleaseAt: string | null, releases12mo: number | null): string {
-  if (!latestReleaseAt) return "リリースはありません";
+  // どちらも未取得（null）のときは「ない」と断定せず、未確認とする（ミラーのように、取得した値を採用しないツールがある）
+  if (!latestReleaseAt) return releases12mo == null ? "未確認" : "リリースはありません";
   const dateStr = formatDate(latestReleaseAt);
   if (releases12mo == null) return dateStr;
   return `${dateStr}（直近12か月に${releases12mo}回）`;
