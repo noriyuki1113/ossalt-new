@@ -15,7 +15,7 @@ Appwrite（アップライト）は、Webアプリやスマートフォンアプ
 
 ### SupabaseやPocketBaseとの違い
 
-[Supabase](/tools/supabase/)は、PostgreSQLをそのまま使う、SQL中心の構成です。Appwriteは、データベースや認証、関数などを、独自のAPIで統一して扱えるのが特徴です。もっと軽く、1つのファイルで動かしたい場合は、[PocketBase](/tools/pocketbase/)があります（GitHubのリポジトリは移転のためアーカイブされています。詳しくはPocketBaseのページを参照してください）。比較は「[AppwriteとSupabaseの違い](/compare/appwrite-vs-supabase/)」を参照してください。
+[Supabase](/tools/supabase/)は、PostgreSQLをそのまま使う、SQL中心の構成です。Appwriteは、データベースや認証、関数などを、独自のAPIで統一して扱えるのが特徴です。もっと軽く、1つのファイルで動かしたい場合は、[PocketBase](/tools/pocketbase/)があります（GitHubのリポジトリは移転のためアーカイブされています。詳しくはPocketBaseのページを参照してください）。比較は「[AppwriteとSupabaseの違い](/compare/appwrite-vs-supabase/)」と「[AppwriteとPocketBaseの違い](/compare/appwrite-vs-pocketbase/)」を参照してください。
 
 ### 注意点
 

@@ -18,7 +18,7 @@ export type OwnTool = Pick<
   Tool,
   | "id" | "name" | "github_url" | "stars_num" | "last_commit" | "github_archived"
   | "latest_release_at" | "releases_12mo" | "star_gain" | "star_gain_7d"
-  | "primary_competitor" | "primary_competitor_ja"
+  | "primary_competitor" | "primary_competitor_ja" | "development_move"
 > & {
   /** GitHub からこのツールの値を最後に取得した日時（ISO）。古い公開データには無い */
   github_checked_at?: string | null;
@@ -181,6 +181,8 @@ export function buildOwnReport(
   const rows: StarRow[] = [];
   let notComparable = 0;
   for (const t of active) {
+    // 開発場所が移転したOSSの Star は、旧GitHubリポジトリのもので更新されない。「変化なし」と数えず、比較不可にする
+    if (t.development_move) { notComparable++; continue; }
     const w7 = Number.isSafeInteger(t.stars_num) && (t.stars_num as number) >= 0
       ? validWindow(t.star_gain_7d, today, { minDays: WINDOW7_MIN, maxDays: WINDOW7_MAX })
       : null;
@@ -212,6 +214,8 @@ export function buildOwnReport(
   const recentReleases: Array<{ tool: OwnTool; publishedAt: string }> = [];
   let noReleaseInfo = 0;
   for (const t of active) {
+    // 移転したOSSの最終pushは、旧リポジトリのもの。「1年以上更新が無い」とは数えない（開発の停止を示さない）
+    if (t.development_move) { buckets.unknown++; noReleaseInfo++; continue; }
     const pushed = validInstant(t.last_commit, nowMs);
     const ref = checkedDay(t, nowMs) ?? today;
     const days = pushed === null ? null : Math.max(0, daysBetween(jstDay(pushed), ref));
