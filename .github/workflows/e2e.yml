@@ -45,13 +45,13 @@ jobs:
           NEXT_PUBLIC_SITE_URL: https://ossalt.jp
           # For You の導線（機能フラグ）も含めて検証する。本番の公開は deploy-pages.yml の Variables で決まる
           NEXT_PUBLIC_FEATURE_FOR_YOU: "1"
-        run: npm run build
+        run: node scripts/build-retry.mjs npm run build
       # 計測（PostHog）のE2E用に、ダミーのトークンとモックのホストを埋め込んだビルドを別に作る（out/ は残る）。
       # 実際のPostHogには接続しない。
       - name: 計測E2E用のビルド
         env:
           NEXT_PUBLIC_SITE_URL: https://ossalt.jp
-        run: npm run build:analytics-e2e
+        run: node scripts/build-retry.mjs npm run build:analytics-e2e
       - name: ブラウザのインストール
         run: npx playwright install --with-deps chromium
       - name: ブラウザテスト（デスクトップ・スマホ・計測）

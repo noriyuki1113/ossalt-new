@@ -31,6 +31,11 @@ export type Tool = {
   license_note?: string | null;
   /** 公式が出している保守停止などの警告。OSSALTが原文を確認して手動で設定したものだけ */
   maintenance_notice?: { text: string; source_url: string; checked_at: string } | null;
+  /**
+   * 開発場所の移転（開発者の公式の発表）。旧リポジトリがGitHubでアーカイブされていても、開発が続いている場合に使う。
+   * OSSALTが取得する Star・コミット・リリースの数値は、旧リポジトリ（from_url）のもので、移転先の数値は取得していない。
+   */
+  development_move?: { from_url: string; to_url: string; source_url: string; announced_on: string; checked_at: string; note?: string } | null;
 
   last_commit: string | null;
   created_at: string | null;
@@ -307,6 +312,8 @@ export type MaintenanceWarning = { level: "archived" | "stale"; days: number | n
 
 export function getMaintenanceWarning(tool: Tool): MaintenanceWarning {
   if (tool.github_archived) return { level: "archived", days: tool.freshness_days };
+  // 開発場所が移転した場合、旧リポジトリの最終コミットの古さは、開発の停止を示さない（数値が更新されないだけ）
+  if (tool.development_move) return null;
   if (tool.freshness_days != null && tool.freshness_days >= 365) {
     return { level: "stale", days: tool.freshness_days };
   }
