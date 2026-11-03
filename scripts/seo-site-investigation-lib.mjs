@@ -85,8 +85,16 @@ export function titleReview(pages, { maxWidth = 70, cutWidth = 60, boilerplateMi
     if (width <= maxWidth) continue;
     const vis = visiblePart(p.title, cutWidth);
     const lost = p.title.slice(vis.length);
-    const lostSegs = titleSegments(lost).filter((s) => lost.includes(s));
-    const lostUnique = lostSegs.filter((s) => !isBoiler(s));
+    // セグメントごとに位置を数え、切れる位置にかかる（または完全に後ろにある）セグメントのうち、定型でないものを「固有の情報」とする
+    const lostUnique = [];
+    let cursor = 0;
+    for (const seg of titleSegments(p.title)) {
+      const at = p.title.indexOf(seg, cursor);
+      if (at < 0) continue;
+      cursor = at + seg.length;
+      const endWidth = widthOf(p.title.slice(0, cursor));
+      if (endWidth > cutWidth && !isBoiler(seg)) lostUnique.push(seg);
+    }
     const lead = titleSegments(p.title)[0] ?? "";
     const leadToken = lead.split(/[とはのでをにがの？?：:、]/)[0].trim();
     const h1 = (p.h1[0] ?? "");

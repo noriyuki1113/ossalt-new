@@ -28,7 +28,11 @@ test("titleReview: 重複・定型・切れる部分で優先度を分ける", (
   assert.equal(r.over, 14);
   assert.equal(r.byPriority["A:重複"].length, 2);
   assert.ok(r.boilerplates.some(([s]) => s === boiler));
-  assert.ok(r.rows.find((x) => x.path === "/tools/t0/").priority.startsWith("B"));
+  // 先頭の主題は幅60以内に収まり、切れるのは定型と屋号だけ → C
+  assert.ok(r.rows.find((x) => x.path === "/tools/t0/").priority.startsWith("C"));
+  // 先頭の主題そのものが切れる → B
+  const long = new Map([["/p/", page({ title: "非常に長い主題の語句が続く説明のページ、検索意図を表す語が後ろの方に出てくる文章です｜定型 | ossalt.jp" })]]);
+  assert.ok(titleReview(long).rows[0].priority.startsWith("B"));
 });
 
 test("titleSegments/visiblePart/widthOf", () => {
