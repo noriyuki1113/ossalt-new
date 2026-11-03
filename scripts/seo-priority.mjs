@@ -120,6 +120,10 @@ export function intentFit(patternId, familyId) {
  * 順位の差は、両期間の表示回数が十分なときだけ使う（lowSample / unverifiable は効かせない）。
  */
 export function trendFactor(cmp) {
+  const t = trendFactorCore(cmp);
+  return cmp?.pageLevel && t.used ? { ...t, note: `［ページ全体の増減で代用］${t.note}` } : t;
+}
+function trendFactorCore(cmp) {
   if (!cmp) return { value: 1, note: "前期間のデータなし（データ不足）", used: false };
   if (cmp.status !== "both") return { value: 1, note: cmp.status === "unverifiable" ? "片方の期間は表が上限に達しており、増減を断定できない" : "片方の期間にだけ出ている（新規・消失とは断定しない）", used: false };
   if (cmp.lowSample) return { value: 1, note: "表示回数が少なく、増減を判断しない", used: false };

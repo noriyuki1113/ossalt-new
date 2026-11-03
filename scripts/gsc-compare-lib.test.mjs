@@ -80,3 +80,12 @@ test("parseDateText / parseFilters", () => {
   assert.deepEqual(parseDateText("2026/10/06 - 2026/11/02"), { from: "2026-10-06", to: "2026-11-02", relativeDays: null });
   assert.equal(parseFilters("フィルタ,値\n国,日本\nデバイス,モバイル\n").country, "日本");
 });
+
+test("実際のエクスポート（過去28日間・1日違い）は、重なっているため前期間として使えない", async () => {
+  const root = new URL("../agency/data/", import.meta.url).pathname;
+  let a, b;
+  try { a = await readExportDir(root + "export-2026-10-28"); b = await readExportDir(root + "export-2026-10-27"); } catch { return; } // ローカルのGSCデータが無い環境では何もしない
+  const r = compareExports(a, b, { kind: "pages" });
+  assert.equal(r.check.ok, false);
+  assert.match(r.check.errors.join(), /重なっている可能性/);
+});

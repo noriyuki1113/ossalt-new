@@ -148,6 +148,8 @@ export async function readExportDir(dir, { brand = "ossalt" } = {}) {
   const rawCount = (k) => (files[k] ? parseCsv(files[k].text.replace(/^﻿/, ""), { delimiter: detectDelimiter(files[k].text) }).length - 1 : null);
   return {
     dir: root, sample, conditions, totals,
+    // フォルダ名に含まれる日付（export-2026-10-28 など）。相対表記（過去28日間）の期間の重なりの目安にだけ使う
+    exportedOn: /(\d{4}-\d{2}-\d{2})/.exec(root.split("/").pop())?.[1] ?? null,
     queries, pages, pairs,
     rawRows: { queries: rawCount("queries"), pages: rawCount("pages"), pairs: rawCount("pairs") },
     present: Object.fromEntries(Object.entries(files).map(([k, v]) => [k, v?.name ?? null])),
@@ -193,6 +195,10 @@ export function checkComparable(cur, prev, { kind = "queries" } = {}) {
   } else {
     unverified.push("期間（日付）：エクスポートに絶対日付がありません。meta.json（from/to）または --cur-from/--cur-to などで指定してください。連続性・重複を検証できていません。");
     if (c.days && p.days && c.days !== p.days) errors.push(`期間の長さが違います（直近 ${c.days}日 / 前 ${p.days}日）。`);
+    // 両方が相対表記（過去N日間）で、エクスポート日の差が期間より短いなら、期間が重なっている（前の期間にならない）
+    if (c.days && c.days === p.days && cur.exportedOn && prev.exportedOn && Math.abs(daysBetween(prev.exportedOn, cur.exportedOn)) - 1 < c.days) {
+      errors.push(`エクスポート日（${prev.exportedOn} と ${cur.exportedOn}）の差が期間（${c.days}日）より短く、期間が重なっている可能性が高いです。前の期間は、直近の期間の開始日より前に終わるようにエクスポートしてください。`);
+    }
   }
   // 検索タイプ・国・デバイス
   if (c.searchType == null || p.searchType == null) unverified.push("検索タイプ：どちらかで確認できません。");
