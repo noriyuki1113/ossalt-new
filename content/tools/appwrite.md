@@ -1,6 +1,6 @@
 ---
 description: "Appwriteとは、データベース・認証・ファイル保存・サーバー側の関数などを、まとまったAPIと管理画面で使える、オープンソースのバックエンド基盤です。Firebaseとの違い、Supabaseとの違い、自前で動かす構成と注意点を解説します。"
-updated: "2026-10-02"
+updated: "2026-11-02"
 ---
 
 Appwrite（アップライト）は、Webアプリやスマートフォンアプリの裏側（バックエンド）に必要な機能を、まとめて提供する基盤です。データベース、ユーザーの認証、ファイルの保存、サーバー側の関数の実行などを、統一されたAPIと管理画面で使えます。Firebaseの代わりとして使われていて、画面の日本語翻訳もあります。
@@ -15,7 +15,7 @@ Appwrite（アップライト）は、Webアプリやスマートフォンアプ
 
 ### SupabaseやPocketBaseとの違い
 
-[Supabase](/tools/supabase/)は、PostgreSQLをそのまま使う、SQL中心の構成です。Appwriteは、データベースや認証、関数などを、独自のAPIで統一して扱えるのが特徴です。もっと軽く、1つのファイルで動かしたい場合は、[PocketBase](/tools/pocketbase/)があります。比較は「[AppwriteとSupabaseの違い](/compare/appwrite-vs-supabase/)」と「[AppwriteとPocketBaseの違い](/compare/appwrite-vs-pocketbase/)」を参照してください。
+[Supabase](/tools/supabase/)は、PostgreSQLをそのまま使う、SQL中心の構成です。Appwriteは、データベースや認証、関数などを、独自のAPIで統一して扱えるのが特徴です。もっと軽く、1つのファイルで動かしたい場合は、[PocketBase](/tools/pocketbase/)があります（GitHubのリポジトリは移転のためアーカイブされています。詳しくはPocketBaseのページを参照してください）。比較は「[AppwriteとSupabaseの違い](/compare/appwrite-vs-supabase/)」と「[AppwriteとPocketBaseの違い](/compare/appwrite-vs-pocketbase/)」を参照してください。
 
 ### 注意点
 

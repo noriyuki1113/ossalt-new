@@ -9,7 +9,7 @@
  * - 同じ入力と同じ RULES_VERSION なら、同じ結果になる（日時以外は決定的）。
  */
 
-export const RULES_VERSION = "qi-1.0";
+export const RULES_VERSION = "qi-1.1";
 
 export const DOMAINS = {
   unique: { label: "独自性・実用性", max: 30 },
@@ -63,6 +63,26 @@ export function countClaims(text) {
 export const isNonOsiGroup = (group) => group === "source-available";
 
 /**
+ * R2「公式サイト・リポジトリへのリンクがある」の判定（qi-1.1）。
+ * - 公式サイトのURLがある → そのリンクと、公式リポジトリへのリンクが、ページにあること
+ * - 公式サイトのURLが無い（空）→ 公式のGitHubリポジトリが正規の入口とみなし、それだけで減点しない（リポジトリへのリンクが要る）
+ * - ただし、リポジトリがミラーとみられる場合は、正規の入口とみなさない（本当の開発元を確認できないため不合格）
+ * - 公式サイトのURLがあるのに形式が不正（http(s)でない）→ データの欠陥として不合格
+ */
+export function r2Result({ officialUrl, hasOfficialLink, hasRepoLink, mirror = false }) {
+  const raw = String(officialUrl ?? "").trim();
+  const has = (b) => (b ? "あり" : "なし");
+  if (raw === "") {
+    if (mirror) return { status: "fail", basis: "公式サイトなし。リポジトリはミラーとみられ、正規の入口を確認できない" };
+    return hasRepoLink
+      ? { status: "pass", basis: "公式サイトなし。公式リポジトリが入口（リンクあり）" }
+      : { status: "fail", basis: "公式サイトなし。公式リポジトリへのリンクも無い" };
+  }
+  if (!/^https?:\/\//.test(raw)) return { status: "fail", basis: "公式サイトのURLの形式が不正" };
+  return { status: hasOfficialLink && hasRepoLink ? "pass" : "fail", basis: `公式=${has(hasOfficialLink)} / GitHub=${has(hasRepoLink)}` };
+}
+
+/**
  * 1ページの評価。
  * input = {
  *   tool, facts (page-audit-lib の extractFacts), seoIssues (pageIssues の issues), jsonLdOk,
@@ -96,7 +116,9 @@ export function evaluatePage(input) {
   add("accuracy", "R1", "ライセンス表記が掲載データと一致してページに出ている", 5, !tool.license ? "unknown" : text.includes(lic) ? "pass" : "fail", tool.license ? `data=${tool.license}` : "ライセンス未取得");
   const hasOfficial = /^https?:\/\//.test(tool.url ?? "") && input.html?.includes(`href="${tool.url}"`);
   const hasGh = input.html?.includes(`href="${tool.github_url}"`);
-  add("accuracy", "R2", "公式サイト・リポジトリへのリンクがある", 5, hasOfficial && hasGh ? "pass" : hasGh || hasOfficial ? "fail" : "fail", `公式=${hasOfficial ? "あり" : "なし"} / GitHub=${hasGh ? "あり" : "なし"}`);
+  const mirrorSrc = /mirror/i.test(tool.description_en ?? "");
+  const r2 = r2Result({ officialUrl: tool.url, hasOfficialLink: !!hasOfficial, hasRepoLink: !!hasGh, mirror: mirrorSrc });
+  add("accuracy", "R2", "公式サイト・リポジトリへのリンクがある", 5, r2.status, r2.basis);
   const mirror = /mirror/i.test(tool.description_en ?? "");
   add("accuracy", "R3", "データの取得元が公式の開発リポジトリ（ミラーでない）", 5, mirror ? "fail" : "pass", mirror ? `GitHubの説明：${norm(tool.description_en).slice(0, 80)}` : "ミラーの表示なし");
   const v = guide?.verification ?? "unverified";
@@ -186,7 +208,7 @@ export function priorityOf(result, { impressions = null } = {}) {
 /** 2回の監査結果の比較 */
 export function diffAudits(prev, cur) {
   const p = new Map((prev?.pages ?? []).map((x) => [x.id, x]));
-  const out = { improved: [], worsened: [], added: [], removed: [], changedInput: [] };
+  const out = { improved: [], worsened: [], added: [], removed: [], changedInput: [], rulesChanged: Boolean(prev?.rulesVersion && cur?.rulesVersion && prev.rulesVersion !== cur.rulesVersion), fromRules: prev?.rulesVersion ?? null, toRules: cur?.rulesVersion ?? null };
   for (const c of cur.pages) {
     const o = p.get(c.id);
     if (!o) { out.added.push(c.id); continue; }

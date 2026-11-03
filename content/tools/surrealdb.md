@@ -17,7 +17,7 @@ SurrealDB（サリール・ディービー）は、**ドキュメント、グラ
 
 Firebaseは、データベース、ログイン、ファイルの保存などをGoogleが運営するサービスとして使えます。SurrealDBは、**データベースとしての機能が中心で、自分のサーバーで動かす**ものです。画面の部品や通知など、Firebaseの周辺のサービスをそのまま置き換えるものではありません。
 
-同じ自前のバックエンドとしては、[Supabase](/tools/supabase/)、[PocketBase](/tools/pocketbase/)、[Appwrite](/tools/appwrite/)があります。
+同じ自前のバックエンドとしては、[Supabase](/tools/supabase/)、[PocketBase](/tools/pocketbase/)（GitHubのリポジトリは移転のためアーカイブ済み）、[Appwrite](/tools/appwrite/)があります。
 
 ### 注意点
 
