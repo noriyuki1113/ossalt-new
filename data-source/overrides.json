@@ -62,6 +62,12 @@
     "quivr": {
       "description_ja": "流れ続ける内容を取り込み、数秒で検索でき、話題を追い続けられるようにする、オープンソースのエンジン（Quivr V2）。現在のREADMEは「評価の段階で、本番ではまだ動かさないでください」と書いている。完成したチャットのサービスではない。",
       "license_note": "README と LICENSE を確認（2026-10-29）。以前の「RAGの部品」という説明は、現在のREADME（V2）とは異なる。"
+    },
+    "piper": {
+      "license_note": "現在の開発場所（OHF-Voice/piper1-gpl）のライセンスはGPL-3.0です（COPYING）。以前の開発場所（rhasspy/piper、アーカイブ済み）はMIT でした。旧版（MIT）と新版（GPL-3.0）では、組み込む・配布するときの条件が異なります。導入前に、使う版のライセンスを確認してください。旧リポジトリのREADMEの案内と新リポジトリのCOPYINGを確認（2026-11-03）。"
+    },
+    "papermerge": {
+      "license_note": "現在の開発場所（papermerge/papermerge-core）は、コミュニティのメンテナーチームが保守しているオープンソース版で、ライセンスはApache-2.0です（LICENSE）。以前の開発場所（ciur/papermerge）はアーカイブ済みです。papermerge.com は、別のコードベースのマネージドサービス（SaaS、Papermerge Cloud）で、機能や更新の時期はオープンソース版と異なる場合があります。新リポジトリのREADMEとLICENSEを確認（2026-11-03）。"
     }
   },
   "preview_block": [
