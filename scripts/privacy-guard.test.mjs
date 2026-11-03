@@ -25,7 +25,12 @@ test("site never references Google-hosted font stylesheets or font files", async
   }
   assert.deepEqual(offending, [], `Remote Google Fonts detected in: ${offending.join(", ")}`);
   const layout = await readFile(join(srcDir, "app/layout.tsx"), "utf8");
-  assert.match(layout, /from "next\/font\/google"/, "Use build-time self-hosted fonts");
+  // フォントは同梱（src/app/fonts.css。scripts/gen-fonts-css.mjs が @fontsource から生成）。以前は next/font/google（ビルド時にGoogleから取得して自前配信）だった。
+  // どちらも、閲覧者のブラウザはGoogleに接続しない。同梱にして、ビルド時の外部取得もなくした。
+  assert.match(layout, /import "\.\/fonts\.css"/, "Use self-hosted fonts (src/app/fonts.css)");
+  assert.doesNotMatch(layout, /next\/font\/google/, "Do not fetch Google Fonts at build time");
+  const fontsCss = await readFile(join(srcDir, "app/fonts.css"), "utf8");
+  assert.doesNotMatch(fontsCss, /https?:\/\//, "fonts.css must not reference remote URLs");
 });
 
 test("no session replay SDK has been introduced without an audit", async () => {
