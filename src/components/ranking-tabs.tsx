@@ -131,7 +131,7 @@ export function RankingTabs({ popular, growth, recommended, counts, asOf, weight
       <section id="panel-popular" role="tabpanel" aria-labelledby="tab-popular" hidden={tab !== "popular"}>
         <h2 className="h3">人気ランキング</h2>
         <p className="muted rank-note">
-          {`長く多くの人に使われ、知られているかを見るランキングです。${weights.popular}掲載${counts.popularTotal}件の中での順位（上位何%か）を足し合わせています。Starsは利用者数や品質ではなく、注目度の目安です。データの取得日：${asOf}。`}
+          {`長く多くの人に使われ、知られているかを見るランキングです。${weights.popular}Stars・Forks・Contributorsが揃っている${counts.popularTotal}件の中での順位（上位何%か）を足し合わせています。Starsは利用者数や品質ではなく、注目度の目安です。データの取得日：${asOf}。`}
         </p>
         <Rows rows={popular} kind="popular" />
       </section>

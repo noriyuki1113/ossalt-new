@@ -97,7 +97,7 @@ test.describe("ツール詳細ページ", () => {
     for (const li of await items.all()) await expect(li.locator("small")).toContainText("根拠：");
     // 導入・運用、人気・成長、公式の情報
     await expect(brief).toContainText(/導入・運用の難易度：/);
-    await expect(brief).toContainText(/人気：掲載\d+件中\d+位/);
+    await expect(brief).toContainText(/人気：ランキング対象\d+件中\d+位/);
     await expect(brief.getByRole("link", { name: "GitHubのREADME" })).toHaveAttribute("href", /github\.com\/.+#readme$/);
     await expect(brief.getByRole("link", { name: /計算の根拠を見る/ })).toHaveAttribute("href", "/rankings/");
     expect(problems).toEqual([]);
