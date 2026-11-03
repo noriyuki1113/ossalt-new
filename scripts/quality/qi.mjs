@@ -178,7 +178,7 @@ const summary = {
   ux, gscSource: gsc?.source ?? null,
 };
 const prev = latestHistory();
-const diff = prev ? diffAudits(prev, { pages }) : null;
+const diff = prev ? diffAudits(prev, { pages, rulesVersion: RULES_VERSION }) : null;
 
 if (mode === "one") {
   const p = pages[0];
@@ -230,6 +230,7 @@ function toMarkdown(s, ps, d, prevA) {
   const top = topN(ps, 20);
   const L = [`# OSSALT Quality Intelligence 監査レポート（${s.auditId}）`, "", `- 生成：${s.generatedAt}（基準 ${s.rulesVersion}、モード ${s.mode}）`, `- 対象 ${s.target}件／監査 ${s.audited}件／未監査 ${s.notAudited}件／失敗 ${s.failed}件`, `- 評価：A ${s.grades.A}・B ${s.grades.B}・C ${s.grades.C}・D ${s.grades.D}・未評価 ${s.grades.unrated}（うち暫定 ${s.provisional}）`, `- 優先度：P0 ${s.priority.P0}・P1 ${s.priority.P1}・P2 ${s.priority.P2}・P3 ${s.priority.P3}`, `- 共通テンプレートの表示検査：${s.ux.status}（${s.ux.note}）`, `- Search Console：${s.gscSource ? `手元のCSV（${s.gscSource}）を優先度に使用。数値はこのレポートだけに出し、Gitには保存しない` : "CSVなし（検索の表示回数は使っていない）"}`, ""];
   if (d) L.push(`## 前回（${prevA.auditId}）との比較`, "", `入力が変わったページ ${d.changedInput.length}件・改善 ${d.improved.length}件・悪化 ${d.worsened.length}件・追加 ${d.added.length}件・削除 ${d.removed.length}件`, "");
+  if (d?.rulesChanged) L.push(`> **評価の基準が ${d.fromRules} → ${d.toRules} に変わっています。** 点数の増減には、基準の変更による分が含まれます。ページの品質が実際に変わった分と区別して読んでください（同じデータでの比較は docs/audits/ にあります）。`, "");
   L.push("## 重大な警告（点数とは別）", "");
   const sev = ps.filter((p) => (p.warnings ?? []).some((w) => w.severity === "high"));
   if (!sev.length) L.push("なし", "");
