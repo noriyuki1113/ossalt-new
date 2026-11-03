@@ -92,6 +92,57 @@ export function resolveMinImpressions(rows, requested = "auto") {
     : { value: MIN_IMPRESSIONS, reason: "既定値" };
 }
 
+
+/* ------------------------------------------------------------------ *
+ * 拡張の係数（期間比較・検索意図の一致・QI・AI Overview）。いずれも、入力が無ければ 1（効かせない）で、
+ * 「データ不足」としてレポートに出す。係数の大きさは仮説（計算の仮定）で、成果の予測ではない。
+ * ------------------------------------------------------------------ */
+
+/** 検索パターン → 対応が自然なページ種別（仮説：OSSALTの構成からの対応づけ） */
+export const EXPECTED_FAMILIES = {
+  vs: ["compare"],
+  alternative: ["alternatives"],
+  opensource: ["alternatives", "tools"],
+  selfhost: ["tools", "guide"],
+  license: ["licenses", "tools"],
+  install: ["tools", "guide"],
+};
+
+/** 検索意図とページ種別の一致。パターンが分類できない／ページが不明なときは判定しない（null） */
+export function intentFit(patternId, familyId) {
+  const exp = EXPECTED_FAMILIES[patternId];
+  if (!exp || !familyId || familyId === "other") return null;
+  return exp.includes(familyId);
+}
+
+/**
+ * 前期間との比較（compareRows の1行）から、緊急度の係数を出す。
+ * 順位の差は、両期間の表示回数が十分なときだけ使う（lowSample / unverifiable は効かせない）。
+ */
+export function trendFactor(cmp) {
+  const t = trendFactorCore(cmp);
+  return cmp?.pageLevel && t.used ? { ...t, note: `［ページ全体の増減で代用］${t.note}` } : t;
+}
+function trendFactorCore(cmp) {
+  if (!cmp) return { value: 1, note: "前期間のデータなし（データ不足）", used: false };
+  if (cmp.status !== "both") return { value: 1, note: cmp.status === "unverifiable" ? "片方の期間は表が上限に達しており、増減を断定できない" : "片方の期間にだけ出ている（新規・消失とは断定しない）", used: false };
+  if (cmp.lowSample) return { value: 1, note: "表示回数が少なく、増減を判断しない", used: false };
+  if (cmp.dPosition != null && cmp.dPosition >= 2) return { value: 1.15, note: `順位が${cmp.dPosition}下がっている（下落の確認を優先）`, used: true };
+  if (cmp.dPosition != null && cmp.dPosition <= -2) return { value: 0.9, note: `順位が${Math.abs(cmp.dPosition)}上がっている（すでに動いている。変更の効果を見てから）`, used: true };
+  if (cmp.dImpressionsRatio != null && cmp.dImpressionsRatio >= 0.2) return { value: 1.1, note: `表示回数が${Math.round(cmp.dImpressionsRatio * 100)}%増えている（検索需要か露出の増加。要因は未確定）`, used: true };
+  return { value: 1, note: "大きな変化なし", used: true };
+}
+
+/** QI（品質監査）の評価から、充実度の係数を出す。A=すでに充実（改善余地が小さい）、C=余地が大きい */
+export function qiFactor(qi) {
+  if (!qi) return { value: 1, note: "QI評価なし（データ不足）", used: false };
+  const g = String(qi.grade ?? "").toUpperCase();
+  if (g === "C") return { value: 1.15, note: `QI評価C（点数${qi.score ?? "?"}）：内容の充実度に改善余地が大きい`, used: true };
+  if (g === "A") return { value: 0.9, note: `QI評価A（点数${qi.score ?? "?"}）：内容は充実。タイトル・導線の確認が中心`, used: true };
+  if (g === "B") return { value: 1, note: `QI評価B（点数${qi.score ?? "?"}）`, used: true };
+  return { value: 1, note: "QI評価が未確認（A〜C以外）", used: false };
+}
+
 /** 施策の種類（仮説の実装コスト：小=1、中=2、大=3） */
 export const ACTIONS = {
   title: { label: "title・descriptionの見直し", cost: 1, basis: "仮説：実装コスト小（メタ情報のみ）" },
@@ -132,6 +183,22 @@ export function scoreRow(row, { bands, pageState = null, minImpressions = MIN_IM
   let mult = headroom;
   if (pattern) { mult *= pattern.weight; factors.push({ name: `検索パターン：${pattern.label}`, value: pattern.weight, kind: "仮説", note: pattern.basis }); }
   if (family) { mult *= family.weight; factors.push({ name: `ページ種別：${family.id}`, value: family.weight, kind: "仮説", note: family.basis }); }
+  // 拡張の係数（入力があるときだけ効かせる）。入力が無い項目は dataGaps に残す
+  const dataGaps = [];
+  const trend = trendFactor(row.cmp);
+  if (!trend.used) dataGaps.push("前期間比較：" + trend.note);
+  else { mult *= trend.value; factors.push({ name: "前期間との比較", value: trend.value, kind: "仮説", note: trend.note }); }
+  if (pattern && family && row.page !== undefined) {
+    const fit = intentFit(pattern.id, family.id);
+    if (fit === false) { mult *= 0.85; factors.push({ name: "検索意図とページ種別", value: 0.85, kind: "仮説", note: `「${pattern.label}」に自然な種類（${EXPECTED_FAMILIES[pattern.id].join("・")}）と、このページの種類（${family.id}）が違う。意図とのずれの確認が先（新規ページの前に）` }); }
+    else if (fit === true) factors.push({ name: "検索意図とページ種別", value: 1, kind: "仮説", note: "種類は自然に対応している" });
+    else dataGaps.push("検索意図の一致：パターンまたはページ種別を分類できない");
+  } else if (row.kind === "query") dataGaps.push("検索意図の一致：クエリ別のみ（対応するURLが不明。クエリ×ページのCSVが必要）");
+  const qf = qiFactor(row.qi);
+  if (!qf.used) dataGaps.push("内容の充実度：" + qf.note);
+  else { mult *= qf.value; factors.push({ name: "内容の充実度（QI）", value: qf.value, kind: "仮説", note: qf.note }); }
+  if (row.aiOverview === true) { mult *= 0.9; factors.push({ name: "AI Overview", value: 0.9, kind: "仮説", note: "確認できたクエリ：クリックに影響する可能性" }); }
+  else if (row.aiOverview == null) dataGaps.push("AI Overview・SERP機能：未確認");
   const blocked = pageState && (pageState.refresh || pageState.noindex);
   if (blocked) { mult *= 0; }
   const cost = ACTIONS[action].cost;
@@ -139,7 +206,7 @@ export function scoreRow(row, { bands, pageState = null, minImpressions = MIN_IM
   factors.push({ name: "実装コスト", value: cost, kind: "仮説", note: ACTIONS[action].basis });
   return {
     ...row, action, actionLabel: ACTIONS[action].label, reason, band, pattern: pattern?.id ?? null, family: family?.id ?? null,
-    score: Number(score.toFixed(3)), factors,
+    score: Number(score.toFixed(3)), factors, dataGaps,
     blocked: blocked ? (pageState.refresh ? "転送ページ（掲載をやめたURL）" : "noindexのページ") : null,
   };
 }
