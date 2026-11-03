@@ -65,7 +65,7 @@ jobs:
           # 検索エンジンの所有権確認のメタタグ（任意。通常は不要）
           NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ vars.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }}
           NEXT_PUBLIC_BING_SITE_VERIFICATION: ${{ vars.NEXT_PUBLIC_BING_SITE_VERIFICATION }}
-        run: npm run build
+        run: node scripts/build-retry.mjs npm run build
 
       - uses: actions/upload-pages-artifact@v3
         with:
