@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { generateKeyPairSync, createVerify } from 'node:crypto';
-import { parseKey, buildAssertion, getAccessToken, queryAll, rowsToCsv, dateRange, fetchAll, ROW_LIMIT } from './gsc-api-fetch.mjs';
+import { parseKey, buildAssertion, getAccessToken, queryAll, rowsToCsv, dateRange, fetchAll, ROW_LIMIT, listSites, resolveToken } from './gsc-api-fetch.mjs';
 import { parseCsv } from './gsc-weekly-report.mjs';
 
 const { privateKey, publicKey } = generateKeyPairSync('rsa', { modulusLength: 2048 });
@@ -77,4 +77,21 @@ test('generated CSV is readable by seo-agency readGscExport (all three kinds)', 
   const p = readGscExport(rowsToCsv('page', [{ keys: ['https://ossalt.jp/alternatives/notion/'], clicks: 1, impressions: 100, ctr: 0.01, position: 8 }]), 'page');
   const pr = readGscExport(rowsToCsv('pair', [{ keys: ['notion 代替', 'https://ossalt.jp/alternatives/notion/'], clicks: 1, impressions: 100, ctr: 0.01, position: 8 }]), 'pair');
   for (const r of [q, p, pr]) assert.equal((r.rows ?? r)[0].impressions, 100);
+});
+
+test('resolveToken prefers the keyless short-lived token and never needs a key file', async () => {
+  assert.equal(await resolveToken({ GSC_ACCESS_TOKEN: ' tok\n' }, async () => { throw new Error('no network'); }), 'tok');
+  await assert.rejects(resolveToken({}), /GSC_ACCESS_TOKEN/);
+});
+
+test('listSites returns only url and permission, and explains 401 without the body', async () => {
+  const sites = await listSites({ token: 't', fetchImpl: async () => json({ siteEntry: [{ siteUrl: 'sc-domain:ossalt.jp', permissionLevel: 'siteRestrictedUser', extra: 1 }] }) });
+  assert.deepEqual(sites, [{ siteUrl: 'sc-domain:ossalt.jp', permissionLevel: 'siteRestrictedUser' }]);
+  await assert.rejects(listSites({ token: 't', fetchImpl: async () => json({ error: 'secret' }, 401) }), (e) => /401/.test(e.message) && !/secret/.test(e.message));
+});
+
+test('fetchAll accepts a ready token without a key', async () => {
+  const seen = [];
+  await fetchAll({ token: 'abc', site: 'sc-domain:ossalt.jp', days: 7, fetchImpl: async (u, o) => { seen.push(o.headers.authorization); return json({ rows: [] }); } });
+  assert.ok(seen.length === 3 && seen.every((h) => h === 'Bearer abc'));
 });
