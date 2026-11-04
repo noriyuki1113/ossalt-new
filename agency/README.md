@@ -78,3 +78,12 @@ GSC_KEY_FILE=~/.config/ossalt/gsc-key.json GSC_SITE=sc-domain:ossalt.jp \
 - 読み取り専用（`webmasters.readonly`）。JSONキーは**リポジトリに置かない**（パスだけを環境変数で渡す）。
 - 保存先は `agency/data/api-YYYY-MM-DD/`（コミット対象外）。続けて `seo-agency.mjs --queries … --pages … --pairs …` に渡す。
 - テストは偽のAPI応答のみ。**実際のAPIへの接続は、キー発行後に初めて確認します（未確認）。**
+
+### 鍵を発行しない認証（推奨）
+
+サービスアカウントの偽装（impersonation）で短命トークン（約1時間・`webmasters.readonly`）を発行し、環境変数 `GSC_ACCESS_TOKEN` で渡します。JSONキーは作りません。トークンはチャットやログ、リポジトリに貼らないでください。
+
+```bash
+GSC_ACCESS_TOKEN=... node scripts/gsc-api-fetch.mjs --list-sites          # アクセスできるプロパティの確認
+GSC_ACCESS_TOKEN=... GSC_SITE=sc-domain:ossalt.jp node scripts/gsc-api-fetch.mjs --days 28
+```

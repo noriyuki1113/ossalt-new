@@ -92,8 +92,28 @@ export function dateRange(days, today = new Date()) {
   return { startDate: f(start), endDate: f(end) };
 }
 
-export async function fetchAll({ key, site, days = 28, today, fetchImpl = fetch }) {
-  const token = await getAccessToken(key, fetchImpl);
+/** sites.list：このアカウントがアクセスできるプロパティを返す（権限の確認用。URLと権限レベルのみ） */
+export async function listSites({ token, fetchImpl = fetch }) {
+  const res = await fetchImpl(API_BASE, { headers: { authorization: `Bearer ${token}` } });
+  if (res.status === 401) throw new Error('トークンが無効か期限切れです（HTTP 401）。短命トークンは約1時間で切れます');
+  if (!res.ok) throw new Error(`sites.listがHTTP ${res.status}を返しました`);
+  const body = await res.json();
+  return (body.siteEntry ?? []).map((e) => ({ siteUrl: e.siteUrl, permissionLevel: e.permissionLevel }));
+}
+
+/**
+ * 認証の解決。キーJSONを発行しない方式を優先する。
+ *  1. GSC_ACCESS_TOKEN：サービスアカウントの偽装（impersonation）で発行した短命トークン（約1時間・webmasters.readonly）
+ *  2. GSC_KEY_FILE：従来のJSONキー（キーを発行した場合のみ）
+ */
+export async function resolveToken(env, fetchImpl = fetch) {
+  if (env.GSC_ACCESS_TOKEN) return env.GSC_ACCESS_TOKEN.trim();
+  if (env.GSC_KEY_FILE) return getAccessToken(parseKey(await readFile(env.GSC_KEY_FILE, 'utf8')), fetchImpl);
+  throw new Error('認証情報がありません。GSC_ACCESS_TOKEN（短命トークン）か GSC_KEY_FILE のどちらかを環境変数で渡してください');
+}
+
+export async function fetchAll({ key, token: given, site, days = 28, today, fetchImpl = fetch }) {
+  const token = given ?? await getAccessToken(key, fetchImpl);
   const range = dateRange(days, today);
   const out = {};
   for (const [kind, dimensions] of [['query', ['query']], ['page', ['page']], ['pair', ['query', 'page']]]) {
@@ -106,11 +126,14 @@ async function main(argv, env) {
   const arg = (n) => { const i = argv.indexOf(n); return i >= 0 ? argv[i + 1] : undefined; };
   const days = Number(arg('--days') ?? 28);
   if (!Number.isInteger(days) || days < 1 || days > 480) throw new Error('--days は1〜480の整数');
-  if (!env.GSC_KEY_FILE || !env.GSC_SITE) {
-    throw new Error('環境変数 GSC_KEY_FILE（キーのパス）と GSC_SITE（例: sc-domain:ossalt.jp）が必要です。キーはリポジトリに置かないでください');
+  const token = await resolveToken(env);
+  if (argv.includes('--list-sites')) {
+    const sites = await listSites({ token });
+    console.log(sites.length ? sites.map((x) => `${x.siteUrl}\t${x.permissionLevel}`).join('\n') : 'アクセスできるプロパティがありません（サービスアカウントをGSCのユーザーに追加したか確認）');
+    return;
   }
-  const key = parseKey(await readFile(env.GSC_KEY_FILE, 'utf8'));
-  const result = await fetchAll({ key, site: env.GSC_SITE, days });
+  if (!env.GSC_SITE) throw new Error('環境変数 GSC_SITE（例: sc-domain:ossalt.jp）が必要です。--list-sites で確認できます');
+  const result = await fetchAll({ token, site: env.GSC_SITE, days });
   const dir = resolve(arg('--out') ?? `agency/data/api-${new Date().toISOString().slice(0, 10)}`);
   if (!dir.includes(`${resolve('agency/data')}`)) throw new Error('保存先は agency/data/ 以下にしてください（コミット対象外）');
   await mkdir(dir, { recursive: true });
