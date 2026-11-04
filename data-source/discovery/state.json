@@ -5,24 +5,24 @@
     "errors": 64,
     "max_requests": 300,
     "notModified": 0,
-    "remaining": 4848,
+    "remaining": 4849,
     "requests": 300,
     "retried": 0,
     "used": true
   },
-  "last_changed_at": "2026-10-28T00:33:47.757Z",
-  "last_run_at": "2026-10-28T00:33:47.757Z",
+  "last_changed_at": "2026-11-04T01:28:32.954Z",
+  "last_run_at": "2026-11-04T01:28:32.954Z",
   "summary": {
     "blocked": 15,
     "candidates": 191,
     "config_verified": 122,
-    "duplicates_merged": 78,
+    "duplicates_merged": 77,
     "existing": 1,
     "github_enriched": 150,
     "needs_review": 175,
     "new": 190,
     "raw_entries": {
-      "appflare": 139,
+      "appflare": 138,
       "awesome": 130
     },
     "update_review": 0

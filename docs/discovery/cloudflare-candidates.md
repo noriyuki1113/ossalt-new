@@ -24,7 +24,6 @@
 | [hostc](https://github.com/akazwz/hostc) | Apache-2.0（api） | durable_objects（claimed） | 未確認 | — |
 | [smail](https://github.com/akazwz/smail) | MIT（api） | cron, d1, r2（claimed） | 未確認 | — |
 | [blobatar API](https://github.com/alain00/blobatar) | MIT（api） | —（unknown） | 不要 | cloudflare_bindings_unverified |
-| [cindermail](https://github.com/amandoti-win/cindermail) | MIT（api） | cron, d1（verified） | 未確認 | — |
 | [Larafeed](https://github.com/angristan/larafeed) | MIT（api） | cron, d1, kv, queues, workers_ai（verified） | 不要 | — |
 | [EdgeChat](https://github.com/aozorae/edgechat) | GPL-3.0（api） | cron, d1, durable_objects, kv, r2（claimed） | 不要 | — |
 | [AwaitStep](https://github.com/awaitstep/awaitstep) | Apache-2.0（api） | d1, durable_objects（claimed） | 未確認 | — |
@@ -125,7 +124,7 @@
 | [Bookshelf](https://github.com/murerkinn/bookshelf) | MIT（api） | r2（claimed） | 不要 | — |
 | [CloudSSH](https://github.com/newbietan/cloudssh) | Apache-2.0（api） | durable_objects（verified） | 不要 | — |
 | [Cloudsail](https://github.com/nkzw-tech/cloudsail) | MIT（api） | durable_objects（verified） | 未確認 | — |
-| [BinThere](https://github.com/nxfu/binthere) | MIT（api） | durable_objects, kv（verified） | 不要 | — |
+| [BinThere](https://github.com/nxfu/binthere) | MIT（api） | durable_objects, kv（verified） | 未確認 | — |
 | [shrtnr](https://github.com/oddbit/shrtnr) | Apache-2.0（api） | d1, durable_objects, kv（verified） | 不要 | — |
 | [vmail](https://github.com/oiov/vmail) | GPL-3.0（api） | cron, d1, durable_objects, email_routing（verified） | 未確認 | — |
 | [fxTikTok](https://github.com/okdargy/fxtiktok) | MIT（claimed） | （verified） | 不要 | — |
@@ -138,6 +137,7 @@
 | [StatusBeam](https://github.com/pleaseai/statusbeam) | MIT（api） | cron, d1, images, kv, queues（claimed） | 不要 | — |
 | [Glance](https://github.com/plivo-labs/glance) | MIT（api） | cron, d1, durable_objects, kv, r2, workers_ai（claimed） | 不要 | has_extra_requirements |
 | [nabiz](https://github.com/productdevbook/nabiz) | MIT（api） | cron, d1（verified） | 不要 | — |
+| [cindermail](https://github.com/psalm2517/cindermail) | MIT（api） | cron, d1（verified） | 未確認 | — |
 | [OpenAI Gemini](https://github.com/publicaffairs/openai-gemini) | MIT（api） | （verified） | 不要 | — |
 | [Second Brain for AI](https://github.com/rahilp/second-brain-cloudflare) | MIT（api） | cron, d1, kv, vectorize, workers_ai（verified） | 不要 | has_extra_requirements |
 | [InsightFlare](https://github.com/ravelloh/insightflare) | MIT（api） | analytics_engine, cron, d1, durable_objects, kv（verified） | 不要 | has_extra_requirements |
