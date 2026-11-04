@@ -1,6 +1,6 @@
 ---
 description: "Metabaseとは、SQLを書かなくても社内のデータを集計し、グラフやダッシュボードで共有できる、Tableauの代わりになるオープンソースのBIツールです。できること、本番で使うときの設定、無料版と有料版の関係を解説します。"
-updated: "2026-10-01"
+updated: "2026-11-04"
 at_a_glance:
   what: "社内のデータベースにつないで、データを集計し、グラフやダッシュボードにして共有するBIツールです。SQLを書かなくても集計できます。"
   good_for:
@@ -24,13 +24,24 @@ Metabase（メタベース）は、社内のデータベースにつないで、
 - **定期的な通知**：決まった時間に、集計の結果をメールやチャットで送れます。
 - **多くのデータベースに対応**：PostgreSQL、MySQL、BigQueryなど、多くのデータの置き場所につなげます。
 
-### 本番で使うときの設定
+### 試し方と、本番で使うときの設定
 
-Metabaseは、手軽に試せるよう、自分の設定を保存するデータベースを内蔵しています。本番で使う場合は、公式の説明に沿って、設定の保存先をPostgreSQLなどの別のデータベースにしましょう。
+公式のDockerの手順では、次のコマンドでオープンソース版を起動し、`http://localhost:3000` で開けます（[Dockerでの実行](https://www.metabase.com/docs/latest/installation-and-operation/running-metabase-on-docker)）。
+
+```
+docker pull metabase/metabase:latest
+docker run -d -p 3000:3000 --name metabase metabase/metabase
+```
+
+ただし、これは試すための設定です。Metabaseは、自分の設定（作った質問、ダッシュボード、コレクションなど）を、内蔵のH2データベースにファイルとして保存します。**コンテナを削除すると、これらが失われる**と書かれています。
+
+本番で使う場合は、公式の説明に沿って、設定の保存先をPostgreSQLなどの別のデータベースにします。環境変数（`MB_DB_TYPE`・`MB_DB_HOST` など）で接続先を渡す例が示されています。すでにH2で使い始めた場合は、公式の[H2から本番用データベースへの移行手順](https://www.metabase.com/docs/latest/installation-and-operation/migrating-from-h2)があります。パスワードは、Dockerのシークレットでファイルから渡す方法も案内されています。
 
 ### 無料版と有料版
 
-オープンソースの版（AGPL-3.0）のほかに、権限の細かい管理などを追加した有料の版があります。必要な機能がどちらにあるかを確認してください。
+オープンソース版（AGPL）のほかに、権限の細かい管理などを追加した、有料のPro・Enterprise版があります。公式のライセンスの説明では、Enterprise版はソースが公開されていますが、**商用ライセンスがないと、Enterpriseの機能は使えません**。Dockerのイメージも、オープンソース版とEnterprise版で別です。
+
+自分のアプリにMetabaseのグラフを埋め込む場合は、条件が分かれます。AGPLに従う、「Powered by Metabase」のロゴを残す埋め込み用のライセンスに従う、または商用ライセンスを買う、のいずれかです（[ライセンスの案内](https://www.metabase.com/license/)）。社内で使うだけか、外に見せるかで、必要な条件が変わります。
 
 ### 注意点
 
