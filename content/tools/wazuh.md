@@ -1,6 +1,6 @@
 ---
 description: "Wazuhとは、端末に入れたエージェントから、侵入の検知・ログの分析・脆弱性の検出などを行う、セキュリティの監視基盤です。できること、構成、ライセンスの注意点を、公式READMEをもとに整理します。"
-updated: "2026-10-29"
+updated: "2026-11-04"
 at_a_glance:
   what: "監視したい端末に入れるエージェントと、データを集めて分析する管理サーバーで動く、セキュリティの監視基盤です。侵入の検知・ログの分析・脆弱性の検出などを行います。"
   good_for:
@@ -16,10 +16,11 @@ at_a_glance:
     - "監視する端末のOSに、エージェントが対応しているか"
 verification:
   status: official
-  checked_at: "2026-10-29"
+  checked_at: "2026-11-04"
   sources:
     - https://github.com/wazuh/wazuh/blob/HEAD/README.md
     - https://github.com/wazuh/wazuh/blob/HEAD/LICENSE
+    - https://documentation.wazuh.com/current/getting-started/index.html
   note: "READMEとLICENSEの内容と、この解説を照合した（実機では動かしていない）"
 ---
 
@@ -30,6 +31,9 @@ Wazuhは、READMEで「脅威の予防・検知・対応のための、無料で
 - **エージェント**：監視したい端末に入れる。
 - **管理サーバー**：エージェントが集めたデータを集めて分析する。
 - **Wazuh Indexer**：警告を検索し、画面で見るための仕組み。
+- **Wazuhダッシュボード（Web画面）**：警告やエージェントの状態を、グラフや一覧で見るための画面です。設定の管理や状態の確認にも使えるとされています。
+
+公式ドキュメントでは、中心となる部品（サーバー・インデクサー・ダッシュボード）の3つと、監視する端末に入れる共通のエージェントから成ると説明されています（[導入のガイド](https://documentation.wazuh.com/current/getting-started/index.html)）。
 
 ### できること（READMEの記載）
 
@@ -48,7 +52,7 @@ Splunkは、さまざまなデータを集めて分析する商用の基盤で�
 
 ### 始め方（READMEの記載）
 
-Docker・Ansible・Kubernetes・AWS CloudFormationなどで導入するための仕組みが、Wazuhのチームから提供されています。`main` ブランチは最新のコードで、不具合を含むことがあると書かれています。
+公式ドキュメントには、数分で導入できる自動の手順（[Quickstart](https://documentation.wazuh.com/current/quickstart.html)）と、部品ごとの[導入ガイド](https://documentation.wazuh.com/current/installation-guide/index.html)があります。READMEには、Docker・Ansible・Kubernetes・AWS CloudFormationなどで導入するための仕組みが、Wazuhのチームから提供されているとも書かれています。必要なサーバーの性能は、公式ドキュメントで確認してください。`main` ブランチは最新のコードで、不具合を含むことがあると書かれています。
 
 ### 向いている人
 

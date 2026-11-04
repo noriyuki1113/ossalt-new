@@ -1,6 +1,6 @@
 ---
 description: "Grypeとは、コンテナイメージやファイルシステム、SBOMの既知の脆弱性を調べる、コマンドラインの検査ツールです。できること、始め方、Snykとの違いを、公式READMEをもとに整理します。"
-updated: "2026-10-29"
+updated: "2026-11-04"
 at_a_glance:
   what: "コンテナイメージ・ファイルシステム・SBOM（部品の一覧）に、既知の脆弱性がないかを調べるコマンドラインのツールです。"
   good_for:
@@ -16,7 +16,7 @@ at_a_glance:
     - "ライセンスはApache-2.0です"
 verification:
   status: official
-  checked_at: "2026-10-29"
+  checked_at: "2026-11-04"
   sources:
     - https://github.com/anchore/grype/blob/HEAD/README.md
     - https://github.com/anchore/grype/blob/HEAD/LICENSE
@@ -40,7 +40,17 @@ Snykは、クラウドのサービスとして検査と管理の画面を提供�
 
 ### 始め方（READMEの記載）
 
-インストール用のスクリプト、Homebrew、Dockerなどで導入できます。`grype alpine:latest` のようにイメージを、`grype ./my-project` のようにディレクトリを指定して検査します。`grype sbom:./sbom.json` でSBOMを検査すると、より速く検査できるとされています。
+READMEでは、インストールの最も早い方法として、公式のスクリプトを実行する方法が示されています。ほかに、Homebrew・Docker・Chocolatey・MacPortsなどの導入方法が、[公式のインストールの案内](https://oss.anchore.com/docs/installation/grype/)にあります。スクリプトを実行する前に、内容を確認しておくと安心です。
+
+導入したら、検査したいものを指定して実行します。READMEの例は次のとおりです。
+
+```
+grype alpine:latest          # コンテナイメージ
+grype ./my-project           # ディレクトリ
+grype sbom:./sbom.json       # SBOM（Syftで作ったもの）
+```
+
+SBOMを検査すると、より速く検査できるとされています。Linuxでは、BuildahやPodmanで作った手元のイメージを、`--from containers-storage` を付けて検査できるとも書かれています。使い方の全体は、公式の[はじめにのガイド](https://oss.anchore.com/docs/guides/vulnerability/getting-started/)にあります。
 
 ### 向いている人
 
