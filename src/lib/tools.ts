@@ -390,10 +390,33 @@ export function dockerLabel(v: boolean | null | undefined): string {
   return "未確認";
 }
 
+/**
+ * 脆弱性の報告窓口（SECURITY.md）。OSSALTが確認しているのは、リポジトリに SECURITY.md があるかどうかだけ。
+ * 見つからない（false）ことは「窓口が無い」ことを意味しない（READMEや公式サイト、組織の共通設定に案内がある場合がある）。
+ */
 export function securityMdLabel(v: boolean | null | undefined): string {
-  if (v === true) return "あり";
-  if (v === false) return "なし";
+  if (v === true) return "確認済み（SECURITY.md）";
+  if (v === false) return "SECURITY.mdは見つからず（他の窓口は未確認）";
   return "未確認";
+}
+
+/**
+ * OpenSSF Scorecard の状態。報告窓口やアーカイブなど、ほかの情報とは混ぜない。
+ *  - scored：点数がある
+ *  - mirror：GitHubがミラーのため、ミラーの点数を採用していない（対象外）
+ *  - unrated：結果を取得できていない（未評価）。安全・危険の判定には使わない
+ */
+export type ScorecardState = "scored" | "mirror" | "unrated";
+export function scorecardState(tool: Pick<Tool, "scorecard_score" | "source_mirror">): ScorecardState {
+  if (tool.scorecard_score != null && !Number.isNaN(tool.scorecard_score)) return "scored";
+  if (tool.source_mirror) return "mirror";
+  return "unrated";
+}
+export function scorecardStatusText(tool: Pick<Tool, "scorecard_score" | "source_mirror">): string {
+  const s = scorecardState(tool);
+  if (s === "scored") return `${(tool.scorecard_score as number).toFixed(1)} / 10`;
+  if (s === "mirror") return "対象外（GitHubはミラー）";
+  return "未評価";
 }
 
 export function dependabotLabel(v: boolean | null | undefined): string {
@@ -430,8 +453,8 @@ export function getSecurityFallback(tool: Tool): SecurityFallback {
   if (tool.advisories_count != null && tool.advisories_count > 0) {
     return { text: "要確認", tier: "fair" };
   }
-  if (tool.security_md === true) return { text: "窓口あり", tier: "good" };
-  if (tool.security_md === false) return { text: "窓口なし", tier: "unrated" };
+  if (tool.security_md === true) return { text: "SECURITY.mdあり", tier: "good" };
+  if (tool.security_md === false) return { text: "SECURITY.md未検出", tier: "unrated" };
   return { text: "未確認", tier: "unrated" };
 }
 

@@ -119,7 +119,11 @@ export function buildToolBrief(tool: Tool, diag: ToolDiagnosisMeta | undefined, 
     if (tool.scorecard_score >= T.scorecardGood) strengths.push({ text: `OpenSSF Scorecardが${tool.scorecard_score}で、良好の目安（${T.scorecardGood}以上）`, basis: "OpenSSF Scorecard（第三者の機械的な採点）" });
     else if (tool.scorecard_score < T.scorecardLow) cautions.push({ text: `OpenSSF Scorecardが${tool.scorecard_score}と低め`, basis: "OpenSSF Scorecard（第三者の機械的な採点）" });
   } else {
-    cautions.push({ text: "セキュリティ評価（OpenSSF Scorecard）は未評価。安全の証拠にも、危険の証拠にもならない", basis: "Scorecardの結果なし" });
+    cautions.push(
+      tool.source_mirror
+        ? { text: "セキュリティ評価（OpenSSF Scorecard）は対象外（GitHubがミラーのため）。安全の証拠にも、危険の証拠にもならない", basis: "ミラーの点数は採用しない" }
+        : { text: "セキュリティ評価（OpenSSF Scorecard）は未評価。安全の証拠にも、危険の証拠にもならない", basis: "Scorecardの結果なし" }
+    );
   }
   if (tool.advisories_count != null && tool.advisories_count > 0) {
     cautions.push({ text: `公開された脆弱性アドバイザリが${tool.advisories_count}件ある（修正済みを含む。対応状況は公式で確認）`, basis: "GitHubの公開アドバイザリ" });
