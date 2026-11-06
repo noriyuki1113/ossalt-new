@@ -37,7 +37,7 @@ import { getStanding } from "@/lib/ranking-positions";
 import { buildToolBrief } from "@/lib/tool-brief";
 import { LICENSE_CLASS_LABELS, LICENSE_GROUP_LABELS, classifyLicense, licenseGroupOf, licenseReason } from "@/lib/compare";
 import { getLicensePage } from "@/lib/licenses";
-import { formatDate, getMaintenanceWarning, licenseLabel, slugifyCompetitor } from "@/lib/tools";
+import { formatDate, getMaintenanceWarning, slugifyCompetitor } from "@/lib/tools";
 import { vpsPlacementFor } from "@/lib/affiliate-context";
 import { toSearchParams as costLabParams } from "@/lib/cost-lab";
 
@@ -358,7 +358,7 @@ export default async function ToolDetailPage({
               <h2 className="h3">スペック</h2>
               <SpecTable tool={tool} compact />
               <p className="muted" style={{ fontSize: "0.75rem" }}>
-                ライセンス表記は「{licenseLabel(tool.license)}」。最終コミット
+                ライセンス表記は「{tool.license?.trim() || "不明"}」。最終コミット
                 {formatDate(tool.last_commit)}時点の情報です。
                 {tool.github_archived && " ※このリポジトリはアーカイブされています。"}
                 {tool.development_move && " ※旧GitHubリポジトリはアーカイブされ、開発は移転しています（上の案内を参照）。"}
