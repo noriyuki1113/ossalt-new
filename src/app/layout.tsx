@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   ...(verification ? { verification } : {}),
   title: {
-    default: `${SITE.name} — ${SITE.tagline}`,
+    default: `${SITE.tagline}｜${SITE.name}`,
     template: `%s | ${SITE.name}`,
   },
   description: SITE.description,
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: SITE.locale,
     siteName: SITE.name,
-    title: `${SITE.name} — ${SITE.tagline}`,
+    title: `${SITE.tagline}｜${SITE.name}`,
     description: SITE.description,
     url: SITE.url,
     images: [

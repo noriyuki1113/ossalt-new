@@ -44,7 +44,7 @@ export function buildAlternativeFaq(competitor: string, input: FaqTool[]): FaqIt
     a:
       (n === 1
         ? `当サイトでは${tools[0].name}の1件を掲載しています。`
-        : `当サイトでは${n}件を掲載しています。GitHubでの活発さ（健全度）の高い順に、${names(tools)}です。`) + countNote,
+        : `当サイトでは${n}件を掲載しています。GitHubでの注目度・規模の目安が高い順に、${names(tools)}です。`) + countNote,
   });
 
   // 2) 日本語

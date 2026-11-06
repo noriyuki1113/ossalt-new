@@ -47,6 +47,8 @@ export default function ForYouPage() {
         </h1>
         <p className="lede">
           <Ja>{"あなたに合うOSSを、理由とともに発見する。置き換えたいSaaSと、あなたの条件を選ぶと、掲載データから合う候補を並べ、なぜおすすめなのか・何を確かめるべきかを表示します。ログインは不要で、入力した条件はこの画面のURLにだけ保存されます。"}</Ja>
+          <br />
+          <small className="muted">{"OSS診断との違い：For You は、SaaS・用途・ライセンスなどの条件をまとめて選び、候補を一覧で比べる画面です。質問に1つずつ答えて絞り込みたい場合は、"}<Link href="/diagnosis/">OSS診断</Link>{"（Notion・Slack・Zapier・Trello・Google Analytics の代替が対象）を使えます。"}</small>
         </p>
 
         <ForYou saasOptions={saasOptions} featureSaas={[...SAAS_IDS]} categoryOptions={categoryOptions} />

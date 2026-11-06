@@ -94,10 +94,16 @@ function AnalyticsConsentInner() {
       <div className="consent__text">
         <strong id="consent-title" className="consent__title">サイトの改善のための計測について</strong>
         <p id="consent-body" className="consent__body">
-          どのページやOSSが見られたかを集計するため、PostHog を使います。検索した言葉・入力内容・個人情報は送らず、録画やCookieも使いません。同意しない場合は何も送りません。
-          <Link href="/privacy/">詳しく</Link>
+          どのページやOSSが見られたかを集計するため、PostHog を使います。同意しない場合は何も送りません。
           {state !== "unset" && <> いまの設定：{state === "granted" ? "同意している" : "同意していない"}</>}
         </p>
+        <details className="consent__more">
+          <summary>送る内容と送らない内容</summary>
+          <p className="consent__body">
+            検索した言葉・入力内容・個人情報は送らず、録画やCookieも使いません。同意はあとから、ページ下部の「計測の設定」で変えられます。
+            <Link href="/privacy/">プライバシーポリシー</Link>
+          </p>
+        </details>
       </div>
       <div className="consent__actions">
         <button type="button" className="btn" onClick={() => choose("denied")}>同意しない</button>

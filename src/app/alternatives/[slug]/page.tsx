@@ -49,6 +49,22 @@ export async function generateMetadata({
   });
 }
 
+/** 解説のHTMLを h2 ごとに分ける（h2 より前の部分は title: null） */
+function splitByH2(html: string): Array<{ title: string | null; html: string }> {
+  const out: Array<{ title: string | null; html: string }> = [];
+  const re = /<h2[^>]*>([\s\S]*?)<\/h2>/g;
+  let last = 0;
+  let title: string | null = null;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(html))) {
+    if (m.index > last || title != null) out.push({ title, html: html.slice(last, m.index) });
+    title = m[1].replace(/<[^>]+>/g, "").trim();
+    last = m.index;
+  }
+  out.push({ title, html: html.slice(last) });
+  return out.filter((x) => x.html.trim() !== "");
+}
+
 export default async function AlternativeDetailPage({
   params,
 }: {
@@ -88,6 +104,56 @@ export default async function AlternativeDetailPage({
     .replace(/<h2>(移行するときの注意)<\/h2>/, '<h2 id="migration">$1</h2>')
     .replace(/<h2>([^<]*のままの(?:ほう|方)がよい場合)<\/h2>/, '<h2 id="stay">$1</h2>');
 
+  const relationsSection = classified.length > 0 ? (
+          <section id="relations" className="section rel" aria-labelledby="relations-h">
+            <h2 id="relations-h" className="h3">{`${c.name}の代替の種類（確認できたもの）`}</h2>
+            <p className="muted" style={{ fontSize: "0.8125rem" }}>
+              {`「代替」は、同じ用途に使える候補という意味で、${c.name}をそのまま置き換えられるとは限りません。次の4つに分けて、OSSALTの掲載済みの解説と照らして確認できたものだけ示しています。分類のないツールは、まだ確認できていません（直接代替という意味ではありません）。`}
+            </p>
+            <ul className="rel__legend">
+              {(Object.keys(RELATION_LABELS) as Array<keyof typeof RELATION_LABELS>).map((k) => (
+                <li key={k}><span className={`rel-badge rel-badge--${k}`}>{RELATION_LABELS[k]}</span>{RELATION_DESCRIPTIONS[k]}</li>
+              ))}
+            </ul>
+            <ul className="rel__list">
+              {classified.map((tl) => {
+                const r = relations[tl.id];
+                return (
+                  <li key={tl.id}>
+                    <span className="rel__head">
+                      <Link href={`/tools/${tl.id}/`}>{tl.name}</Link>
+                      <span className={`rel-badge rel-badge--${r.relation}`}>{RELATION_LABELS[r.relation]}</span>
+                    </span>
+                    <span className="rel__note">{r.note}</span>
+                    {r.with && r.with.length > 0 && (
+                      <span className="rel__with">
+                        {"組み合わせ先："}
+                        {r.with.map((id, i) => (
+                          <span key={id}>{i > 0 && "、"}<Link href={`/tools/${id}/`}>{getTool(id)?.name ?? id}</Link></span>
+                        ))}
+                      </span>
+                    )}
+                    <span className="rel__src">{`根拠：${r.source}（${r.checked_at}照合）`}</span>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+  ) : null;
+
+  // 結論を先に出す配置（frontmatter の layout: conclusion-first のページだけ）。解説の本文は h2 ごとに分けて、目的の位置に置く
+  const conclusionFirst = guide?.layout === "conclusion-first" && decision.rows.length > 0;
+  const guideSections = splitByH2(guideHtml);
+  const takeSection = (re: RegExp) => {
+    const i = guideSections.findIndex((x) => x.title != null && re.test(x.title));
+    return i >= 0 ? guideSections.splice(i, 1)[0].html : "";
+  };
+  const migrationHtml = conclusionFirst ? takeSection(/^移行するときの注意$/) : "";
+  const stayHtml = conclusionFirst ? takeSection(/のままの(ほう|方)がよい場合$/) : "";
+  const chooseHtml = conclusionFirst ? takeSection(/^選び方$/) : "";
+  const leadHtml = conclusionFirst ? guideSections.map((x) => x.html).join("") : "";
+  const rowById = new Map(decision.rows.map((r) => [r.tool.id, r]));
+
   return (
     <>
       <SiteHeader current="/alternatives" />
@@ -106,6 +172,136 @@ export default async function AlternativeDetailPage({
             ? `${c.name} の代替候補${c.tools.length}件を比較します（${licenseSummary}）。各ツールのライセンスと導入条件を確認してください。`
             : `${c.name} の代わりに自前で動かせるオープンソースソフトは${c.tools.length}件あります。`}</Ja>
         </p>
+        {conclusionFirst && guide ? (
+          <>
+            <section className="alt-picks alt-picks--conclusion" aria-labelledby="conclusion-h">
+              <h2 id="conclusion-h" className="alt-picks__title">{`結論：用途別の${c.name}の代替`}</h2>
+              <ul className="alt-picks__list">
+                {guide.picks.map((p) => {
+                  const r = rowById.get(p.tool);
+                  return (
+                    <li key={p.tool}>
+                      <span className="alt-picks__head">
+                        <Link href={`/tools/${p.tool}/`} className="alt-picks__name">{getTool(p.tool)?.name ?? p.tool}</Link>
+                        {relations[p.tool] && (
+                          <a href="#relations" className={`rel-badge rel-badge--${relations[p.tool].relation}`}>{RELATION_LABELS[relations[p.tool].relation]}</a>
+                        )}
+                      </span>
+                      <span className="alt-picks__fit">{p.fit}</span>
+                      {r && (
+                        <small className="alt-picks__facts">{`ライセンス：${r.licenseLabel}／導入・運用：${r.difficultyLabel}／日本語：${r.japanese}`}</small>
+                      )}
+                      {p.check && <small className="alt-picks__facts">{`導入前に確認：${p.check}`}</small>}
+                    </li>
+                  );
+                })}
+              </ul>
+            </section>
+            {guide.intro && <p>{guide.intro}</p>}
+            {leadHtml && <div className="prose" dangerouslySetInnerHTML={{ __html: leadHtml }} />}
+
+            <nav className="alt-jump" aria-label="このページの内容">
+              <a href="#choose">主要な比較表</a>
+              {migrationHtml && <a href="#migration">移行の注意</a>}
+              <a href="#stay">乗り換えない方がよい場合</a>
+              <a href="#details">詳細指標と計算の根拠</a>
+              {comparePairs.length > 0 && <a href="#pairs">2つずつ比べる</a>}
+              <Link href={`/cost-lab/?saas=${c.slug}`}>費用を試算</Link>
+            </nav>
+
+            <AlternativeDecisionPanel
+              saasName={c.name}
+              slug={c.slug}
+              decision={decision}
+              picks={[]}
+              hasMigration={hasMigration}
+              hasStay={hasStay}
+              asOf={formatDate(meta.stars_as_of ?? meta.built_at)}
+              parts={["intro", "tables"]}
+              title={`主要な比較表（${c.name}の代替）`}
+            />
+            {chooseHtml && <div className="prose section" dangerouslySetInnerHTML={{ __html: chooseHtml }} />}
+
+            <div className="notice notice--info mt2">
+              <strong>乗り換えの判断について</strong>
+              <br />
+              {t("alt.compareNote")}
+              <br />
+              <Link href={`/cost-lab/?saas=${c.slug}`} data-umami-event="cost_lab_entry" data-umami-event-from="alternative">
+                {c.name}を使い続ける場合との費用を、Cost Labで比べる
+              </Link>
+            </div>
+
+            {migrationHtml && (
+              <section className="section">
+                <div className="prose" dangerouslySetInnerHTML={{ __html: migrationHtml }} />
+                <AlternativeDecisionPanel
+                  saasName={c.name}
+                  slug={c.slug}
+                  decision={decision}
+                  picks={[]}
+                  hasMigration={false}
+                  hasStay={false}
+                  asOf=""
+                  parts={["migration"]}
+                  sectionId="migration-data"
+                  title={null}
+                />
+              </section>
+            )}
+
+            <section className="section">
+              {stayHtml ? (
+                <div className="prose" dangerouslySetInnerHTML={{ __html: stayHtml }} />
+              ) : (
+                <h2 id="stay" className="h3">{`${c.name}のままのほうがよい場合`}</h2>
+              )}
+              <AlternativeDecisionPanel
+                saasName={c.name}
+                slug={c.slug}
+                decision={decision}
+                picks={[]}
+                hasMigration={false}
+                hasStay={false}
+                asOf=""
+                parts={["stay"]}
+                sectionId="stay-data"
+                title={null}
+              />
+            </section>
+
+            <section id="details" className="section" aria-labelledby="details-h">
+              <h2 id="details-h" className="h3">詳細指標と計算の根拠</h2>
+              <AlternativeDecisionPanel
+                saasName={c.name}
+                slug={c.slug}
+                decision={decision}
+                picks={[]}
+                hasMigration={false}
+                hasStay={false}
+                asOf=""
+                parts={["recommended"]}
+                sectionId="recommended-score"
+                title={null}
+              />
+              {relationsSection}
+              <details id="all-candidates" className="more alt-details">
+                <summary>{`全候補${c.tools.length}件の詳細指標（Star・注目度・規模・Scorecard など）`}</summary>
+                <ComparisonTable tools={c.tools} />
+              </details>
+              {guide.updated && (
+                <p className="muted" style={{ fontSize: "0.75rem" }}>
+                  {`解説の最終更新：${formatDate(guide.updated)}。機能・ライセンス・提供条件は変わることがあるため、導入前に各ツールの公式情報をご確認ください。`}
+                </p>
+              )}
+            </section>
+
+            <ForYouLink query={{ saas: c.slug }}>{`条件を指定して、${c.name}の代替を理由つきで並べ替える（OSSALT For You）`}</ForYouLink>
+            <SponsorSlot placement="alternative" slug={c.slug} />
+            <HouseAd placement={`alternative_${c.slug}`} />
+          </>
+        ) : (
+          <>
         {guide && guide.picks.length > 0 && (
           <section className="alt-picks" aria-label={`${c.name}の代替の主な候補`}>
             <h2 className="alt-picks__title">主な候補（用途別）</h2>
@@ -155,42 +351,7 @@ export default async function AlternativeDetailPage({
           </Link>
         </div>
 
-        {classified.length > 0 && (
-          <section id="relations" className="section rel" aria-labelledby="relations-h">
-            <h2 id="relations-h" className="h3">{`${c.name}の代替の種類（確認できたもの）`}</h2>
-            <p className="muted" style={{ fontSize: "0.8125rem" }}>
-              {`「代替」は、同じ用途に使える候補という意味で、${c.name}をそのまま置き換えられるとは限りません。次の4つに分けて、OSSALTの掲載済みの解説と照らして確認できたものだけ示しています。分類のないツールは、まだ確認できていません（直接代替という意味ではありません）。`}
-            </p>
-            <ul className="rel__legend">
-              {(Object.keys(RELATION_LABELS) as Array<keyof typeof RELATION_LABELS>).map((k) => (
-                <li key={k}><span className={`rel-badge rel-badge--${k}`}>{RELATION_LABELS[k]}</span>{RELATION_DESCRIPTIONS[k]}</li>
-              ))}
-            </ul>
-            <ul className="rel__list">
-              {classified.map((tl) => {
-                const r = relations[tl.id];
-                return (
-                  <li key={tl.id}>
-                    <span className="rel__head">
-                      <Link href={`/tools/${tl.id}/`}>{tl.name}</Link>
-                      <span className={`rel-badge rel-badge--${r.relation}`}>{RELATION_LABELS[r.relation]}</span>
-                    </span>
-                    <span className="rel__note">{r.note}</span>
-                    {r.with && r.with.length > 0 && (
-                      <span className="rel__with">
-                        {"組み合わせ先："}
-                        {r.with.map((id, i) => (
-                          <span key={id}>{i > 0 && "、"}<Link href={`/tools/${id}/`}>{getTool(id)?.name ?? id}</Link></span>
-                        ))}
-                      </span>
-                    )}
-                    <span className="rel__src">{`根拠：${r.source}（${r.checked_at}照合）`}</span>
-                  </li>
-                );
-              })}
-            </ul>
-          </section>
-        )}
+        {relationsSection}
 
         <section id="all-candidates" className="section" aria-label="全候補の比較表">
           <ComparisonTable tools={c.tools} />
@@ -210,6 +371,9 @@ export default async function AlternativeDetailPage({
               </p>
             )}
           </section>
+        )}
+
+          </>
         )}
 
         {faq.length > 0 && (

@@ -18,7 +18,8 @@ function env(name: string): string | null {
 export const SITE = {
   name: "ossalt.jp",
   nameJa: "オルタナ",
-  tagline: "国産SaaSの代わりに、自前で動かす",
+  // 海外のSaaSも扱うため、掲載範囲に合わせた共通の表現にする（国産SaaS専用のページは、そのページ固有の表現を使う）
+  tagline: "SaaSの代替OSSを日本語で比較",
   description:
     "日本のチームのための、オープンソース代替ソフトウェア事典。SaaSの月額をやめて自分のサーバで動かすための、ライセンス・セキュリティ・導入難易度をまとめて比較できます。",
   url: (env("NEXT_PUBLIC_SITE_URL") ?? "https://ossalt.jp").replace(/\/+$/, ""),
@@ -110,7 +111,7 @@ export const MESSAGES = {
     "filter.selfhost": "Docker対応",
     "filter.japanese": "日本語の画面・資料あり",
     "filter.sort": "並び順",
-    "sort.health": "健全度が高い順",
+    "sort.health": "注目度・規模が大きい順",
     "sort.stars": "スターが多い順",
     "sort.recent": "最近更新された順",
     "sort.name": "名前順",
@@ -129,15 +130,15 @@ export const MESSAGES = {
     "metric.language": "主な言語",
     "metric.lastCommit": "最終コミット",
     "metric.created": "公開開始",
-    "metric.health": "健全度",
+    "metric.health": "注目度・規模",
     "metric.security": "セキュリティ",
     "metric.docker": "Docker対応",
     "metric.jaDocs": "日本語ドキュメント",
     "metric.jaUi": "画面の日本語化",
 
-    "health.title": "健全度スコア",
+    "health.title": "注目度・規模の目安",
     "health.explain":
-      "スター・フォーク・コントリビュータ・ウォッチャー・更新の新しさの5項目から算出した、プロジェクトの勢いの目安です。上から5つの目盛りが、その5項目を表します。",
+      "スター・フォーク・コントリビュータ・ウォッチャー・更新の新しさの5項目から算出した、GitHub上の注目度と規模の目安です（以前の名称は「健全度スコア」）。品質・安全性・保守の継続を保証する指標ではありません。保守の状況は、最終コミット・リリース・保守停止の案内で確認してください。上から5つの目盛りが、その5項目を表します。",
     "health.term.stars": "スター × 0.25",
     "health.term.forks": "フォーク × 0.5",
     "health.term.contributors": "コントリビュータ × 0.5",
@@ -150,19 +151,26 @@ export const MESSAGES = {
     "security.rated": "OpenSSF Scorecard {score} / 10",
     "security.unrated": "未評価",
     "security.unratedReason":
-      "OpenSSF Scorecard によるスキャンがまだ実施されていないため、スコアはありません。",
+      "OSSALTは、このリポジトリの OpenSSF Scorecard の結果を取得できていません（未評価）。",
     "security.unratedCaution":
-      "スコアが無いことを「安全」とも「危険」とも判断していません。導入を検討する際は、リポジトリの SECURITY.md やリリースの頻度もあわせてご確認ください。",
+      "スコアが無いことを「安全」とも「危険」とも判断していません。導入を検討する際は、下の報告窓口やリリースの状況もあわせてご確認ください。",
+    "security.mirrorReason":
+      "GitHubのリポジトリがミラーのため、ミラーの設定を採点した Scorecard の点数は採用していません（対象外）。開発の場の状況は、公式の案内で確認してください。",
     "security.what":
       "OpenSSF Scorecard は、オープンソースプロジェクトのセキュリティ対策を第三者が機械的に採点する仕組みです。0〜10で、7.5以上が「良好」の目安です。",
     "security.checks": "主なチェック項目",
     "security.scanDate": "{date} 時点",
     "security.signals": "確認できた項目",
+    "security.githubChecked": "GitHubの情報の確認日：{date}",
     "security.securityMd": "脆弱性の報告窓口（SECURITY.md）",
     "security.dependabot": "依存関係の自動更新（Dependabot）",
     "security.releases": "直近のリリース",
     "security.advisories": "既知の脆弱性（公開アドバイザリ）",
-    "security.securityMdMissing": "報告窓口が用意されていません",
+    "security.securityMdMissing": "SECURITY.mdは見つかりませんでした（他の窓口があるかは未確認）",
+    "security.securityMdScope":
+      "OSSALTが確認しているのは、リポジトリに SECURITY.md があるかどうかだけです。見つからなくても、READMEや公式サイトに報告の方法が書かれている場合があります。",
+    "security.reportTitle": "脆弱性の報告窓口",
+    "security.otherTitle": "そのほかの確認項目",
     "security.archivedWarning": "リポジトリがアーカイブされています。脆弱性が見つかっても修正されません。",
     "security.staleWarning": "最終コミットから{days}日経過しています（1年以上）。脆弱性の修正が行われない可能性があります。",
 

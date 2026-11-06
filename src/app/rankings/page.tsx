@@ -15,7 +15,7 @@ import { formatDate } from "@/lib/tools";
 export const metadata: Metadata = pageMeta({
   title: "OSSランキング｜人気・急成長・おすすめを分けて比べる",
   description:
-    "SaaSの代わりになるオープンソースを、人気（Stars・Forks・Contributors）、急成長（直近7日・30日のStar純増）、おすすめ（用途・保守・ライセンス・日本語・導入のしやすさ）の3つに分けて表示。計算の根拠と観測日を確認できます。",
+    "SaaSの代わりになるオープンソースを、人気（Stars・Forks・Contributors）、急成長（直近約1週間（7〜10日）・約1か月のStar純増）、おすすめ（用途・保守・ライセンス・日本語・導入のしやすさ）の3つに分けて表示。計算の根拠と観測日を確認できます。",
   path: "/rankings/",
 });
 
@@ -48,7 +48,7 @@ export default function RankingsPage() {
     meta: competitorOf(r.tool),
     score: r.score,
     headline: r.parts[0].value,
-    sub: `7日間（実測${r.window7.days}日）`,
+    sub: `直近約1週間（実測${r.window7.days}日）`,
     parts: r.parts.map((p) => ({ label: p.label, weight: p.weight, value: p.value, pct: p.pct, points: p.points, note: p.note })),
     observed: `7日：${r.window7.from}→${r.window7.to}／30日：${r.window30.from}→${r.window30.to}（OSSALTが記録したStar数の実測）`,
   }));
@@ -72,7 +72,7 @@ export default function RankingsPage() {
 
   const weights = {
     popular: `Stars ${pct(POPULARITY_WEIGHTS.stars)}・Forks ${pct(POPULARITY_WEIGHTS.forks)}・Contributors ${pct(POPULARITY_WEIGHTS.contributors)}で、`,
-    growth: `直近7日の純増 ${pct(GROWTH_WEIGHTS.gain7d)}・直近30日の純増 ${pct(GROWTH_WEIGHTS.gain30d)}・規模補正した成長率 ${pct(GROWTH_WEIGHTS.rate)}を、`,
+    growth: `直近約1週間の純増 ${pct(GROWTH_WEIGHTS.gain7d)}・直近約1か月の純増 ${pct(GROWTH_WEIGHTS.gain30d)}・規模補正した成長率 ${pct(GROWTH_WEIGHTS.rate)}を、`,
     recommended: `用途適合度 ${pct(RECOMMEND_WEIGHTS.fit)}・保守・更新状況 ${pct(RECOMMEND_WEIGHTS.maintenance)}・ライセンス適合性 ${pct(RECOMMEND_WEIGHTS.license)}・ドキュメント（日本語の対応）${pct(RECOMMEND_WEIGHTS.docs)}・導入・運用のしやすさ ${pct(RECOMMEND_WEIGHTS.ease)}の合計（100点満点）です。`,
   };
 
@@ -98,7 +98,7 @@ export default function RankingsPage() {
             <a href="#growth">
               <strong>急成長</strong>
               <span>最近、注目が増えているか</span>
-              <small>直近7日・30日のStar数の実測だけ。記録が足りないものは順位を付けません。</small>
+              <small>直近約1週間（7〜10日）・約1か月のStar数の実測だけ。記録が足りないものは順位を付けません。</small>
             </a>
           </li>
           <li>
@@ -122,7 +122,7 @@ export default function RankingsPage() {
         <div className="notice notice--info mt2">
           <strong>読み方の注意</strong>
           <br />
-          {"ランキングは、掲載しているOSSの中での相対的な順位です。品質や安全性を保証するものではありません。重みは初期案で、データが増えたら見直します。一覧の既定の並び順（健全度）は、このランキングとは別の指標のままです。導入を検討する際は、各ツールのページで更新状況・ライセンス・セキュリティ評価もあわせて確認してください。"}
+          {"ランキングは、掲載しているOSSの中での相対的な順位です。品質や安全性を保証するものではありません。重みは初期案で、データが増えたら見直します。一覧の既定の並び順（注目度・規模の目安）は、このランキングとは別の指標のままです。導入を検討する際は、各ツールのページで更新状況・ライセンス・セキュリティ評価もあわせて確認してください。"}
         </div>
         <p className="mt2">
           <Link href="/trending/">急上昇ランキング（増加数・伸び率）</Link>

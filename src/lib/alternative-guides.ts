@@ -13,7 +13,8 @@ import { getTools } from "./data";
 
 const DIR = path.join(process.cwd(), "content", "alternatives");
 
-export type GuidePick = { tool: string; fit: string };
+/** check：導入前に確認すること（任意）。結論を先に出すページで、候補の横に添える */
+export type GuidePick = { tool: string; fit: string; check?: string };
 
 export type AlternativeGuide = {
   slug: string;
@@ -23,6 +24,11 @@ export type AlternativeGuide = {
   updated: string;
   intro: string;
   picks: GuidePick[];
+  /**
+   * 配置。"conclusion-first" は、用途別の結論 → 主要な比較表 → 移行の注意 → 乗り換えない方がよい場合 → 詳細指標の順に並べる。
+   * 固有の内容が失われないか確認したページから、frontmatter の layout で個別に有効にする
+   */
+  layout?: "conclusion-first";
   contentHtml: string;
   /** 元のMarkdown（AI向けのMarkdown版・APIで使う） */
   markdown: string;
@@ -48,7 +54,8 @@ function readAll(): Map<string, AlternativeGuide> {
       description: String(data.description ?? ""),
       updated: String(data.updated ?? ""),
       intro: String(data.intro ?? ""),
-      picks: picks.filter((p) => toolIds.has(p.tool)),
+      picks: picks.filter((p) => toolIds.has(p.tool)).map((p) => ({ tool: String(p.tool), fit: String(p.fit ?? ""), ...(p.check ? { check: String(p.check) } : {}) })),
+      ...(data.layout === "conclusion-first" ? { layout: "conclusion-first" as const } : {}),
       contentHtml: marked.parse(content, { async: false }) as string,
           markdown: content.trim(),
     });

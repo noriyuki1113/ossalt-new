@@ -8,7 +8,7 @@
  *
  * node:test から直接読み込めるよう、型以外の依存は純粋な関数だけにしている。
  */
-import { licenseGroupOf, LICENSE_GROUP_LABELS, type LicenseGroup } from "./compare.ts";
+import { hasPartialException, licenseCaveat, licenseDisplay, licenseGroupOf, LICENSE_GROUP_LABELS, type LicenseGroup } from "./compare.ts";
 import { DIFFICULTY_LABELS, getDifficulty, type Difficulty } from "./diagnosis.ts";
 import { SAAS_FEATURES, SAAS_IDS, type FeatureState, type SaasId, type ToolDiagnosisMeta } from "./diagnosis-types.ts";
 import { buildRecommended, type RecommendRow } from "./rankings.ts";
@@ -18,6 +18,8 @@ export type DecisionRow = {
   tool: Tool;
   licenseGroup: LicenseGroup;
   licenseLabel: string;
+  /** ライセンスの注意（例外・条件）。無ければ null */
+  licenseCaveat: string | null;
   difficulty: Difficulty | null;
   difficultyLabel: string;
   docker: "あり" | "未確認" | "確認できていない";
@@ -70,7 +72,9 @@ export function buildAlternativeDecision(
     return {
       tool,
       licenseGroup: group,
-      licenseLabel: `${tool.license ?? "未確認"}（${LICENSE_GROUP_LABELS[group]}）`,
+      // 「中心／一部別条件」の表示は、それ自体が「混在」を表すので、区分名を重ねない
+      licenseLabel: hasPartialException(tool.license) ? `${licenseDisplay(tool.license)}（使う部分の確認が必要）` : `${tool.license ? licenseDisplay(tool.license) : "未確認"}（${LICENSE_GROUP_LABELS[group]}）`,
+      licenseCaveat: licenseCaveat(tool.license, tool.license_note),
       difficulty,
       difficultyLabel: difficulty ? DIFFICULTY_LABELS[difficulty] : "未評価",
       docker: tool.docker_available === true ? "あり" : tool.docker_available === false ? "確認できていない" : "未確認",
