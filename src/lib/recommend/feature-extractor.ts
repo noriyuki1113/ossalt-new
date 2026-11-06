@@ -67,7 +67,7 @@ function maintenance(t: RecTool): Feature {
 function security(t: RecTool): Feature {
   const parts: Array<[number, number, string]> = [];
   if (t.scorecard != null) parts.push([SECURITY_PARTS.scorecard, t.scorecard * 10, `OpenSSF Scorecard ${t.scorecard}/10`]);
-  if (t.securityMd != null) parts.push([SECURITY_PARTS.securityMd, t.securityMd ? 100 : 0, t.securityMd ? "SECURITY.mdあり" : "SECURITY.mdなし"]);
+  if (t.securityMd != null) parts.push([SECURITY_PARTS.securityMd, t.securityMd ? 100 : 0, t.securityMd ? "SECURITY.mdあり" : "SECURITY.mdは見つからず"]);
   if (t.dependabot != null) parts.push([SECURITY_PARTS.dependabot, t.dependabot ? 100 : 0, t.dependabot ? "Dependabotの設定あり" : "Dependabotの設定なし"]);
   if (parts.length === 0) return { value: null, basis: "Scorecard・SECURITY.md・Dependabotのいずれも確認できていない" };
   const w = parts.reduce((s, p) => s + p[0], 0);

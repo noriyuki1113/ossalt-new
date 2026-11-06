@@ -51,8 +51,8 @@ export function explain(query: RecQuery, c: ScoredCandidate, saasName: string | 
     if (t.scorecard != null && t.scorecard >= EXPLAIN.scorecardGood) reasons.push(`OpenSSF Scorecardが${t.scorecard}/10`);
     if (t.scorecard != null && t.scorecard < EXPLAIN.scorecardLow) cautions.push(`OpenSSF Scorecardが${t.scorecard}/10と低め`);
     if (t.securityMd === true) reasons.push("脆弱性の報告窓口（SECURITY.md）がある");
-    if (t.securityMd === false) cautions.push("脆弱性の報告窓口（SECURITY.md）は見つからなかった");
-    if (t.scorecard == null) cautions.push("OpenSSF Scorecardは未取得");
+    if (t.securityMd === false) cautions.push("SECURITY.mdは見つからなかった（ほかの報告窓口があるかは未確認）");
+    if (t.scorecard == null) cautions.push("OpenSSF Scorecardは未評価（評価が無いことは、安全・危険のどちらの意味でもない）");
   }
 
   // 導入
