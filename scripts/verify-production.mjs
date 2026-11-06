@@ -16,7 +16,7 @@ const sources = [
 const routes = [
   { path: '/tools/', marker: 'オープンソースソフトウェア一覧' },
   { path: '/compare/', marker: 'まず読みたい、OSSの比較ガイド' },
-  { path: '/alternatives/notion/', marker: 'Notionの代替OSSは、何を置き換えたいかで選ぶ' },
+  { path: '/alternatives/notion/', marker: 'Notionの代替候補は、何を置き換えたいかで選ぶ' },
   { path: '/compare/borg-vs-restic/', marker: 'BorgBackupとRestic、どっちを選ぶ？' },
 ];
 
