@@ -896,3 +896,33 @@
   font-size: 0.75rem;
   color: var(--ink-3);
 }
+/* ホーム：カテゴリの開閉（スマートフォンだけ、既存の並び順の先頭8件を最初に出す） */
+.home-page .cat-tiles__toggle { display: none; margin-top: 0.75rem; }
+@media (max-width: 767px) {
+  .home-page .cat-tiles--collapsed > li:nth-child(n + 9) { display: none; }
+  .home-page .cat-tiles__toggle { display: inline-flex; }
+}
+
+/* ホーム：検索の近くの、ほかの探し方（検索が主役のまま、小さく） */
+.home-page .hero-paths {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  font-size: 0.875rem;
+}
+.home-page .hero-paths li { display: flex; flex-direction: column; gap: 0.125rem; min-width: 0; }
+.home-page .hero-paths a { font-weight: 700; }
+.home-page .hero-paths small { color: var(--ink-2); font-size: 0.75rem; overflow-wrap: anywhere; }
+/* 同意バナー：最初は短い説明だけ。詳しい内容は開いて読む（同意・拒否のボタンは同じ大きさで常に表示） */
+.consent__more { margin-top: 0.25rem; font-size: 0.8125rem; }
+.consent__more > summary { cursor: pointer; color: var(--ink-2); min-height: 24px; }
+.consent__more > summary:focus-visible { outline: 2px solid var(--indigo); outline-offset: 2px; }
+@media (max-width: 760px) {
+  .consent { inset-inline: 0.5rem; bottom: 0.5rem; padding: 0.6rem 0.75rem; gap: 0.5rem; }
+  .consent__title { font-size: 0.875rem; }
+  .consent__body { font-size: 0.75rem; line-height: 1.55; }
+  .consent__actions .btn { min-height: 44px; }
+}

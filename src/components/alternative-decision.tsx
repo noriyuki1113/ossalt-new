@@ -85,6 +85,7 @@ export function AlternativeDecisionPanel({
       )}
 
       <h3 className="decide__h">判断の早見表</h3>
+      <p className="scroll-hint" aria-hidden="true">表は横にスクロールできます</p>
       <div className="ctable-scroll">
         <table className="ctable">
           <caption className="skip">候補の判断の早見表</caption>
@@ -123,6 +124,7 @@ export function AlternativeDecisionPanel({
       {matrix ? (
         <>
           <h3 className="decide__h">機能の比較（{saasName}の主要機能）</h3>
+          <p className="scroll-hint" aria-hidden="true">表は横にスクロールできます</p>
           <div className="ctable-scroll">
             <table className="ctable decide__matrix">
               <caption className="skip">主要機能の対応状況</caption>

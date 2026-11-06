@@ -4,6 +4,7 @@ import { HouseAd } from "@/components/house-ad";
 import { HomeRankings, type HomeRow } from "@/components/home-rankings";
 import { ToolCard } from "@/components/tool-views";
 import { PopularSaas, SaasSearch, type SaasEntry } from "@/components/saas-search";
+import { CategoryTiles } from "@/components/category-tiles";
 import { getActiveTools, getCompetitors, getMeta, getTools } from "@/lib/data";
 import { TOOL_DIAGNOSIS } from "@/lib/diagnosis-data";
 import { SAAS_IDS, SAAS_LABELS } from "@/lib/diagnosis-types";
@@ -72,6 +73,16 @@ export default function HomePage() {
           </h1>
           <SaasSearch entries={saasEntries} />
           <PopularSaas entries={saasEntries} />
+          <ul className="hero-paths" aria-label="検索以外の探し方">
+            <li>
+              <Link href="/diagnosis/">質問に答えて候補を探す →</Link>
+              <small>{`OSS診断（7問・約2分）。対象：${SAAS_IDS.map((s) => SAAS_LABELS[s]).join("・")}`}</small>
+            </li>
+            <li>
+              <Link href="/cost-lab/">運用・移行費用を比較する →</Link>
+              <small>Cost Lab。SaaSの継続と、自前で動かす場合の総費用を並べます</small>
+            </li>
+          </ul>
           <p className="hero__lede">
             {t("home.lede", { n: meta.tool_count })}{"料金だけでは判断できない、ライセンス・セキュリティ・更新の勢いまで並べて出します。"}</p>
           <div className="hero__actions">
@@ -91,16 +102,7 @@ export default function HomePage() {
               カテゴリ一覧 →
             </Link>
           </div>
-          <ul className="cat-tiles">
-            {categoriesWithCount.map((c) => (
-              <li key={c.slug}>
-                <Link className="cat-tile" href={`/categories/${c.slug}/`}>
-                  <span>{c.nameJa}</span>
-                  <span className="cat-tile__n">{c.count}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <CategoryTiles tiles={categoriesWithCount.map(({ slug, nameJa, count }) => ({ slug, nameJa, count }))} initial={8} />
         </section>
 
         <section className="section" aria-labelledby="home-trend-h">
@@ -125,7 +127,7 @@ export default function HomePage() {
                   どのOSSを選べばいいか迷っていますか？
                 </h2>
                 <p className="muted" style={{ margin: 0, fontSize: "0.875rem" }}>
-                  7つの質問（日本語・商用利用・予算も）に答えるだけで、条件に合うOSSと、向かない点を示します。約2分・登録不要。
+                  7つの質問（日本語・商用利用・予算も）に答えるだけで、条件に合うOSSと、向かない点を示します。約2分・登録不要。{`対象は${SAAS_IDS.map((s) => SAAS_LABELS[s]).join("・")}の代替です。`}
                 </p>
               </div>
               <div>
