@@ -20,6 +20,7 @@
     "seo:redirects": "node scripts/seo-redirects-audit.mjs",
     "seo:counts": "node scripts/count-audit.mjs",
     "seo:growth": "node scripts/seo-growth.mjs",
+    "seo:baseline": "node scripts/seo-baseline.mjs",
     "fonts:gen": "node scripts/gen-fonts-css.mjs",
     "seo:investigate": "node scripts/seo-site-investigation.mjs",
     "qi:full": "node --experimental-strip-types scripts/quality/qi.mjs full",

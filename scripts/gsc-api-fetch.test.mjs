@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { generateKeyPairSync, createVerify } from 'node:crypto';
-import { parseKey, buildAssertion, getAccessToken, queryAll, rowsToCsv, dateRange, fetchAll, ROW_LIMIT, listSites, resolveToken } from './gsc-api-fetch.mjs';
+import { parseKey, buildAssertion, getAccessToken, queryAll, rowsToCsv, dateRange, fetchAll, ROW_LIMIT, listSites, resolveToken, apiMeta } from './gsc-api-fetch.mjs';
 import { parseCsv } from './gsc-weekly-report.mjs';
 
 const { privateKey, publicKey } = generateKeyPairSync('rsa', { modulusLength: 2048 });
@@ -59,7 +59,7 @@ test('dateRange ends 3 days before today and spans N days', () => {
   assert.deepEqual(dateRange(28, new Date('2026-10-30T00:00:00Z')), { startDate: '2026-09-30', endDate: '2026-10-27' });
 });
 
-test('fetchAll queries query, page and pair dimensions', async () => {
+test('fetchAll queries query, page, pair, date and device dimensions', async () => {
   const dims = [];
   const fetchImpl = async (url, init) => {
     if (url.includes('oauth2')) return json({ access_token: 't' });
@@ -67,7 +67,7 @@ test('fetchAll queries query, page and pair dimensions', async () => {
     return json({ rows: [] });
   };
   const r = await fetchAll({ key, site: 's', fetchImpl, today: new Date('2026-10-30T00:00:00Z') });
-  assert.deepEqual(dims, ['query', 'page', 'query+page']);
+  assert.deepEqual(dims, ['query', 'page', 'query+page', 'date', 'device']);
   assert.equal(r.range.endDate, '2026-10-27');
 });
 
@@ -93,5 +93,18 @@ test('listSites returns only url and permission, and explains 401 without the bo
 test('fetchAll accepts a ready token without a key', async () => {
   const seen = [];
   await fetchAll({ token: 'abc', site: 'sc-domain:ossalt.jp', days: 7, fetchImpl: async (u, o) => { seen.push(o.headers.authorization); return json({ rows: [] }); } });
-  assert.ok(seen.length === 3 && seen.every((h) => h === 'Bearer abc'));
+  assert.ok(seen.length === 5 && seen.every((h) => h === 'Bearer abc'));
+});
+
+test('apiMeta: 比較ツールが読む期間・条件・プロパティを明示する（互換のキーも残す）', () => {
+  const m = apiMeta({ site: 'sc-domain:ossalt.jp', range: { startDate: '2026-10-26', endDate: '2026-11-22' }, counts: { query: 1 }, fetchedAt: 'x' });
+  assert.equal(m.from, '2026-10-26'); assert.equal(m.to, '2026-11-22');
+  assert.equal(m.property, 'sc-domain:ossalt.jp'); assert.equal(m.site, 'sc-domain:ossalt.jp');
+  assert.equal(m.searchType, 'web'); assert.equal(m.country, 'all'); assert.equal(m.device, 'all'); assert.equal(m.brandFiltered, false);
+  assert.equal(m.startDate, '2026-10-26');
+});
+
+test('rowsToCsv: date・device の表は、先頭の列名が date・device', () => {
+  assert.match(rowsToCsv('date', [{ keys: ['2026-10-26'], clicks: 1, impressions: 10, ctr: 0.1, position: 5 }]), /^date,clicks,impressions,ctr,position\n2026-10-26,1,10,0.1,5\n$/);
+  assert.match(rowsToCsv('device', [{ keys: ['MOBILE'], clicks: 1, impressions: 10, ctr: 0.1, position: 5 }]), /^device,/);
 });

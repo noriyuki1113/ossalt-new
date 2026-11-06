@@ -73,7 +73,7 @@ export async function queryAll({ token, site, startDate, endDate, dimensions, fe
 }
 
 const csvCell = (v) => { const s = String(v); return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s; };
-const HEADERS = { query: ['query'], page: ['page'], pair: ['query', 'page'] };
+const HEADERS = { query: ['query'], page: ['page'], pair: ['query', 'page'], date: ['date'], device: ['device'] };
 
 /** APIの行を、seo-agency.mjs が読むCSVにする。CTRは割合（0〜1）のまま */
 export function rowsToCsv(kind, rows) {
@@ -82,6 +82,43 @@ export function rowsToCsv(kind, rows) {
     lines.push([...r.keys, r.clicks, r.impressions, r.ctr, r.position].map(csvCell).join(','));
   }
   return lines.join('\n') + '\n';
+}
+
+const FILE_OF = { query: 'queries.csv', page: 'pages.csv', pair: 'pairs.csv', date: 'dates.csv', device: 'devices.csv' };
+
+/**
+ * meta.json。期間の比較（seo-baseline.mjs・gsc-compare-lib）が読む形にそろえる。
+ * API の取得は、検索タイプ web・国とデバイスの絞り込みなし・クエリのフィルタなし（ブランド除外なし）で行うため、その条件を明示する。
+ * `from`/`to`/`property` が、期間とプロパティの照合に使われる。startDate/endDate/site は従来の互換のために残す。
+ */
+export function apiMeta({ site, range, counts, fetchedAt = new Date().toISOString() }) {
+  return {
+    site, property: site, ...range, from: range.startDate, to: range.endDate,
+    searchType: 'web', country: 'all', device: 'all', brandFiltered: false,
+    source: 'api', fetchedAt, counts,
+  };
+}
+
+export const INSPECT_URL = 'https://searchconsole.googleapis.com/v1/urlInspection/index:inspect';
+export const INSPECT_LIMIT = 200; // URL検査には、プロパティごとに1日あたりの回数の上限がある。1回の実行で多く使わない
+
+/** URL検査（指定した URL のインデックス登録の状態）。読み取りのみ。失敗した URL は error で返し、補わない */
+export async function inspectUrls({ token, site, urls, fetchImpl = fetch, limit = INSPECT_LIMIT }) {
+  if (urls.length > limit) throw new Error(`URLは1回に ${limit} 件までです（${urls.length}件）`);
+  const out = [];
+  for (const url of urls) {
+    try {
+      const res = await fetchImpl(INSPECT_URL, {
+        method: 'POST',
+        headers: { authorization: `Bearer ${token}`, 'content-type': 'application/json' },
+        body: JSON.stringify({ inspectionUrl: url, siteUrl: site, languageCode: 'ja' }),
+      });
+      if (!res.ok) { out.push({ url, error: `HTTP ${res.status}` }); continue; }
+      const r = (await res.json()).inspectionResult?.indexStatusResult ?? {};
+      out.push({ url, verdict: r.verdict ?? null, coverageState: r.coverageState ?? null, indexingState: r.indexingState ?? null, robotsTxtState: r.robotsTxtState ?? null, pageFetchState: r.pageFetchState ?? null, lastCrawlTime: r.lastCrawlTime ?? null, googleCanonical: r.googleCanonical ?? null, userCanonical: r.userCanonical ?? null });
+    } catch (e) { out.push({ url, error: String(e.message).slice(0, 80) }); }
+  }
+  return out;
 }
 
 export function dateRange(days, today = new Date()) {
@@ -116,7 +153,8 @@ export async function fetchAll({ key, token: given, site, days = 28, today, fetc
   const token = given ?? await getAccessToken(key, fetchImpl);
   const range = dateRange(days, today);
   const out = {};
-  for (const [kind, dimensions] of [['query', ['query']], ['page', ['page']], ['pair', ['query', 'page']]]) {
+  // date・device は、日別の推移と、デバイス別の合計（網羅率の算出）に使う。2期間の比較（seo-baseline.mjs）が読む
+  for (const [kind, dimensions] of [['query', ['query']], ['page', ['page']], ['pair', ['query', 'page']], ['date', ['date']], ['device', ['device']]]) {
     out[kind] = await queryAll({ token, site, ...range, dimensions, fetchImpl });
   }
   return { range, ...out };
@@ -133,15 +171,26 @@ async function main(argv, env) {
     return;
   }
   if (!env.GSC_SITE) throw new Error('環境変数 GSC_SITE（例: sc-domain:ossalt.jp）が必要です。--list-sites で確認できます');
+  if (arg('--inspect')) {
+    // URL検査：指定したURL（1行1件のテキスト）のインデックス登録の状態を保存する（agency/data/ 以下）
+    const urls = (await readFile(resolve(arg('--inspect')), 'utf8')).split('\n').map((l) => l.trim()).filter((l) => /^https:\/\//.test(l));
+    const list = await inspectUrls({ token, site: env.GSC_SITE, urls });
+    const file = resolve(arg('--out') ?? `agency/data/inspection-${new Date().toISOString().slice(0, 10)}.json`);
+    if (!file.includes(`${resolve('agency/data')}`)) throw new Error('保存先は agency/data/ 以下にしてください（コミット対象外）');
+    await mkdir(resolve(file, '..'), { recursive: true });
+    await writeFile(file, JSON.stringify(list, null, 2));
+    console.log(`URL検査：${list.length}件（取得できなかった ${list.filter((x) => x.error).length}件）を ${file.replace(resolve('.') + '/', '')} に保存しました`);
+    return;
+  }
   const result = await fetchAll({ token, site: env.GSC_SITE, days });
   const dir = resolve(arg('--out') ?? `agency/data/api-${new Date().toISOString().slice(0, 10)}`);
   if (!dir.includes(`${resolve('agency/data')}`)) throw new Error('保存先は agency/data/ 以下にしてください（コミット対象外）');
   await mkdir(dir, { recursive: true });
-  for (const kind of ['query', 'page', 'pair']) {
+  for (const kind of ['query', 'page', 'pair', 'date', 'device']) {
     const rows = result[kind].map((r) => ({ keys: r.keys, clicks: r.clicks, impressions: r.impressions, ctr: r.ctr, position: r.position }));
-    await writeFile(resolve(dir, `${kind === "query" ? "queries" : kind + "s"}.csv`), rowsToCsv(kind, rows));
+    await writeFile(resolve(dir, FILE_OF[kind]), rowsToCsv(kind, rows));
   }
-  await writeFile(resolve(dir, 'meta.json'), JSON.stringify({ site: env.GSC_SITE, ...result.range, fetchedAt: new Date().toISOString(), counts: { query: result.query.length, page: result.page.length, pair: result.pair.length } }, null, 2));
+  await writeFile(resolve(dir, 'meta.json'), JSON.stringify(apiMeta({ site: env.GSC_SITE, range: result.range, counts: { query: result.query.length, page: result.page.length, pair: result.pair.length, date: result.date.length } }), null, 2));
   console.log(`取得完了: ${dir}\n期間 ${result.range.startDate}〜${result.range.endDate}  クエリ${result.query.length}件 / ページ${result.page.length}件 / 組${result.pair.length}件`);
   console.log(`次: node scripts/seo-agency.mjs --queries ${dir}/queries.csv --pages ${dir}/pages.csv --pairs ${dir}/pairs.csv --site out`);
 }
