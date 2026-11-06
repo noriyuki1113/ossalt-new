@@ -40,7 +40,7 @@ export const FEED_STALL_HOURS = 36;
 const SIGNAL_LABEL: Record<WatchSignal["signal"], string> = {
   archived: "アーカイブ状態を観測",
   stable_release_change_observed: "安定版タグの変化を観測",
-  star_growth_7d: "直近7日間のStar増加を確認",
+  star_growth_7d: "直近約1週間のStar増加を確認",
   monitoring: "定期観測中",
 };
 

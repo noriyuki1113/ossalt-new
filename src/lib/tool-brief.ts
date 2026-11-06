@@ -177,7 +177,7 @@ export function buildToolBrief(tool: Tool, diag: ToolDiagnosisMeta | undefined, 
     ? `人気：ランキング対象${standing.popular.total}件中${standing.popular.rank}位（Stars・Forks・Contributors）`
     : "人気：未観測";
   const growth = standing.growth
-    ? `成長：${standing.growth.total}件中${standing.growth.rank}位（直近7日・30日の実測）`
+    ? `成長：${standing.growth.total}件中${standing.growth.rank}位（直近約1週間・約1か月の実測）`
     : `成長：未観測（${standing.growthReason ?? "実測の記録が足りない"}）`;
 
   const gh = tool.github_url.replace(/\/+$/, "");

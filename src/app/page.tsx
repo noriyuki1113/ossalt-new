@@ -43,7 +43,7 @@ export default function HomePage() {
   const popularRows = buildPopularity(tools).rows.slice(0, 5)
     .map((r) => row(r.tool, `★${formatCompactJa(r.tool.stars_num)}`, `Fork ${formatCompactJa(r.tool.forks_num)}`));
   const growthRows = buildGrowth(tools).rows.slice(0, 5)
-    .map((r) => row(r.tool, r.parts[0].value, `7日間（実測${r.window7.days}日）`));
+    .map((r) => row(r.tool, r.parts[0].value, `直近約1週間（実測${r.window7.days}日）`));
   const rec = buildRecommended(tools, Object.values(TOOL_DIAGNOSIS));
   const recommendedGroups = SAAS_IDS.filter((s) => rec.bySaas[s]?.length).map((s) => ({
     saas: s,
@@ -199,7 +199,7 @@ export default function HomePage() {
                 <p className="muted" style={{ fontSize: ".85rem", margin: 0 }}>
                   {`${activityDateJst(changes.dataAsOf ?? "")}（JST）までにGitHubから取得した実測値です。`}
                   {changes.status === "fresh"
-                    ? `${changes.star.comparable}件のOSSで7日間のStarの増減を比較できました。`
+                    ? `${changes.star.comparable}件のOSSで、直近約1週間（7〜10日）のStarの増減を比較できました。`
                       + (changes.notable.byGain[0] ? `最も増えたのは${changes.notable.byGain[0].tool.name}（${signed(changes.notable.byGain[0].w7.gain)}）です。` : "")
                     : "それ以降の変化は反映されていません。"}
                 </p>

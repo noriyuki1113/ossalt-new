@@ -13,7 +13,7 @@ export type HomeRankingsProps = {
 
 const TABS = [
   { id: "popular", label: "人気", note: "長く多くの人に使われている（Stars・Forks・Contributors）" },
-  { id: "growth", label: "急成長", note: "いま注目が増えている（直近7日・30日の実測）" },
+  { id: "growth", label: "急成長", note: "いま注目が増えている（直近約1週間・約1か月の実測）" },
   { id: "recommended", label: "おすすめ", note: "選ぶと失敗しにくい（用途・保守・ライセンス・日本語・導入）" },
 ] as const;
 type TabId = (typeof TABS)[number]["id"];

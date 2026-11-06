@@ -11,7 +11,7 @@ import styles from "./changes.module.css";
 
 export const metadata: Metadata = pageMeta({
     title: "OSSの変化レポート｜Star増減・更新状況・リリースの実測",
-    description: "OSSALT掲載のOSSについて、GitHubから毎日取得しているStar数の7日間の実測差分、最終push、リリースの公開日を、比較した日付つきでまとめています。推計の値は使いません。",
+    description: "OSSALT掲載のOSSについて、GitHubから毎日取得しているStar数の直近約1週間（7〜10日）の実測差分、最終push、リリースの公開日を、比較した日付つきでまとめています。推計の値は使いません。",
   path: "/changes/",
 });
 
@@ -120,7 +120,7 @@ export default function ChangesPage() {
         <section className={styles.stats} aria-label="検証できたOSSの件数">
           <div><span>掲載中のOSS</span><strong>{fmt(report.total)}<small> 件</small></strong></div>
           <div><span>{TOOL_CURRENT_DAYS}日以内に取得</span><strong>{fmt(report.verified)}<small> 件</small></strong></div>
-          <div><span>7日間を比較できた</span><strong>{fmt(report.star.comparable)}<small> 件</small></strong></div>
+          <div><span>約1週間を比較できた</span><strong>{fmt(report.star.comparable)}<small> 件</small></strong></div>
           <div><span>比較不可</span><strong>{fmt(report.star.notComparable)}<small> 件</small></strong></div>
         </section>
         <p className={styles.fine}>GitHubからの取得は、掲載OSSを数日に分けて持ち回りで行っています。そのため、OSSごとに比較の期間（開始日・終了日）が少しずつ異なります。</p>
@@ -132,9 +132,9 @@ export default function ChangesPage() {
           </div>
           {fresh && byGain.length > 0 ? (
             <div className={styles.cards}>
-              {byGain[0] && <NotableCard label="7日間のStar増加が最大" row={byGain[0]} value={signed(byGain[0].w7.gain)} />}
-              {byRate[0] && <NotableCard label={`7日間の伸び率が最大（Star ${fmt(RATE_MIN_BASE)}以上）`} row={byRate[0]} value={`${byRate[0].ratePct! > 0 ? "+" : ""}${byRate[0].ratePct}%`} />}
-              {biggestDrop && <NotableCard label="7日間のStar減少が最大" row={biggestDrop} value={signed(biggestDrop.w7.gain)} />}
+              {byGain[0] && <NotableCard label="約1週間のStar増加が最大" row={byGain[0]} value={signed(byGain[0].w7.gain)} />}
+              {byRate[0] && <NotableCard label={`約1週間の伸び率が最大（Star ${fmt(RATE_MIN_BASE)}以上）`} row={byRate[0]} value={`${byRate[0].ratePct! > 0 ? "+" : ""}${byRate[0].ratePct}%`} />}
+              {biggestDrop && <NotableCard label="約1週間のStar減少が最大" row={biggestDrop} value={signed(biggestDrop.w7.gain)} />}
             </div>
           ) : (
             <div className={styles.empty}>
@@ -154,7 +154,7 @@ export default function ChangesPage() {
         {/* 5. Star増加の一覧 */}
         <section className={styles.section} aria-labelledby="stars-heading">
           <div className={styles.heading}>
-            <div><span className={styles.eyebrow}>02 / STARS · 7 DAYS</span><h2 id="stars-heading">Starの増減（7日間の実測）</h2></div>
+            <div><span className={styles.eyebrow}>02 / STARS · ABOUT 1 WEEK</span><h2 id="stars-heading">Starの増減（直近約1週間の実測）</h2><p className={styles.fine}>対象期間：ツールごとに「7日以上前の最後の記録」から「最新の取得」まで（7〜10日）。7日分に換算はせず、各行に開始日・終了日・実際の日数を示します。</p></div>
             <span className={styles.count}>増加 {fmt(report.star.up.length)} · 変化なし {fmt(report.star.flat)} · 減少 {fmt(report.star.down.length)}</span>
           </div>
           {report.star.up.length > 0 ? (
@@ -167,7 +167,7 @@ export default function ChangesPage() {
                 </details>
               )}
             </>
-          ) : <p className={styles.fine}>7日間の比較ができたOSSのうち、Starが増えたものはありません。</p>}
+          ) : <p className={styles.fine}>約1週間の比較ができたOSSのうち、Starが増えたものはありません。</p>}
           {report.star.down.length > 0 && (
             <details className={styles.more}>
               <summary>Starが減ったOSS {fmt(report.star.down.length)} 件を見る</summary>
@@ -265,7 +265,7 @@ export default function ChangesPage() {
           <h2>データの読み方</h2>
           <div className={styles.methodGrid}>
             <div><strong>出典はGitHubの公開API</strong><p>Star数・最終push（pushed_at）・アーカイブ状態・リリースの公開日を、OSSALTが毎日、掲載OSSを持ち回りで取得しています。Starは利用者数や品質の保証ではありません。</p></div>
-            <div><strong>差分は実測の記録どうし</strong><p>7日間の増減は「7日以上前の最後の記録」と「最新の取得」の差です。期間が7〜10日のものだけを使い、短い期間からの換算はしません。取得が{TOOL_CURRENT_DAYS}日より古いものは使いません。</p></div>
+            <div><strong>差分は実測の記録どうし</strong><p>約1週間の増減は「7日以上前の最後の記録」と「最新の取得」の差です。期間が7〜10日のものだけを使い、短い期間からの換算はしません。取得が{TOOL_CURRENT_DAYS}日より古いものは使いません。</p></div>
             <div><strong>出来事は作らない</strong><p>1回の取得の値だけから「リリースされた」「アーカイブされた」とは判定しません。データ全体の取得が{FRESH_HOURS}時間より古いときは、注目の変化を出さず、そのことを表示します。</p></div>
           </div>
           <p className={styles.bottomLinks}>
