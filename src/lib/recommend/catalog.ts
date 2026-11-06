@@ -3,7 +3,7 @@
  *
  * ビルド時に1回だけ実行し、/for-you/catalog.json として配信する。GitHub API は呼ばない。
  */
-import { classifyLicense, licenseGroupOf } from "../compare.ts";
+import { classifyLicense, licenseCaveat, licenseDisplay, licenseGroupOf } from "../compare.ts";
 import { buildGrowth, buildPopularity } from "../rankings.ts";
 import type { ToolDiagnosisMeta } from "../diagnosis-types.ts";
 import { slugifyCompetitor, type Tool } from "../tools.ts";
@@ -32,6 +32,8 @@ export function toRecTools(tools: Tool[], diagnosis: Record<string, ToolDiagnosi
       topics: (t.topics ?? []).slice(0, 8),
       stars: t.stars_num,
       license: t.license,
+      licenseLabel: licenseDisplay(t.license),
+      licenseCaveat: licenseCaveat(t.license, t.license_note),
       licenseClass: classifyLicense(t.license),
       licenseGroup: licenseGroupOf(t.license),
       docker: t.docker_available,

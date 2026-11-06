@@ -104,7 +104,10 @@ export function AlternativeDecisionPanel({
             {rows.map((r) => (
               <tr key={r.tool.id} className="ctable__row">
                 <td className="name"><Link href={`/tools/${r.tool.id}/`} className="ctable__link">{r.tool.name}</Link></td>
-                <td>{r.licenseLabel}</td>
+                <td>
+                  {r.licenseLabel}
+                  {r.licenseCaveat && <small className="muted license-caveat">{r.licenseCaveat}</small>}
+                </td>
                 <td>{r.difficultyLabel}</td>
                 <td>{r.docker}</td>
                 <td>{r.japanese}</td>

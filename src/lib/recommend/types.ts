@@ -21,6 +21,9 @@ export type RecTool = {
   topics: string[];
   stars: number | null;
   license: string | null;
+  /** 利用者向けのライセンス表示（例：MIT中心／一部別条件）と、注意の文（無ければ null） */
+  licenseLabel: string;
+  licenseCaveat: string | null;
   licenseClass: LicenseClass;
   licenseGroup: LicenseGroup;
   docker: boolean | null;

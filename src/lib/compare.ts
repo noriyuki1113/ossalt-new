@@ -90,6 +90,52 @@ export function licenseGroupOf(license: string | null | undefined): LicenseGroup
   return "osi";
 }
 
+/**
+ * ライセンスの「識別子」と「利用者向けの表示」を分ける。
+ * データの license は、例外がある場合「AGPL-3.0（ee/ 配下は別ライセンス）」のように、識別子と補足が1つの文字列に入っている。
+ *  - licenseIdentifier：末尾の補足（全角・半角のかっこ）を除いた識別子（例：AGPL-3.0）。分類・絞り込みは従来どおり license 全体で行う
+ *  - licenseDisplay：一部の構成・ディレクトリだけ別条件のもの（分類が partial で、選択式でないもの）は「AGPL-3.0中心／一部別条件」と表示する
+ *  - licenseException：補足の文（例：ee/ 配下は別ライセンス）。無ければ null
+ * 注意の本文（どこが・どの条件か）は、データの license_note を、詳細・比較・推薦で同じように表示する。法的な判断の根拠ではない。
+ */
+const QUALIFIER_RE = /^(.*?)\s*[（(]([^（）()]+)[）)]\s*$/;
+
+export function licenseIdentifier(license: string | null | undefined): string | null {
+  if (!license || !license.trim()) return null;
+  const m = QUALIFIER_RE.exec(license.trim());
+  return (m ? m[1] : license).trim() || null;
+}
+
+export function licenseException(license: string | null | undefined): string | null {
+  if (!license) return null;
+  const m = QUALIFIER_RE.exec(license.trim());
+  return m ? m[2].trim() : null;
+}
+
+/** 一部だけ別の条件があるか（「中心／一部別条件」と表示する対象） */
+export function hasPartialException(license: string | null | undefined): boolean {
+  const id = licenseIdentifier(license);
+  return !!id && !id.includes("/") && classifyLicense(license) === "partial" && licenseException(license) != null;
+}
+
+/**
+ * ライセンスの注意（詳細・比較・代替・推薦で共通に出す文）。データの license_note のうち、ライセンスの条件に関するもの。
+ * 補足つきの表記（例外あり）なのに注意の文が無い場合は、補足だけを返す。注意が無いツールは null。
+ */
+const LICENSE_TERM_RE = /ライセンス|GPL|MIT|Apache|BSD|MPL|別条件|条項|コピーレフト/;
+export function licenseCaveat(license: string | null | undefined, note: string | null | undefined): string | null {
+  const n = note?.trim();
+  if (n && (licenseException(license) != null || LICENSE_TERM_RE.test(n))) return n;
+  const ex = licenseException(license);
+  return ex ? `ライセンスの補足：${ex}` : null;
+}
+
+export function licenseDisplay(license: string | null | undefined): string {
+  if (!license || !license.trim()) return "不明";
+  if (hasPartialException(license)) return `${licenseIdentifier(license)}中心／一部別条件`;
+  return license.trim();
+}
+
 /** 区分の判定理由。ライセンスの表記と分類だけから作り、個別の利用条件は推測で書かない */
 export function licenseReason(license: string | null | undefined): string {
   const cls = classifyLicense(license);

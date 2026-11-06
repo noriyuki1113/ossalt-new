@@ -2535,6 +2535,8 @@ details.more > summary {
 .license-verdict__head { display: flex; flex-wrap: wrap; gap: 0.25rem 0.75rem; align-items: baseline; }
 .license-verdict__badge { font-weight: 700; color: var(--ink); }
 .license-verdict__reason { color: var(--ink-2); margin-top: 0.25rem !important; }
+/* ライセンスの注意（例外・条件）。比較・代替・推薦の表で、表示名の下に小さく出す */
+.license-caveat { display: block; margin-top: 0.25rem; line-height: 1.5; font-size: 0.75rem; }
 
 /* ---------- ランキング（人気・急成長・おすすめ） ---------- */
 .rank-tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5rem; margin: 1rem 0 1.25rem; }
@@ -2656,6 +2658,7 @@ details.more > summary {
 .fy-card__name { margin: 0; font-size: 1.125rem; line-height: 1.5; }
 .fy-card__desc { margin: 0.125rem 0 0; font-size: 0.8125rem; color: var(--ink-2); line-height: 1.7; overflow-wrap: anywhere; }
 .fy-facts { list-style: none; margin: 0.625rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.25rem 0.875rem; font-size: 0.75rem; color: var(--ink-2); }
+.fy-facts__note { flex-basis: 100%; color: var(--ink-2); }
 .fy-card__cols { display: grid; grid-template-columns: 1fr; gap: 0.5rem 1.25rem; margin-top: 0.75rem; }
 @media (min-width: 720px) { .fy-card__cols { grid-template-columns: 1fr 1fr; } }
 .fy-h { margin: 0 0 0.25rem; font-size: 0.8125rem; }

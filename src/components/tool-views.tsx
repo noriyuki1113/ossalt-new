@@ -255,7 +255,7 @@ export function ToolRow({ tool }: { tool: Tool }) {
             <p className="row__alt">
               {t("card.alternativeTo")}: <b>{tool.primary_competitor_ja || tool.primary_competitor}</b>
               {tool.language ? ` ／ ${tool.language}` : ""}
-              {tool.license ? ` ／ ${tool.license}` : ""}
+              {tool.license ? ` ／ ${licenseLabel(tool.license)}` : ""}
             </p>
           </div>
           {hasJapanese(tool) && (
@@ -320,7 +320,7 @@ export function ToolCard({ tool }: { tool: Tool }) {
         <p className="browse-card__description">{tool.description_ja}</p>
       )}
       <div className="browse-card__tags" aria-label="特徴">
-        <span className="browse-card__tag">{tool.license || "ライセンス未確認"}</span>
+        <span className="browse-card__tag">{tool.license ? licenseLabel(tool.license) : "ライセンス未確認"}</span>
         {tool.docker_available === true && <span className="browse-card__tag">Docker対応</span>}
         {hasJapanese(tool) && (
           <span className="browse-card__tag">
