@@ -5,7 +5,7 @@ import { getMeta } from "@/lib/data";
 
 // Next.js の特殊ファイル not-found.tsx も他のページと同じく metadata を
 // 上書きできる。これが無いとルートレイアウトのタイトル（トップページと同じ
-// 「ossalt.jp — 国産SaaSの代わりに、自前で動かす」）がそのまま出てしまう。
+// 「SaaSの代替OSSを日本語で比較｜ossalt.jp」）がそのまま出てしまう。
 export const metadata: Metadata = {
   title: "ページが見つかりません",
   description: "お探しのページは見つかりませんでした。ツール一覧またはカテゴリから探し直してください。",

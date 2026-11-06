@@ -29,7 +29,7 @@ export type RankingTabsProps = {
 
 const TABS = [
   { id: "popular", label: "人気", sub: "Stars・Forks・Contributors" },
-  { id: "growth", label: "急成長", sub: "直近7日・30日の実測" },
+  { id: "growth", label: "急成長", sub: "直近約1週間・約1か月の実測" },
   { id: "recommended", label: "おすすめ", sub: "用途に合うか・使い続けやすいか" },
 ] as const;
 type TabId = (typeof TABS)[number]["id"];

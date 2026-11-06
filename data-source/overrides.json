@@ -182,6 +182,14 @@
         "checked_at": "2026-11-03",
         "hide_contributors": true
       }
+    },
+    "affine": {
+      "license": "MIT（packages/backend 配下は別ライセンス）",
+      "license_note": "リポジトリのLICENSEによると、packages/backend と packages/common/native 配下は packages/backend/server/LICENSE（AFFiNE Enterprise Edition ライセンス）の条件で、それ以外の大部分はMITです。EEライセンスの本文には、コミュニティ版（CE）として配布される部分はMPL-2.0とあり、それ以外の部分の本番利用は有料の購読が条件とされています。使う版と部分の条件を、公式の本文で確認してください。LICENSE と packages/backend/server/LICENSE を確認（2026-11-05）。"
+    },
+    "docmost": {
+      "license": "AGPL-3.0（ee 配下は別ライセンス）",
+      "license_note": "READMEのLicense節によると、コアはAGPL-3.0で、エンタープライズ機能（apps/server/src/ee・apps/client/src/ee・packages/ee）は別のエンタープライズライセンス（packages/ee/License）です。README を確認（2026-11-05）。"
     }
   },
   "preview_block": [

@@ -13,7 +13,7 @@ import type { RecQuery, RecTool, ScoredCandidate } from "./recommend/types.ts";
 
 const base: RecTool = {
   id: "x", name: "X", desc: null, category: "docs", competitors: ["notion"], owner: null, topics: [],
-  stars: 1000, license: "MIT", licenseClass: "permissive", licenseGroup: "osi", docker: true, jaUi: null, jaDocs: null,
+  stars: 1000, license: "MIT", licenseLabel: "MIT", licenseCaveat: null, licenseClass: "permissive", licenseGroup: "osi", docker: true, jaUi: null, jaDocs: null,
   freshnessDays: 5, releases12mo: 8, scorecard: 6, securityMd: true, dependabot: true, maintenanceNotice: false,
   popularity: 60, growth: 50, gain30: 10,
 };

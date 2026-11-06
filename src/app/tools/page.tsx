@@ -87,7 +87,7 @@ export default function ToolsPage() {
           </p>
         </section>
 
-        <p className="muted mt1" style={{ fontSize: "0.8125rem" }}>{"※ 並び順の初期値は健全度スコア（スター・フォーク・コントリビュータ・ウォッチャー・更新の新しさから算出）です。"}
+        <p className="muted mt1" style={{ fontSize: "0.8125rem" }}>{"※ 並び順の初期値は注目度・規模の目安（スター・フォーク・コントリビュータ・ウォッチャー・更新の新しさから算出）です。品質や安全性の順位ではありません。"}
           {"数値はGitHubの公開情報にもとづき、データ更新は日次で自動実行されます。"}</p>
       </main>
       <SiteFooter meta={meta} />

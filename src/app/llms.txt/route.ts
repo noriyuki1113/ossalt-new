@@ -33,7 +33,7 @@ export function GET() {
     `- [日本語で使えるOSS](${BASE}/japanese/)`,
     `- [急上昇中のOSS](${BASE}/trending/): GitHubのスターが伸びているOSS`,
     `- [ライセンスから探す](${BASE}/licenses/)`,
-    `- [選び方](${BASE}/guide/): 健全度スコアとセキュリティ評価の読み方`,
+    `- [選び方](${BASE}/guide/): 注目度・規模の目安（旧：健全度スコア）とセキュリティ評価の読み方`,
     "",
     "## SaaSごとの代替（Markdown）",
     "",

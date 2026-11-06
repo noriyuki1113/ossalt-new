@@ -430,7 +430,7 @@ function Results({
 
 function RecCard({ item, compareWith }: { item: RankedItem; compareWith: RankedItem | null }) {
   const t = item.tool;
-  const lic = t.license ? `${t.license}（${LICENSE_GROUP_LABELS[t.licenseGroup]}）` : LICENSE_GROUP_LABELS.unknown;
+  const lic = t.license ? `${t.licenseLabel}（${LICENSE_GROUP_LABELS[t.licenseGroup]}）` : LICENSE_GROUP_LABELS.unknown;
   return (
     <li className="fy-card panel">
       <div className="fy-card__head">
@@ -448,6 +448,7 @@ function RecCard({ item, compareWith }: { item: RankedItem; compareWith: RankedI
       </div>
       <ul className="fy-facts" aria-label="基本の情報">
         <li>{`ライセンス：${lic}`}</li>
+        {t.licenseCaveat && <li className="fy-facts__note">{`ライセンスの注意：${t.licenseCaveat}`}</li>}
         <li>{`Docker：${t.docker === true ? "確認済み" : t.docker === false ? "確認できず" : "未確認"}`}</li>
         <li>{`日本語：${t.jaUi === true ? "画面あり" : t.jaDocs === "official" ? "公式資料あり" : t.jaDocs === "community" ? "有志の資料あり" : t.jaUi === false && t.jaDocs === "none" ? "なし（確認済み）" : "未確認"}`}</li>
         {t.stars != null && <li>{`★${t.stars.toLocaleString("ja-JP")}`}</li>}
