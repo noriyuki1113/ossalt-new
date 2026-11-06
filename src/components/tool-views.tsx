@@ -46,7 +46,7 @@ export function HealthMeter({
       <span
         className="meter"
         role="img"
-        aria-label={`健全度 ${h.total ?? "不明"}。5項目の内訳は詳細ページに記載。`}
+        aria-label={`注目度・規模の目安 ${h.total ?? "不明"}。5項目の内訳は詳細ページに記載。`}
         style={size === "sm" ? { height: 20 } : undefined}
       >
         {h.terms.map((term) => (

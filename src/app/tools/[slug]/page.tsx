@@ -302,7 +302,7 @@ export default async function ToolDetailPage({
                 <p className="toc__title">目次</p>
                 <ol>
                   <li><a href="#about">{`${tool.name}とは`}</a></li>
-                  <li><a href="#health">健全度スコア</a></li>
+                  <li><a href="#health">注目度・規模の目安</a></li>
                   <li><a href="#spec">スペック</a></li>
                   <li><a href="#faq">よくある質問</a></li>
                   <li><a href="#security">セキュリティ</a></li>
@@ -338,7 +338,7 @@ export default async function ToolDetailPage({
                   </div>
                   <HealthLegend tool={tool} />
                   <details className="more">
-                    <summary>健全度スコアの説明</summary>
+                    <summary>注目度・規模の目安の説明</summary>
                     <p className="muted" style={{ fontSize: "0.75rem" }}>
                       {t("health.explain")} {t("health.formulaNote")}
                     </p>

@@ -70,7 +70,7 @@ export default async function LicenseClassPage({ params }: { params: Promise<Par
         </section>
 
         <section className="section section--first">
-          <h2 className="h3">ツールの一覧（健全度順）</h2>
+          <h2 className="h3">ツールの一覧（注目度・規模の目安の順）</h2>
           <div className="ledger">
             {tools.map((tool) => (
               <ToolRow key={tool.id} tool={tool} />
