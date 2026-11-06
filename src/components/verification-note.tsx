@@ -8,8 +8,8 @@ export function VerificationNote({ v, checkedAtLabel }: { v: Verification; check
     <div className="vnote">
       <p className="vnote__line">
         <span className={`vnote__badge vnote__badge--${v.status}`}>{VERIFICATION_LABELS[v.status]}</span>
-        {v.status === "unverified" && "この解説は、公式資料との照合を記録していません。導入前に、公式の情報でご確認ください。"}
-        {v.status === "official" && `公式資料と照合しました${checkedAtLabel ? `（${checkedAtLabel}）` : ""}。`}
+        {v.status === "unverified" && "この解説には、公式資料と照らし合わせた記録（照合日・出典）が残っていません。記録のない内容は確認済みとして扱っていません。導入前に、公式の情報でご確認ください。"}
+        {v.status === "official" && `公式資料と照合しました${checkedAtLabel ? `（${checkedAtLabel}）` : ""}。実際に動かしての確認ではありません。`}
         {v.status === "hands-on" && `実際に動かして確認しました${checkedAtLabel ? `（${checkedAtLabel}）` : ""}。`}
         {v.status === "recheck" && `以前の確認${checkedAtLabel ? `（${checkedAtLabel}）` : ""}から時間がたっており、再確認が必要です。`}
       </p>
@@ -29,6 +29,10 @@ export function VerificationNote({ v, checkedAtLabel }: { v: Verification; check
             <li key={k}><span className={`vnote__badge vnote__badge--${k}`}>{VERIFICATION_LABELS[k]}</span>{VERIFICATION_DESCRIPTIONS[k]}</li>
           ))}
         </ul>
+        <p className="vnote__more">
+          <a href="/editorial/#verification">編集方針の「検証状態の意味」</a>
+          {"で、執筆時の資料の参照と、照合の記録の違いを説明しています。"}
+        </p>
       </details>
     </div>
   );

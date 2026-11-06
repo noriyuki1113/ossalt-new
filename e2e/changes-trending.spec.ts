@@ -66,7 +66,7 @@ test.describe("OSSランキング（人気・急成長・おすすめ）", () =>
     await page.getByRole("tab", { name: /急成長/ }).click();
     await expect(page).toHaveURL(/#growth$/);
     await expect(page.locator("#panel-growth")).toBeVisible();
-    await expect(page.locator("#panel-growth")).toContainText("直近7日の純増 50%");
+    await expect(page.locator("#panel-growth")).toContainText("直近約1週間の純増 50%");
     await expect(page.locator("#panel-growth .rank-row").first()).toBeVisible();
 
     // おすすめ：適用条件（5つのSaaSだけ）を明示し、SaaSを切り替えられる

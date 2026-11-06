@@ -14,16 +14,18 @@ import {
   getHealth,
   getMaintenanceWarning,
   getScorecardTier,
-  getSecurityFallback,
   jaDocsLabel,
   jaUiLabel,
   hasJapanese,
   licenseLabel,
   releaseInfoLabel,
+  scorecardState,
+  scorecardStatusText,
   securityMdLabel,
   type Tool,
 } from "@/lib/tools";
 import { t } from "@/lib/site";
+import { archivedSecurityText } from "@/lib/archive-reason";
 import { classifyLicense, LICENSE_CLASS_LABELS, licenseGroupOf } from "@/lib/compare";
 import { freshnessState, type StarContext } from "@/lib/star-context";
 
@@ -46,7 +48,7 @@ export function HealthMeter({
       <span
         className="meter"
         role="img"
-        aria-label={`健全度 ${h.total ?? "不明"}。5項目の内訳は詳細ページに記載。`}
+        aria-label={`注目度・規模の目安 ${h.total ?? "不明"}。5項目の内訳は詳細ページに記載。`}
         style={size === "sm" ? { height: 20 } : undefined}
       >
         {h.terms.map((term) => (
@@ -105,61 +107,67 @@ export function HealthLegend({ tool }: { tool: Tool }) {
  * ------------------------------------------------------------------ */
 
 export function ScorecardBadge({ tool }: { tool: Tool }) {
-  const tier = getScorecardTier(tool.scorecard_score);
-  if (tier === "unrated") {
+  const state = scorecardState(tool);
+  if (state !== "scored") {
     return (
-      <span className={`sc sc--unrated`} title={t("security.unratedReason")}>
+      <span
+        className={`sc sc--unrated`}
+        title={state === "mirror" ? t("security.mirrorReason") : t("security.unratedReason")}
+      >
         <span className="sc__dot" aria-hidden="true" />
-        <span>Security</span>
-        <span className="sc__score">{t("security.unrated")}</span>
+        <span>Scorecard</span>
+        <span className="sc__score">{state === "mirror" ? "対象外" : t("security.unrated")}</span>
       </span>
     );
   }
+  const tier = getScorecardTier(tool.scorecard_score);
+  if (tier === "unrated") return null;
   return (
     <span
       className={`sc sc--${tier}`}
       title={`OpenSSF Scorecard ${tool.scorecard_score} / 10（${SCORECARD_TIERS[tier].label}）`}
     >
       <span className="sc__dot" aria-hidden="true" />
-      <span>Security</span>
+      <span>Scorecard</span>
       <span className="sc__score">{tool.scorecard_score?.toFixed(1)}</span>
     </span>
   );
 }
 
 /**
- * 一覧・比較表用。Scorecard未評価のときに空欄にしない代替表示。
- * 「未評価 ≠ 安全/危険」の考え方を壊さないよう、確認できた事実（アーカイブ・
- * アドバイザリ・SECURITY.mdの有無）だけを文字で示す。色だけに頼らない。
+ * 一覧・比較表用。OpenSSF Scorecard の状態だけを示し、報告窓口（SECURITY.md）などの別の情報は混ぜない。
+ * アーカイブ済みは保守の状況として、別の小さな表示で添える。未評価は安全・危険の判定に使わない。
  */
 export function SecurityListBadge({ tool }: { tool: Tool }) {
-  const tier = getScorecardTier(tool.scorecard_score);
-  if (tier !== "unrated") return <ScorecardBadge tool={tool} />;
-  const fallback = getSecurityFallback(tool);
   return (
-    <span className={`sc sc--${fallback.tier}`} title={t("security.unratedReason")}>
-      <span className="sc__dot" aria-hidden="true" />
-      <span>Security</span>
-      <span className="sc__score">{fallback.text}</span>
-    </span>
+    <>
+      <ScorecardBadge tool={tool} />
+      {tool.github_archived && <span className="sc-note">{archivedSecurityText(tool.archive_reason)}</span>}
+    </>
   );
 }
 
+function scorecardCheckText(score: number): string {
+  // Scorecard の -1 は「判定できなかった・対象外」で、0点ではない
+  if (score < 0) return "判定できず";
+  if (score >= 10) return "✓ 合格";
+  return `${score} / 10`;
+}
+
 export function ScorecardPanel({ tool }: { tool: Tool }) {
+  const state = scorecardState(tool);
   const tier = getScorecardTier(tool.scorecard_score);
   const checks = tool.scorecard_checks ?? {};
   const rows = Object.entries(SCORECARD_CHECKS)
     .filter(([key]) => key in checks)
     .map(([key, label]) => ({ key, label, score: checks[key] }));
   const maintenance = getMaintenanceWarning(tool);
+  const githubChecked = tool.github_checked_at ? tool.github_checked_at.slice(0, 10) : null;
 
   return (
     <div className="panel">
       <div className="panel__head">
         <h2 className="panel__title">{t("metric.security")}</h2>
-        <span className="panel__meta">
-          {tool.scorecard_date ? `OpenSSF Scorecard / ${tool.scorecard_date}` : "OpenSSF Scorecard"}
-        </span>
       </div>
       <div className="panel__body">
         {maintenance?.level === "archived" && (
@@ -172,11 +180,13 @@ export function ScorecardPanel({ tool }: { tool: Tool }) {
             {t("security.staleWarning", { days: maintenance.days ?? "—" })}
           </p>
         )}
-        {tier === "unrated" ? (
+
+        <h3 className="field__label" style={{ marginTop: 0 }}>OpenSSF Scorecard</h3>
+        {state !== "scored" ? (
           <>
             <ScorecardBadge tool={tool} />
             <p className="mt1" style={{ marginBottom: "0.5rem" }}>
-              {t("security.unratedReason")}
+              {state === "mirror" ? t("security.mirrorReason") : t("security.unratedReason")}
             </p>
             <p className="muted" style={{ fontSize: "0.875rem", marginTop: 0 }}>
               {t("security.unratedCaution")}
@@ -187,19 +197,22 @@ export function ScorecardPanel({ tool }: { tool: Tool }) {
             <p style={{ marginTop: 0 }}>
               <ScorecardBadge tool={tool} />
               <span className="muted" style={{ marginLeft: "0.75rem", fontSize: "0.875rem" }}>
-                {SCORECARD_TIERS[tier].label} — {SCORECARD_TIERS[tier].note}
+                {tier !== "unrated" && `${SCORECARD_TIERS[tier].label} — ${SCORECARD_TIERS[tier].note}`}
               </span>
             </p>
+            {tool.scorecard_date && (
+              <p className="muted" style={{ fontSize: "0.75rem", margin: "0 0 0.5rem" }}>
+                {`採点日：${tool.scorecard_date}（OpenSSF Scorecard の公開結果）`}
+              </p>
+            )}
             {rows.length > 0 && (
               <>
-                <h3 className="field__label mt1">{t("security.checks")}</h3>
+                <h4 className="field__label mt1">{t("security.checks")}</h4>
                 <dl className="spec">
                   {rows.map((r) => (
                     <div className="spec__row" key={r.key}>
                       <dt className="spec__key">{r.label}</dt>
-                      <dd className="spec__val">
-                        {r.score >= 10 ? "✓ 合格" : r.score > 0 ? `${r.score} / 10` : "× 未対応"}
-                      </dd>
+                      <dd className="spec__val">{scorecardCheckText(r.score)}</dd>
                     </div>
                   ))}
                 </dl>
@@ -207,7 +220,11 @@ export function ScorecardPanel({ tool }: { tool: Tool }) {
             )}
           </>
         )}
-        <h3 className="field__label mt1">{t("security.signals")}</h3>
+        <p className="muted" style={{ fontSize: "0.75rem" }}>
+          {t("security.what")}
+        </p>
+
+        <h3 className="field__label mt1">{t("security.reportTitle")}</h3>
         <dl className="spec">
           <div className="spec__row">
             <dt className="spec__key">{t("security.securityMd")}</dt>
@@ -215,6 +232,13 @@ export function ScorecardPanel({ tool }: { tool: Tool }) {
               {tool.security_md === false ? t("security.securityMdMissing") : securityMdLabel(tool.security_md)}
             </dd>
           </div>
+        </dl>
+        <p className="muted" style={{ fontSize: "0.75rem", marginTop: "0.25rem" }}>
+          {t("security.securityMdScope")}
+        </p>
+
+        <h3 className="field__label mt1">{t("security.otherTitle")}</h3>
+        <dl className="spec">
           <div className="spec__row">
             <dt className="spec__key">{t("security.dependabot")}</dt>
             <dd className="spec__val">{dependabotLabel(tool.dependabot_configured)}</dd>
@@ -228,9 +252,11 @@ export function ScorecardPanel({ tool }: { tool: Tool }) {
             <dd className="spec__val">{advisoriesLabel(tool.advisories_count)}</dd>
           </div>
         </dl>
-        <p className="muted" style={{ fontSize: "0.75rem", marginBottom: 0 }}>
-          {t("security.what")}
-        </p>
+        {githubChecked && (
+          <p className="muted" style={{ fontSize: "0.75rem", marginBottom: 0 }}>
+            {t("security.githubChecked", { date: githubChecked })}
+          </p>
+        )}
       </div>
     </div>
   );
@@ -255,7 +281,7 @@ export function ToolRow({ tool }: { tool: Tool }) {
             <p className="row__alt">
               {t("card.alternativeTo")}: <b>{tool.primary_competitor_ja || tool.primary_competitor}</b>
               {tool.language ? ` ／ ${tool.language}` : ""}
-              {tool.license ? ` ／ ${tool.license}` : ""}
+              {tool.license ? ` ／ ${licenseLabel(tool.license)}` : ""}
             </p>
           </div>
           {hasJapanese(tool) && (
@@ -320,7 +346,7 @@ export function ToolCard({ tool }: { tool: Tool }) {
         <p className="browse-card__description">{tool.description_ja}</p>
       )}
       <div className="browse-card__tags" aria-label="特徴">
-        <span className="browse-card__tag">{tool.license || "ライセンス未確認"}</span>
+        <span className="browse-card__tag">{tool.license ? licenseLabel(tool.license) : "ライセンス未確認"}</span>
         {tool.docker_available === true && <span className="browse-card__tag">Docker対応</span>}
         {hasJapanese(tool) && (
           <span className="browse-card__tag">
@@ -334,7 +360,7 @@ export function ToolCard({ tool }: { tool: Tool }) {
           <strong className="browse-card__metric-value">★ {formatCompactJa(tool.stars_num)}</strong>
         </div>
         <div>
-          <span className="browse-card__metric-label">セキュリティ</span>
+          <span className="browse-card__metric-label">Scorecard</span>
           <SecurityListBadge tool={tool} />
         </div>
       </div>
@@ -420,8 +446,8 @@ export function KeyFacts({
     },
     { key: "GitHubのスター", value: formatCompactJa(tool.stars_num), sub: starSub },
     {
-      key: "セキュリティ評価",
-      value: tool.scorecard_score != null ? `${tool.scorecard_score} / 10` : "未評価",
+      key: "OpenSSF Scorecard",
+      value: scorecardStatusText(tool),
       sub:
         tool.scorecard_score != null ? (
           <>

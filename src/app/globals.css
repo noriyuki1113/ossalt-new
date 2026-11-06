@@ -2692,3 +2692,17 @@ details.more > summary {
 .fy-jump { display: inline-flex; align-items: center; min-height: 44px; font-size: 0.875rem; font-weight: 700; }
 @media (min-width: 960px) { .fy-jump { display: none; } }
 #fy-results-h { scroll-margin-top: 1rem; }
+
+/* ライセンスの注意（例外・条件）。比較・代替・推薦の表で、表示名の下に小さく出す */
+.license-caveat { display: block; margin-top: 0.25rem; line-height: 1.5; font-size: 0.75rem; }
+.fy-facts__note { flex-basis: 100%; color: var(--ink-2); }
+/* 一覧の Scorecard の横に添える、保守の状況（アーカイブ済みなど）。Scorecard の点数とは別の情報 */
+.sc-note { display: inline-block; margin-left: 0.375rem; font-size: 0.6875rem; color: var(--ink-2); }
+.diag-scope { font-size: 0.8125rem; margin: 0 0 0.75rem; }
+/* 表の横スクロールの手がかり（小さい画面だけ） */
+.scroll-hint { display: none; margin: 0 0 0.25rem; font-size: 0.75rem; color: var(--ink-2); }
+.scroll-hint::before { content: "↔ "; }
+@media (max-width: 767px) { .scroll-hint { display: block; } }
+/* 代替ページ（結論を先に出す配置）：候補ごとの要点と、詳細指標の折りたたみ */
+.alt-picks__facts { display: block; font-size: 0.75rem; color: var(--ink-2); margin-top: 0.125rem; }
+.alt-details > summary { cursor: pointer; font-weight: 700; padding: 0.5rem 0; }

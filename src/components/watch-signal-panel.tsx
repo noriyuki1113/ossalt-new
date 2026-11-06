@@ -8,7 +8,7 @@ function label(signal: WatchSignal): string {
   switch (signal.signal) {
     case "archived": return "GitHubでアーカイブ状態を確認";
     case "stable_release_change_observed": return "安定版のタグ変更を観測";
-    case "star_growth_7d": return "7日間のStar増加を観測";
+    case "star_growth_7d": return "約1週間のStar増加を観測";
     default: return "観測中・重要な変化は未検出";
   }
 }
@@ -68,7 +68,7 @@ export function WatchSignalPanel({githubUrl}: {githubUrl: string}) {
             </dd>
           </div>
           <div style={{padding:".8rem",border:"1px solid var(--border)",borderRadius:"10px"}}>
-            <dt className="muted" style={{fontSize:".75rem"}}>Star増減（7日間）</dt>
+            <dt className="muted" style={{fontSize:".75rem"}}>Star増減（約1週間）</dt>
             <dd style={{margin:".35rem 0 0",fontWeight:800,fontVariantNumeric:"tabular-nums"}}>
               {signal.stars_delta_7d === null ? "比較用履歴を蓄積中" :
                 (signal.stars_delta_7d > 0 ? "+" : "") + signal.stars_delta_7d.toLocaleString("ja-JP")}
@@ -84,7 +84,7 @@ export function WatchSignalPanel({githubUrl}: {githubUrl: string}) {
         </dl>
         <p className="muted" style={{fontSize:".75rem",lineHeight:1.7,marginTop:"1rem",marginBottom:0}}>
           観測日時：{dateJst(signal.observed_at)}（日本時間）。
-          {signal.baseline_date_7d ? " 比較基準日：" + signal.baseline_date_7d + "（UTC）。" : " 7日間の比較基準はまだありません。"}
+          {signal.baseline_date_7d ? " 比較基準日：" + signal.baseline_date_7d + "（UTC）。" : " 約1週間の比較基準はまだありません。"}
           {" "}観測日とリリース公開日は同じとは限りません。
           Star数は利用者数・安全性・品質を保証するものではありません。
           {" "}

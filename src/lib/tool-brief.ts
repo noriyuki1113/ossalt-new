@@ -119,7 +119,11 @@ export function buildToolBrief(tool: Tool, diag: ToolDiagnosisMeta | undefined, 
     if (tool.scorecard_score >= T.scorecardGood) strengths.push({ text: `OpenSSF Scorecardが${tool.scorecard_score}で、良好の目安（${T.scorecardGood}以上）`, basis: "OpenSSF Scorecard（第三者の機械的な採点）" });
     else if (tool.scorecard_score < T.scorecardLow) cautions.push({ text: `OpenSSF Scorecardが${tool.scorecard_score}と低め`, basis: "OpenSSF Scorecard（第三者の機械的な採点）" });
   } else {
-    cautions.push({ text: "セキュリティ評価（OpenSSF Scorecard）は未評価。安全の証拠にも、危険の証拠にもならない", basis: "Scorecardの結果なし" });
+    cautions.push(
+      tool.source_mirror
+        ? { text: "セキュリティ評価（OpenSSF Scorecard）は対象外（GitHubがミラーのため）。安全の証拠にも、危険の証拠にもならない", basis: "ミラーの点数は採用しない" }
+        : { text: "セキュリティ評価（OpenSSF Scorecard）は未評価。安全の証拠にも、危険の証拠にもならない", basis: "Scorecardの結果なし" }
+    );
   }
   if (tool.advisories_count != null && tool.advisories_count > 0) {
     cautions.push({ text: `公開された脆弱性アドバイザリが${tool.advisories_count}件ある（修正済みを含む。対応状況は公式で確認）`, basis: "GitHubの公開アドバイザリ" });
@@ -177,7 +181,7 @@ export function buildToolBrief(tool: Tool, diag: ToolDiagnosisMeta | undefined, 
     ? `人気：ランキング対象${standing.popular.total}件中${standing.popular.rank}位（Stars・Forks・Contributors）`
     : "人気：未観測";
   const growth = standing.growth
-    ? `成長：${standing.growth.total}件中${standing.growth.rank}位（直近7日・30日の実測）`
+    ? `成長：${standing.growth.total}件中${standing.growth.rank}位（直近約1週間・約1か月の実測）`
     : `成長：未観測（${standing.growthReason ?? "実測の記録が足りない"}）`;
 
   const gh = tool.github_url.replace(/\/+$/, "");

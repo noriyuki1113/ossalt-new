@@ -46,7 +46,7 @@ export default function CompareIndexPage() {
         <Breadcrumbs items={[{ href: "/", label: "トップ" }, { label: "2つずつ比較" }]} />
         <h1 className="h2">オープンソースの代替を2つずつ比較</h1>
         <p className="lede">
-          {`同じSaaSの代わりになるオープンソースのうち、よく候補に挙がるものを2つずつ並べて比べられます（${pairs.length}件）。各SaaSの代替のうち、健全度の上位3件どうしを組み合わせています。`}
+          {`同じSaaSの代わりになるオープンソースのうち、よく候補に挙がるものを2つずつ並べて比べられます（${pairs.length}件）。各SaaSの代替のうち、注目度・規模の目安の上位3件どうしを組み合わせています。`}
         </p>
 
         {featuredPairs.length > 0 && (

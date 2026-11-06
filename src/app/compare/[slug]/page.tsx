@@ -6,7 +6,7 @@ import type { ReactNode } from "react";
 import { Breadcrumbs, JsonLd, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ToolLogo } from "@/components/tool-logo";
 import { getComparePairs, getMeta, getTool } from "@/lib/data";
-import { LICENSE_CLASS_LABELS, buildDifferences, classifyLicense } from "@/lib/compare";
+import { LICENSE_CLASS_LABELS, buildDifferences, classifyLicense, licenseCaveat } from "@/lib/compare";
 import { SAAS_IDS, SAAS_LABELS } from "@/lib/diagnosis-types";
 import { FEATURES, SITE } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
@@ -21,6 +21,7 @@ import {
   jaDocsLabel,
   jaUiLabel,
   licenseLabel,
+  scorecardStatusText,
   securityMdLabel,
   slugifyCompetitor,
   type Tool,
@@ -62,7 +63,8 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
 }
 
 function scorecardText(t: Tool): string {
-  return t.scorecard_score != null ? `${t.scorecard_score.toFixed(1)} / 10` : "未評価";
+  // 点数・未評価・対象外（ミラー）を区別する。報告窓口とは別の行で示す
+  return scorecardStatusText(t);
 }
 
 export default async function ComparePage({ params }: { params: Promise<Params> }) {
@@ -79,7 +81,15 @@ export default async function ComparePage({ params }: { params: Promise<Params> 
 
   const rows: Array<[string, (t: Tool) => ReactNode]> = [
     ["概要", (t) => t.description_ja ?? "—"],
-    ["ライセンス", (t) => `${licenseLabel(t.license)}（${LICENSE_CLASS_LABELS[classifyLicense(t.license)]}）`],
+    ["ライセンス", (t) => {
+      const caveat = licenseCaveat(t.license, t.license_note);
+      return (
+        <>
+          {`${licenseLabel(t.license)}（${LICENSE_CLASS_LABELS[classifyLicense(t.license)]}）`}
+          {caveat && <small className="muted license-caveat">{caveat}</small>}
+        </>
+      );
+    }],
     ["GitHubのスター", (t) => formatFull(t.stars_num)],
     ["フォーク", (t) => formatFull(t.forks_num)],
     ["コントリビュータ", (t) => formatFull(t.contributors_num)],
@@ -95,7 +105,7 @@ export default async function ComparePage({ params }: { params: Promise<Params> 
     ["Docker", (t) => dockerLabel(t.docker_available)],
     ["画面の日本語化", (t) => jaUiLabel(t.ja_ui)],
     ["日本語ドキュメント", (t) => jaDocsLabel(t.ja_docs)],
-    ["OpenSSF Scorecard", scorecardText],
+    ["OpenSSF Scorecard（第三者の機械採点）", scorecardText],
     ["脆弱性の報告窓口（SECURITY.md）", (t) => securityMdLabel(t.security_md)],
     ["依存関係の自動更新（Dependabot）", (t) => dependabotLabel(t.dependabot_configured)],
     ["公開されたセキュリティアドバイザリ", (t) => advisoriesLabel(t.advisories_count)],
