@@ -2063,6 +2063,10 @@
   "file": null,
   "checked_at": "2026-11-01T22:48:11.590Z"
  },
+ "papermerge": {
+  "file": null,
+  "checked_at": "2026-11-08T22:52:23.031Z"
+ },
  "parse": {
   "file": null,
   "checked_at": "2026-11-01T22:47:54.517Z"
@@ -2144,6 +2148,10 @@
   "height": 420,
   "bytes": 15725,
   "checked_at": "2026-11-01T22:47:57.209Z"
+ },
+ "piper": {
+  "file": null,
+  "checked_at": "2026-11-08T22:52:23.003Z"
  },
  "piwigo": {
   "file": null,
