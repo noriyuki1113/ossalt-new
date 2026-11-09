@@ -12,6 +12,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { emitErrors } from "./gh-annotation.mjs";
 
 export function parseSitemap(xml) {
   const urls = [];
@@ -86,6 +87,7 @@ function main(argv) {
   const all = [...r.problems, ...robotsProblems];
   console.log(`サイトマップ: ${r.total}件。問題 ${all.length}件、注意 ${r.warnings.length}件`);
   for (const p of all.slice(0, 50)) console.log(`  ✗ ${p}`);
+  emitErrors(all.slice(0, 50), "サイトマップ・robots.txtの不整合");
   for (const w of r.warnings.slice(0, 10)) console.log(`  △ ${w}`);
   return all.length ? 1 : 0;
 }
