@@ -50,7 +50,8 @@ export function checkCritical(snap, paths = CRITICAL_PATHS) {
     if (!r) { problems.push(`重要ページが出力されていない: ${p}`); continue; }
     if (r.noindex) problems.push(`重要ページが noindex: ${p}`);
     if (r.refresh) problems.push(`重要ページが転送ページ（meta refresh）: ${p}`);
-    if (r.canonical && r.canonical !== `${snap.site}${p}`) problems.push(`重要ページの canonical が自分自身ではない: ${p} → ${r.canonical}`);
+    if (!r.canonical) problems.push(`重要ページの canonical が無い: ${p}`);
+    else if (r.canonical !== `${snap.site}${p}`) problems.push(`重要ページの canonical が自分自身ではない: ${p} → ${r.canonical}`);
     if (!snap.sitemap.has(p)) problems.push(`重要ページがサイトマップに無い: ${p}`);
   }
   return problems;

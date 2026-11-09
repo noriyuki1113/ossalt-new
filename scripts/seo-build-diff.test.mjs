@@ -44,6 +44,27 @@ test("checkCritical: 出力なし・noindex・転送・別canonical・サイト�
   assert.match(p, /出力されていない: \/missing\//);
 });
 
+test("checkCritical: canonical が欠落している重要ページは失敗にする（空・タグなしの両方）", () => {
+  const s = snap({
+    "/a/": html("/a/", { canonical: "" }),
+    "/b/": `<html><head><title>T</title><meta name="robots" content="index, follow"/></head></html>`,
+    "/ok/": html("/ok/"),
+  }, ["/a/", "/b/", "/ok/"]);
+  const p = checkCritical(s, ["/a/", "/b/", "/ok/"]);
+  assert.equal(p.length, 2);
+  assert.match(p[0], /canonical が無い: \/a\//);
+  assert.match(p[1], /canonical が無い: \/b\//);
+});
+
+test("checkCritical: 末尾スラッシュ違い・http・別ホストのcanonicalは自己参照とみなさない", () => {
+  const s = snap({
+    "/a/": html("/a/", { canonical: `${SITE}/a` }),
+    "/b/": html("/b/", { canonical: `http://ossalt.jp/b/` }),
+    "/c/": html("/c/", { canonical: `https://www.ossalt.jp/c/` }),
+  }, ["/a/", "/b/", "/c/"]);
+  assert.equal(checkCritical(s, ["/a/", "/b/", "/c/"]).filter((x) => /自分自身ではない/.test(x)).length, 3);
+});
+
 test("isIndexable: noindex と meta refresh は index 可能ではない", () => {
   assert.equal(isIndexable({ noindex: false, refresh: false }), true);
   assert.equal(isIndexable({ noindex: true, refresh: false }), false);
