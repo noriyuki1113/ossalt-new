@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { DiagnosisResult, type ToolFact } from "@/components/diagnosis-result";
+import { licenseCaveat } from "@/lib/compare";
 import { getComparePairs, getMeta, getTools } from "@/lib/data";
 import { getAllDiagnosisToolInputs, getHealthPercentiles } from "@/lib/diagnosis-tools";
 import { pageMeta } from "@/lib/seo";
@@ -24,6 +25,7 @@ export default function DiagnosisResultPage() {
     toolFacts[input.meta.toolId] = {
       name: input.name,
       license: tool?.license ?? null,
+      licenseCaveat: tool ? licenseCaveat(tool.license, tool.license_note) : null,
       dockerAvailable: tool?.docker_available ?? null,
     };
   }

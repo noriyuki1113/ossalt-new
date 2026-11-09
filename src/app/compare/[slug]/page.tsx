@@ -6,7 +6,7 @@ import type { ReactNode } from "react";
 import { Breadcrumbs, JsonLd, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ToolLogo } from "@/components/tool-logo";
 import { getComparePairs, getMeta, getTool } from "@/lib/data";
-import { LICENSE_CLASS_LABELS, buildDifferences, classifyLicense } from "@/lib/compare";
+import { LICENSE_CLASS_LABELS, buildDifferences, classifyLicense, licenseCaveat } from "@/lib/compare";
 import { SAAS_IDS, SAAS_LABELS } from "@/lib/diagnosis-types";
 import { FEATURES, SITE } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
@@ -81,7 +81,15 @@ export default async function ComparePage({ params }: { params: Promise<Params> 
 
   const rows: Array<[string, (t: Tool) => ReactNode]> = [
     ["概要", (t) => t.description_ja ?? "—"],
-    ["ライセンス", (t) => `${licenseLabel(t.license)}（${LICENSE_CLASS_LABELS[classifyLicense(t.license)]}）`],
+    ["ライセンス", (t) => {
+      const caveat = licenseCaveat(t.license, t.license_note);
+      return (
+        <>
+          {`${licenseLabel(t.license)}（${LICENSE_CLASS_LABELS[classifyLicense(t.license)]}）`}
+          {caveat && <small className="muted license-caveat">{caveat}</small>}
+        </>
+      );
+    }],
     ["GitHubのスター", (t) => formatFull(t.stars_num)],
     ["フォーク", (t) => formatFull(t.forks_num)],
     ["コントリビュータ", (t) => formatFull(t.contributors_num)],

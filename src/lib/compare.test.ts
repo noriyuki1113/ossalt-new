@@ -4,7 +4,7 @@
  */
 import test from "node:test";
 import assert from "node:assert/strict";
-import { buildComparePairs, buildDifferences, classifyLicense, compareSlug, licenseGroupOf, licenseReason } from "./compare.ts";
+import { buildComparePairs, buildDifferences, classifyLicense, compareSlug, licenseGroupOf, licenseReason, licenseIdentifier, licenseDisplay, licenseCaveat } from "./compare.ts";
 
 test("ライセンス分類: 代表的な表記", () => {
   assert.equal(classifyLicense("MIT"), "permissive");
@@ -130,4 +130,26 @@ test("licenseReason: 区分ごとの判定理由。未確認を「無い」と�
   assert.match(licenseReason("Elastic License 2.0"), /OSI承認のオープンソースライセンスではありません/);
   assert.match(licenseReason("AGPL-3.0 / Metabase Commercial"), /選ぶ形式/);
   assert.match(licenseReason(null), /「ライセンスが無い」という意味ではありません/);
+});
+
+test("licenseIdentifier/licenseDisplay: 識別子と表示を分け、一部だけ別条件のものは「中心／一部別条件」", () => {
+  assert.equal(licenseIdentifier("AGPL-3.0（ee/ 配下は別ライセンス）"), "AGPL-3.0");
+  assert.equal(licenseIdentifier("MIT"), "MIT");
+  assert.equal(licenseIdentifier(null), null);
+  assert.equal(licenseDisplay("MIT（packages/backend 配下は別ライセンス）"), "MIT中心／一部別条件");
+  assert.equal(licenseDisplay("AGPL-3.0（一部のクレートはMIT）"), "AGPL-3.0（一部のクレートはMIT）"); // partial でないものは表記のまま
+  assert.equal(licenseDisplay("MIT"), "MIT");
+  assert.equal(licenseDisplay(""), "不明");
+  // 選択式・構成要素で異なるものは、無理に「中心」と言い切らない
+  assert.equal(licenseDisplay("MIT / AGPL-3.0 / Apache-2.0（構成要素により異なる）"), "MIT / AGPL-3.0 / Apache-2.0（構成要素により異なる）");
+  // 分類・絞り込みは、表示を変えても従来どおり（例外ありは混在）
+  assert.equal(licenseGroupOf("MIT（packages/backend 配下は別ライセンス）"), "mixed");
+});
+
+test("licenseCaveat: 例外ありはデータの注意を返し、ライセンスと無関係な注意は返さない", () => {
+  assert.match(licenseCaveat("Apache-2.0（ee/ 配下は別ライセンス）", "ee/ 配下は別ライセンス（ee/LICENSE）です。") ?? "", /ee\//);
+  assert.equal(licenseCaveat("Apache-2.0（ee/ 配下は別ライセンス）", null), "ライセンスの補足：ee/ 配下は別ライセンス");
+  assert.match(licenseCaveat("LGPL-2.1", "一部の任意の部品は GPL v2以降です。") ?? "", /GPL/);
+  assert.equal(licenseCaveat("MIT", "以前の「RAGの部品」という説明は、現在のREADMEとは異なる。"), null);
+  assert.equal(licenseCaveat("MIT", null), null);
 });

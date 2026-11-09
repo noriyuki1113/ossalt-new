@@ -22,6 +22,8 @@ import { LICENSE_GROUP_LABELS, compareSlug, licenseGroupOf } from "@/lib/compare
 export type ToolFact = {
   name: string;
   license: string | null;
+  /** ライセンスの注意（例外・条件）。無ければ null */
+  licenseCaveat?: string | null;
   dockerAvailable: boolean | null;
 };
 
@@ -298,6 +300,7 @@ function CompareTable({
                     {licenseLabel(fact?.license)}
                     <br />
                     <small className="muted">{LICENSE_GROUP_LABELS[licenseGroupOf(fact?.license)]}</small>
+                    {fact?.licenseCaveat && <small className="muted license-caveat">{fact.licenseCaveat}</small>}
                   </td>
                 </tr>
               );

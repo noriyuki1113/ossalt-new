@@ -6,6 +6,7 @@
  */
 
 import { archivedSecurityText, type ArchiveReason } from "./archive-reason.ts";
+import { licenseDisplay } from "./compare.ts";
 
 export type LanguageShare = { name: string; pct: number; color: string };
 
@@ -380,8 +381,9 @@ export function formatRelativeDays(days: number | null | undefined): string {
   return `${(days / 365).toFixed(1)}年前`;
 }
 
+/** 利用者向けのライセンス表示。一部だけ別条件のものは「MIT中心／一部別条件」。識別子は licenseIdentifier（compare.ts） */
 export function licenseLabel(license: string | null | undefined): string {
-  return license && license.trim() ? license : "不明";
+  return licenseDisplay(license);
 }
 
 export function dockerLabel(v: boolean | null | undefined): string {
