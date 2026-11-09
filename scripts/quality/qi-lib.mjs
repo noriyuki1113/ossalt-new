@@ -119,8 +119,11 @@ export function evaluatePage(input) {
   const mirrorSrc = /mirror/i.test(tool.description_en ?? "");
   const r2 = r2Result({ officialUrl: tool.url, hasOfficialLink: !!hasOfficial, hasRepoLink: !!hasGh, mirror: mirrorSrc });
   add("accuracy", "R2", "公式サイト・リポジトリへのリンクがある", 5, r2.status, r2.basis);
-  const mirror = /mirror/i.test(tool.description_en ?? "");
-  add("accuracy", "R3", "データの取得元が公式の開発リポジトリ（ミラーでない）", 5, mirror ? "fail" : "pass", mirror ? `GitHubの説明：${norm(tool.description_en).slice(0, 80)}` : "ミラーの表示なし");
+  // ミラーでも、本当の開発場所を記録済み（source_mirror）なら対応済み：ミラーでは当てにならない項目はビルド時に空にし、ページに注記を出している
+  const mirrorNoted = mirrorSrc && /^https?:\/\//.test(tool.source_mirror?.primary_url ?? "");
+  const mirror = mirrorSrc && !mirrorNoted;
+  add("accuracy", "R3", "データの取得元が公式の開発リポジトリ（ミラーなら、開発場所を記録して注記している）", 5, mirror ? "fail" : "pass",
+    mirror ? `GitHubの説明：${norm(tool.description_en).slice(0, 80)}` : mirrorNoted ? `ミラー。開発場所を記録済み（${tool.source_mirror.primary_url}、${tool.source_mirror.checked_at ?? "確認日なし"}）` : "ミラーの表示なし");
   const v = guide?.verification ?? "unverified";
   add("accuracy", "R4", "解説を公式資料と照合した記録がある", 5, !guide ? "na" : v === "official" || v === "hands-on" ? "pass" : "unknown", !guide ? "解説なし" : `検証状態=${v}`, "editorial");
   const claimsD = countClaims(tool.description_ja ?? "");
