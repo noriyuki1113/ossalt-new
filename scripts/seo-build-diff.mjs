@@ -11,6 +11,7 @@
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { CRITICAL_PATHS, checkCritical, diffSnapshots, loadSnapshot } from "./seo-build-diff-lib.mjs";
+import { emitErrors } from "./gh-annotation.mjs";
 
 function main(argv) {
   const arg = (n) => { const i = argv.indexOf(n); return i >= 0 ? argv[i + 1] : undefined; };
@@ -30,6 +31,7 @@ function main(argv) {
   const problems = checkCritical(b, CRITICAL_PATHS);
   console.log(`重要ページ ${CRITICAL_PATHS.length}件: 問題 ${problems.length}件`);
   for (const p of problems) console.log(`  ✗ ${p}`);
+  emitErrors(problems, "重要ページの検索設定の不整合");
   return problems.length ? 1 : 0;
 }
 

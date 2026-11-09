@@ -67,6 +67,19 @@ jobs:
           NEXT_PUBLIC_BING_SITE_VERIFICATION: ${{ vars.NEXT_PUBLIC_BING_SITE_VERIFICATION }}
         run: node scripts/build-retry.mjs npm run build
 
+      # 公開前の検索設定の確認。明確な重大不整合があるときだけ、ここで止めて公開しない（out/ を再利用し、再ビルドしない）。
+      #   - サイトマップ：全URLが実在・index可能・自己canonical・同じホスト・末尾スラッシュ／robots.txt：全体の拒否がない・Sitemapがある
+      #   - 重要10ページ：存在・index可能・自己参照canonical・サイトマップ掲載
+      # 正常な404・意図的なnoindexは対象外。失敗の理由は、ログの ✗ 行と注釈（::error）に出る。
+      # サブパス公開（base_path あり）は、URLの前提が違うため対象外。
+      - name: 公開前の確認（サイトマップ・robots.txt）
+        if: steps.pages.outputs.base_path == ''
+        run: node scripts/sitemap-check.mjs --dir out --site https://ossalt.jp
+
+      - name: 公開前の確認（重要ページのindex可否・canonical）
+        if: steps.pages.outputs.base_path == ''
+        run: npm run seo:build-diff -- --after out
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: out
