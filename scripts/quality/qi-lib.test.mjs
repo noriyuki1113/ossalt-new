@@ -67,6 +67,16 @@ test("警告：GitHubのミラー・OSI承認でないのに『オープンソ�
   assert.equal(priorityOf(r).level, "P0");
 });
 
+test("ミラーでも、開発場所を記録済み（source_mirror）なら警告にしない", () => {
+  const tool = { description_en: "Read-only mirror of https://gitlab.example/x" };
+  const noted = evaluatePage(base({ tool: { ...tool, source_mirror: { primary_url: "https://gitlab.example/x", source_url: "https://github.com/x/x", checked_at: "2026-11-03" } } }));
+  assert.ok(!noted.warnings.some((w) => w.id === "mirror-source"));
+  assert.equal(noted.criteria.find((c) => c.id === "R3").status, "pass");
+  const bare = evaluatePage(base({ tool }));
+  assert.ok(bare.warnings.some((w) => w.id === "mirror-source"));
+  assert.equal(bare.criteria.find((c) => c.id === "R3").status, "fail");
+});
+
 test("countClaims：サービス・連携・インテグレーションは同じ「連携」として扱う", () => {
   assert.deepEqual(countClaims("400以上のサービス"), [{ n: 400, what: "連携" }]);
   assert.deepEqual(countClaims("1,500以上のインテグレーション"), [{ n: 1500, what: "連携" }]);
