@@ -228,7 +228,7 @@ export default function HomePage() {
           <div className="grid-2">
             <div className="notice notice--info">
               <strong>「オープンソースなら安全」ではありません。</strong>
-              <br />{"第三者が機械的に採点した OpenSSF Scorecard を掲載し、未スキャンのものは「未評価」と明記しています。"}
+              <br />{"第三者が機械的に採点した OpenSSF Scorecard を掲載し、結果を取得できていないものは「未評価」と明記しています。"}
               {"スコアが無いことを安全の証拠として扱わないでください。"}</div>
             <div className="notice">
               <strong>人気と、いま伸びていることは別です。</strong>
