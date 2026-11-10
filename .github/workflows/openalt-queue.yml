@@ -10,8 +10,9 @@ name: OpenAlternative 候補の確認キュー
 # ・1回に処理する新規の候補数（max_new）と GitHub API のリクエスト数（max_requests）に上限がある。残りは次回の続き。
 # ・AI は使わない（費用は0）。
 on:
-  schedule:
-    - cron: "11 21 * * 0"
+  # 定期実行は一時停止中（2026-11-10〜。再開の条件は docs/seo/auto-additions-pause-2026-11-10.md）。手動実行は使える。
+  # schedule:
+  #   - cron: "11 21 * * 0"
   workflow_dispatch:
     inputs:
       max_new:

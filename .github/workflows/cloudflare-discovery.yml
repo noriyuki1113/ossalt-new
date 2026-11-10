@@ -9,8 +9,9 @@ name: Cloudflare OSS 候補の収集
 # ・GitHub API の使用は1回あたり最大 300 リクエスト（max_requests で変更可）。
 #   ETag の控えは Actions のキャッシュで引き継ぎ、変わっていないリポジトリは 304（制限に数えられない）で済ませる。
 on:
-  schedule:
-    - cron: "23 21 * * 2"
+  # 定期実行は一時停止中（2026-11-10〜。再開の条件は docs/seo/auto-additions-pause-2026-11-10.md）。手動実行は使える。
+  # schedule:
+  #   - cron: "23 21 * * 2"
   workflow_dispatch:
     inputs:
       max_requests:
