@@ -13,6 +13,23 @@ at_a_glance:
   check:
     - "バックアップと、戻せることの確認"
     - "ライセンスはMITです"
+verification:
+  status: official
+  checked_at: "2026-11-10"
+  sources:
+    - https://docs.gitea.com/
+    - https://docs.gitea.com/installation/install-with-docker
+    - https://docs.gitea.com/installation/install-with-docker-rootless
+    - https://docs.gitea.com/installation/install-from-binary
+    - https://docs.gitea.com/usage/actions/overview
+    - https://docs.gitea.com/usage/repository/migration
+    - https://docs.gitea.com/usage/packages/overview
+    - https://docs.gitea.com/administration/config-cheat-sheet
+    - https://github.com/go-gitea/gitea/blob/HEAD/README.md
+    - https://github.com/go-gitea/gitea/blob/HEAD/LICENSE
+    - https://github.com/go-gitea/gitea/tree/HEAD/options/locale
+    - https://docs.gitlab.com/install/requirements/
+  note: "公式ドキュメント（概要・Docker・バイナリ・Actions・移行・パッケージ・設定）、README、LICENSE、翻訳ファイルの一覧と、この解説の機能・導入手順・必要な環境・ポート番号・ライセンスの記述を照合した。GitLabの必要な性能は、GitLabの公式ドキュメントで確認した。実機では動かしていない"
 ---
 
 Gitea（ギッティー）は、ソースコードの管理（Gitのリポジトリ）を、自社のサーバーで行うためのツールです。GitHubに近い画面と機能を持ちながら、少ないメモリでも動く軽さが特徴です。画面の日本語翻訳もあります。

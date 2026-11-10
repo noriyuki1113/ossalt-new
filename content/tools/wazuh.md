@@ -1,6 +1,6 @@
 ---
 description: "Wazuhとは、端末に入れたエージェントから、侵入の検知・ログの分析・脆弱性の検出などを行う、セキュリティの監視基盤です。できること、構成、ライセンスの注意点を、公式READMEをもとに整理します。"
-updated: "2026-11-04"
+updated: "2026-11-10"
 at_a_glance:
   what: "監視したい端末に入れるエージェントと、データを集めて分析する管理サーバーで動く、セキュリティの監視基盤です。侵入の検知・ログの分析・脆弱性の検出などを行います。"
   good_for:
@@ -8,7 +8,7 @@ at_a_glance:
     - "サーバーや端末に、エージェントを入れて監視できる人"
     - "PCI DSSなどの基準に合わせた監視が必要な人"
   not_for:
-    - "監視の対象にエージェントを入れられない人（エージェントが無い場合は、syslogでの受け取りに限られます）"
+    - "監視の対象にエージェントを入れられない人（エージェントが無い場合は、syslogでの受け取りか、SSHを使うエージェントレス監視になります）"
     - "汎用のログ分析の基盤が欲しい人（Wazuhは、セキュリティの監視が中心です）"
   check:
     - "ライセンス（大部分はGPL-2.0、エンジンはAGPL-3.0）"
@@ -16,12 +16,13 @@ at_a_glance:
     - "監視する端末のOSに、エージェントが対応しているか"
 verification:
   status: official
-  checked_at: "2026-11-04"
+  checked_at: "2026-11-10"
   sources:
     - https://github.com/wazuh/wazuh/blob/HEAD/README.md
     - https://github.com/wazuh/wazuh/blob/HEAD/LICENSE
     - https://documentation.wazuh.com/current/getting-started/index.html
-  note: "READMEとLICENSEの内容と、この解説を照合した（実機では動かしていない）"
+    - https://documentation.wazuh.com/current/user-manual/capabilities/agentless-monitoring/index.html
+  note: "README・LICENSE・公式ドキュメント（導入のガイド・エージェントレス監視）の内容と、この解説を照合した（実機では動かしていない）"
 ---
 
 Wazuhは、READMEで「脅威の予防・検知・対応のための、無料でオープンソースの基盤」と説明されています。オンプレミス・仮想環境・コンテナ・クラウドで動く仕組みを守ります。
@@ -68,5 +69,5 @@ LICENSEによると、Wazuhは**2つのライセンスで配布されていま�
 
 ### 出典と確認の範囲
 
-- 確認した資料：公式リポジトリのREADME・LICENSE（2026-10-29）。
+- 確認した資料：公式リポジトリのREADME・LICENSE、公式ドキュメント（導入のガイド・エージェントレス監視）（2026-11-10）。
 - 確認していないこと：実際の導入、必要なサーバーの規模、検知の精度、Splunkとの機能の細かい比較。

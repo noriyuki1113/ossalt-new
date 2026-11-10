@@ -1,6 +1,6 @@
 ---
 description: "Vaultwardenとは、パスワード管理のBitwardenと互換性があり、公式のアプリをそのまま使える、軽量なオープンソースのサーバーです。できること、公式のBitwardenとの関係、自前で動かすときの注意点を解説します。"
-updated: "2026-11-04"
+updated: "2026-11-10"
 at_a_glance:
   what: "Bitwardenと互換性のあるパスワード管理サーバーを、軽く動かせるようにしたツールです（非公式）。Bitwardenの公式のアプリをそのまま使えます。"
   good_for:
@@ -13,9 +13,20 @@ at_a_glance:
     - "HTTPSで接続できるようにする（公式の説明では、ウェブ画面に必要。リバースプロキシの利用が推奨されています）"
     - "定期的なバックアップと、戻せることの確認"
     - "ライセンスはAGPL-3.0です"
+verification:
+  status: official
+  checked_at: "2026-11-10"
+  sources:
+    - https://github.com/dani-garcia/vaultwarden/blob/HEAD/README.md
+    - https://github.com/dani-garcia/vaultwarden/blob/HEAD/LICENSE.txt
+    - https://github.com/dani-garcia/vaultwarden/wiki/Using-Docker-Compose
+    - https://github.com/dani-garcia/vaultwarden/wiki/Enabling-admin-page
+    - https://github.com/dani-garcia/vaultwarden/wiki/Updating-the-vaultwarden-image
+    - https://github.com/dani-garcia/vaultwarden/wiki/Disable-registration-of-new-users
+  note: "README・LICENSE・公式Wiki（Docker Compose・管理画面・更新・新規登録の無効化）と、この解説の機能・導入手順・ライセンスの記述を照合した。実機では動かしていない"
 ---
 
-Vaultwarden（ボールトウォーデン）は、パスワード管理サービス「Bitwarden」と互換性のあるサーバーを、軽く動かせるようにしたツールです。Bitwardenの公式のアプリやブラウザの拡張機能を、そのまま使えます。少ないメモリでも動くため、小さなサーバーや自宅のサーバーで動かす人が多いツールです。
+Vaultwarden（ボールトウォーデン）は、パスワード管理サービス「Bitwarden」と互換性のあるサーバーを、軽く動かせるようにしたツールです。Bitwardenの公式のアプリやブラウザの拡張機能を、そのまま使えます。READMEは、多くの資源を使う公式のサーバーを動かすのが向かない場合の、自前での運用に向いていると説明しています。
 
 ### できること
 
