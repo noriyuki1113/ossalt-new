@@ -26,6 +26,7 @@ import { SITE, t } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
 import { isSourceAvailable, toolDescription, toolTitle } from "@/lib/seo-copy";
 import { getToolGuide } from "@/lib/tool-guides";
+import { isToolNoindex } from "@/lib/search-index";
 import { starContext } from "@/lib/star-context";
 import { buildToolFaq } from "@/lib/tool-faq";
 import { ARCHIVE_REASON_LABELS, archiveNoticeTone } from "@/lib/archive-reason";
@@ -64,6 +65,8 @@ export async function generateMetadata({
     markdown: tool.github_archived ? undefined : `/md/tools/${tool.id}.md`,
     path: `/tools/${tool.id}/`,
     type: "article",
+    // 解説がなく検索の需要もないページは、検索の登録対象から外す（ページとリンクは残す。解説が付けば index に戻る）
+    noindex: isToolNoindex(tool.id),
   });
 }
 

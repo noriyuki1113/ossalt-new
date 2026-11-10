@@ -5,6 +5,7 @@ import { CATEGORIES } from "@/lib/categories";
 import { FEATURES, SITE } from "@/lib/site";
 import { LICENSE_PAGES } from "@/lib/licenses";
 import { getCompareGuide } from "@/lib/compare-guides";
+import { isToolNoindex } from "@/lib/search-index";
 
 export const dynamic = "force-static";
 
@@ -33,7 +34,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // アーカイブ済み（開発終了）のツールは、ページ自体は残す（getTools()経由で生成
     // され続ける）が、サイトマップには載せない。検索エンジンに新規のインデックス登録を
     // 促すのは掲載中のツールだけでよいため（2026-09-30 修正指示書タスク4）。
-    ...getActiveTools().map((t) => ({
+    // 解説がなく検索の需要もないページ（noindex。src/lib/search-index.ts）も載せない。
+    ...getActiveTools().filter((t) => !isToolNoindex(t.id)).map((t) => ({
       url: `${base}/tools/${t.id}/`,
       lastModified: t.last_commit ? new Date(t.last_commit) : undefined,
       changeFrequency: "weekly" as const,
