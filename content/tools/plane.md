@@ -14,6 +14,18 @@ at_a_glance:
     - "必要な機能が、無料の版（Community Edition）にあるか"
     - "バックアップ・アップデート・稼働監視にかかる費用の見積もり"
     - "ライセンスはAGPL-3.0です"
+verification:
+  status: official
+  checked_at: "2026-11-10"
+  sources:
+    - https://github.com/makeplane/plane/blob/HEAD/README.md
+    - https://github.com/makeplane/plane/blob/HEAD/LICENSE.txt
+    - https://developers.plane.so/self-hosting/editions-and-versions
+    - https://developers.plane.so/self-hosting/methods/docker-compose
+    - https://docs.plane.so/core-concepts/issues/layouts
+    - https://docs.plane.so/core-concepts/issues/properties
+    - https://github.com/makeplane/plane/tree/HEAD/packages/i18n/src/locales
+  note: "README・LICENSE・公式ドキュメント（版の違い・Docker Composeでの導入・レイアウト・課題の項目）・翻訳ファイルの一覧と、この解説の機能・導入手順・必要な環境・ライセンスの記述を照合した。Jira・Linearとの比較の評価は、照合の対象外。実機では動かしていない"
 ---
 
 Plane（プレーン）は、ソフトウェア開発などのプロジェクトを管理するためのツールです。課題（イシュー）の管理、期間を区切った開発の計画（サイクル）、機能のまとまりごとの管理（モジュール）などを、見やすい画面で行えます。JiraやLinearの代わりとして注目されていて、画面の日本語翻訳もあります。
