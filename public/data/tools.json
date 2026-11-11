@@ -4794,7 +4794,7 @@
   "contributors_num": 261,
   "watchers_num": 293,
   "language": "Rust",
-  "license": "MIT",
+  "license": "MIT（Enterprise Edition の部分は別ライセンス）",
   "license_source": null,
   "last_commit": "2026-11-05T10:32:54Z",
   "created_at": "2018-04-23T11:45:28Z",
@@ -4855,7 +4855,8 @@
    "source": "official",
    "width": 800,
    "height": 428
-  }
+  },
+  "license_note": "公式のLICENSE（SPDX: MIT AND BUSL-1.1）によると、コアの検索エンジン（Community Edition）はMIT。Enterprise Edition（シャーディング、S3へのスナップショットのストリーミングなど）の部分は、BUSL-1.1をもとにした別ライセンス（LICENSE-EE）か商用ライセンスで、本番での利用には Meilisearch との商用の契約が必要です（テスト・開発・評価の目的では利用できる）。GitHubの表示上のMITは、Community Editionの部分だけです。LICENSE・LICENSE-EE・README を確認（2026-11-12）。"
  },
  {
   "id": "metabase",

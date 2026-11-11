@@ -40,6 +40,10 @@
       "license": "MIT / AGPL-3.0 / Apache-2.0（構成要素により異なる）",
       "license_note": "公式のLICENSE.txtによると、条件は3つに分かれます。Mattermost社が配布するコンパイル版はMIT。ソースコードから自分でビルドする場合は、AGPL-3.0（一部の例外あり）か、Mattermost社の商用ライセンスのどちらか。管理ツールと設定ファイル（server/templates/、server/i18n/、server/public/、webapp/ など）はApache-2.0です。GitHubは表示上Apache-2.0と判定していますが、それはこの一部の条件だけです。LICENSE.txt を確認（2026-11-11）。"
     },
+    "meilisearch": {
+      "license": "MIT（Enterprise Edition の部分は別ライセンス）",
+      "license_note": "公式のLICENSE（SPDX: MIT AND BUSL-1.1）によると、コアの検索エンジン（Community Edition）はMIT。Enterprise Edition（シャーディング、S3へのスナップショットのストリーミングなど）の部分は、BUSL-1.1をもとにした別ライセンス（LICENSE-EE）か商用ライセンスで、本番での利用には Meilisearch との商用の契約が必要です（テスト・開発・評価の目的では利用できる）。GitHubの表示上のMITは、Community Editionの部分だけです。LICENSE・LICENSE-EE・README を確認（2026-11-12）。"
+    },
     "cap": {
       "license": "AGPL-3.0（一部のクレートはMIT）",
       "license_note": "READMEのLicense節によると、cap-camera* と scap-* のクレート群はMIT、それ以外の大部分はAGPLv3です。第三者の部品は元のライセンスに従います。README と LICENSE を確認（2026-10-29）。"
