@@ -1,6 +1,20 @@
 ---
 description: "BookStackとは、「本・章・ページ」の階層でマニュアルや手順書を整理できる、オープンソースの社内Wikiです。できること、向いている使い方、Wiki.jsとの違い、導入の目安を解説します。"
-updated: "2026-10-01"
+updated: "2026-11-11"
+verification:
+  status: official
+  checked_at: "2026-11-11"
+  sources:
+    - https://github.com/BookStackApp/BookStack
+    - https://github.com/BookStackApp/BookStack/blob/development/LICENSE
+    - https://github.com/BookStackApp/BookStack/blob/development/lang/ja/common.php
+    - https://www.bookstackapp.com/docs/user/content-overview/
+    - https://www.bookstackapp.com/docs/user/wysiwyg-editor
+    - https://www.bookstackapp.com/docs/user/markdown-editor
+    - https://www.bookstackapp.com/docs/user/roles-and-permissions
+    - https://www.bookstackapp.com/docs/user/searching/
+    - https://www.bookstackapp.com/docs/admin/installation/
+  note: "BookStackのREADME・LICENSE・日本語の翻訳ファイル・公式ドキュメント（内容の構成、編集画面、権限、検索、インストール）と、この解説の記述を照合した。構成（棚・本・章・ページ）、WYSIWYGとMarkdownの編集画面、役割ごとの権限、検索、変更履歴の確認・復元（公式のデモの履歴画面の文言）、PHPとMySQL/MariaDB、MITライセンスは公式の資料と一致した。Dockerは公式のインストールの手引きでコミュニティ提供の構成として案内されている。「ログインの連携を細かく設定したい場合はWiki.js」は、BookStackの公式がOpenID Connect・SAML 2.0・LDAPに対応しているため削除した。Wiki.jsとの使い分けは編集上の判断で、公式の記述ではない。実機では動かしていない"
 ---
 
 BookStack（ブックスタック）は、社内の手順書やマニュアルを作るためのWikiのツールです。情報を「棚・本・章・ページ」という、本のような階層で整理するのが特徴で、どこに何を書けばよいかが分かりやすくなっています。画面の日本語翻訳もあります。
@@ -17,7 +31,7 @@ BookStack（ブックスタック）は、社内の手順書やマニュアル�
 - 業務のマニュアルや手順書を、部署ごとに整理して置いておきたい。
 - エンジニアでないメンバーにも、迷わず書いてもらいたい。
 
-ページの構成を自由に作りたい場合や、ログインの連携を細かく設定したい場合は、[Wiki.js](/tools/wikijs/)も比べてみてください。
+ページの構成を自由に作りたい場合は、[Wiki.js](/tools/wikijs/)も比べてみてください。
 
 ### 始め方の目安
 
