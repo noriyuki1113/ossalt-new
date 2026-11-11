@@ -61,6 +61,29 @@
 
 2026-11-10 から、ツール・比較・解説の自動追加を4週間止めている（`docs/seo/auto-additions-pause-2026-11-10.md`、再開の目安は 2026-12-08）。ブログ記事の公開は自動追加ではないが、**新しいインデックス対象のページを増やすので、公開の時期は運営者が決める。**
 
+## 公開前チェック（コマンド）
+
+```
+node --experimental-strip-types scripts/editors-picks-check.mjs vol1            # 公開までに残っていることを一覧する（読み取り専用）
+node --experimental-strip-types scripts/editors-picks-check.mjs vol1 --publish  # 公開してよい状態でなければ終了コード1
+```
+
+見るもの：調査データの検証／運営者の承認（`approved`）／記事の場所（公開は `content/blog/`、下書き用の項目の削除、`date`）／記事に「編集案」「承認待ち」が残っていないこと／内部リンクの実在／確認日が14日より前でないこと。SEOの確認は別に行う：
+
+```
+NEXT_PUBLIC_FEATURE_FOR_YOU=1 npm run build
+node scripts/sitemap-check.mjs --dir out --site https://ossalt.jp
+npm run seo:build-diff -- --before <変更前のビルド> --after out   # 増えるのは記事の1ページだけのはず
+```
+
+## SNS
+
+投稿文は `docs/sns/editors-picks/vol1.md`（X・Bluesky。告知1・注目3・問いかけ1）。投稿は運営者が手で行い、記事の公開後に出す。
+
+## 構造化データについて
+
+既存のブログ記事には、パンくず（BreadcrumbList）のJSON-LDはあるが、Article系の構造化データは無い。この特集のために、サイト全体の基盤は書き換えない。必要なら、既存の全記事に同じ形で入れる別のPRとして判断する。
+
 ## 第1弾で、OSSALTの既存データについて気づいたこと（このPRでは変更していない）
 
 - Meilisearch：OSSALTの掲載は、ライセンスを「MIT」とだけ表示している。公式のLICENSEは `MIT AND BUSL-1.1` で、Enterprise Edition（シャーディングなど）は商用契約かBSL-1.1の条件。表示を直すかどうかは、別のPRで運営者が決める。

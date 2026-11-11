@@ -23,6 +23,7 @@
     "fonts:gen": "node scripts/gen-fonts-css.mjs",
     "seo:investigate": "node scripts/seo-site-investigation.mjs",
     "seo:build-diff": "node scripts/seo-build-diff.mjs",
+    "editors-picks:check": "node --experimental-strip-types scripts/editors-picks-check.mjs",
     "qi:full": "node --experimental-strip-types scripts/quality/qi.mjs full",
     "qi:diff": "node --experimental-strip-types scripts/quality/qi.mjs diff",
     "qi:one": "node --experimental-strip-types scripts/quality/qi.mjs one",
