@@ -160,3 +160,15 @@ test("SNS投稿文：告知1・注目3・問いかけ1の5種類。X・Bluesky�
     assert.ok(!/(試した|使ってみた|動かしてみた)/.test(x + bsky), "動かしていないものを試したと書かない");
   }
 });
+
+test("SNS投稿文：注目3件は、運営者の「特に注目した3件」（MuJoCo・Nerfstudio・Pagefind）の順。告知も同じ3件を挙げる", () => {
+  const raw = fs.readFileSync(path.join(ROOT, "docs", "sns", "editors-picks", "vol1.md"), "utf8");
+  const heads = [...raw.matchAll(/^## \d+\. (.+)$/gm)].map((m) => m[1]);
+  assert.match(heads[1], /第1位[^\n]*MuJoCo/);
+  assert.match(heads[2], /第2位[^\n]*Nerfstudio/);
+  assert.match(heads[3], /第3位[^\n]*Pagefind/);
+  const announce = raw.slice(raw.indexOf("## 1. "), raw.indexOf("## 2. "));
+  assert.match(announce, /MuJoCo・Nerfstudio・Pagefindなど/);
+  const rest = raw.slice(raw.indexOf("## 2. "));
+  assert.ok(!/nanochat|Ladybird|Agent Desktop/.test(rest.slice(0, rest.indexOf("## 5. "))), "差し替え前の3件が残っている");
+});
