@@ -322,6 +322,62 @@
       "outcome28": null,
       "outcome90": null,
       "note": "公式の一次情報のみを根拠に照合。実機検証ではない。"
+    },
+    {
+      "id": 24,
+      "date": "2026-11-12",
+      "url": "https://ossalt.jp/licenses/permissive/",
+      "query": "（対象外：事実確認の作業）",
+      "change": "title・descriptionの件数がデータ由来で変化（#128で194→193件、このPRで193→192件。Mattermost・Meilisearchを「複数・混在」へ）",
+      "pr": "https://github.com/noriyuki1113/ossalt-new/pull/131",
+      "window": "対象外（順位改善を狙った変更ではない）",
+      "check28": "2026-12-10",
+      "check90": "2027-02-10",
+      "outcome28": null,
+      "outcome90": null,
+      "note": "ライセンスの事実の修正に伴う件数の変化。title の文言の変更ではない。"
+    },
+    {
+      "id": 25,
+      "date": "2026-11-12",
+      "url": "https://ossalt.jp/tools/meilisearch/",
+      "query": "（対象外：事実確認の作業）",
+      "change": "ライセンスの表示と本文を公式のLICENSE（MIT AND BUSL-1.1）に合わせた（title・description・見出しは変更なし）",
+      "pr": "https://github.com/noriyuki1113/ossalt-new/pull/131",
+      "window": "対象外（順位改善を狙った変更ではない）",
+      "check28": "2026-12-10",
+      "check90": "2027-02-10",
+      "outcome28": null,
+      "outcome90": null,
+      "note": "公式の一次情報のみを根拠に修正。実機検証ではない。"
+    },
+    {
+      "id": 26,
+      "date": "2026-11-12",
+      "url": "https://ossalt.jp/compare/meilisearch-vs-typesense/",
+      "query": "（対象外：事実確認の作業）",
+      "change": "Meilisearchのライセンスの記述を公式のLICENSEに合わせた（title・description・見出しは変更なし）",
+      "pr": "https://github.com/noriyuki1113/ossalt-new/pull/131",
+      "window": "対象外（順位改善を狙った変更ではない）",
+      "check28": "2026-12-10",
+      "check90": "2027-02-10",
+      "outcome28": null,
+      "outcome90": null,
+      "note": "公式の一次情報のみを根拠に修正。実機検証ではない。"
+    },
+    {
+      "id": 27,
+      "date": "2026-11-12",
+      "url": "https://ossalt.jp/tools/netbird/",
+      "query": "（対象外：事実確認の作業）",
+      "change": "デスクトップアプリに公式の日本語翻訳があることを1文追記（title・description・見出しは変更なし）",
+      "pr": "https://github.com/noriyuki1113/ossalt-new/pull/131",
+      "window": "対象外（順位改善を狙った変更ではない）",
+      "check28": "2026-12-10",
+      "check90": "2027-02-10",
+      "outcome28": null,
+      "outcome90": null,
+      "note": "公式リポジトリの言語一覧と翻訳ファイルで確認。実機検証ではない。"
     }
   ]
 }
