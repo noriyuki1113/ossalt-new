@@ -1,6 +1,6 @@
 ---
 description: "NetBirdとは、WireGuardを使って、離れた端末やサーバーどうしを安全につなぐ社内ネットワークを作れるオープンソースです。管理画面一式を自分で動かせます。できること、Tailscale・Headscaleとの違い、注意点を解説します。"
-updated: "2026-11-11"
+updated: "2026-11-12"
 verification:
   status: official
   checked_at: "2026-11-11"
@@ -11,7 +11,8 @@ verification:
     - https://github.com/netbirdio/netbird/issues/4333
     - https://github.com/netbirdio/netbird/issues/2732
     - https://github.com/juanfont/headscale
-  note: "NetBirdの公式のREADME・LICENSE・自分で動かす手順のドキュメントと、この解説の機能・対応する端末・ライセンス・自分で動かす構成の記述を照合した。Headscaleの記述は、Headscaleの公式のREADMEで確認した。管理画面の日本語翻訳は、公式では確認できなかったため、その旨に書き換えた（当サイトのOSSデータの日本語UIの欄は、この作業では変更していない）。TailscaleのサービスとしてのネットワークはHeadscaleのREADMEの説明で確認し、Tailscale自身の公式ページは読んでいない。実機では動かしていない"
+    - https://github.com/netbirdio/netbird/blob/main/client/ui/i18n/locales/_index.json
+  note: "NetBirdの公式のREADME・LICENSE・自分で動かす手順のドキュメントと、この解説の機能・対応する端末・ライセンス・自分で動かす構成の記述を照合した。Headscaleの記述は、Headscaleの公式のREADMEで確認した。管理画面（Webの画面）の日本語翻訳は、公式では確認できなかったため、その旨に書き換えた。端末で使うデスクトップアプリは、公式のリポジトリの言語一覧（client/ui/i18n/locales/_index.json）に日本語が登録され、翻訳ファイルがあることを確認した（2026-11-12）。TailscaleのサービスとしてのネットワークはHeadscaleのREADMEの説明で確認し、Tailscale自身の公式ページは読んでいない。実機では動かしていない"
 ---
 
 NetBird（ネットバード）は、在宅のパソコン、社内のサーバー、クラウドのサーバーなどを、**インターネット越しに安全につなぎ、1つの社内ネットワークのように使える**ようにする仕組みです。暗号化の通信にはWireGuardを使います。
@@ -21,7 +22,7 @@ NetBird（ネットバード）は、在宅のパソコン、社内のサーバ�
 - **端末どうしの直接の接続**：可能な場合は、中継のサーバーを通さずに、端末どうしが直接つながります。
 - **アクセスの制御**：利用者や端末のグループごとに、「どこにつないでよいか」を管理画面で決められます。
 - **シングルサインオン**：Google、Microsoft、Oktaなどのアカウントでログインして、端末を登録できます。
-- **管理画面**：端末、利用者、ルールを、Webの画面で管理できます。画面（管理画面）の日本語翻訳は、公式では確認できませんでした（公式のIssueでは、管理画面の多言語対応が要望として残っています）。
+- **管理画面**：端末、利用者、ルールを、Webの画面で管理できます。画面（管理画面）の日本語翻訳は、公式では確認できませんでした（公式のIssueでは、管理画面の多言語対応が要望として残っています）。端末で使うデスクトップアプリには、公式の日本語翻訳があります。
 - **いろいろな端末**：Windows、Mac、Linux、スマホなどで使えます。
 
 ### Tailscale・Headscaleとの違い
