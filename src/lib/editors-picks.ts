@@ -65,6 +65,10 @@ export type Pick = {
   use_cases: string[];
   caveats: string[];
   difficulty: string;
+  /** 運営者の編集上の評価コメント（「私が注目した理由」）。運営者が文面を決めたものだけを入れる。実機で検証したという意味ではない */
+  editorial_comment?: string;
+  /** 「特に注目した」順（1〜3）。人気やスター数の順位ではない */
+  spotlight_rank?: 1 | 2 | 3;
   /** OSSALTに掲載済みか。掲載済みのときだけ、詳細ページへ内部リンクできる */
   ossalt: { listed: boolean; tool_id?: string; path?: string };
   /** 変わる情報（版・状態など）。必ず確認日（as_of）を付ける */
@@ -84,6 +88,10 @@ export type Issue = {
   editorial_status_note?: string;
   /** 広告・スポンサー案件か。通常の編集選定と区別する。true の特集は、記事の冒頭にその旨を出す */
   sponsored: boolean;
+  /** 最短の公開候補日（YYYY-MM-DD）。公開確定日ではない。この日より前は公開不可 */
+  earliest_publish?: string;
+  /** 公開の直前に、掲載する全件の確認日が、公開日からこの時間以内であること（既定48） */
+  reverify_within_hours?: number;
 };
 
 export type IssueFile = { issue: Issue; picks: Pick[] };
@@ -136,6 +144,9 @@ export function validatePick(pick: Partial<Pick>, internalToolIds?: Set<string>)
   // 一部だけOSSのもの（oss_status=partial）は、気になる点にその旨を書く
   if (pick.oss_status === "partial") need((pick.caveats ?? []).some((c) => /Enterprise|商用|別の条件|一部/.test(c)), "partial のときは、OSSでない部分を caveats に書く");
 
+  if (pick.editorial_comment !== undefined) need(text(pick.editorial_comment), "editorial_comment が空");
+  if (pick.spotlight_rank !== undefined) need(pick.spotlight_rank === 1 || pick.spotlight_rank === 2 || pick.spotlight_rank === 3, "spotlight_rank は 1〜3");
+
   const facts = Array.isArray(pick.facts) ? pick.facts : [];
   for (const f of facts) {
     need(text(f?.label) && text(f?.value), "facts の label/value が空");
@@ -169,6 +180,17 @@ export function validateIssue(file: Partial<IssueFile> | null | undefined, inter
   if (i.editorial_status !== "pending_approval" && i.editorial_status !== "approved") p.push("issue.editorial_status が不正");
   if (typeof i.sponsored !== "boolean") p.push("issue.sponsored（広告・スポンサー案件か）が真偽値でない");
 
+  if (i.earliest_publish !== undefined && !isRealDate(i.earliest_publish)) p.push("issue.earliest_publish が実在する YYYY-MM-DD でない");
+  if (i.reverify_within_hours !== undefined && !(Number.isFinite(i.reverify_within_hours) && i.reverify_within_hours > 0)) p.push("issue.reverify_within_hours が正の数でない");
+
+  // 注目順（1〜3）は、掲載する3件で、重複なし
+  const ranks = file.picks.filter((x) => x?.spotlight_rank !== undefined).map((x) => x.spotlight_rank);
+  if (ranks.length > 0 && (ranks.length !== 3 || new Set(ranks).size !== 3)) p.push("spotlight_rank は、1・2・3を1件ずつ");
+  // 運営者が承認した特集は、掲載する全件に運営者のコメントがあること（コメントを創作して埋めない）
+  if (i.editorial_status === "approved") {
+    for (const x of file.picks) if (x.included && !String(x.editorial_comment ?? "").trim()) p.push(`${x.id}: 承認済みの特集なのに editorial_comment（運営者のコメント）が無い`);
+  }
+
   const seen = new Set<string>();
   for (const pick of file.picks) {
     if (seen.has(String(pick?.id))) p.push(`id が重複（${String(pick?.id)}）`);
@@ -178,10 +200,25 @@ export function validateIssue(file: Partial<IssueFile> | null | undefined, inter
   return p;
 }
 
-/** 公開してよい状態か。承認前（pending_approval）・調査日の欠け・除外すべきものの混入は、公開不可 */
-export function publishBlockers(file: IssueFile): string[] {
+/**
+ * 公開してよい状態か。承認前（pending_approval）・調査日の欠け・除外すべきものの混入・最短公開日より前・
+ * 公開直前の再確認の漏れは、公開不可。today（YYYY-MM-DD・日本時間）を渡すと、日付の条件も検査する。
+ */
+export function publishBlockers(file: IssueFile, today?: string): string[] {
   const b: string[] = [];
-  if (file.issue.editorial_status !== "approved") b.push("運営者の承認がまだ（editorial_status が approved でない）");
+  if (file.issue.editorial_status !== "approved") b.push("運営者の最終承認がまだ（editorial_status が approved でない）");
+  if (today && file.issue.earliest_publish && today < file.issue.earliest_publish) {
+    b.push(`最短の公開候補日（${file.issue.earliest_publish}）より前（今日 ${today}）`);
+  }
+  if (today) {
+    const hours = file.issue.reverify_within_hours ?? 48;
+    for (const pick of file.picks) {
+      if (!pick.included) continue;
+      const ageH = (Date.parse(`${today}T00:00:00Z`) - Date.parse(`${pick.verification.checked_at}T00:00:00Z`)) / 3600e3;
+      // 確認日は日付単位。公開の日の0時から数えて、確認日が（時間÷24）日より前なら再確認が必要
+      if (ageH > hours - 24) b.push(`${pick.id}: 公開直前の再確認が済んでいない（確認日 ${pick.verification.checked_at}。公開の${hours}時間以内に確認する）`);
+    }
+  }
   for (const pick of file.picks) {
     if (pick.included && pick.oss_status === "not-oss") b.push(`${pick.id}: OSSでないものが掲載対象になっている`);
   }
