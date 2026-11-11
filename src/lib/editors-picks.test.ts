@@ -136,3 +136,27 @@ test("記事の下書き：10件すべてに、6つの見出し要素がそろ�
   }
   for (const p of vol1.picks) assert.ok(raw.includes(p.github_url.replace("https://github.com/", "")), `${p.id} のGitHubが記事に無い`);
 });
+
+// ---- SNS投稿文（docs/sns/editors-picks/vol1.md）----
+function xWeight(s: string): number {
+  // 全角（日本語など）は2、半角は1。Xの重みづけの近似
+  let w = 0;
+  for (const ch of s) w += /[\u0000-ჿ -‍‐-‟′-‷]/.test(ch) ? 1 : 2;
+  return w;
+}
+
+test("SNS投稿文：告知1・注目3・問いかけ1の5種類。X・Blueskyとも文字数に収まり、公開前のURLを入れていない", () => {
+  const raw = fs.readFileSync(path.join(ROOT, "docs", "sns", "editors-picks", "vol1.md"), "utf8");
+  const sections = raw.split(/^## \d+\. /m).slice(1);
+  assert.equal(sections.length, 5);
+  for (const sec of sections) {
+    const blocks = [...sec.matchAll(/```\n([\s\S]*?)```/g)].map((m) => m[1].trim());
+    assert.equal(blocks.length, 2, "X と Bluesky の2つ");
+    const [x, bsky] = blocks;
+    assert.ok(xWeight(x) <= 280, `Xが280を超える: ${xWeight(x)}`);
+    assert.ok([...bsky.replace("{公開URL}", "x".repeat(23))].length <= 300, "Blueskyが300を超える");
+    assert.ok(!x.includes("{公開URL}"), "Xの本文にリンクを入れない（返信欄に置く）");
+    assert.ok(!/https?:\/\//.test(x + bsky), "公開前のURLを書かない（{公開URL} のまま）");
+    assert.ok(!/(試した|使ってみた|動かしてみた)/.test(x + bsky), "動かしていないものを試したと書かない");
+  }
+});
