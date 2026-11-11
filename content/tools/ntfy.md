@@ -12,6 +12,23 @@ at_a_glance:
   check:
     - "推測されにくいトピック名にする。自分で動かす場合は、利用者とアクセスの制限を設定する"
     - "ライセンスはApache-2.0とGPL-2.0から選べます"
+verification:
+  status: official
+  checked_at: "2026-11-11"
+  sources:
+    - https://github.com/binwiederhier/ntfy
+    - https://github.com/binwiederhier/ntfy/blob/main/LICENSE
+    - https://docs.ntfy.sh/
+    - https://docs.ntfy.sh/install/
+    - https://docs.ntfy.sh/config/
+    - https://docs.ntfy.sh/publish/
+    - https://docs.ntfy.sh/subscribe/phone/
+    - https://docs.ntfy.sh/integrations/
+    - https://docs.ntfy.sh/faq/
+    - https://github.com/binwiederhier/ntfy/tree/main/web/public/static/langs
+    - https://gotify.net/
+    - https://gotify.net/docs/pushmsg
+  note: "README、LICENSE、公式ドキュメント（導入・設定・メッセージの送り方・スマホ・連携・FAQ）、翻訳ファイルの一覧と、この解説の機能・導入手順・設定・ライセンスの記述を照合した。Gotifyの記述は、Gotifyの公式サイトとドキュメントで確認した。実機では動かしていない"
 ---
 
 ntfy（ノーティファイ。公式の説明では「notify」と読みます）は、**HTTPでメッセージを送るだけで、スマホに通知を届けられる**仕組みです。「バックアップが終わったら知らせる」「サーバーの容量が足りなくなったら知らせる」といった通知を、手軽に作れます。

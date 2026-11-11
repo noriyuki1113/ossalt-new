@@ -13,6 +13,20 @@ at_a_glance:
     - "本番では、設定の保存先を別のデータベースにする"
     - "つなぐデータベースには、読み取りだけができるアカウントを用意する"
     - "ライセンスはAGPL-3.0です"
+verification:
+  status: official
+  checked_at: "2026-11-11"
+  sources:
+    - https://github.com/metabase/metabase
+    - https://www.metabase.com/docs/latest/installation-and-operation/running-metabase-on-docker
+    - https://www.metabase.com/docs/latest/installation-and-operation/migrating-from-h2
+    - https://www.metabase.com/license/
+    - https://www.metabase.com/pricing/
+    - https://www.metabase.com/docs/latest/databases/connecting
+    - https://www.metabase.com/docs/latest/databases/users-roles-privileges
+    - https://www.metabase.com/docs/latest/questions/alerts
+    - https://github.com/metabase/metabase/tree/master/locales
+  note: "README、公式ドキュメント（Docker・H2からの移行・データベースの接続・読み取り専用アカウント・通知）、ライセンスの案内、料金のページ、翻訳ファイルの一覧と、この解説の機能・導入手順・ライセンスの記述を照合した。ライセンスの案内のページは、取得できた写しが2026-07-17付けと古い。Tableauとの比較の評価は、照合の対象外。実機では動かしていない"
 ---
 
 Metabase（メタベース）は、社内のデータベースにつないで、データを集計し、グラフやダッシュボードにして共有するためのBIツールです。SQLを書かなくても、画面で条件を選ぶだけで集計できるので、エンジニアでない人も使いやすいのが特徴です。画面の日本語翻訳もあります。
