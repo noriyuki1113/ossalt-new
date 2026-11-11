@@ -1,0 +1,320 @@
+{
+  "issue": {
+    "id": "vol1",
+    "series": "editors-picks",
+    "kind": "roundup",
+    "title_ja": "運営者が選ぶ、技術と発想がすごいOSS 10選",
+    "researched_at": "2026-11-11",
+    "scope": "各リポジトリのREADME・LICENSE・公式サイト・公式ドキュメントの記載の範囲。実際には動かしていない",
+    "editorial_status": "pending_approval",
+    "editorial_status_note": "「注目した理由」は編集案。運営者本人の評価・体験としては未確認で、承認前は公開しない",
+    "sponsored": false
+  },
+  "picks": [
+    {
+      "id": "pagefind",
+      "name": "Pagefind",
+      "maintainer": "Pagefind（GitHub: Pagefind）",
+      "github_url": "https://github.com/Pagefind/pagefind",
+      "docs_url": "https://pagefind.app/",
+      "license": "MIT",
+      "oss_status": "oss",
+      "included": true,
+      "category": "検索",
+      "summary": "サーバーを立てずに使える、静的な全文検索のライブラリ。",
+      "what_is_great": "検索のための基盤（サーバー）をホスティングせずに、大きなサイトでも動くことと、利用者の通信量をできるだけ使わないことを目標にしている。",
+      "use_cases": ["静的サイトにサイト内検索を付ける", "検索サーバーを運用したくない小さなサイト"],
+      "caveats": ["READMEの記載は目標と設計の説明にとどまる。実際の速度や、日本語の検索の品質は確認していない", "ドキュメント（pagefind.app）の詳細は読んでいない"],
+      "difficulty": "不明（導入手順は未確認）",
+      "ossalt": { "listed": false },
+      "facts": [
+        { "label": "最新リリース", "value": "v1.5.2", "as_of": "2026-10-25", "note": "取得したGitHubのリリースページの表示。リリース日は「4月12日」と表示され、年は確認できていない" },
+        { "label": "ライセンス", "value": "MIT", "as_of": "2026-11-05", "note": "LICENSEファイルの本文で確認" }
+      ],
+      "verification": {
+        "stage": "official",
+        "checked_at": "2026-11-11",
+        "sources": [
+          "https://github.com/Pagefind/pagefind",
+          "https://github.com/Pagefind/pagefind/blob/main/LICENSE",
+          "https://github.com/Pagefind/pagefind/releases/latest"
+        ],
+        "note": "READMEの冒頭、LICENSE、最新リリースのページを確認した。ドキュメントの本体は読んでいない"
+      }
+    },
+    {
+      "id": "mujoco",
+      "name": "MuJoCo",
+      "maintainer": "Google DeepMind",
+      "github_url": "https://github.com/google-deepmind/mujoco",
+      "docs_url": "https://mujoco.readthedocs.io/",
+      "license": "Apache-2.0",
+      "oss_status": "oss",
+      "included": true,
+      "category": "ロボティクス・物理シミュレーション",
+      "summary": "関節のある物体と接触を高速・正確に計算する、汎用の物理シミュレーター。",
+      "what_is_great": "ロボット工学、生体力学、グラフィックス、機械学習などの研究・開発向けに、関節構造の物体が環境と接触する動きを素早く計算することを目指している。ブラウザで動かせるデモ（mujoco.org、live.mujoco.org）がある。",
+      "use_cases": ["ロボットの制御や学習の実験", "物理シミュレーションを使う機械学習の研究"],
+      "caveats": ["C APIを持つ、研究者と開発者向けのライブラリ（READMEの説明）", "READMEは「公式にサポートされるGoogleの製品ではない」と明記している", "ブラウザ版は、ネイティブのCより遅い（README）"],
+      "difficulty": "中〜高（研究・開発向け。Python 3.11以上で pip install mujoco ができる）",
+      "ossalt": { "listed": false },
+      "facts": [
+        { "label": "最新リリース", "value": "4.0.0", "as_of": "2026-11-11", "note": "リリースページの公開日は2026-11-06" },
+        { "label": "ライセンス", "value": "コードは Apache-2.0。docディレクトリの文書・画像・動画は CC BY 4.0", "as_of": "2026-11-11", "note": "READMEの License and Disclaimer と LICENSE で確認" }
+      ],
+      "verification": {
+        "stage": "official",
+        "checked_at": "2026-11-11",
+        "sources": [
+          "https://github.com/google-deepmind/mujoco",
+          "https://github.com/google-deepmind/mujoco/blob/main/LICENSE",
+          "https://github.com/google-deepmind/mujoco/releases/latest"
+        ],
+        "note": "README、LICENSE、4.0.0のリリースノートを確認した。動かしてはいない"
+      }
+    },
+    {
+      "id": "nerfstudio",
+      "name": "Nerfstudio",
+      "maintainer": "nerfstudio-project（READMEによれば、2022年にBerkeley AI Researchの研究プロジェクトとして公開され、現在はBerkeleyの学生とコミュニティの貢献者が開発）",
+      "github_url": "https://github.com/nerfstudio-project/nerfstudio",
+      "docs_url": "https://docs.nerf.studio/",
+      "license": "Apache-2.0",
+      "oss_status": "oss",
+      "included": true,
+      "category": "3D・コンピュータビジョン",
+      "summary": "NeRF（ニューラルな3D表現）を作り、学習し、試すための部品をそろえた研究・実験用のライブラリ。",
+      "what_is_great": "NeRFの各部品を分けて作り、実装を読み解きやすくしている。スマホで撮った動画から3D表現を作るまでの流れ（COLMAP、Polycam、Record3Dなど）と、学習の様子をWebで見られるビューアーを備える。",
+      "use_cases": ["動画や写真から3Dシーンを作る実験", "NeRF系の手法を学ぶ・比べる"],
+      "caveats": ["READMEは、CUDAが入ったNVIDIAのビデオカードが必要と書いている（CUDA 11.8で検証と記載）", "最新のGitHubリリースは v1.1.5（2024-11-11）。最終コミットの日付は確認していない", "ビューアーは速い手法でのみ動く（README）"],
+      "difficulty": "高（GPU環境とPythonの環境構築が必要）",
+      "ossalt": { "listed": false },
+      "facts": [
+        { "label": "最新リリース", "value": "v1.1.5", "as_of": "2026-11-11", "note": "リリースの公開日は2024-11-11" },
+        { "label": "ライセンス", "value": "Apache-2.0", "as_of": "2026-11-07", "note": "LICENSEで確認" }
+      ],
+      "verification": {
+        "stage": "official",
+        "checked_at": "2026-11-11",
+        "sources": [
+          "https://github.com/nerfstudio-project/nerfstudio",
+          "https://github.com/nerfstudio-project/nerfstudio/blob/main/LICENSE",
+          "https://github.com/nerfstudio-project/nerfstudio/releases/latest"
+        ],
+        "note": "README、LICENSE、最新リリースを確認した。GPU環境では動かしていない"
+      }
+    },
+    {
+      "id": "openmct",
+      "name": "Open MCT",
+      "maintainer": "NASA（Ames Research Center）",
+      "github_url": "https://github.com/nasa/openmct",
+      "docs_url": "https://nasa.github.io/openmct/",
+      "license": "Apache-2.0",
+      "oss_status": "oss",
+      "included": true,
+      "category": "可視化・運用監視",
+      "summary": "NASAが作った、Webベースのミッションコントロール用フレームワーク。",
+      "what_is_great": "NASAのエイムズ研究センターで開発され、探査機の運用データの分析や、実験用ローバーの計画・運用に使われているとREADMEが説明している。テレメトリー（計測データ）を出すあらゆるシステムの計画・運用・分析のアプリの土台にできる、と書かれている。",
+      "use_cases": ["テレメトリー（計測データ）の可視化と運用の画面づくり", "プラグインを足して、自分たちの計測システム向けの画面を作る"],
+      "caveats": ["アプリそのものというより、プラグインで拡張するフレームワーク（README）", "ブラウザとNode.jsの対応範囲は、package.json の browserslist と engines の記載による", "ライセンスは、READMEのバッジ（Apache 2.0へのリンク）で確認した。LICENSEファイルの本文は、今回は読めていない"],
+      "difficulty": "中〜高（Node.jsでの開発環境と、プラグインの開発が前提）",
+      "ossalt": { "listed": false },
+      "facts": [
+        { "label": "最新リリース", "value": "v4.3.1（2026-08-31）", "as_of": "2026-09-07", "note": "取得した表示が古いため、記事には書かない。最新かどうかは未確認" },
+        { "label": "ライセンス", "value": "Apache-2.0（READMEのバッジ）", "as_of": "2026-10-27", "note": "LICENSEファイル本文は未確認" }
+      ],
+      "verification": {
+        "stage": "official",
+        "checked_at": "2026-11-11",
+        "sources": [
+          "https://github.com/nasa/openmct",
+          "https://github.com/nasa/openmct/releases/latest"
+        ],
+        "note": "READMEを確認した。LICENSEファイルは読めなかった（URLが見つからなかった）ため、ライセンスはREADMEの記載のみ。公開前にLICENSEを確認する"
+      }
+    },
+    {
+      "id": "nanochat",
+      "name": "nanochat",
+      "maintainer": "Andrej Karpathy",
+      "github_url": "https://github.com/karpathy/nanochat",
+      "docs_url": "https://github.com/karpathy/nanochat#readme",
+      "license": "MIT",
+      "oss_status": "oss",
+      "included": true,
+      "category": "AI・LLMの学習",
+      "summary": "LLMの学習から対話までを、最小限のコードで通して試せる実験用のコードベース。",
+      "what_is_great": "トークナイザーから事前学習、ファインチューニング、評価、推論までの主要な段階をカバーする。層の数（--depth）という1つの値を決めるだけで、ほかの設定が自動で決まる設計。READMEによれば、2019年に約43,000ドルかかったGPT-2相当の性能のモデルを、8枚のH100のノードで約2時間（約48ドル）で学習できる。",
+      "use_cases": ["LLMの学習の全体像を、コードを読みながら理解する", "事前学習の速度を競う「GPT-2 speedrun」の実験"],
+      "caveats": ["READMEの金額・時間は、8枚のH100のノードを借りた場合の目安で、GPUの料金は借りる先で変わる", "GPUが1枚でも動くが、時間は約8倍かかる（README）。CPU・Apple Siliconでは小さなモデルになり、強い結果は出ない", "実験用の「強いベースライン」であり、すぐ使える製品ではない（READMEのContributing）"],
+      "difficulty": "高（GPUの用意と、PyTorch・uvの環境が前提）",
+      "ossalt": { "listed": false },
+      "facts": [
+        { "label": "ライセンス", "value": "MIT（Copyright 2025 Andrej Karpathy）", "as_of": "2026-11-02", "note": "LICENSEで確認" },
+        { "label": "リーダーボード", "value": "READMEの表の最新行は2026-03-14の記録", "as_of": "2026-11-07", "note": "READMEの表の記載。表は更新される" }
+      ],
+      "verification": {
+        "stage": "official",
+        "checked_at": "2026-11-11",
+        "sources": [
+          "https://github.com/karpathy/nanochat",
+          "https://github.com/karpathy/nanochat/blob/master/LICENSE"
+        ],
+        "note": "READMEとLICENSEを確認した。学習は実行していない（金額・時間はREADMEの記載）"
+      }
+    },
+    {
+      "id": "ladybird",
+      "name": "Ladybird",
+      "maintainer": "Ladybird（501(c)(3)の非営利団体が支える）",
+      "github_url": "https://github.com/LadybirdBrowser/ladybird",
+      "docs_url": "https://ladybird.org/",
+      "license": "BSD-2-Clause",
+      "oss_status": "oss",
+      "included": true,
+      "category": "ブラウザ",
+      "summary": "Chromium・Gecko・WebKitを使わず、ゼロから作っている独立したWebブラウザ。",
+      "what_is_great": "既存のブラウザエンジンのフォークではなく、Webの標準にもとづく新しいエンジンを書いている。公式サイトは、既定の検索の取引や暗号トークンなど、利用者から収益を得る仕組みを持たないと説明している。",
+      "use_cases": ["ブラウザエンジンの開発を追う・貢献する", "開発者として、新しいエンジンでの表示を試す"],
+      "caveats": ["READMEは「pre-alpha（プレアルファ）の状態で、開発者だけが使える」と明記している", "公式サイトによれば、最初のAlpha（macOSとLinux向け）は「今年後半」の予定。一般の人が日常で使えるブラウザではない", "Windowsは、READMEでは WSL2 経由。公式サイトは、完全な対応は後の段階と説明している"],
+      "difficulty": "高（ソースからのビルドが前提）",
+      "ossalt": { "listed": false },
+      "facts": [
+        { "label": "状態", "value": "pre-alpha（開発者向け）", "as_of": "2026-11-08", "note": "READMEのImportantの記載" },
+        { "label": "ライセンス", "value": "BSD-2-Clause", "as_of": "2026-11-08", "note": "LICENSEで確認" }
+      ],
+      "verification": {
+        "stage": "official",
+        "checked_at": "2026-11-11",
+        "sources": [
+          "https://github.com/LadybirdBrowser/ladybird",
+          "https://github.com/LadybirdBrowser/ladybird/blob/master/LICENSE",
+          "https://ladybird.org/"
+        ],
+        "note": "README、LICENSE、公式サイトのFAQを確認した。ビルドも起動もしていない"
+      }
+    },
+    {
+      "id": "agent-desktop",
+      "name": "Agent Desktop",
+      "maintainer": "Vercel Labs",
+      "github_url": "https://github.com/vercel-labs/agent-desktop",
+      "docs_url": "https://agent-browser.dev/desktop",
+      "license": "Apache-2.0",
+      "oss_status": "oss",
+      "included": true,
+      "category": "AIエージェント",
+      "summary": "AIエージェントが、デスクトップのアプリを見て操作するための命令行ツール（CLIとCライブラリ）。",
+      "what_is_great": "スクリーンショットや画面上の位置合わせに頼らず、OSのアクセシビリティツリーを読み取ってJSONで返す。操作できる要素には参照（ref）が付き、エージェントは参照を指定してクリックや入力をする。ツールの中にモデルは入っておらず、ループはエージェント側が持つ（README）。",
+      "use_cases": ["AIエージェントにデスクトップのアプリを操作させる", "MCPのツールとして、エージェントの環境に組み込む（agent-desktop mcp）"],
+      "caveats": ["READMEは、スナップショットやクリップボード、スクリーンショットに私的な内容が含まれうるため、公開ログやアップロードに出さないよう注意している", "対応環境：macOS 13以降、Windows 10 1809以降、Ubuntu 24.04以降（README）", "READMEによれば、60のコマンド名のうち4つ（key-down・key-up・mouse-down・mouse-up）は、押したままのキーやボタンを離せる仕組みができるまで、実行を拒否する"],
+      "difficulty": "中（npmで入れられるが、macOSではアクセシビリティの許可が必要）",
+      "ossalt": { "listed": false },
+      "facts": [
+        { "label": "ライセンス", "value": "Apache-2.0", "as_of": "2026-11-10", "note": "LICENSEで確認" },
+        { "label": "リポジトリの作成", "value": "2026-02-19", "as_of": "2026-11-11", "note": "GitHubの表示" }
+      ],
+      "verification": {
+        "stage": "official",
+        "checked_at": "2026-11-11",
+        "sources": [
+          "https://github.com/vercel-labs/agent-desktop",
+          "https://github.com/vercel-labs/agent-desktop/blob/main/LICENSE"
+        ],
+        "note": "READMEとLICENSEを確認した。最新リリースのバージョンは、取得した表示が古く未確認のため記事に書かない。実際には動かしていない"
+      }
+    },
+    {
+      "id": "agent-browser",
+      "name": "Agent Browser",
+      "maintainer": "Vercel Labs",
+      "github_url": "https://github.com/vercel-labs/agent-browser",
+      "docs_url": "https://agent-browser.dev/",
+      "license": "Apache-2.0",
+      "oss_status": "oss",
+      "included": true,
+      "category": "AIエージェント",
+      "summary": "AIエージェントが、ブラウザを1コマンドずつ操作するための、Rust製の命令行ツール。",
+      "what_is_great": "snapshotがページを、要素ごとの参照（@e1など）が付いた短いテキストとして返す。エージェントは参照を指定して操作し、もう一度ページを読んで結果を確かめる。ブラウザはコマンドの間も開いたままになり、1回の操作が短いシェルの呼び出しで済む（README）。",
+      "use_cases": ["AIエージェントにWebの操作をさせる", "MCPクライアントから使う（agent-browser mcp）"],
+      "caveats": ["初回は agent-browser install でChrome for Testingを取得する（README）", "クリックは、対象が隠れている・無効・画面外・同意バナーなどに覆われているときは、成功にせず失敗を返す（README）", "ページの内容を読み取って操作するため、信頼できないページを扱う場合の安全面は、公式のSecurityのページで確認が必要（今回は読んでいない）"],
+      "difficulty": "低〜中（npm install -g でき、クイックスタートが短い）",
+      "ossalt": { "listed": false },
+      "facts": [
+        { "label": "ライセンス", "value": "Apache-2.0", "as_of": "2026-11-10", "note": "LICENSEで確認" },
+        { "label": "対応", "value": "macOS（ARM64・x64）、Linux（ARM64・x64、glibcとmusl）、Windows（x64）", "as_of": "2026-11-11", "note": "READMEのPlatforms" }
+      ],
+      "verification": {
+        "stage": "official",
+        "checked_at": "2026-11-11",
+        "sources": [
+          "https://github.com/vercel-labs/agent-browser",
+          "https://github.com/vercel-labs/agent-browser/blob/main/LICENSE"
+        ],
+        "note": "READMEとLICENSEを確認した。リリースのページは古い表示（v0.27.3、6月）が取得されたため、最新バージョンは未確認で記事に書かない。実際には動かしていない"
+      }
+    },
+    {
+      "id": "orama",
+      "name": "Orama",
+      "maintainer": "Orama（GitHub: oramasearch）",
+      "github_url": "https://github.com/oramasearch/orama",
+      "docs_url": "https://docs.orama.com/",
+      "license": "Apache-2.0",
+      "oss_status": "oss",
+      "included": true,
+      "category": "検索",
+      "summary": "ブラウザ・サーバー・エッジのどこでも動く、JavaScriptの検索エンジン。",
+      "what_is_great": "全文検索、ベクトル検索、ハイブリッド検索を、同じライブラリで扱える。リポジトリの説明は「2kb未満」をうたう。タイプミスへの耐性、ファセット、位置情報の検索、30の言語でのステミングとトークナイズ、プラグインの仕組みも備える（README）。",
+      "use_cases": ["静的サイトやブラウザ内でのサイト内検索", "ベクトル（埋め込み）を使った検索の試作"],
+      "caveats": ["ベクトル検索には、埋め込みを別に用意する必要がある（READMEの手順）", "チャット（RAG）の例は、OpenAIのAPIを呼ぶ前提（Secure Proxyプラグイン）で、外部のAPIと料金が関わりうる", "GitHubの最新リリースは v3.1.18（2025-12-19）。最終コミットの日付は確認していない"],
+      "difficulty": "低〜中（npm i @orama/orama で使える）",
+      "ossalt": { "listed": false },
+      "facts": [
+        { "label": "最新リリース", "value": "v3.1.18", "as_of": "2026-11-11", "note": "リリースの公開日は2025-12-19" },
+        { "label": "ライセンス", "value": "Apache-2.0", "as_of": "2026-11-08", "note": "LICENSE.mdで確認" }
+      ],
+      "verification": {
+        "stage": "official",
+        "checked_at": "2026-11-11",
+        "sources": [
+          "https://github.com/oramasearch/orama",
+          "https://github.com/oramasearch/orama/blob/main/LICENSE.md",
+          "https://github.com/oramasearch/orama/releases/latest"
+        ],
+        "note": "README、LICENSE.md、最新リリースを確認した。「2kb未満」はリポジトリの説明の記載で、サイズは測っていない"
+      }
+    },
+    {
+      "id": "meilisearch",
+      "name": "Meilisearch",
+      "maintainer": "Meili SAS（フランスのソフトウェア開発会社）",
+      "github_url": "https://github.com/meilisearch/meilisearch",
+      "docs_url": "https://www.meilisearch.com/docs/",
+      "license": "MIT（Community Edition）。一部はEnterprise EditionとしてBSL-1.1（SPDX: MIT AND BUSL-1.1）",
+      "oss_status": "partial",
+      "included": true,
+      "category": "検索",
+      "summary": "高速な全文検索、意味検索、ハイブリッド検索を提供する検索エンジンのAPI。",
+      "what_is_great": "入力に合わせて素早く結果を返す検索（search-as-you-type）、タイプミスへの耐性、絞り込みと並べ替え、位置情報の検索、日本語を含む多くの言語への対応をうたう。ネイティブのMCPサーバー（/mcp、実験的）もある（README）。",
+      "use_cases": ["サイトやアプリに検索を組み込む", "Algoliaの代わりとして自前で検索を動かす"],
+      "caveats": ["Community EditionはMITだが、シャーディングなどを含むEnterprise Editionは商用契約かBSL-1.1で、商用契約なしの本番利用は認められない（README）", "OSSALTの既存の掲載はライセンスを「MIT」とだけ表示している。LICENSEは「MIT AND BUSL-1.1」で、Enterprise Editionの条件が表示に出ていない（別途の確認が必要）", "MCPサーバーは実験的（README）"],
+      "difficulty": "低〜中（Dockerの公式イメージか、単一のバイナリで動く）",
+      "ossalt": { "listed": true, "tool_id": "meilisearch", "path": "/tools/meilisearch/" },
+      "facts": [
+        { "label": "ライセンス", "value": "MIT AND BUSL-1.1（SPDX）", "as_of": "2026-11-08", "note": "LICENSEファイルの記載。Enterprise EditionはLICENSE-EE" },
+        { "label": "最新リリース", "value": "未確認", "as_of": "2026-11-11", "note": "取得したリリースページが古い表示（v1.18.0、2025-08）だったため、記事に書かない" }
+      ],
+      "verification": {
+        "stage": "official",
+        "checked_at": "2026-11-11",
+        "sources": [
+          "https://github.com/meilisearch/meilisearch",
+          "https://github.com/meilisearch/meilisearch/blob/main/LICENSE"
+        ],
+        "note": "READMEのEditions & Licensingと、LICENSEを確認した。リリースのバージョンは未確認"
+      }
+    }
+  ]
+}
