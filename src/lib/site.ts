@@ -19,6 +19,10 @@ export const SITE = {
   name: "ossalt.jp",
   nameJa: "オルタナ",
   tagline: "国産SaaSの代わりに、自前で動かす",
+  // フッターだけの文言。tagline は <title>・OGP・フィードに使われているため、ここでは変えない
+  // （検索結果の表示に影響する title / meta description は、今回は変更しない方針）。
+  footerTagline: "SaaSの代わりになるOSSを、比較して選ぶ。",
+  footerDescription: "オープンソースのソフトウェアを、機能・ライセンス・更新状況などから比較できる情報サイト。",
   description:
     "日本のチームのための、オープンソース代替ソフトウェア事典。SaaSの月額をやめて自分のサーバで動かすための、ライセンス・セキュリティ・導入難易度をまとめて比較できます。",
   url: (env("NEXT_PUBLIC_SITE_URL") ?? "https://ossalt.jp").replace(/\/+$/, ""),

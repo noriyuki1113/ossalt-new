@@ -150,8 +150,9 @@ export function SiteFooter({ meta }: { meta?: { built_at: string; tool_count: nu
         </div>
         <div className="foot-note">
           <p>
-            {SITE.name} — {SITE.tagline}
+            {SITE.name} — {SITE.footerTagline}
           </p>
+          <p>{SITE.footerDescription}</p>
           <p>
             {t("footer.dataNote")}
             {updated ? `（データ更新: ${updated}${meta ? ` / ${meta.tool_count}件` : ""}）` : ""}
