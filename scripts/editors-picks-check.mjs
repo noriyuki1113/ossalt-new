@@ -11,7 +11,8 @@
  *  2. 記事の場所：承認前は content/drafts/ にあること。公開するときは content/blog/ にあり、draft_* の項目が消え、date が決まっていること
  *  3. 記事に「編集案」「承認待ち」の表記が残っていないこと（公開時）
  *  4. 記事の内部リンクが、実在するページを指していること
- *  5. 変わる情報（版・状態）の確認日が古くなっていないこと（既定は14日。公開の直前に、公式の情報で再確認する）
+ *  5. 公開直前の再確認：掲載する全件の確認日が、公開日の24〜48時間以内であること（issue.reverify_within_hours。既定48）。
+ *     最短の公開候補日（issue.earliest_publish）より前は公開不可。確認日が14日より前の項目は、一覧のときも注意に出す
  * SEOの確認（sitemap-check・seo:build-diff）は、別のコマンドで行う（README参照）。
  */
 import fs from "node:fs";
@@ -42,7 +43,7 @@ const notes = []; // 公開前に確認したいこと（公開を止めはし�
 
 // 1. 調査データと承認
 const dataProblems = validateIssue(file, toolIds);
-blockers.push(...publishBlockers(file).filter((m) => !dataProblems.includes(m)));
+blockers.push(...publishBlockers(file, TODAY).filter((m) => !dataProblems.includes(m)));
 blockers.push(...dataProblems.map((m) => `調査データ：${m}`));
 
 // 2. 記事の場所

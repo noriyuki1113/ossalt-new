@@ -50,16 +50,46 @@
 ## 公開までの手順（運営者の承認制）
 
 1. 調査データ（`data-source/editors-picks/<id>.json`）を、出典で確かめる。
-2. 記事の下書きを読み、「注目した理由」と「特に注目した3件」を、運営者の言葉で書き換えるか承認する。`issue.editorial_status` を `approved` にする。
+2. 運営者が、「私が注目した理由」と「特に注目した3件」の文面を決める（第1弾は2026-11-11に指定済み）。公開の最終承認ができたら、`issue.editorial_status` を `approved` にする（承認済みの特集は、掲載する全件に運営者のコメントが必要）。
 3. 記事に書いた事実を、公開の直前にもう一度、公式の情報で確認する（バージョンや状態は変わる）。
 4. 下書きを `content/blog/` に移し、`date`（公開日）を決め、先頭の `draft_*` の項目を消す。
 5. `npm test`、ビルド、`sitemap-check`、`seo:build-diff --after out` を通す。通ってから既定のブランチに入れる。
 
 `publishBlockers()`（`src/lib/editors-picks.ts`）が、承認前・検証の不備を「公開不可」として返す。
 
-## 公開の時期について
+## 公開スケジュール（運営者の指示・2026-11-11）
 
-2026-11-10 から、ツール・比較・解説の自動追加を4週間止めている（`docs/seo/auto-additions-pause-2026-11-10.md`、再開の目安は 2026-12-08）。ブログ記事の公開は自動追加ではないが、**新しいインデックス対象のページを増やすので、公開の時期は運営者が決める。**
+公開は急がない。**2026-12-09 は最短の候補日であり、公開の確定日ではない。**
+
+| 日付 | こと |
+|---|---|
+| 2026-11-25 | Search Consoleの前後比較を確認する |
+| 2026-12-08 | OSSALTの自動追加（4週間停止中。`docs/seo/auto-additions-pause-2026-11-10.md`）を再開するか判断する |
+| 2026-12-09以降 | SEOと公開ゲートに問題がなければ、Editor's Picks第1弾を公開する（最短候補） |
+
+- それまで、記事は **`content/drafts/` の下書きのまま保持する。**
+- 記事を `content/blog/` に移すPRは、**Draft PR** で作る。`date` は公開日にし、`date` が未来の間はビルドに出ない（`src/lib/blog.ts`）。**mainへの直接push、公開につながるmerge、本番デプロイは、運営者の最終承認まで行わない。**
+- `issue.earliest_publish`（`2026-12-09`）より前は、`npm run editors-picks:check -- vol1 --publish` が公開不可を返す。
+
+## 公開直前の再確認（公開予定日の24〜48時間以内）
+
+掲載する10件について、次を再確認する。**重大な問題が見つかったら、公開を延期する。** 再確認した日は、`data-source/editors-picks/vol1.json` の `verification.checked_at` に反映する（48時間以内でないと、`--publish` が公開不可を返す）。
+
+1. リポジトリの存在と公式URL（移転・名称変更・アーカイブ）
+2. 最新のREADME
+3. ライセンスと適用範囲（Meilisearchのエディションごとの違い、Open MCTの LICENSE.md を含む）
+4. 更新状況（最新リリース・最終コミット）
+5. 記事中の技術的説明
+6. 主な機能の変更・廃止
+7. GitHubスター数などの変動情報（記事に書く場合は確認日つき。今の記事は書いていない）
+8. OSSALTの既存記事との整合性（Meilisearchの詳細ページのライセンス表示など）
+9. リンク切れ（外部リンク・内部リンク）
+10. SEO公開ゲート（`sitemap-check`、`seo:build-diff`）
+
+## ライセンス表記の確認結果（2026-11-11）
+
+- **Meilisearch**：Community Edition＝MIT License、Enterprise Edition＝BUSL-1.1または商用ライセンス。公式のLICENSE（`MIT AND BUSL-1.1`）は両方の併存を示す。記事は、エディションによる違いを明記し、Enterprise Editionまでを無条件にOSSとして扱わない。根拠：https://github.com/meilisearch/meilisearch/blob/main/LICENSE
+- **NASA Open MCT**：Apache License 2.0（LICENSE.md の本文で確認）。根拠：https://github.com/nasa/openmct/blob/master/LICENSE.md
 
 ## 公開前チェック（コマンド）
 

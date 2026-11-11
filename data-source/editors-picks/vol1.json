@@ -7,8 +7,10 @@
     "researched_at": "2026-11-11",
     "scope": "各リポジトリのREADME・LICENSE・公式サイト・公式ドキュメントの記載の範囲。実際には動かしていない",
     "editorial_status": "pending_approval",
-    "editorial_status_note": "「注目した理由」は編集案。運営者本人の評価・体験としては未確認で、承認前は公開しない",
-    "sponsored": false
+    "editorial_status_note": "「私が注目した理由」の10件と「特に注目した3件」は、運営者が文面を指定した（2026-11-11）。実機で検証したという意味ではない。公開の最終承認はまだ（公開直前の再確認と、SEO・公開ゲートの確認の後）",
+    "sponsored": false,
+    "earliest_publish": "2026-12-09",
+    "reverify_within_hours": 48
   },
   "picks": [
     {
@@ -26,6 +28,8 @@
       "use_cases": ["静的サイトにサイト内検索を付ける", "検索サーバーを運用したくない小さなサイト"],
       "caveats": ["READMEの記載は目標と設計の説明にとどまる。実際の速度や、日本語の検索の品質は確認していない", "ドキュメント（pagefind.app）の詳細は読んでいない"],
       "difficulty": "不明（導入手順は未確認）",
+      "editorial_comment": "本格的な検索機能にはサーバーが必要、という常識を変える発想が面白いと感じました。静的サイトでも検索体験を提供できる設計は、個人開発や小規模サイトにとって大きな価値があります。派手さよりも設計の合理性が光るOSSです。",
+      "spotlight_rank": 3,
       "ossalt": { "listed": false },
       "facts": [
         { "label": "最新リリース", "value": "v1.5.2", "as_of": "2026-10-25", "note": "取得したGitHubのリリースページの表示。リリース日は「4月12日」と表示され、年は確認できていない" },
@@ -57,6 +61,8 @@
       "use_cases": ["ロボットの制御や学習の実験", "物理シミュレーションを使う機械学習の研究"],
       "caveats": ["C APIを持つ、研究者と開発者向けのライブラリ（READMEの説明）", "READMEは「公式にサポートされるGoogleの製品ではない」と明記している", "ブラウザ版は、ネイティブのCより遅い（README）"],
       "difficulty": "中〜高（研究・開発向け。Python 3.11以上で pip install mujoco ができる）",
+      "editorial_comment": "ロボットの動きをコンピューター上で再現し、物理法則に基づいた実験ができる。実際のロボットを動かす前に仮想空間で試行錯誤できるという発想に、技術の可能性を感じました。AIとロボティクスの発展を考えるうえでも注目したいOSSです。",
+      "spotlight_rank": 1,
       "ossalt": { "listed": false },
       "facts": [
         { "label": "最新リリース", "value": "4.0.0", "as_of": "2026-11-11", "note": "リリースページの公開日は2026-11-06" },
@@ -88,6 +94,8 @@
       "use_cases": ["動画や写真から3Dシーンを作る実験", "NeRF系の手法を学ぶ・比べる"],
       "caveats": ["READMEは、CUDAが入ったNVIDIAのビデオカードが必要と書いている（CUDA 11.8で検証と記載）", "最新のGitHubリリースは v1.1.5（2024-11-11）。最終コミットの日付は確認していない", "ビューアーは速い手法でのみ動く（README）"],
       "difficulty": "高（GPU環境とPythonの環境構築が必要）",
+      "editorial_comment": "写真などから現実の空間を3Dで再現する技術に魅力を感じました。Webサイトで写真を見るだけでなく、その場所を自由な視点から探索する。観光、教育、文化財の保存など、幅広い分野に新しい体験を生み出せる可能性があります。",
+      "spotlight_rank": 2,
       "ossalt": { "listed": false },
       "facts": [
         { "label": "最新リリース", "value": "v1.1.5", "as_of": "2026-11-11", "note": "リリースの公開日は2024-11-11" },
@@ -117,21 +125,23 @@
       "summary": "NASAが作った、Webベースのミッションコントロール用フレームワーク。",
       "what_is_great": "NASAのエイムズ研究センターで開発され、探査機の運用データの分析や、実験用ローバーの計画・運用に使われているとREADMEが説明している。テレメトリー（計測データ）を出すあらゆるシステムの計画・運用・分析のアプリの土台にできる、と書かれている。",
       "use_cases": ["テレメトリー（計測データ）の可視化と運用の画面づくり", "プラグインを足して、自分たちの計測システム向けの画面を作る"],
-      "caveats": ["アプリそのものというより、プラグインで拡張するフレームワーク（README）", "ブラウザとNode.jsの対応範囲は、package.json の browserslist と engines の記載による", "ライセンスは、READMEのバッジ（Apache 2.0へのリンク）で確認した。LICENSEファイルの本文は、今回は読めていない"],
+      "caveats": ["アプリそのものというより、プラグインで拡張するフレームワーク（README）", "ブラウザとNode.jsの対応範囲は、package.json の browserslist と engines の記載による", "READMEは、gitの依存として使う場合はビルド（npm run build）を手元で実行する必要があると説明し（サプライチェーン攻撃への対策としてignore-scriptsが有効なため）、ビルド済みのnpmパッケージとして使うことを勧めている"],
       "difficulty": "中〜高（Node.jsでの開発環境と、プラグインの開発が前提）",
+      "editorial_comment": "宇宙ミッションに関わるデータ可視化の技術が、一般の開発者にも公開されていることに驚きました。宇宙だけでなく、工場や設備の監視にも応用できそうな考え方が魅力的です。",
       "ossalt": { "listed": false },
       "facts": [
         { "label": "最新リリース", "value": "v4.3.1（2026-08-31）", "as_of": "2026-09-07", "note": "取得した表示が古いため、記事には書かない。最新かどうかは未確認" },
-        { "label": "ライセンス", "value": "Apache-2.0（READMEのバッジ）", "as_of": "2026-10-27", "note": "LICENSEファイル本文は未確認" }
+        { "label": "ライセンス", "value": "Apache License 2.0（Copyright 2014-2024 United States Government as represented by the Administrator of NASA）", "as_of": "2026-10-24", "note": "LICENSE.md の本文で確認。取得した写しの日付は2026-10-24。運営者も2026-11-11に確認済み" }
       ],
       "verification": {
         "stage": "official",
         "checked_at": "2026-11-11",
         "sources": [
           "https://github.com/nasa/openmct",
+          "https://github.com/nasa/openmct/blob/master/LICENSE.md",
           "https://github.com/nasa/openmct/releases/latest"
         ],
-        "note": "READMEを確認した。LICENSEファイルは読めなかった（URLが見つからなかった）ため、ライセンスはREADMEの記載のみ。公開前にLICENSEを確認する"
+        "note": "READMEと、LICENSE.md（Apache License 2.0）を確認した。最新リリースのバージョンは、取得した表示が古く未確認"
       }
     },
     {
@@ -149,6 +159,7 @@
       "use_cases": ["LLMの学習の全体像を、コードを読みながら理解する", "事前学習の速度を競う「GPT-2 speedrun」の実験"],
       "caveats": ["READMEの金額・時間は、8枚のH100のノードを借りた場合の目安で、GPUの料金は借りる先で変わる", "GPUが1枚でも動くが、時間は約8倍かかる（README）。CPU・Apple Siliconでは小さなモデルになり、強い結果は出ない", "実験用の「強いベースライン」であり、すぐ使える製品ではない（READMEのContributing）"],
       "difficulty": "高（GPUの用意と、PyTorch・uvの環境が前提）",
+      "editorial_comment": "普段は完成されたAIを利用することが多いですが、AIモデルの学習から推論までの仕組みを理解できる点が面白いと思いました。AIをブラックボックスのままにしないためのOSSとして注目しています。",
       "ossalt": { "listed": false },
       "facts": [
         { "label": "ライセンス", "value": "MIT（Copyright 2025 Andrej Karpathy）", "as_of": "2026-11-02", "note": "LICENSEで確認" },
@@ -179,6 +190,7 @@
       "use_cases": ["ブラウザエンジンの開発を追う・貢献する", "開発者として、新しいエンジンでの表示を試す"],
       "caveats": ["READMEは「pre-alpha（プレアルファ）の状態で、開発者だけが使える」と明記している", "公式サイトによれば、最初のAlpha（macOSとLinux向け）は「今年後半」の予定。一般の人が日常で使えるブラウザではない", "Windowsは、READMEでは WSL2 経由。公式サイトは、完全な対応は後の段階と説明している"],
       "difficulty": "高（ソースからのビルドが前提）",
+      "editorial_comment": "巨大な既存ブラウザーエンジンに依存せず、独立したWebブラウザーを作るという挑戦が印象的です。完成度だけでなく、技術的な独立性を追求する姿勢に魅力を感じます。",
       "ossalt": { "listed": false },
       "facts": [
         { "label": "状態", "value": "pre-alpha（開発者向け）", "as_of": "2026-11-08", "note": "READMEのImportantの記載" },
@@ -210,6 +222,7 @@
       "use_cases": ["AIエージェントにデスクトップのアプリを操作させる", "MCPのツールとして、エージェントの環境に組み込む（agent-desktop mcp）"],
       "caveats": ["READMEは、スナップショットやクリップボード、スクリーンショットに私的な内容が含まれうるため、公開ログやアップロードに出さないよう注意している", "対応環境：macOS 13以降、Windows 10 1809以降、Ubuntu 24.04以降（README）", "READMEによれば、60のコマンド名のうち4つ（key-down・key-up・mouse-down・mouse-up）は、押したままのキーやボタンを離せる仕組みができるまで、実行を拒否する"],
       "difficulty": "中（npmで入れられるが、macOSではアクセシビリティの許可が必要）",
+      "editorial_comment": "AIが人間の操作を補助するだけでなく、画面上のUIを認識して操作する。こうした技術が発展すれば、PC作業やアプリの動作確認が大きく変わる可能性があります。",
       "ossalt": { "listed": false },
       "facts": [
         { "label": "ライセンス", "value": "Apache-2.0", "as_of": "2026-11-10", "note": "LICENSEで確認" },
@@ -240,6 +253,7 @@
       "use_cases": ["AIエージェントにWebの操作をさせる", "MCPクライアントから使う（agent-browser mcp）"],
       "caveats": ["初回は agent-browser install でChrome for Testingを取得する（README）", "クリックは、対象が隠れている・無効・画面外・同意バナーなどに覆われているときは、成功にせず失敗を返す（README）", "ページの内容を読み取って操作するため、信頼できないページを扱う場合の安全面は、公式のSecurityのページで確認が必要（今回は読んでいない）"],
       "difficulty": "低〜中（npm install -g でき、クイックスタートが短い）",
+      "editorial_comment": "WebブラウザーをAIエージェントの操作対象にする仕組みに注目しています。Webサイトのテストや情報確認など、繰り返し発生する開発作業の効率化につながりそうです。",
       "ossalt": { "listed": false },
       "facts": [
         { "label": "ライセンス", "value": "Apache-2.0", "as_of": "2026-11-10", "note": "LICENSEで確認" },
@@ -270,6 +284,7 @@
       "use_cases": ["静的サイトやブラウザ内でのサイト内検索", "ベクトル（埋め込み）を使った検索の試作"],
       "caveats": ["ベクトル検索には、埋め込みを別に用意する必要がある（READMEの手順）", "チャット（RAG）の例は、OpenAIのAPIを呼ぶ前提（Secure Proxyプラグイン）で、外部のAPIと料金が関わりうる", "GitHubの最新リリースは v3.1.18（2025-12-19）。最終コミットの日付は確認していない"],
       "difficulty": "低〜中（npm i @orama/orama で使える）",
+      "editorial_comment": "検索機能を外部サービス任せにするのではなく、アプリケーションの中に組み込める発想が魅力的です。比較的シンプルな構成から高度な検索体験を作れる可能性があります。",
       "ossalt": { "listed": false },
       "facts": [
         { "label": "最新リリース", "value": "v3.1.18", "as_of": "2026-11-11", "note": "リリースの公開日は2025-12-19" },
@@ -301,6 +316,7 @@
       "use_cases": ["サイトやアプリに検索を組み込む", "Algoliaの代わりとして自前で検索を動かす"],
       "caveats": ["Community EditionはMITだが、シャーディングなどを含むEnterprise Editionは商用契約かBSL-1.1で、商用契約なしの本番利用は認められない（README）", "OSSALTの既存の掲載はライセンスを「MIT」とだけ表示している。LICENSEは「MIT AND BUSL-1.1」で、Enterprise Editionの条件が表示に出ていない（別途の確認が必要）", "MCPサーバーは実験的（README）"],
       "difficulty": "低〜中（Dockerの公式イメージか、単一のバイナリで動く）",
+      "editorial_comment": "検索は単に文字列を一致させるだけではありません。利用者が求める情報へ素早くたどり着ける検索体験そのものを作る技術として注目しています。",
       "ossalt": { "listed": true, "tool_id": "meilisearch", "path": "/tools/meilisearch/" },
       "facts": [
         { "label": "ライセンス", "value": "MIT AND BUSL-1.1（SPDX）", "as_of": "2026-11-08", "note": "LICENSEファイルの記載。Enterprise EditionはLICENSE-EE" },
