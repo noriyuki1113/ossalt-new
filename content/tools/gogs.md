@@ -1,6 +1,18 @@
 ---
 description: "Gogsとは、1つの実行ファイルで動く、軽いGitのホスティングのオープンソースです。小さなサーバーでも、チームのコードの置き場所を自分で持てます。できること、Giteaとの違い、選ぶときの注意点を解説します。"
-updated: "2026-10-06"
+updated: "2026-11-11"
+verification:
+  status: official
+  checked_at: "2026-11-11"
+  sources:
+    - https://github.com/gogs/gogs
+    - https://github.com/gogs/gogs/blob/main/LICENSE
+    - https://github.com/gogs/gogs/tree/main/conf/locale
+    - https://github.com/gogs/gogs/blob/main/conf/locale/locale_en-US.ini
+    - https://gogs.io/docs/intro/faqs
+    - https://docs.gitea.com/
+    - https://forum.gitea.com/t/welcome-to-gitea/423
+  note: "Gogsの公式のREADME・LICENSE・翻訳ファイル（画面の文言の一覧。コミットの履歴、組織のチームの権限の文言を含む）と、この解説の機能・ライセンス・Giteaとの関係の記述を照合した。Giteaの記述（Gogsからの分岐、Gitea Actions、パッケージの管理）は、Giteaの公式ドキュメントで確認した。「Woodpeckerと組み合わせる」の記述は、Woodpeckerの公式ドキュメントの対応するGitのサービスの一覧にGogsが無いため、READMEにある Jenkins に置き換えた。「開発に関わる人の数がGiteaより少ない」は公式の資料では確認できないため削除した。実機では動かしていない"
 ---
 
 Gogs（ゴグス）は、GitHubのように、チームのコードを置いて共有するための**Gitのサーバー**を、自分で動かすソフトです。Go言語で作られた1つの実行ファイルで動き、必要なサーバーの資源がとても少ないのが特徴です。
@@ -11,7 +23,7 @@ Gogs（ゴグス）は、GitHubのように、チームのコードを置いて�
 - **イシューとプルリクエスト**：課題の管理や、変更の取り込みの依頼と確認ができます。
 - **組織とチーム**：組織の中でチームを作り、リポジトリごとに権限を分けられます。
 - **Webhook**：変更があったときに、ほかのサービスへ通知できます。
-- 画面の日本語翻訳と、Dockerでの導入方法を確認できています。
+- 画面の日本語翻訳があります（公式のリポジトリに日本語の翻訳ファイルがあります）。Docker用のDockerfileも、公式のリポジトリに含まれています。
 
 ### Giteaとの違い
 
@@ -21,8 +33,8 @@ Gogs（ゴグス）は、GitHubのように、チームのコードを置いて�
 
 ### 注意点
 
-- CIの機能は持っていません。自動テストやデプロイを行うには、[Woodpecker](/tools/woodpecker/)などのCIのツールと組み合わせます。
-- 開発に関わる人の数は、Giteaより少なめです。導入の前に、最近の更新の状況を確認してください。
+- 公式のREADMEの機能一覧に、CIの機能はありません。自動テストやデプロイを行うには、CIのツールと組み合わせます。公式のREADMEは、Jenkinsとの連携（JenkinsのGogs用プラグイン）を紹介しています。
+- 導入の前に、公式のリポジトリで、最近の更新の状況を確認してください。
 - 自分で動かす場合、**コードのバックアップ**は自分たちの責任になります。リポジトリとデータベースの両方を、定期的に別の場所へ保存してください。
 - ライセンスはMITです。
 
