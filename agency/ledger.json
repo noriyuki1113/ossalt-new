@@ -210,6 +210,76 @@
       "outcome28": null,
       "outcome90": null,
       "note": "公式の一次情報のみを根拠に照合。実機検証ではない。"
+    },
+    {
+      "id": 16,
+      "date": "2026-11-11",
+      "url": "https://ossalt.jp/tools/gogs/",
+      "query": "（対象外：事実確認の作業）",
+      "change": "公式資料と照合し、検証状態を「公式資料確認済み」に更新（title・description・見出しは変更なし）",
+      "pr": "https://github.com/noriyuki1113/ossalt-new/pull/126",
+      "window": "対象外（順位改善を狙った変更ではない）",
+      "check28": "2026-12-09",
+      "check90": "2027-02-09",
+      "outcome28": null,
+      "outcome90": null,
+      "note": "公式の一次情報のみを根拠に照合。実機検証ではない。"
+    },
+    {
+      "id": 17,
+      "date": "2026-11-11",
+      "url": "https://ossalt.jp/tools/ente/",
+      "query": "（対象外：事実確認の作業）",
+      "change": "公式資料と照合し、検証状態を「公式資料確認済み」に更新（title・description・見出しは変更なし）",
+      "pr": "https://github.com/noriyuki1113/ossalt-new/pull/126",
+      "window": "対象外（順位改善を狙った変更ではない）",
+      "check28": "2026-12-09",
+      "check90": "2027-02-09",
+      "outcome28": null,
+      "outcome90": null,
+      "note": "公式の一次情報のみを根拠に照合。実機検証ではない。"
+    },
+    {
+      "id": 18,
+      "date": "2026-11-11",
+      "url": "https://ossalt.jp/tools/netbird/",
+      "query": "（対象外：事実確認の作業）",
+      "change": "公式資料と照合し、検証状態を「公式資料確認済み」に更新（title・description・見出しは変更なし）",
+      "pr": "https://github.com/noriyuki1113/ossalt-new/pull/126",
+      "window": "対象外（順位改善を狙った変更ではない）",
+      "check28": "2026-12-09",
+      "check90": "2027-02-09",
+      "outcome28": null,
+      "outcome90": null,
+      "note": "公式の一次情報のみを根拠に照合。実機検証ではない。"
+    },
+    {
+      "id": 19,
+      "date": "2026-11-11",
+      "url": "https://ossalt.jp/tools/coder/",
+      "query": "（対象外：事実確認の作業）",
+      "change": "公式資料と照合し、検証状態を「公式資料確認済み」に更新（title・description・見出しは変更なし）",
+      "pr": "https://github.com/noriyuki1113/ossalt-new/pull/126",
+      "window": "対象外（順位改善を狙った変更ではない）",
+      "check28": "2026-12-09",
+      "check90": "2027-02-09",
+      "outcome28": null,
+      "outcome90": null,
+      "note": "公式の一次情報のみを根拠に照合。実機検証ではない。"
+    },
+    {
+      "id": 20,
+      "date": "2026-11-11",
+      "url": "https://ossalt.jp/tools/comfyui/",
+      "query": "（対象外：事実確認の作業）",
+      "change": "公式資料と照合し、検証状態を「公式資料確認済み」に更新（title・description・見出しは変更なし）",
+      "pr": "https://github.com/noriyuki1113/ossalt-new/pull/126",
+      "window": "対象外（順位改善を狙った変更ではない）",
+      "check28": "2026-12-09",
+      "check90": "2027-02-09",
+      "outcome28": null,
+      "outcome90": null,
+      "note": "公式の一次情報のみを根拠に照合。実機検証ではない。"
     }
   ]
 }
