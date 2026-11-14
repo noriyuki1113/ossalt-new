@@ -12,6 +12,7 @@ import {
 } from "@/lib/tools";
 import { t } from "@/lib/site";
 import { LICENSE_GROUP_LABELS, LICENSE_GROUP_ORDER, licenseGroupOf } from "@/lib/compare";
+import { parseBrowserTools, type BrowserFacets } from "@/lib/tool-browser-data";
 
 // ライセンス欄の値。「group:osi」のように区分で絞り込むか、個別のライセンス表記で絞り込む
 const GROUP_PREFIX = "group:";
@@ -22,6 +23,12 @@ type Props = {
   showCategoryFilter?: boolean;
   showLicenseFilter?: boolean;
   defaultSort?: SortKey;
+  /**
+   * 指定すると、tools は「最初に表示する分」だけとみなし、全件はこのURLのデータを
+   * ブラウザで読み込んでから絞り込む（初期HTMLを軽くするため）。facets に全件の件数と選択肢を渡す。
+   */
+  dataUrl?: string;
+  facets?: BrowserFacets;
 };
 
 // 絞り込み後も一度に数百件を描画しないよう、常に50件ずつ追加表示する。
@@ -33,7 +40,31 @@ export function ToolBrowser({
   showCategoryFilter = true,
   showLicenseFilter = true,
   defaultSort = "health",
+  dataUrl,
+  facets,
 }: Props) {
+  // 全件のデータ（dataUrl があるときだけ、読み込み後に入る）
+  const [loaded, setLoaded] = useState<Tool[] | null>(null);
+  const [loadError, setLoadError] = useState(false);
+  const [attempt, setAttempt] = useState(0);
+  useEffect(() => {
+    if (!dataUrl) return;
+    let alive = true;
+    setLoadError(false);
+    fetch(dataUrl, { cache: "force-cache" })
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+      .then((json: unknown) => {
+        if (!alive) return;
+        const list = parseBrowserTools(json);
+        if (!list) throw new Error("invalid");
+        setLoaded(list);
+      })
+      .catch(() => { if (alive) setLoadError(true); });
+    return () => { alive = false; };
+  }, [dataUrl, attempt]);
+  const ready = !dataUrl || loaded !== null;
+  const allTools = loaded ?? tools;
+
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("");
   const [license, setLicense] = useState("");
@@ -51,26 +82,33 @@ export function ToolBrowser({
     } catch { /* URLが読めなくても、空の検索で表示する */ }
   }, []);
 
-  const licenses = useMemo(() => licenseFacets(tools), [tools]);
+  const licenses = useMemo(() => (facets && !loaded ? facets.licenses : licenseFacets(allTools)), [facets, loaded, allTools]);
   const groups = useMemo(() => {
+    if (facets && !loaded) return facets.groups;
     const m = new Map<string, number>();
-    for (const tool of tools) {
+    for (const tool of allTools) {
       const g = licenseGroupOf(tool.license);
       m.set(g, (m.get(g) ?? 0) + 1);
     }
     return LICENSE_GROUP_ORDER.filter((g) => m.has(g)).map((g) => ({ value: g, count: m.get(g)! }));
-  }, [tools]);
+  }, [facets, loaded, allTools]);
+  const totalCount = ready ? allTools.length : (facets?.total ?? tools.length);
 
   const results = useMemo(() => {
     const group = license.startsWith(GROUP_PREFIX) ? license.slice(GROUP_PREFIX.length) : "";
-    const base = group ? tools.filter((tool) => licenseGroupOf(tool.license) === group) : tools;
+    const base = group ? allTools.filter((tool) => licenseGroupOf(tool.license) === group) : allTools;
     return filterAndSort(base, { query, category, license: group ? "" : license, dockerOnly, japaneseOnly, sort });
-  }, [tools, query, category, license, dockerOnly, japaneseOnly, sort]);
+  }, [allTools, query, category, license, dockerOnly, japaneseOnly, sort]);
 
   const dirty = Boolean(query || category || license || dockerOnly || japaneseOnly);
+  // 全件の読み込み前に、条件の変更や「もっと見る」があった場合は、読み込みを待つ（途中の件数を見せない）
+  const waiting = !ready && (dirty || sort !== defaultSort || visibleCount > PAGE_SIZE);
+  // 読み込み前は、初期の並びの先頭（tools）と、全件の件数（facets.total）で表示する
+  const resultTotal = ready ? results.length : totalCount;
 
   // 計測（同意中だけ）：どの種類の絞り込みで何件になったか。検索語そのものは送らない。入力が落ち着いてから1回
   const resultCount = results.length;
+  const trackReady = ready;
   const filterKinds: FilterKind[] = [];
   if (query.trim()) filterKinds.push("query");
   if (category) filterKinds.push("category");
@@ -79,14 +117,14 @@ export function ToolBrowser({
   if (japaneseOnly) filterKinds.push("japanese");
   const filterKey = filterKinds.join(",");
   useEffect(() => {
-    if (!filterKey) return;
+    if (!filterKey || !trackReady) return;
     const timer = window.setTimeout(() => {
       track("oss_search_performed", { result_count: resultCount, filter_kinds: filterKey.split(",") as FilterKind[], page_type: "tools_list" }, `${filterKey}:${resultCount}`);
     }, 1200);
     return () => window.clearTimeout(timer);
-  }, [filterKey, resultCount]);
-  const shown = results.slice(0, visibleCount);
-  const remaining = Math.max(0, results.length - shown.length);
+  }, [filterKey, resultCount, trackReady]);
+  const shown = waiting ? [] : results.slice(0, visibleCount);
+  const remaining = Math.max(0, resultTotal - shown.length);
 
   const activeFilters: Array<{ key: string; label: string }> = [];
   if (query.trim()) activeFilters.push({ key: "query", label: `検索: ${query.trim().slice(0, 40)}` });
@@ -160,7 +198,7 @@ export function ToolBrowser({
                 onClick={() => { setCategory(""); setVisibleCount(PAGE_SIZE); }}
               >
                 {t("filter.all")}
-                <span className="chip__n">{tools.length}</span>
+                <span className="chip__n">{totalCount}</span>
               </button>
               {categories.map((c) => (
                 <button
@@ -241,7 +279,7 @@ export function ToolBrowser({
             className="mono muted"
             style={{ marginLeft: "auto", alignSelf: "end", paddingBottom: "0.5rem" }}
           >
-            {t("search.count", { n: results.length })}
+            {t("search.count", { n: resultTotal })}
             {dirty && (
               <>
                 {" "}
@@ -261,7 +299,7 @@ export function ToolBrowser({
 
       <div className="browser-results-header">
         <p className="browser-results-summary">
-          {results.length}件中 {shown.length}件を表示
+          {waiting ? "全件のデータを読み込んでいます…" : `${resultTotal}件中 ${shown.length}件を表示`}
         </p>
         <div className="browser-view-switch" role="group" aria-label="表示形式">
           <button
@@ -290,7 +328,20 @@ export function ToolBrowser({
         </div>
       )}
 
-      {results.length === 0 ? (
+      {waiting ? (
+        <div className="empty" role="status">
+          {loadError ? (
+            <>
+              <p style={{ margin: "0 0 0.5rem", color: "var(--ink-2)", fontWeight: 700 }}>
+                一覧のデータを読み込めませんでした。
+              </p>
+              <button type="button" className="btn" onClick={() => setAttempt((n) => n + 1)}>もう一度読み込む</button>
+            </>
+          ) : (
+            <p style={{ margin: 0 }}>全件のデータを読み込んでいます…</p>
+          )}
+        </div>
+      ) : resultTotal === 0 ? (
         <div className="empty">
           <p style={{ margin: "0 0 0.5rem", color: "var(--ink-2)", fontWeight: 700 }}>
             {t("search.empty")}

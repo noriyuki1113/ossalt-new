@@ -6,35 +6,19 @@ import { getMeta, getTools } from "@/lib/data";
 import { pageMeta } from "@/lib/seo";
 import { getWatchSignalFeed, getWatchSyncStatus } from "@/lib/watch-signals";
 import { activityDateJst, buildActivityReport, type ActivityRow } from "@/lib/watch-changes";
-import { buildOwnReport, FRESH_HOURS, RATE_MIN_BASE, RECENT_RELEASE_DAYS, releasesUrl, signed, TOOL_CURRENT_DAYS, type StarRow } from "@/lib/own-changes";
+import { buildOwnReport, FRESH_HOURS, RATE_MIN_BASE, RECENT_RELEASE_DAYS, signed, TOOL_CURRENT_DAYS, type StarRow } from "@/lib/own-changes";
 import styles from "./changes.module.css";
+import { fmt, period, StarItem } from "./items";
+import { LazyList } from "./lazy-list";
+
+// Starの増加で、ページに最初から出す件数（残りは折りたたみを開いたときにブラウザで作る）
+const STAR_TOP = 20;
 
 export const metadata: Metadata = pageMeta({
     title: "OSSの変化レポート｜Star増減・更新状況・リリースの実測",
     description: "OSSALT掲載のOSSについて、GitHubから毎日取得しているStar数の7日間の実測差分、最終push、リリースの公開日を、比較した日付つきでまとめています。推計の値は使いません。",
   path: "/changes/",
 });
-
-const fmt = (n: number) => n.toLocaleString("ja-JP");
-/** YYYY-MM-DD を「10/22」の形に */
-const md = (d: string) => `${Number(d.slice(5, 7))}/${Number(d.slice(8, 10))}`;
-const period = (w: { from: string; to: string; days: number }) => `${md(w.from)}→${md(w.to)}（${w.days}日間）`;
-
-function StarItem({ row, rank }: { row: StarRow; rank?: number }) {
-  return (
-    <li className={styles.starRow}>
-      {rank !== undefined && <span className={styles.rank}>{rank}</span>}
-      <div className={styles.starName}>
-        <Link href={"/tools/" + row.tool.id + "/"}>{row.tool.name}</Link>
-        <small>{row.tool.primary_competitor_ja || row.tool.primary_competitor} の代替 · {period(row.w7)}</small>
-      </div>
-      <div className={styles.starNums}>
-        <strong className={row.w7.gain < 0 ? styles.minus : undefined}>{signed(row.w7.gain)}</strong>
-        <small>現在 {fmt(row.stars)}{row.ratePct !== null ? ` · ${row.ratePct > 0 ? "+" : ""}${row.ratePct}%` : ""}</small>
-      </div>
-    </li>
-  );
-}
 
 function NotableCard({ label, row, value }: { label: string; row: StarRow; value: string }) {
   return (
@@ -70,7 +54,10 @@ function PastCard({ row }: { row: ActivityRow }) {
 export default function ChangesPage() {
   const meta = getMeta();
   const tools = getTools();
-  const report = buildOwnReport(tools, { starsAsOf: meta.stars_as_of ?? null });
+  // 折りたたみの中のリストをブラウザで作り直すとき、同じ基準の時刻で計算する
+  const asOfMs = Date.now();
+  const starsAsOf = meta.stars_as_of ?? null;
+  const report = buildOwnReport(tools, { asOf: new Date(asOfMs), starsAsOf });
   const watch = buildActivityReport(tools.filter((t) => !t.github_archived), getWatchSignalFeed());
   const sync = getWatchSyncStatus();
   const fresh = report.status === "fresh";
@@ -159,20 +146,16 @@ export default function ChangesPage() {
           </div>
           {report.star.up.length > 0 ? (
             <>
-              <ol className={styles.starList}>{report.star.up.slice(0, 20).map((r, i) => <StarItem key={r.tool.id} row={r} rank={i + 1} />)}</ol>
-              {report.star.up.length > 20 && (
-                <details className={styles.more}>
-                  <summary>残りの増加 {fmt(report.star.up.length - 20)} 件を見る</summary>
-                  <ol className={styles.starList} start={21}>{report.star.up.slice(20).map((r, i) => <StarItem key={r.tool.id} row={r} rank={i + 21} />)}</ol>
-                </details>
+              <ol className={styles.starList}>{report.star.up.slice(0, STAR_TOP).map((r, i) => <StarItem key={r.tool.id} row={r} rank={i + 1} />)}</ol>
+              {report.star.up.length > STAR_TOP && (
+                <LazyList kind="star-up-rest" skip={STAR_TOP} asOfMs={asOfMs} starsAsOf={starsAsOf}
+                  summary={`残りの増加 ${fmt(report.star.up.length - STAR_TOP)} 件を見る`} />
               )}
             </>
           ) : <p className={styles.fine}>7日間の比較ができたOSSのうち、Starが増えたものはありません。</p>}
           {report.star.down.length > 0 && (
-            <details className={styles.more}>
-              <summary>Starが減ったOSS {fmt(report.star.down.length)} 件を見る</summary>
-              <ul className={styles.starList}>{report.star.down.map((r) => <StarItem key={r.tool.id} row={r} />)}</ul>
-            </details>
+            <LazyList kind="star-down" asOfMs={asOfMs} starsAsOf={starsAsOf}
+              summary={`Starが減ったOSS ${fmt(report.star.down.length)} 件を見る`} />
           )}
           <p className={styles.fine}>
             30日の推移とスコアでの順位は<Link href="/trending/">急上昇のOSS</Link>で見られます。
@@ -194,31 +177,16 @@ export default function ChangesPage() {
 
           <h3 className={styles.sub}>最新リリースの公開日が直近{RECENT_RELEASE_DAYS}日以内</h3>
           {fresh && m.recentReleases.length > 0 ? (
-            <details className={styles.more}>
-              <summary>{fmt(m.recentReleases.length)} 件を見る</summary>
-              <ul className={styles.plainList}>
-                {m.recentReleases.map(({ tool, publishedAt }) => (
-                  <li key={tool.id}>
-                    <Link href={"/tools/" + tool.id + "/"}>{tool.name}</Link>
-                    <small>公開 {activityDateJst(publishedAt)}（JST）{releasesUrl(tool.github_url) && <> · <a href={releasesUrl(tool.github_url)!} target="_blank" rel="noopener noreferrer">GitHubのリリース ↗</a></>}</small>
-                  </li>
-                ))}
-              </ul>
-            </details>
+            <LazyList kind="recent-releases" asOfMs={asOfMs} starsAsOf={starsAsOf}
+              summary={`${fmt(m.recentReleases.length)} 件を見る`} />
           ) : <p className={styles.fine}>{fresh ? "該当するOSSはありません。" : "データが古いため、表示していません。"}</p>}
           <p className={styles.fine}>GitHubのReleasesの公開日です。プレリリースを含む場合があり、タグの名前（バージョン）はOSSALTでは確認していません。リリースの記録が無い・取得できなかったものが{fmt(m.noReleaseInfo)}件あります。</p>
 
           {m.longQuiet.length > 0 && (
             <>
               <h3 className={styles.sub}>最終pushから1年を超えたOSS</h3>
-              <details className={styles.more}>
-                <summary>{fmt(m.longQuiet.length)} 件を見る</summary>
-                <ul className={styles.plainList}>
-                  {m.longQuiet.map(({ tool, daysSincePush }) => (
-                    <li key={tool.id}><Link href={"/tools/" + tool.id + "/"}>{tool.name}</Link><small>{fmt(daysSincePush ?? 0)}日前</small></li>
-                  ))}
-                </ul>
-              </details>
+              <LazyList kind="long-quiet" asOfMs={asOfMs} starsAsOf={starsAsOf}
+                summary={`${fmt(m.longQuiet.length)} 件を見る`} />
               <p className={styles.fine}>取得した時点の状態で、「開発が止まった」という判定ではありません。完成して更新の少ないソフトもあります。</p>
             </>
           )}

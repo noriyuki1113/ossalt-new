@@ -104,12 +104,4 @@ export function buildActivityReport(
   };
 }
 
-export function activityDateJst(input: string): string {
-  const date = new Date(input);
-  return Number.isFinite(date.getTime())
-    ? new Intl.DateTimeFormat("ja-JP", {
-        timeZone: "Asia/Tokyo", year: "numeric", month: "2-digit", day: "2-digit",
-        hour: "2-digit", minute: "2-digit",
-      }).format(date)
-    : "未確認";
-}
+export { activityDateJst } from "./date-jst.ts";

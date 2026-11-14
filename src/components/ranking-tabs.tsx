@@ -2,26 +2,22 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { growthViews, recommendedViews, type RankView, type RecommendedGroup } from "@/lib/ranking-views";
+import { parseBrowserTools } from "@/lib/tool-browser-data";
 
-/** 画面に渡す1行分（サーバーで計算済み。ここでは計算しない） */
-export type RankView = {
-  id: string;
-  name: string;
-  meta: string;
-  score: number;
-  /** 右側に出す主な値と補足 */
-  headline: string;
-  sub: string;
-  parts: Array<{ label: string; weight: number; value: string; pct?: number; points: number; note?: string; known?: boolean }>;
-  /** 最終観測（取得日・期間など） */
-  observed: string;
-  evidencePct?: number;
-};
+export type { RankView } from "@/lib/ranking-views";
 
 export type RankingTabsProps = {
   popular: RankView[];
-  growth: RankView[];
-  recommended: Array<{ saas: string; label: string; rows: RankView[] }>;
+  /**
+   * 急成長・おすすめの行。渡さない場合は dataUrl の全件のデータから、ブラウザで計算する
+   * （初期HTMLを軽くするため。計算は人気と同じ純粋関数で、サーバーで計算した場合と同じ結果になる）。
+   */
+  growth?: RankView[];
+  recommended?: RecommendedGroup[];
+  dataUrl?: string;
+  /** おすすめの対象のSaaS（チップの並び。読み込み前にも出す） */
+  recommendedSaas: Array<{ saas: string; label: string }>;
   counts: { popularTotal: number; growthTotal: number; growthUnobserved: number };
   asOf: string;
   weights: { popular: string; growth: string; recommended: string };
@@ -87,9 +83,43 @@ function Rows({ rows, kind }: { rows: RankView[]; kind: TabId }) {
   );
 }
 
-export function RankingTabs({ popular, growth, recommended, counts, asOf, weights }: RankingTabsProps) {
+type Lazy = { growth: RankView[]; recommended: RecommendedGroup[] };
+
+function Loading({ error, retry }: { error: boolean; retry: () => void }) {
+  return error ? (
+    <p className="muted" role="status">
+      ランキングのデータを読み込めませんでした。{" "}
+      <button type="button" className="btn" onClick={retry}>もう一度読み込む</button>
+    </p>
+  ) : <p className="muted" role="status">ランキングを読み込んでいます…</p>;
+}
+
+export function RankingTabs({ popular, growth: growthProp, recommended: recommendedProp, dataUrl, recommendedSaas, counts, asOf, weights }: RankingTabsProps) {
   const [tab, setTab] = useState<TabId>("popular");
-  const [saas, setSaas] = useState(recommended[0]?.saas ?? "");
+  const [saas, setSaas] = useState(recommendedSaas[0]?.saas ?? "");
+  const [lazy, setLazy] = useState<Lazy | null>(null);
+  const [loadError, setLoadError] = useState(false);
+  const [attempt, setAttempt] = useState(0);
+  const needsLoad = Boolean(dataUrl) && (!growthProp || !recommendedProp);
+
+  useEffect(() => {
+    if (!needsLoad || !dataUrl) return;
+    let alive = true;
+    setLoadError(false);
+    fetch(dataUrl)
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+      .then((json: unknown) => {
+        const tools = parseBrowserTools(json);
+        if (!tools) throw new Error("invalid");
+        if (alive) setLazy({ growth: growthViews(tools).rows, recommended: recommendedViews(tools, asOf) });
+      })
+      .catch(() => { if (alive) setLoadError(true); });
+    return () => { alive = false; };
+  }, [needsLoad, dataUrl, asOf, attempt]);
+
+  const growth = growthProp ?? lazy?.growth ?? null;
+  const recommended = recommendedProp ?? lazy?.recommended ?? null;
+  const retry = () => setAttempt((n) => n + 1);
 
   useEffect(() => {
     const fromHash = () => {
@@ -143,7 +173,7 @@ export function RankingTabs({ popular, growth, recommended, counts, asOf, weight
           {counts.growthUnobserved > 0 && `残りの${counts.growthUnobserved}件は、実測の記録が足りない（新しく掲載したばかりなど）ため「未観測」で、順位は付けていません（0としては扱っていません）。`}
           {"規模補正した成長率は、30日の純増 ÷（30日前のStar数 + 1,000）です。Starがごく少ないリポジトリの小さな増加が、大きな率にならないようにしています。"}
         </p>
-        <Rows rows={growth} kind="growth" />
+        {growth ? <Rows rows={growth} kind="growth" /> : <Loading error={loadError} retry={retry} />}
       </section>
 
       <section id="panel-recommended" role="tabpanel" aria-labelledby="tab-recommended" hidden={tab !== "recommended"}>
@@ -154,17 +184,17 @@ export function RankingTabs({ popular, growth, recommended, counts, asOf, weight
           それ以外のSaaSの代替は、用途適合度を算出できないため、おすすめの順位を付けていません（人気・急成長は全ツールで見られます）。
         </p>
         <div className="chips" role="group" aria-label="置き換え元のSaaS">
-          {recommended.map((g) => (
+          {recommendedSaas.map((g) => (
             <button key={g.saas} type="button" className="chip" aria-pressed={saas === g.saas} onClick={() => setSaas(g.saas)}>
               {g.label}の代替
             </button>
           ))}
         </div>
-        {recommended.map((g) => (
+        {recommended ? recommended.map((g) => (
           <div key={g.saas} hidden={saas !== g.saas}>
             <Rows rows={g.rows} kind="recommended" />
           </div>
-        ))}
+        )) : <Loading error={loadError} retry={retry} />}
       </section>
     </div>
   );

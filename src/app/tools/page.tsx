@@ -8,6 +8,10 @@ import { CATEGORIES } from "@/lib/categories";
 import { t } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
 import { formatCompactJa } from "@/lib/tools";
+import { BROWSER_DATA_PATH, browserFacets, initialBrowserTools } from "@/lib/tool-browser-data";
+
+// 初期HTMLに入れるツールの件数（一覧の1ページ分。残りは /data/tools.json をブラウザで読み込む）
+const INITIAL_TOOLS = 50;
 
 export const metadata: Metadata = pageMeta({
   title: "オープンソースソフトウェア一覧｜用途・SaaSの代替から探す",
@@ -43,7 +47,12 @@ export default function ToolsPage() {
         <p className="lede">
           <Ja>{`${meta.tool_count}件を収録。スター合計は約${formatCompactJa(totalStars)}。セキュリティ評価（OpenSSF Scorecard）は${meta.scored_count}件で取得済み、残り${meta.unrated_count}件は「未評価」として表示しています。`}</Ja>
         </p>
-        <ToolBrowser tools={tools} categories={categories} />
+        <ToolBrowser
+          tools={initialBrowserTools(tools, INITIAL_TOOLS)}
+          facets={browserFacets(tools)}
+          dataUrl={BROWSER_DATA_PATH}
+          categories={categories}
+        />
         <section className="section" aria-labelledby="tools-finding-guide">
           <h2 className="h3" id="tools-finding-guide">オープンソースの探し方</h2>
           <p className="muted" style={{ marginBottom: "1rem" }}>

@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
-import { RankingTabs, type RankView } from "@/components/ranking-tabs";
+import { RankingTabs } from "@/components/ranking-tabs";
 import { getActiveTools, getMeta } from "@/lib/data";
-import { TOOL_DIAGNOSIS } from "@/lib/diagnosis-data";
-import { SAAS_IDS, SAAS_LABELS } from "@/lib/diagnosis-types";
-import {
-  GROWTH_WEIGHTS, POPULARITY_WEIGHTS, RECOMMEND_WEIGHTS,
-  buildGrowth, buildPopularity, buildRecommended,
-} from "@/lib/rankings";
+import { GROWTH_WEIGHTS, POPULARITY_WEIGHTS, RECOMMEND_WEIGHTS } from "@/lib/rankings";
+import { growthViews, popularViews, recommendedViews } from "@/lib/ranking-views";
+import { BROWSER_DATA_PATH } from "@/lib/tool-browser-data";
 import { pageMeta } from "@/lib/seo";
 import { formatDate } from "@/lib/tools";
 
@@ -19,56 +16,17 @@ export const metadata: Metadata = pageMeta({
   path: "/rankings/",
 });
 
-const TOP_N = 30;
 const pct = (w: number) => `${Math.round(w * 100)}%`;
-const competitorOf = (t: { primary_competitor_ja?: string | null; primary_competitor: string }) =>
-  `${t.primary_competitor_ja || t.primary_competitor}の代替`;
 
 export default function RankingsPage() {
   const meta = getMeta();
   const tools = getActiveTools();
   const asOf = formatDate(meta.stars_as_of ?? meta.built_at);
 
-  const pop = buildPopularity(tools);
-  const popular: RankView[] = pop.rows.slice(0, TOP_N).map((r) => ({
-    id: r.tool.id,
-    name: r.tool.name,
-    meta: competitorOf(r.tool),
-    score: r.score,
-    headline: `★${(r.tool.stars_num ?? 0).toLocaleString("ja-JP")}`,
-    sub: `Fork ${(r.tool.forks_num ?? 0).toLocaleString("ja-JP")}`,
-    parts: r.parts.map((p) => ({ label: p.label, weight: p.weight, value: p.value, pct: p.pct, points: p.points })),
-    observed: `Stars・Forks・Contributorsの取得日：${asOf}`,
-  }));
-
-  const gr = buildGrowth(tools);
-  const growth: RankView[] = gr.rows.slice(0, TOP_N).map((r) => ({
-    id: r.tool.id,
-    name: r.tool.name,
-    meta: competitorOf(r.tool),
-    score: r.score,
-    headline: r.parts[0].value,
-    sub: `7日間（実測${r.window7.days}日）`,
-    parts: r.parts.map((p) => ({ label: p.label, weight: p.weight, value: p.value, pct: p.pct, points: p.points, note: p.note })),
-    observed: `7日：${r.window7.from}→${r.window7.to}／30日：${r.window30.from}→${r.window30.to}（OSSALTが記録したStar数の実測）`,
-  }));
-
-  const rec = buildRecommended(tools, Object.values(TOOL_DIAGNOSIS));
-  const recommended = SAAS_IDS.filter((s) => rec.bySaas[s]?.length).map((s) => ({
-    saas: s,
-    label: SAAS_LABELS[s],
-    rows: rec.bySaas[s]!.map((r): RankView => ({
-      id: r.tool.id,
-      name: r.tool.name,
-      meta: competitorOf(r.tool),
-      score: r.score,
-      headline: `${r.score}点`,
-      sub: "100点満点",
-      evidencePct: r.evidencePct,
-      parts: r.parts.map((p) => ({ label: p.label, weight: p.weight, value: "", points: p.points, note: p.note, known: p.known })),
-      observed: `最終コミット：${formatDate(r.tool.last_commit)}／データの取得日：${asOf}`,
-    })),
-  }));
+  // 初期HTMLには人気のタブだけを入れる。急成長・おすすめは、同じデータ（/data/tools.json）からブラウザで計算する
+  const popular = popularViews(tools, asOf);
+  const growthUnobserved = growthViews(tools).unobserved;
+  const recommendedSaas = recommendedViews(tools, asOf).map((g) => ({ saas: g.saas, label: g.label }));
 
   const weights = {
     popular: `Stars ${pct(POPULARITY_WEIGHTS.stars)}・Forks ${pct(POPULARITY_WEIGHTS.forks)}・Contributors ${pct(POPULARITY_WEIGHTS.contributors)}で、`,
@@ -111,10 +69,10 @@ export default function RankingsPage() {
         </ul>
 
         <RankingTabs
-          popular={popular}
-          growth={growth}
-          recommended={recommended}
-          counts={{ popularTotal: pop.rows.length, growthTotal: tools.length, growthUnobserved: gr.unobserved.length }}
+          popular={popular.rows}
+          dataUrl={BROWSER_DATA_PATH}
+          recommendedSaas={recommendedSaas}
+          counts={{ popularTotal: popular.total, growthTotal: tools.length, growthUnobserved }}
           asOf={asOf}
           weights={weights}
         />
