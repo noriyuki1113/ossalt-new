@@ -50,6 +50,6 @@ Slackは、外部のサービスとして使うチャットです。Element（�
 ### 注意点
 
 - 開発の元は、Element社（New Vector Ltd）です。
-- ライセンスはAGPL-3.0（3以降）、GPL-3.0（3以降）、Element社との有料の商用ライセンスの3つから選べます（当サイトのデータではAGPL-3.0と表示しています）。
+- ライセンスはAGPL-3.0（3以降）、GPL-3.0（3以降）、Element社との有料の商用ライセンスの3つから選べます。
 
 [Slackの代替](/alternatives/slack/)や[Chatworkの代替](/alternatives/chatwork/)のページで、ほかの候補も比べられます。
