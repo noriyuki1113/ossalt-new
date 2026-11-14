@@ -5,7 +5,7 @@ import path from "node:path";
 import { SITE } from "./site.ts";
 
 test("フッターの文言は、title・OGP・フィードに使う tagline とは別に持つ（検索結果の表示を変えない）", () => {
-  assert.equal(SITE.tagline, "国産SaaSの代わりに、自前で動かす");
+  assert.equal(SITE.tagline, "SaaSの代わりに、自前で動かす");
   assert.equal(SITE.footerTagline, "SaaSの代わりになるOSSを、比較して選ぶ。");
   assert.equal(SITE.footerDescription, "オープンソースのソフトウェアを、機能・ライセンス・更新状況などから比較できる情報サイト。");
 });

@@ -18,7 +18,7 @@ function env(name: string): string | null {
 export const SITE = {
   name: "ossalt.jp",
   nameJa: "オルタナ",
-  tagline: "国産SaaSの代わりに、自前で動かす",
+  tagline: "SaaSの代わりに、自前で動かす",
   // フッターだけの文言。tagline は <title>・OGP・フィードに使われているため、ここでは変えない
   // （検索結果の表示に影響する title / meta description は、今回は変更しない方針）。
   footerTagline: "SaaSの代わりになるOSSを、比較して選ぶ。",
