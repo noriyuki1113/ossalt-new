@@ -18,6 +18,7 @@ import { getStanding } from "@/lib/ranking-positions";
 import { getComparePairs, getCompetitor, getCompetitors, getMeta, getTool } from "@/lib/data";
 import { SITE, t } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
+import { ALT_OG_SIZE, alternativeOgPath } from "@/lib/alternative-og";
 import { alternativeDescription, alternativeTitle } from "@/lib/seo-copy";
 import { buildAlternativeFaq } from "@/lib/alternative-faq";
 import { JAPAN_SAAS_GROUPS } from "@/lib/japan-saas";
@@ -46,6 +47,8 @@ export async function generateMetadata({
     path: `/alternatives/${c.slug}/`,
     type: "article",
     markdown: `/md/alternatives/${c.slug}.md`,
+    // SaaSごとの共有用画像（src/app/og/alternatives/[slug]/image.png。ビルド時に作る）
+    image: { src: alternativeOgPath(c.slug), ...ALT_OG_SIZE },
   });
 }
 
