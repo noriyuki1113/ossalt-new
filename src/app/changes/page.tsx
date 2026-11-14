@@ -4,6 +4,7 @@ import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { DataAgeNotice } from "@/components/data-age-notice";
 import { getMeta, getTools } from "@/lib/data";
 import { pageMeta } from "@/lib/seo";
+import { FEED_PATH, SITE, X_URL } from "@/lib/site";
 import { getWatchSignalFeed, getWatchSyncStatus } from "@/lib/watch-signals";
 import { activityDateJst, buildActivityReport, type ActivityRow } from "@/lib/watch-changes";
 import { buildOwnReport, FRESH_HOURS, RATE_MIN_BASE, RECENT_RELEASE_DAYS, signed, TOOL_CURRENT_DAYS, type StarRow } from "@/lib/own-changes";
@@ -242,6 +243,17 @@ export default function ChangesPage() {
             <a href="/data/tools.json">元データ（tools.json）↗</a>
           </p>
         </section>
+
+        <aside className={styles.section} aria-label="更新を受け取る">
+          <p className={styles.fine}>
+            {"このレポートは、掲載データの日次の更新にあわせて作り直しています。"}
+            {"サイトの更新は、"}
+            <a href={X_URL} target="_blank" rel="noreferrer noopener">{`X（${SITE.twitter}）`}</a>
+            {"や"}
+            <a href={FEED_PATH}>RSS</a>
+            {"（ブログの新しい記事と、最近更新されたツールの情報）でも受け取れます。"}
+          </p>
+        </aside>
       </main>
       <SiteFooter meta={meta} />
     </>

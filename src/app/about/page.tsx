@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { getMeta } from "@/lib/data";
-import { SITE, t } from "@/lib/site";
+import { SITE, t, X_URL } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata: Metadata = pageMeta({
@@ -78,6 +78,10 @@ export default function AboutPage() {
                   </>
                 )}
                 {"）"}
+              </p>
+              <p>
+                {"X（旧Twitter）："}
+                <a href={X_URL} target="_blank" rel="noreferrer noopener">{SITE.twitter}</a>
               </p>
               <p>
                 当サイトは個人が運営しています。掲載内容の誤りのご指摘、ツールの追加提案、

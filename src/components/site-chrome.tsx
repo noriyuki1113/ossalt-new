@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { AnalyticsSettingsLink } from "@/components/analytics-consent";
-import { FEATURES, NAV, SITE, t } from "@/lib/site";
+import { FEATURES, FEED_PATH, NAV, SITE, t, X_URL } from "@/lib/site";
 
 /**
  * サイトのロゴマーク。SaaSの選択肢の中からオープンソースの代替を1つ選ぶ、という
@@ -117,6 +117,17 @@ export function SiteFooter({ meta }: { meta?: { built_at: string; tool_count: nu
               </li>
               <li>
                 <Link href="/feed/">RSS</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="foot-col">
+            <h3>更新を受け取る</h3>
+            <ul>
+              <li>
+                <a href={X_URL} target="_blank" rel="noreferrer noopener">X（{SITE.twitter}）</a>
+              </li>
+              <li>
+                <a href={FEED_PATH}>RSSフィード（feed.xml）</a>
               </li>
             </ul>
           </div>

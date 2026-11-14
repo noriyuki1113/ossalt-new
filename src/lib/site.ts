@@ -260,3 +260,8 @@ export function t(
   }
   return s;
 }
+
+/** 公式のX（旧Twitter）のアカウントのURL（SITE.twitter から作る） */
+export const X_URL = `https://x.com/${SITE.twitter.replace(/^@/, "")}`;
+/** RSSフィードのパス（src/app/feed.xml/route.ts） */
+export const FEED_PATH = "/feed.xml";
