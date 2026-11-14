@@ -378,6 +378,76 @@
       "outcome28": null,
       "outcome90": null,
       "note": "公式リポジトリの言語一覧と翻訳ファイルで確認。実機検証ではない。"
+    },
+    {
+      "id": 28,
+      "date": "2026-11-14",
+      "url": "https://ossalt.jp/tools/seafile/",
+      "query": "（対象外：事実確認の作業）",
+      "change": "ライセンスの表示を公式のREADME（構成要素ごとに異なる）に合わせた（title・description・見出しは変更なし）",
+      "pr": "https://github.com/noriyuki1113/ossalt-new/pull/133",
+      "window": "対象外（順位改善を狙った変更ではない）",
+      "check28": "2026-12-12",
+      "check90": "2027-02-12",
+      "outcome28": null,
+      "outcome90": null,
+      "note": "公式の一次情報のみを根拠に修正。実機検証ではない。"
+    },
+    {
+      "id": 29,
+      "date": "2026-11-14",
+      "url": "https://ossalt.jp/tools/element/",
+      "query": "（対象外：事実確認の作業）",
+      "change": "ライセンスの表示を公式のREADME（AGPL-3.0・GPL-3.0・商用から選べる）に合わせた（title・description・見出しは変更なし）",
+      "pr": "https://github.com/noriyuki1113/ossalt-new/pull/133",
+      "window": "対象外（順位改善を狙った変更ではない）",
+      "check28": "2026-12-12",
+      "check90": "2027-02-12",
+      "outcome28": null,
+      "outcome90": null,
+      "note": "公式の一次情報のみを根拠に修正。実機検証ではない。"
+    },
+    {
+      "id": 30,
+      "date": "2026-11-14",
+      "url": "https://ossalt.jp/compare/seafile-vs-syncthing/",
+      "query": "（対象外：事実確認の作業）",
+      "change": "Seafileのライセンスの記述を公式のREADMEに合わせた（title・description・見出しは変更なし）",
+      "pr": "https://github.com/noriyuki1113/ossalt-new/pull/133",
+      "window": "対象外（順位改善を狙った変更ではない）",
+      "check28": "2026-12-12",
+      "check90": "2027-02-12",
+      "outcome28": null,
+      "outcome90": null,
+      "note": "公式の一次情報のみを根拠に修正。実機検証ではない。"
+    },
+    {
+      "id": 31,
+      "date": "2026-11-14",
+      "url": "https://ossalt.jp/licenses/copyleft/",
+      "query": "（対象外：事実確認の作業）",
+      "change": "seafileが「構成要素によって異なる」に移り、掲載件数が1件減った（titleの件数が62→61）",
+      "pr": "https://github.com/noriyuki1113/ossalt-new/pull/133",
+      "window": "対象外（順位改善を狙った変更ではない）",
+      "check28": "2026-12-12",
+      "check90": "2027-02-12",
+      "outcome28": null,
+      "outcome90": null,
+      "note": "データの修正に伴う件数の変化。文言の変更はない。"
+    },
+    {
+      "id": 32,
+      "date": "2026-11-14",
+      "url": "https://ossalt.jp/licenses/network-copyleft/",
+      "query": "（対象外：事実確認の作業）",
+      "change": "elementが「複数のライセンスから選択」に移り、掲載件数が1件減った（titleの件数が84→83）",
+      "pr": "https://github.com/noriyuki1113/ossalt-new/pull/133",
+      "window": "対象外（順位改善を狙った変更ではない）",
+      "check28": "2026-12-12",
+      "check90": "2027-02-12",
+      "outcome28": null,
+      "outcome90": null,
+      "note": "データの修正に伴う件数の変化。文言の変更はない。"
     }
   ]
 }
