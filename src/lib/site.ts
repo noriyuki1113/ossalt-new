@@ -28,7 +28,7 @@ export const SITE = {
   url: (env("NEXT_PUBLIC_SITE_URL") ?? "https://ossalt.jp").replace(/\/+$/, ""),
   locale: "ja_JP",
   lang: "ja",
-  twitter: "@ossaltjp",
+  twitter: "@ossalt_jp",
   // データの更新元（GitHub Actions が書き換える）
   dataUpdatedAt: null as string | null,
   // お問い合わせ先。未設定でもビルドは通り、画面にはプレースホルダを出さず
