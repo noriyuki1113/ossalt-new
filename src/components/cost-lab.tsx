@@ -219,6 +219,16 @@ export function CostLab({ saasList }: { saasList: CostLabSaas[] }) {
             )}
           </div>
 
+          {/* 結果のすぐ下に、サーバー代を確かめるための国内VPSの紹介（既存の枠を再利用。結果があるときだけ） */}
+          {validation.ok && (!ossTool || ossTool.selfHostable) && (
+            <VpsRecommendation
+              path="/cost-lab/"
+              placement="cost_lab_result"
+              title="サーバーの月額を確かめる"
+              lede={`この計算では、サーバーの月額を${yen(validation.value.serverMonthly)}としています。セルフホストでよく選ばれる国内のVPSです。料金は各社の公式サイトで確認し、違っていれば上の「サーバー（VPSなど）の月額」を入れ直して計算し直してください。`}
+            />
+          )}
+
           <div className="table-scroll mt1">
             <table className="costlab__table">
               <thead>
