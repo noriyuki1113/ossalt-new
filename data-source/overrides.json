@@ -198,6 +198,14 @@
     "docmost": {
       "license": "AGPL-3.0（ee 配下は別ライセンス）",
       "license_note": "READMEのLicense節によると、コアはAGPL-3.0で、エンタープライズ機能（apps/server/src/ee・apps/client/src/ee・packages/ee）は別のエンタープライズライセンス（packages/ee/License）です。README を確認（2026-11-05）。"
+    },
+    "seafile": {
+      "license": "GPL-2.0 / AGPL-3.0 / Apache-2.0 / GPL-3.0（構成要素により異なる）",
+      "license_note": "公式のREADME（License欄）によると、ライセンスは構成要素ごとに違います。デスクトップの同期クライアント（このリポジトリ）はGPL-2.0（OpenSSLとのリンクの許可つき）、サーバーの中心部分（seafile-server）はAGPL-3.0、Webの画面（Seahub）とiOSのアプリはApache-2.0、AndroidのアプリはGPL-3.0です。GitHubの表示上のGPL-2.0は、同期クライアントの部分だけです。README と LICENSE.txt を確認（2026-11-14）。"
+    },
+    "element": {
+      "license": "AGPL-3.0 / GPL-3.0（商用ライセンスも選べる）",
+      "license_note": "公式のREADMEによると、Element社（New Vector Ltd）による複数ライセンスで、次の3つから選べます：AGPL-3.0（3以降）、GPL-3.0（3以降）、Element社との有料の商用ライセンス。無料で使えるのはAGPL-3.0とGPL-3.0で、どちらもOSI承認のライセンスです。GitHubの表示上のAGPL-3.0は、この選択肢の1つだけです。README と LICENSE-AGPL-3.0・LICENSE-GPL-3.0・LICENSE-COMMERCIAL を確認（2026-11-14）。"
     }
   },
   "preview_block": [
