@@ -5,6 +5,17 @@
  * ここには副作用もReact依存も置かない。
  */
 
+/** 診断の7つの質問の見出し（ウィザードと、/diagnosis/ の「実際の設問」で同じものを使う） */
+export const DIAGNOSIS_STEP_TITLES = [
+  "今使っている・置き換えたいSaaSは？",
+  "何人くらいで使いますか？",
+  "セルフホストについて、どれに近いですか？",
+  "データをどこで管理したいですか？",
+  "特に重視するものを2つまで選んでください",
+  "絶対に必要な機能はありますか？",
+  "あてはまる利用の条件はありますか？",
+] as const;
+
 /** MVP診断の対象SaaS（5種）。Q1の内部値。 */
 export type SaasId = "notion" | "slack" | "zapier" | "trello" | "google-analytics";
 

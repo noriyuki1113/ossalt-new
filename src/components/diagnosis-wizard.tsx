@@ -27,19 +27,12 @@ import {
   type TeamSize,
   type TechnicalLevel,
   type UsageCondition,
+  DIAGNOSIS_STEP_TITLES,
 } from "@/lib/diagnosis-types";
 
 type Answers = Partial<DiagnosisAnswers>;
 
-const STEP_TITLES = [
-  "今使っている・置き換えたいSaaSは？",
-  "何人くらいで使いますか？",
-  "セルフホストについて、どれに近いですか？",
-  "データをどこで管理したいですか？",
-  "特に重視するものを2つまで選んでください",
-  "絶対に必要な機能はありますか？",
-  "あてはまる利用の条件はありますか？",
-];
+const STEP_TITLES = DIAGNOSIS_STEP_TITLES;
 
 /**
  * 質問に答えるだけのウィザード。ここでは判定を行わない
