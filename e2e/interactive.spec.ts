@@ -105,6 +105,18 @@ test.describe("Cost Lab", () => {
     await expect(page.locator(".stat__num").first()).toHaveText("120,000円");
   });
 
+  test("国内VPSの紹介は、結果を出す前は出さず、結果を出すと結果のすぐ下に1か所だけ出る", async ({ page }) => {
+    // 自前のサーバーで動かすOSS（Mattermost）を選んだ場合でも、紹介は1か所だけ
+    await page.goto("/cost-lab/?saas=slack&oss=mattermost");
+    await expect(page.locator(".vps-reco")).toHaveCount(0);
+    await page.getByRole("button", { name: /例の値を入れる/ }).click();
+    await expect(page.locator(".costlab__verdict")).toBeVisible();
+    await expect(page.locator(".vps-reco")).toHaveCount(1);
+    // 結果の数値（.costlab__stats）のすぐ後に置かれている
+    const next = await page.locator(".costlab__stats").evaluate((el) => el.nextElementSibling?.classList.contains("vps-reco") ?? false);
+    expect(next).toBe(true);
+  });
+
   test("不正な値はエラーを出して結果を出さない", async ({ page }) => {
     await page.goto("/cost-lab/");
     await page.getByRole("button", { name: /例の値を入れる/ }).click();

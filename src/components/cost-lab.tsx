@@ -357,14 +357,6 @@ function NextSteps({ saas, oss }: { saas?: CostLabSaas; oss?: CostLabSaas["tools
           </Link>
         </li>
       </ul>
-      {oss?.selfHostable && (
-        <VpsRecommendation
-          path="/cost-lab/"
-          placement="cost_lab"
-          title="サーバー代を調べる"
-          lede="セルフホストでよく選ばれる国内のVPSです。料金は各社の公式サイトで確認し、上の「サーバーの月額」に入れて計算し直してください。"
-        />
-      )}
     </section>
   );
 }
