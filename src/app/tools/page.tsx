@@ -9,9 +9,14 @@ import { t } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
 import { formatCompactJa } from "@/lib/tools";
 import { BROWSER_DATA_PATH, browserFacets, initialBrowserTools } from "@/lib/tool-browser-data";
+import { buildCategoryDirectory } from "@/lib/tools-hub";
+import { isToolNoindex } from "@/lib/search-index";
+import { SAAS_IDS, SAAS_LABELS } from "@/lib/diagnosis-types";
 
 // 初期HTMLに入れるツールの件数（一覧の1ページ分。残りは /data/tools.json をブラウザで読み込む）
 const INITIAL_TOOLS = 50;
+// 分野ごとの一覧に載せる代表ツールの件数
+const REPS_PER_CATEGORY = 3;
 
 export const metadata: Metadata = pageMeta({
   title: "オープンソースソフトウェア一覧｜用途・SaaSの代替から探す",
@@ -31,9 +36,11 @@ export default function ToolsPage() {
 
   const totalStars = tools.reduce((s, tl) => s + (tl.stars_num ?? 0), 0);
   // 存在するカテゴリ・SaaSだけをナビゲーションに出し、リンク切れを防ぐ。
-  const priorityCategories = CATEGORIES.filter((c) =>
-    ["note-docs", "devtools", "project", "automation"].includes(c.slug) && c.count > 0
-  );
+  // 分野の絞り込みボタンは JavaScript で動くので、すべての分野と代表ツールを、実リンクでも並べる。
+  const directory = buildCategoryDirectory(tools, CATEGORIES, {
+    perCategory: REPS_PER_CATEGORY,
+    excludeFromReps: isToolNoindex,
+  });
   const prioritySaas = getCompetitors().filter((c) =>
     ["notion", "github", "linear", "zapier"].includes(c.slug)
   );
@@ -54,15 +61,15 @@ export default function ToolsPage() {
           categories={categories}
         />
         <section className="section" aria-labelledby="tools-finding-guide">
-          <h2 className="h3" id="tools-finding-guide">オープンソースの探し方</h2>
+          <h2 className="h3" id="tools-finding-guide">SaaSの代わりになるオープンソースは、どう探せばいいですか？</h2>
           <p className="muted" style={{ marginBottom: "1rem" }}>
-            使っているSaaSの代わりを探すか、目的から探すかを選べます。
-            迷った場合は条件を整理してから候補を比較してください。
+            今使っているSaaSの名前から探すのが近道です。使いたい用途が先に決まっているなら、下の分野別の一覧から探せます。
           </p>
           <div className="grid-2">
             <div className="panel">
-              <div className="panel__head"><h3 className="panel__title">今使っているSaaSから探す</h3></div>
+              <div className="panel__head"><h3 className="panel__title">今使っているSaaSの代わりを探すには？</h3></div>
               <div className="panel__body">
+                <p className="muted" style={{ marginTop: 0 }}>SaaSごとに、代わりに使えるオープンソースを並べて比べたページがあります。</p>
                 <ul style={{ margin: 0 }}>
                   {prioritySaas.map((c) => (
                     <li key={c.slug}>
@@ -76,23 +83,46 @@ export default function ToolsPage() {
               </div>
             </div>
             <div className="panel">
-              <div className="panel__head"><h3 className="panel__title">使いたい用途から探す</h3></div>
+              <div className="panel__head"><h3 className="panel__title">条件が決まっていないときは？</h3></div>
               <div className="panel__body">
-                <ul style={{ margin: 0 }}>
-                  {priorityCategories.map((c) => (
-                    <li key={c.slug}>
-                      <Link href={"/categories/" + c.slug + "/"}>{c.nameJa}</Link>
-                    </li>
-                  ))}
-                </ul>
-                <p style={{ marginBottom: 0, marginTop: "0.75rem" }}>
-                  <Link href="/categories/">全カテゴリを見る →</Link>
+                <p className="muted" style={{ marginTop: 0 }}>
+                  {`7つの質問に答えると、条件に合う代替候補を示します（対象は${SAAS_IDS.map((id) => SAAS_LABELS[id]).join("・")}の${SAAS_IDS.length}つのSaaS）。`}
+                </p>
+                <p style={{ marginBottom: 0 }}>
+                  <Link href="/diagnosis/">7つの質問からOSSを探す →</Link>
                 </p>
               </div>
             </div>
           </div>
-          <p style={{ marginTop: "1rem" }}>
-            <Link href="/diagnosis/">条件が決まっていない方は、7つの質問からOSSを探す →</Link>
+        </section>
+
+        <section className="section" aria-labelledby="tools-categories">
+          <h2 className="h3" id="tools-categories">どんな用途のオープンソースがありますか？</h2>
+          <p className="muted" style={{ marginBottom: "1rem" }}>
+            {`${directory.length}の分野に分けています。分野ごとに、健全度の高いオープンソースを、最大${REPS_PER_CATEGORY}件ずつ挙げています。`}
+          </p>
+          <ul
+            style={{ listStyle: "none", margin: 0, padding: 0, display: "grid", gap: "0.75rem 1.5rem", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))" }}
+          >
+            {directory.map((c) => (
+              <li key={c.slug}>
+                <Link href={"/categories/" + c.slug + "/"}><strong>{c.nameJa}</strong>（{c.count}件）</Link>
+                {c.reps.length > 0 && (
+                  <div className="muted" style={{ fontSize: "0.8125rem" }}>
+                    {"代表："}
+                    {c.reps.map((r, i) => (
+                      <span key={r.id}>
+                        {i > 0 && "・"}
+                        <Link href={"/tools/" + r.id + "/"}>{r.name}</Link>
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </li>
+            ))}
+          </ul>
+          <p style={{ marginTop: "1rem", marginBottom: 0 }}>
+            <Link href="/categories/">分野の一覧ページを見る →</Link>
           </p>
         </section>
 
