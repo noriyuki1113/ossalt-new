@@ -448,6 +448,20 @@
       "outcome28": null,
       "outcome90": null,
       "note": "データの修正に伴う件数の変化。文言の変更はない。"
+    },
+    {
+      "id": 33,
+      "date": "2026-11-18",
+      "url": "https://ossalt.jp/tools/",
+      "query": "（/tools/ ハブ全体。個別の検索語は未特定）",
+      "change": "H2を質問形＋1行回答に変更。分野（29）と代表ツール（最大3件ずつ）を実リンクで並べた（title・description・canonical・H1は変更なし）",
+      "pr": "https://github.com/noriyuki1113/ossalt-new/pull/135",
+      "window": "2026-08-18〜2026-11-18（Search Console・Web・全体）",
+      "check28": "2026-12-16",
+      "check90": "2027-02-16",
+      "outcome28": null,
+      "outcome90": null,
+      "note": "狙いは/tools/を1ページ目（1〜10位）へ寄せること。数値は公開リポジトリに書かない。マージ・デプロイ後に日付を確認する（予定日はマージ日で更新）。"
     }
   ]
 }
