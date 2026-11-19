@@ -39,6 +39,11 @@ showVps: true
 
 ファイルの共有まで自前にしたい場合は、[Nextcloud](/tools/nextcloud/)が候補です。ただし機能が多い分、サーバーの負担も運用の手間も大きくなるので、最初の構成には入れず、慣れてから足すのが無理のない進め方です。
 
+<figure class="figure">
+<img src="/blog/small-team-selfhost-stack/architecture.svg" width="720" height="420" alt="1台のVPSに載せる構成の例。VPSの中に、入口のTraefikと、チャットのMattermost、社内WikiのBookStack、パスワード管理のVaultwardenをDockerで分けて置く。死活監視のUptime Kumaとバックアップ先は、別の場所に置く。会計・給与・労務・電子契約・会社のメールは、SaaSのままにしやすい" loading="lazy">
+<figcaption>構成の例（上の表と、このあとの説明を図にしたもの）</figcaption>
+</figure>
+
 ## 1台にまとめるときの考え方
 
 ### ツールごとにDockerで分ける
@@ -82,6 +87,11 @@ showVps: true
 2. **社内Wiki（BookStack）** ：新しく書く文書から使い始め、既存のSaaSは、しばらく閲覧用に残します。移行の考え方は、[Notionの代替](/alternatives/notion/)のページにも書いています。
 3. **チャット（Mattermost）** ：全員が毎日使うので、少人数で試してから広げます。
 4. **パスワード管理（Vaultwarden）** ：最後です。バックアップと復元の手順が、きちんと回ることを確かめてから、移行します。
+
+<figure class="figure">
+<img src="/blog/small-team-selfhost-stack/order.svg" width="720" height="256" alt="始める順番。1番目は死活監視のUptime Kuma、2番目は社内WikiのBookStack、3番目はチャットのMattermost、4番目はパスワード管理のVaultwarden" loading="lazy">
+<figcaption>始める順番（上の4つの手順を図にしたもの）</figcaption>
+</figure>
 
 ## 費用の比べ方
 

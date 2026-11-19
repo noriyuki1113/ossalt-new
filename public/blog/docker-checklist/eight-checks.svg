@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="280" viewBox="0 0 720 280" role="img" aria-labelledby="t d" font-family="'Hiragino Sans','Noto Sans JP','Yu Gothic','Meiryo',sans-serif">
+  <title id="t">Dockerで試す前の8つのチェック</title>
+  <desc id="d">1 公式の手順とイメージがあるか。2 コンテナは1つか複数か。3 必要なメモリとCPUの種類。4 データの保存場所（いちばん大切）。5 仮のパスワードや鍵を置き換えたか。6 外からアクセスできる範囲。7 更新のしかたとバージョンの固定。8 バックアップと、戻せることの確認。</desc>
+  <rect width="720" height="280" rx="10" fill="#fbfaf6" stroke="#d8d4c8"/>
+  <text x="24" y="34" font-size="17" font-weight="700" fill="#1f2430">Dockerで試す前の8つのチェック</text>
+  <rect x="24" y="54" width="150" height="86" rx="8" fill="#ffffff" stroke="#9db8d2" stroke-width="1"/>
+  <circle cx="44" cy="76" r="12" fill="#2f5d8a"/>
+  <text x="44" y="81" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+  <text x="38" y="106" font-size="13" font-weight="700" fill="#1f2430">公式の手順と</text>
+  <text x="38" y="126" font-size="13" font-weight="700" fill="#1f2430">イメージがあるか</text>
+  <rect x="198" y="54" width="150" height="86" rx="8" fill="#ffffff" stroke="#9db8d2" stroke-width="1"/>
+  <circle cx="218" cy="76" r="12" fill="#2f5d8a"/>
+  <text x="218" y="81" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+  <text x="212" y="106" font-size="13" font-weight="700" fill="#1f2430">コンテナは</text>
+  <text x="212" y="126" font-size="13" font-weight="700" fill="#1f2430">1つか複数か</text>
+  <rect x="372" y="54" width="150" height="86" rx="8" fill="#ffffff" stroke="#9db8d2" stroke-width="1"/>
+  <circle cx="392" cy="76" r="12" fill="#2f5d8a"/>
+  <text x="392" y="81" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+  <text x="386" y="106" font-size="13" font-weight="700" fill="#1f2430">必要なメモリと</text>
+  <text x="386" y="126" font-size="13" font-weight="700" fill="#1f2430">CPUの種類</text>
+  <rect x="546" y="54" width="150" height="86" rx="8" fill="#fff6f1" stroke="#a8482a" stroke-width="2"/>
+  <circle cx="566" cy="76" r="12" fill="#a8482a"/>
+  <text x="566" y="81" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+  <text x="560" y="106" font-size="13" font-weight="700" fill="#1f2430">データの</text>
+  <text x="560" y="126" font-size="13" font-weight="700" fill="#1f2430">保存場所</text>
+  <text x="586" y="81" font-size="11" font-weight="700" fill="#a8482a">いちばん大切</text>
+  <rect x="24" y="154" width="150" height="86" rx="8" fill="#ffffff" stroke="#9db8d2" stroke-width="1"/>
+  <circle cx="44" cy="176" r="12" fill="#2f5d8a"/>
+  <text x="44" y="181" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+  <text x="38" y="206" font-size="13" font-weight="700" fill="#1f2430">仮のパスワード</text>
+  <text x="38" y="226" font-size="13" font-weight="700" fill="#1f2430">や鍵を置き換えたか</text>
+  <rect x="198" y="154" width="150" height="86" rx="8" fill="#ffffff" stroke="#9db8d2" stroke-width="1"/>
+  <circle cx="218" cy="176" r="12" fill="#2f5d8a"/>
+  <text x="218" y="181" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">6</text>
+  <text x="212" y="206" font-size="13" font-weight="700" fill="#1f2430">外からアクセス</text>
+  <text x="212" y="226" font-size="13" font-weight="700" fill="#1f2430">できる範囲</text>
+  <rect x="372" y="154" width="150" height="86" rx="8" fill="#ffffff" stroke="#9db8d2" stroke-width="1"/>
+  <circle cx="392" cy="176" r="12" fill="#2f5d8a"/>
+  <text x="392" y="181" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">7</text>
+  <text x="386" y="206" font-size="13" font-weight="700" fill="#1f2430">更新のしかたと</text>
+  <text x="386" y="226" font-size="13" font-weight="700" fill="#1f2430">バージョンの固定</text>
+  <rect x="546" y="154" width="150" height="86" rx="8" fill="#ffffff" stroke="#9db8d2" stroke-width="1"/>
+  <circle cx="566" cy="176" r="12" fill="#2f5d8a"/>
+  <text x="566" y="181" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">8</text>
+  <text x="560" y="206" font-size="13" font-weight="700" fill="#1f2430">バックアップと</text>
+  <text x="560" y="226" font-size="13" font-weight="700" fill="#1f2430">戻せることの確認</text>
+  <text x="24" y="262" font-size="12" fill="#4a5060">見る場所は、README・公式ドキュメント・Composeファイル・リリースノートです（下の表も参照）。</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420" role="img" aria-labelledby="t d" font-family="'Hiragino Sans','Noto Sans JP','Yu Gothic','Meiryo',sans-serif">
+  <title id="t">1台のVPSに載せる構成の例</title>
+  <desc id="d">VPS 1台の中に、Traefik（入口）と、Mattermost（チャット）・BookStack（社内Wiki）・Vaultwarden（パスワード管理）をDockerで分けて置く。Uptime Kuma（死活監視）とバックアップ先は、別の場所に置く。会計・給与・労務・電子契約・会社のメールは、SaaSのままにしやすい。</desc>
+  <rect width="720" height="420" rx="10" fill="#fbfaf6" stroke="#d8d4c8"/>
+  <text x="24" y="34" font-size="17" font-weight="700" fill="#1f2430">1台のVPSに載せる構成の例（社員10人ほどの会社）</text>
+  <rect x="24" y="54" width="440" height="250" rx="8" fill="#ffffff" stroke="#2f5d8a" stroke-width="2"/>
+  <text x="40" y="80" font-size="14" font-weight="700" fill="#1f2430">VPS 1台（ツールごとにDockerで分ける）</text>
+  <rect x="44" y="94" width="400" height="40" rx="6" fill="#dbe4ee" stroke="#dbe4ee" stroke-width="1"/>
+  <text x="56" y="119" font-size="14" fill="#1f2430">Traefik：ドメインとHTTPSの振り分け（入口）</text>
+  <rect x="44" y="150" width="124" height="90" rx="8" fill="#f6f8fb" stroke="#9db8d2" stroke-width="1"/>
+  <text x="56" y="184" font-size="14" font-weight="700" fill="#1f2430">Mattermost</text>
+  <text x="56" y="208" font-size="13" fill="#4a5060">チャット</text>
+  <rect x="182" y="150" width="124" height="90" rx="8" fill="#f6f8fb" stroke="#9db8d2" stroke-width="1"/>
+  <text x="194" y="184" font-size="14" font-weight="700" fill="#1f2430">BookStack</text>
+  <text x="194" y="208" font-size="13" fill="#4a5060">社内Wiki</text>
+  <rect x="320" y="150" width="124" height="90" rx="8" fill="#f6f8fb" stroke="#9db8d2" stroke-width="1"/>
+  <text x="332" y="184" font-size="14" font-weight="700" fill="#1f2430">Vaultwarden</text>
+  <text x="332" y="208" font-size="13" fill="#4a5060">パスワード管理</text>
+  <text x="44" y="266" font-size="13" fill="#1f2430">ツールごとに独立して更新でき、不具合が広がりにくい</text>
+  <text x="44" y="288" font-size="13" fill="#1f2430">メモリは、各ツールの公式の推奨を足し算して見積もる</text>
+  <rect x="484" y="54" width="212" height="250" rx="8" fill="#fff6f1" stroke="#a8482a" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="500" y="80" font-size="14" font-weight="700" fill="#a8482a">別の場所に置く</text>
+  <rect x="500" y="94" width="180" height="78" rx="8" fill="#ffffff" stroke="#e0b9a8" stroke-width="1"/>
+  <text x="512" y="120" font-size="13" font-weight="700" fill="#1f2430">Uptime Kuma（死活監視）</text>
+  <text x="512" y="142" font-size="12" fill="#4a5060">VPSが止まっても</text>
+  <text x="512" y="160" font-size="12" fill="#4a5060">通知が止まらないように</text>
+  <rect x="500" y="184" width="180" height="78" rx="8" fill="#ffffff" stroke="#e0b9a8" stroke-width="1"/>
+  <text x="512" y="210" font-size="13" font-weight="700" fill="#1f2430">バックアップ先</text>
+  <text x="512" y="232" font-size="12" fill="#4a5060">別のストレージにも保存</text>
+  <text x="512" y="250" font-size="12" fill="#4a5060">（restic・Kopiaなど）</text>
+  <text x="500" y="290" font-size="12" fill="#1f2430">戻せるかは、導入時に一度試す</text>
+  <rect x="24" y="322" width="672" height="82" rx="8" fill="#f1efe6" stroke="#c9c4b6" stroke-width="1"/>
+  <text x="40" y="348" font-size="14" font-weight="700" fill="#1f2430">SaaSのままにしやすいもの</text>
+  <text x="40" y="370" font-size="13" fill="#1f2430">会計・給与・労務・電子契約・会社のメール</text>
+  <text x="40" y="388" font-size="12" fill="#4a5060">制度への対応や、止まったときの影響が大きいもの</text>
+</svg>

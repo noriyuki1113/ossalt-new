@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="292" viewBox="0 0 720 292" role="img" aria-labelledby="t d" font-family="'Hiragino Sans','Noto Sans JP','Yu Gothic','Meiryo',sans-serif">
+  <title id="t">データの保存場所と、公開する範囲</title>
+  <desc id="d">コンテナの中に保存したデータは、コンテナを作り直すと消える。volumesでボリュームやパソコン側のフォルダにつなぐと残る。試す段階では、ports: に 127.0.0.1:3000:3000 のように書き、自分のパソコンやサーバーの中からだけ接続できる形にする。</desc>
+  <rect width="720" height="292" rx="10" fill="#fbfaf6" stroke="#d8d4c8"/>
+  <text x="24" y="34" font-size="17" font-weight="700" fill="#1f2430">データの保存場所と、公開する範囲</text>
+  <rect x="24" y="54" width="290" height="110" rx="8" fill="#fff6f1" stroke="#a8482a" stroke-width="2"/>
+  <text x="40" y="82" font-size="14" font-weight="700" fill="#a8482a">コンテナ（使い捨て）</text>
+  <text x="40" y="108" font-size="13" fill="#1f2430">中に保存したデータは、</text>
+  <text x="40" y="128" font-size="13" font-weight="700" fill="#1f2430">作り直すと消える</text>
+  <text x="40" y="148" font-size="12" fill="#4a5060">（コンテナを作り直したとき）</text>
+  <path d="M318 109 l80 0 m-8 -6 l8 6 l-8 6" fill="none" stroke="#2f5d8a" stroke-width="2.5"/>
+  <text x="358" y="96" font-size="12" font-weight="700" fill="#2f5d8a" text-anchor="middle">volumes:</text>
+  <text x="358" y="134" font-size="12" fill="#2f5d8a" text-anchor="middle">でつなぐ</text>
+  <rect x="406" y="54" width="290" height="110" rx="8" fill="#eaf1f8" stroke="#2f5d8a" stroke-width="2"/>
+  <text x="422" y="82" font-size="14" font-weight="700" fill="#2f5d8a">ボリューム／パソコン側のフォルダ</text>
+  <text x="422" y="108" font-size="13" fill="#1f2430">ここにつないでおくと、</text>
+  <text x="422" y="128" font-size="13" font-weight="700" fill="#1f2430">データが残る</text>
+  <text x="422" y="148" font-size="12" fill="#4a5060">（バックアップもここを取る）</text>
+  <rect x="24" y="180" width="672" height="92" rx="8" fill="#ffffff" stroke="#9db8d2" stroke-width="1"/>
+  <text x="40" y="206" font-size="13" font-weight="700" fill="#1f2430">試している段階は、自分のパソコンやサーバーの中からだけ接続できる形にする</text>
+  <text x="40" y="236" font-size="13" font-weight="700" fill="#1f2430" font-family="monospace">ports:</text>
+  <text x="40" y="256" font-size="13" fill="#1f2430" font-family="monospace">  - &quot;127.0.0.1:3000:3000&quot;</text>
+</svg>
