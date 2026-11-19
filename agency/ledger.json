@@ -462,6 +462,48 @@
       "outcome28": null,
       "outcome90": null,
       "note": "狙いは/tools/を1ページ目（1〜10位）へ寄せること。数値は公開リポジトリに書かない。2026-11-18にマージ・デプロイ。確認期限はデプロイ日（2026-11-18）から計算して確認済み。"
+    },
+    {
+      "id": 34,
+      "date": "2026-11-19",
+      "url": "https://ossalt.jp/blog/vps-for-selfhosting/",
+      "query": "（対象外：読みやすさの改善。検索語の改善を狙った変更ではない）",
+      "change": "図解（SVG）を2点追加。本文・title・description・見出しは変更なし",
+      "pr": "https://github.com/noriyuki1113/ossalt-new/pull/136",
+      "window": "対象外（順位改善を狙った変更ではない）",
+      "check28": "2026-12-17",
+      "check90": "2027-02-17",
+      "outcome28": null,
+      "outcome90": null,
+      "note": "記事の本文にある内容だけを図にした。新しい事実は足していない。マージ・デプロイ後に、確認期限をデプロイ日から更新する。"
+    },
+    {
+      "id": 35,
+      "date": "2026-11-19",
+      "url": "https://ossalt.jp/blog/small-team-selfhost-stack/",
+      "query": "（対象外：読みやすさの改善。検索語の改善を狙った変更ではない）",
+      "change": "図解（SVG）を2点追加。本文・title・description・見出しは変更なし",
+      "pr": "https://github.com/noriyuki1113/ossalt-new/pull/136",
+      "window": "対象外（順位改善を狙った変更ではない）",
+      "check28": "2026-12-17",
+      "check90": "2027-02-17",
+      "outcome28": null,
+      "outcome90": null,
+      "note": "記事の本文にある内容だけを図にした。新しい事実は足していない。マージ・デプロイ後に、確認期限をデプロイ日から更新する。"
+    },
+    {
+      "id": 36,
+      "date": "2026-11-19",
+      "url": "https://ossalt.jp/blog/docker-checklist/",
+      "query": "（対象外：読みやすさの改善。検索語の改善を狙った変更ではない）",
+      "change": "図解（SVG）を2点追加。本文・title・description・見出しは変更なし",
+      "pr": "https://github.com/noriyuki1113/ossalt-new/pull/136",
+      "window": "対象外（順位改善を狙った変更ではない）",
+      "check28": "2026-12-17",
+      "check90": "2027-02-17",
+      "outcome28": null,
+      "outcome90": null,
+      "note": "記事の本文にある内容だけを図にした。新しい事実は足していない。マージ・デプロイ後に、確認期限をデプロイ日から更新する。"
     }
   ]
 }
