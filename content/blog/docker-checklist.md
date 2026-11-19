@@ -50,6 +50,11 @@ Docker は、ソフトウェアを動かすのに必要なものを「コンテ�
 
 試しに使うだけのつもりでも、使い始めると大事なデータが入っていくものです。最初から保存場所を把握しておきましょう。
 
+<figure class="figure">
+<img src="/blog/docker-checklist/data-and-ports.svg" width="720" height="292" alt="データの保存場所と、公開する範囲。コンテナの中に保存したデータは、作り直すと消える。volumesでボリュームやパソコン側のフォルダにつなぐと残る。試す段階では、portsに127.0.0.1:3000:3000のように書き、自分のパソコンやサーバーの中からだけ接続できる形にする" loading="lazy">
+<figcaption>4と6の内容を図にしたもの</figcaption>
+</figure>
+
 ## 5. パスワードや鍵を、そのまま使わない
 
 Compose ファイルや設定の見本には、`POSTGRES_PASSWORD=changeme` のような仮のパスワードや、暗号化の鍵が書かれていることがあります。これを**そのまま使わない**ことが大切です。
@@ -98,6 +103,11 @@ Windows や Mac で Docker を使うときは、Docker Desktop というアプ�
 なお、Linux のサーバーで使う Docker Engine 自体は、オープンソース（Apache-2.0）で提供されています。
 
 ## まとめ：試す前の8つのチェック
+
+<figure class="figure">
+<img src="/blog/docker-checklist/eight-checks.svg" width="720" height="280" alt="Dockerで試す前の8つのチェック。公式の手順とイメージ、コンテナの数、必要なメモリとCPUの種類、データの保存場所、仮のパスワードや鍵の置き換え、外からアクセスできる範囲、更新のしかたとバージョンの固定、バックアップと戻せることの確認" loading="lazy">
+<figcaption>8つのチェックの一覧（下の表と同じ内容）</figcaption>
+</figure>
 
 | # | 確認すること | 見る場所 |
 |---|---|---|

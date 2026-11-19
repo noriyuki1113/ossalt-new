@@ -2697,3 +2697,19 @@ details.more > summary {
 .fy-jump { display: inline-flex; align-items: center; min-height: 44px; font-size: 0.875rem; font-weight: 700; }
 @media (min-width: 960px) { .fy-jump { display: none; } }
 #fy-results-h { scroll-margin-top: 1rem; }
+
+/* ブログ記事の図解（SVG）。幅いっぱいに収め、説明文を小さく添える。 */
+.prose .figure {
+  margin: 1.5rem 0;
+}
+.prose .figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
+.prose .figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.8125rem;
+  color: var(--ink-3);
+}
