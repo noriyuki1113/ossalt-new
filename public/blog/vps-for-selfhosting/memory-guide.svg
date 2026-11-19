@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="300" viewBox="0 0 720 300" role="img" aria-labelledby="t d" font-family="'Hiragino Sans','Noto Sans JP','Yu Gothic','Meiryo',sans-serif">
+  <title id="t">VPSのメモリ別の目安（512MB・1GB・2GB以上）</title>
+  <desc id="d">512MBは動作の軽いツールを1つ試す目安で、データベースや複数のコンテナを使うツールでは足りないことがあります。1GBは小さめのツールを1つ安定して動かす出発点です。2GB以上は、データベースを含むツールや、複数のツールを同じサーバーで動かす場合の目安です。</desc>
+  <rect width="720" height="300" rx="10" fill="#fbfaf6" stroke="#d8d4c8"/>
+  <text x="24" y="34" font-size="17" font-weight="700" fill="#1f2430">メモリの目安：まず何を動かすかで決める</text>
+  <g fill="#1f2430">
+    <rect x="24" y="52" width="210" height="184" rx="8" fill="#ffffff" stroke="#c9c4b6"/>
+    <rect x="40" y="68" width="18" height="18" fill="#2f5d8a"/><rect x="62" y="68" width="18" height="18" fill="#dbe4ee"/><rect x="84" y="68" width="18" height="18" fill="#dbe4ee"/><rect x="106" y="68" width="18" height="18" fill="#dbe4ee"/>
+    <text x="40" y="118" font-size="22" font-weight="700">512MB</text>
+    <text x="40" y="146" font-size="14">軽いツールを</text><text x="40" y="166" font-size="14">1つ試す目安</text>
+    <text x="40" y="192" font-size="13" fill="#4a5060">DB付きや複数のコンテナ</text><text x="40" y="210" font-size="13" fill="#4a5060">は、足りないことも</text>
+
+    <rect x="255" y="52" width="210" height="184" rx="8" fill="#ffffff" stroke="#c9c4b6"/>
+    <rect x="271" y="68" width="18" height="18" fill="#2f5d8a"/><rect x="293" y="68" width="18" height="18" fill="#2f5d8a"/><rect x="315" y="68" width="18" height="18" fill="#dbe4ee"/><rect x="337" y="68" width="18" height="18" fill="#dbe4ee"/>
+    <text x="271" y="118" font-size="22" font-weight="700">1GB</text>
+    <text x="271" y="146" font-size="14">小さめのツールを</text><text x="271" y="166" font-size="14">1つ安定して動かす</text>
+    <text x="271" y="192" font-size="13" fill="#4a5060">ここが出発点</text>
+
+    <rect x="486" y="52" width="210" height="184" rx="8" fill="#ffffff" stroke="#c9c4b6"/>
+    <rect x="502" y="68" width="18" height="18" fill="#2f5d8a"/><rect x="524" y="68" width="18" height="18" fill="#2f5d8a"/><rect x="546" y="68" width="18" height="18" fill="#2f5d8a"/><rect x="568" y="68" width="18" height="18" fill="#2f5d8a"/>
+    <text x="502" y="118" font-size="22" font-weight="700">2GB以上</text>
+    <text x="502" y="146" font-size="14">DB付きのツールや</text><text x="502" y="166" font-size="14">複数のツールを</text><text x="502" y="186" font-size="14">同じサーバーで動かす</text>
+  </g>
+  <text x="24" y="264" font-size="13" fill="#1f2430">必要なメモリは、ツールによって大きく違います。</text>
+  <text x="24" y="284" font-size="13" fill="#1f2430">公式ドキュメントの「推奨スペック」があれば、それを優先してください。</text>
+</svg>

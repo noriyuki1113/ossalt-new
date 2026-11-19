@@ -23,6 +23,11 @@ showVps: true
 | さくらのVPS | 512MB | 590円 | 643円 | 1コア | 512MB | SSD 25GB |
 | Xserver VPS | 2GB | 1,265円 | 1,980円 | 3コア | 2GB | NVMe 50GB |
 
+<figure class="figure">
+<img src="/blog/vps-for-selfhosting/monthly-price.svg" width="720" height="360" alt="国内VPS4社の最安プランの月額。月払いは、ConoHa VPSが460円、KAGOYA CLOUD VPSが上限550円、さくらのVPSが643円、Xserver VPSが1,980円。長期契約や年払いの換算は、それぞれ293円、506円、590円、1,265円" loading="lazy">
+<figcaption>月払いと、長期契約・年払いの換算の比較（2026年10月18日に各社の公式サイトで確認。上の表の数値と同じ）</figcaption>
+</figure>
+
 ### 「最低月額」の見方に注意
 
 表の「最低月額（換算）」は、各社がもっとも安くなる条件で計算した金額で、**条件がそろっていません**。
@@ -42,6 +47,11 @@ showVps: true
 - **512MB**：動作の軽いツールを1つ試すのが目安です。データベースを使うツールや、Dockerで複数のコンテナを動かすツールでは足りないことがあります。
 - **1GB**：小さめのツールを1つ、安定して動かしたい場合の出発点です。
 - **2GB以上**：データベースを含むツールや、複数のツールを同じサーバーで動かしたい場合の目安です。
+
+<figure class="figure">
+<img src="/blog/vps-for-selfhosting/memory-guide.svg" width="720" height="300" alt="メモリの目安。512MBは軽いツールを1つ試す程度、1GBは小さめのツールを1つ安定して動かす出発点、2GB以上はデータベースを含むツールや複数のツールを動かす場合の目安" loading="lazy">
+<figcaption>メモリ別の目安（上の3つの項目を図にしたもの）</figcaption>
+</figure>
 
 必要なメモリはツールによって大きく違います。導入したいツールの公式ドキュメントに「推奨スペック」が書かれていれば、それを優先してください。Dockerで試すときの確認点は「[Dockerで試す前に確認すること](/blog/docker-checklist/)」にまとめています。
 
