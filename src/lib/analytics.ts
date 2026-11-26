@@ -25,12 +25,24 @@ export const EVENTS = [
   "sponsor_click",
   // 広告の問い合わせ
   "advertise_inquiry", // /advertise/ の問い合わせ先を押した（送信の完了ではない）
+  "advertise_entry", // /advertise/ への入口リンクを押した（from: footer / editorial / contact）
   // Cost Lab
   "cost_lab_entry",
   "cost_lab_start", // 最初に入力した
   "cost_lab_result", // 最初に結果が出た（＝完了）
   "cost_lab_example",
   "cost_lab_link_click",
+  // ブログの反応
+  "blog_helpful", // 記事の「役に立った」を押した（slug）
+  "blog_share", // 記事の共有を押した（slug, network。コピーは "copy"）
+  // OSS診断（Umami側の計測。PostHog側の oss_diagnosis_completed とは別イベント・別基盤）
+  "diagnosis_start", // 診断ウィザードを始めた
+  "saas_selected", // 診断で対象のSaaSが選ばれた（saas）
+  "diagnosis_completed", // 診断の回答が完了した（saas）。PostHog側の oss_diagnosis_completed（TrackView経由・結果表示時）とは別
+  "diagnosis_restart", // 結果画面から「もう一度診断する」を押した
+  "share_click", // 診断結果の共有を押した（network: x / bluesky）
+  "result_detail_click", // 診断結果の候補の「詳しく見る」を押した（toolId）
+  "compare_click", // 診断結果の中の比較表の操作・比較ページへのリンク（比較ページ自体のイベントではない）
   // サイト内の誘導（収益ではない）
   "house_ad_impression",
   "house_ad_click",
