@@ -8,6 +8,8 @@ import { ComparisonTable } from "@/components/tool-views";
 import { TrackView } from "@/components/track-view";
 import { HouseAd } from "@/components/house-ad";
 import { SponsorSlot } from "@/components/sponsor-slot";
+import { VpsRecommendation } from "@/components/vps-recommendation";
+import { vpsLedeFor, vpsPlacementForTools } from "@/lib/affiliate-context";
 import { getAlternativeGuide } from "@/lib/alternative-guides";
 import { licenseGroupOf } from "@/lib/compare";
 import { RELATION_DESCRIPTIONS, RELATION_LABELS, getRelations } from "@/lib/alternative-relations";
@@ -82,6 +84,8 @@ export default async function AlternativeDetailPage({
   const faq = buildAlternativeFaq(c.name, c.tools);
   const relations = getRelations(slug);
   const classified = c.tools.filter((tl) => relations[tl.id]);
+  // 国内VPSの紹介枠：候補のうち1件でもサーバーで動かすものがあれば出す（特定の候補は名指ししない）
+  const vps = vpsPlacementForTools(c.tools);
   const decision = buildAlternativeDecision(slug, c.name, c.tools, Object.values(TOOL_DIAGNOSIS), (id) => getStanding(id));
   // 手書きの解説に、移行の注意・「のままのほうがよい場合」の見出しがあれば、要約からそこへ飛べるようにする
   let guideHtml = guide?.contentHtml ?? "";
@@ -202,6 +206,15 @@ export default async function AlternativeDetailPage({
         <ForYouLink query={{ saas: c.slug }}>{`条件を指定して、${c.name}の代替を理由つきで並べ替える（OSSALT For You）`}</ForYouLink>
 
         <SponsorSlot placement="alternative" slug={c.slug} />
+        {vps.show && (
+          <VpsRecommendation
+            path={`/alternatives/${c.slug}/`}
+            placement="alternative"
+            variant={vps.variant}
+            title={`${c.name}の代替を自分のサーバーで動かすには`}
+            lede={vpsLedeFor(vps.variant)}
+          />
+        )}
         <HouseAd placement={`alternative_${c.slug}`} />
 
         {guide && (
