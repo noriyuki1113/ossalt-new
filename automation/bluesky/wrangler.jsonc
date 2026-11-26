@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/wrangler.json",
+  "name": "ossalt-bluesky-publisher",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-24",
+  "workers_dev": true,
+  "triggers": {
+    "crons": ["15 3 * * *"]
+  },
+  "vars": {
+    "BLUESKY_HANDLE": "ossalt.bsky.social",
+    "PUBLISH_ENABLED": "false"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ossalt-bluesky-queue",
+      "database_id": "REPLACE_WITH_D1_DATABASE_ID",
+      "migrations_dir": "migrations"
+    }
+  ]
+}
