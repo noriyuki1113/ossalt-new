@@ -75,7 +75,15 @@ export function vpsVariantFor(category: string | undefined): VpsVariant {
 
 export type VpsPlacement =
   | { show: true; title: string; lede: string; variant: VpsVariant }
-  | { show: false; reason: RuntimeKind | "archived" };
+  | { show: false; reason: RuntimeKind | "archived" | "no_eligible_tool" };
+
+const VPS_LEDE_BASE =
+  "セルフホストでよく選ばれる国内のVPSです。必要なメモリやCPUはツールによって違うため、プランは公式のドキュメントの推奨に合わせて選んでください。";
+
+/** 紹介枠の前置き。variant の1文（あれば）＋共通の文。詳細ページと比較ページで同じ文言を使う */
+export function vpsLedeFor(variant: VpsVariant): string {
+  return VARIANT_NOTE[variant] ? `${VARIANT_NOTE[variant]}${VPS_LEDE_BASE}` : VPS_LEDE_BASE;
+}
 
 /** ツールの詳細ページにVPSの紹介枠を出すかと、その見出し */
 export function vpsPlacementFor(tool: Pick<Tool, "id" | "name" | "github_archived"> & { category?: string }): VpsPlacement {
@@ -83,12 +91,36 @@ export function vpsPlacementFor(tool: Pick<Tool, "id" | "name" | "github_archive
   const kind = runtimeKind(tool.id);
   if (kind !== "server") return { show: false, reason: kind };
   const variant = vpsVariantFor(tool.category);
-  const base =
-    "セルフホストでよく選ばれる国内のVPSです。必要なメモリやCPUはツールによって違うため、プランは公式のドキュメントの推奨に合わせて選んでください。";
   return {
     show: true,
     title: `${tool.name}を自分のサーバーで動かすには`,
-    lede: VARIANT_NOTE[variant] ? `${VARIANT_NOTE[variant]}${base}` : base,
+    lede: vpsLedeFor(variant),
     variant,
   };
+}
+
+type VpsTool = Pick<Tool, "id" | "name" | "github_archived"> & { category?: string };
+type ShownVpsPlacement = Extract<VpsPlacement, { show: true }>;
+
+export type VpsPlacementForTools<T extends VpsTool> =
+  | { show: true; variant: VpsVariant; eligible: Array<{ tool: T; placement: ShownVpsPlacement }> }
+  | { show: false; reason: "no_eligible_tool" };
+
+/**
+ * 複数のツールを並べるページ（比較ページ）にVPSの紹介枠を出すかの判定。
+ * 各ツールに vpsPlacementFor を適用し、出してよいもの（show: true）を対象とする。
+ * 対象が1件でもあれば枠を出し、0件なら出さない。
+ * variant は、対象ツール全員で一致すればその variant、割れれば general。
+ * 見出し・前置きの組み立ては呼び出し側が行う（対象でないツールの名前を見出しに入れないため、対象の一覧を返す）。
+ */
+export function vpsPlacementForTools<T extends VpsTool>(tools: readonly T[]): VpsPlacementForTools<T> {
+  const eligible: Array<{ tool: T; placement: ShownVpsPlacement }> = [];
+  for (const tool of tools) {
+    const placement = vpsPlacementFor(tool);
+    if (placement.show) eligible.push({ tool, placement });
+  }
+  if (eligible.length === 0) return { show: false, reason: "no_eligible_tool" };
+  const first = eligible[0].placement.variant;
+  const variant = eligible.every((e) => e.placement.variant === first) ? first : "general";
+  return { show: true, variant, eligible };
 }
