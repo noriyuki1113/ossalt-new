@@ -37,7 +37,9 @@ export default function ContactPage() {
               </li>
               <li>ライセンス表記の訂正</li>
               <li>
-                広告・スポンサーに関するお問い合わせ（<Link href="/advertise/">広告・スポンサー掲載のページ</Link>もご覧ください）
+                広告・スポンサーに関するお問い合わせ（<Link href="/advertise/" data-umami-event="advertise_entry" data-umami-event-from="contact">
+                  広告・スポンサー掲載のページ
+                </Link>もご覧ください）
               </li>
             </ul>
             {hasContact && (

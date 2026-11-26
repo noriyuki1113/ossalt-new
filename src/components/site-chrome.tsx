@@ -141,7 +141,9 @@ export function SiteFooter({ meta }: { meta?: { built_at: string; tool_count: nu
                 <Link href="/badge/">掲載バッジ</Link>
               </li>
               <li>
-                <Link href="/advertise/">広告・スポンサー</Link>
+                <Link href="/advertise/" data-umami-event="advertise_entry" data-umami-event-from="footer">
+                  広告・スポンサー
+                </Link>
               </li>
               <li>
                 <Link href="/contact/">お問い合わせ</Link>

@@ -74,6 +74,16 @@
 | cost_lab_complete | `cost_lab_result`（既存） | saas, oss, years, verdict, example | 金額は送らない |
 | deployment_guide_click | **未実装** | — | 導入ガイドがまだない（R8、Phase 2） |
 | advertise_inquiry | `advertise_inquiry` | via（mail） | メールのリンクを押した数。**送信の完了ではない** |
+| （入口の計測） | `advertise_entry` | from（footer / editorial / contact） | `/advertise/` への入口リンク3か所（`site-chrome.tsx` のフッター、`editorial/page.tsx`、`contact/page.tsx`）を押した数。媒体資料への流入元の計測。「入口 → ページPV → `advertise_inquiry`」の3段で読む |
+| （既存・正本に登録） | `blog_helpful` | slug | `post-actions.tsx` の「役に立った」押下。記事の有用性の手がかり |
+| （既存・正本に登録） | `blog_share` | slug, network | `post-actions.tsx` の共有押下。コピーは network `copy` |
+| （既存・正本に登録） | `diagnosis_start` | なし | `diagnosis-wizard.tsx`。OSS診断の開始。診断ファネルの入口 |
+| （既存・正本に登録） | `saas_selected` | saas | `diagnosis-wizard.tsx`。診断で対象SaaSが選ばれた時点 |
+| （既存・正本に登録） | `diagnosis_completed` | saas | `diagnosis-wizard.tsx`。診断の回答完了（Umami側）。PostHog側の `oss_diagnosis_completed`（結果表示時）とは別イベント・別基盤 |
+| （既存・正本に登録） | `diagnosis_restart` | なし | `diagnosis-result.tsx` の「もう一度診断する」。結果画面からの再診断 |
+| （既存・正本に登録） | `share_click` | network（x / bluesky） | `diagnosis-result.tsx` の ShareButton。診断結果の共有押下 |
+| （既存・正本に登録） | `result_detail_click` | toolId | `diagnosis-result.tsx`。結果の候補カードの「詳しく見る」押下。結果→ツール詳細の遷移を見る |
+| （既存・正本に登録） | `compare_click` | なし | `diagnosis-result.tsx` の比較表の操作と比較ページへのリンク。診断結果の中のイベントで、比較ページ自体のものではない |
 
 **ボット・重複の抑制**：Umami側のボット除外に加え、自動操作のブラウザ（`navigator.webdriver`）からは送らない。表示のイベントは1表示1回。個人の情報・入力した金額は送らない。
 

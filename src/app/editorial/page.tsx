@@ -89,7 +89,9 @@ export default function EditorialPage() {
             </li>
             <li>
               スポンサーの枠を設ける場合は、通常の掲載と見分けがつくよう、必ず「スポンサー」と表示します（
-              <Link href="/advertise/">広告・スポンサー</Link>）。
+              <Link href="/advertise/" data-umami-event="advertise_entry" data-umami-event-from="editorial">
+                広告・スポンサー
+              </Link>）。
             </li>
             <li>
               国内のVPS事業者の紹介リンク（アフィリエイト）を、次の場所に置いています。自分のサーバーで動かすツールの詳細ページ（パソコンのアプリやGPUが必要なものには出しません）、Cost Labの結果（選んだオープンソースがサーバーで動かすものの場合）、一部のブログ記事。どの場所でも、枠の見出しに「PR」と表示し、紹介料が入ることを書いています。ブログ記事では、冒頭にもプロモーションを含むことを表示しています。
