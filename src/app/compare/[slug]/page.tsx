@@ -5,6 +5,8 @@ import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import { Breadcrumbs, JsonLd, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ToolLogo } from "@/components/tool-logo";
+import { VpsRecommendation } from "@/components/vps-recommendation";
+import { vpsLedeFor, vpsPlacementForTools } from "@/lib/affiliate-context";
 import { getComparePairs, getMeta, getTool } from "@/lib/data";
 import { LICENSE_CLASS_LABELS, buildDifferences, classifyLicense, licenseCaveat } from "@/lib/compare";
 import { SAAS_IDS, SAAS_LABELS } from "@/lib/diagnosis-types";
@@ -78,6 +80,8 @@ export default async function ComparePage({ params }: { params: Promise<Params> 
   const competitorSlug = slugifyCompetitor(a.primary_competitor);
   const siblings = getComparePairs().filter((p) => p.competitor === pair.competitor && p.slug !== pair.slug);
   const diagnosisSaas = SAAS_IDS.find((id) => SAAS_LABELS[id] === a.primary_competitor);
+  // 国内VPSの紹介枠：比較対象のうち1件でもサーバーで動かすものがあれば出す。見出しには対象のツールの名前だけを入れる
+  const vps = vpsPlacementForTools([a, b]);
 
   const rows: Array<[string, (t: Tool) => ReactNode]> = [
     ["概要", (t) => t.description_ja ?? "—"],
@@ -194,6 +198,20 @@ export default async function ComparePage({ params }: { params: Promise<Params> 
             {"「未確認」は、当サイトでまだ確認できていないという意味で、「無い」「非対応」という意味ではありません。"}
           </p>
         </section>
+
+        {vps.show && (
+          <VpsRecommendation
+            path={`/compare/${slug}/`}
+            placement="compare"
+            variant={vps.variant}
+            title={
+              vps.eligible.length === 2
+                ? `${vps.eligible[0].tool.name}と${vps.eligible[1].tool.name}を自分のサーバーで動かすには`
+                : vps.eligible[0].placement.title
+            }
+            lede={vpsLedeFor(vps.variant)}
+          />
+        )}
 
         <section className="section">
           <h2 className="h3">どちらを選ぶか迷ったら</h2>
